@@ -3,7 +3,7 @@
 2016-S-examen.pdf|https://preparats.cat/sites/default/files/2019-06/pau_dibu16sl.pdf
 2016-S-solucio.pdf|https://preparats.cat/sites/default/files/2019-06/pau_dibu16sp.pdf
 2020-J-examen.pdf|https://preparats.cat/sites/default/files/2020-07/pau_dibu20jl.pdf
-2020-J-solucio.pdf|https://preparats.cat/sites/default/files/2020-07/pau_diar20jt_0.pdf
+2020-J-solucio.pdf|https://preparats.cat/sites/default/files/2020-07/pau_dibu20jt.pdf
 2020-S-examen.pdf|https://preparats.cat/sites/default/files/2020-10/pau_dibu20sl.pdf
 2020-S-solucio.pdf|https://preparats.cat/sites/default/files/2020-10/pau_dibu20st.pdf
 2021-J-examen.pdf|https://preparats.cat/sites/default/files/2021-06/pau_dibu21jl.pdf

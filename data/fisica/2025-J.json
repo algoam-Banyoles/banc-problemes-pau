@@ -28,9 +28,12 @@
         "període orbital",
         "energia mecànica orbital",
         "energia potencial gravitatòria",
-        "conservació de l'energia"
+        "conservació de l'energia",
+        "MCU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): velocitat orbital, període orbital",
       "pagines": [
         2
       ],
@@ -111,16 +114,17 @@
       "titol": "Experiment de Millikan: camp entre plaques i càrrega d'una gota d'oli",
       "tema": "camp-electric",
       "temes_secundaris": [
-        "quantica"
+        "quantica",
+        "mecanica"
       ],
       "conceptes": [
-        "experiment de millikan",
-        "camp elèctric uniforme",
-        "condensador pla",
         "equilibri de forces",
-        "quantització de la càrrega"
+        "camp elèctric uniforme",
+        "diferència de potencial"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): experiment de millikan, camp elèctric uniforme",
       "pagines": [
         4
       ],
@@ -205,12 +209,14 @@
       ],
       "conceptes": [
         "flux magnètic",
-        "llei de faraday",
-        "llei de lenz",
-        "força electromotriu induïda",
-        "força magnètica sobre un conductor"
+        "llei de Faraday",
+        "llei de Lenz",
+        "força sobre un corrent",
+        "conductor en moviment"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
       "pagines": [
         4
       ],
@@ -292,12 +298,13 @@
       "tema": "optica",
       "temes_secundaris": [],
       "conceptes": [
-        "llei de snell",
+        "llei de Snell",
         "angle límit",
-        "reflexió total",
-        "índex de refracció"
+        "reflexió i refracció"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Òptica: llei de Snell i angle límit (2n al Decret 171/2022; era de 1r al 142/2008)",
       "pagines": [
         6
       ],
@@ -385,12 +392,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "ones estacionàries",
-        "tub obert",
-        "tub tancat",
+        "tubs sonors",
         "harmònics",
-        "nodes i ventres"
+        "longitud d'ona"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub obert",
       "pagines": [
         6
       ],
@@ -473,12 +481,15 @@
       "temes_secundaris": [],
       "conceptes": [
         "desintegració beta",
-        "antineutrí",
         "període de semidesintegració",
         "constant de desintegració",
-        "activitat radioactiva"
+        "activitat",
+        "equació nuclear",
+        "llei de desintegració radioactiva"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, antineutrí",
       "pagines": [
         8
       ],

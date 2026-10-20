@@ -24,10 +24,11 @@
       "conceptes": [
         "límit elàstic",
         "tensió normal",
-        "tracció",
-        "secció circular"
+        "tracció i compressió"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita tensió, deformació o mòdul de Young (resistència de materials i assaig de tracció), que és de 2n.",
       "pagines": [
         1
       ],
@@ -81,14 +82,18 @@
       "tipus": "test",
       "punts": 0.5,
       "titol": "Viatgers màxims diaris d'un tren automàtic entre terminals",
-      "tema": "mecanica",
-      "temes_secundaris": [],
+      "tema": "economia",
+      "temes_secundaris": [
+        "mecanica",
+        "fabricacio"
+      ],
       "conceptes": [
         "temps de cicle",
-        "capacitat de transport",
-        "conversió d'unitats de temps"
+        "capacitat i ocupació"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només temps de cicle i capacitat de transport (1r).",
       "pagines": [
         1
       ],
@@ -148,13 +153,16 @@
       "punts": 0.5,
       "titol": "Interval de la resistència equivalent de dues resistències en paral·lel amb tolerància",
       "tema": "circuits",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "fabricacio"
+      ],
       "conceptes": [
-        "resistències en paral·lel",
-        "tolerància",
-        "resistència equivalent"
+        "associació de resistències",
+        "tolerància"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         2
       ],
@@ -207,11 +215,11 @@
       "temes_secundaris": [],
       "conceptes": [
         "cilindrada",
-        "cursa",
-        "diàmetre del cilindre",
-        "motor de combustió"
+        "motor de combustió interna"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita conceptes de motor tèrmic (cilindrada, cursa, relació de compressió), que són de 2n.",
       "pagines": [
         2
       ],
@@ -269,10 +277,11 @@
       "temes_secundaris": [],
       "conceptes": [
         "consum de combustible",
-        "densitat",
-        "conversió d'unitats"
+        "densitat"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         2
       ],
@@ -322,14 +331,19 @@
       "punts": 2.5,
       "titol": "Control d'enllumenat públic amb sensor crepuscular i dos sensors de moviment",
       "tema": "digital",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "control"
+      ],
       "conceptes": [
         "taula de veritat",
         "funció lògica",
-        "simplificació",
-        "esquema de contactes"
+        "mapa de Karnaugh",
+        "esquema de contactes",
+        "sensor"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         2
       ],
@@ -412,13 +426,15 @@
         "termica"
       ],
       "conceptes": [
-        "calor específica",
-        "energia",
+        "calor sensible",
+        "efecte Joule",
         "potència elèctrica",
-        "resistències en sèrie",
-        "llei d'Ohm"
+        "llei d'Ohm",
+        "associació de resistències"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         3
       ],
@@ -514,16 +530,21 @@
       "tema": "mecanismes",
       "temes_secundaris": [
         "energia",
-        "maquines-electriques"
+        "maquines-electriques",
+        "mecanica"
       ],
       "conceptes": [
         "relació de transmissió",
-        "parell",
+        "parell motor",
         "potència mecànica",
         "rendiment",
-        "aerogenerador"
+        "potència dissipada",
+        "energia eòlica",
+        "generador elèctric"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
       "pagines": [
         3
       ],
@@ -623,16 +644,17 @@
       "titol": "Rampa de patinatge feta amb impressora 3D: volum, massa i filament",
       "tema": "fabricacio",
       "temes_secundaris": [
-        "disseny"
+        "disseny",
+        "materials"
       ],
       "conceptes": [
-        "impressió 3D",
-        "volum",
+        "processos de fabricació",
         "densitat",
-        "massa",
-        "fabricació additiva"
+        "àrees i perímetres"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Fabricació additiva (volum, massa i filament), que és de 1r.",
       "pagines": [
         4
       ],
@@ -722,17 +744,22 @@
       "titol": "Ascensor hidràulic d'acció directa: força, pressió, tensió a la tija i rendiment",
       "tema": "pneumatica",
       "temes_secundaris": [
-        "resistencia"
+        "resistencia",
+        "mecanica"
       ],
       "conceptes": [
-        "cilindre hidràulic",
+        "cilindre pneumàtic o hidràulic",
         "pressió",
         "cabal",
         "tensió normal",
         "potència hidràulica",
-        "rendiment"
+        "rendiment",
+        "velocitat lineal",
+        "tracció i compressió"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita oleohidràulica (cilindre, pressió, cabal) i tensió normal a la tija, que són de 2n.",
       "pagines": [
         4
       ],

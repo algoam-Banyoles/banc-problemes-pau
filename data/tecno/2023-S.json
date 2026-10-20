@@ -20,15 +20,20 @@
       "punts": 0.5,
       "titol": "Rendiment d'un motor de quatre temps a partir del consum i el parell",
       "tema": "termica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "rendiment",
         "poder calorífic",
         "parell motor",
         "potència mecànica",
-        "densitat"
+        "densitat",
+        "motor de combustió interna"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita potència, parell, consum i rendiment global del motor, sense cicle tèrmic: 1r.",
       "pagines": [
         2
       ],
@@ -90,11 +95,11 @@
       "tema": "mecanica",
       "temes_secundaris": [],
       "conceptes": [
-        "energia potencial",
-        "centre de masses",
-        "treball"
+        "energia potencial"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Cinemàtica o conservació de l'energia mecànica (Física i Química de 1r).",
       "pagines": [
         2
       ],
@@ -149,14 +154,17 @@
       "punts": 0.5,
       "titol": "Cost anual d'una bomba de depuradora de piscina",
       "tema": "energia",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "circuits"
+      ],
       "conceptes": [
-        "consum energètic",
-        "factura elèctrica",
-        "rendiment",
+        "cost de l'energia",
+        "energia elèctrica",
         "potència elèctrica"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         2
       ],
@@ -213,11 +221,12 @@
       "tema": "pneumatica",
       "temes_secundaris": [],
       "conceptes": [
-        "premsa hidràulica",
-        "principi de Pascal",
-        "conservació del volum"
+        "pressió",
+        "principi de Pascal"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita oleohidràulica o pneumàtica (cilindres, pressió, cabal), que és de 2n.",
       "pagines": [
         3
       ],
@@ -272,14 +281,17 @@
       "punts": 0.5,
       "titol": "Potència d'un calefactor a partir de la resistivitat del fil",
       "tema": "circuits",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "materials"
+      ],
       "conceptes": [
         "resistivitat",
-        "resistència elèctrica",
         "potència elèctrica",
         "llei d'Ohm"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         3
       ],
@@ -342,9 +354,11 @@
         "funció lògica",
         "mapa de Karnaugh",
         "esquema de contactes",
-        "maxterms"
+        "sensor"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         4,
         5
@@ -429,13 +443,16 @@
         "economia"
       ],
       "conceptes": [
-        "calor específica",
+        "calor sensible",
         "poder calorífic",
         "rendiment",
-        "cost energètic",
-        "emissions de CO2"
+        "cost de l'energia",
+        "emissions de CO2",
+        "consum de combustible"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         6,
         7
@@ -536,16 +553,20 @@
       "tema": "mecanica",
       "temes_secundaris": [
         "maquines-electriques",
-        "energia"
+        "energia",
+        "circuits"
       ],
       "conceptes": [
-        "capacitat de la bateria",
+        "capacitat de bateria",
         "potència mecànica",
         "rendiment",
         "pla inclinat",
-        "autonomia"
+        "autonomia",
+        "velocitat lineal"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
       "pagines": [
         8,
         9
@@ -631,16 +652,19 @@
       "titol": "Cistella de bàsquet plegable: tensió del cable, reaccions i parell del tambor",
       "tema": "estatica",
       "temes_secundaris": [
-        "mecanismes"
+        "mecanismes",
+        "mecanica"
       ],
       "conceptes": [
         "diagrama de cos lliure",
         "equilibri de moments",
-        "reaccions a l'articulació",
-        "tensió del cable",
+        "equilibri de forces",
+        "reaccions en una articulació",
         "parell motor"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
       "pagines": [
         10,
         11
@@ -740,16 +764,21 @@
       "titol": "Selecció d'un cilindre hidràulic d'efecte simple per elevar contenidors",
       "tema": "pneumatica",
       "temes_secundaris": [
-        "resistencia"
+        "resistencia",
+        "mecanica"
       ],
       "conceptes": [
-        "cilindre d'efecte simple",
+        "cilindre pneumàtic o hidràulic",
         "pressió",
         "cabal",
         "potència hidràulica",
-        "tensió normal"
+        "tensió normal",
+        "velocitat lineal",
+        "tracció i compressió"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita oleohidràulica (cilindre, pressió, cabal) i tensió normal a la tija, que són de 2n.",
       "pagines": [
         12,
         13

@@ -22,11 +22,11 @@
       "tema": "materials",
       "temes_secundaris": [],
       "conceptes": [
-        "densitat",
-        "volum del cilindre",
-        "pes"
+        "densitat"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita composició i propietats generals dels materials, que són de 1r.",
       "pagines": [
         1
       ],
@@ -84,11 +84,11 @@
       "temes_secundaris": [],
       "conceptes": [
         "tolerància",
-        "acotació",
-        "cadena de cotes",
-        "dimensions angulars"
+        "cadena de cotes"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
       "pagines": [
         1
       ],
@@ -145,12 +145,11 @@
       "tema": "economia",
       "temes_secundaris": [],
       "conceptes": [
-        "benefici",
-        "ingressos",
-        "costos variables",
-        "costos fixos"
+        "benefici"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
       "pagines": [
         2
       ],
@@ -209,10 +208,11 @@
       "conceptes": [
         "relació de compressió",
         "cilindrada",
-        "volum de la cambra de combustió",
-        "motor de quatre temps"
+        "motor de combustió interna"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita conceptes de motor tèrmic (cilindrada, cursa, relació de compressió), que són de 2n.",
       "pagines": [
         2
       ],
@@ -264,11 +264,12 @@
       "tema": "materials",
       "temes_secundaris": [],
       "conceptes": [
-        "aliatges",
-        "composició percentual",
-        "titani"
+        "aliatge",
+        "composició percentual"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita composició i propietats generals dels materials, que són de 1r.",
       "pagines": [
         2
       ],
@@ -322,11 +323,12 @@
       "conceptes": [
         "taula de veritat",
         "funció lògica",
-        "casos impossibles",
         "mapa de Karnaugh",
         "esquema de contactes"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         2
       ],
@@ -411,16 +413,19 @@
       "titol": "Llanterna de tres LED en paraŀlel alimentada amb dues o tres bateries",
       "tema": "circuits",
       "temes_secundaris": [
-        "electronica"
+        "electronica",
+        "energia"
       ],
       "conceptes": [
         "llei d'Ohm",
         "LED",
-        "bateries en sèrie",
-        "capacitat de la bateria",
-        "energia elèctrica"
+        "capacitat de bateria",
+        "energia elèctrica",
+        "autonomia"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         3
       ],
@@ -523,12 +528,14 @@
       ],
       "conceptes": [
         "poder calorífic",
-        "consum horari",
+        "consum de combustible",
         "densitat",
-        "potència calorífica",
-        "gràfic de funcions"
+        "potència tèrmica",
+        "autonomia"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         3
       ],
@@ -627,16 +634,20 @@
       "titol": "Placa triangular d'acer articulada i subjectada per un cable",
       "tema": "estatica",
       "temes_secundaris": [
-        "resistencia"
+        "resistencia",
+        "materials"
       ],
       "conceptes": [
         "diagrama de cos lliure",
         "equilibri de moments",
+        "equilibri de forces",
         "reaccions en una articulació",
-        "centre de gravetat",
+        "densitat",
         "tensió normal"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita estàtica d'estructures i tensió normal o deformació (resistència de materials), que són de 2n.",
       "pagines": [
         4
       ],
@@ -736,16 +747,20 @@
       "tema": "maquines-electriques",
       "temes_secundaris": [
         "mecanismes",
-        "mecanica"
+        "mecanica",
+        "circuits"
       ],
       "conceptes": [
-        "rendiment",
+        "rendiment global",
         "relació de transmissió",
         "parell motor",
         "potència elèctrica",
-        "reductor"
+        "reductor",
+        "velocitat angular"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
       "pagines": [
         4
       ],

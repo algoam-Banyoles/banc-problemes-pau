@@ -26,11 +26,14 @@
       "conceptes": [
         "recta tangent",
         "punts de tall amb els eixos",
-        "àrea d'un triangle",
-        "mínim relatiu",
-        "monotonia"
+        "àrees de figures planes",
+        "extrems relatius",
+        "monotonia",
+        "derivada d'un quocient"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         2,
         3
@@ -126,12 +129,16 @@
       ],
       "conceptes": [
         "discussió de sistemes",
-        "teorema de Rouché-Fröbenius",
+        "teorema de Rouché-Frobenius",
         "rang",
         "determinant",
-        "mètode de Gauss"
+        "sistema compatible determinat",
+        "sistema compatible indeterminat",
+        "sistema incompatible"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         4,
         5
@@ -214,13 +221,15 @@
       "tema": "geometria",
       "temes_secundaris": [],
       "conceptes": [
-        "equació general del pla",
+        "equació del pla",
         "vector normal",
         "producte vectorial",
-        "equacions paramètriques de la recta",
+        "equacions de la recta",
         "recta perpendicular a un pla"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         6,
         7
@@ -296,12 +305,13 @@
       ],
       "conceptes": [
         "asímptota obliqua",
-        "límits a l'infinit",
-        "mínim relatiu",
-        "monotonia",
-        "funció racional"
+        "extrems relatius",
+        "funció racional",
+        "monotonia"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Condició de mínim relatiu (f'(2) = 0 i classificació), que és de 2n.",
       "pagines": [
         8
       ],
@@ -355,10 +365,11 @@
       "conceptes": [
         "equació matricial",
         "matriu inversa",
-        "determinant",
-        "matriu identitat"
+        "determinant"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         10,
         11
@@ -435,16 +446,19 @@
       "titol": "Tangent a y = x³ paral·lela a una recta i àrea entre la cúbica i la tangent",
       "tema": "derivades",
       "temes_secundaris": [
-        "integrals"
+        "integrals",
+        "funcions"
       ],
       "conceptes": [
         "recta tangent",
-        "rectes paral·leles",
-        "àrea entre dues corbes",
-        "regla de Barrow",
-        "regla de Ruffini"
+        "esbós de la gràfica",
+        "punts d'intersecció de corbes",
+        "àrea entre corbes",
+        "regla de Barrow"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àrea entre la cúbica i una recta amb integral definida, que és de 2n.",
       "pagines": [
         12,
         13

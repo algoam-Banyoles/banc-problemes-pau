@@ -25,11 +25,13 @@
       ],
       "conceptes": [
         "àrea entre corbes",
-        "punts d'intersecció",
-        "integral definida",
-        "regla de Barrow"
+        "punts d'intersecció de corbes",
+        "regla de Barrow",
+        "esbós de la gràfica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         1
       ],
@@ -123,9 +125,14 @@
         "matriu inversa",
         "teorema de Rouché-Frobenius",
         "posició relativa de plans",
-        "discussió amb paràmetre"
+        "regla de Sarrus",
+        "rang",
+        "discussió de sistemes",
+        "sistema incompatible"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Invertibilitat per determinant i posició relativa de tres plans amb paràmetre, que són de 2n.",
       "pagines": [
         1
       ],
@@ -215,10 +222,11 @@
         "producte de matrius",
         "matriu inversa",
         "determinant",
-        "reducció a l'absurd",
-        "divisors de zero"
+        "propietats de les matrius"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         1
       ],
@@ -296,12 +304,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "recta tangent",
-        "derivada",
-        "derivada segona",
-        "pendent màxim",
-        "punts d'inflexió"
+        "derivada d'un quocient",
+        "punt d'inflexió",
+        "extrems relatius",
+        "monotonia"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Pendent màxim: estudi del signe de f'' (extrems de f'), que és de 2n.",
       "pagines": [
         2
       ],
@@ -393,12 +403,13 @@
       "tema": "geometria",
       "temes_secundaris": [],
       "conceptes": [
-        "intersecció pla-eixos",
-        "mòdul d'un vector",
         "producte vectorial",
-        "àrea d'un triangle"
+        "àrea d'un triangle",
+        "distància entre dos punts"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         2
       ],
@@ -480,11 +491,15 @@
       "conceptes": [
         "domini",
         "punts de tall amb els eixos",
-        "creixement i decreixement",
+        "monotonia",
         "integral quasi immediata",
-        "àrea sota una corba"
+        "àrea sota una corba",
+        "funció logarítmica",
+        "derivada d'un quocient"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         2
       ],

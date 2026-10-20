@@ -21,7 +21,9 @@
       "punts": 2,
       "titol": "Quadrilàter ABCD a partir d'un costat, tres angles i una longitud (trasllat d'un segment)",
       "tema": "geometria-plana",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "transformacions"
+      ],
       "conceptes": [
         "construcció de polígons",
         "transport d'angles",
@@ -29,6 +31,8 @@
         "trasllat"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Construcció d'un quadrilàter amb transport d'angles i trasllat: polígons (DT I).",
       "pagines": [
         5
       ],
@@ -98,10 +102,11 @@
       "conceptes": [
         "tangències",
         "bisectriu",
-        "punt de tangència",
-        "circumferències tangents"
+        "punt de tangència"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Tangències amb un punt de tangència donat, resoltes per reducció a punt, mediatrius i bisectrius; no cal potència (DT I).",
       "pagines": [
         7
       ],
@@ -178,16 +183,20 @@
       "titol": "Piràmide octogonal regular amb la base en un pla inclinat donat per un costat i un vèrtex",
       "tema": "cossos",
       "temes_secundaris": [
+        "geometria-plana",
         "diedric"
       ],
       "conceptes": [
-        "octògon regular",
+        "polígon regular",
         "piràmide",
         "canvi de pla",
         "abatiment",
-        "visibilitat"
+        "visibilitat",
+        "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Piràmide o prisma en dièdric amb la base en un pla inclinat, per abatiment o canvi de pla (DT II).",
       "pagines": [
         9
       ],
@@ -297,12 +306,13 @@
       ],
       "conceptes": [
         "octaedre",
-        "poliedres regulars",
-        "quadrat",
         "canvi de pla",
-        "visibilitat"
+        "visibilitat",
+        "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) amb canvi de pla.",
       "pagines": [
         11
       ],
@@ -394,11 +404,14 @@
       "conceptes": [
         "axonometria dimètrica",
         "coeficients de reducció",
-        "escala",
         "interpretació de vistes",
-        "visibilitat"
+        "prisma envolupant",
+        "coordenades axonomètriques",
+        "cares inclinades"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         13
       ],
@@ -474,15 +487,22 @@
       "punts": 4,
       "titol": "Axonometria isomètrica d'una xapa doblegada amb extrems arrodonits i un forat",
       "tema": "axonometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "corbes",
+        "normalitzacio"
+      ],
       "conceptes": [
         "axonometria isomètrica",
-        "circumferències en perspectiva",
-        "òval isomètric",
+        "circumferència en axonometria",
+        "el·lipse",
         "interpretació de vistes",
-        "escala"
+        "coordenades axonomètriques",
+        "contorn aparent",
+        "cares inclinades"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (el·lipses isomètriques o DIN 5): DT II.",
       "pagines": [
         15
       ],
@@ -557,12 +577,14 @@
         "transformacions"
       ],
       "conceptes": [
-        "hexàgon regular",
+        "polígon regular",
         "semblança",
         "trasllat",
         "construcció de polígons"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Polígon regular situat per semblança o gir, i tangència per bisectrius (DT I).",
       "pagines": [
         21
       ],
@@ -628,9 +650,11 @@
         "tangències",
         "mediatriu",
         "punt de tangència",
-        "circumferències tangents"
+        "reducció a punt"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Tangències amb un punt de tangència donat, resoltes per reducció a punt, mediatrius i bisectrius; no cal potència (DT I).",
       "pagines": [
         23
       ],
@@ -698,10 +722,12 @@
         "intersecció recta-pla",
         "secció plana",
         "prisma",
-        "pla definit per tres punts",
+        "pla obliqu",
         "visibilitat"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Secció plana d'un prisma en dièdric: sòlids i seccions planes (DT II).",
       "pagines": [
         25
       ],
@@ -792,12 +818,14 @@
       ],
       "conceptes": [
         "octaedre",
-        "poliedres regulars",
         "canvi de pla",
         "abatiment",
-        "visibilitat"
+        "visibilitat",
+        "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) amb canvi de pla.",
       "pagines": [
         27
       ],
@@ -888,12 +916,13 @@
       ],
       "conceptes": [
         "axonometria isomètrica",
-        "escala",
         "interpretació de vistes",
-        "visibilitat",
-        "coordenades"
+        "coordenades axonomètriques",
+        "cares inclinades"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         29
       ],
@@ -970,16 +999,21 @@
       "titol": "Axonometria dimètrica DIN 5 d'un tronc de con horitzontal amb quadrants retallats",
       "tema": "axonometria",
       "temes_secundaris": [
-        "corbes"
+        "corbes",
+        "normalitzacio"
       ],
       "conceptes": [
         "axonometria dimètrica",
-        "tronc de con",
-        "circumferències en perspectiva",
+        "con",
+        "circumferència en axonometria",
         "contorn aparent",
-        "interpretació de vistes"
+        "interpretació de vistes",
+        "coeficients de reducció",
+        "el·lipse"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria: con o tronc de con amb el·lipses i contorns aparents (DT II).",
       "pagines": [
         31
       ],

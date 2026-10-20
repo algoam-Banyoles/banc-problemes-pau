@@ -20,30 +20,85 @@
       "punts": 2,
       "titol": "Gravetat, massa i velocitat d'escapament d'un planeta a partir d'una gràfica Ep-h",
       "tema": "gravitacio",
-      "temes_secundaris": ["mecanica"],
-      "conceptes": ["energia potencial gravitatòria", "acceleració de la gravetat", "massa d'un planeta", "velocitat d'escapament", "conservació de l'energia"],
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "energia potencial gravitatòria",
+        "intensitat del camp gravitatori",
+        "massa d'un astre",
+        "velocitat d'escapament",
+        "conservació de l'energia"
+      ],
       "dificultat": 2,
-      "pagines": [1],
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): energia potencial gravitatòria, acceleració de la gravetat",
+      "pagines": [
+        1
+      ],
       "enunciat": "La gràfica següent mostra la variació de l'energia potencial en funció de l'altura d'un cos de $2{,}00\\ \\text{kg}$ de massa a la superfície d'un planeta amb un radi de $5\\,000\\ \\text{km}$.\n\n**Dada:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$.",
-      "figures": [{"src": "img/fisica/2017-S/e1.png", "peu": "Energia potencial $E_p$ (J) del cos en funció de l'altura $h$ (m)"}],
+      "figures": [
+        {
+          "src": "img/fisica/2017-S/e1.png",
+          "peu": "Energia potencial $E_p$ (J) del cos en funció de l'altura $h$ (m)"
+        }
+      ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Calculeu l'acceleració de la gravetat a la superfície del planeta i la massa d'aquest.", "punts": 1},
-        {"id": "b", "enunciat": "Deduïu l'expressió de la velocitat d'escapament a partir del principi de conservació de l'energia i calculeu-la.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'acceleració de la gravetat a la superfície del planeta i la massa d'aquest.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Deduïu l'expressió de la velocitat d'escapament a partir del principi de conservació de l'energia i calculeu-la.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Massa del cos: $m = 2{,}00\\ \\text{kg}$\n- Radi del planeta: $R = 5\\,000\\ \\text{km} = 5{,}00 \\times 10^{6}\\ \\text{m}$\n- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$\n- Gràfica: $E_p$ creix linealment amb $h$ (passa per $(0, 0)$ i $(20\\ \\text{m}, 80\\ \\text{J})$)\n- Incògnites: $g_0$ i $M$ (a); $v_\\text{esc}$ (b)"},
-          {"apartat": "a", "titol": "Per què la gràfica és una recta", "cos": "Les altures de la gràfica (fins a 30 m) són minúscules comparades amb el radi del planeta ($h \\ll R$). En aquestes condicions la gravetat és pràcticament constant i, prenent $E_p = 0$ a la superfície (com mostra la gràfica), l'energia potencial és:\n\n$$E_p = m\\, g_0\\, h$$\n\nÉs a dir, una recta de pendent $m\\, g_0$."},
-          {"apartat": "a", "titol": "Pendent de la gràfica i acceleració de la gravetat", "cos": "Prenem dos punts de la recta, per exemple $(0, 0)$ i $(20\\ \\text{m}, 80\\ \\text{J})$:\n\n$$\\text{pendent} = \\frac{\\Delta E_p}{\\Delta h} = \\frac{80\\ \\text{J}}{20\\ \\text{m}} = 4{,}0\\ \\text{J/m}$$\n\nCom que el pendent és $m\\, g_0$:\n\n$$g_0 = \\frac{\\text{pendent}}{m} = \\frac{4{,}0\\ \\text{J/m}}{2{,}00\\ \\text{kg}} = 2{,}0\\ \\text{m/s}^2$$\n\nResultat: **$g_0 = 2{,}0\\ \\text{m/s}^2$**."},
-          {"apartat": "a", "titol": "Massa del planeta", "cos": "La gravetat a la superfície surt de la llei de gravitació universal (el pes és la força gravitatòria: $m g_0 = G M m / R^2$):\n\n$$g_0 = \\frac{G M}{R^2} \\quad\\Longrightarrow\\quad M = \\frac{g_0 R^2}{G}$$\n\n$$M = \\frac{2{,}0 \\cdot (5{,}00 \\times 10^{6})^2}{6{,}67 \\times 10^{-11}} = 7{,}50 \\times 10^{23}\\ \\text{kg}$$\n\nResultat: **$M = 7{,}50 \\times 10^{23}\\ \\text{kg}$** (unes 8 vegades menys que la Terra)."},
-          {"apartat": "b", "titol": "Deducció de la velocitat d'escapament", "cos": "La **velocitat d'escapament** és la velocitat mínima que cal donar a un cos a la superfície perquè s'allunyi indefinidament del planeta. Si només actua la gravetat, l'energia mecànica es conserva. En el cas mínim, el cos arriba a l'infinit ($r \\to \\infty$, $E_p = 0$) amb velocitat nul·la ($E_c = 0$): l'energia mecànica final és zero.\n\nAra cal fer servir l'expressió general de l'energia potencial, $E_p = -G M m / r$ (no $mgh$, perquè el cos s'allunya molt):\n\n$$E_{c,0} + E_{p,0} = E_{c,\\infty} + E_{p,\\infty}$$\n\n$$\\frac{1}{2} m v_\\text{esc}^2 - \\frac{G M m}{R} = 0 + 0 \\quad\\Longrightarrow\\quad v_\\text{esc} = \\sqrt{\\frac{2 G M}{R}}$$\n\nFixa't que la massa del cos $m$ s'anul·la: la velocitat d'escapament no depèn del cos que es llança."},
-          {"apartat": "b", "titol": "Càlcul numèric", "cos": "$$v_\\text{esc} = \\sqrt{\\frac{2 \\cdot 6{,}67 \\times 10^{-11} \\cdot 7{,}50 \\times 10^{23}}{5{,}00 \\times 10^{6}}} = 4{,}47 \\times 10^{3}\\ \\text{m/s}$$\n\nTambé es pot fer més ràpid amb $GM = g_0 R^2$: $v_\\text{esc} = \\sqrt{2 g_0 R} = \\sqrt{2 \\cdot 2{,}0 \\cdot 5{,}00 \\times 10^{6}} = 4{,}47 \\times 10^{3}\\ \\text{m/s}$.\n\nResultat: **$v_\\text{esc} = 4{,}47 \\times 10^{3}\\ \\text{m/s} \\approx 4{,}5\\ \\text{km/s}$**."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa del cos: $m = 2{,}00\\ \\text{kg}$\n- Radi del planeta: $R = 5\\,000\\ \\text{km} = 5{,}00 \\times 10^{6}\\ \\text{m}$\n- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$\n- Gràfica: $E_p$ creix linealment amb $h$ (passa per $(0, 0)$ i $(20\\ \\text{m}, 80\\ \\text{J})$)\n- Incògnites: $g_0$ i $M$ (a); $v_\\text{esc}$ (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Per què la gràfica és una recta",
+            "cos": "Les altures de la gràfica (fins a 30 m) són minúscules comparades amb el radi del planeta ($h \\ll R$). En aquestes condicions la gravetat és pràcticament constant i, prenent $E_p = 0$ a la superfície (com mostra la gràfica), l'energia potencial és:\n\n$$E_p = m\\, g_0\\, h$$\n\nÉs a dir, una recta de pendent $m\\, g_0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Pendent de la gràfica i acceleració de la gravetat",
+            "cos": "Prenem dos punts de la recta, per exemple $(0, 0)$ i $(20\\ \\text{m}, 80\\ \\text{J})$:\n\n$$\\text{pendent} = \\frac{\\Delta E_p}{\\Delta h} = \\frac{80\\ \\text{J}}{20\\ \\text{m}} = 4{,}0\\ \\text{J/m}$$\n\nCom que el pendent és $m\\, g_0$:\n\n$$g_0 = \\frac{\\text{pendent}}{m} = \\frac{4{,}0\\ \\text{J/m}}{2{,}00\\ \\text{kg}} = 2{,}0\\ \\text{m/s}^2$$\n\nResultat: **$g_0 = 2{,}0\\ \\text{m/s}^2$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Massa del planeta",
+            "cos": "La gravetat a la superfície surt de la llei de gravitació universal (el pes és la força gravitatòria: $m g_0 = G M m / R^2$):\n\n$$g_0 = \\frac{G M}{R^2} \\quad\\Longrightarrow\\quad M = \\frac{g_0 R^2}{G}$$\n\n$$M = \\frac{2{,}0 \\cdot (5{,}00 \\times 10^{6})^2}{6{,}67 \\times 10^{-11}} = 7{,}50 \\times 10^{23}\\ \\text{kg}$$\n\nResultat: **$M = 7{,}50 \\times 10^{23}\\ \\text{kg}$** (unes 8 vegades menys que la Terra)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Deducció de la velocitat d'escapament",
+            "cos": "La **velocitat d'escapament** és la velocitat mínima que cal donar a un cos a la superfície perquè s'allunyi indefinidament del planeta. Si només actua la gravetat, l'energia mecànica es conserva. En el cas mínim, el cos arriba a l'infinit ($r \\to \\infty$, $E_p = 0$) amb velocitat nul·la ($E_c = 0$): l'energia mecànica final és zero.\n\nAra cal fer servir l'expressió general de l'energia potencial, $E_p = -G M m / r$ (no $mgh$, perquè el cos s'allunya molt):\n\n$$E_{c,0} + E_{p,0} = E_{c,\\infty} + E_{p,\\infty}$$\n\n$$\\frac{1}{2} m v_\\text{esc}^2 - \\frac{G M m}{R} = 0 + 0 \\quad\\Longrightarrow\\quad v_\\text{esc} = \\sqrt{\\frac{2 G M}{R}}$$\n\nFixa't que la massa del cos $m$ s'anul·la: la velocitat d'escapament no depèn del cos que es llança."
+          },
+          {
+            "apartat": "b",
+            "titol": "Càlcul numèric",
+            "cos": "$$v_\\text{esc} = \\sqrt{\\frac{2 \\cdot 6{,}67 \\times 10^{-11} \\cdot 7{,}50 \\times 10^{23}}{5{,}00 \\times 10^{6}}} = 4{,}47 \\times 10^{3}\\ \\text{m/s}$$\n\nTambé es pot fer més ràpid amb $GM = g_0 R^2$: $v_\\text{esc} = \\sqrt{2 g_0 R} = \\sqrt{2 \\cdot 2{,}0 \\cdot 5{,}00 \\times 10^{6}} = 4{,}47 \\times 10^{3}\\ \\text{m/s}$.\n\nResultat: **$v_\\text{esc} = 4{,}47 \\times 10^{3}\\ \\text{m/s} \\approx 4{,}5\\ \\text{km/s}$**."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$g_0 = 2{,}0\\ \\text{m/s}^2$; $M = 7{,}50 \\times 10^{23}\\ \\text{kg}$"},
-          {"apartat": "b", "valor": "$v_\\text{esc} = \\sqrt{2GM/R} = 4{,}47 \\times 10^{3}\\ \\text{m/s}$"}
+          {
+            "apartat": "a",
+            "valor": "$g_0 = 2{,}0\\ \\text{m/s}^2$; $M = 7{,}50 \\times 10^{23}\\ \\text{kg}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_\\text{esc} = \\sqrt{2GM/R} = 4{,}47 \\times 10^{3}\\ \\text{m/s}$"
+          }
         ],
         "nota": "Error típic: a l'apartat b, usar $E_p = mgh$, que només val a prop de la superfície. Per escapar del planeta cal l'expressió general $E_p = -GMm/r$, amb l'origen d'energia potencial a l'infinit."
       }
@@ -57,31 +112,85 @@
       "punts": 2,
       "titol": "L'onada en un estadi: tipus d'ona, longitud d'ona, pulsació i equació del MHS d'un espectador",
       "tema": "ones",
-      "temes_secundaris": ["oscillacions"],
-      "conceptes": ["ona transversal", "ona mecànica", "longitud d'ona", "freqüència angular", "moviment harmònic simple", "fase inicial"],
+      "temes_secundaris": [
+        "oscillacions"
+      ],
+      "conceptes": [
+        "ona transversal",
+        "longitud d'ona",
+        "freqüència angular",
+        "moviment harmònic simple",
+        "equació del MHS"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ona transversal, ona mecànica",
+      "pagines": [
+        2
+      ],
       "enunciat": "En un estadi el públic fa l'onada per celebrar la bona actuació de l'equip local. L'onada és tan gran que dos espectadors de la mateixa fila separats com a mínim per $50\\ \\text{m}$ es mouen igual i ho fan cada $10\\ \\text{s}$.",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Si modelitzéssim aquesta onada a l'estadi com una ona, de quin tipus d'ona estaríem parlant? Calculeu-ne la longitud d'ona i la pulsació (freqüència angular).", "punts": 1},
-        {"id": "b", "enunciat": "Un espectador es mou $1{,}0\\ \\text{m}$ verticalment quan s'aixeca i s'asseu per fer passar l'onada. Escriviu l'equació del moviment d'aquest espectador considerant que descriu un moviment harmònic simple i que en l'instant inicial es troba assegut, és a dir, en la seva posició mínima.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Si modelitzéssim aquesta onada a l'estadi com una ona, de quin tipus d'ona estaríem parlant? Calculeu-ne la longitud d'ona i la pulsació (freqüència angular).",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Un espectador es mou $1{,}0\\ \\text{m}$ verticalment quan s'aixeca i s'asseu per fer passar l'onada. Escriviu l'equació del moviment d'aquest espectador considerant que descriu un moviment harmònic simple i que en l'instant inicial es troba assegut, és a dir, en la seva posició mínima.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Distància mínima entre dos espectadors que es mouen igual: $50\\ \\text{m}$\n- Cada espectador repeteix el moviment cada $10\\ \\text{s}$ → període $T = 10\\ \\text{s}$\n- Desplaçament vertical total (de assegut a dret): $1{,}0\\ \\text{m}$\n- Incògnites: tipus d'ona, $\\lambda$, $\\omega$ (a); $y(t)$ (b)"},
-          {"apartat": "a", "titol": "Tipus d'ona", "cos": "- És una ona **mecànica**: necessita un medi material (el públic) per propagar-se; el que es propaga és una pertorbació, no les persones, que es queden al seu lloc.\n- És **transversal**: cada espectador es mou en vertical, mentre que l'onada avança horitzontalment al llarg de la grada (direcció d'oscil·lació perpendicular a la de propagació).\n- Si considerem la grada com un pla, és una ona bidimensional."},
-          {"apartat": "a", "titol": "Longitud d'ona", "cos": "La **longitud d'ona** és la distància mínima entre dos punts que oscil·len en fase (que «es mouen igual»):\n\n$$\\lambda = 50\\ \\text{m}$$\n\nResultat: **$\\lambda = 50\\ \\text{m}$**."},
-          {"apartat": "a", "titol": "Pulsació (freqüència angular)", "cos": "Cada espectador repeteix el moviment cada 10 s, així que el període és $T = 10\\ \\text{s}$:\n\n$$\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{10\\ \\text{s}} = 0{,}2\\pi\\ \\text{rad/s} = 0{,}63\\ \\text{rad/s}$$\n\nResultat: **$\\omega = 0{,}2\\pi \\approx 0{,}63\\ \\text{rad/s}$**."},
-          {"apartat": "b", "titol": "Amplitud del MHS", "cos": "En un MHS el cos oscil·la entre $-A$ i $+A$ al voltant de la posició d'equilibri. La distància entre la posició mínima (assegut) i la màxima (dret) és $2A$:\n\n$$2A = 1{,}0\\ \\text{m} \\quad\\Longrightarrow\\quad A = 0{,}50\\ \\text{m}$$\n\nMesurem $y$ des del punt mig del recorregut (posició d'equilibri)."},
-          {"apartat": "b", "titol": "Fase inicial", "cos": "Escrivim l'equació general del MHS:\n\n$$y(t) = A \\sin(\\omega t + \\varphi_0)$$\n\nA $t = 0$ l'espectador és a la posició mínima, $y(0) = -A$:\n\n$$A \\sin\\varphi_0 = -A \\quad\\Longrightarrow\\quad \\sin\\varphi_0 = -1 \\quad\\Longrightarrow\\quad \\varphi_0 = -\\frac{\\pi}{2}\\ \\text{rad}$$"},
-          {"apartat": "b", "titol": "Equació del moviment", "cos": "Substituint $A$, $\\omega$ i $\\varphi_0$:\n\n$$y(t) = 0{,}50 \\sin\\left(0{,}2\\pi\\, t - \\frac{\\pi}{2}\\right)\\quad (y \\text{ en m},\\ t \\text{ en s})$$\n\nResultat: **$y(t) = 0{,}50\\ \\text{m} \\cdot \\sin\\left(0{,}2\\pi\\ \\text{rad/s} \\cdot t - \\dfrac{\\pi}{2}\\ \\text{rad}\\right)$**.\n\nEquivalentment, amb cosinus: $y(t) = 0{,}50 \\cos(0{,}2\\pi\\, t \\pm \\pi) = -0{,}50 \\cos(0{,}2\\pi\\, t)$. Comprovació: a $t = 0$, $y = -0{,}50\\ \\text{m}$ (assegut)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Distància mínima entre dos espectadors que es mouen igual: $50\\ \\text{m}$\n- Cada espectador repeteix el moviment cada $10\\ \\text{s}$ → període $T = 10\\ \\text{s}$\n- Desplaçament vertical total (de assegut a dret): $1{,}0\\ \\text{m}$\n- Incògnites: tipus d'ona, $\\lambda$, $\\omega$ (a); $y(t)$ (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Tipus d'ona",
+            "cos": "- És una ona **mecànica**: necessita un medi material (el públic) per propagar-se; el que es propaga és una pertorbació, no les persones, que es queden al seu lloc.\n- És **transversal**: cada espectador es mou en vertical, mentre que l'onada avança horitzontalment al llarg de la grada (direcció d'oscil·lació perpendicular a la de propagació).\n- Si considerem la grada com un pla, és una ona bidimensional."
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud d'ona",
+            "cos": "La **longitud d'ona** és la distància mínima entre dos punts que oscil·len en fase (que «es mouen igual»):\n\n$$\\lambda = 50\\ \\text{m}$$\n\nResultat: **$\\lambda = 50\\ \\text{m}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Pulsació (freqüència angular)",
+            "cos": "Cada espectador repeteix el moviment cada 10 s, així que el període és $T = 10\\ \\text{s}$:\n\n$$\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{10\\ \\text{s}} = 0{,}2\\pi\\ \\text{rad/s} = 0{,}63\\ \\text{rad/s}$$\n\nResultat: **$\\omega = 0{,}2\\pi \\approx 0{,}63\\ \\text{rad/s}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Amplitud del MHS",
+            "cos": "En un MHS el cos oscil·la entre $-A$ i $+A$ al voltant de la posició d'equilibri. La distància entre la posició mínima (assegut) i la màxima (dret) és $2A$:\n\n$$2A = 1{,}0\\ \\text{m} \\quad\\Longrightarrow\\quad A = 0{,}50\\ \\text{m}$$\n\nMesurem $y$ des del punt mig del recorregut (posició d'equilibri)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Fase inicial",
+            "cos": "Escrivim l'equació general del MHS:\n\n$$y(t) = A \\sin(\\omega t + \\varphi_0)$$\n\nA $t = 0$ l'espectador és a la posició mínima, $y(0) = -A$:\n\n$$A \\sin\\varphi_0 = -A \\quad\\Longrightarrow\\quad \\sin\\varphi_0 = -1 \\quad\\Longrightarrow\\quad \\varphi_0 = -\\frac{\\pi}{2}\\ \\text{rad}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació del moviment",
+            "cos": "Substituint $A$, $\\omega$ i $\\varphi_0$:\n\n$$y(t) = 0{,}50 \\sin\\left(0{,}2\\pi\\, t - \\frac{\\pi}{2}\\right)\\quad (y \\text{ en m},\\ t \\text{ en s})$$\n\nResultat: **$y(t) = 0{,}50\\ \\text{m} \\cdot \\sin\\left(0{,}2\\pi\\ \\text{rad/s} \\cdot t - \\dfrac{\\pi}{2}\\ \\text{rad}\\right)$**.\n\nEquivalentment, amb cosinus: $y(t) = 0{,}50 \\cos(0{,}2\\pi\\, t \\pm \\pi) = -0{,}50 \\cos(0{,}2\\pi\\, t)$. Comprovació: a $t = 0$, $y = -0{,}50\\ \\text{m}$ (assegut)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Ona mecànica i transversal; $\\lambda = 50\\ \\text{m}$; $\\omega = 0{,}2\\pi \\approx 0{,}63\\ \\text{rad/s}$"},
-          {"apartat": "b", "valor": "$y(t) = 0{,}50 \\sin(0{,}2\\pi\\, t - \\pi/2)\\ \\text{m}$"}
+          {
+            "apartat": "a",
+            "valor": "Ona mecànica i transversal; $\\lambda = 50\\ \\text{m}$; $\\omega = 0{,}2\\pi \\approx 0{,}63\\ \\text{rad/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$y(t) = 0{,}50 \\sin(0{,}2\\pi\\, t - \\pi/2)\\ \\text{m}$"
+          }
         ],
         "nota": "Error típic: prendre l'amplitud igual a 1,0 m. El metre és el recorregut total de dalt a baix, que és el doble de l'amplitud. La solució oficial accepta també la forma amb cosinus (amb fase inicial $\\pm\\pi$)."
       }
@@ -95,29 +204,79 @@
       "punts": 2,
       "titol": "Partícula alfa que s'acosta a un nucli d'urani: camp elèctric i energia cinètica mínima",
       "tema": "camp-electric",
-      "temes_secundaris": ["nuclear"],
-      "conceptes": ["llei de coulomb", "camp elèctric", "energia potencial elèctrica", "conservació de l'energia", "partícula alfa"],
+      "temes_secundaris": [
+        "nuclear"
+      ],
+      "conceptes": [
+        "llei de Coulomb",
+        "camp elèctric",
+        "energia potencial elèctrica",
+        "conservació de l'energia"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, camp elèctric",
+      "pagines": [
+        2
+      ],
       "enunciat": "Una partícula $\\alpha$ ($^{4}_{2}\\text{He}$) es dirigeix directament cap al nucli d'un àtom d'urani ($^{238}_{92}\\text{U}$). El radi del nucli d'urani és, aproximadament, de $0{,}008\\ \\text{pm}$ (picòmetres).\n\n**Dades:** $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$; càrrega elemental $= 1{,}60 \\times 10^{-19}\\ \\text{C}$; nombre atòmic de l'urani $= 92$.",
-      "figures": [{"src": "img/fisica/2017-S/e3-a.png", "peu": "Punt A a 0,008 nm i punt B a la superfície del nucli d'urani (R = 0,008 pm)"}],
+      "figures": [
+        {
+          "src": "img/fisica/2017-S/e3-a.png",
+          "peu": "Punt A a 0,008 nm i punt B a la superfície del nucli d'urani (R = 0,008 pm)"
+        }
+      ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Compareu quantitativament els valors del mòdul de la intensitat del camp elèctric degut al nucli d'urani en dos punts, A i B, situats a $0{,}008\\ \\text{nm}$ i $0{,}008\\ \\text{pm}$, respectivament, del centre d'aquest nucli.", "punts": 1},
-        {"id": "b", "enunciat": "Quanta energia cinètica ha de tenir, com a mínim, la partícula $\\alpha$ quan passa pel punt A per a arribar fins al punt B? (Ignoreu la influència que els electrons pròxims puguin tenir.)", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Compareu quantitativament els valors del mòdul de la intensitat del camp elèctric degut al nucli d'urani en dos punts, A i B, situats a $0{,}008\\ \\text{nm}$ i $0{,}008\\ \\text{pm}$, respectivament, del centre d'aquest nucli.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Quanta energia cinètica ha de tenir, com a mínim, la partícula $\\alpha$ quan passa pel punt A per a arribar fins al punt B? (Ignoreu la influència que els electrons pròxims puguin tenir.)",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Càrrega del nucli d'urani: $q_\\text{U} = 92\\, e = 92 \\cdot 1{,}60 \\times 10^{-19} = 1{,}472 \\times 10^{-17}\\ \\text{C}$\n- Càrrega de la partícula $\\alpha$ (2 protons): $q_\\alpha = 2\\, e = 3{,}20 \\times 10^{-19}\\ \\text{C}$\n- $r_A = 0{,}008\\ \\text{nm} = 8 \\times 10^{-12}\\ \\text{m}$\n- $r_B = 0{,}008\\ \\text{pm} = 8 \\times 10^{-15}\\ \\text{m}$\n- $k = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$\n- Incògnites: $E_B/E_A$ (a); $E_{c,A}$ mínima (b)"},
-          {"apartat": "a", "titol": "Camp elèctric d'una càrrega puntual", "cos": "Fora del nucli (i a la seva superfície), el nucli es comporta com una càrrega puntual situada al centre. El mòdul del camp que crea és:\n\n$$E = k\\, \\frac{q_\\text{U}}{r^2}$$\n\nEl camp disminueix amb el quadrat de la distància."},
-          {"apartat": "a", "titol": "Quocient entre els camps a B i a A", "cos": "Fent el quocient, $k$ i $q_\\text{U}$ s'anul·len:\n\n$$\\frac{E_B}{E_A} = \\frac{k\\, q_\\text{U}/r_B^2}{k\\, q_\\text{U}/r_A^2} = \\left(\\frac{r_A}{r_B}\\right)^2 = \\left(\\frac{8 \\times 10^{-12}}{8 \\times 10^{-15}}\\right)^2 = (10^{3})^2 = 10^{6}$$\n\nResultat: **el camp a B és $10^{6}$ vegades (un milió de vegades) més intens que a A**. B és 1000 vegades més a prop i el camp va com $1/r^2$.\n\n(Si es vol, els valors són $E_A = 2{,}07 \\times 10^{12}\\ \\text{N/C}$ i $E_B = 2{,}07 \\times 10^{18}\\ \\text{N/C}$.)"},
-          {"apartat": "b", "titol": "Conservació de l'energia", "cos": "La partícula $\\alpha$ i el nucli són positius, per tant es repel·leixen: a mesura que la partícula s'acosta, perd energia cinètica i guanya energia potencial elèctrica. Com que la força elèctrica és conservativa, l'energia mecànica es conserva:\n\n$$E_{c,A} + E_{p,A} = E_{c,B} + E_{p,B}$$\n\nL'energia cinètica **mínima** és la que fa que la partícula arribi a B just amb velocitat zero ($E_{c,B} = 0$):\n\n$$E_{c,A} = E_{p,B} - E_{p,A}$$"},
-          {"apartat": "b", "titol": "Energia cinètica mínima a A", "cos": "L'energia potencial elèctrica entre dues càrregues puntuals és $E_p = k\\, q_\\alpha q_\\text{U}/r$:\n\n$$E_{c,A} = k\\, q_\\alpha q_\\text{U} \\left(\\frac{1}{r_B} - \\frac{1}{r_A}\\right)$$\n\n$$E_{c,A} = 8{,}99 \\times 10^{9} \\cdot 3{,}20 \\times 10^{-19} \\cdot 1{,}472 \\times 10^{-17} \\left(\\frac{1}{8 \\times 10^{-15}} - \\frac{1}{8 \\times 10^{-12}}\\right) = 5{,}29 \\times 10^{-12}\\ \\text{J}$$\n\nResultat: **$E_{c,A} \\geq 5{,}29 \\times 10^{-12}\\ \\text{J}$** (uns 33 MeV).\n\nFixa't que $E_{p,A}$ és 1000 vegades més petita que $E_{p,B}$, així que es podria negligir (dona pràcticament el mateix resultat), però cal justificar-ho."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Càrrega del nucli d'urani: $q_\\text{U} = 92\\, e = 92 \\cdot 1{,}60 \\times 10^{-19} = 1{,}472 \\times 10^{-17}\\ \\text{C}$\n- Càrrega de la partícula $\\alpha$ (2 protons): $q_\\alpha = 2\\, e = 3{,}20 \\times 10^{-19}\\ \\text{C}$\n- $r_A = 0{,}008\\ \\text{nm} = 8 \\times 10^{-12}\\ \\text{m}$\n- $r_B = 0{,}008\\ \\text{pm} = 8 \\times 10^{-15}\\ \\text{m}$\n- $k = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$\n- Incògnites: $E_B/E_A$ (a); $E_{c,A}$ mínima (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp elèctric d'una càrrega puntual",
+            "cos": "Fora del nucli (i a la seva superfície), el nucli es comporta com una càrrega puntual situada al centre. El mòdul del camp que crea és:\n\n$$E = k\\, \\frac{q_\\text{U}}{r^2}$$\n\nEl camp disminueix amb el quadrat de la distància."
+          },
+          {
+            "apartat": "a",
+            "titol": "Quocient entre els camps a B i a A",
+            "cos": "Fent el quocient, $k$ i $q_\\text{U}$ s'anul·len:\n\n$$\\frac{E_B}{E_A} = \\frac{k\\, q_\\text{U}/r_B^2}{k\\, q_\\text{U}/r_A^2} = \\left(\\frac{r_A}{r_B}\\right)^2 = \\left(\\frac{8 \\times 10^{-12}}{8 \\times 10^{-15}}\\right)^2 = (10^{3})^2 = 10^{6}$$\n\nResultat: **el camp a B és $10^{6}$ vegades (un milió de vegades) més intens que a A**. B és 1000 vegades més a prop i el camp va com $1/r^2$.\n\n(Si es vol, els valors són $E_A = 2{,}07 \\times 10^{12}\\ \\text{N/C}$ i $E_B = 2{,}07 \\times 10^{18}\\ \\text{N/C}$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Conservació de l'energia",
+            "cos": "La partícula $\\alpha$ i el nucli són positius, per tant es repel·leixen: a mesura que la partícula s'acosta, perd energia cinètica i guanya energia potencial elèctrica. Com que la força elèctrica és conservativa, l'energia mecànica es conserva:\n\n$$E_{c,A} + E_{p,A} = E_{c,B} + E_{p,B}$$\n\nL'energia cinètica **mínima** és la que fa que la partícula arribi a B just amb velocitat zero ($E_{c,B} = 0$):\n\n$$E_{c,A} = E_{p,B} - E_{p,A}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica mínima a A",
+            "cos": "L'energia potencial elèctrica entre dues càrregues puntuals és $E_p = k\\, q_\\alpha q_\\text{U}/r$:\n\n$$E_{c,A} = k\\, q_\\alpha q_\\text{U} \\left(\\frac{1}{r_B} - \\frac{1}{r_A}\\right)$$\n\n$$E_{c,A} = 8{,}99 \\times 10^{9} \\cdot 3{,}20 \\times 10^{-19} \\cdot 1{,}472 \\times 10^{-17} \\left(\\frac{1}{8 \\times 10^{-15}} - \\frac{1}{8 \\times 10^{-12}}\\right) = 5{,}29 \\times 10^{-12}\\ \\text{J}$$\n\nResultat: **$E_{c,A} \\geq 5{,}29 \\times 10^{-12}\\ \\text{J}$** (uns 33 MeV).\n\nFixa't que $E_{p,A}$ és 1000 vegades més petita que $E_{p,B}$, així que es podria negligir (dona pràcticament el mateix resultat), però cal justificar-ho."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$E_B/E_A = (r_A/r_B)^2 = 10^{6}$"},
-          {"apartat": "b", "valor": "$E_{c,A} \\geq 5{,}29 \\times 10^{-12}\\ \\text{J}$"}
+          {
+            "apartat": "a",
+            "valor": "$E_B/E_A = (r_A/r_B)^2 = 10^{6}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_{c,A} \\geq 5{,}29 \\times 10^{-12}\\ \\text{J}$"
+          }
         ],
         "nota": "Compte amb les unitats: $1\\ \\text{nm} = 10^{-9}\\ \\text{m}$ i $1\\ \\text{pm} = 10^{-12}\\ \\text{m}$. Error típic: oblidar que la partícula $\\alpha$ té càrrega $2e$ (no $e$)."
       }
@@ -132,30 +291,85 @@
       "titol": "Desintegració del radó 222 (alfa) i del radó 224 (beta): àtoms restants i defecte de massa",
       "tema": "nuclear",
       "temes_secundaris": [],
-      "conceptes": ["desintegració alfa", "desintegració beta", "període de semidesintegració", "constant de desintegració", "defecte de massa", "equivalència massa-energia"],
+      "conceptes": [
+        "desintegració alfa",
+        "desintegració beta",
+        "període de semidesintegració",
+        "constant de desintegració",
+        "defecte de massa",
+        "equivalència massa-energia",
+        "equació nuclear",
+        "llei de desintegració radioactiva"
+      ],
       "dificultat": 3,
-      "pagines": [3],
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, desintegració beta",
+      "pagines": [
+        3
+      ],
       "enunciat": "Dues mostres radioactives tenen, en un moment donat, $1{,}00 \\times 10^{-1}\\ \\text{mol}$ cadascuna. Les mostres són de dos isòtops diferents de l'element radó (Rn): en concret, de radó 222 ($^{222}\\text{Rn}$) i de radó 224 ($^{224}\\text{Rn}$). Els dos isòtops són radioactius i tenen, respectivament, períodes de semidesintegració de $3{,}82$ dies i $1{,}80$ hores. El primer presenta una desintegració de tipus $\\alpha$ i el nucli fill és un isòtop del poloni (Po), mentre que el segon presenta una desintegració de tipus $\\beta^-$ i el nucli fill és un isòtop del franci (Fr).\n\n**Dades:** nombre d'Avogadro, $N_A = 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$; velocitat de la llum, $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$; nombre atòmic del radó $= 86$.",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Escriviu les equacions nuclears de les dues desintegracions radioactives amb totes les partícules que hi intervenen i els seus nombres atòmics i màssics. Calculeu quants àtoms de $^{224}\\text{Rn}$ no s'hauran desintegrat encara quan restin $9{,}00 \\times 10^{-2}\\ \\text{mol}$ de la mostra del $^{222}\\text{Rn}$ per desintegrar-se.", "punts": 1},
-        {"id": "b", "enunciat": "L'energia que es desprèn per cada desintegració d'un nucli de $^{222}\\text{Rn}$ és de $5{,}590\\ \\text{MeV}$. Calculeu el defecte de massa d'aquesta reacció nuclear.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Escriviu les equacions nuclears de les dues desintegracions radioactives amb totes les partícules que hi intervenen i els seus nombres atòmics i màssics. Calculeu quants àtoms de $^{224}\\text{Rn}$ no s'hauran desintegrat encara quan restin $9{,}00 \\times 10^{-2}\\ \\text{mol}$ de la mostra del $^{222}\\text{Rn}$ per desintegrar-se.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "L'energia que es desprèn per cada desintegració d'un nucli de $^{222}\\text{Rn}$ és de $5{,}590\\ \\text{MeV}$. Calculeu el defecte de massa d'aquesta reacció nuclear.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Quantitat inicial de cada mostra: $n_0 = 1{,}00 \\times 10^{-1}\\ \\text{mol}$\n- $^{222}\\text{Rn}$: $T_{1/2} = 3{,}82\\ \\text{dies} = 3{,}82 \\cdot 24 = 91{,}68\\ \\text{h}$, desintegració $\\alpha$\n- $^{224}\\text{Rn}$: $T_{1/2} = 1{,}80\\ \\text{h}$, desintegració $\\beta^-$\n- $Z(\\text{Rn}) = 86$\n- Energia per desintegració del $^{222}\\text{Rn}$: $E = 5{,}590\\ \\text{MeV}$\n- Incògnites: equacions nuclears i àtoms de $^{224}\\text{Rn}$ restants (a); defecte de massa $\\Delta m$ (b)"},
-          {"apartat": "a", "titol": "Equacions nuclears", "cos": "En tota reacció nuclear es conserven el nombre màssic $A$ (a dalt) i el nombre atòmic $Z$ (a baix).\n\n- **Desintegració $\\alpha$**: el nucli emet un nucli d'heli $^{4}_{2}\\alpha$; $A$ baixa 4 i $Z$ baixa 2:\n\n$$^{222}_{86}\\text{Rn} \\longrightarrow\\ ^{218}_{84}\\text{Po} + {}^{4}_{2}\\alpha$$\n\n- **Desintegració $\\beta^-$**: un neutró es transforma en un protó, emetent un electró i un antineutrí electrònic; $A$ no canvia i $Z$ puja 1:\n\n$$^{224}_{86}\\text{Rn} \\longrightarrow\\ ^{224}_{87}\\text{Fr} + {}^{\\ 0}_{-1}\\beta^- + {}^{0}_{0}\\bar{\\nu}_e$$"},
-          {"apartat": "a", "titol": "Constants de desintegració", "cos": "La llei de desintegració és $N(t) = N_0\\, e^{-\\lambda t}$, amb $\\lambda = \\ln 2 / T_{1/2}$. Treballem tot en hores:\n\n$$\\lambda_{222} = \\frac{\\ln 2}{3{,}82 \\cdot 24\\ \\text{h}} = 7{,}56 \\times 10^{-3}\\ \\text{h}^{-1}$$\n\n$$\\lambda_{224} = \\frac{\\ln 2}{1{,}80\\ \\text{h}} = 3{,}85 \\times 10^{-1}\\ \\text{h}^{-1}$$"},
-          {"apartat": "a", "titol": "Temps fins que queden 9,00·10⁻² mol de radó 222", "cos": "«Restin per desintegrar-se» vol dir que encara hi ha $9{,}00 \\times 10^{-2}\\ \\text{mol}$ de $^{222}\\text{Rn}$ sense desintegrar. Com que la quantitat de matèria és proporcional al nombre de nuclis:\n\n$$9{,}00 \\times 10^{-2} = 1{,}00 \\times 10^{-1}\\, e^{-7{,}56 \\times 10^{-3}\\, t} \\quad\\Longrightarrow\\quad t = \\frac{-\\ln(0{,}900)}{7{,}56 \\times 10^{-3}\\ \\text{h}^{-1}} = 13{,}9\\ \\text{h}$$"},
-          {"apartat": "a", "titol": "Radó 224 que queda en aquest instant", "cos": "Les dues mostres comencen alhora amb la mateixa quantitat. En aquest mateix temps, el $^{224}\\text{Rn}$ (molt més ràpid) s'ha desintegrat gairebé tot:\n\n$$n_{224} = 1{,}00 \\times 10^{-1}\\, e^{-3{,}85 \\times 10^{-1} \\cdot 13{,}9} = 4{,}67 \\times 10^{-4}\\ \\text{mol}$$\n\nPassem a nombre d'àtoms amb el nombre d'Avogadro:\n\n$$N_{224} = 4{,}67 \\times 10^{-4}\\ \\text{mol} \\cdot 6{,}022 \\times 10^{23}\\ \\text{àtoms/mol} = 2{,}81 \\times 10^{20}\\ \\text{àtoms}$$\n\nResultat: **$N_{224} \\approx 2{,}81 \\times 10^{20}$ àtoms de $^{224}\\text{Rn}$ sense desintegrar**."},
-          {"apartat": "b", "titol": "Energia alliberada en joules", "cos": "$1\\ \\text{MeV} = 10^{6}\\ \\text{eV} = 1{,}60 \\times 10^{-13}\\ \\text{J}$:\n\n$$E = 5{,}590\\ \\text{MeV} \\cdot 1{,}60 \\times 10^{-13}\\ \\text{J/MeV} = 8{,}944 \\times 10^{-13}\\ \\text{J}$$"},
-          {"apartat": "b", "titol": "Defecte de massa (equivalència massa-energia)", "cos": "L'energia alliberada en una reacció nuclear prové de la massa que «desapareix»: la massa dels productes és més petita que la del nucli inicial. Segons l'equació d'Einstein $E = \\Delta m\\, c^2$:\n\n$$\\Delta m = \\frac{E}{c^2} = \\frac{8{,}944 \\times 10^{-13}}{(3{,}00 \\times 10^{8})^2} = 9{,}94 \\times 10^{-30}\\ \\text{kg}$$\n\nResultat: **$\\Delta m \\approx 9{,}94 \\times 10^{-30}\\ \\text{kg}$** (unes 11 masses d'electró)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Quantitat inicial de cada mostra: $n_0 = 1{,}00 \\times 10^{-1}\\ \\text{mol}$\n- $^{222}\\text{Rn}$: $T_{1/2} = 3{,}82\\ \\text{dies} = 3{,}82 \\cdot 24 = 91{,}68\\ \\text{h}$, desintegració $\\alpha$\n- $^{224}\\text{Rn}$: $T_{1/2} = 1{,}80\\ \\text{h}$, desintegració $\\beta^-$\n- $Z(\\text{Rn}) = 86$\n- Energia per desintegració del $^{222}\\text{Rn}$: $E = 5{,}590\\ \\text{MeV}$\n- Incògnites: equacions nuclears i àtoms de $^{224}\\text{Rn}$ restants (a); defecte de massa $\\Delta m$ (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equacions nuclears",
+            "cos": "En tota reacció nuclear es conserven el nombre màssic $A$ (a dalt) i el nombre atòmic $Z$ (a baix).\n\n- **Desintegració $\\alpha$**: el nucli emet un nucli d'heli $^{4}_{2}\\alpha$; $A$ baixa 4 i $Z$ baixa 2:\n\n$$^{222}_{86}\\text{Rn} \\longrightarrow\\ ^{218}_{84}\\text{Po} + {}^{4}_{2}\\alpha$$\n\n- **Desintegració $\\beta^-$**: un neutró es transforma en un protó, emetent un electró i un antineutrí electrònic; $A$ no canvia i $Z$ puja 1:\n\n$$^{224}_{86}\\text{Rn} \\longrightarrow\\ ^{224}_{87}\\text{Fr} + {}^{\\ 0}_{-1}\\beta^- + {}^{0}_{0}\\bar{\\nu}_e$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Constants de desintegració",
+            "cos": "La llei de desintegració és $N(t) = N_0\\, e^{-\\lambda t}$, amb $\\lambda = \\ln 2 / T_{1/2}$. Treballem tot en hores:\n\n$$\\lambda_{222} = \\frac{\\ln 2}{3{,}82 \\cdot 24\\ \\text{h}} = 7{,}56 \\times 10^{-3}\\ \\text{h}^{-1}$$\n\n$$\\lambda_{224} = \\frac{\\ln 2}{1{,}80\\ \\text{h}} = 3{,}85 \\times 10^{-1}\\ \\text{h}^{-1}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Temps fins que queden 9,00·10⁻² mol de radó 222",
+            "cos": "«Restin per desintegrar-se» vol dir que encara hi ha $9{,}00 \\times 10^{-2}\\ \\text{mol}$ de $^{222}\\text{Rn}$ sense desintegrar. Com que la quantitat de matèria és proporcional al nombre de nuclis:\n\n$$9{,}00 \\times 10^{-2} = 1{,}00 \\times 10^{-1}\\, e^{-7{,}56 \\times 10^{-3}\\, t} \\quad\\Longrightarrow\\quad t = \\frac{-\\ln(0{,}900)}{7{,}56 \\times 10^{-3}\\ \\text{h}^{-1}} = 13{,}9\\ \\text{h}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Radó 224 que queda en aquest instant",
+            "cos": "Les dues mostres comencen alhora amb la mateixa quantitat. En aquest mateix temps, el $^{224}\\text{Rn}$ (molt més ràpid) s'ha desintegrat gairebé tot:\n\n$$n_{224} = 1{,}00 \\times 10^{-1}\\, e^{-3{,}85 \\times 10^{-1} \\cdot 13{,}9} = 4{,}67 \\times 10^{-4}\\ \\text{mol}$$\n\nPassem a nombre d'àtoms amb el nombre d'Avogadro:\n\n$$N_{224} = 4{,}67 \\times 10^{-4}\\ \\text{mol} \\cdot 6{,}022 \\times 10^{23}\\ \\text{àtoms/mol} = 2{,}81 \\times 10^{20}\\ \\text{àtoms}$$\n\nResultat: **$N_{224} \\approx 2{,}81 \\times 10^{20}$ àtoms de $^{224}\\text{Rn}$ sense desintegrar**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia alliberada en joules",
+            "cos": "$1\\ \\text{MeV} = 10^{6}\\ \\text{eV} = 1{,}60 \\times 10^{-13}\\ \\text{J}$:\n\n$$E = 5{,}590\\ \\text{MeV} \\cdot 1{,}60 \\times 10^{-13}\\ \\text{J/MeV} = 8{,}944 \\times 10^{-13}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Defecte de massa (equivalència massa-energia)",
+            "cos": "L'energia alliberada en una reacció nuclear prové de la massa que «desapareix»: la massa dels productes és més petita que la del nucli inicial. Segons l'equació d'Einstein $E = \\Delta m\\, c^2$:\n\n$$\\Delta m = \\frac{E}{c^2} = \\frac{8{,}944 \\times 10^{-13}}{(3{,}00 \\times 10^{8})^2} = 9{,}94 \\times 10^{-30}\\ \\text{kg}$$\n\nResultat: **$\\Delta m \\approx 9{,}94 \\times 10^{-30}\\ \\text{kg}$** (unes 11 masses d'electró)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$^{222}_{86}\\text{Rn} \\to\\ ^{218}_{84}\\text{Po} + {}^{4}_{2}\\alpha$; $^{224}_{86}\\text{Rn} \\to\\ ^{224}_{87}\\text{Fr} + {}^{\\ 0}_{-1}\\beta^- + \\bar{\\nu}_e$; $t = 13{,}9\\ \\text{h}$; $N_{224} \\approx 2{,}81 \\times 10^{20}$ àtoms"},
-          {"apartat": "b", "valor": "$E = 8{,}94 \\times 10^{-13}\\ \\text{J}$; $\\Delta m \\approx 9{,}94 \\times 10^{-30}\\ \\text{kg}$"}
+          {
+            "apartat": "a",
+            "valor": "$^{222}_{86}\\text{Rn} \\to\\ ^{218}_{84}\\text{Po} + {}^{4}_{2}\\alpha$; $^{224}_{86}\\text{Rn} \\to\\ ^{224}_{87}\\text{Fr} + {}^{\\ 0}_{-1}\\beta^- + \\bar{\\nu}_e$; $t = 13{,}9\\ \\text{h}$; $N_{224} \\approx 2{,}81 \\times 10^{20}$ àtoms"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E = 8{,}94 \\times 10^{-13}\\ \\text{J}$; $\\Delta m \\approx 9{,}94 \\times 10^{-30}\\ \\text{kg}$"
+          }
         ],
         "nota": "La solució oficial dona $\\Delta m = 9{,}93 \\times 10^{-30}\\ \\text{kg}$; amb $E = 8{,}944 \\times 10^{-13}\\ \\text{J}$ el quocient és $9{,}94 \\times 10^{-30}\\ \\text{kg}$ (diferència d'arrodoniment). A l'oficial les constants de desintegració apareixen etiquetades «Ra» per error (és el radó, Rn). Error típic: barrejar dies i hores en calcular $\\lambda$; cal posar els dos períodes en les mateixes unitats que el temps."
       }
@@ -170,28 +384,70 @@
       "titol": "Força electromotriu induïda en una bobina rectangular que gira en un camp magnètic",
       "tema": "induccio",
       "temes_secundaris": [],
-      "conceptes": ["llei de faraday", "flux magnètic", "alternador", "força electromotriu", "corrent induït"],
+      "conceptes": [
+        "llei de Faraday",
+        "flux magnètic",
+        "alternador"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): llei de faraday, flux magnètic",
+      "pagines": [
+        3
+      ],
       "enunciat": "Una bobina rectangular de $2{,}0\\ \\text{cm} \\times 1{,}5\\ \\text{cm}$ té 300 espires i gira en una regió de l'espai on hi ha un camp magnètic uniforme de $0{,}4\\ \\text{T}$.",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Escriviu l'equació de la força electromotriu induïda en funció del temps si la bobina gira a $60\\ \\text{rev/min}$.", "punts": 1},
-        {"id": "b", "enunciat": "Si la bobina té una resistència $R = 1{,}0\\ \\Omega$, quin corrent màxim pot circular per la bobina?", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Escriviu l'equació de la força electromotriu induïda en funció del temps si la bobina gira a $60\\ \\text{rev/min}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si la bobina té una resistència $R = 1{,}0\\ \\Omega$, quin corrent màxim pot circular per la bobina?",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Àrea d'una espira: $S = 0{,}020 \\cdot 0{,}015 = 3{,}0 \\times 10^{-4}\\ \\text{m}^2$\n- Nombre d'espires: $N = 300$\n- Camp magnètic: $B = 0{,}4\\ \\text{T}$\n- Velocitat de gir: $60\\ \\text{rev/min}$\n- Resistència: $R = 1{,}0\\ \\Omega$\n- Incògnites: $\\varepsilon(t)$ (a); $I_\\text{màx}$ (b)"},
-          {"apartat": "a", "titol": "Velocitat angular", "cos": "Passem les revolucions per minut a rad/s (1 revolució = $2\\pi$ rad, 1 min = 60 s):\n\n$$\\omega = 60\\ \\frac{\\text{rev}}{\\text{min}} \\cdot \\frac{2\\pi\\ \\text{rad}}{1\\ \\text{rev}} \\cdot \\frac{1\\ \\text{min}}{60\\ \\text{s}} = 2\\pi\\ \\text{rad/s}$$"},
-          {"apartat": "a", "titol": "Flux magnètic a través de la bobina", "cos": "Quan la bobina gira, l'angle entre el camp i el vector superfície canvia amb el temps, $\\theta = \\omega t$ (prenent $\\theta = 0$ a $t = 0$). El flux a través d'una espira és:\n\n$$\\Phi = B\\, S \\cos\\theta = B\\, S \\cos(\\omega t)$$"},
-          {"apartat": "a", "titol": "Llei de Faraday", "cos": "Segons la llei de Faraday-Lenz, la fem induïda en les $N$ espires és menys la derivada del flux respecte del temps:\n\n$$\\varepsilon = -N \\frac{d\\Phi}{dt} = N\\, B\\, S\\, \\omega \\sin(\\omega t)$$\n\nL'amplitud (fem màxima) és:\n\n$$\\varepsilon_0 = N B S \\omega = 300 \\cdot 0{,}4 \\cdot 3{,}0 \\times 10^{-4} \\cdot 2\\pi = 0{,}226\\ \\text{V}$$\n\nResultat: **$\\varepsilon(t) = 0{,}226 \\sin(2\\pi\\, t)\\ \\text{V}$** ($t$ en s)."},
-          {"apartat": "b", "titol": "Corrent màxim amb la llei d'Ohm", "cos": "El corrent induït segueix la llei d'Ohm en cada instant:\n\n$$I(t) = \\frac{\\varepsilon(t)}{R} = \\frac{0{,}226 \\sin(2\\pi t)}{1{,}0} = 0{,}226 \\sin(2\\pi t)\\ \\text{A}$$\n\nÉs màxim quan $\\sin(2\\pi t) = 1$:\n\n$$I_\\text{màx} = \\frac{\\varepsilon_0}{R} = \\frac{0{,}226\\ \\text{V}}{1{,}0\\ \\Omega} = 0{,}226\\ \\text{A}$$\n\nResultat: **$I_\\text{màx} = 0{,}226\\ \\text{A}$**."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Àrea d'una espira: $S = 0{,}020 \\cdot 0{,}015 = 3{,}0 \\times 10^{-4}\\ \\text{m}^2$\n- Nombre d'espires: $N = 300$\n- Camp magnètic: $B = 0{,}4\\ \\text{T}$\n- Velocitat de gir: $60\\ \\text{rev/min}$\n- Resistència: $R = 1{,}0\\ \\Omega$\n- Incògnites: $\\varepsilon(t)$ (a); $I_\\text{màx}$ (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat angular",
+            "cos": "Passem les revolucions per minut a rad/s (1 revolució = $2\\pi$ rad, 1 min = 60 s):\n\n$$\\omega = 60\\ \\frac{\\text{rev}}{\\text{min}} \\cdot \\frac{2\\pi\\ \\text{rad}}{1\\ \\text{rev}} \\cdot \\frac{1\\ \\text{min}}{60\\ \\text{s}} = 2\\pi\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Flux magnètic a través de la bobina",
+            "cos": "Quan la bobina gira, l'angle entre el camp i el vector superfície canvia amb el temps, $\\theta = \\omega t$ (prenent $\\theta = 0$ a $t = 0$). El flux a través d'una espira és:\n\n$$\\Phi = B\\, S \\cos\\theta = B\\, S \\cos(\\omega t)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Llei de Faraday",
+            "cos": "Segons la llei de Faraday-Lenz, la fem induïda en les $N$ espires és menys la derivada del flux respecte del temps:\n\n$$\\varepsilon = -N \\frac{d\\Phi}{dt} = N\\, B\\, S\\, \\omega \\sin(\\omega t)$$\n\nL'amplitud (fem màxima) és:\n\n$$\\varepsilon_0 = N B S \\omega = 300 \\cdot 0{,}4 \\cdot 3{,}0 \\times 10^{-4} \\cdot 2\\pi = 0{,}226\\ \\text{V}$$\n\nResultat: **$\\varepsilon(t) = 0{,}226 \\sin(2\\pi\\, t)\\ \\text{V}$** ($t$ en s)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Corrent màxim amb la llei d'Ohm",
+            "cos": "El corrent induït segueix la llei d'Ohm en cada instant:\n\n$$I(t) = \\frac{\\varepsilon(t)}{R} = \\frac{0{,}226 \\sin(2\\pi t)}{1{,}0} = 0{,}226 \\sin(2\\pi t)\\ \\text{A}$$\n\nÉs màxim quan $\\sin(2\\pi t) = 1$:\n\n$$I_\\text{màx} = \\frac{\\varepsilon_0}{R} = \\frac{0{,}226\\ \\text{V}}{1{,}0\\ \\Omega} = 0{,}226\\ \\text{A}$$\n\nResultat: **$I_\\text{màx} = 0{,}226\\ \\text{A}$**."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$\\varepsilon(t) = 0{,}226 \\sin(2\\pi t)\\ \\text{V}$"},
-          {"apartat": "b", "valor": "$I_\\text{màx} = 0{,}226\\ \\text{A}$"}
+          {
+            "apartat": "a",
+            "valor": "$\\varepsilon(t) = 0{,}226 \\sin(2\\pi t)\\ \\text{V}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I_\\text{màx} = 0{,}226\\ \\text{A}$"
+          }
         ],
         "nota": "El signe i la fase de $\\varepsilon(t)$ depenen de l'orientació inicial de la bobina; amb $\\theta(0) = 0$ queda $\\varepsilon = N B S \\omega \\sin\\omega t$ (la solució oficial escriu un signe menys a l'expressió simbòlica però dona el resultat numèric positiu). Error típic: no passar les rev/min a rad/s o oblidar multiplicar per $N$."
       }
@@ -205,29 +461,75 @@
       "punts": 2,
       "titol": "Iode 131: desintegració beta i gamma, fracció restant i longitud d'ona dels fotons gamma",
       "tema": "nuclear",
-      "temes_secundaris": ["quantica"],
-      "conceptes": ["desintegració beta", "radiació gamma", "període de semidesintegració", "energia del fotó", "longitud d'ona"],
+      "temes_secundaris": [
+        "quantica"
+      ],
+      "conceptes": [
+        "desintegració beta",
+        "energia del fotó",
+        "període de semidesintegració",
+        "equació nuclear",
+        "llei de desintegració radioactiva"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, radiació gamma",
+      "pagines": [
+        3
+      ],
       "enunciat": "El iode 131 ($^{131}\\text{I}$), descobert per Glenn Seaborg i John Livingood el 1938, és un important radioisòtop que s'utilitza en la radioteràpia posterior a la tiroidectomia en els casos de càncer de tiroide. Té un període de semidesintegració de $8{,}02$ dies i es transforma en xenó (Xe) mitjançant una emissió primària $\\beta^-$, seguida d'una emissió $\\gamma$ de $364\\ \\text{keV}$.\n\n**Dades:** constant de Planck, $h = 6{,}62 \\times 10^{-34}\\ \\text{J s}$; massa de l'electró $= 9{,}11 \\times 10^{-31}\\ \\text{kg}$; velocitat de la llum, $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$; nombre atòmic del iode $= 53$.",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Escriviu les equacions nuclears corresponents als processos esmentats i calculeu el percentatge que quedarà d'una determinada quantitat inicial de $^{131}\\text{I}$ després de $24{,}06$ dies.", "punts": 1},
-        {"id": "b", "enunciat": "Calculeu la longitud d'ona dels fotons $\\gamma$.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Escriviu les equacions nuclears corresponents als processos esmentats i calculeu el percentatge que quedarà d'una determinada quantitat inicial de $^{131}\\text{I}$ després de $24{,}06$ dies.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la longitud d'ona dels fotons $\\gamma$.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $^{131}_{53}\\text{I}$: $T_{1/2} = 8{,}02\\ \\text{dies}$\n- Temps: $t = 24{,}06\\ \\text{dies}$\n- Energia del fotó $\\gamma$: $E = 364\\ \\text{keV}$\n- $h = 6{,}62 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$\n- Incògnites: equacions nuclears i percentatge restant (a); $\\lambda_\\gamma$ (b)"},
-          {"apartat": "a", "titol": "Equacions nuclears", "cos": "En la desintegració $\\beta^-$ un neutró del nucli es converteix en un protó i s'emeten un electró i un antineutrí: $A$ es manté (131) i $Z$ puja 1 (de 53 a 54, el xenó). El nucli de xenó queda excitat (*) i després es desexcita emetent un fotó $\\gamma$, sense canviar ni $A$ ni $Z$:\n\n$$^{131}_{53}\\text{I} \\longrightarrow\\ ^{131}_{54}\\text{Xe}^* + {}^{\\ 0}_{-1}\\beta^- + {}^{0}_{0}\\bar{\\nu}_e$$\n\n$$^{131}_{54}\\text{Xe}^* \\longrightarrow\\ ^{131}_{54}\\text{Xe} + \\gamma$$"},
-          {"apartat": "a", "titol": "Percentatge que queda després de 24,06 dies", "cos": "Constant de desintegració:\n\n$$\\lambda = \\frac{\\ln 2}{T_{1/2}} = \\frac{\\ln 2}{8{,}02\\ \\text{dies}} = 0{,}0864\\ \\text{dies}^{-1}$$\n\nLlei de desintegració:\n\n$$\\frac{N}{N_0} = e^{-\\lambda t} = e^{-0{,}0864 \\cdot 24{,}06} = 0{,}125 = 12{,}5\\ \\%$$\n\nDe fet, $24{,}06 = 3 \\cdot 8{,}02$: han passat exactament **tres períodes de semidesintegració**, i la quantitat s'ha reduït a la meitat tres vegades: $(1/2)^3 = 1/8 = 0{,}125$.\n\nResultat: **en queda el $12{,}5\\ \\%$**."},
-          {"apartat": "b", "titol": "Energia del fotó en joules", "cos": "$$E = 364 \\times 10^{3}\\ \\text{eV} \\cdot 1{,}60 \\times 10^{-19}\\ \\text{J/eV} = 5{,}824 \\times 10^{-14}\\ \\text{J}$$"},
-          {"apartat": "b", "titol": "Longitud d'ona amb la relació de Planck", "cos": "L'energia d'un fotó és $E = h f$, i per a una ona electromagnètica $f = c/\\lambda$. Per tant:\n\n$$E = \\frac{h c}{\\lambda} \\quad\\Longrightarrow\\quad \\lambda = \\frac{h c}{E} = \\frac{6{,}62 \\times 10^{-34} \\cdot 3{,}00 \\times 10^{8}}{5{,}824 \\times 10^{-14}} = 3{,}41 \\times 10^{-12}\\ \\text{m}$$\n\nResultat: **$\\lambda_\\gamma = 3{,}41 \\times 10^{-12}\\ \\text{m} = 3{,}41\\ \\text{pm}$**."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $^{131}_{53}\\text{I}$: $T_{1/2} = 8{,}02\\ \\text{dies}$\n- Temps: $t = 24{,}06\\ \\text{dies}$\n- Energia del fotó $\\gamma$: $E = 364\\ \\text{keV}$\n- $h = 6{,}62 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$\n- Incògnites: equacions nuclears i percentatge restant (a); $\\lambda_\\gamma$ (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equacions nuclears",
+            "cos": "En la desintegració $\\beta^-$ un neutró del nucli es converteix en un protó i s'emeten un electró i un antineutrí: $A$ es manté (131) i $Z$ puja 1 (de 53 a 54, el xenó). El nucli de xenó queda excitat (*) i després es desexcita emetent un fotó $\\gamma$, sense canviar ni $A$ ni $Z$:\n\n$$^{131}_{53}\\text{I} \\longrightarrow\\ ^{131}_{54}\\text{Xe}^* + {}^{\\ 0}_{-1}\\beta^- + {}^{0}_{0}\\bar{\\nu}_e$$\n\n$$^{131}_{54}\\text{Xe}^* \\longrightarrow\\ ^{131}_{54}\\text{Xe} + \\gamma$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Percentatge que queda després de 24,06 dies",
+            "cos": "Constant de desintegració:\n\n$$\\lambda = \\frac{\\ln 2}{T_{1/2}} = \\frac{\\ln 2}{8{,}02\\ \\text{dies}} = 0{,}0864\\ \\text{dies}^{-1}$$\n\nLlei de desintegració:\n\n$$\\frac{N}{N_0} = e^{-\\lambda t} = e^{-0{,}0864 \\cdot 24{,}06} = 0{,}125 = 12{,}5\\ \\%$$\n\nDe fet, $24{,}06 = 3 \\cdot 8{,}02$: han passat exactament **tres períodes de semidesintegració**, i la quantitat s'ha reduït a la meitat tres vegades: $(1/2)^3 = 1/8 = 0{,}125$.\n\nResultat: **en queda el $12{,}5\\ \\%$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia del fotó en joules",
+            "cos": "$$E = 364 \\times 10^{3}\\ \\text{eV} \\cdot 1{,}60 \\times 10^{-19}\\ \\text{J/eV} = 5{,}824 \\times 10^{-14}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud d'ona amb la relació de Planck",
+            "cos": "L'energia d'un fotó és $E = h f$, i per a una ona electromagnètica $f = c/\\lambda$. Per tant:\n\n$$E = \\frac{h c}{\\lambda} \\quad\\Longrightarrow\\quad \\lambda = \\frac{h c}{E} = \\frac{6{,}62 \\times 10^{-34} \\cdot 3{,}00 \\times 10^{8}}{5{,}824 \\times 10^{-14}} = 3{,}41 \\times 10^{-12}\\ \\text{m}$$\n\nResultat: **$\\lambda_\\gamma = 3{,}41 \\times 10^{-12}\\ \\text{m} = 3{,}41\\ \\text{pm}$**."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$^{131}_{53}\\text{I} \\to\\ ^{131}_{54}\\text{Xe} + {}^{\\ 0}_{-1}\\beta^- + \\bar{\\nu}_e$; $^{131}_{54}\\text{Xe}^* \\to\\ ^{131}_{54}\\text{Xe} + \\gamma$; queda el $12{,}5\\ \\%$"},
-          {"apartat": "b", "valor": "$\\lambda_\\gamma = 3{,}41 \\times 10^{-12}\\ \\text{m}$"}
+          {
+            "apartat": "a",
+            "valor": "$^{131}_{53}\\text{I} \\to\\ ^{131}_{54}\\text{Xe} + {}^{\\ 0}_{-1}\\beta^- + \\bar{\\nu}_e$; $^{131}_{54}\\text{Xe}^* \\to\\ ^{131}_{54}\\text{Xe} + \\gamma$; queda el $12{,}5\\ \\%$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\lambda_\\gamma = 3{,}41 \\times 10^{-12}\\ \\text{m}$"
+          }
         ],
         "nota": "La massa de l'electró és una dada que no cal fer servir. El fotó $\\gamma$ no té massa ni càrrega, i per això no canvia ni $A$ ni $Z$."
       }
@@ -242,29 +544,75 @@
       "titol": "Quatre càrregues als vèrtexs d'un rectangle: valor de Q a partir del camp a l'origen i força sobre un protó",
       "tema": "camp-electric",
       "temes_secundaris": [],
-      "conceptes": ["camp elèctric", "principi de superposició", "llei de coulomb", "simetria", "força elèctrica"],
+      "conceptes": [
+        "camp elèctric",
+        "principi de superposició",
+        "llei de Coulomb"
+      ],
       "dificultat": 3,
-      "pagines": [4],
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, principi de superposició",
+      "pagines": [
+        4
+      ],
       "enunciat": "Dues càrregues de $3{,}0\\ \\mu\\text{C}$ estan localitzades a $x = 0\\ \\text{m}$, $y = 2{,}0\\ \\text{m}$ i a $x = 0\\ \\text{m}$, $y = -2{,}0\\ \\text{m}$. Dues càrregues més, de valor $Q$, estan localitzades a $x = 4{,}0\\ \\text{m}$, $y = 2{,}0\\ \\text{m}$ i a $x = 4{,}0\\ \\text{m}$, $y = -2{,}0\\ \\text{m}$.\n\n**Dades:** $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$; càrrega elemental $= 1{,}60 \\times 10^{-19}\\ \\text{C}$.",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Si a l'origen de coordenades el camp elèctric és $4{,}0 \\times 10^{3}\\ \\text{N C}^{-1}$ en la direcció de l'eix $x$ en sentit positiu, calculeu el valor de les càrregues.", "punts": 1},
-        {"id": "b", "enunciat": "Si el valor de les càrregues fos $Q = 2{,}0\\ \\mu\\text{C}$, calculeu la força $\\vec{F}$ que experimentaria un protó situat a l'origen de coordenades.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Si a l'origen de coordenades el camp elèctric és $4{,}0 \\times 10^{3}\\ \\text{N C}^{-1}$ en la direcció de l'eix $x$ en sentit positiu, calculeu el valor de les càrregues.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si el valor de les càrregues fos $Q = 2{,}0\\ \\mu\\text{C}$, calculeu la força $\\vec{F}$ que experimentaria un protó situat a l'origen de coordenades.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $q = 3{,}0\\ \\mu\\text{C} = 3{,}0 \\times 10^{-6}\\ \\text{C}$ a $(0, 2)$ i $(0, -2)$ m\n- Càrregues $Q$ a $(4, 2)$ i $(4, -2)$ m\n- Camp a l'origen: $\\vec{E} = 4{,}0 \\times 10^{3}\\ \\vec{i}\\ \\text{N/C}$ (a)\n- Protó: $q_p = 1{,}60 \\times 10^{-19}\\ \\text{C}$; $Q = 2{,}0\\ \\mu\\text{C}$ (b)\n- Incògnites: $Q$ (a); $\\vec{F}$ sobre el protó (b)"},
-          {"apartat": "a", "titol": "Geometria i simetria", "cos": "![Esquema de les càrregues i del camp a l'origen (solució oficial)](img/fisica/2017-S/e4-b-sol.png)\n\n- Les dues càrregues de $3{,}0\\ \\mu\\text{C}$ estan a $2\\ \\text{m}$ de l'origen, una a dalt i l'altra a baix sobre l'eix $y$. Els seus camps a l'origen tenen el mateix mòdul i sentits oposats (un cap a $-y$, l'altre cap a $+y$): **s'anul·len**.\n- Les dues càrregues $Q$ estan a una distància $l = \\sqrt{4^2 + 2^2} = \\sqrt{20}\\ \\text{m}$. Per simetria, les components $y$ dels seus camps s'anul·len i les components $x$ se sumen. L'angle $\\theta$ que forma cada línia amb l'eix $x$ compleix:\n\n$$\\cos\\theta = \\frac{4}{\\sqrt{20}} = 0{,}894$$"},
-          {"apartat": "a", "titol": "Camp total a l'origen", "cos": "Pel principi de superposició, el camp total és la suma de les components $x$ dels camps de les dues càrregues $Q$:\n\n$$|E_x| = 2\\, k\\, \\frac{|Q|}{l^2} \\cos\\theta \\quad\\Longrightarrow\\quad |Q| = \\frac{E_x\\, l^2}{2\\, k \\cos\\theta}$$\n\n$$|Q| = \\frac{4{,}0 \\times 10^{3} \\cdot 20}{2 \\cdot 8{,}99 \\times 10^{9} \\cdot 0{,}894} = 4{,}97 \\times 10^{-6}\\ \\text{C}$$"},
-          {"apartat": "a", "titol": "Signe de les càrregues", "cos": "Les càrregues $Q$ estan a la dreta de l'origen ($x = 4$ m). Una càrrega positiva crearia a l'origen un camp que s'allunya d'ella (cap a $-x$); una de negativa, un camp que hi apunta (cap a $+x$). Com que el camp total va en el sentit **positiu** de l'eix $x$, les càrregues han de ser **negatives**:\n\n$$Q = -4{,}97 \\times 10^{-6}\\ \\text{C} = -4{,}97\\ \\mu\\text{C}$$\n\nResultat: **$Q = -4{,}97\\ \\mu\\text{C}$**."},
-          {"apartat": "b", "titol": "Camp a l'origen amb Q = +2,0 μC", "cos": "Les càrregues de $3{,}0\\ \\mu\\text{C}$ continuen anul·lant-se. Ara les $Q$ són positives, per tant el seu camp a l'origen apunta cap a $-x$ (s'allunya de les càrregues):\n\n$$E_x = -2\\, k\\, \\frac{Q}{l^2} \\cos\\theta = -2 \\cdot 8{,}99 \\times 10^{9} \\cdot \\frac{2{,}0 \\times 10^{-6}}{20} \\cdot 0{,}894 = -1{,}61 \\times 10^{3}\\ \\text{N/C}$$\n\ni $E_y = 0$ per simetria."},
-          {"apartat": "b", "titol": "Força sobre el protó", "cos": "La força sobre una càrrega en un camp és $\\vec{F} = q\\, \\vec{E}$. El protó és positiu, així que la força té el mateix sentit que el camp:\n\n$$F_x = q_p\\, E_x = 1{,}60 \\times 10^{-19} \\cdot (-1{,}61 \\times 10^{3}) = -2{,}57 \\times 10^{-16}\\ \\text{N}, \\qquad F_y = 0$$\n\nResultat: **$\\vec{F} = -2{,}57 \\times 10^{-16}\\ \\vec{i}\\ \\text{N}$** (el protó és repel·lit per les càrregues $Q$, cap a l'esquerra)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $q = 3{,}0\\ \\mu\\text{C} = 3{,}0 \\times 10^{-6}\\ \\text{C}$ a $(0, 2)$ i $(0, -2)$ m\n- Càrregues $Q$ a $(4, 2)$ i $(4, -2)$ m\n- Camp a l'origen: $\\vec{E} = 4{,}0 \\times 10^{3}\\ \\vec{i}\\ \\text{N/C}$ (a)\n- Protó: $q_p = 1{,}60 \\times 10^{-19}\\ \\text{C}$; $Q = 2{,}0\\ \\mu\\text{C}$ (b)\n- Incògnites: $Q$ (a); $\\vec{F}$ sobre el protó (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Geometria i simetria",
+            "cos": "![Esquema de les càrregues i del camp a l'origen (solució oficial)](img/fisica/2017-S/e4-b-sol.png)\n\n- Les dues càrregues de $3{,}0\\ \\mu\\text{C}$ estan a $2\\ \\text{m}$ de l'origen, una a dalt i l'altra a baix sobre l'eix $y$. Els seus camps a l'origen tenen el mateix mòdul i sentits oposats (un cap a $-y$, l'altre cap a $+y$): **s'anul·len**.\n- Les dues càrregues $Q$ estan a una distància $l = \\sqrt{4^2 + 2^2} = \\sqrt{20}\\ \\text{m}$. Per simetria, les components $y$ dels seus camps s'anul·len i les components $x$ se sumen. L'angle $\\theta$ que forma cada línia amb l'eix $x$ compleix:\n\n$$\\cos\\theta = \\frac{4}{\\sqrt{20}} = 0{,}894$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp total a l'origen",
+            "cos": "Pel principi de superposició, el camp total és la suma de les components $x$ dels camps de les dues càrregues $Q$:\n\n$$|E_x| = 2\\, k\\, \\frac{|Q|}{l^2} \\cos\\theta \\quad\\Longrightarrow\\quad |Q| = \\frac{E_x\\, l^2}{2\\, k \\cos\\theta}$$\n\n$$|Q| = \\frac{4{,}0 \\times 10^{3} \\cdot 20}{2 \\cdot 8{,}99 \\times 10^{9} \\cdot 0{,}894} = 4{,}97 \\times 10^{-6}\\ \\text{C}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Signe de les càrregues",
+            "cos": "Les càrregues $Q$ estan a la dreta de l'origen ($x = 4$ m). Una càrrega positiva crearia a l'origen un camp que s'allunya d'ella (cap a $-x$); una de negativa, un camp que hi apunta (cap a $+x$). Com que el camp total va en el sentit **positiu** de l'eix $x$, les càrregues han de ser **negatives**:\n\n$$Q = -4{,}97 \\times 10^{-6}\\ \\text{C} = -4{,}97\\ \\mu\\text{C}$$\n\nResultat: **$Q = -4{,}97\\ \\mu\\text{C}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Camp a l'origen amb Q = +2,0 μC",
+            "cos": "Les càrregues de $3{,}0\\ \\mu\\text{C}$ continuen anul·lant-se. Ara les $Q$ són positives, per tant el seu camp a l'origen apunta cap a $-x$ (s'allunya de les càrregues):\n\n$$E_x = -2\\, k\\, \\frac{Q}{l^2} \\cos\\theta = -2 \\cdot 8{,}99 \\times 10^{9} \\cdot \\frac{2{,}0 \\times 10^{-6}}{20} \\cdot 0{,}894 = -1{,}61 \\times 10^{3}\\ \\text{N/C}$$\n\ni $E_y = 0$ per simetria."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força sobre el protó",
+            "cos": "La força sobre una càrrega en un camp és $\\vec{F} = q\\, \\vec{E}$. El protó és positiu, així que la força té el mateix sentit que el camp:\n\n$$F_x = q_p\\, E_x = 1{,}60 \\times 10^{-19} \\cdot (-1{,}61 \\times 10^{3}) = -2{,}57 \\times 10^{-16}\\ \\text{N}, \\qquad F_y = 0$$\n\nResultat: **$\\vec{F} = -2{,}57 \\times 10^{-16}\\ \\vec{i}\\ \\text{N}$** (el protó és repel·lit per les càrregues $Q$, cap a l'esquerra)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$Q = -4{,}97\\ \\mu\\text{C}$ (negatives)"},
-          {"apartat": "b", "valor": "$\\vec{F} = -2{,}57 \\times 10^{-16}\\ \\vec{i}\\ \\text{N}$"}
+          {
+            "apartat": "a",
+            "valor": "$Q = -4{,}97\\ \\mu\\text{C}$ (negatives)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\vec{F} = -2{,}57 \\times 10^{-16}\\ \\vec{i}\\ \\text{N}$"
+          }
         ],
         "nota": "Error típic: oblidar el factor $\\cos\\theta$ (només compta la component $x$) o no deduir el signe de $Q$ a partir del sentit del camp. La frase de la solució oficial «la càrrega Q (protó) és positiva» vol dir que tant $Q$ com el protó són positius."
       }
@@ -278,29 +626,72 @@
       "punts": 2,
       "titol": "Bobina d'un transformador amb nucli de ferro: camp, flux magnètic i electrons que circulen",
       "tema": "camp-magnetic",
-      "temes_secundaris": ["induccio"],
-      "conceptes": ["camp magnètic d'una bobina", "permeabilitat magnètica", "flux magnètic", "intensitat de corrent", "càrrega elèctrica"],
+      "temes_secundaris": [
+        "induccio"
+      ],
+      "conceptes": [
+        "camp magnètic d'una espira o bobina",
+        "flux magnètic"
+      ],
       "dificultat": 1,
-      "pagines": [4],
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): camp magnètic d'una bobina, permeabilitat magnètica",
+      "pagines": [
+        4
+      ],
       "enunciat": "La bobina d'un transformador té 2000 espires, una longitud de $10\\ \\text{cm}$ i un nucli de ferro a l'interior. Per la bobina circula un corrent de $2\\ \\text{A}$.\n\n**Dades:** permeabilitat magnètica del ferro, $\\mu = 5{,}00 \\times 10^{-4}\\ \\text{T m A}^{-1}$; càrrega elemental $= 1{,}60 \\times 10^{-19}\\ \\text{C}$.\n\n**Nota:** El mòdul del camp magnètic creat per una bobina en el buit és $B = \\dfrac{\\mu_0 N I}{l}$.",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Calculeu el camp i el flux magnètics a l'interior de la bobina, sabent que la secció del nucli és de $10\\ \\text{cm}^2$.", "punts": 1},
-        {"id": "b", "enunciat": "Estimeu el nombre d'electrons que circulen pel cable en un minut.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Calculeu el camp i el flux magnètics a l'interior de la bobina, sabent que la secció del nucli és de $10\\ \\text{cm}^2$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Estimeu el nombre d'electrons que circulen pel cable en un minut.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $N = 2000$ espires\n- $l = 10\\ \\text{cm} = 0{,}10\\ \\text{m}$\n- $I = 2\\ \\text{A}$\n- $\\mu = 5{,}00 \\times 10^{-4}\\ \\text{T m/A}$ (ferro)\n- Secció: $S = 10\\ \\text{cm}^2 = 10 \\times 10^{-4}\\ \\text{m}^2 = 1{,}0 \\times 10^{-3}\\ \\text{m}^2$\n- $t = 1\\ \\text{min} = 60\\ \\text{s}$, $e = 1{,}60 \\times 10^{-19}\\ \\text{C}$\n- Incògnites: $B$ i $\\Phi$ (a); nombre d'electrons $n_e$ (b)"},
-          {"apartat": "a", "titol": "Camp magnètic dins la bobina amb nucli de ferro", "cos": "Dins una bobina llarga el camp és uniforme. Amb un nucli de ferro, a la fórmula del buit es substitueix $\\mu_0$ per la permeabilitat del material, $\\mu$, molt més gran (el ferro reforça el camp):\n\n$$B = \\frac{\\mu N I}{l} = \\frac{5{,}00 \\times 10^{-4} \\cdot 2000 \\cdot 2}{0{,}10} = 20\\ \\text{T}$$\n\nResultat: **$B = 20\\ \\text{T}$**."},
-          {"apartat": "a", "titol": "Flux magnètic", "cos": "El camp és perpendicular a la secció del nucli, per tant el flux a través d'aquesta secció és:\n\n$$\\Phi = B\\, S = 20 \\cdot 1{,}0 \\times 10^{-3} = 0{,}020\\ \\text{Wb}$$\n\nResultat: **$\\Phi = 0{,}020\\ \\text{Wb}$** (a través de la secció, és a dir, d'una espira)."},
-          {"apartat": "b", "titol": "Càrrega que circula en un minut", "cos": "La intensitat és la càrrega que passa per una secció del cable per unitat de temps, $I = q/t$:\n\n$$q = I\\, t = 2 \\cdot 60 = 120\\ \\text{C}$$"},
-          {"apartat": "b", "titol": "Nombre d'electrons", "cos": "Cada electró porta una càrrega (en valor absolut) $e = 1{,}60 \\times 10^{-19}\\ \\text{C}$, així que:\n\n$$n_e = \\frac{q}{e} = \\frac{I\\, t}{e} = \\frac{120}{1{,}60 \\times 10^{-19}} = 7{,}5 \\times 10^{20}\\ \\text{electrons}$$\n\nResultat: **$n_e = 7{,}5 \\times 10^{20}$ electrons**."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $N = 2000$ espires\n- $l = 10\\ \\text{cm} = 0{,}10\\ \\text{m}$\n- $I = 2\\ \\text{A}$\n- $\\mu = 5{,}00 \\times 10^{-4}\\ \\text{T m/A}$ (ferro)\n- Secció: $S = 10\\ \\text{cm}^2 = 10 \\times 10^{-4}\\ \\text{m}^2 = 1{,}0 \\times 10^{-3}\\ \\text{m}^2$\n- $t = 1\\ \\text{min} = 60\\ \\text{s}$, $e = 1{,}60 \\times 10^{-19}\\ \\text{C}$\n- Incògnites: $B$ i $\\Phi$ (a); nombre d'electrons $n_e$ (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp magnètic dins la bobina amb nucli de ferro",
+            "cos": "Dins una bobina llarga el camp és uniforme. Amb un nucli de ferro, a la fórmula del buit es substitueix $\\mu_0$ per la permeabilitat del material, $\\mu$, molt més gran (el ferro reforça el camp):\n\n$$B = \\frac{\\mu N I}{l} = \\frac{5{,}00 \\times 10^{-4} \\cdot 2000 \\cdot 2}{0{,}10} = 20\\ \\text{T}$$\n\nResultat: **$B = 20\\ \\text{T}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Flux magnètic",
+            "cos": "El camp és perpendicular a la secció del nucli, per tant el flux a través d'aquesta secció és:\n\n$$\\Phi = B\\, S = 20 \\cdot 1{,}0 \\times 10^{-3} = 0{,}020\\ \\text{Wb}$$\n\nResultat: **$\\Phi = 0{,}020\\ \\text{Wb}$** (a través de la secció, és a dir, d'una espira)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Càrrega que circula en un minut",
+            "cos": "La intensitat és la càrrega que passa per una secció del cable per unitat de temps, $I = q/t$:\n\n$$q = I\\, t = 2 \\cdot 60 = 120\\ \\text{C}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Nombre d'electrons",
+            "cos": "Cada electró porta una càrrega (en valor absolut) $e = 1{,}60 \\times 10^{-19}\\ \\text{C}$, així que:\n\n$$n_e = \\frac{q}{e} = \\frac{I\\, t}{e} = \\frac{120}{1{,}60 \\times 10^{-19}} = 7{,}5 \\times 10^{20}\\ \\text{electrons}$$\n\nResultat: **$n_e = 7{,}5 \\times 10^{20}$ electrons**."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$B = 20\\ \\text{T}$; $\\Phi = 0{,}020\\ \\text{Wb}$"},
-          {"apartat": "b", "valor": "$n_e = 7{,}5 \\times 10^{20}$ electrons"}
+          {
+            "apartat": "a",
+            "valor": "$B = 20\\ \\text{T}$; $\\Phi = 0{,}020\\ \\text{Wb}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$n_e = 7{,}5 \\times 10^{20}$ electrons"
+          }
         ],
         "nota": "El flux que dona la solució oficial (0,02 Wb) és el que travessa la secció (una espira); el flux total enllaçat per les 2000 espires seria $N\\Phi = 40\\ \\text{Wb}$. El valor de 20 T és físicament poc realista (el ferro se satura cap a 2 T), però és el que surt amb les dades de l'enunciat i el que dona l'oficial."
       }

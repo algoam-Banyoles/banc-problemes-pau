@@ -142,6 +142,13 @@ article.prob.review { border-left: 5px solid var(--review); }
 .meta { display: flex; flex-wrap: wrap; gap: 6px 12px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-soft); align-items: center; }
 .meta .tag { background: var(--accent-soft); color: var(--accent); border-radius: 6px; padding: 2px 8px; font-weight: 600; }
 .meta .diff { letter-spacing: 1px; }
+.concs { display: flex; flex-wrap: wrap; gap: 6px; margin: -4px 0 12px; }
+.conc { border: none; background: var(--paper); color: var(--ink-soft); border-radius: 999px; padding: 2px 10px; font-size: 0.78rem; cursor: pointer; }
+.conc:hover { color: var(--accent); }
+.conc[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+.meta .curs { border-radius: 6px; padding: 2px 8px; font-weight: 600; border: 1px solid currentColor; cursor: help; }
+.meta .curs.c1r { color: var(--ok); }
+.meta .curs.c2n { color: var(--review); }
 article.prob h2 {
   font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; line-height: 1.25; margin: 8px 0 12px; text-wrap: balance;
 }
@@ -244,9 +251,18 @@ article.prob h2 {
         <input id="q" class="search" type="search" placeholder="p. ex. engranatges, rendiment, Karnaugh…" autocomplete="off">
       </div>
       <button class="btn ghost filters-toggle" id="ftoggle" type="button" aria-expanded="false">Més filtres</button>
+      <div class="fgroup">
+        <span class="lbl">Curs (segons el currículum)</span>
+        <div class="chips" id="cursos"></div>
+      </div>
       <div class="fgroup opt-mobile">
         <span class="lbl">Tema</span>
         <div class="chips" id="temes"></div>
+      </div>
+      <div class="fgroup opt-mobile">
+        <span class="lbl">Conceptes</span>
+        <div class="chips" id="conceptes"></div>
+        <button type="button" class="linkbtn" id="moreconc" hidden>Mostra'ls tots</button>
       </div>
       <div class="fgroup opt-mobile">
         <span class="lbl">Any</span>
@@ -344,8 +360,9 @@ const exById = Object.fromEntries(DB.examens.map((e) => [e.id, e]));
 const PROBS = DB.problemes.map((p) => {
   const e = exById[p.examen] || {};
   const hay = [p.titol, p.enunciat, (p.conceptes || []).join(" "), temaNom(e.assignatura, p.tema), ...(p.temes_secundaris || []).map((t) => temaNom(e.assignatura, t)),
-    ...(p.apartats || []).map((a) => a.enunciat), ...Object.values(p.opcions || {}), e.materia, String(e.any)].join(" ");
-  return { ...p, ex: e, _hay: norm(hay) };
+    ...(p.apartats || []).map((a) => a.enunciat), ...Object.values(p.opcions || {}), e.materia, String(e.any),
+    ...((p.solucio || {}).passos || []).map((s) => s.titol + " " + s.cos)].join(" ");
+  return { ...p, ex: e, _hay: norm(hay), _conc: (p.conceptes || []).map((c) => c.toLowerCase()) };
 });
 
 // ---------- estat (es recorda en aquest navegador) ----------
@@ -354,10 +371,12 @@ const store = {
   set(k, v) { try { localStorage.setItem("pau:" + k, JSON.stringify(v)); } catch {} },
 };
 let progress = store.get("progress", {}); // id -> "done" | "review"
-const DEFAULT_F = { assig: "tecno", q: "", temes: [], from: null, to: null, convs: [], tipus: [], difs: [], estats: [], materies: [], order: "new" };
+const DEFAULT_F = { assig: "tecno", q: "", temes: [], from: null, to: null, convs: [], tipus: [], difs: [], estats: [], materies: [], cursos: [], conceptes: [], order: "new" };
 let F = Object.assign({}, DEFAULT_F, store.get("filters", {}));
+for (const k of Object.keys(DEFAULT_F)) if (Array.isArray(DEFAULT_F[k]) && !Array.isArray(F[k])) F[k] = [];
 let shown = 15;
 let view = "problemes";
+let allConc = false;
 let randSeed = Math.random();
 
 function norm(s) { return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/·|ŀ/g, "l").toLowerCase(); }
@@ -391,6 +410,8 @@ function matches(p, skip) {
   if (F.to && p.ex.any > F.to) return false;
   if (skip !== "convs" && F.convs.length && !F.convs.includes(p.ex.convocatoria)) return false;
   if (skip !== "tipus" && F.tipus.length && !F.tipus.includes(p.tipus)) return false;
+  if (skip !== "conceptes" && F.conceptes.length && !F.conceptes.every((c) => p._conc.includes(c))) return false;
+  if (skip !== "cursos" && F.cursos.length && !F.cursos.includes(p.curs)) return false;
   if (skip !== "difs" && F.difs.length && !F.difs.includes(String(p.dificultat))) return false;
   if (skip !== "materies" && F.materies.length && !F.materies.includes(p.ex.materia)) return false;
   if (skip !== "estats" && F.estats.length) {
@@ -436,6 +457,14 @@ function renderFilters() {
   document.getElementById("anyTo").innerHTML = `<option value="">fins a…</option>` + anys.map(opt(F.to)).join("");
   chipGroup(document.getElementById("convs"), "convs", [["juny", "Juny (ordinària)"], ["setembre", "Setembre (extraordinària)"]], countBy("convs", (p) => p.ex.convocatoria));
   chipGroup(document.getElementById("tipus"), "tipus", [["problema", "Problemes"], ["test", "Qüestions de test"]], countBy("tipus", (p) => p.tipus));
+  const cc = countBy("conceptes", (p) => p._conc);
+  let conc = Object.keys(cc).filter((c) => cc[c] >= 2 || F.conceptes.includes(c)).sort((a, b) => cc[b] - cc[a] || a.localeCompare(b));
+  const moreBtn = document.getElementById("moreconc");
+  moreBtn.hidden = conc.length <= 24;
+  moreBtn.textContent = allConc ? "Mostra'n menys" : `Mostra'ls tots (${conc.length})`;
+  if (!allConc) conc = [...new Set([...F.conceptes, ...conc.slice(0, 24)])];
+  chipGroup(document.getElementById("conceptes"), "conceptes", conc.map((c) => [c, c]), cc);
+  chipGroup(document.getElementById("cursos"), "cursos", [["1r", "Es pot fer a 1r"], ["2n", "Cal 2n"]], countBy("cursos", (p) => p.curs || ""));
   chipGroup(document.getElementById("difs"), "difs", Object.entries(DIFS).map(([k, v]) => [k, "●".repeat(k) + " " + v]), countBy("difs", (p) => String(p.dificultat)));
   chipGroup(document.getElementById("estats"), "estats", [["pending", "Pendents"], ["done", "Fets"], ["review", "Per repassar"]], countBy("estats", (p) => progress[p.id] || "pending"));
   const mats = [...new Set(pool.map((p) => p.ex.materia))].sort();
@@ -514,10 +543,12 @@ function renderCard(p) {
       <span>${esc(e.any)} · ${e.convocatoria === "setembre" ? "Setembre" : "Juny"}${e.serie ? " · Sèrie " + esc(e.serie) : ""}</span>
       <span>${probLabel(p)}</span>
       ${p.punts ? `<span>${String(p.punts).replace(".", ",")} punts</span>` : ""}
+      ${p.curs ? `<span class="curs c${esc(p.curs)}" title="${esc(p.curs_motiu || "")}">${esc(p.curs)} batx</span>` : ""}
       <span class="diff" title="Dificultat: ${DIFS[p.dificultat] || ""}">${"●".repeat(p.dificultat || 1)}${"○".repeat(3 - (p.dificultat || 1))}</span>
       ${temes}
     </div>
     <h2>${md(p.titol, true)}</h2>
+    ${(p.conceptes || []).length ? `<div class="concs">${p.conceptes.map((c) => `<button type="button" class="conc" data-conc="${esc(c.toLowerCase())}" aria-pressed="${F.conceptes.includes(c.toLowerCase())}">${esc(c)}</button>`).join("")}</div>` : ""}
     <div class="md">${md(p.enunciat)}</div>
     ${figs}${parts}${opts}
     <div class="actions">
@@ -586,6 +617,12 @@ document.addEventListener("click", (ev) => {
     const k = t.dataset.k, v = t.dataset.v;
     F[k] = F[k].includes(v) ? F[k].filter((x) => x !== v) : [...F[k], v];
     shown = 15; return render();
+  }
+  if (t.id === "moreconc") { allConc = !allConc; return renderFilters(); }
+  if (t.dataset.conc) {
+    const c = t.dataset.conc;
+    F.conceptes = F.conceptes.includes(c) ? F.conceptes.filter((x) => x !== c) : [...F.conceptes, c];
+    shown = 15; render(); return window.scrollTo({ top: 0, behavior: "smooth" });
   }
   if (t.id === "reset") { F = { ...DEFAULT_F, assig: F.assig }; shown = 15; return render(); }
   if (t.id === "ftoggle") {

@@ -26,10 +26,11 @@
       "conceptes": [
         "mòdul de Young",
         "deformació unitària",
-        "llei de Hooke",
         "assaig de tracció"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita tensió, deformació o mòdul de Young (resistència de materials i assaig de tracció), que és de 2n.",
       "pagines": [
         2
       ],
@@ -84,11 +85,11 @@
       ],
       "conceptes": [
         "energia elèctrica",
-        "quilowatt hora",
-        "potència",
-        "unitats"
+        "potència elèctrica"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         2
       ],
@@ -142,11 +143,12 @@
         "fabricacio"
       ],
       "conceptes": [
-        "resistències en sèrie",
-        "tolerància",
-        "resistència equivalent"
+        "associació de resistències",
+        "tolerància"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         2
       ],
@@ -197,14 +199,16 @@
       "titol": "Potència d'una cafetera per escalfar aigua",
       "tema": "termica",
       "temes_secundaris": [
-        "energia"
+        "energia",
+        "circuits"
       ],
       "conceptes": [
         "calor sensible",
-        "calor específica",
-        "potència"
+        "potència elèctrica"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita calor sensible, poder calorífic i rendiment, que són de 1r.",
       "pagines": [
         3
       ],
@@ -263,12 +267,12 @@
         "termica"
       ],
       "conceptes": [
-        "petjada de carboni",
-        "factor d'emissió",
-        "consum de combustible",
-        "emissions de CO2"
+        "emissions de CO2",
+        "consum de combustible"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         3
       ],
@@ -332,6 +336,8 @@
         "esquema de contactes"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         4,
         5
@@ -423,12 +429,17 @@
       ],
       "conceptes": [
         "relació de transmissió",
-        "treball",
+        "reductor",
+        "energia potencial",
+        "potència mecànica",
         "potència elèctrica",
         "rendiment",
-        "factor de potència"
+        "factor de potència",
+        "corrent altern"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita un motor d'inducció monofàsic amb factor de potència (corrent altern), que és de 2n.",
       "pagines": [
         6,
         7
@@ -533,11 +544,15 @@
       "conceptes": [
         "cilindrada",
         "parell motor",
+        "velocitat angular",
         "poder calorífic",
         "potència tèrmica",
-        "rendiment"
+        "rendiment",
+        "motor de combustió interna"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita conceptes de motor tèrmic (cilindrada, cursa, relació de compressió), que són de 2n.",
       "pagines": [
         8,
         9
@@ -636,15 +651,19 @@
       "punts": 2.5,
       "titol": "Equilibri del taulell elevable d'una taula de centre amb dues barres articulades",
       "tema": "estatica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "resistencia"
+      ],
       "conceptes": [
         "diagrama de cos lliure",
-        "equilibri",
-        "moments",
-        "barres biarticulades",
+        "equilibri de forces",
+        "equilibri de moments",
+        "barra biarticulada",
         "tracció i compressió"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
       "pagines": [
         10,
         11
@@ -738,10 +757,11 @@
       "conceptes": [
         "potència elèctrica",
         "llei d'Ohm",
-        "connexió en paral·lel",
-        "resistència"
+        "associació de resistències"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         12,
         13

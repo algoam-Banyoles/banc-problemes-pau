@@ -20,23 +20,63 @@
       "punts": 0.5,
       "titol": "Mòdul elàstic a partir de la corba tensió-deformació",
       "tema": "resistencia",
-      "temes_secundaris": ["materials"],
-      "conceptes": ["assaig de tracció", "mòdul de Young", "diagrama tensió-deformació", "zona elàstica"],
+      "temes_secundaris": [
+        "materials"
+      ],
+      "conceptes": [
+        "assaig de tracció",
+        "mòdul de Young"
+      ],
       "dificultat": 1,
-      "pagines": [1],
+      "curs": "2n",
+      "curs_motiu": "Necessita tensió, deformació o mòdul de Young (resistència de materials i assaig de tracció), que és de 2n.",
+      "pagines": [
+        1
+      ],
       "enunciat": "La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?",
-      "figures": [{"src": "img/tecno/2020-J/e1-q1.png", "peu": "Corba tensió-deformació de l'assaig de tracció"}],
-      "opcions": {"a": "$250\\ \\text{GPa}$", "b": "$110\\ \\text{GPa}$", "c": "$265\\ \\text{GPa}$", "d": "$62{,}5\\ \\text{GPa}$"},
+      "figures": [
+        {
+          "src": "img/tecno/2020-J/e1-q1.png",
+          "peu": "Corba tensió-deformació de l'assaig de tracció"
+        }
+      ],
+      "opcions": {
+        "a": "$250\\ \\text{GPa}$",
+        "b": "$110\\ \\text{GPa}$",
+        "c": "$265\\ \\text{GPa}$",
+        "d": "$62{,}5\\ \\text{GPa}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "b",
         "passos": [
-          {"apartat": null, "titol": "Què és el mòdul elàstic", "cos": "A la zona elàstica (el tram recte inicial de la corba), la tensió és proporcional a la deformació (llei de Hooke). El mòdul elàstic o de Young és el pendent d'aquest tram:\n\n$$E = \\frac{\\sigma}{\\varepsilon}$$"},
-          {"apartat": null, "titol": "Lectura de la gràfica", "cos": "Cada divisió vertical de la quadrícula de l'eix $\\varepsilon$ val $0{,}001$ (entre 0 i 0,005 n'hi ha cinc). El tram recte arriba aproximadament a $\\sigma \\approx 210$-$220\\ \\text{MPa}$ quan $\\varepsilon = 0{,}002$ (on la corba es doblega).\n\nLa recta fina (descàrrega) és paral·lela al tram elàstic i té el mateix pendent: va de $\\varepsilon = 0{,}002$ amb $\\sigma = 0$ fins a $\\sigma \\approx 250\\ \\text{MPa}$ amb $\\varepsilon \\approx 0{,}0043$."},
-          {"apartat": null, "titol": "Càlcul del pendent", "cos": "$$E \\approx \\frac{220\\ \\text{MPa}}{0{,}002} = 110\\,000\\ \\text{MPa} = 110\\ \\text{GPa}$$\n\nLa lectura és aproximada (entre 100 i 110 GPa), però l'única opció compatible és **$E \\approx 110\\ \\text{GPa}$** → resposta **b**."},
-          {"apartat": null, "titol": "Per què les altres no", "cos": "- **a)** $250\\ \\text{GPa}$ i **c)** $265\\ \\text{GPa}$ surten de dividir tensions properes a la de ruptura (250-265 MPa) per $\\varepsilon = 0{,}001$: ni és el tram elàstic ni la deformació corresponent.\n- **d)** $62{,}5\\ \\text{GPa} = 250\\ \\text{MPa}/0{,}004$: fa servir un punt de la zona plàstica, on la corba ja no és recta."}
+          {
+            "apartat": null,
+            "titol": "Què és el mòdul elàstic",
+            "cos": "A la zona elàstica (el tram recte inicial de la corba), la tensió és proporcional a la deformació (llei de Hooke). El mòdul elàstic o de Young és el pendent d'aquest tram:\n\n$$E = \\frac{\\sigma}{\\varepsilon}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Lectura de la gràfica",
+            "cos": "Cada divisió vertical de la quadrícula de l'eix $\\varepsilon$ val $0{,}001$ (entre 0 i 0,005 n'hi ha cinc). El tram recte arriba aproximadament a $\\sigma \\approx 210$-$220\\ \\text{MPa}$ quan $\\varepsilon = 0{,}002$ (on la corba es doblega).\n\nLa recta fina (descàrrega) és paral·lela al tram elàstic i té el mateix pendent: va de $\\varepsilon = 0{,}002$ amb $\\sigma = 0$ fins a $\\sigma \\approx 250\\ \\text{MPa}$ amb $\\varepsilon \\approx 0{,}0043$."
+          },
+          {
+            "apartat": null,
+            "titol": "Càlcul del pendent",
+            "cos": "$$E \\approx \\frac{220\\ \\text{MPa}}{0{,}002} = 110\\,000\\ \\text{MPa} = 110\\ \\text{GPa}$$\n\nLa lectura és aproximada (entre 100 i 110 GPa), però l'única opció compatible és **$E \\approx 110\\ \\text{GPa}$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $250\\ \\text{GPa}$ i **c)** $265\\ \\text{GPa}$ surten de dividir tensions properes a la de ruptura (250-265 MPa) per $\\varepsilon = 0{,}001$: ni és el tram elàstic ni la deformació corresponent.\n- **d)** $62{,}5\\ \\text{GPa} = 250\\ \\text{MPa}/0{,}004$: fa servir un punt de la zona plàstica, on la corba ja no és recta."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$E \\approx 110\\ \\text{GPa}$ → resposta **b**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$E \\approx 110\\ \\text{GPa}$ → resposta **b**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -50,22 +90,55 @@
       "titol": "Cilindrada d'un motor de quatre cilindres",
       "tema": "termica",
       "temes_secundaris": [],
-      "conceptes": ["cilindrada", "diàmetre i cursa", "motor de combustió interna"],
+      "conceptes": [
+        "cilindrada",
+        "motor de combustió interna"
+      ],
       "dificultat": 1,
-      "pagines": [1],
+      "curs": "2n",
+      "curs_motiu": "Necessita conceptes de motor tèrmic (cilindrada, cursa, relació de compressió), que són de 2n.",
+      "pagines": [
+        1
+      ],
       "enunciat": "Un cotxe està equipat amb un motor de combustió interna de quatre cilindres en línia de $79{,}5\\ \\text{mm}$ de diàmetre i $80{,}5\\ \\text{mm}$ de cursa. Quina és la cilindrada del motor?",
       "figures": [],
-      "opcions": {"a": "$399{,}6\\ \\text{cm}^3$", "b": "$3\\,196\\ \\text{cm}^3$", "c": "$1\\,598\\ \\text{cm}^3$", "d": "$8\\,042\\ \\text{cm}^3$"},
+      "opcions": {
+        "a": "$399{,}6\\ \\text{cm}^3$",
+        "b": "$3\\,196\\ \\text{cm}^3$",
+        "c": "$1\\,598\\ \\text{cm}^3$",
+        "d": "$8\\,042\\ \\text{cm}^3$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "c",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Nombre de cilindres: $z = 4$\n- Diàmetre (alesatge): $D = 79{,}5\\ \\text{mm} = 7{,}95\\ \\text{cm}$\n- Cursa: $s = 80{,}5\\ \\text{mm} = 8{,}05\\ \\text{cm}$\n- Incògnita: cilindrada total $V_\\text{T}$"},
-          {"apartat": null, "titol": "Cilindrada unitària", "cos": "La cilindrada d'un cilindre és el volum que escombra el pistó en una cursa: un cilindre de base circular de diàmetre $D$ i altura $s$:\n\n$$V_1 = \\frac{\\pi D^2}{4}\\, s = \\frac{\\pi \\cdot 7{,}95^2}{4} \\cdot 8{,}05 = 399{,}6\\ \\text{cm}^3$$"},
-          {"apartat": null, "titol": "Cilindrada total", "cos": "$$V_\\text{T} = z\\, V_1 = 4 \\cdot 399{,}6 = 1\\,598\\ \\text{cm}^3$$\n\nResultat: **$V_\\text{T} \\approx 1\\,598\\ \\text{cm}^3$** → resposta **c**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **a)** $399{,}6\\ \\text{cm}^3$ és la cilindrada d'**un sol** cilindre.\n- **b)** $3\\,196\\ \\text{cm}^3$ és el doble del valor correcte (per exemple, comptar 8 cilindres o dues curses per cicle)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Nombre de cilindres: $z = 4$\n- Diàmetre (alesatge): $D = 79{,}5\\ \\text{mm} = 7{,}95\\ \\text{cm}$\n- Cursa: $s = 80{,}5\\ \\text{mm} = 8{,}05\\ \\text{cm}$\n- Incògnita: cilindrada total $V_\\text{T}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Cilindrada unitària",
+            "cos": "La cilindrada d'un cilindre és el volum que escombra el pistó en una cursa: un cilindre de base circular de diàmetre $D$ i altura $s$:\n\n$$V_1 = \\frac{\\pi D^2}{4}\\, s = \\frac{\\pi \\cdot 7{,}95^2}{4} \\cdot 8{,}05 = 399{,}6\\ \\text{cm}^3$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Cilindrada total",
+            "cos": "$$V_\\text{T} = z\\, V_1 = 4 \\cdot 399{,}6 = 1\\,598\\ \\text{cm}^3$$\n\nResultat: **$V_\\text{T} \\approx 1\\,598\\ \\text{cm}^3$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **a)** $399{,}6\\ \\text{cm}^3$ és la cilindrada d'**un sol** cilindre.\n- **b)** $3\\,196\\ \\text{cm}^3$ és el doble del valor correcte (per exemple, comptar 8 cilindres o dues curses per cicle)."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$V_\\text{T} \\approx 1\\,598\\ \\text{cm}^3$ → resposta **c**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$V_\\text{T} \\approx 1\\,598\\ \\text{cm}^3$ → resposta **c**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -78,24 +151,65 @@
       "punts": 0.5,
       "titol": "Relació de transmissió d'una porta corredissa amb pinyó i cremallera",
       "tema": "mecanismes",
-      "temes_secundaris": [],
-      "conceptes": ["pinyó-cremallera", "relació de transmissió", "velocitat angular", "reductor"],
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "relació de transmissió",
+        "velocitat angular",
+        "velocitat lineal",
+        "reductor"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Una porta corredissa automàtica és accionada mitjançant un motor que gira a $n_\\text{mot} = 1\\,500\\ \\text{min}^{-1}$ i un reductor. L'eix de sortida del reductor és un pinyó de radi primitiu $r = 30\\ \\text{mm}$ que acciona una cremallera fixa a la porta. En règim nominal, la porta es trasllada a una velocitat constant $v_\\text{nom} = 0{,}12\\ \\text{m/s}$. Determineu la relació de transmissió entre la velocitat angular de l'eix de sortida del reductor i la velocitat angular de l'eix del motor $\\tau = \\omega_\\text{red}/\\omega_\\text{mot}$.",
       "figures": [],
-      "opcions": {"a": "$39{,}27$", "b": "$0{,}763\\,9 \\times 10^{-3}$", "c": "$25{,}46 \\times 10^{-3}$", "d": "infinit"},
+      "opcions": {
+        "a": "$39{,}27$",
+        "b": "$0{,}763\\,9 \\times 10^{-3}$",
+        "c": "$25{,}46 \\times 10^{-3}$",
+        "d": "infinit"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "c",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $n_\\text{mot} = 1\\,500\\ \\text{min}^{-1}$\n- Radi primitiu del pinyó: $r = 30\\ \\text{mm} = 0{,}03\\ \\text{m}$\n- Velocitat de la porta: $v_\\text{nom} = 0{,}12\\ \\text{m/s}$\n- Incògnita: $\\tau = \\omega_\\text{red}/\\omega_\\text{mot}$"},
-          {"apartat": null, "titol": "Velocitat angular del pinyó", "cos": "En un mecanisme pinyó-cremallera sense lliscament, la velocitat lineal de la cremallera (la porta) és igual a la velocitat tangencial del pinyó al radi primitiu: $v = \\omega\\, r$. Per tant:\n\n$$\\omega_\\text{red} = \\frac{v_\\text{nom}}{r} = \\frac{0{,}12}{0{,}03} = 4\\ \\text{rad/s}$$"},
-          {"apartat": null, "titol": "Velocitat angular del motor", "cos": "Passem les voltes per minut a rad/s (1 volta = $2\\pi$ rad, 1 min = 60 s):\n\n$$\\omega_\\text{mot} = 1\\,500 \\cdot \\frac{2\\pi}{60} = 157{,}1\\ \\text{rad/s}$$"},
-          {"apartat": null, "titol": "Relació de transmissió", "cos": "$$\\tau = \\frac{\\omega_\\text{red}}{\\omega_\\text{mot}} = \\frac{4}{157{,}1} = 0{,}025\\,46 = 25{,}46 \\times 10^{-3}$$\n\nResultat: **$\\tau = 25{,}46 \\times 10^{-3}$** → resposta **c**. És menor que 1, com correspon a un reductor."},
-          {"apartat": null, "titol": "Per què les altres no", "cos": "- **a)** $39{,}27$ és la relació inversa, $\\omega_\\text{mot}/\\omega_\\text{red}$.\n- **b)** $0{,}763\\,9 \\times 10^{-3} = v/\\omega_\\text{mot}$: oblida dividir pel radi del pinyó (barreja m/s amb rad/s).\n- **d)** no té sentit: la porta es mou, per tant el pinyó gira."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $n_\\text{mot} = 1\\,500\\ \\text{min}^{-1}$\n- Radi primitiu del pinyó: $r = 30\\ \\text{mm} = 0{,}03\\ \\text{m}$\n- Velocitat de la porta: $v_\\text{nom} = 0{,}12\\ \\text{m/s}$\n- Incògnita: $\\tau = \\omega_\\text{red}/\\omega_\\text{mot}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Velocitat angular del pinyó",
+            "cos": "En un mecanisme pinyó-cremallera sense lliscament, la velocitat lineal de la cremallera (la porta) és igual a la velocitat tangencial del pinyó al radi primitiu: $v = \\omega\\, r$. Per tant:\n\n$$\\omega_\\text{red} = \\frac{v_\\text{nom}}{r} = \\frac{0{,}12}{0{,}03} = 4\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Velocitat angular del motor",
+            "cos": "Passem les voltes per minut a rad/s (1 volta = $2\\pi$ rad, 1 min = 60 s):\n\n$$\\omega_\\text{mot} = 1\\,500 \\cdot \\frac{2\\pi}{60} = 157{,}1\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Relació de transmissió",
+            "cos": "$$\\tau = \\frac{\\omega_\\text{red}}{\\omega_\\text{mot}} = \\frac{4}{157{,}1} = 0{,}025\\,46 = 25{,}46 \\times 10^{-3}$$\n\nResultat: **$\\tau = 25{,}46 \\times 10^{-3}$** → resposta **c**. És menor que 1, com correspon a un reductor."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $39{,}27$ és la relació inversa, $\\omega_\\text{mot}/\\omega_\\text{red}$.\n- **b)** $0{,}763\\,9 \\times 10^{-3} = v/\\omega_\\text{mot}$: oblida dividir pel radi del pinyó (barreja m/s amb rad/s).\n- **d)** no té sentit: la porta es mou, per tant el pinyó gira."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$\\tau = 25{,}46 \\times 10^{-3}$ → resposta **c**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\tau = 25{,}46 \\times 10^{-3}$ → resposta **c**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -109,22 +223,60 @@
       "titol": "Força sobre l'èmbol petit d'una premsa hidràulica",
       "tema": "pneumatica",
       "temes_secundaris": [],
-      "conceptes": ["premsa hidràulica", "principi de Pascal", "pressió", "secció de l'èmbol"],
+      "conceptes": [
+        "pressió",
+        "principi de Pascal"
+      ],
       "dificultat": 1,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Necessita oleohidràulica o pneumàtica (cilindres, pressió, cabal), que és de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Es vol aixecar una massa $m = 1\\,200\\ \\text{kg}$ utilitzant una premsa hidràulica. La secció transversal de l'èmbol gran és de $30\\,000\\ \\text{mm}^2$ i la del petit és de $1\\,000\\ \\text{mm}^2$. Quina força $F$ cal exercir sobre l'èmbol petit? (preneu $g = 9{,}807\\ \\text{m/s}^2$)",
-      "figures": [{"src": "img/tecno/2020-J/e1-q4.png", "peu": "Premsa hidràulica: força F a l'èmbol petit i massa m sobre l'èmbol gran"}],
-      "opcions": {"a": "$353{,}1\\ \\text{kN}$", "b": "$392{,}3\\ \\text{N}$", "c": "$40\\ \\text{N}$", "d": "$36\\ \\text{kN}$"},
+      "figures": [
+        {
+          "src": "img/tecno/2020-J/e1-q4.png",
+          "peu": "Premsa hidràulica: força F a l'èmbol petit i massa m sobre l'èmbol gran"
+        }
+      ],
+      "opcions": {
+        "a": "$353{,}1\\ \\text{kN}$",
+        "b": "$392{,}3\\ \\text{N}$",
+        "c": "$40\\ \\text{N}$",
+        "d": "$36\\ \\text{kN}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "b",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $m = 1\\,200\\ \\text{kg}$, $g = 9{,}807\\ \\text{m/s}^2$\n- Secció gran: $S_\\text{g} = 30\\,000\\ \\text{mm}^2$; secció petita: $S_\\text{p} = 1\\,000\\ \\text{mm}^2$\n- Incògnita: força a l'èmbol petit, $F$"},
-          {"apartat": null, "titol": "Principi de Pascal", "cos": "La pressió es transmet igual a tot el fluid. Per tant, la pressió que fa $F$ a l'èmbol petit és la mateixa que suporta el pes $mg$ a l'èmbol gran:\n\n$$\\frac{F}{S_\\text{p}} = \\frac{m\\,g}{S_\\text{g}} \\quad\\Rightarrow\\quad F = m\\,g\\, \\frac{S_\\text{p}}{S_\\text{g}}$$"},
-          {"apartat": null, "titol": "Substitució", "cos": "$$F = 1\\,200 \\cdot 9{,}807 \\cdot \\frac{1\\,000}{30\\,000} = \\frac{11\\,768}{30} = 392{,}3\\ \\text{N}$$\n\nResultat: **$F \\approx 392{,}3\\ \\text{N}$** → resposta **b**. (Com que el quocient de seccions no té unitats, no cal passar els mm² a m².)"},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **a)** $353{,}1\\ \\text{kN} = m\\,g \\cdot 30$: invertir la relació de seccions.\n- **c)** $40\\ \\text{N} = 1\\,200/30$: oblidar multiplicar per $g$ (confondre massa i pes)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 1\\,200\\ \\text{kg}$, $g = 9{,}807\\ \\text{m/s}^2$\n- Secció gran: $S_\\text{g} = 30\\,000\\ \\text{mm}^2$; secció petita: $S_\\text{p} = 1\\,000\\ \\text{mm}^2$\n- Incògnita: força a l'èmbol petit, $F$"
+          },
+          {
+            "apartat": null,
+            "titol": "Principi de Pascal",
+            "cos": "La pressió es transmet igual a tot el fluid. Per tant, la pressió que fa $F$ a l'èmbol petit és la mateixa que suporta el pes $mg$ a l'èmbol gran:\n\n$$\\frac{F}{S_\\text{p}} = \\frac{m\\,g}{S_\\text{g}} \\quad\\Rightarrow\\quad F = m\\,g\\, \\frac{S_\\text{p}}{S_\\text{g}}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Substitució",
+            "cos": "$$F = 1\\,200 \\cdot 9{,}807 \\cdot \\frac{1\\,000}{30\\,000} = \\frac{11\\,768}{30} = 392{,}3\\ \\text{N}$$\n\nResultat: **$F \\approx 392{,}3\\ \\text{N}$** → resposta **b**. (Com que el quocient de seccions no té unitats, no cal passar els mm² a m².)"
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **a)** $353{,}1\\ \\text{kN} = m\\,g \\cdot 30$: invertir la relació de seccions.\n- **c)** $40\\ \\text{N} = 1\\,200/30$: oblidar multiplicar per $g$ (confondre massa i pes)."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$F \\approx 392{,}3\\ \\text{N}$ → resposta **b**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$F \\approx 392{,}3\\ \\text{N}$ → resposta **b**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -138,22 +290,55 @@
       "titol": "Massa de niobi en l'aliatge de titani Ti-6Al-7Nb",
       "tema": "materials",
       "temes_secundaris": [],
-      "conceptes": ["aliatge", "composició percentual", "titani"],
+      "conceptes": [
+        "aliatge",
+        "composició percentual"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "1r",
+      "curs_motiu": "Només necessita composició i propietats generals dels materials, que són de 1r.",
+      "pagines": [
+        2
+      ],
       "enunciat": "El Ti-6Al-7Nb és un aliatge biocompatible de titani àmpliament utilitzat en aplicacions quirúrgiques. Conté un $5{,}5\\ \\%$ d'alumini (Al), un $6{,}5\\ \\%$ de niobi (Nb), $0{,}25\\ \\%$ de ferro (Fe), un $0{,}08\\ \\%$ de carboni (C) i la resta és titani (Ti). En l'obtenció d'aquest aliatge, quina quantitat de niobi cal per a aliar-lo amb $250\\ \\text{kg}$ de titani?",
       "figures": [],
-      "opcions": {"a": "$18{,}54\\ \\text{kg}$", "b": "$15{,}68\\ \\text{kg}$", "c": "$16{,}25\\ \\text{kg}$", "d": "$21{,}92\\ \\text{kg}$"},
+      "opcions": {
+        "a": "$18{,}54\\ \\text{kg}$",
+        "b": "$15{,}68\\ \\text{kg}$",
+        "c": "$16{,}25\\ \\text{kg}$",
+        "d": "$21{,}92\\ \\text{kg}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "a",
         "passos": [
-          {"apartat": null, "titol": "Percentatge de titani", "cos": "El titani és «la resta» fins al 100 %:\n\n$$\\%\\text{Ti} = 100 - 5{,}5 - 6{,}5 - 0{,}25 - 0{,}08 = 87{,}67\\ \\%$$"},
-          {"apartat": null, "titol": "Massa total de l'aliatge", "cos": "Els $250\\ \\text{kg}$ de titani són el $87{,}67\\ \\%$ de la massa total de l'aliatge:\n\n$$m_\\text{aliatge} = \\frac{250}{0{,}876\\,7} = 285{,}2\\ \\text{kg}$$"},
-          {"apartat": null, "titol": "Massa de niobi", "cos": "El niobi és el $6{,}5\\ \\%$ de l'aliatge:\n\n$$m_\\text{Nb} = 0{,}065 \\cdot 285{,}2 = 250 \\cdot \\frac{6{,}5}{87{,}67} = 18{,}54\\ \\text{kg}$$\n\nResultat: **$m_\\text{Nb} \\approx 18{,}54\\ \\text{kg}$** → resposta **a**."},
-          {"apartat": null, "titol": "Error típic", "cos": "- **c)** $16{,}25\\ \\text{kg} = 0{,}065 \\cdot 250$: aplicar el 6,5 % als 250 kg de titani, com si fossin la massa total de l'aliatge. Els percentatges es refereixen a l'aliatge sencer, no al titani."}
+          {
+            "apartat": null,
+            "titol": "Percentatge de titani",
+            "cos": "El titani és «la resta» fins al 100 %:\n\n$$\\%\\text{Ti} = 100 - 5{,}5 - 6{,}5 - 0{,}25 - 0{,}08 = 87{,}67\\ \\%$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Massa total de l'aliatge",
+            "cos": "Els $250\\ \\text{kg}$ de titani són el $87{,}67\\ \\%$ de la massa total de l'aliatge:\n\n$$m_\\text{aliatge} = \\frac{250}{0{,}876\\,7} = 285{,}2\\ \\text{kg}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Massa de niobi",
+            "cos": "El niobi és el $6{,}5\\ \\%$ de l'aliatge:\n\n$$m_\\text{Nb} = 0{,}065 \\cdot 285{,}2 = 250 \\cdot \\frac{6{,}5}{87{,}67} = 18{,}54\\ \\text{kg}$$\n\nResultat: **$m_\\text{Nb} \\approx 18{,}54\\ \\text{kg}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Error típic",
+            "cos": "- **c)** $16{,}25\\ \\text{kg} = 0{,}065 \\cdot 250$: aplicar el 6,5 % als 250 kg de titani, com si fossin la massa total de l'aliatge. Els percentatges es refereixen a l'aliatge sencer, no al titani."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$m_\\text{Nb} \\approx 18{,}54\\ \\text{kg}$ → resposta **a**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$m_\\text{Nb} \\approx 18{,}54\\ \\text{kg}$ → resposta **a**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -166,31 +351,83 @@
       "punts": 2.5,
       "titol": "Alarma de cinturó i llums d'un cotxe: taula de veritat i esquema de contactes",
       "tema": "digital",
-      "temes_secundaris": ["control"],
-      "conceptes": ["taula de veritat", "funció lògica", "simplificació algebraica", "esquema de contactes"],
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "àlgebra de Boole",
+        "esquema de contactes"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Es vol dissenyar el circuit que controla l'alarma interior d'avís d'un cotxe. Aquesta alarma ha de sonar quan el cotxe sobrepassa els $20\\ \\text{km/h}$ i es compleix alguna de les condicions següents: que el conductor no porta el cinturó de seguretat cordat o que porta els llums de curt abast apagats quan és fosc. Utilitzant les variables d'estat següents:\n\n- velocitat del cotxe: $v$ = 1: superior a $20\\ \\text{km/h}$; 0: igual o inferior a $20\\ \\text{km/h}$\n- cinturó de seguretat: $c$ = 1: cordat; 0: descordat\n- llums quan és fosc: $l$ = 1: encesos; 0: apagats\n- alarma: $a$ = 1: sona; 0: no sona",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Escriviu la taula de veritat del sistema.", "punts": 1},
-        {"id": "b", "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.", "punts": 1},
-        {"id": "c", "enunciat": "Dibuixeu l'esquema de contactes equivalent.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Escriviu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": "a", "titol": "Traduir l'enunciat a condicions lògiques", "cos": "L'alarma sona ($a = 1$) si:\n\n- el cotxe va a més de 20 km/h: $v = 1$, **i**\n- es compleix alguna (**o**) d'aquestes: cinturó descordat ($c = 0$) **o** llums apagats quan és fosc ($l = 0$).\n\nSi $v = 0$, l'alarma no sona mai."},
-          {"apartat": "a", "titol": "Taula de veritat", "cos": "Amb 3 variables hi ha $2^3 = 8$ combinacions:\n\n| $v$ | $c$ | $l$ | $a$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | 0 |\n| 1 | 0 | 0 | **1** |\n| 1 | 0 | 1 | **1** |\n| 1 | 1 | 0 | **1** |\n| 1 | 1 | 1 | 0 |\n\nAmb $v = 1$, l'única combinació en què no sona és cinturó cordat i llums encesos ($c = 1$, $l = 1$)."},
-          {"apartat": "b", "titol": "Funció canònica (suma de productes)", "cos": "Un terme producte per cada fila amb $a = 1$ (variable negada si val 0):\n\n$$a = v\\,\\bar{c}\\,\\bar{l} + v\\,\\bar{c}\\,l + v\\,c\\,\\bar{l}$$"},
-          {"apartat": "b", "titol": "Simplificació algebraica", "cos": "Traiem factor comú $v$ i agrupem els dos primers termes, que només difereixen en $l$:\n\n$$a = v\\,\\bar{c}\\,(\\bar{l} + l) + v\\,c\\,\\bar{l} = v\\,\\bar{c} + v\\,c\\,\\bar{l}$$\n\nAplicant la propietat $\\bar{c} + c\\,\\bar{l} = \\bar{c} + \\bar{l}$ (absorció):\n\n$$\\boxed{a = v\\,(\\bar{c} + \\bar{l})}$$\n\nEquivalentment, per De Morgan: $a = v\\,\\overline{c\\,l}$ (sona si va ràpid i NO es compleix «cinturó cordat i llums encesos»)."},
-          {"apartat": "c", "titol": "Esquema de contactes", "cos": "En un esquema de contactes, el producte (AND) és una connexió en **sèrie** i la suma (OR) una connexió en **paral·lel**. Una variable directa és un contacte normalment obert (NO) i una variable negada, un contacte normalment tancat (NC).\n\nPer a $a = v\\,(\\bar{c} + \\bar{l})$:\n\n- un contacte **NO** de $v$,\n- en **sèrie** amb dos contactes **NC** de $c$ i de $l$ connectats en **paral·lel**,\n- que alimenten la càrrega (l'alarma $a$).\n\nEsquema de la solució oficial:\n\n![Esquema de contactes: v en sèrie amb c i l (NC) en paral·lel](img/tecno/2020-J/e2-sol.png)"}
+          {
+            "apartat": "a",
+            "titol": "Traduir l'enunciat a condicions lògiques",
+            "cos": "L'alarma sona ($a = 1$) si:\n\n- el cotxe va a més de 20 km/h: $v = 1$, **i**\n- es compleix alguna (**o**) d'aquestes: cinturó descordat ($c = 0$) **o** llums apagats quan és fosc ($l = 0$).\n\nSi $v = 0$, l'alarma no sona mai."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "Amb 3 variables hi ha $2^3 = 8$ combinacions:\n\n| $v$ | $c$ | $l$ | $a$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | 0 |\n| 1 | 0 | 0 | **1** |\n| 1 | 0 | 1 | **1** |\n| 1 | 1 | 0 | **1** |\n| 1 | 1 | 1 | 0 |\n\nAmb $v = 1$, l'única combinació en què no sona és cinturó cordat i llums encesos ($c = 1$, $l = 1$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica (suma de productes)",
+            "cos": "Un terme producte per cada fila amb $a = 1$ (variable negada si val 0):\n\n$$a = v\\,\\bar{c}\\,\\bar{l} + v\\,\\bar{c}\\,l + v\\,c\\,\\bar{l}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació algebraica",
+            "cos": "Traiem factor comú $v$ i agrupem els dos primers termes, que només difereixen en $l$:\n\n$$a = v\\,\\bar{c}\\,(\\bar{l} + l) + v\\,c\\,\\bar{l} = v\\,\\bar{c} + v\\,c\\,\\bar{l}$$\n\nAplicant la propietat $\\bar{c} + c\\,\\bar{l} = \\bar{c} + \\bar{l}$ (absorció):\n\n$$\\boxed{a = v\\,(\\bar{c} + \\bar{l})}$$\n\nEquivalentment, per De Morgan: $a = v\\,\\overline{c\\,l}$ (sona si va ràpid i NO es compleix «cinturó cordat i llums encesos»)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de contactes",
+            "cos": "En un esquema de contactes, el producte (AND) és una connexió en **sèrie** i la suma (OR) una connexió en **paral·lel**. Una variable directa és un contacte normalment obert (NO) i una variable negada, un contacte normalment tancat (NC).\n\nPer a $a = v\\,(\\bar{c} + \\bar{l})$:\n\n- un contacte **NO** de $v$,\n- en **sèrie** amb dos contactes **NC** de $c$ i de $l$ connectats en **paral·lel**,\n- que alimenten la càrrega (l'alarma $a$).\n\nEsquema de la solució oficial:\n\n![Esquema de contactes: v en sèrie amb c i l (NC) en paral·lel](img/tecno/2020-J/e2-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$a = 1$ només a les files $vcl$ = 100, 101 i 110"},
-          {"apartat": "b", "valor": "$a = v\\,\\bar{c}\\,\\bar{l} + v\\,\\bar{c}\\,l + v\\,c\\,\\bar{l} = v\\,(\\bar{c} + \\bar{l})$"},
-          {"apartat": "c", "valor": "Contacte NO $v$ en sèrie amb el paral·lel de dos contactes NC ($c$ i $l$)"}
+          {
+            "apartat": "a",
+            "valor": "$a = 1$ només a les files $vcl$ = 100, 101 i 110"
+          },
+          {
+            "apartat": "b",
+            "valor": "$a = v\\,\\bar{c}\\,\\bar{l} + v\\,\\bar{c}\\,l + v\\,c\\,\\bar{l} = v\\,(\\bar{c} + \\bar{l})$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Contacte NO $v$ en sèrie amb el paral·lel de dos contactes NC ($c$ i $l$)"
+          }
         ],
         "nota": "Error típic a l'esquema de contactes: dibuixar $c$ i $l$ com a contactes normalment oberts. Com que a la funció apareixen negats ($\\bar{c}$, $\\bar{l}$), han de ser contactes normalment tancats."
       }
@@ -204,35 +441,109 @@
       "punts": 2.5,
       "titol": "Sistema d'assistència elèctrica per a una cadira de rodes (motor, reductor i bateria)",
       "tema": "mecanica",
-      "temes_secundaris": ["mecanismes", "maquines-electriques"],
-      "conceptes": ["velocitat angular", "relació de transmissió", "rendiment", "parell motor", "energia de la bateria"],
+      "temes_secundaris": [
+        "mecanismes",
+        "maquines-electriques",
+        "circuits",
+        "energia"
+      ],
+      "conceptes": [
+        "velocitat angular",
+        "velocitat lineal",
+        "relació de transmissió",
+        "rendiment global",
+        "parell motor",
+        "capacitat de bateria",
+        "autonomia",
+        "potència mecànica"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "pagines": [
+        3
+      ],
       "enunciat": "S'instal·la en una cadira de rodes manual un sistema electromecànic dissenyat per a ajudar l'assistent que empeny la cadira. El sistema d'accionament està format per una bateria ideal d'ió liti de tensió $U_\\text{bat} = 12\\ \\text{V}$ i energia $E_\\text{bat} = 240\\ \\text{W h}$, un motor de rendiment $\\eta_\\text{mot} = 0{,}87$, un reductor de rendiment $\\eta_\\text{red} = 0{,}95$ i dues rodes auxiliars de diàmetre $d = 200\\ \\text{mm}$ que toquen a terra. La relació de transmissió entre la velocitat de rotació de les rodes $n_\\text{r}$ i la velocitat de rotació del motor $n_\\text{mot}$ és $\\tau = n_\\text{r}/n_\\text{mot} = 0{,}08$.\n\nEn les condicions d'estudi, es fa avançar la cadira en línia recta a una velocitat constant $v = 3{,}7\\ \\text{km/h}$ per un terreny horitzontal i sense que les rodes llisquin. El motor consumeix una potència $P_\\text{cons} = 75\\ \\text{W}$. Determineu, per a aquestes condicions:",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "La velocitat angular de les rodes auxiliars $\\omega_\\text{r}$ i la velocitat angular a l'eix del motor $\\omega_\\text{mot}$.", "punts": 0.5},
-        {"id": "b", "enunciat": "La potència a l'eix de les rodes $P_\\text{subm}$.", "punts": 0.5},
-        {"id": "c", "enunciat": "El parell $\\Gamma$ a l'eix del motor.", "punts": 0.5},
-        {"id": "d", "enunciat": "El temps màxim $t$ de funcionament del conjunt i la distància màxima recorreguda $s_\\text{rec}$.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "La velocitat angular de les rodes auxiliars $\\omega_\\text{r}$ i la velocitat angular a l'eix del motor $\\omega_\\text{mot}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "La potència a l'eix de les rodes $P_\\text{subm}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El parell $\\Gamma$ a l'eix del motor.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "El temps màxim $t$ de funcionament del conjunt i la distància màxima recorreguda $s_\\text{rec}$.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Bateria: $U_\\text{bat} = 12\\ \\text{V}$, $E_\\text{bat} = 240\\ \\text{W h}$\n- Rendiments: $\\eta_\\text{mot} = 0{,}87$, $\\eta_\\text{red} = 0{,}95$\n- Rodes: $d = 200\\ \\text{mm}$ → radi $r = 0{,}1\\ \\text{m}$\n- Relació de transmissió: $\\tau = n_\\text{r}/n_\\text{mot} = 0{,}08$\n- Velocitat: $v = 3{,}7\\ \\text{km/h} = \\dfrac{3{,}7}{3{,}6} = 1{,}028\\ \\text{m/s}$\n- Potència consumida pel motor: $P_\\text{cons} = 75\\ \\text{W}$\n- Incògnites: $\\omega_\\text{r}$, $\\omega_\\text{mot}$, $P_\\text{subm}$, $\\Gamma$, $t$, $s_\\text{rec}$"},
-          {"apartat": "a", "titol": "Velocitat angular de les rodes", "cos": "Si la roda no llisca, el punt de contacte amb el terra no es mou i la cadira avança a la velocitat tangencial de la roda: $v = \\omega_\\text{r}\\, r$.\n\n$$\\omega_\\text{r} = \\frac{v}{d/2} = \\frac{1{,}028}{0{,}1} = 10{,}28\\ \\text{rad/s}$$"},
-          {"apartat": "a", "titol": "Velocitat angular del motor", "cos": "La relació de transmissió és la mateixa tant si es fa servir min⁻¹ com rad/s: $\\tau = \\omega_\\text{r}/\\omega_\\text{mot}$. Aïllant:\n\n$$\\omega_\\text{mot} = \\frac{\\omega_\\text{r}}{\\tau} = \\frac{10{,}28}{0{,}08} = 128{,}5\\ \\text{rad/s}$$\n\nResultat: **$\\omega_\\text{r} = 10{,}28\\ \\text{rad/s}$, $\\omega_\\text{mot} = 128{,}5\\ \\text{rad/s}$** (unes $1\\,227\\ \\text{min}^{-1}$)."},
-          {"apartat": "b", "titol": "Potència a l'eix de les rodes", "cos": "L'energia passa per dos elements en cadena (motor i reductor), i cadascun en perd una part. El rendiment global és el producte dels rendiments:\n\n$$P_\\text{subm} = P_\\text{cons}\\, \\eta_\\text{mot}\\, \\eta_\\text{red} = 75 \\cdot 0{,}87 \\cdot 0{,}95 = 61{,}99\\ \\text{W}$$\n\nResultat: **$P_\\text{subm} \\approx 61{,}99\\ \\text{W}$**."},
-          {"apartat": "c", "titol": "Parell a l'eix del motor", "cos": "A l'eix del motor (abans del reductor) la potència mecànica és $P_\\text{mot} = P_\\text{cons}\\, \\eta_\\text{mot} = 75 \\cdot 0{,}87 = 65{,}25\\ \\text{W}$. La potència en un eix que gira és $P = \\Gamma\\, \\omega$, per tant:\n\n$$\\Gamma = \\frac{P_\\text{cons}\\, \\eta_\\text{mot}}{\\omega_\\text{mot}} = \\frac{65{,}25}{128{,}5} = 0{,}507\\,9\\ \\text{N m}$$\n\nResultat: **$\\Gamma \\approx 0{,}507\\,9\\ \\text{N m} = 507{,}9\\ \\text{N mm}$**."},
-          {"apartat": "d", "titol": "Temps màxim de funcionament", "cos": "La bateria és ideal: tota la seva energia es pot lliurar al motor, que en consumeix $75\\ \\text{W}$ de manera constant:\n\n$$t = \\frac{E_\\text{bat}}{P_\\text{cons}} = \\frac{240\\ \\text{W h}}{75\\ \\text{W}} = 3{,}2\\ \\text{h}$$"},
-          {"apartat": "d", "titol": "Distància màxima recorreguda", "cos": "A velocitat constant, la distància és velocitat per temps:\n\n$$s_\\text{rec} = v\\, t = 3{,}7\\ \\text{km/h} \\cdot 3{,}2\\ \\text{h} = 11{,}84\\ \\text{km}$$\n\nResultat: **$t = 3{,}2\\ \\text{h}$ i $s_\\text{rec} = 11{,}84\\ \\text{km}$**."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Bateria: $U_\\text{bat} = 12\\ \\text{V}$, $E_\\text{bat} = 240\\ \\text{W h}$\n- Rendiments: $\\eta_\\text{mot} = 0{,}87$, $\\eta_\\text{red} = 0{,}95$\n- Rodes: $d = 200\\ \\text{mm}$ → radi $r = 0{,}1\\ \\text{m}$\n- Relació de transmissió: $\\tau = n_\\text{r}/n_\\text{mot} = 0{,}08$\n- Velocitat: $v = 3{,}7\\ \\text{km/h} = \\dfrac{3{,}7}{3{,}6} = 1{,}028\\ \\text{m/s}$\n- Potència consumida pel motor: $P_\\text{cons} = 75\\ \\text{W}$\n- Incògnites: $\\omega_\\text{r}$, $\\omega_\\text{mot}$, $P_\\text{subm}$, $\\Gamma$, $t$, $s_\\text{rec}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat angular de les rodes",
+            "cos": "Si la roda no llisca, el punt de contacte amb el terra no es mou i la cadira avança a la velocitat tangencial de la roda: $v = \\omega_\\text{r}\\, r$.\n\n$$\\omega_\\text{r} = \\frac{v}{d/2} = \\frac{1{,}028}{0{,}1} = 10{,}28\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat angular del motor",
+            "cos": "La relació de transmissió és la mateixa tant si es fa servir min⁻¹ com rad/s: $\\tau = \\omega_\\text{r}/\\omega_\\text{mot}$. Aïllant:\n\n$$\\omega_\\text{mot} = \\frac{\\omega_\\text{r}}{\\tau} = \\frac{10{,}28}{0{,}08} = 128{,}5\\ \\text{rad/s}$$\n\nResultat: **$\\omega_\\text{r} = 10{,}28\\ \\text{rad/s}$, $\\omega_\\text{mot} = 128{,}5\\ \\text{rad/s}$** (unes $1\\,227\\ \\text{min}^{-1}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència a l'eix de les rodes",
+            "cos": "L'energia passa per dos elements en cadena (motor i reductor), i cadascun en perd una part. El rendiment global és el producte dels rendiments:\n\n$$P_\\text{subm} = P_\\text{cons}\\, \\eta_\\text{mot}\\, \\eta_\\text{red} = 75 \\cdot 0{,}87 \\cdot 0{,}95 = 61{,}99\\ \\text{W}$$\n\nResultat: **$P_\\text{subm} \\approx 61{,}99\\ \\text{W}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Parell a l'eix del motor",
+            "cos": "A l'eix del motor (abans del reductor) la potència mecànica és $P_\\text{mot} = P_\\text{cons}\\, \\eta_\\text{mot} = 75 \\cdot 0{,}87 = 65{,}25\\ \\text{W}$. La potència en un eix que gira és $P = \\Gamma\\, \\omega$, per tant:\n\n$$\\Gamma = \\frac{P_\\text{cons}\\, \\eta_\\text{mot}}{\\omega_\\text{mot}} = \\frac{65{,}25}{128{,}5} = 0{,}507\\,9\\ \\text{N m}$$\n\nResultat: **$\\Gamma \\approx 0{,}507\\,9\\ \\text{N m} = 507{,}9\\ \\text{N mm}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Temps màxim de funcionament",
+            "cos": "La bateria és ideal: tota la seva energia es pot lliurar al motor, que en consumeix $75\\ \\text{W}$ de manera constant:\n\n$$t = \\frac{E_\\text{bat}}{P_\\text{cons}} = \\frac{240\\ \\text{W h}}{75\\ \\text{W}} = 3{,}2\\ \\text{h}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Distància màxima recorreguda",
+            "cos": "A velocitat constant, la distància és velocitat per temps:\n\n$$s_\\text{rec} = v\\, t = 3{,}7\\ \\text{km/h} \\cdot 3{,}2\\ \\text{h} = 11{,}84\\ \\text{km}$$\n\nResultat: **$t = 3{,}2\\ \\text{h}$ i $s_\\text{rec} = 11{,}84\\ \\text{km}$**."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$\\omega_\\text{r} = 10{,}28\\ \\text{rad/s}$; $\\omega_\\text{mot} = 128{,}5\\ \\text{rad/s}$"},
-          {"apartat": "b", "valor": "$P_\\text{subm} \\approx 61{,}99\\ \\text{W}$"},
-          {"apartat": "c", "valor": "$\\Gamma \\approx 507{,}9\\ \\text{N mm} = 0{,}507\\,9\\ \\text{N m}$"},
-          {"apartat": "d", "valor": "$t = 3{,}2\\ \\text{h}$; $s_\\text{rec} = 11{,}84\\ \\text{km}$"}
+          {
+            "apartat": "a",
+            "valor": "$\\omega_\\text{r} = 10{,}28\\ \\text{rad/s}$; $\\omega_\\text{mot} = 128{,}5\\ \\text{rad/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{subm} \\approx 61{,}99\\ \\text{W}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\Gamma \\approx 507{,}9\\ \\text{N mm} = 0{,}507\\,9\\ \\text{N m}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$t = 3{,}2\\ \\text{h}$; $s_\\text{rec} = 11{,}84\\ \\text{km}$"
+          }
         ],
         "nota": "Error típic a l'apartat c: dividir $P_\\text{subm}$ (potència a les rodes) per $\\omega_\\text{mot}$. El parell a l'eix del motor es calcula amb la potència que surt del motor ($P_\\text{cons}\\,\\eta_\\text{mot}$), abans de les pèrdues del reductor. La tensió de la bateria (12 V) no es fa servir."
       }
@@ -246,35 +557,103 @@
       "punts": 2.5,
       "titol": "Estufes de butà d'una terrassa: potència, durada de la bombona i emissions de CO2",
       "tema": "energia",
-      "temes_secundaris": ["termica"],
-      "conceptes": ["poder calorífic", "consum de combustible", "potència tèrmica", "emissions de CO2"],
+      "temes_secundaris": [
+        "termica"
+      ],
+      "conceptes": [
+        "poder calorífic",
+        "consum de combustible",
+        "potència tèrmica",
+        "emissions de CO2",
+        "autonomia"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "pagines": [
+        3
+      ],
       "enunciat": "Una estufa d'exterior alimentada amb gas butà té un consum regulable d'entre $c_\\text{mín} = 450\\ \\text{g/h}$ i $c_\\text{màx} = 800\\ \\text{g/h}$ de butà. El poder calorífic del butà és $p_\\text{b} = 49{,}61\\ \\text{MJ/kg}$ i es distribueix en bombones que contenen una massa de butà de $m_\\text{b} = 12{,}5\\ \\text{kg}$. Determineu:",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "La potència mínima $P_\\text{mín}$ i màxima $P_\\text{màx}$ de l'estufa.", "punts": 0.5},
-        {"id": "b", "enunciat": "La durada de funcionament màxima d'una bombona $t_\\text{màx}$.", "punts": 0.5},
-        {"id": "c", "enunciat": "El gràfic de la durada $t$ d'una bombona en hores, en funció del consum $c$ de butà, i indiqueu-ne les escales.", "punts": 1},
-        {"id": "d", "enunciat": "Una terrassa de bar té instal·lades $n = 3$ d'aquestes estufes que funcionen durant $t_\\text{bar} = 10$ hores al dia a potència màxima. L'Oficina Catalana del Canvi Climàtic estima un factor d'emissió $FE = 2{,}96\\ \\text{kg}$ de $\\text{CO}_2$ per cada kilogram de gas butà. Determineu: la massa de $\\text{CO}_2$ emesa en un dia de funcionament $m_{\\text{CO}_2}$.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "La potència mínima $P_\\text{mín}$ i màxima $P_\\text{màx}$ de l'estufa.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "La durada de funcionament màxima d'una bombona $t_\\text{màx}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El gràfic de la durada $t$ d'una bombona en hores, en funció del consum $c$ de butà, i indiqueu-ne les escales.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "Una terrassa de bar té instal·lades $n = 3$ d'aquestes estufes que funcionen durant $t_\\text{bar} = 10$ hores al dia a potència màxima. L'Oficina Catalana del Canvi Climàtic estima un factor d'emissió $FE = 2{,}96\\ \\text{kg}$ de $\\text{CO}_2$ per cada kilogram de gas butà. Determineu: la massa de $\\text{CO}_2$ emesa en un dia de funcionament $m_{\\text{CO}_2}$.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Consum: $c_\\text{mín} = 450\\ \\text{g/h} = 0{,}45\\ \\text{kg/h}$; $c_\\text{màx} = 800\\ \\text{g/h} = 0{,}8\\ \\text{kg/h}$\n- Poder calorífic: $p_\\text{b} = 49{,}61\\ \\text{MJ/kg} = 49{,}61 \\cdot 10^6\\ \\text{J/kg}$\n- Bombona: $m_\\text{b} = 12{,}5\\ \\text{kg}$\n- Terrassa: $n = 3$ estufes, $t_\\text{bar} = 10\\ \\text{h/dia}$ a potència màxima; $FE = 2{,}96\\ \\text{kg CO}_2/\\text{kg butà}$\n- Incògnites: $P_\\text{mín}$, $P_\\text{màx}$, $t_\\text{màx}$, gràfic $t(c)$, $m_{\\text{CO}_2}$"},
-          {"apartat": "a", "titol": "Potència tèrmica a partir del consum", "cos": "La potència és l'energia alliberada per unitat de temps. Cada kg de butà allibera $p_\\text{b}$ joules, i se'n cremen $c$ kg per hora: $P = p_\\text{b}\\, c$. Cal passar el consum a kg/s (1 h = 3 600 s):\n\n$$P_\\text{mín} = p_\\text{b}\\, c_\\text{mín} = 49{,}61 \\cdot 10^6\\ \\tfrac{\\text{J}}{\\text{kg}} \\cdot \\frac{0{,}45\\ \\text{kg}}{3\\,600\\ \\text{s}} = 6\\,201\\ \\text{W}$$\n\n$$P_\\text{màx} = p_\\text{b}\\, c_\\text{màx} = 49{,}61 \\cdot 10^6 \\cdot \\frac{0{,}8}{3\\,600} = 11\\,024\\ \\text{W}$$\n\nResultat: **$P_\\text{mín} \\approx 6{,}201\\ \\text{kW}$ i $P_\\text{màx} \\approx 11{,}02\\ \\text{kW}$**."},
-          {"apartat": "b", "titol": "Durada màxima d'una bombona", "cos": "La bombona dura més com menys es consumeix, és a dir, amb el consum mínim:\n\n$$t_\\text{màx} = \\frac{m_\\text{b}}{c_\\text{mín}} = \\frac{12{,}5\\ \\text{kg}}{0{,}45\\ \\text{kg/h}} = 27{,}78\\ \\text{h}$$\n\nResultat: **$t_\\text{màx} \\approx 27{,}78\\ \\text{h}$**."},
-          {"apartat": "c", "titol": "Funció que cal representar", "cos": "Per a qualsevol consum $c$ (en g/h), la durada d'una bombona és:\n\n$$t = \\frac{m_\\text{b}}{c} = \\frac{12\\,500\\ \\text{g}}{c}\\quad [\\text{h}]$$\n\nÉs una **hipèrbola** (proporcionalitat inversa): si el consum es duplica, la durada es redueix a la meitat. Només té sentit entre $c_\\text{mín} = 450\\ \\text{g/h}$ i $c_\\text{màx} = 800\\ \\text{g/h}$."},
-          {"apartat": "c", "titol": "Taula de valors i escales", "cos": "| $c$ [g/h] | 450 | 500 | 600 | 700 | 800 |\n|---|---|---|---|---|---|\n| $t$ [h] | 27,78 | 25,00 | 20,83 | 17,86 | 15,63 |\n\nEscales: eix horitzontal $c$ de 450 a 800 g/h (divisions de 100 g/h); eix vertical $t$ de 15 a 30 h (divisions de 5 h). La corba és decreixent i lleugerament corbada (còncava cap amunt).\n\nGràfic de la solució oficial (eix vertical: $t$ [h]; eix horitzontal: $c$ [g/h]):\n\n![Durada d'una bombona t en funció del consum c](img/tecno/2020-J/e4-sol.png)"},
-          {"apartat": "d", "titol": "Butà consumit en un dia", "cos": "Les 3 estufes funcionen 10 h a consum màxim:\n\n$$m_\\text{butà} = c_\\text{màx}\\, n\\, t_\\text{bar} = 0{,}8\\ \\text{kg/h} \\cdot 3 \\cdot 10\\ \\text{h} = 24\\ \\text{kg}$$"},
-          {"apartat": "d", "titol": "Massa de CO2 emesa", "cos": "Cada kg de butà cremat emet $2{,}96\\ \\text{kg}$ de CO₂:\n\n$$m_{\\text{CO}_2} = m_\\text{butà}\\, FE = 24 \\cdot 2{,}96 = 71{,}04\\ \\text{kg}$$\n\nResultat: **$m_{\\text{CO}_2} = 71{,}04\\ \\text{kg}$ al dia**."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Consum: $c_\\text{mín} = 450\\ \\text{g/h} = 0{,}45\\ \\text{kg/h}$; $c_\\text{màx} = 800\\ \\text{g/h} = 0{,}8\\ \\text{kg/h}$\n- Poder calorífic: $p_\\text{b} = 49{,}61\\ \\text{MJ/kg} = 49{,}61 \\cdot 10^6\\ \\text{J/kg}$\n- Bombona: $m_\\text{b} = 12{,}5\\ \\text{kg}$\n- Terrassa: $n = 3$ estufes, $t_\\text{bar} = 10\\ \\text{h/dia}$ a potència màxima; $FE = 2{,}96\\ \\text{kg CO}_2/\\text{kg butà}$\n- Incògnites: $P_\\text{mín}$, $P_\\text{màx}$, $t_\\text{màx}$, gràfic $t(c)$, $m_{\\text{CO}_2}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència tèrmica a partir del consum",
+            "cos": "La potència és l'energia alliberada per unitat de temps. Cada kg de butà allibera $p_\\text{b}$ joules, i se'n cremen $c$ kg per hora: $P = p_\\text{b}\\, c$. Cal passar el consum a kg/s (1 h = 3 600 s):\n\n$$P_\\text{mín} = p_\\text{b}\\, c_\\text{mín} = 49{,}61 \\cdot 10^6\\ \\tfrac{\\text{J}}{\\text{kg}} \\cdot \\frac{0{,}45\\ \\text{kg}}{3\\,600\\ \\text{s}} = 6\\,201\\ \\text{W}$$\n\n$$P_\\text{màx} = p_\\text{b}\\, c_\\text{màx} = 49{,}61 \\cdot 10^6 \\cdot \\frac{0{,}8}{3\\,600} = 11\\,024\\ \\text{W}$$\n\nResultat: **$P_\\text{mín} \\approx 6{,}201\\ \\text{kW}$ i $P_\\text{màx} \\approx 11{,}02\\ \\text{kW}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Durada màxima d'una bombona",
+            "cos": "La bombona dura més com menys es consumeix, és a dir, amb el consum mínim:\n\n$$t_\\text{màx} = \\frac{m_\\text{b}}{c_\\text{mín}} = \\frac{12{,}5\\ \\text{kg}}{0{,}45\\ \\text{kg/h}} = 27{,}78\\ \\text{h}$$\n\nResultat: **$t_\\text{màx} \\approx 27{,}78\\ \\text{h}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Funció que cal representar",
+            "cos": "Per a qualsevol consum $c$ (en g/h), la durada d'una bombona és:\n\n$$t = \\frac{m_\\text{b}}{c} = \\frac{12\\,500\\ \\text{g}}{c}\\quad [\\text{h}]$$\n\nÉs una **hipèrbola** (proporcionalitat inversa): si el consum es duplica, la durada es redueix a la meitat. Només té sentit entre $c_\\text{mín} = 450\\ \\text{g/h}$ i $c_\\text{màx} = 800\\ \\text{g/h}$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Taula de valors i escales",
+            "cos": "| $c$ [g/h] | 450 | 500 | 600 | 700 | 800 |\n|---|---|---|---|---|---|\n| $t$ [h] | 27,78 | 25,00 | 20,83 | 17,86 | 15,63 |\n\nEscales: eix horitzontal $c$ de 450 a 800 g/h (divisions de 100 g/h); eix vertical $t$ de 15 a 30 h (divisions de 5 h). La corba és decreixent i lleugerament corbada (còncava cap amunt).\n\nGràfic de la solució oficial (eix vertical: $t$ [h]; eix horitzontal: $c$ [g/h]):\n\n![Durada d'una bombona t en funció del consum c](img/tecno/2020-J/e4-sol.png)"
+          },
+          {
+            "apartat": "d",
+            "titol": "Butà consumit en un dia",
+            "cos": "Les 3 estufes funcionen 10 h a consum màxim:\n\n$$m_\\text{butà} = c_\\text{màx}\\, n\\, t_\\text{bar} = 0{,}8\\ \\text{kg/h} \\cdot 3 \\cdot 10\\ \\text{h} = 24\\ \\text{kg}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Massa de CO2 emesa",
+            "cos": "Cada kg de butà cremat emet $2{,}96\\ \\text{kg}$ de CO₂:\n\n$$m_{\\text{CO}_2} = m_\\text{butà}\\, FE = 24 \\cdot 2{,}96 = 71{,}04\\ \\text{kg}$$\n\nResultat: **$m_{\\text{CO}_2} = 71{,}04\\ \\text{kg}$ al dia**."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$P_\\text{mín} \\approx 6{,}201\\ \\text{kW}$; $P_\\text{màx} \\approx 11{,}02\\ \\text{kW}$"},
-          {"apartat": "b", "valor": "$t_\\text{màx} \\approx 27{,}78\\ \\text{h}$"},
-          {"apartat": "c", "valor": "$t = 12\\,500/c$ (hipèrbola): de $27{,}78\\ \\text{h}$ a $450\\ \\text{g/h}$ fins a $15{,}63\\ \\text{h}$ a $800\\ \\text{g/h}$"},
-          {"apartat": "d", "valor": "$m_{\\text{CO}_2} = 71{,}04\\ \\text{kg}$"}
+          {
+            "apartat": "a",
+            "valor": "$P_\\text{mín} \\approx 6{,}201\\ \\text{kW}$; $P_\\text{màx} \\approx 11{,}02\\ \\text{kW}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$t_\\text{màx} \\approx 27{,}78\\ \\text{h}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$t = 12\\,500/c$ (hipèrbola): de $27{,}78\\ \\text{h}$ a $450\\ \\text{g/h}$ fins a $15{,}63\\ \\text{h}$ a $800\\ \\text{g/h}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$m_{\\text{CO}_2} = 71{,}04\\ \\text{kg}$"
+          }
         ],
         "nota": "Error típic a l'apartat a: no passar les hores a segons i obtenir potències 3 600 vegades massa grans. A l'apartat c, el gràfic no és una recta: $t$ és inversament proporcional a $c$."
       }
@@ -288,36 +667,113 @@
       "punts": 2.5,
       "titol": "Fanal penjat d'una barra articulada amb tirant d'acer",
       "tema": "estatica",
-      "temes_secundaris": ["resistencia"],
-      "conceptes": ["diagrama de cos lliure", "equilibri de moments", "reaccions a l'articulació", "tensió normal", "límit elàstic"],
+      "temes_secundaris": [
+        "resistencia"
+      ],
+      "conceptes": [
+        "diagrama de cos lliure",
+        "equilibri de moments",
+        "reaccions en una articulació",
+        "tensió normal",
+        "límit elàstic",
+        "equilibri de forces"
+      ],
       "dificultat": 2,
-      "pagines": [4],
+      "curs": "2n",
+      "curs_motiu": "Necessita estàtica d'estructures i tensió normal o deformació (resistència de materials), que són de 2n.",
+      "pagines": [
+        4
+      ],
       "enunciat": "El fanal de massa $m = 30\\ \\text{kg}$ penja del punt mitjà de la barra BO de longitud $L_\\text{BO} = 2L$, que està articulada a la paret en el punt O. El tirant AB és d'acer (de límit elàstic $\\sigma = 250\\ \\text{MPa}$) i té un diàmetre $d = 4\\ \\text{mm}$ que manté el sistema en equilibri (vegeu la figura). Les masses de tots els elements excepte la del fanal són negligibles.",
-      "figures": [{"src": "img/tecno/2020-J/e5.png", "peu": "Fanal penjat al punt C de la barra BO, articulada a O i subjecta pel tirant horitzontal AB (angle de 30° entre AB i BO)"}],
+      "figures": [
+        {
+          "src": "img/tecno/2020-J/e5.png",
+          "peu": "Fanal penjat al punt C de la barra BO, articulada a O i subjecta pel tirant horitzontal AB (angle de 30° entre AB i BO)"
+        }
+      ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu el diagrama de cos lliure de la barra BO.", "punts": 0.5},
-        {"id": "b", "enunciat": "Determineu: La força $T_\\text{AB}$ a la qual està sotmès el tirant.", "punts": 0.5},
-        {"id": "c", "enunciat": "La tensió $\\sigma_\\text{AB}$ del tirant.", "punts": 0.5},
-        {"id": "d", "enunciat": "Les forces horitzontal $F_\\text{H}$ i vertical $F_\\text{V}$ a l'articulació O.", "punts": 0.5},
-        {"id": "e", "enunciat": "Què passaria si el diàmetre del cable d'acer fos $d' = 1\\ \\text{mm}$? Justifiqueu breument la resposta.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de cos lliure de la barra BO.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu: La força $T_\\text{AB}$ a la qual està sotmès el tirant.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La tensió $\\sigma_\\text{AB}$ del tirant.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "Les forces horitzontal $F_\\text{H}$ i vertical $F_\\text{V}$ a l'articulació O.",
+          "punts": 0.5
+        },
+        {
+          "id": "e",
+          "enunciat": "Què passaria si el diàmetre del cable d'acer fos $d' = 1\\ \\text{mm}$? Justifiqueu breument la resposta.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Massa del fanal: $m = 30\\ \\text{kg}$, penjat al punt mitjà C de la barra; $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial) → pes $m\\,g = 294{,}2\\ \\text{N}$\n- Barra BO de longitud $2L$, articulada a O; angle entre el tirant (horitzontal) i la barra: $30^\\circ$\n- Tirant AB d'acer: $d = 4\\ \\text{mm}$, límit elàstic $\\sigma_\\text{e} = 250\\ \\text{MPa}$\n- Incògnites: $T_\\text{AB}$, $\\sigma_\\text{AB}$, $F_\\text{H}$, $F_\\text{V}$ i què passa amb $d' = 1\\ \\text{mm}$"},
-          {"apartat": "a", "titol": "Diagrama de cos lliure de la barra BO", "cos": "Aïllem la barra i hi dibuixem totes les forces exteriors:\n\n- A **B**: la força del tirant $T_\\text{AB}$, horitzontal i cap a A (cap a la dreta: un tirant sempre estira).\n- A **C** (punt mitjà): el pes del fanal, $T_\\text{C} = m\\,g$, vertical cap avall.\n- A **O** (articulació): una reacció amb dues components, $F_\\text{V}$ vertical i $F_\\text{H}$ horitzontal (cap a l'esquerra, per compensar el tirant).\n\n![Diagrama de cos lliure de la barra BO](img/tecno/2020-J/e5-sol.png)"},
-          {"apartat": "b", "titol": "Equilibri de moments respecte d'O", "cos": "Prenem moments respecte d'O perquè així $F_\\text{H}$ i $F_\\text{V}$ no hi intervenen (passen per O) i només queda una incògnita.\n\n- Braç del pes: distància horitzontal d'O a C, $L\\cos 30^\\circ$.\n- Braç del tirant (horitzontal): distància vertical d'O a B, $2L\\sin 30^\\circ = L$.\n\n$$\\sum M_\\text{O} = 0 \\;\\Rightarrow\\; m\\,g\\,L\\cos 30^\\circ - T_\\text{AB}\\, 2L\\sin 30^\\circ = 0$$\n\n$$T_\\text{AB} = \\frac{m\\,g\\,\\cos 30^\\circ}{2\\sin 30^\\circ} = m\\,g\\,\\frac{\\sqrt{3}}{2} = 294{,}2 \\cdot 0{,}866\\,0 = 254{,}8\\ \\text{N}$$\n\nResultat: **$T_\\text{AB} \\approx 254{,}8\\ \\text{N}$** (la $L$ se simplifica: no cal saber-la)."},
-          {"apartat": "c", "titol": "Tensió normal al tirant", "cos": "La tensió és la força dividida per la secció transversal del cable:\n\n$$S = \\frac{\\pi d^2}{4} = \\frac{\\pi \\cdot 4^2}{4} = 12{,}57\\ \\text{mm}^2$$\n\n$$\\sigma_\\text{AB} = \\frac{T_\\text{AB}}{S} = \\frac{254{,}8\\ \\text{N}}{12{,}57\\ \\text{mm}^2} = 20{,}28\\ \\text{MPa}$$\n\n(Recorda: $1\\ \\text{N/mm}^2 = 1\\ \\text{MPa}$.) Resultat: **$\\sigma_\\text{AB} \\approx 20{,}28\\ \\text{MPa}$**, molt per sota del límit elàstic."},
-          {"apartat": "d", "titol": "Reaccions a l'articulació O", "cos": "Equilibri de forces horitzontals: només hi ha $T_\\text{AB}$ (cap a la dreta) i $F_\\text{H}$ (cap a l'esquerra):\n\n$$\\sum F_x = 0 \\;\\Rightarrow\\; F_\\text{H} = T_\\text{AB} = 254{,}8\\ \\text{N}$$\n\nEquilibri de forces verticals: només hi ha el pes (avall) i $F_\\text{V}$ (amunt):\n\n$$\\sum F_y = 0 \\;\\Rightarrow\\; F_\\text{V} = m\\,g = 30 \\cdot 9{,}807 = 294{,}2\\ \\text{N}$$\n\nResultat: **$F_\\text{H} \\approx 254{,}8\\ \\text{N}$ (cap a l'esquerra) i $F_\\text{V} \\approx 294{,}2\\ \\text{N}$ (cap amunt)**."},
-          {"apartat": "e", "titol": "Tensió amb un cable de 1 mm", "cos": "La força al tirant no canvia (només depèn del pes i de la geometria), però la secció es fa 16 vegades més petita:\n\n$$\\sigma'_\\text{AB} = \\frac{T_\\text{AB}}{\\pi d'^2/4} = \\frac{254{,}8}{\\pi \\cdot 1^2/4} = \\frac{254{,}8}{0{,}785\\,4} = 324{,}4\\ \\text{MPa}$$\n\nCom que $324{,}4\\ \\text{MPa} > 250\\ \\text{MPa}$ (límit elàstic), **el tirant es deformaria plàsticament** (permanentment i de manera irreversible): s'allargaria, la barra baixaria i no es podria mantenir la posició d'equilibri estudiada (fins i tot podria trencar-se)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa del fanal: $m = 30\\ \\text{kg}$, penjat al punt mitjà C de la barra; $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial) → pes $m\\,g = 294{,}2\\ \\text{N}$\n- Barra BO de longitud $2L$, articulada a O; angle entre el tirant (horitzontal) i la barra: $30^\\circ$\n- Tirant AB d'acer: $d = 4\\ \\text{mm}$, límit elàstic $\\sigma_\\text{e} = 250\\ \\text{MPa}$\n- Incògnites: $T_\\text{AB}$, $\\sigma_\\text{AB}$, $F_\\text{H}$, $F_\\text{V}$ i què passa amb $d' = 1\\ \\text{mm}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de cos lliure de la barra BO",
+            "cos": "Aïllem la barra i hi dibuixem totes les forces exteriors:\n\n- A **B**: la força del tirant $T_\\text{AB}$, horitzontal i cap a A (cap a la dreta: un tirant sempre estira).\n- A **C** (punt mitjà): el pes del fanal, $T_\\text{C} = m\\,g$, vertical cap avall.\n- A **O** (articulació): una reacció amb dues components, $F_\\text{V}$ vertical i $F_\\text{H}$ horitzontal (cap a l'esquerra, per compensar el tirant).\n\n![Diagrama de cos lliure de la barra BO](img/tecno/2020-J/e5-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equilibri de moments respecte d'O",
+            "cos": "Prenem moments respecte d'O perquè així $F_\\text{H}$ i $F_\\text{V}$ no hi intervenen (passen per O) i només queda una incògnita.\n\n- Braç del pes: distància horitzontal d'O a C, $L\\cos 30^\\circ$.\n- Braç del tirant (horitzontal): distància vertical d'O a B, $2L\\sin 30^\\circ = L$.\n\n$$\\sum M_\\text{O} = 0 \\;\\Rightarrow\\; m\\,g\\,L\\cos 30^\\circ - T_\\text{AB}\\, 2L\\sin 30^\\circ = 0$$\n\n$$T_\\text{AB} = \\frac{m\\,g\\,\\cos 30^\\circ}{2\\sin 30^\\circ} = m\\,g\\,\\frac{\\sqrt{3}}{2} = 294{,}2 \\cdot 0{,}866\\,0 = 254{,}8\\ \\text{N}$$\n\nResultat: **$T_\\text{AB} \\approx 254{,}8\\ \\text{N}$** (la $L$ se simplifica: no cal saber-la)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Tensió normal al tirant",
+            "cos": "La tensió és la força dividida per la secció transversal del cable:\n\n$$S = \\frac{\\pi d^2}{4} = \\frac{\\pi \\cdot 4^2}{4} = 12{,}57\\ \\text{mm}^2$$\n\n$$\\sigma_\\text{AB} = \\frac{T_\\text{AB}}{S} = \\frac{254{,}8\\ \\text{N}}{12{,}57\\ \\text{mm}^2} = 20{,}28\\ \\text{MPa}$$\n\n(Recorda: $1\\ \\text{N/mm}^2 = 1\\ \\text{MPa}$.) Resultat: **$\\sigma_\\text{AB} \\approx 20{,}28\\ \\text{MPa}$**, molt per sota del límit elàstic."
+          },
+          {
+            "apartat": "d",
+            "titol": "Reaccions a l'articulació O",
+            "cos": "Equilibri de forces horitzontals: només hi ha $T_\\text{AB}$ (cap a la dreta) i $F_\\text{H}$ (cap a l'esquerra):\n\n$$\\sum F_x = 0 \\;\\Rightarrow\\; F_\\text{H} = T_\\text{AB} = 254{,}8\\ \\text{N}$$\n\nEquilibri de forces verticals: només hi ha el pes (avall) i $F_\\text{V}$ (amunt):\n\n$$\\sum F_y = 0 \\;\\Rightarrow\\; F_\\text{V} = m\\,g = 30 \\cdot 9{,}807 = 294{,}2\\ \\text{N}$$\n\nResultat: **$F_\\text{H} \\approx 254{,}8\\ \\text{N}$ (cap a l'esquerra) i $F_\\text{V} \\approx 294{,}2\\ \\text{N}$ (cap amunt)**."
+          },
+          {
+            "apartat": "e",
+            "titol": "Tensió amb un cable de 1 mm",
+            "cos": "La força al tirant no canvia (només depèn del pes i de la geometria), però la secció es fa 16 vegades més petita:\n\n$$\\sigma'_\\text{AB} = \\frac{T_\\text{AB}}{\\pi d'^2/4} = \\frac{254{,}8}{\\pi \\cdot 1^2/4} = \\frac{254{,}8}{0{,}785\\,4} = 324{,}4\\ \\text{MPa}$$\n\nCom que $324{,}4\\ \\text{MPa} > 250\\ \\text{MPa}$ (límit elàstic), **el tirant es deformaria plàsticament** (permanentment i de manera irreversible): s'allargaria, la barra baixaria i no es podria mantenir la posició d'equilibri estudiada (fins i tot podria trencar-se)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Forces: $T_\\text{AB}$ horitzontal a B, $m\\,g$ vertical a C, $F_\\text{H}$ i $F_\\text{V}$ a O"},
-          {"apartat": "b", "valor": "$T_\\text{AB} \\approx 254{,}8\\ \\text{N}$"},
-          {"apartat": "c", "valor": "$\\sigma_\\text{AB} \\approx 20{,}28\\ \\text{MPa}$"},
-          {"apartat": "d", "valor": "$F_\\text{H} \\approx 254{,}8\\ \\text{N}$; $F_\\text{V} \\approx 294{,}2\\ \\text{N}$"},
-          {"apartat": "e", "valor": "$\\sigma'_\\text{AB} \\approx 324{,}4\\ \\text{MPa} > 250\\ \\text{MPa}$ → el tirant es deformaria permanentment"}
+          {
+            "apartat": "a",
+            "valor": "Forces: $T_\\text{AB}$ horitzontal a B, $m\\,g$ vertical a C, $F_\\text{H}$ i $F_\\text{V}$ a O"
+          },
+          {
+            "apartat": "b",
+            "valor": "$T_\\text{AB} \\approx 254{,}8\\ \\text{N}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\sigma_\\text{AB} \\approx 20{,}28\\ \\text{MPa}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$F_\\text{H} \\approx 254{,}8\\ \\text{N}$; $F_\\text{V} \\approx 294{,}2\\ \\text{N}$"
+          },
+          {
+            "apartat": "e",
+            "valor": "$\\sigma'_\\text{AB} \\approx 324{,}4\\ \\text{MPa} > 250\\ \\text{MPa}$ → el tirant es deformaria permanentment"
+          }
         ],
         "nota": "Error típic a l'apartat b: agafar com a braç del tirant la longitud de la barra ($2L$) en lloc de la distància perpendicular a la línia d'acció de la força ($2L\\sin 30^\\circ$). A l'apartat c, compte amb usar el radi en lloc del diàmetre a $\\pi d^2/4$."
       }
@@ -331,35 +787,104 @@
       "punts": 2.5,
       "titol": "Calefactor elèctric amb dues resistències en sèrie o en paral·lel i cost mensual",
       "tema": "circuits",
-      "temes_secundaris": ["energia"],
-      "conceptes": ["resistivitat", "resistències en sèrie i en paral·lel", "potència elèctrica", "cost de l'energia"],
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "resistivitat",
+        "associació de resistències",
+        "potència elèctrica",
+        "cost de l'energia",
+        "energia elèctrica",
+        "llei d'Ohm"
+      ],
       "dificultat": 2,
-      "pagines": [4],
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "pagines": [
+        4
+      ],
       "enunciat": "Un calefactor elèctric consta de dues resistències idèntiques $R_1$ i $R_2$ que es poden connectar en sèrie o en paral·lel en funció d'un selector que permet triar dos nivells de potència diferents. El fil de cada resistència té una llargària $L = 20\\ \\text{m}$, un diàmetre $d = 0{,}1\\ \\text{mm}$ i una resistivitat $\\rho = 16 \\times 10^{-9}\\ \\Omega\\ \\text{m}$. El calefactor es connecta a una tensió $U = 230\\ \\text{V}$. Determineu:",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "La resistència $R_1$.", "punts": 0.5},
-        {"id": "b", "enunciat": "La resistència màxima $R_\\text{màx}$ i mínima $R_\\text{mín}$ del circuit elèctric.", "punts": 1},
-        {"id": "c", "enunciat": "La potència màxima que consumeix el calefactor $P_\\text{màx}$.", "punts": 0.5},
-        {"id": "d", "enunciat": "Si el calefactor funciona a potència màxima durant 1 hora al dia, 30 dies al mes, i el preu del kW h consumit és de $p = 0{,}15\\ \\text{EUR/(kW h)}$, determineu: el cost mensual $c$ del consum elèctric.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "La resistència $R_1$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "La resistència màxima $R_\\text{màx}$ i mínima $R_\\text{mín}$ del circuit elèctric.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "La potència màxima que consumeix el calefactor $P_\\text{màx}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "Si el calefactor funciona a potència màxima durant 1 hora al dia, 30 dies al mes, i el preu del kW h consumit és de $p = 0{,}15\\ \\text{EUR/(kW h)}$, determineu: el cost mensual $c$ del consum elèctric.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Fil de cada resistència: $L = 20\\ \\text{m}$, $d = 0{,}1\\ \\text{mm} = 0{,}1 \\cdot 10^{-3}\\ \\text{m}$, $\\rho = 16 \\times 10^{-9}\\ \\Omega\\ \\text{m}$\n- Tensió: $U = 230\\ \\text{V}$\n- Ús: 1 h/dia, 30 dies/mes a potència màxima; preu $p = 0{,}15\\ \\text{EUR/(kW h)}$\n- Incògnites: $R_1$, $R_\\text{màx}$, $R_\\text{mín}$, $P_\\text{màx}$, cost mensual $c$"},
-          {"apartat": "a", "titol": "Resistència d'un fil a partir de la resistivitat", "cos": "La resistència d'un conductor és proporcional a la seva longitud i inversament proporcional a la secció:\n\n$$R = \\rho\\, \\frac{L}{S}, \\qquad S = \\frac{\\pi d^2}{4} = \\frac{\\pi\\, (0{,}1 \\cdot 10^{-3})^2}{4} = 7{,}854 \\cdot 10^{-9}\\ \\text{m}^2$$\n\n$$R_1 = 16 \\times 10^{-9} \\cdot \\frac{20}{7{,}854 \\cdot 10^{-9}} = 40{,}74\\ \\Omega$$\n\nResultat: **$R_1 = R_2 \\approx 40{,}74\\ \\Omega$**."},
-          {"apartat": "b", "titol": "Resistència màxima: connexió en sèrie", "cos": "En sèrie, les resistències se sumen, i la resistència equivalent és la més gran possible:\n\n$$R_\\text{màx} = R_1 + R_2 = 2 \\cdot 40{,}74 = 81{,}49\\ \\Omega$$"},
-          {"apartat": "b", "titol": "Resistència mínima: connexió en paral·lel", "cos": "En paral·lel se sumen les inverses, i l'equivalent és menor que cadascuna. Amb dues resistències iguals surt la meitat:\n\n$$R_\\text{mín} = \\frac{1}{\\dfrac{1}{R_1} + \\dfrac{1}{R_2}} = \\frac{R_1}{2} = \\frac{40{,}74}{2} = 20{,}37\\ \\Omega$$\n\nResultat: **$R_\\text{màx} \\approx 81{,}49\\ \\Omega$ i $R_\\text{mín} \\approx 20{,}37\\ \\Omega$**."},
-          {"apartat": "c", "titol": "Potència màxima", "cos": "A tensió constant, $P = U^2/R$: la potència és **màxima quan la resistència és mínima** (connexió en paral·lel):\n\n$$P_\\text{màx} = \\frac{U^2}{R_\\text{mín}} = \\frac{230^2}{20{,}37} = 2\\,597\\ \\text{W}$$\n\nResultat: **$P_\\text{màx} \\approx 2{,}597\\ \\text{kW}$** (en sèrie seria només $649{,}2\\ \\text{W}$, quatre vegades menys)."},
-          {"apartat": "d", "titol": "Energia consumida en un mes", "cos": "El temps de funcionament mensual és $t = 1\\ \\tfrac{\\text{h}}{\\text{dia}} \\cdot 30\\ \\tfrac{\\text{dies}}{\\text{mes}} = 30\\ \\text{h/mes}$. L'energia és potència per temps:\n\n$$E = P_\\text{màx}\\, t = 2{,}597\\ \\text{kW} \\cdot 30\\ \\text{h} = 77{,}90\\ \\text{kW h}$$"},
-          {"apartat": "d", "titol": "Cost mensual", "cos": "$$c = p\\, E = 0{,}15\\ \\tfrac{\\text{EUR}}{\\text{kW h}} \\cdot 77{,}90\\ \\text{kW h} = 11{,}69\\ \\text{EUR}$$\n\nResultat: **$c \\approx 11{,}69\\ \\text{EUR}$ al mes**."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Fil de cada resistència: $L = 20\\ \\text{m}$, $d = 0{,}1\\ \\text{mm} = 0{,}1 \\cdot 10^{-3}\\ \\text{m}$, $\\rho = 16 \\times 10^{-9}\\ \\Omega\\ \\text{m}$\n- Tensió: $U = 230\\ \\text{V}$\n- Ús: 1 h/dia, 30 dies/mes a potència màxima; preu $p = 0{,}15\\ \\text{EUR/(kW h)}$\n- Incògnites: $R_1$, $R_\\text{màx}$, $R_\\text{mín}$, $P_\\text{màx}$, cost mensual $c$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Resistència d'un fil a partir de la resistivitat",
+            "cos": "La resistència d'un conductor és proporcional a la seva longitud i inversament proporcional a la secció:\n\n$$R = \\rho\\, \\frac{L}{S}, \\qquad S = \\frac{\\pi d^2}{4} = \\frac{\\pi\\, (0{,}1 \\cdot 10^{-3})^2}{4} = 7{,}854 \\cdot 10^{-9}\\ \\text{m}^2$$\n\n$$R_1 = 16 \\times 10^{-9} \\cdot \\frac{20}{7{,}854 \\cdot 10^{-9}} = 40{,}74\\ \\Omega$$\n\nResultat: **$R_1 = R_2 \\approx 40{,}74\\ \\Omega$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Resistència màxima: connexió en sèrie",
+            "cos": "En sèrie, les resistències se sumen, i la resistència equivalent és la més gran possible:\n\n$$R_\\text{màx} = R_1 + R_2 = 2 \\cdot 40{,}74 = 81{,}49\\ \\Omega$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resistència mínima: connexió en paral·lel",
+            "cos": "En paral·lel se sumen les inverses, i l'equivalent és menor que cadascuna. Amb dues resistències iguals surt la meitat:\n\n$$R_\\text{mín} = \\frac{1}{\\dfrac{1}{R_1} + \\dfrac{1}{R_2}} = \\frac{R_1}{2} = \\frac{40{,}74}{2} = 20{,}37\\ \\Omega$$\n\nResultat: **$R_\\text{màx} \\approx 81{,}49\\ \\Omega$ i $R_\\text{mín} \\approx 20{,}37\\ \\Omega$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència màxima",
+            "cos": "A tensió constant, $P = U^2/R$: la potència és **màxima quan la resistència és mínima** (connexió en paral·lel):\n\n$$P_\\text{màx} = \\frac{U^2}{R_\\text{mín}} = \\frac{230^2}{20{,}37} = 2\\,597\\ \\text{W}$$\n\nResultat: **$P_\\text{màx} \\approx 2{,}597\\ \\text{kW}$** (en sèrie seria només $649{,}2\\ \\text{W}$, quatre vegades menys)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Energia consumida en un mes",
+            "cos": "El temps de funcionament mensual és $t = 1\\ \\tfrac{\\text{h}}{\\text{dia}} \\cdot 30\\ \\tfrac{\\text{dies}}{\\text{mes}} = 30\\ \\text{h/mes}$. L'energia és potència per temps:\n\n$$E = P_\\text{màx}\\, t = 2{,}597\\ \\text{kW} \\cdot 30\\ \\text{h} = 77{,}90\\ \\text{kW h}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Cost mensual",
+            "cos": "$$c = p\\, E = 0{,}15\\ \\tfrac{\\text{EUR}}{\\text{kW h}} \\cdot 77{,}90\\ \\text{kW h} = 11{,}69\\ \\text{EUR}$$\n\nResultat: **$c \\approx 11{,}69\\ \\text{EUR}$ al mes**."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$R_1 \\approx 40{,}74\\ \\Omega$"},
-          {"apartat": "b", "valor": "$R_\\text{màx} \\approx 81{,}49\\ \\Omega$ (sèrie); $R_\\text{mín} \\approx 20{,}37\\ \\Omega$ (paral·lel)"},
-          {"apartat": "c", "valor": "$P_\\text{màx} \\approx 2{,}597\\ \\text{kW}$"},
-          {"apartat": "d", "valor": "$E \\approx 77{,}90\\ \\text{kW h}$; $c \\approx 11{,}69\\ \\text{EUR}$"}
+          {
+            "apartat": "a",
+            "valor": "$R_1 \\approx 40{,}74\\ \\Omega$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$R_\\text{màx} \\approx 81{,}49\\ \\Omega$ (sèrie); $R_\\text{mín} \\approx 20{,}37\\ \\Omega$ (paral·lel)"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{màx} \\approx 2{,}597\\ \\text{kW}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$E \\approx 77{,}90\\ \\text{kW h}$; $c \\approx 11{,}69\\ \\text{EUR}$"
+          }
         ],
         "nota": "Error típic: pensar que la potència màxima correspon a la resistència màxima. Amb tensió fixa, $P = U^2/R$, i per tant la potència màxima s'obté amb la resistència mínima (paral·lel). Compte també a passar el diàmetre de mm a m abans de calcular la secció."
       }

@@ -20,15 +20,21 @@
       "punts": 2,
       "titol": "Massa de Mart, radi de l'òrbita de Deimos i velocitat d'escapament",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "acceleració de la gravetat",
-        "massa d'un planeta",
+        "intensitat del camp gravitatori",
+        "massa d'un astre",
         "tercera llei de Kepler",
         "òrbita circular",
-        "velocitat d'escapament"
+        "velocitat d'escapament",
+        "MCU",
+        "força centrípeta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): acceleració de la gravetat, massa d'un planeta",
       "pagines": [
         1
       ],
@@ -103,16 +109,19 @@
       "punts": 2,
       "titol": "Efecte Doppler a partir d'una gràfica i nivell d'intensitat sonora d'una font puntual",
       "tema": "ones",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "efecte Doppler",
         "intensitat sonora",
         "nivell d'intensitat sonora",
-        "decibel",
         "potència sonora",
-        "font puntual"
+        "MRU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): efecte Doppler, intensitat sonora",
       "pagines": [
         2
       ],
@@ -203,11 +212,11 @@
       "conceptes": [
         "desintegració alfa",
         "equació nuclear",
-        "radiació gamma",
-        "energia del fotó",
-        "longitud d'ona"
+        "energia del fotó"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, equació nuclear",
       "pagines": [
         2
       ],
@@ -288,11 +297,12 @@
       "conceptes": [
         "llei de Coulomb",
         "equilibri de forces",
-        "tensió del fil",
         "camp elèctric",
         "principi de superposició"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): llei de Coulomb, equilibri de forces",
       "pagines": [
         3
       ],
@@ -378,16 +388,19 @@
       "titol": "Selector de velocitats per a protons i radi de la trajectòria circular",
       "tema": "camp-magnetic",
       "temes_secundaris": [
-        "camp-electric"
+        "camp-electric",
+        "mecanica"
       ],
       "conceptes": [
         "selector de velocitats",
         "força de Lorentz",
-        "força magnètica",
-        "radi de curvatura",
-        "moviment circular uniforme"
+        "radi de la trajectòria",
+        "MCU",
+        "regla de la mà dreta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): selector de velocitats, força de Lorentz",
       "pagines": [
         3
       ],
@@ -459,13 +472,15 @@
       "tema": "nuclear",
       "temes_secundaris": [],
       "conceptes": [
-        "reacció nuclear",
-        "conservació del nombre màssic",
+        "equació nuclear",
         "desintegració alfa",
         "període de semidesintegració",
-        "sèrie radioactiva"
+        "sèrie radioactiva",
+        "llei de desintegració radioactiva"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): reacció nuclear, conservació del nombre màssic",
       "pagines": [
         3,
         4
@@ -539,11 +554,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "energia potencial elèctrica",
-        "treball extern",
-        "càrregues puntuals",
-        "conservació de l'energia"
+        "treball elèctric",
+        "conservació de l'energia",
+        "dipol elèctric"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): energia potencial elèctrica, treball extern",
       "pagines": [
         4
       ],
@@ -612,11 +629,11 @@
       "conceptes": [
         "flux magnètic",
         "llei de Faraday",
-        "força electromotriu induïda",
-        "alternador",
-        "velocitat angular"
+        "alternador"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de Faraday",
       "pagines": [
         4
       ],

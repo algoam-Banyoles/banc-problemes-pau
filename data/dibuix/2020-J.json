@@ -21,12 +21,25 @@
       "titol": "Polígon còncau ABCDEF a partir d'angles, baricentre i arcs capaços",
       "tema": "geometria-plana",
       "temes_secundaris": [],
-      "conceptes": ["arc capaç", "baricentre", "construcció de triangles", "construcció d'angles", "polígon còncau"],
+      "conceptes": [
+        "arc capaç",
+        "baricentre",
+        "construcció de triangles",
+        "transport d'angles",
+        "polígon còncau"
+      ],
       "dificultat": 3,
-      "pagines": [5],
+      "curs": "1r",
+      "curs_motiu": "Construcció de polígons amb arc capaç i punts notables del triangle (DT I).",
+      "pagines": [
+        5
+      ],
       "enunciat": "Dibuixeu el polígon còncau $ABCDEF$ de manera que el vèrtex $C$ quedi per sobre del segment $AB$, el vèrtex $E$ per sobre del vèrtex $C$ i el vèrtex $F$ a la dreta del vèrtex $E$. Tingueu en compte les dades facilitades a peu de pàgina. Deixeu constància del procés gràfic seguit.\n\nDades:\n\n- Angle $ABC = 60°$\n- Angle $ACB = 90°$\n- Vèrtex $D$ = baricentre del triangle $ABC$\n- Angle $ACE = 75°$\n- Angle $AEC = 60°$\n- Angle $CAF = 75°$\n- Angle $AFE = 105°$\n\n[1 punt per cadascun dels segments $BC$, $CD$, $DE$ i $EF$]",
       "figures": [
-        {"src": "img/dibuix/2020-J/1A.png", "peu": "Segment AB donat (12 cm) i dades angulars del polígon"}
+        {
+          "src": "img/dibuix/2020-J/1A.png",
+          "peu": "Segment AB donat (12 cm) i dades angulars del polígon"
+        }
       ],
       "opcions": {},
       "apartats": [],
@@ -70,7 +83,10 @@
           }
         ],
         "resultats": [
-          {"apartat": null, "valor": "$BC = 6$ cm, $AC \\approx 10{,}39$ cm; $D$ al baricentre de $ABC$; $E$ amb l'arc capaç de 60° sobre $AC$ (R = 6 cm), $CE \\approx 8{,}49$ cm; $F$ amb l'arc capaç de 105° sobre $AE$ (R ≈ 6 cm), $EF \\approx 6$ cm i $AF \\approx 8{,}49$ cm."}
+          {
+            "apartat": null,
+            "valor": "$BC = 6$ cm, $AC \\approx 10{,}39$ cm; $D$ al baricentre de $ABC$; $E$ amb l'arc capaç de 60° sobre $AC$ (R = 6 cm), $CE \\approx 8{,}49$ cm; $F$ amb l'arc capaç de 105° sobre $AE$ (R ≈ 6 cm), $EF \\approx 6$ cm i $AF \\approx 8{,}49$ cm."
+          }
         ],
         "nota": "Error típic: dibuixar l'arc capaç amb el centre al costat equivocat de la corda. Per a un angle agut (60°) el centre queda al mateix costat que el punt buscat; per a un angle obtús (105°) queda al costat contrari."
       }
@@ -85,18 +101,41 @@
       "titol": "Circumferències tangents a una recta, a una circumferència en un punt i per un punt",
       "tema": "geometria-plana",
       "temes_secundaris": [],
-      "conceptes": ["tangències", "circumferència tangent a una recta", "circumferències tangents entre si", "bisectriu", "mediatriu"],
+      "conceptes": [
+        "tangències",
+        "bisectriu",
+        "mediatriu"
+      ],
       "dificultat": 2,
-      "pagines": [7],
+      "curs": "1r",
+      "curs_motiu": "Tangències amb un punt de tangència donat, resoltes per reducció a punt, mediatrius i bisectrius; no cal potència (DT I).",
+      "pagines": [
+        7
+      ],
       "enunciat": "",
       "figures": [
-        {"src": "img/dibuix/2020-J/1B.png", "peu": "Circumferència de centre C amb el punt A, punt B i recta R"}
+        {
+          "src": "img/dibuix/2020-J/1B.png",
+          "peu": "Circumferència de centre C amb el punt A, punt B i recta R"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu la circumferència de radi menor tangent a la recta $R$ i a la circumferència de centre $C$ en el punt $A$.", "punts": 1.5},
-        {"id": "b", "enunciat": "Dibuixeu la circumferència tangent a la circumferència de centre $C$ en el punt $A$ i que passa pel punt $B$.", "punts": 1.5},
-        {"id": "c", "enunciat": "Dibuixeu les dues circumferències de diàmetre $5$ cm que són tangents exteriors a les dues circumferències trobades en els apartats a i b.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu la circumferència de radi menor tangent a la recta $R$ i a la circumferència de centre $C$ en el punt $A$.",
+          "punts": 1.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Dibuixeu la circumferència tangent a la circumferència de centre $C$ en el punt $A$ i que passa pel punt $B$.",
+          "punts": 1.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu les dues circumferències de diàmetre $5$ cm que són tangents exteriors a les dues circumferències trobades en els apartats a i b.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -138,9 +177,18 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Centre $C_1$ a la recta $CA$ (més enllà d'$A$) i a la bisectriu de l'angle entre $R$ i la tangent per $A$; radi ≈ 2,9 cm."},
-          {"apartat": "b", "valor": "Centre $C_2$ a la intersecció de la recta $CA$ amb la mediatriu de $AB$; radi ≈ 5,1 cm (tangent interior)."},
-          {"apartat": "c", "valor": "Centres $C_3$ i $C_4$ a la intersecció dels arcs de radis $r_1 + 2{,}5$ i $r_2 + 2{,}5$ cm centrats a $C_1$ i $C_2$."}
+          {
+            "apartat": "a",
+            "valor": "Centre $C_1$ a la recta $CA$ (més enllà d'$A$) i a la bisectriu de l'angle entre $R$ i la tangent per $A$; radi ≈ 2,9 cm."
+          },
+          {
+            "apartat": "b",
+            "valor": "Centre $C_2$ a la intersecció de la recta $CA$ amb la mediatriu de $AB$; radi ≈ 5,1 cm (tangent interior)."
+          },
+          {
+            "apartat": "c",
+            "valor": "Centres $C_3$ i $C_4$ a la intersecció dels arcs de radis $r_1 + 2{,}5$ i $r_2 + 2{,}5$ cm centrats a $C_1$ i $C_2$."
+          }
         ],
         "nota": "Error típic a l'apartat c): fer servir els radis $r_1$ i $r_2$ sense sumar-hi els $2{,}5$ cm, o restar-los (això donaria tangències interiors)."
       }
@@ -154,18 +202,40 @@
       "punts": 6,
       "titol": "Intersecció d'un pla triangular amb una piràmide de base quadrada i visibilitat",
       "tema": "cossos",
-      "temes_secundaris": ["diedric"],
-      "conceptes": ["secció plana", "intersecció de pla i piràmide", "canvi de pla", "pla projectant", "visibilitat"],
+      "temes_secundaris": [
+        "diedric"
+      ],
+      "conceptes": [
+        "secció plana",
+        "canvi de pla",
+        "pla projectant",
+        "visibilitat"
+      ],
       "dificultat": 3,
-      "pagines": [9],
+      "curs": "2n",
+      "curs_motiu": "Secció plana d'un sòlid en dièdric per canvi de pla (DT II).",
+      "pagines": [
+        9
+      ],
       "enunciat": "",
       "figures": [
-        {"src": "img/dibuix/2020-J/2A.png", "peu": "Projeccions dels punts r-r′, s-s′, t-t′, del vèrtex v-v′ i del quadrat abcd-a′b′c′d′ (sense línia de terra)"}
+        {
+          "src": "img/dibuix/2020-J/2A.png",
+          "peu": "Projeccions dels punts r-r′, s-s′, t-t′, del vèrtex v-v′ i del quadrat abcd-a′b′c′d′ (sense línia de terra)"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu les projeccions horitzontal i vertical de la línia d'intersecció que produeix el pla triangular determinat pels punts $r$-$r'$, $s$-$s'$ i $t$-$t'$, sobre una piràmide que té com a vèrtex el punt $v$-$v'$ i com a base el quadrat $abcd$-$a'b'c'd'$.", "punts": 3},
-        {"id": "b", "enunciat": "Determineu la visibilitat del conjunt format pel pla triangular $rst$-$r's't'$ i la piràmide. Diferencieu les línies vistes de les ocultes en les dues projeccions considerant el prisma com un sòlid i el triangle opac.", "punts": 3}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu les projeccions horitzontal i vertical de la línia d'intersecció que produeix el pla triangular determinat pels punts $r$-$r'$, $s$-$s'$ i $t$-$t'$, sobre una piràmide que té com a vèrtex el punt $v$-$v'$ i com a base el quadrat $abcd$-$a'b'c'd'$.",
+          "punts": 3
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la visibilitat del conjunt format pel pla triangular $rst$-$r's't'$ i la piràmide. Diferencieu les línies vistes de les ocultes en les dues projeccions considerant el prisma com un sòlid i el triangle opac.",
+          "punts": 3
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -207,8 +277,14 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Secció quadrilàtera amb un punt a cada aresta lateral ($va$, $vb$, $vc$, $vd$), obtinguda amb un canvi de pla perpendicular a la horitzontal $st$ que deixa el triangle de cantell."},
-          {"apartat": "b", "valor": "La part de la piràmide propera a la base tapa el triangle; el triangle tapa la part propera al vèrtex $v$, en planta i en alçat."}
+          {
+            "apartat": "a",
+            "valor": "Secció quadrilàtera amb un punt a cada aresta lateral ($va$, $vb$, $vc$, $vd$), obtinguda amb un canvi de pla perpendicular a la horitzontal $st$ que deixa el triangle de cantell."
+          },
+          {
+            "apartat": "b",
+            "valor": "La part de la piràmide propera a la base tapa el triangle; el triangle tapa la part propera al vèrtex $v$, en planta i en alçat."
+          }
         ],
         "nota": "L'enunciat de l'apartat b) diu «el prisma», però el sòlid és la piràmide. La solució oficial fa el canvi de pla a l'esquerra del dibuix (punts $a''$, $b''$, $c''$, $d''$, $s''$-$t''$, $r''$); també es pot fer amb el mètode de les rectes del pla (intersecció de cada aresta amb el pla mitjançant un pla projectant auxiliar)."
       }
@@ -222,13 +298,28 @@
       "punts": 6,
       "titol": "Nova projecció d'una peça per canvi de pla vertical",
       "tema": "diedric",
-      "temes_secundaris": ["normalitzacio"],
-      "conceptes": ["canvi de pla", "interpretació de vistes", "vistes d'una peça", "perfil"],
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "canvi de pla",
+        "interpretació de vistes",
+        "projecció de perfil",
+        "cotes",
+        "cares inclinades"
+      ],
       "dificultat": 3,
-      "pagines": [11],
+      "curs": "2n",
+      "curs_motiu": "Nova projecció d'una peça per canvi de pla: operativitat dièdrica (DT II).",
+      "pagines": [
+        11
+      ],
       "enunciat": "Interpreteu la figura proposada i determineu-ne la nova projecció ortogonal, de manera que la projecció vertical del segment $ab$-$a'b'$-$a''b''$ passi a ser $a'''b'''$ (canvi de pla vertical). Dibuixeu únicament les línies vistes.\n\n[3 punts per les línies horitzontals i verticals i 3 punts per les línies inclinades]",
       "figures": [
-        {"src": "img/dibuix/2020-J/2B.png", "peu": "Alçat, planta i perfil (girat 90°) de la peça, i nova línia de terra amb a‴ i b‴"}
+        {
+          "src": "img/dibuix/2020-J/2B.png",
+          "peu": "Alçat, planta i perfil (girat 90°) de la peça, i nova línia de terra amb a‴ i b‴"
+        }
       ],
       "opcions": {},
       "apartats": [],
@@ -267,7 +358,10 @@
           }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Nova vista obtinguda conservant les cotes de l'alçat i projectant cada vèrtex de la planta perpendicularment a la nova LT ($a'''b'''$); només línies vistes."}
+          {
+            "apartat": null,
+            "valor": "Nova vista obtinguda conservant les cotes de l'alçat i projectant cada vèrtex de la planta perpendicularment a la nova LT ($a'''b'''$); només línies vistes."
+          }
         ],
         "nota": "El perfil donat està girat 90° (altures en horitzontal). Les mesures citades s'han pres sobre el PDF i són aproximades."
       }
@@ -281,13 +375,27 @@
       "punts": 6,
       "titol": "Perspectiva militar a escala doble d'un prisma triangular amb volums inclinats",
       "tema": "axonometria",
-      "temes_secundaris": ["normalitzacio"],
-      "conceptes": ["perspectiva militar", "escala doble", "interpretació de vistes", "coordenades axonomètriques"],
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "perspectiva militar",
+        "interpretació de vistes",
+        "coordenades axonomètriques",
+        "cares inclinades"
+      ],
       "dificultat": 3,
-      "pagines": [13],
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
+      "pagines": [
+        13
+      ],
       "enunciat": "Interpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt $p$-$p'$-$p''$ en la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (militar sense reducció) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes.\n\n[1,5 punts pel volum triangular central i 1,5 punts per cadascun dels tres volums inclinats]",
       "figures": [
-        {"src": "img/dibuix/2020-J/2C.png", "peu": "Alçat, planta i perfil (girat 90°) del sòlid, posició P i terna militar: Z vertical, X i Y a 45° (coeficient 1)"}
+        {
+          "src": "img/dibuix/2020-J/2C.png",
+          "peu": "Alçat, planta i perfil (girat 90°) del sòlid, posició P i terna militar: Z vertical, X i Y a 45° (coeficient 1)"
+        }
       ],
       "opcions": {},
       "apartats": [],
@@ -326,7 +434,10 @@
           }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Perspectiva militar a escala 2:1 (X, Y, Z × 2) amb el punt p a P: prisma triangular central de 10 cm d'altura al paper amb triangle superior ampliat i xamfrans, barra inclinada a 45° a l'esquerra i volum inclinat a la cara frontal."}
+          {
+            "apartat": null,
+            "valor": "Perspectiva militar a escala 2:1 (X, Y, Z × 2) amb el punt p a P: prisma triangular central de 10 cm d'altura al paper amb triangle superior ampliat i xamfrans, barra inclinada a 45° a l'esquerra i volum inclinat a la cara frontal."
+          }
         ],
         "nota": "La interpretació del sòlid i les mesures s'han fet sobre les vistes del PDF i són aproximades: contrasteu-les amb la solució oficial. El perfil donat està girat 90°."
       }
@@ -340,13 +451,28 @@
       "punts": 6,
       "titol": "Axonometria dimètrica DIN 5 a escala doble d'una peça hexagonal amb ranura",
       "tema": "axonometria",
-      "temes_secundaris": ["normalitzacio"],
-      "conceptes": ["axonometria dimètrica", "coeficient de reducció", "escala doble", "interpretació de vistes", "prisma hexagonal"],
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "axonometria dimètrica",
+        "coeficients de reducció",
+        "interpretació de vistes",
+        "prisma",
+        "coordenades axonomètriques"
+      ],
       "dificultat": 3,
-      "pagines": [15],
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
+      "pagines": [
+        15
+      ],
       "enunciat": "Interpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt $p$-$p'$-$p''$ en la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (ortogonal dimètrica normalitzada DIN 5) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes.\n\n[1,5 punts pel volum inferior, 1,5 punts pel volum superior, 1,5 punts pel pla inclinat superior i 1,5 punts pel forat central]",
       "figures": [
-        {"src": "img/dibuix/2020-J/2D.png", "peu": "Alçat, planta i perfil (girat 90°) de la peça, posició P i terna dimètrica DIN 5: X (1), Y (1/2), Z (1)"}
+        {
+          "src": "img/dibuix/2020-J/2D.png",
+          "peu": "Alçat, planta i perfil (girat 90°) de la peça, posició P i terna dimètrica DIN 5: X (1), Y (1/2), Z (1)"
+        }
       ],
       "opcions": {},
       "apartats": [],
@@ -380,7 +506,10 @@
           }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Dimètrica DIN 5 a escala doble (X i Z × 2, Y × 1) amb p a P: prisma hexagonal petit a la base, prisma hexagonal gran a sobre amb coberta inclinada (de 6 a 4 cm d'altura al paper) i ranura central oberta per dalt i per la dreta."}
+          {
+            "apartat": null,
+            "valor": "Dimètrica DIN 5 a escala doble (X i Z × 2, Y × 1) amb p a P: prisma hexagonal petit a la base, prisma hexagonal gran a sobre amb coberta inclinada (de 6 a 4 cm d'altura al paper) i ranura central oberta per dalt i per la dreta."
+          }
         ],
         "nota": "La interpretació i les mesures són aproximades (preses sobre el PDF): contrasteu-les amb la solució oficial. La norma DIN 5 dona coeficients reals ≈ 0,94 – 0,47 – 0,94, però l'enunciat indica fer servir 1 – 1/2 – 1."
       }

@@ -27,11 +27,14 @@
       "conceptes": [
         "rang",
         "mètode de Gauss",
-        "determinant",
+        "discussió de sistemes",
+        "teorema de Rouché-Frobenius",
         "regla de Cramer",
         "sistema compatible determinat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         1
       ],
@@ -106,11 +109,14 @@
       "conceptes": [
         "punt simètric",
         "projecció ortogonal",
-        "pla perpendicular",
-        "recta perpendicular",
-        "vector normal"
+        "punt mitjà",
+        "recta perpendicular a un pla",
+        "intersecció recta-pla",
+        "equació del pla"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         1
       ],
@@ -185,12 +191,14 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
         "teorema de Pitàgores",
-        "derivada segona",
-        "mínim relatiu"
+        "extrems relatius",
+        "criteri de la derivada segona",
+        "regla de la cadena"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         2
       ],
@@ -269,11 +277,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "àrea entre corbes",
-        "integral definida",
         "regla de Barrow",
-        "punts de tall"
+        "punts d'intersecció de corbes"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         2
       ],
@@ -329,14 +338,19 @@
       "punts": 2,
       "titol": "Pla format pels punts mitjans de segments entre dues rectes",
       "tema": "geometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "matrius"
+      ],
       "conceptes": [
-        "equació paramètrica",
+        "equacions de la recta",
+        "punt genèric d'una recta",
         "punt mitjà",
-        "equació general del pla",
-        "vectors directors"
+        "equació del pla",
+        "determinant"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         2
       ],
@@ -410,11 +424,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "matriu inversa",
+        "matriu involutiva",
         "producte de matrius",
-        "matriu identitat",
-        "sistema d'equacions no lineal"
+        "propietats de les matrius",
+        "igualtat de matrius"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         2
       ],
@@ -488,9 +505,12 @@
         "asímptota horitzontal",
         "asímptota obliqua",
         "recta tangent",
-        "pendent"
+        "funció racional",
+        "derivada d'un quocient"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Asímptotes d'una funció homogràfica i recta tangent, que són de 1r.",
       "pagines": [
         3
       ],
@@ -560,13 +580,17 @@
         "matrius"
       ],
       "conceptes": [
-        "teorema de Rouché-Fröbenius",
+        "discussió de sistemes",
+        "teorema de Rouché-Frobenius",
         "rang",
         "determinant",
         "sistema compatible indeterminat",
-        "mètode de Gauss"
+        "mètode de Gauss",
+        "sistema incompatible"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         3
       ],
@@ -647,14 +671,19 @@
       "punts": 2,
       "titol": "Pla per tres punts i volum constant d'un tetraedre",
       "tema": "geometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "matrius"
+      ],
       "conceptes": [
-        "equació general del pla",
+        "equació del pla",
         "producte mixt",
         "volum del tetraedre",
-        "plans paral·lels"
+        "plans paral·lels",
+        "producte vectorial"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         3
       ],
@@ -726,16 +755,20 @@
       "titol": "Intersecció de dos plans amb paràmetre i posició relativa recta-pla",
       "tema": "geometria",
       "temes_secundaris": [
-        "sistemes"
+        "sistemes",
+        "matrius"
       ],
       "conceptes": [
-        "posició relativa de dos plans",
+        "posició relativa de plans",
+        "rang",
+        "recta intersecció de dos plans",
         "vector director",
         "producte vectorial",
-        "posició relativa recta i pla",
-        "rang"
+        "posició relativa recta-pla"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         4
       ],
@@ -804,11 +837,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "producte de matrius",
-        "propietat commutativa",
-        "quadrat d'un binomi",
-        "demostració"
+        "propietats de les matrius",
+        "igualtat de matrius"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         4
       ],
@@ -878,12 +912,14 @@
         "derivades"
       ],
       "conceptes": [
+        "recta tangent",
+        "funció exponencial",
         "integració per parts",
-        "regla de Barrow",
-        "recta tangent horitzontal",
-        "funció exponencial"
+        "regla de Barrow"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         4
       ],

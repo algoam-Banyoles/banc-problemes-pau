@@ -20,15 +20,21 @@
       "punts": 2,
       "titol": "Massa de la Lluna, gravetat superficial i velocitat d'escapament a partir de l'òrbita del mòdul Columbia",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "òrbita circular",
         "tercera llei de Kepler",
         "massa d'un astre",
         "intensitat del camp gravitatori",
-        "velocitat d'escapament"
+        "velocitat d'escapament",
+        "MCU",
+        "força centrípeta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, tercera llei de Kepler",
       "pagines": [
         1
       ],
@@ -103,14 +109,18 @@
       "punts": 2,
       "titol": "Dos electrons que entren en sentits contraris en un camp magnètic: forces, trajectòries i camp que no els desvia",
       "tema": "camp-magnetic",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "força de Lorentz",
-        "moviment circular",
-        "sentit de gir",
-        "producte vectorial"
+        "MCU",
+        "regla de la mà dreta",
+        "radi de la trajectòria"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): força de Lorentz, moviment circular",
       "pagines": [
         1
       ],
@@ -200,12 +210,14 @@
       ],
       "conceptes": [
         "camp elèctric uniforme",
-        "superfícies equipotencials",
+        "línies de camp i equipotencials",
         "diferència de potencial",
-        "força elèctrica",
-        "moviment rectilini uniforme"
+        "MRU",
+        "equilibri de forces"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, superfícies equipotencials",
       "pagines": [
         2
       ],
@@ -288,13 +300,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "moviment harmònic simple",
-        "amplitud",
+        "equació del MHS",
         "freqüència angular",
-        "període",
-        "fase inicial",
-        "energia mecànica"
+        "energia en el MHS",
+        "constant elàstica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, amplitud",
       "pagines": [
         2
       ],
@@ -379,15 +392,18 @@
       "punts": 2,
       "titol": "Efecte fotoelèctric en un tub de buit: velocitat dels electrons i identificació del metall pel potencial de frenada",
       "tema": "quantica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "camp-electric"
+      ],
       "conceptes": [
         "efecte fotoelèctric",
         "treball d'extracció",
         "energia del fotó",
-        "potencial de frenada",
-        "energia cinètica"
+        "potencial de frenada"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, treball d'extracció",
       "pagines": [
         3
       ],
@@ -474,12 +490,14 @@
       "tema": "nuclear",
       "temes_secundaris": [],
       "conceptes": [
-        "desintegració radioactiva",
+        "llei de desintegració radioactiva",
         "període de semidesintegració",
-        "llei de desintegració",
-        "emissió beta"
+        "desintegració beta",
+        "equació nuclear"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració radioactiva, període de semidesintegració",
       "pagines": [
         3
       ],
@@ -552,12 +570,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "ones estacionàries",
-        "tub tancat per un extrem",
+        "tubs sonors",
         "harmònics",
-        "nivell d'intensitat sonora",
-        "decibels"
+        "nivell d'intensitat sonora"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub tancat per un extrem",
       "pagines": [
         4
       ],
@@ -632,14 +651,18 @@
       "punts": 2,
       "titol": "Quatre càrregues als vèrtexs d'un quadrat: energia de formació i càrrega central que les equilibra",
       "tema": "camp-electric",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "energia potencial electrostàtica",
+        "energia potencial elèctrica",
         "llei de Coulomb",
         "principi de superposició",
         "equilibri de forces"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): energia potencial electrostàtica, llei de Coulomb",
       "pagines": [
         4
       ],

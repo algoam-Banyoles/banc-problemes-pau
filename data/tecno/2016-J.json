@@ -25,9 +25,11 @@
       "conceptes": [
         "tensió de ruptura",
         "tensió normal",
-        "secció mínima"
+        "tracció i compressió"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita tensió, deformació o mòdul de Young (resistència de materials i assaig de tracció), que és de 2n.",
       "pagines": [
         1
       ],
@@ -83,13 +85,16 @@
       "punts": 0.5,
       "titol": "Capacitat màxima d'usuaris per hora d'una atracció d'autos de xoc",
       "tema": "economia",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "fabricacio"
+      ],
       "conceptes": [
-        "capacitat de producció",
-        "temps de cicle",
-        "productivitat"
+        "capacitat i ocupació",
+        "temps de cicle"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
       "pagines": [
         1
       ],
@@ -147,11 +152,11 @@
       "tema": "fabricacio",
       "temes_secundaris": [],
       "conceptes": [
-        "precisió",
-        "error de mesura",
-        "metrologia"
+        "error de mesura"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
       "pagines": [
         2
       ],
@@ -205,11 +210,11 @@
       "temes_secundaris": [],
       "conceptes": [
         "cilindrada",
-        "cursa",
-        "diàmetre del cilindre",
-        "motor de combustió"
+        "motor de combustió interna"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita conceptes de motor tèrmic (cilindrada, cursa, relació de compressió), que són de 2n.",
       "pagines": [
         2
       ],
@@ -264,10 +269,11 @@
       "conceptes": [
         "ajust",
         "tolerància",
-        "joc màxim",
-        "serratge màxim"
+        "joc i serratge"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
       "pagines": [
         2
       ],
@@ -329,10 +335,14 @@
       "conceptes": [
         "taula de veritat",
         "funció lògica",
-        "simplificació",
-        "esquema de contactes"
+        "mapa de Karnaugh",
+        "esquema de contactes",
+        "funció majoria",
+        "sensor"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         2
       ],
@@ -411,12 +421,15 @@
         "termica"
       ],
       "conceptes": [
-        "calor específica",
-        "energia",
+        "calor sensible",
+        "efecte Joule",
         "potència elèctrica",
-        "resistències en sèrie"
+        "associació de resistències",
+        "llei d'Ohm"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         3
       ],
@@ -502,11 +515,15 @@
       "conceptes": [
         "relació de transmissió",
         "velocitat angular",
-        "potència",
+        "potència mecànica",
         "rendiment",
-        "parell"
+        "parell motor",
+        "pla inclinat",
+        "velocitat lineal"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
       "pagines": [
         3
       ],
@@ -606,15 +623,17 @@
       "titol": "Cost d'un prisma de fusta fet amb quadrats o amb rectangles encolats",
       "tema": "economia",
       "temes_secundaris": [
-        "disseny"
+        "disseny",
+        "fabricacio"
       ],
       "conceptes": [
-        "cost de fabricació",
-        "perímetre",
-        "superfície",
-        "aprofitament de material"
+        "cost de producció",
+        "àrees i perímetres",
+        "processos de fabricació"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
       "pagines": [
         4
       ],
@@ -717,13 +736,17 @@
         "resistencia"
       ],
       "conceptes": [
-        "cilindre hidràulic",
+        "cilindre pneumàtic o hidràulic",
         "pressió",
         "tensió normal",
         "potència hidràulica",
-        "rendiment"
+        "rendiment",
+        "cabal",
+        "tracció i compressió"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita oleohidràulica (cilindre, pressió, cabal) i tensió normal a la tija, que són de 2n.",
       "pagines": [
         4
       ],
@@ -817,13 +840,16 @@
       "punts": 0.5,
       "titol": "Massa de nitrogen en un volum de gas natural",
       "tema": "energia",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "materials"
+      ],
       "conceptes": [
-        "gas natural",
-        "composició en volum",
+        "composició percentual",
         "densitat"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         5
       ],
@@ -876,12 +902,13 @@
       "tema": "economia",
       "temes_secundaris": [],
       "conceptes": [
-        "preu de venda",
-        "cost unitari",
+        "benefici",
         "amortització",
-        "benefici"
+        "cost de producció"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
       "pagines": [
         5
       ],
@@ -934,11 +961,13 @@
       "tema": "resistencia",
       "temes_secundaris": [],
       "conceptes": [
-        "resistència a la tracció",
+        "tensió de ruptura",
         "tensió normal",
-        "secció"
+        "tracció i compressió"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita tensió, deformació o mòdul de Young (resistència de materials i assaig de tracció), que és de 2n.",
       "pagines": [
         6
       ],
@@ -997,6 +1026,8 @@
         "parells de pols"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita motors asíncrons de corrent altern (velocitat de sincronisme, lliscament), que són de 2n.",
       "pagines": [
         6
       ],
@@ -1047,14 +1078,17 @@
       "punts": 0.5,
       "titol": "Potència de càrrega de la bateria d'un vehicle elèctric",
       "tema": "circuits",
-      "temes_secundaris": [],
-      "conceptes": [
-        "bateria",
-        "capacitat",
-        "potència elèctrica",
+      "temes_secundaris": [
         "energia"
       ],
+      "conceptes": [
+        "capacitat de bateria",
+        "potència elèctrica",
+        "energia elèctrica"
+      ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         6
       ],
@@ -1106,10 +1140,12 @@
       "conceptes": [
         "taula de veritat",
         "funció lògica",
-        "simplificació",
+        "mapa de Karnaugh",
         "portes lògiques"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         6
       ],
@@ -1197,10 +1233,11 @@
         "resistivitat",
         "potència elèctrica",
         "llei d'Ohm",
-        "secció del conductor",
-        "cost"
+        "cost de producció"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         7
       ],
@@ -1290,12 +1327,12 @@
         "circuits"
       ],
       "conceptes": [
-        "cèl·lula fotovoltaica",
-        "corba característica",
-        "potència màxima",
-        "associació sèrie-paraŀlel"
+        "energia solar",
+        "potència elèctrica"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Cèl·lula fotovoltaica i associació sèrie-paral·lel en CC (energies renovables i electrònica de 1r).",
       "pagines": [
         7
       ],
@@ -1388,12 +1425,14 @@
         "mecanica"
       ],
       "conceptes": [
-        "cilindre hidràulic",
-        "conservació de la potència",
+        "cilindre pneumàtic o hidràulic",
         "pressió",
-        "relació de velocitats"
+        "potència mecànica",
+        "velocitat lineal"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Necessita oleohidràulica o pneumàtica (cilindres, pressió, cabal), que és de 2n.",
       "pagines": [
         8
       ],
@@ -1484,15 +1523,18 @@
       "titol": "Captadors solars tèrmics per a aigua calenta sanitària amb suport elèctric",
       "tema": "energia",
       "temes_secundaris": [
-        "termica"
+        "termica",
+        "circuits"
       ],
       "conceptes": [
-        "energia solar tèrmica",
-        "irradiació",
-        "calor específica",
-        "consum elèctric"
+        "energia solar",
+        "calor sensible",
+        "energia elèctrica",
+        "potència elèctrica"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         8
       ],

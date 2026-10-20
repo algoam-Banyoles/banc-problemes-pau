@@ -1,0 +1,89 @@
+{
+  "geometria-plana": [
+    "tangències",
+    "punt de tangència",
+    "enllaç d'arcs",
+    "mediatriu",
+    "bisectriu",
+    "arc capaç",
+    "lloc geomètric",
+    "transport d'angles",
+    "rectes paral·leles",
+    "construcció de polígons",
+    "construcció de triangles",
+    "polígon còncau",
+    "polígon regular",
+    "ortocentre",
+    "baricentre",
+    "incentre",
+    "circumferència inscrita",
+    "circumferència circumscrita",
+    "escala",
+    "figures equivalents",
+    "triangulació",
+    "teorema de Tales",
+    "reducció a punt",
+    "potència d'un punt"
+  ],
+  "transformacions": [
+    "semblança",
+    "homotècia",
+    "simetria axial",
+    "trasllat"
+  ],
+  "corbes": [
+    "el·lipse",
+    "secció cònica"
+  ],
+  "diedric": [
+    "canvi de pla",
+    "abatiment",
+    "gir",
+    "vertadera magnitud",
+    "pla projectant",
+    "pla de cantell",
+    "pla paral·lel a la LT",
+    "pla obliqu",
+    "recta horitzontal del pla",
+    "projecció de perfil",
+    "intersecció recta-pla",
+    "intersecció de plans",
+    "perpendicularitat recta-pla",
+    "visibilitat"
+  ],
+  "cossos": [
+    "tetraedre",
+    "cub",
+    "octaedre",
+    "piràmide",
+    "tronc de piràmide",
+    "prisma",
+    "cilindre",
+    "con",
+    "secció plana",
+    "secció mitjana",
+    "desenvolupament",
+    "triedre trirectangle",
+    "diagonal principal",
+    "arestes oposades"
+  ],
+  "axonometria": [
+    "axonometria isomètrica",
+    "axonometria dimètrica",
+    "perspectiva cavallera",
+    "perspectiva militar",
+    "coeficients de reducció",
+    "circumferència en axonometria",
+    "contorn aparent",
+    "coordenades axonomètriques",
+    "prisma envolupant"
+  ],
+  "conica": [],
+  "normalitzacio": [
+    "interpretació de vistes",
+    "perfil girat",
+    "cotes",
+    "tall i secció",
+    "cares inclinades"
+  ]
+}

@@ -28,11 +28,15 @@
         "funció definida a trossos",
         "continuïtat",
         "límits laterals",
-        "integral definida",
         "àrea sota una corba",
-        "recta tangent"
+        "regla de Barrow",
+        "recta tangent",
+        "esbós de la gràfica",
+        "funció exponencial"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àrea sota una funció a trossos amb integral definida, que és de 2n.",
       "pagines": [
         2,
         3
@@ -158,13 +162,17 @@
       ],
       "conceptes": [
         "discussió de sistemes",
-        "teorema de Rouché-Fröbenius",
+        "teorema de Rouché-Frobenius",
         "rang",
         "determinant",
         "posició relativa de plans",
-        "regla de Cramer"
+        "regla de Cramer",
+        "sistema compatible indeterminat",
+        "sistema incompatible"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         4,
         5
@@ -265,16 +273,18 @@
       "titol": "Sorteig i venda web d'entrades d'un concert, i teorema de Bolzano per al nivell de decibels",
       "tema": "probabilitat",
       "temes_secundaris": [
-        "derivades"
+        "derivades",
+        "funcions"
       ],
       "conceptes": [
         "probabilitat total",
-        "teorema de Bayes",
         "probabilitat condicionada",
         "teorema de Bolzano",
-        "mètode de la bisecció"
+        "continuïtat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Probabilitat total, Bayes i teorema de Bolzano, que són de 2n.",
       "pagines": [
         6,
         7
@@ -383,13 +393,14 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
-        "mínim absolut",
-        "derivada segona",
-        "àrea del cercle",
-        "perímetre"
+        "extrems absoluts",
+        "criteri de la derivada segona",
+        "àrees de figures planes",
+        "lligadura"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         8
       ],
@@ -449,16 +460,21 @@
       "punts": 2.5,
       "titol": "Pla per tres punts, àrea d'un triangle i punts que formen un tetraedre de volum 1",
       "tema": "geometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "matrius"
+      ],
       "conceptes": [
         "equació del pla",
         "producte vectorial",
-        "àrea del triangle",
+        "àrea d'un triangle",
         "distància punt-pla",
         "volum del tetraedre",
+        "valor absolut",
         "plans paral·lels"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         8
       ],

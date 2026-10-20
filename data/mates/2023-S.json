@@ -25,9 +25,11 @@
         "matriu inversa",
         "producte de matrius",
         "equació matricial",
-        "matriu identitat"
+        "propietats de les matrius"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         2,
         3
@@ -122,16 +124,15 @@
       "punts": 2.5,
       "titol": "Rectes tangents a la hipèrbola y = 1/x i triangle d'àrea constant",
       "tema": "derivades",
-      "temes_secundaris": [
-        "funcions"
-      ],
+      "temes_secundaris": [],
       "conceptes": [
         "recta tangent",
-        "derivada",
         "punts de tall amb els eixos",
-        "àrea del triangle"
+        "àrees de figures planes"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Recta tangent i àrea d'un triangle amb els eixos, que són de 1r.",
       "pagines": [
         4,
         5
@@ -236,12 +237,16 @@
       ],
       "conceptes": [
         "discussió de sistemes",
-        "teorema de rouché-frobenius",
+        "teorema de Rouché-Frobenius",
         "determinant",
-        "mètode de gauss",
-        "rang"
+        "mètode de Gauss",
+        "rang",
+        "sistema compatible indeterminat",
+        "sistema incompatible"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         6,
         7
@@ -328,15 +333,21 @@
       "titol": "Teorema de Bolzano i àrea entre dues corbes amb la mateixa exponencial",
       "tema": "integrals",
       "temes_secundaris": [
-        "derivades"
+        "derivades",
+        "funcions"
       ],
       "conceptes": [
-        "teorema de bolzano",
+        "teorema de Bolzano",
         "continuïtat",
         "àrea entre corbes",
-        "regla de barrow"
+        "regla de Barrow",
+        "punts d'intersecció de corbes",
+        "funció exponencial",
+        "integral quasi immediata"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         8,
         9
@@ -420,12 +431,15 @@
       "temes_secundaris": [],
       "conceptes": [
         "perpendicular comuna",
-        "rectes que s'encreuen",
+        "posició relativa de dues rectes",
         "producte escalar",
         "distància entre rectes",
-        "equació paramètrica"
+        "equacions de la recta",
+        "punt genèric d'una recta"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         10,
         11
@@ -510,13 +524,14 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
-        "teorema de pitàgores",
-        "àrea del trapezi",
-        "derivada",
-        "màxim relatiu"
+        "teorema de Pitàgores",
+        "àrees de figures planes",
+        "extrems relatius",
+        "regla de la cadena"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         12
       ],

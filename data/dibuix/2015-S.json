@@ -25,12 +25,13 @@
       ],
       "conceptes": [
         "semblança",
-        "raó de semblança",
         "transport d'angles",
         "triangulació",
-        "trapezi"
+        "construcció de polígons"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Polígon semblant per triangulació i transport d'angles: proporcionalitat i semblança (DT I).",
       "pagines": [
         5
       ],
@@ -98,12 +99,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "tangències",
-        "dilatació",
-        "circumferències tangents",
+        "reducció a punt",
         "mediatriu",
         "punt de tangència"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Tangències amb un punt de tangència donat, resoltes per reducció a punt, mediatrius i bisectrius; no cal potència (DT I).",
       "pagines": [
         7
       ],
@@ -169,17 +171,19 @@
       "titol": "Secció parabòlica d'un con per un pla definit per un paral·lelogram, amb visibilitat",
       "tema": "cossos",
       "temes_secundaris": [
-        "diedric",
-        "corbes"
+        "corbes",
+        "diedric"
       ],
       "conceptes": [
         "secció plana",
         "con",
-        "paràbola",
+        "secció cònica",
         "canvi de pla",
         "visibilitat"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Secció plana d'un con (paràbola) amb canvi de pla: cònica i sòlid de revolució (DT II).",
       "pagines": [
         9
       ],
@@ -273,14 +277,15 @@
         "diedric"
       ],
       "conceptes": [
-        "hexaedre",
         "cub",
         "pla projectant",
         "vertadera magnitud",
-        "teorema de l'angle recte",
+        "perpendicularitat recta-pla",
         "visibilitat"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) amb vertadera magnitud d'arestes.",
       "pagines": [
         11
       ],
@@ -371,11 +376,14 @@
       "conceptes": [
         "axonometria dimètrica",
         "coeficients de reducció",
-        "escala",
         "interpretació de vistes",
-        "cares inclinades"
+        "cares inclinades",
+        "prisma envolupant",
+        "coordenades axonomètriques"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         13
       ],
@@ -451,16 +459,20 @@
       "titol": "Axonometria isomètrica d'un con amb dues ranures i un tall en falca",
       "tema": "axonometria",
       "temes_secundaris": [
-        "cossos"
+        "corbes",
+        "normalitzacio"
       ],
       "conceptes": [
         "axonometria isomètrica",
         "el·lipse",
         "contorn aparent",
         "con",
-        "interpretació de vistes"
+        "interpretació de vistes",
+        "circumferència en axonometria"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria: con o tronc de con amb el·lipses i contorns aparents (DT II).",
       "pagines": [
         15
       ],

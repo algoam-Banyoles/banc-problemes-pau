@@ -24,11 +24,13 @@
       "conceptes": [
         "producte vectorial",
         "vector normal",
-        "equació paramètrica",
-        "distància entre punts",
-        "pla determinat per recta i punt"
+        "equacions de la recta",
+        "distància entre dos punts",
+        "punt genèric d'una recta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         1
       ],
@@ -113,16 +115,20 @@
       "punts": 2,
       "titol": "Tres nombres amb dues condicions: sistema homogeni compatible indeterminat",
       "tema": "sistemes",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "matrius"
+      ],
       "conceptes": [
-        "plantejament de sistemes",
+        "sistema d'equacions lineals",
         "sistema homogeni",
-        "teorema de Rouché-Fröbenius",
+        "teorema de Rouché-Frobenius",
         "rang",
         "sistema compatible indeterminat",
         "mètode de Gauss"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Plantejament i resolució per Gauss d'un sistema homogeni concret sense paràmetre: 1r (no cal Rouché).",
       "pagines": [
         1
       ],
@@ -196,14 +202,16 @@
         "derivades"
       ],
       "conceptes": [
-        "funció a optimitzar",
+        "funció cost",
         "lligadura",
-        "derivada",
-        "mínim relatiu",
-        "segona derivada",
-        "prisma"
+        "volum de cossos geomètrics",
+        "àrees de figures planes",
+        "extrems relatius",
+        "criteri de la derivada segona"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         1
       ],
@@ -288,13 +296,13 @@
       ],
       "conceptes": [
         "recta tangent",
-        "derivada",
         "àrea entre corbes",
-        "integral definida",
         "regla de Barrow",
-        "concavitat"
+        "punts d'intersecció de corbes"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         2
       ],
@@ -390,9 +398,11 @@
         "matriu idempotent",
         "matriu inversa",
         "determinant",
-        "demostració"
+        "propietats de les matrius"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         2
       ],
@@ -476,12 +486,13 @@
       "conceptes": [
         "vector normal",
         "plans perpendiculars",
-        "equació cartesiana del pla",
+        "equació del pla",
         "producte vectorial",
-        "producte escalar",
-        "contraexemple"
+        "producte escalar"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         2
       ],

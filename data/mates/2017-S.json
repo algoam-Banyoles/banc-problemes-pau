@@ -21,15 +21,34 @@
       "titol": "Posició relativa d'una recta i un pla paral·lels i distància entre ells",
       "tema": "geometria",
       "temes_secundaris": [],
-      "conceptes": ["posició relativa recta-pla", "vector normal", "producte escalar", "distància punt-pla", "recta paral·lela a un pla"],
+      "conceptes": [
+        "posició relativa recta-pla",
+        "vector normal",
+        "vector director",
+        "producte escalar",
+        "distància punt-pla",
+        "equacions de la recta"
+      ],
       "dificultat": 2,
-      "pagines": [1],
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "pagines": [
+        1
+      ],
       "enunciat": "Considereu el pla $\\pi: x + y + z = 1$ i la recta $r$ que passa pels punts $P = (0, 0, 6)$ i $Q = (1, 2, 3)$.\n\n*Nota:* Podeu calcular la distància d'un punt de coordenades $(x_0, y_0, z_0)$ al pla d'equació $Ax + By + Cz + D = 0$ amb l'expressió $\\dfrac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}}$.",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Estudieu la posició relativa de la recta $r$ i el pla $\\pi$.", "punts": 1},
-        {"id": "b", "enunciat": "Calculeu la distància entre la recta $r$ i el pla $\\pi$.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Estudieu la posició relativa de la recta $r$ i el pla $\\pi$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la distància entre la recta $r$ i el pla $\\pi$.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -66,8 +85,14 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$r$ és paral·lela a $\\pi$ (no continguda)"},
-          {"apartat": "b", "valor": "$d(r, \\pi) = \\dfrac{5}{\\sqrt 3} = \\dfrac{5\\sqrt3}{3} \\approx 2{,}887$ u"}
+          {
+            "apartat": "a",
+            "valor": "$r$ és paral·lela a $\\pi$ (no continguda)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$d(r, \\pi) = \\dfrac{5}{\\sqrt 3} = \\dfrac{5\\sqrt3}{3} \\approx 2{,}887$ u"
+          }
         ],
         "nota": "La solució oficial esmenta altres maneres de fer l'apartat a): passar la recta a forma general i estudiar el sistema de tres equacions (rangs), o bé substituir la forma paramètrica $(t, 2t, 6 - 3t)$ al pla: surt $6 = 1$, sense solució, i per tant són paral·lels. Error típic: quedar-se en el producte escalar nul i no comprovar si la recta està continguda al pla."
       }
@@ -82,15 +107,31 @@
       "titol": "Comprovar una igualtat matricial i deduir-ne la matriu inversa",
       "tema": "matrius",
       "temes_secundaris": [],
-      "conceptes": ["producte de matrius", "matriu inversa", "matriu identitat", "factor comú matricial"],
+      "conceptes": [
+        "producte de matrius",
+        "matriu inversa",
+        "propietats de les matrius"
+      ],
       "dificultat": 2,
-      "pagines": [1],
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "pagines": [
+        1
+      ],
       "enunciat": "Siguin les matrius $A = \\begin{pmatrix} 1 & 1 & 1 \\\\ 0 & -2 & 1 \\\\ 1 & -1 & 1 \\end{pmatrix}$ i $B = \\begin{pmatrix} 3 & 4 & -1 \\\\ -1 & -4 & 3 \\\\ 0 & -4 & 4 \\end{pmatrix}$.",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Comproveu que satisfan la igualtat $A^2 - \\frac{1}{2} A \\cdot B = I$, en què $I$ és la matriu identitat d'ordre 3.", "punts": 1},
-        {"id": "b", "enunciat": "Fent servir la igualtat anterior, trobeu la matriu inversa de $A$: $A^{-1}$.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Comproveu que satisfan la igualtat $A^2 - \\frac{1}{2} A \\cdot B = I$, en què $I$ és la matriu identitat d'ordre 3.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Fent servir la igualtat anterior, trobeu la matriu inversa de $A$: $A^{-1}$.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -122,8 +163,14 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$A^2 - \\frac12 AB = I$ ✓"},
-          {"apartat": "b", "valor": "$A^{-1} = A - \\frac12 B = \\frac12\\begin{pmatrix} -1 & -2 & 3 \\\\ 1 & 0 & -1 \\\\ 2 & 2 & -2 \\end{pmatrix}$"}
+          {
+            "apartat": "a",
+            "valor": "$A^2 - \\frac12 AB = I$ ✓"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A^{-1} = A - \\frac12 B = \\frac12\\begin{pmatrix} -1 & -2 & 3 \\\\ 1 & 0 & -1 \\\\ 2 & 2 & -2 \\end{pmatrix}$"
+          }
         ],
         "nota": "L'enunciat demana fer servir la igualtat: calcular la inversa per adjunts dona el mateix resultat, però no és el que es demana. Error típic: treure el factor comú per la dreta, $(A - \\frac12 B)A$, que no és el que diu la igualtat."
       }
@@ -137,16 +184,36 @@
       "punts": 2,
       "titol": "Discussió d'un sistema 3x3 amb un paràmetre i resolució del cas indeterminat",
       "tema": "sistemes",
-      "temes_secundaris": ["matrius"],
-      "conceptes": ["teorema de Rouché-Frobenius", "rang", "determinant", "sistema compatible indeterminat", "discussió de sistemes"],
+      "temes_secundaris": [
+        "matrius"
+      ],
+      "conceptes": [
+        "teorema de Rouché-Frobenius",
+        "rang",
+        "determinant",
+        "sistema compatible indeterminat",
+        "discussió de sistemes"
+      ],
       "dificultat": 2,
-      "pagines": [1],
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "pagines": [
+        1
+      ],
       "enunciat": "Considereu el sistema d'equacions lineals següent:\n\n$$\\begin{cases} x + y + z = 3 \\\\ x + y - z = 1 \\\\ 2x + ay = 2a \\end{cases}$$",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Discutiu el sistema per als diferents valors del paràmetre real $a$.", "punts": 1},
-        {"id": "b", "enunciat": "Resoleu el sistema per al cas $a = 2$.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre real $a$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Resoleu el sistema per al cas $a = 2$.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -183,8 +250,14 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$a \\neq 2$: SCD; $\\ a = 2$: SCI amb 1 grau de llibertat"},
-          {"apartat": "b", "valor": "$(x, y, z) = (2 - \\lambda,\\ \\lambda,\\ 1),\\ \\lambda \\in \\mathbb{R}$"}
+          {
+            "apartat": "a",
+            "valor": "$a \\neq 2$: SCD; $\\ a = 2$: SCI amb 1 grau de llibertat"
+          },
+          {
+            "apartat": "b",
+            "valor": "$(x, y, z) = (2 - \\lambda,\\ \\lambda,\\ 1),\\ \\lambda \\in \\mathbb{R}$"
+          }
         ],
         "nota": "La solució oficial dona la solució com $(2 - y, y, 1)$, que és el mateix amb $y$ com a paràmetre. També és vàlid deixar $x$ lliure: $(x, 2 - x, 1)$. Fixeu-vos que $z = 1$ sempre, sigui quin sigui $a$."
       }
@@ -198,16 +271,35 @@
       "punts": 2,
       "titol": "Trobar una funció a partir de la derivada i derivada d'una composició amb taules de valors",
       "tema": "derivades",
-      "temes_secundaris": ["integrals"],
-      "conceptes": ["primitiva", "pendent de la recta tangent", "constant d'integració", "regla de la cadena", "composició de funcions"],
+      "temes_secundaris": [
+        "integrals"
+      ],
+      "conceptes": [
+        "primitiva",
+        "constant d'integració",
+        "regla de la cadena",
+        "recta tangent"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Càlcul d'una primitiva a partir de la derivada, que és de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "De les funcions $f(x)$, $f'(x)$, $g(x)$ i $g'(x)$, en coneixem els valors següents:\n\n| $x$ | $f(x)$ | $f'(x)$ |\n|---|---|---|\n| 0 | 2 | 1 |\n| 1 | 0 | $-6$ |\n\n| $x$ | $g(x)$ | $g'(x)$ |\n|---|---|---|\n| 0 | 1 | 1 |\n| 1 | 3 | 3 |",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "De la funció $f(x)$ sabem també que el pendent de la recta tangent a un punt d'abscissa $x$ és $4x^3 - 9x^2 - 2x + 1$. Trobeu $f(x)$.", "punts": 1},
-        {"id": "b", "enunciat": "Calculeu $(g \\circ f)'(1)$.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "De la funció $f(x)$ sabem també que el pendent de la recta tangent a un punt d'abscissa $x$ és $4x^3 - 9x^2 - 2x + 1$. Trobeu $f(x)$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu $(g \\circ f)'(1)$.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -239,8 +331,14 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$f(x) = x^4 - 3x^3 - x^2 + x + 2$"},
-          {"apartat": "b", "valor": "$(g \\circ f)'(1) = -6$"}
+          {
+            "apartat": "a",
+            "valor": "$f(x) = x^4 - 3x^3 - x^2 + x + 2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$(g \\circ f)'(1) = -6$"
+          }
         ],
         "nota": "Error típic a b): fer servir $g'(1) = 3$ en lloc de $g'(f(1)) = g'(0) = 1$, cosa que donaria $-18$. La solució oficial accepta determinar $C$ amb $f(0) = 2$ o amb $f(1) = 0$ (tots dos donen $C = 2$)."
       }
@@ -255,15 +353,35 @@
       "titol": "Pla perpendicular a una recta donada en forma implícita i punt simètric respecte d'un pla",
       "tema": "geometria",
       "temes_secundaris": [],
-      "conceptes": ["producte vectorial", "vector director", "equació general del pla", "punt simètric respecte d'un pla", "intersecció recta-pla"],
+      "conceptes": [
+        "producte vectorial",
+        "vector director",
+        "equació del pla",
+        "punt simètric",
+        "intersecció recta-pla",
+        "recta perpendicular a un pla",
+        "punt mitjà"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "A $\\mathbb{R}^3$, siguin la recta $r: \\begin{cases} x - z = 2 \\\\ 2y + z = 4 \\end{cases}$ i el punt $P = (0, 1, -1)$.",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Calculeu l'equació general (és a dir, la que té la forma $Ax + By + Cz = D$) del pla $\\pi$ perpendicular a la recta $r$ i que passa pel punt $P$.", "punts": 1},
-        {"id": "b", "enunciat": "Calculeu el punt simètric del punt $P$ respecte del pla $x + y + z = -3$.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació general (és a dir, la que té la forma $Ax + By + Cz = D$) del pla $\\pi$ perpendicular a la recta $r$ i que passa pel punt $P$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el punt simètric del punt $P$ respecte del pla $x + y + z = -3$.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -300,8 +418,14 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$\\pi: 2x - y + 2z = -3$"},
-          {"apartat": "b", "valor": "$P' = (-2, -1, -3)$"}
+          {
+            "apartat": "a",
+            "valor": "$\\pi: 2x - y + 2z = -3$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P' = (-2, -1, -3)$"
+          }
         ],
         "nota": "Atenció: a l'apartat b) el pla respecte del qual es fa la simetria és $x + y + z = -3$, no el pla $\\pi$ de l'apartat a). Error típic: donar com a resposta el punt $Q$ (la projecció) en lloc del simètric."
       }
@@ -316,15 +440,32 @@
       "titol": "Primitiva de sin x / cos² x per canvi de variable i àrea entre 0 i π/4",
       "tema": "integrals",
       "temes_secundaris": [],
-      "conceptes": ["primitiva", "canvi de variable", "regla de Barrow", "àrea sota una corba", "integrals trigonomètriques"],
+      "conceptes": [
+        "primitiva",
+        "canvi de variable",
+        "regla de Barrow",
+        "àrea sota una corba"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Sigui la funció $f(x) = \\dfrac{\\sin x}{\\cos^2 x}$.",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Calculeu una primitiva de la funció $f(x)$.", "punts": 1},
-        {"id": "b", "enunciat": "Calculeu l'àrea limitada per la funció $f(x)$ i l'eix de les abscisses entre les abscisses $x = 0$ i $x = \\dfrac{\\pi}{4}$.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Calculeu una primitiva de la funció $f(x)$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'àrea limitada per la funció $f(x)$ i l'eix de les abscisses entre les abscisses $x = 0$ i $x = \\dfrac{\\pi}{4}$.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -351,8 +492,14 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$F(x) = \\dfrac{1}{\\cos x}$ (+ C)"},
-          {"apartat": "b", "valor": "Àrea $= \\sqrt2 - 1 = \\dfrac{2\\sqrt2 - 2}{2} \\approx 0{,}414\\ \\text{u}^2$"}
+          {
+            "apartat": "a",
+            "valor": "$F(x) = \\dfrac{1}{\\cos x}$ (+ C)"
+          },
+          {
+            "apartat": "b",
+            "valor": "Àrea $= \\sqrt2 - 1 = \\dfrac{2\\sqrt2 - 2}{2} \\approx 0{,}414\\ \\text{u}^2$"
+          }
         ],
         "nota": "També es pot veure com una primitiva quasi immediata: $\\frac{\\sin x}{\\cos^2 x} = -(\\cos x)^{-2}\\cdot(\\cos x)'$, la primitiva de la qual és $(\\cos x)^{-1}$. Com que es demana «una» primitiva, és correcte amb o sense la constant. Equivalentment, $F(x) = \\sec x$."
       }

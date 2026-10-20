@@ -20,15 +20,20 @@
       "punts": 2.5,
       "titol": "Camp gravitatori a l'òrbita de la Lluna i energia d'escapament Terra/Lluna",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "camp gravitatori",
-        "moviment circular uniforme",
+        "intensitat del camp gravitatori",
+        "MCU",
         "període orbital",
-        "energia d'escapament",
-        "conservació de l'energia mecànica"
+        "velocitat d'escapament",
+        "conservació de l'energia",
+        "força centrípeta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): camp gravitatori, moviment circular uniforme",
       "pagines": [
         2
       ],
@@ -101,12 +106,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "dipol elèctric",
-        "línies de camp",
-        "superfícies equipotencials",
+        "línies de camp i equipotencials",
         "principi de superposició",
         "potencial elèctric"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): dipol elèctric, línies de camp",
       "pagines": [
         4
       ],
@@ -191,13 +197,15 @@
       ],
       "conceptes": [
         "equació d'ona",
-        "nombre d'ona",
         "freqüència angular",
-        "fase inicial",
-        "velocitat transversal",
-        "acceleració transversal"
+        "equació del MHS",
+        "velocitat i acceleració màximes",
+        "ona transversal",
+        "velocitat de propagació"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): equació d'ona, nombre d'ona",
       "pagines": [
         6
       ],
@@ -279,16 +287,18 @@
       "tema": "camp-magnetic",
       "temes_secundaris": [
         "quantica",
-        "relativitat"
+        "relativitat",
+        "mecanica"
       ],
       "conceptes": [
-        "ciclotró",
+        "radi de la trajectòria",
         "força de Lorentz",
-        "moviment circular uniforme",
-        "freqüència de ciclotró",
+        "MCU",
         "longitud d'ona de De Broglie"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): ciclotró, força de Lorentz",
       "pagines": [
         8
       ],
@@ -377,12 +387,14 @@
       "conceptes": [
         "desintegració alfa",
         "desintegració beta",
-        "cadena radioactiva",
+        "sèrie radioactiva",
         "període de semidesintegració",
         "constant de desintegració",
-        "llei de desintegració"
+        "llei de desintegració radioactiva"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, desintegració beta",
       "pagines": [
         10
       ],
@@ -465,13 +477,13 @@
         "mecanica"
       ],
       "conceptes": [
-        "potencial gravitatori",
-        "camp gravitatori uniforme",
-        "superfícies equipotencials",
-        "treball",
-        "teorema de les forces vives"
+        "energia potencial gravitatòria",
+        "intensitat del camp gravitatori",
+        "conservació de l'energia"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Potencial gravitatori i equipotencials (2n); el treball de la grua (apartat b) és de 1r",
       "pagines": [
         12
       ],
@@ -555,12 +567,14 @@
       "conceptes": [
         "ones estacionàries",
         "harmònics",
-        "tub obert-tancat",
+        "tubs sonors",
         "nivell d'intensitat sonora",
         "intensitat sonora",
         "potència sonora"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, harmònics",
       "pagines": [
         13
       ],
@@ -641,10 +655,12 @@
         "freqüència llindar",
         "treball d'extracció",
         "energia del fotó",
-        "energia cinètica màxima",
-        "longitud d'ona de De Broglie"
+        "longitud d'ona de De Broglie",
+        "constant de Planck"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, freqüència llindar",
       "pagines": [
         14
       ],

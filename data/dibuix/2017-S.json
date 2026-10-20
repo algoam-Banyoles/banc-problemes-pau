@@ -29,6 +29,8 @@
         "escala"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Triangle amb incentre, bisectrius i arc capaç: llocs geomètrics (DT I).",
       "pagines": [
         5
       ],
@@ -117,11 +119,13 @@
       "conceptes": [
         "tangències",
         "potència d'un punt",
-        "eix radical",
-        "mitjana proporcional",
-        "escala"
+        "escala",
+        "punt de tangència",
+        "mediatriu"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Cas PPR general resolt amb la potència d'un punt (mitjana proporcional): DT II.",
       "pagines": [
         7
       ],
@@ -212,12 +216,14 @@
       "conceptes": [
         "piràmide",
         "secció plana",
-        "pla projectant",
         "vertadera magnitud",
         "desenvolupament",
-        "visibilitat"
+        "visibilitat",
+        "pla de cantell"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Piràmide tallada per un pla de cantell, VM d'arestes i desenvolupament (DT II).",
       "pagines": [
         9
       ],
@@ -311,13 +317,15 @@
         "diedric"
       ],
       "conceptes": [
-        "hexaedre",
+        "cub",
         "diagonal principal",
         "canvi de pla",
-        "pla frontal",
-        "visibilitat"
+        "visibilitat",
+        "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) construït amb canvi de pla.",
       "pagines": [
         11
       ],
@@ -404,10 +412,13 @@
         "axonometria isomètrica",
         "tronc de piràmide",
         "interpretació de vistes",
-        "escala",
-        "visibilitat"
+        "prisma envolupant",
+        "coordenades axonomètriques",
+        "cares inclinades"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         13
       ],
@@ -478,7 +489,9 @@
       "titol": "Militar d'un con truncat per un pla inclinat amb un forat prismàtic quadrat",
       "tema": "axonometria",
       "temes_secundaris": [
-        "cossos"
+        "corbes",
+        "cossos",
+        "normalitzacio"
       ],
       "conceptes": [
         "perspectiva militar",
@@ -486,9 +499,13 @@
         "secció plana",
         "el·lipse",
         "contorn aparent",
-        "escala"
+        "interpretació de vistes",
+        "circumferència en axonometria",
+        "secció cònica"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (perspectiva militar amb cilindres, cons o arcs): DT II.",
       "pagines": [
         15
       ],

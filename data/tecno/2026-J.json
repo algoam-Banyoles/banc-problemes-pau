@@ -20,23 +20,57 @@
       "punts": 0.5,
       "titol": "Resistència elèctrica d'un fil de constantà",
       "tema": "circuits",
-      "temes_secundaris": ["materials"],
-      "conceptes": ["resistivitat", "resistència elèctrica", "secció d'un conductor"],
+      "temes_secundaris": [
+        "materials"
+      ],
+      "conceptes": [
+        "resistivitat"
+      ],
       "dificultat": 1,
-      "pagines": [2],
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Volem construir una resistència utilitzant un fil de constantà de longitud $7\\ \\text{m}$ i diàmetre $0{,}2\\ \\text{mm}$. La resistivitat del constantà és $\\rho = 0{,}49\\ \\mu\\Omega\\ \\text{m}$. Quin valor tindrà la resistència elèctrica del fil?",
       "figures": [],
-      "opcions": {"a": "$7\\ \\Omega$", "b": "$17{,}15\\ \\Omega$", "c": "$27{,}30\\ \\Omega$", "d": "$109{,}2\\ \\Omega$"},
+      "opcions": {
+        "a": "$7\\ \\Omega$",
+        "b": "$17{,}15\\ \\Omega$",
+        "c": "$27{,}30\\ \\Omega$",
+        "d": "$109{,}2\\ \\Omega$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "d",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Longitud: $L = 7\\ \\text{m}$\n- Diàmetre: $d = 0{,}2\\ \\text{mm} = 0{,}2 \\cdot 10^{-3}\\ \\text{m}$ → radi $r = 0{,}1 \\cdot 10^{-3}\\ \\text{m}$\n- Resistivitat: $\\rho = 0{,}49\\ \\mu\\Omega\\ \\text{m} = 0{,}49 \\cdot 10^{-6}\\ \\Omega\\ \\text{m}$\n- Incògnita: resistència $R$"},
-          {"apartat": null, "titol": "Secció del fil", "cos": "El fil és un cilindre; la seva secció és un cercle:\n\n$$S = \\pi r^2 = \\pi \\frac{d^2}{4} = \\pi \\cdot (0{,}1 \\cdot 10^{-3})^2 = 3{,}142 \\cdot 10^{-8}\\ \\text{m}^2$$"},
-          {"apartat": null, "titol": "Resistència d'un conductor", "cos": "La resistència d'un conductor és proporcional a la seva longitud i inversament proporcional a la seva secció:\n\n$$R = \\rho \\frac{L}{S} = 0{,}49 \\cdot 10^{-6} \\cdot \\frac{7}{3{,}142 \\cdot 10^{-8}} = 109{,}2\\ \\Omega$$\n\nResultat: **$R = 109{,}2\\ \\Omega$** → resposta **d**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **c)** $27{,}30\\ \\Omega$ és just la quarta part del resultat correcte: surt de calcular la secció amb $\\pi d^2$ (fent servir el diàmetre com si fos el radi).\n- Les altres opcions surten d'oblidar la secció o de no passar els mm i els $\\mu\\Omega$ al SI."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud: $L = 7\\ \\text{m}$\n- Diàmetre: $d = 0{,}2\\ \\text{mm} = 0{,}2 \\cdot 10^{-3}\\ \\text{m}$ → radi $r = 0{,}1 \\cdot 10^{-3}\\ \\text{m}$\n- Resistivitat: $\\rho = 0{,}49\\ \\mu\\Omega\\ \\text{m} = 0{,}49 \\cdot 10^{-6}\\ \\Omega\\ \\text{m}$\n- Incògnita: resistència $R$"
+          },
+          {
+            "apartat": null,
+            "titol": "Secció del fil",
+            "cos": "El fil és un cilindre; la seva secció és un cercle:\n\n$$S = \\pi r^2 = \\pi \\frac{d^2}{4} = \\pi \\cdot (0{,}1 \\cdot 10^{-3})^2 = 3{,}142 \\cdot 10^{-8}\\ \\text{m}^2$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Resistència d'un conductor",
+            "cos": "La resistència d'un conductor és proporcional a la seva longitud i inversament proporcional a la seva secció:\n\n$$R = \\rho \\frac{L}{S} = 0{,}49 \\cdot 10^{-6} \\cdot \\frac{7}{3{,}142 \\cdot 10^{-8}} = 109{,}2\\ \\Omega$$\n\nResultat: **$R = 109{,}2\\ \\Omega$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **c)** $27{,}30\\ \\Omega$ és just la quarta part del resultat correcte: surt de calcular la secció amb $\\pi d^2$ (fent servir el diàmetre com si fos el radi).\n- Les altres opcions surten d'oblidar la secció o de no passar els mm i els $\\mu\\Omega$ al SI."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$R = 109{,}2\\ \\Omega$ → resposta **d**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$R = 109{,}2\\ \\Omega$ → resposta **d**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -50,21 +84,49 @@
       "titol": "Coeficient d'eficiència (COP) d'una màquina frigorífica ideal",
       "tema": "termica",
       "temes_secundaris": [],
-      "conceptes": ["màquina frigorífica", "COP", "cicle de Carnot", "temperatura absoluta"],
+      "conceptes": [
+        "temperatura absoluta"
+      ],
       "dificultat": 1,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Necessita màquines frigorífiques i el COP d'una màquina ideal, que són de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Una màquina refrigeradora ideal produeix aigua freda per a un procés. En un model simplificat en què la temperatura del focus fred és de $7\\ ^\\circ\\text{C}$ i la del focus calent és de $35\\ ^\\circ\\text{C}$, quin és el coeficient d'eficiència (COP) del sistema?",
       "figures": [],
-      "opcions": {"a": "$0{,}25$", "b": "$9{,}091$", "c": "$10{,}01$", "d": "$11{,}01$"},
+      "opcions": {
+        "a": "$0{,}25$",
+        "b": "$9{,}091$",
+        "c": "$10{,}01$",
+        "d": "$11{,}01$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "c",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "Les fórmules dels cicles ideals (de Carnot) treballen amb **temperatures absolutes** (en kelvin):\n\n- Focus fred: $T_\\text{f} = 7 + 273{,}15 = 280{,}15\\ \\text{K}$\n- Focus calent: $T_\\text{c} = 35 + 273{,}15 = 308{,}15\\ \\text{K}$\n- Incògnita: $\\text{COP}$ de la màquina refrigeradora"},
-          {"apartat": null, "titol": "COP d'una màquina frigorífica ideal", "cos": "En una màquina frigorífica l'efecte útil és la calor que s'extreu del focus fred, $Q_\\text{f}$, i el que es paga és el treball $W = Q_\\text{c} - Q_\\text{f}$. En el cas ideal les calors són proporcionals a les temperatures absolutes, per tant:\n\n$$\\text{COP} = \\frac{Q_\\text{f}}{W} = \\frac{T_\\text{f}}{T_\\text{c} - T_\\text{f}} = \\frac{280{,}15}{308{,}15 - 280{,}15} = \\frac{280{,}15}{28} = 10{,}01$$\n\nResultat: **$\\text{COP} = 10{,}01$** → resposta **c**."},
-          {"apartat": null, "titol": "Per què les altres no", "cos": "- **d)** $11{,}01 = \\dfrac{T_\\text{c}}{T_\\text{c}-T_\\text{f}}$ és el COP d'una **bomba de calor** (l'efecte útil seria la calor cedida al focus calent).\n- **a)** $0{,}25 = 7/28$ surt d'usar la temperatura en °C en lloc de kelvin.\n- **b)** no correspon a cap fórmula correcta."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "Les fórmules dels cicles ideals (de Carnot) treballen amb **temperatures absolutes** (en kelvin):\n\n- Focus fred: $T_\\text{f} = 7 + 273{,}15 = 280{,}15\\ \\text{K}$\n- Focus calent: $T_\\text{c} = 35 + 273{,}15 = 308{,}15\\ \\text{K}$\n- Incògnita: $\\text{COP}$ de la màquina refrigeradora"
+          },
+          {
+            "apartat": null,
+            "titol": "COP d'una màquina frigorífica ideal",
+            "cos": "En una màquina frigorífica l'efecte útil és la calor que s'extreu del focus fred, $Q_\\text{f}$, i el que es paga és el treball $W = Q_\\text{c} - Q_\\text{f}$. En el cas ideal les calors són proporcionals a les temperatures absolutes, per tant:\n\n$$\\text{COP} = \\frac{Q_\\text{f}}{W} = \\frac{T_\\text{f}}{T_\\text{c} - T_\\text{f}} = \\frac{280{,}15}{308{,}15 - 280{,}15} = \\frac{280{,}15}{28} = 10{,}01$$\n\nResultat: **$\\text{COP} = 10{,}01$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **d)** $11{,}01 = \\dfrac{T_\\text{c}}{T_\\text{c}-T_\\text{f}}$ és el COP d'una **bomba de calor** (l'efecte útil seria la calor cedida al focus calent).\n- **a)** $0{,}25 = 7/28$ surt d'usar la temperatura en °C en lloc de kelvin.\n- **b)** no correspon a cap fórmula correcta."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$\\text{COP} = 10{,}01$ → resposta **c**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\text{COP} = 10{,}01$ → resposta **c**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -78,22 +140,59 @@
       "titol": "Tensió del cable que sosté una placa articulada",
       "tema": "estatica",
       "temes_secundaris": [],
-      "conceptes": ["equilibri", "moment d'una força", "tensió d'un cable", "articulació"],
+      "conceptes": [
+        "equilibri de moments"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "A la figura es mostra una placa homogènia de massa $m = 5\\ \\text{kg}$ articulada al punt O que es manté en equilibri estàtic gràcies al cable AB. Quina força fa el cable en la posició indicada?",
-      "figures": [{"src": "img/tecno/2026-J/e1-q3.png", "peu": "Placa de dimensions 2L × L articulada a O i subjectada pel cable AB, que forma 30° amb l'horitzontal"}],
-      "opcions": {"a": "$24{,}52\\ \\text{N}$", "b": "$49{,}04\\ \\text{N}$", "c": "$73{,}56\\ \\text{N}$", "d": "$98{,}08\\ \\text{N}$"},
+      "figures": [
+        {
+          "src": "img/tecno/2026-J/e1-q3.png",
+          "peu": "Placa de dimensions 2L × L articulada a O i subjectada pel cable AB, que forma 30° amb l'horitzontal"
+        }
+      ],
+      "opcions": {
+        "a": "$24{,}52\\ \\text{N}$",
+        "b": "$49{,}04\\ \\text{N}$",
+        "c": "$73{,}56\\ \\text{N}$",
+        "d": "$98{,}08\\ \\text{N}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "b",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Massa de la placa: $m = 5\\ \\text{kg}$ → pes $P = m\\,g = 5 \\cdot 9{,}807 = 49{,}04\\ \\text{N}$\n- Placa homogènia d'amplada $2L$: el pes actua al centre, a una distància horitzontal $L$ de O\n- El cable s'enganxa a B, a una distància horitzontal $2L$ de O, i forma $30^\\circ$ amb l'horitzontal\n- Incògnita: tensió del cable $T$"},
-          {"apartat": null, "titol": "Equilibri de moments respecte de O", "cos": "Prenem moments respecte de l'articulació O: així la reacció de l'articulació (que no coneixem) no hi apareix. Descomponem la tensió del cable a B:\n\n- Component horitzontal $T\\cos 30^\\circ$: la seva línia d'acció passa per O (O i B estan a la mateixa alçada), no fa moment.\n- Component vertical $T\\sin 30^\\circ$: braç $2L$.\n\n$$\\sum M_O = 0 \\;\\Rightarrow\\; T \\sin 30^\\circ \\cdot 2L = m\\,g \\cdot L$$"},
-          {"apartat": null, "titol": "Tensió del cable", "cos": "La $L$ se simplifica:\n\n$$T = \\frac{m\\,g}{2 \\sin 30^\\circ} = \\frac{49{,}04}{2 \\cdot 0{,}5} = 49{,}04\\ \\text{N}$$\n\nResultat: **$T = 49{,}04\\ \\text{N}$** (just igual al pes de la placa) → resposta **b**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **a)** $24{,}52\\ \\text{N} = m g/2$: oblidar l'angle i agafar tota la tensió com si fos vertical.\n- **d)** $98{,}08\\ \\text{N} = 2 m g$: posar el pes a l'extrem B (braç $2L$) en lloc del centre de la placa."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa de la placa: $m = 5\\ \\text{kg}$ → pes $P = m\\,g = 5 \\cdot 9{,}807 = 49{,}04\\ \\text{N}$\n- Placa homogènia d'amplada $2L$: el pes actua al centre, a una distància horitzontal $L$ de O\n- El cable s'enganxa a B, a una distància horitzontal $2L$ de O, i forma $30^\\circ$ amb l'horitzontal\n- Incògnita: tensió del cable $T$"
+          },
+          {
+            "apartat": null,
+            "titol": "Equilibri de moments respecte de O",
+            "cos": "Prenem moments respecte de l'articulació O: així la reacció de l'articulació (que no coneixem) no hi apareix. Descomponem la tensió del cable a B:\n\n- Component horitzontal $T\\cos 30^\\circ$: la seva línia d'acció passa per O (O i B estan a la mateixa alçada), no fa moment.\n- Component vertical $T\\sin 30^\\circ$: braç $2L$.\n\n$$\\sum M_O = 0 \\;\\Rightarrow\\; T \\sin 30^\\circ \\cdot 2L = m\\,g \\cdot L$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Tensió del cable",
+            "cos": "La $L$ se simplifica:\n\n$$T = \\frac{m\\,g}{2 \\sin 30^\\circ} = \\frac{49{,}04}{2 \\cdot 0{,}5} = 49{,}04\\ \\text{N}$$\n\nResultat: **$T = 49{,}04\\ \\text{N}$** (just igual al pes de la placa) → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **a)** $24{,}52\\ \\text{N} = m g/2$: oblidar l'angle i agafar tota la tensió com si fos vertical.\n- **d)** $98{,}08\\ \\text{N} = 2 m g$: posar el pes a l'extrem B (braç $2L$) en lloc del centre de la placa."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$T = 49{,}04\\ \\text{N}$ → resposta **b**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$T = 49{,}04\\ \\text{N}$ → resposta **b**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -106,23 +205,60 @@
       "punts": 0.5,
       "titol": "Allargament d'una proveta d'alumini en un assaig de tracció",
       "tema": "resistencia",
-      "temes_secundaris": ["materials"],
-      "conceptes": ["assaig de tracció", "tensió normal", "mòdul de Young", "llei de Hooke", "allargament"],
+      "temes_secundaris": [
+        "materials"
+      ],
+      "conceptes": [
+        "assaig de tracció",
+        "tensió normal",
+        "mòdul de Young",
+        "deformació unitària"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Necessita tensió, deformació o mòdul de Young (resistència de materials i assaig de tracció), que és de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Volem estudiar el comportament d'una proveta cilíndrica de diàmetre $10\\ \\text{mm}$ d'un aliatge d'alumini de límit elàstic $275\\ \\text{MPa}$ i tensió de ruptura $310\\ \\text{MPa}$. El mòdul elàstic del material és de $69\\ \\text{GPa}$ i la longitud inicial útil (entre marques) de la proveta és de $200\\ \\text{mm}$. Durant un assaig de tracció, la proveta és sotmesa a una força axial de $20\\ \\text{kN}$ aplicada de manera quasiestàtica. Quina és la longitud útil (entre marques) de la proveta en aquestes condicions?",
       "figures": [],
-      "opcions": {"a": "$200{,}10\\ \\text{mm}$", "b": "$200{,}74\\ \\text{mm}$", "c": "$201{,}01\\ \\text{mm}$", "d": "$207{,}38\\ \\text{mm}$"},
+      "opcions": {
+        "a": "$200{,}10\\ \\text{mm}$",
+        "b": "$200{,}74\\ \\text{mm}$",
+        "c": "$201{,}01\\ \\text{mm}$",
+        "d": "$207{,}38\\ \\text{mm}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "b",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Diàmetre: $d = 10\\ \\text{mm}$\n- Límit elàstic: $\\sigma_e = 275\\ \\text{MPa}$; tensió de ruptura: $\\sigma_r = 310\\ \\text{MPa}$\n- Mòdul elàstic: $E = 69\\ \\text{GPa} = 69\\,000\\ \\text{MPa}$\n- Longitud inicial: $L_0 = 200\\ \\text{mm}$\n- Força: $F = 20\\ \\text{kN} = 20\\,000\\ \\text{N}$\n- Incògnita: longitud final $L$"},
-          {"apartat": null, "titol": "Tensió a la proveta", "cos": "La tensió és la força repartida sobre la secció. Treballant en N i mm², el resultat surt directament en MPa ($1\\ \\text{MPa} = 1\\ \\text{N/mm}^2$):\n\n$$S = \\pi \\frac{d^2}{4} = \\pi \\frac{10^2}{4} = 78{,}54\\ \\text{mm}^2$$\n\n$$\\sigma = \\frac{F}{S} = \\frac{20\\,000}{78{,}54} = 254{,}6\\ \\text{MPa}$$\n\nCom que $254{,}6\\ \\text{MPa} < \\sigma_e = 275\\ \\text{MPa}$, la proveta treballa a la **zona elàstica** i podem aplicar la llei de Hooke."},
-          {"apartat": null, "titol": "Deformació i allargament (llei de Hooke)", "cos": "$$\\varepsilon = \\frac{\\sigma}{E} = \\frac{254{,}6}{69\\,000} = 3{,}690 \\cdot 10^{-3}$$\n\n$$\\Delta L = \\varepsilon\\, L_0 = 3{,}690 \\cdot 10^{-3} \\cdot 200 = 0{,}738\\ \\text{mm}$$\n\n$$L = L_0 + \\Delta L = 200 + 0{,}738 = 200{,}74\\ \\text{mm}$$\n\nResultat: **$L = 200{,}74\\ \\text{mm}$** → resposta **b**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **d)** $207{,}38\\ \\text{mm}$ dona un allargament 10 vegades més gran: és un error d'unitats (GPa ↔ MPa o mm ↔ cm).\n- Cal comprovar sempre que $\\sigma < \\sigma_e$: si no, la llei de Hooke no seria vàlida. La tensió de ruptura no intervé en el càlcul."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Diàmetre: $d = 10\\ \\text{mm}$\n- Límit elàstic: $\\sigma_e = 275\\ \\text{MPa}$; tensió de ruptura: $\\sigma_r = 310\\ \\text{MPa}$\n- Mòdul elàstic: $E = 69\\ \\text{GPa} = 69\\,000\\ \\text{MPa}$\n- Longitud inicial: $L_0 = 200\\ \\text{mm}$\n- Força: $F = 20\\ \\text{kN} = 20\\,000\\ \\text{N}$\n- Incògnita: longitud final $L$"
+          },
+          {
+            "apartat": null,
+            "titol": "Tensió a la proveta",
+            "cos": "La tensió és la força repartida sobre la secció. Treballant en N i mm², el resultat surt directament en MPa ($1\\ \\text{MPa} = 1\\ \\text{N/mm}^2$):\n\n$$S = \\pi \\frac{d^2}{4} = \\pi \\frac{10^2}{4} = 78{,}54\\ \\text{mm}^2$$\n\n$$\\sigma = \\frac{F}{S} = \\frac{20\\,000}{78{,}54} = 254{,}6\\ \\text{MPa}$$\n\nCom que $254{,}6\\ \\text{MPa} < \\sigma_e = 275\\ \\text{MPa}$, la proveta treballa a la **zona elàstica** i podem aplicar la llei de Hooke."
+          },
+          {
+            "apartat": null,
+            "titol": "Deformació i allargament (llei de Hooke)",
+            "cos": "$$\\varepsilon = \\frac{\\sigma}{E} = \\frac{254{,}6}{69\\,000} = 3{,}690 \\cdot 10^{-3}$$\n\n$$\\Delta L = \\varepsilon\\, L_0 = 3{,}690 \\cdot 10^{-3} \\cdot 200 = 0{,}738\\ \\text{mm}$$\n\n$$L = L_0 + \\Delta L = 200 + 0{,}738 = 200{,}74\\ \\text{mm}$$\n\nResultat: **$L = 200{,}74\\ \\text{mm}$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **d)** $207{,}38\\ \\text{mm}$ dona un allargament 10 vegades més gran: és un error d'unitats (GPa ↔ MPa o mm ↔ cm).\n- Cal comprovar sempre que $\\sigma < \\sigma_e$: si no, la llei de Hooke no seria vàlida. La tensió de ruptura no intervé en el càlcul."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$\\sigma = 254{,}6\\ \\text{MPa}$, $\\Delta L = 0{,}738\\ \\text{mm}$, $L = 200{,}74\\ \\text{mm}$ → resposta **b**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\sigma = 254{,}6\\ \\text{MPa}$, $\\Delta L = 0{,}738\\ \\text{mm}$, $L = 200{,}74\\ \\text{mm}$ → resposta **b**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -136,22 +272,60 @@
       "titol": "Funció lògica d'un circuit de tres portes AND i una OR",
       "tema": "digital",
       "temes_secundaris": [],
-      "conceptes": ["portes lògiques", "funció lògica", "suma de productes"],
+      "conceptes": [
+        "portes lògiques",
+        "funció lògica"
+      ],
       "dificultat": 1,
-      "pagines": [3],
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "pagines": [
+        3
+      ],
       "enunciat": "Quina és la funció lògica que correspon a aquest esquema de portes lògiques?",
-      "figures": [{"src": "img/tecno/2026-J/e1-q5.png", "peu": "Esquema de portes lògiques amb entrades p, q, r i sortida s"}],
-      "opcions": {"a": "$s = pq + qr + pr$", "b": "$s = (p + q)\\,(q + r)\\,q$", "c": "$s = \\overline{(p+q)}\\,\\overline{(q+r)}\\,\\overline{(p+r)}$", "d": "$s = \\overline{pq + qr + pr}$"},
+      "figures": [
+        {
+          "src": "img/tecno/2026-J/e1-q5.png",
+          "peu": "Esquema de portes lògiques amb entrades p, q, r i sortida s"
+        }
+      ],
+      "opcions": {
+        "a": "$s = pq + qr + pr$",
+        "b": "$s = (p + q)\\,(q + r)\\,q$",
+        "c": "$s = \\overline{(p+q)}\\,\\overline{(q+r)}\\,\\overline{(p+r)}$",
+        "d": "$s = \\overline{pq + qr + pr}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "a",
         "passos": [
-          {"apartat": null, "titol": "Identificar les portes", "cos": "En simbologia IEC, «&» és una porta **AND** (producte lògic) i «≥1» és una porta **OR** (suma lògica). No hi ha cap cercle de negació a les sortides, per tant no hi ha cap NAND ni NOR."},
-          {"apartat": null, "titol": "Seguir les connexions de cada porta AND", "cos": "Seguim les línies verticals de les entrades (els punts negres són connexions; el pont de la línia $q$ sobre la línia $r$ indica que **no** es connecten):\n\n- AND superior: entrades $p$ i $q$ → $pq$\n- AND del mig: entrades $q$ i $r$ → $qr$\n- AND inferior: entrades $r$ i $p$ → $pr$"},
-          {"apartat": null, "titol": "Porta OR final", "cos": "Les tres sortides entren a la porta OR, que les suma:\n\n$$s = pq + qr + pr$$\n\n→ resposta **a**. (És la funció «majoria»: $s = 1$ quan almenys dues de les tres entrades valen 1.)"},
-          {"apartat": null, "titol": "Per què les altres no", "cos": "- **b)** i **c)** són productes de sumes: correspondrien a portes OR a l'entrada i una AND a la sortida.\n- **d)** és la negació de la funció correcta: caldria una porta NOR a la sortida (≥1 amb cercle)."}
+          {
+            "apartat": null,
+            "titol": "Identificar les portes",
+            "cos": "En simbologia IEC, «&» és una porta **AND** (producte lògic) i «≥1» és una porta **OR** (suma lògica). No hi ha cap cercle de negació a les sortides, per tant no hi ha cap NAND ni NOR."
+          },
+          {
+            "apartat": null,
+            "titol": "Seguir les connexions de cada porta AND",
+            "cos": "Seguim les línies verticals de les entrades (els punts negres són connexions; el pont de la línia $q$ sobre la línia $r$ indica que **no** es connecten):\n\n- AND superior: entrades $p$ i $q$ → $pq$\n- AND del mig: entrades $q$ i $r$ → $qr$\n- AND inferior: entrades $r$ i $p$ → $pr$"
+          },
+          {
+            "apartat": null,
+            "titol": "Porta OR final",
+            "cos": "Les tres sortides entren a la porta OR, que les suma:\n\n$$s = pq + qr + pr$$\n\n→ resposta **a**. (És la funció «majoria»: $s = 1$ quan almenys dues de les tres entrades valen 1.)"
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **b)** i **c)** són productes de sumes: correspondrien a portes OR a l'entrada i una AND a la sortida.\n- **d)** és la negació de la funció correcta: caldria una porta NOR a la sortida (≥1 amb cercle)."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$s = pq + qr + pr$ → resposta **a**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$s = pq + qr + pr$ → resposta **a**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -164,23 +338,64 @@
       "punts": 0.5,
       "titol": "Esquema de contactes equivalent a una taula de veritat",
       "tema": "digital",
-      "temes_secundaris": ["control"],
-      "conceptes": ["esquema de contactes", "taula de veritat", "funció lògica", "contacte normalment obert"],
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "esquema de contactes",
+        "taula de veritat",
+        "funció lògica"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "pagines": [
+        3
+      ],
       "enunciat": "Quin dels esquemes de contactes següents correspon a la taula de veritat següent?\n\n| $a$ | $b$ | $c$ | $d$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | 1 |\n| 1 | 0 | 0 | 0 |\n| 1 | 0 | 1 | 1 |\n| 1 | 1 | 0 | 0 |\n| 1 | 1 | 1 | 1 |",
-      "figures": [{"src": "img/tecno/2026-J/e1-q6.png", "peu": "Opcions a), b), c) i d): esquemes de contactes amb els polsadors a, b, c i la sortida d"}],
-      "opcions": {"a": "(vegeu la figura)", "b": "(vegeu la figura)", "c": "(vegeu la figura)", "d": "(vegeu la figura)"},
+      "figures": [
+        {
+          "src": "img/tecno/2026-J/e1-q6.png",
+          "peu": "Opcions a), b), c) i d): esquemes de contactes amb els polsadors a, b, c i la sortida d"
+        }
+      ],
+      "opcions": {
+        "a": "(vegeu la figura)",
+        "b": "(vegeu la figura)",
+        "c": "(vegeu la figura)",
+        "d": "(vegeu la figura)"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "c",
         "passos": [
-          {"apartat": null, "titol": "Funció lògica de la taula", "cos": "La sortida val 1 a les files $abc = 011$, $101$ i $111$:\n\n$$d = \\bar{a}\\,b\\,c + a\\,\\bar{b}\\,c + a\\,b\\,c$$\n\nTotes tenen $c = 1$ i, a més, $a = 1$ o $b = 1$. Simplificant:\n\n$$d = c\\,(a + b) = a\\,c + b\\,c$$"},
-          {"apartat": null, "titol": "Com es llegeix un esquema de contactes", "cos": "- Contactes en **sèrie** → producte (AND); contactes en **paral·lel** → suma (OR).\n- Contacte **normalment obert** (NO): la làmina inclinada no toca l'altre terminal; deixa passar corrent quan la variable val 1 → $x$.\n- Contacte **normalment tancat** (NC): la làmina passa per sobre d'un petit tram vertical que la uneix a l'altre terminal; deixa passar corrent quan la variable val 0 → $\\bar{x}$.\n- La línia vertical que uneix dos contactes amb la mateixa lletra indica que són accionats pel mateix polsador."},
-          {"apartat": null, "titol": "Funció de cada esquema", "cos": "- **a)** Branca superior: $a$ (NO) en sèrie amb $b$ (NC); branca inferior: $b$ (NO) en sèrie amb $c$ (NC) → $d = a\\,\\bar{b} + b\\,\\bar{c}$.\n- **b)** Branca superior: $b$ (NC) i $c$ (NO); branca inferior: $a$ (NO) i $c$ (NO) → $d = \\bar{b}\\,c + a\\,c$.\n- **c)** Branca superior: $b$ (NO) i $c$ (NO); branca inferior: $a$ (NO) i $c$ (NO) → $d = b\\,c + a\\,c$.\n- **d)** Branca superior: $b$ (NO) i $c$ (NO); branca inferior: $a$ (NC) i $c$ (NO) → $d = b\\,c + \\bar{a}\\,c$."},
-          {"apartat": null, "titol": "Comparació amb la taula", "cos": "Només l'esquema **c** dona $d = a\\,c + b\\,c$ → resposta **c**.\n\nComprovació ràpida amb la fila $abc = 001$ (ha de donar 0): a l'esquema **b** donaria $\\bar{b}c = 1$ i a l'esquema **d** donaria $\\bar{a}c = 1$, així que són incorrectes. Amb la fila $011$ (ha de donar 1), l'esquema **a** dona $0$."}
+          {
+            "apartat": null,
+            "titol": "Funció lògica de la taula",
+            "cos": "La sortida val 1 a les files $abc = 011$, $101$ i $111$:\n\n$$d = \\bar{a}\\,b\\,c + a\\,\\bar{b}\\,c + a\\,b\\,c$$\n\nTotes tenen $c = 1$ i, a més, $a = 1$ o $b = 1$. Simplificant:\n\n$$d = c\\,(a + b) = a\\,c + b\\,c$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Com es llegeix un esquema de contactes",
+            "cos": "- Contactes en **sèrie** → producte (AND); contactes en **paral·lel** → suma (OR).\n- Contacte **normalment obert** (NO): la làmina inclinada no toca l'altre terminal; deixa passar corrent quan la variable val 1 → $x$.\n- Contacte **normalment tancat** (NC): la làmina passa per sobre d'un petit tram vertical que la uneix a l'altre terminal; deixa passar corrent quan la variable val 0 → $\\bar{x}$.\n- La línia vertical que uneix dos contactes amb la mateixa lletra indica que són accionats pel mateix polsador."
+          },
+          {
+            "apartat": null,
+            "titol": "Funció de cada esquema",
+            "cos": "- **a)** Branca superior: $a$ (NO) en sèrie amb $b$ (NC); branca inferior: $b$ (NO) en sèrie amb $c$ (NC) → $d = a\\,\\bar{b} + b\\,\\bar{c}$.\n- **b)** Branca superior: $b$ (NC) i $c$ (NO); branca inferior: $a$ (NO) i $c$ (NO) → $d = \\bar{b}\\,c + a\\,c$.\n- **c)** Branca superior: $b$ (NO) i $c$ (NO); branca inferior: $a$ (NO) i $c$ (NO) → $d = b\\,c + a\\,c$.\n- **d)** Branca superior: $b$ (NO) i $c$ (NO); branca inferior: $a$ (NC) i $c$ (NO) → $d = b\\,c + \\bar{a}\\,c$."
+          },
+          {
+            "apartat": null,
+            "titol": "Comparació amb la taula",
+            "cos": "Només l'esquema **c** dona $d = a\\,c + b\\,c$ → resposta **c**.\n\nComprovació ràpida amb la fila $abc = 001$ (ha de donar 0): a l'esquema **b** donaria $\\bar{b}c = 1$ i a l'esquema **d** donaria $\\bar{a}c = 1$, així que són incorrectes. Amb la fila $011$ (ha de donar 1), l'esquema **a** dona $0$."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$d = a\\,c + b\\,c = c\\,(a+b)$ → resposta **c**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$d = a\\,c + b\\,c = c\\,(a+b)$ → resposta **c**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -193,23 +408,60 @@
       "punts": 0.5,
       "titol": "Rendiment d'un motor de corrent continu d'imants permanents",
       "tema": "maquines-electriques",
-      "temes_secundaris": [],
-      "conceptes": ["motor de corrent continu", "pèrdues per efecte Joule", "rendiment", "potència elèctrica"],
+      "temes_secundaris": [
+        "circuits"
+      ],
+      "conceptes": [
+        "motor de corrent continu",
+        "efecte Joule",
+        "rendiment",
+        "potència elèctrica"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "1r",
+      "curs_motiu": "Motor de corrent continu (potència, parell, rendiment), que és de 1r.",
+      "pagines": [
+        3
+      ],
       "enunciat": "La placa de característiques d'un motor de corrent continu d'imants permanents indica que, en condicions nominals, les característiques són $R_\\text{i} = 3\\ \\Omega$, $V_\\text{N} = 300\\ \\text{V}$, $I_\\text{N} = 16\\ \\text{A}$ i $n_\\text{N} = 1\\,250\\ \\text{min}^{-1}$. Si el motor treballa en condicions nominals i sense pèrdues per fregament, quin és el seu rendiment?",
       "figures": [],
-      "opcions": {"a": "$\\eta = 16\\ \\%$", "b": "$\\eta = 79\\ \\%$", "c": "$\\eta = 84\\ \\%$", "d": "$\\eta = 89\\ \\%$"},
+      "opcions": {
+        "a": "$\\eta = 16\\ \\%$",
+        "b": "$\\eta = 79\\ \\%$",
+        "c": "$\\eta = 84\\ \\%$",
+        "d": "$\\eta = 89\\ \\%$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "c",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Resistència de l'induït: $R_\\text{i} = 3\\ \\Omega$\n- Tensió nominal: $V_\\text{N} = 300\\ \\text{V}$; corrent nominal: $I_\\text{N} = 16\\ \\text{A}$\n- Sense pèrdues per fregament: les úniques pèrdues són per efecte Joule a l'induït\n- Incògnita: rendiment $\\eta$ (la velocitat $n_\\text{N}$ no cal)"},
-          {"apartat": null, "titol": "Potència absorbida i pèrdues", "cos": "La potència elèctrica que el motor agafa de la xarxa és:\n\n$$P_\\text{abs} = V_\\text{N}\\, I_\\text{N} = 300 \\cdot 16 = 4\\,800\\ \\text{W}$$\n\nUna part es perd en forma de calor a la resistència de l'induït:\n\n$$P_\\text{Joule} = R_\\text{i}\\, I_\\text{N}^2 = 3 \\cdot 16^2 = 768\\ \\text{W}$$"},
-          {"apartat": null, "titol": "Rendiment", "cos": "La resta es converteix en potència mecànica útil:\n\n$$P_\\text{útil} = P_\\text{abs} - P_\\text{Joule} = 4\\,800 - 768 = 4\\,032\\ \\text{W}$$\n\n$$\\eta = \\frac{P_\\text{útil}}{P_\\text{abs}} = \\frac{4\\,032}{4\\,800} = 0{,}84 = 84\\ \\%$$\n\nResultat: **$\\eta = 84\\ \\%$** → resposta **c**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **a)** $16\\ \\%$ és la fracció de **pèrdues** ($768/4\\,800$), no el rendiment.\n- Una forma alternativa: $\\eta = E'/V = (V - R_\\text{i} I)/V = (300 - 48)/300 = 0{,}84$."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Resistència de l'induït: $R_\\text{i} = 3\\ \\Omega$\n- Tensió nominal: $V_\\text{N} = 300\\ \\text{V}$; corrent nominal: $I_\\text{N} = 16\\ \\text{A}$\n- Sense pèrdues per fregament: les úniques pèrdues són per efecte Joule a l'induït\n- Incògnita: rendiment $\\eta$ (la velocitat $n_\\text{N}$ no cal)"
+          },
+          {
+            "apartat": null,
+            "titol": "Potència absorbida i pèrdues",
+            "cos": "La potència elèctrica que el motor agafa de la xarxa és:\n\n$$P_\\text{abs} = V_\\text{N}\\, I_\\text{N} = 300 \\cdot 16 = 4\\,800\\ \\text{W}$$\n\nUna part es perd en forma de calor a la resistència de l'induït:\n\n$$P_\\text{Joule} = R_\\text{i}\\, I_\\text{N}^2 = 3 \\cdot 16^2 = 768\\ \\text{W}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Rendiment",
+            "cos": "La resta es converteix en potència mecànica útil:\n\n$$P_\\text{útil} = P_\\text{abs} - P_\\text{Joule} = 4\\,800 - 768 = 4\\,032\\ \\text{W}$$\n\n$$\\eta = \\frac{P_\\text{útil}}{P_\\text{abs}} = \\frac{4\\,032}{4\\,800} = 0{,}84 = 84\\ \\%$$\n\nResultat: **$\\eta = 84\\ \\%$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **a)** $16\\ \\%$ és la fracció de **pèrdues** ($768/4\\,800$), no el rendiment.\n- Una forma alternativa: $\\eta = E'/V = (V - R_\\text{i} I)/V = (300 - 48)/300 = 0{,}84$."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$\\eta = 84\\ \\%$ → resposta **c**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\eta = 84\\ \\%$ → resposta **c**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -223,23 +475,65 @@
       "titol": "Lectures d'amperímetre i voltímetre en un circuit LC sèrie",
       "tema": "circuits",
       "temes_secundaris": [],
-      "conceptes": ["corrent altern", "reactància capacitiva", "reactància inductiva", "circuit LC sèrie"],
+      "conceptes": [
+        "corrent altern",
+        "impedància"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "2n",
+      "curs_motiu": "Necessita corrent altern (reactàncies, impedància, factor de potència), que és de 2n.",
+      "pagines": [
+        3
+      ],
       "enunciat": "Els paràmetres coneguts del circuit de la figura són $U_1 = 230\\ \\text{V}$, $f = 60\\ \\text{Hz}$, $L = 50\\ \\text{mH}$ i $C = 66\\ \\mu\\text{F}$. Quines són les lectures de l'amperímetre $A_2$ i del voltímetre $U_3$?",
-      "figures": [{"src": "img/tecno/2026-J/e1-q8.png", "peu": "Font alterna amb voltímetre U1; amperímetre A2 en sèrie amb un condensador i una bobina; voltímetre U3 en paral·lel amb el condensador"}],
-      "opcions": {"a": "$A_2 = 10{,}78\\ \\text{A}$ i $U_3 = 433{,}1\\ \\text{V}$.", "b": "$A_2 = 10{,}78\\ \\text{A}$ i $U_3 = 203{,}1\\ \\text{V}$.", "c": "$A_2 = 7{,}078\\ \\text{A}$ i $U_3 = 341{,}1\\ \\text{V}$.", "d": "$A_2 = 7{,}078\\ \\text{A}$ i $U_3 = 111{,}1\\ \\text{V}$."},
+      "figures": [
+        {
+          "src": "img/tecno/2026-J/e1-q8.png",
+          "peu": "Font alterna amb voltímetre U1; amperímetre A2 en sèrie amb un condensador i una bobina; voltímetre U3 en paral·lel amb el condensador"
+        }
+      ],
+      "opcions": {
+        "a": "$A_2 = 10{,}78\\ \\text{A}$ i $U_3 = 433{,}1\\ \\text{V}$.",
+        "b": "$A_2 = 10{,}78\\ \\text{A}$ i $U_3 = 203{,}1\\ \\text{V}$.",
+        "c": "$A_2 = 7{,}078\\ \\text{A}$ i $U_3 = 341{,}1\\ \\text{V}$.",
+        "d": "$A_2 = 7{,}078\\ \\text{A}$ i $U_3 = 111{,}1\\ \\text{V}$."
+      },
       "apartats": [],
       "solucio": {
         "resposta": "a",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $U_1 = 230\\ \\text{V}$, $f = 60\\ \\text{Hz}$\n- $L = 50\\ \\text{mH} = 0{,}05\\ \\text{H}$, $C = 66\\ \\mu\\text{F} = 66 \\cdot 10^{-6}\\ \\text{F}$\n- El condensador i la bobina estan en **sèrie** (el mateix corrent, el que mesura $A_2$); $U_3$ mesura la tensió del condensador\n- Incògnites: $I$ (lectura d'$A_2$) i $U_C$ (lectura d'$U_3$)"},
-          {"apartat": null, "titol": "Reactàncies", "cos": "$$X_L = 2\\pi f L = 2\\pi \\cdot 60 \\cdot 0{,}05 = 18{,}85\\ \\Omega$$\n\n$$X_C = \\frac{1}{2\\pi f C} = \\frac{1}{2\\pi \\cdot 60 \\cdot 66 \\cdot 10^{-6}} = 40{,}19\\ \\Omega$$"},
-          {"apartat": null, "titol": "Impedància i corrent", "cos": "En un circuit LC sèrie (sense resistència), les tensions de la bobina i del condensador estan en oposició de fase (desfasades 180°), així que les reactàncies es **resten**:\n\n$$Z = |X_C - X_L| = 40{,}19 - 18{,}85 = 21{,}34\\ \\Omega$$\n\n$$I = \\frac{U_1}{Z} = \\frac{230}{21{,}34} = 10{,}78\\ \\text{A}$$"},
-          {"apartat": null, "titol": "Tensió del condensador", "cos": "$$U_3 = U_C = I\\, X_C = 10{,}78 \\cdot 40{,}19 = 433{,}1\\ \\text{V}$$\n\nÉs més gran que la tensió de la font! És possible perquè la tensió de la bobina ($U_L = I X_L = 203{,}1\\ \\text{V}$) està en oposició: $433{,}1 - 203{,}1 = 230\\ \\text{V}$.\n\nResultat: **$A_2 = 10{,}78\\ \\text{A}$, $U_3 = 433{,}1\\ \\text{V}$** → resposta **a**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **b)** $203{,}1\\ \\text{V}$ és la tensió de la **bobina**, no la del condensador.\n- **c)** i **d)** surten de fer el càlcul amb $f = 50\\ \\text{Hz}$ en lloc de $60\\ \\text{Hz}$ ($I = 7{,}07\\ \\text{A}$, $U_C = 341\\ \\text{V}$ i $U_L = 111\\ \\text{V}$)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $U_1 = 230\\ \\text{V}$, $f = 60\\ \\text{Hz}$\n- $L = 50\\ \\text{mH} = 0{,}05\\ \\text{H}$, $C = 66\\ \\mu\\text{F} = 66 \\cdot 10^{-6}\\ \\text{F}$\n- El condensador i la bobina estan en **sèrie** (el mateix corrent, el que mesura $A_2$); $U_3$ mesura la tensió del condensador\n- Incògnites: $I$ (lectura d'$A_2$) i $U_C$ (lectura d'$U_3$)"
+          },
+          {
+            "apartat": null,
+            "titol": "Reactàncies",
+            "cos": "$$X_L = 2\\pi f L = 2\\pi \\cdot 60 \\cdot 0{,}05 = 18{,}85\\ \\Omega$$\n\n$$X_C = \\frac{1}{2\\pi f C} = \\frac{1}{2\\pi \\cdot 60 \\cdot 66 \\cdot 10^{-6}} = 40{,}19\\ \\Omega$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Impedància i corrent",
+            "cos": "En un circuit LC sèrie (sense resistència), les tensions de la bobina i del condensador estan en oposició de fase (desfasades 180°), així que les reactàncies es **resten**:\n\n$$Z = |X_C - X_L| = 40{,}19 - 18{,}85 = 21{,}34\\ \\Omega$$\n\n$$I = \\frac{U_1}{Z} = \\frac{230}{21{,}34} = 10{,}78\\ \\text{A}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Tensió del condensador",
+            "cos": "$$U_3 = U_C = I\\, X_C = 10{,}78 \\cdot 40{,}19 = 433{,}1\\ \\text{V}$$\n\nÉs més gran que la tensió de la font! És possible perquè la tensió de la bobina ($U_L = I X_L = 203{,}1\\ \\text{V}$) està en oposició: $433{,}1 - 203{,}1 = 230\\ \\text{V}$.\n\nResultat: **$A_2 = 10{,}78\\ \\text{A}$, $U_3 = 433{,}1\\ \\text{V}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **b)** $203{,}1\\ \\text{V}$ és la tensió de la **bobina**, no la del condensador.\n- **c)** i **d)** surten de fer el càlcul amb $f = 50\\ \\text{Hz}$ en lloc de $60\\ \\text{Hz}$ ($I = 7{,}07\\ \\text{A}$, $U_C = 341\\ \\text{V}$ i $U_L = 111\\ \\text{V}$)."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$X_L = 18{,}85\\ \\Omega$, $X_C = 40{,}19\\ \\Omega$; $A_2 = 10{,}78\\ \\text{A}$, $U_3 = 433{,}1\\ \\text{V}$ → resposta **a**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$X_L = 18{,}85\\ \\Omega$, $X_C = 40{,}19\\ \\Omega$; $A_2 = 10{,}78\\ \\text{A}$, $U_3 = 433{,}1\\ \\text{V}$ → resposta **a**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -252,35 +546,106 @@
       "punts": 2.5,
       "titol": "Fogonet de propà: energia, potència, rendiment i cost d'escalfar aigua",
       "tema": "termica",
-      "temes_secundaris": ["energia", "economia"],
-      "conceptes": ["calor sensible", "poder calorífic", "potència tèrmica", "rendiment", "consum de combustible"],
+      "temes_secundaris": [
+        "energia",
+        "economia"
+      ],
+      "conceptes": [
+        "calor sensible",
+        "poder calorífic",
+        "potència tèrmica",
+        "rendiment",
+        "consum de combustible",
+        "cost de l'energia"
+      ],
       "dificultat": 2,
-      "pagines": [4, 5],
+      "curs": "1r",
+      "curs_motiu": "Només necessita calor sensible, poder calorífic i rendiment, que són de 1r.",
+      "pagines": [
+        4,
+        5
+      ],
       "enunciat": "En un laboratori docent s'utilitza un fogonet portàtil de propà per a escalfar aigua en un recipient metàl·lic. El fogonet disposa d'un cremador que, en les condicions d'estudi, té un consum $q = 58{,}44\\ \\text{g/h}$ i permet escalfar una massa d'aigua $m_\\text{a} = 0{,}5\\ \\text{kg}$ des d'una temperatura inicial $T_\\text{i} = 18\\ ^\\circ\\text{C}$ fins a una temperatura final $T_\\text{f} = 95\\ ^\\circ\\text{C}$ en un temps $t_\\text{cons} = 14\\ \\text{min}$. El poder calorífic del propà és $p_\\text{c} = 46\\ \\text{MJ/kg}$ i la calor específica de l'aigua és $c_\\text{e} = 4{,}18\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$. El combustible es ven en cartutxos que contenen $m_\\text{cartutx} = 0{,}45\\ \\text{kg}$ de propà i tenen un preu per unitat $p_\\text{unitat} = 9{,}50\\ \\text{euros}$.\n\nDetermineu:",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "(2.1) L'energia necessària per a escalfar l'aigua des de $T_\\text{i}$ fins a $T_\\text{f}$, $E_\\text{aigua}$.", "punts": 0.5},
-        {"id": "b", "enunciat": "(2.2) La potència que proporciona el cremador, $P_\\text{crem}$.", "punts": 0.5},
-        {"id": "c", "enunciat": "(2.3) El temps d'escalfament que seria necessari si tota l'energia del combustible s'aprofités íntegrament, $t_\\text{ideal}$, i el rendiment real del procés d'escalfament, $\\eta$.", "punts": 1},
-        {"id": "d", "enunciat": "(2.4) La massa de propà consumida en l'assaig, $m_\\text{propà}$, i el cost econòmic del propà consumit, $p_\\text{total}$.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "(2.1) L'energia necessària per a escalfar l'aigua des de $T_\\text{i}$ fins a $T_\\text{f}$, $E_\\text{aigua}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "(2.2) La potència que proporciona el cremador, $P_\\text{crem}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "(2.3) El temps d'escalfament que seria necessari si tota l'energia del combustible s'aprofités íntegrament, $t_\\text{ideal}$, i el rendiment real del procés d'escalfament, $\\eta$.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "(2.4) La massa de propà consumida en l'assaig, $m_\\text{propà}$, i el cost econòmic del propà consumit, $p_\\text{total}$.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Consum del cremador: $q = 58{,}44\\ \\text{g/h} = \\dfrac{58{,}44 \\cdot 10^{-3}}{3\\,600}\\ \\text{kg/s} = 1{,}623 \\cdot 10^{-5}\\ \\text{kg/s}$\n- Aigua: $m_\\text{a} = 0{,}5\\ \\text{kg}$, de $T_\\text{i} = 18\\ ^\\circ\\text{C}$ a $T_\\text{f} = 95\\ ^\\circ\\text{C}$ → $\\Delta T = 77\\ ^\\circ\\text{C}$\n- Temps real d'escalfament: $t_\\text{cons} = 14\\ \\text{min} = 840\\ \\text{s}$\n- Poder calorífic: $p_\\text{c} = 46\\ \\text{MJ/kg} = 46 \\cdot 10^6\\ \\text{J/kg}$\n- $c_\\text{e} = 4{,}18\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$\n- Cartutx: $m_\\text{cartutx} = 0{,}45\\ \\text{kg} = 450\\ \\text{g}$, preu $p_\\text{unitat} = 9{,}50\\ \\text{euros}$\n- Incògnites: $E_\\text{aigua}$, $P_\\text{crem}$, $t_\\text{ideal}$, $\\eta$, $m_\\text{propà}$, $p_\\text{total}$"},
-          {"apartat": "a", "titol": "Calor sensible absorbida per l'aigua", "cos": "L'aigua s'escalfa sense canviar d'estat (no arriba a bullir), per tant absorbeix calor sensible:\n\n$$E_\\text{aigua} = m_\\text{a}\\, c_\\text{e}\\, \\Delta T = 0{,}5 \\cdot 4{,}18 \\cdot (95 - 18) = 160{,}9\\ \\text{kJ}$$\n\nResultat: **$E_\\text{aigua} \\approx 160{,}9\\ \\text{kJ}$**."},
-          {"apartat": "b", "titol": "Potència del cremador a partir del consum", "cos": "La potència que allibera la combustió és l'energia del combustible que es crema cada segon: cabal màssic (kg/s) per poder calorífic (J/kg):\n\n$$P_\\text{crem} = q\\, p_\\text{c} = \\frac{58{,}44}{1\\,000 \\cdot 3\\,600}\\ \\frac{\\text{kg}}{\\text{s}} \\cdot 46 \\cdot 10^6\\ \\frac{\\text{J}}{\\text{kg}} = 746{,}7\\ \\text{W}$$\n\nResultat: **$P_\\text{crem} \\approx 746{,}7\\ \\text{W}$**."},
-          {"apartat": "c", "titol": "Temps ideal (sense pèrdues)", "cos": "Si tota la potència del cremador anés a parar a l'aigua, el temps necessari seria l'energia que necessita l'aigua dividida per la potència:\n\n$$t_\\text{ideal} = \\frac{E_\\text{aigua}}{P_\\text{crem}} = \\frac{160{,}9 \\cdot 10^3\\ \\text{J}}{746{,}7\\ \\text{W}} = 215{,}5\\ \\text{s} = 3{,}592\\ \\text{min}$$\n\nResultat: **$t_\\text{ideal} \\approx 215{,}5\\ \\text{s} \\approx 3{,}592\\ \\text{min}$**."},
-          {"apartat": "c", "titol": "Rendiment real del procés", "cos": "En realitat ha calgut $t_\\text{cons} = 14\\ \\text{min}$, perquè gran part de la calor s'escapa a l'ambient o escalfa el recipient. El rendiment és la fracció de l'energia del combustible que acaba a l'aigua; com que la potència és constant, és el mateix que la relació de temps:\n\n$$\\eta = \\frac{t_\\text{ideal}}{t_\\text{cons}} = \\frac{3{,}592}{14} = 0{,}2566$$\n\nO, amb energies: $\\eta = \\dfrac{E_\\text{aigua}}{P_\\text{crem}\\, t_\\text{cons}} = \\dfrac{160{,}9 \\cdot 10^3}{746{,}7 \\cdot 840} = 0{,}2566$.\n\nResultat: **$\\eta \\approx 0{,}2566$ (25,66 %)**."},
-          {"apartat": "d", "titol": "Massa de propà consumida", "cos": "El consum és de $58{,}44\\ \\text{g}$ cada hora (60 min); en 14 min:\n\n$$m_\\text{propà} = q\\, t_\\text{cons} = 58{,}44\\ \\frac{\\text{g}}{\\text{h}} \\cdot \\frac{14}{60}\\ \\text{h} = 13{,}64\\ \\text{g}$$"},
-          {"apartat": "d", "titol": "Cost del propà consumit", "cos": "El preu és proporcional a la fracció del cartutx que s'ha gastat:\n\n$$p_\\text{total} = p_\\text{unitat}\\, \\frac{m_\\text{propà}}{m_\\text{cartutx}} = 9{,}50 \\cdot \\frac{13{,}64}{450} = 0{,}2879\\ \\text{euros}$$\n\nResultat: **$m_\\text{propà} \\approx 13{,}64\\ \\text{g}$; $p_\\text{total} \\approx 0{,}288\\ \\text{euros}$** (uns 29 cèntims)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Consum del cremador: $q = 58{,}44\\ \\text{g/h} = \\dfrac{58{,}44 \\cdot 10^{-3}}{3\\,600}\\ \\text{kg/s} = 1{,}623 \\cdot 10^{-5}\\ \\text{kg/s}$\n- Aigua: $m_\\text{a} = 0{,}5\\ \\text{kg}$, de $T_\\text{i} = 18\\ ^\\circ\\text{C}$ a $T_\\text{f} = 95\\ ^\\circ\\text{C}$ → $\\Delta T = 77\\ ^\\circ\\text{C}$\n- Temps real d'escalfament: $t_\\text{cons} = 14\\ \\text{min} = 840\\ \\text{s}$\n- Poder calorífic: $p_\\text{c} = 46\\ \\text{MJ/kg} = 46 \\cdot 10^6\\ \\text{J/kg}$\n- $c_\\text{e} = 4{,}18\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$\n- Cartutx: $m_\\text{cartutx} = 0{,}45\\ \\text{kg} = 450\\ \\text{g}$, preu $p_\\text{unitat} = 9{,}50\\ \\text{euros}$\n- Incògnites: $E_\\text{aigua}$, $P_\\text{crem}$, $t_\\text{ideal}$, $\\eta$, $m_\\text{propà}$, $p_\\text{total}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Calor sensible absorbida per l'aigua",
+            "cos": "L'aigua s'escalfa sense canviar d'estat (no arriba a bullir), per tant absorbeix calor sensible:\n\n$$E_\\text{aigua} = m_\\text{a}\\, c_\\text{e}\\, \\Delta T = 0{,}5 \\cdot 4{,}18 \\cdot (95 - 18) = 160{,}9\\ \\text{kJ}$$\n\nResultat: **$E_\\text{aigua} \\approx 160{,}9\\ \\text{kJ}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència del cremador a partir del consum",
+            "cos": "La potència que allibera la combustió és l'energia del combustible que es crema cada segon: cabal màssic (kg/s) per poder calorífic (J/kg):\n\n$$P_\\text{crem} = q\\, p_\\text{c} = \\frac{58{,}44}{1\\,000 \\cdot 3\\,600}\\ \\frac{\\text{kg}}{\\text{s}} \\cdot 46 \\cdot 10^6\\ \\frac{\\text{J}}{\\text{kg}} = 746{,}7\\ \\text{W}$$\n\nResultat: **$P_\\text{crem} \\approx 746{,}7\\ \\text{W}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Temps ideal (sense pèrdues)",
+            "cos": "Si tota la potència del cremador anés a parar a l'aigua, el temps necessari seria l'energia que necessita l'aigua dividida per la potència:\n\n$$t_\\text{ideal} = \\frac{E_\\text{aigua}}{P_\\text{crem}} = \\frac{160{,}9 \\cdot 10^3\\ \\text{J}}{746{,}7\\ \\text{W}} = 215{,}5\\ \\text{s} = 3{,}592\\ \\text{min}$$\n\nResultat: **$t_\\text{ideal} \\approx 215{,}5\\ \\text{s} \\approx 3{,}592\\ \\text{min}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Rendiment real del procés",
+            "cos": "En realitat ha calgut $t_\\text{cons} = 14\\ \\text{min}$, perquè gran part de la calor s'escapa a l'ambient o escalfa el recipient. El rendiment és la fracció de l'energia del combustible que acaba a l'aigua; com que la potència és constant, és el mateix que la relació de temps:\n\n$$\\eta = \\frac{t_\\text{ideal}}{t_\\text{cons}} = \\frac{3{,}592}{14} = 0{,}2566$$\n\nO, amb energies: $\\eta = \\dfrac{E_\\text{aigua}}{P_\\text{crem}\\, t_\\text{cons}} = \\dfrac{160{,}9 \\cdot 10^3}{746{,}7 \\cdot 840} = 0{,}2566$.\n\nResultat: **$\\eta \\approx 0{,}2566$ (25,66 %)**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Massa de propà consumida",
+            "cos": "El consum és de $58{,}44\\ \\text{g}$ cada hora (60 min); en 14 min:\n\n$$m_\\text{propà} = q\\, t_\\text{cons} = 58{,}44\\ \\frac{\\text{g}}{\\text{h}} \\cdot \\frac{14}{60}\\ \\text{h} = 13{,}64\\ \\text{g}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Cost del propà consumit",
+            "cos": "El preu és proporcional a la fracció del cartutx que s'ha gastat:\n\n$$p_\\text{total} = p_\\text{unitat}\\, \\frac{m_\\text{propà}}{m_\\text{cartutx}} = 9{,}50 \\cdot \\frac{13{,}64}{450} = 0{,}2879\\ \\text{euros}$$\n\nResultat: **$m_\\text{propà} \\approx 13{,}64\\ \\text{g}$; $p_\\text{total} \\approx 0{,}288\\ \\text{euros}$** (uns 29 cèntims)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$E_\\text{aigua} \\approx 160{,}9\\ \\text{kJ}$"},
-          {"apartat": "b", "valor": "$P_\\text{crem} \\approx 746{,}7\\ \\text{W}$"},
-          {"apartat": "c", "valor": "$t_\\text{ideal} \\approx 215{,}5\\ \\text{s} = 3{,}592\\ \\text{min}$; $\\eta \\approx 0{,}2566$"},
-          {"apartat": "d", "valor": "$m_\\text{propà} \\approx 13{,}64\\ \\text{g}$; $p_\\text{total} \\approx 0{,}2879\\ \\text{euros}$"}
+          {
+            "apartat": "a",
+            "valor": "$E_\\text{aigua} \\approx 160{,}9\\ \\text{kJ}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{crem} \\approx 746{,}7\\ \\text{W}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$t_\\text{ideal} \\approx 215{,}5\\ \\text{s} = 3{,}592\\ \\text{min}$; $\\eta \\approx 0{,}2566$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$m_\\text{propà} \\approx 13{,}64\\ \\text{g}$; $p_\\text{total} \\approx 0{,}2879\\ \\text{euros}$"
+          }
         ],
         "nota": "A l'apartat 2.1 la solució oficial escriu $c_\\text{e} = 4{,}17$ a la substitució, però l'enunciat dona $4{,}18\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$ i el resultat oficial ($160{,}9\\ \\text{kJ}$) correspon a $4{,}18$ (amb $4{,}17$ sortiria $160{,}5\\ \\text{kJ}$): és una errata de transcripció. Error típic a 2.2: no passar el consum de g/h a kg/s abans de multiplicar pel poder calorífic en J/kg."
       }
@@ -294,33 +659,96 @@
       "punts": 2.5,
       "titol": "Elecció del reductor d'una rotativa d'impressió i tolerància de velocitat del paper",
       "tema": "mecanismes",
-      "temes_secundaris": ["mecanica"],
-      "conceptes": ["relació de transmissió", "reductor", "velocitat lineal", "velocitat angular", "error percentual"],
+      "temes_secundaris": [
+        "mecanica",
+        "fabricacio"
+      ],
+      "conceptes": [
+        "relació de transmissió",
+        "reductor",
+        "velocitat lineal",
+        "velocitat angular",
+        "tolerància"
+      ],
       "dificultat": 2,
-      "pagines": [6, 7],
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "pagines": [
+        6,
+        7
+      ],
       "enunciat": "En una impremta industrial hi ha una rotativa d'impressió contínua alimentada amb paper en bobina. La rotació d'un eix tractor marca el ritme de treball de tota la línia, ja que governa l'avanç del paper, assegura una tensió adequada i sincronitza la secció d'impressió, el plegat i el tall. Si la velocitat de gir d'aquest eix no és l'adequada, poden aparèixer defectes en l'aplicació dels colors, variacions de tensió, arrugues, trencament del paper o errors al plegador. Per aquest motiu, el fabricant recomana que l'eix tractor treballi a una velocitat nominal $n_\\text{eix} = 600\\ \\text{min}^{-1}$. Aquest eix fa girar un corró tractor de diàmetre $d = 330\\ \\text{mm}$, que és l'element que arrossega el paper cap endavant. La velocitat lineal d'avanç recomanada del paper és $v_\\text{recom} = 10\\ \\text{m/s}$ i el procés admet una tolerància de qualitat de $\\pm 5\\ \\%$ respecte a aquest valor.\n\nPer a fer funcionar el sistema es fa servir un motor asíncron estàndard de dos parells de pols, amb velocitat nominal $n_\\text{mot} = 1\\,420\\ \\text{min}^{-1}$. Aquesta velocitat és més gran que la necessària a l'eix principal i, per tant, cal utilitzar un reductor. L'empresa està buscant el reductor comercial que s'ajusti millor als requisits del sistema, i també vol comprovar si amb aquest reductor es podrà complir la tolerància de qualitat establerta. El proveïdor ofereix tres reductors amb les relacions de reducció estàndard següents:\n\n| Reductor | A | B | C |\n|---|---|---|---|\n| $i = n_\\text{entrada}/n_\\text{sortida}$ | 1,5 | 2,5 | 3 |\n\nDetermineu:",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "(3.1) La relació de reducció real necessària $i_\\text{nec} = n_\\text{entrada}/n_\\text{sortida}$ i el reductor que cal escollir.", "punts": 1},
-        {"id": "b", "enunciat": "(3.2) La velocitat final de l'eix que s'obtindrà amb el reductor escollit, $n_\\text{real}$, i la velocitat d'avanç del paper, $v_\\text{real}$.", "punts": 1},
-        {"id": "c", "enunciat": "(3.3) L'error percentual respecte al valor desitjat, $\\Delta$. Justifiqueu si l'elecció compleix les recomanacions del fabricant.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "(3.1) La relació de reducció real necessària $i_\\text{nec} = n_\\text{entrada}/n_\\text{sortida}$ i el reductor que cal escollir.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "(3.2) La velocitat final de l'eix que s'obtindrà amb el reductor escollit, $n_\\text{real}$, i la velocitat d'avanç del paper, $v_\\text{real}$.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "(3.3) L'error percentual respecte al valor desitjat, $\\Delta$. Justifiqueu si l'elecció compleix les recomanacions del fabricant.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Velocitat recomanada de l'eix tractor: $n_\\text{eix} = 600\\ \\text{min}^{-1}$\n- Diàmetre del corró: $d = 330\\ \\text{mm} = 0{,}330\\ \\text{m}$ → radi $r = 0{,}165\\ \\text{m}$\n- Velocitat recomanada del paper: $v_\\text{recom} = 10\\ \\text{m/s}$, tolerància $\\pm 5\\ \\%$\n- Velocitat del motor (entrada del reductor): $n_\\text{mot} = 1\\,420\\ \\text{min}^{-1}$\n- Reductors disponibles: $i_A = 1{,}5$, $i_B = 2{,}5$, $i_C = 3$\n- Incògnites: $i_\\text{nec}$, reductor, $n_\\text{real}$, $v_\\text{real}$, $\\Delta$"},
-          {"apartat": "a", "titol": "Relació de reducció necessària", "cos": "El reductor rep la velocitat del motor a l'entrada i ha de donar la velocitat de l'eix tractor a la sortida:\n\n$$i_\\text{nec} = \\frac{n_\\text{entrada}}{n_\\text{sortida}} = \\frac{n_\\text{mot}}{n_\\text{eix}} = \\frac{1\\,420}{600} = 2{,}367$$"},
-          {"apartat": "a", "titol": "Elecció del reductor comercial", "cos": "Triem la relació estàndard que més s'acosta a $2{,}367$:\n\n| Reductor | $i$ | $\\lvert i - i_\\text{nec} \\rvert$ |\n|---|---|---|\n| A | 1,5 | 0,867 |\n| B | 2,5 | **0,133** |\n| C | 3 | 0,633 |\n\nResultat: **$i_\\text{nec} \\approx 2{,}367$ → cal escollir el reductor B ($i = 2{,}5$)**, el que minimitza la diferència."},
-          {"apartat": "b", "titol": "Velocitat real de l'eix tractor", "cos": "Amb el reductor B, la velocitat a la sortida és:\n\n$$n_\\text{real} = \\frac{n_\\text{mot}}{i_\\text{real}} = \\frac{1\\,420}{2{,}5} = 568\\ \\text{min}^{-1}$$\n\nUna mica menys que els $600\\ \\text{min}^{-1}$ recomanats, perquè $2{,}5 > 2{,}367$."},
-          {"apartat": "b", "titol": "Velocitat d'avanç del paper", "cos": "El paper avança amb la velocitat lineal de la perifèria del corró: $v = \\omega\\, r$. Passem la velocitat angular a rad/s ($1\\ \\text{volta} = 2\\pi\\ \\text{rad}$, $1\\ \\text{min} = 60\\ \\text{s}$):\n\n$$\\omega_\\text{real} = n_\\text{real}\\, \\frac{2\\pi}{60} = 568 \\cdot \\frac{2\\pi}{60} = 59{,}48\\ \\text{rad/s}$$\n\n$$v_\\text{real} = \\omega_\\text{real}\\, \\frac{d}{2} = 59{,}48 \\cdot \\frac{0{,}330}{2} = 9{,}814\\ \\text{m/s}$$\n\nResultat: **$n_\\text{real} = 568\\ \\text{min}^{-1}$; $v_\\text{real} \\approx 9{,}814\\ \\text{m/s}$**."},
-          {"apartat": "c", "titol": "Error percentual respecte al valor recomanat", "cos": "$$\\Delta = \\frac{v_\\text{recom} - v_\\text{real}}{v_\\text{recom}} \\cdot 100 = \\frac{10 - 9{,}814}{10} \\cdot 100 = 1{,}857\\ \\%$$\n\nEl paper va un $1{,}857\\ \\%$ més lent del recomanat."},
-          {"apartat": "c", "titol": "Compliment de la tolerància", "cos": "La tolerància admesa és de $\\pm 5\\ \\%$, és a dir, $v$ entre $9{,}5$ i $10{,}5\\ \\text{m/s}$. Com que $1{,}857\\ \\% < 5\\ \\%$ ($9{,}5 < 9{,}814 < 10{,}5$), **l'elecció del reductor B compleix les recomanacions del fabricant**.\n\nPer comparar: amb el reductor A el paper aniria a $16{,}36\\ \\text{m/s}$ (+63,6 %) i amb el C a $8{,}18\\ \\text{m/s}$ (−18,2 %); cap dels dos no compliria la tolerància."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Velocitat recomanada de l'eix tractor: $n_\\text{eix} = 600\\ \\text{min}^{-1}$\n- Diàmetre del corró: $d = 330\\ \\text{mm} = 0{,}330\\ \\text{m}$ → radi $r = 0{,}165\\ \\text{m}$\n- Velocitat recomanada del paper: $v_\\text{recom} = 10\\ \\text{m/s}$, tolerància $\\pm 5\\ \\%$\n- Velocitat del motor (entrada del reductor): $n_\\text{mot} = 1\\,420\\ \\text{min}^{-1}$\n- Reductors disponibles: $i_A = 1{,}5$, $i_B = 2{,}5$, $i_C = 3$\n- Incògnites: $i_\\text{nec}$, reductor, $n_\\text{real}$, $v_\\text{real}$, $\\Delta$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Relació de reducció necessària",
+            "cos": "El reductor rep la velocitat del motor a l'entrada i ha de donar la velocitat de l'eix tractor a la sortida:\n\n$$i_\\text{nec} = \\frac{n_\\text{entrada}}{n_\\text{sortida}} = \\frac{n_\\text{mot}}{n_\\text{eix}} = \\frac{1\\,420}{600} = 2{,}367$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Elecció del reductor comercial",
+            "cos": "Triem la relació estàndard que més s'acosta a $2{,}367$:\n\n| Reductor | $i$ | $\\lvert i - i_\\text{nec} \\rvert$ |\n|---|---|---|\n| A | 1,5 | 0,867 |\n| B | 2,5 | **0,133** |\n| C | 3 | 0,633 |\n\nResultat: **$i_\\text{nec} \\approx 2{,}367$ → cal escollir el reductor B ($i = 2{,}5$)**, el que minimitza la diferència."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat real de l'eix tractor",
+            "cos": "Amb el reductor B, la velocitat a la sortida és:\n\n$$n_\\text{real} = \\frac{n_\\text{mot}}{i_\\text{real}} = \\frac{1\\,420}{2{,}5} = 568\\ \\text{min}^{-1}$$\n\nUna mica menys que els $600\\ \\text{min}^{-1}$ recomanats, perquè $2{,}5 > 2{,}367$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat d'avanç del paper",
+            "cos": "El paper avança amb la velocitat lineal de la perifèria del corró: $v = \\omega\\, r$. Passem la velocitat angular a rad/s ($1\\ \\text{volta} = 2\\pi\\ \\text{rad}$, $1\\ \\text{min} = 60\\ \\text{s}$):\n\n$$\\omega_\\text{real} = n_\\text{real}\\, \\frac{2\\pi}{60} = 568 \\cdot \\frac{2\\pi}{60} = 59{,}48\\ \\text{rad/s}$$\n\n$$v_\\text{real} = \\omega_\\text{real}\\, \\frac{d}{2} = 59{,}48 \\cdot \\frac{0{,}330}{2} = 9{,}814\\ \\text{m/s}$$\n\nResultat: **$n_\\text{real} = 568\\ \\text{min}^{-1}$; $v_\\text{real} \\approx 9{,}814\\ \\text{m/s}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Error percentual respecte al valor recomanat",
+            "cos": "$$\\Delta = \\frac{v_\\text{recom} - v_\\text{real}}{v_\\text{recom}} \\cdot 100 = \\frac{10 - 9{,}814}{10} \\cdot 100 = 1{,}857\\ \\%$$\n\nEl paper va un $1{,}857\\ \\%$ més lent del recomanat."
+          },
+          {
+            "apartat": "c",
+            "titol": "Compliment de la tolerància",
+            "cos": "La tolerància admesa és de $\\pm 5\\ \\%$, és a dir, $v$ entre $9{,}5$ i $10{,}5\\ \\text{m/s}$. Com que $1{,}857\\ \\% < 5\\ \\%$ ($9{,}5 < 9{,}814 < 10{,}5$), **l'elecció del reductor B compleix les recomanacions del fabricant**.\n\nPer comparar: amb el reductor A el paper aniria a $16{,}36\\ \\text{m/s}$ (+63,6 %) i amb el C a $8{,}18\\ \\text{m/s}$ (−18,2 %); cap dels dos no compliria la tolerància."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$i_\\text{nec} \\approx 2{,}367$ → reductor B ($i = 2{,}5$)"},
-          {"apartat": "b", "valor": "$n_\\text{real} = 568\\ \\text{min}^{-1}$; $v_\\text{real} \\approx 9{,}814\\ \\text{m/s}$"},
-          {"apartat": "c", "valor": "$\\Delta \\approx 1{,}857\\ \\% < 5\\ \\%$ → compleix la tolerància"}
+          {
+            "apartat": "a",
+            "valor": "$i_\\text{nec} \\approx 2{,}367$ → reductor B ($i = 2{,}5$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$n_\\text{real} = 568\\ \\text{min}^{-1}$; $v_\\text{real} \\approx 9{,}814\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\Delta \\approx 1{,}857\\ \\% < 5\\ \\%$ → compleix la tolerància"
+          }
         ],
         "nota": "Error típic: fer servir el diàmetre en lloc del radi a $v = \\omega r$ (sortiria el doble). Observació: la velocitat nominal de l'eix ($600\\ \\text{min}^{-1}$) amb aquest corró donaria $v = 10{,}37\\ \\text{m/s}$, no exactament $10\\ \\text{m/s}$; la solució oficial (i aquesta) calcula l'error respecte a $v_\\text{recom} = 10\\ \\text{m/s}$, que és el que demana l'enunciat. La dada «dos parells de pols» només indica que el motor és de 4 pols (velocitat de sincronisme $1\\,500\\ \\text{min}^{-1}$); no cal per al càlcul."
       }
@@ -334,35 +762,114 @@
       "punts": 2.5,
       "titol": "Grup electrogen dièsel: potència, parell, consum, autonomia i energia",
       "tema": "termica",
-      "temes_secundaris": ["maquines-electriques", "energia"],
-      "conceptes": ["consum específic", "rendiment", "parell motor", "potència mecànica", "autonomia"],
+      "temes_secundaris": [
+        "maquines-electriques",
+        "energia",
+        "mecanica"
+      ],
+      "conceptes": [
+        "consum específic",
+        "rendiment global",
+        "parell motor",
+        "potència mecànica",
+        "autonomia",
+        "consum de combustible",
+        "generador elèctric",
+        "motor de combustió interna"
+      ],
       "dificultat": 2,
-      "pagines": [8, 9],
+      "curs": "1r",
+      "curs_motiu": "Grup electrogen: només rendiments, consum i parell, sense teoria de CA (1r).",
+      "pagines": [
+        8,
+        9
+      ],
       "enunciat": "Un grup electrogen està format per un motor dièsel acoblat directament a un alternador monofàsic. El grup subministra una tensió $U = 230\\ \\text{V}$ i la capacitat del dipòsit de combustible és $V = 15\\ \\text{L}$. En el punt de funcionament analitzat, el grup subministra una potència $P_\\text{elèctr} = 4{,}96\\ \\text{kW}$, el motor gira a $n_\\text{mot} = 3\\,000\\ \\text{min}^{-1}$ i l'alternador té un rendiment $\\eta_\\text{alt} = 0{,}9$. El consum específic del motor és $c_\\text{e} = 290\\ \\text{g/(kW h)}$, el poder calorífic del gasoil utilitzat és $p_\\text{c} = 43\\ \\text{MJ/kg}$ i la seva densitat, $\\rho = 0{,}84\\ \\text{kg/L}$.\n\nDetermineu:",
-      "figures": [{"src": "img/tecno/2026-J/e4.png", "peu": "Diagrama de blocs del grup electrogen: dipòsit, motor dièsel, eix mecànic, alternador i sortida elèctrica"}],
+      "figures": [
+        {
+          "src": "img/tecno/2026-J/e4.png",
+          "peu": "Diagrama de blocs del grup electrogen: dipòsit, motor dièsel, eix mecànic, alternador i sortida elèctrica"
+        }
+      ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "(4.1) La potència mecànica a l'eix, $P_\\text{mec}$.", "punts": 0.5},
-        {"id": "b", "enunciat": "(4.2) El parell a l'eix, $\\Gamma$.", "punts": 0.5},
-        {"id": "c", "enunciat": "(4.3) El consum de combustible, $q$, en kg/h i l'autonomia del motor amb el dipòsit ple, $t$.", "punts": 1},
-        {"id": "d", "enunciat": "(4.4) L'energia elèctrica total que pot subministrar el grup electrogen amb el dipòsit ple, $E_\\text{elèc}$, en kJ.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "(4.1) La potència mecànica a l'eix, $P_\\text{mec}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "(4.2) El parell a l'eix, $\\Gamma$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "(4.3) El consum de combustible, $q$, en kg/h i l'autonomia del motor amb el dipòsit ple, $t$.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "(4.4) L'energia elèctrica total que pot subministrar el grup electrogen amb el dipòsit ple, $E_\\text{elèc}$, en kJ.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Potència elèctrica subministrada: $P_\\text{elèc} = 4{,}96\\ \\text{kW}$ (tensió $U = 230\\ \\text{V}$, no cal per als càlculs)\n- Rendiment de l'alternador: $\\eta_\\text{alt} = 0{,}9$\n- Velocitat del motor: $n_\\text{mot} = 3\\,000\\ \\text{min}^{-1}$\n- Consum específic: $c_\\text{e} = 290\\ \\text{g/(kW h)} = 0{,}29\\ \\text{kg/(kW h)}$\n- Dipòsit: $V = 15\\ \\text{L}$; densitat $\\rho = 0{,}84\\ \\text{kg/L}$\n- Poder calorífic: $p_\\text{c} = 43\\ \\text{MJ/kg}$\n- Incògnites: $P_\\text{mec}$, $\\Gamma$, $q$, $t$, $E_\\text{elèc}$\n\nCadena energètica: combustible → motor dièsel → **eix** ($P_\\text{mec}$) → alternador → sortida elèctrica ($P_\\text{elèc}$)."},
-          {"apartat": "a", "titol": "Potència mecànica a l'eix (rendiment de l'alternador)", "cos": "L'alternador rep la potència mecànica de l'eix i en converteix el 90 % en elèctrica: $\\eta_\\text{alt} = P_\\text{elèc}/P_\\text{mec}$. Aïllant:\n\n$$P_\\text{mec} = \\frac{P_\\text{elèc}}{\\eta_\\text{alt}} = \\frac{4{,}96}{0{,}9} = 5{,}511\\ \\text{kW}$$\n\nResultat: **$P_\\text{mec} \\approx 5{,}511\\ \\text{kW}$**."},
-          {"apartat": "b", "titol": "Parell a l'eix", "cos": "En un eix que gira, la potència és el parell per la velocitat angular, $P = \\Gamma\\, \\omega$. Passem la velocitat a rad/s:\n\n$$\\omega_\\text{mot} = n_\\text{mot}\\, \\frac{2\\pi}{60} = 3\\,000 \\cdot \\frac{2\\pi}{60} = 314{,}2\\ \\text{rad/s}$$\n\n$$\\Gamma = \\frac{P_\\text{mec}}{\\omega_\\text{mot}} = \\frac{5{,}511 \\cdot 10^3}{314{,}2} = 17{,}54\\ \\text{N m}$$\n\nResultat: **$\\Gamma \\approx 17{,}54\\ \\text{N m}$**."},
-          {"apartat": "c", "titol": "Consum horari de combustible", "cos": "El consum específic indica quants grams de combustible gasta el motor per cada kW h d'energia **mecànica** que dona a l'eix. Multiplicant per la potència mecànica obtenim el consum per hora:\n\n$$q = c_\\text{e}\\, P_\\text{mec} = 0{,}29\\ \\frac{\\text{kg}}{\\text{kW h}} \\cdot 5{,}511\\ \\text{kW} = 1{,}598\\ \\text{kg/h}$$"},
-          {"apartat": "c", "titol": "Autonomia amb el dipòsit ple", "cos": "Primer calculem la massa de gasoil del dipòsit ple i després quantes hores dura amb aquest consum:\n\n$$m = \\rho\\, V = 0{,}84 \\cdot 15 = 12{,}6\\ \\text{kg}$$\n\n$$t = \\frac{m}{q} = \\frac{12{,}6\\ \\text{kg}}{1{,}598\\ \\text{kg/h}} = 7{,}884\\ \\text{h}$$\n\nResultat: **$q \\approx 1{,}598\\ \\text{kg/h}$; $t \\approx 7{,}884\\ \\text{h}$** (unes 7 h 53 min)."},
-          {"apartat": "d", "titol": "Energia elèctrica amb el dipòsit ple", "cos": "Durant tota l'autonomia el grup subministra la potència elèctrica $P_\\text{elèc}$:\n\n$$E_\\text{elèc} = P_\\text{elèc}\\, t = 4{,}96\\ \\text{kW} \\cdot 7{,}884\\ \\text{h} = 39{,}10\\ \\text{kW h}$$\n\nPassem a kJ ($1\\ \\text{kW h} = 3\\,600\\ \\text{kJ}$):\n\n$$E_\\text{elèc} = 39{,}10 \\cdot 3\\,600 = 140{,}8 \\cdot 10^3\\ \\text{kJ} = 140{,}8\\ \\text{MJ}$$\n\nResultat: **$E_\\text{elèc} \\approx 140{,}8 \\cdot 10^3\\ \\text{kJ}$**."},
-          {"apartat": "d", "titol": "Comprovació amb el poder calorífic", "cos": "L'energia química del dipòsit és $12{,}6 \\cdot 43 = 541{,}8\\ \\text{MJ}$. El grup només en converteix en electricitat $140{,}8/541{,}8 = 0{,}26$, és a dir, un rendiment global del 26 %: un valor raonable per a un grup electrogen petit (el poder calorífic no cal per respondre els apartats demanats)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Potència elèctrica subministrada: $P_\\text{elèc} = 4{,}96\\ \\text{kW}$ (tensió $U = 230\\ \\text{V}$, no cal per als càlculs)\n- Rendiment de l'alternador: $\\eta_\\text{alt} = 0{,}9$\n- Velocitat del motor: $n_\\text{mot} = 3\\,000\\ \\text{min}^{-1}$\n- Consum específic: $c_\\text{e} = 290\\ \\text{g/(kW h)} = 0{,}29\\ \\text{kg/(kW h)}$\n- Dipòsit: $V = 15\\ \\text{L}$; densitat $\\rho = 0{,}84\\ \\text{kg/L}$\n- Poder calorífic: $p_\\text{c} = 43\\ \\text{MJ/kg}$\n- Incògnites: $P_\\text{mec}$, $\\Gamma$, $q$, $t$, $E_\\text{elèc}$\n\nCadena energètica: combustible → motor dièsel → **eix** ($P_\\text{mec}$) → alternador → sortida elèctrica ($P_\\text{elèc}$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència mecànica a l'eix (rendiment de l'alternador)",
+            "cos": "L'alternador rep la potència mecànica de l'eix i en converteix el 90 % en elèctrica: $\\eta_\\text{alt} = P_\\text{elèc}/P_\\text{mec}$. Aïllant:\n\n$$P_\\text{mec} = \\frac{P_\\text{elèc}}{\\eta_\\text{alt}} = \\frac{4{,}96}{0{,}9} = 5{,}511\\ \\text{kW}$$\n\nResultat: **$P_\\text{mec} \\approx 5{,}511\\ \\text{kW}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Parell a l'eix",
+            "cos": "En un eix que gira, la potència és el parell per la velocitat angular, $P = \\Gamma\\, \\omega$. Passem la velocitat a rad/s:\n\n$$\\omega_\\text{mot} = n_\\text{mot}\\, \\frac{2\\pi}{60} = 3\\,000 \\cdot \\frac{2\\pi}{60} = 314{,}2\\ \\text{rad/s}$$\n\n$$\\Gamma = \\frac{P_\\text{mec}}{\\omega_\\text{mot}} = \\frac{5{,}511 \\cdot 10^3}{314{,}2} = 17{,}54\\ \\text{N m}$$\n\nResultat: **$\\Gamma \\approx 17{,}54\\ \\text{N m}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Consum horari de combustible",
+            "cos": "El consum específic indica quants grams de combustible gasta el motor per cada kW h d'energia **mecànica** que dona a l'eix. Multiplicant per la potència mecànica obtenim el consum per hora:\n\n$$q = c_\\text{e}\\, P_\\text{mec} = 0{,}29\\ \\frac{\\text{kg}}{\\text{kW h}} \\cdot 5{,}511\\ \\text{kW} = 1{,}598\\ \\text{kg/h}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Autonomia amb el dipòsit ple",
+            "cos": "Primer calculem la massa de gasoil del dipòsit ple i després quantes hores dura amb aquest consum:\n\n$$m = \\rho\\, V = 0{,}84 \\cdot 15 = 12{,}6\\ \\text{kg}$$\n\n$$t = \\frac{m}{q} = \\frac{12{,}6\\ \\text{kg}}{1{,}598\\ \\text{kg/h}} = 7{,}884\\ \\text{h}$$\n\nResultat: **$q \\approx 1{,}598\\ \\text{kg/h}$; $t \\approx 7{,}884\\ \\text{h}$** (unes 7 h 53 min)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Energia elèctrica amb el dipòsit ple",
+            "cos": "Durant tota l'autonomia el grup subministra la potència elèctrica $P_\\text{elèc}$:\n\n$$E_\\text{elèc} = P_\\text{elèc}\\, t = 4{,}96\\ \\text{kW} \\cdot 7{,}884\\ \\text{h} = 39{,}10\\ \\text{kW h}$$\n\nPassem a kJ ($1\\ \\text{kW h} = 3\\,600\\ \\text{kJ}$):\n\n$$E_\\text{elèc} = 39{,}10 \\cdot 3\\,600 = 140{,}8 \\cdot 10^3\\ \\text{kJ} = 140{,}8\\ \\text{MJ}$$\n\nResultat: **$E_\\text{elèc} \\approx 140{,}8 \\cdot 10^3\\ \\text{kJ}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Comprovació amb el poder calorífic",
+            "cos": "L'energia química del dipòsit és $12{,}6 \\cdot 43 = 541{,}8\\ \\text{MJ}$. El grup només en converteix en electricitat $140{,}8/541{,}8 = 0{,}26$, és a dir, un rendiment global del 26 %: un valor raonable per a un grup electrogen petit (el poder calorífic no cal per respondre els apartats demanats)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$P_\\text{mec} \\approx 5{,}511\\ \\text{kW}$"},
-          {"apartat": "b", "valor": "$\\Gamma \\approx 17{,}54\\ \\text{N m}$"},
-          {"apartat": "c", "valor": "$q \\approx 1{,}598\\ \\text{kg/h}$; $t \\approx 7{,}884\\ \\text{h}$"},
-          {"apartat": "d", "valor": "$E_\\text{elèc} \\approx 39{,}10\\ \\text{kW h} \\approx 140{,}8 \\cdot 10^3\\ \\text{kJ}$"}
+          {
+            "apartat": "a",
+            "valor": "$P_\\text{mec} \\approx 5{,}511\\ \\text{kW}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\Gamma \\approx 17{,}54\\ \\text{N m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$q \\approx 1{,}598\\ \\text{kg/h}$; $t \\approx 7{,}884\\ \\text{h}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$E_\\text{elèc} \\approx 39{,}10\\ \\text{kW h} \\approx 140{,}8 \\cdot 10^3\\ \\text{kJ}$"
+          }
         ],
         "nota": "Error típic: aplicar el consum específic a la potència elèctrica ($4{,}96\\ \\text{kW}$) en lloc de la mecànica; el consum específic és del **motor** i es refereix a l'energia a l'eix. A la solució oficial, la substitució de l'autonomia escriu $q = 1{,}6\\ \\text{kg/h}$ (arrodonit), però el resultat $7{,}884\\ \\text{h}$ correspon a $q = 1{,}598\\ \\text{kg/h}$ (amb $1{,}6$ sortiria $7{,}875\\ \\text{h}$); i l'apartat 4.4 hi apareix etiquetat per errata com a «4.3»."
       }

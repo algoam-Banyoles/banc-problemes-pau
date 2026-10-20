@@ -23,13 +23,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "longitud d'ona",
-        "velocitat del so",
+        "velocitat de propagació",
         "intensitat sonora",
         "nivell d'intensitat sonora",
-        "decibels",
-        "font puntual"
+        "potència sonora"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): longitud d'ona, velocitat del so",
       "pagines": [
         1
       ],
@@ -108,12 +109,13 @@
         "camp-electric"
       ],
       "conceptes": [
-        "intensitat de corrent",
-        "càrrega elèctrica",
-        "camp magnètic d'un corrent rectilini",
-        "força de lorentz"
+        "camp magnètic d'un fil",
+        "força de Lorentz",
+        "línies de camp magnètic"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): intensitat de corrent, càrrega elèctrica",
       "pagines": [
         2
       ],
@@ -183,12 +185,13 @@
       ],
       "conceptes": [
         "òrbita el·líptica",
-        "lleis de kepler",
-        "periheli i afeli",
-        "conservació de l'energia mecànica",
-        "segona llei de kepler"
+        "conservació de l'energia",
+        "energia mecànica orbital",
+        "energia potencial gravitatòria"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Lleis de Kepler en una òrbita el·líptica i energia mecànica orbital (2n)",
       "pagines": [
         2
       ],
@@ -272,13 +275,13 @@
         "mecanica"
       ],
       "conceptes": [
-        "llei de coulomb",
+        "llei de Coulomb",
         "equilibri de forces",
-        "camp elèctric",
-        "pèndol elèctric",
-        "tensió del fil"
+        "camp elèctric"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, equilibri de forces",
       "pagines": [
         3
       ],
@@ -366,13 +369,15 @@
       "temes_secundaris": [],
       "conceptes": [
         "desintegració beta",
-        "carboni 14",
+        "datació radioactiva",
         "període de semidesintegració",
         "constant de desintegració",
         "llei de desintegració radioactiva",
-        "datació"
+        "equació nuclear"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, carboni 14",
       "pagines": [
         3
       ],
@@ -443,11 +448,15 @@
       "conceptes": [
         "caiguda lliure",
         "intensitat del camp gravitatori",
-        "massa d'un planeta",
+        "massa d'un astre",
         "període orbital",
-        "força centrípeta"
+        "força centrípeta",
+        "MRUA",
+        "MCU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Massa de la Lluna amb la gravitació universal i període orbital (2n); la caiguda lliure (MRUA) és de 1r",
       "pagines": [
         4
       ],
@@ -522,10 +531,11 @@
         "camp elèctric",
         "principi de superposició",
         "potencial elèctric",
-        "càrregues puntuals",
-        "llei de coulomb"
+        "llei de Coulomb"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, principi de superposició",
       "pagines": [
         4
       ],
@@ -603,12 +613,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "efecte fotoelèctric",
-        "funció de treball",
-        "energia d'un fotó",
+        "treball d'extracció",
+        "energia del fotó",
         "freqüència llindar",
-        "energia cinètica màxima"
+        "constant de Planck"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, funció de treball",
       "pagines": [
         4
       ],

@@ -20,13 +20,17 @@
       "punts": 0.5,
       "titol": "Velocitat angular d'un cargol a partir del pas i la velocitat d'avanç",
       "tema": "mecanismes",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "cargol-femella",
-        "pas de rosca",
-        "velocitat angular"
+        "velocitat angular",
+        "velocitat lineal"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
       "pagines": [
         1
       ],
@@ -83,12 +87,12 @@
       "tema": "economia",
       "temes_secundaris": [],
       "conceptes": [
-        "cost unitari",
-        "preu de venda",
         "benefici",
-        "punt d'equilibri"
+        "cost de producció"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
       "pagines": [
         1
       ],
@@ -145,12 +149,13 @@
       "tema": "resistencia",
       "temes_secundaris": [],
       "conceptes": [
-        "tensió",
-        "resistència a la ruptura",
-        "secció circular",
-        "tracció"
+        "tensió de ruptura",
+        "tensió normal",
+        "tracció i compressió"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita tensió, deformació o mòdul de Young (resistència de materials i assaig de tracció), que és de 2n.",
       "pagines": [
         2
       ],
@@ -213,6 +218,8 @@
         "parells de pols"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita motors asíncrons de corrent altern (velocitat de sincronisme, lliscament), que són de 2n.",
       "pagines": [
         2
       ],
@@ -269,12 +276,12 @@
       "tema": "pneumatica",
       "temes_secundaris": [],
       "conceptes": [
-        "cilindre de doble efecte",
-        "pressió",
-        "força del cilindre",
-        "secció del pistó"
+        "cilindre pneumàtic o hidràulic",
+        "pressió"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita oleohidràulica o pneumàtica (cilindres, pressió, cabal), que és de 2n.",
       "pagines": [
         2
       ],
@@ -337,9 +344,12 @@
         "funció lògica",
         "mapa de Karnaugh",
         "portes lògiques",
-        "funció majoria"
+        "funció majoria",
+        "sensor"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         2
       ],
@@ -421,11 +431,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "diagrama de cos lliure",
-        "equilibri",
-        "moments",
-        "barres biarticulades"
+        "equilibri de forces",
+        "equilibri de moments",
+        "barra biarticulada"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
       "pagines": [
         3
       ],
@@ -537,9 +549,12 @@
         "energia elèctrica",
         "rendiment",
         "resistivitat",
-        "cost de l'energia"
+        "cost de l'energia",
+        "potència elèctrica"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         3
       ],
@@ -647,6 +662,8 @@
         "energia elèctrica"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
       "pagines": [
         4
       ],
@@ -732,11 +749,16 @@
       "conceptes": [
         "consum de combustible",
         "poder calorífic",
-        "rendiment",
+        "potència tèrmica",
+        "rendiment global",
         "parell motor",
-        "potència dissipada"
+        "potència dissipada",
+        "autonomia",
+        "motor de combustió interna"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita potència, parell, consum i rendiment global del motor, sense cicle tèrmic: 1r.",
       "pagines": [
         4
       ],

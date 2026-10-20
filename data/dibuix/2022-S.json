@@ -25,11 +25,12 @@
         "tangències",
         "bisectriu",
         "circumferència inscrita",
-        "circumferències exinscrites",
         "lloc geomètric",
-        "escales"
+        "escala"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Circumferències inscrites i exinscrites per bisectrius i llocs geomètrics (DT I).",
       "pagines": [
         5
       ],
@@ -133,11 +134,14 @@
         "arc capaç",
         "baricentre",
         "ortocentre",
-        "rectes notables del triangle",
-        "angles",
-        "polígons"
+        "construcció de triangles",
+        "transport d'angles",
+        "construcció de polígons",
+        "polígon còncau"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Construcció de polígons amb arc capaç i punts notables del triangle (DT I).",
       "pagines": [
         7
       ],
@@ -216,14 +220,17 @@
         "diedric"
       ],
       "conceptes": [
-        "tetraedre regular",
+        "tetraedre",
         "secció plana",
         "canvi de pla",
         "perpendicularitat recta-pla",
-        "intersecció de pla i poliedre",
-        "visibilitat"
+        "visibilitat",
+        "vertadera magnitud",
+        "secció mitjana"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) construït amb canvi de pla.",
       "pagines": [
         9
       ],
@@ -328,17 +335,21 @@
       "titol": "Piràmide octagonal regular i piràmide truncada amb eix oblic R-R′",
       "tema": "cossos",
       "temes_secundaris": [
+        "geometria-plana",
         "diedric"
       ],
       "conceptes": [
         "piràmide",
-        "octàgon regular",
+        "polígon regular",
         "canvi de pla",
         "abatiment",
         "tronc de piràmide",
-        "visibilitat"
+        "visibilitat",
+        "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Piràmide o prisma en dièdric amb la base en un pla inclinat, per abatiment o canvi de pla (DT II).",
       "pagines": [
         11
       ],
@@ -438,11 +449,13 @@
       "conceptes": [
         "perspectiva cavallera",
         "interpretació de vistes",
-        "escala doble",
-        "cilindres",
-        "línies vistes"
+        "cilindre",
+        "coordenades axonomètriques",
+        "circumferència en axonometria"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (cavallera amb arcs i cilindres, encara que els arcs frontals es facin amb compàs): DT II.",
       "pagines": [
         13
       ],
@@ -518,12 +531,14 @@
       "conceptes": [
         "axonometria dimètrica",
         "interpretació de vistes",
-        "escala doble",
         "coeficients de reducció",
         "cares inclinades",
-        "línies vistes"
+        "prisma envolupant",
+        "coordenades axonomètriques"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         15
       ],

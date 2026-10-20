@@ -25,13 +25,14 @@
       ],
       "conceptes": [
         "moviment harmònic simple",
-        "energia potencial elàstica",
+        "energia en el MHS",
         "constant elàstica",
-        "període",
-        "energia cinètica màxima",
+        "freqüència angular",
         "equació d'ona"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, energia potencial elàstica",
       "pagines": [
         1
       ],
@@ -111,16 +112,20 @@
       "punts": 2,
       "titol": "Sonda Juno en òrbita circular al voltant de Júpiter: energia cinètica, període i energia per escapar",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "òrbita circular",
         "força centrípeta",
-        "energia cinètica orbital",
-        "període orbital",
         "energia mecànica orbital",
-        "energia d'escapament"
+        "període orbital",
+        "velocitat d'escapament",
+        "MCU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, força centrípeta",
       "pagines": [
         2
       ],
@@ -204,10 +209,11 @@
       "conceptes": [
         "camp elèctric",
         "principi de superposició",
-        "energia potencial electrostàtica",
-        "càrregues puntuals"
+        "energia potencial elèctrica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, principi de superposició",
       "pagines": [
         2
       ],
@@ -297,10 +303,11 @@
         "llei de Faraday",
         "llei de Lenz",
         "flux magnètic",
-        "força electromotriu induïda",
-        "intensitat induïda"
+        "conductor en moviment"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): llei de Faraday, llei de Lenz",
       "pagines": [
         3
       ],
@@ -376,16 +383,17 @@
       "titol": "Raigs gamma de 10 GeV del telescopi MAGIC: freqüència, longitud d'ona i massa equivalent",
       "tema": "quantica",
       "temes_secundaris": [
-        "relativitat"
+        "relativitat",
+        "optica"
       ],
       "conceptes": [
         "energia del fotó",
-        "constant de Planck",
-        "longitud d'ona",
-        "electró-volt",
-        "equivalència massa-energia"
+        "massa equivalent",
+        "espectre electromagnètic"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): energia del fotó, constant de Planck",
       "pagines": [
         3
       ],
@@ -461,11 +469,11 @@
       "conceptes": [
         "camp elèctric uniforme",
         "diferència de potencial",
-        "força elèctrica",
-        "equilibri de forces",
-        "experiment de Millikan"
+        "equilibri de forces"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, diferència de potencial",
       "pagines": [
         3
       ],
@@ -539,11 +547,11 @@
       "conceptes": [
         "transformador",
         "llei de Faraday",
-        "relació de transformació",
-        "tensió eficaç",
-        "conservació de la potència"
+        "flux magnètic"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): transformador, llei de Faraday",
       "pagines": [
         4
       ],
@@ -622,13 +630,15 @@
         "quantica"
       ],
       "conceptes": [
-        "fusió nuclear",
+        "fissió i fusió nuclear",
         "defecte de massa",
         "equivalència massa-energia",
-        "isòtops",
+        "equació nuclear",
         "energia del fotó"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): fusió nuclear, defecte de massa",
       "pagines": [
         4
       ],

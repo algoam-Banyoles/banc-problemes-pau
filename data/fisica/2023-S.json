@@ -20,15 +20,19 @@
       "punts": 2.5,
       "titol": "Missió DART: camp gravitatori de Didymos i velocitat orbital de Dimorphos",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "camp gravitatori",
-        "llei de gravitació universal",
+        "intensitat del camp gravitatori",
         "velocitat orbital",
-        "densitat",
-        "força centrípeta"
+        "massa d'un astre",
+        "força centrípeta",
+        "MCU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): camp gravitatori, llei de gravitació universal",
       "pagines": [
         2
       ],
@@ -117,11 +121,13 @@
       "conceptes": [
         "camp elèctric uniforme",
         "potencial elèctric",
-        "línies equipotencials",
+        "línies de camp i equipotencials",
         "treball elèctric",
-        "força elèctrica"
+        "diferència de potencial"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, potencial elèctric",
       "pagines": [
         4
       ],
@@ -214,12 +220,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "ones estacionàries",
-        "tub obert per un extrem",
+        "tubs sonors",
         "harmònics",
-        "ressonància",
-        "velocitat del so"
+        "velocitat de propagació",
+        "longitud d'ona"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub obert per un extrem",
       "pagines": [
         6
       ],
@@ -310,16 +318,21 @@
       "titol": "Espectròmetre de masses: selector de velocitats i trajectòria d'ions de neó",
       "tema": "camp-magnetic",
       "temes_secundaris": [
-        "camp-electric"
+        "camp-electric",
+        "mecanica"
       ],
       "conceptes": [
-        "espectròmetre de masses",
+        "radi de la trajectòria",
         "selector de velocitats",
         "força de Lorentz",
-        "moviment circular uniforme",
-        "regla de la mà dreta"
+        "MCU",
+        "regla de la mà dreta",
+        "camp elèctric uniforme",
+        "diferència de potencial"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): espectròmetre de masses, selector de velocitats",
       "pagines": [
         8
       ],
@@ -421,12 +434,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "moviment harmònic simple",
-        "període d'oscil·lació",
-        "molla",
-        "fase inicial",
+        "freqüència angular",
+        "constant elàstica",
+        "equació del MHS",
         "velocitat i acceleració màximes"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, període d'oscil·lació",
       "pagines": [
         10
       ],
@@ -509,12 +524,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "defecte de massa",
-        "energia d'enllaç per nucleó",
-        "estabilitat nuclear",
-        "fissió nuclear",
-        "equivalència massa-energia"
+        "fissió i fusió nuclear",
+        "equivalència massa-energia",
+        "equació nuclear"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): defecte de massa, energia d'enllaç per nucleó",
       "pagines": [
         12
       ],
@@ -602,12 +618,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "efecte fotoelèctric",
-        "funció de treball",
-        "longitud d'ona llindar",
-        "energia del fotó",
-        "energia cinètica dels electrons"
+        "treball d'extracció",
+        "freqüència llindar",
+        "energia del fotó"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, funció de treball",
       "pagines": [
         14
       ],

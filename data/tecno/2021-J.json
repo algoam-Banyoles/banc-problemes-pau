@@ -24,11 +24,11 @@
         "termica"
       ],
       "conceptes": [
-        "dilatació tèrmica",
-        "coeficient de dilatació lineal",
-        "longitud final"
+        "dilatació tèrmica"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Dilatació tèrmica (propietats dels materials i calor), que és de 1r.",
       "pagines": [
         2
       ],
@@ -83,14 +83,17 @@
       "punts": 0.5,
       "titol": "Velocitat de rotació d'un cargol a partir del pas i la velocitat d'avanç",
       "tema": "mecanismes",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "cargol-femella",
-        "pas de rosca",
-        "velocitat de gir",
+        "velocitat angular",
         "velocitat lineal"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
       "pagines": [
         2
       ],
@@ -147,11 +150,11 @@
       "tema": "energia",
       "temes_secundaris": [],
       "conceptes": [
-        "petjada de carboni",
-        "factor d'emissió",
-        "emissions de co2"
+        "emissions de CO2"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         2
       ],
@@ -215,12 +218,12 @@
         "estatica"
       ],
       "conceptes": [
-        "politja mòbil",
-        "politja fixa",
-        "equilibri de forces",
-        "tensió de la corda"
+        "politja",
+        "equilibri de forces"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Politja mòbil i fixa (màquina simple), que és de 1r.",
       "pagines": [
         3
       ],
@@ -282,12 +285,11 @@
       "tema": "termica",
       "temes_secundaris": [],
       "conceptes": [
-        "gas ideal",
-        "procés isocor",
-        "llei de gay-lussac",
         "temperatura absoluta"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Llei dels gasos a volum constant (Física i Química de 1r).",
       "pagines": [
         3
       ],
@@ -348,10 +350,12 @@
       "conceptes": [
         "taula de veritat",
         "funció lògica",
-        "producte de sumes",
+        "mapa de Karnaugh",
         "portes lògiques"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         4,
         5
@@ -435,13 +439,16 @@
         "mecanica"
       ],
       "conceptes": [
-        "parell",
+        "parell motor",
         "relació de transmissió",
         "rendiment",
-        "transmissió per corretja",
-        "potència mecànica"
+        "potència mecànica",
+        "velocitat angular",
+        "reductor"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
       "pagines": [
         6,
         7
@@ -564,12 +571,14 @@
       ],
       "conceptes": [
         "energia elèctrica",
-        "plaques fotovoltaiques",
+        "energia solar",
         "rendiment",
-        "factor d'emissió",
-        "emissions de co2"
+        "emissions de CO2",
+        "potència elèctrica"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         8,
         9
@@ -677,15 +686,21 @@
       "punts": 2.5,
       "titol": "Estructura de barres per penjar-se a la paret: força a la barra inclinada i reaccions",
       "tema": "estatica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "resistencia"
+      ],
       "conceptes": [
         "diagrama de cos lliure",
         "equilibri de moments",
-        "reaccions a les articulacions",
+        "equilibri de forces",
+        "reaccions en una articulació",
         "barra biarticulada",
-        "compressió"
+        "tensió normal",
+        "tracció i compressió"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
       "pagines": [
         10,
         11
@@ -781,12 +796,16 @@
       ],
       "conceptes": [
         "rendiment",
+        "rendiment global",
         "poder calorífic",
         "consum de combustible",
-        "alternador",
-        "potència dissipada"
+        "generador elèctric",
+        "potència dissipada",
+        "motor de combustió interna"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Grup electrogen: només rendiments, consum i parell, sense teoria de CA (1r).",
       "pagines": [
         12,
         13

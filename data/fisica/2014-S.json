@@ -20,16 +20,22 @@
       "punts": 2,
       "titol": "Satèl·lit en òrbita circular que passa a una òrbita el·líptica: període i energies a perigeu i apogeu",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "òrbita circular",
         "velocitat orbital",
         "període orbital",
         "energia potencial gravitatòria",
-        "energia mecànica",
-        "òrbita el·líptica"
+        "energia mecànica orbital",
+        "òrbita el·líptica",
+        "MCU",
+        "força centrípeta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, velocitat orbital",
       "pagines": [
         1
       ],
@@ -105,17 +111,19 @@
       "titol": "Model de Bohr de l'àtom d'hidrogen: força elèctrica, freqüència de gir i energia mecànica de l'electró",
       "tema": "camp-electric",
       "temes_secundaris": [
-        "quantica"
+        "quantica",
+        "mecanica"
       ],
       "conceptes": [
-        "llei de coulomb",
-        "model de bohr",
-        "moviment circular uniforme",
+        "llei de Coulomb",
+        "model de Bohr",
+        "MCU",
         "força centrípeta",
-        "energia potencial elèctrica",
-        "energia mecànica"
+        "energia potencial elèctrica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, model de bohr",
       "pagines": [
         2
       ],
@@ -189,11 +197,13 @@
       "conceptes": [
         "efecte fotoelèctric",
         "freqüència llindar",
-        "constant de planck",
+        "constant de Planck",
         "treball d'extracció",
-        "energia cinètica"
+        "energia del fotó"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, freqüència llindar",
       "pagines": [
         2
       ],
@@ -279,16 +289,19 @@
       "titol": "Fil conductor suspès per un camp magnètic i FEM induïda en una espira paral·lela al camp",
       "tema": "camp-magnetic",
       "temes_secundaris": [
-        "induccio"
+        "induccio",
+        "mecanica"
       ],
       "conceptes": [
         "força sobre un corrent",
-        "producte vectorial",
+        "regla de la mà dreta",
         "flux magnètic",
-        "llei de faraday",
-        "força electromotriu induïda"
+        "llei de Faraday",
+        "equilibri de forces"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): força sobre un corrent, producte vectorial",
       "pagines": [
         2
       ],
@@ -364,12 +377,14 @@
       "conceptes": [
         "moviment harmònic simple",
         "constant elàstica",
-        "període",
-        "energia mecànica",
-        "acceleració màxima",
-        "treball de fregament"
+        "freqüència angular",
+        "energia en el MHS",
+        "velocitat i acceleració màximes",
+        "conservació de l'energia"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, constant elàstica",
       "pagines": [
         3
       ],
@@ -458,9 +473,11 @@
         "camp elèctric uniforme",
         "diferència de potencial",
         "conservació de l'energia",
-        "electronvolt"
+        "energia del fotó"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, treball d'extracció",
       "pagines": [
         3
       ],
@@ -541,17 +558,19 @@
       "titol": "Selector de velocitats per a electrons i moviment circular en el camp magnètic",
       "tema": "camp-magnetic",
       "temes_secundaris": [
-        "camp-electric"
+        "camp-electric",
+        "mecanica"
       ],
       "conceptes": [
         "selector de velocitats",
-        "força de lorentz",
-        "moviment circular uniforme",
-        "radi de gir",
-        "freqüència de ciclotró",
-        "producte vectorial"
+        "força de Lorentz",
+        "MCU",
+        "radi de la trajectòria",
+        "regla de la mà dreta"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): selector de velocitats, força de lorentz",
       "pagines": [
         4
       ],
@@ -634,13 +653,17 @@
       "temes_secundaris": [],
       "conceptes": [
         "ones estacionàries",
-        "tub tancat",
-        "ressonància",
-        "velocitat del so",
+        "tubs sonors",
+        "velocitat de propagació",
         "intensitat sonora",
-        "nivell d'intensitat sonora"
+        "nivell d'intensitat sonora",
+        "harmònics",
+        "longitud d'ona",
+        "potència sonora"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub tancat",
       "pagines": [
         4
       ],

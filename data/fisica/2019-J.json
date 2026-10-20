@@ -21,16 +21,21 @@
       "titol": "Sincrotró Alba: camp elèctric de l'accelerador lineal i força magnètica sobre l'electró",
       "tema": "camp-magnetic",
       "temes_secundaris": [
-        "camp-electric"
+        "camp-electric",
+        "mecanica"
       ],
       "conceptes": [
         "camp elèctric uniforme",
         "diferència de potencial",
-        "energia cinètica",
-        "força de lorentz",
-        "moviment circular"
+        "conservació de l'energia",
+        "força de Lorentz",
+        "MCU",
+        "acceleració de partícules carregades",
+        "línies de camp i equipotencials"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): camp elèctric uniforme, diferència de potencial",
       "pagines": [
         1
       ],
@@ -115,16 +120,20 @@
       "punts": 2,
       "titol": "Nanosatèl·lit CubeCat-1: període orbital, voltes diàries i pes en òrbita",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "satèl·lits",
         "òrbita circular",
         "força centrípeta",
         "període orbital",
         "intensitat del camp gravitatori",
-        "pes"
+        "MCU",
+        "caiguda lliure"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): satèl·lits, òrbita circular",
       "pagines": [
         2
       ],
@@ -204,12 +213,14 @@
       ],
       "conceptes": [
         "moviment harmònic simple",
-        "oscil·lador massa-molla",
-        "pèndol simple",
-        "període",
-        "intensitat del camp gravitatori"
+        "constant elàstica",
+        "freqüència angular",
+        "intensitat del camp gravitatori",
+        "massa d'un astre"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, oscil·lador massa-molla",
       "pagines": [
         2
       ],
@@ -279,15 +290,19 @@
       "punts": 2,
       "titol": "Càrregues als vèrtexs d'un quadrat: càrrega que anul·la la força i treball fins al centre",
       "tema": "camp-electric",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "llei de coulomb",
+        "llei de Coulomb",
         "principi de superposició",
         "potencial elèctric",
         "treball elèctric",
         "equilibri de forces"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, principi de superposició",
       "pagines": [
         2
       ],
@@ -369,13 +384,14 @@
       "tema": "nuclear",
       "temes_secundaris": [],
       "conceptes": [
-        "fusió nuclear",
-        "isòtops",
+        "fissió i fusió nuclear",
         "equació nuclear",
         "defecte de massa",
         "equivalència massa-energia"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): fusió nuclear, isòtops",
       "pagines": [
         3
       ],
@@ -449,13 +465,15 @@
         "camp-magnetic"
       ],
       "conceptes": [
-        "camp magnètic d'un fil rectilini",
+        "camp magnètic d'un fil",
         "regla de la mà dreta",
         "flux magnètic",
-        "llei de faraday",
-        "corrent induït"
+        "llei de Faraday",
+        "camp magnètic variable"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): camp magnètic d'un fil rectilini, regla de la mà dreta",
       "pagines": [
         3
       ],
@@ -536,12 +554,14 @@
       "conceptes": [
         "ones estacionàries",
         "harmònics",
-        "nodes i ventres",
         "longitud d'ona",
-        "freqüència",
-        "període"
+        "freqüència angular",
+        "corda vibrant",
+        "velocitat de propagació"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, harmònics",
       "pagines": [
         4
       ],
@@ -616,15 +636,18 @@
       "punts": 2,
       "titol": "Efecte fotoelèctric: energia del fotó, treball d'extracció i velocitat màxima dels electrons",
       "tema": "quantica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "camp-electric"
+      ],
       "conceptes": [
         "efecte fotoelèctric",
         "energia del fotó",
         "treball d'extracció",
-        "potencial de frenada",
-        "energia cinètica màxima"
+        "potencial de frenada"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, energia del fotó",
       "pagines": [
         4
       ],

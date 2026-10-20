@@ -20,23 +20,59 @@
       "punts": 0.5,
       "titol": "Rendiment d'un rentaplats que escalfa aigua",
       "tema": "termica",
-      "temes_secundaris": ["energia"],
-      "conceptes": ["calor sensible", "calor específica", "rendiment", "unitats d'energia"],
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "calor sensible",
+        "rendiment",
+        "energia elèctrica"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "1r",
+      "curs_motiu": "Només necessita calor sensible, poder calorífic i rendiment, que són de 1r.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Un rentaplats ha consumit $0{,}9\\ \\text{kW h}$ d'energia elèctrica per a escalfar $11\\ \\text{L}$ d'aigua des d'una temperatura ambient $T_\\text{amb} = 10\\ ^\\circ\\text{C}$ a una temperatura $T = 70\\ ^\\circ\\text{C}$. La calor específica de l'aigua és $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$. El rendiment del rentaplats és",
       "figures": [],
-      "opcions": {"a": "$11{,}74\\ \\%$.", "b": "$27{,}59\\ \\%$.", "c": "$76{,}63\\ \\%$.", "d": "$85{,}15\\ \\%$."},
+      "opcions": {
+        "a": "$11{,}74\\ \\%$.",
+        "b": "$27{,}59\\ \\%$.",
+        "c": "$76{,}63\\ \\%$.",
+        "d": "$85{,}15\\ \\%$."
+      },
       "apartats": [],
       "solucio": {
         "resposta": "d",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Energia elèctrica consumida: $E_\\text{elèc} = 0{,}9\\ \\text{kW h} = 0{,}9 \\cdot 3{,}6 \\cdot 10^6 = 3{,}24 \\cdot 10^6\\ \\text{J}$\n- Aigua: $V = 11\\ \\text{L}$ → $m = 11\\ \\text{kg} = 11\\,000\\ \\text{g}$ (densitat $1\\ \\text{kg/L}$)\n- $\\Delta T = 70 - 10 = 60\\ ^\\circ\\text{C}$\n- $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$\n- Incògnita: rendiment $\\eta$"},
-          {"apartat": null, "titol": "Calor útil absorbida per l'aigua", "cos": "L'energia útil és la que fa augmentar la temperatura de l'aigua (calor sensible):\n\n$$Q_\\text{útil} = m\\, c_\\text{e}\\, \\Delta T = 11\\,000 \\cdot 4{,}18 \\cdot 60 = 2\\,758\\,800\\ \\text{J}$$\n\nEn kW h: $Q_\\text{útil} = \\dfrac{2\\,758\\,800}{3{,}6 \\cdot 10^6} = 0{,}7663\\ \\text{kW h}$."},
-          {"apartat": null, "titol": "Rendiment", "cos": "El rendiment és la fracció de l'energia consumida que s'aprofita:\n\n$$\\eta = \\frac{Q_\\text{útil}}{E_\\text{elèc}} = \\frac{0{,}7663\\ \\text{kW h}}{0{,}9\\ \\text{kW h}} = 0{,}8515 = 85{,}15\\ \\%$$\n\nResultat: **$\\eta = 85{,}15\\ \\%$** → resposta **d**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **c)** $76{,}63\\ \\%$ surt de prendre el valor de $Q_\\text{útil}$ en kW h ($0{,}7663$) com si fos el rendiment, sense dividir per l'energia consumida.\n- Les opcions **a** i **b** surten d'errors d'unitats (barrejar J, g, kg i kW h)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Energia elèctrica consumida: $E_\\text{elèc} = 0{,}9\\ \\text{kW h} = 0{,}9 \\cdot 3{,}6 \\cdot 10^6 = 3{,}24 \\cdot 10^6\\ \\text{J}$\n- Aigua: $V = 11\\ \\text{L}$ → $m = 11\\ \\text{kg} = 11\\,000\\ \\text{g}$ (densitat $1\\ \\text{kg/L}$)\n- $\\Delta T = 70 - 10 = 60\\ ^\\circ\\text{C}$\n- $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$\n- Incògnita: rendiment $\\eta$"
+          },
+          {
+            "apartat": null,
+            "titol": "Calor útil absorbida per l'aigua",
+            "cos": "L'energia útil és la que fa augmentar la temperatura de l'aigua (calor sensible):\n\n$$Q_\\text{útil} = m\\, c_\\text{e}\\, \\Delta T = 11\\,000 \\cdot 4{,}18 \\cdot 60 = 2\\,758\\,800\\ \\text{J}$$\n\nEn kW h: $Q_\\text{útil} = \\dfrac{2\\,758\\,800}{3{,}6 \\cdot 10^6} = 0{,}7663\\ \\text{kW h}$."
+          },
+          {
+            "apartat": null,
+            "titol": "Rendiment",
+            "cos": "El rendiment és la fracció de l'energia consumida que s'aprofita:\n\n$$\\eta = \\frac{Q_\\text{útil}}{E_\\text{elèc}} = \\frac{0{,}7663\\ \\text{kW h}}{0{,}9\\ \\text{kW h}} = 0{,}8515 = 85{,}15\\ \\%$$\n\nResultat: **$\\eta = 85{,}15\\ \\%$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **c)** $76{,}63\\ \\%$ surt de prendre el valor de $Q_\\text{útil}$ en kW h ($0{,}7663$) com si fos el rendiment, sense dividir per l'energia consumida.\n- Les opcions **a** i **b** surten d'errors d'unitats (barrejar J, g, kg i kW h)."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$\\eta = 85{,}15\\ \\%$ → resposta **d**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\eta = 85{,}15\\ \\%$ → resposta **d**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -49,23 +85,60 @@
       "punts": 0.5,
       "titol": "Consum específic d'un motor dièsel",
       "tema": "termica",
-      "temes_secundaris": ["energia"],
-      "conceptes": ["consum específic", "poder calorífic", "rendiment", "motor dièsel"],
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "consum específic",
+        "poder calorífic",
+        "rendiment",
+        "motor de combustió interna"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "1r",
+      "curs_motiu": "Només necessita potència, parell, consum i rendiment global del motor, sense cicle tèrmic: 1r.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Un vehicle utilitza gasoil de poder calorífic $p_\\text{c} = 44{,}8\\ \\text{MJ/kg}$ i densitat $0{,}85\\ \\text{kg/L}$. El motor té un rendiment del $32\\ \\%$. Quin és el consum específic d'aquest motor dièsel?",
       "figures": [],
-      "opcions": {"a": "$251{,}1\\ \\text{g/(kW h)}$", "b": "$69{,}75\\ \\text{g/(kW h)}$", "c": "$80{,}36\\ \\text{g/(kW h)}$", "d": "$3{,}982\\ \\text{g/(kW h)}$"},
+      "opcions": {
+        "a": "$251{,}1\\ \\text{g/(kW h)}$",
+        "b": "$69{,}75\\ \\text{g/(kW h)}$",
+        "c": "$80{,}36\\ \\text{g/(kW h)}$",
+        "d": "$3{,}982\\ \\text{g/(kW h)}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "a",
         "passos": [
-          {"apartat": null, "titol": "Què és el consum específic", "cos": "El **consum específic** és la massa de combustible que gasta el motor per cada unitat d'energia útil (mecànica) que produeix, normalment en $\\text{g/(kW h)}$. La densitat no cal: el consum es dona en massa."},
-          {"apartat": null, "titol": "Energia útil per kg de gasoil", "cos": "Cada kg de gasoil allibera $44{,}8\\ \\text{MJ}$, però només el $32\\ \\%$ es converteix en treball:\n\n$$E_\\text{útil} = \\eta\\, p_\\text{c} = 0{,}32 \\cdot 44{,}8 = 14{,}336\\ \\text{MJ/kg}$$\n\nPassat a kW h ($1\\ \\text{kW h} = 3{,}6\\ \\text{MJ}$): $E_\\text{útil} = 14{,}336/3{,}6 = 3{,}982\\ \\text{kW h/kg}$."},
-          {"apartat": null, "titol": "Consum específic", "cos": "El consum específic és l'invers:\n\n$$c_\\text{e} = \\frac{1}{\\eta\\, p_\\text{c}} = \\frac{1\\ \\text{kg}}{3{,}982\\ \\text{kW h}} = 0{,}2511\\ \\text{kg/(kW h)} = 251{,}1\\ \\text{g/(kW h)}$$\n\nResultat: **$c_\\text{e} = 251{,}1\\ \\text{g/(kW h)}$** → resposta **a**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **d)** $3{,}982$ és l'energia útil per kg (kW h/kg), no el seu invers.\n- **b)** $69{,}75 = 251{,}1/3{,}6$: error en el canvi MJ ↔ kW h.\n- **c)** $80{,}36 = 251{,}1 \\cdot 0{,}32$: multiplicar pel rendiment en lloc de dividir-hi."}
+          {
+            "apartat": null,
+            "titol": "Què és el consum específic",
+            "cos": "El **consum específic** és la massa de combustible que gasta el motor per cada unitat d'energia útil (mecànica) que produeix, normalment en $\\text{g/(kW h)}$. La densitat no cal: el consum es dona en massa."
+          },
+          {
+            "apartat": null,
+            "titol": "Energia útil per kg de gasoil",
+            "cos": "Cada kg de gasoil allibera $44{,}8\\ \\text{MJ}$, però només el $32\\ \\%$ es converteix en treball:\n\n$$E_\\text{útil} = \\eta\\, p_\\text{c} = 0{,}32 \\cdot 44{,}8 = 14{,}336\\ \\text{MJ/kg}$$\n\nPassat a kW h ($1\\ \\text{kW h} = 3{,}6\\ \\text{MJ}$): $E_\\text{útil} = 14{,}336/3{,}6 = 3{,}982\\ \\text{kW h/kg}$."
+          },
+          {
+            "apartat": null,
+            "titol": "Consum específic",
+            "cos": "El consum específic és l'invers:\n\n$$c_\\text{e} = \\frac{1}{\\eta\\, p_\\text{c}} = \\frac{1\\ \\text{kg}}{3{,}982\\ \\text{kW h}} = 0{,}2511\\ \\text{kg/(kW h)} = 251{,}1\\ \\text{g/(kW h)}$$\n\nResultat: **$c_\\text{e} = 251{,}1\\ \\text{g/(kW h)}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **d)** $3{,}982$ és l'energia útil per kg (kW h/kg), no el seu invers.\n- **b)** $69{,}75 = 251{,}1/3{,}6$: error en el canvi MJ ↔ kW h.\n- **c)** $80{,}36 = 251{,}1 \\cdot 0{,}32$: multiplicar pel rendiment en lloc de dividir-hi."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$c_\\text{e} = 251{,}1\\ \\text{g/(kW h)}$ → resposta **a**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$c_\\text{e} = 251{,}1\\ \\text{g/(kW h)}$ → resposta **a**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -78,23 +151,64 @@
       "punts": 0.5,
       "titol": "Velocitat de retrocés d'un cilindre hidràulic de doble efecte",
       "tema": "pneumatica",
-      "temes_secundaris": [],
-      "conceptes": ["cilindre de doble efecte", "cabal", "secció útil", "velocitat del pistó"],
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "cilindre pneumàtic o hidràulic",
+        "cabal",
+        "velocitat lineal"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Necessita oleohidràulica o pneumàtica (cilindres, pressió, cabal), que és de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "El diàmetre interior d'un cilindre hidràulic de doble efecte és de $60\\ \\text{mm}$, i el diàmetre de la tija és de $25\\ \\text{mm}$. Si s'alimenta amb un cabal d'oli de $9{,}3 \\times 10^{-3}\\ \\text{m}^3\\text{/min}$, quina és la seva velocitat de retrocés?",
-      "figures": [{"src": "img/tecno/2023-J/e1-q3.png", "peu": "Cilindre hidràulic de doble efecte (avanç i retrocés)"}],
-      "opcions": {"a": "$3{,}289\\ \\text{mm/s}$", "b": "$3{,}980\\ \\text{mm/s}$", "c": "$54{,}82\\ \\text{mm/s}$", "d": "$66{,}34\\ \\text{mm/s}$"},
+      "figures": [
+        {
+          "src": "img/tecno/2023-J/e1-q3.png",
+          "peu": "Cilindre hidràulic de doble efecte (avanç i retrocés)"
+        }
+      ],
+      "opcions": {
+        "a": "$3{,}289\\ \\text{mm/s}$",
+        "b": "$3{,}980\\ \\text{mm/s}$",
+        "c": "$54{,}82\\ \\text{mm/s}$",
+        "d": "$66{,}34\\ \\text{mm/s}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "d",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Diàmetre del pistó: $D = 60\\ \\text{mm}$\n- Diàmetre de la tija: $d = 25\\ \\text{mm}$\n- Cabal: $Q = 9{,}3 \\cdot 10^{-3}\\ \\text{m}^3\\text{/min} = \\dfrac{9{,}3 \\cdot 10^{-3} \\cdot 10^9}{60} = 155\\,000\\ \\text{mm}^3\\text{/s}$\n- Incògnita: velocitat de retrocés $v_\\text{ret}$"},
-          {"apartat": null, "titol": "Secció útil en el retrocés", "cos": "En el retrocés l'oli entra per la cambra on hi ha la tija, de manera que la tija ocupa part de la secció. La superfície útil és una corona circular:\n\n$$S_\\text{ret} = \\frac{\\pi}{4}\\left(D^2 - d^2\\right) = \\frac{\\pi}{4}\\left(60^2 - 25^2\\right) = 2\\,336{,}6\\ \\text{mm}^2$$"},
-          {"apartat": null, "titol": "Velocitat de retrocés", "cos": "El cabal és el volum que entra per unitat de temps, $Q = S\\, v$. Per tant:\n\n$$v_\\text{ret} = \\frac{Q}{S_\\text{ret}} = \\frac{155\\,000\\ \\text{mm}^3\\text{/s}}{2\\,336{,}6\\ \\text{mm}^2} = 66{,}34\\ \\text{mm/s}$$\n\nResultat: **$v_\\text{ret} = 66{,}34\\ \\text{mm/s}$** → resposta **d**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **c)** $54{,}82\\ \\text{mm/s}$ és la velocitat d'**avanç** (secció sencera $\\pi D^2/4$).\n- **a)** i **b)** surten d'oblidar passar els minuts a segons (valors 60 vegades més petits)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Diàmetre del pistó: $D = 60\\ \\text{mm}$\n- Diàmetre de la tija: $d = 25\\ \\text{mm}$\n- Cabal: $Q = 9{,}3 \\cdot 10^{-3}\\ \\text{m}^3\\text{/min} = \\dfrac{9{,}3 \\cdot 10^{-3} \\cdot 10^9}{60} = 155\\,000\\ \\text{mm}^3\\text{/s}$\n- Incògnita: velocitat de retrocés $v_\\text{ret}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Secció útil en el retrocés",
+            "cos": "En el retrocés l'oli entra per la cambra on hi ha la tija, de manera que la tija ocupa part de la secció. La superfície útil és una corona circular:\n\n$$S_\\text{ret} = \\frac{\\pi}{4}\\left(D^2 - d^2\\right) = \\frac{\\pi}{4}\\left(60^2 - 25^2\\right) = 2\\,336{,}6\\ \\text{mm}^2$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Velocitat de retrocés",
+            "cos": "El cabal és el volum que entra per unitat de temps, $Q = S\\, v$. Per tant:\n\n$$v_\\text{ret} = \\frac{Q}{S_\\text{ret}} = \\frac{155\\,000\\ \\text{mm}^3\\text{/s}}{2\\,336{,}6\\ \\text{mm}^2} = 66{,}34\\ \\text{mm/s}$$\n\nResultat: **$v_\\text{ret} = 66{,}34\\ \\text{mm/s}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **c)** $54{,}82\\ \\text{mm/s}$ és la velocitat d'**avanç** (secció sencera $\\pi D^2/4$).\n- **a)** i **b)** surten d'oblidar passar els minuts a segons (valors 60 vegades més petits)."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$v_\\text{ret} = 66{,}34\\ \\text{mm/s}$ → resposta **d**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$v_\\text{ret} = 66{,}34\\ \\text{mm/s}$ → resposta **d**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -107,22 +221,52 @@
       "punts": 0.5,
       "titol": "Reducció d'emissions de GEH per generar menys envasos",
       "tema": "energia",
-      "temes_secundaris": ["materials"],
-      "conceptes": ["factor d'emissió", "gasos d'efecte d'hivernacle", "residus", "reciclatge"],
+      "temes_secundaris": [
+        "materials"
+      ],
+      "conceptes": [
+        "emissions de CO2"
+      ],
       "dificultat": 1,
-      "pagines": [3],
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "pagines": [
+        3
+      ],
       "enunciat": "La gestió de residus té associada una generació d'emissions a l'atmosfera de gasos amb efecte d'hivernacle (GEH) a causa de l'ús de combustibles fòssils, la combustió dels residus i la formació de metà per la fermentació de la matèria orgànica. L'Oficina Catalana del Canvi Climàtic (OCCC) ha estimat un factor d'emissió, expressat en $\\text{g CO}_{2\\text{eq}}$ per kilogram de residu generat, que inclou totes les emissions directes i indirectes del procés complet de gestió. La taula següent recull els factors d'emissió per a cada tipus de fracció de residu.\n\n| Fracció de residu | Vidre | Envasos | Paper | Matèria orgànica | Resta |\n|---|---|---|---|---|---|\n| Factor d'emissió ($\\text{g CO}_{2\\text{eq}}/\\text{kg residu}$) | 30,50 | 120,09 | 56,41 | 349,78 | 574,51 |\n\nFont: Oficina Catalana del Canvi Climàtic.\n\nUna família que anualment generava $525\\ \\text{kg}$ d'envasos, en un any ha aconseguit reduir aquesta quantitat un $60\\ \\%$. Quina reducció en emissions de GEH ha obtingut respecte a l'any anterior?",
       "figures": [],
-      "opcions": {"a": "$25{,}22\\ \\text{kg CO}_{2\\text{eq}}$", "b": "$37{,}83\\ \\text{kg CO}_{2\\text{eq}}$", "c": "$63{,}05\\ \\text{kg CO}_{2\\text{eq}}$", "d": "$88{,}27\\ \\text{kg CO}_{2\\text{eq}}$"},
+      "opcions": {
+        "a": "$25{,}22\\ \\text{kg CO}_{2\\text{eq}}$",
+        "b": "$37{,}83\\ \\text{kg CO}_{2\\text{eq}}$",
+        "c": "$63{,}05\\ \\text{kg CO}_{2\\text{eq}}$",
+        "d": "$88{,}27\\ \\text{kg CO}_{2\\text{eq}}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "b",
         "passos": [
-          {"apartat": null, "titol": "Massa d'envasos que s'ha deixat de generar", "cos": "La reducció del $60\\ \\%$ s'aplica sobre els $525\\ \\text{kg}$ anuals:\n\n$$\\Delta m = 0{,}60 \\cdot 525 = 315\\ \\text{kg d'envasos}$$"},
-          {"apartat": null, "titol": "Emissions evitades amb el factor d'emissió", "cos": "Cada kg d'envasos genera $120{,}09\\ \\text{g CO}_{2\\text{eq}}$. Les emissions evitades són:\n\n$$\\Delta E = \\Delta m \\cdot f_\\text{envasos} = 315 \\cdot 120{,}09 = 37\\,828\\ \\text{g CO}_{2\\text{eq}} = 37{,}83\\ \\text{kg CO}_{2\\text{eq}}$$\n\nResultat: **$\\Delta E = 37{,}83\\ \\text{kg CO}_{2\\text{eq}}$** → resposta **b**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **c)** $63{,}05\\ \\text{kg}$ són les emissions **totals** de l'any anterior ($525 \\cdot 120{,}09$ g).\n- **a)** $25{,}22\\ \\text{kg}$ són les emissions de l'any actual (el $40\\ \\%$ restant), no la reducció."}
+          {
+            "apartat": null,
+            "titol": "Massa d'envasos que s'ha deixat de generar",
+            "cos": "La reducció del $60\\ \\%$ s'aplica sobre els $525\\ \\text{kg}$ anuals:\n\n$$\\Delta m = 0{,}60 \\cdot 525 = 315\\ \\text{kg d'envasos}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Emissions evitades amb el factor d'emissió",
+            "cos": "Cada kg d'envasos genera $120{,}09\\ \\text{g CO}_{2\\text{eq}}$. Les emissions evitades són:\n\n$$\\Delta E = \\Delta m \\cdot f_\\text{envasos} = 315 \\cdot 120{,}09 = 37\\,828\\ \\text{g CO}_{2\\text{eq}} = 37{,}83\\ \\text{kg CO}_{2\\text{eq}}$$\n\nResultat: **$\\Delta E = 37{,}83\\ \\text{kg CO}_{2\\text{eq}}$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **c)** $63{,}05\\ \\text{kg}$ són les emissions **totals** de l'any anterior ($525 \\cdot 120{,}09$ g).\n- **a)** $25{,}22\\ \\text{kg}$ són les emissions de l'any actual (el $40\\ \\%$ restant), no la reducció."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$\\Delta E = 37{,}83\\ \\text{kg CO}_{2\\text{eq}}$ → resposta **b**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\Delta E = 37{,}83\\ \\text{kg CO}_{2\\text{eq}}$ → resposta **b**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -136,22 +280,59 @@
       "titol": "Error relatiu del gruix d'una peça en L mesurada amb peu de rei",
       "tema": "fabricacio",
       "temes_secundaris": [],
-      "conceptes": ["metrologia", "error absolut", "error relatiu", "peu de rei"],
+      "conceptes": [
+        "error de mesura"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
+      "pagines": [
+        3
+      ],
       "enunciat": "Les mesures nominals de la peça d'acer de la figura són $a = 90\\ \\text{mm}$ i $b = 120\\ \\text{mm}$. Es fan mesuraments d'aquestes cotes amb un peu de rei i s'obtenen uns valors de $88{,}8\\ \\text{mm}$ i $120{,}1\\ \\text{mm}$, respectivament. L'error relatiu del gruix de la peça és",
-      "figures": [{"src": "img/tecno/2023-J/e1-q5.png", "peu": "Peça d'acer en forma de L: la cota superior (des de la cara interior fins a l'extrem) és a i la inferior (amplada total) és b"}],
-      "opcions": {"a": "$0{,}9584\\ \\%$.", "b": "$0{,}4333\\ \\%$.", "c": "$4{,}333\\ \\%$.", "d": "$0{,}1301\\ \\%$."},
+      "figures": [
+        {
+          "src": "img/tecno/2023-J/e1-q5.png",
+          "peu": "Peça d'acer en forma de L: la cota superior (des de la cara interior fins a l'extrem) és a i la inferior (amplada total) és b"
+        }
+      ],
+      "opcions": {
+        "a": "$0{,}9584\\ \\%$.",
+        "b": "$0{,}4333\\ \\%$.",
+        "c": "$4{,}333\\ \\%$.",
+        "d": "$0{,}1301\\ \\%$."
+      },
       "apartats": [],
       "solucio": {
         "resposta": "c",
         "passos": [
-          {"apartat": null, "titol": "Com s'obté el gruix a partir de les cotes", "cos": "A la figura, $b$ és l'amplada total de la peça i $a$ va des de la cara interior de la part vertical fins a l'extrem dret. El **gruix** $e$ de la part vertical és la diferència:\n\n$$e = b - a$$"},
-          {"apartat": null, "titol": "Gruix nominal i gruix mesurat", "cos": "$$e_\\text{nom} = 120 - 90 = 30\\ \\text{mm}$$\n\n$$e_\\text{mes} = 120{,}1 - 88{,}8 = 31{,}3\\ \\text{mm}$$"},
-          {"apartat": null, "titol": "Error absolut i error relatiu", "cos": "L'error absolut és la diferència entre el valor mesurat i el valor de referència (nominal), i l'error relatiu el compara amb aquest valor de referència:\n\n$$\\varepsilon_\\text{abs} = |31{,}3 - 30| = 1{,}3\\ \\text{mm}$$\n\n$$\\varepsilon_\\text{rel} = \\frac{\\varepsilon_\\text{abs}}{e_\\text{nom}} \\cdot 100 = \\frac{1{,}3}{30} \\cdot 100 = 4{,}333\\ \\%$$\n\nResultat: **$\\varepsilon_\\text{rel} = 4{,}333\\ \\%$** → resposta **c**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **b)** $0{,}4333\\ \\%$: error d'un factor 10 en passar a percentatge.\n- Calcular l'error relatiu de cada cota per separat ($1{,}2/90 = 1{,}33\\ \\%$ o $0{,}1/120 = 0{,}083\\ \\%$) no dona l'error del gruix: els errors de les dues cotes se sumen perquè una surt per sota i l'altra per sobre."}
+          {
+            "apartat": null,
+            "titol": "Com s'obté el gruix a partir de les cotes",
+            "cos": "A la figura, $b$ és l'amplada total de la peça i $a$ va des de la cara interior de la part vertical fins a l'extrem dret. El **gruix** $e$ de la part vertical és la diferència:\n\n$$e = b - a$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Gruix nominal i gruix mesurat",
+            "cos": "$$e_\\text{nom} = 120 - 90 = 30\\ \\text{mm}$$\n\n$$e_\\text{mes} = 120{,}1 - 88{,}8 = 31{,}3\\ \\text{mm}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Error absolut i error relatiu",
+            "cos": "L'error absolut és la diferència entre el valor mesurat i el valor de referència (nominal), i l'error relatiu el compara amb aquest valor de referència:\n\n$$\\varepsilon_\\text{abs} = |31{,}3 - 30| = 1{,}3\\ \\text{mm}$$\n\n$$\\varepsilon_\\text{rel} = \\frac{\\varepsilon_\\text{abs}}{e_\\text{nom}} \\cdot 100 = \\frac{1{,}3}{30} \\cdot 100 = 4{,}333\\ \\%$$\n\nResultat: **$\\varepsilon_\\text{rel} = 4{,}333\\ \\%$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **b)** $0{,}4333\\ \\%$: error d'un factor 10 en passar a percentatge.\n- Calcular l'error relatiu de cada cota per separat ($1{,}2/90 = 1{,}33\\ \\%$ o $0{,}1/120 = 0{,}083\\ \\%$) no dona l'error del gruix: els errors de les dues cotes se sumen perquè una surt per sota i l'altra per sobre."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$e_\\text{mes} = 31{,}3\\ \\text{mm}$, $\\varepsilon_\\text{rel} = 4{,}333\\ \\%$ → resposta **c**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$e_\\text{mes} = 31{,}3\\ \\text{mm}$, $\\varepsilon_\\text{rel} = 4{,}333\\ \\%$ → resposta **c**"
+          }
+        ],
         "nota": "A la figura de l'enunciat original no es veu l'etiqueta de la cota $a$ (la fletxa superior); es dedueix que és la cota que va de la cara interior fins a l'extrem, ja que el gruix és $b - a$."
       }
     },
@@ -165,30 +346,82 @@
       "titol": "Votació d'un tribunal de quatre membres amb vot de qualitat del president",
       "tema": "digital",
       "temes_secundaris": [],
-      "conceptes": ["taula de veritat", "funció lògica", "mapa de Karnaugh", "portes lògiques"],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "mapa de Karnaugh",
+        "portes lògiques",
+        "funció majoria"
+      ],
       "dificultat": 2,
-      "pagines": [4, 5],
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "pagines": [
+        4,
+        5
+      ],
       "enunciat": "En la defensa d'un projecte acadèmic, el tribunal que valora si el treball és apte o no apte està format per quatre membres: president, secretari, vocal 1 i vocal 2. La decisió es pren per majoria i, en cas d'empat, preval el vot de qualitat del president.\n\nResponeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- vocal 1: $v_1$ = 1: vot favorable; 0: vot en contra\n- vocal 2: $v_2$ = 1: vot favorable; 0: vot en contra\n- secretari: $s$ = 1: vot favorable; 0: vot en contra\n- president: $p$ = 1: vot favorable; 0: vot en contra\n- decisió: $d$ = 1: treball apte; 0: treball no apte",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Elaboreu la taula de veritat del sistema.", "punts": 1},
-        {"id": "b", "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.", "punts": 1},
-        {"id": "c", "enunciat": "Dibuixeu el diagrama de portes lògiques equivalent.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Elaboreu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu el diagrama de portes lògiques equivalent.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": "a", "titol": "Traduir les regles de votació", "cos": "Comptem els vots favorables de cada combinació:\n\n- **3 o 4 vots favorables**: majoria a favor → $d = 1$.\n- **0 o 1 vot favorable**: majoria en contra → $d = 0$.\n- **2 vots favorables (empat 2-2)**: decideix el president → $d = p$."},
-          {"apartat": "a", "titol": "Taula de veritat", "cos": "Amb 4 variables hi ha $2^4 = 16$ combinacions:\n\n| $v_1$ | $v_2$ | $s$ | $p$ | vots a favor | $d$ |\n|---|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 0 | 0 |\n| 0 | 0 | 0 | 1 | 1 | 0 |\n| 0 | 0 | 1 | 0 | 1 | 0 |\n| 0 | 0 | 1 | 1 | 2 (empat, $p=1$) | **1** |\n| 0 | 1 | 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 1 | 2 (empat, $p=1$) | **1** |\n| 0 | 1 | 1 | 0 | 2 (empat, $p=0$) | 0 |\n| 0 | 1 | 1 | 1 | 3 | **1** |\n| 1 | 0 | 0 | 0 | 1 | 0 |\n| 1 | 0 | 0 | 1 | 2 (empat, $p=1$) | **1** |\n| 1 | 0 | 1 | 0 | 2 (empat, $p=0$) | 0 |\n| 1 | 0 | 1 | 1 | 3 | **1** |\n| 1 | 1 | 0 | 0 | 2 (empat, $p=0$) | 0 |\n| 1 | 1 | 0 | 1 | 3 | **1** |\n| 1 | 1 | 1 | 0 | 3 | **1** |\n| 1 | 1 | 1 | 1 | 4 | **1** |"},
-          {"apartat": "b", "titol": "Funció canònica (suma de productes)", "cos": "Un terme producte per a cada fila amb $d = 1$ (variable negada si val 0):\n\n$$d = \\bar{v}_1\\bar{v}_2\\,s\\,p + \\bar{v}_1 v_2\\,\\bar{s}\\,p + \\bar{v}_1 v_2\\,s\\,p + v_1\\bar{v}_2\\,\\bar{s}\\,p + v_1\\bar{v}_2\\,s\\,p + v_1 v_2\\,\\bar{s}\\,p + v_1 v_2\\,s\\,\\bar{p} + v_1 v_2\\,s\\,p$$\n\n(8 termes, un per cada 1 de la taula.)"},
-          {"apartat": "b", "titol": "Simplificació per Karnaugh", "cos": "Mapa amb files $v_1 v_2$ i columnes $s\\,p$ (ordre de Gray 00, 01, 11, 10):\n\n| $v_1v_2 \\backslash sp$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **00** | 0 | 0 | 1 | 0 |\n| **01** | 0 | 1 | 1 | 0 |\n| **11** | 0 | 1 | 1 | 1 |\n| **10** | 0 | 1 | 1 | 0 |\n\n- **Grup de 4** (tota la columna $sp = 11$): $v_1$ i $v_2$ hi canvien → $s\\,p$.\n- **Grup de 4** (files 01 i 11, columnes 01 i 11): $v_2 = 1$, $p = 1$ → $v_2\\,p$.\n- **Grup de 4** (files 11 i 10, columnes 01 i 11): $v_1 = 1$, $p = 1$ → $v_1\\,p$.\n- **Grup de 2** (fila 11, columnes 11 i 10): $v_1 = v_2 = s = 1$ → $v_1 v_2\\, s$.\n\n$$\\boxed{d = v_1 v_2\\, s + s\\,p + v_1\\,p + v_2\\,p}$$\n\nInterpretació: el treball és apte si els tres membres que no són president hi voten a favor, o si el president hi vota a favor amb almenys un altre membre."},
-          {"apartat": "c", "titol": "Diagrama de portes lògiques", "cos": "Per implementar $d = v_1 v_2 s + s\\,p + v_1\\,p + v_2\\,p$ calen:\n\n- 1 porta **AND de 3 entrades**: $v_1$, $v_2$, $s$.\n- 3 portes **AND de 2 entrades**: $s\\,p$, $v_1\\,p$ i $v_2\\,p$.\n- 1 porta **OR de 4 entrades** que suma les quatre sortides i dona $d$.\n\nNo cal cap porta NOT perquè la funció simplificada no té variables negades.\n\nEsquema de la solució oficial (simbologia IEC: «&» = AND, «≥1» = OR):\n\n![Esquema de portes lògiques](img/tecno/2023-J/e2-sol.png)"}
+          {
+            "apartat": "a",
+            "titol": "Traduir les regles de votació",
+            "cos": "Comptem els vots favorables de cada combinació:\n\n- **3 o 4 vots favorables**: majoria a favor → $d = 1$.\n- **0 o 1 vot favorable**: majoria en contra → $d = 0$.\n- **2 vots favorables (empat 2-2)**: decideix el president → $d = p$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "Amb 4 variables hi ha $2^4 = 16$ combinacions:\n\n| $v_1$ | $v_2$ | $s$ | $p$ | vots a favor | $d$ |\n|---|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 0 | 0 |\n| 0 | 0 | 0 | 1 | 1 | 0 |\n| 0 | 0 | 1 | 0 | 1 | 0 |\n| 0 | 0 | 1 | 1 | 2 (empat, $p=1$) | **1** |\n| 0 | 1 | 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 1 | 2 (empat, $p=1$) | **1** |\n| 0 | 1 | 1 | 0 | 2 (empat, $p=0$) | 0 |\n| 0 | 1 | 1 | 1 | 3 | **1** |\n| 1 | 0 | 0 | 0 | 1 | 0 |\n| 1 | 0 | 0 | 1 | 2 (empat, $p=1$) | **1** |\n| 1 | 0 | 1 | 0 | 2 (empat, $p=0$) | 0 |\n| 1 | 0 | 1 | 1 | 3 | **1** |\n| 1 | 1 | 0 | 0 | 2 (empat, $p=0$) | 0 |\n| 1 | 1 | 0 | 1 | 3 | **1** |\n| 1 | 1 | 1 | 0 | 3 | **1** |\n| 1 | 1 | 1 | 1 | 4 | **1** |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica (suma de productes)",
+            "cos": "Un terme producte per a cada fila amb $d = 1$ (variable negada si val 0):\n\n$$d = \\bar{v}_1\\bar{v}_2\\,s\\,p + \\bar{v}_1 v_2\\,\\bar{s}\\,p + \\bar{v}_1 v_2\\,s\\,p + v_1\\bar{v}_2\\,\\bar{s}\\,p + v_1\\bar{v}_2\\,s\\,p + v_1 v_2\\,\\bar{s}\\,p + v_1 v_2\\,s\\,\\bar{p} + v_1 v_2\\,s\\,p$$\n\n(8 termes, un per cada 1 de la taula.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació per Karnaugh",
+            "cos": "Mapa amb files $v_1 v_2$ i columnes $s\\,p$ (ordre de Gray 00, 01, 11, 10):\n\n| $v_1v_2 \\backslash sp$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **00** | 0 | 0 | 1 | 0 |\n| **01** | 0 | 1 | 1 | 0 |\n| **11** | 0 | 1 | 1 | 1 |\n| **10** | 0 | 1 | 1 | 0 |\n\n- **Grup de 4** (tota la columna $sp = 11$): $v_1$ i $v_2$ hi canvien → $s\\,p$.\n- **Grup de 4** (files 01 i 11, columnes 01 i 11): $v_2 = 1$, $p = 1$ → $v_2\\,p$.\n- **Grup de 4** (files 11 i 10, columnes 01 i 11): $v_1 = 1$, $p = 1$ → $v_1\\,p$.\n- **Grup de 2** (fila 11, columnes 11 i 10): $v_1 = v_2 = s = 1$ → $v_1 v_2\\, s$.\n\n$$\\boxed{d = v_1 v_2\\, s + s\\,p + v_1\\,p + v_2\\,p}$$\n\nInterpretació: el treball és apte si els tres membres que no són president hi voten a favor, o si el president hi vota a favor amb almenys un altre membre."
+          },
+          {
+            "apartat": "c",
+            "titol": "Diagrama de portes lògiques",
+            "cos": "Per implementar $d = v_1 v_2 s + s\\,p + v_1\\,p + v_2\\,p$ calen:\n\n- 1 porta **AND de 3 entrades**: $v_1$, $v_2$, $s$.\n- 3 portes **AND de 2 entrades**: $s\\,p$, $v_1\\,p$ i $v_2\\,p$.\n- 1 porta **OR de 4 entrades** que suma les quatre sortides i dona $d$.\n\nNo cal cap porta NOT perquè la funció simplificada no té variables negades.\n\nEsquema de la solució oficial (simbologia IEC: «&» = AND, «≥1» = OR):\n\n![Esquema de portes lògiques](img/tecno/2023-J/e2-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$d = 1$ a les files 0011, 0101, 0111, 1001, 1011, 1101, 1110 i 1111 ($v_1 v_2 s p$)"},
-          {"apartat": "b", "valor": "$d = v_1 v_2\\, s + s\\,p + v_1\\,p + v_2\\,p$"},
-          {"apartat": "c", "valor": "1 AND de 3 entrades, 3 AND de 2 entrades i 1 OR de 4 entrades"}
+          {
+            "apartat": "a",
+            "valor": "$d = 1$ a les files 0011, 0101, 0111, 1001, 1011, 1101, 1110 i 1111 ($v_1 v_2 s p$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$d = v_1 v_2\\, s + s\\,p + v_1\\,p + v_2\\,p$"
+          },
+          {
+            "apartat": "c",
+            "valor": "1 AND de 3 entrades, 3 AND de 2 entrades i 1 OR de 4 entrades"
+          }
         ],
         "nota": "Es pot escriure també $d = p\\,(v_1 + v_2 + s) + v_1 v_2 s$, que estalvia portes (1 OR de 3, 1 AND de 2, 1 AND de 3 i 1 OR de 2). Error típic: tractar l'empat com a «no apte» i oblidar el vot de qualitat del president."
       }
@@ -202,34 +435,107 @@
       "punts": 2.5,
       "titol": "Motor reductor que enrotlla una pantalla de projecció en un corró",
       "tema": "mecanica",
-      "temes_secundaris": ["maquines-electriques"],
-      "conceptes": ["potència mecànica", "rendiment", "velocitat angular", "parell"],
+      "temes_secundaris": [
+        "maquines-electriques",
+        "circuits"
+      ],
+      "conceptes": [
+        "potència mecànica",
+        "rendiment",
+        "velocitat angular",
+        "parell motor",
+        "potència elèctrica",
+        "velocitat lineal"
+      ],
       "dificultat": 2,
-      "pagines": [6, 7],
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "pagines": [
+        6,
+        7
+      ],
       "enunciat": "Una pantalla de projecció té una massa $m = 2\\ \\text{kg}$ a la part inferior per a mantenir-la sempre tibada. Un motor reductor de rendiment $\\eta_\\text{mot} = 0{,}9$ és l'encarregat de recollir la pantalla en el corró de diàmetre $d = 250\\ \\text{mm}$, que es troba articulat amb el sostre al punt P.\n\nEl punt inferior de la pantalla es desplaça verticalment des d'una altura $h_1 = 0{,}3\\ \\text{m}$ fins a $h_2 = 2\\ \\text{m}$ en $t = 8\\ \\text{s}$, a velocitat constant. Si la massa de la resta d'elements és negligible, determineu:",
-      "figures": [{"src": "img/tecno/2023-J/e3.png", "peu": "Esquema d'elevació de la pantalla de projecció (corró de diàmetre d al punt P i massa m)"}],
+      "figures": [
+        {
+          "src": "img/tecno/2023-J/e3.png",
+          "peu": "Esquema d'elevació de la pantalla de projecció (corró de diàmetre d al punt P i massa m)"
+        }
+      ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "La potència elèctrica mitjana $P_\\text{elèctr}$ consumida pel motor reductor.", "punts": 1},
-        {"id": "b", "enunciat": "La velocitat angular de l'eix de sortida del motor reductor $\\omega_\\text{mot}$ i el parell aplicat per aquest al tambor $\\Gamma_\\text{mot}$.", "punts": 1},
-        {"id": "c", "enunciat": "L'increment percentual, $Inc$, de la potència elèctrica si es volgués fer pujar la pantalla amb la meitat del temps.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "La potència elèctrica mitjana $P_\\text{elèctr}$ consumida pel motor reductor.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La velocitat angular de l'eix de sortida del motor reductor $\\omega_\\text{mot}$ i el parell aplicat per aquest al tambor $\\Gamma_\\text{mot}$.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "L'increment percentual, $Inc$, de la potència elèctrica si es volgués fer pujar la pantalla amb la meitat del temps.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Massa: $m = 2\\ \\text{kg}$\n- Rendiment del motor reductor: $\\eta_\\text{mot} = 0{,}9$\n- Diàmetre del corró: $d = 250\\ \\text{mm} = 0{,}25\\ \\text{m}$ → radi $r = 0{,}125\\ \\text{m}$\n- Recorregut: $h_2 - h_1 = 2 - 0{,}3 = 1{,}7\\ \\text{m}$ en $t = 8\\ \\text{s}$\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: $P_\\text{elèctr}$, $\\omega_\\text{mot}$, $\\Gamma_\\text{mot}$, $Inc$"},
-          {"apartat": "a", "titol": "Velocitat de pujada", "cos": "La massa puja a velocitat constant:\n\n$$v = \\frac{h_2 - h_1}{t} = \\frac{1{,}7}{8} = 0{,}2125\\ \\text{m/s}$$"},
-          {"apartat": "a", "titol": "Potència mecànica", "cos": "Com que la velocitat és constant, el motor només ha de vèncer el pes. La potència és força per velocitat:\n\n$$P_\\text{mec} = m\\, g\\, v = \\frac{m\\, g\\, (h_2 - h_1)}{t} = \\frac{2 \\cdot 9{,}807 \\cdot 1{,}7}{8} = 4{,}168\\ \\text{W}$$"},
-          {"apartat": "a", "titol": "Potència elèctrica amb el rendiment", "cos": "El rendiment és el quocient entre la potència útil (mecànica) i la consumida (elèctrica):\n\n$$P_\\text{elèctr} = \\frac{P_\\text{mec}}{\\eta_\\text{mot}} = \\frac{4{,}168}{0{,}9} = 4{,}631\\ \\text{W}$$\n\nResultat: **$P_\\text{elèctr} = 4{,}631\\ \\text{W}$**."},
-          {"apartat": "b", "titol": "Velocitat angular del corró", "cos": "La pantalla s'enrotlla al corró sense lliscar, així que la velocitat lineal de la pantalla és la velocitat perifèrica del corró, $v = \\omega\\, r$:\n\n$$\\omega_\\text{mot} = \\frac{v}{d/2} = \\frac{0{,}2125}{0{,}125} = 1{,}7\\ \\text{rad/s}$$\n\nResultat: **$\\omega_\\text{mot} = 1{,}7\\ \\text{rad/s}$**."},
-          {"apartat": "b", "titol": "Parell al tambor", "cos": "En moviment de rotació, la potència és parell per velocitat angular, $P = \\Gamma\\, \\omega$:\n\n$$\\Gamma_\\text{mot} = \\frac{P_\\text{mec}}{\\omega_\\text{mot}} = \\frac{4{,}168}{1{,}7} = 2{,}452\\ \\text{N m}$$\n\nComprovació: el parell és el pes pel radi, $m\\,g\\,r = 2 \\cdot 9{,}807 \\cdot 0{,}125 = 2{,}452\\ \\text{N m}$.\n\nResultat: **$\\Gamma_\\text{mot} = 2{,}452\\ \\text{N m}$**."},
-          {"apartat": "c", "titol": "Potència elèctrica amb la meitat del temps", "cos": "L'energia que cal aportar ($m\\,g\\,\\Delta h$) és la mateixa, però si s'ha de fer en la meitat del temps, la potència es duplica:\n\n$$\\tilde{P}_\\text{elèctr} = \\frac{m\\, g\\, (h_2 - h_1)}{\\eta_\\text{mot}\\, t/2} = 2\\, P_\\text{elèctr} = 9{,}262\\ \\text{W}$$"},
-          {"apartat": "c", "titol": "Increment percentual", "cos": "$$Inc = \\frac{\\tilde{P}_\\text{elèctr} - P_\\text{elèctr}}{P_\\text{elèctr}} \\cdot 100 = \\frac{2P_\\text{elèctr} - P_\\text{elèctr}}{P_\\text{elèctr}} \\cdot 100 = 100\\ \\%$$\n\nResultat: **$Inc = 100\\ \\%$** (la potència es duplica)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa: $m = 2\\ \\text{kg}$\n- Rendiment del motor reductor: $\\eta_\\text{mot} = 0{,}9$\n- Diàmetre del corró: $d = 250\\ \\text{mm} = 0{,}25\\ \\text{m}$ → radi $r = 0{,}125\\ \\text{m}$\n- Recorregut: $h_2 - h_1 = 2 - 0{,}3 = 1{,}7\\ \\text{m}$ en $t = 8\\ \\text{s}$\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: $P_\\text{elèctr}$, $\\omega_\\text{mot}$, $\\Gamma_\\text{mot}$, $Inc$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat de pujada",
+            "cos": "La massa puja a velocitat constant:\n\n$$v = \\frac{h_2 - h_1}{t} = \\frac{1{,}7}{8} = 0{,}2125\\ \\text{m/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència mecànica",
+            "cos": "Com que la velocitat és constant, el motor només ha de vèncer el pes. La potència és força per velocitat:\n\n$$P_\\text{mec} = m\\, g\\, v = \\frac{m\\, g\\, (h_2 - h_1)}{t} = \\frac{2 \\cdot 9{,}807 \\cdot 1{,}7}{8} = 4{,}168\\ \\text{W}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència elèctrica amb el rendiment",
+            "cos": "El rendiment és el quocient entre la potència útil (mecànica) i la consumida (elèctrica):\n\n$$P_\\text{elèctr} = \\frac{P_\\text{mec}}{\\eta_\\text{mot}} = \\frac{4{,}168}{0{,}9} = 4{,}631\\ \\text{W}$$\n\nResultat: **$P_\\text{elèctr} = 4{,}631\\ \\text{W}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat angular del corró",
+            "cos": "La pantalla s'enrotlla al corró sense lliscar, així que la velocitat lineal de la pantalla és la velocitat perifèrica del corró, $v = \\omega\\, r$:\n\n$$\\omega_\\text{mot} = \\frac{v}{d/2} = \\frac{0{,}2125}{0{,}125} = 1{,}7\\ \\text{rad/s}$$\n\nResultat: **$\\omega_\\text{mot} = 1{,}7\\ \\text{rad/s}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Parell al tambor",
+            "cos": "En moviment de rotació, la potència és parell per velocitat angular, $P = \\Gamma\\, \\omega$:\n\n$$\\Gamma_\\text{mot} = \\frac{P_\\text{mec}}{\\omega_\\text{mot}} = \\frac{4{,}168}{1{,}7} = 2{,}452\\ \\text{N m}$$\n\nComprovació: el parell és el pes pel radi, $m\\,g\\,r = 2 \\cdot 9{,}807 \\cdot 0{,}125 = 2{,}452\\ \\text{N m}$.\n\nResultat: **$\\Gamma_\\text{mot} = 2{,}452\\ \\text{N m}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència elèctrica amb la meitat del temps",
+            "cos": "L'energia que cal aportar ($m\\,g\\,\\Delta h$) és la mateixa, però si s'ha de fer en la meitat del temps, la potència es duplica:\n\n$$\\tilde{P}_\\text{elèctr} = \\frac{m\\, g\\, (h_2 - h_1)}{\\eta_\\text{mot}\\, t/2} = 2\\, P_\\text{elèctr} = 9{,}262\\ \\text{W}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Increment percentual",
+            "cos": "$$Inc = \\frac{\\tilde{P}_\\text{elèctr} - P_\\text{elèctr}}{P_\\text{elèctr}} \\cdot 100 = \\frac{2P_\\text{elèctr} - P_\\text{elèctr}}{P_\\text{elèctr}} \\cdot 100 = 100\\ \\%$$\n\nResultat: **$Inc = 100\\ \\%$** (la potència es duplica)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$P_\\text{mec} = 4{,}168\\ \\text{W}$; $P_\\text{elèctr} = 4{,}631\\ \\text{W}$"},
-          {"apartat": "b", "valor": "$\\omega_\\text{mot} = 1{,}7\\ \\text{rad/s}$; $\\Gamma_\\text{mot} = 2{,}452\\ \\text{N m}$"},
-          {"apartat": "c", "valor": "$Inc = 100\\ \\%$"}
+          {
+            "apartat": "a",
+            "valor": "$P_\\text{mec} = 4{,}168\\ \\text{W}$; $P_\\text{elèctr} = 4{,}631\\ \\text{W}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\omega_\\text{mot} = 1{,}7\\ \\text{rad/s}$; $\\Gamma_\\text{mot} = 2{,}452\\ \\text{N m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$Inc = 100\\ \\%$"
+          }
         ],
         "nota": "Error típic a l'apartat b: usar el diàmetre en lloc del radi ($\\omega = v/r$ amb $r = d/2$). Error típic a l'apartat c: pensar que, com que l'energia és la mateixa, la potència no canvia (o que l'increment és del 200 %, confonent «el doble» amb «un increment del doble»)."
       }
@@ -243,35 +549,106 @@
       "punts": 2.5,
       "titol": "Comparació econòmica d'una estufa de pèl·lets i una de gasoil",
       "tema": "energia",
-      "temes_secundaris": ["economia", "termica"],
-      "conceptes": ["poder calorífic", "rendiment", "cost energètic", "amortització"],
+      "temes_secundaris": [
+        "economia",
+        "termica"
+      ],
+      "conceptes": [
+        "poder calorífic",
+        "rendiment",
+        "cost de l'energia",
+        "amortització",
+        "consum de combustible",
+        "densitat"
+      ],
       "dificultat": 2,
-      "pagines": [8, 9],
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "pagines": [
+        8,
+        9
+      ],
       "enunciat": "Un establiment turístic es planteja posar una estufa de pèl·lets o de gasoil per a cobrir una demanda energètica anual $E_\\text{cons} = 15\\,000\\ \\text{kW h}$. L'estufa de pèl·lets té un rendiment $\\eta_\\text{pèl} = 0{,}94$ i la instal·lació necessita una inversió inicial $c_\\text{inv\\_pèl} = 7\\,000$ €. Pel que fa a la instal·lació de l'estufa de gasoil, l'estufa té un rendiment $\\eta_\\text{gas} = 0{,}82$ i la instal·lació necessita una inversió inicial $c_\\text{inv\\_gas} = 2\\,000$ €. En ambdós casos el cost del manteniment anual s'estima en $c_\\text{mant\\_pèl} = c_\\text{mant\\_gas} = 400$ €. El poder calorífic del pèl·let és $p_\\text{c\\_pèl} = 4{,}8\\ \\text{kW h/kg}$ i el seu preu $c_\\text{pèl} = 0{,}4$ €/kg. El poder calorífic del gasoil és $p_\\text{c\\_gas} = 44{,}8\\ \\text{MJ/kg}$, la seva densitat $\\rho = 0{,}85\\ \\text{kg/L}$ i el seu preu $c_\\text{gas} = 1{,}3$ €/L.\n\nDetermineu:",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "El cost energètic, en €/(kW h), d'utilitzar cadascun dels combustibles, $ce_\\text{pèl}$ i $ce_\\text{gas}$.", "punts": 1},
-        {"id": "b", "enunciat": "La massa de combustible necessària anualment per a satisfer la demanda energètica amb l'estufa de pèl·lets, $m_\\text{pèl}$.", "punts": 0.5},
-        {"id": "c", "enunciat": "El volum de combustible necessari anualment per a satisfer la demanda energètica amb l'estufa de gasoil, $V_\\text{gas}$.", "punts": 0.5},
-        {"id": "d", "enunciat": "El temps, $t$, que hauria de transcórrer perquè el cost econòmic associat a les dues estufes s'iguali. Considereu que els preus es mantenen constants.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "El cost energètic, en €/(kW h), d'utilitzar cadascun dels combustibles, $ce_\\text{pèl}$ i $ce_\\text{gas}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La massa de combustible necessària anualment per a satisfer la demanda energètica amb l'estufa de pèl·lets, $m_\\text{pèl}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El volum de combustible necessari anualment per a satisfer la demanda energètica amb l'estufa de gasoil, $V_\\text{gas}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "El temps, $t$, que hauria de transcórrer perquè el cost econòmic associat a les dues estufes s'iguali. Considereu que els preus es mantenen constants.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Demanda anual: $E_\\text{cons} = 15\\,000\\ \\text{kW h}$\n- Pèl·lets: $\\eta_\\text{pèl} = 0{,}94$, $c_\\text{inv\\_pèl} = 7\\,000$ €, $p_\\text{c\\_pèl} = 4{,}8\\ \\text{kW h/kg}$, $c_\\text{pèl} = 0{,}4$ €/kg\n- Gasoil: $\\eta_\\text{gas} = 0{,}82$, $c_\\text{inv\\_gas} = 2\\,000$ €, $p_\\text{c\\_gas} = 44{,}8\\ \\text{MJ/kg} = \\dfrac{44{,}8}{3{,}6} = 12{,}44\\ \\text{kW h/kg}$, $\\rho = 0{,}85\\ \\text{kg/L}$, $c_\\text{gas} = 1{,}3$ €/L\n- Manteniment: $400$ €/any en tots dos casos\n- Incògnites: $ce_\\text{pèl}$, $ce_\\text{gas}$, $m_\\text{pèl}$, $V_\\text{gas}$, $t$"},
-          {"apartat": "a", "titol": "Cost energètic del pèl·let", "cos": "El cost energètic és el preu de cada kW h d'energia que conté el combustible: preu per kg dividit per l'energia per kg:\n\n$$ce_\\text{pèl} = \\frac{c_\\text{pèl}}{p_\\text{c\\_pèl}} = \\frac{0{,}4\\ \\text{euros/kg}}{4{,}8\\ \\text{kW h/kg}} = 0{,}08333\\ \\text{euros/(kW h)}$$\n\nResultat: **$ce_\\text{pèl} = 83{,}33 \\cdot 10^{-3}$ €/(kW h)**."},
-          {"apartat": "a", "titol": "Cost energètic del gasoil", "cos": "El gasoil es ven per litres; amb la densitat obtenim l'energia per litre: $\\rho\\, p_\\text{c\\_gas} = 0{,}85 \\cdot 12{,}44 = 10{,}58\\ \\text{kW h/L}$.\n\n$$ce_\\text{gas} = \\frac{c_\\text{gas}}{\\rho\\, p_\\text{c\\_gas}} = \\frac{1{,}3\\ \\text{euros/L}}{10{,}58\\ \\text{kW h/L}} = 0{,}1229\\ \\text{euros/(kW h)}$$\n\nResultat: **$ce_\\text{gas} = 122{,}9 \\cdot 10^{-3}$ €/(kW h)**."},
-          {"apartat": "b", "titol": "Massa anual de pèl·lets", "cos": "L'estufa aprofita el 94 % de l'energia del combustible; per cobrir la demanda cal cremar més energia:\n\n$$E_\\text{pèl} = \\frac{E_\\text{cons}}{\\eta_\\text{pèl}} = \\frac{15\\,000}{0{,}94} = 15\\,957\\ \\text{kW h}$$\n\n$$m_\\text{pèl} = \\frac{E_\\text{pèl}}{p_\\text{c\\_pèl}} = \\frac{15\\,957\\ \\text{kW h}}{4{,}8\\ \\text{kW h/kg}} = 3\\,324\\ \\text{kg}$$\n\nResultat: **$m_\\text{pèl} \\approx 3\\,324\\ \\text{kg}$**."},
-          {"apartat": "c", "titol": "Volum anual de gasoil", "cos": "$$E_\\text{gas} = \\frac{E_\\text{cons}}{\\eta_\\text{gas}} = \\frac{15\\,000}{0{,}82} = 18\\,293\\ \\text{kW h}$$\n\n$$V_\\text{gas} = \\frac{E_\\text{gas}}{\\rho\\, p_\\text{c\\_gas}} = \\frac{18\\,293\\ \\text{kW h}}{0{,}85 \\cdot 12{,}44\\ \\text{kW h/L}} = 1\\,729\\ \\text{L}$$\n\nResultat: **$V_\\text{gas} \\approx 1\\,729\\ \\text{L}$**."},
-          {"apartat": "d", "titol": "Cost anual de combustible de cada estufa", "cos": "$$C_\\text{pèl} = m_\\text{pèl}\\, c_\\text{pèl} = 3\\,324 \\cdot 0{,}4 = 1\\,329{,}8\\ \\text{euros/any}$$\n\n$$C_\\text{gas} = V_\\text{gas}\\, c_\\text{gas} = 1\\,729 \\cdot 1{,}3 = 2\\,248{,}2\\ \\text{euros/any}$$\n\nEl manteniment és igual en tots dos casos (400 €/any), així que no influeix en la comparació. Diferència anual: $\\Delta c_\\text{comb} = 2\\,248{,}2 - 1\\,329{,}8 = 918{,}4$ €/any a favor dels pèl·lets."},
-          {"apartat": "d", "titol": "Temps perquè s'igualin els costos", "cos": "Igualem el cost acumulat de les dues opcions després de $t$ anys:\n\n$$c_\\text{inv\\_pèl} + (C_\\text{pèl} + 400)\\,t = c_\\text{inv\\_gas} + (C_\\text{gas} + 400)\\,t$$\n\n$$t = \\frac{c_\\text{inv\\_pèl} - c_\\text{inv\\_gas}}{\\Delta c_\\text{comb}} = \\frac{7\\,000 - 2\\,000}{918{,}4} = 5{,}444\\ \\text{anys}$$\n\nResultat: **$t \\approx 5{,}444\\ \\text{anys}$** (a partir d'aleshores l'estufa de pèl·lets surt més a compte)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Demanda anual: $E_\\text{cons} = 15\\,000\\ \\text{kW h}$\n- Pèl·lets: $\\eta_\\text{pèl} = 0{,}94$, $c_\\text{inv\\_pèl} = 7\\,000$ €, $p_\\text{c\\_pèl} = 4{,}8\\ \\text{kW h/kg}$, $c_\\text{pèl} = 0{,}4$ €/kg\n- Gasoil: $\\eta_\\text{gas} = 0{,}82$, $c_\\text{inv\\_gas} = 2\\,000$ €, $p_\\text{c\\_gas} = 44{,}8\\ \\text{MJ/kg} = \\dfrac{44{,}8}{3{,}6} = 12{,}44\\ \\text{kW h/kg}$, $\\rho = 0{,}85\\ \\text{kg/L}$, $c_\\text{gas} = 1{,}3$ €/L\n- Manteniment: $400$ €/any en tots dos casos\n- Incògnites: $ce_\\text{pèl}$, $ce_\\text{gas}$, $m_\\text{pèl}$, $V_\\text{gas}$, $t$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Cost energètic del pèl·let",
+            "cos": "El cost energètic és el preu de cada kW h d'energia que conté el combustible: preu per kg dividit per l'energia per kg:\n\n$$ce_\\text{pèl} = \\frac{c_\\text{pèl}}{p_\\text{c\\_pèl}} = \\frac{0{,}4\\ \\text{euros/kg}}{4{,}8\\ \\text{kW h/kg}} = 0{,}08333\\ \\text{euros/(kW h)}$$\n\nResultat: **$ce_\\text{pèl} = 83{,}33 \\cdot 10^{-3}$ €/(kW h)**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cost energètic del gasoil",
+            "cos": "El gasoil es ven per litres; amb la densitat obtenim l'energia per litre: $\\rho\\, p_\\text{c\\_gas} = 0{,}85 \\cdot 12{,}44 = 10{,}58\\ \\text{kW h/L}$.\n\n$$ce_\\text{gas} = \\frac{c_\\text{gas}}{\\rho\\, p_\\text{c\\_gas}} = \\frac{1{,}3\\ \\text{euros/L}}{10{,}58\\ \\text{kW h/L}} = 0{,}1229\\ \\text{euros/(kW h)}$$\n\nResultat: **$ce_\\text{gas} = 122{,}9 \\cdot 10^{-3}$ €/(kW h)**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa anual de pèl·lets",
+            "cos": "L'estufa aprofita el 94 % de l'energia del combustible; per cobrir la demanda cal cremar més energia:\n\n$$E_\\text{pèl} = \\frac{E_\\text{cons}}{\\eta_\\text{pèl}} = \\frac{15\\,000}{0{,}94} = 15\\,957\\ \\text{kW h}$$\n\n$$m_\\text{pèl} = \\frac{E_\\text{pèl}}{p_\\text{c\\_pèl}} = \\frac{15\\,957\\ \\text{kW h}}{4{,}8\\ \\text{kW h/kg}} = 3\\,324\\ \\text{kg}$$\n\nResultat: **$m_\\text{pèl} \\approx 3\\,324\\ \\text{kg}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Volum anual de gasoil",
+            "cos": "$$E_\\text{gas} = \\frac{E_\\text{cons}}{\\eta_\\text{gas}} = \\frac{15\\,000}{0{,}82} = 18\\,293\\ \\text{kW h}$$\n\n$$V_\\text{gas} = \\frac{E_\\text{gas}}{\\rho\\, p_\\text{c\\_gas}} = \\frac{18\\,293\\ \\text{kW h}}{0{,}85 \\cdot 12{,}44\\ \\text{kW h/L}} = 1\\,729\\ \\text{L}$$\n\nResultat: **$V_\\text{gas} \\approx 1\\,729\\ \\text{L}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Cost anual de combustible de cada estufa",
+            "cos": "$$C_\\text{pèl} = m_\\text{pèl}\\, c_\\text{pèl} = 3\\,324 \\cdot 0{,}4 = 1\\,329{,}8\\ \\text{euros/any}$$\n\n$$C_\\text{gas} = V_\\text{gas}\\, c_\\text{gas} = 1\\,729 \\cdot 1{,}3 = 2\\,248{,}2\\ \\text{euros/any}$$\n\nEl manteniment és igual en tots dos casos (400 €/any), així que no influeix en la comparació. Diferència anual: $\\Delta c_\\text{comb} = 2\\,248{,}2 - 1\\,329{,}8 = 918{,}4$ €/any a favor dels pèl·lets."
+          },
+          {
+            "apartat": "d",
+            "titol": "Temps perquè s'igualin els costos",
+            "cos": "Igualem el cost acumulat de les dues opcions després de $t$ anys:\n\n$$c_\\text{inv\\_pèl} + (C_\\text{pèl} + 400)\\,t = c_\\text{inv\\_gas} + (C_\\text{gas} + 400)\\,t$$\n\n$$t = \\frac{c_\\text{inv\\_pèl} - c_\\text{inv\\_gas}}{\\Delta c_\\text{comb}} = \\frac{7\\,000 - 2\\,000}{918{,}4} = 5{,}444\\ \\text{anys}$$\n\nResultat: **$t \\approx 5{,}444\\ \\text{anys}$** (a partir d'aleshores l'estufa de pèl·lets surt més a compte)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$ce_\\text{pèl} = 83{,}33 \\cdot 10^{-3}$ €/(kW h); $ce_\\text{gas} = 122{,}9 \\cdot 10^{-3}$ €/(kW h)"},
-          {"apartat": "b", "valor": "$m_\\text{pèl} \\approx 3\\,324\\ \\text{kg}$"},
-          {"apartat": "c", "valor": "$V_\\text{gas} \\approx 1\\,729\\ \\text{L}$"},
-          {"apartat": "d", "valor": "$\\Delta c_\\text{comb} \\approx 918{,}4$ €/any; $t \\approx 5{,}444\\ \\text{anys}$"}
+          {
+            "apartat": "a",
+            "valor": "$ce_\\text{pèl} = 83{,}33 \\cdot 10^{-3}$ €/(kW h); $ce_\\text{gas} = 122{,}9 \\cdot 10^{-3}$ €/(kW h)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m_\\text{pèl} \\approx 3\\,324\\ \\text{kg}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$V_\\text{gas} \\approx 1\\,729\\ \\text{L}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$\\Delta c_\\text{comb} \\approx 918{,}4$ €/any; $t \\approx 5{,}444\\ \\text{anys}$"
+          }
         ],
         "nota": "A l'apartat a, la solució oficial calcula el cost per kW h d'energia del combustible (sense tenir en compte el rendiment de l'estufa). Si es volgués el cost per kW h útil, caldria dividir per $\\eta$: $0{,}0887$ i $0{,}1499$ €/(kW h). Error típic a l'apartat d: incloure el manteniment només en una de les opcions."
       }
@@ -285,34 +662,103 @@
       "punts": 2.5,
       "titol": "Grua de caixes de fruita accionada per un cilindre hidràulic",
       "tema": "estatica",
-      "temes_secundaris": ["pneumatica"],
-      "conceptes": ["diagrama de cos lliure", "equilibri de moments", "geometria", "pressió"],
+      "temes_secundaris": [
+        "pneumatica"
+      ],
+      "conceptes": [
+        "diagrama de cos lliure",
+        "equilibri de moments",
+        "cilindre pneumàtic o hidràulic",
+        "pressió"
+      ],
       "dificultat": 3,
-      "pagines": [10, 11],
+      "curs": "2n",
+      "curs_motiu": "Necessita estàtica d'estructures i un cilindre hidràulic (pressió), que són de 2n.",
+      "pagines": [
+        10,
+        11
+      ],
       "enunciat": "La figura mostra un esquema simplificat d'una grua per a elevar caixes de fruita.\n\nLa barra OBC, de longitud $2l = 4\\ \\text{m}$ (essent B el seu punt mitjà), es troba articulada al terra al punt O. A l'extrem C s'hi pengen 3 caixes de fruita de $25\\ \\text{kg}$ cadascuna ($m = 75\\ \\text{kg}$). La massa de la resta d'elements és negligible.\n\nLa barra es mou mitjançant un cilindre hidràulic de diàmetre interior $d_\\text{int} = 40\\ \\text{mm}$, que es troba articulat a P i a B. Els punts O i P es troben sobre la mateixa vertical a una distància $l = 2\\ \\text{m}$.\n\nEl cilindre permet modificar la coordenada $\\varphi$, que pren valors entre $0^\\circ < \\varphi < 65^\\circ$.",
-      "figures": [{"src": "img/tecno/2023-J/e5.png", "peu": "Esquema simplificat de la grua: barra OBC, cilindre PB i angles φ i α (la cota vertical OP val l)"}],
+      "figures": [
+        {
+          "src": "img/tecno/2023-J/e5.png",
+          "peu": "Esquema simplificat de la grua: barra OBC, cilindre PB i angles φ i α (la cota vertical OP val l)"
+        }
+      ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu el diagrama de cos lliure de la barra OBC.", "punts": 0.5},
-        {"id": "b", "enunciat": "Trobeu la relació entre les coordenades $\\varphi$ i $\\alpha$.", "punts": 0.5},
-        {"id": "c", "enunciat": "Sabent que el cilindre hidràulic manté el sistema en equilibri i que $\\varphi = 30^\\circ$, determineu: La força, $F_\\text{c}$, que fa el cilindre hidràulic.", "punts": 1},
-        {"id": "d", "enunciat": "Sabent que el cilindre hidràulic manté el sistema en equilibri i que $\\varphi = 30^\\circ$, determineu: La pressió relativa $p_\\text{int}$ a l'interior del cilindre.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de cos lliure de la barra OBC.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu la relació entre les coordenades $\\varphi$ i $\\alpha$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Sabent que el cilindre hidràulic manté el sistema en equilibri i que $\\varphi = 30^\\circ$, determineu: La força, $F_\\text{c}$, que fa el cilindre hidràulic.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "Sabent que el cilindre hidràulic manté el sistema en equilibri i que $\\varphi = 30^\\circ$, determineu: La pressió relativa $p_\\text{int}$ a l'interior del cilindre.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Massa penjada a C: $m = 75\\ \\text{kg}$ → pes $m\\,g = 75 \\cdot 9{,}807 = 735{,}5\\ \\text{N}$\n- $OB = BC = l = 2\\ \\text{m}$; $OP = l = 2\\ \\text{m}$ (vertical)\n- Diàmetre interior del cilindre: $d_\\text{int} = 40\\ \\text{mm} = 0{,}04\\ \\text{m}$\n- Posició d'estudi: $\\varphi = 30^\\circ$\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnites: DCL, relació $\\alpha(\\varphi)$, $F_\\text{c}$, $p_\\text{int}$"},
-          {"apartat": "a", "titol": "Diagrama de cos lliure de la barra OBC", "cos": "Aïllem la barra i hi dibuixem totes les forces exteriors:\n\n- A **C**: el pes de les caixes, $m\\,g$, vertical cap avall.\n- A **B**: la força del cilindre $F_\\text{c}$, dirigida segons l'eix del cilindre (de P cap a B), que forma un angle $\\alpha$ amb la barra. El cilindre és una barra biarticulada, per això la seva força té la direcció PB.\n- A **O**: la reacció de l'articulació, amb dues components desconegudes $F_\\text{H}$ i $F_\\text{V}$.\n\n![Diagrama de cos lliure de la barra OBC](img/tecno/2023-J/e5-sol.png)"},
-          {"apartat": "b", "titol": "Relació entre φ i α (triangle OPB)", "cos": "El triangle OPB té $OB = OP = l$, per tant és **isòsceles** i els angles a B i a P són iguals, tots dos $\\alpha$.\n\nL'angle a O entre OP (vertical cap avall) i OB (que puja $\\varphi$ per sobre de l'horitzontal) és $90^\\circ + \\varphi$. Com que els angles d'un triangle sumen $180^\\circ$:\n\n$$\\varphi + 90^\\circ + 2\\alpha = 180^\\circ \\quad\\Rightarrow\\quad \\boxed{\\alpha = \\frac{90^\\circ - \\varphi}{2}}$$\n\nPer a $\\varphi = 30^\\circ$: $\\alpha = 30^\\circ$."},
-          {"apartat": "c", "titol": "Equilibri de moments respecte d'O", "cos": "Prenem moments respecte d'O perquè així la reacció ($F_\\text{H}$, $F_\\text{V}$) no hi apareix.\n\n- La força del cilindre forma un angle $\\alpha$ amb la barra; només la seva component perpendicular, $F_\\text{c}\\sin\\alpha$, fa moment, amb braç $OB = l$.\n- El pes a C té braç horitzontal $2l\\cos\\varphi$.\n\n$$\\sum M_O = 0: \\quad F_\\text{c}\\sin\\alpha \\cdot l - m\\,g \\cdot 2l\\cos\\varphi = 0$$"},
-          {"apartat": "c", "titol": "Força del cilindre", "cos": "Aïllant $F_\\text{c}$ (la $l$ se simplifica):\n\n$$F_\\text{c} = \\frac{2\\, m\\, g \\cos\\varphi}{\\sin\\alpha} = \\frac{2 \\cdot 75 \\cdot 9{,}807 \\cdot \\cos 30^\\circ}{\\sin 30^\\circ} = \\frac{1\\,274}{0{,}5} = 2\\,548\\ \\text{N}$$\n\nResultat: **$F_\\text{c} \\approx 2\\,548\\ \\text{N}$** (compressió del cilindre, que empeny la barra)."},
-          {"apartat": "d", "titol": "Pressió a l'interior del cilindre", "cos": "La força la fa l'oli empenyent el pistó per la cara sense tija (el cilindre s'allarga per aixecar), sobre la secció completa:\n\n$$S = \\frac{\\pi\\, d_\\text{int}^2}{4} = \\frac{\\pi \\cdot 0{,}04^2}{4} = 1{,}2566 \\cdot 10^{-3}\\ \\text{m}^2$$\n\n$$p_\\text{int} = \\frac{F_\\text{c}}{S} = \\frac{2\\,548}{1{,}2566 \\cdot 10^{-3}} = 2{,}028 \\cdot 10^6\\ \\text{Pa}$$\n\nResultat: **$p_\\text{int} \\approx 2{,}028\\ \\text{MPa}$** (pressió relativa)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa penjada a C: $m = 75\\ \\text{kg}$ → pes $m\\,g = 75 \\cdot 9{,}807 = 735{,}5\\ \\text{N}$\n- $OB = BC = l = 2\\ \\text{m}$; $OP = l = 2\\ \\text{m}$ (vertical)\n- Diàmetre interior del cilindre: $d_\\text{int} = 40\\ \\text{mm} = 0{,}04\\ \\text{m}$\n- Posició d'estudi: $\\varphi = 30^\\circ$\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnites: DCL, relació $\\alpha(\\varphi)$, $F_\\text{c}$, $p_\\text{int}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de cos lliure de la barra OBC",
+            "cos": "Aïllem la barra i hi dibuixem totes les forces exteriors:\n\n- A **C**: el pes de les caixes, $m\\,g$, vertical cap avall.\n- A **B**: la força del cilindre $F_\\text{c}$, dirigida segons l'eix del cilindre (de P cap a B), que forma un angle $\\alpha$ amb la barra. El cilindre és una barra biarticulada, per això la seva força té la direcció PB.\n- A **O**: la reacció de l'articulació, amb dues components desconegudes $F_\\text{H}$ i $F_\\text{V}$.\n\n![Diagrama de cos lliure de la barra OBC](img/tecno/2023-J/e5-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Relació entre φ i α (triangle OPB)",
+            "cos": "El triangle OPB té $OB = OP = l$, per tant és **isòsceles** i els angles a B i a P són iguals, tots dos $\\alpha$.\n\nL'angle a O entre OP (vertical cap avall) i OB (que puja $\\varphi$ per sobre de l'horitzontal) és $90^\\circ + \\varphi$. Com que els angles d'un triangle sumen $180^\\circ$:\n\n$$\\varphi + 90^\\circ + 2\\alpha = 180^\\circ \\quad\\Rightarrow\\quad \\boxed{\\alpha = \\frac{90^\\circ - \\varphi}{2}}$$\n\nPer a $\\varphi = 30^\\circ$: $\\alpha = 30^\\circ$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de moments respecte d'O",
+            "cos": "Prenem moments respecte d'O perquè així la reacció ($F_\\text{H}$, $F_\\text{V}$) no hi apareix.\n\n- La força del cilindre forma un angle $\\alpha$ amb la barra; només la seva component perpendicular, $F_\\text{c}\\sin\\alpha$, fa moment, amb braç $OB = l$.\n- El pes a C té braç horitzontal $2l\\cos\\varphi$.\n\n$$\\sum M_O = 0: \\quad F_\\text{c}\\sin\\alpha \\cdot l - m\\,g \\cdot 2l\\cos\\varphi = 0$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Força del cilindre",
+            "cos": "Aïllant $F_\\text{c}$ (la $l$ se simplifica):\n\n$$F_\\text{c} = \\frac{2\\, m\\, g \\cos\\varphi}{\\sin\\alpha} = \\frac{2 \\cdot 75 \\cdot 9{,}807 \\cdot \\cos 30^\\circ}{\\sin 30^\\circ} = \\frac{1\\,274}{0{,}5} = 2\\,548\\ \\text{N}$$\n\nResultat: **$F_\\text{c} \\approx 2\\,548\\ \\text{N}$** (compressió del cilindre, que empeny la barra)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Pressió a l'interior del cilindre",
+            "cos": "La força la fa l'oli empenyent el pistó per la cara sense tija (el cilindre s'allarga per aixecar), sobre la secció completa:\n\n$$S = \\frac{\\pi\\, d_\\text{int}^2}{4} = \\frac{\\pi \\cdot 0{,}04^2}{4} = 1{,}2566 \\cdot 10^{-3}\\ \\text{m}^2$$\n\n$$p_\\text{int} = \\frac{F_\\text{c}}{S} = \\frac{2\\,548}{1{,}2566 \\cdot 10^{-3}} = 2{,}028 \\cdot 10^6\\ \\text{Pa}$$\n\nResultat: **$p_\\text{int} \\approx 2{,}028\\ \\text{MPa}$** (pressió relativa)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Forces: $m\\,g$ a C (vertical avall), $F_\\text{c}$ a B (direcció PB, angle $\\alpha$ amb la barra), $F_\\text{H}$ i $F_\\text{V}$ a O"},
-          {"apartat": "b", "valor": "$\\alpha = (90^\\circ - \\varphi)/2$"},
-          {"apartat": "c", "valor": "$F_\\text{c} \\approx 2\\,548\\ \\text{N}$"},
-          {"apartat": "d", "valor": "$p_\\text{int} \\approx 2{,}028\\ \\text{MPa}$"}
+          {
+            "apartat": "a",
+            "valor": "Forces: $m\\,g$ a C (vertical avall), $F_\\text{c}$ a B (direcció PB, angle $\\alpha$ amb la barra), $F_\\text{H}$ i $F_\\text{V}$ a O"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\alpha = (90^\\circ - \\varphi)/2$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$F_\\text{c} \\approx 2\\,548\\ \\text{N}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$p_\\text{int} \\approx 2{,}028\\ \\text{MPa}$"
+          }
         ],
         "nota": "Error típic a l'apartat c: usar $\\cos\\alpha$ en lloc de $\\sin\\alpha$ (cal la component **perpendicular** a la barra) o prendre el braç del pes com $2l$ en lloc de la distància horitzontal $2l\\cos\\varphi$."
       }
@@ -326,35 +772,108 @@
       "punts": 2.5,
       "titol": "Espremedora amb motor de corrent continu i reductor d'engranatges",
       "tema": "maquines-electriques",
-      "temes_secundaris": ["mecanismes"],
-      "conceptes": ["motor de corrent continu", "corba parell-velocitat", "relació de transmissió", "rendiment", "potència elèctrica"],
+      "temes_secundaris": [
+        "mecanismes",
+        "circuits",
+        "mecanica"
+      ],
+      "conceptes": [
+        "motor de corrent continu",
+        "relació de transmissió",
+        "reductor",
+        "rendiment",
+        "potència elèctrica",
+        "parell motor",
+        "velocitat angular"
+      ],
       "dificultat": 2,
-      "pagines": [12, 13],
+      "curs": "1r",
+      "curs_motiu": "Motor de corrent continu (potència, parell, rendiment), que és de 1r.",
+      "pagines": [
+        12,
+        13
+      ],
       "enunciat": "Una espremedora domèstica per a fer suc de taronja està formada per un motor elèctric de corrent continu d'imants permanents i un reductor d'engranatges, la sortida del qual fa girar la peça en forma de con que permet extreure suc de les taronges. El parell del motor és donat per l'expressió\n\n$$\\Gamma_\\text{mot} = (0{,}08\\,U - 0{,}01\\,\\omega)\\ \\text{N m},$$\n\nen què $U = 24\\ \\text{V}$ és la tensió d'alimentació del motor i $\\omega$ és la seva velocitat angular (en rad/s). La sortida del motor està connectada a l'entrada del reductor. Aquest està format per un pinyó de $z_\\text{p} = 9$ dents que engrana amb una roda dentada de $z_\\text{r} = 62$ dents.",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Determineu la relació de transmissió $\\tau = \\omega_\\text{sortida}/\\omega_\\text{entrada}$ del reductor.", "punts": 0.5},
-        {"id": "b", "enunciat": "Dibuixeu, indicant les escales, la corba característica parell-velocitat del motor i determineu-ne la velocitat de gir màxima, $n_\\text{màx}$.", "punts": 0.5},
-        {"id": "c", "enunciat": "En règim nominal, el motor gira a $n_\\text{mot} = 1\\,000\\ \\text{min}^{-1}$ i té un rendiment $\\eta = 0{,}55$. Per a aquesta situació, determineu: La intensitat $I$ que circula pel motor.", "punts": 1},
-        {"id": "d", "enunciat": "En règim nominal ($n_\\text{mot} = 1\\,000\\ \\text{min}^{-1}$), determineu: La velocitat angular $\\omega_\\text{con}$ de la peça en forma de con que extreu el suc de les taronges.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Determineu la relació de transmissió $\\tau = \\omega_\\text{sortida}/\\omega_\\text{entrada}$ del reductor.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Dibuixeu, indicant les escales, la corba característica parell-velocitat del motor i determineu-ne la velocitat de gir màxima, $n_\\text{màx}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "En règim nominal, el motor gira a $n_\\text{mot} = 1\\,000\\ \\text{min}^{-1}$ i té un rendiment $\\eta = 0{,}55$. Per a aquesta situació, determineu: La intensitat $I$ que circula pel motor.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "En règim nominal ($n_\\text{mot} = 1\\,000\\ \\text{min}^{-1}$), determineu: La velocitat angular $\\omega_\\text{con}$ de la peça en forma de con que extreu el suc de les taronges.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Parell del motor: $\\Gamma_\\text{mot} = 0{,}08\\,U - 0{,}01\\,\\omega$ (N m, amb $\\omega$ en rad/s)\n- Tensió: $U = 24\\ \\text{V}$ → $\\Gamma_\\text{mot} = 1{,}92 - 0{,}01\\,\\omega$\n- Reductor: pinyó $z_\\text{p} = 9$ (entrada, al motor), roda $z_\\text{r} = 62$ (sortida, al con)\n- Règim nominal: $n_\\text{mot} = 1\\,000\\ \\text{min}^{-1}$, $\\eta = 0{,}55$\n- Incògnites: $\\tau$, $n_\\text{màx}$, $I$, $\\omega_\\text{con}$"},
-          {"apartat": "a", "titol": "Relació de transmissió del reductor", "cos": "En dues rodes que engranen, la velocitat perifèrica és la mateixa, així que les velocitats angulars són inversament proporcionals al nombre de dents: $\\omega_\\text{p}\\, z_\\text{p} = \\omega_\\text{r}\\, z_\\text{r}$. L'entrada és el pinyó i la sortida la roda:\n\n$$\\tau = \\frac{\\omega_\\text{sortida}}{\\omega_\\text{entrada}} = \\frac{z_\\text{p}}{z_\\text{r}} = \\frac{9}{62} = 0{,}1452$$\n\nResultat: **$\\tau = 0{,}1452$** (és un reductor: la sortida gira unes 6,9 vegades més lenta)."},
-          {"apartat": "b", "titol": "Punts de la corba parell-velocitat", "cos": "Amb $U = 24\\ \\text{V}$ la corba és una **recta** decreixent: $\\Gamma_\\text{mot} = 1{,}92 - 0{,}01\\,\\omega$. N'hi ha prou amb dos punts:\n\n- **Arrencada** ($\\omega = 0$): $\\Gamma_\\text{mot} = 1{,}92\\ \\text{N m}$ (parell màxim).\n- **Buit** ($\\Gamma_\\text{mot} = 0$): és la velocitat màxima,\n\n$$\\omega_\\text{màx} = \\frac{0{,}08 \\cdot 24}{0{,}01} = 192{,}0\\ \\text{rad/s}$$\n\n$$n_\\text{màx} = \\omega_\\text{màx}\\, \\frac{60}{2\\pi} = 192{,}0 \\cdot \\frac{60}{2\\pi} = 1\\,833\\ \\text{min}^{-1}$$\n\nResultat: **$n_\\text{màx} = 192{,}0\\ \\text{rad/s} = 1\\,833\\ \\text{min}^{-1}$**."},
-          {"apartat": "b", "titol": "Gràfica (solució oficial)", "cos": "Es dibuixa la recta entre $(0;\\ 1{,}92\\ \\text{N m})$ i $(1\\,833\\ \\text{min}^{-1};\\ 0)$, indicant les escales dels eixos (parell en N m a l'eix vertical i velocitat en $\\text{min}^{-1}$ o rad/s a l'horitzontal):\n\n![Corba parell-velocitat del motor](img/tecno/2023-J/e6-sol.png)"},
-          {"apartat": "c", "titol": "Parell i potència mecànica en règim nominal", "cos": "Passem la velocitat nominal a rad/s i substituïm a l'expressió del parell:\n\n$$\\omega_\\text{mot} = n_\\text{mot}\\, \\frac{2\\pi}{60} = 1\\,000 \\cdot \\frac{2\\pi}{60} = 104{,}72\\ \\text{rad/s}$$\n\n$$\\Gamma_\\text{mot} = 1{,}92 - 0{,}01 \\cdot 104{,}72 = 0{,}8728\\ \\text{N m}$$\n\n$$P_\\text{mec} = \\Gamma_\\text{mot}\\, \\omega_\\text{mot} = 0{,}8728 \\cdot 104{,}72 = 91{,}40\\ \\text{W}$$"},
-          {"apartat": "c", "titol": "Potència elèctrica i intensitat", "cos": "El rendiment relaciona la potència mecànica de sortida amb l'elèctrica d'entrada, i en corrent continu $P_\\text{elèctr} = U\\, I$:\n\n$$P_\\text{elèctr} = \\frac{P_\\text{mec}}{\\eta} = \\frac{91{,}40}{0{,}55} = 166{,}2\\ \\text{W}$$\n\n$$I = \\frac{P_\\text{elèctr}}{U} = \\frac{166{,}2}{24} = 6{,}924\\ \\text{A}$$\n\nResultat: **$I \\approx 6{,}924\\ \\text{A}$**."},
-          {"apartat": "d", "titol": "Velocitat angular del con", "cos": "El con està a la sortida del reductor:\n\n$$\\omega_\\text{con} = \\tau\\, \\omega_\\text{mot} = 0{,}1452 \\cdot 104{,}72 = 15{,}20\\ \\text{rad/s}$$\n\nResultat: **$\\omega_\\text{con} \\approx 15{,}20\\ \\text{rad/s}$** ($\\approx 145{,}2\\ \\text{min}^{-1}$)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Parell del motor: $\\Gamma_\\text{mot} = 0{,}08\\,U - 0{,}01\\,\\omega$ (N m, amb $\\omega$ en rad/s)\n- Tensió: $U = 24\\ \\text{V}$ → $\\Gamma_\\text{mot} = 1{,}92 - 0{,}01\\,\\omega$\n- Reductor: pinyó $z_\\text{p} = 9$ (entrada, al motor), roda $z_\\text{r} = 62$ (sortida, al con)\n- Règim nominal: $n_\\text{mot} = 1\\,000\\ \\text{min}^{-1}$, $\\eta = 0{,}55$\n- Incògnites: $\\tau$, $n_\\text{màx}$, $I$, $\\omega_\\text{con}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Relació de transmissió del reductor",
+            "cos": "En dues rodes que engranen, la velocitat perifèrica és la mateixa, així que les velocitats angulars són inversament proporcionals al nombre de dents: $\\omega_\\text{p}\\, z_\\text{p} = \\omega_\\text{r}\\, z_\\text{r}$. L'entrada és el pinyó i la sortida la roda:\n\n$$\\tau = \\frac{\\omega_\\text{sortida}}{\\omega_\\text{entrada}} = \\frac{z_\\text{p}}{z_\\text{r}} = \\frac{9}{62} = 0{,}1452$$\n\nResultat: **$\\tau = 0{,}1452$** (és un reductor: la sortida gira unes 6,9 vegades més lenta)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Punts de la corba parell-velocitat",
+            "cos": "Amb $U = 24\\ \\text{V}$ la corba és una **recta** decreixent: $\\Gamma_\\text{mot} = 1{,}92 - 0{,}01\\,\\omega$. N'hi ha prou amb dos punts:\n\n- **Arrencada** ($\\omega = 0$): $\\Gamma_\\text{mot} = 1{,}92\\ \\text{N m}$ (parell màxim).\n- **Buit** ($\\Gamma_\\text{mot} = 0$): és la velocitat màxima,\n\n$$\\omega_\\text{màx} = \\frac{0{,}08 \\cdot 24}{0{,}01} = 192{,}0\\ \\text{rad/s}$$\n\n$$n_\\text{màx} = \\omega_\\text{màx}\\, \\frac{60}{2\\pi} = 192{,}0 \\cdot \\frac{60}{2\\pi} = 1\\,833\\ \\text{min}^{-1}$$\n\nResultat: **$n_\\text{màx} = 192{,}0\\ \\text{rad/s} = 1\\,833\\ \\text{min}^{-1}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Gràfica (solució oficial)",
+            "cos": "Es dibuixa la recta entre $(0;\\ 1{,}92\\ \\text{N m})$ i $(1\\,833\\ \\text{min}^{-1};\\ 0)$, indicant les escales dels eixos (parell en N m a l'eix vertical i velocitat en $\\text{min}^{-1}$ o rad/s a l'horitzontal):\n\n![Corba parell-velocitat del motor](img/tecno/2023-J/e6-sol.png)"
+          },
+          {
+            "apartat": "c",
+            "titol": "Parell i potència mecànica en règim nominal",
+            "cos": "Passem la velocitat nominal a rad/s i substituïm a l'expressió del parell:\n\n$$\\omega_\\text{mot} = n_\\text{mot}\\, \\frac{2\\pi}{60} = 1\\,000 \\cdot \\frac{2\\pi}{60} = 104{,}72\\ \\text{rad/s}$$\n\n$$\\Gamma_\\text{mot} = 1{,}92 - 0{,}01 \\cdot 104{,}72 = 0{,}8728\\ \\text{N m}$$\n\n$$P_\\text{mec} = \\Gamma_\\text{mot}\\, \\omega_\\text{mot} = 0{,}8728 \\cdot 104{,}72 = 91{,}40\\ \\text{W}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència elèctrica i intensitat",
+            "cos": "El rendiment relaciona la potència mecànica de sortida amb l'elèctrica d'entrada, i en corrent continu $P_\\text{elèctr} = U\\, I$:\n\n$$P_\\text{elèctr} = \\frac{P_\\text{mec}}{\\eta} = \\frac{91{,}40}{0{,}55} = 166{,}2\\ \\text{W}$$\n\n$$I = \\frac{P_\\text{elèctr}}{U} = \\frac{166{,}2}{24} = 6{,}924\\ \\text{A}$$\n\nResultat: **$I \\approx 6{,}924\\ \\text{A}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Velocitat angular del con",
+            "cos": "El con està a la sortida del reductor:\n\n$$\\omega_\\text{con} = \\tau\\, \\omega_\\text{mot} = 0{,}1452 \\cdot 104{,}72 = 15{,}20\\ \\text{rad/s}$$\n\nResultat: **$\\omega_\\text{con} \\approx 15{,}20\\ \\text{rad/s}$** ($\\approx 145{,}2\\ \\text{min}^{-1}$)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$\\tau = 0{,}1452$"},
-          {"apartat": "b", "valor": "Recta de $1{,}92\\ \\text{N m}$ (a $\\omega = 0$) a $0$ (a $\\omega_\\text{màx}$); $n_\\text{màx} = 192{,}0\\ \\text{rad/s} = 1\\,833\\ \\text{min}^{-1}$"},
-          {"apartat": "c", "valor": "$\\Gamma_\\text{mot} = 0{,}8728\\ \\text{N m}$; $P_\\text{mec} = 91{,}40\\ \\text{W}$; $I \\approx 6{,}924\\ \\text{A}$"},
-          {"apartat": "d", "valor": "$\\omega_\\text{con} \\approx 15{,}20\\ \\text{rad/s}$"}
+          {
+            "apartat": "a",
+            "valor": "$\\tau = 0{,}1452$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Recta de $1{,}92\\ \\text{N m}$ (a $\\omega = 0$) a $0$ (a $\\omega_\\text{màx}$); $n_\\text{màx} = 192{,}0\\ \\text{rad/s} = 1\\,833\\ \\text{min}^{-1}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\Gamma_\\text{mot} = 0{,}8728\\ \\text{N m}$; $P_\\text{mec} = 91{,}40\\ \\text{W}$; $I \\approx 6{,}924\\ \\text{A}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$\\omega_\\text{con} \\approx 15{,}20\\ \\text{rad/s}$"
+          }
         ],
         "nota": "Error típic: substituir $n = 1\\,000$ (en $\\text{min}^{-1}$) directament a l'expressió del parell, que demana $\\omega$ en rad/s (donaria un parell negatiu). També cal no oblidar el rendiment: $P_\\text{mec}/U$ donaria $3{,}81\\ \\text{A}$."
       }

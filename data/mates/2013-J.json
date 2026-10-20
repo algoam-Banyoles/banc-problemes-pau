@@ -24,12 +24,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "vector normal",
-        "equació contínua de la recta",
-        "equació general del pla",
+        "equacions de la recta",
+        "equació del pla",
         "plans paral·lels",
         "recta perpendicular a un pla"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         3
       ],
@@ -93,12 +95,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "producte de matrius",
-        "matriu identitat",
+        "igualtat de matrius",
         "matriu inversa",
-        "determinant",
-        "igualtat de matrius"
+        "determinant"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         3
       ],
@@ -174,12 +177,15 @@
       ],
       "conceptes": [
         "àrea entre corbes",
-        "integral definida",
         "regla de Barrow",
-        "canvi de variable",
-        "esbós de funcions"
+        "esbós de la gràfica",
+        "punts d'intersecció de corbes",
+        "integral quasi immediata",
+        "canvi de variable"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         3
       ],
@@ -254,10 +260,12 @@
       "conceptes": [
         "producte vectorial",
         "àrea d'un triangle",
-        "equacions paramètriques de la recta",
-        "mòdul d'un vector"
+        "punt genèric d'una recta",
+        "equacions de la recta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         4
       ],
@@ -314,17 +322,18 @@
       "titol": "Con de volum màxim inscrit en una semiesfera",
       "tema": "optimitzacio",
       "temes_secundaris": [
-        "derivades",
-        "geometria"
+        "derivades"
       ],
       "conceptes": [
-        "optimització",
-        "volum del con",
         "teorema de Pitàgores",
-        "derivada segona",
-        "màxim relatiu"
+        "volum de cossos geomètrics",
+        "lligadura",
+        "extrems relatius",
+        "criteri de la derivada segona"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         4
       ],
@@ -410,12 +419,12 @@
       ],
       "conceptes": [
         "recta tangent",
-        "pendent",
-        "rectes paral·leles",
         "sistema d'equacions lineals",
-        "polinomis"
+        "sistema compatible determinat"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Recta tangent i pendent amb un sistema lineal concret, que és de 1r.",
       "pagines": [
         4
       ],
@@ -464,11 +473,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "sistema d'equacions lineals",
-        "solució d'un sistema",
         "mètode de Gauss",
-        "paràmetres"
+        "sistema compatible determinat"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només cal resoldre un sistema lineal 3x3 concret (Gauss), sense paràmetres a discutir: 1r.",
       "pagines": [
         1
       ],
@@ -517,12 +527,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "àrea entre corbes",
-        "integral definida",
         "regla de Barrow",
-        "paràbola",
-        "simetria"
+        "punts d'intersecció de corbes"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         1
       ],
@@ -586,12 +596,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "matriu inversa",
-        "matriu transposada",
         "producte de matrius",
-        "matriu ortogonal",
-        "radicals"
+        "igualtat de matrius"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         1
       ],
@@ -661,13 +671,14 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
         "teorema de Pitàgores",
-        "àrea del trapezi",
-        "derivada",
-        "regla de la cadena"
+        "àrees de figures planes",
+        "regla de la cadena",
+        "extrems relatius"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         2
       ],
@@ -760,11 +771,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "distància entre dos punts",
-        "equacions paramètriques de la recta",
-        "pla mediador",
-        "triangle isòsceles"
+        "punt genèric d'una recta",
+        "equacions de la recta",
+        "pla mediador"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         2
       ],
@@ -815,10 +828,11 @@
         "recta tangent",
         "gràfica de la derivada",
         "extrems relatius",
-        "monotonia",
-        "punts crítics"
+        "monotonia"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Extrems relatius a partir del signe de f' (monotonia), que és de 2n.",
       "pagines": [
         2
       ],
@@ -895,9 +909,11 @@
         "producte escalar",
         "producte vectorial",
         "plans perpendiculars",
-        "equació contínua de la recta"
+        "equacions de la recta"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         5
       ],
@@ -964,11 +980,15 @@
       "conceptes": [
         "sistema homogeni",
         "determinant",
-        "rang",
+        "regla de Sarrus",
         "teorema de Rouché-Frobenius",
-        "mètode de Gauss"
+        "mètode de Gauss",
+        "sistema compatible indeterminat",
+        "discussió de sistemes"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         5
       ],
@@ -1039,15 +1059,20 @@
       "punts": 2,
       "titol": "Pla per tres punts i punt d'una recta que dona un tetraedre de volum donat",
       "tema": "geometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "matrius"
+      ],
       "conceptes": [
-        "equació general del pla",
+        "equació del pla",
         "producte vectorial",
         "producte mixt",
         "volum del tetraedre",
-        "equacions paramètriques de la recta"
+        "punt genèric d'una recta",
+        "valor absolut"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         5
       ],
@@ -1123,12 +1148,13 @@
       ],
       "conceptes": [
         "recta tangent",
-        "derivada",
-        "integral definida",
         "regla de Barrow",
-        "àrea sota una corba"
+        "àrea sota una corba",
+        "integral quasi immediata"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         6
       ],
@@ -1198,11 +1224,11 @@
       "conceptes": [
         "pla mediador",
         "punt mitjà",
-        "distància entre dos punts",
-        "divisió d'un segment",
-        "vectors"
+        "distància entre dos punts"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         6
       ],
@@ -1272,13 +1298,13 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
-        "àrea del triangle",
-        "derivada segona",
-        "màxim relatiu",
-        "paràbola"
+        "àrees de figures planes",
+        "extrems relatius",
+        "criteri de la derivada segona"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         6
       ],

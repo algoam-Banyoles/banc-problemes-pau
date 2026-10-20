@@ -32,6 +32,8 @@
         "sistema compatible indeterminat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         1
       ],
@@ -111,10 +113,13 @@
       "conceptes": [
         "posició relativa recta-pla",
         "vector normal",
+        "vector director",
         "producte escalar",
         "distància punt-pla"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         1
       ],
@@ -180,14 +185,17 @@
       "punts": 2,
       "titol": "Recta tangent i monotonia de f(x) = x·e^(x−1)",
       "tema": "derivades",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "funcions"
+      ],
       "conceptes": [
         "recta tangent",
-        "derivada del producte",
         "monotonia",
-        "signe de la derivada"
+        "funció exponencial"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Intervals de creixement i decreixement (monotonia), que és de 2n.",
       "pagines": [
         1
       ],
@@ -261,11 +269,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "producte de matrius",
-        "matriu inversa",
         "equació matricial",
-        "matriu identitat"
+        "matriu inversa",
+        "propietats de les matrius",
+        "igualtat de matrius"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         2
       ],
@@ -333,16 +344,20 @@
       "tema": "optimitzacio",
       "temes_secundaris": [
         "geometria",
+        "matrius",
         "derivades"
       ],
       "conceptes": [
         "volum del tetraedre",
         "producte mixt",
         "determinant",
-        "optimització",
-        "derivada segona"
+        "valor absolut",
+        "extrems relatius",
+        "criteri de la derivada segona"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         2
       ],
@@ -415,12 +430,13 @@
       "tema": "integrals",
       "temes_secundaris": [],
       "conceptes": [
+        "punts d'intersecció de corbes",
         "àrea entre corbes",
-        "integral definida",
-        "regla de Barrow",
-        "punts d'intersecció"
+        "regla de Barrow"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         2
       ],
@@ -494,9 +510,12 @@
         "rang",
         "sistema homogeni",
         "sistema incompatible",
-        "determinant"
+        "determinant",
+        "sistema compatible indeterminat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Sistema en forma matricial classificat per rangs (Rouché-Frobenius), que és de 2n.",
       "pagines": [
         3
       ],
@@ -564,12 +583,15 @@
       "tema": "geometria",
       "temes_secundaris": [],
       "conceptes": [
-        "simetria respecte d'un pla",
+        "punt simètric",
         "punt mitjà",
         "vector normal",
-        "equació vectorial de la recta"
+        "equacions de la recta",
+        "punt genèric d'una recta"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         3
       ],
@@ -644,13 +666,15 @@
         "funcions"
       ],
       "conceptes": [
-        "màxims i mínims relatius",
+        "extrems relatius",
         "punt d'inflexió",
-        "derivada segona",
+        "criteri de la derivada segona",
         "teorema de Bolzano",
-        "recta tangent horitzontal"
+        "continuïtat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Extrems, inflexió i Bolzano aplicat a f', que són de 2n.",
       "pagines": [
         4
       ],
@@ -726,9 +750,12 @@
         "matriu inversa",
         "producte de matrius",
         "equació matricial",
+        "propietats de les matrius",
         "determinant"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         4
       ],
@@ -804,9 +831,12 @@
         "posició relativa de dues rectes",
         "producte vectorial",
         "perpendicular comuna",
-        "equació paramètrica de la recta"
+        "equacions de la recta",
+        "producte escalar"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         4
       ],
@@ -883,10 +913,13 @@
       "conceptes": [
         "primitiva",
         "integració per parts",
-        "condició inicial",
-        "recta tangent"
+        "constant d'integració",
+        "recta tangent",
+        "funció exponencial"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         4
       ],

@@ -21,15 +21,19 @@
       "punts": 2,
       "titol": "Meteosat en òrbita geoestacionària: altura, energia cinètica i energia per escapar de la Terra",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "òrbita geoestacionària",
-        "satèl·lit",
-        "energia cinètica orbital",
-        "energia mecànica",
-        "velocitat d'escapament"
+        "òrbita circular",
+        "energia mecànica orbital",
+        "velocitat d'escapament",
+        "MCU",
+        "força centrípeta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): òrbita geoestacionària, satèl·lit",
       "pagines": [
         1
       ],
@@ -110,9 +114,11 @@
         "camp elèctric",
         "potencial elèctric",
         "principi de superposició",
-        "treball del camp elèctric"
+        "treball elèctric"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, potencial elèctric",
       "pagines": [
         1
       ],
@@ -196,11 +202,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "efecte fotoelèctric",
-        "funció de treball",
-        "longitud d'ona llindar",
-        "energia del fotó"
+        "treball d'extracció",
+        "freqüència llindar",
+        "energia del fotó",
+        "nombre de fotons"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, funció de treball",
       "pagines": [
         2
       ],
@@ -274,11 +283,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "transformador",
-        "relació de transformació",
-        "conservació de la potència",
-        "inducció electromagnètica"
+        "llei de Faraday",
+        "flux magnètic"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): transformador, relació de transformació",
       "pagines": [
         2
       ],
@@ -347,12 +357,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "ones estacionàries",
-        "tub tancat per un extrem",
+        "tubs sonors",
         "harmònics",
-        "freqüència fonamental",
-        "velocitat del so"
+        "velocitat de propagació",
+        "longitud d'ona"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub tancat per un extrem",
       "pagines": [
         2
       ],
@@ -425,13 +437,16 @@
       "tema": "nuclear",
       "temes_secundaris": [],
       "conceptes": [
-        "datació per carboni 14",
+        "datació radioactiva",
         "llei de desintegració radioactiva",
         "període de semidesintegració",
         "desintegració beta",
-        "defecte de massa"
+        "defecte de massa",
+        "equació nuclear"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): datació per carboni 14, llei de desintegració radioactiva",
       "pagines": [
         3
       ],
@@ -513,10 +528,12 @@
       "conceptes": [
         "flux magnètic",
         "llei de Faraday",
-        "força electromotriu induïda",
-        "moviment harmònic simple"
+        "moviment harmònic simple",
+        "conductor en moviment"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de Faraday",
       "pagines": [
         3
       ],
@@ -595,12 +612,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "nivell d'intensitat sonora",
-        "decibel",
-        "intensitat del so",
-        "potència sonora",
-        "llindar d'audició"
+        "intensitat sonora",
+        "potència sonora"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): nivell d'intensitat sonora, decibel",
       "pagines": [
         4
       ],
@@ -666,14 +683,18 @@
       "punts": 2,
       "titol": "Meteorit que cau sobre la Lluna: velocitat d'impacte i comparació amb l'energia d'una òrbita",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "conservació de l'energia mecànica",
+        "conservació de l'energia",
         "energia potencial gravitatòria",
         "energia mecànica orbital",
-        "velocitat d'impacte"
+        "MCU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): conservació de l'energia mecànica, energia potencial gravitatòria",
       "pagines": [
         5
       ],
@@ -755,10 +776,13 @@
       "conceptes": [
         "camp elèctric uniforme",
         "diferència de potencial",
-        "teorema de l'energia cinètica",
-        "acceleració de partícules"
+        "conservació de l'energia",
+        "acceleració de partícules carregades",
+        "MRUA"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, diferència de potencial",
       "pagines": [
         6
       ],
@@ -842,6 +866,8 @@
         "període de semidesintegració"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, equació nuclear",
       "pagines": [
         6
       ],
@@ -906,13 +932,15 @@
         "camp-magnetic"
       ],
       "conceptes": [
-        "força electromotriu induïda",
         "llei de Faraday",
         "llei de Lenz",
-        "força magnètica sobre un corrent",
-        "llei d'Ohm"
+        "força sobre un corrent",
+        "conductor en moviment",
+        "flux magnètic"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): força electromotriu induïda, llei de Faraday",
       "pagines": [
         7
       ],
@@ -996,12 +1024,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "moviment harmònic simple",
-        "freqüència",
-        "amplitud",
-        "equació del moviment",
+        "freqüència angular",
+        "equació del MHS",
         "velocitat i acceleració màximes"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, freqüència",
       "pagines": [
         7
       ],
@@ -1076,10 +1105,12 @@
       "conceptes": [
         "efecte fotoelèctric",
         "treball d'extracció",
-        "longitud d'ona de de broglie",
+        "longitud d'ona de De Broglie",
         "energia del fotó"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, treball d'extracció",
       "pagines": [
         7
       ],
@@ -1145,14 +1176,18 @@
       "punts": 2,
       "titol": "Protons que entren en un camp magnètic horitzontal: força de Lorentz i radi de la trajectòria",
       "tema": "camp-magnetic",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "força de lorentz",
-        "producte vectorial",
-        "moviment circular uniforme",
+        "força de Lorentz",
+        "regla de la mà dreta",
+        "MCU",
         "radi de la trajectòria"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): força de lorentz, producte vectorial",
       "pagines": [
         8
       ],
@@ -1221,12 +1256,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "ones estacionàries",
-        "corda fixa pels dos extrems",
+        "corda vibrant",
         "harmònics",
-        "nodes i ventres",
         "velocitat de propagació"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, corda fixa pels dos extrems",
       "pagines": [
         8
       ],

@@ -21,32 +21,98 @@
       "titol": "Triangle rectangle amb la circumferència inscrita tangent en un punt donat i circumferència circumscrita",
       "tema": "geometria-plana",
       "temes_secundaris": [],
-      "conceptes": ["triangle rectangle", "circumferència inscrita", "circumferència circumscrita", "bisectriu", "incentre", "escala"],
+      "conceptes": [
+        "construcció de triangles",
+        "circumferència inscrita",
+        "circumferència circumscrita",
+        "bisectriu",
+        "incentre",
+        "escala",
+        "teorema de Tales"
+      ],
       "dificultat": 2,
-      "pagines": [5],
+      "curs": "1r",
+      "curs_motiu": "Triangle amb incentre, bisectrius i arc capaç: llocs geomètrics (DT I).",
+      "pagines": [
+        5
+      ],
       "enunciat": "Tema: Geometria plana. Es donen dues rectes $R$ i $S$ i un punt $T$ sobre la recta $R$ (vegeu la figura).",
-      "figures": [{"src": "img/dibuix/2023-J/1A.png", "peu": "Dades: rectes R i S i punt T sobre R"}],
+      "figures": [
+        {
+          "src": "img/dibuix/2023-J/1A.png",
+          "peu": "Dades: rectes R i S i punt T sobre R"
+        }
+      ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu un triangle rectangle de manera que tingui la hipotenusa sobre la recta $R$, un catet sobre la recta $S$ i que la seva circumferència inscrita sigui tangent a la recta $R$ en el punt $T$.", "punts": 1.5},
-        {"id": "b", "enunciat": "Dibuixeu la circumferència circumscrita al triangle de l'apartat anterior.", "punts": 1},
-        {"id": "c", "enunciat": "Determineu el valor real de la hipotenusa en metres tenint en compte que el dibuix està fet a escala 1:25, i escriviu-lo en la casella situada a la part inferior de la pàgina.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu un triangle rectangle de manera que tingui la hipotenusa sobre la recta $R$, un catet sobre la recta $S$ i que la seva circumferència inscrita sigui tangent a la recta $R$ en el punt $T$.",
+          "punts": 1.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Dibuixeu la circumferència circumscrita al triangle de l'apartat anterior.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Determineu el valor real de la hipotenusa en metres tenint en compte que el dibuix està fet a escala 1:25, i escriviu-lo en la casella situada a la part inferior de la pàgina.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": "a", "titol": "Anàlisi: què sabem del triangle", "cos": "Si la hipotenusa és sobre $R$ i un catet sobre $S$, el vèrtex comú d'aquests dos costats és el punt on es tallen $R$ i $S$. L'anomenem $B$: és un dels vèrtexs aguts. L'angle recte, $C$, és a la recta $S$, i el tercer vèrtex, $A$, és a la recta $R$.\n\nLa circumferència inscrita és tangent als tres costats; en particular és tangent a $R$ (en $T$) i a $S$. Per tant el seu centre (l'**incentre** $I$) ha de complir dues condicions alhora:\n\n- és a la **bisectriu** de l'angle que formen $R$ i $S$, perquè equidista de totes dues rectes;\n- és a la **perpendicular a $R$ per $T$**, perquè el radi que va al punt de tangència és perpendicular a la tangent."},
-          {"apartat": "a", "titol": "Vèrtex B i bisectriu de l'angle R-S", "cos": "Allargueu les rectes $R$ i $S$ cap a la dreta fins que es tallin: aquest punt és el vèrtex $B$.\n\nTraceu la bisectriu de l'angle en $B$ amb el compàs: un arc amb centre $B$ talla $R$ i $S$ en dos punts; des de cadascun, dos arcs iguals es tallen en un punt de la bisectriu. Uniu-lo amb $B$."},
-          {"apartat": "a", "titol": "Incentre I i circumferència inscrita", "cos": "Per $T$ traceu la perpendicular a $R$. On talla la bisectriu hi ha l'incentre $I$. El radi de la circumferència inscrita és $r = IT$.\n\nDes de $I$ traceu la perpendicular a $S$: el peu és el punt de tangència $T_S$ de la circumferència amb el catet. Comproveu que $IT_S = IT$ (si no, la bisectriu o la perpendicular estan mal traçades). Dibuixeu la circumferència de centre $I$ i radi $r$."},
-          {"apartat": "a", "titol": "Vèrtex de l'angle recte C i tercer vèrtex A", "cos": "En un triangle rectangle, l'incentre, els dos punts de tangència dels catets i el vèrtex de l'angle recte formen un **quadrat** de costat $r$ (tots els angles són rectes i dos costats consecutius són radis). Per tant, el vèrtex $C$ és sobre $S$, a una distància $r$ de $T_S$, en el sentit que s'allunya de $B$. També el podeu trobar com el punt de $S$ on la recta paral·lela a $IT_S$ a distància $r$ (cap enfora) talla $S$.\n\nPer $C$ traceu la perpendicular a $S$: és l'altre catet. Ha de ser tangent a la circumferència inscrita (comproveu-ho: el seu punt de tangència és a distància $r$ de $C$). On talla la recta $R$ hi ha el vèrtex $A$.\n\nRemarqueu amb traç gruixut el triangle $ABC$: hipotenusa $AB$ sobre $R$, catet $BC$ sobre $S$ i catet $CA$ perpendicular a $S$."},
-          {"apartat": "b", "titol": "Circumferència circumscrita (teorema de Tales)", "cos": "En un triangle rectangle, l'angle recte veu la hipotenusa amb $90^\\circ$; per l'**arc capaç de 90°** (teorema de Tales), el vèrtex $C$ és a la circumferència que té la hipotenusa com a diàmetre. Per tant el **circumcentre és el punt mitjà $M$ de la hipotenusa** $AB$.\n\nTraceu la mediatriu de $AB$ (dos arcs de radi més gran que la meitat de $AB$ des de $A$ i des de $B$) i obteniu $M$. Dibuixeu la circumferència de centre $M$ i radi $MA = MB$. Comproveu que passa per $C$ (també podeu comprovar que la mediatriu del catet $BC$ passa per $M$, com fa la solució oficial)."},
-          {"apartat": "c", "titol": "Valor real de la hipotenusa", "cos": "Mesureu la hipotenusa al dibuix amb el regle: $AB = 15\\ \\text{cm}$ (és a dir, radi de la circumscrita $7{,}5\\ \\text{cm}$).\n\nA escala 1:25, cada centímetre del dibuix són 25 cm reals:\n\n$$AB_\\text{real} = 15\\ \\text{cm} \\cdot 25 = 375\\ \\text{cm} = 3{,}75\\ \\text{m}$$\n\nResultat: **hipotenusa = 3,75 m**."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2023-J/1A-sol.png)"}
+          {
+            "apartat": "a",
+            "titol": "Anàlisi: què sabem del triangle",
+            "cos": "Si la hipotenusa és sobre $R$ i un catet sobre $S$, el vèrtex comú d'aquests dos costats és el punt on es tallen $R$ i $S$. L'anomenem $B$: és un dels vèrtexs aguts. L'angle recte, $C$, és a la recta $S$, i el tercer vèrtex, $A$, és a la recta $R$.\n\nLa circumferència inscrita és tangent als tres costats; en particular és tangent a $R$ (en $T$) i a $S$. Per tant el seu centre (l'**incentre** $I$) ha de complir dues condicions alhora:\n\n- és a la **bisectriu** de l'angle que formen $R$ i $S$, perquè equidista de totes dues rectes;\n- és a la **perpendicular a $R$ per $T$**, perquè el radi que va al punt de tangència és perpendicular a la tangent."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vèrtex B i bisectriu de l'angle R-S",
+            "cos": "Allargueu les rectes $R$ i $S$ cap a la dreta fins que es tallin: aquest punt és el vèrtex $B$.\n\nTraceu la bisectriu de l'angle en $B$ amb el compàs: un arc amb centre $B$ talla $R$ i $S$ en dos punts; des de cadascun, dos arcs iguals es tallen en un punt de la bisectriu. Uniu-lo amb $B$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Incentre I i circumferència inscrita",
+            "cos": "Per $T$ traceu la perpendicular a $R$. On talla la bisectriu hi ha l'incentre $I$. El radi de la circumferència inscrita és $r = IT$.\n\nDes de $I$ traceu la perpendicular a $S$: el peu és el punt de tangència $T_S$ de la circumferència amb el catet. Comproveu que $IT_S = IT$ (si no, la bisectriu o la perpendicular estan mal traçades). Dibuixeu la circumferència de centre $I$ i radi $r$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vèrtex de l'angle recte C i tercer vèrtex A",
+            "cos": "En un triangle rectangle, l'incentre, els dos punts de tangència dels catets i el vèrtex de l'angle recte formen un **quadrat** de costat $r$ (tots els angles són rectes i dos costats consecutius són radis). Per tant, el vèrtex $C$ és sobre $S$, a una distància $r$ de $T_S$, en el sentit que s'allunya de $B$. També el podeu trobar com el punt de $S$ on la recta paral·lela a $IT_S$ a distància $r$ (cap enfora) talla $S$.\n\nPer $C$ traceu la perpendicular a $S$: és l'altre catet. Ha de ser tangent a la circumferència inscrita (comproveu-ho: el seu punt de tangència és a distància $r$ de $C$). On talla la recta $R$ hi ha el vèrtex $A$.\n\nRemarqueu amb traç gruixut el triangle $ABC$: hipotenusa $AB$ sobre $R$, catet $BC$ sobre $S$ i catet $CA$ perpendicular a $S$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Circumferència circumscrita (teorema de Tales)",
+            "cos": "En un triangle rectangle, l'angle recte veu la hipotenusa amb $90^\\circ$; per l'**arc capaç de 90°** (teorema de Tales), el vèrtex $C$ és a la circumferència que té la hipotenusa com a diàmetre. Per tant el **circumcentre és el punt mitjà $M$ de la hipotenusa** $AB$.\n\nTraceu la mediatriu de $AB$ (dos arcs de radi més gran que la meitat de $AB$ des de $A$ i des de $B$) i obteniu $M$. Dibuixeu la circumferència de centre $M$ i radi $MA = MB$. Comproveu que passa per $C$ (també podeu comprovar que la mediatriu del catet $BC$ passa per $M$, com fa la solució oficial)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Valor real de la hipotenusa",
+            "cos": "Mesureu la hipotenusa al dibuix amb el regle: $AB = 15\\ \\text{cm}$ (és a dir, radi de la circumscrita $7{,}5\\ \\text{cm}$).\n\nA escala 1:25, cada centímetre del dibuix són 25 cm reals:\n\n$$AB_\\text{real} = 15\\ \\text{cm} \\cdot 25 = 375\\ \\text{cm} = 3{,}75\\ \\text{m}$$\n\nResultat: **hipotenusa = 3,75 m**."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2023-J/1A-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Triangle rectangle $ABC$: $B = R \\cap S$, incentre $I$ = bisectriu de l'angle en $B$ ∩ perpendicular a $R$ per $T$; angle recte $C$ sobre $S$."},
-          {"apartat": "b", "valor": "Circumferència circumscrita de centre el punt mitjà de la hipotenusa i radi $7{,}5\\ \\text{cm}$ (al dibuix)."},
-          {"apartat": "c", "valor": "Hipotenusa: $15\\ \\text{cm} \\cdot 25 = 3{,}75\\ \\text{m}$"}
+          {
+            "apartat": "a",
+            "valor": "Triangle rectangle $ABC$: $B = R \\cap S$, incentre $I$ = bisectriu de l'angle en $B$ ∩ perpendicular a $R$ per $T$; angle recte $C$ sobre $S$."
+          },
+          {
+            "apartat": "b",
+            "valor": "Circumferència circumscrita de centre el punt mitjà de la hipotenusa i radi $7{,}5\\ \\text{cm}$ (al dibuix)."
+          },
+          {
+            "apartat": "c",
+            "valor": "Hipotenusa: $15\\ \\text{cm} \\cdot 25 = 3{,}75\\ \\text{m}$"
+          }
         ],
         "nota": "Error típic: posar l'angle recte en el punt on es tallen R i S. Aquell vèrtex és agut, perquè la hipotenusa i un catet sempre formen un angle agut. Les mesures són les de la làmina original (A4); si l'imprimiu a una altra mida, les distàncies canvien."
       }
@@ -60,27 +126,74 @@
       "punts": 3,
       "titol": "Figura semblant a escala doble formada per segments i arcs enllaçats",
       "tema": "geometria-plana",
-      "temes_secundaris": ["transformacions"],
-      "conceptes": ["semblança", "escala", "tangències i enllaços", "arcs de circumferència", "transport d'angles"],
+      "temes_secundaris": [
+        "transformacions"
+      ],
+      "conceptes": [
+        "semblança",
+        "escala",
+        "enllaç d'arcs",
+        "transport d'angles"
+      ],
       "dificultat": 2,
-      "pagines": [7],
+      "curs": "1r",
+      "curs_motiu": "Figura semblant a escala doble amb enllaços tangents: semblança i tangències bàsiques (DT I).",
+      "pagines": [
+        7
+      ],
       "enunciat": "Tema: Geometria plana.\n\nDibuixeu una figura semblant a la donada a escala doble de manera que el segment $AB$ se situï sobre el segment $A'B'$. Deixeu constància del procés gràfic seguit. [0,25 punts per cada segment o arc de circumferència]",
-      "figures": [{"src": "img/dibuix/2023-J/1B.png", "peu": "Figura donada (cotes en cm) i posició del segment A′B′"}],
+      "figures": [
+        {
+          "src": "img/dibuix/2023-J/1B.png",
+          "peu": "Figura donada (cotes en cm) i posició del segment A′B′"
+        }
+      ],
       "opcions": {},
       "apartats": [],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Què vol dir una figura semblant a escala doble", "cos": "Una figura semblant té **els mateixos angles** i **totes les longituds multiplicades per la mateixa raó**, aquí $k = 2$. Per tant:\n\n- els segments mesuren el doble: $1{,}5 \\to 3$, $1 \\to 2$, $2 \\to 4$, $AB \\to A'B'$;\n- els radis dels arcs es dupliquen: $R1 \\to R2$, $R1{,}5 \\to R3$, $R2 \\to R4$;\n- els angles es conserven: $15^\\circ$, $45^\\circ$, $90^\\circ$, $150^\\circ$.\n\nComproveu primer que $A'B'$ mesura el doble de $AB$ (uns $2\\ \\text{cm} \\to 4\\ \\text{cm}$). La figura queda girada: el segment $AB$, que era horitzontal, passa a la direcció $A'B'$, i la figura queda a la mateixa banda del segment que a l'original (anant de $A'$ cap a $B'$, a l'esquerra, és a dir, a la dreta de la recta $A'B'$ al paper)."},
-          {"apartat": null, "titol": "Mètode de treball: recórrer el contorn", "cos": "La figura és una cadena tancada de segments i arcs **tangents** entre ells (enllaços). Es construeix recorrent-la a partir de $A'B'$ i, a cada element:\n\n- per a un **segment**: es transporta l'angle que forma amb la direcció de $AB$ (amb el transportador o copiant l'angle amb el compàs) i se n'agafa la longitud doble;\n- per a un **arc tangent**: el centre és a la **perpendicular al segment pel punt de tangència**, a una distància igual al radi doble; l'arc acaba on comença el segment o arc següent, que hi ha de ser tangent (el punt de tangència és a la recta que uneix els centres de dos arcs consecutius, o al peu de la perpendicular des del centre al segment).\n\nA cada canvi d'element marqueu el punt de tangència amb una petita ratlla, com a l'original."},
-          {"apartat": null, "titol": "Costats de l'esquerra de la figura original", "cos": "Des de $A'$ (que correspon a $A$), continueu el segment de base fins on comença l'arc $R1$ de la cantonada inferior esquerra de l'original. El centre d'aquest arc és a la perpendicular a la recta $A'B'$ pel punt de tangència, a distància $2$ (radi doble).\n\nVénen després l'arc còncau $R1{,}5 \\to R3$ (el centre del qual és a la recta auxiliar que forma $45^\\circ$, com a l'original) i l'arc $R1 \\to R2$ de l'extrem esquerre. Cada centre es troba amb la condició de tangència amb l'element anterior: si dos arcs són tangents, la distància entre centres és la suma (tangència exterior) o la diferència (interior) dels radis."},
-          {"apartat": null, "titol": "Costat superior de l'original: segment de 15° i arc R2", "cos": "El segment de $1{,}5$ de l'original forma $15^\\circ$ amb la direcció de $AB$. A la còpia, mesura $3$ i forma $15^\\circ$ amb la recta $A'B'$ (a la solució oficial queda gairebé paral·lel a $A'B'$).\n\nA continuació hi ha l'arc $R2 \\to R4$, que connecta amb el segment següent; els dos segments que l'envolten formen $150^\\circ$ (angle que es conserva). El centre de l'arc és a la bisectriu d'aquest angle i a distància $4$ (radi doble) de tots dos segments."},
-          {"apartat": null, "titol": "Part dreta de l'original: arc R1, segment 1, arc R1 i segment 2", "cos": "Segueixen l'arc $R1 \\to R2$ (el bony superior dret), el segment de longitud $1 \\to 2$, l'arc $R1 \\to R2$ que gira $90^\\circ$ (el centre és a la intersecció de les perpendiculars als dos segments que enllaça, perquè formen $90^\\circ$) i el segment de $2 \\to 4$ que forma $45^\\circ$ amb la direcció de $AB$."},
-          {"apartat": null, "titol": "Tancament amb l'arc R2 fins a B′", "cos": "Finalment, l'arc $R2 \\to R4$ enllaça el segment inclinat de $45^\\circ$ amb el segment de base $A'B'$: el seu centre és a la perpendicular a $A'B'$ per $B'$ (o per l'extrem del segment de base), a distància $4$, i també a distància $4$ del segment inclinat.\n\n**Comprovació**: la figura ha de tancar sense forçar res. Si no tanca, hi ha algun angle o longitud mal transportat. Comproveu també que les cotes de la còpia són el doble (per exemple $3$, $2$ i $4$ als segments)."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2023-J/1B-sol.png)"}
+          {
+            "apartat": null,
+            "titol": "Què vol dir una figura semblant a escala doble",
+            "cos": "Una figura semblant té **els mateixos angles** i **totes les longituds multiplicades per la mateixa raó**, aquí $k = 2$. Per tant:\n\n- els segments mesuren el doble: $1{,}5 \\to 3$, $1 \\to 2$, $2 \\to 4$, $AB \\to A'B'$;\n- els radis dels arcs es dupliquen: $R1 \\to R2$, $R1{,}5 \\to R3$, $R2 \\to R4$;\n- els angles es conserven: $15^\\circ$, $45^\\circ$, $90^\\circ$, $150^\\circ$.\n\nComproveu primer que $A'B'$ mesura el doble de $AB$ (uns $2\\ \\text{cm} \\to 4\\ \\text{cm}$). La figura queda girada: el segment $AB$, que era horitzontal, passa a la direcció $A'B'$, i la figura queda a la mateixa banda del segment que a l'original (anant de $A'$ cap a $B'$, a l'esquerra, és a dir, a la dreta de la recta $A'B'$ al paper)."
+          },
+          {
+            "apartat": null,
+            "titol": "Mètode de treball: recórrer el contorn",
+            "cos": "La figura és una cadena tancada de segments i arcs **tangents** entre ells (enllaços). Es construeix recorrent-la a partir de $A'B'$ i, a cada element:\n\n- per a un **segment**: es transporta l'angle que forma amb la direcció de $AB$ (amb el transportador o copiant l'angle amb el compàs) i se n'agafa la longitud doble;\n- per a un **arc tangent**: el centre és a la **perpendicular al segment pel punt de tangència**, a una distància igual al radi doble; l'arc acaba on comença el segment o arc següent, que hi ha de ser tangent (el punt de tangència és a la recta que uneix els centres de dos arcs consecutius, o al peu de la perpendicular des del centre al segment).\n\nA cada canvi d'element marqueu el punt de tangència amb una petita ratlla, com a l'original."
+          },
+          {
+            "apartat": null,
+            "titol": "Costats de l'esquerra de la figura original",
+            "cos": "Des de $A'$ (que correspon a $A$), continueu el segment de base fins on comença l'arc $R1$ de la cantonada inferior esquerra de l'original. El centre d'aquest arc és a la perpendicular a la recta $A'B'$ pel punt de tangència, a distància $2$ (radi doble).\n\nVénen després l'arc còncau $R1{,}5 \\to R3$ (el centre del qual és a la recta auxiliar que forma $45^\\circ$, com a l'original) i l'arc $R1 \\to R2$ de l'extrem esquerre. Cada centre es troba amb la condició de tangència amb l'element anterior: si dos arcs són tangents, la distància entre centres és la suma (tangència exterior) o la diferència (interior) dels radis."
+          },
+          {
+            "apartat": null,
+            "titol": "Costat superior de l'original: segment de 15° i arc R2",
+            "cos": "El segment de $1{,}5$ de l'original forma $15^\\circ$ amb la direcció de $AB$. A la còpia, mesura $3$ i forma $15^\\circ$ amb la recta $A'B'$ (a la solució oficial queda gairebé paral·lel a $A'B'$).\n\nA continuació hi ha l'arc $R2 \\to R4$, que connecta amb el segment següent; els dos segments que l'envolten formen $150^\\circ$ (angle que es conserva). El centre de l'arc és a la bisectriu d'aquest angle i a distància $4$ (radi doble) de tots dos segments."
+          },
+          {
+            "apartat": null,
+            "titol": "Part dreta de l'original: arc R1, segment 1, arc R1 i segment 2",
+            "cos": "Segueixen l'arc $R1 \\to R2$ (el bony superior dret), el segment de longitud $1 \\to 2$, l'arc $R1 \\to R2$ que gira $90^\\circ$ (el centre és a la intersecció de les perpendiculars als dos segments que enllaça, perquè formen $90^\\circ$) i el segment de $2 \\to 4$ que forma $45^\\circ$ amb la direcció de $AB$."
+          },
+          {
+            "apartat": null,
+            "titol": "Tancament amb l'arc R2 fins a B′",
+            "cos": "Finalment, l'arc $R2 \\to R4$ enllaça el segment inclinat de $45^\\circ$ amb el segment de base $A'B'$: el seu centre és a la perpendicular a $A'B'$ per $B'$ (o per l'extrem del segment de base), a distància $4$, i també a distància $4$ del segment inclinat.\n\n**Comprovació**: la figura ha de tancar sense forçar res. Si no tanca, hi ha algun angle o longitud mal transportat. Comproveu també que les cotes de la còpia són el doble (per exemple $3$, $2$ i $4$ als segments)."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2023-J/1B-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Figura semblant de raó 2 sobre $A'B'$: segments de $3$, $2$ i $4$ cm, arcs de radis $R2$, $R3$ i $R4$ i els mateixos angles ($15^\\circ$, $45^\\circ$, $90^\\circ$, $150^\\circ$)."}
+          {
+            "apartat": null,
+            "valor": "Figura semblant de raó 2 sobre $A'B'$: segments de $3$, $2$ i $4$ cm, arcs de radis $R2$, $R3$ i $R4$ i els mateixos angles ($15^\\circ$, $45^\\circ$, $90^\\circ$, $150^\\circ$)."
+          }
         ],
         "nota": "La puntuació és de 0,25 punts per cada element (segment o arc), és a dir, 12 elements. Un altre mètode vàlid és la homotècia de raó 2 combinada amb un gir: es triangula la figura original des de A i es transporten els punts (centres i punts de tangència) amb angles iguals i distàncies dobles. L'important és situar bé els centres i els punts de tangència."
       }
@@ -94,32 +207,96 @@
       "punts": 3,
       "titol": "Hexàgon regular en un pla definit per un punt (centre) i una recta (costat)",
       "tema": "diedric",
-      "temes_secundaris": [],
-      "conceptes": ["abatiment", "pla definit per punt i recta", "hexàgon regular", "rectes horitzontals del pla", "veritable magnitud", "escala"],
+      "temes_secundaris": [
+        "geometria-plana"
+      ],
+      "conceptes": [
+        "abatiment",
+        "pla obliqu",
+        "polígon regular",
+        "recta horitzontal del pla",
+        "vertadera magnitud",
+        "escala"
+      ],
       "dificultat": 3,
-      "pagines": [9],
+      "curs": "2n",
+      "curs_motiu": "Vertadera magnitud d'una figura plana per abatiment (DT II).",
+      "pagines": [
+        9
+      ],
       "enunciat": "Tema: Dièdric. Es donen el punt $c$-$c'$ i la recta $r$-$r'$ (vegeu la figura).",
-      "figures": [{"src": "img/dibuix/2023-J/2A.png", "peu": "Dades: punt c-c′ i recta r-r′"}],
+      "figures": [
+        {
+          "src": "img/dibuix/2023-J/2A.png",
+          "peu": "Dades: punt c-c′ i recta r-r′"
+        }
+      ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un hexàgon regular que tingui el centre en el punt $c$-$c'$ i un dels costats sobre la recta $r$-$r'$.", "punts": 2.5},
-        {"id": "b", "enunciat": "Determineu el valor real d'un costat de l'hexàgon en veritable magnitud, tenint en compte que el dibuix està fet a escala 1:250, i escriviu-lo en la casella situada a la part inferior de la pàgina.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un hexàgon regular que tingui el centre en el punt $c$-$c'$ i un dels costats sobre la recta $r$-$r'$.",
+          "punts": 2.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu el valor real d'un costat de l'hexàgon en veritable magnitud, tenint en compte que el dibuix està fet a escala 1:250, i escriviu-lo en la casella situada a la part inferior de la pàgina.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": "a", "titol": "Plantejament", "cos": "El centre $c$ i el costat (sobre $r$) són al pla de l'hexàgon, de manera que **el punt $c$ i la recta $r$ defineixen el pla**. Aquest pla és oblic, i l'hexàgon no es veu en veritable magnitud en cap projecció. Per això:\n\n1. **abatem** el pla sobre un pla horitzontal (girant-lo al voltant d'una recta horitzontal del pla, la charnera);\n2. dibuixem l'hexàgon en veritable magnitud a l'abatiment;\n3. **desabatem** els vèrtexs per obtenir-ne les projeccions.\n\nNo hi ha línia de terra: treballem amb diferències d'alçada (cotes relatives) i amb línies de referència verticals."},
-          {"apartat": "a", "titol": "Horitzontals del pla i charnera", "cos": "Per $c'$ traceu una horitzontal (paral·lela a les línies de referència horitzontals del paper) fins que talli $r'$ en $1'$; baixeu la referència i trobeu $1$ sobre $r$. La recta $c$-$1$ és, en planta, una **horitzontal del pla** a l'alçada de $c$.\n\nPreneu un altre punt $2$-$2'$ de $r$, més baix (l'extrem dret de $r'$). L'horitzontal del pla per $2$ és, en planta, la **paral·lela a $c$-$1$ per $2$**: serà la **charnera** de l'abatiment. Mesureu a l'alçat la diferència d'alçada $h$ entre l'horitzontal de $c$ i la de $2$."},
-          {"apartat": "a", "titol": "Abatiment del centre c i de la recta r", "cos": "Quan el pla gira al voltant de la charnera, cada punt es mou en un pla perpendicular a la charnera. Per tant, en planta, el punt abatut $c_0$ és a la **perpendicular a la charnera per $c$**.\n\nLa distància real de $c$ a la charnera és la hipotenusa d'un triangle rectangle de catets: la distància en planta $d$ (de $c$ a la charnera) i la diferència d'alçada $h$. Construïu aquest triangle (a la solució oficial es fa a part, a la dreta) i porteu la hipotenusa sobre la perpendicular, des del peu a la charnera: obteniu $c_0$.\n\nLa recta $r$ passa per $2$, que és a la charnera i no es mou. L'altre punt, $1$, és a la mateixa horitzontal que $c$, i s'abat a la mateixa distància de la charnera: $1_0$ a la perpendicular per $1$. Aleshores $r_0 = 2\\,1_0$. (També es pot fer servir que la recta abatuda $r_0$ i $r$ es tallen a la charnera.)"},
-          {"apartat": "a", "titol": "Hexàgon en veritable magnitud", "cos": "Des de $c_0$ traceu la perpendicular a $r_0$: el peu $m_0$ és el punt mitjà del costat i $c_0 m_0$ és l'**apotema** $a$.\n\nEn un hexàgon regular, cada costat es veu des del centre amb un angle de $60^\\circ$. Traceu des de $c_0$ dues rectes a $\\pm 30^\\circ$ de l'apotema: tallen $r_0$ en dos vèrtexs consecutius, i el costat és\n\n$$\\ell = 2\\,a \\tan 30^\\circ = \\frac{2a}{\\sqrt{3}}$$\n\nL'hexàgon regular té el radi de la circumferència circumscrita igual al costat: amb centre $c_0$ i radi $\\ell$ marqueu la resta de vèrtexs (o feu les simetries respecte de $c_0$). Dibuixeu l'hexàgon abatut."},
-          {"apartat": "a", "titol": "Desabatiment: projecció horitzontal", "cos": "Cada vèrtex $V_0$ torna a la planta per la **perpendicular a la charnera** que passa per $V_0$ (és afinitat: charnera com a eix i direcció perpendicular).\n\nPer saber on cau exactament, porteu la distància real de $V_0$ a la charnera (amb un arc, centrat en el peu de la charnera al triangle auxiliar) sobre la hipotenusa del triangle de catets $d$ i $h$: el catet horitzontal corresponent dona la distància en planta, i el catet vertical la seva alçada sobre la charnera. A la solució oficial, les rectes de punts paral·leles a la charnera porten cada vèrtex fins al triangle i els arcs concèntrics fan aquest transport.\n\nComprovació: el costat $V_0$ sobre $r_0$ ha de tornar sobre $r$, i les rectes que uneixen vèrtexs oposats han de passar per $c$."},
-          {"apartat": "a", "titol": "Desabatiment: projecció vertical", "cos": "Per cada vèrtex en planta, pugeu la línia de referència vertical i marqueu la seva alçada sobre l'horitzontal de $2'$ (l'alçada obtinguda al triangle, proporcional a la distància a la charnera). Una altra manera és fer passar per cada vèrtex una horitzontal del pla (paral·lela a $c$-$1$ en planta) i portar-la a l'alçat, on és una recta horitzontal; el vèrtex $V'$ és sobre aquesta recta.\n\nComprovacions: en les dues projeccions **els costats oposats són paral·lels**, el costat de sobre $r$ queda sobre $r'$, i $c'$ és el punt mitjà de les diagonals. Remarqueu les dues projeccions."},
-          {"apartat": "b", "titol": "Valor real del costat", "cos": "El costat en veritable magnitud es mesura a l'hexàgon **abatut**: $\\ell = 3\\ \\text{cm}$. A escala 1:250:\n\n$$\\ell_\\text{real} = 3\\ \\text{cm} \\cdot 250 = 750\\ \\text{cm} = 7{,}5\\ \\text{m}$$\n\nResultat: **costat de l'hexàgon = 7,5 m**."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2023-J/2A-sol.png)"}
+          {
+            "apartat": "a",
+            "titol": "Plantejament",
+            "cos": "El centre $c$ i el costat (sobre $r$) són al pla de l'hexàgon, de manera que **el punt $c$ i la recta $r$ defineixen el pla**. Aquest pla és oblic, i l'hexàgon no es veu en veritable magnitud en cap projecció. Per això:\n\n1. **abatem** el pla sobre un pla horitzontal (girant-lo al voltant d'una recta horitzontal del pla, la charnera);\n2. dibuixem l'hexàgon en veritable magnitud a l'abatiment;\n3. **desabatem** els vèrtexs per obtenir-ne les projeccions.\n\nNo hi ha línia de terra: treballem amb diferències d'alçada (cotes relatives) i amb línies de referència verticals."
+          },
+          {
+            "apartat": "a",
+            "titol": "Horitzontals del pla i charnera",
+            "cos": "Per $c'$ traceu una horitzontal (paral·lela a les línies de referència horitzontals del paper) fins que talli $r'$ en $1'$; baixeu la referència i trobeu $1$ sobre $r$. La recta $c$-$1$ és, en planta, una **horitzontal del pla** a l'alçada de $c$.\n\nPreneu un altre punt $2$-$2'$ de $r$, més baix (l'extrem dret de $r'$). L'horitzontal del pla per $2$ és, en planta, la **paral·lela a $c$-$1$ per $2$**: serà la **charnera** de l'abatiment. Mesureu a l'alçat la diferència d'alçada $h$ entre l'horitzontal de $c$ i la de $2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Abatiment del centre c i de la recta r",
+            "cos": "Quan el pla gira al voltant de la charnera, cada punt es mou en un pla perpendicular a la charnera. Per tant, en planta, el punt abatut $c_0$ és a la **perpendicular a la charnera per $c$**.\n\nLa distància real de $c$ a la charnera és la hipotenusa d'un triangle rectangle de catets: la distància en planta $d$ (de $c$ a la charnera) i la diferència d'alçada $h$. Construïu aquest triangle (a la solució oficial es fa a part, a la dreta) i porteu la hipotenusa sobre la perpendicular, des del peu a la charnera: obteniu $c_0$.\n\nLa recta $r$ passa per $2$, que és a la charnera i no es mou. L'altre punt, $1$, és a la mateixa horitzontal que $c$, i s'abat a la mateixa distància de la charnera: $1_0$ a la perpendicular per $1$. Aleshores $r_0 = 2\\,1_0$. (També es pot fer servir que la recta abatuda $r_0$ i $r$ es tallen a la charnera.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Hexàgon en veritable magnitud",
+            "cos": "Des de $c_0$ traceu la perpendicular a $r_0$: el peu $m_0$ és el punt mitjà del costat i $c_0 m_0$ és l'**apotema** $a$.\n\nEn un hexàgon regular, cada costat es veu des del centre amb un angle de $60^\\circ$. Traceu des de $c_0$ dues rectes a $\\pm 30^\\circ$ de l'apotema: tallen $r_0$ en dos vèrtexs consecutius, i el costat és\n\n$$\\ell = 2\\,a \\tan 30^\\circ = \\frac{2a}{\\sqrt{3}}$$\n\nL'hexàgon regular té el radi de la circumferència circumscrita igual al costat: amb centre $c_0$ i radi $\\ell$ marqueu la resta de vèrtexs (o feu les simetries respecte de $c_0$). Dibuixeu l'hexàgon abatut."
+          },
+          {
+            "apartat": "a",
+            "titol": "Desabatiment: projecció horitzontal",
+            "cos": "Cada vèrtex $V_0$ torna a la planta per la **perpendicular a la charnera** que passa per $V_0$ (és afinitat: charnera com a eix i direcció perpendicular).\n\nPer saber on cau exactament, porteu la distància real de $V_0$ a la charnera (amb un arc, centrat en el peu de la charnera al triangle auxiliar) sobre la hipotenusa del triangle de catets $d$ i $h$: el catet horitzontal corresponent dona la distància en planta, i el catet vertical la seva alçada sobre la charnera. A la solució oficial, les rectes de punts paral·leles a la charnera porten cada vèrtex fins al triangle i els arcs concèntrics fan aquest transport.\n\nComprovació: el costat $V_0$ sobre $r_0$ ha de tornar sobre $r$, i les rectes que uneixen vèrtexs oposats han de passar per $c$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Desabatiment: projecció vertical",
+            "cos": "Per cada vèrtex en planta, pugeu la línia de referència vertical i marqueu la seva alçada sobre l'horitzontal de $2'$ (l'alçada obtinguda al triangle, proporcional a la distància a la charnera). Una altra manera és fer passar per cada vèrtex una horitzontal del pla (paral·lela a $c$-$1$ en planta) i portar-la a l'alçat, on és una recta horitzontal; el vèrtex $V'$ és sobre aquesta recta.\n\nComprovacions: en les dues projeccions **els costats oposats són paral·lels**, el costat de sobre $r$ queda sobre $r'$, i $c'$ és el punt mitjà de les diagonals. Remarqueu les dues projeccions."
+          },
+          {
+            "apartat": "b",
+            "titol": "Valor real del costat",
+            "cos": "El costat en veritable magnitud es mesura a l'hexàgon **abatut**: $\\ell = 3\\ \\text{cm}$. A escala 1:250:\n\n$$\\ell_\\text{real} = 3\\ \\text{cm} \\cdot 250 = 750\\ \\text{cm} = 7{,}5\\ \\text{m}$$\n\nResultat: **costat de l'hexàgon = 7,5 m**."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2023-J/2A-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Projeccions horitzontal i vertical de l'hexàgon obtingudes per abatiment del pla $(c, r)$ sobre una horitzontal del pla i desabatiment."},
-          {"apartat": "b", "valor": "Costat en veritable magnitud: $3\\ \\text{cm} \\cdot 250 = 7{,}5\\ \\text{m}$"}
+          {
+            "apartat": "a",
+            "valor": "Projeccions horitzontal i vertical de l'hexàgon obtingudes per abatiment del pla $(c, r)$ sobre una horitzontal del pla i desabatiment."
+          },
+          {
+            "apartat": "b",
+            "valor": "Costat en veritable magnitud: $3\\ \\text{cm} \\cdot 250 = 7{,}5\\ \\text{m}$"
+          }
         ],
         "nota": "No mesureu mai el costat a les projeccions: el pla és oblic i hi surt escurçat. Només a l'abatiment es veu en veritable magnitud. Un altre camí vàlid és fer un canvi de pla per convertir el pla en projectant i després abatre'l."
       }
@@ -133,25 +310,64 @@
       "punts": 3,
       "titol": "Nova projecció d'una peça per canvi de pla vertical",
       "tema": "diedric",
-      "temes_secundaris": ["normalitzacio"],
-      "conceptes": ["canvi de pla", "nova projecció vertical", "cotes", "visibilitat", "interpretació de vistes"],
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "canvi de pla",
+        "cotes",
+        "visibilitat",
+        "interpretació de vistes"
+      ],
       "dificultat": 2,
-      "pagines": [11],
+      "curs": "2n",
+      "curs_motiu": "Nova projecció d'una peça per canvi de pla: operativitat dièdrica (DT II).",
+      "pagines": [
+        11
+      ],
       "enunciat": "Tema: Dièdric.\n\nInterpreteu la figura següent i determineu-ne la nova projecció ortogonal de manera que la projecció vertical del segment $ab$-$a'b'$-$a''b''$ passi a ser $a'''b'''$ (canvi de pla vertical). Dibuixeu únicament les línies vistes. [1 punt per cada volum]",
-      "figures": [{"src": "img/dibuix/2023-J/2B.png", "peu": "Planta, alçat i perfil de la peça, i posició de la nova projecció a‴b‴"}],
+      "figures": [
+        {
+          "src": "img/dibuix/2023-J/2B.png",
+          "peu": "Planta, alçat i perfil de la peça, i posició de la nova projecció a‴b‴"
+        }
+      ],
       "opcions": {},
       "apartats": [],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Interpretació de la peça", "cos": "Relacioneu planta, alçat i perfil punt per punt (cada vèrtex ha de tenir la mateixa posició a les vistes que el comparteixen). La peça es compon de **tres volums** prismàtics amb cares inclinades. El segment $ab$ és a la base de la peça: a l'alçat $a'b'$ és a la línia inferior, i al perfil es veu de punta ($a''$-$b''$).\n\nEn aquest canvi de pla, la **planta no canvia**: només hi ha un nou pla vertical, i en volem la nova projecció vertical."},
-          {"apartat": null, "titol": "Nova línia de terra i línies de referència", "cos": "La recta on hi ha $a'''$ i $b'''$ fa de **nova línia de terra** (a l'alçada de $ab$, és a dir, de la base). Comproveu que la perpendicular des de $a$ a aquesta recta passa per $a'''$, i la de $b$ per $b'''$.\n\nDes de cada vèrtex de la planta, traceu la **perpendicular a la nova línia de terra** (les rectes de punts de la solució oficial). Sobre aquestes perpendiculars hi haurà les noves projeccions verticals."},
-          {"apartat": null, "titol": "Transport de les cotes", "cos": "En un canvi de pla vertical, **les cotes (alçades) dels punts es conserven**: un punt està a la mateixa alçada respecte del pla horitzontal, es miri des d'on es miri.\n\nPer cada vèrtex, mesureu a l'alçat (o al perfil) la seva alçada respecte de $a'b'$ i porteu-la sobre la seva perpendicular, des de la nova línia de terra cap a la banda contrària a la planta. Així s'obtenen els vèrtexs de la nova projecció."},
-          {"apartat": null, "titol": "Arestes i visibilitat", "cos": "Uniu els vèrtexs seguint les arestes de la peça (dues arestes paral·leles a l'espai continuen paral·leles a la nova projecció, cosa que serveix de comprovació).\n\nPer decidir què es veu: l'observador mira el nou pla vertical des de la banda de la planta. Els punts de la planta **més allunyats de la nova línia de terra** són els més propers a l'observador i tapen els que queden darrere. Dibuixeu només les línies vistes, amb traç gruixut, volum per volum."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2023-J/2B-sol.png)"}
+          {
+            "apartat": null,
+            "titol": "Interpretació de la peça",
+            "cos": "Relacioneu planta, alçat i perfil punt per punt (cada vèrtex ha de tenir la mateixa posició a les vistes que el comparteixen). La peça es compon de **tres volums** prismàtics amb cares inclinades. El segment $ab$ és a la base de la peça: a l'alçat $a'b'$ és a la línia inferior, i al perfil es veu de punta ($a''$-$b''$).\n\nEn aquest canvi de pla, la **planta no canvia**: només hi ha un nou pla vertical, i en volem la nova projecció vertical."
+          },
+          {
+            "apartat": null,
+            "titol": "Nova línia de terra i línies de referència",
+            "cos": "La recta on hi ha $a'''$ i $b'''$ fa de **nova línia de terra** (a l'alçada de $ab$, és a dir, de la base). Comproveu que la perpendicular des de $a$ a aquesta recta passa per $a'''$, i la de $b$ per $b'''$.\n\nDes de cada vèrtex de la planta, traceu la **perpendicular a la nova línia de terra** (les rectes de punts de la solució oficial). Sobre aquestes perpendiculars hi haurà les noves projeccions verticals."
+          },
+          {
+            "apartat": null,
+            "titol": "Transport de les cotes",
+            "cos": "En un canvi de pla vertical, **les cotes (alçades) dels punts es conserven**: un punt està a la mateixa alçada respecte del pla horitzontal, es miri des d'on es miri.\n\nPer cada vèrtex, mesureu a l'alçat (o al perfil) la seva alçada respecte de $a'b'$ i porteu-la sobre la seva perpendicular, des de la nova línia de terra cap a la banda contrària a la planta. Així s'obtenen els vèrtexs de la nova projecció."
+          },
+          {
+            "apartat": null,
+            "titol": "Arestes i visibilitat",
+            "cos": "Uniu els vèrtexs seguint les arestes de la peça (dues arestes paral·leles a l'espai continuen paral·leles a la nova projecció, cosa que serveix de comprovació).\n\nPer decidir què es veu: l'observador mira el nou pla vertical des de la banda de la planta. Els punts de la planta **més allunyats de la nova línia de terra** són els més propers a l'observador i tapen els que queden darrere. Dibuixeu només les línies vistes, amb traç gruixut, volum per volum."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2023-J/2B-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Nova projecció vertical dels tres volums sobre la línia $a'''b'''$, amb les cotes de l'alçat i només les línies vistes."}
+          {
+            "apartat": null,
+            "valor": "Nova projecció vertical dels tres volums sobre la línia $a'''b'''$, amb les cotes de l'alçat i només les línies vistes."
+          }
         ],
         "nota": "Error típic: mesurar les distàncies a la nova projecció a partir de la planta. La planta només dona la posició de les línies de referència; les distàncies a la nova línia de terra són les cotes, que surten de l'alçat o del perfil."
       }
@@ -165,26 +381,70 @@
       "punts": 4,
       "titol": "Perspectiva militar a escala doble d'una peça en forma d'U amb suports i perfils corbats",
       "tema": "axonometria",
-      "temes_secundaris": ["corbes"],
-      "conceptes": ["perspectiva militar", "escala", "el·lipse", "interpretació de vistes", "línies vistes"],
+      "temes_secundaris": [
+        "corbes",
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "perspectiva militar",
+        "el·lipse",
+        "interpretació de vistes",
+        "circumferència en axonometria"
+      ],
       "dificultat": 3,
-      "pagines": [13],
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (perspectiva militar amb cilindres, cons o arcs): DT II.",
+      "pagines": [
+        13
+      ],
       "enunciat": "Tema: Axonometria.\n\nInterpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt $p$-$p'$-$p''$ en la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (militar sense reducció) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [0,5 punts per cada suport, 0,5 punts per cada arc el·líptic i 1 punt per cadascun dels dos perfils circulars superiors]",
-      "figures": [{"src": "img/dibuix/2023-J/3A.png", "peu": "Posició P, terna axonomètrica (militar) i planta, alçat i perfil del sòlid"}],
+      "figures": [
+        {
+          "src": "img/dibuix/2023-J/3A.png",
+          "peu": "Posició P, terna axonomètrica (militar) i planta, alçat i perfil del sòlid"
+        }
+      ],
       "opcions": {},
       "apartats": [],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Interpretació del sòlid", "cos": "El sòlid té dues parts:\n\n- **una placa superior** de gruix constant que, en planta, té forma d'U: dos braços rectes units per una semicircumferència a la dreta; el braç superior acaba, a l'esquerra, amb un quart de corona circular que gira cap avall;\n- **dos suports** verticals prims sota la placa, un sota cada braç recte, a l'altura de $p$. A l'alçat es veu el seu perfil: un costat vertical que baixa de $p'$, una base, i al costat dret un graó i un **quart de circumferència còncau**.\n\nAtenció: el perfil es dona **girat 90°** i alineat amb la planta (l'alçada hi és horitzontal); hi veureu la placa com una franja vertical i els dos suports com dues barres, una a cada extrem de l'eix X."},
-          {"apartat": null, "titol": "Terna i escala", "cos": "A la perspectiva **militar** el pla horitzontal $XY$ es veu en veritable forma: els eixos $X$ i $Y$ formen $90^\\circ$ (aquí $Y$ fa $30^\\circ$ amb l'horitzontal i $X$ $60^\\circ$), i l'eix $Z$ és vertical. Sense reducció, els coeficients són $1$ als tres eixos.\n\nA **escala doble**, totes les mesures preses de les vistes es multipliquen per 2 i es porten en la direcció de l'eix corresponent."},
-          {"apartat": null, "titol": "Planta de la placa i alçades", "cos": "Situeu $p$ en $P$. Dibuixeu la planta de la placa sobre els eixos $X$ i $Y$ (és la planta girada i a escala 2). Com que el pla horitzontal no es deforma, **els arcs de la planta continuen sent arcs de circumferència**, amb els radis doblats i els mateixos centres (transportats).\n\nAixequeu en direcció $Z$ les alçades (×2): la cara inferior i la cara superior de la placa. El contorn superior és la planta traslladada verticalment. Els dos **perfils circulars superiors** (la semicircumferència de la dreta i el quart d'arc de l'esquerra) es dibuixen com a arcs de circumferència a la cota de la cara superior; on cal, la generatriu de contorn vertical és tangent als dos arcs (inferior i superior)."},
-          {"apartat": null, "titol": "Suports i arcs el·líptics", "cos": "Cada suport és en un pla vertical paral·lel a $YZ$. Porteu els vèrtexs del seu perfil (alçat) a partir de $P$: distàncies en $Y$ i alçades en $Z$, totes ×2.\n\nEl quart de circumferència còncau del suport és en un pla vertical, que en la perspectiva militar **sí es deforma**: el quadrat que el circumscriu es converteix en un paral·lelogram i l'arc, en un **arc d'el·lipse**. Construïu-lo dins del paral·lelogram: les diagonals i les divisions del quadrat (mètode dels 8 punts o per punts amb una quadrícula) donen punts de l'arc, que és tangent als costats del paral·lelogram als punts mitjans corresponents. A la solució oficial es veuen el paral·lelogram i la diagonal auxiliar de cada arc."},
-          {"apartat": null, "titol": "Línies vistes", "cos": "Mirant des de dalt i des de la banda dels eixos $X$ i $Y$, la placa tapa part dels suports i l'interior de la U. Concreteu amb traç gruixut només les arestes i els contorns vistos; deixeu fines (o esborreu) les línies auxiliars.\n\nComprovació: les arestes verticals han de ser paral·leles a $Z$, i les arestes paral·leles a $X$ o $Y$ de la peça, paral·leles a l'eix corresponent."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2023-J/3A-sol.png)"}
+          {
+            "apartat": null,
+            "titol": "Interpretació del sòlid",
+            "cos": "El sòlid té dues parts:\n\n- **una placa superior** de gruix constant que, en planta, té forma d'U: dos braços rectes units per una semicircumferència a la dreta; el braç superior acaba, a l'esquerra, amb un quart de corona circular que gira cap avall;\n- **dos suports** verticals prims sota la placa, un sota cada braç recte, a l'altura de $p$. A l'alçat es veu el seu perfil: un costat vertical que baixa de $p'$, una base, i al costat dret un graó i un **quart de circumferència còncau**.\n\nAtenció: el perfil es dona **girat 90°** i alineat amb la planta (l'alçada hi és horitzontal); hi veureu la placa com una franja vertical i els dos suports com dues barres, una a cada extrem de l'eix X."
+          },
+          {
+            "apartat": null,
+            "titol": "Terna i escala",
+            "cos": "A la perspectiva **militar** el pla horitzontal $XY$ es veu en veritable forma: els eixos $X$ i $Y$ formen $90^\\circ$ (aquí $Y$ fa $30^\\circ$ amb l'horitzontal i $X$ $60^\\circ$), i l'eix $Z$ és vertical. Sense reducció, els coeficients són $1$ als tres eixos.\n\nA **escala doble**, totes les mesures preses de les vistes es multipliquen per 2 i es porten en la direcció de l'eix corresponent."
+          },
+          {
+            "apartat": null,
+            "titol": "Planta de la placa i alçades",
+            "cos": "Situeu $p$ en $P$. Dibuixeu la planta de la placa sobre els eixos $X$ i $Y$ (és la planta girada i a escala 2). Com que el pla horitzontal no es deforma, **els arcs de la planta continuen sent arcs de circumferència**, amb els radis doblats i els mateixos centres (transportats).\n\nAixequeu en direcció $Z$ les alçades (×2): la cara inferior i la cara superior de la placa. El contorn superior és la planta traslladada verticalment. Els dos **perfils circulars superiors** (la semicircumferència de la dreta i el quart d'arc de l'esquerra) es dibuixen com a arcs de circumferència a la cota de la cara superior; on cal, la generatriu de contorn vertical és tangent als dos arcs (inferior i superior)."
+          },
+          {
+            "apartat": null,
+            "titol": "Suports i arcs el·líptics",
+            "cos": "Cada suport és en un pla vertical paral·lel a $YZ$. Porteu els vèrtexs del seu perfil (alçat) a partir de $P$: distàncies en $Y$ i alçades en $Z$, totes ×2.\n\nEl quart de circumferència còncau del suport és en un pla vertical, que en la perspectiva militar **sí es deforma**: el quadrat que el circumscriu es converteix en un paral·lelogram i l'arc, en un **arc d'el·lipse**. Construïu-lo dins del paral·lelogram: les diagonals i les divisions del quadrat (mètode dels 8 punts o per punts amb una quadrícula) donen punts de l'arc, que és tangent als costats del paral·lelogram als punts mitjans corresponents. A la solució oficial es veuen el paral·lelogram i la diagonal auxiliar de cada arc."
+          },
+          {
+            "apartat": null,
+            "titol": "Línies vistes",
+            "cos": "Mirant des de dalt i des de la banda dels eixos $X$ i $Y$, la placa tapa part dels suports i l'interior de la U. Concreteu amb traç gruixut només les arestes i els contorns vistos; deixeu fines (o esborreu) les línies auxiliars.\n\nComprovació: les arestes verticals han de ser paral·leles a $Z$, i les arestes paral·leles a $X$ o $Y$ de la peça, paral·leles a l'eix corresponent."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2023-J/3A-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Perspectiva militar a escala 2 amb $p$ en $P$: placa en U amb els dos perfils circulars superiors en veritable forma i dos suports amb els arcs còncaus convertits en arcs d'el·lipse."}
+          {
+            "apartat": null,
+            "valor": "Perspectiva militar a escala 2 amb $p$ en $P$: placa en U amb els dos perfils circulars superiors en veritable forma i dos suports amb els arcs còncaus convertits en arcs d'el·lipse."
+          }
         ],
         "nota": "Error típic: dibuixar com a el·lipses els arcs de la placa (en militar, les corbes horitzontals es veuen en veritable forma) o, a l'inrevés, dibuixar com a circumferències els arcs dels suports (que són en plans verticals i es deformen)."
       }
@@ -198,26 +458,71 @@
       "punts": 4,
       "titol": "Axonometria dimètrica DIN 5 a escala doble d'un sòlid amb cares inclinades",
       "tema": "axonometria",
-      "temes_secundaris": [],
-      "conceptes": ["dimètrica DIN 5", "coeficients de reducció", "escala", "interpretació de vistes", "línies vistes"],
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "axonometria dimètrica",
+        "coeficients de reducció",
+        "interpretació de vistes",
+        "prisma envolupant",
+        "coordenades axonomètriques",
+        "cares inclinades"
+      ],
       "dificultat": 3,
-      "pagines": [15],
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
+      "pagines": [
+        15
+      ],
       "enunciat": "Tema: Axonometria.\n\nInterpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt $p$-$p'$-$p''$ en la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (ortogonal dimètrica normalitzada DIN 5) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [1,5 punts per cadascun dels dos volums davanters i 0,5 punts per cadascun dels dos posteriors]",
-      "figures": [{"src": "img/dibuix/2023-J/3B.png", "peu": "Posició P, terna dimètrica DIN 5 i planta, alçat i perfil del sòlid"}],
+      "figures": [
+        {
+          "src": "img/dibuix/2023-J/3B.png",
+          "peu": "Posició P, terna dimètrica DIN 5 i planta, alçat i perfil del sòlid"
+        }
+      ],
       "opcions": {},
       "apartats": [],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Interpretació del sòlid", "cos": "La planta és un quadrat dividit en una quadrícula de 3 × 3. Relacioneu les tres vistes: a l'alçat, la franja central (en $Y$) arriba fins a dalt; al perfil (que es dona **girat 90°**, amb l'alçada horitzontal i alineat amb la planta), passa el mateix amb la franja central en $X$. Els triangles i les rectes inclinades de l'alçat i del perfil indiquen **cares inclinades** (plans oblics) que uneixen la base amb les parts altes.\n\nEl sòlid té una base prismàtica de planta quadrada, **dos volums davanters** (els més propers a l'observador) i **dos volums posteriors** més petits. Les vistes admeten més d'una interpretació: la solució oficial n'accepta dues."},
-          {"apartat": null, "titol": "Terna DIN 5 i coeficients a escala doble", "cos": "En la dimètrica normalitzada DIN 5, els eixos ja venen dibuixats: $Z$ vertical, $X$ gairebé horitzontal (uns $7^\\circ$) i $Y$ més inclinat (uns $41^\\circ$). Els coeficients de reducció són $X = 1$, $Y = \\tfrac{1}{2}$ i $Z = 1$.\n\nA escala doble cal multiplicar per 2 i després aplicar el coeficient:\n\n$$X:\\ 2 \\cdot 1 = 2 \\qquad Y:\\ 2 \\cdot \\tfrac{1}{2} = 1 \\qquad Z:\\ 2 \\cdot 1 = 2$$\n\nÉs a dir: les mesures en $X$ i $Z$ es dupliquen, i les mesures en $Y$ es porten a la seva mida de la vista."},
-          {"apartat": null, "titol": "Prisma envolvent i base", "cos": "Situeu $p$ en $P$ (és el vèrtex de la base més proper a l'observador). Dibuixeu el prisma envolvent del sòlid: la planta quadrada sobre $X$ i $Y$ i l'alçada total sobre $Z$, amb els coeficients anteriors. Dins d'aquest prisma marqueu les línies de la quadrícula de la planta (en $X$ i en $Y$) i les alçades dels canvis de forma de l'alçat i del perfil."},
-          {"apartat": null, "titol": "Volums davanters i posteriors", "cos": "Construïu cada volum per coordenades: per cada vèrtex, preneu de les vistes la seva $x$, $y$ i $z$ i porteu-les des de $P$ en les direccions dels eixos (amb els coeficients). Els vèrtexs de les cares inclinades s'obtenen igual; després només cal unir-los.\n\nComprovació: arestes paral·leles a la peça han de ser paral·leles a la perspectiva, i les cares inclinades han de ser planes (els seus quatre vèrtexs, coplanaris)."},
-          {"apartat": null, "titol": "Línies vistes", "cos": "L'observador mira des de davant, des de la banda de $X$ i $Y$ positius i des de dalt. Els dos volums davanters tapen part dels posteriors. Concreteu amb traç gruixut només les arestes vistes (a la solució oficial, les línies discontínues de la base són només auxiliars)."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2023-J/3B-sol.png)\n\nLa solució oficial inclou, a dalt a la dreta, una **segona solució correcta** segons les projeccions dièdriques, a la mateixa escala mesurant en les direccions dels eixos axonomètrics."}
+          {
+            "apartat": null,
+            "titol": "Interpretació del sòlid",
+            "cos": "La planta és un quadrat dividit en una quadrícula de 3 × 3. Relacioneu les tres vistes: a l'alçat, la franja central (en $Y$) arriba fins a dalt; al perfil (que es dona **girat 90°**, amb l'alçada horitzontal i alineat amb la planta), passa el mateix amb la franja central en $X$. Els triangles i les rectes inclinades de l'alçat i del perfil indiquen **cares inclinades** (plans oblics) que uneixen la base amb les parts altes.\n\nEl sòlid té una base prismàtica de planta quadrada, **dos volums davanters** (els més propers a l'observador) i **dos volums posteriors** més petits. Les vistes admeten més d'una interpretació: la solució oficial n'accepta dues."
+          },
+          {
+            "apartat": null,
+            "titol": "Terna DIN 5 i coeficients a escala doble",
+            "cos": "En la dimètrica normalitzada DIN 5, els eixos ja venen dibuixats: $Z$ vertical, $X$ gairebé horitzontal (uns $7^\\circ$) i $Y$ més inclinat (uns $41^\\circ$). Els coeficients de reducció són $X = 1$, $Y = \\tfrac{1}{2}$ i $Z = 1$.\n\nA escala doble cal multiplicar per 2 i després aplicar el coeficient:\n\n$$X:\\ 2 \\cdot 1 = 2 \\qquad Y:\\ 2 \\cdot \\tfrac{1}{2} = 1 \\qquad Z:\\ 2 \\cdot 1 = 2$$\n\nÉs a dir: les mesures en $X$ i $Z$ es dupliquen, i les mesures en $Y$ es porten a la seva mida de la vista."
+          },
+          {
+            "apartat": null,
+            "titol": "Prisma envolvent i base",
+            "cos": "Situeu $p$ en $P$ (és el vèrtex de la base més proper a l'observador). Dibuixeu el prisma envolvent del sòlid: la planta quadrada sobre $X$ i $Y$ i l'alçada total sobre $Z$, amb els coeficients anteriors. Dins d'aquest prisma marqueu les línies de la quadrícula de la planta (en $X$ i en $Y$) i les alçades dels canvis de forma de l'alçat i del perfil."
+          },
+          {
+            "apartat": null,
+            "titol": "Volums davanters i posteriors",
+            "cos": "Construïu cada volum per coordenades: per cada vèrtex, preneu de les vistes la seva $x$, $y$ i $z$ i porteu-les des de $P$ en les direccions dels eixos (amb els coeficients). Els vèrtexs de les cares inclinades s'obtenen igual; després només cal unir-los.\n\nComprovació: arestes paral·leles a la peça han de ser paral·leles a la perspectiva, i les cares inclinades han de ser planes (els seus quatre vèrtexs, coplanaris)."
+          },
+          {
+            "apartat": null,
+            "titol": "Línies vistes",
+            "cos": "L'observador mira des de davant, des de la banda de $X$ i $Y$ positius i des de dalt. Els dos volums davanters tapen part dels posteriors. Concreteu amb traç gruixut només les arestes vistes (a la solució oficial, les línies discontínues de la base són només auxiliars)."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2023-J/3B-sol.png)\n\nLa solució oficial inclou, a dalt a la dreta, una **segona solució correcta** segons les projeccions dièdriques, a la mateixa escala mesurant en les direccions dels eixos axonomètrics."
+          }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Axonometria dimètrica DIN 5 a escala 2 (mesures ×2 en $X$ i $Z$, ×1 en $Y$) amb $p$ en $P$: dos volums davanters i dos de posteriors, només línies vistes. S'admeten dues interpretacions."}
+          {
+            "apartat": null,
+            "valor": "Axonometria dimètrica DIN 5 a escala 2 (mesures ×2 en $X$ i $Z$, ×1 en $Y$) amb $p$ en $P$: dos volums davanters i dos de posteriors, només línies vistes. S'admeten dues interpretacions."
+          }
         ],
         "nota": "Error típic: oblidar el coeficient 1/2 de l'eix Y o aplicar-lo dues vegades. A escala doble, les mesures en Y queden iguals que a les vistes."
       }

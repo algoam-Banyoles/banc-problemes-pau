@@ -19,19 +19,23 @@
       "tipus": "problema",
       "punts": 2.5,
       "titol": "Estudi de la funció f(x) = 2 ln x / x: extrems, asímptotes i recta tangent",
-      "tema": "derivades",
+      "tema": "funcions",
       "temes_secundaris": [
-        "funcions"
+        "derivades"
       ],
       "conceptes": [
         "monotonia",
         "extrems relatius",
-        "asímptotes",
+        "asímptota vertical",
+        "asímptota horitzontal",
         "regla de l'Hôpital",
         "recta tangent",
-        "funció logarítmica"
+        "funció logarítmica",
+        "esbós de la gràfica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Extrems, monotonia i asímptota amb L'Hôpital, que són de 2n.",
       "pagines": [
         2,
         3
@@ -135,9 +139,12 @@
         "regla de Cramer",
         "rang",
         "sistema compatible indeterminat",
-        "sistema incompatible"
+        "sistema incompatible",
+        "determinant"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         4,
         5
@@ -236,13 +243,13 @@
         "funcions"
       ],
       "conceptes": [
-        "integral definida",
+        "punts d'intersecció de corbes",
         "àrea entre corbes",
-        "regla de Barrow",
-        "equació de la recta",
-        "punts de tall"
+        "regla de Barrow"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         6,
         7
@@ -327,13 +334,13 @@
         "estadistica"
       ],
       "conceptes": [
-        "regla de Laplace",
         "probabilitat condicionada",
-        "esdeveniment complementari",
-        "sense reemplaçament",
+        "probabilitat total",
         "distribució binomial"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Experiment compost sense reemplaçament i distribució binomial, que són de 2n.",
       "pagines": [
         8,
         9
@@ -423,13 +430,16 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
         "funció cost",
-        "volum del prisma",
-        "derivada segona",
-        "mínim absolut"
+        "volum de cossos geomètrics",
+        "lligadura",
+        "extrems absoluts",
+        "criteri de la derivada segona",
+        "àrees de figures planes"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         10,
         11
@@ -514,12 +524,15 @@
       "conceptes": [
         "pla mediador",
         "vector normal",
+        "punt mitjà",
         "distància punt-pla",
-        "triangle isòsceles",
         "àrea d'un triangle",
-        "producte vectorial"
+        "producte vectorial",
+        "distància entre dos punts"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         12,
         13

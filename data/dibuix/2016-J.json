@@ -23,12 +23,14 @@
       "tema": "geometria-plana",
       "temes_secundaris": [],
       "conceptes": [
-        "equivalència d'àrees",
-        "triangle isòsceles",
+        "figures equivalents",
+        "construcció de triangles",
         "rectes paral·leles",
-        "escales"
+        "escala"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Equivalència de figures poligonals amb paral·leles i escales (DT I).",
       "pagines": [
         5
       ],
@@ -117,9 +119,11 @@
         "homotècia",
         "bisectriu",
         "punt de tangència",
-        "escales"
+        "escala"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Cas PRR resolt per homotècia simple des del vèrtex (semblança, DT I); la potència només surt com a alternativa.",
       "pagines": [
         7
       ],
@@ -210,9 +214,12 @@
         "intersecció de plans",
         "intersecció recta-pla",
         "pla projectant",
-        "visibilitat"
+        "visibilitat",
+        "canvi de pla"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Intersecció de plans amb plans projectants auxiliars i visibilitat: dièdric directe (DT I); el canvi de pla és només alternatiu.",
       "pagines": [
         9
       ],
@@ -302,12 +309,14 @@
         "diedric"
       ],
       "conceptes": [
-        "tetraedre regular",
+        "tetraedre",
         "arestes oposades",
         "vertadera magnitud",
         "visibilitat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) amb vertadera magnitud d'arestes.",
       "pagines": [
         11
       ],
@@ -393,12 +402,15 @@
       ],
       "conceptes": [
         "axonometria isomètrica",
-        "escala",
         "interpretació de vistes",
-        "prisma hexagonal",
-        "visibilitat"
+        "prisma",
+        "prisma envolupant",
+        "coordenades axonomètriques",
+        "cares inclinades"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         13
       ],
@@ -475,16 +487,22 @@
       "titol": "Axonometria dimètrica DIN 5 d'un sòlid de revolució format per dos troncs de con",
       "tema": "axonometria",
       "temes_secundaris": [
-        "corbes"
+        "corbes",
+        "normalitzacio"
       ],
       "conceptes": [
         "axonometria dimètrica",
         "coeficients de reducció",
-        "tronc de con",
+        "con",
         "el·lipse",
-        "contorn aparent"
+        "contorn aparent",
+        "interpretació de vistes",
+        "prisma envolupant",
+        "circumferència en axonometria"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria: con o tronc de con amb el·lipses i contorns aparents (DT II).",
       "pagines": [
         15
       ],
@@ -562,13 +580,14 @@
       "tema": "geometria-plana",
       "temes_secundaris": [],
       "conceptes": [
-        "triangle inscrit",
+        "construcció de triangles",
         "mediatriu",
-        "corda",
         "transport d'angles",
-        "escales"
+        "escala"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Construcció de triangles amb rectes notables i transport d'angles (DT I).",
       "pagines": [
         21
       ],
@@ -654,10 +673,11 @@
         "tangències",
         "mediatriu",
         "punt de tangència",
-        "circumferència per tres punts",
-        "escales"
+        "escala"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Cas PPR amb AB paral·lel a la recta: es resol amb mediatrius, sense potència (DT I).",
       "pagines": [
         23
       ],
@@ -737,13 +757,16 @@
         "diedric"
       ],
       "conceptes": [
-        "rombe",
-        "pla inclinat",
+        "pla obliqu",
         "abatiment",
-        "prisma recte",
-        "visibilitat"
+        "prisma",
+        "visibilitat",
+        "vertadera magnitud",
+        "perpendicularitat recta-pla"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Piràmide o prisma en dièdric amb la base en un pla inclinat, per abatiment o canvi de pla (DT II).",
       "pagines": [
         25
       ],
@@ -838,12 +861,14 @@
       ],
       "conceptes": [
         "secció plana",
-        "prisma hexagonal",
-        "pla paral·lel a la línia de terra",
-        "perfil",
+        "prisma",
+        "pla paral·lel a la LT",
+        "projecció de perfil",
         "visibilitat"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Secció plana d'un prisma en dièdric: sòlids i seccions planes (DT II).",
       "pagines": [
         27
       ],
@@ -929,12 +954,13 @@
       ],
       "conceptes": [
         "axonometria isomètrica",
-        "escala",
         "interpretació de vistes",
-        "prisma hexagonal",
-        "visibilitat"
+        "prisma",
+        "coordenades axonomètriques"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         29
       ],
@@ -1001,16 +1027,22 @@
       "titol": "Axonometria dimètrica DIN 5 d'un cilindre amb dues ranures superiors i un túnel inferior",
       "tema": "axonometria",
       "temes_secundaris": [
-        "corbes"
+        "corbes",
+        "normalitzacio"
       ],
       "conceptes": [
         "axonometria dimètrica",
         "coeficients de reducció",
         "cilindre",
         "el·lipse",
-        "contorn aparent"
+        "contorn aparent",
+        "interpretació de vistes",
+        "prisma envolupant",
+        "circumferència en axonometria"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (el·lipses isomètriques o DIN 5): DT II.",
       "pagines": [
         31
       ],

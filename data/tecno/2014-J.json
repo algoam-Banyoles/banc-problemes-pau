@@ -23,12 +23,12 @@
       "tema": "fabricacio",
       "temes_secundaris": [],
       "conceptes": [
-        "línia de producció",
         "temps de cicle",
-        "operacions simultànies",
-        "camí crític"
+        "processos de fabricació"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
       "pagines": [
         1
       ],
@@ -88,14 +88,14 @@
       "tipus": "test",
       "punts": 0.5,
       "titol": "Nombre de viatges d'un camió per transportar 50 cotxes",
-      "tema": "mecanica",
+      "tema": "economia",
       "temes_secundaris": [],
       "conceptes": [
-        "capacitat de càrrega",
-        "massa",
-        "arrodoniment per excés"
+        "capacitat i ocupació"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només aritmètica de capacitat de transport; cap contingut de 2n.",
       "pagines": [
         1
       ],
@@ -146,14 +146,17 @@
       "punts": 0.5,
       "titol": "Velocitat d'avanç d'un cargol M12",
       "tema": "mecanismes",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "cargol-femella",
-        "pas de rosca",
-        "velocitat d'avanç",
-        "velocitat de rotació"
+        "velocitat lineal",
+        "velocitat angular"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
       "pagines": [
         2
       ],
@@ -210,10 +213,11 @@
       "conceptes": [
         "capacitat de bateria",
         "potència elèctrica",
-        "intensitat",
         "autonomia"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         2
       ],
@@ -273,11 +277,12 @@
         "fabricacio"
       ],
       "conceptes": [
-        "resistències en paral·lel",
-        "resistència equivalent",
+        "associació de resistències",
         "tolerància"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         2
       ],
@@ -332,11 +337,13 @@
       "conceptes": [
         "taula de veritat",
         "funció lògica",
-        "simplificació",
+        "mapa de Karnaugh",
         "esquema de contactes",
         "funció majoria"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         2
       ],
@@ -417,15 +424,17 @@
       "titol": "Cost de construir una estrella de fusta: triangles o perfil complex",
       "tema": "economia",
       "temes_secundaris": [
+        "disseny",
         "fabricacio"
       ],
       "conceptes": [
-        "cost de fabricació",
-        "superfície",
-        "perímetre",
-        "teorema de Pitàgores"
+        "cost de producció",
+        "àrees i perímetres",
+        "processos de fabricació"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
       "pagines": [
         3
       ],
@@ -531,9 +540,13 @@
         "poder calorífic",
         "consum de combustible",
         "potència tèrmica",
-        "rendiment"
+        "rendiment",
+        "autonomia",
+        "motor de combustió interna"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita potència, parell, consum i rendiment global del motor, sense cicle tèrmic: 1r.",
       "pagines": [
         3
       ],
@@ -626,13 +639,14 @@
         "mecanica"
       ],
       "conceptes": [
+        "diagrama de cos lliure",
         "equilibri de moments",
-        "bolcada",
-        "contrapès",
         "energia potencial",
         "potència mecànica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita l'estabilitat d'una estructura (condició de bolcada amb moments), que és de 2n.",
       "pagines": [
         4
       ],
@@ -721,12 +735,13 @@
         "termica"
       ],
       "conceptes": [
-        "energia solar tèrmica",
+        "energia solar",
         "calor sensible",
-        "rendiment",
-        "irradiància"
+        "rendiment"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         4
       ],
@@ -809,10 +824,11 @@
       "temes_secundaris": [],
       "conceptes": [
         "aliatge",
-        "composició percentual",
-        "proporcions"
+        "composició percentual"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita composició i propietats generals dels materials, que són de 1r.",
       "pagines": [
         5
       ],
@@ -866,11 +882,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "ajust",
-        "joc màxim",
         "tolerància",
-        "sistema ISO"
+        "joc i serratge"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
       "pagines": [
         5
       ],
@@ -927,10 +944,11 @@
       "conceptes": [
         "estalvi energètic",
         "potència elèctrica",
-        "energia elèctrica",
-        "kW h"
+        "energia elèctrica"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         6
       ],
@@ -980,16 +998,17 @@
       "tipus": "test",
       "punts": 0.5,
       "titol": "Error màxim d'una lectura d'un acceleròmetre",
-      "tema": "control",
+      "tema": "fabricacio",
       "temes_secundaris": [
-        "fabricacio"
+        "control"
       ],
       "conceptes": [
-        "precisió",
         "error de mesura",
-        "sensors"
+        "sensor"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita precisió i error de mesura de sensors (metrologia), que són de 1r.",
       "pagines": [
         6
       ],
@@ -1040,13 +1059,15 @@
       "punts": 0.5,
       "titol": "Temperatura a la qual una barra d'acer inoxidable s'allarga un 0,1 %",
       "tema": "materials",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "termica"
+      ],
       "conceptes": [
-        "dilatació tèrmica",
-        "coeficient de dilatació lineal",
-        "allargament relatiu"
+        "dilatació tèrmica"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Dilatació tèrmica (propietats dels materials i calor), que és de 1r.",
       "pagines": [
         6
       ],
@@ -1103,10 +1124,13 @@
       "conceptes": [
         "taula de veritat",
         "funció lògica",
-        "casos indiferents",
+        "mapa de Karnaugh",
+        "àlgebra de Boole",
         "portes lògiques"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         6
       ],
@@ -1183,12 +1207,14 @@
       "tema": "estatica",
       "temes_secundaris": [],
       "conceptes": [
+        "diagrama de cos lliure",
         "equilibri de forces",
         "equilibri de moments",
-        "barra articulada",
-        "descomposició de forces"
+        "barra biarticulada"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
       "pagines": [
         7
       ],
@@ -1288,12 +1314,15 @@
       ],
       "conceptes": [
         "energia potencial",
+        "potència mecànica",
         "rendiment",
         "potència hidràulica",
         "pressió",
         "cabal"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Treball, rendiment i pressió hidrostàtica (p = ρgh) d'una bomba: 1r.",
       "pagines": [
         7
       ],
@@ -1373,11 +1402,13 @@
       ],
       "conceptes": [
         "resistivitat",
-        "resistència d'un conductor",
-        "coeficient de temperatura",
-        "llei d'Ohm"
+        "llei d'Ohm",
+        "associació de resistències",
+        "efecte Joule"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         8
       ],
@@ -1468,10 +1499,11 @@
       "conceptes": [
         "consum de combustible",
         "densitat",
-        "velocitat mitjana",
-        "percentatge"
+        "velocitat lineal"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només consum de combustible, velocitat mitjana i percentatges (1r).",
       "pagines": [
         8
       ],

@@ -21,17 +21,20 @@
       "titol": "Àtom d'hidrogen de Bohr: força i acceleració de l'electró, potencial i energia potencial",
       "tema": "camp-electric",
       "temes_secundaris": [
-        "quantica"
+        "quantica",
+        "mecanica"
       ],
       "conceptes": [
-        "llei de coulomb",
-        "força elèctrica",
+        "llei de Coulomb",
         "potencial elèctric",
         "energia potencial elèctrica",
-        "model de bohr",
-        "electronvolt"
+        "model de Bohr",
+        "MCU",
+        "força centrípeta"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, força elèctrica",
       "pagines": [
         1
       ],
@@ -111,12 +114,12 @@
       ],
       "conceptes": [
         "velocitat d'escapament",
-        "densitat",
-        "intensitat del camp gravitatori",
-        "força gravitatòria",
-        "forat negre"
+        "massa d'un astre",
+        "intensitat del camp gravitatori"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): velocitat d'escapament, densitat",
       "pagines": [
         2
       ],
@@ -191,15 +194,18 @@
       "punts": 2,
       "titol": "Protó i electró en un espectròmetre de masses: força de Lorentz i camp per a la mateixa trajectòria",
       "tema": "camp-magnetic",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "força de lorentz",
-        "producte vectorial",
-        "espectròmetre de masses",
+        "força de Lorentz",
+        "regla de la mà dreta",
         "radi de la trajectòria",
-        "moviment circular uniforme"
+        "MCU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): força de lorentz, producte vectorial",
       "pagines": [
         2
       ],
@@ -269,13 +275,13 @@
       ],
       "conceptes": [
         "moviment harmònic simple",
-        "amplitud",
-        "període",
+        "equació del MHS",
         "freqüència angular",
-        "equació del moviment",
-        "acceleració"
+        "velocitat i acceleració màximes"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, amplitud",
       "pagines": [
         3
       ],
@@ -353,12 +359,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "desintegració alfa",
-        "conservació del nombre màssic i atòmic",
+        "equació nuclear",
         "període de semidesintegració",
         "constant de desintegració",
         "llei de desintegració radioactiva"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, conservació del nombre màssic i atòmic",
       "pagines": [
         3
       ],
@@ -425,12 +433,14 @@
       "tema": "camp-magnetic",
       "temes_secundaris": [],
       "conceptes": [
-        "camp magnètic d'un fil infinit",
-        "força entre corrents paral·lels",
+        "camp magnètic d'un fil",
+        "força entre corrents",
         "regla de la mà dreta",
-        "força sobre un conductor"
+        "força sobre un corrent"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): camp magnètic d'un fil infinit, força entre corrents paral·lels",
       "pagines": [
         3
       ],
@@ -518,11 +528,11 @@
       "conceptes": [
         "intensitat sonora",
         "nivell d'intensitat sonora",
-        "decibels",
-        "ona esfèrica",
         "potència sonora"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): intensitat sonora, nivell d'intensitat sonora",
       "pagines": [
         4
       ],
@@ -591,11 +601,11 @@
       "conceptes": [
         "efecte fotoelèctric",
         "energia del fotó",
-        "treball d'extracció",
-        "energia cinètica màxima",
-        "electronvolt"
+        "treball d'extracció"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, energia del fotó",
       "pagines": [
         4
       ],

@@ -21,9 +21,18 @@
       "titol": "Quadrilàter ABCD a partir de la diagonal AC amb arc capaç i escala 1:75",
       "tema": "geometria-plana",
       "temes_secundaris": [],
-      "conceptes": ["arc capaç", "construcció de polígons", "rectes paral·leles", "escales"],
+      "conceptes": [
+        "arc capaç",
+        "construcció de polígons",
+        "rectes paral·leles",
+        "escala"
+      ],
       "dificultat": 2,
-      "pagines": [5],
+      "curs": "1r",
+      "curs_motiu": "Construcció de polígons amb arc capaç i punts notables del triangle (DT I).",
+      "pagines": [
+        5
+      ],
       "enunciat": "Dades: segment $AC$ dibuixat; angle $ABC = 75°$; angle $BCD = 105°$; costat $CD = 8\\ \\text{cm}$; costat $AB = 5\\ \\text{cm}$. Escala 1:75.",
       "figures": [
         {
@@ -101,9 +110,18 @@
       "titol": "Rectes tangents exteriors i interiors a dues circumferències",
       "tema": "geometria-plana",
       "temes_secundaris": [],
-      "conceptes": ["tangències", "rectes tangents", "circumferències concèntriques", "arc capaç de 90°", "punt de tangència"],
+      "conceptes": [
+        "tangències",
+        "lloc geomètric",
+        "arc capaç",
+        "punt de tangència"
+      ],
       "dificultat": 2,
-      "pagines": [7],
+      "curs": "1r",
+      "curs_motiu": "Rectes tangents a dues circumferències amb circumferències concèntriques i arc capaç de 90° (DT I).",
+      "pagines": [
+        7
+      ],
       "enunciat": "Dibuixeu les rectes tangents a les circumferències de centres $C_1$ i $C_2$. Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, els punts de tangència. [2 punts: 0,5 punts per cada recta]",
       "figures": [
         {
@@ -170,10 +188,23 @@
       "punts": 4,
       "titol": "Intersecció d'un triangle amb una piràmide regular de base quadrada i visibilitat",
       "tema": "diedric",
-      "temes_secundaris": ["cossos"],
-      "conceptes": ["secció plana", "piràmide", "canvi de pla", "pla projectant", "intersecció recta-pla", "visibilitat"],
+      "temes_secundaris": [
+        "cossos"
+      ],
+      "conceptes": [
+        "secció plana",
+        "piràmide",
+        "canvi de pla",
+        "pla projectant",
+        "intersecció recta-pla",
+        "visibilitat"
+      ],
       "dificultat": 3,
-      "pagines": [9],
+      "curs": "2n",
+      "curs_motiu": "Secció plana d'un sòlid en dièdric per canvi de pla (DT II).",
+      "pagines": [
+        9
+      ],
       "enunciat": "Dades: Projeccions horitzontal i vertical dels punts *a-a′*, *b-b′* i *c-c′*, vèrtexs d'un triangle. Projeccions horitzontal i vertical dels punts *1-1′*, *2-2′*, *3-3′* i *4-4′*, vèrtexs d'un quadrat que és la base d'una piràmide de vèrtex *v-v′*.",
       "figures": [
         {
@@ -255,10 +286,25 @@
       "punts": 4,
       "titol": "Triedre trirectangle sobre un triangle horitzontal i cub inscrit de 3,5 cm d'aresta",
       "tema": "diedric",
-      "temes_secundaris": ["cossos"],
-      "conceptes": ["triedre trirectangle", "ortocentre", "abatiment", "cub", "arc capaç de 90°", "visibilitat"],
+      "temes_secundaris": [
+        "geometria-plana",
+        "cossos"
+      ],
+      "conceptes": [
+        "triedre trirectangle",
+        "ortocentre",
+        "abatiment",
+        "cub",
+        "arc capaç",
+        "visibilitat",
+        "vertadera magnitud"
+      ],
       "dificultat": 3,
-      "pagines": [11],
+      "curs": "2n",
+      "curs_motiu": "Triedre trirectangle per abatiment i poliedre regular en dièdric (DT II).",
+      "pagines": [
+        11
+      ],
       "enunciat": "Dades: Projeccions horitzontal i vertical dels punts *a-a′*, *b-b′* i *c-c′*, vèrtexs d'un triangle horitzontal que és la base d'un triedre trirectangle.",
       "figures": [
         {
@@ -340,10 +386,22 @@
       "punts": 4,
       "titol": "Isometria d'un sòlid polièdric amb cares inclinades quadrades i triangulars",
       "tema": "axonometria",
-      "temes_secundaris": ["normalitzacio"],
-      "conceptes": ["axonometria isomètrica", "escala", "interpretació de vistes", "cares inclinades", "visibilitat"],
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "axonometria isomètrica",
+        "interpretació de vistes",
+        "cares inclinades",
+        "prisma envolupant",
+        "coordenades axonomètriques"
+      ],
       "dificultat": 3,
-      "pagines": [13],
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
+      "pagines": [
+        13
+      ],
       "enunciat": "Interpreteu el sòlid polièdric representat en planta i alçat, i, situant el punt *p-p′* en la posició *P* del paper, dibuixeu l'axonometria amb la terna proposada (ortogonal isomètrica) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [4 punts: 1,5 punts per les cares verticals, 1,5 punts per les cares inclinades i 1 punt per les cares horitzontals]",
       "figures": [
         {
@@ -405,10 +463,23 @@
       "punts": 4,
       "titol": "Perspectiva militar d'una peça amb cos de cilindre i orella foradada",
       "tema": "axonometria",
-      "temes_secundaris": ["normalitzacio"],
-      "conceptes": ["perspectiva militar", "escala", "interpretació de vistes", "contorn aparent", "circumferència en perspectiva"],
+      "temes_secundaris": [
+        "corbes",
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "perspectiva militar",
+        "interpretació de vistes",
+        "contorn aparent",
+        "circumferència en axonometria",
+        "el·lipse"
+      ],
       "dificultat": 3,
-      "pagines": [15],
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (perspectiva militar amb cilindres, cons o arcs): DT II.",
+      "pagines": [
+        15
+      ],
       "enunciat": "Interpreteu el sòlid representat en planta i alçat, i, situant el punt *p-p′* en la posició *P* del paper, dibuixeu l'axonometria amb la terna proposada (militar sense reducció) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [4 punts: 2,5 punts pel cos vertical, 0,5 dels quals correspondran al contorn aparent, i 1,5 punts pel cos horitzontal, 0,5 dels quals correspondran al contorn aparent]",
       "figures": [
         {

@@ -23,11 +23,15 @@
       "temes_secundaris": [],
       "conceptes": [
         "vector normal",
-        "equació paramètrica de la recta",
+        "equacions de la recta",
         "intersecció recta-pla",
-        "distància punt-pla"
+        "distància punt-pla",
+        "recta perpendicular a un pla",
+        "distància entre dos punts"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         2,
         3
@@ -108,13 +112,17 @@
       ],
       "conceptes": [
         "domini",
-        "asímptotes",
+        "asímptota vertical",
+        "asímptota horitzontal",
         "extrems relatius",
         "monotonia",
         "recta tangent",
-        "representació gràfica"
+        "esbós de la gràfica",
+        "funció racional"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Extrems relatius i intervals de monotonia, que són de 2n.",
       "pagines": [
         4,
         5
@@ -206,12 +214,15 @@
       "conceptes": [
         "rang",
         "determinant",
-        "discussió amb paràmetre",
+        "regla de Sarrus",
         "sistema homogeni",
         "teorema de Rouché-Frobenius",
-        "regla de Cramer"
+        "regla de Cramer",
+        "sistema compatible indeterminat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         6,
         7
@@ -293,18 +304,20 @@
       "titol": "Funció a trossos amb logaritme contínua i derivable; primitiva que passa per un punt",
       "tema": "derivades",
       "temes_secundaris": [
-        "integrals",
-        "funcions"
+        "funcions",
+        "integrals"
       ],
       "conceptes": [
         "continuïtat",
-        "derivabilitat",
-        "funció a trossos",
+        "funció definida a trossos",
         "primitiva",
         "integral quasi immediata",
-        "constant d'integració"
+        "constant d'integració",
+        "funció logarítmica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Derivabilitat d'una funció a trossos amb paràmetres i càlcul d'una primitiva, que són de 2n.",
       "pagines": [
         8,
         9
@@ -394,6 +407,8 @@
         "regla de Sarrus"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         10,
         11
@@ -480,11 +495,12 @@
       ],
       "conceptes": [
         "distància entre dos punts",
-        "funció a optimitzar",
-        "derivada",
-        "mínim absolut"
+        "extrems absoluts",
+        "regla de la cadena"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         12,
         13

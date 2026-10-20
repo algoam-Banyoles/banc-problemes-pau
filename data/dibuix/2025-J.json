@@ -24,10 +24,11 @@
       "conceptes": [
         "tangències",
         "enllaç d'arcs",
-        "punt de tangència",
-        "circumferències tangents"
+        "punt de tangència"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Enllaços d'arcs tangents amb llocs geomètrics (normals i mediatrius): tangències bàsiques (DT I).",
       "pagines": [
         5
       ],
@@ -122,10 +123,11 @@
         "arc capaç",
         "construcció de polígons",
         "transport d'angles",
-        "rectes paral·leles",
-        "perpendicular"
+        "rectes paral·leles"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Construcció de polígons amb arc capaç i punts notables del triangle (DT I).",
       "pagines": [
         7
       ],
@@ -220,12 +222,14 @@
       ],
       "conceptes": [
         "canvi de pla",
-        "nou alçat",
         "cotes",
         "visibilitat",
-        "plans inclinats"
+        "cares inclinades",
+        "interpretació de vistes"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Nova projecció d'una peça per canvi de pla: operativitat dièdrica (DT II).",
       "pagines": [
         9
       ],
@@ -320,12 +324,14 @@
       ],
       "conceptes": [
         "octaedre",
-        "poliedres regulars",
         "canvi de pla",
         "visibilitat",
-        "escala"
+        "escala",
+        "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) amb canvi de pla.",
       "pagines": [
         11
       ],
@@ -421,11 +427,13 @@
       "conceptes": [
         "axonometria dimètrica",
         "coeficients de reducció",
-        "escala",
         "interpretació de vistes",
-        "visibilitat"
+        "prisma envolupant",
+        "coordenades axonomètriques"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         13
       ],
@@ -500,15 +508,21 @@
       "punts": 4,
       "titol": "Perspectiva militar d'una peça amb suport i braç en forma d'anella",
       "tema": "axonometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "corbes",
+        "normalitzacio"
+      ],
       "conceptes": [
         "perspectiva militar",
-        "axonometria obliqua",
-        "circumferències en perspectiva",
+        "circumferència en axonometria",
         "interpretació de vistes",
-        "escala"
+        "coordenades axonomètriques",
+        "el·lipse",
+        "cares inclinades"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (perspectiva militar amb cilindres, cons o arcs): DT II.",
       "pagines": [
         15
       ],

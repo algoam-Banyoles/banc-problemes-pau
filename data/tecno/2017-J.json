@@ -25,10 +25,11 @@
       "conceptes": [
         "motor asíncron",
         "velocitat de sincronisme",
-        "parells de pols",
-        "freqüència"
+        "parells de pols"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita motors asíncrons de corrent altern (velocitat de sincronisme, lliscament), que són de 2n.",
       "pagines": [
         1
       ],
@@ -81,12 +82,11 @@
       "tema": "fabricacio",
       "temes_secundaris": [],
       "conceptes": [
-        "metrologia",
-        "precisió",
-        "error de mesura",
-        "interval de mesura"
+        "error de mesura"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
       "pagines": [
         1
       ],
@@ -139,11 +139,12 @@
       "tema": "materials",
       "temes_secundaris": [],
       "conceptes": [
-        "aliatges",
-        "composició percentual",
-        "zamak"
+        "aliatge",
+        "composició percentual"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita composició i propietats generals dels materials, que són de 1r.",
       "pagines": [
         2
       ],
@@ -197,12 +198,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "ajust",
-        "joc màxim",
-        "joc mínim",
         "tolerància",
-        "sistema ISO"
+        "joc i serratge"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
       "pagines": [
         2
       ],
@@ -258,16 +259,14 @@
       "punts": 0.5,
       "titol": "Percentatge de peces correctes després de fresatge i rectificació",
       "tema": "fabricacio",
-      "temes_secundaris": [
-        "economia"
-      ],
+      "temes_secundaris": [],
       "conceptes": [
         "control de qualitat",
-        "taxa de rebuig",
-        "processos de fabricació",
-        "percentatges"
+        "processos de fabricació"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
       "pagines": [
         2
       ],
@@ -319,10 +318,13 @@
       "conceptes": [
         "taula de veritat",
         "funció lògica",
-        "simplificació",
-        "portes lògiques"
+        "mapa de Karnaugh",
+        "portes lògiques",
+        "sensor"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         2
       ],
@@ -403,15 +405,17 @@
       "titol": "Cost de fabricar una estrella de sis puntes amb triangles, rombes o perfil sencer",
       "tema": "economia",
       "temes_secundaris": [
-        "disseny"
+        "disseny",
+        "fabricacio"
       ],
       "conceptes": [
         "cost de producció",
-        "perímetre",
-        "superfície",
-        "triangle equilàter"
+        "àrees i perímetres",
+        "processos de fabricació"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
       "pagines": [
         3
       ],
@@ -512,16 +516,22 @@
       "tema": "mecanica",
       "temes_secundaris": [
         "maquines-electriques",
-        "mecanismes"
+        "mecanismes",
+        "circuits"
       ],
       "conceptes": [
         "potència mecànica",
-        "rendiment",
+        "energia potencial",
+        "rendiment global",
         "parell motor",
-        "intensitat",
-        "potència dissipada"
+        "potència elèctrica",
+        "potència dissipada",
+        "reductor",
+        "motor de corrent continu"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Motor de corrent continu (potència, parell, rendiment), que és de 1r.",
       "pagines": [
         3
       ],
@@ -616,17 +626,22 @@
       "titol": "Placa d'alumini articulada i subjectada amb un cable d'acer inclinat",
       "tema": "estatica",
       "temes_secundaris": [
-        "resistencia"
+        "resistencia",
+        "materials"
       ],
       "conceptes": [
         "diagrama de cos lliure",
-        "equilibri",
-        "reaccions",
+        "equilibri de moments",
+        "equilibri de forces",
+        "reaccions en una articulació",
+        "densitat",
         "tensió normal",
-        "allargament unitari",
+        "mòdul de Young",
         "límit elàstic"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita estàtica d'estructures i tensió normal o deformació (resistència de materials), que són de 2n.",
       "pagines": [
         4
       ],
@@ -739,9 +754,12 @@
         "llei d'Ohm",
         "capacitat de bateria",
         "energia elèctrica",
-        "associació en sèrie i paral·lel"
+        "associació de resistències",
+        "autonomia"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         4
       ],
@@ -856,11 +874,11 @@
       "tema": "economia",
       "temes_secundaris": [],
       "conceptes": [
-        "percentatges",
-        "ocupació",
-        "capacitat"
+        "capacitat i ocupació"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
       "pagines": [
         5
       ],
@@ -911,15 +929,13 @@
       "punts": 0.5,
       "titol": "Vehicles que no superen la ITV després de la segona revisió",
       "tema": "fabricacio",
-      "temes_secundaris": [
-        "economia"
-      ],
+      "temes_secundaris": [],
       "conceptes": [
-        "percentatges",
-        "control de qualitat",
-        "taxa de rebuig"
+        "control de qualitat"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
       "pagines": [
         5
       ],
@@ -974,11 +990,11 @@
         "materials"
       ],
       "conceptes": [
-        "resistivitat",
-        "resistència elèctrica",
-        "secció"
+        "resistivitat"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         6
       ],
@@ -1034,13 +1050,16 @@
       "punts": 0.5,
       "titol": "Transport més ràpid i més econòmic: marítim, carretera o ferrocarril",
       "tema": "economia",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "cost del transport",
-        "velocitat mitjana",
-        "comparació d'alternatives"
+        "velocitat lineal",
+        "cost de producció"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
       "pagines": [
         6
       ],
@@ -1095,10 +1114,11 @@
       "conceptes": [
         "motor asíncron",
         "velocitat de sincronisme",
-        "parells de pols",
-        "freqüència"
+        "parells de pols"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita motors asíncrons de corrent altern (velocitat de sincronisme, lliscament), que són de 2n.",
       "pagines": [
         6
       ],
@@ -1156,10 +1176,13 @@
       "conceptes": [
         "taula de veritat",
         "funció lògica",
-        "simplificació",
+        "mapa de Karnaugh",
+        "àlgebra de Boole",
         "esquema de contactes"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         6
       ],
@@ -1240,15 +1263,17 @@
       "titol": "Consum d'un cartell lluminós PAU amb il·luminació seqüencial",
       "tema": "circuits",
       "temes_secundaris": [
-        "energia"
+        "energia",
+        "disseny"
       ],
       "conceptes": [
         "potència elèctrica",
         "energia elèctrica",
-        "longitud",
-        "kW h"
+        "àrees i perímetres"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
       "pagines": [
         7
       ],
@@ -1345,15 +1370,18 @@
       "tema": "mecanica",
       "temes_secundaris": [
         "maquines-electriques",
-        "resistencia"
+        "resistencia",
+        "circuits"
       ],
       "conceptes": [
         "potència mecànica",
-        "contrapès",
         "rendiment",
-        "tensió normal"
+        "tensió normal",
+        "potència elèctrica"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Necessita la tensió normal a les cintes (resistència de materials), que és de 2n.",
       "pagines": [
         7
       ],
@@ -1447,12 +1475,13 @@
         "control"
       ],
       "conceptes": [
-        "potenciòmetre",
-        "divisor de tensió",
-        "sensor de posició",
-        "sensibilitat"
+        "llei d'Ohm",
+        "sensor",
+        "associació de resistències"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita electrònica analògica bàsica en CC, que és de 1r.",
       "pagines": [
         8
       ],
@@ -1550,12 +1579,14 @@
         "termica"
       ],
       "conceptes": [
-        "central de cicle combinat",
         "poder calorífic",
         "rendiment",
-        "potència consumida"
+        "rendiment global",
+        "consum de combustible"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         8
       ],

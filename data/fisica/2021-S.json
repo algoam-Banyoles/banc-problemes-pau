@@ -24,13 +24,16 @@
         "mecanica"
       ],
       "conceptes": [
-        "tercera llei de kepler",
+        "tercera llei de Kepler",
         "període orbital",
-        "radi orbital",
+        "òrbita circular",
         "velocitat orbital",
-        "acceleració centrípeta"
+        "força centrípeta",
+        "MCU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): tercera llei de kepler, període orbital",
       "pagines": [
         2
       ],
@@ -112,10 +115,12 @@
         "camp elèctric uniforme",
         "diferència de potencial",
         "treball elèctric",
-        "energia cinètica",
-        "electró"
+        "conservació de l'energia",
+        "acceleració de partícules carregades"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, diferència de potencial",
       "pagines": [
         4
       ],
@@ -204,11 +209,13 @@
       "conceptes": [
         "ones estacionàries",
         "harmònics",
-        "nodes i ventres",
         "longitud d'ona",
-        "velocitat del so"
+        "velocitat de propagació",
+        "corda vibrant"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, harmònics",
       "pagines": [
         6
       ],
@@ -281,12 +288,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "desintegració beta",
-        "neutró",
-        "antineutrí",
         "defecte de massa",
-        "equivalència massa-energia"
+        "equivalència massa-energia",
+        "equació nuclear"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, neutró",
       "pagines": [
         8
       ],
@@ -356,12 +364,15 @@
       ],
       "conceptes": [
         "força sobre un corrent",
-        "producte vectorial",
+        "regla de la mà dreta",
         "flux magnètic",
-        "llei de faraday",
-        "camp creat per un fil"
+        "llei de Faraday",
+        "camp magnètic d'un fil",
+        "camp magnètic variable"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): força sobre un corrent, producte vectorial",
       "pagines": [
         10
       ],
@@ -449,11 +460,11 @@
       "temes_secundaris": [],
       "conceptes": [
         "nivell d'intensitat sonora",
-        "decibels",
-        "intensitat del so",
-        "logaritmes"
+        "intensitat sonora"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): nivell d'intensitat sonora, decibels",
       "pagines": [
         12
       ],
@@ -521,12 +532,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "flux magnètic",
-        "llei de faraday",
-        "alternador",
-        "força electromotriu",
-        "velocitat angular"
+        "llei de Faraday",
+        "alternador"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
       "pagines": [
         13
       ],
@@ -611,7 +622,9 @@
       "punts": 2.5,
       "titol": "Efecte fotoelèctric amb llum verda i groga: treball d'extracció i potencial de frenada",
       "tema": "quantica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "camp-electric"
+      ],
       "conceptes": [
         "efecte fotoelèctric",
         "treball d'extracció",
@@ -620,6 +633,8 @@
         "energia del fotó"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, treball d'extracció",
       "pagines": [
         14
       ],

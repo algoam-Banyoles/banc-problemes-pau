@@ -21,15 +21,20 @@
       "punts": 2,
       "titol": "Satèl·lits Galileu: període i velocitat orbital",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "òrbita circular",
         "força centrípeta",
         "període orbital",
         "velocitat orbital",
-        "tercera llei de kepler"
+        "tercera llei de Kepler",
+        "MCU"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, força centrípeta",
       "pagines": [
         5
       ],
@@ -100,12 +105,14 @@
       ],
       "conceptes": [
         "camp elèctric uniforme",
-        "força elèctrica",
         "diferència de potencial",
-        "energia cinètica",
-        "electró"
+        "conservació de l'energia",
+        "acceleració de partícules carregades",
+        "MRUA"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, força elèctrica",
       "pagines": [
         6
       ],
@@ -176,15 +183,19 @@
       "punts": 2,
       "titol": "Efecte fotoelèctric en una placa de plom: velocitats, funció de treball i constant de Planck",
       "tema": "quantica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "camp-electric"
+      ],
       "conceptes": [
         "efecte fotoelèctric",
         "potencial de frenada",
-        "funció de treball",
-        "constant de planck",
+        "treball d'extracció",
+        "constant de Planck",
         "energia del fotó"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, potencial de frenada",
       "pagines": [
         6
       ],
@@ -263,12 +274,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "flux magnètic",
-        "llei de faraday",
-        "força electromotriu induïda",
-        "bobina",
-        "gràfica b(t)"
+        "llei de Faraday",
+        "camp magnètic variable",
+        "llei de Lenz"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
       "pagines": [
         7
       ],
@@ -347,12 +359,16 @@
       "temes_secundaris": [],
       "conceptes": [
         "ones estacionàries",
-        "mode fonamental",
+        "harmònics",
         "velocitat de propagació",
         "nivell d'intensitat sonora",
-        "decibels"
+        "corda vibrant",
+        "longitud d'ona",
+        "intensitat sonora"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, mode fonamental",
       "pagines": [
         7
       ],
@@ -428,9 +444,12 @@
         "desintegració alfa",
         "constant de desintegració",
         "període de semidesintegració",
-        "llei de desintegració radioactiva"
+        "llei de desintegració radioactiva",
+        "equació nuclear"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, constant de desintegració",
       "pagines": [
         8
       ],
@@ -499,12 +518,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "moviment harmònic simple",
-        "energia potencial elàstica",
-        "energia mecànica",
-        "fase inicial",
-        "freqüència angular"
+        "energia en el MHS",
+        "equació del MHS",
+        "freqüència angular",
+        "constant elàstica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, energia potencial elàstica",
       "pagines": [
         8
       ],
@@ -588,12 +609,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "alternador",
-        "força electromotriu induïda",
+        "llei de Faraday",
         "flux magnètic",
-        "transformador",
-        "valor eficaç"
+        "transformador"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): alternador, força electromotriu induïda",
       "pagines": [
         8
       ],
@@ -669,14 +691,19 @@
       "punts": 2,
       "titol": "Planeta nan Ceres: gravetat superficial, velocitat d'escapament i distància al Sol",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "intensitat de camp gravitatori",
+        "intensitat del camp gravitatori",
         "velocitat d'escapament",
-        "energia mecànica",
-        "tercera llei de kepler"
+        "tercera llei de Kepler",
+        "MCU",
+        "energia potencial gravitatòria"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): intensitat de camp gravitatori, velocitat d'escapament",
       "pagines": [
         1
       ],
@@ -755,12 +782,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "moviment harmònic simple",
-        "acceleració màxima",
-        "amplitud",
+        "velocitat i acceleració màximes",
+        "equació del MHS",
         "constant elàstica",
         "freqüència angular"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, acceleració màxima",
       "pagines": [
         2
       ],
@@ -831,12 +860,12 @@
       ],
       "conceptes": [
         "camp elèctric uniforme",
-        "força elèctrica",
         "equilibri de forces",
-        "diferència de potencial",
-        "pèndol"
+        "diferència de potencial"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, força elèctrica",
       "pagines": [
         2
       ],
@@ -914,13 +943,14 @@
       "tema": "nuclear",
       "temes_secundaris": [],
       "conceptes": [
-        "reacció nuclear",
-        "captura de neutrons",
+        "equació nuclear",
         "desintegració beta",
         "llei de desintegració radioactiva",
         "període de semidesintegració"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): reacció nuclear, captura de neutrons",
       "pagines": [
         3
       ],
@@ -994,12 +1024,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "flux magnètic",
-        "llei de faraday",
-        "força electromotriu induïda",
-        "espira",
-        "gràfica b(t)"
+        "llei de Faraday",
+        "camp magnètic variable",
+        "llei de Lenz"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
       "pagines": [
         3
       ],
@@ -1080,10 +1111,12 @@
         "camp elèctric",
         "principi de superposició",
         "potencial elèctric",
-        "treball de la força elèctrica",
-        "dipol"
+        "treball elèctric",
+        "dipol elèctric"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, principi de superposició",
       "pagines": [
         3
       ],
@@ -1167,12 +1200,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "desintegració beta",
-        "positró",
         "llei de desintegració radioactiva",
         "període de semidesintegració",
-        "datació radiomètrica"
+        "datació radioactiva",
+        "equació nuclear"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, positró",
       "pagines": [
         4
       ],
@@ -1241,12 +1276,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "flux magnètic",
-        "llei de faraday",
-        "llei de lenz",
-        "força electromotriu induïda",
-        "sentit del corrent induït"
+        "llei de Faraday",
+        "llei de Lenz",
+        "conductor en moviment"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
       "pagines": [
         4
       ],

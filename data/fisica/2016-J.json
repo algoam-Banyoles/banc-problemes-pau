@@ -27,10 +27,13 @@
       "conceptes": [
         "òrbita circular",
         "força centrípeta",
-        "tercera llei de kepler",
-        "acceleració centrípeta"
+        "tercera llei de Kepler",
+        "MCU",
+        "velocitat orbital"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, força centrípeta",
       "pagines": [
         1
       ],
@@ -114,12 +117,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "moviment harmònic simple",
-        "molla",
+        "constant elàstica",
         "freqüència angular",
-        "velocitat màxima",
-        "diferència de fase"
+        "velocitat i acceleració màximes",
+        "equació del MHS"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, molla",
       "pagines": [
         1
       ],
@@ -211,9 +216,11 @@
         "diferència de fase",
         "intensitat sonora",
         "nivell d'intensitat sonora",
-        "decibels"
+        "velocitat de propagació"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): longitud d'ona, diferència de fase",
       "pagines": [
         2
       ],
@@ -301,10 +308,13 @@
         "camp elèctric uniforme",
         "diferència de potencial",
         "conservació de l'energia",
-        "línies de camp",
-        "tir horitzontal"
+        "línies de camp i equipotencials",
+        "tir parabòlic",
+        "MRUA"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, diferència de potencial",
       "pagines": [
         2
       ],
@@ -397,12 +407,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "efecte fotoelèctric",
-        "constant de planck",
+        "constant de Planck",
         "freqüència llindar",
         "treball d'extracció",
-        "energia cinètica màxima"
+        "energia del fotó"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, constant de planck",
       "pagines": [
         3
       ],
@@ -481,12 +493,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "dipol elèctric",
-        "superfícies equipotencials",
+        "línies de camp i equipotencials",
         "potencial elèctric",
-        "línies de camp",
         "principi de superposició"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): dipol elèctric, superfícies equipotencials",
       "pagines": [
         3
       ],
@@ -572,12 +585,13 @@
       ],
       "conceptes": [
         "desintegració beta",
-        "neutrí",
-        "fotó gamma",
+        "energia del fotó",
         "equivalència massa-energia",
-        "longitud d'ona"
+        "equació nuclear"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, neutrí",
       "pagines": [
         3
       ],
@@ -655,12 +669,12 @@
       "tema": "camp-magnetic",
       "temes_secundaris": [],
       "conceptes": [
-        "espira circular",
-        "camp magnètic",
-        "regla de la mà dreta",
-        "corrent elèctric"
+        "camp magnètic d'una espira o bobina",
+        "regla de la mà dreta"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): espira circular, camp magnètic",
       "pagines": [
         4
       ],
@@ -734,12 +748,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "moviment harmònic simple",
-        "equació de moviment",
-        "velocitat màxima",
-        "força recuperadora",
+        "equació del MHS",
+        "velocitat i acceleració màximes",
         "freqüència angular"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, equació de moviment",
       "pagines": [
         5
       ],
@@ -814,10 +829,11 @@
       "conceptes": [
         "camp elèctric",
         "potencial elèctric",
-        "càrregues puntuals",
         "principi de superposició"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, potencial elèctric",
       "pagines": [
         5
       ],
@@ -893,14 +909,20 @@
       "punts": 2,
       "titol": "Mimas, satèl·lit de Saturn: altura i velocitat orbital i energia mecànica",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "òrbita circular",
-        "tercera llei de kepler",
+        "tercera llei de Kepler",
         "velocitat orbital",
-        "energia mecànica orbital"
+        "energia mecànica orbital",
+        "MCU",
+        "força centrípeta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, tercera llei de kepler",
       "pagines": [
         6
       ],
@@ -976,14 +998,20 @@
       "punts": 2,
       "titol": "Electró, neutró i protó en un camp magnètic uniforme i fil que anul·la el camp",
       "tema": "camp-magnetic",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "força de lorentz",
-        "moviment circular",
+        "força de Lorentz",
+        "MCU",
         "camp magnètic d'un fil",
-        "regla de la mà dreta"
+        "regla de la mà dreta",
+        "MRU",
+        "principi de superposició"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): força de lorentz, moviment circular",
       "pagines": [
         6
       ],
@@ -1054,14 +1082,19 @@
       "punts": 2,
       "titol": "Cèl·lula fotoelèctrica amb llum verda: treball d'extracció, freqüència llindar i condicions d'emissió",
       "tema": "quantica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "camp-electric"
+      ],
       "conceptes": [
         "efecte fotoelèctric",
         "potencial de frenada",
         "treball d'extracció",
-        "freqüència llindar"
+        "freqüència llindar",
+        "energia del fotó"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, potencial de frenada",
       "pagines": [
         6
       ],
@@ -1149,9 +1182,12 @@
         "intensitat del camp gravitatori",
         "energia potencial gravitatòria",
         "conservació de l'energia",
-        "variació de g amb l'altura"
+        "MRUA",
+        "caiguda lliure"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "g(h) = GM/(R+h)² del camp gravitatori (2n); la conservació de l'energia sola seria de 1r",
       "pagines": [
         7
       ],
@@ -1224,12 +1260,14 @@
       "tema": "nuclear",
       "temes_secundaris": [],
       "conceptes": [
-        "desintegració radioactiva",
+        "llei de desintegració radioactiva",
         "constant de desintegració",
         "període de semidesintegració",
         "activitat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració radioactiva, constant de desintegració",
       "pagines": [
         7
       ],
@@ -1300,15 +1338,18 @@
       "punts": 2,
       "titol": "Partícula alfa en un camp magnètic: força, trajectòria circular, radi i freqüència",
       "tema": "camp-magnetic",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "força de lorentz",
-        "moviment circular",
-        "radi de gir",
-        "freqüència de ciclotró",
-        "partícula alfa"
+        "força de Lorentz",
+        "MCU",
+        "radi de la trajectòria",
+        "regla de la mà dreta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): força de lorentz, moviment circular",
       "pagines": [
         7
       ],

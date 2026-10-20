@@ -1,0 +1,114 @@
+{
+  "mecanica": [
+    "MRU",
+    "MRUA",
+    "MCU",
+    "caiguda lliure",
+    "tir parabòlic",
+    "força centrípeta",
+    "equilibri de forces",
+    "conservació de l'energia"
+  ],
+  "gravitacio": [
+    "òrbita circular",
+    "velocitat orbital",
+    "període orbital",
+    "tercera llei de Kepler",
+    "òrbita el·líptica",
+    "intensitat del camp gravitatori",
+    "energia potencial gravitatòria",
+    "energia mecànica orbital",
+    "velocitat d'escapament",
+    "massa d'un astre"
+  ],
+  "camp-electric": [
+    "llei de Coulomb",
+    "camp elèctric",
+    "camp elèctric uniforme",
+    "principi de superposició",
+    "potencial elèctric",
+    "diferència de potencial",
+    "energia potencial elèctrica",
+    "treball elèctric",
+    "línies de camp i equipotencials",
+    "dipol elèctric",
+    "acceleració de partícules carregades"
+  ],
+  "camp-magnetic": [
+    "força de Lorentz",
+    "regla de la mà dreta",
+    "radi de la trajectòria",
+    "selector de velocitats",
+    "camp magnètic d'un fil",
+    "camp magnètic d'una espira o bobina",
+    "força sobre un corrent",
+    "força entre corrents",
+    "línies de camp magnètic"
+  ],
+  "induccio": [
+    "flux magnètic",
+    "llei de Faraday",
+    "llei de Lenz",
+    "camp magnètic variable",
+    "conductor en moviment",
+    "alternador",
+    "transformador"
+  ],
+  "oscillacions": [
+    "moviment harmònic simple",
+    "equació del MHS",
+    "freqüència angular",
+    "velocitat i acceleració màximes",
+    "constant elàstica",
+    "energia en el MHS"
+  ],
+  "ones": [
+    "equació d'ona",
+    "longitud d'ona",
+    "velocitat de propagació",
+    "diferència de fase",
+    "ona transversal",
+    "ones estacionàries",
+    "harmònics",
+    "corda vibrant",
+    "tubs sonors",
+    "intensitat sonora",
+    "potència sonora",
+    "nivell d'intensitat sonora",
+    "efecte Doppler"
+  ],
+  "optica": [
+    "reflexió i refracció",
+    "llei de Snell",
+    "angle límit",
+    "espectre electromagnètic"
+  ],
+  "relativitat": [
+    "massa equivalent"
+  ],
+  "quantica": [
+    "efecte fotoelèctric",
+    "energia del fotó",
+    "treball d'extracció",
+    "freqüència llindar",
+    "potencial de frenada",
+    "constant de Planck",
+    "longitud d'ona de De Broglie",
+    "nombre de fotons",
+    "model de Bohr"
+  ],
+  "nuclear": [
+    "període de semidesintegració",
+    "constant de desintegració",
+    "llei de desintegració radioactiva",
+    "activitat",
+    "desintegració alfa",
+    "desintegració beta",
+    "equació nuclear",
+    "sèrie radioactiva",
+    "datació radioactiva",
+    "defecte de massa",
+    "equivalència massa-energia",
+    "fissió i fusió nuclear"
+  ]
+}

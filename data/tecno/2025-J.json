@@ -21,21 +21,49 @@
       "titol": "Diàmetre mínim d'un cargol amb tolerància simètrica",
       "tema": "fabricacio",
       "temes_secundaris": [],
-      "conceptes": ["tolerància", "diàmetre nominal", "cota mínima"],
+      "conceptes": [
+        "tolerància"
+      ],
       "dificultat": 1,
-      "pagines": [2],
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
+      "pagines": [
+        2
+      ],
       "enunciat": "En una fàbrica de peces metàl·liques, produeixen cargols amb un diàmetre nominal de $10\\ \\text{mm}$ i una tolerància de $\\pm 0{,}05\\ \\text{mm}$. Quin és el diàmetre mínim acceptable per a aquests cargols?",
       "figures": [],
-      "opcions": {"a": "$9{,}90\\ \\text{mm}$", "b": "$9{,}95\\ \\text{mm}$", "c": "$10{,}05\\ \\text{mm}$", "d": "$10{,}10\\ \\text{mm}$"},
+      "opcions": {
+        "a": "$9{,}90\\ \\text{mm}$",
+        "b": "$9{,}95\\ \\text{mm}$",
+        "c": "$10{,}05\\ \\text{mm}$",
+        "d": "$10{,}10\\ \\text{mm}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "b",
         "passos": [
-          {"apartat": null, "titol": "Què vol dir una tolerància de ±0,05 mm", "cos": "La tolerància indica quant es pot allunyar la mida real de la nominal. Amb $\\pm 0{,}05\\ \\text{mm}$, la peça és acceptable si el diàmetre està entre $10 - 0{,}05$ i $10 + 0{,}05$ mm."},
-          {"apartat": null, "titol": "Diàmetre mínim", "cos": "$$d_\\text{mín} = d_\\text{nom} - 0{,}05 = 10 - 0{,}05 = 9{,}95\\ \\text{mm}$$\n\nResultat: **$d_\\text{mín} = 9{,}95\\ \\text{mm}$** → resposta **b**."},
-          {"apartat": null, "titol": "Per què les altres no", "cos": "- **c)** $10{,}05\\ \\text{mm}$ és el diàmetre **màxim**, no el mínim.\n- **a)** i **d)** surten de restar o sumar el doble de la tolerància ($0{,}10\\ \\text{mm}$), confonent la tolerància amb l'amplada total de l'interval."}
+          {
+            "apartat": null,
+            "titol": "Què vol dir una tolerància de ±0,05 mm",
+            "cos": "La tolerància indica quant es pot allunyar la mida real de la nominal. Amb $\\pm 0{,}05\\ \\text{mm}$, la peça és acceptable si el diàmetre està entre $10 - 0{,}05$ i $10 + 0{,}05$ mm."
+          },
+          {
+            "apartat": null,
+            "titol": "Diàmetre mínim",
+            "cos": "$$d_\\text{mín} = d_\\text{nom} - 0{,}05 = 10 - 0{,}05 = 9{,}95\\ \\text{mm}$$\n\nResultat: **$d_\\text{mín} = 9{,}95\\ \\text{mm}$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **c)** $10{,}05\\ \\text{mm}$ és el diàmetre **màxim**, no el mínim.\n- **a)** i **d)** surten de restar o sumar el doble de la tolerància ($0{,}10\\ \\text{mm}$), confonent la tolerància amb l'amplada total de l'interval."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$d_\\text{mín} = 9{,}95\\ \\text{mm}$ → resposta **b**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$d_\\text{mín} = 9{,}95\\ \\text{mm}$ → resposta **b**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -48,23 +76,58 @@
       "punts": 0.5,
       "titol": "Consum de propà per cicle en un motor de quatre temps",
       "tema": "termica",
-      "temes_secundaris": [],
-      "conceptes": ["motor de quatre temps", "cicle termodinàmic", "consum horari"],
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "motor de combustió interna",
+        "consum de combustible"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Necessita el funcionament del motor de quatre temps (un cicle cada dues voltes), que és de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Un motor de propà líquid consumeix $7{,}5\\ \\text{kg/h}$ quan funciona a $2\\,500\\ \\text{min}^{-1}$. Si el motor és de quatre temps, quina massa de propà es consumeix en 100 cicles termodinàmics del motor?",
       "figures": [],
-      "opcions": {"a": "$20\\ \\text{g}$", "b": "$10\\ \\text{g}$", "c": "$100\\ \\text{g}$", "d": "$200\\ \\text{g}$"},
+      "opcions": {
+        "a": "$20\\ \\text{g}$",
+        "b": "$10\\ \\text{g}$",
+        "c": "$100\\ \\text{g}$",
+        "d": "$200\\ \\text{g}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "b",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Consum: $c = 7{,}5\\ \\text{kg/h} = 7\\,500\\ \\text{g/h}$\n- Velocitat de gir: $n = 2\\,500\\ \\text{min}^{-1}$ (voltes per minut del cigonyal)\n- Motor de 4 temps\n- Incògnita: massa consumida en 100 cicles, $m_{100}$"},
-          {"apartat": null, "titol": "Cicles per hora en un motor de 4 temps", "cos": "En un motor de **quatre temps**, cada cicle termodinàmic (admissió, compressió, explosió, escapament) necessita **dues voltes** del cigonyal. Per tant, el nombre de cicles per minut és la meitat de les voltes per minut:\n\n$$n_\\text{cicles} = \\frac{n}{2} = \\frac{2\\,500}{2} = 1\\,250\\ \\text{cicles/min}$$\n\nEn una hora: $1\\,250 \\cdot 60 = 75\\,000\\ \\text{cicles/h}$."},
-          {"apartat": null, "titol": "Massa per cicle i per 100 cicles", "cos": "Repartim el consum horari entre els cicles d'una hora:\n\n$$m_\\text{cicle} = \\frac{7\\,500\\ \\text{g/h}}{75\\,000\\ \\text{cicles/h}} = 0{,}1\\ \\text{g/cicle}$$\n\n$$m_{100} = 100 \\cdot 0{,}1 = 10\\ \\text{g}$$\n\nResultat: **$m_{100} = 10\\ \\text{g}$** → resposta **b**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- Si es pensa que un cicle és una sola volta (com en un motor de 2 temps) surten $5\\ \\text{g}$ (no és cap opció).\n- Si es pensa que un cicle són 4 voltes (una per temps) surten $20\\ \\text{g}$, l'opció **a**.\n- Les opcions **c** i **d** surten d'errors d'unitats (kg ↔ g, minuts ↔ hores)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Consum: $c = 7{,}5\\ \\text{kg/h} = 7\\,500\\ \\text{g/h}$\n- Velocitat de gir: $n = 2\\,500\\ \\text{min}^{-1}$ (voltes per minut del cigonyal)\n- Motor de 4 temps\n- Incògnita: massa consumida en 100 cicles, $m_{100}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Cicles per hora en un motor de 4 temps",
+            "cos": "En un motor de **quatre temps**, cada cicle termodinàmic (admissió, compressió, explosió, escapament) necessita **dues voltes** del cigonyal. Per tant, el nombre de cicles per minut és la meitat de les voltes per minut:\n\n$$n_\\text{cicles} = \\frac{n}{2} = \\frac{2\\,500}{2} = 1\\,250\\ \\text{cicles/min}$$\n\nEn una hora: $1\\,250 \\cdot 60 = 75\\,000\\ \\text{cicles/h}$."
+          },
+          {
+            "apartat": null,
+            "titol": "Massa per cicle i per 100 cicles",
+            "cos": "Repartim el consum horari entre els cicles d'una hora:\n\n$$m_\\text{cicle} = \\frac{7\\,500\\ \\text{g/h}}{75\\,000\\ \\text{cicles/h}} = 0{,}1\\ \\text{g/cicle}$$\n\n$$m_{100} = 100 \\cdot 0{,}1 = 10\\ \\text{g}$$\n\nResultat: **$m_{100} = 10\\ \\text{g}$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- Si es pensa que un cicle és una sola volta (com en un motor de 2 temps) surten $5\\ \\text{g}$ (no és cap opció).\n- Si es pensa que un cicle són 4 voltes (una per temps) surten $20\\ \\text{g}$, l'opció **a**.\n- Les opcions **c** i **d** surten d'errors d'unitats (kg ↔ g, minuts ↔ hores)."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$m = 10\\ \\text{g}$ → resposta **b**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$m = 10\\ \\text{g}$ → resposta **b**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -78,21 +141,51 @@
       "titol": "Energia d'un funicular segons el pendent del recorregut",
       "tema": "mecanica",
       "temes_secundaris": [],
-      "conceptes": ["energia potencial", "energia cinètica", "conservació de l'energia"],
+      "conceptes": [
+        "energia potencial",
+        "energia cinètica",
+        "conservació de l'energia"
+      ],
       "dificultat": 1,
-      "pagines": [2],
+      "curs": "1r",
+      "curs_motiu": "Cinemàtica o conservació de l'energia mecànica (Física i Química de 1r).",
+      "pagines": [
+        2
+      ],
       "enunciat": "Es proposen dues opcions de funicular per a anar entre dos punts d'una muntanya a velocitat constant. L'opció A és el recorregut més curt possible, però amb el pendent més acusat. L'opció B recorre més distància per tal de rebaixar el pendent de la via. En totes dues opcions, els funiculars van a la mateixa velocitat i transporten la mateixa quantitat de persones. Es pot afirmar que l'energia total necessària per a completar el recorregut, sense considerar les pèrdues energètiques,",
       "figures": [],
-      "opcions": {"a": "és la mateixa.", "b": "és més gran en l'opció A.", "c": "és més gran en l'opció B.", "d": "depèn de l'acceleració màxima del funicular."},
+      "opcions": {
+        "a": "és la mateixa.",
+        "b": "és més gran en l'opció A.",
+        "c": "és més gran en l'opció B.",
+        "d": "depèn de l'acceleració màxima del funicular."
+      },
       "apartats": [],
       "solucio": {
         "resposta": "a",
         "passos": [
-          {"apartat": null, "titol": "Quina energia cal aportar", "cos": "Sense pèrdues (sense fregament), l'energia que cal aportar és igual a l'augment d'energia mecànica del funicular. Com que va a **velocitat constant**, l'energia cinètica no canvia; només augmenta l'energia potencial:\n\n$$E = \\Delta E_p = m\\, g\\, \\Delta h$$"},
-          {"apartat": null, "titol": "Comparació de les dues opcions", "cos": "Els dos recorreguts uneixen **els mateixos dos punts**, per tant el desnivell $\\Delta h$ és el mateix, i la massa transportada també. L'energia potencial només depèn del desnivell, no del camí seguit ni del pendent. Per tant **l'energia és la mateixa** → resposta **a**.\n\nEl pendent sí que canvia la **força** necessària (més gran en A) i la **potència** (A arriba abans), però no l'energia total."},
-          {"apartat": null, "titol": "Per què les altres no", "cos": "- **b)** confon força o potència amb energia.\n- **c)** seria cert si hi hagués fregament (més distància, més pèrdues), però l'enunciat diu que no es consideren.\n- **d)** l'acceleració inicial i la frenada final s'anul·len energèticament (comença i acaba amb la mateixa velocitat)."}
+          {
+            "apartat": null,
+            "titol": "Quina energia cal aportar",
+            "cos": "Sense pèrdues (sense fregament), l'energia que cal aportar és igual a l'augment d'energia mecànica del funicular. Com que va a **velocitat constant**, l'energia cinètica no canvia; només augmenta l'energia potencial:\n\n$$E = \\Delta E_p = m\\, g\\, \\Delta h$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Comparació de les dues opcions",
+            "cos": "Els dos recorreguts uneixen **els mateixos dos punts**, per tant el desnivell $\\Delta h$ és el mateix, i la massa transportada també. L'energia potencial només depèn del desnivell, no del camí seguit ni del pendent. Per tant **l'energia és la mateixa** → resposta **a**.\n\nEl pendent sí que canvia la **força** necessària (més gran en A) i la **potència** (A arriba abans), però no l'energia total."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **b)** confon força o potència amb energia.\n- **c)** seria cert si hi hagués fregament (més distància, més pèrdues), però l'enunciat diu que no es consideren.\n- **d)** l'acceleració inicial i la frenada final s'anul·len energèticament (comença i acaba amb la mateixa velocitat)."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$E_A = E_B = m\\,g\\,\\Delta h$ → resposta **a**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$E_A = E_B = m\\,g\\,\\Delta h$ → resposta **a**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -106,22 +199,55 @@
       "titol": "Corrent màxim en una resistència en corrent altern",
       "tema": "circuits",
       "temes_secundaris": [],
-      "conceptes": ["corrent altern", "valor eficaç", "valor màxim", "llei d'Ohm"],
+      "conceptes": [
+        "corrent altern",
+        "llei d'Ohm"
+      ],
       "dificultat": 1,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Necessita corrent altern (relació entre valor eficaç i valor màxim), que és de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Alimentem una resistència de valor $R = 17\\ \\Omega$ amb una font de tensió alterna sinusoidal de valor eficaç $U = 230\\ \\text{V}$ i de freqüència $f = 50\\ \\text{Hz}$. Quin és el **valor màxim** de corrent que hi circula?",
       "figures": [],
-      "opcions": {"a": "$13{,}52\\ \\text{A}$", "b": "$19{,}13\\ \\text{A}$", "c": "$23{,}42\\ \\text{A}$", "d": "$27{,}13\\ \\text{A}$"},
+      "opcions": {
+        "a": "$13{,}52\\ \\text{A}$",
+        "b": "$19{,}13\\ \\text{A}$",
+        "c": "$23{,}42\\ \\text{A}$",
+        "d": "$27{,}13\\ \\text{A}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "b",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $R = 17\\ \\Omega$, $U_\\text{ef} = 230\\ \\text{V}$, $f = 50\\ \\text{Hz}$\n- Incògnita: corrent màxim (de pic), $I_\\text{màx}$"},
-          {"apartat": null, "titol": "Corrent eficaç amb la llei d'Ohm", "cos": "Una resistència pura no desfasa ni depèn de la freqüència, així que la llei d'Ohm s'aplica directament amb valors eficaços:\n\n$$I_\\text{ef} = \\frac{U_\\text{ef}}{R} = \\frac{230}{17} = 13{,}53\\ \\text{A}$$"},
-          {"apartat": null, "titol": "Del valor eficaç al valor màxim", "cos": "En una senyal sinusoidal, el valor màxim és $\\sqrt{2}$ vegades el valor eficaç:\n\n$$I_\\text{màx} = \\sqrt{2}\\, I_\\text{ef} = \\sqrt{2} \\cdot \\frac{230}{17} = 19{,}13\\ \\text{A}$$\n\nResultat: **$I_\\text{màx} = 19{,}13\\ \\text{A}$** → resposta **b**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "L'opció **a** (13,52 A) és el corrent **eficaç**: és l'error de no passar a valor màxim. La freqüència no intervé en una resistència pura."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $R = 17\\ \\Omega$, $U_\\text{ef} = 230\\ \\text{V}$, $f = 50\\ \\text{Hz}$\n- Incògnita: corrent màxim (de pic), $I_\\text{màx}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Corrent eficaç amb la llei d'Ohm",
+            "cos": "Una resistència pura no desfasa ni depèn de la freqüència, així que la llei d'Ohm s'aplica directament amb valors eficaços:\n\n$$I_\\text{ef} = \\frac{U_\\text{ef}}{R} = \\frac{230}{17} = 13{,}53\\ \\text{A}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Del valor eficaç al valor màxim",
+            "cos": "En una senyal sinusoidal, el valor màxim és $\\sqrt{2}$ vegades el valor eficaç:\n\n$$I_\\text{màx} = \\sqrt{2}\\, I_\\text{ef} = \\sqrt{2} \\cdot \\frac{230}{17} = 19{,}13\\ \\text{A}$$\n\nResultat: **$I_\\text{màx} = 19{,}13\\ \\text{A}$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "L'opció **a** (13,52 A) és el corrent **eficaç**: és l'error de no passar a valor màxim. La freqüència no intervé en una resistència pura."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$I_\\text{màx} = 19{,}13\\ \\text{A}$ → resposta **b**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$I_\\text{màx} = 19{,}13\\ \\text{A}$ → resposta **b**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -134,22 +260,58 @@
       "punts": 0.5,
       "titol": "Límit elàstic a partir de corbes tensió-deformació de dos acers",
       "tema": "resistencia",
-      "temes_secundaris": ["materials"],
-      "conceptes": ["assaig de tracció", "límit elàstic", "diagrama tensió-deformació"],
+      "temes_secundaris": [
+        "materials"
+      ],
+      "conceptes": [
+        "assaig de tracció",
+        "límit elàstic"
+      ],
       "dificultat": 1,
-      "pagines": [3],
+      "curs": "2n",
+      "curs_motiu": "Necessita tensió, deformació o mòdul de Young (resistència de materials i assaig de tracció), que és de 2n.",
+      "pagines": [
+        3
+      ],
       "enunciat": "En un assaig de tracció s'obtenen les corbes tensió-deformació que mostra la figura. Quin dels dos acers té un límit elàstic més alt?",
-      "figures": [{"src": "img/tecno/2025-J/e1-q5.png", "peu": "Corbes tensió-deformació dels acers A i B"}],
-      "opcions": {"a": "L'acer A.", "b": "L'acer B.", "c": "Ambdós tenen el mateix límit elàstic.", "d": "No es pot determinar amb la informació donada."},
+      "figures": [
+        {
+          "src": "img/tecno/2025-J/e1-q5.png",
+          "peu": "Corbes tensió-deformació dels acers A i B"
+        }
+      ],
+      "opcions": {
+        "a": "L'acer A.",
+        "b": "L'acer B.",
+        "c": "Ambdós tenen el mateix límit elàstic.",
+        "d": "No es pot determinar amb la informació donada."
+      },
       "apartats": [],
       "solucio": {
         "resposta": "a",
         "passos": [
-          {"apartat": null, "titol": "Com es llegeix el límit elàstic a la gràfica", "cos": "Al començament de l'assaig, la corba és una **recta** (zona elàstica: tensió proporcional a la deformació). El **límit elàstic** és la tensió on la corba deixa de ser recta i es doblega, és a dir, on el material comença a deformar-se plàsticament."},
-          {"apartat": null, "titol": "Comparació dels dos acers", "cos": "Tots dos acers comparteixen el mateix tram recte inicial (mateix mòdul de Young), però:\n\n- L'**acer B** (línia de punts) es doblega aproximadament a $\\sigma \\approx 250\\ \\text{MPa}$.\n- L'**acer A** (línia contínua) continua recte fins a $\\sigma \\approx 400\\ \\text{MPa}$.\n\nPer tant l'**acer A** té el límit elàstic més alt → resposta **a**."},
-          {"apartat": null, "titol": "Per què les altres no", "cos": "Que l'acer B arribi a més deformació (és més dúctil) no vol dir que tingui més límit elàstic. La gràfica sí que dona prou informació, així que la **d** no és correcta."}
+          {
+            "apartat": null,
+            "titol": "Com es llegeix el límit elàstic a la gràfica",
+            "cos": "Al començament de l'assaig, la corba és una **recta** (zona elàstica: tensió proporcional a la deformació). El **límit elàstic** és la tensió on la corba deixa de ser recta i es doblega, és a dir, on el material comença a deformar-se plàsticament."
+          },
+          {
+            "apartat": null,
+            "titol": "Comparació dels dos acers",
+            "cos": "Tots dos acers comparteixen el mateix tram recte inicial (mateix mòdul de Young), però:\n\n- L'**acer B** (línia de punts) es doblega aproximadament a $\\sigma \\approx 250\\ \\text{MPa}$.\n- L'**acer A** (línia contínua) continua recte fins a $\\sigma \\approx 400\\ \\text{MPa}$.\n\nPer tant l'**acer A** té el límit elàstic més alt → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "Que l'acer B arribi a més deformació (és més dúctil) no vol dir que tingui més límit elàstic. La gràfica sí que dona prou informació, així que la **d** no és correcta."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$\\sigma_{e,A} \\approx 400\\ \\text{MPa} > \\sigma_{e,B} \\approx 250\\ \\text{MPa}$ → resposta **a**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\sigma_{e,A} \\approx 400\\ \\text{MPa} > \\sigma_{e,B} \\approx 250\\ \\text{MPa}$ → resposta **a**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -163,21 +325,49 @@
       "titol": "Calor que cal extreure per refredar un bloc de coure",
       "tema": "termica",
       "temes_secundaris": [],
-      "conceptes": ["calor sensible", "calor específica", "unitats d'energia"],
+      "conceptes": [
+        "calor sensible"
+      ],
       "dificultat": 1,
-      "pagines": [3],
+      "curs": "1r",
+      "curs_motiu": "Només necessita calor sensible, poder calorífic i rendiment, que són de 1r.",
+      "pagines": [
+        3
+      ],
       "enunciat": "Volem refredar un bloc de coure de $40\\ \\text{kg}$ des de $250\\ ^\\circ\\text{C}$ fins a $25\\ ^\\circ\\text{C}$ en una hora. La calor específica del coure és $c_\\text{e} = 0{,}385\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$. Quanta energia cal extreure del sistema?",
       "figures": [],
-      "opcions": {"a": "$346{,}5\\ \\text{W s}$", "b": "$962{,}5\\ \\text{J}$", "c": "$346{,}5\\ \\text{W h}$", "d": "$3\\,465\\ \\text{kJ}$"},
+      "opcions": {
+        "a": "$346{,}5\\ \\text{W s}$",
+        "b": "$962{,}5\\ \\text{J}$",
+        "c": "$346{,}5\\ \\text{W h}$",
+        "d": "$3\\,465\\ \\text{kJ}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "d",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $m = 40\\ \\text{kg}$\n- $T_1 = 250\\ ^\\circ\\text{C}$, $T_2 = 25\\ ^\\circ\\text{C}$ → $\\Delta T = 225\\ ^\\circ\\text{C}$\n- $c_\\text{e} = 0{,}385\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$\n- Incògnita: energia (calor) que cal extreure, $Q$"},
-          {"apartat": null, "titol": "Calor sensible", "cos": "Quan un cos canvia de temperatura sense canviar d'estat, la calor intercanviada és:\n\n$$Q = m\\, c_\\text{e}\\, \\Delta T = 40 \\cdot 0{,}385 \\cdot 225 = 3\\,465\\ \\text{kJ}$$\n\nResultat: **$Q = 3\\,465\\ \\text{kJ}$** → resposta **d**."},
-          {"apartat": null, "titol": "Comprovació de les altres opcions (unitats)", "cos": "El temps (una hora) **no** afecta l'energia; només serviria per calcular la potència de refredament. En altres unitats:\n\n$$3\\,465\\ \\text{kJ} = \\frac{3\\,465\\,000\\ \\text{J}}{3\\,600\\ \\text{s/h}} = 962{,}5\\ \\text{W h}$$\n\nPer tant 962,5 J (b), 346,5 W s (a) i 346,5 W h (c) són valors amb unitats o xifres equivocades."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 40\\ \\text{kg}$\n- $T_1 = 250\\ ^\\circ\\text{C}$, $T_2 = 25\\ ^\\circ\\text{C}$ → $\\Delta T = 225\\ ^\\circ\\text{C}$\n- $c_\\text{e} = 0{,}385\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$\n- Incògnita: energia (calor) que cal extreure, $Q$"
+          },
+          {
+            "apartat": null,
+            "titol": "Calor sensible",
+            "cos": "Quan un cos canvia de temperatura sense canviar d'estat, la calor intercanviada és:\n\n$$Q = m\\, c_\\text{e}\\, \\Delta T = 40 \\cdot 0{,}385 \\cdot 225 = 3\\,465\\ \\text{kJ}$$\n\nResultat: **$Q = 3\\,465\\ \\text{kJ}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Comprovació de les altres opcions (unitats)",
+            "cos": "El temps (una hora) **no** afecta l'energia; només serviria per calcular la potència de refredament. En altres unitats:\n\n$$3\\,465\\ \\text{kJ} = \\frac{3\\,465\\,000\\ \\text{J}}{3\\,600\\ \\text{s/h}} = 962{,}5\\ \\text{W h}$$\n\nPer tant 962,5 J (b), 346,5 W s (a) i 346,5 W h (c) són valors amb unitats o xifres equivocades."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$Q = 3\\,465\\ \\text{kJ}$ ($= 962{,}5\\ \\text{W h}$) → resposta **d**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$Q = 3\\,465\\ \\text{kJ}$ ($= 962{,}5\\ \\text{W h}$) → resposta **d**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -191,21 +381,51 @@
       "titol": "Joc mínim de l'ajust 200 H8/f6",
       "tema": "fabricacio",
       "temes_secundaris": [],
-      "conceptes": ["ajust", "joc mínim", "tolerància", "sistema ISO"],
+      "conceptes": [
+        "ajust",
+        "tolerància",
+        "joc i serratge"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
+      "pagines": [
+        3
+      ],
       "enunciat": "En l'ajust 200 H8/f6, la tolerància del forat és $\\left(\\begin{smallmatrix} 72 \\\\ 0 \\end{smallmatrix}\\right)\\ \\mu\\text{m}$ i la de l'eix és $\\left(\\begin{smallmatrix} -50 \\\\ -79 \\end{smallmatrix}\\right)\\ \\mu\\text{m}$. Quin és el joc mínim d'aquest ajust?",
       "figures": [],
-      "opcions": {"a": "$50\\ \\mu\\text{m}$", "b": "$79\\ \\mu\\text{m}$", "c": "$122\\ \\mu\\text{m}$", "d": "$151\\ \\mu\\text{m}$"},
+      "opcions": {
+        "a": "$50\\ \\mu\\text{m}$",
+        "b": "$79\\ \\mu\\text{m}$",
+        "c": "$122\\ \\mu\\text{m}$",
+        "d": "$151\\ \\mu\\text{m}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "a",
         "passos": [
-          {"apartat": null, "titol": "Mides límit del forat i de l'eix", "cos": "La notació $\\left(\\begin{smallmatrix} \\text{sup} \\\\ \\text{inf} \\end{smallmatrix}\\right)$ dona les desviacions superior i inferior respecte de la mida nominal ($200\\ \\text{mm}$):\n\n- Forat: $D_\\text{màx} = 200{,}072\\ \\text{mm}$, $D_\\text{mín} = 200{,}000\\ \\text{mm}$\n- Eix: $d_\\text{màx} = 199{,}950\\ \\text{mm}$, $d_\\text{mín} = 199{,}921\\ \\text{mm}$"},
-          {"apartat": null, "titol": "Joc mínim", "cos": "El joc mínim es dona en el cas més ajustat: el forat **més petit** amb l'eix **més gros**:\n\n$$J_\\text{mín} = D_\\text{mín} - d_\\text{màx} = 200{,}000 - 199{,}950 = 0{,}050\\ \\text{mm} = 50\\ \\mu\\text{m}$$\n\nO directament amb les desviacions: $J_\\text{mín} = 0 - (-50) = 50\\ \\mu\\text{m}$.\n\nResultat: **$J_\\text{mín} = 50\\ \\mu\\text{m}$** → resposta **a**."},
-          {"apartat": null, "titol": "Per què les altres no", "cos": "- **d)** $151\\ \\mu\\text{m}$ és el **joc màxim**: $D_\\text{màx} - d_\\text{mín} = 72 - (-79) = 151\\ \\mu\\text{m}$.\n- **c)** $122 = 72 + 50$ i **b)** $79$ surten de combinar malament les desviacions."}
+          {
+            "apartat": null,
+            "titol": "Mides límit del forat i de l'eix",
+            "cos": "La notació $\\left(\\begin{smallmatrix} \\text{sup} \\\\ \\text{inf} \\end{smallmatrix}\\right)$ dona les desviacions superior i inferior respecte de la mida nominal ($200\\ \\text{mm}$):\n\n- Forat: $D_\\text{màx} = 200{,}072\\ \\text{mm}$, $D_\\text{mín} = 200{,}000\\ \\text{mm}$\n- Eix: $d_\\text{màx} = 199{,}950\\ \\text{mm}$, $d_\\text{mín} = 199{,}921\\ \\text{mm}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Joc mínim",
+            "cos": "El joc mínim es dona en el cas més ajustat: el forat **més petit** amb l'eix **més gros**:\n\n$$J_\\text{mín} = D_\\text{mín} - d_\\text{màx} = 200{,}000 - 199{,}950 = 0{,}050\\ \\text{mm} = 50\\ \\mu\\text{m}$$\n\nO directament amb les desviacions: $J_\\text{mín} = 0 - (-50) = 50\\ \\mu\\text{m}$.\n\nResultat: **$J_\\text{mín} = 50\\ \\mu\\text{m}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **d)** $151\\ \\mu\\text{m}$ és el **joc màxim**: $D_\\text{màx} - d_\\text{mín} = 72 - (-79) = 151\\ \\mu\\text{m}$.\n- **c)** $122 = 72 + 50$ i **b)** $79$ surten de combinar malament les desviacions."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$J_\\text{mín} = 50\\ \\mu\\text{m}$ → resposta **a**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$J_\\text{mín} = 50\\ \\mu\\text{m}$ → resposta **a**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -219,23 +439,60 @@
       "titol": "Resistència d'una càrrega RL sèrie a partir del corrent",
       "tema": "circuits",
       "temes_secundaris": [],
-      "conceptes": ["corrent altern", "impedància", "reactància inductiva", "circuit RL"],
+      "conceptes": [
+        "corrent altern",
+        "impedància"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "2n",
+      "curs_motiu": "Necessita corrent altern (reactàncies, impedància, factor de potència), que és de 2n.",
+      "pagines": [
+        3
+      ],
       "enunciat": "Una càrrega elèctrica està formada per una resistència de valor $R$ i una inductància de valor $L = 100\\ \\text{mH}$ connectades en sèrie. Quan la càrrega està connectada a una font de tensió alterna sinusoidal de valor $U = 230\\ \\text{V}$ de freqüència $f = 50\\ \\text{Hz}$, es mesura que hi circula un corrent de valor $I = 2\\ \\text{A}$. Quin és el valor de la resistència $R$?",
       "figures": [],
-      "opcions": {"a": "$84\\ \\Omega$", "b": "$111\\ \\Omega$", "c": "$130\\ \\Omega$", "d": "$230\\ \\Omega$"},
+      "opcions": {
+        "a": "$84\\ \\Omega$",
+        "b": "$111\\ \\Omega$",
+        "c": "$130\\ \\Omega$",
+        "d": "$230\\ \\Omega$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "b",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $L = 100\\ \\text{mH} = 0{,}1\\ \\text{H}$\n- $U = 230\\ \\text{V}$, $f = 50\\ \\text{Hz}$, $I = 2\\ \\text{A}$\n- Incògnita: $R$"},
-          {"apartat": null, "titol": "Mòdul de la impedància", "cos": "La llei d'Ohm en altern relaciona tensió i corrent a través del mòdul de la impedància:\n\n$$Z = \\frac{U}{I} = \\frac{230}{2} = 115\\ \\Omega$$"},
-          {"apartat": null, "titol": "Reactància inductiva", "cos": "$$X_L = 2\\pi f L = 2\\pi \\cdot 50 \\cdot 0{,}1 = 31{,}42\\ \\Omega$$"},
-          {"apartat": null, "titol": "Resistència amb el triangle d'impedàncies", "cos": "En un circuit RL sèrie, $R$ i $X_L$ estan desfasades 90°, així que no se sumen directament sinó com els catets d'un triangle rectangle: $Z = \\sqrt{R^2 + X_L^2}$. Aïllant $R$:\n\n$$R = \\sqrt{Z^2 - X_L^2} = \\sqrt{115^2 - 31{,}42^2} = 110{,}6\\ \\Omega \\approx 111\\ \\Omega$$\n\nResultat: **$R \\approx 111\\ \\Omega$** → resposta **b**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **a)** $84\\ \\Omega \\approx 115 - 31{,}4$: restar directament $X_L$ de $Z$ (oblidar el triangle).\n- **d)** $230\\ \\Omega$: confondre tensió amb impedància."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $L = 100\\ \\text{mH} = 0{,}1\\ \\text{H}$\n- $U = 230\\ \\text{V}$, $f = 50\\ \\text{Hz}$, $I = 2\\ \\text{A}$\n- Incògnita: $R$"
+          },
+          {
+            "apartat": null,
+            "titol": "Mòdul de la impedància",
+            "cos": "La llei d'Ohm en altern relaciona tensió i corrent a través del mòdul de la impedància:\n\n$$Z = \\frac{U}{I} = \\frac{230}{2} = 115\\ \\Omega$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Reactància inductiva",
+            "cos": "$$X_L = 2\\pi f L = 2\\pi \\cdot 50 \\cdot 0{,}1 = 31{,}42\\ \\Omega$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Resistència amb el triangle d'impedàncies",
+            "cos": "En un circuit RL sèrie, $R$ i $X_L$ estan desfasades 90°, així que no se sumen directament sinó com els catets d'un triangle rectangle: $Z = \\sqrt{R^2 + X_L^2}$. Aïllant $R$:\n\n$$R = \\sqrt{Z^2 - X_L^2} = \\sqrt{115^2 - 31{,}42^2} = 110{,}6\\ \\Omega \\approx 111\\ \\Omega$$\n\nResultat: **$R \\approx 111\\ \\Omega$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **a)** $84\\ \\Omega \\approx 115 - 31{,}4$: restar directament $X_L$ de $Z$ (oblidar el triangle).\n- **d)** $230\\ \\Omega$: confondre tensió amb impedància."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$R \\approx 111\\ \\Omega$ → resposta **b**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$R \\approx 111\\ \\Omega$ → resposta **b**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -248,10 +505,22 @@
       "punts": 2.5,
       "titol": "Control lògic d'una persiana domòtica (llum, mode nocturn, temperatura i presència)",
       "tema": "digital",
-      "temes_secundaris": ["control"],
-      "conceptes": ["taula de veritat", "funció lògica", "mapa de Karnaugh", "portes lògiques"],
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "mapa de Karnaugh",
+        "portes lògiques",
+        "sensor"
+      ],
       "dificultat": 2,
-      "pagines": [4],
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "pagines": [
+        4
+      ],
       "enunciat": "Es vol dissenyar el circuit electrònic que controla les persianes d'una casa domòtica. La persiana puja si hi ha llum intensa a l'exterior i la temperatura interior no és alta, excepte si el mode nocturn està activat. A més, també puja si hi ha persones a l'habitació i la temperatura interior és alta, independentment de la llum exterior o el mode nocturn. En qualsevol altre cas, la persiana baixarà o romandrà immòbil.\n\nEs defineixen les variables d'estat següents:\n\n- llum exterior: $l$ = 1: hi ha llum exterior; 0: no hi ha llum exterior\n- mode nocturn: $n$ = 1: activat; 0: desactivat\n- temperatura interior: $t$ = 1: alta, igual o superior a $21\\ ^\\circ\\text{C}$; 0: baixa, inferior a $21\\ ^\\circ\\text{C}$\n- presència d'individus: $i$ = 1: sí; 0: no\n- moviment de la persiana: $p$ = 1: puja; 0: baixa o roman immòbil\n\nDissenyeu un sistema de control que permeti controlar el moviment de la persiana. Com a resultat, proporcioneu un diagrama de portes lògiques que representi visualment el funcionament del sistema. Per a fer-ho, és recomanable elaborar la taula de veritat del sistema, determinar la funció lògica entre aquestes variables (i, si escau, simplificar-la) i, finalment, dibuixar el diagrama de portes lògiques.",
       "figures": [],
       "opcions": {},
@@ -259,13 +528,38 @@
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Traduir l'enunciat a condicions lògiques", "cos": "Hi ha dues situacions en què la persiana puja ($p = 1$):\n\n1. **Llum exterior, temperatura no alta i mode nocturn desactivat**: $l = 1$, $t = 0$, $n = 0$ → terme $l\\,\\bar{n}\\,\\bar{t}$ (la presència $i$ no importa).\n2. **Persones i temperatura alta**, sigui com sigui $l$ i $n$: $t = 1$, $i = 1$ → terme $t\\,i$.\n\nLa persiana puja si es compleix la primera condició **o** la segona."},
-          {"apartat": null, "titol": "Taula de veritat", "cos": "Amb 4 variables hi ha $2^4 = 16$ combinacions. Posem $p = 1$ a les files que compleixen alguna de les dues condicions:\n\n| $l$ | $n$ | $t$ | $i$ | $p$ |\n|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 0 |\n| 0 | 0 | 0 | 1 | 0 |\n| 0 | 0 | 1 | 0 | 0 |\n| 0 | 0 | 1 | 1 | **1** |\n| 0 | 1 | 0 | 0 | 0 |\n| 0 | 1 | 0 | 1 | 0 |\n| 0 | 1 | 1 | 0 | 0 |\n| 0 | 1 | 1 | 1 | **1** |\n| 1 | 0 | 0 | 0 | **1** |\n| 1 | 0 | 0 | 1 | **1** |\n| 1 | 0 | 1 | 0 | 0 |\n| 1 | 0 | 1 | 1 | **1** |\n| 1 | 1 | 0 | 0 | 0 |\n| 1 | 1 | 0 | 1 | 0 |\n| 1 | 1 | 1 | 0 | 0 |\n| 1 | 1 | 1 | 1 | **1** |"},
-          {"apartat": null, "titol": "Funció canònica (suma de productes)", "cos": "Escrivim un terme producte per a cada fila amb $p = 1$ (variable negada si val 0):\n\n$$p = \\bar{l}\\,\\bar{n}\\,t\\,i + \\bar{l}\\,n\\,t\\,i + l\\,\\bar{n}\\,\\bar{t}\\,\\bar{i} + l\\,\\bar{n}\\,\\bar{t}\\,i + l\\,\\bar{n}\\,t\\,i + l\\,n\\,t\\,i$$\n\n(Són 6 termes, un per cada 1 de la taula.)"},
-          {"apartat": null, "titol": "Simplificació per Karnaugh", "cos": "Mapa amb files $l\\,n$ i columnes $t\\,i$ (ordre de Gray 00, 01, 11, 10):\n\n| $ln \\backslash ti$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **00** | 0 | 0 | 1 | 0 |\n| **01** | 0 | 0 | 1 | 0 |\n| **11** | 0 | 0 | 1 | 0 |\n| **10** | 1 | 1 | 1 | 0 |\n\n- **Grup de 4** (tota la columna $ti = 11$): $l$ i $n$ hi canvien, s'eliminen → $t\\,i$.\n- **Grup de 2** (fila $ln = 10$, columnes 00 i 01): $i$ hi canvia, s'elimina → $l\\,\\bar{n}\\,\\bar{t}$.\n\n$$\\boxed{p = l\\,\\bar{n}\\,\\bar{t} + t\\,i}$$\n\nCoincideix exactament amb les dues condicions de l'enunciat."},
-          {"apartat": null, "titol": "Diagrama de portes lògiques", "cos": "Per implementar $p = l\\,\\bar{n}\\,\\bar{t} + t\\,i$ calen:\n\n- 2 portes **NOT** per obtenir $\\bar{n}$ i $\\bar{t}$.\n- 1 porta **AND de 3 entrades**: $l$, $\\bar{n}$, $\\bar{t}$.\n- 1 porta **AND de 2 entrades**: $t$, $i$.\n- 1 porta **OR de 2 entrades** que suma les sortides de les dues AND i dona $p$.\n\nEsquema de la solució oficial (simbologia IEC: «1» amb cercle = NOT, «&» = AND, «≥1» = OR):\n\n![Esquema de portes lògiques](img/tecno/2025-J/e2-sol.png)"}
+          {
+            "apartat": null,
+            "titol": "Traduir l'enunciat a condicions lògiques",
+            "cos": "Hi ha dues situacions en què la persiana puja ($p = 1$):\n\n1. **Llum exterior, temperatura no alta i mode nocturn desactivat**: $l = 1$, $t = 0$, $n = 0$ → terme $l\\,\\bar{n}\\,\\bar{t}$ (la presència $i$ no importa).\n2. **Persones i temperatura alta**, sigui com sigui $l$ i $n$: $t = 1$, $i = 1$ → terme $t\\,i$.\n\nLa persiana puja si es compleix la primera condició **o** la segona."
+          },
+          {
+            "apartat": null,
+            "titol": "Taula de veritat",
+            "cos": "Amb 4 variables hi ha $2^4 = 16$ combinacions. Posem $p = 1$ a les files que compleixen alguna de les dues condicions:\n\n| $l$ | $n$ | $t$ | $i$ | $p$ |\n|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 0 |\n| 0 | 0 | 0 | 1 | 0 |\n| 0 | 0 | 1 | 0 | 0 |\n| 0 | 0 | 1 | 1 | **1** |\n| 0 | 1 | 0 | 0 | 0 |\n| 0 | 1 | 0 | 1 | 0 |\n| 0 | 1 | 1 | 0 | 0 |\n| 0 | 1 | 1 | 1 | **1** |\n| 1 | 0 | 0 | 0 | **1** |\n| 1 | 0 | 0 | 1 | **1** |\n| 1 | 0 | 1 | 0 | 0 |\n| 1 | 0 | 1 | 1 | **1** |\n| 1 | 1 | 0 | 0 | 0 |\n| 1 | 1 | 0 | 1 | 0 |\n| 1 | 1 | 1 | 0 | 0 |\n| 1 | 1 | 1 | 1 | **1** |"
+          },
+          {
+            "apartat": null,
+            "titol": "Funció canònica (suma de productes)",
+            "cos": "Escrivim un terme producte per a cada fila amb $p = 1$ (variable negada si val 0):\n\n$$p = \\bar{l}\\,\\bar{n}\\,t\\,i + \\bar{l}\\,n\\,t\\,i + l\\,\\bar{n}\\,\\bar{t}\\,\\bar{i} + l\\,\\bar{n}\\,\\bar{t}\\,i + l\\,\\bar{n}\\,t\\,i + l\\,n\\,t\\,i$$\n\n(Són 6 termes, un per cada 1 de la taula.)"
+          },
+          {
+            "apartat": null,
+            "titol": "Simplificació per Karnaugh",
+            "cos": "Mapa amb files $l\\,n$ i columnes $t\\,i$ (ordre de Gray 00, 01, 11, 10):\n\n| $ln \\backslash ti$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **00** | 0 | 0 | 1 | 0 |\n| **01** | 0 | 0 | 1 | 0 |\n| **11** | 0 | 0 | 1 | 0 |\n| **10** | 1 | 1 | 1 | 0 |\n\n- **Grup de 4** (tota la columna $ti = 11$): $l$ i $n$ hi canvien, s'eliminen → $t\\,i$.\n- **Grup de 2** (fila $ln = 10$, columnes 00 i 01): $i$ hi canvia, s'elimina → $l\\,\\bar{n}\\,\\bar{t}$.\n\n$$\\boxed{p = l\\,\\bar{n}\\,\\bar{t} + t\\,i}$$\n\nCoincideix exactament amb les dues condicions de l'enunciat."
+          },
+          {
+            "apartat": null,
+            "titol": "Diagrama de portes lògiques",
+            "cos": "Per implementar $p = l\\,\\bar{n}\\,\\bar{t} + t\\,i$ calen:\n\n- 2 portes **NOT** per obtenir $\\bar{n}$ i $\\bar{t}$.\n- 1 porta **AND de 3 entrades**: $l$, $\\bar{n}$, $\\bar{t}$.\n- 1 porta **AND de 2 entrades**: $t$, $i$.\n- 1 porta **OR de 2 entrades** que suma les sortides de les dues AND i dona $p$.\n\nEsquema de la solució oficial (simbologia IEC: «1» amb cercle = NOT, «&» = AND, «≥1» = OR):\n\n![Esquema de portes lògiques](img/tecno/2025-J/e2-sol.png)"
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$p = l\\,\\bar{n}\\,\\bar{t} + t\\,i$ (2 NOT, 1 AND de 3 entrades, 1 AND de 2 entrades, 1 OR de 2 entrades)"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$p = l\\,\\bar{n}\\,\\bar{t} + t\\,i$ (2 NOT, 1 AND de 3 entrades, 1 AND de 2 entrades, 1 OR de 2 entrades)"
+          }
+        ],
         "nota": "La funció i l'esquema no són únics: qualsevol circuit equivalent és vàlid si es justifica (ho diu la mateixa solució oficial). Error típic: oblidar que el segon cas és «independentment de la llum i del mode nocturn» i afegir-hi $l$ o $\\bar{n}$."
       }
     },
@@ -278,34 +572,107 @@
       "punts": 2.5,
       "titol": "Elevador de taller de dues columnes amb cargol-femella i reductor",
       "tema": "mecanismes",
-      "temes_secundaris": ["mecanica"],
-      "conceptes": ["cargol-femella", "relació de transmissió", "potència mecànica", "rendiment", "energia potencial"],
+      "temes_secundaris": [
+        "mecanica",
+        "maquines-electriques"
+      ],
+      "conceptes": [
+        "cargol-femella",
+        "relació de transmissió",
+        "reductor",
+        "potència mecànica",
+        "rendiment",
+        "energia potencial",
+        "velocitat angular"
+      ],
       "dificultat": 2,
-      "pagines": [6, 7],
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "pagines": [
+        6,
+        7
+      ],
       "enunciat": "La figura mostra un esquema d'un elevador de taller de dues columnes. Les dues columnes són iguals, i dins de cadascuna d'elles hi ha una transmissió cargol-femella. La femella és solidària als braços que sostenen el vehicle. A la part superior de la columna se situa un motor que per mitjà d'un reductor d'engranatges fa girar el cargol situat a l'interior de la columna, que fa pujar o baixar la femella. El moviment dels dos motors està sincronitzat perquè els braços tinguin el mateix moviment.\n\nL'alçada màxima d'elevació des de la posició més baixa dels braços és $h = 1{,}8\\ \\text{m}$; la massa que suporta cada columna és $m = 1\\,900\\ \\text{kg}$; el cargol té un pas de rosca de $7\\ \\text{mm}$ per volta (el cotxe s'eleva $7\\ \\text{mm}$ per cada volta del cargol), i el conjunt del sistema té un rendiment $\\eta = 0{,}4$.\n\nVolem determinar la potència elèctrica d'un motor i dissenyar el reductor perquè quan el motor giri a $n = 1\\,420\\ \\text{min}^{-1}$ el temps d'elevació per a arribar a l'alçada màxima sigui $t = 45\\ \\text{s}$. Per a això, determineu:",
-      "figures": [{"src": "img/tecno/2025-J/e3.png", "peu": "Esquema de l'elevador de dues columnes (motor, reductor, cargol i femella)"}],
+      "figures": [
+        {
+          "src": "img/tecno/2025-J/e3.png",
+          "peu": "Esquema de l'elevador de dues columnes (motor, reductor, cargol i femella)"
+        }
+      ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "La potència mecànica necessària per a elevar el cotxe, $P_\\text{mec}$.", "punts": 0.5},
-        {"id": "b", "enunciat": "La potència elèctrica que consumirà cada motor, $P_\\text{elèc}$.", "punts": 0.5},
-        {"id": "c", "enunciat": "Les voltes que ha de fer el cargol perquè el cotxe arribi a l'alçada màxima, $n_\\text{voltes}$.", "punts": 0.5},
-        {"id": "d", "enunciat": "La relació de transmissió que cal que tingui el reductor, $i = \\dfrac{n_\\text{mot}}{n_\\text{carg}}$.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "La potència mecànica necessària per a elevar el cotxe, $P_\\text{mec}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "La potència elèctrica que consumirà cada motor, $P_\\text{elèc}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Les voltes que ha de fer el cargol perquè el cotxe arribi a l'alçada màxima, $n_\\text{voltes}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "La relació de transmissió que cal que tingui el reductor, $i = \\dfrac{n_\\text{mot}}{n_\\text{carg}}$.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Alçada d'elevació: $h = 1{,}8\\ \\text{m} = 1\\,800\\ \\text{mm}$\n- Massa per columna: $m = 1\\,900\\ \\text{kg}$ (dues columnes → el cotxe té $2m = 3\\,800\\ \\text{kg}$)\n- Pas del cargol: $p = 7\\ \\text{mm/volta}$\n- Rendiment del conjunt: $\\eta = 0{,}4$\n- Velocitat del motor: $n_\\text{mot} = 1\\,420\\ \\text{min}^{-1}$\n- Temps d'elevació: $t = 45\\ \\text{s}$\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: $P_\\text{mec}$, $P_\\text{elèc}$ (per motor), $n_\\text{voltes}$, $i$"},
-          {"apartat": "a", "titol": "Potència mecànica a partir de l'energia potencial", "cos": "Pujar el cotxe a velocitat constant vol dir augmentar-ne l'energia potencial. La potència és aquesta energia dividida pel temps. Com que cada columna aguanta $m$, la massa total elevada és $2m$:\n\n$$P_\\text{mec} = \\frac{E_p}{t} = \\frac{2\\, m\\, g\\, h}{t} = \\frac{2 \\cdot 1\\,900 \\cdot 9{,}807 \\cdot 1{,}8}{45} = 1\\,491\\ \\text{W}$$\n\nResultat: **$P_\\text{mec} \\approx 1\\,491\\ \\text{W}$** (per a tot l'elevador; cada columna n'aporta la meitat, $745{,}3\\ \\text{W}$)."},
-          {"apartat": "b", "titol": "Potència elèctrica de cada motor amb el rendiment", "cos": "El rendiment indica quina part de l'energia elèctrica consumida es converteix en treball útil: $\\eta = P_\\text{útil}/P_\\text{consumida}$. Cada motor ha de proporcionar la meitat de la potència mecànica, per tant:\n\n$$P_\\text{elèc} = \\frac{P_\\text{mec}/2}{\\eta} = \\frac{1\\,491}{2 \\cdot 0{,}4} = 1\\,863\\ \\text{W}$$\n\nResultat: **$P_\\text{elèc} \\approx 1{,}863\\ \\text{kW}$ per motor**."},
-          {"apartat": "c", "titol": "Voltes del cargol per recórrer l'alçada", "cos": "A cada volta del cargol, la femella (i el cotxe) puja un pas $p = 7\\ \\text{mm}$. El nombre de voltes és l'alçada dividida pel pas (amb les mateixes unitats):\n\n$$n_\\text{voltes} = \\frac{h}{p} = \\frac{1\\,800\\ \\text{mm}}{7\\ \\text{mm/volta}} = 257{,}1\\ \\text{voltes}$$\n\nResultat: **$n_\\text{voltes} \\approx 257{,}1\\ \\text{voltes}$**."},
-          {"apartat": "d", "titol": "Velocitat de gir del cargol", "cos": "Aquestes voltes s'han de fer en $t = 45\\ \\text{s}$:\n\n$$n_\\text{carg} = \\frac{n_\\text{voltes}}{t} = \\frac{257{,}1}{45} = 5{,}714\\ \\text{voltes/s}$$\n\nPassem-ho a voltes per minut per poder-ho comparar amb el motor: $n_\\text{carg} = 5{,}714 \\cdot 60 = 342{,}9\\ \\text{min}^{-1}$."},
-          {"apartat": "d", "titol": "Relació de transmissió del reductor", "cos": "El reductor ha de baixar la velocitat del motor fins a la del cargol. Amb la definició de l'enunciat:\n\n$$i = \\frac{n_\\text{mot}}{n_\\text{carg}} = \\frac{1\\,420\\ \\text{min}^{-1}}{342{,}9\\ \\text{min}^{-1}} = 4{,}142$$\n\nResultat: **$i \\approx 4{,}142$** (el motor fa unes 4,14 voltes per cada volta del cargol). Compte amb les unitats: cal que les dues velocitats estiguin en les mateixes unitats (aquí, $\\text{min}^{-1}$)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Alçada d'elevació: $h = 1{,}8\\ \\text{m} = 1\\,800\\ \\text{mm}$\n- Massa per columna: $m = 1\\,900\\ \\text{kg}$ (dues columnes → el cotxe té $2m = 3\\,800\\ \\text{kg}$)\n- Pas del cargol: $p = 7\\ \\text{mm/volta}$\n- Rendiment del conjunt: $\\eta = 0{,}4$\n- Velocitat del motor: $n_\\text{mot} = 1\\,420\\ \\text{min}^{-1}$\n- Temps d'elevació: $t = 45\\ \\text{s}$\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: $P_\\text{mec}$, $P_\\text{elèc}$ (per motor), $n_\\text{voltes}$, $i$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència mecànica a partir de l'energia potencial",
+            "cos": "Pujar el cotxe a velocitat constant vol dir augmentar-ne l'energia potencial. La potència és aquesta energia dividida pel temps. Com que cada columna aguanta $m$, la massa total elevada és $2m$:\n\n$$P_\\text{mec} = \\frac{E_p}{t} = \\frac{2\\, m\\, g\\, h}{t} = \\frac{2 \\cdot 1\\,900 \\cdot 9{,}807 \\cdot 1{,}8}{45} = 1\\,491\\ \\text{W}$$\n\nResultat: **$P_\\text{mec} \\approx 1\\,491\\ \\text{W}$** (per a tot l'elevador; cada columna n'aporta la meitat, $745{,}3\\ \\text{W}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència elèctrica de cada motor amb el rendiment",
+            "cos": "El rendiment indica quina part de l'energia elèctrica consumida es converteix en treball útil: $\\eta = P_\\text{útil}/P_\\text{consumida}$. Cada motor ha de proporcionar la meitat de la potència mecànica, per tant:\n\n$$P_\\text{elèc} = \\frac{P_\\text{mec}/2}{\\eta} = \\frac{1\\,491}{2 \\cdot 0{,}4} = 1\\,863\\ \\text{W}$$\n\nResultat: **$P_\\text{elèc} \\approx 1{,}863\\ \\text{kW}$ per motor**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Voltes del cargol per recórrer l'alçada",
+            "cos": "A cada volta del cargol, la femella (i el cotxe) puja un pas $p = 7\\ \\text{mm}$. El nombre de voltes és l'alçada dividida pel pas (amb les mateixes unitats):\n\n$$n_\\text{voltes} = \\frac{h}{p} = \\frac{1\\,800\\ \\text{mm}}{7\\ \\text{mm/volta}} = 257{,}1\\ \\text{voltes}$$\n\nResultat: **$n_\\text{voltes} \\approx 257{,}1\\ \\text{voltes}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Velocitat de gir del cargol",
+            "cos": "Aquestes voltes s'han de fer en $t = 45\\ \\text{s}$:\n\n$$n_\\text{carg} = \\frac{n_\\text{voltes}}{t} = \\frac{257{,}1}{45} = 5{,}714\\ \\text{voltes/s}$$\n\nPassem-ho a voltes per minut per poder-ho comparar amb el motor: $n_\\text{carg} = 5{,}714 \\cdot 60 = 342{,}9\\ \\text{min}^{-1}$."
+          },
+          {
+            "apartat": "d",
+            "titol": "Relació de transmissió del reductor",
+            "cos": "El reductor ha de baixar la velocitat del motor fins a la del cargol. Amb la definició de l'enunciat:\n\n$$i = \\frac{n_\\text{mot}}{n_\\text{carg}} = \\frac{1\\,420\\ \\text{min}^{-1}}{342{,}9\\ \\text{min}^{-1}} = 4{,}142$$\n\nResultat: **$i \\approx 4{,}142$** (el motor fa unes 4,14 voltes per cada volta del cargol). Compte amb les unitats: cal que les dues velocitats estiguin en les mateixes unitats (aquí, $\\text{min}^{-1}$)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$P_\\text{mec} \\approx 1\\,491\\ \\text{W}$"},
-          {"apartat": "b", "valor": "$P_\\text{elèc} \\approx 1{,}863\\ \\text{kW}$ per motor"},
-          {"apartat": "c", "valor": "$n_\\text{voltes} \\approx 257{,}1\\ \\text{voltes}$"},
-          {"apartat": "d", "valor": "$n_\\text{carg} = 5{,}714\\ \\text{voltes/s}$; $i \\approx 4{,}142$"}
+          {
+            "apartat": "a",
+            "valor": "$P_\\text{mec} \\approx 1\\,491\\ \\text{W}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{elèc} \\approx 1{,}863\\ \\text{kW}$ per motor"
+          },
+          {
+            "apartat": "c",
+            "valor": "$n_\\text{voltes} \\approx 257{,}1\\ \\text{voltes}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$n_\\text{carg} = 5{,}714\\ \\text{voltes/s}$; $i \\approx 4{,}142$"
+          }
         ],
         "nota": "Error típic a l'apartat a: usar només $m = 1\\,900\\ \\text{kg}$ (la massa d'una columna) i obtenir $745\\ \\text{W}$. La solució oficial calcula la potència mecànica de tot l'elevador ($2m$) i després la reparteix entre els dos motors a l'apartat b; el resultat per motor (1,863 kW) és el mateix fent-ho columna a columna."
       }
@@ -319,33 +686,94 @@
       "punts": 2.5,
       "titol": "Consum de gas butà d'una cuina de càmping per bullir aigua i coure arròs",
       "tema": "termica",
-      "temes_secundaris": ["energia"],
-      "conceptes": ["calor sensible", "poder calorífic", "rendiment", "consum de combustible"],
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "calor sensible",
+        "poder calorífic",
+        "rendiment",
+        "consum de combustible"
+      ],
       "dificultat": 2,
-      "pagines": [8, 9],
+      "curs": "1r",
+      "curs_motiu": "Només necessita calor sensible, poder calorífic i rendiment, que són de 1r.",
+      "pagines": [
+        8,
+        9
+      ],
       "enunciat": "Una cuina portàtil per a càmping funciona amb cartutxos de $m_\\text{cartutx} = 230\\ \\text{g}$ de gas butà. El cremador té un rendiment $\\eta = 0{,}2$ i el seu consum màxim és $c = 155\\ \\text{g/h}$ de butà, de poder calorífic $p_\\text{c} = 45{,}8\\ \\text{MJ/kg}$. Volem estudiar quina quantitat de gas es consumeix per cuinar arròs per a 5 persones si s'utilitzen $V = 2\\ \\text{L}$ d'aigua que inicialment es troben a $T_1 = 15\\ ^\\circ\\text{C}$. Sabent que la calor específica de l'aigua és $c_\\text{e} = 4{,}186\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$, determineu:",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "La quantitat de gas necessària perquè l'aigua comenci a bullir, $m_\\text{gas1}$.", "punts": 1},
-        {"id": "b", "enunciat": "El temps necessari per a arribar a l'ebullició, $t_1$, si el cremador funciona al màxim de consum.", "punts": 0.5},
-        {"id": "c", "enunciat": "Un cop l'aigua ha arribat a ebullició, s'afegeix l'arròs i es deixa coure durant $t_2 = 18$ minuts reduint el cabal de gas a un $30\\ \\%$ del seu consum màxim. Determineu: el percentatge de gas consumit del cartutx durant tot el procés (bullir l'aigua i cuinar l'arròs), $\\Delta$.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "La quantitat de gas necessària perquè l'aigua comenci a bullir, $m_\\text{gas1}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El temps necessari per a arribar a l'ebullició, $t_1$, si el cremador funciona al màxim de consum.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Un cop l'aigua ha arribat a ebullició, s'afegeix l'arròs i es deixa coure durant $t_2 = 18$ minuts reduint el cabal de gas a un $30\\ \\%$ del seu consum màxim. Determineu: el percentatge de gas consumit del cartutx durant tot el procés (bullir l'aigua i cuinar l'arròs), $\\Delta$.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Cartutx: $m_\\text{cartutx} = 230\\ \\text{g}$\n- Rendiment del cremador: $\\eta = 0{,}2$\n- Consum màxim: $c = 155\\ \\text{g/h}$\n- Poder calorífic: $p_\\text{c} = 45{,}8\\ \\text{MJ/kg} = 45{,}8 \\cdot 10^3\\ \\text{kJ/kg}$\n- Aigua: $V = 2\\ \\text{L}$ → $m_\\text{aigua} = \\rho V = 1\\ \\text{kg/L} \\cdot 2\\ \\text{L} = 2\\ \\text{kg}$\n- $T_1 = 15\\ ^\\circ\\text{C}$, ebullició a $T_2 = 100\\ ^\\circ\\text{C}$ → $\\Delta T = 85\\ ^\\circ\\text{C}$\n- $c_\\text{e} = 4{,}186\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$\n- Cocció: $t_2 = 18\\ \\text{min}$ al $30\\ \\%$ del consum màxim\n- Incògnites: $m_\\text{gas1}$, $t_1$, $\\Delta$"},
-          {"apartat": "a", "titol": "Calor útil per escalfar l'aigua fins a 100 °C", "cos": "L'aigua passa de 15 °C a 100 °C (comença a bullir, sense canvi d'estat), per tant absorbeix calor sensible:\n\n$$Q_\\text{útil} = m_\\text{aigua}\\, c_\\text{e}\\, \\Delta T = 2 \\cdot 4{,}186 \\cdot (100 - 15) = 711{,}6\\ \\text{kJ}$$"},
-          {"apartat": "a", "titol": "Energia que ha d'alliberar el gas (rendiment)", "cos": "El cremador només aprofita el 20 % de l'energia del gas; la resta s'escapa a l'ambient. L'energia que ha de cremar-se és:\n\n$$E = \\frac{Q_\\text{útil}}{\\eta} = \\frac{711{,}6}{0{,}2} = 3\\,558\\ \\text{kJ}$$"},
-          {"apartat": "a", "titol": "Massa de gas amb el poder calorífic", "cos": "El poder calorífic diu quanta energia allibera cada kg de gas: $E = m\\, p_\\text{c}$. Aïllant la massa:\n\n$$m_\\text{gas1} = \\frac{E}{p_\\text{c}} = \\frac{3\\,558\\ \\text{kJ}}{45{,}8 \\cdot 10^3\\ \\text{kJ/kg}} = 0{,}07769\\ \\text{kg} = 77{,}69\\ \\text{g}$$\n\nResultat: **$m_\\text{gas1} \\approx 77{,}69\\ \\text{g}$**."},
-          {"apartat": "b", "titol": "Temps fins a l'ebullició al consum màxim", "cos": "Si el cremador consumeix $155\\ \\text{g}$ cada hora, el temps per gastar $77{,}69\\ \\text{g}$ és:\n\n$$t_1 = \\frac{m_\\text{gas1}}{c} = \\frac{77{,}69\\ \\text{g}}{155\\ \\text{g/h}} = 0{,}5012\\ \\text{h} = 0{,}5012 \\cdot 60 = 30{,}07\\ \\text{min}$$\n\nResultat: **$t_1 \\approx 30{,}07\\ \\text{min}$**."},
-          {"apartat": "c", "titol": "Gas consumit durant la cocció de l'arròs", "cos": "Durant la cocció el consum és el 30 % del màxim, $c_2 = 0{,}3 \\cdot 155 = 46{,}5\\ \\text{g/h}$, durant $t_2 = 18\\ \\text{min} = 18/60\\ \\text{h} = 0{,}3\\ \\text{h}$:\n\n$$m_\\text{gas2} = c_2\\, t_2 = 0{,}3 \\cdot 155 \\cdot \\frac{18}{60} = 13{,}95\\ \\text{g}$$"},
-          {"apartat": "c", "titol": "Percentatge del cartutx consumit", "cos": "Sumem el gas de les dues fases i el comparem amb el contingut del cartutx:\n\n$$m_\\text{gas} = m_\\text{gas1} + m_\\text{gas2} = 77{,}69 + 13{,}95 = 91{,}64\\ \\text{g}$$\n\n$$\\Delta = \\frac{m_\\text{gas}}{m_\\text{cartutx}} \\cdot 100 = \\frac{91{,}64}{230} \\cdot 100 = 39{,}84\\ \\%$$\n\nResultat: **$\\Delta \\approx 39{,}84\\ \\%$** del cartutx."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Cartutx: $m_\\text{cartutx} = 230\\ \\text{g}$\n- Rendiment del cremador: $\\eta = 0{,}2$\n- Consum màxim: $c = 155\\ \\text{g/h}$\n- Poder calorífic: $p_\\text{c} = 45{,}8\\ \\text{MJ/kg} = 45{,}8 \\cdot 10^3\\ \\text{kJ/kg}$\n- Aigua: $V = 2\\ \\text{L}$ → $m_\\text{aigua} = \\rho V = 1\\ \\text{kg/L} \\cdot 2\\ \\text{L} = 2\\ \\text{kg}$\n- $T_1 = 15\\ ^\\circ\\text{C}$, ebullició a $T_2 = 100\\ ^\\circ\\text{C}$ → $\\Delta T = 85\\ ^\\circ\\text{C}$\n- $c_\\text{e} = 4{,}186\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$\n- Cocció: $t_2 = 18\\ \\text{min}$ al $30\\ \\%$ del consum màxim\n- Incògnites: $m_\\text{gas1}$, $t_1$, $\\Delta$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Calor útil per escalfar l'aigua fins a 100 °C",
+            "cos": "L'aigua passa de 15 °C a 100 °C (comença a bullir, sense canvi d'estat), per tant absorbeix calor sensible:\n\n$$Q_\\text{útil} = m_\\text{aigua}\\, c_\\text{e}\\, \\Delta T = 2 \\cdot 4{,}186 \\cdot (100 - 15) = 711{,}6\\ \\text{kJ}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia que ha d'alliberar el gas (rendiment)",
+            "cos": "El cremador només aprofita el 20 % de l'energia del gas; la resta s'escapa a l'ambient. L'energia que ha de cremar-se és:\n\n$$E = \\frac{Q_\\text{útil}}{\\eta} = \\frac{711{,}6}{0{,}2} = 3\\,558\\ \\text{kJ}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Massa de gas amb el poder calorífic",
+            "cos": "El poder calorífic diu quanta energia allibera cada kg de gas: $E = m\\, p_\\text{c}$. Aïllant la massa:\n\n$$m_\\text{gas1} = \\frac{E}{p_\\text{c}} = \\frac{3\\,558\\ \\text{kJ}}{45{,}8 \\cdot 10^3\\ \\text{kJ/kg}} = 0{,}07769\\ \\text{kg} = 77{,}69\\ \\text{g}$$\n\nResultat: **$m_\\text{gas1} \\approx 77{,}69\\ \\text{g}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Temps fins a l'ebullició al consum màxim",
+            "cos": "Si el cremador consumeix $155\\ \\text{g}$ cada hora, el temps per gastar $77{,}69\\ \\text{g}$ és:\n\n$$t_1 = \\frac{m_\\text{gas1}}{c} = \\frac{77{,}69\\ \\text{g}}{155\\ \\text{g/h}} = 0{,}5012\\ \\text{h} = 0{,}5012 \\cdot 60 = 30{,}07\\ \\text{min}$$\n\nResultat: **$t_1 \\approx 30{,}07\\ \\text{min}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Gas consumit durant la cocció de l'arròs",
+            "cos": "Durant la cocció el consum és el 30 % del màxim, $c_2 = 0{,}3 \\cdot 155 = 46{,}5\\ \\text{g/h}$, durant $t_2 = 18\\ \\text{min} = 18/60\\ \\text{h} = 0{,}3\\ \\text{h}$:\n\n$$m_\\text{gas2} = c_2\\, t_2 = 0{,}3 \\cdot 155 \\cdot \\frac{18}{60} = 13{,}95\\ \\text{g}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Percentatge del cartutx consumit",
+            "cos": "Sumem el gas de les dues fases i el comparem amb el contingut del cartutx:\n\n$$m_\\text{gas} = m_\\text{gas1} + m_\\text{gas2} = 77{,}69 + 13{,}95 = 91{,}64\\ \\text{g}$$\n\n$$\\Delta = \\frac{m_\\text{gas}}{m_\\text{cartutx}} \\cdot 100 = \\frac{91{,}64}{230} \\cdot 100 = 39{,}84\\ \\%$$\n\nResultat: **$\\Delta \\approx 39{,}84\\ \\%$** del cartutx."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$E = 3\\,558\\ \\text{kJ}$; $m_\\text{gas1} \\approx 77{,}69\\ \\text{g}$"},
-          {"apartat": "b", "valor": "$t_1 \\approx 30{,}07\\ \\text{min}$"},
-          {"apartat": "c", "valor": "$m_\\text{gas2} = 13{,}95\\ \\text{g}$; $\\Delta \\approx 39{,}84\\ \\%$"}
+          {
+            "apartat": "a",
+            "valor": "$E = 3\\,558\\ \\text{kJ}$; $m_\\text{gas1} \\approx 77{,}69\\ \\text{g}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$t_1 \\approx 30{,}07\\ \\text{min}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$m_\\text{gas2} = 13{,}95\\ \\text{g}$; $\\Delta \\approx 39{,}84\\ \\%$"
+          }
         ],
         "nota": "Error típic: oblidar el rendiment (dividir per $\\eta$) i obtenir només $15{,}5\\ \\text{g}$ de gas. També cal vigilar les unitats: $p_\\text{c}$ en MJ/kg i la calor en kJ, i el temps en hores quan el consum és en g/h. Se suposa densitat de l'aigua $1\\ \\text{kg/L}$ i ebullició a $100\\ ^\\circ\\text{C}$."
       }

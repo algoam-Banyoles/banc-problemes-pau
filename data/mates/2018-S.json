@@ -20,14 +20,18 @@
       "punts": 2,
       "titol": "Paràmetres d'una cúbica a partir d'un extrem i de la recta tangent; extrems relatius",
       "tema": "derivades",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "sistemes"
+      ],
       "conceptes": [
         "recta tangent",
         "extrems relatius",
-        "segona derivada",
-        "funció polinòmica"
+        "criteri de la derivada segona",
+        "sistema d'equacions lineals"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Condició d'extrem relatiu i classificació d'extrems, que són de 2n.",
       "pagines": [
         1
       ],
@@ -112,11 +116,15 @@
       ],
       "conceptes": [
         "discussió de sistemes",
-        "teorema de Rouché-Fröbenius",
+        "teorema de Rouché-Frobenius",
         "rang",
-        "determinant"
+        "determinant",
+        "sistema compatible determinat",
+        "sistema compatible indeterminat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         1
       ],
@@ -196,9 +204,13 @@
         "producte vectorial",
         "vector normal",
         "equació del pla",
-        "distància punt-pla"
+        "distància punt-pla",
+        "recta perpendicular a un pla",
+        "equacions de la recta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         1
       ],
@@ -276,6 +288,8 @@
         "producte de matrius"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         2
       ],
@@ -355,14 +369,21 @@
       "punts": 2,
       "titol": "Intersecció recta-pla i punts d'una recta que donen un tetraedre de volum fix",
       "tema": "geometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "matrius"
+      ],
       "conceptes": [
-        "pla per tres punts",
+        "equació del pla",
         "intersecció recta-pla",
         "volum del tetraedre",
-        "producte mixt"
+        "producte mixt",
+        "determinant",
+        "valor absolut",
+        "punt genèric d'una recta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         2
       ],
@@ -451,13 +472,15 @@
         "funcions"
       ],
       "conceptes": [
-        "paràbola",
-        "punts de tall",
+        "esbós de la gràfica",
+        "punts de tall amb els eixos",
+        "punts d'intersecció de corbes",
         "àrea entre corbes",
-        "regla de Barrow",
-        "simetria"
+        "regla de Barrow"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         2
       ],

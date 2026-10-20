@@ -20,18 +20,41 @@
       "punts": 2,
       "titol": "Polígon semblant a un hexàgon donat sobre el segment RS i valor real a escala 1:75",
       "tema": "geometria-plana",
-      "temes_secundaris": [],
-      "conceptes": ["semblança", "triangulació", "teorema de Tales", "arc capaç", "escales"],
+      "temes_secundaris": [
+        "transformacions"
+      ],
+      "conceptes": [
+        "semblança",
+        "triangulació",
+        "teorema de Tales",
+        "arc capaç",
+        "escala"
+      ],
       "dificultat": 2,
-      "pagines": [5],
+      "curs": "1r",
+      "curs_motiu": "Polígon semblant per triangulació i transport d'angles: proporcionalitat i semblança (DT I).",
+      "pagines": [
+        5
+      ],
       "enunciat": "",
       "figures": [
-        {"src": "img/dibuix/2019-S/1A.png", "peu": "Hexàgon ABCDEF (amb l'angle recte a D), segment RS i casella per a la mesura real (escala 1:75)"}
+        {
+          "src": "img/dibuix/2019-S/1A.png",
+          "peu": "Hexàgon ABCDEF (amb l'angle recte a D), segment RS i casella per a la mesura real (escala 1:75)"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu un polígon semblant al definit pels vèrtexs *ABCDEF*, de manera que els vèrtexs *A* i *B* estiguin situats en els punts *R* i *S*, respectivament. Deixeu constància del procés gràfic seguit.", "punts": 1.5},
-        {"id": "b", "enunciat": "Determineu el valor real del segment *RS*, tenint en compte que el dibuix està a escala 1:75, i escriviu-lo a la casella situada a la part inferior del full.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu un polígon semblant al definit pels vèrtexs *ABCDEF*, de manera que els vèrtexs *A* i *B* estiguin situats en els punts *R* i *S*, respectivament. Deixeu constància del procés gràfic seguit.",
+          "punts": 1.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu el valor real del segment *RS*, tenint en compte que el dibuix està a escala 1:75, i escriviu-lo a la casella situada a la part inferior del full.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -78,8 +101,14 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Polígon $RSC'D'E'F'$ semblant a $ABCDEF$ amb raó $k \\approx 1{,}70$ ($E'$ a la prolongació de $SR$, $D'$ a l'arc capaç de $90^\\circ$ sobre $C'E'$)."},
-          {"apartat": "b", "valor": "$RS$ real $= 3{,}00$ m."}
+          {
+            "apartat": "a",
+            "valor": "Polígon $RSC'D'E'F'$ semblant a $ABCDEF$ amb raó $k \\approx 1{,}70$ ($E'$ a la prolongació de $SR$, $D'$ a l'arc capaç de $90^\\circ$ sobre $C'E'$)."
+          },
+          {
+            "apartat": "b",
+            "valor": "$RS$ real $= 3{,}00$ m."
+          }
         ],
         "nota": "La solució oficial construeix la figura per triangulació des de E′, aprofitant l'angle de 30° i la divisió 3:1 de CE, i transporta les longituds amb rectes paral·leles (Tales). També és vàlid fer-ho per radiació (homotècia + gir) o copiant tots els angles. Les mides en mm s'han mesurat sobre el PDF."
       }
@@ -94,12 +123,24 @@
       "titol": "Circumferències tangents a una circumferència i a una recta en un punt donat",
       "tema": "geometria-plana",
       "temes_secundaris": [],
-      "conceptes": ["tangències", "circumferències tangents", "punt de tangència", "mediatriu", "dilatació"],
+      "conceptes": [
+        "tangències",
+        "punt de tangència",
+        "mediatriu",
+        "reducció a punt"
+      ],
       "dificultat": 2,
-      "pagines": [7],
+      "curs": "1r",
+      "curs_motiu": "Tangències amb un punt de tangència donat, resoltes per reducció a punt, mediatrius i bisectrius; no cal potència (DT I).",
+      "pagines": [
+        7
+      ],
       "enunciat": "Dibuixeu les circumferències tangents a la circumferència de centre *C* i a la recta *R* que passen pel punt *P*. Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, els punts de tangència. [2 punts: 1 punt per cada circumferència]",
       "figures": [
-        {"src": "img/dibuix/2019-S/1B.png", "peu": "Circumferència de centre C (radi 5,5 cm), recta R i punt P situat sobre la recta"}
+        {
+          "src": "img/dibuix/2019-S/1B.png",
+          "peu": "Circumferència de centre C (radi 5,5 cm), recta R i punt P situat sobre la recta"
+        }
       ],
       "opcions": {},
       "apartats": [],
@@ -138,7 +179,10 @@
           }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Dues circumferències tangents a R en P i tangents interiorment a la donada: radis $\\approx 4{,}1$ cm (centre $c_1$) i $\\approx 1{,}0$ cm (centre $c_2$); punts de tangència a les rectes $Cc_1$ i $Cc_2$."}
+          {
+            "apartat": null,
+            "valor": "Dues circumferències tangents a R en P i tangents interiorment a la donada: radis $\\approx 4{,}1$ cm (centre $c_1$) i $\\approx 1{,}0$ cm (centre $c_2$); punts de tangència a les rectes $Cc_1$ i $Cc_2$."
+          }
         ],
         "nota": "Error típic: buscar els centres a la mediatriu de CP o fer tangència exterior. Com que P és interior a la circumferència donada, les dues solucions són interiors. Els radis s'han mesurat sobre el PDF i són aproximats."
       }
@@ -152,19 +196,46 @@
       "punts": 4,
       "titol": "Distància mínima entre dues rectes que s'encreuen i piràmide quadrangular sobre aquest segment",
       "tema": "diedric",
-      "temes_secundaris": ["cossos"],
-      "conceptes": ["distància entre rectes", "perpendicular comuna", "canvi de pla", "piràmide", "visibilitat"],
+      "temes_secundaris": [
+        "cossos"
+      ],
+      "conceptes": [
+        "perpendicularitat recta-pla",
+        "canvi de pla",
+        "piràmide",
+        "visibilitat",
+        "vertadera magnitud"
+      ],
       "dificultat": 3,
-      "pagines": [9],
+      "curs": "2n",
+      "curs_motiu": "Distància entre rectes per canvi de pla i piràmide en dièdric (DT II).",
+      "pagines": [
+        9
+      ],
       "enunciat": "Dades: Projeccions horitzontal i vertical dels punts *a-a′*, *b-b′*, *c-c′* i *d-d′*.",
       "figures": [
-        {"src": "img/dibuix/2019-S/2A.png", "peu": "Projeccions dels punts a-a′, b-b′, c-c′ i d-d′ (c′ i d′ a la mateixa altura)"}
+        {
+          "src": "img/dibuix/2019-S/2A.png",
+          "peu": "Projeccions dels punts a-a′, b-b′, c-c′ i d-d′ (c′ i d′ a la mateixa altura)"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu, en posició, el segment que determina la distància mínima entre les rectes *ab-a′b′* i *cd-c′d′*. Dibuixeu, en projecció horitzontal i vertical, el quadrat que té com a costat aquest segment i el costat més baix sobre el segment *cd-c′d′*.", "punts": 2},
-        {"id": "b", "enunciat": "Determineu les projeccions horitzontal i vertical de la piràmide quadrangular regular que té com a base el quadrat de l'apartat anterior i una altura de 5 cm, mesurada des de la base.", "punts": 1.5},
-        {"id": "c", "enunciat": "Diferencieu les arestes vistes de les ocultes.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu, en posició, el segment que determina la distància mínima entre les rectes *ab-a′b′* i *cd-c′d′*. Dibuixeu, en projecció horitzontal i vertical, el quadrat que té com a costat aquest segment i el costat més baix sobre el segment *cd-c′d′*.",
+          "punts": 2
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu les projeccions horitzontal i vertical de la piràmide quadrangular regular que té com a base el quadrat de l'apartat anterior i una altura de 5 cm, mesurada des de la base.",
+          "punts": 1.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Diferencieu les arestes vistes de les ocultes.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -206,9 +277,18 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Distància mínima entre les rectes $\\approx 4{,}3$ cm; quadrat de costat $4{,}3$ cm amb el costat inferior sobre cd."},
-          {"apartat": "b", "valor": "Piràmide d'altura 5 cm amb el vèrtex cap amunt, obtingut a la projecció auxiliar on la base es veu de cantell."},
-          {"apartat": "c", "valor": "Planta: oculta l'aresta de base sobre cd. Alçat: ocultes les tres arestes que surten del vèrtex m (sobre ab)."}
+          {
+            "apartat": "a",
+            "valor": "Distància mínima entre les rectes $\\approx 4{,}3$ cm; quadrat de costat $4{,}3$ cm amb el costat inferior sobre cd."
+          },
+          {
+            "apartat": "b",
+            "valor": "Piràmide d'altura 5 cm amb el vèrtex cap amunt, obtingut a la projecció auxiliar on la base es veu de cantell."
+          },
+          {
+            "apartat": "c",
+            "valor": "Planta: oculta l'aresta de base sobre cd. Alçat: ocultes les tres arestes que surten del vèrtex m (sobre ab)."
+          }
         ],
         "nota": "L'enunciat admet dues posicions del quadrat (cap a c o cap a d) i dues del vèrtex (a cada costat de la base). La solució oficial porta el quadrat cap a d i el vèrtex cap amunt; aquesta és la solució que es descriu aquí. Mides mesurades sobre el PDF."
       }
@@ -222,18 +302,41 @@
       "punts": 4,
       "titol": "Octaedre regular a partir d'una diagonal horitzontal amb el vèrtex més baix en un pla horitzontal",
       "tema": "cossos",
-      "temes_secundaris": ["diedric"],
-      "conceptes": ["octaedre", "canvi de pla", "recta horitzontal", "vertadera magnitud", "visibilitat"],
+      "temes_secundaris": [
+        "diedric"
+      ],
+      "conceptes": [
+        "octaedre",
+        "canvi de pla",
+        "recta horitzontal del pla",
+        "vertadera magnitud",
+        "visibilitat"
+      ],
       "dificultat": 3,
-      "pagines": [11],
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) amb canvi de pla.",
+      "pagines": [
+        11
+      ],
       "enunciat": "Dades: Projeccions horitzontal i vertical dels punts *a-a′* i *b-b′*. Projecció vertical del pla horitzontal *H′*.",
       "figures": [
-        {"src": "img/dibuix/2019-S/2B.png", "peu": "Projeccions de a-a′ i b-b′ (a la mateixa altura) i traça del pla horitzontal H′"}
+        {
+          "src": "img/dibuix/2019-S/2B.png",
+          "peu": "Projeccions de a-a′ i b-b′ (a la mateixa altura) i traça del pla horitzontal H′"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Determineu les projeccions horitzontal i vertical d'un octaedre, de manera que el segment *ab-a′b′* sigui una de les diagonals, que tingui el vèrtex més baix en el pla horitzontal *H′* i que aquest vèrtex estigui situat per darrere del segment *ab-a′b′*.", "punts": 3},
-        {"id": "b", "enunciat": "Diferencieu les arestes vistes de les ocultes.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Determineu les projeccions horitzontal i vertical d'un octaedre, de manera que el segment *ab-a′b′* sigui una de les diagonals, que tingui el vèrtex més baix en el pla horitzontal *H′* i que aquest vèrtex estigui situat per darrere del segment *ab-a′b′*.",
+          "punts": 3
+        },
+        {
+          "id": "b",
+          "enunciat": "Diferencieu les arestes vistes de les ocultes.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -270,8 +373,14 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Octaedre de diagonal $ab \\approx 6{,}7$ cm i aresta $\\approx 4{,}7$ cm; el quadrat central es veu en vertadera magnitud al canvi de pla i el vèrtex inferior és sobre $H'$, per darrere de ab."},
-          {"apartat": "b", "valor": "Planta: ocultes les dues arestes que surten del vèrtex més baix cap a a i b. Alçat: ocultes tres arestes (les del vèrtex posterior cap a a′ i cap al vèrtex inferior, i a′–vèrtex inferior)."}
+          {
+            "apartat": "a",
+            "valor": "Octaedre de diagonal $ab \\approx 6{,}7$ cm i aresta $\\approx 4{,}7$ cm; el quadrat central es veu en vertadera magnitud al canvi de pla i el vèrtex inferior és sobre $H'$, per darrere de ab."
+          },
+          {
+            "apartat": "b",
+            "valor": "Planta: ocultes les dues arestes que surten del vèrtex més baix cap a a i b. Alçat: ocultes tres arestes (les del vèrtex posterior cap a a′ i cap al vèrtex inferior, i a′–vèrtex inferior)."
+          }
         ],
         "nota": "Error típic: prendre l'aresta com si fos la meitat de la diagonal. Recorda que en l'octaedre la diagonal és $\\sqrt2$ vegades l'aresta. Mides mesurades sobre el PDF."
       }
@@ -285,13 +394,28 @@
       "punts": 4,
       "titol": "Axonometria dimètrica DIN 5 d'un sòlid amb base, cossos inclinats i un cos superior",
       "tema": "axonometria",
-      "temes_secundaris": ["normalitzacio"],
-      "conceptes": ["axonometria dimètrica", "coeficients de reducció", "escala", "interpretació de vistes", "visibilitat"],
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "axonometria dimètrica",
+        "coeficients de reducció",
+        "interpretació de vistes",
+        "coordenades axonomètriques",
+        "cares inclinades"
+      ],
       "dificultat": 3,
-      "pagines": [13],
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
+      "pagines": [
+        13
+      ],
       "enunciat": "Interpreteu el sòlid polièdric representat en planta i alçats, i, situant el punt *p-p′-p″* en la posició *P* del paper, dibuixeu-ne l'axonometria amb la terna proposada (ortogonal dimètrica normalitzada DIN 5) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [4 punts: 0,5 punts pel cos horitzontal, 2,5 punts pels cossos inclinats i 1 punt pel cos superior]",
       "figures": [
-        {"src": "img/dibuix/2019-S/3A.png", "peu": "Alçat, planta i perfil (girat 90°) del sòlid, punt P i terna DIN 5 (X coeficient 1/2, Y i Z coeficient 1)"}
+        {
+          "src": "img/dibuix/2019-S/3A.png",
+          "peu": "Alçat, planta i perfil (girat 90°) del sòlid, punt P i terna DIN 5 (X coeficient 1/2, Y i Z coeficient 1)"
+        }
       ],
       "opcions": {},
       "apartats": [],
@@ -340,7 +464,10 @@
           }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Axonometria DIN 5 a escala doble: base de $45 \\times 60 \\times 15$ mm, cos superior de $30 \\times 30 \\times 12{,}5$ mm al dibuix (X × Y × Z), falca en V i dues barres inclinades de secció quadrada; només línies vistes."}
+          {
+            "apartat": null,
+            "valor": "Axonometria DIN 5 a escala doble: base de $45 \\times 60 \\times 15$ mm, cos superior de $30 \\times 30 \\times 12{,}5$ mm al dibuix (X × Y × Z), falca en V i dues barres inclinades de secció quadrada; només línies vistes."
+          }
         ],
         "nota": "Atenció: en aquest examen el coeficient $\\tfrac12$ és el de l'eix X (no el de Y). El perfil està girat 90°. Les mides s'han llegit sobre el PDF (1 punt = 0,353 mm) i poden tenir errors de pocs dècims de mil·límetre."
       }
@@ -354,13 +481,33 @@
       "punts": 4,
       "titol": "Isometria d'un cilindre tallat per un pla oblic amb un buit a la part superior",
       "tema": "axonometria",
-      "temes_secundaris": ["corbes"],
-      "conceptes": ["axonometria isomètrica", "cilindre", "secció plana", "el·lipse", "contorn aparent"],
+      "temes_secundaris": [
+        "corbes",
+        "cossos",
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "axonometria isomètrica",
+        "cilindre",
+        "secció plana",
+        "el·lipse",
+        "contorn aparent",
+        "interpretació de vistes",
+        "cares inclinades",
+        "circumferència en axonometria"
+      ],
       "dificultat": 3,
-      "pagines": [15],
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (el·lipses isomètriques o DIN 5): DT II.",
+      "pagines": [
+        15
+      ],
       "enunciat": "Interpreteu el sòlid representat en planta i alçats, i, situant el punt *p-p′-p″* en la posició *P* del paper, dibuixeu-ne l'axonometria amb la terna proposada (ortogonal isomètrica) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el resultat únicament amb les línies vistes. [4 punts: 3 punts per l'exterior de la superfície corba, 0,5 dels quals correspondran als contorns aparents, i 1 punt pel buit de la part superior de l'objecte]",
       "figures": [
-        {"src": "img/dibuix/2019-S/3B.png", "peu": "Alçat, planta i perfil (girat 90°) d'un cilindre tallat, punt P i terna isomètrica"}
+        {
+          "src": "img/dibuix/2019-S/3B.png",
+          "peu": "Alçat, planta i perfil (girat 90°) d'un cilindre tallat, punt P i terna isomètrica"
+        }
       ],
       "opcions": {},
       "apartats": [],
@@ -409,7 +556,10 @@
           }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Isometria a escala doble d'un cilindre de 60 mm de diàmetre i 60 mm de llarg (eix en X), amb la mitja el·lipse del tall a 45°, el semicercle del tall vertical, els contorns aparents i l'entalla superior; només línies vistes."}
+          {
+            "apartat": null,
+            "valor": "Isometria a escala doble d'un cilindre de 60 mm de diàmetre i 60 mm de llarg (eix en X), amb la mitja el·lipse del tall a 45°, el semicercle del tall vertical, els contorns aparents i l'entalla superior; només línies vistes."
+          }
         ],
         "nota": "La solució oficial dibuixa la planta i el perfil auxiliars al voltant de l'axonometria per transportar els punts de les corbes. L'amplada del buit en X s'ha mesurat sobre el PDF (≈ 7,7 mm reals) i és aproximada. El perfil està girat 90°."
       }

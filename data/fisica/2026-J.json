@@ -20,15 +20,20 @@
       "punts": 2.5,
       "titol": "Període i energia d'un nanosatèl·lit en òrbita a 500 km",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
         "òrbita circular",
         "període orbital",
         "energia potencial gravitatòria",
-        "energia mecànica",
-        "força centrípeta"
+        "energia mecànica orbital",
+        "força centrípeta",
+        "MCU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, període orbital",
       "pagines": [
         2
       ],
@@ -108,15 +113,18 @@
       "punts": 2.5,
       "titol": "Òrbita el·líptica del cometa Halley: període i velocitat al periheli",
       "tema": "gravitacio",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "mecanica"
+      ],
       "conceptes": [
-        "lleis de Kepler",
         "òrbita el·líptica",
         "període orbital",
-        "conservació del moment angular",
-        "conservació de l'energia mecànica"
+        "conservació de l'energia",
+        "tercera llei de Kepler"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Lleis de Kepler i conservació del moment angular en una òrbita el·líptica (2n)",
       "pagines": [
         2
       ],
@@ -202,17 +210,20 @@
       "titol": "Tub de raigs X: camp elèctric entre plaques i energia de l'electró i del fotó",
       "tema": "camp-electric",
       "temes_secundaris": [
-        "quantica"
+        "quantica",
+        "optica"
       ],
       "conceptes": [
         "camp elèctric uniforme",
-        "força elèctrica",
         "diferència de potencial",
-        "energia cinètica",
+        "conservació de l'energia",
         "energia del fotó",
-        "raigs X"
+        "acceleració de partícules carregades",
+        "espectre electromagnètic"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, força elèctrica",
       "pagines": [
         4
       ],
@@ -309,11 +320,13 @@
         "moviment harmònic simple",
         "equació d'ona",
         "longitud d'ona",
-        "nombre d'ona",
         "intensitat sonora",
-        "nivell d'intensitat sonora"
+        "nivell d'intensitat sonora",
+        "ona transversal"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): moviment harmònic simple, equació d'ona",
       "pagines": [
         6
       ],
@@ -394,9 +407,12 @@
         "llei de desintegració radioactiva",
         "període de semidesintegració",
         "constant de desintegració",
-        "activitat"
+        "activitat",
+        "equació nuclear"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, llei de desintegració radioactiva",
       "pagines": [
         8
       ],
@@ -471,15 +487,19 @@
       "punts": 2.5,
       "titol": "Efecte fotoelèctric: funció de treball i potencial de frenada amb llum blava, verda i vermella",
       "tema": "quantica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "camp-electric"
+      ],
       "conceptes": [
         "efecte fotoelèctric",
-        "funció de treball",
+        "treball d'extracció",
         "potencial de frenada",
         "energia del fotó",
         "freqüència llindar"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, funció de treball",
       "pagines": [
         8
       ],

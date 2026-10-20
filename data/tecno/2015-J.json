@@ -21,22 +21,56 @@
       "titol": "Resistència a la ruptura d'una barra quadrada a tracció",
       "tema": "resistencia",
       "temes_secundaris": [],
-      "conceptes": ["tensió normal", "resistència a la ruptura", "tracció", "secció"],
+      "conceptes": [
+        "tensió normal",
+        "tensió de ruptura",
+        "tracció i compressió"
+      ],
       "dificultat": 1,
-      "pagines": [1],
+      "curs": "2n",
+      "curs_motiu": "Necessita tensió, deformació o mòdul de Young (resistència de materials i assaig de tracció), que és de 2n.",
+      "pagines": [
+        1
+      ],
       "enunciat": "Una barra quadrada massissa de $5\\ \\text{mm}$ de gruix pot suportar una força axial de tracció màxima de $9{,}5\\ \\text{kN}$ sense trencar-se. Quina és la resistència a la ruptura del material?",
       "figures": [],
-      "opcions": {"a": "$3{,}8\\ \\text{MPa}$", "b": "$38\\ \\text{MPa}$", "c": "$380\\ \\text{MPa}$", "d": "$1\\,900\\ \\text{MPa}$"},
+      "opcions": {
+        "a": "$3{,}8\\ \\text{MPa}$",
+        "b": "$38\\ \\text{MPa}$",
+        "c": "$380\\ \\text{MPa}$",
+        "d": "$1\\,900\\ \\text{MPa}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "c",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Secció quadrada de costat $a = 5\\ \\text{mm}$\n- Força màxima de tracció: $F = 9{,}5\\ \\text{kN} = 9\\,500\\ \\text{N}$\n- Incògnita: resistència a la ruptura $\\sigma_\\text{R}$ (tensió màxima que aguanta el material)"},
-          {"apartat": null, "titol": "Àrea de la secció", "cos": "La força es reparteix sobre la secció transversal de la barra, un quadrat de $5\\ \\text{mm}$ de costat:\n\n$$A = a^2 = 5^2 = 25\\ \\text{mm}^2$$"},
-          {"apartat": null, "titol": "Tensió de ruptura", "cos": "La resistència a la ruptura és la tensió (força per unitat d'àrea) a la qual el material es trenca:\n\n$$\\sigma_\\text{R} = \\frac{F}{A} = \\frac{9\\,500\\ \\text{N}}{25\\ \\text{mm}^2} = 380\\ \\text{N/mm}^2 = 380\\ \\text{MPa}$$\n\nRecorda que $1\\ \\text{N/mm}^2 = 1\\ \\text{MPa}$.\n\nResultat: **$\\sigma_\\text{R} = 380\\ \\text{MPa}$** → resposta **c**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "- **d)** $1\\,900\\ \\text{MPa}$ surt de dividir per $5\\ \\text{mm}$ en lloc de $25\\ \\text{mm}^2$ (oblidar elevar al quadrat).\n- **a)** i **b)** són errors de potències de 10 en passar unitats."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Secció quadrada de costat $a = 5\\ \\text{mm}$\n- Força màxima de tracció: $F = 9{,}5\\ \\text{kN} = 9\\,500\\ \\text{N}$\n- Incògnita: resistència a la ruptura $\\sigma_\\text{R}$ (tensió màxima que aguanta el material)"
+          },
+          {
+            "apartat": null,
+            "titol": "Àrea de la secció",
+            "cos": "La força es reparteix sobre la secció transversal de la barra, un quadrat de $5\\ \\text{mm}$ de costat:\n\n$$A = a^2 = 5^2 = 25\\ \\text{mm}^2$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Tensió de ruptura",
+            "cos": "La resistència a la ruptura és la tensió (força per unitat d'àrea) a la qual el material es trenca:\n\n$$\\sigma_\\text{R} = \\frac{F}{A} = \\frac{9\\,500\\ \\text{N}}{25\\ \\text{mm}^2} = 380\\ \\text{N/mm}^2 = 380\\ \\text{MPa}$$\n\nRecorda que $1\\ \\text{N/mm}^2 = 1\\ \\text{MPa}$.\n\nResultat: **$\\sigma_\\text{R} = 380\\ \\text{MPa}$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **d)** $1\\,900\\ \\text{MPa}$ surt de dividir per $5\\ \\text{mm}$ en lloc de $25\\ \\text{mm}^2$ (oblidar elevar al quadrat).\n- **a)** i **b)** són errors de potències de 10 en passar unitats."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$\\sigma_\\text{R} = 380\\ \\text{MPa}$ → resposta **c**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\sigma_\\text{R} = 380\\ \\text{MPa}$ → resposta **c**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -49,22 +83,53 @@
       "punts": 0.5,
       "titol": "Distància entre sacs en una cinta transportadora",
       "tema": "mecanica",
-      "temes_secundaris": [],
-      "conceptes": ["velocitat lineal", "cinta transportadora", "cadència de producció"],
+      "temes_secundaris": [
+        "economia"
+      ],
+      "conceptes": [
+        "velocitat lineal",
+        "capacitat i ocupació"
+      ],
       "dificultat": 1,
-      "pagines": [1],
+      "curs": "1r",
+      "curs_motiu": "Només cinemàtica senzilla i cadència de producció (1r).",
+      "pagines": [
+        1
+      ],
       "enunciat": "Una cinta transportadora de sacs es mou a $0{,}8\\ \\text{m/s}$. Si transporta 900 sacs cada hora, quina és la distància mitjana entre els sacs sobre la cinta?",
       "figures": [],
-      "opcions": {"a": "$3{,}8\\ \\text{m}$", "b": "$3{,}6\\ \\text{m}$", "c": "$3{,}4\\ \\text{m}$", "d": "$3{,}2\\ \\text{m}$"},
+      "opcions": {
+        "a": "$3{,}8\\ \\text{m}$",
+        "b": "$3{,}6\\ \\text{m}$",
+        "c": "$3{,}4\\ \\text{m}$",
+        "d": "$3{,}2\\ \\text{m}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "d",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Velocitat de la cinta: $v = 0{,}8\\ \\text{m/s}$\n- Cadència: $900\\ \\text{sacs/h}$\n- Incògnita: distància entre sacs, $d$"},
-          {"apartat": null, "titol": "Temps entre dos sacs consecutius", "cos": "Si en una hora ($3\\,600\\ \\text{s}$) passen 900 sacs, l'interval de temps entre un sac i el següent és:\n\n$$\\Delta t = \\frac{3\\,600\\ \\text{s}}{900} = 4\\ \\text{s}$$"},
-          {"apartat": null, "titol": "Distància recorreguda per la cinta en aquest temps", "cos": "En aquests 4 s la cinta (i el sac anterior) avança:\n\n$$d = v\\, \\Delta t = 0{,}8 \\cdot 4 = 3{,}2\\ \\text{m}$$\n\nResultat: **$d = 3{,}2\\ \\text{m}$** → resposta **d**."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Velocitat de la cinta: $v = 0{,}8\\ \\text{m/s}$\n- Cadència: $900\\ \\text{sacs/h}$\n- Incògnita: distància entre sacs, $d$"
+          },
+          {
+            "apartat": null,
+            "titol": "Temps entre dos sacs consecutius",
+            "cos": "Si en una hora ($3\\,600\\ \\text{s}$) passen 900 sacs, l'interval de temps entre un sac i el següent és:\n\n$$\\Delta t = \\frac{3\\,600\\ \\text{s}}{900} = 4\\ \\text{s}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Distància recorreguda per la cinta en aquest temps",
+            "cos": "En aquests 4 s la cinta (i el sac anterior) avança:\n\n$$d = v\\, \\Delta t = 0{,}8 \\cdot 4 = 3{,}2\\ \\text{m}$$\n\nResultat: **$d = 3{,}2\\ \\text{m}$** → resposta **d**."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$d = 3{,}2\\ \\text{m}$ → resposta **d**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$d = 3{,}2\\ \\text{m}$ → resposta **d**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -78,21 +143,49 @@
       "titol": "Unitats avariades a partir de la fiabilitat d'un producte",
       "tema": "fabricacio",
       "temes_secundaris": [],
-      "conceptes": ["fiabilitat", "qualitat", "percentatge"],
+      "conceptes": [
+        "control de qualitat"
+      ],
       "dificultat": 1,
-      "pagines": [2],
+      "curs": "1r",
+      "curs_motiu": "Només necessita metrologia, toleràncies o control de qualitat, que són de 1r.",
+      "pagines": [
+        2
+      ],
       "enunciat": "La fiabilitat d'un producte, entesa com la probabilitat que funcioni sense avaries durant un cert temps, és del $95\\ \\%$ durant les primeres $4\\,000\\ \\text{h}$. D'un lot inicial de 720 unitats, quantes se n'han avariat sense haver arribat a funcionar durant $4\\,000\\ \\text{h}$?",
       "figures": [],
-      "opcions": {"a": "684", "b": "72", "c": "36", "d": "360"},
+      "opcions": {
+        "a": "684",
+        "b": "72",
+        "c": "36",
+        "d": "360"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "c",
         "passos": [
-          {"apartat": null, "titol": "Què vol dir una fiabilitat del 95 %", "cos": "Una fiabilitat del $95\\ \\%$ vol dir que el $95\\ \\%$ de les unitats arriben a les $4\\,000\\ \\text{h}$ sense avaria. Per tant, la resta, el $100 - 95 = 5\\ \\%$, s'avaria abans."},
-          {"apartat": null, "titol": "Unitats avariades", "cos": "$$N_\\text{avariades} = 0{,}05 \\cdot 720 = 36\\ \\text{unitats}$$\n\nResultat: **36 unitats** → resposta **c**."},
-          {"apartat": null, "titol": "Per què les altres no", "cos": "- **a)** $684 = 0{,}95 \\cdot 720$ són les unitats que **sí** funcionen.\n- **b)** $72$ correspondria a un $10\\ \\%$ d'avaries.\n- **d)** $360$ és la meitat del lot, sense relació amb el $95\\ \\%$."}
+          {
+            "apartat": null,
+            "titol": "Què vol dir una fiabilitat del 95 %",
+            "cos": "Una fiabilitat del $95\\ \\%$ vol dir que el $95\\ \\%$ de les unitats arriben a les $4\\,000\\ \\text{h}$ sense avaria. Per tant, la resta, el $100 - 95 = 5\\ \\%$, s'avaria abans."
+          },
+          {
+            "apartat": null,
+            "titol": "Unitats avariades",
+            "cos": "$$N_\\text{avariades} = 0{,}05 \\cdot 720 = 36\\ \\text{unitats}$$\n\nResultat: **36 unitats** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $684 = 0{,}95 \\cdot 720$ són les unitats que **sí** funcionen.\n- **b)** $72$ correspondria a un $10\\ \\%$ d'avaries.\n- **d)** $360$ és la meitat del lot, sense relació amb el $95\\ \\%$."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$N_\\text{avariades} = 36$ → resposta **c**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$N_\\text{avariades} = 36$ → resposta **c**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -105,23 +198,60 @@
       "punts": 0.5,
       "titol": "Energia consumida per passatger i quilòmetre en un cotxe privat",
       "tema": "energia",
-      "temes_secundaris": [],
-      "conceptes": ["poder calorífic", "consum de combustible", "energia per passatger"],
+      "temes_secundaris": [
+        "termica",
+        "economia"
+      ],
+      "conceptes": [
+        "poder calorífic",
+        "consum de combustible",
+        "capacitat i ocupació"
+      ],
       "dificultat": 2,
-      "pagines": [2],
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Una enquesta feta als assistents en un acte públic indica que, per a arribar-hi, l'ocupació mitjana d'un vehicle privat ha estat d'1,18 passatgers. Per a calcular l'energia consumida en $1\\ \\text{km}$ per cada passatger, s'ha suposat que el consum mitjà del vehicle és de $7\\ \\text{L/100 km}$ i que el combustible emprat té un poder calorífic de $34{,}1\\ \\text{MJ/L}$. Quina és l'energia consumida en $1\\ \\text{km}$ per cada passatger?",
       "figures": [],
-      "opcions": {"a": "$2{,}387\\ \\text{MJ}$", "b": "$2{,}023\\ \\text{MJ}$", "c": "$5{,}748\\ \\text{MJ}$", "d": "$4{,}128\\ \\text{MJ}$"},
+      "opcions": {
+        "a": "$2{,}387\\ \\text{MJ}$",
+        "b": "$2{,}023\\ \\text{MJ}$",
+        "c": "$5{,}748\\ \\text{MJ}$",
+        "d": "$4{,}128\\ \\text{MJ}$"
+      },
       "apartats": [],
       "solucio": {
         "resposta": "b",
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Ocupació mitjana: $1{,}18\\ \\text{passatgers/vehicle}$\n- Consum: $7\\ \\text{L/100 km} = 0{,}07\\ \\text{L/km}$\n- Poder calorífic: $p_\\text{c} = 34{,}1\\ \\text{MJ/L}$\n- Incògnita: energia per passatger i km, $E_\\text{pass}$"},
-          {"apartat": null, "titol": "Energia que consumeix el vehicle en 1 km", "cos": "En 1 km el cotxe crema $0{,}07\\ \\text{L}$ de combustible, i cada litre allibera $34{,}1\\ \\text{MJ}$:\n\n$$E_\\text{veh} = 0{,}07\\ \\text{L} \\cdot 34{,}1\\ \\text{MJ/L} = 2{,}387\\ \\text{MJ}$$"},
-          {"apartat": null, "titol": "Repartiment entre els passatgers", "cos": "Aquesta energia es reparteix entre les persones que viatgen al cotxe (de mitjana, 1,18):\n\n$$E_\\text{pass} = \\frac{E_\\text{veh}}{1{,}18} = \\frac{2{,}387}{1{,}18} = 2{,}023\\ \\text{MJ}$$\n\nResultat: **$E_\\text{pass} \\approx 2{,}023\\ \\text{MJ}$** → resposta **b**."},
-          {"apartat": null, "titol": "Errors típics", "cos": "L'opció **a** ($2{,}387\\ \\text{MJ}$) és l'energia de tot el vehicle: és l'error d'oblidar dividir pel nombre de passatgers. Multiplicar per 1,18 en lloc de dividir donaria $2{,}817\\ \\text{MJ}$ (no és cap opció)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Ocupació mitjana: $1{,}18\\ \\text{passatgers/vehicle}$\n- Consum: $7\\ \\text{L/100 km} = 0{,}07\\ \\text{L/km}$\n- Poder calorífic: $p_\\text{c} = 34{,}1\\ \\text{MJ/L}$\n- Incògnita: energia per passatger i km, $E_\\text{pass}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Energia que consumeix el vehicle en 1 km",
+            "cos": "En 1 km el cotxe crema $0{,}07\\ \\text{L}$ de combustible, i cada litre allibera $34{,}1\\ \\text{MJ}$:\n\n$$E_\\text{veh} = 0{,}07\\ \\text{L} \\cdot 34{,}1\\ \\text{MJ/L} = 2{,}387\\ \\text{MJ}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Repartiment entre els passatgers",
+            "cos": "Aquesta energia es reparteix entre les persones que viatgen al cotxe (de mitjana, 1,18):\n\n$$E_\\text{pass} = \\frac{E_\\text{veh}}{1{,}18} = \\frac{2{,}387}{1{,}18} = 2{,}023\\ \\text{MJ}$$\n\nResultat: **$E_\\text{pass} \\approx 2{,}023\\ \\text{MJ}$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "L'opció **a** ($2{,}387\\ \\text{MJ}$) és l'energia de tot el vehicle: és l'error d'oblidar dividir pel nombre de passatgers. Multiplicar per 1,18 en lloc de dividir donaria $2{,}817\\ \\text{MJ}$ (no és cap opció)."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$E_\\text{pass} \\approx 2{,}023\\ \\text{MJ}$ → resposta **b**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$E_\\text{pass} \\approx 2{,}023\\ \\text{MJ}$ → resposta **b**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -134,22 +264,52 @@
       "punts": 0.5,
       "titol": "Interval de valors d'una resistència amb tolerància del ±2 %",
       "tema": "circuits",
-      "temes_secundaris": ["fabricacio"],
-      "conceptes": ["tolerància", "valor nominal", "resistència elèctrica"],
+      "temes_secundaris": [
+        "fabricacio"
+      ],
+      "conceptes": [
+        "tolerància"
+      ],
       "dificultat": 1,
-      "pagines": [2],
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "pagines": [
+        2
+      ],
       "enunciat": "El valor nominal d'una resistència elèctrica és de $470\\ \\Omega$ amb una tolerància del $\\pm 2\\ \\%$. El valor real d'aquesta resistència pot estar comprès entre",
       "figures": [],
-      "opcions": {"a": "$460{,}6\\ \\Omega$ i $479{,}4\\ \\Omega$.", "b": "$465{,}3\\ \\Omega$ i $474{,}7\\ \\Omega$.", "c": "$465{,}3\\ \\Omega$ i $479{,}4\\ \\Omega$.", "d": "$460{,}6\\ \\Omega$ i $474{,}7\\ \\Omega$."},
+      "opcions": {
+        "a": "$460{,}6\\ \\Omega$ i $479{,}4\\ \\Omega$.",
+        "b": "$465{,}3\\ \\Omega$ i $474{,}7\\ \\Omega$.",
+        "c": "$465{,}3\\ \\Omega$ i $479{,}4\\ \\Omega$.",
+        "d": "$460{,}6\\ \\Omega$ i $474{,}7\\ \\Omega$."
+      },
       "apartats": [],
       "solucio": {
         "resposta": "a",
         "passos": [
-          {"apartat": null, "titol": "Desviació màxima", "cos": "La tolerància del $\\pm 2\\ \\%$ vol dir que el valor real es pot apartar com a molt un $2\\ \\%$ del nominal, per dalt o per baix:\n\n$$\\Delta R = 0{,}02 \\cdot 470 = 9{,}4\\ \\Omega$$"},
-          {"apartat": null, "titol": "Valors límit", "cos": "$$R_\\text{mín} = 470 - 9{,}4 = 460{,}6\\ \\Omega \\qquad R_\\text{màx} = 470 + 9{,}4 = 479{,}4\\ \\Omega$$\n\nResultat: **entre $460{,}6\\ \\Omega$ i $479{,}4\\ \\Omega$** → resposta **a**."},
-          {"apartat": null, "titol": "Per què les altres no", "cos": "Els valors $465{,}3$ i $474{,}7\\ \\Omega$ corresponen a una tolerància de $\\pm 1\\ \\%$ ($4{,}7\\ \\Omega$). Les opcions **c** i **d** barregen un límit de l'1 % i un del 2 %, i no són simètriques."}
+          {
+            "apartat": null,
+            "titol": "Desviació màxima",
+            "cos": "La tolerància del $\\pm 2\\ \\%$ vol dir que el valor real es pot apartar com a molt un $2\\ \\%$ del nominal, per dalt o per baix:\n\n$$\\Delta R = 0{,}02 \\cdot 470 = 9{,}4\\ \\Omega$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Valors límit",
+            "cos": "$$R_\\text{mín} = 470 - 9{,}4 = 460{,}6\\ \\Omega \\qquad R_\\text{màx} = 470 + 9{,}4 = 479{,}4\\ \\Omega$$\n\nResultat: **entre $460{,}6\\ \\Omega$ i $479{,}4\\ \\Omega$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "Els valors $465{,}3$ i $474{,}7\\ \\Omega$ corresponen a una tolerància de $\\pm 1\\ \\%$ ($4{,}7\\ \\Omega$). Les opcions **c** i **d** barregen un límit de l'1 % i un del 2 %, i no són simètriques."
+          }
         ],
-        "resultats": [{"apartat": null, "valor": "$460{,}6\\ \\Omega \\le R \\le 479{,}4\\ \\Omega$ → resposta **a**"}],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$460{,}6\\ \\Omega \\le R \\le 479{,}4\\ \\Omega$ → resposta **a**"
+          }
+        ],
         "nota": ""
       }
     },
@@ -162,32 +322,89 @@
       "punts": 2.5,
       "titol": "Control lògic d'una bomba que manté el nivell d'un dipòsit",
       "tema": "digital",
-      "temes_secundaris": ["control"],
-      "conceptes": ["taula de veritat", "funció lògica", "mapa de Karnaugh", "esquema de contactes", "casos impossibles"],
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "mapa de Karnaugh",
+        "esquema de contactes",
+        "sensor"
+      ],
       "dificultat": 3,
-      "pagines": [2],
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "pagines": [
+        2
+      ],
       "enunciat": "Una bomba de cabal es fa servir per a mantenir el nivell d'aigua d'un dipòsit entre $h_\\text{inf}$ i $h_\\text{sup}$. La bomba es posa en marxa, si està aturada, quan el nivell $h$ del dipòsit és inferior a $h_\\text{inf}$, i s'atura, si està en marxa, quan $h$ és superior a $h_\\text{sup}$. Entre $h_\\text{inf}$ i $h_\\text{sup}$ la bomba no canvia l'estat de funcionament. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- $h_\\text{b}$ = 1: si $h < h_\\text{inf}$; 0: si $h \\ge h_\\text{inf}$\n- $h_\\text{a}$ = 1: si $h > h_\\text{sup}$; 0: si $h \\le h_\\text{sup}$\n- bomba en marxa: $b$ = 1: sí; 0: no\n- canvi d'estat de funcionament: $c$ = 1: sí; 0: no",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Escriviu la taula de veritat del sistema i indiqueu els casos que no són possibles.", "punts": 1},
-        {"id": "b", "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.", "punts": 1},
-        {"id": "c", "enunciat": "Dibuixeu l'esquema de contactes equivalent.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Escriviu la taula de veritat del sistema i indiqueu els casos que no són possibles.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": "a", "titol": "Quan hi ha canvi d'estat", "cos": "La sortida $c$ indica si la bomba ha de **canviar** d'estat (engegar-se o aturar-se). Hi ha només dues situacions en què passa:\n\n1. **Nivell baix i bomba aturada**: $h_\\text{b} = 1$ i $b = 0$ → la bomba s'ha d'engegar → $c = 1$.\n2. **Nivell alt i bomba en marxa**: $h_\\text{a} = 1$ i $b = 1$ → la bomba s'ha d'aturar → $c = 1$.\n\nEn tots els altres casos (nivell entre $h_\\text{inf}$ i $h_\\text{sup}$, o bomba ja en l'estat correcte) no hi ha canvi: $c = 0$."},
-          {"apartat": "a", "titol": "Casos impossibles", "cos": "El nivell no pot ser alhora inferior a $h_\\text{inf}$ i superior a $h_\\text{sup}$ (perquè $h_\\text{inf} < h_\\text{sup}$). Per tant les combinacions amb $h_\\text{b} = 1$ i $h_\\text{a} = 1$ **no són possibles**. A la taula hi posem una $X$ (*don't care*: indiferent)."},
-          {"apartat": "a", "titol": "Taula de veritat", "cos": "| $h_\\text{b}$ | $h_\\text{a}$ | $b$ | $c$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | **1** |\n| 1 | 0 | 0 | **1** |\n| 1 | 0 | 1 | 0 |\n| 1 | 1 | 0 | X (no és possible) |\n| 1 | 1 | 1 | X (no és possible) |"},
-          {"apartat": "b", "titol": "Funció canònica", "cos": "Si no fem servir els casos impossibles, la suma de productes de les files amb $c = 1$ és:\n\n$$c = \\bar{h}_\\text{b}\\, h_\\text{a}\\, b + h_\\text{b}\\, \\bar{h}_\\text{a}\\, \\bar{b}$$"},
-          {"apartat": "b", "titol": "Simplificació per Karnaugh aprofitant les X", "cos": "Com que els casos impossibles no passaran mai, els podem considerar 1 si ens ajuda a fer grups més grans. Mapa amb files $h_\\text{b}$ i columnes $h_\\text{a}\\,b$ (ordre de Gray 00, 01, 11, 10):\n\n| $h_\\text{b} \\backslash h_\\text{a} b$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **0** | 0 | 0 | 1 | 0 |\n| **1** | 1 | 0 | X | X |\n\n- **Grup de 2** columna $h_\\text{a} b = 11$ (amb la X de sota): $h_\\text{b}$ hi canvia, s'elimina → $h_\\text{a}\\, b$.\n- **Grup de 2** a la fila $h_\\text{b} = 1$, columnes 00 i 10 (adjacents pels extrems, amb la X): $h_\\text{a}$ hi canvia, s'elimina → $h_\\text{b}\\, \\bar{b}$.\n\n$$\\boxed{c = h_\\text{b}\\, \\bar{b} + h_\\text{a}\\, b}$$\n\nTé sentit físic: canvia d'estat si el nivell és baix i la bomba està aturada, **o** si el nivell és alt i la bomba està en marxa."},
-          {"apartat": "c", "titol": "Esquema de contactes", "cos": "En un esquema de contactes, el producte (AND) són contactes **en sèrie** i la suma (OR) branques **en paral·lel**. Una variable negada és un contacte **normalment tancat**.\n\n- Branca superior: contacte normalment obert $h_\\text{b}$ en sèrie amb un contacte **normalment tancat** de $b$ ($\\bar{b}$).\n- Branca inferior: contacte normalment obert $h_\\text{a}$ en sèrie amb un contacte normalment obert de $b$.\n- Les dues branques en paral·lel alimenten la sortida $c$ (els dos contactes de $b$ estan lligats mecànicament).\n\n![Esquema de contactes de la solució oficial](img/tecno/2015-J/e2-sol.png)"}
+          {
+            "apartat": "a",
+            "titol": "Quan hi ha canvi d'estat",
+            "cos": "La sortida $c$ indica si la bomba ha de **canviar** d'estat (engegar-se o aturar-se). Hi ha només dues situacions en què passa:\n\n1. **Nivell baix i bomba aturada**: $h_\\text{b} = 1$ i $b = 0$ → la bomba s'ha d'engegar → $c = 1$.\n2. **Nivell alt i bomba en marxa**: $h_\\text{a} = 1$ i $b = 1$ → la bomba s'ha d'aturar → $c = 1$.\n\nEn tots els altres casos (nivell entre $h_\\text{inf}$ i $h_\\text{sup}$, o bomba ja en l'estat correcte) no hi ha canvi: $c = 0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Casos impossibles",
+            "cos": "El nivell no pot ser alhora inferior a $h_\\text{inf}$ i superior a $h_\\text{sup}$ (perquè $h_\\text{inf} < h_\\text{sup}$). Per tant les combinacions amb $h_\\text{b} = 1$ i $h_\\text{a} = 1$ **no són possibles**. A la taula hi posem una $X$ (*don't care*: indiferent)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "| $h_\\text{b}$ | $h_\\text{a}$ | $b$ | $c$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | **1** |\n| 1 | 0 | 0 | **1** |\n| 1 | 0 | 1 | 0 |\n| 1 | 1 | 0 | X (no és possible) |\n| 1 | 1 | 1 | X (no és possible) |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica",
+            "cos": "Si no fem servir els casos impossibles, la suma de productes de les files amb $c = 1$ és:\n\n$$c = \\bar{h}_\\text{b}\\, h_\\text{a}\\, b + h_\\text{b}\\, \\bar{h}_\\text{a}\\, \\bar{b}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació per Karnaugh aprofitant les X",
+            "cos": "Com que els casos impossibles no passaran mai, els podem considerar 1 si ens ajuda a fer grups més grans. Mapa amb files $h_\\text{b}$ i columnes $h_\\text{a}\\,b$ (ordre de Gray 00, 01, 11, 10):\n\n| $h_\\text{b} \\backslash h_\\text{a} b$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **0** | 0 | 0 | 1 | 0 |\n| **1** | 1 | 0 | X | X |\n\n- **Grup de 2** columna $h_\\text{a} b = 11$ (amb la X de sota): $h_\\text{b}$ hi canvia, s'elimina → $h_\\text{a}\\, b$.\n- **Grup de 2** a la fila $h_\\text{b} = 1$, columnes 00 i 10 (adjacents pels extrems, amb la X): $h_\\text{a}$ hi canvia, s'elimina → $h_\\text{b}\\, \\bar{b}$.\n\n$$\\boxed{c = h_\\text{b}\\, \\bar{b} + h_\\text{a}\\, b}$$\n\nTé sentit físic: canvia d'estat si el nivell és baix i la bomba està aturada, **o** si el nivell és alt i la bomba està en marxa."
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de contactes",
+            "cos": "En un esquema de contactes, el producte (AND) són contactes **en sèrie** i la suma (OR) branques **en paral·lel**. Una variable negada és un contacte **normalment tancat**.\n\n- Branca superior: contacte normalment obert $h_\\text{b}$ en sèrie amb un contacte **normalment tancat** de $b$ ($\\bar{b}$).\n- Branca inferior: contacte normalment obert $h_\\text{a}$ en sèrie amb un contacte normalment obert de $b$.\n- Les dues branques en paral·lel alimenten la sortida $c$ (els dos contactes de $b$ estan lligats mecànicament).\n\n![Esquema de contactes de la solució oficial](img/tecno/2015-J/e2-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$c = 1$ per a $(h_\\text{b}, h_\\text{a}, b) = (0,1,1)$ i $(1,0,0)$; casos $h_\\text{b} = h_\\text{a} = 1$ impossibles (X)"},
-          {"apartat": "b", "valor": "$c = h_\\text{b}\\, \\bar{b} + h_\\text{a}\\, b$ (prenent X = 1)"},
-          {"apartat": "c", "valor": "Dues branques en paral·lel: $h_\\text{b}$ en sèrie amb $b$ normalment tancat; $h_\\text{a}$ en sèrie amb $b$ normalment obert"}
+          {
+            "apartat": "a",
+            "valor": "$c = 1$ per a $(h_\\text{b}, h_\\text{a}, b) = (0,1,1)$ i $(1,0,0)$; casos $h_\\text{b} = h_\\text{a} = 1$ impossibles (X)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$c = h_\\text{b}\\, \\bar{b} + h_\\text{a}\\, b$ (prenent X = 1)"
+          },
+          {
+            "apartat": "c",
+            "valor": "Dues branques en paral·lel: $h_\\text{b}$ en sèrie amb $b$ normalment tancat; $h_\\text{a}$ en sèrie amb $b$ normalment obert"
+          }
         ],
         "nota": "Sense aprofitar els casos impossibles la funció seria $c = \\bar{h}_\\text{b}\\, h_\\text{a}\\, b + h_\\text{b}\\, \\bar{h}_\\text{a}\\, \\bar{b}$, també correcta però més llarga. La solució oficial pren X = 1 i obté la forma simplificada."
       }
@@ -201,35 +418,111 @@
       "punts": 2.5,
       "titol": "Trepant elèctric amb transmissió per corretja dentada: potències, parell i diàmetre de politja",
       "tema": "mecanismes",
-      "temes_secundaris": ["maquines-electriques", "mecanica"],
-      "conceptes": ["transmissió per corretja", "relació de transmissió", "parell", "rendiment", "potència dissipada"],
+      "temes_secundaris": [
+        "maquines-electriques",
+        "mecanica",
+        "circuits"
+      ],
+      "conceptes": [
+        "relació de transmissió",
+        "parell motor",
+        "rendiment global",
+        "potència dissipada",
+        "velocitat angular",
+        "potència elèctrica"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "pagines": [
+        3
+      ],
       "enunciat": "Un trepant elèctric funciona mitjançant un motor de rendiment $\\eta_\\text{mot} = 0{,}76$ i una transmissió per corretja dentada que té un rendiment $\\eta_\\text{transm} = 0{,}94$ i una relació de transmissió $\\tau = n_2/n_1 = 5/7$, tal com mostra la figura. En règim de funcionament nominal, el motor consumeix una potència elèctrica $P_\\text{elèctr} = 1\\,100\\ \\text{W}$ i l'eix del motor gira a $n_1 = 1\\,460\\ \\text{min}^{-1}$. Dades de la figura: $d_1 = 80\\ \\text{mm}$. Determineu:",
-      "figures": [{"src": "img/tecno/2015-J/e3-a.png", "peu": "Transmissió per corretja entre l'eix del motor (d1 = 80 mm, n1 = 1 460 min⁻¹) i l'eix de la broca"}],
+      "figures": [
+        {
+          "src": "img/tecno/2015-J/e3-a.png",
+          "peu": "Transmissió per corretja entre l'eix del motor (d1 = 80 mm, n1 = 1 460 min⁻¹) i l'eix de la broca"
+        }
+      ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "La potència $P_1$ a l'eix del motor.", "punts": 0.5},
-        {"id": "b", "enunciat": "El parell $\\Gamma_2$ a l'eix de la broca (eix de sortida del trepant).", "punts": 1},
-        {"id": "c", "enunciat": "La potència total dissipada $P_\\text{diss}$ en el trepant.", "punts": 0.5},
-        {"id": "d", "enunciat": "El diàmetre $d_2$ de la politja solidària a l'eix de la broca.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "La potència $P_1$ a l'eix del motor.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "El parell $\\Gamma_2$ a l'eix de la broca (eix de sortida del trepant).",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "La potència total dissipada $P_\\text{diss}$ en el trepant.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "El diàmetre $d_2$ de la politja solidària a l'eix de la broca.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Rendiment del motor: $\\eta_\\text{mot} = 0{,}76$\n- Rendiment de la transmissió: $\\eta_\\text{transm} = 0{,}94$\n- Relació de transmissió: $\\tau = n_2/n_1 = 5/7$\n- Potència elèctrica consumida: $P_\\text{elèctr} = 1\\,100\\ \\text{W}$\n- Velocitat del motor: $n_1 = 1\\,460\\ \\text{min}^{-1}$\n- Diàmetre de la politja motriu: $d_1 = 80\\ \\text{mm}$\n- Incògnites: $P_1$, $\\Gamma_2$, $P_\\text{diss}$, $d_2$"},
-          {"apartat": "a", "titol": "Potència mecànica a l'eix del motor", "cos": "El motor converteix en potència mecànica només una part de la potència elèctrica que consumeix; la proporció és el seu rendiment:\n\n$$P_1 = \\eta_\\text{mot}\\, P_\\text{elèctr} = 0{,}76 \\cdot 1\\,100 = 836\\ \\text{W}$$\n\nResultat: **$P_1 = 836\\ \\text{W}$**."},
-          {"apartat": "b", "titol": "Potència a l'eix de la broca", "cos": "La corretja també perd una mica de potència (fregaments), segons el seu rendiment:\n\n$$P_2 = \\eta_\\text{transm}\\, P_1 = 0{,}94 \\cdot 836 = 785{,}8\\ \\text{W}$$"},
-          {"apartat": "b", "titol": "Velocitat angular de l'eix de la broca", "cos": "Amb la relació de transmissió obtenim la velocitat de la broca i la passem a rad/s (1 volta = $2\\pi$ rad, 1 min = 60 s):\n\n$$n_2 = \\tau\\, n_1 = \\frac{5}{7} \\cdot 1\\,460 = 1\\,042{,}9\\ \\text{min}^{-1}$$\n\n$$\\omega_2 = n_2 \\cdot \\frac{2\\pi}{60} = 1\\,042{,}9 \\cdot \\frac{2\\pi}{60} = 109{,}2\\ \\text{rad/s}$$"},
-          {"apartat": "b", "titol": "Parell a l'eix de la broca", "cos": "En un eix que gira, la potència és el parell per la velocitat angular, $P = \\Gamma\\, \\omega$. Aïllant el parell:\n\n$$\\Gamma_2 = \\frac{P_2}{\\omega_2} = \\frac{785{,}8\\ \\text{W}}{109{,}2\\ \\text{rad/s}} = 7{,}196\\ \\text{N m}$$\n\nResultat: **$\\Gamma_2 \\approx 7{,}196\\ \\text{N m}$**."},
-          {"apartat": "c", "titol": "Potència total dissipada", "cos": "La potència dissipada és tot el que entra i no surt com a potència útil a la broca (pèrdues del motor + pèrdues de la corretja):\n\n$$P_\\text{diss} = P_\\text{elèctr} - P_2 = P_\\text{elèctr}\\,(1 - \\eta_\\text{mot}\\, \\eta_\\text{transm}) = 1\\,100\\,(1 - 0{,}76 \\cdot 0{,}94) = 314{,}2\\ \\text{W}$$\n\n(D'aquests, $264\\ \\text{W}$ es perden al motor i $50{,}2\\ \\text{W}$ a la corretja.)\n\nResultat: **$P_\\text{diss} \\approx 314{,}2\\ \\text{W}$**."},
-          {"apartat": "d", "titol": "Diàmetre de la politja de la broca", "cos": "La corretja dentada no patina, de manera que la velocitat lineal de la corretja és la mateixa a les dues politges: $\\omega_1 \\frac{d_1}{2} = \\omega_2 \\frac{d_2}{2}$. D'aquí:\n\n$$\\tau = \\frac{n_2}{n_1} = \\frac{d_1}{d_2} \\quad\\Rightarrow\\quad d_2 = \\frac{d_1}{\\tau} = \\frac{80}{5/7} = 112\\ \\text{mm}$$\n\nResultat: **$d_2 = 112\\ \\text{mm}$** (la politja gran és la de la broca, que gira més a poc a poc)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Rendiment del motor: $\\eta_\\text{mot} = 0{,}76$\n- Rendiment de la transmissió: $\\eta_\\text{transm} = 0{,}94$\n- Relació de transmissió: $\\tau = n_2/n_1 = 5/7$\n- Potència elèctrica consumida: $P_\\text{elèctr} = 1\\,100\\ \\text{W}$\n- Velocitat del motor: $n_1 = 1\\,460\\ \\text{min}^{-1}$\n- Diàmetre de la politja motriu: $d_1 = 80\\ \\text{mm}$\n- Incògnites: $P_1$, $\\Gamma_2$, $P_\\text{diss}$, $d_2$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència mecànica a l'eix del motor",
+            "cos": "El motor converteix en potència mecànica només una part de la potència elèctrica que consumeix; la proporció és el seu rendiment:\n\n$$P_1 = \\eta_\\text{mot}\\, P_\\text{elèctr} = 0{,}76 \\cdot 1\\,100 = 836\\ \\text{W}$$\n\nResultat: **$P_1 = 836\\ \\text{W}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència a l'eix de la broca",
+            "cos": "La corretja també perd una mica de potència (fregaments), segons el seu rendiment:\n\n$$P_2 = \\eta_\\text{transm}\\, P_1 = 0{,}94 \\cdot 836 = 785{,}8\\ \\text{W}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat angular de l'eix de la broca",
+            "cos": "Amb la relació de transmissió obtenim la velocitat de la broca i la passem a rad/s (1 volta = $2\\pi$ rad, 1 min = 60 s):\n\n$$n_2 = \\tau\\, n_1 = \\frac{5}{7} \\cdot 1\\,460 = 1\\,042{,}9\\ \\text{min}^{-1}$$\n\n$$\\omega_2 = n_2 \\cdot \\frac{2\\pi}{60} = 1\\,042{,}9 \\cdot \\frac{2\\pi}{60} = 109{,}2\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Parell a l'eix de la broca",
+            "cos": "En un eix que gira, la potència és el parell per la velocitat angular, $P = \\Gamma\\, \\omega$. Aïllant el parell:\n\n$$\\Gamma_2 = \\frac{P_2}{\\omega_2} = \\frac{785{,}8\\ \\text{W}}{109{,}2\\ \\text{rad/s}} = 7{,}196\\ \\text{N m}$$\n\nResultat: **$\\Gamma_2 \\approx 7{,}196\\ \\text{N m}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència total dissipada",
+            "cos": "La potència dissipada és tot el que entra i no surt com a potència útil a la broca (pèrdues del motor + pèrdues de la corretja):\n\n$$P_\\text{diss} = P_\\text{elèctr} - P_2 = P_\\text{elèctr}\\,(1 - \\eta_\\text{mot}\\, \\eta_\\text{transm}) = 1\\,100\\,(1 - 0{,}76 \\cdot 0{,}94) = 314{,}2\\ \\text{W}$$\n\n(D'aquests, $264\\ \\text{W}$ es perden al motor i $50{,}2\\ \\text{W}$ a la corretja.)\n\nResultat: **$P_\\text{diss} \\approx 314{,}2\\ \\text{W}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Diàmetre de la politja de la broca",
+            "cos": "La corretja dentada no patina, de manera que la velocitat lineal de la corretja és la mateixa a les dues politges: $\\omega_1 \\frac{d_1}{2} = \\omega_2 \\frac{d_2}{2}$. D'aquí:\n\n$$\\tau = \\frac{n_2}{n_1} = \\frac{d_1}{d_2} \\quad\\Rightarrow\\quad d_2 = \\frac{d_1}{\\tau} = \\frac{80}{5/7} = 112\\ \\text{mm}$$\n\nResultat: **$d_2 = 112\\ \\text{mm}$** (la politja gran és la de la broca, que gira més a poc a poc)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$P_1 = 836\\ \\text{W}$"},
-          {"apartat": "b", "valor": "$P_2 = 785{,}8\\ \\text{W}$; $\\Gamma_2 \\approx 7{,}196\\ \\text{N m}$"},
-          {"apartat": "c", "valor": "$P_\\text{diss} \\approx 314{,}2\\ \\text{W}$"},
-          {"apartat": "d", "valor": "$d_2 = 112\\ \\text{mm}$"}
+          {
+            "apartat": "a",
+            "valor": "$P_1 = 836\\ \\text{W}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_2 = 785{,}8\\ \\text{W}$; $\\Gamma_2 \\approx 7{,}196\\ \\text{N m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{diss} \\approx 314{,}2\\ \\text{W}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$d_2 = 112\\ \\text{mm}$"
+          }
         ],
         "nota": "Error típic a l'apartat b: oblidar passar $n_2$ de $\\text{min}^{-1}$ a $\\text{rad/s}$, o calcular el parell amb $P_1$ en lloc de $P_2$. A l'apartat d, compte: els diàmetres són inversament proporcionals a les velocitats ($d_2 = d_1/\\tau$, no $d_1 \\cdot \\tau$)."
       }
@@ -243,31 +536,85 @@
       "punts": 2.5,
       "titol": "Rendiment d'un grup motobomba que eleva aigua amb un motor tèrmic",
       "tema": "energia",
-      "temes_secundaris": ["mecanica", "termica"],
-      "conceptes": ["energia potencial", "potència hidràulica", "poder calorífic", "rendiment"],
+      "temes_secundaris": [
+        "mecanica",
+        "termica",
+        "pneumatica"
+      ],
+      "conceptes": [
+        "energia potencial",
+        "potència hidràulica",
+        "poder calorífic",
+        "rendiment"
+      ],
       "dificultat": 2,
-      "pagines": [3],
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "pagines": [
+        3
+      ],
       "enunciat": "En una instal·lació, una bomba accionada per un motor tèrmic fa pujar un volum $V = 600\\ \\text{m}^3$ d'aigua fins a una altura $h = 3{,}6\\ \\text{m}$, en un temps $t = 10\\ \\text{h}$ de funcionament estacionari. Determineu:",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "El treball $W$ fet per la bomba.", "punts": 1},
-        {"id": "b", "enunciat": "La potència hidràulica $P_\\text{h}$ que desenvolupa la bomba.", "punts": 0.5},
-        {"id": "c", "enunciat": "El rendiment $\\eta$ del grup motobomba, si el motor ha consumit $c = 3\\ \\text{L}$ d'un combustible de densitat $\\rho = 850\\ \\text{kg/m}^3$ i de poder calorífic $p_\\text{c} = 42{,}5\\ \\text{MJ/kg}$.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "El treball $W$ fet per la bomba.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La potència hidràulica $P_\\text{h}$ que desenvolupa la bomba.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El rendiment $\\eta$ del grup motobomba, si el motor ha consumit $c = 3\\ \\text{L}$ d'un combustible de densitat $\\rho = 850\\ \\text{kg/m}^3$ i de poder calorífic $p_\\text{c} = 42{,}5\\ \\text{MJ/kg}$.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Volum d'aigua: $V = 600\\ \\text{m}^3$ → massa $m = \\rho_\\text{aigua} V = 1\\,000 \\cdot 600 = 600\\,000\\ \\text{kg}$\n- Altura: $h = 3{,}6\\ \\text{m}$\n- Temps: $t = 10\\ \\text{h} = 36\\,000\\ \\text{s}$\n- Combustible: $c = 3\\ \\text{L} = 0{,}003\\ \\text{m}^3$, $\\rho = 850\\ \\text{kg/m}^3$, $p_\\text{c} = 42{,}5\\ \\text{MJ/kg}$\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: $W$, $P_\\text{h}$, $\\eta$"},
-          {"apartat": "a", "titol": "Treball fet per la bomba = energia potencial de l'aigua", "cos": "La bomba aixeca l'aigua a una altura $h$, de manera que el treball útil que fa és l'augment d'energia potencial de l'aigua:\n\n$$W = E_p = m\\, g\\, h = V\\, \\rho_\\text{aigua}\\, g\\, h = 600 \\cdot 1\\,000 \\cdot 9{,}807 \\cdot 3{,}6 = 21{,}18 \\cdot 10^6\\ \\text{J}$$\n\nResultat: **$W \\approx 21{,}18\\ \\text{MJ}$**."},
-          {"apartat": "b", "titol": "Potència hidràulica", "cos": "Com que el funcionament és estacionari (ritme constant), la potència és el treball dividit pel temps, amb el temps en segons:\n\n$$P_\\text{h} = \\frac{W}{t} = \\frac{21{,}18 \\cdot 10^6\\ \\text{J}}{36\\,000\\ \\text{s}} = 588{,}4\\ \\text{W}$$\n\nResultat: **$P_\\text{h} \\approx 588{,}4\\ \\text{W}$**."},
-          {"apartat": "c", "titol": "Energia aportada pel combustible", "cos": "Primer calculem la massa de combustible ($m_\\text{c} = \\rho\\, c$) i després l'energia que allibera amb el poder calorífic:\n\n$$m_\\text{c} = 850\\ \\text{kg/m}^3 \\cdot 0{,}003\\ \\text{m}^3 = 2{,}55\\ \\text{kg}$$\n\n$$E_\\text{c} = m_\\text{c}\\, p_\\text{c} = 2{,}55 \\cdot 42{,}5 = 108{,}4\\ \\text{MJ}$$"},
-          {"apartat": "c", "titol": "Rendiment del grup motobomba", "cos": "El rendiment és la fracció de l'energia del combustible que acaba com a treball útil (aigua elevada):\n\n$$\\eta = \\frac{W}{c\\, \\rho\\, p_\\text{c}} = \\frac{21{,}18\\ \\text{MJ}}{108{,}4\\ \\text{MJ}} = 0{,}1955$$\n\nResultat: **$\\eta \\approx 0{,}1955$** (un 19,55 %)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Volum d'aigua: $V = 600\\ \\text{m}^3$ → massa $m = \\rho_\\text{aigua} V = 1\\,000 \\cdot 600 = 600\\,000\\ \\text{kg}$\n- Altura: $h = 3{,}6\\ \\text{m}$\n- Temps: $t = 10\\ \\text{h} = 36\\,000\\ \\text{s}$\n- Combustible: $c = 3\\ \\text{L} = 0{,}003\\ \\text{m}^3$, $\\rho = 850\\ \\text{kg/m}^3$, $p_\\text{c} = 42{,}5\\ \\text{MJ/kg}$\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: $W$, $P_\\text{h}$, $\\eta$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Treball fet per la bomba = energia potencial de l'aigua",
+            "cos": "La bomba aixeca l'aigua a una altura $h$, de manera que el treball útil que fa és l'augment d'energia potencial de l'aigua:\n\n$$W = E_p = m\\, g\\, h = V\\, \\rho_\\text{aigua}\\, g\\, h = 600 \\cdot 1\\,000 \\cdot 9{,}807 \\cdot 3{,}6 = 21{,}18 \\cdot 10^6\\ \\text{J}$$\n\nResultat: **$W \\approx 21{,}18\\ \\text{MJ}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència hidràulica",
+            "cos": "Com que el funcionament és estacionari (ritme constant), la potència és el treball dividit pel temps, amb el temps en segons:\n\n$$P_\\text{h} = \\frac{W}{t} = \\frac{21{,}18 \\cdot 10^6\\ \\text{J}}{36\\,000\\ \\text{s}} = 588{,}4\\ \\text{W}$$\n\nResultat: **$P_\\text{h} \\approx 588{,}4\\ \\text{W}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Energia aportada pel combustible",
+            "cos": "Primer calculem la massa de combustible ($m_\\text{c} = \\rho\\, c$) i després l'energia que allibera amb el poder calorífic:\n\n$$m_\\text{c} = 850\\ \\text{kg/m}^3 \\cdot 0{,}003\\ \\text{m}^3 = 2{,}55\\ \\text{kg}$$\n\n$$E_\\text{c} = m_\\text{c}\\, p_\\text{c} = 2{,}55 \\cdot 42{,}5 = 108{,}4\\ \\text{MJ}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Rendiment del grup motobomba",
+            "cos": "El rendiment és la fracció de l'energia del combustible que acaba com a treball útil (aigua elevada):\n\n$$\\eta = \\frac{W}{c\\, \\rho\\, p_\\text{c}} = \\frac{21{,}18\\ \\text{MJ}}{108{,}4\\ \\text{MJ}} = 0{,}1955$$\n\nResultat: **$\\eta \\approx 0{,}1955$** (un 19,55 %)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$W \\approx 21{,}18\\ \\text{MJ}$"},
-          {"apartat": "b", "valor": "$P_\\text{h} \\approx 588{,}4\\ \\text{W}$"},
-          {"apartat": "c", "valor": "$E_\\text{c} = 108{,}4\\ \\text{MJ}$; $\\eta \\approx 0{,}1955$"}
+          {
+            "apartat": "a",
+            "valor": "$W \\approx 21{,}18\\ \\text{MJ}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{h} \\approx 588{,}4\\ \\text{W}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$E_\\text{c} = 108{,}4\\ \\text{MJ}$; $\\eta \\approx 0{,}1955$"
+          }
         ],
         "nota": "Errors típics: no passar els litres de combustible a $\\text{m}^3$ ($3\\ \\text{L} = 0{,}003\\ \\text{m}^3$) o les hores a segons. Se suposa densitat de l'aigua $1\\,000\\ \\text{kg/m}^3$."
       }
@@ -281,33 +628,95 @@
       "punts": 2.5,
       "titol": "Graella elèctrica amb resistència de cinta de nicrom",
       "tema": "circuits",
-      "temes_secundaris": ["energia"],
-      "conceptes": ["potència elèctrica", "resistivitat", "llei d'Ohm", "energia elèctrica"],
+      "temes_secundaris": [
+        "energia",
+        "disseny"
+      ],
+      "conceptes": [
+        "potència elèctrica",
+        "resistivitat",
+        "llei d'Ohm",
+        "energia elèctrica",
+        "àrees i perímetres"
+      ],
       "dificultat": 2,
-      "pagines": [4],
+      "curs": "1r",
+      "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "pagines": [
+        4
+      ],
       "enunciat": "En coure carn durant $15\\ \\text{min}$ en una graella elèctrica alimentada amb una tensió $U = 230\\ \\text{V}$, es consumeixen $0{,}6\\ \\text{kW h}$ d'energia elèctrica. La resistència de la graella està formada per una cinta de nicrom de resistivitat $\\rho = 11{,}8 \\cdot 10^{-7}\\ \\Omega\\ \\text{m}$ i secció rectangular $A = (0{,}1 \\times 1{,}5)\\ \\text{mm}^2$. Determineu:",
       "figures": [],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "El corrent $I$ que circula per la resistència.", "punts": 1},
-        {"id": "b", "enunciat": "La longitud $L$ de la cinta de nicrom de la resistència.", "punts": 1},
-        {"id": "c", "enunciat": "Per a garantir una bona cocció, cal que la superfície horitzontal efectiva del nicrom sigui un $3{,}5\\ \\%$ de la superfície total de la graella. Si la cinta està col·locada en la posició òptima, determineu la superfície total $S$ de la graella.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "El corrent $I$ que circula per la resistència.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La longitud $L$ de la cinta de nicrom de la resistència.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Per a garantir una bona cocció, cal que la superfície horitzontal efectiva del nicrom sigui un $3{,}5\\ \\%$ de la superfície total de la graella. Si la cinta està col·locada en la posició òptima, determineu la superfície total $S$ de la graella.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Temps: $t = 15\\ \\text{min} = 0{,}25\\ \\text{h}$\n- Tensió: $U = 230\\ \\text{V}$\n- Energia consumida: $E = 0{,}6\\ \\text{kW h}$\n- Resistivitat del nicrom: $\\rho = 11{,}8 \\cdot 10^{-7}\\ \\Omega\\ \\text{m}$\n- Secció de la cinta: $A = 0{,}1 \\cdot 1{,}5 = 0{,}15\\ \\text{mm}^2 = 0{,}15 \\cdot 10^{-6}\\ \\text{m}^2$\n- Incògnites: $I$, $L$, $S$"},
-          {"apartat": "a", "titol": "Potència de la graella", "cos": "L'energia consumida és la potència pel temps, $E = P\\, t$. Si treballem en kW h i h:\n\n$$P = \\frac{E}{t} = \\frac{0{,}6\\ \\text{kW h}}{0{,}25\\ \\text{h}} = 2{,}4\\ \\text{kW} = 2\\,400\\ \\text{W}$$"},
-          {"apartat": "a", "titol": "Corrent", "cos": "En una resistència, la potència elèctrica és $P = U\\, I$:\n\n$$I = \\frac{P}{U} = \\frac{2\\,400}{230} = 10{,}43\\ \\text{A}$$\n\nResultat: **$I \\approx 10{,}43\\ \\text{A}$**."},
-          {"apartat": "b", "titol": "Valor de la resistència", "cos": "Combinant $P = U I$ i la llei d'Ohm $U = R I$ obtenim $P = U^2/R$:\n\n$$R = \\frac{U^2}{P} = \\frac{230^2}{2\\,400} = 22{,}04\\ \\Omega$$"},
-          {"apartat": "b", "titol": "Longitud de la cinta amb la resistivitat", "cos": "La resistència d'un conductor depèn del material ($\\rho$), de la longitud i de la secció: $R = \\rho\\, \\dfrac{L}{A}$. Aïllant $L$:\n\n$$L = \\frac{R\\, A}{\\rho} = \\frac{U^2 A}{P\\, \\rho} = \\frac{22{,}04 \\cdot 0{,}15 \\cdot 10^{-6}}{11{,}8 \\cdot 10^{-7}} = 2{,}802\\ \\text{m}$$\n\nResultat: **$L \\approx 2{,}802\\ \\text{m}$**."},
-          {"apartat": "c", "titol": "Superfície horitzontal efectiva de la cinta", "cos": "La posició òptima és la cinta **plana**, amb la cara ampla ($1{,}5\\ \\text{mm}$) horitzontal, de manera que la superfície que escalfa la carn és la màxima possible:\n\n$$S_\\text{òptima} = L \\cdot 1{,}5\\ \\text{mm} = 2{,}802\\ \\text{m} \\cdot 1{,}5 \\cdot 10^{-3}\\ \\text{m} = 4{,}203 \\cdot 10^{-3}\\ \\text{m}^2$$"},
-          {"apartat": "c", "titol": "Superfície total de la graella", "cos": "Aquesta superfície ha de ser el $3{,}5\\ \\%$ de la superfície total $S$:\n\n$$S_\\text{òptima} = 0{,}035\\, S \\quad\\Rightarrow\\quad S = \\frac{100}{3{,}5}\\, S_\\text{òptima} = \\frac{4{,}203 \\cdot 10^{-3}}{0{,}035} = 0{,}12\\ \\text{m}^2$$\n\nResultat: **$S \\approx 0{,}12\\ \\text{m}^2$** (per exemple, una graella de $30 \\times 40\\ \\text{cm}$)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Temps: $t = 15\\ \\text{min} = 0{,}25\\ \\text{h}$\n- Tensió: $U = 230\\ \\text{V}$\n- Energia consumida: $E = 0{,}6\\ \\text{kW h}$\n- Resistivitat del nicrom: $\\rho = 11{,}8 \\cdot 10^{-7}\\ \\Omega\\ \\text{m}$\n- Secció de la cinta: $A = 0{,}1 \\cdot 1{,}5 = 0{,}15\\ \\text{mm}^2 = 0{,}15 \\cdot 10^{-6}\\ \\text{m}^2$\n- Incògnites: $I$, $L$, $S$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència de la graella",
+            "cos": "L'energia consumida és la potència pel temps, $E = P\\, t$. Si treballem en kW h i h:\n\n$$P = \\frac{E}{t} = \\frac{0{,}6\\ \\text{kW h}}{0{,}25\\ \\text{h}} = 2{,}4\\ \\text{kW} = 2\\,400\\ \\text{W}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Corrent",
+            "cos": "En una resistència, la potència elèctrica és $P = U\\, I$:\n\n$$I = \\frac{P}{U} = \\frac{2\\,400}{230} = 10{,}43\\ \\text{A}$$\n\nResultat: **$I \\approx 10{,}43\\ \\text{A}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Valor de la resistència",
+            "cos": "Combinant $P = U I$ i la llei d'Ohm $U = R I$ obtenim $P = U^2/R$:\n\n$$R = \\frac{U^2}{P} = \\frac{230^2}{2\\,400} = 22{,}04\\ \\Omega$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud de la cinta amb la resistivitat",
+            "cos": "La resistència d'un conductor depèn del material ($\\rho$), de la longitud i de la secció: $R = \\rho\\, \\dfrac{L}{A}$. Aïllant $L$:\n\n$$L = \\frac{R\\, A}{\\rho} = \\frac{U^2 A}{P\\, \\rho} = \\frac{22{,}04 \\cdot 0{,}15 \\cdot 10^{-6}}{11{,}8 \\cdot 10^{-7}} = 2{,}802\\ \\text{m}$$\n\nResultat: **$L \\approx 2{,}802\\ \\text{m}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Superfície horitzontal efectiva de la cinta",
+            "cos": "La posició òptima és la cinta **plana**, amb la cara ampla ($1{,}5\\ \\text{mm}$) horitzontal, de manera que la superfície que escalfa la carn és la màxima possible:\n\n$$S_\\text{òptima} = L \\cdot 1{,}5\\ \\text{mm} = 2{,}802\\ \\text{m} \\cdot 1{,}5 \\cdot 10^{-3}\\ \\text{m} = 4{,}203 \\cdot 10^{-3}\\ \\text{m}^2$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Superfície total de la graella",
+            "cos": "Aquesta superfície ha de ser el $3{,}5\\ \\%$ de la superfície total $S$:\n\n$$S_\\text{òptima} = 0{,}035\\, S \\quad\\Rightarrow\\quad S = \\frac{100}{3{,}5}\\, S_\\text{òptima} = \\frac{4{,}203 \\cdot 10^{-3}}{0{,}035} = 0{,}12\\ \\text{m}^2$$\n\nResultat: **$S \\approx 0{,}12\\ \\text{m}^2$** (per exemple, una graella de $30 \\times 40\\ \\text{cm}$)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "$P = 2\\,400\\ \\text{W}$; $I \\approx 10{,}43\\ \\text{A}$"},
-          {"apartat": "b", "valor": "$R \\approx 22{,}04\\ \\Omega$; $L \\approx 2{,}802\\ \\text{m}$"},
-          {"apartat": "c", "valor": "$S_\\text{òptima} \\approx 4{,}203 \\cdot 10^{-3}\\ \\text{m}^2$; $S \\approx 0{,}12\\ \\text{m}^2$"}
+          {
+            "apartat": "a",
+            "valor": "$P = 2\\,400\\ \\text{W}$; $I \\approx 10{,}43\\ \\text{A}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$R \\approx 22{,}04\\ \\Omega$; $L \\approx 2{,}802\\ \\text{m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$S_\\text{òptima} \\approx 4{,}203 \\cdot 10^{-3}\\ \\text{m}^2$; $S \\approx 0{,}12\\ \\text{m}^2$"
+          }
         ],
         "nota": "Error típic: oblidar passar la secció de $\\text{mm}^2$ a $\\text{m}^2$ ($1\\ \\text{mm}^2 = 10^{-6}\\ \\text{m}^2$), que dona una longitud un milió de vegades errònia. A l'apartat c, si es posés la cinta de cantell (0,1 mm horitzontal) la superfície efectiva seria 15 vegades més petita: per això la posició òptima és la plana."
       }
@@ -322,33 +731,100 @@
       "titol": "Estàtica d'una cistella de bàsquet penjada del sostre amb barres articulades",
       "tema": "estatica",
       "temes_secundaris": [],
-      "conceptes": ["diagrama de cos lliure", "equilibri", "moments", "reaccions", "barra biarticulada"],
+      "conceptes": [
+        "diagrama de cos lliure",
+        "equilibri de moments",
+        "equilibri de forces",
+        "reaccions en una articulació",
+        "barra biarticulada"
+      ],
       "dificultat": 2,
-      "pagines": [4],
+      "curs": "2n",
+      "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
+      "pagines": [
+        4
+      ],
       "enunciat": "La barra AB de la qual penja la cistella de bàsquet de la figura s'articula al sostre en el punt A i es manté vertical mitjançant la barra BC articulada en el punt B. En el punt C del sostre, la barra BC es manté fixa per l'acció d'un cable horitzontal, que no es mostra en la figura. Totes les masses es consideren negligibles excepte la massa del tauler, que és $m = 35\\ \\text{kg}$. Dades de la figura: $L_1 = 3\\ \\text{m}$, $L_2 = 0{,}5\\ \\text{m}$, $\\alpha = 45^\\circ$.",
-      "figures": [{"src": "img/tecno/2015-J/e4-b.png", "peu": "Cistella de bàsquet penjada del sostre: barra vertical AB, barra inclinada BC i cable horitzontal a C"}],
+      "figures": [
+        {
+          "src": "img/tecno/2015-J/e4-b.png",
+          "peu": "Cistella de bàsquet penjada del sostre: barra vertical AB, barra inclinada BC i cable horitzontal a C"
+        }
+      ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu el diagrama de cos lliure del conjunt format per la barra AB i el tauler.", "punts": 0.5},
-        {"id": "b", "enunciat": "Determineu la força $F_\\text{BC}$ que la barra BC fa sobre la barra AB.", "punts": 0.5},
-        {"id": "c", "enunciat": "Determineu les forces vertical $F_\\text{V}$ i horitzontal $F_\\text{H}$ que la cistella rep en el punt A.", "punts": 1},
-        {"id": "d", "enunciat": "Determineu la força horitzontal $F_\\text{cable}$ que fa el cable sobre la barra BC.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de cos lliure del conjunt format per la barra AB i el tauler.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la força $F_\\text{BC}$ que la barra BC fa sobre la barra AB.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Determineu les forces vertical $F_\\text{V}$ i horitzontal $F_\\text{H}$ que la cistella rep en el punt A.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "Determineu la força horitzontal $F_\\text{cable}$ que fa el cable sobre la barra BC.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Massa del tauler: $m = 35\\ \\text{kg}$ → pes $mg = 35 \\cdot 9{,}807 = 343{,}2\\ \\text{N}$\n- $L_1 = 3\\ \\text{m}$ (distància vertical d'A a B)\n- $L_2 = 0{,}5\\ \\text{m}$ (distància horitzontal del centre de masses G a la barra AB)\n- $\\alpha = 45^\\circ$ (angle de la barra BC amb el sostre)\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: $F_\\text{BC}$, $F_\\text{V}$, $F_\\text{H}$, $F_\\text{cable}$"},
-          {"apartat": "a", "titol": "Diagrama de cos lliure de AB + tauler", "cos": "Aïllem la barra AB amb el tauler i hi dibuixem totes les forces exteriors:\n\n- **Pes** $mg$, vertical cap avall, aplicat a G (a $L_2$ a l'esquerra de la barra).\n- **Reacció a l'articulació A**: dues components desconegudes, $F_\\text{V}$ (vertical) i $F_\\text{H}$ (horitzontal).\n- **Força de la barra BC** a B, $F_\\text{BC}$: com que BC és una barra de massa negligible articulada als dos extrems, la força té la direcció de la barra (inclinada $\\alpha$). Empeny B cap avall i cap a l'esquerra (la barra BC treballa a compressió).\n\n![Diagrama de cos lliure de la solució oficial](img/tecno/2015-J/e4-b-sol.png)"},
-          {"apartat": "b", "titol": "Moments respecte d'A", "cos": "Prenem moments respecte d'A perquè així $F_\\text{V}$ i $F_\\text{H}$ no hi intervenen (passen per A). El pes fa moment amb braç $L_2$. De $F_\\text{BC}$, només la component horitzontal $F_\\text{BC}\\cos\\alpha$ fa moment (braç $L_1$); la vertical passa per la línia AB:\n\n$$\\sum M_\\text{A} = 0: \\quad m g L_2 - F_\\text{BC}\\, L_1 \\cos\\alpha = 0$$\n\n$$F_\\text{BC} = \\frac{m g L_2}{L_1 \\cos\\alpha} = \\frac{35 \\cdot 9{,}807 \\cdot 0{,}5}{3 \\cos 45^\\circ} = 80{,}90\\ \\text{N}$$\n\nResultat: **$F_\\text{BC} \\approx 80{,}90\\ \\text{N}$**."},
-          {"apartat": "c", "titol": "Equilibri de forces verticals", "cos": "La reacció vertical a A ha d'aguantar el pes i també la component vertical (cap avall) de $F_\\text{BC}$:\n\n$$\\sum F_y = 0: \\quad F_\\text{V} - m g - F_\\text{BC} \\sin\\alpha = 0$$\n\n$$F_\\text{V} = m g + F_\\text{BC} \\sin\\alpha = 343{,}2 + 80{,}90 \\cdot \\sin 45^\\circ = 400{,}5\\ \\text{N}$$\n\nResultat: **$F_\\text{V} \\approx 400{,}5\\ \\text{N}$** (cap amunt)."},
-          {"apartat": "c", "titol": "Equilibri de forces horitzontals", "cos": "La component horitzontal de $F_\\text{BC}$ (cap a l'esquerra) s'ha de compensar amb $F_\\text{H}$:\n\n$$\\sum F_x = 0: \\quad F_\\text{H} - F_\\text{BC} \\cos\\alpha = 0 \\quad\\Rightarrow\\quad F_\\text{H} = 80{,}90 \\cdot \\cos 45^\\circ = 57{,}21\\ \\text{N}$$\n\nResultat: **$F_\\text{H} \\approx 57{,}21\\ \\text{N}$** (cap a la dreta)."},
-          {"apartat": "d", "titol": "Força del cable sobre la barra BC", "cos": "Per acció i reacció, la barra AB fa sobre BC una força igual i contrària, $F_\\text{BC}$ dirigida cap amunt i a la dreta. A C, el sostre (guia) només pot fer força vertical, i el cable fa la força horitzontal. L'equilibri horitzontal de la barra BC dona:\n\n$$F_\\text{cable} = F_\\text{BC} \\cos\\alpha = 80{,}90 \\cdot \\cos 45^\\circ = 57{,}21\\ \\text{N}$$\n\nResultat: **$F_\\text{cable} \\approx 57{,}21\\ \\text{N}$**, cap a l'esquerra (com indica la fletxa de la figura)."}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa del tauler: $m = 35\\ \\text{kg}$ → pes $mg = 35 \\cdot 9{,}807 = 343{,}2\\ \\text{N}$\n- $L_1 = 3\\ \\text{m}$ (distància vertical d'A a B)\n- $L_2 = 0{,}5\\ \\text{m}$ (distància horitzontal del centre de masses G a la barra AB)\n- $\\alpha = 45^\\circ$ (angle de la barra BC amb el sostre)\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: $F_\\text{BC}$, $F_\\text{V}$, $F_\\text{H}$, $F_\\text{cable}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de cos lliure de AB + tauler",
+            "cos": "Aïllem la barra AB amb el tauler i hi dibuixem totes les forces exteriors:\n\n- **Pes** $mg$, vertical cap avall, aplicat a G (a $L_2$ a l'esquerra de la barra).\n- **Reacció a l'articulació A**: dues components desconegudes, $F_\\text{V}$ (vertical) i $F_\\text{H}$ (horitzontal).\n- **Força de la barra BC** a B, $F_\\text{BC}$: com que BC és una barra de massa negligible articulada als dos extrems, la força té la direcció de la barra (inclinada $\\alpha$). Empeny B cap avall i cap a l'esquerra (la barra BC treballa a compressió).\n\n![Diagrama de cos lliure de la solució oficial](img/tecno/2015-J/e4-b-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Moments respecte d'A",
+            "cos": "Prenem moments respecte d'A perquè així $F_\\text{V}$ i $F_\\text{H}$ no hi intervenen (passen per A). El pes fa moment amb braç $L_2$. De $F_\\text{BC}$, només la component horitzontal $F_\\text{BC}\\cos\\alpha$ fa moment (braç $L_1$); la vertical passa per la línia AB:\n\n$$\\sum M_\\text{A} = 0: \\quad m g L_2 - F_\\text{BC}\\, L_1 \\cos\\alpha = 0$$\n\n$$F_\\text{BC} = \\frac{m g L_2}{L_1 \\cos\\alpha} = \\frac{35 \\cdot 9{,}807 \\cdot 0{,}5}{3 \\cos 45^\\circ} = 80{,}90\\ \\text{N}$$\n\nResultat: **$F_\\text{BC} \\approx 80{,}90\\ \\text{N}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de forces verticals",
+            "cos": "La reacció vertical a A ha d'aguantar el pes i també la component vertical (cap avall) de $F_\\text{BC}$:\n\n$$\\sum F_y = 0: \\quad F_\\text{V} - m g - F_\\text{BC} \\sin\\alpha = 0$$\n\n$$F_\\text{V} = m g + F_\\text{BC} \\sin\\alpha = 343{,}2 + 80{,}90 \\cdot \\sin 45^\\circ = 400{,}5\\ \\text{N}$$\n\nResultat: **$F_\\text{V} \\approx 400{,}5\\ \\text{N}$** (cap amunt)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de forces horitzontals",
+            "cos": "La component horitzontal de $F_\\text{BC}$ (cap a l'esquerra) s'ha de compensar amb $F_\\text{H}$:\n\n$$\\sum F_x = 0: \\quad F_\\text{H} - F_\\text{BC} \\cos\\alpha = 0 \\quad\\Rightarrow\\quad F_\\text{H} = 80{,}90 \\cdot \\cos 45^\\circ = 57{,}21\\ \\text{N}$$\n\nResultat: **$F_\\text{H} \\approx 57{,}21\\ \\text{N}$** (cap a la dreta)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Força del cable sobre la barra BC",
+            "cos": "Per acció i reacció, la barra AB fa sobre BC una força igual i contrària, $F_\\text{BC}$ dirigida cap amunt i a la dreta. A C, el sostre (guia) només pot fer força vertical, i el cable fa la força horitzontal. L'equilibri horitzontal de la barra BC dona:\n\n$$F_\\text{cable} = F_\\text{BC} \\cos\\alpha = 80{,}90 \\cdot \\cos 45^\\circ = 57{,}21\\ \\text{N}$$\n\nResultat: **$F_\\text{cable} \\approx 57{,}21\\ \\text{N}$**, cap a l'esquerra (com indica la fletxa de la figura)."
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Forces: pes $mg$ a G, $F_\\text{V}$ i $F_\\text{H}$ a A, $F_\\text{BC}$ a B en la direcció de BC"},
-          {"apartat": "b", "valor": "$F_\\text{BC} \\approx 80{,}90\\ \\text{N}$"},
-          {"apartat": "c", "valor": "$F_\\text{V} \\approx 400{,}5\\ \\text{N}$; $F_\\text{H} \\approx 57{,}21\\ \\text{N}$"},
-          {"apartat": "d", "valor": "$F_\\text{cable} \\approx 57{,}21\\ \\text{N}$"}
+          {
+            "apartat": "a",
+            "valor": "Forces: pes $mg$ a G, $F_\\text{V}$ i $F_\\text{H}$ a A, $F_\\text{BC}$ a B en la direcció de BC"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F_\\text{BC} \\approx 80{,}90\\ \\text{N}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$F_\\text{V} \\approx 400{,}5\\ \\text{N}$; $F_\\text{H} \\approx 57{,}21\\ \\text{N}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$F_\\text{cable} \\approx 57{,}21\\ \\text{N}$"
+          }
         ],
         "nota": "Error típic a l'apartat b: multiplicar $F_\\text{BC}$ per tota la longitud $L_1$ sense projectar-la; el braç de $F_\\text{BC}$ respecte d'A és $L_1 \\cos\\alpha$ (distància perpendicular d'A a la recta BC). Fixa't que $F_\\text{H} = F_\\text{cable}$: si considerem tot el conjunt (AB + BC + tauler), les úniques forces horitzontals exteriors són la reacció a A i el cable."
       }

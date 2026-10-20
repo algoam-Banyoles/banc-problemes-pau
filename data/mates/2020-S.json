@@ -25,12 +25,13 @@
       ],
       "conceptes": [
         "àrea entre corbes",
-        "integral definida",
-        "punts de tall",
-        "paràmetre",
+        "punts d'intersecció de corbes",
+        "esbós de la gràfica",
         "regla de Barrow"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         2,
         3
@@ -108,13 +109,16 @@
       "tema": "geometria",
       "temes_secundaris": [],
       "conceptes": [
+        "equacions de la recta",
         "intersecció recta-pla",
         "distància entre dos punts",
         "producte vectorial",
-        "pla perpendicular",
-        "equació paramètrica"
+        "equació del pla",
+        "plans perpendiculars"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         4,
         5
@@ -195,18 +199,17 @@
       "punts": 2.5,
       "titol": "Recta tangent i punts singulars de f a partir de la gràfica de f'",
       "tema": "derivades",
-      "temes_secundaris": [
-        "funcions"
-      ],
+      "temes_secundaris": [],
       "conceptes": [
         "recta tangent",
-        "punts singulars",
+        "gràfica de la derivada",
         "monotonia",
-        "màxims i mínims",
-        "punt d'inflexió",
-        "gràfica de la derivada"
+        "extrems relatius",
+        "punt d'inflexió"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Classificació de punts singulars pel signe de f' (monotonia), que és de 2n.",
       "pagines": [
         6,
         7
@@ -292,10 +295,12 @@
         "rang",
         "determinant",
         "matriu inversa",
-        "paràmetre",
-        "producte de matrius"
+        "producte de matrius",
+        "potència d'una matriu"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         8,
         9
@@ -390,13 +395,14 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
-        "àrea",
         "teorema de Pitàgores",
-        "derivada",
-        "màxim relatiu"
+        "àrees de figures planes",
+        "lligadura",
+        "extrems relatius"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         10,
         11
@@ -484,13 +490,16 @@
       "tema": "geometria",
       "temes_secundaris": [],
       "conceptes": [
-        "posició relativa de rectes",
-        "rectes que es creuen",
+        "posició relativa de dues rectes",
         "distància entre rectes",
         "producte vectorial",
-        "distància punt-pla"
+        "distància punt-pla",
+        "equació del pla",
+        "vector director"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         12,
         13

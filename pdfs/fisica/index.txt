@@ -10,7 +10,7 @@
 2021-J-solucio.pdf|https://preparats.cat/sites/default/files/2021-06/pau_fisi21jt.pdf
 2021-S-examen.pdf|https://preparats.cat/sites/default/files/2021-10/pau_fisi21sl.pdf
 2021-S-solucio.pdf|https://preparats.cat/sites/default/files/2021-10/pau_fisi21sp.pdf
-2022-J-examen.pdf|https://preparats.cat/sites/default/files/2022-06/pau_elec22jl_0.pdf
+2022-J-examen.pdf|Eureka (Generalitat): pau_fisi22jl.pdf, sèrie 2 (pàg. 1-16)
 2022-J-solucio.pdf|https://preparats.cat/sites/default/files/2022-06/pau_fisi22jt.pdf
 2022-S-examen.pdf|https://preparats.cat/sites/default/files/2022-09/pau_fisi22sl.pdf
 2022-S-solucio.pdf|https://preparats.cat/sites/default/files/2022-09/pau_fisi22st.pdf

@@ -31,6 +31,8 @@
         "enllaç d'arcs"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Simetria axial i enllaços d'arcs tangents: isometries i tangències bàsiques (DT I).",
       "pagines": [
         21
       ],
@@ -119,6 +121,8 @@
         "punt de tangència"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Enllaços d'arcs tangents amb llocs geomètrics (normals i mediatrius): tangències bàsiques (DT I).",
       "pagines": [
         23
       ],
@@ -185,15 +189,20 @@
       "titol": "Canvi de pla vertical d'una campana de llar de foc",
       "tema": "diedric",
       "temes_secundaris": [
-        "cossos"
+        "cossos",
+        "normalitzacio"
       ],
       "conceptes": [
         "canvi de pla",
         "visibilitat",
-        "piràmide truncada",
-        "prisma hexagonal"
+        "tronc de piràmide",
+        "prisma",
+        "interpretació de vistes",
+        "cotes"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Nova projecció d'una peça per canvi de pla: operativitat dièdrica (DT II).",
       "pagines": [
         25
       ],
@@ -263,12 +272,14 @@
         "diedric"
       ],
       "conceptes": [
-        "octaedre regular",
+        "octaedre",
         "canvi de pla",
         "vertadera magnitud",
         "visibilitat"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) amb canvi de pla.",
       "pagines": [
         27
       ],
@@ -354,14 +365,21 @@
       "punts": 4,
       "titol": "Axonometria dimètrica DIN 5 d'una peça amb base, piràmides i prisma octogonal truncat",
       "tema": "axonometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "cossos",
+        "normalitzacio"
+      ],
       "conceptes": [
-        "dimètrica DIN 5",
-        "escala doble",
-        "prisma octogonal",
-        "secció plana"
+        "axonometria dimètrica",
+        "prisma",
+        "secció plana",
+        "coeficients de reducció",
+        "interpretació de vistes",
+        "cares inclinades"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         29
       ],
@@ -427,14 +445,22 @@
       "punts": 4,
       "titol": "Axonometria isomètrica d'una peça amb paret, acord còncau i passadís",
       "tema": "axonometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "corbes",
+        "normalitzacio"
+      ],
       "conceptes": [
-        "isometria",
-        "escala doble",
-        "superfície cilíndrica",
-        "el·lipse isomètrica"
+        "axonometria isomètrica",
+        "cilindre",
+        "el·lipse",
+        "interpretació de vistes",
+        "prisma envolupant",
+        "contorn aparent",
+        "circumferència en axonometria"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (el·lipses isomètriques o DIN 5): DT II.",
       "pagines": [
         31
       ],
@@ -503,11 +529,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "figures equivalents",
-        "àrea",
-        "escales",
-        "distància punt-recta"
+        "escala",
+        "rectes paral·leles"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Equivalència de figures poligonals amb paral·leles i escales (DT I).",
       "pagines": [
         5
       ],
@@ -588,9 +615,11 @@
         "tangències",
         "lloc geomètric",
         "punt de tangència",
-        "escales"
+        "escala"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Tangències de radi donat per llocs geomètrics (paral·leles i circumferències concèntriques): DT I.",
       "pagines": [
         7
       ],
@@ -673,12 +702,14 @@
       "tema": "diedric",
       "temes_secundaris": [],
       "conceptes": [
-        "pla definit per dues rectes",
-        "horitzontals de pla",
+        "pla obliqu",
+        "recta horitzontal del pla",
         "abatiment",
         "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Vertadera magnitud d'una figura plana per abatiment (DT II).",
       "pagines": [
         9
       ],
@@ -760,15 +791,19 @@
       "titol": "Cub amb una diagonal principal vertical i una aresta de projecció donada",
       "tema": "cossos",
       "temes_secundaris": [
+        "geometria-plana",
         "diedric"
       ],
       "conceptes": [
-        "hexaedre regular",
+        "cub",
         "diagonal principal",
         "visibilitat",
-        "hexàgon regular"
+        "polígon regular",
+        "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) amb vertadera magnitud d'arestes.",
       "pagines": [
         11
       ],
@@ -834,14 +869,19 @@
       "punts": 4,
       "titol": "Axonometria dimètrica DIN 5 d'una caseta amb coberta de quatre aiguavessos amb gruix",
       "tema": "axonometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
       "conceptes": [
-        "dimètrica DIN 5",
-        "escala doble",
-        "coberta",
-        "perfil girat"
+        "axonometria dimètrica",
+        "cares inclinades",
+        "perfil girat",
+        "coeficients de reducció",
+        "interpretació de vistes"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         13
       ],
@@ -907,14 +947,21 @@
       "punts": 4,
       "titol": "Axonometria isomètrica d'un cilindre horitzontal amb rebaixos d'un quart",
       "tema": "axonometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "corbes",
+        "normalitzacio"
+      ],
       "conceptes": [
-        "isometria",
-        "escala doble",
+        "axonometria isomètrica",
         "cilindre",
-        "el·lipse isomètrica"
+        "el·lipse",
+        "interpretació de vistes",
+        "contorn aparent",
+        "circumferència en axonometria"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (el·lipses isomètriques o DIN 5): DT II.",
       "pagines": [
         15
       ],

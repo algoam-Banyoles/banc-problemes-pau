@@ -26,11 +26,12 @@
       "conceptes": [
         "punt d'inflexió",
         "recta tangent",
-        "extrem relatiu",
-        "derivada segona",
-        "polinomi"
+        "extrems relatius",
+        "sistema d'equacions lineals"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Condicions de punt d'inflexió i d'extrem relatiu, que són de 2n.",
       "pagines": [
         2
       ],
@@ -89,10 +90,11 @@
       "conceptes": [
         "producte de matrius",
         "matriu idempotent",
-        "propietat associativa",
-        "demostració"
+        "propietats de les matrius"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         4,
         5
@@ -176,10 +178,13 @@
         "primitiva",
         "funció definida a trossos",
         "continuïtat",
+        "constant d'integració",
         "recta tangent",
-        "logaritme neperià"
+        "funció logarítmica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         6,
         7
@@ -275,9 +280,12 @@
         "determinant",
         "rang",
         "regla de Cramer",
-        "posició relativa de plans"
+        "posició relativa de plans",
+        "sistema compatible indeterminat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         8,
         9
@@ -367,13 +375,15 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
         "funció cost",
-        "mínim relatiu",
-        "derivada segona",
-        "àrea del rectangle"
+        "lligadura",
+        "àrees de figures planes",
+        "extrems relatius",
+        "criteri de la derivada segona"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         10,
         11
@@ -464,15 +474,21 @@
       "punts": 2.5,
       "titol": "Pla perpendicular a dos plans, recta intersecció i punt més proper",
       "tema": "geometria",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "sistemes"
+      ],
       "conceptes": [
         "equació del pla",
         "vector normal",
         "recta intersecció de dos plans",
-        "equació vectorial de la recta",
-        "projecció ortogonal"
+        "equacions de la recta",
+        "projecció ortogonal",
+        "punt genèric d'una recta",
+        "producte escalar"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         12,
         13

@@ -24,10 +24,12 @@
       "conceptes": [
         "arc capaç",
         "construcció de polígons",
-        "construcció d'angles",
+        "transport d'angles",
         "mediatriu"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Construcció de polígons amb arc capaç i punts notables del triangle (DT I).",
       "pagines": [
         5
       ],
@@ -106,10 +108,11 @@
       "conceptes": [
         "tangències",
         "bisectriu",
-        "punt de tangència",
-        "circumferències tangents"
+        "punt de tangència"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Tangents a dues rectes amb el punt sobre una d'elles: perpendicular i bisectrius (DT I).",
       "pagines": [
         7
       ],
@@ -190,16 +193,20 @@
       "titol": "Piràmide octogonal regular a partir d'una cara lateral situada en un pla frontal",
       "tema": "cossos",
       "temes_secundaris": [
+        "geometria-plana",
         "diedric"
       ],
       "conceptes": [
         "piràmide",
-        "octàgon regular",
-        "vista auxiliar de perfil",
+        "polígon regular",
+        "projecció de perfil",
         "pla paral·lel a la LT",
-        "visibilitat"
+        "visibilitat",
+        "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Piràmide o prisma en dièdric amb la base en un pla inclinat, per abatiment o canvi de pla (DT II).",
       "pagines": [
         9
       ],
@@ -294,12 +301,13 @@
       ],
       "conceptes": [
         "tetraedre",
-        "triangle equilàter",
         "canvi de pla",
         "vertadera magnitud",
         "visibilitat"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) construït amb canvi de pla.",
       "pagines": [
         11
       ],
@@ -395,11 +403,14 @@
       "conceptes": [
         "axonometria dimètrica",
         "coeficients de reducció",
-        "escala",
-        "prismes oblics",
-        "interpretació de vistes"
+        "prisma",
+        "interpretació de vistes",
+        "prisma envolupant",
+        "coordenades axonomètriques"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         13
       ],
@@ -475,17 +486,20 @@
       "titol": "Axonometria isomètrica d'una peça doblegada amb superfícies corbes",
       "tema": "axonometria",
       "temes_secundaris": [
-        "normalitzacio",
-        "corbes"
+        "corbes",
+        "normalitzacio"
       ],
       "conceptes": [
         "axonometria isomètrica",
-        "el·lipse isomètrica",
+        "el·lipse",
         "contorn aparent",
-        "escala",
-        "interpretació de vistes"
+        "interpretació de vistes",
+        "prisma envolupant",
+        "circumferència en axonometria"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (el·lipses isomètriques o DIN 5): DT II.",
       "pagines": [
         15
       ],

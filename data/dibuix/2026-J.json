@@ -20,36 +20,102 @@
       "punts": 3,
       "titol": "Silueta d'una cullera amb arcs tangents (enllaços)",
       "tema": "geometria-plana",
-      "temes_secundaris": ["transformacions"],
-      "conceptes": ["tangències", "enllaços", "arc tangent a una recta", "arcs tangents entre si", "simetria axial"],
+      "temes_secundaris": [
+        "transformacions"
+      ],
+      "conceptes": [
+        "tangències",
+        "enllaç d'arcs",
+        "simetria axial"
+      ],
       "dificultat": 2,
-      "pagines": [5],
+      "curs": "1r",
+      "curs_motiu": "Enllaços d'arcs tangents amb llocs geomètrics (normals i mediatrius): tangències bàsiques (DT I).",
+      "pagines": [
+        5
+      ],
       "enunciat": "Dibuixeu els arcs de circumferència que falten en el dibuix donat per a completar la silueta d'una cullera (vegeu el model de la part inferior esquerra de la pàgina). Deixeu constància del procés gràfic seguit i indiqueu els punts de tangència que falten. Per fer-ho:",
       "figures": [
-        {"src": "img/dibuix/2026-J/1A.png", "peu": "Dibuix donat: mànec de la cullera amb el punt T, punts A i B, i arc superior de centre C (a l'esquerra, el model de la cullera)"}
+        {
+          "src": "img/dibuix/2026-J/1A.png",
+          "peu": "Dibuix donat: mànec de la cullera amb el punt T, punts A i B, i arc superior de centre C (a l'esquerra, el model de la cullera)"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu l'arc de circumferència que és tangent a la recta esquerra del mànec pel punt $T$ i que acaba al punt $A$.", "punts": 1},
-        {"id": "b", "enunciat": "Dibuixeu l'arc de circumferència que és tangent a l'anterior i a l'arc donat de la part superior de la cullera que té el centre al punt $C$.", "punts": 1},
-        {"id": "c", "enunciat": "Completeu la silueta amb la part simètrica de la dreta.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu l'arc de circumferència que és tangent a la recta esquerra del mànec pel punt $T$ i que acaba al punt $A$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Dibuixeu l'arc de circumferència que és tangent a l'anterior i a l'arc donat de la part superior de la cullera que té el centre al punt $C$.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Completeu la silueta amb la part simètrica de la dreta.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Què tenim i quina idea farem servir", "cos": "Tenim el mànec (dues rectes verticals), el punt $T$ a la recta esquerra del mànec, els punts $A$ i $B$ (simètrics respecte de l'eix vertical de la cullera) i l'arc superior de centre $C$ (radi $\\approx 2$ cm) amb els seus dos extrems marcats *tg*.\n\nTota la construcció es basa en dues propietats de les tangències:\n\n- Si un arc és tangent a una recta en un punt, el seu centre és a la **perpendicular a la recta per aquest punt**.\n- Si dos arcs són tangents en un punt, els dos centres i el punt de tangència estan **alineats**."},
-          {"apartat": "a", "titol": "Lloc dels centres: perpendicular al mànec per T", "cos": "L'arc ha de ser tangent a la recta esquerra del mànec just al punt $T$. Per tant, el centre $O_2$ és a la perpendicular a aquesta recta per $T$: com que el mànec és vertical, és la **recta horitzontal que passa per $T$**."},
-          {"apartat": "a", "titol": "Segon lloc: mediatriu del segment TA", "cos": "L'arc ha de passar per $T$ i per $A$, de manera que el centre equidista de tots dos punts: és a la **mediatriu del segment $TA$**. La dibuixem amb dos arcs de compàs de radi més gran que la meitat de $TA$ centrats a $T$ i a $A$.\n\nLa intersecció de la mediatriu amb l'horitzontal per $T$ és el centre **$O_2$** (queda a l'esquerra del mànec, fora de la cullera)."},
-          {"apartat": "a", "titol": "Traçar l'arc TA", "cos": "Amb centre $O_2$ i radi $O_2T = O_2A$ ($\\approx 4$ cm) dibuixem l'arc de $T$ fins a $A$. $T$ és el punt de tangència amb el mànec (es marca *tg*)."},
-          {"apartat": "b", "titol": "Centre de l'arc que enllaça amb l'arc superior", "cos": "El nou arc ha de ser tangent a l'arc anterior al punt $A$ (on acaba) i a l'arc superior al seu extrem esquerre *tg*:\n\n- Per ser tangent a l'arc de centre $O_2$ en $A$, el centre és a la **recta $O_2A$** (perllongada cap a la dreta).\n- Per ser tangent a l'arc de centre $C$ en el seu extrem esquerre, el centre és a la **recta que uneix $C$ amb aquest punt *tg***, perllongada més enllà de $C$ (tangència interior: l'arc gran envolta el petit).\n\nLa intersecció d'aquestes dues rectes és el centre **$O_1$**, que queda a la part dreta de la cullera, gairebé a la vertical de $B$."},
-          {"apartat": "b", "titol": "Traçar l'arc i comprovar", "cos": "Amb centre $O_1$ i radi $O_1A$ ($\\approx 4$ cm) dibuixem l'arc des de $A$ fins al punt *tg* de l'arc superior. Comprovació: la distància $O_1$–*tg* ha de ser igual a $O_1A$; si no ho és, alguna de les rectes està mal traçada.\n\nEls punts de tangència són $A$ (entre l'arc de centre $O_2$ i el de centre $O_1$) i l'extrem esquerre de l'arc superior. Les dues tangències són en sentits oposats: a $A$ els centres queden a banda i banda (tangència exterior, la silueta fa una S) i a dalt els centres queden al mateix costat (tangència interior)."},
-          {"apartat": "c", "titol": "Part simètrica de la dreta", "cos": "La cullera és simètrica respecte de l'eix vertical que passa per $C$ (i pel punt mig de $AB$ i del mànec). Fem la simetria dels centres: $O_1'$ és el simètric de $O_1$ (queda a l'esquerra) i $O_2'$ el simètric de $O_2$ (a la dreta del mànec, a l'horitzontal de $T$).\n\n- Arc de centre $O_2'$: des del punt *tg* de la recta dreta del mànec fins a $B$.\n- Arc de centre $O_1'$: des de $B$ fins a l'extrem dret *tg* de l'arc superior.\n\nMarquem també aquests punts de tangència i repassem la silueta amb línia gruixuda."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2026-J/1A-sol.png)"}
+          {
+            "apartat": null,
+            "titol": "Què tenim i quina idea farem servir",
+            "cos": "Tenim el mànec (dues rectes verticals), el punt $T$ a la recta esquerra del mànec, els punts $A$ i $B$ (simètrics respecte de l'eix vertical de la cullera) i l'arc superior de centre $C$ (radi $\\approx 2$ cm) amb els seus dos extrems marcats *tg*.\n\nTota la construcció es basa en dues propietats de les tangències:\n\n- Si un arc és tangent a una recta en un punt, el seu centre és a la **perpendicular a la recta per aquest punt**.\n- Si dos arcs són tangents en un punt, els dos centres i el punt de tangència estan **alineats**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Lloc dels centres: perpendicular al mànec per T",
+            "cos": "L'arc ha de ser tangent a la recta esquerra del mànec just al punt $T$. Per tant, el centre $O_2$ és a la perpendicular a aquesta recta per $T$: com que el mànec és vertical, és la **recta horitzontal que passa per $T$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Segon lloc: mediatriu del segment TA",
+            "cos": "L'arc ha de passar per $T$ i per $A$, de manera que el centre equidista de tots dos punts: és a la **mediatriu del segment $TA$**. La dibuixem amb dos arcs de compàs de radi més gran que la meitat de $TA$ centrats a $T$ i a $A$.\n\nLa intersecció de la mediatriu amb l'horitzontal per $T$ és el centre **$O_2$** (queda a l'esquerra del mànec, fora de la cullera)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Traçar l'arc TA",
+            "cos": "Amb centre $O_2$ i radi $O_2T = O_2A$ ($\\approx 4$ cm) dibuixem l'arc de $T$ fins a $A$. $T$ és el punt de tangència amb el mànec (es marca *tg*)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Centre de l'arc que enllaça amb l'arc superior",
+            "cos": "El nou arc ha de ser tangent a l'arc anterior al punt $A$ (on acaba) i a l'arc superior al seu extrem esquerre *tg*:\n\n- Per ser tangent a l'arc de centre $O_2$ en $A$, el centre és a la **recta $O_2A$** (perllongada cap a la dreta).\n- Per ser tangent a l'arc de centre $C$ en el seu extrem esquerre, el centre és a la **recta que uneix $C$ amb aquest punt *tg***, perllongada més enllà de $C$ (tangència interior: l'arc gran envolta el petit).\n\nLa intersecció d'aquestes dues rectes és el centre **$O_1$**, que queda a la part dreta de la cullera, gairebé a la vertical de $B$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Traçar l'arc i comprovar",
+            "cos": "Amb centre $O_1$ i radi $O_1A$ ($\\approx 4$ cm) dibuixem l'arc des de $A$ fins al punt *tg* de l'arc superior. Comprovació: la distància $O_1$–*tg* ha de ser igual a $O_1A$; si no ho és, alguna de les rectes està mal traçada.\n\nEls punts de tangència són $A$ (entre l'arc de centre $O_2$ i el de centre $O_1$) i l'extrem esquerre de l'arc superior. Les dues tangències són en sentits oposats: a $A$ els centres queden a banda i banda (tangència exterior, la silueta fa una S) i a dalt els centres queden al mateix costat (tangència interior)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Part simètrica de la dreta",
+            "cos": "La cullera és simètrica respecte de l'eix vertical que passa per $C$ (i pel punt mig de $AB$ i del mànec). Fem la simetria dels centres: $O_1'$ és el simètric de $O_1$ (queda a l'esquerra) i $O_2'$ el simètric de $O_2$ (a la dreta del mànec, a l'horitzontal de $T$).\n\n- Arc de centre $O_2'$: des del punt *tg* de la recta dreta del mànec fins a $B$.\n- Arc de centre $O_1'$: des de $B$ fins a l'extrem dret *tg* de l'arc superior.\n\nMarquem també aquests punts de tangència i repassem la silueta amb línia gruixuda."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2026-J/1A-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Centre $O_2$ a la intersecció de l'horitzontal per $T$ amb la mediatriu de $TA$; radi $\\approx 4$ cm."},
-          {"apartat": "b", "valor": "Centre $O_1$ a la intersecció de la recta $O_2A$ amb la recta $C$–tg; radi $\\approx 4$ cm; punts de tangència $A$ i l'extrem esquerre de l'arc superior."},
-          {"apartat": "c", "valor": "Arcs simètrics de centres $O_2'$ i $O_1'$ respecte de l'eix vertical per $C$, que passen per $B$."}
+          {
+            "apartat": "a",
+            "valor": "Centre $O_2$ a la intersecció de l'horitzontal per $T$ amb la mediatriu de $TA$; radi $\\approx 4$ cm."
+          },
+          {
+            "apartat": "b",
+            "valor": "Centre $O_1$ a la intersecció de la recta $O_2A$ amb la recta $C$–tg; radi $\\approx 4$ cm; punts de tangència $A$ i l'extrem esquerre de l'arc superior."
+          },
+          {
+            "apartat": "c",
+            "valor": "Arcs simètrics de centres $O_2'$ i $O_1'$ respecte de l'eix vertical per $C$, que passen per $B$."
+          }
         ],
         "nota": "Error típic: buscar el centre de l'arc b) amb la mediatriu o amb radis a ull. Cal fer servir l'alineació de centres i punt de tangència, que és el que demostra la tangència i el que es puntua."
       }
@@ -64,35 +130,101 @@
       "titol": "Estel en forma de deltoide a escala 1:10 i circumferència inscrita",
       "tema": "geometria-plana",
       "temes_secundaris": [],
-      "conceptes": ["deltoide", "escala", "diagonals perpendiculars", "circumferència inscrita", "bisectriu", "punts de tangència"],
+      "conceptes": [
+        "construcció de polígons",
+        "escala",
+        "circumferència inscrita",
+        "bisectriu",
+        "punt de tangència"
+      ],
       "dificultat": 2,
-      "pagines": [7],
+      "curs": "1r",
+      "curs_motiu": "Circumferències inscrites i exinscrites per bisectrius i llocs geomètrics (DT I).",
+      "pagines": [
+        7
+      ],
       "enunciat": "Volem dibuixar un estel de paper que tingui forma de quadrilàter convex amb dues diagonals perpendiculars entre elles de longituds diferents i dos costats contigus iguals dos a dos (aquesta forma és un deltoide), a partir d'un dels dos costats llargs, $AB$, dibuixat a escala 1:10. Sabem que la diagonal petita fa 1 metre de longitud, i la gran, 1,5 metres; que el punt $A$ és el vèrtex on s'uneixen els dos costats llargs, i que tota la solució ha de quedar per damunt del segment $AB$ donat.",
       "figures": [
-        {"src": "img/dibuix/2026-J/1B.png", "peu": "Costat llarg AB donat a escala 1:10"}
+        {
+          "src": "img/dibuix/2026-J/1B.png",
+          "peu": "Costat llarg AB donat a escala 1:10"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu les dues diagonals del quadrilàter a escala 1:10.", "punts": 1.5},
-        {"id": "b", "enunciat": "Completeu el polígon de l'estel.", "punts": 0.5},
-        {"id": "c", "enunciat": "Dibuixeu una circumferència inscrita al polígon i indiqueu els punts de tangència.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu les dues diagonals del quadrilàter a escala 1:10.",
+          "punts": 1.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Completeu el polígon de l'estel.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu una circumferència inscrita al polígon i indiqueu els punts de tangència.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Costat llarg donat: $AB = 12$ cm al paper ($1{,}2$ m reals a escala 1:10).\n- Diagonal petita: $1\\ \\text{m} \\to 10$ cm al paper. Diagonal gran: $1{,}5\\ \\text{m} \\to 15$ cm al paper.\n- Anomenem el deltoide $A\\,B\\,E\\,D$: $A$ és el vèrtex on s'uneixen els costats llargs ($AB = AD = 12$ cm), i $E$ el vèrtex oposat on s'uneixen els costats curts ($EB = ED$).\n\nPropietats del deltoide que farem servir: la diagonal $AE$ és **eix de simetria**, és perpendicular a la diagonal $BD$ i la talla pel seu punt mig $M$. Per tant $D$ és el simètric de $B$ respecte de l'eix."},
-          {"apartat": "a", "titol": "Quina diagonal és quina", "cos": "La diagonal $BD$ uneix els extrems dels dos costats llargs, i $AE$ és l'eix. El criteri oficial dona com a solució principal **$BD = 10$ cm (diagonal petita) i $AE = 15$ cm (diagonal gran)**, i accepta també l'altra possibilitat ($BD = 15$ cm, $AE = 10$ cm), que dona un deltoide gairebé triangular (vegeu la segona làmina)."},
-          {"apartat": "a", "titol": "Vèrtex D: intersecció de dos arcs", "cos": "$D$ compleix dues condicions alhora:\n\n- $AD = AB = 12$ cm → és a l'arc de centre $A$ i radi $12$ cm.\n- $BD = 10$ cm (diagonal petita a escala) → és a l'arc de centre $B$ i radi $10$ cm.\n\nLa intersecció dels dos arcs **per damunt de $AB$** és el vèrtex $D$. Unim $B$ i $D$: ja tenim la diagonal petita.\n\n(Alternativa equivalent: el punt mig $M$ de $BD$ veu $AB$ amb angle recte, de manera que és a la semicircumferència de diàmetre $AB$ i a $5$ cm de $B$.)"},
-          {"apartat": "a", "titol": "Diagonal gran sobre l'eix de simetria", "cos": "L'eix és la perpendicular a $BD$ que passa per $A$ (equival a la mediatriu de $BD$, que passa per $A$ perquè $AB = AD$). Hi portem $15$ cm des de $A$ i obtenim el vèrtex $E$. Comprovació numèrica:\n\n$$AM = \\sqrt{12^2 - 5^2} \\approx 10{,}9\\ \\text{cm} < 15\\ \\text{cm}$$\n\nper tant $E$ queda més enllà de $M$ i el quadrilàter és convex."},
-          {"apartat": "b", "titol": "Completar el polígon", "cos": "Unim $A$–$B$–$E$–$D$–$A$. Els costats curts fan\n\n$$EB = ED = \\sqrt{5^2 + (15 - 10{,}9)^2} \\approx 6{,}5\\ \\text{cm}$$\n\n(uns $0{,}65$ m reals). Es repassa el polígon amb línia gruixuda."},
-          {"apartat": "c", "titol": "Centre de la circumferència inscrita", "cos": "Tot deltoide convex té circumferència inscrita (és un quadrilàter tangencial: $AB + ED = AD + EB$). El centre ha d'equidistar de tots els costats, per tant és a la intersecció de les **bisectrius** dels angles.\n\n- La bisectriu de l'angle $A$ és la mateixa diagonal $AE$ (eix de simetria).\n- Tracem la bisectriu de l'angle $B$ (amb arc de compàs des de $B$ i dos arcs iguals: marques *=* de la solució).\n\nLa intersecció és el centre $C$ de la circumferència inscrita."},
-          {"apartat": "c", "titol": "Radi i punts de tangència", "cos": "Des de $C$ tracem la perpendicular a un costat (per exemple a $AB$); el peu és el primer punt de tangència i la distància $C$–peu és el radi ($\\approx 4{,}1$ cm). Repetim les perpendiculars als altres tres costats per obtenir els quatre punts de tangència, que es marquen *tg*. Dibuixem la circumferència de centre $C$."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2026-J/1B-sol.png)\n\nSolució alternativa també acceptada ($BD = 15$ cm, $AE = 10$ cm):\n\n![Solució oficial alternativa](img/dibuix/2026-J/1B-sol-2.png)"}
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Costat llarg donat: $AB = 12$ cm al paper ($1{,}2$ m reals a escala 1:10).\n- Diagonal petita: $1\\ \\text{m} \\to 10$ cm al paper. Diagonal gran: $1{,}5\\ \\text{m} \\to 15$ cm al paper.\n- Anomenem el deltoide $A\\,B\\,E\\,D$: $A$ és el vèrtex on s'uneixen els costats llargs ($AB = AD = 12$ cm), i $E$ el vèrtex oposat on s'uneixen els costats curts ($EB = ED$).\n\nPropietats del deltoide que farem servir: la diagonal $AE$ és **eix de simetria**, és perpendicular a la diagonal $BD$ i la talla pel seu punt mig $M$. Per tant $D$ és el simètric de $B$ respecte de l'eix."
+          },
+          {
+            "apartat": "a",
+            "titol": "Quina diagonal és quina",
+            "cos": "La diagonal $BD$ uneix els extrems dels dos costats llargs, i $AE$ és l'eix. El criteri oficial dona com a solució principal **$BD = 10$ cm (diagonal petita) i $AE = 15$ cm (diagonal gran)**, i accepta també l'altra possibilitat ($BD = 15$ cm, $AE = 10$ cm), que dona un deltoide gairebé triangular (vegeu la segona làmina)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vèrtex D: intersecció de dos arcs",
+            "cos": "$D$ compleix dues condicions alhora:\n\n- $AD = AB = 12$ cm → és a l'arc de centre $A$ i radi $12$ cm.\n- $BD = 10$ cm (diagonal petita a escala) → és a l'arc de centre $B$ i radi $10$ cm.\n\nLa intersecció dels dos arcs **per damunt de $AB$** és el vèrtex $D$. Unim $B$ i $D$: ja tenim la diagonal petita.\n\n(Alternativa equivalent: el punt mig $M$ de $BD$ veu $AB$ amb angle recte, de manera que és a la semicircumferència de diàmetre $AB$ i a $5$ cm de $B$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagonal gran sobre l'eix de simetria",
+            "cos": "L'eix és la perpendicular a $BD$ que passa per $A$ (equival a la mediatriu de $BD$, que passa per $A$ perquè $AB = AD$). Hi portem $15$ cm des de $A$ i obtenim el vèrtex $E$. Comprovació numèrica:\n\n$$AM = \\sqrt{12^2 - 5^2} \\approx 10{,}9\\ \\text{cm} < 15\\ \\text{cm}$$\n\nper tant $E$ queda més enllà de $M$ i el quadrilàter és convex."
+          },
+          {
+            "apartat": "b",
+            "titol": "Completar el polígon",
+            "cos": "Unim $A$–$B$–$E$–$D$–$A$. Els costats curts fan\n\n$$EB = ED = \\sqrt{5^2 + (15 - 10{,}9)^2} \\approx 6{,}5\\ \\text{cm}$$\n\n(uns $0{,}65$ m reals). Es repassa el polígon amb línia gruixuda."
+          },
+          {
+            "apartat": "c",
+            "titol": "Centre de la circumferència inscrita",
+            "cos": "Tot deltoide convex té circumferència inscrita (és un quadrilàter tangencial: $AB + ED = AD + EB$). El centre ha d'equidistar de tots els costats, per tant és a la intersecció de les **bisectrius** dels angles.\n\n- La bisectriu de l'angle $A$ és la mateixa diagonal $AE$ (eix de simetria).\n- Tracem la bisectriu de l'angle $B$ (amb arc de compàs des de $B$ i dos arcs iguals: marques *=* de la solució).\n\nLa intersecció és el centre $C$ de la circumferència inscrita."
+          },
+          {
+            "apartat": "c",
+            "titol": "Radi i punts de tangència",
+            "cos": "Des de $C$ tracem la perpendicular a un costat (per exemple a $AB$); el peu és el primer punt de tangència i la distància $C$–peu és el radi ($\\approx 4{,}1$ cm). Repetim les perpendiculars als altres tres costats per obtenir els quatre punts de tangència, que es marquen *tg*. Dibuixem la circumferència de centre $C$."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2026-J/1B-sol.png)\n\nSolució alternativa també acceptada ($BD = 15$ cm, $AE = 10$ cm):\n\n![Solució oficial alternativa](img/dibuix/2026-J/1B-sol-2.png)"
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Diagonals de 10 cm ($BD$) i 15 cm ($AE$) al paper, perpendiculars; $D$ a la intersecció de l'arc de centre $A$ i radi 12 cm amb l'arc de centre $B$ i radi 10 cm."},
-          {"apartat": "b", "valor": "Deltoide $ABED$ amb costats llargs de 12 cm i costats curts de $\\approx 6{,}5$ cm."},
-          {"apartat": "c", "valor": "Centre a la intersecció de la diagonal $AE$ amb la bisectriu de l'angle $B$; radi $\\approx 4{,}1$ cm; quatre punts de tangència als peus de les perpendiculars."}
+          {
+            "apartat": "a",
+            "valor": "Diagonals de 10 cm ($BD$) i 15 cm ($AE$) al paper, perpendiculars; $D$ a la intersecció de l'arc de centre $A$ i radi 12 cm amb l'arc de centre $B$ i radi 10 cm."
+          },
+          {
+            "apartat": "b",
+            "valor": "Deltoide $ABED$ amb costats llargs de 12 cm i costats curts de $\\approx 6{,}5$ cm."
+          },
+          {
+            "apartat": "c",
+            "valor": "Centre a la intersecció de la diagonal $AE$ amb la bisectriu de l'angle $B$; radi $\\approx 4{,}1$ cm; quatre punts de tangència als peus de les perpendiculars."
+          }
         ],
         "nota": "Amb l'altra assignació de diagonals ($BD = 15$ cm, $AE = 10$ cm) es fa igual però amb l'arc de centre $B$ de radi 15 cm: surt $AM \\approx 9{,}4$ cm, costats curts de $\\approx 7{,}5$ cm i radi inscrit de $\\approx 3{,}8$ cm. Els criteris oficials consideren correctes les dues resolucions. Recordeu passar les mides reals a escala abans de dibuixar (1 m → 10 cm)."
       }
@@ -106,34 +238,96 @@
       "punts": 3,
       "titol": "Tronc de piràmide amb secció quadrada: dos alçats i veritable magnitud",
       "tema": "cossos",
-      "temes_secundaris": ["diedric"],
-      "conceptes": ["piràmide", "secció plana", "canvi de pla", "abatiment", "veritable magnitud", "visibilitat"],
+      "temes_secundaris": [
+        "diedric"
+      ],
+      "conceptes": [
+        "piràmide",
+        "secció plana",
+        "canvi de pla",
+        "abatiment",
+        "vertadera magnitud",
+        "visibilitat"
+      ],
       "dificultat": 3,
-      "pagines": [9],
+      "curs": "2n",
+      "curs_motiu": "Tronc de piràmide en dièdric i VM de la secció per abatiment (DT II).",
+      "pagines": [
+        9
+      ],
       "enunciat": "El dibuix donat correspon a la planta d'una piràmide truncada per un pla inclinat. La secció produïda per aquest pla en la piràmide és un quadrat i l'aresta de la piràmide corresponent al punt $a$-$a'$-$a''$ té un pendent de 60°.",
       "figures": [
-        {"src": "img/dibuix/2026-J/2A.png", "peu": "Planta del tronc de piràmide (base abcd i secció), LT de l'alçat amb a', b', c', d' i segona LT amb a''"}
+        {
+          "src": "img/dibuix/2026-J/2A.png",
+          "peu": "Planta del tronc de piràmide (base abcd i secció), LT de l'alçat amb a', b', c', d' i segona LT amb a''"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu els dos alçats indicats del tronc de piràmide diferenciant les arestes vistes de les ocultes.", "punts": 2},
-        {"id": "b", "enunciat": "Dibuixeu en veritable magnitud la secció quadrada.", "punts": 1}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu els dos alçats indicats del tronc de piràmide diferenciant les arestes vistes de les ocultes.",
+          "punts": 2
+        },
+        {
+          "id": "b",
+          "enunciat": "Dibuixeu en veritable magnitud la secció quadrada.",
+          "punts": 1
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Interpretació de la planta", "cos": "La base $abcd$ és sobre el pla horitzontal (per això $a'$, $b'$, $c'$, $d'$ són a la LT). El quadrilàter interior és la planta de la secció quadrada, i les quatre línies que uneixen cada vèrtex de la base amb un vèrtex de la secció són les plantes de les arestes laterals.\n\nLa segona línia de terra (on hi ha $a''$) és **paral·lela a la planta de l'aresta del vèrtex $a$**: en aquest segon alçat aquesta aresta es veu en veritable magnitud i, per tant, amb el seu pendent real de 60°."},
-          {"apartat": "a", "titol": "Vèrtex v en planta", "cos": "Les arestes laterals d'una piràmide concorren al vèrtex. Perllonguem les plantes de les quatre arestes (de cada vèrtex de la base cap a l'interior, passant pels vèrtexs de la secció): es tallen al punt **$v$**, planta del vèrtex de la piràmide. Que totes quatre passin pel mateix punt és la comprovació que s'ha llegit bé el dibuix."},
-          {"apartat": "a", "titol": "Altura de la piràmide amb el segon alçat", "cos": "Al segon alçat, per $a''$ tracem una recta que formi **60° amb la segona LT**: és l'aresta $a''v''$ en veritable magnitud. Projectem $v$ perpendicularment a la segona LT; on aquesta línia de referència talla la recta de 60° hi ha **$v''$**.\n\nLa distància de $v''$ a la segona LT és l'altura $h$ de la piràmide (al dibuix, $h \\approx 6{,}6$ cm). Projectem també $b$, $c$, $d$ a la segona LT per obtenir $b''$, $c''$, $d''$ ($b''$ i $d''$ coincideixen) i unim-los amb $v''$ amb línia fina (piràmide sencera)."},
-          {"apartat": "a", "titol": "Secció en el segon alçat", "cos": "Pugem cada vèrtex de la secció des de la planta (perpendicular a la segona LT) fins a la seva aresta $v''a''$, $v''b''$, $v''c''$, $v''d''$. Els quatre punts queden **alineats**: el pla de secció és perpendicular a aquest segon pla de projecció (pla projectant) i es veu de cantell, com un segment. Aquesta alineació és la comprovació de la construcció.\n\nEl tronc en aquest alçat és el polígon base–arestes–segment de secció. Totes les arestes es veuen; repassem amb línia gruixuda només el tronc (la part de les arestes per sobre de la secció queda de traç fi o puntejat)."},
-          {"apartat": "a", "titol": "Primer alçat: altures dels punts", "cos": "Situem $v'$ a la vertical de $v$ i a l'altura $h$ sobre la LT. Unim $v'$ amb $a'$, $b'$, $c'$, $d'$. Cada vèrtex de la secció es troba pujant la seva planta en vertical fins a l'aresta corresponent (o bé portant-hi l'altura que hem llegit al segon alçat, que és la mateixa: aproximadament $4{,}8$ cm el del vèrtex $a$, $3{,}0$ cm els de $b$ i $d$ i $1{,}2$ cm el de $c$).\n\nUnim els quatre punts: la secció apareix com un quadrilàter."},
-          {"apartat": "a", "titol": "Visibilitat al primer alçat", "cos": "L'observador mira des del davant (des de la banda de la planta més allunyada de la LT). El vèrtex $a$ és el més proper a la LT, és a dir, el més allunyat de l'observador, i la seva aresta queda darrere del tronc: **l'aresta $a'$–secció és oculta** (discontínua). Les arestes de $b$, $c$, $d$ i el contorn de la secció són vistos."},
-          {"apartat": "b", "titol": "Veritable magnitud de la secció per abatiment", "cos": "Com que al segon alçat el pla de secció es veu de cantell, n'hi ha prou de **girar-lo** fins a fer-lo horitzontal. Prenem com a xarnera la recta del pla que passa pel vèrtex de la secció situat a l'aresta $a$ (la més alta) i és perpendicular al segon pla de projecció. Amb centre en aquest punt fem girar el segment de secció (arc de compàs) fins que quedi paral·lel a la segona LT.\n\nTornem els punts girats a la planta amb perpendiculars a la segona LT, i des dels vèrtexs de la planta de la secció tracem paral·leles a la segona LT: les interseccions donen el quadrat en veritable magnitud (dibuixat en planta, discontinu a la solució). Comprovació: ha de sortir un **quadrat** (costats iguals i angles rectes), amb costat $\\approx 3{,}1$ cm i diagonal igual al segment de secció vist al segon alçat."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2026-J/2A-sol.png)"}
+          {
+            "apartat": null,
+            "titol": "Interpretació de la planta",
+            "cos": "La base $abcd$ és sobre el pla horitzontal (per això $a'$, $b'$, $c'$, $d'$ són a la LT). El quadrilàter interior és la planta de la secció quadrada, i les quatre línies que uneixen cada vèrtex de la base amb un vèrtex de la secció són les plantes de les arestes laterals.\n\nLa segona línia de terra (on hi ha $a''$) és **paral·lela a la planta de l'aresta del vèrtex $a$**: en aquest segon alçat aquesta aresta es veu en veritable magnitud i, per tant, amb el seu pendent real de 60°."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vèrtex v en planta",
+            "cos": "Les arestes laterals d'una piràmide concorren al vèrtex. Perllonguem les plantes de les quatre arestes (de cada vèrtex de la base cap a l'interior, passant pels vèrtexs de la secció): es tallen al punt **$v$**, planta del vèrtex de la piràmide. Que totes quatre passin pel mateix punt és la comprovació que s'ha llegit bé el dibuix."
+          },
+          {
+            "apartat": "a",
+            "titol": "Altura de la piràmide amb el segon alçat",
+            "cos": "Al segon alçat, per $a''$ tracem una recta que formi **60° amb la segona LT**: és l'aresta $a''v''$ en veritable magnitud. Projectem $v$ perpendicularment a la segona LT; on aquesta línia de referència talla la recta de 60° hi ha **$v''$**.\n\nLa distància de $v''$ a la segona LT és l'altura $h$ de la piràmide (al dibuix, $h \\approx 6{,}6$ cm). Projectem també $b$, $c$, $d$ a la segona LT per obtenir $b''$, $c''$, $d''$ ($b''$ i $d''$ coincideixen) i unim-los amb $v''$ amb línia fina (piràmide sencera)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Secció en el segon alçat",
+            "cos": "Pugem cada vèrtex de la secció des de la planta (perpendicular a la segona LT) fins a la seva aresta $v''a''$, $v''b''$, $v''c''$, $v''d''$. Els quatre punts queden **alineats**: el pla de secció és perpendicular a aquest segon pla de projecció (pla projectant) i es veu de cantell, com un segment. Aquesta alineació és la comprovació de la construcció.\n\nEl tronc en aquest alçat és el polígon base–arestes–segment de secció. Totes les arestes es veuen; repassem amb línia gruixuda només el tronc (la part de les arestes per sobre de la secció queda de traç fi o puntejat)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Primer alçat: altures dels punts",
+            "cos": "Situem $v'$ a la vertical de $v$ i a l'altura $h$ sobre la LT. Unim $v'$ amb $a'$, $b'$, $c'$, $d'$. Cada vèrtex de la secció es troba pujant la seva planta en vertical fins a l'aresta corresponent (o bé portant-hi l'altura que hem llegit al segon alçat, que és la mateixa: aproximadament $4{,}8$ cm el del vèrtex $a$, $3{,}0$ cm els de $b$ i $d$ i $1{,}2$ cm el de $c$).\n\nUnim els quatre punts: la secció apareix com un quadrilàter."
+          },
+          {
+            "apartat": "a",
+            "titol": "Visibilitat al primer alçat",
+            "cos": "L'observador mira des del davant (des de la banda de la planta més allunyada de la LT). El vèrtex $a$ és el més proper a la LT, és a dir, el més allunyat de l'observador, i la seva aresta queda darrere del tronc: **l'aresta $a'$–secció és oculta** (discontínua). Les arestes de $b$, $c$, $d$ i el contorn de la secció són vistos."
+          },
+          {
+            "apartat": "b",
+            "titol": "Veritable magnitud de la secció per abatiment",
+            "cos": "Com que al segon alçat el pla de secció es veu de cantell, n'hi ha prou de **girar-lo** fins a fer-lo horitzontal. Prenem com a xarnera la recta del pla que passa pel vèrtex de la secció situat a l'aresta $a$ (la més alta) i és perpendicular al segon pla de projecció. Amb centre en aquest punt fem girar el segment de secció (arc de compàs) fins que quedi paral·lel a la segona LT.\n\nTornem els punts girats a la planta amb perpendiculars a la segona LT, i des dels vèrtexs de la planta de la secció tracem paral·leles a la segona LT: les interseccions donen el quadrat en veritable magnitud (dibuixat en planta, discontinu a la solució). Comprovació: ha de sortir un **quadrat** (costats iguals i angles rectes), amb costat $\\approx 3{,}1$ cm i diagonal igual al segment de secció vist al segon alçat."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2026-J/2A-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Vèrtex $v$ per intersecció de les arestes en planta; altura $\\approx 6{,}6$ cm a partir de l'aresta de pendent 60° al segon alçat; al segon alçat la secció és un segment; al primer alçat l'aresta de $a$ és oculta."},
-          {"apartat": "b", "valor": "Quadrat de costat $\\approx 3{,}1$ cm obtingut abatent el pla de secció sobre un pla horitzontal."}
+          {
+            "apartat": "a",
+            "valor": "Vèrtex $v$ per intersecció de les arestes en planta; altura $\\approx 6{,}6$ cm a partir de l'aresta de pendent 60° al segon alçat; al segon alçat la secció és un segment; al primer alçat l'aresta de $a$ és oculta."
+          },
+          {
+            "apartat": "b",
+            "valor": "Quadrat de costat $\\approx 3{,}1$ cm obtingut abatent el pla de secció sobre un pla horitzontal."
+          }
         ],
         "nota": "Les mides numèriques (altura i costat) s'han mesurat sobre el dibuix oficial i són orientatives; a l'examen s'obtenen gràficament. La clau de l'exercici és adonar-se que la segona LT és paral·lela a la planta de l'aresta de $a$ i que, per això, el pendent de 60° es pot dibuixar directament en aquest alçat."
       }
@@ -147,34 +341,97 @@
       "punts": 3,
       "titol": "Peça de joc de construcció: cub i cilindre sobre un quadrat de cantell",
       "tema": "cossos",
-      "temes_secundaris": ["diedric"],
-      "conceptes": ["pla projectant", "cub", "cilindre", "el·lipse", "afinitat", "visibilitat"],
+      "temes_secundaris": [
+        "corbes",
+        "diedric"
+      ],
+      "conceptes": [
+        "pla projectant",
+        "cub",
+        "cilindre",
+        "el·lipse",
+        "visibilitat",
+        "vertadera magnitud"
+      ],
       "dificultat": 3,
-      "pagines": [11],
+      "curs": "2n",
+      "curs_motiu": "Cub i cilindre en dièdric sobre un pla de cantell; circumferència en planta per afinitat (DT II).",
+      "pagines": [
+        11
+      ],
       "enunciat": "Disposem de la planta i l'alçat d'un quadrat en posició de cantell. Aquest quadrat és la cara intermèdia d'una peça massissa d'un joc de construcció (per exemple, de Lego) formada per un cub i un cilindre al damunt.",
       "figures": [
-        {"src": "img/dibuix/2026-J/2B.png", "peu": "Alçat (de cantell) i planta del quadrat a-a′, b-b′, c-c′, d-d′"}
+        {
+          "src": "img/dibuix/2026-J/2B.png",
+          "peu": "Alçat (de cantell) i planta del quadrat a-a′, b-b′, c-c′, d-d′"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu en planta i alçat el cub de la part inferior de la peça, diferenciant les arestes vistes de les ocultes.", "punts": 1.5},
-        {"id": "b", "enunciat": "Dibuixeu en planta i alçat la part cilíndrica superior sabent que té com a base la circumferència inscrita a la cara $a$-$a'$, $b$-$b'$, $c$-$c'$, $d$-$d'$ i que l'altura del cilindre és de 2,5 cm. Indiqueu els punts de tangència i diferencieu les arestes vistes de les ocultes.", "punts": 1.5}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu en planta i alçat el cub de la part inferior de la peça, diferenciant les arestes vistes de les ocultes.",
+          "punts": 1.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Dibuixeu en planta i alçat la part cilíndrica superior sabent que té com a base la circumferència inscrita a la cara $a$-$a'$, $b$-$b'$, $c$-$c'$, $d$-$d'$ i que l'altura del cilindre és de 2,5 cm. Indiqueu els punts de tangència i diferencieu les arestes vistes de les ocultes.",
+          "punts": 1.5
+        }
       ],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Lectura de les dades", "cos": "El quadrat és perpendicular al pla vertical (de cantell): a l'alçat es veu com el segment $a'c'$, i $b'$, $d'$ coincideixen al punt mig.\n\n- La diagonal $ac$ és frontal: $a'c'$ és la seva veritable magnitud, $\\approx 7{,}07$ cm.\n- La diagonal $bd$ és perpendicular al pla vertical: en planta es veu en veritable magnitud, també $\\approx 7{,}07$ cm.\n\nPer tant el quadrat té **costat $5$ cm** ($7{,}07/\\sqrt{2}$). El pla del quadrat forma uns 54,7° amb l'horitzontal."},
-          {"apartat": "a", "titol": "Cub a l'alçat", "cos": "Les arestes del cub perpendiculars a la cara $abcd$ són perpendiculars a un pla de cantell, per tant són **frontals** i a l'alçat es veuen en veritable magnitud i perpendiculars a $a'c'$. El cub és a sota del quadrat (el cilindre va al damunt): per $a'$, $b'd'$ i $c'$ tracem perpendiculars a $a'c'$ cap avall a la dreta i hi portem $5$ cm. L'alçat del cub és un **rectangle de $7{,}07 \\times 5$ cm** amb la línia intermèdia de les arestes de $b$ i $d$ (que coincideixen)."},
-          {"apartat": "a", "titol": "Cub a la planta", "cos": "Baixem en vertical (línies de referència) els extrems de les noves arestes de l'alçat. Com que totes les arestes perpendiculars són paral·leles, en planta totes es desplacen igual: cada vèrtex de la cara oposada és el corresponent de $abcd$ traslladat **horitzontalment cap a la dreta** ($\\approx 4{,}1$ cm). En particular, el trasllat de $a$ cau exactament sobre $c$.\n\nEl contorn en planta és l'hexàgon $a$, $b$, $b_1$, $c_1$, $d_1$, $d$."},
-          {"apartat": "a", "titol": "Visibilitat del cub", "cos": "Mirant des de dalt, la cara $abcd$ (que mira amunt i a l'esquerra) i les cares que surten de $bc$ i $cd$ són vistes. Les arestes que surten del vèrtex $a_1$ (oposat a $a$, que és el punt més baix del cub) queden amagades sota la peça: $a$–$a_1$ (es dibuixa sobre $ac$), $a_1b_1$ i $a_1d_1$ són **ocultes**. A l'alçat totes les arestes del contorn es veuen."},
-          {"apartat": "b", "titol": "Circumferència inscrita: el·lipse en planta", "cos": "La base del cilindre és la circumferència inscrita al quadrat: centre al centre del quadrat, radi $2{,}5$ cm, tangent als costats en els seus punts mitjans.\n\nCom que el quadrat és inclinat, en planta la circumferència es veu com una **el·lipse inscrita al rombe $abcd$**:\n\n- eix major sobre $bd$, en veritable magnitud: $5$ cm;\n- eix menor sobre $ac$, escurçat: $5\\cos 54{,}7° \\approx 2{,}9$ cm;\n- tangent als costats del rombe en els seus punts mitjans (punts *tg*).\n\nPer dibuixar-la per punts, la solució abat la cara: es dibuixa al costat el quadrat de 5 cm en veritable magnitud amb la circumferència inscrita i les diagonals, i es transporten per afinitat els punts (extrems dels eixos, punts de tangència i talls amb les diagonals)."},
-          {"apartat": "b", "titol": "Cilindre a l'alçat", "cos": "L'eix del cilindre és perpendicular a la cara, per tant és frontal: a l'alçat surt del punt $b'd'$ perpendicular a $a'c'$ cap amunt a l'esquerra, amb $2{,}5$ cm de llargada. El cilindre es veu com un **rectangle de $5 \\times 2{,}5$ cm** centrat sobre $a'c'$."},
-          {"apartat": "b", "titol": "Cilindre a la planta i punts de tangència", "cos": "La base superior és la mateixa el·lipse traslladada horitzontalment cap a l'esquerra la projecció de l'eix ($\\approx 2{,}0$ cm). El contorn del cilindre són les dues **generatrius tangents** a totes dues el·lipses, que són horitzontals i passen pels extrems de l'eix major (punts *tg* de dalt i de baix).\n\nVisibilitat: la base superior es veu sencera; de la base inferior només es veu la meitat que queda fora del cilindre (l'altra meitat, discontínua). Les parts de les arestes $ab$ i $ad$ que queden sota el cilindre també són ocultes."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2026-J/2B-sol.png)"}
+          {
+            "apartat": null,
+            "titol": "Lectura de les dades",
+            "cos": "El quadrat és perpendicular al pla vertical (de cantell): a l'alçat es veu com el segment $a'c'$, i $b'$, $d'$ coincideixen al punt mig.\n\n- La diagonal $ac$ és frontal: $a'c'$ és la seva veritable magnitud, $\\approx 7{,}07$ cm.\n- La diagonal $bd$ és perpendicular al pla vertical: en planta es veu en veritable magnitud, també $\\approx 7{,}07$ cm.\n\nPer tant el quadrat té **costat $5$ cm** ($7{,}07/\\sqrt{2}$). El pla del quadrat forma uns 54,7° amb l'horitzontal."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cub a l'alçat",
+            "cos": "Les arestes del cub perpendiculars a la cara $abcd$ són perpendiculars a un pla de cantell, per tant són **frontals** i a l'alçat es veuen en veritable magnitud i perpendiculars a $a'c'$. El cub és a sota del quadrat (el cilindre va al damunt): per $a'$, $b'd'$ i $c'$ tracem perpendiculars a $a'c'$ cap avall a la dreta i hi portem $5$ cm. L'alçat del cub és un **rectangle de $7{,}07 \\times 5$ cm** amb la línia intermèdia de les arestes de $b$ i $d$ (que coincideixen)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cub a la planta",
+            "cos": "Baixem en vertical (línies de referència) els extrems de les noves arestes de l'alçat. Com que totes les arestes perpendiculars són paral·leles, en planta totes es desplacen igual: cada vèrtex de la cara oposada és el corresponent de $abcd$ traslladat **horitzontalment cap a la dreta** ($\\approx 4{,}1$ cm). En particular, el trasllat de $a$ cau exactament sobre $c$.\n\nEl contorn en planta és l'hexàgon $a$, $b$, $b_1$, $c_1$, $d_1$, $d$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Visibilitat del cub",
+            "cos": "Mirant des de dalt, la cara $abcd$ (que mira amunt i a l'esquerra) i les cares que surten de $bc$ i $cd$ són vistes. Les arestes que surten del vèrtex $a_1$ (oposat a $a$, que és el punt més baix del cub) queden amagades sota la peça: $a$–$a_1$ (es dibuixa sobre $ac$), $a_1b_1$ i $a_1d_1$ són **ocultes**. A l'alçat totes les arestes del contorn es veuen."
+          },
+          {
+            "apartat": "b",
+            "titol": "Circumferència inscrita: el·lipse en planta",
+            "cos": "La base del cilindre és la circumferència inscrita al quadrat: centre al centre del quadrat, radi $2{,}5$ cm, tangent als costats en els seus punts mitjans.\n\nCom que el quadrat és inclinat, en planta la circumferència es veu com una **el·lipse inscrita al rombe $abcd$**:\n\n- eix major sobre $bd$, en veritable magnitud: $5$ cm;\n- eix menor sobre $ac$, escurçat: $5\\cos 54{,}7° \\approx 2{,}9$ cm;\n- tangent als costats del rombe en els seus punts mitjans (punts *tg*).\n\nPer dibuixar-la per punts, la solució abat la cara: es dibuixa al costat el quadrat de 5 cm en veritable magnitud amb la circumferència inscrita i les diagonals, i es transporten per afinitat els punts (extrems dels eixos, punts de tangència i talls amb les diagonals)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Cilindre a l'alçat",
+            "cos": "L'eix del cilindre és perpendicular a la cara, per tant és frontal: a l'alçat surt del punt $b'd'$ perpendicular a $a'c'$ cap amunt a l'esquerra, amb $2{,}5$ cm de llargada. El cilindre es veu com un **rectangle de $5 \\times 2{,}5$ cm** centrat sobre $a'c'$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Cilindre a la planta i punts de tangència",
+            "cos": "La base superior és la mateixa el·lipse traslladada horitzontalment cap a l'esquerra la projecció de l'eix ($\\approx 2{,}0$ cm). El contorn del cilindre són les dues **generatrius tangents** a totes dues el·lipses, que són horitzontals i passen pels extrems de l'eix major (punts *tg* de dalt i de baix).\n\nVisibilitat: la base superior es veu sencera; de la base inferior només es veu la meitat que queda fora del cilindre (l'altra meitat, discontínua). Les parts de les arestes $ab$ i $ad$ que queden sota el cilindre també són ocultes."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2026-J/2B-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Cub d'aresta 5 cm: a l'alçat, rectangle de 7,07 × 5 cm perpendicular a $a'c'$; en planta, hexàgon amb la cara oposada traslladada ≈ 4,1 cm a la dreta i les arestes del vèrtex inferior ocultes."},
-          {"apartat": "b", "valor": "Cilindre de diàmetre 5 cm i altura 2,5 cm: a l'alçat, rectangle de 5 × 2,5 cm; en planta, dues el·lipses (eixos 5 i ≈ 2,9 cm) unides per generatrius horitzontals tangents als extrems de l'eix major."}
+          {
+            "apartat": "a",
+            "valor": "Cub d'aresta 5 cm: a l'alçat, rectangle de 7,07 × 5 cm perpendicular a $a'c'$; en planta, hexàgon amb la cara oposada traslladada ≈ 4,1 cm a la dreta i les arestes del vèrtex inferior ocultes."
+          },
+          {
+            "apartat": "b",
+            "valor": "Cilindre de diàmetre 5 cm i altura 2,5 cm: a l'alçat, rectangle de 5 × 2,5 cm; en planta, dues el·lipses (eixos 5 i ≈ 2,9 cm) unides per generatrius horitzontals tangents als extrems de l'eix major."
+          }
         ],
         "nota": "Error típic: dibuixar el cub amb les arestes verticals. Les arestes del cub són perpendiculars a la cara donada, no al pla horitzontal; com que la cara és de cantell, aquestes arestes són frontals i es veuen en veritable magnitud a l'alçat."
       }
@@ -188,29 +445,76 @@
       "punts": 4,
       "titol": "Perspectiva cavallera d'un sòlid amb coberta i buidat cilíndric, amb secció",
       "tema": "axonometria",
-      "temes_secundaris": ["normalitzacio"],
-      "conceptes": ["perspectiva cavallera", "coeficient de reducció", "escala doble", "interpretació de vistes", "secció plana"],
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "perspectiva cavallera",
+        "coeficients de reducció",
+        "interpretació de vistes",
+        "coordenades axonomètriques",
+        "cares inclinades",
+        "tall i secció"
+      ],
       "dificultat": 3,
-      "pagines": [13],
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (cavallera amb arcs i cilindres, encara que els arcs frontals es facin amb compàs): DT II.",
+      "pagines": [
+        13
+      ],
       "enunciat": "Interpreteu el sòlid representat en planta i alçat, i, situant el punt $p$-$p'$ en la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (obliqua cavallera o frontal amb reducció a l'eix $Y$) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes.\n\nDibuixeu amb línia discontínua la secció que produiria un pla vertical situat al centre de la figura i orientat en la direcció longitudinal del buidat cilíndric.\n\n[1 punt per la cara frontal amb l'arc, 2 punts per la coberta i 1 punt per la línia de secció]",
       "figures": [
-        {"src": "img/dibuix/2026-J/3A.png", "peu": "Planta i alçat del sòlid, posició P i terna cavallera: X i Z a 90° (coeficient 1), Y a 60° de X (coeficient 1/2)"}
+        {
+          "src": "img/dibuix/2026-J/3A.png",
+          "peu": "Planta i alçat del sòlid, posició P i terna cavallera: X i Z a 90° (coeficient 1), Y a 60° de X (coeficient 1/2)"
+        }
       ],
       "opcions": {},
       "apartats": [],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Interpretació del sòlid", "cos": "Mesurant les vistes (escala 1:1):\n\n- **Base**: prisma de $5 \\times 5$ cm en planta i $1{,}5$ cm d'altura, travessat de davant a darrere (direcció $Y$) per un **buidat semicilíndric** de radi $1$ cm centrat a la cara frontal (les dues línies discontínues de la planta).\n- **Coberta**: a sobre hi ha una teulada. Les dues cares laterals (esquerra i dreta) pugen a 45° des de les vores ($z = 1{,}5$ cm) fins a $1$ cm cap a dins ($z = 2{,}5$ cm). La part central, de $3$ cm d'amplada, és una teulada a dues aigües amb el **carener** paral·lel a $X$, al mig de la profunditat i a $z = 3{,}5$ cm (la línia horitzontal central de la planta). Els extrems de la part central són frontons verticals triangulars (la vertical de l'alçat entre $z = 2{,}5$ i $3{,}5$ cm).\n- Les línies diagonals de la planta a les cantonades són les arestes on es troben les cares inclinades."},
-          {"apartat": null, "titol": "Terna i escala", "cos": "Perspectiva cavallera frontal: els eixos $X$ (horitzontal) i $Z$ (vertical) formen 90° i no tenen reducció; l'eix $Y$ (profunditat) forma 60° amb $X$ i té coeficient de reducció $1/2$. A més, s'ha de dibuixar a **escala doble**:\n\n- mesures en $X$ i $Z$: $\\times 2$;\n- mesures en $Y$: $\\times 2 \\times \\tfrac{1}{2} = \\times 1$.\n\nPer exemple, l'amplada de $5$ cm fa $10$ cm al paper, l'altura de la base $1{,}5$ cm fa $3$ cm i la profunditat de $5$ cm fa $5$ cm en la direcció de $Y$."},
-          {"apartat": null, "titol": "Cara frontal amb l'arc", "cos": "Situem $p$ (cantonada inferior dreta del davant) a $P$. Com que la cara frontal és paral·lela al pla $XZ$, es dibuixa **en veritable forma** (a escala doble): rectangle de $10 \\times 3$ cm amb el semicercle de radi $2$ cm centrat a la vora inferior. Des dels vèrtexs del rectangle tracem paral·leles a $Y$ de $5$ cm per tenir la base sencera (la cara superior a $z = 1{,}5$ cm i la cara lateral dreta)."},
-          {"apartat": null, "titol": "Coberta per coordenades", "cos": "Cada vèrtex de la coberta es dibuixa per coordenades $(x, y, z)$ llegides a la planta ($x$, $y$) i a l'alçat ($z$): ens desplacem en direcció $X$ (×2), després en direcció $Y$ (×1) i finalment pugem en $Z$ (×2). Per exemple:\n\n- vèrtexs interiors de les cares laterals: $1$ cm cap a dins en $X$ i en $Y$, a $z = 2{,}5$ cm;\n- extrems del carener: a $1$ cm de les vores laterals, al mig de la profunditat ($2{,}5$ cm), a $z = 3{,}5$ cm.\n\nUnim els punts seguint les arestes de la planta: diagonals de les cantonades, arestes horitzontals superiors de les cares laterals, arestes inclinades dels frontons cap al carener i el carener. Les línies auxiliars de les cotes es deixen en traç fi."},
-          {"apartat": null, "titol": "Línies vistes", "cos": "Mirant des de davant, a la dreta i a dalt, es veuen la cara frontal, la cara lateral dreta i totes les cares de la coberta excepte les que miren enrere. Dins del buidat es veu una generatriu del semicilindre (la línia que surt de l'arc cap enrere). Les arestes posteriors de la coberta esquerra i del frontó esquerre queden en part tapades pel volum central. Repassem només les arestes vistes."},
-          {"apartat": null, "titol": "Línia de secció", "cos": "El pla de secció és vertical, a $x = 2{,}5$ cm (al mig de l'amplada) i paral·lel a $Y$. Tallem el sòlid amb aquest pla i ens queda el polígon:\n\n- a la cara frontal, del punt més alt de l'arc ($z = 1$ cm) fins a la vora de la base ($z = 1{,}5$ cm);\n- pel pla de la coberta, del davant fins al carener ($z = 3{,}5$ cm, a mitja profunditat) i baixant fins al darrere ($z = 1{,}5$ cm);\n- a la cara posterior, de $z = 1{,}5$ fins a $z = 1$ cm;\n- per la generatriu superior del buidat, de darrere fins al davant.\n\nEs dibuixa amb línia discontínua."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2026-J/3A-sol.png)"}
+          {
+            "apartat": null,
+            "titol": "Interpretació del sòlid",
+            "cos": "Mesurant les vistes (escala 1:1):\n\n- **Base**: prisma de $5 \\times 5$ cm en planta i $1{,}5$ cm d'altura, travessat de davant a darrere (direcció $Y$) per un **buidat semicilíndric** de radi $1$ cm centrat a la cara frontal (les dues línies discontínues de la planta).\n- **Coberta**: a sobre hi ha una teulada. Les dues cares laterals (esquerra i dreta) pugen a 45° des de les vores ($z = 1{,}5$ cm) fins a $1$ cm cap a dins ($z = 2{,}5$ cm). La part central, de $3$ cm d'amplada, és una teulada a dues aigües amb el **carener** paral·lel a $X$, al mig de la profunditat i a $z = 3{,}5$ cm (la línia horitzontal central de la planta). Els extrems de la part central són frontons verticals triangulars (la vertical de l'alçat entre $z = 2{,}5$ i $3{,}5$ cm).\n- Les línies diagonals de la planta a les cantonades són les arestes on es troben les cares inclinades."
+          },
+          {
+            "apartat": null,
+            "titol": "Terna i escala",
+            "cos": "Perspectiva cavallera frontal: els eixos $X$ (horitzontal) i $Z$ (vertical) formen 90° i no tenen reducció; l'eix $Y$ (profunditat) forma 60° amb $X$ i té coeficient de reducció $1/2$. A més, s'ha de dibuixar a **escala doble**:\n\n- mesures en $X$ i $Z$: $\\times 2$;\n- mesures en $Y$: $\\times 2 \\times \\tfrac{1}{2} = \\times 1$.\n\nPer exemple, l'amplada de $5$ cm fa $10$ cm al paper, l'altura de la base $1{,}5$ cm fa $3$ cm i la profunditat de $5$ cm fa $5$ cm en la direcció de $Y$."
+          },
+          {
+            "apartat": null,
+            "titol": "Cara frontal amb l'arc",
+            "cos": "Situem $p$ (cantonada inferior dreta del davant) a $P$. Com que la cara frontal és paral·lela al pla $XZ$, es dibuixa **en veritable forma** (a escala doble): rectangle de $10 \\times 3$ cm amb el semicercle de radi $2$ cm centrat a la vora inferior. Des dels vèrtexs del rectangle tracem paral·leles a $Y$ de $5$ cm per tenir la base sencera (la cara superior a $z = 1{,}5$ cm i la cara lateral dreta)."
+          },
+          {
+            "apartat": null,
+            "titol": "Coberta per coordenades",
+            "cos": "Cada vèrtex de la coberta es dibuixa per coordenades $(x, y, z)$ llegides a la planta ($x$, $y$) i a l'alçat ($z$): ens desplacem en direcció $X$ (×2), després en direcció $Y$ (×1) i finalment pugem en $Z$ (×2). Per exemple:\n\n- vèrtexs interiors de les cares laterals: $1$ cm cap a dins en $X$ i en $Y$, a $z = 2{,}5$ cm;\n- extrems del carener: a $1$ cm de les vores laterals, al mig de la profunditat ($2{,}5$ cm), a $z = 3{,}5$ cm.\n\nUnim els punts seguint les arestes de la planta: diagonals de les cantonades, arestes horitzontals superiors de les cares laterals, arestes inclinades dels frontons cap al carener i el carener. Les línies auxiliars de les cotes es deixen en traç fi."
+          },
+          {
+            "apartat": null,
+            "titol": "Línies vistes",
+            "cos": "Mirant des de davant, a la dreta i a dalt, es veuen la cara frontal, la cara lateral dreta i totes les cares de la coberta excepte les que miren enrere. Dins del buidat es veu una generatriu del semicilindre (la línia que surt de l'arc cap enrere). Les arestes posteriors de la coberta esquerra i del frontó esquerre queden en part tapades pel volum central. Repassem només les arestes vistes."
+          },
+          {
+            "apartat": null,
+            "titol": "Línia de secció",
+            "cos": "El pla de secció és vertical, a $x = 2{,}5$ cm (al mig de l'amplada) i paral·lel a $Y$. Tallem el sòlid amb aquest pla i ens queda el polígon:\n\n- a la cara frontal, del punt més alt de l'arc ($z = 1$ cm) fins a la vora de la base ($z = 1{,}5$ cm);\n- pel pla de la coberta, del davant fins al carener ($z = 3{,}5$ cm, a mitja profunditat) i baixant fins al darrere ($z = 1{,}5$ cm);\n- a la cara posterior, de $z = 1{,}5$ fins a $z = 1$ cm;\n- per la generatriu superior del buidat, de darrere fins al davant.\n\nEs dibuixa amb línia discontínua."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2026-J/3A-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Cavallera a escala doble (X i Z ×2, Y ×1 a 60°): bloc de 10 × 3 cm de cara frontal amb arc de radi 2 cm, coberta amb cares laterals a 45° i teulada central a dues aigües amb carener a 7 cm d'altura al paper; secció central discontínua des de l'arc fins al carener."}
+          {
+            "apartat": null,
+            "valor": "Cavallera a escala doble (X i Z ×2, Y ×1 a 60°): bloc de 10 × 3 cm de cara frontal amb arc de radi 2 cm, coberta amb cares laterals a 45° i teulada central a dues aigües amb carener a 7 cm d'altura al paper; secció central discontínua des de l'arc fins al carener."
+          }
         ],
         "nota": "Error típic: aplicar la reducció 1/2 també a $X$ o $Z$, o oblidar l'escala doble. Reviseu també que la línia de secció segueixi el pla de la coberta i no les arestes de la planta."
       }
@@ -224,28 +528,70 @@
       "punts": 4,
       "titol": "Escala de cargol hexagonal en perspectiva cavallera i militar (egípcia)",
       "tema": "axonometria",
-      "temes_secundaris": ["normalitzacio"],
-      "conceptes": ["perspectiva militar", "perspectiva cavallera", "perspectiva egípcia", "escala doble", "interpretació de vistes", "prisma hexagonal"],
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "perspectiva militar",
+        "perspectiva cavallera",
+        "interpretació de vistes",
+        "prisma",
+        "cares inclinades"
+      ],
       "dificultat": 3,
-      "pagines": [15],
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
+      "pagines": [
+        15
+      ],
       "enunciat": "Interpreteu el sòlid representat en planta i alçat, i, situant el punt $p$-$p'$ en la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (obliqua cavallera i militar, també coneguda com a *egípcia*, sense reducció) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes.\n\nMarqueu amb una creu les cares vistes que no són paral·leles a cap dels plans axonomètrics $XY$, $YZ$ o $XZ$.\n\n[1 punt pel suport central, 2 punts pels esglaons i 1 punt per identificar els plans]",
       "figures": [
-        {"src": "img/dibuix/2026-J/3B.png", "peu": "Alçat (Y-Z) i planta (X-Y) del sòlid, posició P i terna egípcia: Y horitzontal, Z amunt i X avall, tots sense reducció"}
+        {
+          "src": "img/dibuix/2026-J/3B.png",
+          "peu": "Alçat (Y-Z) i planta (X-Y) del sòlid, posició P i terna egípcia: Y horitzontal, Z amunt i X avall, tots sense reducció"
+        }
       ],
       "opcions": {},
       "apartats": [],
       "solucio": {
         "resposta": null,
         "passos": [
-          {"apartat": null, "titol": "Interpretació del sòlid", "cos": "La planta és un hexàgon regular de costat $2{,}5$ cm (5 cm entre vèrtexs oposats) amb un hexàgon petit central de costat $0{,}5$ cm, i sis línies radials que divideixen la corona en sis sectors de 60°. L'alçat dona les altures:\n\n- **Suport central**: prisma hexagonal de costat $0{,}5$ cm i altura $3$ cm.\n- **Esglaons**: cinc sectors trapezials que fan una escala de cargol al voltant del suport, d'altures $0{,}5$, $1$, $1{,}5$, $2$ i $2{,}5$ cm. El primer (0,5 cm) és el sector del davant i l'escala puja girant pel costat dret, pel fons i fins al sector del darrere a l'esquerra (2,5 cm), que conté el vèrtex $p$.\n- El sisè sector (davant a l'esquerra) és **buit**: per això en planta hi falta el costat exterior de l'hexàgon i a l'alçat no hi ha cap esglaó en aquella zona."},
-          {"apartat": null, "titol": "Terna i escala", "cos": "En la perspectiva egípcia el pla $XY$ (planta) i el pla $YZ$ es dibuixen en veritable forma: l'eix $Y$ és horitzontal, $Z$ vertical cap amunt i $X$ vertical cap avall, sense reducció. A **escala doble**, totes les mesures es multipliquen per 2 en les tres direccions.\n\nConseqüència pràctica: la planta es dibuixa tal com és (×2) a partir de $P$, i cada punt d'altura $z$ es desplaça $2z$ cap amunt."},
-          {"apartat": null, "titol": "Suport central", "cos": "Dibuixem l'hexàgon central de la planta a escala doble (costat $1$ cm) en la posició que li correspon respecte de $P$. Desplacem-lo $6$ cm amunt (altura $3$ cm ×2) per tenir la cara superior, i unim els vèrtexs amb arestes verticals. Les arestes verticals del darrere queden tapades pel mateix prisma."},
-          {"apartat": null, "titol": "Esglaons", "cos": "Per a cada sector dibuixem el trapezi de la planta (×2) i el traslladem cap amunt el doble de la seva altura ($1$, $2$, $3$, $4$ i $5$ cm). Unim amb verticals els vèrtexs que formen arestes visibles. Comencem pels esglaons més baixos del davant i anem cap als més alts del fons, tenint en compte que cada esglaó i el suport central tapen parts dels que hi ha darrere i a sota. Només es repassen les línies vistes."},
-          {"apartat": null, "titol": "Cares no paral·leles als plans axonomètrics", "cos": "Les cares superiors dels esglaons i del suport són paral·leles a $XY$, i les cares verticals orientades segons $X$ o $Y$ són paral·leles a $XZ$ o $YZ$. En canvi, les cares verticals que segueixen les direccions a 60° de l'hexàgon (laterals del prisma central, cares radials dels esglaons a 60° i cares exteriors inclinades) **no són paral·leles a cap pla axonomètric**: són les que es marquen amb una creu (X) si són vistes."},
-          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2026-J/3B-sol.png)"}
+          {
+            "apartat": null,
+            "titol": "Interpretació del sòlid",
+            "cos": "La planta és un hexàgon regular de costat $2{,}5$ cm (5 cm entre vèrtexs oposats) amb un hexàgon petit central de costat $0{,}5$ cm, i sis línies radials que divideixen la corona en sis sectors de 60°. L'alçat dona les altures:\n\n- **Suport central**: prisma hexagonal de costat $0{,}5$ cm i altura $3$ cm.\n- **Esglaons**: cinc sectors trapezials que fan una escala de cargol al voltant del suport, d'altures $0{,}5$, $1$, $1{,}5$, $2$ i $2{,}5$ cm. El primer (0,5 cm) és el sector del davant i l'escala puja girant pel costat dret, pel fons i fins al sector del darrere a l'esquerra (2,5 cm), que conté el vèrtex $p$.\n- El sisè sector (davant a l'esquerra) és **buit**: per això en planta hi falta el costat exterior de l'hexàgon i a l'alçat no hi ha cap esglaó en aquella zona."
+          },
+          {
+            "apartat": null,
+            "titol": "Terna i escala",
+            "cos": "En la perspectiva egípcia el pla $XY$ (planta) i el pla $YZ$ es dibuixen en veritable forma: l'eix $Y$ és horitzontal, $Z$ vertical cap amunt i $X$ vertical cap avall, sense reducció. A **escala doble**, totes les mesures es multipliquen per 2 en les tres direccions.\n\nConseqüència pràctica: la planta es dibuixa tal com és (×2) a partir de $P$, i cada punt d'altura $z$ es desplaça $2z$ cap amunt."
+          },
+          {
+            "apartat": null,
+            "titol": "Suport central",
+            "cos": "Dibuixem l'hexàgon central de la planta a escala doble (costat $1$ cm) en la posició que li correspon respecte de $P$. Desplacem-lo $6$ cm amunt (altura $3$ cm ×2) per tenir la cara superior, i unim els vèrtexs amb arestes verticals. Les arestes verticals del darrere queden tapades pel mateix prisma."
+          },
+          {
+            "apartat": null,
+            "titol": "Esglaons",
+            "cos": "Per a cada sector dibuixem el trapezi de la planta (×2) i el traslladem cap amunt el doble de la seva altura ($1$, $2$, $3$, $4$ i $5$ cm). Unim amb verticals els vèrtexs que formen arestes visibles. Comencem pels esglaons més baixos del davant i anem cap als més alts del fons, tenint en compte que cada esglaó i el suport central tapen parts dels que hi ha darrere i a sota. Només es repassen les línies vistes."
+          },
+          {
+            "apartat": null,
+            "titol": "Cares no paral·leles als plans axonomètrics",
+            "cos": "Les cares superiors dels esglaons i del suport són paral·leles a $XY$, i les cares verticals orientades segons $X$ o $Y$ són paral·leles a $XZ$ o $YZ$. En canvi, les cares verticals que segueixen les direccions a 60° de l'hexàgon (laterals del prisma central, cares radials dels esglaons a 60° i cares exteriors inclinades) **no són paral·leles a cap pla axonomètric**: són les que es marquen amb una creu (X) si són vistes."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2026-J/3B-sol.png)"
+          }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Perspectiva egípcia a escala doble: suport hexagonal de 6 cm d'altura al paper i cinc esglaons de 1, 2, 3, 4 i 5 cm d'altura al paper girant al voltant; es marquen amb X les cares vistes verticals oblíqües (a 60°)."}
+          {
+            "apartat": null,
+            "valor": "Perspectiva egípcia a escala doble: suport hexagonal de 6 cm d'altura al paper i cinc esglaons de 1, 2, 3, 4 i 5 cm d'altura al paper girant al voltant; es marquen amb X les cares vistes verticals oblíqües (a 60°)."
+          }
         ],
         "nota": "En aquesta terna els eixos $X$ i $Z$ són sobre la mateixa recta, de manera que la planta es veu en veritable forma i les altures s'hi superposen: cal anar amb compte de no confondre un desplaçament en $X$ amb una altura. Ajuda molt dibuixar primer la planta sencera a escala doble en traç fi i després anar aixecant cada sector."
       }

@@ -24,12 +24,13 @@
         "mecanica"
       ],
       "conceptes": [
-        "energia mecànica",
         "energia potencial gravitatòria",
-        "intensitat de camp gravitatori",
-        "força gravitatòria"
+        "intensitat del camp gravitatori",
+        "conservació de l'energia"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Energia potencial gravitatòria −GMm/r i intensitat del camp gravitatori de Mart (2n)",
       "pagines": [
         1
       ],
@@ -103,10 +104,11 @@
       "conceptes": [
         "camp magnètic d'un fil",
         "principi de superposició",
-        "regla de la mà dreta",
-        "fils paral·lels"
+        "regla de la mà dreta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): camp magnètic d'un fil, principi de superposició",
       "pagines": [
         2
       ],
@@ -184,12 +186,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "ones estacionàries",
-        "tub obert",
+        "tubs sonors",
         "harmònics",
-        "freqüència fonamental",
-        "velocitat del so"
+        "velocitat de propagació",
+        "longitud d'ona"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub obert",
       "pagines": [
         2
       ],
@@ -260,10 +264,11 @@
       "conceptes": [
         "camp elèctric uniforme",
         "diferència de potencial",
-        "força elèctrica",
         "equilibri de forces"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, diferència de potencial",
       "pagines": [
         2
       ],
@@ -342,13 +347,16 @@
         "quantica"
       ],
       "conceptes": [
-        "desintegració beta més",
-        "aniquilació electró-positró",
+        "desintegració beta",
         "equivalència massa-energia",
         "període de semidesintegració",
-        "llei de desintegració radioactiva"
+        "llei de desintegració radioactiva",
+        "equació nuclear",
+        "energia del fotó"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració beta més, aniquilació electró-positró",
       "pagines": [
         3
       ],
@@ -429,11 +437,13 @@
       "conceptes": [
         "equació d'ona",
         "longitud d'ona",
-        "nombre d'ona",
         "freqüència angular",
-        "velocitat de propagació"
+        "velocitat de propagació",
+        "moviment harmònic simple"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): equació d'ona, longitud d'ona",
       "pagines": [
         3
       ],
@@ -505,13 +515,14 @@
       "tema": "camp-electric",
       "temes_secundaris": [],
       "conceptes": [
-        "llei de coulomb",
+        "llei de Coulomb",
         "camp elèctric",
         "potencial elèctric",
-        "principi de superposició",
-        "punt de camp nul"
+        "principi de superposició"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, camp elèctric",
       "pagines": [
         3
       ],
@@ -601,12 +612,12 @@
       ],
       "conceptes": [
         "energia del fotó",
-        "constant de planck",
-        "irradiància",
-        "longitud d'ona",
-        "nombre de fotons"
+        "nombre de fotons",
+        "espectre electromagnètic"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): energia del fotó, constant de planck",
       "pagines": [
         4
       ],

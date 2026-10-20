@@ -1,0 +1,124 @@
+{
+  "estatica": [
+    "diagrama de cos lliure",
+    "equilibri de moments",
+    "equilibri de forces",
+    "reaccions en una articulació",
+    "barra biarticulada"
+  ],
+  "resistencia": [
+    "tensió normal",
+    "deformació unitària",
+    "mòdul de Young",
+    "límit elàstic",
+    "tensió de ruptura",
+    "tracció i compressió",
+    "assaig de tracció"
+  ],
+  "materials": [
+    "aliatge",
+    "composició percentual",
+    "densitat",
+    "dilatació tèrmica",
+    "assaig de Charpy"
+  ],
+  "mecanismes": [
+    "relació de transmissió",
+    "cargol-femella",
+    "reductor",
+    "politja"
+  ],
+  "mecanica": [
+    "potència mecànica",
+    "parell motor",
+    "velocitat angular",
+    "velocitat lineal",
+    "energia potencial",
+    "energia cinètica",
+    "conservació de l'energia",
+    "pla inclinat",
+    "rendiment",
+    "rendiment global",
+    "potència dissipada"
+  ],
+  "termica": [
+    "poder calorífic",
+    "calor sensible",
+    "cilindrada",
+    "relació de compressió",
+    "motor de combustió interna",
+    "consum específic",
+    "potència tèrmica",
+    "temperatura absoluta"
+  ],
+  "energia": [
+    "consum de combustible",
+    "energia elèctrica",
+    "estalvi energètic",
+    "emissions de CO2",
+    "energia solar",
+    "energia eòlica",
+    "autonomia",
+    "cost de l'energia"
+  ],
+  "circuits": [
+    "llei d'Ohm",
+    "potència elèctrica",
+    "resistivitat",
+    "associació de resistències",
+    "capacitat de bateria",
+    "corrent altern",
+    "impedància",
+    "factor de potència",
+    "efecte Joule"
+  ],
+  "electronica": [
+    "LED"
+  ],
+  "maquines-electriques": [
+    "motor asíncron",
+    "velocitat de sincronisme",
+    "parells de pols",
+    "lliscament",
+    "motor de corrent continu",
+    "generador elèctric"
+  ],
+  "digital": [
+    "taula de veritat",
+    "funció lògica",
+    "mapa de Karnaugh",
+    "àlgebra de Boole",
+    "portes lògiques",
+    "esquema de contactes",
+    "funció majoria"
+  ],
+  "control": [
+    "sensor"
+  ],
+  "pneumatica": [
+    "pressió",
+    "principi de Pascal",
+    "cilindre pneumàtic o hidràulic",
+    "cabal",
+    "potència hidràulica"
+  ],
+  "fabricacio": [
+    "tolerància",
+    "ajust",
+    "joc i serratge",
+    "cadena de cotes",
+    "error de mesura",
+    "control de qualitat",
+    "temps de cicle",
+    "processos de fabricació"
+  ],
+  "economia": [
+    "cost de producció",
+    "benefici",
+    "amortització",
+    "capacitat i ocupació"
+  ],
+  "disseny": [
+    "àrees i perímetres"
+  ]
+}

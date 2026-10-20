@@ -20,13 +20,27 @@
       "punts": 2,
       "titol": "Figura simètrica respecte d'un eix d'una silueta d'arcs i rectes tangents",
       "tema": "transformacions",
-      "temes_secundaris": ["geometria-plana"],
-      "conceptes": ["simetria axial", "eix de simetria", "tangències", "enllaç d'arcs", "punt de tangència"],
+      "temes_secundaris": [
+        "geometria-plana"
+      ],
+      "conceptes": [
+        "simetria axial",
+        "tangències",
+        "enllaç d'arcs",
+        "punt de tangència"
+      ],
       "dificultat": 2,
-      "pagines": [5],
+      "curs": "1r",
+      "curs_motiu": "Simetria axial i enllaços d'arcs tangents: isometries i tangències bàsiques (DT I).",
+      "pagines": [
+        5
+      ],
       "enunciat": "Dibuixeu la figura simètrica a la donada de manera que l'eix de simetria sigui la recta *R*. Deixeu constància del procés gràfic seguit.",
       "figures": [
-        {"src": "img/dibuix/2018-J/1A.png", "peu": "Silueta formada per arcs i segments amb els punts A–H marcats i l'eix de simetria R (traç i punt)"}
+        {
+          "src": "img/dibuix/2018-J/1A.png",
+          "peu": "Silueta formada per arcs i segments amb els punts A–H marcats i l'eix de simetria R (traç i punt)"
+        }
       ],
       "opcions": {},
       "apartats": [],
@@ -60,7 +74,10 @@
           }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Figura simètrica respecte de R, obtinguda traslladant cada punt de tangència i cada centre sobre la perpendicular a R a la mateixa distància; els arcs conserven els radis (≈ 19, 12,5, 10 i 22,5 mm)."}
+          {
+            "apartat": null,
+            "valor": "Figura simètrica respecte de R, obtinguda traslladant cada punt de tangència i cada centre sobre la perpendicular a R a la mateixa distància; els arcs conserven els radis (≈ 19, 12,5, 10 i 22,5 mm)."
+          }
         ],
         "nota": "Error típic: oblidar els centres dels arcs i intentar dibuixar els arcs simètrics a ull. Els radis s'han mesurat sobre el dibuix i són orientatius."
       }
@@ -75,17 +92,37 @@
       "titol": "Circumferència que passa per dos punts i és tangent a una recta (escala 1:125)",
       "tema": "geometria-plana",
       "temes_secundaris": [],
-      "conceptes": ["tangències", "circumferència per dos punts", "mediatriu", "punt de tangència", "escales"],
+      "conceptes": [
+        "tangències",
+        "mediatriu",
+        "punt de tangència",
+        "escala"
+      ],
       "dificultat": 2,
-      "pagines": [7],
+      "curs": "1r",
+      "curs_motiu": "Cas PPR amb AB paral·lel a la recta: es resol amb mediatrius, sense potència (DT I).",
+      "pagines": [
+        7
+      ],
       "enunciat": "",
       "figures": [
-        {"src": "img/dibuix/2018-J/1B.png", "peu": "Recta R, punts A i B i casella per escriure la longitud real de AB (escala 1:125)"}
+        {
+          "src": "img/dibuix/2018-J/1B.png",
+          "peu": "Recta R, punts A i B i casella per escriure la longitud real de AB (escala 1:125)"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Dibuixeu la circumferència tangent a la recta *R* que passa pels punts *A* i *B*. Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, els punts de tangència.", "punts": 1.5},
-        {"id": "b", "enunciat": "Determineu el valor real del segment *AB*, tenint en compte que el dibuix està a escala 1:125, i escriviu-lo a la casella situada a la part inferior del full.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu la circumferència tangent a la recta *R* que passa pels punts *A* i *B*. Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, els punts de tangència.",
+          "punts": 1.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu el valor real del segment *AB*, tenint en compte que el dibuix està a escala 1:125, i escriviu-lo a la casella situada a la part inferior del full.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -117,8 +154,14 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Una única circumferència: T = mediatriu de AB ∩ R; centre a la intersecció de les mediatrius de AB i TB; radi ≈ 42 mm al paper."},
-          {"apartat": "b", "valor": "AB = 50 mm al paper → 6,25 m reals."}
+          {
+            "apartat": "a",
+            "valor": "Una única circumferència: T = mediatriu de AB ∩ R; centre a la intersecció de les mediatrius de AB i TB; radi ≈ 42 mm al paper."
+          },
+          {
+            "apartat": "b",
+            "valor": "AB = 50 mm al paper → 6,25 m reals."
+          }
         ],
         "nota": "Si AB no fos paral·lel a R, caldria usar l'eix radical: la recta AB talla R en un punt M i els punts de tangència compleixen $MT^2 = MA \\cdot MB$ (dues solucions). Aquí aquest mètode no funciona perquè AB i R no es tallen."
       }
@@ -132,19 +175,48 @@
       "punts": 4,
       "titol": "Piràmide hexagonal regular a partir d'una cara lateral i tronc de piràmide per un pla de cantell",
       "tema": "cossos",
-      "temes_secundaris": ["diedric"],
-      "conceptes": ["piràmide hexagonal", "secció plana", "pla de cantell", "tronc de piràmide", "visibilitat"],
+      "temes_secundaris": [
+        "diedric"
+      ],
+      "conceptes": [
+        "piràmide",
+        "secció plana",
+        "pla de cantell",
+        "tronc de piràmide",
+        "visibilitat",
+        "abatiment",
+        "vertadera magnitud"
+      ],
       "dificultat": 3,
-      "pagines": [9],
+      "curs": "2n",
+      "curs_motiu": "Piràmide o prisma en dièdric amb la base en un pla inclinat, per abatiment o canvi de pla (DT II).",
+      "pagines": [
+        9
+      ],
       "enunciat": "Dades: Projeccions horitzontal i vertical dels punts *a-a′*, *b-b′*, *v-v′* i *p-p′*.",
       "figures": [
-        {"src": "img/dibuix/2018-J/2A.png", "peu": "Projeccions dels punts a-a′, b-b′ (a′ i b′ coincideixen), v-v′ i p-p′"}
+        {
+          "src": "img/dibuix/2018-J/2A.png",
+          "peu": "Projeccions dels punts a-a′, b-b′ (a′ i b′ coincideixen), v-v′ i p-p′"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Determineu les projeccions de la piràmide hexagonal regular que té el triangle *abv-a′b′v′* com una de les cares laterals i que està situada per sobre d'aquesta cara.", "punts": 2.5},
-        {"id": "b", "enunciat": "Dibuixeu les projeccions horitzontal i vertical del tronc de piràmide que s'obté en tallar la piràmide determinada en l'apartat anterior pel pla de cantell que passa pel punt *p-p′* i forma a la dreta un angle de 45° amb el pla horitzontal.", "punts": 1},
-        {"id": "c", "enunciat": "Diferencieu les arestes vistes de les ocultes.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Determineu les projeccions de la piràmide hexagonal regular que té el triangle *abv-a′b′v′* com una de les cares laterals i que està situada per sobre d'aquesta cara.",
+          "punts": 2.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Dibuixeu les projeccions horitzontal i vertical del tronc de piràmide que s'obté en tallar la piràmide determinada en l'apartat anterior pel pla de cantell que passa pel punt *p-p′* i forma a la dreta un angle de 45° amb el pla horitzontal.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Diferencieu les arestes vistes de les ocultes.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -191,9 +263,18 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Hexàgon de costat 40 mm en un pla de cantell que forma ≈ 75° amb l'horitzontal (centre o′ amb la semicircumferència de diàmetre a′v′ i un arc de radi 34,6 mm); altura de la piràmide ≈ 132 mm."},
-          {"apartat": "b", "valor": "Secció hexagonal pel pla de cantell a 45° per p′; tronc entre la base i la secció."},
-          {"apartat": "c", "valor": "Alçat: tot vist. Planta: ocultes la cara abv, les dues cares contigües (acv i bfv) i la cara de tall."}
+          {
+            "apartat": "a",
+            "valor": "Hexàgon de costat 40 mm en un pla de cantell que forma ≈ 75° amb l'horitzontal (centre o′ amb la semicircumferència de diàmetre a′v′ i un arc de radi 34,6 mm); altura de la piràmide ≈ 132 mm."
+          },
+          {
+            "apartat": "b",
+            "valor": "Secció hexagonal pel pla de cantell a 45° per p′; tronc entre la base i la secció."
+          },
+          {
+            "apartat": "c",
+            "valor": "Alçat: tot vist. Planta: ocultes la cara abv, les dues cares contigües (acv i bfv) i la cara de tall."
+          }
         ],
         "nota": "Les mides s'han mesurat sobre el dibuix donat (ab = 40 mm, mv = 136,5 mm). La clau del problema és veure que el triangle m–o–v és rectangle i es veu en vertadera magnitud a l'alçat."
       }
@@ -207,19 +288,47 @@
       "punts": 4,
       "titol": "Tetraedre regular amb una cara en un pla de perfil",
       "tema": "cossos",
-      "temes_secundaris": ["diedric"],
-      "conceptes": ["tetraedre regular", "pla de perfil", "triangle equilàter", "altura del tetraedre", "visibilitat"],
+      "temes_secundaris": [
+        "diedric"
+      ],
+      "conceptes": [
+        "tetraedre",
+        "pla projectant",
+        "visibilitat",
+        "abatiment",
+        "vertadera magnitud",
+        "projecció de perfil"
+      ],
       "dificultat": 3,
-      "pagines": [11],
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) amb vertadera magnitud d'arestes.",
+      "pagines": [
+        11
+      ],
       "enunciat": "Dades: Projeccions horitzontal i vertical dels punts *a-a′* i *b-b′*.",
       "figures": [
-        {"src": "img/dibuix/2018-J/2B.png", "peu": "Projeccions dels punts a-a′ i b-b′, alineats en una mateixa línia de referència"}
+        {
+          "src": "img/dibuix/2018-J/2B.png",
+          "peu": "Projeccions dels punts a-a′ i b-b′, alineats en una mateixa línia de referència"
+        }
       ],
       "opcions": {},
       "apartats": [
-        {"id": "a", "enunciat": "Determineu les projeccions d'un triangle equilàter *abc-a′b′c′* situat en un pla de perfil, que té el segment *ab-a′b′* com un dels costats i el vèrtex *c-c′* per sobre del segment *ab-a′b′*.", "punts": 1},
-        {"id": "b", "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un tetraedre regular de manera que una de les cares sigui el triangle determinat en l'apartat anterior i que tingui un vèrtex situat a la dreta d'aquesta cara.", "punts": 2.5},
-        {"id": "c", "enunciat": "Diferencieu les arestes vistes de les ocultes.", "punts": 0.5}
+        {
+          "id": "a",
+          "enunciat": "Determineu les projeccions d'un triangle equilàter *abc-a′b′c′* situat en un pla de perfil, que té el segment *ab-a′b′* com un dels costats i el vèrtex *c-c′* per sobre del segment *ab-a′b′*.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un tetraedre regular de manera que una de les cares sigui el triangle determinat en l'apartat anterior i que tingui un vèrtex situat a la dreta d'aquesta cara.",
+          "punts": 2.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Diferencieu les arestes vistes de les ocultes.",
+          "punts": 0.5
+        }
       ],
       "solucio": {
         "resposta": null,
@@ -256,9 +365,18 @@
           }
         ],
         "resultats": [
-          {"apartat": "a", "valor": "Triangle equilàter de costat ≈ 70 mm en el pla de perfil; c′ ≈ 69 mm per sobre de a′, a la mateixa línia de referència."},
-          {"apartat": "b", "valor": "Vèrtex d a H = l·√(2/3) ≈ 57 mm a la dreta del baricentre de la cara, sobre una recta paral·lela a la LT."},
-          {"apartat": "c", "valor": "Alçat: b′d′ oculta. Planta: totes les arestes vistes."}
+          {
+            "apartat": "a",
+            "valor": "Triangle equilàter de costat ≈ 70 mm en el pla de perfil; c′ ≈ 69 mm per sobre de a′, a la mateixa línia de referència."
+          },
+          {
+            "apartat": "b",
+            "valor": "Vèrtex d a H = l·√(2/3) ≈ 57 mm a la dreta del baricentre de la cara, sobre una recta paral·lela a la LT."
+          },
+          {
+            "apartat": "c",
+            "valor": "Alçat: b′d′ oculta. Planta: totes les arestes vistes."
+          }
         ],
         "nota": "Error típic: posar d a l'altura del punt mitjà d'un costat en lloc del baricentre. Les mides s'han mesurat sobre el dibuix donat i són orientatives."
       }
@@ -272,13 +390,28 @@
       "punts": 4,
       "titol": "Isometria d'una peça amb base hexagonal, prisma triangular i tres braços inclinats",
       "tema": "axonometria",
-      "temes_secundaris": [],
-      "conceptes": ["perspectiva isomètrica", "axonometria ortogonal", "interpretació de vistes", "escala", "prisma"],
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "axonometria isomètrica",
+        "interpretació de vistes",
+        "prisma",
+        "coordenades axonomètriques",
+        "cares inclinades"
+      ],
       "dificultat": 3,
-      "pagines": [13],
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
+      "pagines": [
+        13
+      ],
       "enunciat": "Interpreteu el sòlid polièdric representat en planta i alçats, i, situant el punt *p-p′* en la posició *P* del paper, dibuixeu l'axonometria amb la terna proposada (ortogonal isomètrica) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [4 punts: 0,5 punts per la base de l'objecte, 0,5 punts pel cos vertical i 1 punt per cadascun dels cossos inclinats]",
       "figures": [
-        {"src": "img/dibuix/2018-J/3A.png", "peu": "Alçat, planta i perfil (girat 90°) de la peça, punt P i terna isomètrica (eixos a 120°, coeficients 1)"}
+        {
+          "src": "img/dibuix/2018-J/3A.png",
+          "peu": "Alçat, planta i perfil (girat 90°) de la peça, punt P i terna isomètrica (eixos a 120°, coeficients 1)"
+        }
       ],
       "opcions": {},
       "apartats": [],
@@ -327,7 +460,10 @@
           }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Isometria sense reducció a escala doble: base hexagonal de 50 mm de costat i 10 mm de gruix, prisma triangular de 30 mm de costat i 60 mm d'altura, i tres braços inclinats iguals a 120° entre ells; només línies vistes."}
+          {
+            "apartat": null,
+            "valor": "Isometria sense reducció a escala doble: base hexagonal de 50 mm de costat i 10 mm de gruix, prisma triangular de 30 mm de costat i 60 mm d'altura, i tres braços inclinats iguals a 120° entre ells; només línies vistes."
+          }
         ],
         "nota": "Les mides s'han mesurat sobre les vistes (hexàgon de 25 mm, base de 5 mm, triangle de 15 mm i 30 mm d'altura són valors exactes; les dels braços són aproximades). Error típic: mesurar els vèrtexs de l'hexàgon en direccions que no són paral·leles als eixos."
       }
@@ -341,13 +477,32 @@
       "punts": 4,
       "titol": "Perspectiva militar d'un tronc de con tallat per un pla inclinat amb dos buits",
       "tema": "axonometria",
-      "temes_secundaris": ["corbes"],
-      "conceptes": ["perspectiva militar", "axonometria obliqua", "tronc de con", "secció el·líptica", "contorn aparent", "interpretació de vistes"],
+      "temes_secundaris": [
+        "corbes",
+        "cossos",
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "perspectiva militar",
+        "con",
+        "secció cònica",
+        "contorn aparent",
+        "interpretació de vistes",
+        "el·lipse",
+        "circumferència en axonometria"
+      ],
       "dificultat": 3,
-      "pagines": [15],
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (perspectiva militar amb cilindres, cons o arcs): DT II.",
+      "pagines": [
+        15
+      ],
       "enunciat": "Interpreteu el sòlid representat en planta i alçats, i, situant el punt *p-p′* en la posició *P* del paper, dibuixeu l'axonometria amb la terna proposada (militar sense reducció) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [4 punts: 1 punt per la superfície corba (con), 0,5 del qual correspondrà als contorns aparents; 1,5 punts per la base superior del tronc de con, i 1,5 punts pels buits de l'objecte]",
       "figures": [
-        {"src": "img/dibuix/2018-J/3B.png", "peu": "Alçat, planta i perfil (girat 90°) del tronc de con, punt P i terna militar (X a 60° de l'horitzontal, X i Y a 90°, coeficients 1)"}
+        {
+          "src": "img/dibuix/2018-J/3B.png",
+          "peu": "Alçat, planta i perfil (girat 90°) del tronc de con, punt P i terna militar (X a 60° de l'horitzontal, X i Y a 90°, coeficients 1)"
+        }
       ],
       "opcions": {},
       "apartats": [],
@@ -396,7 +551,10 @@
           }
         ],
         "resultats": [
-          {"apartat": null, "valor": "Perspectiva militar a escala doble: base circular de radi 40 mm, contorns aparents tangents des del vèrtex (80 mm sobre P), base superior el·líptica (secció d'eixos reals 18 × 14,1 mm, que a escala doble surten 36 × 28,3 mm), obtinguda pujant la planta de la secció, osca amb terra a 20 mm i ranura entre 10 i 20 mm d'altura; només línies vistes."}
+          {
+            "apartat": null,
+            "valor": "Perspectiva militar a escala doble: base circular de radi 40 mm, contorns aparents tangents des del vèrtex (80 mm sobre P), base superior el·líptica (secció d'eixos reals 18 × 14,1 mm, que a escala doble surten 36 × 28,3 mm), obtinguda pujant la planta de la secció, osca amb terra a 20 mm i ranura entre 10 i 20 mm d'altura; només línies vistes."
+          }
         ],
         "nota": "Error típic: dibuixar la base superior com una circumferència. És una el·lipse inclinada, i no és en un pla horitzontal, de manera que en militar no es veu en vertadera forma. Les mides s'han llegit de les vistes (radi 20 mm, altura del con 40 mm)."
       }

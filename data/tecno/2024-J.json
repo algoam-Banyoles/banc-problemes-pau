@@ -20,14 +20,17 @@
       "punts": 0.5,
       "titol": "Massa de benzina consumida per cicle en un motor de quatre temps",
       "tema": "termica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "energia"
+      ],
       "conceptes": [
-        "motor de quatre temps",
-        "cicle termodinàmic",
-        "consum horari",
+        "motor de combustió interna",
+        "consum de combustible",
         "densitat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita el funcionament del motor de quatre temps (un cicle cada dues voltes), que és de 2n.",
       "pagines": [
         2
       ],
@@ -92,11 +95,11 @@
       ],
       "conceptes": [
         "assaig de tracció",
-        "mòdul de Young",
-        "zona elàstica",
-        "diagrama tensió-deformació"
+        "mòdul de Young"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Necessita tensió, deformació o mòdul de Young (resistència de materials i assaig de tracció), que és de 2n.",
       "pagines": [
         2
       ],
@@ -152,14 +155,15 @@
       "titol": "Escalfament d'aigua amb una resistència elèctrica",
       "tema": "termica",
       "temes_secundaris": [
-        "energia"
+        "circuits"
       ],
       "conceptes": [
-        "calor específica",
         "calor sensible",
         "efecte Joule"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita calor sensible, poder calorífic i rendiment, que són de 1r.",
       "pagines": [
         2
       ],
@@ -217,11 +221,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "energia solar",
-        "irradiació",
         "rendiment",
-        "kilowatt hora"
+        "energia elèctrica"
       ],
       "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         3
       ],
@@ -280,10 +285,11 @@
       "conceptes": [
         "cilindrada",
         "relació de compressió",
-        "cambra de combustió",
-        "motor de quatre temps"
+        "motor de combustió interna"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita conceptes de motor tèrmic (cilindrada, cursa, relació de compressió), que són de 2n.",
       "pagines": [
         3
       ],
@@ -349,6 +355,8 @@
         "funció majoria"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
       "pagines": [
         4,
         5
@@ -430,7 +438,8 @@
       "tema": "mecanica",
       "temes_secundaris": [
         "maquines-electriques",
-        "energia"
+        "energia",
+        "circuits"
       ],
       "conceptes": [
         "potència mecànica",
@@ -438,9 +447,12 @@
         "rendiment",
         "parell motor",
         "velocitat angular",
-        "energia de la bateria"
+        "capacitat de bateria",
+        "potència elèctrica"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
       "pagines": [
         6,
         7
@@ -538,10 +550,13 @@
         "energia cinètica",
         "rendiment",
         "poder calorífic",
-        "factor d'emissió",
-        "petjada de carboni"
+        "emissions de CO2",
+        "consum de combustible",
+        "densitat"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
       "pagines": [
         8,
         9
@@ -625,10 +640,12 @@
       "conceptes": [
         "diagrama de cos lliure",
         "equilibri de moments",
-        "reaccions en una articulació",
-        "braç de moment"
+        "equilibri de forces",
+        "reaccions en una articulació"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
       "pagines": [
         10,
         11
@@ -716,12 +733,14 @@
       "temes_secundaris": [],
       "conceptes": [
         "corrent altern",
-        "reactància inductiva",
         "impedància",
         "factor de potència",
-        "potència activa"
+        "llei d'Ohm",
+        "potència elèctrica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Necessita corrent altern (reactàncies, impedància, factor de potència), que és de 2n.",
       "pagines": [
         12,
         13

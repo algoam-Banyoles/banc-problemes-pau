@@ -28,10 +28,11 @@
         "semblança",
         "transport d'angles",
         "triangulació",
-        "arc capaç",
-        "proporcionalitat"
+        "arc capaç"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Polígon semblant per triangulació i transport d'angles: proporcionalitat i semblança (DT I).",
       "pagines": [
         5
       ],
@@ -100,12 +101,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "tangències",
-        "circumferències tangents",
         "punt de tangència",
         "mediatriu",
-        "reducció de radis"
+        "reducció a punt"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Tangències amb un punt de tangència donat, resoltes per reducció a punt, mediatrius i bisectrius; no cal potència (DT I).",
       "pagines": [
         7
       ],
@@ -175,7 +177,7 @@
         "diedric"
       ],
       "conceptes": [
-        "prisma oblic",
+        "prisma",
         "secció plana",
         "pla de cantell",
         "canvi de pla",
@@ -183,6 +185,8 @@
         "visibilitat"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Secció plana d'un sòlid en dièdric per canvi de pla (DT II).",
       "pagines": [
         9
       ],
@@ -286,14 +290,16 @@
         "diedric"
       ],
       "conceptes": [
-        "tetraedre regular",
+        "tetraedre",
         "secció mitjana",
-        "quadrat",
         "vertadera magnitud",
         "canvi de pla",
-        "visibilitat"
+        "visibilitat",
+        "abatiment"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Poliedre regular en dièdric (DT II) construït amb canvi de pla.",
       "pagines": [
         11
       ],
@@ -388,13 +394,14 @@
       ],
       "conceptes": [
         "axonometria isomètrica",
-        "escala",
         "interpretació de vistes",
         "cares inclinades",
-        "secció",
-        "visibilitat"
+        "tall i secció",
+        "coordenades axonomètriques"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         13
       ],
@@ -466,17 +473,23 @@
       "titol": "Axonometria militar d'un cilindre tallat per un pla inclinat amb una ranura i un esglaó",
       "tema": "axonometria",
       "temes_secundaris": [
+        "corbes",
+        "cossos",
         "normalitzacio"
       ],
       "conceptes": [
-        "axonometria militar",
+        "perspectiva militar",
         "cilindre",
         "secció plana",
         "el·lipse",
         "contorn aparent",
-        "interpretació de vistes"
+        "interpretació de vistes",
+        "cares inclinades",
+        "circumferència en axonometria"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (perspectiva militar amb cilindres, cons o arcs): DT II.",
       "pagines": [
         15
       ],
@@ -550,12 +563,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "ortocentre",
-        "altures del triangle",
         "construcció de triangles",
-        "perpendicular",
         "transport d'angles"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Construcció de triangles amb rectes notables i transport d'angles (DT I).",
       "pagines": [
         21
       ],
@@ -619,12 +632,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "tangències",
-        "circumferències concèntriques",
         "lloc geomètric",
-        "punt de tangència",
-        "radi donat"
+        "punt de tangència"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Tangències de radi donat per llocs geomètrics (paral·leles i circumferències concèntriques): DT I.",
       "pagines": [
         23
       ],
@@ -701,6 +714,7 @@
       "titol": "Secció d'un cilindre vertical per un pla definit per tres punts i visibilitat",
       "tema": "cossos",
       "temes_secundaris": [
+        "corbes",
         "diedric"
       ],
       "conceptes": [
@@ -708,10 +722,12 @@
         "secció plana",
         "el·lipse",
         "canvi de pla",
-        "recta horitzontal",
+        "recta horitzontal del pla",
         "visibilitat"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Secció plana d'un cilindre (el·lipse) amb canvi de pla (DT II).",
       "pagines": [
         25
       ],
@@ -792,12 +808,14 @@
       ],
       "conceptes": [
         "triedre trirectangle",
-        "octaedre regular",
+        "octaedre",
         "abatiment",
-        "diagonals",
-        "visibilitat"
+        "visibilitat",
+        "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Triedre trirectangle per abatiment i poliedre regular en dièdric (DT II).",
       "pagines": [
         27
       ],
@@ -874,17 +892,20 @@
       "titol": "Axonometria dimètrica DIN 5 d'un sòlid de base octogonal amb dues crestes i un canal en V",
       "tema": "axonometria",
       "temes_secundaris": [
+        "geometria-plana",
         "normalitzacio"
       ],
       "conceptes": [
         "axonometria dimètrica",
         "coeficients de reducció",
-        "escala",
-        "octàgon",
+        "polígon regular",
         "cares inclinades",
-        "interpretació de vistes"
+        "interpretació de vistes",
+        "coordenades axonomètriques"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         29
       ],
@@ -956,17 +977,20 @@
       "titol": "Axonometria isomètrica d'una làmina plegada amb rampes i trams corbs",
       "tema": "axonometria",
       "temes_secundaris": [
+        "corbes",
         "normalitzacio"
       ],
       "conceptes": [
         "axonometria isomètrica",
-        "escala",
-        "el·lipse isomètrica",
+        "el·lipse",
         "contorn aparent",
-        "plans inclinats",
-        "interpretació de vistes"
+        "cares inclinades",
+        "interpretació de vistes",
+        "circumferència en axonometria"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Sòlid amb corbes en axonometria (el·lipses isomètriques o DIN 5): DT II.",
       "pagines": [
         31
       ],

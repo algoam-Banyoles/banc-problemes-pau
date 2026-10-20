@@ -1,0 +1,110 @@
+{
+  "matrius": [
+    "producte de matrius",
+    "matriu inversa",
+    "determinant",
+    "rang",
+    "equació matricial",
+    "matriu adjunta",
+    "regla de Sarrus",
+    "potència d'una matriu",
+    "matriu idempotent",
+    "matriu involutiva",
+    "dependència lineal",
+    "propietats de les matrius",
+    "igualtat de matrius"
+  ],
+  "sistemes": [
+    "sistema d'equacions lineals",
+    "discussió de sistemes",
+    "teorema de Rouché-Frobenius",
+    "mètode de Gauss",
+    "regla de Cramer",
+    "sistema compatible determinat",
+    "sistema compatible indeterminat",
+    "sistema incompatible",
+    "sistema homogeni"
+  ],
+  "geometria": [
+    "vector director",
+    "vector normal",
+    "producte escalar",
+    "producte vectorial",
+    "producte mixt",
+    "equació del pla",
+    "equacions de la recta",
+    "punt genèric d'una recta",
+    "posició relativa recta-pla",
+    "posició relativa de dues rectes",
+    "posició relativa de plans",
+    "recta perpendicular a un pla",
+    "plans perpendiculars",
+    "plans paral·lels",
+    "intersecció recta-pla",
+    "recta intersecció de dos plans",
+    "distància punt-pla",
+    "distància entre dos punts",
+    "distància entre rectes",
+    "projecció ortogonal",
+    "punt simètric",
+    "punt mitjà",
+    "pla mediador",
+    "perpendicular comuna",
+    "àrea d'un triangle",
+    "volum del tetraedre",
+    "valor absolut"
+  ],
+  "funcions": [
+    "domini",
+    "continuïtat",
+    "límits laterals",
+    "asímptota vertical",
+    "asímptota horitzontal",
+    "asímptota obliqua",
+    "regla de l'Hôpital",
+    "funció definida a trossos",
+    "punts de tall amb els eixos",
+    "esbós de la gràfica",
+    "funció exponencial",
+    "funció logarítmica",
+    "funció racional"
+  ],
+  "derivades": [
+    "recta tangent",
+    "monotonia",
+    "extrems relatius",
+    "extrems absoluts",
+    "punt d'inflexió",
+    "concavitat",
+    "criteri de la derivada segona",
+    "teorema de Bolzano",
+    "gràfica de la derivada",
+    "regla de la cadena",
+    "derivada d'un quocient"
+  ],
+  "optimitzacio": [
+    "teorema de Pitàgores",
+    "àrees de figures planes",
+    "volum de cossos geomètrics",
+    "lligadura",
+    "funció cost"
+  ],
+  "integrals": [
+    "primitiva",
+    "regla de Barrow",
+    "àrea entre corbes",
+    "àrea sota una corba",
+    "integració per parts",
+    "canvi de variable",
+    "integral quasi immediata",
+    "constant d'integració",
+    "punts d'intersecció de corbes"
+  ],
+  "probabilitat": [
+    "probabilitat condicionada",
+    "probabilitat total"
+  ],
+  "estadistica": [
+    "distribució binomial"
+  ]
+}

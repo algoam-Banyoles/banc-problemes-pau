@@ -19,18 +19,21 @@
       "tipus": "problema",
       "punts": 2.5,
       "titol": "Funció a partir de la derivada: inflexió, concavitat i àrea sota f''",
-      "tema": "derivades",
+      "tema": "integrals",
       "temes_secundaris": [
-        "integrals"
+        "derivades"
       ],
       "conceptes": [
         "primitiva",
+        "constant d'integració",
         "punt d'inflexió",
         "concavitat",
-        "àrea entre corba i eix",
+        "àrea sota una corba",
         "regla de Barrow"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Primitiva, concavitat i inflexió, i àrea amb integral, que són de 2n.",
       "pagines": [
         2,
         3
@@ -130,12 +133,15 @@
       ],
       "conceptes": [
         "discussió de sistemes",
-        "teorema de Rouché-Fröbenius",
+        "teorema de Rouché-Frobenius",
         "rang",
         "determinant",
-        "sistema compatible indeterminat"
+        "sistema compatible indeterminat",
+        "sistema incompatible"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         4,
         5
@@ -218,13 +224,16 @@
       "tema": "geometria",
       "temes_secundaris": [],
       "conceptes": [
-        "posició relativa recta i pla",
+        "posició relativa recta-pla",
         "vector director",
         "vector normal",
-        "punt d'intersecció",
-        "recta perpendicular a un pla"
+        "intersecció recta-pla",
+        "recta perpendicular a un pla",
+        "punt genèric d'una recta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         6,
         7
@@ -305,12 +314,15 @@
       ],
       "conceptes": [
         "primitiva",
-        "recta tangent horitzontal",
+        "constant d'integració",
+        "recta tangent",
         "monotonia",
-        "àrea entre corba i eix",
+        "àrea sota una corba",
         "regla de Barrow"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         8,
         9
@@ -395,10 +407,11 @@
       "conceptes": [
         "producte de matrius",
         "igualtat de matrius",
-        "matriu inversa",
-        "matriu identitat"
+        "matriu inversa"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         10,
         11
@@ -473,13 +486,15 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
-        "àrea del trapezi",
+        "àrees de figures planes",
         "teorema de Pitàgores",
-        "derivada",
-        "mínim"
+        "lligadura",
+        "extrems relatius",
+        "regla de la cadena"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         12,
         13

@@ -25,13 +25,16 @@
         "matrius"
       ],
       "conceptes": [
-        "teorema de Rouché-Fröbenius",
+        "teorema de Rouché-Frobenius",
         "rang",
         "determinant",
         "sistema incompatible",
-        "mètode de Gauss"
+        "mètode de Gauss",
+        "discussió de sistemes"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         1
       ],
@@ -111,11 +114,13 @@
       "conceptes": [
         "producte vectorial",
         "vector normal",
-        "equació general del pla",
-        "angle entre plans",
+        "equació del pla",
+        "plans perpendiculars",
         "producte escalar"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         1
       ],
@@ -193,11 +198,13 @@
         "domini",
         "asímptota vertical",
         "asímptota horitzontal",
-        "derivada segona",
-        "màxim relatiu",
-        "discussió de paràmetres"
+        "extrems relatius",
+        "criteri de la derivada segona",
+        "funció racional"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Màxims i mínims relatius amb la derivada segona, que són de 2n.",
       "pagines": [
         1
       ],
@@ -277,12 +284,14 @@
         "matrius"
       ],
       "conceptes": [
-        "teorema de Rouché-Fröbenius",
+        "teorema de Rouché-Frobenius",
         "sistema compatible determinat",
         "determinant",
         "regla de Cramer"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Condició de solució única amb determinant i regla de Cramer amb paràmetre, que són de 2n.",
       "pagines": [
         2
       ],
@@ -357,10 +366,11 @@
       "conceptes": [
         "matriu inversa",
         "determinant",
-        "matriu adjunta",
-        "suma de quadrats"
+        "matriu adjunta"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         2
       ],
@@ -430,13 +440,14 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
-        "volum del con",
+        "volum de cossos geomètrics",
         "teorema de Pitàgores",
-        "derivada",
-        "mínim relatiu"
+        "lligadura",
+        "extrems relatius"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         2
       ],
@@ -516,11 +527,12 @@
       "conceptes": [
         "vector director",
         "producte vectorial",
-        "rectes paral·leles",
-        "equació vectorial del pla",
-        "posició relativa de rectes"
+        "posició relativa de dues rectes",
+        "equació del pla"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         3
       ],
@@ -595,13 +607,16 @@
         "matrius"
       ],
       "conceptes": [
-        "teorema de Rouché-Fröbenius",
+        "teorema de Rouché-Frobenius",
         "mètode de Gauss",
         "rang",
         "sistema compatible indeterminat",
-        "discussió de paràmetres"
+        "discussió de sistemes",
+        "sistema incompatible"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         3
       ],
@@ -677,12 +692,13 @@
       ],
       "conceptes": [
         "recta tangent",
-        "derivada en un punt",
+        "punts de tall amb els eixos",
         "àrea entre corbes",
-        "regla de Barrow",
-        "integral definida"
+        "regla de Barrow"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         3
       ],
@@ -757,10 +773,11 @@
       "conceptes": [
         "potència d'una matriu",
         "producte de matrius",
-        "matriu identitat",
         "matriu inversa"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         4
       ],
@@ -827,17 +844,22 @@
       "titol": "Discussió d'un sistema amb paràmetre a: interpretació geomètrica de tres plans",
       "tema": "sistemes",
       "temes_secundaris": [
-        "geometria",
-        "matrius"
+        "matrius",
+        "geometria"
       ],
       "conceptes": [
-        "teorema de Rouché-Fröbenius",
-        "posició relativa de tres plans",
+        "teorema de Rouché-Frobenius",
+        "posició relativa de plans",
         "determinant",
-        "equació paramètrica del pla",
-        "mètode de Gauss"
+        "equació del pla",
+        "discussió de sistemes",
+        "rang",
+        "sistema compatible indeterminat",
+        "sistema incompatible"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         4
       ],
@@ -917,13 +939,13 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
-        "equació de la recta",
-        "àrea d'un rectangle",
-        "derivada segona",
-        "màxim relatiu"
+        "àrees de figures planes",
+        "extrems relatius",
+        "criteri de la derivada segona"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         4
       ],

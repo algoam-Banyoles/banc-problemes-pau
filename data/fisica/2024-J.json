@@ -28,9 +28,12 @@
         "període orbital",
         "energia mecànica orbital",
         "velocitat d'escapament",
-        "força centrípeta"
+        "força centrípeta",
+        "MCU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): velocitat orbital, període orbital",
       "pagines": [
         2
       ],
@@ -116,12 +119,13 @@
       "conceptes": [
         "moviment harmònic simple",
         "constant elàstica",
-        "energia mecànica",
-        "energia cinètica",
-        "energia potencial elàstica",
-        "moviment circular uniforme"
+        "energia en el MHS",
+        "conservació de l'energia",
+        "MCU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "MHS i energia de l'oscil·lador (2n); el moviment circular del disc és de 1r",
       "pagines": [
         4
       ],
@@ -216,12 +220,12 @@
       ],
       "conceptes": [
         "camp elèctric",
-        "llei de coulomb",
-        "força elèctrica",
-        "equilibri de forces",
-        "càrrega elèctrica"
+        "llei de Coulomb",
+        "equilibri de forces"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, llei de coulomb",
       "pagines": [
         6
       ],
@@ -300,10 +304,12 @@
       "conceptes": [
         "camp magnètic d'un fil",
         "regla de la mà dreta",
-        "força de lorentz",
+        "força de Lorentz",
         "línies de camp magnètic"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): camp magnètic d'un fil, regla de la mà dreta",
       "pagines": [
         8
       ],
@@ -382,11 +388,11 @@
       "conceptes": [
         "nivell d'intensitat sonora",
         "intensitat sonora",
-        "potència sonora",
-        "decibels",
-        "ona esfèrica"
+        "potència sonora"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): nivell d'intensitat sonora, intensitat sonora",
       "pagines": [
         10
       ],
@@ -466,13 +472,16 @@
       ],
       "conceptes": [
         "desintegració alfa",
-        "activitat radioactiva",
+        "activitat",
         "període de semidesintegració",
         "constant de desintegració",
-        "energia potencial electrostàtica",
-        "treball del camp elèctric"
+        "energia potencial elèctrica",
+        "treball elèctric",
+        "equació nuclear"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, activitat radioactiva",
       "pagines": [
         12
       ],
@@ -562,15 +571,19 @@
       "punts": 2.5,
       "titol": "Efecte fotoelèctric: treball d'extracció, potencial de frenada i longitud d'ona de De Broglie",
       "tema": "quantica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "camp-electric"
+      ],
       "conceptes": [
         "efecte fotoelèctric",
         "treball d'extracció",
         "potencial de frenada",
-        "longitud d'ona de de broglie",
+        "longitud d'ona de De Broglie",
         "freqüència llindar"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, treball d'extracció",
       "pagines": [
         14
       ],

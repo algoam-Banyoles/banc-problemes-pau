@@ -26,11 +26,11 @@
       "conceptes": [
         "dependència lineal",
         "determinant",
-        "rang",
-        "combinació lineal",
         "sistema d'equacions lineals"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         1
       ],
@@ -106,16 +106,18 @@
       "titol": "Paràmetres d'un polinomi cúbic a partir d'un extrem relatiu i una integral definida",
       "tema": "derivades",
       "temes_secundaris": [
-        "integrals"
+        "integrals",
+        "sistemes"
       ],
       "conceptes": [
-        "extrem relatiu",
-        "derivada",
-        "integral definida",
+        "extrems relatius",
         "regla de Barrow",
-        "sistema d'equacions lineals"
+        "sistema d'equacions lineals",
+        "primitiva"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Condició d'extrem relatiu i integral definida, que són de 2n.",
       "pagines": [
         1
       ],
@@ -176,9 +178,11 @@
         "vector normal",
         "vector director",
         "producte escalar",
-        "equació contínua de la recta"
+        "equacions de la recta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         1
       ],
@@ -253,6 +257,8 @@
         "sistema d'equacions lineals"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         2
       ],
@@ -316,11 +322,13 @@
       "conceptes": [
         "recta perpendicular a un pla",
         "vector normal",
-        "equació contínua de la recta",
+        "equacions de la recta",
         "projecció ortogonal",
-        "punt més proper"
+        "intersecció recta-pla"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         2
       ],
@@ -389,13 +397,15 @@
         "derivades"
       ],
       "conceptes": [
-        "optimització",
-        "volum de la piràmide",
+        "volum de cossos geomètrics",
         "teorema de Pitàgores",
-        "derivada",
-        "apotema"
+        "lligadura",
+        "extrems relatius",
+        "regla de la cadena"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Optimització amb derivades, que és de 2n.",
       "pagines": [
         2
       ],

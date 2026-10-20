@@ -26,11 +26,14 @@
       "conceptes": [
         "velocitat orbital",
         "període orbital",
-        "energia mecànica",
-        "velocitat de llançament",
-        "força centrípeta"
+        "energia mecànica orbital",
+        "conservació de l'energia",
+        "força centrípeta",
+        "MCU"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): velocitat orbital, període orbital",
       "pagines": [
         2
       ],
@@ -113,11 +116,12 @@
       "temes_secundaris": [],
       "conceptes": [
         "potencial elèctric",
-        "superfícies equipotencials",
-        "línies de camp",
-        "càrrega puntual"
+        "línies de camp i equipotencials",
+        "camp elèctric"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): potencial elèctric, superfícies equipotencials",
       "pagines": [
         4
       ],
@@ -195,12 +199,15 @@
       "temes_secundaris": [],
       "conceptes": [
         "ones estacionàries",
-        "tub tancat per un extrem",
-        "freqüència fonamental",
+        "tubs sonors",
+        "harmònics",
         "nivell d'intensitat sonora",
-        "intensitat sonora"
+        "intensitat sonora",
+        "longitud d'ona"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub tancat per un extrem",
       "pagines": [
         6
       ],
@@ -284,11 +291,13 @@
       "conceptes": [
         "camp magnètic d'un fil",
         "regla de la mà dreta",
-        "superposició de camps",
+        "principi de superposició",
         "força entre corrents",
         "força de Lorentz"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): camp magnètic d'un fil, regla de la mà dreta",
       "pagines": [
         8
       ],
@@ -370,13 +379,14 @@
       "tema": "nuclear",
       "temes_secundaris": [],
       "conceptes": [
-        "desintegració radioactiva",
+        "llei de desintegració radioactiva",
         "període de semidesintegració",
         "constant de desintegració",
-        "activitat",
-        "radó"
+        "activitat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració radioactiva, període de semidesintegració",
       "pagines": [
         10
       ],
@@ -456,15 +466,19 @@
       "punts": 2.5,
       "titol": "Efecte fotoelèctric: efecte de la freqüència i funció de treball",
       "tema": "quantica",
-      "temes_secundaris": [],
+      "temes_secundaris": [
+        "camp-electric"
+      ],
       "conceptes": [
         "efecte fotoelèctric",
-        "funció de treball",
+        "treball d'extracció",
         "potencial de frenada",
         "energia del fotó",
-        "intensitat de la llum"
+        "nombre de fotons"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, funció de treball",
       "pagines": [
         12
       ],
@@ -541,13 +555,13 @@
       "tema": "induccio",
       "temes_secundaris": [],
       "conceptes": [
-        "corrent altern",
         "alternador",
-        "freqüència angular",
         "transformador",
-        "valor eficaç"
+        "freqüència angular"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Inducció electromagnètica (Física de 2n): corrent altern, alternador",
       "pagines": [
         13
       ],
@@ -629,11 +643,12 @@
       "conceptes": [
         "energia del fotó",
         "massa equivalent",
-        "quantitat de moviment del fotó",
-        "desplaçament gravitatori cap al roig",
-        "conservació de l'energia"
+        "conservació de l'energia",
+        "energia potencial gravitatòria"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Física relativista (Física de 2n): energia del fotó, massa equivalent",
       "pagines": [
         15
       ],

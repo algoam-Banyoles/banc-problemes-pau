@@ -30,9 +30,12 @@
         "rang",
         "determinant",
         "sistema compatible indeterminat",
-        "posició relativa de plans"
+        "posició relativa de plans",
+        "sistema incompatible"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
       "pagines": [
         2,
         3
@@ -119,16 +122,18 @@
       "titol": "Recta tangent i normal a y = 4/x i àrea entre la hipèrbola, la tangent i l'eix OX",
       "tema": "integrals",
       "temes_secundaris": [
-        "derivades"
+        "derivades",
+        "funcions"
       ],
       "conceptes": [
         "recta tangent",
-        "recta normal",
-        "àrea entre corbes",
+        "àrea sota una corba",
         "regla de Barrow",
-        "logaritme neperià"
+        "esbós de la gràfica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
       "pagines": [
         4,
         5
@@ -213,7 +218,6 @@
         "matrius"
       ],
       "conceptes": [
-        "punts coplanaris",
         "producte mixt",
         "volum del tetraedre",
         "dependència lineal",
@@ -221,6 +225,8 @@
         "valor absolut"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
       "pagines": [
         6,
         7
@@ -292,17 +298,19 @@
       "titol": "Gràfica de la derivada a partir de la de f i paràmetres d'una cúbica amb inflexió donada",
       "tema": "derivades",
       "temes_secundaris": [
-        "funcions"
+        "funcions",
+        "sistemes"
       ],
       "conceptes": [
         "gràfica de la derivada",
         "monotonia",
         "extrems relatius",
         "punt d'inflexió",
-        "derivada segona",
-        "sistema d'equacions"
+        "sistema d'equacions lineals"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Monotonia a partir de la gràfica i punt d'inflexió amb f'', que són de 2n.",
       "pagines": [
         8,
         9
@@ -388,10 +396,11 @@
         "determinant",
         "matriu inversa",
         "matriu adjunta",
-        "equació matricial",
-        "paràmetre"
+        "equació matricial"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
       "pagines": [
         10,
         11
@@ -486,14 +495,16 @@
         "funcions"
       ],
       "conceptes": [
-        "punts crítics",
+        "extrems relatius",
         "monotonia",
         "punt d'inflexió",
-        "mínim relatiu",
         "teorema de Bolzano",
-        "derivada d'un quocient"
+        "derivada d'un quocient",
+        "continuïtat"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Punts crítics, monotonia i teorema de Bolzano, que són de 2n.",
       "pagines": [
         12,
         13

@@ -25,12 +25,14 @@
       ],
       "conceptes": [
         "semblança",
-        "escales",
+        "escala",
         "homotècia",
         "tangències",
         "transport d'angles"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Figura semblant a escala doble amb enllaços tangents: semblança i tangències bàsiques (DT I).",
       "pagines": [
         5
       ],
@@ -112,10 +114,11 @@
         "tangències",
         "homotècia",
         "bisectriu",
-        "punts de tangència",
-        "circumferències tangents"
+        "punt de tangència"
       ],
       "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Cas PRR resolt per homotècia simple des del vèrtex (semblança, DT I); la potència només surt com a alternativa.",
       "pagines": [
         7
       ],
@@ -185,12 +188,14 @@
       ],
       "conceptes": [
         "canvi de pla",
-        "nou alçat",
         "cotes",
         "visibilitat",
-        "interpretació de vistes"
+        "interpretació de vistes",
+        "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Nova projecció d'una peça per canvi de pla: operativitat dièdrica (DT II).",
       "pagines": [
         9
       ],
@@ -264,13 +269,16 @@
         "cossos"
       ],
       "conceptes": [
-        "intersecció pla-prisma",
+        "secció plana",
         "canvi de pla",
         "pla projectant",
         "visibilitat",
-        "prisma oblic"
+        "prisma",
+        "vertadera magnitud"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Secció plana d'un sòlid en dièdric per canvi de pla (DT II).",
       "pagines": [
         11
       ],
@@ -364,13 +372,16 @@
         "normalitzacio"
       ],
       "conceptes": [
-        "dimètrica DIN 5",
+        "axonometria dimètrica",
         "coeficients de reducció",
-        "escala doble",
         "interpretació de vistes",
-        "plans inclinats"
+        "cares inclinades",
+        "prisma envolupant",
+        "coordenades axonomètriques"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         13
       ],
@@ -450,12 +461,14 @@
       ],
       "conceptes": [
         "perspectiva militar",
-        "escala doble",
         "tronc de piràmide",
-        "plans inclinats",
-        "interpretació de vistes"
+        "cares inclinades",
+        "interpretació de vistes",
+        "coordenades axonomètriques"
       ],
       "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Sòlid polièdric en axonometria amb coeficients de reducció i interpretació de vistes (DT I).",
       "pagines": [
         15
       ],

@@ -27,11 +27,16 @@
       "conceptes": [
         "òrbita circular",
         "període orbital",
-        "gravetat superficial",
+        "intensitat del camp gravitatori",
         "caiguda lliure",
-        "tercera llei de kepler"
+        "tercera llei de Kepler",
+        "MRUA",
+        "MCU",
+        "força centrípeta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, període orbital",
       "pagines": [
         1
       ],
@@ -107,18 +112,15 @@
       "punts": 2,
       "titol": "Relé electromagnètic: sentit del corrent a la bobina, línies de camp i efecte de diverses modificacions",
       "tema": "camp-magnetic",
-      "temes_secundaris": [
-        "induccio"
-      ],
+      "temes_secundaris": [],
       "conceptes": [
-        "bobina",
-        "electroimant",
+        "camp magnètic d'una espira o bobina",
         "línies de camp magnètic",
-        "pols magnètics",
-        "material ferromagnètic",
-        "corrent altern"
+        "regla de la mà dreta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): bobina, electroimant",
       "pagines": [
         2
       ],
@@ -204,12 +206,15 @@
       ],
       "conceptes": [
         "equació d'ona",
-        "període",
+        "freqüència angular",
         "longitud d'ona",
         "velocitat de propagació",
-        "velocitat d'oscil·lació"
+        "velocitat i acceleració màximes",
+        "ona transversal"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): equació d'ona, període",
       "pagines": [
         2
       ],
@@ -298,11 +303,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "energia potencial elèctrica",
-        "llei de coulomb",
+        "llei de Coulomb",
         "treball elèctric",
         "camp elèctric uniforme"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): energia potencial elèctrica, llei de coulomb",
       "pagines": [
         3
       ],
@@ -378,10 +385,11 @@
         "període de semidesintegració",
         "llei de desintegració radioactiva",
         "desintegració beta",
-        "antineutrí",
-        "equacions nuclears"
+        "equació nuclear"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): període de semidesintegració, llei de desintegració radioactiva",
       "pagines": [
         3
       ],
@@ -460,12 +468,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "moviment harmònic simple",
-        "equació del moviment",
-        "fase inicial",
-        "velocitat màxima",
-        "acceleració màxima"
+        "equació del MHS",
+        "velocitat i acceleració màximes",
+        "freqüència angular"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, equació del moviment",
       "pagines": [
         3
       ],
@@ -544,11 +553,13 @@
       "temes_secundaris": [],
       "conceptes": [
         "camp elèctric uniforme",
-        "superfícies equipotencials",
+        "línies de camp i equipotencials",
         "diferència de potencial",
         "treball elèctric"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, superfícies equipotencials",
       "pagines": [
         4
       ],
@@ -637,6 +648,8 @@
         "activitat"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): constant de desintegració, període de semidesintegració",
       "pagines": [
         4
       ],
@@ -706,10 +719,12 @@
       "conceptes": [
         "intensitat del camp gravitatori",
         "velocitat d'escapament",
-        "conservació de l'energia mecànica",
+        "conservació de l'energia",
         "energia potencial gravitatòria"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp gravitatori (Física de 2n): intensitat del camp gravitatori, velocitat d'escapament",
       "pagines": [
         5
       ],
@@ -788,6 +803,8 @@
         "diferència de fase"
       ],
       "dificultat": 1,
+      "curs": "2n",
+      "curs_motiu": "Ones i so (Física de 2n): equació d'ona, velocitat de propagació",
       "pagines": [
         5
       ],
@@ -862,13 +879,13 @@
         "optica"
       ],
       "conceptes": [
-        "fotó",
         "energia del fotó",
-        "quantitat de moviment",
-        "longitud d'ona de de broglie",
-        "dualitat ona-partícula"
+        "longitud d'ona de De Broglie",
+        "espectre electromagnètic"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física quàntica (Física de 2n): fotó, energia del fotó",
       "pagines": [
         6
       ],
@@ -940,16 +957,19 @@
       "titol": "Selector de velocitats per a ions He⁺: sentit del camp elèctric, camp magnètic i radi de l'òrbita",
       "tema": "camp-magnetic",
       "temes_secundaris": [
-        "camp-electric"
+        "camp-electric",
+        "mecanica"
       ],
       "conceptes": [
         "selector de velocitats",
-        "força de lorentz",
-        "força magnètica",
-        "moviment circular",
-        "radi de l'òrbita"
+        "força de Lorentz",
+        "MCU",
+        "radi de la trajectòria",
+        "regla de la mà dreta"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): selector de velocitats, força de lorentz",
       "pagines": [
         6
       ],
@@ -1032,12 +1052,14 @@
       "tema": "camp-electric",
       "temes_secundaris": [],
       "conceptes": [
-        "llei de coulomb",
+        "llei de Coulomb",
         "principi de superposició",
         "potencial elèctric",
         "energia potencial elèctrica"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, principi de superposició",
       "pagines": [
         7
       ],
@@ -1119,9 +1141,13 @@
         "desintegració beta",
         "sèrie radioactiva",
         "període de semidesintegració",
-        "llei de desintegració radioactiva"
+        "llei de desintegració radioactiva",
+        "equació nuclear",
+        "constant de desintegració"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, desintegració beta",
       "pagines": [
         7
       ],
@@ -1194,12 +1220,13 @@
       "tema": "camp-magnetic",
       "temes_secundaris": [],
       "conceptes": [
-        "força magnètica sobre un corrent",
-        "producte vectorial",
-        "línies de camp magnètic",
-        "motor elèctric"
+        "força sobre un corrent",
+        "regla de la mà dreta",
+        "línies de camp magnètic"
       ],
       "dificultat": 2,
+      "curs": "2n",
+      "curs_motiu": "Camp magnètic (Física de 2n): força magnètica sobre un corrent, producte vectorial",
       "pagines": [
         7
       ],
@@ -1274,13 +1301,15 @@
         "mecanica"
       ],
       "conceptes": [
-        "llei de coulomb",
+        "llei de Coulomb",
         "camp elèctric",
         "força centrípeta",
-        "energia mecànica",
-        "electronvolt"
+        "energia potencial elèctrica",
+        "MCU"
       ],
       "dificultat": 3,
+      "curs": "2n",
+      "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, camp elèctric",
       "pagines": [
         8
       ],
