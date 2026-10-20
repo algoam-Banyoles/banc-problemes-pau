@@ -1,0 +1,686 @@
+{
+  "examen": {
+    "id": "fisica-2015-S",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2015,
+    "convocatoria": "setembre",
+    "serie": "5",
+    "pdf_examen": "pdfs/fisica/2015-S-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2015-S-solucio.pdf",
+    "estructura": "Part comuna obligatòria (P1 i P2) i part optativa: cal escollir UNA de les dues opcions (A o B) i fer-ne els problemes P3, P4 i P5. Cada problema val 2 punts (dos apartats d'1 punt)."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2015-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Massa de Mart, radi de l'òrbita de Deimos i velocitat d'escapament",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "acceleració de la gravetat",
+        "massa d'un planeta",
+        "tercera llei de Kepler",
+        "òrbita circular",
+        "velocitat d'escapament"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "El 1877, l'astrònom Asaph Hall va descobrir els satèl·lits del planeta Mart: Fobos i Deimos. El dia 6 d'agost de 2012, el robot *Curiosity* va arribar al planeta Mart i des de llavors envia informació a la Terra sobre les característiques d'aquest planeta. A partir de les dades subministrades, calculeu:\n\n**Dades:** radi de Mart, $R_\\text{Mart} = 3\\,390\\ \\text{km}$; acceleració de la gravetat en la superfície de Mart, $g_\\text{Mart} = 3{,}71\\ \\text{m s}^{-2}$; període orbital de Deimos, $T_\\text{Deimos} = 30{,}35\\ \\text{h}$; massa de Deimos, $m_\\text{Deimos} = 2 \\times 10^{15}\\ \\text{kg}$; $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La massa del planeta Mart.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El radi de l'òrbita de Deimos i la velocitat d'escapament del robot *Curiosity* des de la superfície del planeta.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $R_M = 3\\,390\\ \\text{km} = 3{,}390 \\times 10^{6}\\ \\text{m}$\n- $g_M = 3{,}71\\ \\text{m/s}^2$\n- $T_D = 30{,}35\\ \\text{h} = 30{,}35 \\cdot 3\\,600 = 1{,}093 \\times 10^{5}\\ \\text{s}$\n- $m_D = 2 \\times 10^{15}\\ \\text{kg}$ (no caldrà: la massa del satèl·lit se simplifica)\n- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2/\\text{kg}^2$\n- Incògnites: a) massa de Mart $M_M$; b) radi orbital de Deimos $r_D$ i velocitat d'escapament $v_\\text{esc}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "El pes a la superfície és la força gravitatòria",
+            "cos": "Un cos de massa $m$ a la superfície de Mart pesa $m g_M$, i aquest pes és precisament la força d'atracció gravitatòria de Mart a una distància $R_M$ del seu centre:\n\n$$m\\,g_M = G\\frac{M_M\\,m}{R_M^2} \\quad\\Rightarrow\\quad M_M = \\frac{g_M R_M^2}{G}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul de la massa de Mart",
+            "cos": "$$M_M = \\frac{3{,}71 \\cdot (3{,}390 \\times 10^{6})^2}{6{,}67 \\times 10^{-11}} = 6{,}39 \\times 10^{23}\\ \\text{kg}$$\n\nResultat: **$M_M = 6{,}39 \\times 10^{23}\\ \\text{kg}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "La força gravitatòria fa de força centrípeta",
+            "cos": "Deimos descriu (aproximadament) una òrbita circular al voltant de Mart. La força gravitatòria que Mart exerceix sobre Deimos és la força centrípeta del moviment circular:\n\n$$G\\frac{M_M m_D}{r_D^2} = m_D\\,\\omega^2 r_D = m_D\\left(\\frac{2\\pi}{T_D}\\right)^2 r_D$$\n\nLa massa de Deimos se simplifica i, aïllant el radi (és la tercera llei de Kepler):\n\n$$r_D = \\sqrt[3]{\\frac{G M_M T_D^2}{4\\pi^2}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Radi de l'òrbita de Deimos",
+            "cos": "$$r_D = \\sqrt[3]{\\frac{6{,}67 \\times 10^{-11} \\cdot 6{,}39 \\times 10^{23} \\cdot (1{,}093 \\times 10^{5})^2}{4\\pi^2}} = 2{,}345 \\times 10^{7}\\ \\text{m}$$\n\nResultat: **$r_D \\approx 2{,}35 \\times 10^{7}\\ \\text{m} \\approx 23\\,500\\ \\text{km}$** (unes 7 vegades el radi de Mart)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat d'escapament",
+            "cos": "La velocitat d'escapament és la velocitat mínima que cal donar a un cos a la superfície perquè arribi a l'infinit (on $E_p = 0$) amb velocitat nul·la. Per conservació de l'energia, la seva energia mecànica ha de ser zero:\n\n$$E_m = \\frac{1}{2}m v_\\text{esc}^2 - G\\frac{M_M m}{R_M} = 0 \\quad\\Rightarrow\\quad v_\\text{esc} = \\sqrt{\\frac{2 G M_M}{R_M}}$$\n\n$$v_\\text{esc} = \\sqrt{\\frac{2 \\cdot 6{,}67 \\times 10^{-11} \\cdot 6{,}39 \\times 10^{23}}{3{,}390 \\times 10^{6}}} = 5\\,015\\ \\text{m/s}$$\n\n(Equivalentment, $v_\\text{esc} = \\sqrt{2 g_M R_M}$.) No depèn de la massa del robot.\n\nResultat: **$v_\\text{esc} \\approx 5{,}0 \\times 10^{3}\\ \\text{m/s} \\approx 5\\ \\text{km/s}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$M_M = 6{,}39 \\times 10^{23}\\ \\text{kg}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$r_D \\approx 2{,}35 \\times 10^{7}\\ \\text{m}$; $v_\\text{esc} \\approx 5\\,015\\ \\text{m/s} \\approx 5\\ \\text{km/s}$"
+          }
+        ],
+        "nota": "La solució oficial dona $r_D = 2{,}3479 \\times 10^{7}\\ \\text{m}$; amb les dades de l'enunciat surt $2{,}345 \\times 10^{7}\\ \\text{m}$ (diferència d'arrodoniment, d'un 0,1 %). La massa de Deimos és una dada que no cal fer servir."
+      }
+    },
+    {
+      "id": "fisica-2015-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Efecte Doppler a partir d'una gràfica i nivell d'intensitat sonora d'una font puntual",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte Doppler",
+        "intensitat sonora",
+        "nivell d'intensitat sonora",
+        "decibel",
+        "potència sonora",
+        "font puntual"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Hem construït aquesta gràfica a partir de dades de freqüència recollides quan una font de so es movia acostant-se a nosaltres (velocitats positives) o allunyant-se'n (velocitats negatives), a velocitats diferents.\n\n**Dada:** intensitat del llindar d'audició (0 dB), $I_0 = 1{,}00 \\times 10^{-12}\\ \\text{W m}^{-2}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2015-S/e2.png",
+          "peu": "Freqüència percebuda (Hz) en funció de la velocitat de la font (m/s); positiva quan s'acosta"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Com s'anomena el fenomen que hem estudiat en aquest experiment? La font de so s'acosta a nosaltres amb un moviment rectilini uniforme (MRU) a $100\\ \\text{m s}^{-1}$ i ens sobrepassa. Quin canvi de freqüència (expressada en Hz) sentirem en el moment en què passi just pel nostre costat? La freqüència que sentirem augmentarà o disminuirà?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La taula següent mostra com disminueix la intensitat sonora quan ens situem a diferents distàncies d'un emissor puntual de so.\n\n| Distància (m) | 5,0 | 10,0 | 15,0 | 20,0 | 25,0 | 30,0 | 35,0 |\n|---|---|---|---|---|---|---|---|\n| $I$ (mW m⁻²) | 0,080 | 0,020 | 0,0089 | 0,0050 | 0,0032 | 0,0022 | 0,0016 |\n\nCalculeu a quina distància, aproximadament, haurem d'estar perquè el nivell de sensació sonora sigui de 65 dB i calculeu la potència de la font sonora, suposant que emet igual en totes les direccions.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- De la gràfica: freqüència percebuda $f$ segons la velocitat $v$ de la font (positiva si s'acosta).\n- Velocitat de la font: $100\\ \\text{m/s}$\n- Taula $I(r)$ (atenció: en mW/m², $1\\ \\text{mW/m}^2 = 10^{-3}\\ \\text{W/m}^2$).\n- $\\beta = 65\\ \\text{dB}$, $I_0 = 1{,}00 \\times 10^{-12}\\ \\text{W/m}^2$\n- Incògnites: a) nom del fenomen i salt de freqüència $\\Delta f$; b) distància $r$ i potència $P$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Nom del fenomen",
+            "cos": "La freqüència que percebem canvia segons la velocitat amb què la font s'acosta o s'allunya: és l'**efecte Doppler**. Quan la font s'acosta, els fronts d'ona ens arriben més junts (freqüència més alta); quan s'allunya, més separats (freqüència més baixa)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Lectura de la gràfica",
+            "cos": "Mentre la font s'acosta a $100\\ \\text{m/s}$ ($v = +100$), la gràfica dona $f_\\text{abans} \\approx 240\\ \\text{Hz}$. Un cop ens ha sobrepassat, s'allunya a $100\\ \\text{m/s}$ ($v = -100$) i la gràfica dona $f_\\text{després} \\approx 130\\ \\text{Hz}$.\n\n(Comprovació amb la fórmula de Doppler, amb $f_0 \\approx 170\\ \\text{Hz}$ a $v = 0$ i $v_\\text{so} = 340\\ \\text{m/s}$: $f = f_0\\frac{v_\\text{so}}{v_\\text{so} \\mp v_F}$ dona $170\\cdot\\frac{340}{240} = 241\\ \\text{Hz}$ i $170\\cdot\\frac{340}{440} = 131\\ \\text{Hz}$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Canvi de freqüència",
+            "cos": "En el moment que la font passa pel nostre costat, la freqüència salta del valor d'apropament al d'allunyament:\n\n$$\\Delta f = f_\\text{després} - f_\\text{abans} = 130 - 240 = -110\\ \\text{Hz}$$\n\nResultat: **la freqüència disminueix uns $110\\ \\text{Hz}$** (el so passa de més agut a més greu)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat que correspon a 65 dB",
+            "cos": "El nivell d'intensitat sonora (en decibels) és:\n\n$$\\beta = 10\\log\\frac{I}{I_0} \\quad\\Rightarrow\\quad I = I_0 \\cdot 10^{\\beta/10}$$\n\n$$I = 1{,}00 \\times 10^{-12} \\cdot 10^{6{,}5} = 3{,}16 \\times 10^{-6}\\ \\text{W/m}^2 = 0{,}0032\\ \\text{mW/m}^2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Distància (lectura de la taula)",
+            "cos": "A la taula, la intensitat $0{,}0032\\ \\text{mW/m}^2$ correspon a la distància **$r \\approx 25\\ \\text{m}$**.\n\n(Es pot comprovar amb la llei de l'invers del quadrat: $I \\propto 1/r^2$, de manera que $r = 5\\sqrt{0{,}080/0{,}00316} \\approx 25\\ \\text{m}$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència de la font",
+            "cos": "Una font puntual que emet igual en totes direccions reparteix la seva potència sobre una esfera de radi $r$, de superfície $4\\pi r^2$:\n\n$$I = \\frac{P}{4\\pi r^2} \\quad\\Rightarrow\\quad P = I \\cdot 4\\pi r^2$$\n\n$$P = 3{,}2 \\times 10^{-6} \\cdot 4\\pi \\cdot 25^2 = 0{,}025\\ \\text{W}$$\n\nResultat: **$P \\approx 0{,}025\\ \\text{W} = 25\\ \\text{mW}$** (qualsevol fila de la taula dona el mateix, p. ex. $0{,}080 \\times 10^{-3} \\cdot 4\\pi \\cdot 5^2 = 0{,}025\\ \\text{W}$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Efecte Doppler; $\\Delta f = 130 - 240 = -110\\ \\text{Hz}$: la freqüència disminueix"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I = 3{,}2 \\times 10^{-6}\\ \\text{W/m}^2 \\Rightarrow r \\approx 25\\ \\text{m}$; $P \\approx 0{,}025\\ \\text{W}$"
+          }
+        ],
+        "nota": "Error típic: oblidar que la taula està en **mW/m²** i comparar directament amb $3{,}2 \\times 10^{-6}\\ \\text{W/m}^2$."
+      }
+    },
+    {
+      "id": "fisica-2015-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Desintegració alfa del radó 222 i fotó gamma de 5,50 MeV",
+      "tema": "nuclear",
+      "temes_secundaris": [
+        "quantica"
+      ],
+      "conceptes": [
+        "desintegració alfa",
+        "equació nuclear",
+        "radiació gamma",
+        "energia del fotó",
+        "longitud d'ona"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "El radó 222, de símbol Rn, és un gas noble responsable de bona part de l'exposició de les persones a les radiacions ionitzants. El $^{222}\\text{Rn}$ es forma al subsòl a partir del radi (Ra) i a causa del seu estat gasós es difon cap a l'atmosfera.\n\n**Dades:** nombres atòmics: Bi, 83; Po, 84; At, 85; Rn, 86; Fr, 87; Ra, 88; Ac, 89. $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$; constant de Planck, $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$; velocitat de la llum, $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quan el $^{222}\\text{Rn}$ es desintegra emet partícules $\\alpha$. Escriviu l'equació nuclear d'aquest procés de desintegració.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "A més de la radiació $\\alpha$, durant el procés de desintegració també s'emeten raigs $\\gamma$ (no cal que els incloguem en l'equació de l'apartat anterior). Calculeu la freqüència i la longitud d'ona d'un fotó $\\gamma$ d'energia $5{,}50\\ \\text{MeV}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Radó: $Z = 86$, $A = 222$\n- Partícula alfa: nucli d'heli, $^{4}_{2}\\text{He}$\n- $E_\\gamma = 5{,}50\\ \\text{MeV}$, $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$\n- Incògnites: a) equació nuclear; b) freqüència $f$ i longitud d'ona $\\lambda$ del fotó."
+          },
+          {
+            "apartat": "a",
+            "titol": "Conservació del nombre màssic i del nombre atòmic",
+            "cos": "En una desintegració $\\alpha$ el nucli expulsa un nucli d'heli $^{4}_{2}\\text{He}$. Com que es conserven el nombre màssic $A$ i la càrrega $Z$:\n\n$$A' = 222 - 4 = 218, \\qquad Z' = 86 - 2 = 84$$\n\nL'element de $Z = 84$ és el poloni (Po)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació nuclear",
+            "cos": "$$^{222}_{86}\\text{Rn} \\longrightarrow\\ ^{218}_{84}\\text{Po} +\\ ^{4}_{2}\\text{He}$$\n\nResultat: **$^{222}_{86}\\text{Rn} \\to\\ ^{218}_{84}\\text{Po} +\\ ^{4}_{2}\\alpha$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia del fotó en joules",
+            "cos": "$$E = 5{,}50 \\times 10^{6}\\ \\text{eV} \\cdot 1{,}60 \\times 10^{-19}\\ \\frac{\\text{J}}{\\text{eV}} = 8{,}80 \\times 10^{-13}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Freqüència (relació de Planck)",
+            "cos": "L'energia d'un fotó és proporcional a la seva freqüència, $E = h f$:\n\n$$f = \\frac{E}{h} = \\frac{8{,}80 \\times 10^{-13}}{6{,}63 \\times 10^{-34}} = 1{,}33 \\times 10^{21}\\ \\text{Hz}$$\n\nResultat: **$f = 1{,}33 \\times 10^{21}\\ \\text{Hz}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud d'ona",
+            "cos": "Els raigs $\\gamma$ són ones electromagnètiques i es propaguen a la velocitat de la llum, $c = \\lambda f$:\n\n$$\\lambda = \\frac{c}{f} = \\frac{3{,}00 \\times 10^{8}}{1{,}33 \\times 10^{21}} = 2{,}26 \\times 10^{-13}\\ \\text{m}$$\n\nResultat: **$\\lambda = 2{,}26 \\times 10^{-13}\\ \\text{m}$** (més petita que un àtom: radiació molt energètica)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$^{222}_{86}\\text{Rn} \\to\\ ^{218}_{84}\\text{Po} +\\ ^{4}_{2}\\text{He}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$f = 1{,}33 \\times 10^{21}\\ \\text{Hz}$; $\\lambda = 2{,}26 \\times 10^{-13}\\ \\text{m}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2015-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Dues esferes carregades penjades en equilibri: massa i camp elèctric al punt de suspensió",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "llei de Coulomb",
+        "equilibri de forces",
+        "tensió del fil",
+        "camp elèctric",
+        "principi de superposició"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Dues esferes metàl·liques massisses pengen cadascuna d'un fil no conductor, com mostra la figura. Les dues esferes tenen la mateixa massa i la mateixa càrrega negativa de valor $-5{,}80\\ \\mu\\text{C}$ i es troben en equilibri formant un angle de $30°$ amb la vertical. La distància des del punt $P$ fins al centre de cada esfera és d'$1{,}00\\ \\text{m}$.\n\n**Dades:** $g = 9{,}81\\ \\text{m s}^{-2}$; $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2015-S/e4-a.png",
+          "peu": "Dues esferes penjades del punt P amb fils d'1,00 m que formen 30° amb la vertical"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el valor de la massa de cadascuna de les esferes.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el camp elèctric total (mòdul, direcció i sentit) en el punt $P$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Càrrega de cada esfera: $q = -5{,}80\\ \\mu\\text{C} = -5{,}80 \\times 10^{-6}\\ \\text{C}$\n- Longitud del fil: $L = 1{,}00\\ \\text{m}$; angle amb la vertical: $\\theta = 30°$\n- $g = 9{,}81\\ \\text{m/s}^2$, $k = 8{,}99 \\times 10^{9}\\ \\text{N m}^2/\\text{C}^2$\n- Incògnites: a) massa $m$ de cada esfera; b) camp elèctric $\\vec E_P$ al punt $P$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Geometria: distància entre les esferes",
+            "cos": "Cada esfera està separada de la vertical una distància horitzontal\n\n$$x = L\\sin 30° = 1{,}00 \\cdot 0{,}5 = 0{,}50\\ \\text{m}$$\n\ni per tant la distància entre els centres de les dues esferes és $d = 2x = 1{,}00\\ \\text{m}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Forces sobre una esfera",
+            "cos": "Sobre cada esfera actuen tres forces: el pes $mg$ (vertical, cap avall), la tensió del fil $T$ (en la direcció del fil, cap a $P$) i la força elèctrica de repulsió $F_e$ (horitzontal, cap enfora, perquè les dues càrregues tenen el mateix signe):\n\n![Esquema de forces sobre l'esfera i camp en P (solució oficial)](img/fisica/2015-S/e4-a-sol.png)\n\n$$F_e = k\\frac{q^2}{(2x)^2}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Condició d'equilibri",
+            "cos": "En equilibri la força resultant és nul·la. Descomponem la tensió en components horitzontal i vertical:\n\n$$T\\sin 30° = k\\frac{q^2}{(2x)^2}, \\qquad T\\cos 30° = mg$$\n\nDividint les dues equacions, la tensió desapareix:\n\n$$\\tan 30° = \\frac{k q^2}{m g (2x)^2} \\quad\\Rightarrow\\quad m = \\frac{k q^2}{g \\tan 30° \\,(2x)^2}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul de la massa",
+            "cos": "$$m = \\frac{8{,}99 \\times 10^{9} \\cdot (5{,}80 \\times 10^{-6})^2}{9{,}81 \\cdot 0{,}577 \\cdot 1{,}00^2} = 5{,}34 \\times 10^{-2}\\ \\text{kg}$$\n\nResultat: **$m = 5{,}34 \\times 10^{-2}\\ \\text{kg} = 53{,}4\\ \\text{g}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Camp creat per cada esfera a P",
+            "cos": "Cada esfera és a una distància $L = 1{,}00\\ \\text{m}$ de $P$. El mòdul del camp que crea cadascuna és:\n\n$$E = k\\frac{|q|}{L^2} = 8{,}99 \\times 10^{9} \\cdot \\frac{5{,}80 \\times 10^{-6}}{1{,}00^2} = 5{,}21 \\times 10^{4}\\ \\text{N/C}$$\n\nCom que les càrregues són **negatives**, el camp a $P$ apunta **cap a cada esfera**, és a dir, en la direcció de cada fil, cap avall."
+          },
+          {
+            "apartat": "b",
+            "titol": "Superposició dels dos camps",
+            "cos": "Pel principi de superposició sumem els dos vectors. Per simetria, les components horitzontals (una cap a l'esquerra i l'altra cap a la dreta) **s'anul·len**, i les components verticals se sumen:\n\n$$E_P = 2E\\cos 30° = 2 \\cdot 5{,}21 \\times 10^{4} \\cdot 0{,}866 = 9{,}03 \\times 10^{4}\\ \\text{N/C}$$\n\nResultat: **$E_P = 9{,}03 \\times 10^{4}\\ \\text{N/C}$, direcció vertical i sentit cap avall**, és a dir, $\\vec E_P = -9{,}03 \\times 10^{4}\\,\\vec j\\ \\text{N/C}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$m = 5{,}34 \\times 10^{-2}\\ \\text{kg}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\vec E_P = -9{,}03 \\times 10^{4}\\,\\vec j\\ \\text{N/C}$ (vertical, cap avall)"
+          }
+        ],
+        "nota": "Errors típics: prendre com a distància entre esferes $x = 0{,}5\\ \\text{m}$ en lloc de $2x = 1{,}00\\ \\text{m}$, i posar el camp a $P$ cap amunt (allunyant-se de les càrregues), que seria el cas si fossin positives."
+      }
+    },
+    {
+      "id": "fisica-2015-S-e5-a",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Selector de velocitats per a protons i radi de la trajectòria circular",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [
+        "camp-electric"
+      ],
+      "conceptes": [
+        "selector de velocitats",
+        "força de Lorentz",
+        "força magnètica",
+        "radi de curvatura",
+        "moviment circular uniforme"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "En un selector de velocitats, un protó es mou en la direcció $x$ en una regió amb camps creuats, on $\\vec E = 2{,}00 \\times 10^{5}\\ \\text{N/C}\\ \\vec j$ i $\\vec B = 3{,}00 \\times 10^{3}\\ \\text{G}\\ \\vec k$.\n\n**Dades:** $1\\ \\text{T} = 10^{4}\\ \\text{G}$; càrrega del protó, $Q_\\text{protó} = 1{,}60 \\times 10^{-19}\\ \\text{C}$; massa del protó, $m_\\text{protó} = 1{,}67 \\times 10^{-27}\\ \\text{kg}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu un esquema dels camps i també de les forces que actuen sobre el protó. Quina és la velocitat del protó si no es desvia de la seva trajectòria rectilínia?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Mentre el protó es mou sense desviar-se interrompem el camp elèctric. Calculeu el radi de curvatura de la trajectòria del protó.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $\\vec E = 2{,}00 \\times 10^{5}\\ \\vec j\\ \\text{N/C}$\n- $\\vec B = 3{,}00 \\times 10^{3}\\ \\text{G}\\ \\vec k = 3{,}00 \\times 10^{3} \\cdot 10^{-4}\\ \\text{T} = 0{,}300\\ \\text{T}\\ \\vec k$\n- $q = 1{,}60 \\times 10^{-19}\\ \\text{C}$, $m = 1{,}67 \\times 10^{-27}\\ \\text{kg}$\n- Velocitat en la direcció $+x$: $\\vec v = v\\,\\vec i$\n- Incògnites: a) esquema i velocitat $v$; b) radi $R$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Forces sobre el protó",
+            "cos": "- **Força elèctrica:** $\\vec F_e = q\\vec E = q E\\,\\vec j$. Com que el protó és positiu, va en el sentit del camp: **cap a $+y$**.\n- **Força magnètica:** $\\vec F_m = q\\,\\vec v \\times \\vec B = q v B\\,(\\vec i \\times \\vec k) = -q v B\\,\\vec j$: **cap a $-y$**.\n\nLes dues forces tenen la mateixa direcció i sentits contraris. A l'esquema (eix $x$ cap a la dreta, $y$ cap amunt, $\\vec B$ sortint del paper):\n\n![Esquema dels camps i les forces sobre el protó (solució oficial)](img/fisica/2015-S/e5-a-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Condició perquè no es desviï",
+            "cos": "Si el protó segueix en línia recta, la força resultant és nul·la i les dues forces tenen el mateix mòdul:\n\n$$q E = q v B \\quad\\Rightarrow\\quad v = \\frac{E}{B}$$\n\n$$v = \\frac{2{,}00 \\times 10^{5}}{0{,}300} = 6{,}67 \\times 10^{5}\\ \\text{m/s}$$\n\nResultat: **$v = 6{,}67 \\times 10^{5}\\ \\text{m/s}$** (no depèn ni de la càrrega ni de la massa)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Només camp magnètic: moviment circular",
+            "cos": "Sense camp elèctric només hi actua la força magnètica, que sempre és perpendicular a la velocitat: no en canvia el mòdul, només la direcció. El protó descriu una circumferència i la força magnètica fa de força centrípeta:\n\n$$q v B = m\\frac{v^2}{R} \\quad\\Rightarrow\\quad R = \\frac{m v}{q B}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Radi de curvatura",
+            "cos": "$$R = \\frac{1{,}67 \\times 10^{-27} \\cdot 6{,}67 \\times 10^{5}}{1{,}60 \\times 10^{-19} \\cdot 0{,}300} = 2{,}32 \\times 10^{-2}\\ \\text{m}$$\n\nResultat: **$R = 2{,}32 \\times 10^{-2}\\ \\text{m} = 2{,}32\\ \\text{cm}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$F_e$ cap a $+y$, $F_m$ cap a $-y$; $v = E/B = 6{,}67 \\times 10^{5}\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$R = mv/(qB) = 2{,}32 \\times 10^{-2}\\ \\text{m}$"
+          }
+        ],
+        "nota": "La solució oficial dona $R = 2{,}30\\ \\text{cm}$, però substituint els mateixos valors ($1{,}67 \\times 10^{-27} \\cdot 6{,}67 \\times 10^{5} / (1{,}60 \\times 10^{-19} \\cdot 0{,}300)$) surt $2{,}32\\ \\text{cm}$: és un petit error de càlcul de l'oficial. No oblideu passar els gauss a tesles ($3\\,000\\ \\text{G} = 0{,}300\\ \\text{T}$)."
+      }
+    },
+    {
+      "id": "fisica-2015-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Síntesi del copernici 277 i la seva cadena de desintegracions alfa",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "reacció nuclear",
+        "conservació del nombre màssic",
+        "desintegració alfa",
+        "període de semidesintegració",
+        "sèrie radioactiva"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3,
+        4
+      ],
+      "enunciat": "El copernici $^{277}_{112}\\text{Cn}$ va ser sintetitzat al laboratori del Centre per a la Recerca d'Ions Pesants (GSI) de Darmstadt (Alemanya) el 9 de febrer del 1999. El nom oficial data del febrer del 2010, en honor de Nicolau Copèrnic. Per a obtenir-lo, es bombardeja una diana de plom amb projectils d'àtoms de zinc. La reacció es pot escriure així:\n\n$$^{208}_{\\ a}\\text{Pb} +\\ ^{70}_{\\ b}\\text{Zn} \\longrightarrow\\ ^{277}_{112}\\text{Cn} + ?$$\n\nEl $^{277}_{112}\\text{Cn}$ es desintegra segons la seqüència següent:\n\n$$\\begin{aligned} &^{277}_{112}\\text{Cn} \\to\\ ^{273}_{110}\\text{X} + ? \\\\ &^{273}_{110}\\text{X} \\to\\ ^{269}_{108}\\text{X} + ? \\\\ &^{269}_{108}\\text{X} \\to\\ ^{265}_{106}\\text{X} + ? \\\\ &^{265}_{106}\\text{X} \\to\\ ^{261}_{104}\\text{X} + ? \\\\ &^{261}_{104}\\text{X} \\to\\ ^{257}_{102}\\text{X} + ? \\\\ &^{257}_{102}\\text{X} \\to\\ ^{253}_{100}\\text{Fm} + ? \\end{aligned}$$\n\nEl $^{277}_{112}\\text{Cn}$ té un període de semidesintegració de $0{,}17\\ \\text{ms}$.\n\n**Dades:**\n\n| $_{82}$Pb | $_{110}$Ds | $_{108}$Hs | $_{106}$Sg | $_{104}$Rf | $_{102}$No | $_{100}$Fm | $_{30}$Zn |\n|---|---|---|---|---|---|---|---|\n| plom | darmstadti | hassi | seaborgi | rutherfordi | nobeli | fermi | zinc |",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Completeu la reacció d'obtenció del $^{277}_{112}\\text{Cn}$ a partir de plom i de zinc. Quin tant per cent de $^{277}_{112}\\text{Cn}$ roman sense desintegrar-se al cap d'un minut d'haver-se produït la reacció d'obtenció d'aquest isòtop?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Escriviu la seqüència o sèrie radioactiva (amb tots els símbols dels elements) fins a arribar al fermi.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Plom: $Z = 82$; zinc: $Z = 30$ (de la taula)\n- $T_{1/2}(\\text{Cn}) = 0{,}17\\ \\text{ms} = 1{,}7 \\times 10^{-4}\\ \\text{s}$; $t = 1\\ \\text{min} = 60\\ \\text{s}$\n- Incògnites: a) partícula que falta a la reacció i percentatge que queda; b) sèrie radioactiva completa."
+          },
+          {
+            "apartat": "a",
+            "titol": "Conservació del nombre màssic i de la càrrega",
+            "cos": "En tota reacció nuclear es conserven el nombre màssic $A$ (nombre de nucleons) i el nombre atòmic $Z$ (càrrega). Amb $a = 82$ (Pb) i $b = 30$ (Zn), per a la partícula desconeguda $^{A}_{Z}\\text{?}$:\n\n$$208 + 70 = 277 + A \\quad\\Rightarrow\\quad A = 1$$\n\n$$82 + 30 = 112 + Z \\quad\\Rightarrow\\quad Z = 0$$\n\nUna partícula amb $A = 1$ i $Z = 0$ és un **neutró**:\n\n$$^{208}_{82}\\text{Pb} +\\ ^{70}_{30}\\text{Zn} \\longrightarrow\\ ^{277}_{112}\\text{Cn} +\\ ^{1}_{0}\\text{n}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Quant en queda al cap d'un minut",
+            "cos": "El període de semidesintegració és el temps en què es desintegra la meitat dels nuclis. En un minut hi caben\n\n$$n = \\frac{t}{T_{1/2}} = \\frac{60}{1{,}7 \\times 10^{-4}} \\approx 3{,}5 \\times 10^{5}\\ \\text{períodes}$$\n\ni la fracció que queda és\n\n$$\\frac{N}{N_0} = \\left(\\frac{1}{2}\\right)^{n} = 2^{-3{,}5 \\times 10^{5}} \\approx 10^{-106\\,000}$$\n\nUn nombre absolutament negligible: al cap d'un minut **no en queda res, un $0\\ \\%$** de copernici."
+          },
+          {
+            "apartat": "b",
+            "titol": "Quina partícula s'emet a cada pas",
+            "cos": "A cada pas de la seqüència el nombre màssic baixa 4 unitats i el nombre atòmic baixa 2 unitats. La partícula emesa té, doncs, $A = 4$ i $Z = 2$: és una **partícula alfa** $^{4}_{2}\\alpha$ (nucli d'heli). Identifiquem cada element pel seu $Z$ amb la taula: 110 → Ds, 108 → Hs, 106 → Sg, 104 → Rf, 102 → No, 100 → Fm."
+          },
+          {
+            "apartat": "b",
+            "titol": "Sèrie radioactiva",
+            "cos": "$$\\begin{aligned} &^{277}_{112}\\text{Cn} \\to\\ ^{273}_{110}\\text{Ds} +\\ ^{4}_{2}\\alpha \\\\ &^{273}_{110}\\text{Ds} \\to\\ ^{269}_{108}\\text{Hs} +\\ ^{4}_{2}\\alpha \\\\ &^{269}_{108}\\text{Hs} \\to\\ ^{265}_{106}\\text{Sg} +\\ ^{4}_{2}\\alpha \\\\ &^{265}_{106}\\text{Sg} \\to\\ ^{261}_{104}\\text{Rf} +\\ ^{4}_{2}\\alpha \\\\ &^{261}_{104}\\text{Rf} \\to\\ ^{257}_{102}\\text{No} +\\ ^{4}_{2}\\alpha \\\\ &^{257}_{102}\\text{No} \\to\\ ^{253}_{100}\\text{Fm} +\\ ^{4}_{2}\\alpha \\end{aligned}$$\n\nResultat: **sis desintegracions alfa successives** del copernici fins al fermi 253."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$^{208}_{82}\\text{Pb} +\\ ^{70}_{30}\\text{Zn} \\to\\ ^{277}_{112}\\text{Cn} +\\ ^{1}_{0}\\text{n}$; en 1 minut queda un $0\\ \\%$ (fracció $\\approx 2^{-350\\,000}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "Cn → Ds → Hs → Sg → Rf → No → Fm, cada pas per emissió d'una partícula $^{4}_{2}\\alpha$"
+          }
+        ],
+        "nota": "La solució oficial raona només qualitativament que en un minut (molts milers de períodes) no en queda res; aquí s'hi afegeix el càlcul $N/N_0 = 2^{-t/T_{1/2}}$."
+      }
+    },
+    {
+      "id": "fisica-2015-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Energia potencial d'un dipol de càrregues i treball per separar-les",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "energia potencial elèctrica",
+        "treball extern",
+        "càrregues puntuals",
+        "conservació de l'energia"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        4
+      ],
+      "enunciat": "En una zona de l'espai hi ha dues càrregues elèctriques puntuals de la mateixa magnitud però de signe contrari separades $20{,}0\\ \\text{cm}$.\n\n**Dades:** valor absolut de cada càrrega $= 1{,}00\\ \\mu\\text{C}$; $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'energia potencial de la distribució de càrregues.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Quin treball cal fer per a separar les càrregues des d'una distància inicial de $20{,}0\\ \\text{cm}$ fins a una distància final de $50{,}0\\ \\text{cm}$?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $q_+ = +1{,}00 \\times 10^{-6}\\ \\text{C}$, $q_- = -1{,}00 \\times 10^{-6}\\ \\text{C}$\n- $r_i = 20{,}0\\ \\text{cm} = 0{,}200\\ \\text{m}$, $r_f = 50{,}0\\ \\text{cm} = 0{,}500\\ \\text{m}$\n- $k = 8{,}99 \\times 10^{9}\\ \\text{N m}^2/\\text{C}^2$\n- Incògnites: a) energia potencial $U_i$; b) treball extern $W_\\text{ext}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia potencial d'un parell de càrregues",
+            "cos": "L'energia potencial electrostàtica de dues càrregues puntuals separades una distància $r$ és (prenent $U = 0$ a l'infinit):\n\n$$U = k\\frac{q_+ q_-}{r}$$\n\n$$U_i = 8{,}99 \\times 10^{9} \\cdot \\frac{(1{,}00 \\times 10^{-6}) \\cdot (-1{,}00 \\times 10^{-6})}{0{,}200} = -4{,}50 \\times 10^{-2}\\ \\text{J}$$\n\nResultat: **$U_i = -0{,}045\\ \\text{J}$**. És negativa perquè les càrregues s'atreuen: caldria aportar energia per separar-les fins a l'infinit."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia potencial final",
+            "cos": "$$U_f = 8{,}99 \\times 10^{9} \\cdot \\frac{(1{,}00 \\times 10^{-6}) \\cdot (-1{,}00 \\times 10^{-6})}{0{,}500} = -1{,}80 \\times 10^{-2}\\ \\text{J}$$\n\n$$\\Delta U = U_f - U_i = -0{,}018 - (-0{,}045) = 0{,}027\\ \\text{J}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball extern",
+            "cos": "La força elèctrica és conservativa: el treball que fa és $W_\\text{elèc} = -\\Delta U = -0{,}027\\ \\text{J}$ (negatiu, perquè l'atracció s'oposa a la separació). Per separar-les lentament (sense guanyar energia cinètica), una força externa ha de fer el treball contrari:\n\n$$W_\\text{ext} = \\Delta U = 0{,}027\\ \\text{J}$$\n\nResultat: **$W_\\text{ext} = 2{,}70 \\times 10^{-2}\\ \\text{J}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$U_i = -4{,}50 \\times 10^{-2}\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$W_\\text{ext} = +2{,}70 \\times 10^{-2}\\ \\text{J}$ ($W_\\text{elèc} = -2{,}70 \\times 10^{-2}\\ \\text{J}$)"
+          }
+        ],
+        "nota": "Error típic: oblidar el signe negatiu de la càrrega i obtenir una energia potencial positiva (pròpia de càrregues que es repel·leixen)."
+      }
+    },
+    {
+      "id": "fisica-2015-S-e5-b",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Flux magnètic i FEM màxima en una espira que gira en un camp uniforme",
+      "tema": "induccio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "flux magnètic",
+        "llei de Faraday",
+        "força electromotriu induïda",
+        "alternador",
+        "velocitat angular"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "En una zona de l'espai hi ha un camp magnètic uniforme de $0{,}40\\ \\text{T}$. En aquesta regió hi ha una espira circular de $200\\ \\text{cm}^2$ d'àrea que gira a $191\\ \\text{rpm}$ (revolucions per minut), tal com indica la figura.",
+      "figures": [
+        {
+          "src": "img/fisica/2015-S/e5-b.png",
+          "peu": "Espira circular que gira al voltant d'un diàmetre dins d'un camp magnètic uniforme vertical"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Si en l'instant inicial el camp magnètic és perpendicular al pla de l'espira, expresseu l'equació del flux magnètic que travessa l'espira en funció del temps.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Quina és la força electromotriu (FEM) màxima generada per l'espira?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $B = 0{,}40\\ \\text{T}$\n- $S = 200\\ \\text{cm}^2 = 200 \\times 10^{-4}\\ \\text{m}^2 = 2{,}0 \\times 10^{-2}\\ \\text{m}^2$\n- $n = 191\\ \\text{rpm}$\n- Incògnites: a) $\\Phi(t)$; b) $\\varepsilon_\\text{màx}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat angular en rad/s",
+            "cos": "Cada volta són $2\\pi$ radiants i un minut són 60 s:\n\n$$\\omega = 191\\ \\frac{\\text{volta}}{\\text{min}} \\cdot \\frac{2\\pi\\ \\text{rad}}{1\\ \\text{volta}} \\cdot \\frac{1\\ \\text{min}}{60\\ \\text{s}} = 20{,}0\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Flux en funció del temps",
+            "cos": "El flux magnètic és el producte escalar del camp pel vector superfície (perpendicular al pla de l'espira):\n\n$$\\Phi = \\vec B \\cdot \\vec S = B S \\cos\\varphi$$\n\nEn girar, l'angle entre $\\vec B$ i $\\vec S$ creix uniformement: $\\varphi = \\omega t + \\varphi_0$. A $t = 0$ el camp és perpendicular al pla de l'espira, és a dir, **paral·lel** al vector superfície: $\\varphi_0 = 0$ i el flux és màxim. Per tant:\n\n$$\\Phi(t) = B S \\cos(\\omega t) = 0{,}40 \\cdot 2{,}0 \\times 10^{-2} \\cos(20{,}0\\,t)$$\n\nResultat: **$\\Phi(t) = 8{,}0 \\times 10^{-3}\\cos(20{,}0\\,t)\\ \\text{Wb}$** ($t$ en s)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Llei de Faraday",
+            "cos": "La FEM induïda és igual a menys la derivada del flux respecte del temps:\n\n$$\\varepsilon(t) = -\\frac{d\\Phi}{dt} = -\\frac{d}{dt}\\left[B S\\cos(\\omega t)\\right] = B S \\omega \\sin(\\omega t)$$\n\nLa FEM és sinusoidal (corrent altern) i és màxima quan $\\sin(\\omega t) = \\pm 1$, és a dir, quan el pla de l'espira és paral·lel al camp (flux nul però variant més ràpidament)."
+          },
+          {
+            "apartat": "b",
+            "titol": "FEM màxima",
+            "cos": "$$\\varepsilon_\\text{màx} = B S \\omega = 0{,}40 \\cdot 2{,}0 \\times 10^{-2} \\cdot 20{,}0 = 0{,}16\\ \\text{V}$$\n\nResultat: **$\\varepsilon_\\text{màx} = 0{,}16\\ \\text{V}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\Phi(t) = 8{,}0 \\times 10^{-3}\\cos(20{,}0\\,t)\\ \\text{Wb}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\varepsilon_\\text{màx} = BS\\omega = 0{,}16\\ \\text{V}$"
+          }
+        ],
+        "nota": "Error típic: no passar les rpm a rad/s o els cm² a m² ($1\\ \\text{cm}^2 = 10^{-4}\\ \\text{m}^2$)."
+      }
+    }
+  ]
+}

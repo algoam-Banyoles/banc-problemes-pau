@@ -1,0 +1,843 @@
+{
+  "examen": {
+    "id": "tecno-2023-S",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2023,
+    "convocatoria": "setembre",
+    "serie": "2",
+    "pdf_examen": "pdfs/tecno/2023-S-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2023-S-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels sis exercicis (2,5 punts cadascun); si se'n responen més, només es valoren els quatre primers. L'exercici 1 té 5 qüestions de test (0,5 punts cadascuna; cada resposta errònia descompta 0,16 punts i les no contestades no descompten). Els exercicis 2 a 6 són problemes amb apartats."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2023-S-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Rendiment d'un motor de quatre temps a partir del consum i el parell",
+      "tema": "termica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "rendiment",
+        "poder calorífic",
+        "parell motor",
+        "potència mecànica",
+        "densitat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un motor de quatre temps consumeix $9{,}5\\ \\text{L/h}$ d'un combustible de densitat $0{,}85\\ \\text{kg/dm}^3$ i poder calorífic $p_\\text{c} = 44{,}8\\ \\text{MJ/kg}$. En el cas que s'analitza, proporciona un parell de $87\\ \\text{N m}$ quan gira a $3\\,000\\ \\text{min}^{-1}$. Quin és el rendiment del motor?",
+      "figures": [],
+      "opcions": {
+        "a": "$16{,}32\\ \\%$",
+        "b": "$27{,}2\\ \\%$",
+        "c": "$45{,}33\\ \\%$",
+        "d": "$75{,}55\\ \\%$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Consum volumètric: $q_V = 9{,}5\\ \\text{L/h} = 9{,}5\\ \\text{dm}^3/\\text{h}$\n- Densitat: $\\rho = 0{,}85\\ \\text{kg/dm}^3$\n- Poder calorífic: $p_\\text{c} = 44{,}8\\ \\text{MJ/kg} = 44{,}8 \\cdot 10^6\\ \\text{J/kg}$\n- Parell: $\\Gamma = 87\\ \\text{N m}$; velocitat: $n = 3\\,000\\ \\text{min}^{-1}$\n- Incògnita: rendiment $\\eta = P_\\text{mec}/P_\\text{comb}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Potència química del combustible",
+            "cos": "Primer passem el consum de volum a massa amb la densitat, i després multipliquem pel poder calorífic (energia per kg) per saber quanta energia entra cada segon:\n\n$$\\dot m = q_V\\,\\rho = 9{,}5 \\cdot 0{,}85 = 8{,}075\\ \\text{kg/h}$$\n\n$$P_\\text{comb} = \\frac{\\dot m\\, p_\\text{c}}{3\\,600} = \\frac{8{,}075 \\cdot 44{,}8 \\cdot 10^6}{3\\,600} = 100\\,489\\ \\text{W} \\approx 100{,}5\\ \\text{kW}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Potència mecànica a l'eix",
+            "cos": "La potència d'un eix que gira és el parell per la velocitat angular (en rad/s):\n\n$$\\omega = n\\,\\frac{2\\pi}{60} = 3\\,000 \\cdot \\frac{2\\pi}{60} = 314{,}16\\ \\text{rad/s}$$\n\n$$P_\\text{mec} = \\Gamma\\,\\omega = 87 \\cdot 314{,}16 = 27\\,332\\ \\text{W}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Rendiment",
+            "cos": "$$\\eta = \\frac{P_\\text{mec}}{P_\\text{comb}} = \\frac{27\\,332}{100\\,489} = 0{,}272 = 27{,}2\\ \\%$$\n\nResultat: **$\\eta = 27{,}2\\ \\%$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- El fet que el motor sigui de **quatre temps** no intervé: el consum ja és horari i el parell i la velocitat donen directament la potència. Si es divideix la potència del combustible per 2 (pensant en els cicles) surt $54\\ \\%$, que no és cap opció.\n- **c)** $45{,}33\\ \\%$ i **a)** $16{,}32\\ \\%$ són valors que no surten de cap càlcul correcte; **d)** $75{,}55\\ \\%$ és un rendiment impossible per a un motor de combustió real."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\eta = 27{,}2\\ \\%$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2023-S-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Energia per aixecar una barrera de pàrquing fins a la vertical",
+      "tema": "mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "energia potencial",
+        "centre de masses",
+        "treball"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un motor eleva una barrera de pàrquing homogènia de longitud $l = 1{,}5\\ \\text{m}$ i massa $m = 3\\ \\text{kg}$, des de la posició horitzontal (barrera tancada) fins a la vertical. L'energia mecànica necessària per a fer aquest moviment",
+      "figures": [
+        {
+          "src": "img/tecno/2023-S/e1-q2.png",
+          "peu": "Barrera de pàrquing en posició horitzontal i vertical"
+        }
+      ],
+      "opcions": {
+        "a": "és nuŀla.",
+        "b": "és $22{,}07\\ \\text{J}$.",
+        "c": "és $44{,}13\\ \\text{J}$.",
+        "d": "depèn de la velocitat de gir de la barrera."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Idea: augment d'energia potencial del centre de masses",
+            "cos": "Sense pèrdues, l'energia que ha de donar el motor és l'augment d'energia potencial de la barrera. Per a un cos estès, compta l'alçada que puja el seu **centre de masses**. La barrera és homogènia, així que el centre de masses és al mig, a $l/2$ de l'articulació.\n\nEn posició horitzontal el centre de masses està a l'alçada de l'eix; en posició vertical està $l/2$ per sobre. Puja, doncs, $h = l/2 = 0{,}75\\ \\text{m}$."
+          },
+          {
+            "apartat": null,
+            "titol": "Càlcul",
+            "cos": "$$E = m\\,g\\,\\frac{l}{2} = 3 \\cdot 9{,}807 \\cdot 0{,}75 = 22{,}07\\ \\text{J}$$\n\nResultat: **$E = 22{,}07\\ \\text{J}$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **c)** $44{,}13\\ \\text{J}$ surt de fer pujar tota la massa una alçada $l$ (error típic: no usar el centre de masses).\n- **a)** No és nuŀla: la barrera acaba més amunt, ha guanyat energia potencial.\n- **d)** L'energia potencial només depèn de les posicions inicial i final, no de la velocitat (la velocitat afectaria la *potència*, no l'energia)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$E = 22{,}07\\ \\text{J}$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2023-S-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Cost anual d'una bomba de depuradora de piscina",
+      "tema": "energia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "consum energètic",
+        "factura elèctrica",
+        "rendiment",
+        "potència elèctrica"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "La bomba d'una depuradora de piscina consumeix $1{,}1\\ \\text{kW}$ quan bombeja un cabal d'aigua de $10\\ \\text{m}^3/\\text{h}$. La bomba, de rendiment $0{,}7$, està en funcionament 6 hores al dia d'abril a octubre. Si el preu de l'energia és de $0{,}21578\\ \\text{€/(kW h)}$, quin és el cost econòmic de tenir la bomba funcionant durant aquests 7 mesos?",
+      "figures": [],
+      "opcions": {
+        "a": "$304{,}8\\ \\text{€}$",
+        "b": "$213{,}3\\ \\text{€}$",
+        "c": "$454{,}4\\ \\text{€}$",
+        "d": "$149{,}3\\ \\text{€}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Potència **consumida** (elèctrica): $P = 1{,}1\\ \\text{kW}$\n- Funcionament: $6\\ \\text{h/dia}$, d'abril a octubre\n- Preu: $0{,}21578\\ \\text{€/(kW h)}$\n- El cabal ($10\\ \\text{m}^3/\\text{h}$) i el rendiment ($0{,}7$) no calen: la factura depèn de l'energia que la bomba **consumeix** de la xarxa, i ja ens la donen.\n- Incògnita: cost total"
+          },
+          {
+            "apartat": null,
+            "titol": "Dies de funcionament",
+            "cos": "Abril (30) + maig (31) + juny (30) + juliol (31) + agost (31) + setembre (30) + octubre (31):\n\n$$N = 30+31+30+31+31+30+31 = 214\\ \\text{dies}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Energia consumida i cost",
+            "cos": "$$E = P\\,t = 1{,}1\\ \\text{kW} \\cdot 6\\ \\tfrac{\\text{h}}{\\text{dia}} \\cdot 214\\ \\text{dies} = 1\\,412{,}4\\ \\text{kW h}$$\n\n$$\\text{cost} = 1\\,412{,}4 \\cdot 0{,}21578 = 304{,}8\\ \\text{€}$$\n\nResultat: **$304{,}8\\ \\text{€}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **b)** $213{,}3\\ \\text{€}$ surt de multiplicar pel rendiment $0{,}7$ (com si es pagués només l'energia útil). Però la companyia elèctrica cobra l'energia consumida, no la útil.\n- **d)** $149{,}3\\ \\text{€}$ surt d'aplicar el rendiment dues vegades ($304{,}8 \\cdot 0{,}7^2$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\text{cost} = 304{,}8\\ \\text{€}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2023-S-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Desplaçament de l'èmbol petit d'una premsa hidràulica",
+      "tema": "pneumatica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "premsa hidràulica",
+        "principi de Pascal",
+        "conservació del volum"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Es vol aixecar una massa $m = 750\\ \\text{kg}$ utilitzant una premsa hidràulica. El diàmetre de l'èmbol gros és $900\\ \\text{mm}$ i el de l'èmbol petit, $300\\ \\text{mm}$. Les resistències passives són negligibles. Si es vol desplaçar $20\\ \\text{mm}$ la càrrega, quin ha de ser el desplaçament de l'èmbol petit?",
+      "figures": [
+        {
+          "src": "img/tecno/2023-S/e1-q4.png",
+          "peu": "Esquema de la premsa hidràulica"
+        }
+      ],
+      "opcions": {
+        "a": "$450\\ \\text{mm}$",
+        "b": "$222{,}2\\ \\text{mm}$",
+        "c": "$180\\ \\text{mm}$",
+        "d": "$60\\ \\text{mm}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Idea: el volum de líquid desplaçat és el mateix",
+            "cos": "El líquid és incompressible: el volum que empeny l'èmbol petit en baixar és el mateix que fa pujar l'èmbol gros.\n\n$$A_\\text{p}\\, x_\\text{p} = A_\\text{g}\\, x_\\text{g} \\quad\\Rightarrow\\quad x_\\text{p} = x_\\text{g}\\,\\frac{A_\\text{g}}{A_\\text{p}} = x_\\text{g}\\left(\\frac{D_\\text{g}}{D_\\text{p}}\\right)^2$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Càlcul",
+            "cos": "$$x_\\text{p} = 20 \\cdot \\left(\\frac{900}{300}\\right)^2 = 20 \\cdot 9 = 180\\ \\text{mm}$$\n\nResultat: **$x_\\text{p} = 180\\ \\text{mm}$** → resposta **c**. La massa ($750\\ \\text{kg}$) no cal per a aquesta pregunta: serviria per calcular la força $F$."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **d)** $60\\ \\text{mm}$ surt de fer servir la relació de **diàmetres** ($3$) en lloc de la d'**àrees** ($3^2 = 9$).\n- **a)** i **b)** no corresponen a cap relació correcta entre les àrees."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$x_\\text{p} = 180\\ \\text{mm}$ → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2023-S-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Potència d'un calefactor a partir de la resistivitat del fil",
+      "tema": "circuits",
+      "temes_secundaris": [],
+      "conceptes": [
+        "resistivitat",
+        "resistència elèctrica",
+        "potència elèctrica",
+        "llei d'Ohm"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "El fil de la resistència elèctrica d'un calefactor té una resistivitat $\\rho = 16 \\times 10^{-9}\\ \\Omega\\,\\text{m}$, un diàmetre de $0{,}12\\ \\text{mm}$ i una longitud de $30\\ \\text{m}$. La potència consumida pel calefactor quan es connecta a una tensió de $230\\ \\text{V}$ és",
+      "figures": [],
+      "opcions": {
+        "a": "$9{,}919\\ \\text{kW}$.",
+        "b": "$4{,}244\\ \\text{kW}$.",
+        "c": "$2{,}492\\ \\text{kW}$.",
+        "d": "$1{,}246\\ \\text{kW}$."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Resistivitat: $\\rho = 16 \\cdot 10^{-9}\\ \\Omega\\,\\text{m}$\n- Diàmetre: $d = 0{,}12\\ \\text{mm} = 0{,}12 \\cdot 10^{-3}\\ \\text{m}$\n- Longitud: $L = 30\\ \\text{m}$; tensió $U = 230\\ \\text{V}$\n- Incògnita: potència $P$"
+          },
+          {
+            "apartat": null,
+            "titol": "Secció i resistència del fil",
+            "cos": "La resistència d'un fil és proporcional a la longitud i inversament proporcional a la secció:\n\n$$S = \\frac{\\pi d^2}{4} = \\frac{\\pi\\,(0{,}12 \\cdot 10^{-3})^2}{4} = 1{,}131 \\cdot 10^{-8}\\ \\text{m}^2$$\n\n$$R = \\rho\\,\\frac{L}{S} = 16 \\cdot 10^{-9} \\cdot \\frac{30}{1{,}131 \\cdot 10^{-8}} = 42{,}44\\ \\Omega$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Potència consumida",
+            "cos": "Amb la tensió i la resistència coneguda:\n\n$$P = \\frac{U^2}{R} = \\frac{230^2}{42{,}44} = 1\\,246\\ \\text{W}$$\n\nResultat: **$P = 1{,}246\\ \\text{kW}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **c)** $2{,}492\\ \\text{kW}$ és exactament el doble del valor correcte.\n- Si es fa servir el diàmetre com si fos el radi ($S = \\pi d^2$), la resistència queda 4 vegades més petita i la potència 4 vegades més gran ($\\approx 4{,}99\\ \\text{kW}$).\n- Compte a passar els mil·límetres a metres **abans** d'elevar al quadrat."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$R = 42{,}44\\ \\Omega$; $P = 1{,}246\\ \\text{kW}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2023-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Tancament automàtic del sostre d'un hivernacle amb quatre sensors",
+      "tema": "digital",
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "mapa de Karnaugh",
+        "esquema de contactes",
+        "maxterms"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "Un hivernacle disposa de quatre sensors: un de temperatura, un de velocitat del vent, un de pressió atmosfèrica i un d'humitat ambiental. Es vol dissenyar un circuit digital que controli el tancament del sostre. El sostre es tanca si es dona, com a mínim, una de les tres condicions següents: si la velocitat del vent supera els $60\\ \\text{km/h}$; si la temperatura ambient supera els $30\\ \\text{°C}$ amb una humitat ambiental inferior al $40\\ \\%$, o si es detecta un canvi sobtat de pressió quan la humitat ambiental és superior o igual al $40\\ \\%$. En altres condicions, el sostre no es tanca. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- temperatura: $t = 1$ si $T_\\text{amb} > 30\\ \\text{°C}$; $t = 0$ si $T_\\text{amb} \\leq 30\\ \\text{°C}$\n- humitat: $h = 1$ si $h_\\text{amb} \\geq 40\\ \\%$; $h = 0$ si $h_\\text{amb} < 40\\ \\%$\n- velocitat: $v = 1$ si $v_\\text{vent} > 60\\ \\text{km/h}$; $v = 0$ si $v_\\text{vent} \\leq 60\\ \\text{km/h}$\n- pressió: $p = 1$: canvi sobtat de pressió; $p = 0$: sense canvi sobtat de pressió\n- acció: $a = 1$: el sostre es tanca; $a = 0$: el sostre no es tanca\n\nUtilitzant les variables d'estat descrites, dissenyeu el sistema digital que permeti determinar quan s'ha de produir el tancament del sostre. Per fer-ho:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Elaboreu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Traduir les condicions a lògica",
+            "cos": "Escrivim cada condició de tancament amb les variables:\n\n- Vent fort: $v$\n- Calor **i** humitat baixa ($h = 0$): $t\\,\\bar{h}$\n- Canvi de pressió **i** humitat alta ($h = 1$): $h\\,p$\n\nEl sostre es tanca si es compleix **almenys una** (funció O):\n\n$$a = v + t\\,\\bar{h} + h\\,p$$\n\nAixò ja és la resposta simplificada, però l'exercici demana arribar-hi des de la taula de veritat."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "Amb 4 variables hi ha $2^4 = 16$ combinacions. Per a cada fila comprovem si es compleix alguna de les tres condicions:\n\n| $t$ | $h$ | $v$ | $p$ | $a$ | motiu |\n|---|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 0 | cap condició |\n| 0 | 0 | 0 | 1 | 0 | canvi de pressió però $h < 40\\ \\%$ |\n| 0 | 0 | 1 | 0 | 1 | vent |\n| 0 | 0 | 1 | 1 | 1 | vent |\n| 0 | 1 | 0 | 0 | 0 | cap condició |\n| 0 | 1 | 0 | 1 | 1 | pressió amb $h \\geq 40\\ \\%$ |\n| 0 | 1 | 1 | 0 | 1 | vent |\n| 0 | 1 | 1 | 1 | 1 | vent |\n| 1 | 0 | 0 | 0 | 1 | calor amb $h < 40\\ \\%$ |\n| 1 | 0 | 0 | 1 | 1 | calor amb $h < 40\\ \\%$ |\n| 1 | 0 | 1 | 0 | 1 | vent |\n| 1 | 0 | 1 | 1 | 1 | vent |\n| 1 | 1 | 0 | 0 | 0 | calor però $h \\geq 40\\ \\%$ |\n| 1 | 1 | 0 | 1 | 1 | pressió amb $h \\geq 40\\ \\%$ |\n| 1 | 1 | 1 | 0 | 1 | vent |\n| 1 | 1 | 1 | 1 | 1 | vent |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica a partir de la taula",
+            "cos": "Hi ha només 4 zeros (files 0000, 0001, 0100 i 1100), així que és més curt escriure la funció com a **producte de sumes** (maxterms): cada zero dona un factor on cada variable apareix negada si val 1 i sense negar si val 0:\n\n$$a = (t+h+v+p)(t+h+v+\\bar{p})(t+\\bar{h}+v+p)(\\bar{t}+\\bar{h}+v+p)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació per Karnaugh",
+            "cos": "Mapa de Karnaugh (files $th$, columnes $vp$, en codi Gray):\n\n| $th \\backslash vp$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **00** | 0 | 0 | 1 | 1 |\n| **01** | 0 | 1 | 1 | 1 |\n| **11** | 0 | 1 | 1 | 1 |\n| **10** | 1 | 1 | 1 | 1 |\n\nAgrupacions:\n- Les dues columnes $vp = 11$ i $vp = 10$ (8 uns): $v$.\n- Les files $th = 01$ i $11$ amb columnes $01$ i $11$ (4 uns): $h\\,p$.\n- La fila $th = 10$ sencera (4 uns): $t\\,\\bar{h}$.\n\n$$a = t\\,\\bar{h} + h\\,p + v$$\n\nResultat: **$a = t\\,\\bar{h} + h\\,p + v$**, que coincideix amb la traducció directa de l'enunciat."
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de contactes",
+            "cos": "En un esquema de contactes, una **suma** (O) són branques en **paraŀlel** i un **producte** (I) són contactes en **sèrie**. Un contacte normalment obert representa la variable directa i un de normalment tancat, la negada.\n\nPer tant hi ha tres branques en paraŀlel que alimenten el sostre $a$:\n\n- Branca 1: contacte NO de $v$.\n- Branca 2: contacte NO de $h$ en sèrie amb contacte NO de $p$.\n- Branca 3: contacte NO de $t$ en sèrie amb contacte NC de $h$ (el contacte de $h$ està lligat mecànicament al de la branca 2).\n\n![Esquema de contactes de la solució oficial](img/tecno/2023-S/e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "16 files; $a = 0$ només a les combinacions $(t,h,v,p)$ = 0000, 0001, 0100 i 1100"
+          },
+          {
+            "apartat": "b",
+            "valor": "$a = (t+h+v+p)(t+h+v+\\bar{p})(t+\\bar{h}+v+p)(\\bar{t}+\\bar{h}+v+p) = t\\,\\bar{h} + h\\,p + v$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Tres branques en paraŀlel: $v$ | $h$ sèrie $p$ | $t$ sèrie $\\bar{h}$ (NC)"
+          }
+        ],
+        "nota": "Error típic: oblidar que la condició de pressió només compta si $h = 1$ (fila 0001 ha de donar 0) o que la de temperatura només compta si $h = 0$ (fila 1100 ha de donar 0). També es pot simplificar amb àlgebra a partir de la suma de minterms; el resultat és el mateix."
+      }
+    },
+    {
+      "id": "tecno-2023-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Comparació de cost i emissions de CO2 d'un escalfador de butà i un d'elèctric",
+      "tema": "energia",
+      "temes_secundaris": [
+        "termica",
+        "economia"
+      ],
+      "conceptes": [
+        "calor específica",
+        "poder calorífic",
+        "rendiment",
+        "cost energètic",
+        "emissions de CO2"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "Es disposa d'un escalfador d'aigua que funciona amb gas butà i d'un altre que és elèctric. Ambdós subministren un cabal d'aigua $q = 10\\ \\text{L/min}$ i augmenten la temperatura de l'aigua $\\Delta T = 30\\ \\text{°C}$, que té una calor específica $c_\\text{e} = 4{,}187\\ \\text{kJ/(kg K)}$. Es vol comparar el cost econòmic i la petjada de diòxid de carboni ($\\text{CO}_2$) de tenir en funcionament cadascun dels escalfadors durant $t = 5\\ \\text{h}$.\n\nEl poder calorífic del butà és $p_\\text{c\\_butà} = 47\\ \\text{MJ/kg}$, el preu d'una bombona que en conté $m_\\text{butà} = 12{,}5\\ \\text{kg}$ és $c_\\text{butà} = 17{,}66\\ \\text{€}$ i el seu coeficient d'emissions de $\\text{CO}_2$ és $e_\\text{butà} = 2{,}960\\ \\text{kg CO}_2/\\text{kg}$. L'escalfador que funciona amb aquest combustible té un rendiment $\\eta_\\text{butà} = 0{,}89$. L'escalfador elèctric té un rendiment $\\eta_\\text{elèctr} = 0{,}97$ i el preu de l'electricitat és $c_\\text{elèctr} = 0{,}21\\ \\text{€/(kW h)}$. Les emissions, tenint en compte el mix elèctric, són de $e_\\text{elèctr} = 250\\ \\text{g}_{\\text{CO}_2}/(\\text{kW h})$.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La potència consumida per cadascun dels escalfadors $P_\\text{butà}$ i $P_\\text{elèctr}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "El cabal de gas butà $q_\\text{butà}$ consumit en kg/h.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El cost econòmic del consum dels dos escalfadors $ce_\\text{butà}$ i $ce_\\text{elèctr}$.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "La petjada de $\\text{CO}_2$ emesa per ambdós escalfadors $m_{\\text{CO}_2\\text{\\_butà}}$ i $m_{\\text{CO}_2\\text{\\_elèctr}}$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Cabal d'aigua: $q = 10\\ \\text{L/min}$; com que 1 L d'aigua són 1 kg, $q = 10\\ \\text{kg/min} = \\tfrac{10}{60} = 0{,}1667\\ \\text{kg/s}$\n- $\\Delta T = 30\\ \\text{K}$; $c_\\text{e} = 4\\,187\\ \\text{J/(kg K)}$; temps $t = 5\\ \\text{h}$\n- Butà: $p_\\text{c} = 47 \\cdot 10^6\\ \\text{J/kg}$; bombona de $12{,}5\\ \\text{kg}$ a $17{,}66\\ \\text{€}$; $e_\\text{butà} = 2{,}960\\ \\text{kg CO}_2/\\text{kg}$; $\\eta_\\text{butà} = 0{,}89$\n- Elèctric: $\\eta_\\text{elèctr} = 0{,}97$; $c_\\text{elèctr} = 0{,}21\\ \\text{€/(kW h)}$; $e_\\text{elèctr} = 0{,}250\\ \\text{kg CO}_2/(\\text{kW h})$\n- Incògnites: $P_\\text{butà}$, $P_\\text{elèctr}$, $q_\\text{butà}$, costos i masses de $\\text{CO}_2$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència útil per escalfar l'aigua",
+            "cos": "La calor que cal donar cada segon a l'aigua és el cabal màssic per la calor específica i per l'increment de temperatura. És la mateixa per als dos escalfadors:\n\n$$P_\\text{útil} = q\\,c_\\text{e}\\,\\Delta T = 0{,}1667 \\cdot 4\\,187 \\cdot 30 = 20\\,935\\ \\text{W}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència consumida per cada escalfador",
+            "cos": "Cada escalfador consumeix més del que aprofita: dividim pel seu rendiment.\n\n$$P_\\text{butà} = \\frac{q\\,c_\\text{e}\\,\\Delta T}{\\eta_\\text{butà}} = \\frac{20\\,935}{0{,}89} = 23\\,522\\ \\text{W}$$\n\n$$P_\\text{elèctr} = \\frac{q\\,c_\\text{e}\\,\\Delta T}{\\eta_\\text{elèctr}} = \\frac{20\\,935}{0{,}97} = 21\\,582\\ \\text{W}$$\n\nResultat: **$P_\\text{butà} = 23{,}52\\ \\text{kW}$** i **$P_\\text{elèctr} = 21{,}58\\ \\text{kW}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Cabal de butà",
+            "cos": "Cada kg de butà aporta $p_\\text{c}$ joules en cremar-se. El cabal màssic és la potència consumida dividida pel poder calorífic:\n\n$$q_\\text{butà} = \\frac{P_\\text{butà}}{p_\\text{c\\_butà}} = \\frac{23\\,522\\ \\text{W}}{47 \\cdot 10^6\\ \\text{J/kg}} = 5{,}005 \\cdot 10^{-4}\\ \\text{kg/s}$$\n\nPassem-ho a kg/h multiplicant per 3 600 s/h: **$q_\\text{butà} = 1{,}802\\ \\text{kg/h}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Cost del butà",
+            "cos": "En 5 h es consumeixen $q_\\text{butà}\\,t = 1{,}802 \\cdot 5 = 9{,}009\\ \\text{kg}$ de butà. El preu per kg és el de la bombona dividit per la seva massa ($17{,}66/12{,}5 = 1{,}413\\ \\text{€/kg}$):\n\n$$ce_\\text{butà} = \\frac{t\\,c_\\text{butà}}{m_\\text{butà}/q_\\text{butà}} = 9{,}009\\ \\text{kg} \\cdot \\frac{17{,}66\\ \\text{€}}{12{,}5\\ \\text{kg}} = 12{,}73\\ \\text{€}$$\n\nResultat: **$ce_\\text{butà} = 12{,}73\\ \\text{€}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Cost de l'electricitat",
+            "cos": "L'energia elèctrica consumida és la potència pel temps (en kW h), i la multipliquem pel preu:\n\n$$ce_\\text{elèctr} = P_\\text{elèctr}\\,t\\,c_\\text{elèctr} = 21{,}58\\ \\text{kW} \\cdot 5\\ \\text{h} \\cdot 0{,}21\\ \\tfrac{\\text{€}}{\\text{kW h}} = 22{,}66\\ \\text{€}$$\n\nResultat: **$ce_\\text{elèctr} = 22{,}66\\ \\text{€}$**. L'escalfador de butà és força més barat d'utilitzar."
+          },
+          {
+            "apartat": "d",
+            "titol": "Emissions de CO2",
+            "cos": "Les emissions són la quantitat consumida (kg de butà o kW h d'electricitat) pel coeficient d'emissions corresponent:\n\n$$m_{\\text{CO}_2\\text{\\_butà}} = q_\\text{butà}\\,t\\,e_\\text{butà} = 9{,}009 \\cdot 2{,}960 = 26{,}67\\ \\text{kg CO}_2$$\n\n$$m_{\\text{CO}_2\\text{\\_elèctr}} = P_\\text{elèctr}\\,t\\,e_\\text{elèctr} = 21{,}58 \\cdot 5 \\cdot 0{,}250 = 26{,}98\\ \\text{kg CO}_2$$\n\nResultat: **$26{,}67\\ \\text{kg CO}_2$ (butà)** i **$26{,}98\\ \\text{kg CO}_2$ (elèctric)**: amb aquest mix elèctric, les emissions són pràcticament iguals."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P_\\text{butà} = 23{,}52\\ \\text{kW}$; $P_\\text{elèctr} = 21{,}58\\ \\text{kW}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$q_\\text{butà} = 1{,}802\\ \\text{kg/h}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$ce_\\text{butà} = 12{,}73\\ \\text{€}$; $ce_\\text{elèctr} = 22{,}66\\ \\text{€}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$m_{\\text{CO}_2\\text{\\_butà}} = 26{,}67\\ \\text{kg}$; $m_{\\text{CO}_2\\text{\\_elèctr}} = 26{,}98\\ \\text{kg}$"
+          }
+        ],
+        "nota": "Compte amb les unitats: el cabal d'aigua s'ha de passar a kg/s (1 L d'aigua ≈ 1 kg), la calor específica a J/(kg K) i les emissions elèctriques de g a kg."
+      }
+    },
+    {
+      "id": "tecno-2023-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Autonomia i velocitat d'una cadira de rodes elèctrica en pujada",
+      "tema": "mecanica",
+      "temes_secundaris": [
+        "maquines-electriques",
+        "energia"
+      ],
+      "conceptes": [
+        "capacitat de la bateria",
+        "potència mecànica",
+        "rendiment",
+        "pla inclinat",
+        "autonomia"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8,
+        9
+      ],
+      "enunciat": "Una cadira de rodes elèctrica experimental està sensoritzada per a estudiar-ne els consums elèctrics. Disposa d'una bateria d'ió liti de tensió $U = 36\\ \\text{V}$ i energia $E_\\text{bat} = 240\\ \\text{W h}$ que alimenta un motor reductor de rendiment $\\eta = 0{,}72$.\n\nEn les condicions d'estudi, la persona i la cadira tenen una massa conjunta $m = 130\\ \\text{kg}$ i avancen per una pujada on l'angle que forma el perfil del carrer amb l'horitzontal és $\\alpha = 8°$. En l'estudi, la cadira puja a dues velocitats diferents, $v_1$ i $v_2$, i les potències consumides pel motor són $P_1 = 109{,}5\\ \\text{W}$ i $P_2 = 650{,}3\\ \\text{W}$, respectivament. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La capacitat de la bateria $c$ en A h.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Les velocitats d'avanç $v_1$ i $v_2$.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "El temps màxim que la cadira podrà estar en funcionament en cada cas, $t_1$ i $t_2$, i la distància màxima recorreguda, $s_\\text{màx}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Bateria: $U = 36\\ \\text{V}$, $E_\\text{bat} = 240\\ \\text{W h}$\n- Rendiment del motor reductor: $\\eta = 0{,}72$\n- Massa total: $m = 130\\ \\text{kg}$; pendent $\\alpha = 8°$; $g = 9{,}807\\ \\text{m/s}^2$\n- Potències elèctriques consumides: $P_1 = 109{,}5\\ \\text{W}$, $P_2 = 650{,}3\\ \\text{W}$\n- Incògnites: $c$, $v_1$, $v_2$, $t_1$, $t_2$, $s_\\text{màx}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Capacitat de la bateria",
+            "cos": "L'energia d'una bateria és la seva tensió per la càrrega que pot donar ($E = U\\,c$). Per tant:\n\n$$c = \\frac{E_\\text{bat}}{U} = \\frac{240\\ \\text{W h}}{36\\ \\text{V}} = 6{,}667\\ \\text{A h}$$\n\nResultat: **$c = 6{,}667\\ \\text{A h}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència mecànica en una pujada",
+            "cos": "Pujant a velocitat constant (sense altres pèrdues), el motor ha de vèncer la component del pes paraŀlela al pendent, $m\\,g\\sin\\alpha$. La potència mecànica és aquesta força per la velocitat, i la potència elèctrica és la mecànica dividida pel rendiment:\n\n$$P_\\text{mec} = m\\,g\\,v\\,\\sin\\alpha \\qquad P_\\text{elèctr} = \\frac{P_\\text{mec}}{\\eta} \\quad\\Rightarrow\\quad v = \\frac{\\eta\\,P_\\text{elèctr}}{m\\,g\\sin\\alpha}$$\n\nLa força a vèncer és $m\\,g\\sin\\alpha = 130 \\cdot 9{,}807 \\cdot \\sin 8° = 177{,}43\\ \\text{N}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitats",
+            "cos": "$$v_1 = \\frac{0{,}72 \\cdot 109{,}5}{177{,}43} = \\frac{78{,}84}{177{,}43} = 0{,}4443\\ \\text{m/s} = 1{,}6\\ \\text{km/h}$$\n\n$$v_2 = \\frac{0{,}72 \\cdot 650{,}3}{177{,}43} = \\frac{468{,}2}{177{,}43} = 2{,}639\\ \\text{m/s} = 9{,}5\\ \\text{km/h}$$\n\nResultat: **$v_1 = 0{,}4443\\ \\text{m/s}$ (1,6 km/h)** i **$v_2 = 2{,}639\\ \\text{m/s}$ (9,5 km/h)**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Temps de funcionament",
+            "cos": "La bateria es buida quan el motor n'ha consumit tota l'energia. El temps és l'energia dividida per la potència consumida:\n\n$$t_1 = \\frac{E_\\text{bat}}{P_1} = \\frac{240\\ \\text{W h}}{109{,}5\\ \\text{W}} = 2{,}192\\ \\text{h}$$\n\n$$t_2 = \\frac{E_\\text{bat}}{P_2} = \\frac{240}{650{,}3} = 0{,}3691\\ \\text{h}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Distància màxima",
+            "cos": "$$s_\\text{màx} = v_1\\,t_1 = 1{,}6\\ \\text{km/h} \\cdot 2{,}192\\ \\text{h} = 3{,}506\\ \\text{km}$$\n\n$$s_\\text{màx} = v_2\\,t_2 = 9{,}5\\ \\text{km/h} \\cdot 0{,}3691\\ \\text{h} = 3{,}506\\ \\text{km}$$\n\nResultat: **$t_1 = 2{,}192\\ \\text{h}$, $t_2 = 0{,}3691\\ \\text{h}$ i $s_\\text{màx} = 3{,}506\\ \\text{km}$** en tots dos casos. És lògic: l'energia per pujar cada metre de rampa és la mateixa ($m\\,g\\sin\\alpha/\\eta$ per metre), sigui quina sigui la velocitat, així que la bateria dona per a la mateixa distància."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$c = 6{,}667\\ \\text{A h}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_1 = 0{,}4443\\ \\text{m/s} = 1{,}6\\ \\text{km/h}$; $v_2 = 2{,}639\\ \\text{m/s} = 9{,}5\\ \\text{km/h}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$t_1 = 2{,}192\\ \\text{h}$; $t_2 = 0{,}3691\\ \\text{h}$; $s_\\text{màx} = 3{,}506\\ \\text{km}$"
+          }
+        ],
+        "nota": "Error típic: usar $\\cos\\alpha$ en lloc de $\\sin\\alpha$ (la component del pes que s'oposa a l'avanç és la paraŀlela al pla, $m\\,g\\sin\\alpha$), o oblidar el rendiment (la potència útil és $\\eta\\,P$)."
+      }
+    },
+    {
+      "id": "tecno-2023-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cistella de bàsquet plegable: tensió del cable, reaccions i parell del tambor",
+      "tema": "estatica",
+      "temes_secundaris": [
+        "mecanismes"
+      ],
+      "conceptes": [
+        "diagrama de cos lliure",
+        "equilibri de moments",
+        "reaccions a l'articulació",
+        "tensió del cable",
+        "parell motor"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10,
+        11
+      ],
+      "enunciat": "Una cistella de bàsquet de massa $m_\\text{c} = 45\\ \\text{kg}$ és solidària a una barra homogènia OBC de longitud $2l = 4\\ \\text{m}$ i massa $m_\\text{b} = 60\\ \\text{kg}$. El punt O està articulat al sostre. L'angle entre el sostre i la barra està comprès entre $15° \\leq \\varphi \\leq 45°$. Per a plegar i desplegar la cistella s'utilitza un mecanisme de tambor, de diàmetre $d = 250\\ \\text{mm}$, en què un motor enrotlla al tambor un cable que hi té l'extrem fixat. El cable passa per una politja situada al sostre al punt P, de diàmetre negligible, i l'altre extrem està fixat al punt mitjà de la barra OBC (punt B). El centre d'inèrcia de la cistella es troba al punt C. En la posició desplegada, $\\varphi = 45°$, el taulell es troba al pla vertical i el cable BP és perpendicular a la barra OBC.",
+      "figures": [
+        {
+          "src": "img/tecno/2023-S/e5.png",
+          "peu": "Cistella de bàsquet plegable: barra OBC, cable BP, politja P i tambor"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de cos lliure de la barra OBC.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu: La força $T$ a la qual està sotmès el cable.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Les forces vertical $F_\\text{V}$ i horitzontal $F_\\text{H}$ a l'articulació O.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "El parell $\\Gamma$ que hauria de fer el motor per a mantenir la cistella en aquesta configuració.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Barra: $m_\\text{b} = 60\\ \\text{kg}$, longitud $2l = 4\\ \\text{m}$ ($l = 2\\ \\text{m}$), centre de masses a B (mig)\n- Cistella: $m_\\text{c} = 45\\ \\text{kg}$, centre de masses a C (extrem, a $2l$ de O)\n- Posició: $\\varphi = 45°$; cable BP perpendicular a la barra\n- Tambor: $d = 250\\ \\text{mm}$ → radi $0{,}125\\ \\text{m}$; $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnites: $T$, $F_\\text{V}$, $F_\\text{H}$, $\\Gamma$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de cos lliure",
+            "cos": "Aïllem la barra OBC (amb la cistella enganxada) i hi dibuixem totes les forces exteriors:\n\n- A **O** (articulació): dues components de reacció, $F_\\text{H}$ (horitzontal) i $F_\\text{V}$ (vertical).\n- A **B**: la tensió del cable $T$, perpendicular a la barra i dirigida cap a la politja P (amunt i a la dreta).\n- A **B**: el pes de la barra $m_\\text{b}\\,g$, vertical cap avall.\n- A **C**: el pes de la cistella $m_\\text{c}\\,g$, vertical cap avall.\n\n![Diagrama de cos lliure de la barra OBC (solució oficial)](img/tecno/2023-S/e5-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equilibri de moments respecte d'O",
+            "cos": "Prenem moments respecte d'O perquè així les reaccions $F_\\text{H}$ i $F_\\text{V}$ no hi intervenen. Com que $T$ és perpendicular a la barra, el seu braç és directament $l$. Els pesos són verticals: el seu braç és la distància horitzontal, $l\\cos\\varphi$ per al pes de la barra i $2l\\cos\\varphi$ per al de la cistella:\n\n$$\\sum M_\\text{O} = 0: \\quad T\\,l - m_\\text{b}\\,g\\,l\\cos\\varphi - m_\\text{c}\\,g\\,2l\\cos\\varphi = 0$$\n\n$$T = (m_\\text{b} + 2\\,m_\\text{c})\\,g\\cos\\varphi = (60 + 90) \\cdot 9{,}807 \\cdot \\cos 45° = 1\\,040\\ \\text{N}$$\n\nResultat: **$T = 1\\,040\\ \\text{N}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Components de la tensió",
+            "cos": "La barra baixa a $45°$ i $T$ hi és perpendicular, per tant $T$ forma també $45°$ amb l'horitzontal (cap amunt i a la dreta):\n\n$$T_x = T\\sin 45° = T\\,\\frac{\\sqrt2}{2} = 735{,}5\\ \\text{N} \\qquad T_y = T\\cos 45° = 735{,}5\\ \\text{N}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de forces",
+            "cos": "$$\\sum F_\\text{horitzontals} = 0: \\quad T\\sin 45° - F_\\text{H} = 0 \\;\\Rightarrow\\; F_\\text{H} = 735{,}5\\ \\text{N}$$\n\n$$\\sum F_\\text{verticals} = 0: \\quad F_\\text{V} + T\\cos 45° - m_\\text{b}\\,g - m_\\text{c}\\,g = 0$$\n\n$$F_\\text{V} = (60 + 45) \\cdot 9{,}807 - 735{,}5 = 1\\,029{,}7 - 735{,}5 = 294{,}2\\ \\text{N}$$\n\nResultat: **$F_\\text{H} = 735{,}5\\ \\text{N}$** (cap a l'esquerra) i **$F_\\text{V} = 294{,}2\\ \\text{N}$** (cap amunt)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Parell del motor al tambor",
+            "cos": "El cable s'enrotlla al tambor; la tensió actua a una distància igual al radi ($d/2$) de l'eix. El parell que ha de fer el motor per mantenir-lo quiet és:\n\n$$\\Gamma = T\\,\\frac{d}{2} = 1\\,040 \\cdot 0{,}125 = 130{,}0\\ \\text{N m}$$\n\nResultat: **$\\Gamma = 130{,}0\\ \\text{N m}$**. La politja P (de diàmetre negligible i sense fregament) només canvia la direcció del cable, no el valor de la tensió."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Forces: $F_\\text{H}$ i $F_\\text{V}$ a O; $T$ perpendicular a la barra a B; $m_\\text{b}g$ a B; $m_\\text{c}g$ a C"
+          },
+          {
+            "apartat": "b",
+            "valor": "$T = 1\\,040\\ \\text{N}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$F_\\text{H} = 735{,}5\\ \\text{N}$; $F_\\text{V} = 294{,}2\\ \\text{N}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$\\Gamma = 130{,}0\\ \\text{N m}$"
+          }
+        ],
+        "nota": "Error típic: usar el diàmetre del tambor en lloc del radi a l'apartat d (surt el doble, $260\\ \\text{N m}$), o posar $l$ com a braç del pes de la cistella en lloc de $2l$."
+      }
+    },
+    {
+      "id": "tecno-2023-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Selecció d'un cilindre hidràulic d'efecte simple per elevar contenidors",
+      "tema": "pneumatica",
+      "temes_secundaris": [
+        "resistencia"
+      ],
+      "conceptes": [
+        "cilindre d'efecte simple",
+        "pressió",
+        "cabal",
+        "potència hidràulica",
+        "tensió normal"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12,
+        13
+      ],
+      "enunciat": "Cal seleccionar un cilindre hidràulic comercial d'efecte simple per a elevar contenidors. El cilindre s'ha de connectar a una bomba d'oli que subministra un cabal constant $q = 3\\ \\text{m}^3/\\text{h}$ i una pressió màxima $p_\\text{màx} = 20\\ \\text{MPa}$. Es demana que, en aquestes condicions, el cilindre sigui capaç de fer una força $F = 65\\,000\\ \\text{N}$ en la seva cursa d'avanç (extensió del cilindre). Un fabricant de cilindres hidràulics facilita 10 models amb els valors de diàmetre interior, $d_\\text{int}$, i diàmetre de tija, $d_\\text{tija}$, següents:\n\n| Model | M1 | M2 | M3 | M4 | M5 | M6 | M7 | M8 | M9 | M10 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| $d_\\text{int}$ (mm) | 32 | 40 | 50 | 60 | 70 | 80 | 80 | 90 | 100 | 120 |\n| $d_\\text{tija}$ (mm) | 20 | 25 | 30 | 30 | 40 | 40 | 50 | 50 | 50 | 70 |\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El model més petit que compleix les especificacions.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Amb el cilindre escollit, i sabent que el sistema avança a velocitat constant, determineu: La pressió $p_0$ que haurà de subministrar la bomba.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La velocitat de la tija, $v_\\text{tija}$, i la potència que desenvolupa el cilindre, $P_\\text{cil}$.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "La tensió normal a compressió de la tija, $\\sigma$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Cabal: $q = 3\\ \\text{m}^3/\\text{h} = \\frac{3}{3\\,600} = 8{,}333 \\cdot 10^{-4}\\ \\text{m}^3/\\text{s}$\n- Pressió màxima: $p_\\text{màx} = 20\\ \\text{MPa} = 20 \\cdot 10^6\\ \\text{Pa}$\n- Força d'avanç: $F = 65\\,000\\ \\text{N}$\n- Incògnites: model, $p_0$, $v_\\text{tija}$, $P_\\text{cil}$, $\\sigma$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diàmetre interior mínim",
+            "cos": "En l'avanç, l'oli empeny tota la cara de l'èmbol, d'àrea $\\pi d_\\text{int}^2/4$. Amb la pressió màxima, el diàmetre ha de ser prou gran per fer la força demanada:\n\n$$p_\\text{màx} = \\frac{F}{\\pi d_\\text{int}^2/4} \\;\\Rightarrow\\; d_\\text{int\\_mín} = \\sqrt{\\frac{4F}{\\pi\\,p_\\text{màx}}} = \\sqrt{\\frac{4 \\cdot 65\\,000}{\\pi \\cdot 20 \\cdot 10^6}} = 0{,}06433\\ \\text{m} = 64{,}33\\ \\text{mm}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Elecció del model",
+            "cos": "Cal el primer model amb $d_\\text{int} \\geq 64{,}33\\ \\text{mm}$. El M4 (60 mm) es queda curt; el següent és el **M5**, amb $d_\\text{int} = 70\\ \\text{mm}$ i $d_\\text{tija} = 40\\ \\text{mm}$.\n\nResultat: **model M5** ($d_\\text{int} = 70\\ \\text{mm}$, $d_\\text{tija} = 40\\ \\text{mm}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Pressió de treball",
+            "cos": "Amb el cilindre M5, la pressió necessària per fer la força $F$ a velocitat constant és la força dividida per l'àrea d'avanç:\n\n$$A_\\text{avanç} = \\frac{\\pi\\,d_\\text{int}^2}{4} = \\frac{\\pi \\cdot 0{,}070^2}{4} = 3{,}848 \\cdot 10^{-3}\\ \\text{m}^2$$\n\n$$p_0 = \\frac{F}{A_\\text{avanç}} = \\frac{65\\,000}{3{,}848 \\cdot 10^{-3}} = 16{,}89 \\cdot 10^6\\ \\text{Pa}$$\n\nResultat: **$p_0 = 16{,}89\\ \\text{MPa}$** (menor que els 20 MPa màxims, com era d'esperar)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Velocitat de la tija",
+            "cos": "Tot l'oli que entra omple el volum que deixa l'èmbol en avançar: $q = A_\\text{avanç}\\,v_\\text{tija}$.\n\n$$v_\\text{tija} = \\frac{q}{A_\\text{avanç}} = \\frac{8{,}333 \\cdot 10^{-4}}{3{,}848 \\cdot 10^{-3}} = 0{,}2165\\ \\text{m/s} = 216{,}5\\ \\text{mm/s}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència del cilindre",
+            "cos": "La potència mecànica és la força per la velocitat (equivalentment, pressió per cabal):\n\n$$P_\\text{cil} = F\\,v_\\text{tija} = 65\\,000 \\cdot 0{,}21654 = 14\\,075\\ \\text{W}$$\n\nComprovació: $p_0\\,q = 16{,}89 \\cdot 10^6 \\cdot 8{,}333 \\cdot 10^{-4} = 14\\,075\\ \\text{W}$.\n\nResultat: **$P_\\text{cil} \\approx 14{,}07\\ \\text{kW}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Tensió a compressió de la tija",
+            "cos": "La tija transmet la força $F$ i treballa a compressió. La tensió és la força dividida per la secció de la tija:\n\n$$\\sigma = \\frac{F}{\\pi d_\\text{tija}^2/4} = \\frac{4 \\cdot 65\\,000}{\\pi \\cdot 0{,}040^2} = 51{,}73 \\cdot 10^6\\ \\text{Pa}$$\n\nResultat: **$\\sigma = 51{,}73\\ \\text{MPa}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$d_\\text{int\\_mín} = 64{,}33\\ \\text{mm}$ → model **M5** ($70\\ \\text{mm}$ / $40\\ \\text{mm}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$p_0 = 16{,}89\\ \\text{MPa}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$v_\\text{tija} = 216{,}5\\ \\text{mm/s}$; $P_\\text{cil} \\approx 14{,}07\\ \\text{kW}$ (oficial: $14{,}04\\ \\text{kW}$)"
+          },
+          {
+            "apartat": "d",
+            "valor": "$\\sigma = 51{,}73\\ \\text{MPa}$"
+          }
+        ],
+        "nota": "Discrepància menor amb l'oficial a l'apartat c: la solució oficial dona $P_\\text{cil} = 14{,}04\\ \\text{kW}$, que correspon a multiplicar per la velocitat arrodonida $0{,}216\\ \\text{m/s}$. Sense arrodonir, $F\\,v_\\text{tija} = p_0\\,q = 14{,}07\\ \\text{kW}$. Error típic a l'apartat a: en un cilindre d'efecte simple l'avanç es fa amb tota l'àrea de l'èmbol; l'àrea anular (restant la tija) només es faria servir en el retorn d'un cilindre de doble efecte."
+      }
+    }
+  ]
+}

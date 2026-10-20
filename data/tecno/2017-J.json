@@ -1,0 +1,1634 @@
+{
+  "examen": {
+    "id": "tecno-2017-J",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2017,
+    "convocatoria": "juny",
+    "serie": "1 i 5",
+    "pdf_examen": "pdfs/tecno/2017-J-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2017-J-solucio.pdf",
+    "estructura": "El PDF conté dues sèries (1 i 5) amb la mateixa estructura. Cada prova consta de dues parts de dos exercicis de 2,5 punts. Primera part (comuna): exercici 1, amb 5 qüestions de test (0,5 punts cadascuna; cada resposta errònia descompta 0,16 punts i les no contestades no descompten), i exercici 2. Segona part: cal escollir UNA de les dues opcions (A o B) i fer-ne els exercicis 3 i 4."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2017-J-s1-e1-q1",
+      "serie": "1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Parells de pols d'un motor asíncron a partir de la velocitat de sincronisme",
+      "tema": "maquines-electriques",
+      "temes_secundaris": [],
+      "conceptes": [
+        "motor asíncron",
+        "velocitat de sincronisme",
+        "parells de pols",
+        "freqüència"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "La velocitat de sincronisme $n_\\text{s}$ d'un motor asíncron de corrent altern, que està connectat a la xarxa de tensió $U = 230\\ \\text{V}$ i freqüència $f = 50\\ \\text{Hz}$, és $n_\\text{s} = 600\\ \\text{min}^{-1}$. Quants parells de pols té el motor?",
+      "figures": [],
+      "opcions": {
+        "a": "2",
+        "b": "4",
+        "c": "5",
+        "d": "10"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Freqüència de la xarxa: $f = 50\\ \\text{Hz}$\n- Velocitat de sincronisme: $n_\\text{s} = 600\\ \\text{min}^{-1}$\n- Incògnita: nombre de parells de pols, $p$ (la tensió no hi intervé)"
+          },
+          {
+            "apartat": null,
+            "titol": "Relació entre velocitat de sincronisme, freqüència i pols",
+            "cos": "El camp magnètic giratori de l'estator fa una volta cada $p$ períodes de la xarxa. Per això la velocitat de sincronisme (en $\\text{min}^{-1}$) és:\n\n$$n_\\text{s} = \\frac{60\\, f}{p} \\quad\\Rightarrow\\quad p = \\frac{60\\, f}{n_\\text{s}} = \\frac{60 \\cdot 50}{600} = 5$$\n\nResultat: **$p = 5$ parells de pols** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **d)** 10 és el nombre de **pols** (5 parells = 10 pols), no de parells.\n- La tensió de 230 V no afecta la velocitat de sincronisme: només hi compten la freqüència i els pols."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$p = 60 f / n_\\text{s} = 5$ parells de pols → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s1-e1-q2",
+      "serie": "1",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Interval del valor real d'una mesura amb un dinamòmetre digital",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "metrologia",
+        "precisió",
+        "error de mesura",
+        "interval de mesura"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Un dinamòmetre digital mostra el valor de la mesura amb cinc dígits i permet fer mesuraments entre $0\\ \\text{N}$ i $10\\,000\\ \\text{N}$. La precisió és el valor més gran entre $\\pm 0{,}1\\ \\%$ de la mesura i $\\pm 5\\ \\text{N}$. Si la lectura del dinamòmetre és $3\\,500\\ \\text{N}$, el valor real de la mesura està comprès entre",
+      "figures": [],
+      "opcions": {
+        "a": "$3\\,500\\ \\text{N}$ i $3\\,505\\ \\text{N}$.",
+        "b": "$3\\,496{,}5\\ \\text{N}$ i $3\\,503{,}5\\ \\text{N}$.",
+        "c": "$3\\,495\\ \\text{N}$ i $3\\,505\\ \\text{N}$.",
+        "d": "$3\\,497{,}5\\ \\text{N}$ i $3\\,502{,}5\\ \\text{N}$."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Calculem les dues precisions possibles",
+            "cos": "La precisió és **la més gran** de les dues:\n\n- Percentual: $0{,}1\\ \\% \\cdot 3\\,500 = 0{,}001 \\cdot 3\\,500 = 3{,}5\\ \\text{N}$\n- Fixa: $5\\ \\text{N}$\n\nCom que $5\\ \\text{N} > 3{,}5\\ \\text{N}$, la precisió que s'aplica és $\\pm 5\\ \\text{N}$."
+          },
+          {
+            "apartat": null,
+            "titol": "Interval del valor real",
+            "cos": "$$3\\,500 - 5 \\le F_\\text{real} \\le 3\\,500 + 5 \\quad\\Rightarrow\\quad 3\\,495\\ \\text{N} \\le F_\\text{real} \\le 3\\,505\\ \\text{N}$$\n\nResultat: **entre $3\\,495\\ \\text{N}$ i $3\\,505\\ \\text{N}$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **b)** usa la precisió percentual ($\\pm 3{,}5\\ \\text{N}$), que és la més petita: l'enunciat diu que s'agafa la més gran.\n- **a)** només suma l'error per dalt; la precisió és simètrica ($\\pm$).\n- **d)** correspon a $\\pm 2{,}5\\ \\text{N}$, que no surt de cap de les dues precisions."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$F_\\text{real} \\in [3\\,495;\\ 3\\,505]\\ \\text{N}$ → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s1-e1-q3",
+      "serie": "1",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Massa d'alumini per aliar amb 400 kg de zinc en el zamak",
+      "tema": "materials",
+      "temes_secundaris": [],
+      "conceptes": [
+        "aliatges",
+        "composició percentual",
+        "zamak"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "El *zamak* és un aliatge amb bones propietats mecàniques que s'utilitza en els sectors de l'automoció i de la construcció. Conté un $4\\ \\%$ d'alumini (Al), un $1\\ \\%$ de coure (Cu), un $0{,}05\\ \\%$ de magnesi (Mg) i la resta és zinc (Zn). En l'obtenció d'aquest aliatge, quina quantitat d'alumini cal per a aliar-lo amb $400\\ \\text{kg}$ de zinc?",
+      "figures": [],
+      "opcions": {
+        "a": "$16\\ \\text{kg}$",
+        "b": "$4\\ \\text{kg}$",
+        "c": "$421{,}3\\ \\text{kg}$",
+        "d": "$16{,}85\\ \\text{kg}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Percentatge de zinc a l'aliatge",
+            "cos": "El zinc és «la resta» fins al 100 %:\n\n$$\\%\\text{Zn} = 100 - 4 - 1 - 0{,}05 = 94{,}95\\ \\%$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Proporció entre alumini i zinc",
+            "cos": "Els 400 kg de zinc han de ser el 94,95 % de l'aliatge final. Les masses d'alumini i zinc mantenen la mateixa proporció que els seus percentatges:\n\n$$\\frac{m_\\text{Al}}{m_\\text{Zn}} = \\frac{4}{94{,}95} \\quad\\Rightarrow\\quad m_\\text{Al} = 400 \\cdot \\frac{4}{94{,}95} = 16{,}85\\ \\text{kg}$$\n\nResultat: **$m_\\text{Al} = 16{,}85\\ \\text{kg}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **a)** $16\\ \\text{kg}$ = 4 % de 400 kg: és com si els 400 kg fossin la massa **total** de l'aliatge, i no la del zinc.\n- **c)** $421{,}3\\ \\text{kg} = 400/0{,}9495$ és la massa total de l'aliatge, no la de l'alumini."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$m_\\text{Al} = 400 \\cdot 4/94{,}95 = 16{,}85\\ \\text{kg}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s1-e1-q4",
+      "serie": "1",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Jocs màxim i mínim de l'ajust 25 H7/g6",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ajust",
+        "joc màxim",
+        "joc mínim",
+        "tolerància",
+        "sistema ISO"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "En l'ajust 25 H7/g6, la tolerància H7 del forat és $\\left(\\begin{smallmatrix} +21 \\\\ 0 \\end{smallmatrix}\\right)\\ \\mu\\text{m}$ i la g6 de l'eix és $\\left(\\begin{smallmatrix} -7 \\\\ -20 \\end{smallmatrix}\\right)\\ \\mu\\text{m}$. Quins són els jocs màxim i mínim?",
+      "figures": [],
+      "opcions": {
+        "a": "El joc màxim és $41\\ \\mu\\text{m}$ i el mínim és $7\\ \\mu\\text{m}$.",
+        "b": "El joc màxim és $21\\ \\mu\\text{m}$ i el mínim és $0\\ \\mu\\text{m}$.",
+        "c": "El joc màxim és $41\\ \\mu\\text{m}$ i el mínim és $20\\ \\mu\\text{m}$.",
+        "d": "El joc màxim és $20\\ \\mu\\text{m}$ i el mínim és $7\\ \\mu\\text{m}$."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Mides límit del forat i de l'eix",
+            "cos": "Les desviacions es donen respecte de la mida nominal ($25\\ \\text{mm}$), la de dalt és la superior i la de baix la inferior:\n\n- Forat: $D_\\text{màx} = 25{,}021\\ \\text{mm}$, $D_\\text{mín} = 25{,}000\\ \\text{mm}$\n- Eix: $d_\\text{màx} = 24{,}993\\ \\text{mm}$, $d_\\text{mín} = 24{,}980\\ \\text{mm}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Joc màxim",
+            "cos": "El joc màxim es dona amb el forat **més gran** i l'eix **més petit**:\n\n$$J_\\text{màx} = D_\\text{màx} - d_\\text{mín} = 21 - (-20) = 41\\ \\mu\\text{m}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Joc mínim",
+            "cos": "El joc mínim es dona amb el forat **més petit** i l'eix **més gran**:\n\n$$J_\\text{mín} = D_\\text{mín} - d_\\text{màx} = 0 - (-7) = 7\\ \\mu\\text{m}$$\n\nResultat: **$J_\\text{màx} = 41\\ \\mu\\text{m}$ i $J_\\text{mín} = 7\\ \\mu\\text{m}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **b)** dona només la tolerància del forat (21 i 0), sense tenir en compte l'eix.\n- **c)** i **d)** barregen les desviacions: 20 i 7 són els valors absoluts de les desviacions de l'eix, no jocs."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$J_\\text{màx} = 41\\ \\mu\\text{m}$, $J_\\text{mín} = 7\\ \\mu\\text{m}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s1-e1-q5",
+      "serie": "1",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Percentatge de peces correctes després de fresatge i rectificació",
+      "tema": "fabricacio",
+      "temes_secundaris": [
+        "economia"
+      ],
+      "conceptes": [
+        "control de qualitat",
+        "taxa de rebuig",
+        "processos de fabricació",
+        "percentatges"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "La fabricació d'una peça metàl·lica es duu a terme en dos processos. En primer lloc, la peça es mecanitza en una fresadora i, posteriorment, se'n millora l'acabat superficial mitjançant una rectificadora. Després de cada procés, es controla la qualitat de les peces i es desestimen les que no són correctes. Si les taxes de rebuig del fresatge i la rectificació són del $4\\ \\%$ i el $3\\ \\%$, respectivament, quin percentatge de les peces inicials s'acaba produint correctament?",
+      "figures": [],
+      "opcions": {
+        "a": "$88\\ \\%$",
+        "b": "$93{,}12\\ \\%$",
+        "c": "$96\\ \\%$",
+        "d": "$93\\ \\%$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Processos encadenats: es multipliquen les fraccions bones",
+            "cos": "Després del fresatge queden bones el $100 - 4 = 96\\ \\%$ de les peces. La rectificació només s'aplica a aquestes, i en rebutja el 3 %: en queden el $97\\ \\%$ **de les que hi han entrat**. Per tant:\n\n$$\\eta_\\text{total} = 0{,}96 \\cdot 0{,}97 = 0{,}9312 = 93{,}12\\ \\%$$\n\nResultat: **$93{,}12\\ \\%$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **d)** $93\\ \\% = 100 - 4 - 3$: restar els percentatges directament és incorrecte, perquè el 3 % es calcula sobre les peces que queden (el 96 %), no sobre les inicials.\n- **c)** $96\\ \\%$ només té en compte el primer procés."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$0{,}96 \\cdot 0{,}97 = 93{,}12\\ \\%$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s1-e2",
+      "serie": "1",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Semàfor que canvia a vermell per excés de velocitat o polsador de vianants",
+      "tema": "digital",
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "simplificació",
+        "portes lògiques"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Per a controlar la velocitat dels vehicles a l'entrada d'una població s'ha instal·lat un semàfor que generalment és verd, però que canvia a vermell quan es detecta un vehicle que s'hi apropa a una velocitat superior o igual a $60\\ \\text{km/h}$. Perquè els vianants puguin travessar la carretera, el semàfor dels cotxes també canvia a vermell si com a mínim fa un minut que és verd i, a més, un vianant prem el polsador que incorpora el mateix semàfor. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- velocitat del vehicle: $v$ = 1: velocitat $\\ge 60\\ \\text{km/h}$; 0: velocitat $< 60\\ \\text{km/h}$\n- temps en verd: $t$ = 1: temps $\\ge 1$ minut; 0: temps $< 1$ minut\n- polsador: $p$ = 1: premut; 0: no premut\n- canvi a vermell: $c$ = 1: canvia a vermell; 0: es manté verd",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Elaboreu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Traduïm l'enunciat a condicions lògiques",
+            "cos": "El semàfor canvia a vermell ($c = 1$) en dos casos:\n\n1. Un vehicle va a 60 km/h o més: $v = 1$ (sigui quin sigui $t$ i $p$).\n2. Fa com a mínim un minut que és verd **i** un vianant prem el polsador: $t = 1$ **i** $p = 1$.\n\nCom que n'hi ha prou que es compleixi un dels dos casos, s'uneixen amb una **O**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "Recorrem les 8 combinacions de $v$, $t$, $p$ i marquem $c = 1$ quan $v = 1$ o quan $t = p = 1$:\n\n| $v$ | $t$ | $p$ | $c$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | 1 |\n| 1 | 0 | 0 | 1 |\n| 1 | 0 | 1 | 1 |\n| 1 | 1 | 0 | 1 |\n| 1 | 1 | 1 | 1 |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica (suma de productes)",
+            "cos": "Escrivim un terme producte per cada fila amb $c = 1$ (variable negada si val 0):\n\n$$c = \\bar{v}\\, t\\, p + v\\, \\bar{t}\\, \\bar{p} + v\\, \\bar{t}\\, p + v\\, t\\, \\bar{p} + v\\, t\\, p$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació",
+            "cos": "Els quatre últims termes són totes les combinacions amb $v = 1$, i sumen $v$:\n\n$$v\\bar{t}\\bar{p} + v\\bar{t}p + vt\\bar{p} + vtp = v\\,(\\bar{t}\\bar{p} + \\bar{t}p + t\\bar{p} + tp) = v$$\n\nQueda $c = \\bar{v}\\,t\\,p + v$. Aplicant la propietat d'absorció $v + \\bar{v}\\,X = v + X$:\n\n$$c = v + t \\cdot p$$\n\nAmb un mapa de Karnaugh s'obté el mateix: un grup de quatre uns ($v = 1$) i una parella ($t = p = 1$).\n\nResultat: **$c = v + t \\cdot p$**, que és exactament la frase de l'enunciat."
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de portes lògiques",
+            "cos": "Cal una porta **I** (AND) de dues entrades amb $t$ i $p$, i una porta **O** (OR) de dues entrades amb $v$ i la sortida de la porta I:\n\n![Esquema de portes lògiques: porta I amb t i p, i porta O amb v](img/tecno/2017-J/s1-e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$c = 1$ a les files 011, 100, 101, 110 i 111"
+          },
+          {
+            "apartat": "b",
+            "valor": "$c = v + t \\cdot p$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Una porta I ($t$, $p$) seguida d'una porta O amb $v$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s1-e3-a",
+      "serie": "1",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cost de fabricar una estrella de sis puntes amb triangles, rombes o perfil sencer",
+      "tema": "economia",
+      "temes_secundaris": [
+        "disseny"
+      ],
+      "conceptes": [
+        "cost de producció",
+        "perímetre",
+        "superfície",
+        "triangle equilàter"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Es vol construir una estrella de sis puntes com la de la figura a partir d'un tauler de fusta. L'estrella es pot construir a partir de triangles equilàters o de rombes com els que es mostren en la figura ($b = 0{,}3\\ \\text{m}$). El cost de producció de l'estrella es calcula segons l'expressió $c = c_1\\, s + c_2\\, p$, en què $s$ és la superfície de fusta utilitzada i $p$ és el perímetre de les peces tallades per a construir l'estrella. El primer coeficient de cost és $c_1 = 15\\ \\text{€/m}^2$, i el segon és $c_2 = 0{,}6\\ \\text{€/m}$ si el perfil és senzill (com, per exemple, un triangle o un rombe) o $c_2 = 1{,}4\\ \\text{€/m}$ si el perfil és complex (com, per exemple, una estrella). Determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2017-J/s1-e3-a.png",
+          "peu": "Estrella de sis puntes i peces possibles (triangle equilàter i rombe de costat b = 0,3 m)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El nombre de triangles equilàters $n_\\text{T}$ que calen per a construir l'estrella i el perímetre de les peces tallades $p_\\text{T}$ en aquest cas.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "El nombre de rombes $n_\\text{R}$ que calen per a construir l'estrella i el perímetre de les peces tallades $p_\\text{R}$ en aquest cas.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El perímetre tallat $p_\\text{E}$ si l'estrella es construeix tallant-ne directament el perfil exterior.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "La superfície $s$ de fusta necessària per a construir l'estrella, i el cost $c_\\text{T}$, $c_\\text{R}$ i $c_\\text{E}$ de cadascuna de les tres opcions anteriors. Quina és l'opció més econòmica?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Costat dels triangles i dels rombes: $b = 0{,}3\\ \\text{m}$\n- $c_1 = 15\\ \\text{€/m}^2$\n- $c_2 = 0{,}6\\ \\text{€/m}$ (perfil senzill: triangle o rombe), $c_2 = 1{,}4\\ \\text{€/m}$ (perfil complex: estrella)\n- Incògnites: $n_\\text{T}$, $p_\\text{T}$, $n_\\text{R}$, $p_\\text{R}$, $p_\\text{E}$, $s$, $c_\\text{T}$, $c_\\text{R}$, $c_\\text{E}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Triangles que formen l'estrella i perímetre tallat",
+            "cos": "A la figura, les línies discontínues divideixen l'estrella en triangles equilàters de costat $b$: **6 triangles** formen l'hexàgon central i **6 més** són les puntes. Per tant $n_\\text{T} = 12$.\n\nCada triangle té 3 costats de longitud $b$, i cal tallar-los tots:\n\n$$p_\\text{T} = n_\\text{T} \\cdot 3\\, b = 12 \\cdot 3 \\cdot 0{,}3 = 10{,}8\\ \\text{m}$$\n\nResultat: **$n_\\text{T} = 12$ triangles, $p_\\text{T} = 10{,}8\\ \\text{m}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Rombes que formen l'estrella i perímetre tallat",
+            "cos": "Cada rombe està format per dos triangles equilàters (vegeu la línia discontínua del rombe): una punta més un triangle de l'hexàgon. Amb 12 triangles surten $n_\\text{R} = 12/2 = 6$ rombes: cada punta de l'estrella s'uneix amb el triangle de l'hexàgon que té al costat, i els 6 rombes queden disposats al voltant del centre.\n\nCada rombe té 4 costats de longitud $b$:\n\n$$p_\\text{R} = n_\\text{R} \\cdot 4\\, b = 6 \\cdot 4 \\cdot 0{,}3 = 7{,}2\\ \\text{m}$$\n\nResultat: **$n_\\text{R} = 6$ rombes, $p_\\text{R} = 7{,}2\\ \\text{m}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Perímetre exterior de l'estrella",
+            "cos": "Si es talla l'estrella sencera, només cal resseguir el contorn exterior. Cada una de les 6 puntes aporta 2 costats de longitud $b$:\n\n$$p_\\text{E} = 6 \\cdot 2\\, b = 12\\, b = 12 \\cdot 0{,}3 = 3{,}6\\ \\text{m}$$\n\nResultat: **$p_\\text{E} = 3{,}6\\ \\text{m}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Superfície de fusta",
+            "cos": "La superfície és la mateixa en les tres opcions: la de 12 triangles equilàters de costat $b$. L'àrea d'un triangle equilàter és $\\frac{\\sqrt{3}}{4} b^2$ (base per altura entre dos, amb altura $\\frac{\\sqrt{3}}{2} b$):\n\n$$s = 12 \\cdot \\frac{\\sqrt{3}\\, b^2}{4} = 12 \\cdot \\frac{\\sqrt{3} \\cdot 0{,}3^2}{4} = 0{,}4677\\ \\text{m}^2$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Cost de cada opció",
+            "cos": "Apliquem $c = c_1\\, s + c_2\\, p$, amb $c_2 = 0{,}6\\ \\text{€/m}$ per a triangles i rombes (perfil senzill) i $c_2 = 1{,}4\\ \\text{€/m}$ per a l'estrella (perfil complex):\n\n$$c_\\text{T} = 15 \\cdot 0{,}4677 + 0{,}6 \\cdot 10{,}8 = 7{,}015 + 6{,}48 = 13{,}49\\ \\text{€}$$\n\n$$c_\\text{R} = 15 \\cdot 0{,}4677 + 0{,}6 \\cdot 7{,}2 = 7{,}015 + 4{,}32 = 11{,}33\\ \\text{€}$$\n\n$$c_\\text{E} = 15 \\cdot 0{,}4677 + 1{,}4 \\cdot 3{,}6 = 7{,}015 + 5{,}04 = 12{,}05\\ \\text{€}$$\n\nResultat: **l'opció més econòmica és la dels rombes ($c_\\text{R} = 11{,}33\\ \\text{€}$)**. Tallar el perfil sencer requereix menys longitud de tall, però el cost per metre del perfil complex és tan alt que no compensa."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$n_\\text{T} = 12$; $p_\\text{T} = 10{,}8\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$n_\\text{R} = 6$; $p_\\text{R} = 7{,}2\\ \\text{m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$p_\\text{E} = 3{,}6\\ \\text{m}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$s = 0{,}4677\\ \\text{m}^2$; $c_\\text{T} = 13{,}49\\ \\text{€}$, $c_\\text{R} = 11{,}33\\ \\text{€}$, $c_\\text{E} = 12{,}05\\ \\text{€}$ → la més econòmica és amb rombes"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s1-e4-a",
+      "serie": "1",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Elevador amb motor de corrent continu i reductor d'engranatges",
+      "tema": "mecanica",
+      "temes_secundaris": [
+        "maquines-electriques",
+        "mecanismes"
+      ],
+      "conceptes": [
+        "potència mecànica",
+        "rendiment",
+        "parell motor",
+        "intensitat",
+        "potència dissipada"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Un elevador puja amb una velocitat constant una càrrega $m = 2\\,500\\ \\text{kg}$ fins a una altura $\\Delta h = 5\\ \\text{m}$ en un temps $t = 60\\ \\text{s}$. L'elevador s'acciona amb un motor elèctric de corrent continu en sèrie amb un reductor d'engranatges. Segons el catàleg del fabricant, el rendiment del reductor d'engranatges és $\\eta_\\text{red} = 0{,}70$. El motor s'alimenta amb una tensió $U = 220\\ \\text{V}$, gira a una velocitat $n = 1\\,500\\ \\text{min}^{-1}$ i té un rendiment electromecànic $\\eta_\\text{mot} = 0{,}78$. Si les resistències passives a l'elevador es consideren negligibles, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La potència mecànica $P_\\text{càrrega}$ requerida per a elevar la càrrega.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "La potència $P_\\text{m}$ i el parell $\\Gamma_\\text{m}$ a l'eix de sortida del motor.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "La intensitat $I$ que consumeix el motor elèctric.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "La potència total dissipada $P_\\text{diss}$ pel conjunt motor-reductor.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 2\\,500\\ \\text{kg}$, $\\Delta h = 5\\ \\text{m}$, $t = 60\\ \\text{s}$\n- $\\eta_\\text{red} = 0{,}70$, $\\eta_\\text{mot} = 0{,}78$\n- $U = 220\\ \\text{V}$, $n = 1\\,500\\ \\text{min}^{-1}$\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Cadena de potència: elèctrica → **motor** → eix del motor → **reductor** → càrrega\n- Incògnites: $P_\\text{càrrega}$, $P_\\text{m}$, $\\Gamma_\\text{m}$, $I$, $P_\\text{diss}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència per elevar la càrrega",
+            "cos": "Pujar a velocitat constant vol dir augmentar l'energia potencial $m\\,g\\,\\Delta h$ en un temps $t$:\n\n$$P_\\text{càrrega} = \\frac{m\\, g\\, \\Delta h}{t} = \\frac{2\\,500 \\cdot 9{,}807 \\cdot 5}{60} = 2\\,043\\ \\text{W}$$\n\nResultat: **$P_\\text{càrrega} \\approx 2\\,043\\ \\text{W}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència a l'eix del motor (entrada del reductor)",
+            "cos": "El reductor rep la potència de l'eix del motor $P_\\text{m}$ i en lliura a la càrrega només el 70 %:\n\n$$\\eta_\\text{red} = \\frac{P_\\text{càrrega}}{P_\\text{m}} \\quad\\Rightarrow\\quad P_\\text{m} = \\frac{P_\\text{càrrega}}{\\eta_\\text{red}} = \\frac{2\\,043}{0{,}70} = 2\\,919\\ \\text{W}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Parell a l'eix del motor",
+            "cos": "La potència d'un eix que gira és parell per velocitat angular, $P = \\Gamma\\, \\omega$. Passem la velocitat a rad/s:\n\n$$\\omega = n \\cdot \\frac{2\\pi}{60} = 1\\,500 \\cdot \\frac{2\\pi}{60} = 157{,}1\\ \\text{rad/s}$$\n\n$$\\Gamma_\\text{m} = \\frac{P_\\text{m}}{\\omega} = \\frac{2\\,919}{157{,}1} = 18{,}58\\ \\text{N m}$$\n\nResultat: **$P_\\text{m} \\approx 2\\,919\\ \\text{W}$, $\\Gamma_\\text{m} \\approx 18{,}58\\ \\text{N m}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència elèctrica i intensitat del motor",
+            "cos": "El motor converteix la potència elèctrica en mecànica amb rendiment $\\eta_\\text{mot}$:\n\n$$P_\\text{elèc} = \\frac{P_\\text{m}}{\\eta_\\text{mot}} = \\frac{2\\,919}{0{,}78} = 3\\,742\\ \\text{W}$$\n\nEn corrent continu, $P = U\\, I$:\n\n$$I = \\frac{P_\\text{elèc}}{U} = \\frac{3\\,742}{220} = 17{,}01\\ \\text{A}$$\n\nResultat: **$I \\approx 17{,}01\\ \\text{A}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Potència dissipada pel conjunt",
+            "cos": "Tot el que entra (elèctrica) i no arriba a la càrrega es perd en el motor i el reductor (en forma de calor, fregaments...):\n\n$$P_\\text{diss} = P_\\text{elèc} - P_\\text{càrrega} = 3\\,742 - 2\\,043 = 1\\,699\\ \\text{W}$$\n\nTambé es pot fer amb el rendiment global: $P_\\text{diss} = P_\\text{elèc}\\,(1 - \\eta_\\text{mot}\\,\\eta_\\text{red}) = 3\\,742 \\cdot (1 - 0{,}546) = 1\\,699\\ \\text{W}$.\n\nResultat: **$P_\\text{diss} \\approx 1\\,699\\ \\text{W}$** (823 W al motor i 876 W al reductor)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P_\\text{càrrega} \\approx 2\\,043\\ \\text{W}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{m} \\approx 2\\,919\\ \\text{W}$; $\\Gamma_\\text{m} \\approx 18{,}58\\ \\text{N m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{elèc} \\approx 3\\,742\\ \\text{W}$; $I \\approx 17{,}01\\ \\text{A}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$P_\\text{diss} \\approx 1\\,699\\ \\text{W}$"
+          }
+        ],
+        "nota": "Error típic: aplicar els rendiments a l'inrevés (multiplicar en lloc de dividir). Com que les pèrdues fan que cada etapa necessiti **més** potència a l'entrada que la que dona a la sortida, la potència va augmentant quan anem de la càrrega cap a la xarxa."
+      }
+    },
+    {
+      "id": "tecno-2017-J-s1-e3-b",
+      "serie": "1",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Placa d'alumini articulada i subjectada amb un cable d'acer inclinat",
+      "tema": "estatica",
+      "temes_secundaris": [
+        "resistencia"
+      ],
+      "conceptes": [
+        "diagrama de cos lliure",
+        "equilibri",
+        "reaccions",
+        "tensió normal",
+        "allargament unitari",
+        "límit elàstic"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "La placa d'alumini de la figura, de gruix $e = 5\\ \\text{mm}$, està articulada a terra en el punt O. Per a mantenir-la en repòs s'utilitza un cable d'acer que es fixa en el punt A i que té la direcció que es mostra en la figura (formant $30^\\circ$ amb l'horitzontal). El cable té una secció circular de diàmetre $d = 2\\ \\text{mm}$. La densitat de l'alumini és $\\rho_\\text{alumini} = 2\\,710\\ \\text{kg/m}^3$ i el mòdul elàstic de l'acer és $E_\\text{acer} = 207\\ \\text{GPa}$. La placa és rectangular, d'amplada $2L$ i altura $L$, amb $L = 1\\,000\\ \\text{mm}$; O i A són els dos vèrtexs superiors.",
+      "figures": [
+        {
+          "src": "img/tecno/2017-J/s1-e3-b.png",
+          "peu": "Placa d'alumini articulada a O i subjectada pel cable a A"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de cos lliure de la placa.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la massa $m$ de la placa.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Determineu la força $T$ que fa el cable, i les forces horitzontal $F_\\text{h}$ i vertical $F_\\text{v}$ en el punt O.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "Determineu la tensió normal $\\sigma$ del cable i el seu allargament unitari $\\varepsilon$. Si el límit elàstic de l'acer és $\\sigma_\\text{e,acer} = 350\\ \\text{MPa}$, el cable s'arriba a deformar de manera permanent?",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Placa: $2L \\times L = 2\\ \\text{m} \\times 1\\ \\text{m}$, gruix $e = 5\\ \\text{mm} = 0{,}005\\ \\text{m}$\n- $\\rho_\\text{alumini} = 2\\,710\\ \\text{kg/m}^3$\n- Cable: $d = 2\\ \\text{mm}$, inclinat $30^\\circ$ sobre l'horitzontal, $E_\\text{acer} = 207\\ \\text{GPa}$, $\\sigma_\\text{e,acer} = 350\\ \\text{MPa}$\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnites: $m$, $T$, $F_\\text{h}$, $F_\\text{v}$, $\\sigma$, $\\varepsilon$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de cos lliure",
+            "cos": "Aïllem la placa i hi dibuixem totes les forces exteriors:\n\n- El **pes** $m\\,g$, vertical cap avall, aplicat al centre de gravetat G (al centre de la placa: a una distància horitzontal $L$ de O).\n- La **tensió del cable** $T$, aplicada a A, en la direcció del cable: cap amunt i cap a la dreta, a $30^\\circ$.\n- La **reacció de l'articulació** O, que pot tenir dues components: $F_\\text{h}$ (horitzontal) i $F_\\text{v}$ (vertical). Com que el cable estira cap a la dreta, $F_\\text{h}$ ha d'anar cap a l'esquerra.\n\n![Diagrama de cos lliure de la placa](img/tecno/2017-J/s1-e3-b-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa de la placa",
+            "cos": "La massa és el volum per la densitat; el volum és la superfície $2L \\cdot L$ pel gruix:\n\n$$m = \\rho\\, V = \\rho \\cdot 2L^2\\, e = 2\\,710 \\cdot 2 \\cdot 1^2 \\cdot 0{,}005 = 27{,}10\\ \\text{kg}$$\n\nResultat: **$m = 27{,}10\\ \\text{kg}$** (pes $m\\,g = 265{,}8\\ \\text{N}$)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Equacions d'equilibri",
+            "cos": "La placa està en repòs, per tant la suma de forces i la suma de moments són zero:\n\n$$\\sum F_x = 0: \\quad F_\\text{h} = T \\cos 30^\\circ$$\n\n$$\\sum F_y = 0: \\quad F_\\text{v} + T \\sin 30^\\circ = m\\, g$$\n\nPer als moments, triem el punt A: la tensió hi passa (no fa moment) i $F_\\text{h}$ és sobre la mateixa horitzontal OA (tampoc fa moment). El pes està a $L$ de A i $F_\\text{v}$ a $2L$:\n\n$$\\sum M_\\text{A} = 0: \\quad F_\\text{v} \\cdot 2L = m\\, g \\cdot L$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Resolució del sistema",
+            "cos": "De l'equació de moments:\n\n$$F_\\text{v} = \\frac{m\\, g}{2} = \\frac{265{,}8}{2} = 132{,}9\\ \\text{N}$$\n\nDe la suma de forces verticals:\n\n$$T \\sin 30^\\circ = m\\, g - F_\\text{v} = \\frac{m\\,g}{2} \\quad\\Rightarrow\\quad T = \\frac{m\\,g}{2 \\sin 30^\\circ} = m\\, g = 265{,}8\\ \\text{N}$$\n\nDe la suma de forces horitzontals:\n\n$$F_\\text{h} = T \\cos 30^\\circ = 265{,}8 \\cdot 0{,}866 = 230{,}2\\ \\text{N}$$\n\nResultat: **$T = 265{,}8\\ \\text{N}$, $F_\\text{h} = 230{,}2\\ \\text{N}$ (cap a l'esquerra), $F_\\text{v} = 132{,}9\\ \\text{N}$ (cap amunt)**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Tensió normal al cable",
+            "cos": "La tensió normal és la força dividida per la secció del cable:\n\n$$S = \\frac{\\pi\\, d^2}{4} = \\frac{\\pi \\cdot 2^2}{4} = 3{,}142\\ \\text{mm}^2$$\n\n$$\\sigma = \\frac{T}{S} = \\frac{265{,}8\\ \\text{N}}{3{,}142\\ \\text{mm}^2} = 84{,}60\\ \\text{N/mm}^2 = 84{,}60\\ \\text{MPa}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Allargament unitari i comprovació del límit elàstic",
+            "cos": "Com que (ho comprovem tot seguit) estem a la zona elàstica, s'aplica la llei de Hooke $\\sigma = E\\, \\varepsilon$:\n\n$$\\varepsilon = \\frac{\\sigma}{E_\\text{acer}} = \\frac{84{,}60\\ \\text{MPa}}{207\\,000\\ \\text{MPa}} = 4{,}087 \\cdot 10^{-4} = 0{,}04087\\ \\%$$\n\nCom que $\\sigma = 84{,}60\\ \\text{MPa} < \\sigma_\\text{e,acer} = 350\\ \\text{MPa}$, el cable treballa en zona elàstica: **no es deforma de manera permanent**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Pes $m g$ a G, tensió $T$ a A (30°), reacció a O amb components $F_\\text{h}$ i $F_\\text{v}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m = 27{,}10\\ \\text{kg}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$T = 265{,}8\\ \\text{N}$; $F_\\text{h} = 230{,}2\\ \\text{N}$; $F_\\text{v} = 132{,}9\\ \\text{N}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$\\sigma = 84{,}60\\ \\text{MPa}$; $\\varepsilon = 4{,}087 \\cdot 10^{-4}$; no hi ha deformació permanent ($\\sigma < 350\\ \\text{MPa}$)"
+          }
+        ],
+        "nota": "Truc: prendre moments respecte del punt A elimina dues incògnites ($T$ i $F_\\text{h}$) d'una sola vegada. Si es prenen respecte de O, també surt directament $T \\sin 30^\\circ \\cdot 2L = m g L$."
+      }
+    },
+    {
+      "id": "tecno-2017-J-s1-e4-b",
+      "serie": "1",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Fanal de quinze LED alimentat amb 3 o 4 bateries",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "electronica",
+        "energia"
+      ],
+      "conceptes": [
+        "LED",
+        "llei d'Ohm",
+        "capacitat de bateria",
+        "energia elèctrica",
+        "associació en sèrie i paral·lel"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Un fanal per a exteriors consta de quinze LED connectats tal com mostra el circuit de la figura (tres branques en paral·lel de cinc LED en sèrie). La caiguda de tensió de cada LED és $U_\\text{LED} = 3{,}4\\ \\text{V}$. Per a regular la il·luminació, el fanal es pot alimentar amb $n = 3$ o $4$ bateries connectades en sèrie. Cada bateria proporciona una tensió $U_\\text{bat} = 12\\ \\text{V}$ i té una capacitat $c_\\text{bat} = 10\\,000\\ \\text{mA h}$. Entre les bateries i els LED hi ha una resistència $R$. Quan hi ha $n = 4$ bateries connectades, per cada LED hi passa un corrent $I_\\text{LED,4} = 25\\ \\text{mA}$. Per a aquesta configuració, determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2017-J/s1-e4-b.png",
+          "peu": "Circuit del fanal: resistència R en sèrie amb tres branques de cinc LED"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El valor de la resistència $R$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "L'energia consumida $E_\\text{total}$ en el temps $t = 8\\ \\text{h}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El temps $t_\\text{bat,4}$ que duren les bateries.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "Per a la configuració amb només $n = 3$ bateries connectades en sèrie: la nova intensitat $I_\\text{LED,3}$ que circula per cada LED.",
+          "punts": 0.5
+        },
+        {
+          "id": "e",
+          "enunciat": "Per a la configuració amb $n = 3$ bateries: el temps $t_\\text{bat,3}$ que duren les bateries.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- 3 branques en paral·lel, cadascuna amb 5 LED en sèrie\n- $U_\\text{LED} = 3{,}4\\ \\text{V}$, $U_\\text{bat} = 12\\ \\text{V}$, $c_\\text{bat} = 10\\,000\\ \\text{mA h}$\n- Amb $n = 4$: $U_\\text{bateries} = 4 \\cdot 12 = 48\\ \\text{V}$ i $I_\\text{LED,4} = 25\\ \\text{mA} = 0{,}025\\ \\text{A}$\n- Amb $n = 3$: $U_\\text{bateries} = 3 \\cdot 12 = 36\\ \\text{V}$\n- Incògnites: $R$, $E_\\text{total}$, $t_\\text{bat,4}$, $I_\\text{LED,3}$, $t_\\text{bat,3}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Tensió i corrent a la resistència",
+            "cos": "Cada branca té 5 LED en sèrie, i les tres branques estan en paral·lel, de manera que tenen la mateixa tensió: $5\\, U_\\text{LED} = 5 \\cdot 3{,}4 = 17\\ \\text{V}$. La resistència rep la resta de la tensió de les bateries, i per ella hi passa el corrent de les tres branques:\n\n$$U_R = 48 - 17 = 31\\ \\text{V}, \\qquad I = 3\\, I_\\text{LED,4} = 3 \\cdot 0{,}025 = 0{,}075\\ \\text{A}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valor de la resistència",
+            "cos": "Amb la llei d'Ohm:\n\n$$R = \\frac{U_\\text{bateries} - 5\\, U_\\text{LED}}{3\\, I_\\text{LED,4}} = \\frac{48 - 17}{0{,}075} = 413{,}3\\ \\Omega$$\n\nResultat: **$R \\approx 413{,}3\\ \\Omega$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència i energia consumides en 8 h",
+            "cos": "La potència que lliuren les bateries és la tensió total pel corrent total:\n\n$$P_\\text{total} = U_\\text{bateries} \\cdot 3\\, I_\\text{LED,4} = 48 \\cdot 0{,}075 = 3{,}6\\ \\text{W}$$\n\n$$E_\\text{total} = P_\\text{total}\\, t = 3{,}6\\ \\text{W} \\cdot 8 \\cdot 3\\,600\\ \\text{s} = 103\\,680\\ \\text{J} \\approx 103{,}7\\ \\text{kJ}$$\n\nEquivalentment, $E_\\text{total} = 3{,}6\\ \\text{W} \\cdot 8\\ \\text{h} = 28{,}80\\ \\text{W h}$.\n\nResultat: **$E_\\text{total} \\approx 103{,}7\\ \\text{kJ} = 28{,}80\\ \\text{W h}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Durada de les bateries amb n = 4",
+            "cos": "Les bateries estan en **sèrie**: el mateix corrent passa per totes, i la capacitat del conjunt és la d'una sola bateria ($10\\,000\\ \\text{mA h}$; el que augmenta és la tensió). El temps de descàrrega és la capacitat dividida pel corrent:\n\n$$t_\\text{bat,4} = \\frac{c_\\text{bat}}{3\\, I_\\text{LED,4}} = \\frac{10\\,000\\ \\text{mA h}}{75\\ \\text{mA}} = 133{,}3\\ \\text{h}$$\n\nResultat: **$t_\\text{bat,4} \\approx 133{,}3\\ \\text{h}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Nou corrent per LED amb n = 3",
+            "cos": "La resistència $R$ i la tensió dels LED no canvien; només baixa la tensió de les bateries a $36\\ \\text{V}$:\n\n$$I_\\text{LED,3} = \\frac{U_\\text{bateries} - 5\\, U_\\text{LED}}{3\\, R} = \\frac{36 - 17}{3 \\cdot 413{,}3} = 0{,}01532\\ \\text{A}$$\n\nResultat: **$I_\\text{LED,3} \\approx 15{,}32\\ \\text{mA}$** (menys corrent → menys llum: així es regula la il·luminació)."
+          },
+          {
+            "apartat": "e",
+            "titol": "Durada de les bateries amb n = 3",
+            "cos": "Ara el corrent total és $3 \\cdot 15{,}32 = 45{,}97\\ \\text{mA}$:\n\n$$t_\\text{bat,3} = \\frac{c_\\text{bat}}{3\\, I_\\text{LED,3}} = \\frac{10\\,000\\ \\text{mA h}}{45{,}97\\ \\text{mA}} = 217{,}5\\ \\text{h}$$\n\nResultat: **$t_\\text{bat,3} \\approx 217{,}5\\ \\text{h}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$R \\approx 413{,}3\\ \\Omega$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P = 3{,}6\\ \\text{W}$; $E_\\text{total} \\approx 103{,}7\\ \\text{kJ} = 28{,}80\\ \\text{W h}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$t_\\text{bat,4} \\approx 133{,}3\\ \\text{h}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$I_\\text{LED,3} \\approx 15{,}32\\ \\text{mA}$"
+          },
+          {
+            "apartat": "e",
+            "valor": "$t_\\text{bat,3} \\approx 217{,}5\\ \\text{h}$"
+          }
+        ],
+        "nota": "Error típic a l'apartat c: multiplicar la capacitat per 4 perquè hi ha 4 bateries. En sèrie, la capacitat (en mA h) no se suma; el que se suma és la tensió. (L'energia emmagatzemada sí que és 4 vegades la d'una bateria.)"
+      }
+    },
+    {
+      "id": "tecno-2017-J-s5-e1-q1",
+      "serie": "5",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Ocupació mitjana d'un tren d'alta velocitat en un any",
+      "tema": "economia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "percentatges",
+        "ocupació",
+        "capacitat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        5
+      ],
+      "enunciat": "Un tren d'alta velocitat ha transportat durant un any $3{,}2$ milions de passatgers. El tren està format per 8 vagons i té una capacitat nominal total de 405 passatgers. Si el tren fa 28 trajectes diaris, quin ha estat el percentatge d'ocupació mitjana del tren?",
+      "figures": [],
+      "opcions": {
+        "a": "$9{,}7\\ \\%$",
+        "b": "$77{,}3\\ \\%$",
+        "c": "$37{,}0\\ \\%$",
+        "d": "$39{,}1\\ \\%$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Places ofertes en un any",
+            "cos": "La capacitat de 405 passatgers és la de **tot el tren** (els 8 vagons junts), per tant el nombre de vagons no cal. En un any (365 dies) amb 28 trajectes diaris:\n\n$$N_\\text{places} = 405 \\cdot 28 \\cdot 365 = 4\\,139\\,100\\ \\text{places}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Ocupació mitjana",
+            "cos": "L'ocupació és la fracció de places ocupades:\n\n$$\\text{ocupació} = \\frac{3\\,200\\,000}{4\\,139\\,100} = 0{,}773 = 77{,}3\\ \\%$$\n\nResultat: **$77{,}3\\ \\%$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **a)** $9{,}7\\ \\% = 77{,}3\\ \\%/8$ surt de multiplicar la capacitat pels 8 vagons, com si 405 fos la capacitat d'un sol vagó. L'enunciat diu que 405 és la capacitat **total** del tren.\n- Si s'oblida que el tren fa 28 trajectes diaris o es compten malament els dies, surten valors sense sentit (per sobre del 100 % o molt petits)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$3{,}2 \\cdot 10^6 / (405 \\cdot 28 \\cdot 365) = 77{,}3\\ \\%$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s5-e1-q2",
+      "serie": "5",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Vehicles que no superen la ITV després de la segona revisió",
+      "tema": "fabricacio",
+      "temes_secundaris": [
+        "economia"
+      ],
+      "conceptes": [
+        "percentatges",
+        "control de qualitat",
+        "taxa de rebuig"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        5
+      ],
+      "enunciat": "En un any, $2{,}931$ milions de vehicles van passar la inspecció tècnica de vehicles (ITV) a Catalunya. El $82\\ \\%$ dels vehicles van superar la revisió sense defectes o amb defectes lleus, i els altres tenien defectes greus o molt greus que els van obligar a passar una segona revisió un cop reparats. Aquesta segona revisió va ser superada pel $85\\ \\%$ dels vehicles. Quants vehicles no van superar la ITV?",
+      "figures": [],
+      "opcions": {
+        "a": "$79\\,137$ vehicles.",
+        "b": "$377\\,761$ vehicles.",
+        "c": "$2\\,042\\,907$ vehicles.",
+        "d": "$483\\,615$ vehicles."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Vehicles que van a segona revisió",
+            "cos": "Si el 82 % supera la primera revisió, la resta, el $18\\ \\%$, ha de tornar-hi:\n\n$$N_2 = 0{,}18 \\cdot 2\\,931\\,000 = 527\\,580\\ \\text{vehicles}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Vehicles que tampoc superen la segona revisió",
+            "cos": "D'aquests, el 85 % la supera i el $15\\ \\%$ no:\n\n$$N_\\text{no} = 0{,}15 \\cdot 527\\,580 = 79\\,137\\ \\text{vehicles}$$\n\nResultat: **$79\\,137$ vehicles** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **c)** $2\\,042\\,907 = 2\\,931\\,000 \\cdot 0{,}82 \\cdot 0{,}85$: multiplicar els dos percentatges d'aprovats no té sentit, perquè el 85 % s'aplica només als que van a la segona revisió.\n- **d)** $483\\,615 = 2\\,931\\,000 \\cdot 0{,}165$, un percentatge que no correspon a cap grup de vehicles."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$0{,}15 \\cdot 0{,}18 \\cdot 2\\,931\\,000 = 79\\,137$ vehicles → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s5-e1-q3",
+      "serie": "5",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Longitud del fil de constantà d'una resistència",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "materials"
+      ],
+      "conceptes": [
+        "resistivitat",
+        "resistència elèctrica",
+        "secció"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Una resistència de $4{,}7\\ \\Omega$ està feta de fil de constantà de $0{,}61\\ \\text{mm}$ de diàmetre i una resistivitat de $0{,}49\\ \\mu\\Omega\\ \\text{m}$. Quina és la longitud del fil de constantà utilitzat?",
+      "figures": [],
+      "opcions": {
+        "a": "$9{,}592\\ \\text{m}$",
+        "b": "$1{,}121\\ \\text{m}$",
+        "c": "$2{,}803\\ \\text{m}$",
+        "d": "$3{,}569\\ \\text{m}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $R = 4{,}7\\ \\Omega$\n- $d = 0{,}61\\ \\text{mm} = 0{,}61 \\cdot 10^{-3}\\ \\text{m}$\n- $\\rho = 0{,}49\\ \\mu\\Omega\\ \\text{m} = 0{,}49 \\cdot 10^{-6}\\ \\Omega\\ \\text{m}$\n- Incògnita: longitud $L$"
+          },
+          {
+            "apartat": null,
+            "titol": "Secció del fil",
+            "cos": "$$S = \\frac{\\pi\\, d^2}{4} = \\frac{\\pi \\cdot (0{,}61 \\cdot 10^{-3})^2}{4} = 2{,}922 \\cdot 10^{-7}\\ \\text{m}^2$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Longitud a partir de la resistivitat",
+            "cos": "La resistència d'un fil és proporcional a la longitud i inversament proporcional a la secció: $R = \\rho\\, \\dfrac{L}{S}$. Aïllem $L$:\n\n$$L = \\frac{R\\, S}{\\rho} = \\frac{4{,}7 \\cdot 2{,}922 \\cdot 10^{-7}}{0{,}49 \\cdot 10^{-6}} = 2{,}803\\ \\text{m}$$\n\nResultat: **$L \\approx 2{,}803\\ \\text{m}$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "Confondre el diàmetre amb el radi (usar $S = \\pi d^2$) multiplica la secció per 4 i dona $11{,}21\\ \\text{m}$. També cal anar amb compte amb el prefix $\\mu$ ($10^{-6}$) de la resistivitat."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$L = R\\,S/\\rho \\approx 2{,}803\\ \\text{m}$ → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s5-e1-q4",
+      "serie": "5",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Transport més ràpid i més econòmic: marítim, carretera o ferrocarril",
+      "tema": "economia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "cost del transport",
+        "velocitat mitjana",
+        "comparació d'alternatives"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Un estudi sobre el transport d'una mercaderia conclou que el cost del transport marítim és de $0{,}87\\ \\text{€/km}$, el del transport per carretera és d'$1{,}69\\ \\text{€/km}$ i el del transport ferroviari és d'$1{,}03\\ \\text{€/km}$. En el cas del transport marítim, la velocitat mitjana és de $33\\ \\text{km/h}$ i la distància que cal recórrer és de $1\\,760\\ \\text{km}$; en el del transport per carretera, la velocitat mitjana és de $35\\ \\text{km/h}$ i la distància és de $1\\,050\\ \\text{km}$; en el del transport ferroviari, la velocitat mitjana és de $50\\ \\text{km/h}$ i la distància és de $1\\,160\\ \\text{km}$. Quin dels tres transports és més ràpid i quin és més econòmic?",
+      "figures": [],
+      "opcions": {
+        "a": "El més ràpid és el transport per carretera i el més econòmic és el ferroviari.",
+        "b": "El més ràpid és el transport per carretera i el més econòmic és el marítim.",
+        "c": "El transport ferroviari és el més ràpid i també el més econòmic.",
+        "d": "El més ràpid és el transport ferroviari i el més econòmic és el marítim."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Temps de cada transport",
+            "cos": "«Més ràpid» vol dir que tarda **menys temps** a fer el seu recorregut, $t = d/v$:\n\n| Transport | $t = d/v$ |\n|---|---|\n| Marítim | $1\\,760/33 = 53{,}3\\ \\text{h}$ |\n| Carretera | $1\\,050/35 = 30{,}0\\ \\text{h}$ |\n| Ferroviari | $1\\,160/50 = 23{,}2\\ \\text{h}$ |\n\nEl més ràpid és el **ferroviari**."
+          },
+          {
+            "apartat": null,
+            "titol": "Cost de cada transport",
+            "cos": "El cost total és el cost per km per la distància:\n\n| Transport | Cost |\n|---|---|\n| Marítim | $0{,}87 \\cdot 1\\,760 = 1\\,531{,}2\\ \\text{€}$ |\n| Carretera | $1{,}69 \\cdot 1\\,050 = 1\\,774{,}5\\ \\text{€}$ |\n| Ferroviari | $1{,}03 \\cdot 1\\,160 = 1\\,194{,}8\\ \\text{€}$ |\n\nEl més econòmic també és el **ferroviari** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- Comparar només el cost per km porta a triar el marítim (opcions **b** i **d**), però el vaixell ha de recórrer molta més distància.\n- Comparar només la distància porta a triar la carretera com a més ràpida (opcions **a** i **b**)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "Ferroviari: $23{,}2\\ \\text{h}$ i $1\\,194{,}8\\ \\text{€}$ (el més ràpid i el més barat) → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s5-e1-q5",
+      "serie": "5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat de sincronisme d'un motor asíncron en canviar de xarxa",
+      "tema": "maquines-electriques",
+      "temes_secundaris": [],
+      "conceptes": [
+        "motor asíncron",
+        "velocitat de sincronisme",
+        "parells de pols",
+        "freqüència"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6
+      ],
+      "enunciat": "La velocitat de sincronisme d'un motor asíncron, que està connectat a una xarxa de tensió $U = 230\\ \\text{V}$ i freqüència $f = 50\\ \\text{Hz}$, és de $750\\ \\text{min}^{-1}$. Quina serà la velocitat de sincronisme si es connecta a una xarxa de tensió $U = 120\\ \\text{V}$ i freqüència $f = 60\\ \\text{Hz}$?",
+      "figures": [],
+      "opcions": {
+        "a": "$900\\ \\text{min}^{-1}$",
+        "b": "$552\\ \\text{min}^{-1}$",
+        "c": "$750\\ \\text{min}^{-1}$",
+        "d": "$391\\ \\text{min}^{-1}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Parells de pols del motor",
+            "cos": "La velocitat de sincronisme només depèn de la freqüència i del nombre de parells de pols $p$ (que és una característica constructiva del motor):\n\n$$n_\\text{s} = \\frac{60\\, f}{p} \\quad\\Rightarrow\\quad p = \\frac{60 \\cdot 50}{750} = 4$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Nova velocitat de sincronisme",
+            "cos": "Amb la nova freqüència i els mateixos pols:\n\n$$n_\\text{s}' = \\frac{60 \\cdot 60}{4} = 900\\ \\text{min}^{-1}$$\n\nO directament: $n_\\text{s}$ és proporcional a $f$, $n_\\text{s}' = 750 \\cdot \\frac{60}{50} = 900\\ \\text{min}^{-1}$.\n\nResultat: **$n_\\text{s}' = 900\\ \\text{min}^{-1}$** → resposta **a**. La tensió no hi influeix."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **d)** $391 = 750 \\cdot \\frac{120}{230}$: pensar que la velocitat depèn de la tensió.\n- **c)** pensar que la velocitat no canvia, oblidant que depèn de la freqüència."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$n_\\text{s}' = 750 \\cdot 60/50 = 900\\ \\text{min}^{-1}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s5-e2",
+      "serie": "5",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Desconnexió automàtica de dos cilindres d'un motor segons acceleració i velocitat",
+      "tema": "digital",
+      "temes_secundaris": [
+        "control",
+        "termica"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "simplificació",
+        "esquema de contactes"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Un cotxe amb un motor de quatre cilindres en línia té un sistema automàtic per a desconnectar dos d'aquests cilindres a partir de la lectura d'un sensor en l'accelerador. El sistema manté els quatre cilindres connectats, i permet desconnectar-ne dos si la demanda d'acceleració és baixa i s'ha mantingut baixa en el darrer kilòmetre. Els dos cilindres només es desconnecten si la velocitat del motor és $1\\,400\\ \\text{min}^{-1} < n < 4\\,000\\ \\text{min}^{-1}$. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- velocitat del motor: $m$ = 1: si $1\\,400\\ \\text{min}^{-1} < n < 4\\,000\\ \\text{min}^{-1}$; 0: en cas contrari\n- acceleració actual: $aa$ = 1: demanda alta; 0: demanda baixa\n- acceleració en el darrer km: $ad$ = 1: demanda alta; 0: demanda baixa\n- cilindres connectats: $c$ = 1: tots quatre; 0: només dos",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Elaboreu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Quan es desconnecten els cilindres",
+            "cos": "Per defecte funcionen els quatre cilindres ($c = 1$). Només se'n desconnecten dos ($c = 0$) si es compleixen **alhora** les tres condicions:\n\n- la velocitat del motor és dins l'interval: $m = 1$\n- la demanda d'acceleració actual és baixa: $aa = 0$\n- la demanda en el darrer km ha estat baixa: $ad = 0$\n\nÉs a dir, $c = 0$ només a la fila $m = 1$, $aa = 0$, $ad = 0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "| $m$ | $aa$ | $ad$ | $c$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 1 |\n| 0 | 0 | 1 | 1 |\n| 0 | 1 | 0 | 1 |\n| 0 | 1 | 1 | 1 |\n| 1 | 0 | 0 | 0 |\n| 1 | 0 | 1 | 1 |\n| 1 | 1 | 0 | 1 |\n| 1 | 1 | 1 | 1 |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció lògica a partir de l'únic zero",
+            "cos": "Com que només hi ha un zero, és més ràpid escriure la funció negada: $\\bar{c}$ val 1 només quan $m = 1$, $aa = 0$ i $ad = 0$:\n\n$$\\bar{c} = m \\cdot \\overline{aa} \\cdot \\overline{ad} \\quad\\Rightarrow\\quad c = \\overline{m \\cdot \\overline{aa} \\cdot \\overline{ad}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació amb De Morgan",
+            "cos": "La llei de De Morgan diu que la negació d'un producte és la suma de les negacions:\n\n$$c = \\overline{m \\cdot \\overline{aa} \\cdot \\overline{ad}} = \\bar{m} + aa + ad$$\n\nResultat: **$c = \\bar{m} + aa + ad$**. En paraules: funcionen els quatre cilindres si la velocitat és fora de l'interval, **o** si ara hi ha demanda alta, **o** si n'hi ha hagut en el darrer km.\n\n(Si es fes per suma de productes amb els set uns i es simplifiqués per Karnaugh, sortiria el mateix: tres grups de quatre uns.)"
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de contactes",
+            "cos": "Una suma (O) es fa amb contactes en **paral·lel**. Cal tres branques en paral·lel que alimentin la sortida $c$:\n\n- un contacte **normalment tancat** de $m$ (fa $\\bar{m}$),\n- un contacte normalment obert de $aa$,\n- un contacte normalment obert de $ad$.\n\n![Esquema de contactes: m normalment tancat en paral·lel amb aa i ad normalment oberts](img/tecno/2017-J/s5-e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$c = 0$ només a la fila $m = 1$, $aa = 0$, $ad = 0$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$c = \\overline{m \\cdot \\overline{aa} \\cdot \\overline{ad}} = \\bar{m} + aa + ad$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Tres contactes en paral·lel: $m$ normalment tancat, $aa$ i $ad$ normalment oberts"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-J-s5-e3-a",
+      "serie": "5",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Consum d'un cartell lluminós PAU amb il·luminació seqüencial",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "potència elèctrica",
+        "energia elèctrica",
+        "longitud",
+        "kW h"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        7
+      ],
+      "enunciat": "Un cartell lluminós està format per les lletres P, A i U, tal com mostra la figura, construïdes amb tub lluminós ($h = 0{,}68\\ \\text{m}$, $b = 0{,}12\\ \\text{m}$, $r = 0{,}20\\ \\text{m}$, $\\alpha = 35^\\circ$). El tub lluminós consumeix $P_\\text{tub} = 60\\ \\text{W/m}$ quan es connecta a la xarxa de tensió $U = 230\\ \\text{V}$. Determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2017-J/s5-e3-a.png",
+          "peu": "Lletres P, A i U del cartell i les seves cotes"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Les longituds de tub lluminós $L_\\text{P}$, $L_\\text{A}$ i $L_\\text{U}$ que calen per a construir cada lletra.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Les potències $P_\\text{P}$, $P_\\text{A}$ i $P_\\text{U}$ consumides per cada lletra.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Perquè el cartell sigui més vistós, les lletres s'il·luminen seqüencialment durant dos segons cadascuna. S'estudien dues opcions: la primera opció seguiria la seqüència P-A-U / P-A-U / …, i la segona opció seguiria la seqüència P-A-U-A / P-A-U-A / … Determineu l'energia, en kW h, consumida pel cartell en cada cas en $t = 3\\ \\text{h}$ de funcionament.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $h = 0{,}68\\ \\text{m}$ (altura de les lletres), $b = 0{,}12\\ \\text{m}$, $r = 0{,}20\\ \\text{m}$, $\\alpha = 35^\\circ$\n- $P_\\text{tub} = 60\\ \\text{W/m}$\n- Cada lletra s'encén 2 s; temps de funcionament $t = 3\\ \\text{h} = 10\\,800\\ \\text{s}$\n- Incògnites: $L_\\text{P}$, $L_\\text{A}$, $L_\\text{U}$, $P_\\text{P}$, $P_\\text{A}$, $P_\\text{U}$, $E_1$, $E_2$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud de la P",
+            "cos": "La P està formada per un tram vertical d'altura $h$, dos trams horitzontals de longitud $b$ (a dalt i al mig) i una semicircumferència de radi $r$ (longitud $\\pi r$):\n\n$$L_\\text{P} = h + 2b + \\pi r = 0{,}68 + 2 \\cdot 0{,}12 + \\pi \\cdot 0{,}20 = 1{,}548\\ \\text{m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud de la A",
+            "cos": "Cada pota de la A és un tram inclinat que puja una altura $h$. L'angle entre les dues potes és $\\alpha$, per tant cada pota forma $\\alpha/2$ amb la vertical, i la seva longitud és la hipotenusa:\n\n$$L_\\text{pota} = \\frac{h}{\\cos(\\alpha/2)} = \\frac{0{,}68}{\\cos 17{,}5^\\circ} = 0{,}7130\\ \\text{m}$$\n\nA més hi ha el travesser horitzontal de longitud $2b$:\n\n$$L_\\text{A} = 2\\, \\frac{h}{\\cos(\\alpha/2)} + 2b = 2 \\cdot 0{,}7130 + 0{,}24 = 1{,}666\\ \\text{m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud de la U",
+            "cos": "La U té dos trams verticals rectes d'altura $h - r$ i una semicircumferència de radi $r$ a la part de baix:\n\n$$L_\\text{U} = 2\\,(h - r) + \\pi r = 2 \\cdot (0{,}68 - 0{,}20) + \\pi \\cdot 0{,}20 = 1{,}588\\ \\text{m}$$\n\nResultat: **$L_\\text{P} = 1{,}548\\ \\text{m}$, $L_\\text{A} = 1{,}666\\ \\text{m}$, $L_\\text{U} = 1{,}588\\ \\text{m}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència de cada lletra",
+            "cos": "El tub consumeix $60\\ \\text{W}$ per cada metre, per tant la potència és proporcional a la longitud, $P = P_\\text{tub}\\, L$:\n\n$$P_\\text{P} = 60 \\cdot 1{,}548 = 92{,}90\\ \\text{W}$$\n\n$$P_\\text{A} = 60 \\cdot 1{,}666 = 99{,}96\\ \\text{W}$$\n\n$$P_\\text{U} = 60 \\cdot 1{,}588 = 95{,}30\\ \\text{W}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Opció 1: seqüència P-A-U",
+            "cos": "Un cicle dura $t_\\text{cicle1} = 3 \\cdot 2 = 6\\ \\text{s}$, i en cada cicle cada lletra està encesa 2 s:\n\n$$E_\\text{cicle1} = (P_\\text{P} + P_\\text{A} + P_\\text{U}) \\cdot 2\\ \\text{s} = (92{,}90 + 99{,}96 + 95{,}30) \\cdot 2 = 576{,}3\\ \\text{J}$$\n\nEn 3 h hi caben $10\\,800/6 = 1\\,800$ cicles:\n\n$$E_1 = E_\\text{cicle1} \\cdot \\frac{3 \\cdot 3\\,600\\ \\text{s}}{t_\\text{cicle1}} = 576{,}3 \\cdot 1\\,800 = 1{,}037\\ \\text{MJ}$$\n\nPassem a kW h ($1\\ \\text{kW h} = 3{,}6\\ \\text{MJ}$): $E_1 = 1{,}037/3{,}6 = 0{,}2882\\ \\text{kW h}$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Opció 2: seqüència P-A-U-A",
+            "cos": "Ara el cicle té 4 passos ($t_\\text{cicle2} = 4 \\cdot 2 = 8\\ \\text{s}$) i la A s'encén dues vegades:\n\n$$E_\\text{cicle2} = (P_\\text{P} + 2P_\\text{A} + P_\\text{U}) \\cdot 2\\ \\text{s} = (92{,}90 + 2 \\cdot 99{,}96 + 95{,}30) \\cdot 2 = 776{,}2\\ \\text{J}$$\n\nEn 3 h hi caben $10\\,800/8 = 1\\,350$ cicles:\n\n$$E_2 = 776{,}2 \\cdot 1\\,350 = 1{,}048\\ \\text{MJ} = 0{,}2911\\ \\text{kW h}$$\n\nResultat: **$E_1 \\approx 0{,}2882\\ \\text{kW h}$ i $E_2 \\approx 0{,}2911\\ \\text{kW h}$**. La segona opció consumeix una mica més perquè la lletra que s'encén més sovint (la A) és la de més potència."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$L_\\text{P} = 1{,}548\\ \\text{m}$; $L_\\text{A} = 1{,}666\\ \\text{m}$; $L_\\text{U} = 1{,}588\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{P} = 92{,}90\\ \\text{W}$; $P_\\text{A} = 99{,}96\\ \\text{W}$; $P_\\text{U} = 95{,}30\\ \\text{W}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$E_1 \\approx 0{,}2882\\ \\text{kW h}$ (P-A-U); $E_2 \\approx 0{,}2911\\ \\text{kW h}$ (P-A-U-A)"
+          }
+        ],
+        "nota": "Una altra manera de fer l'apartat c: com que en cada moment només hi ha una lletra encesa, la potència mitjana és la mitjana de les potències de les lletres de la seqüència: $96{,}05\\ \\text{W}$ (opció 1) i $97{,}03\\ \\text{W}$ (opció 2). Multiplicant per 3 h surt el mateix resultat."
+      }
+    },
+    {
+      "id": "tecno-2017-J-s5-e4-a",
+      "serie": "5",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Ascensor amb contrapès i cintes d'acer: potència i tensió a les cintes",
+      "tema": "mecanica",
+      "temes_secundaris": [
+        "maquines-electriques",
+        "resistencia"
+      ],
+      "conceptes": [
+        "potència mecànica",
+        "contrapès",
+        "rendiment",
+        "tensió normal"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        7
+      ],
+      "enunciat": "Un ascensor que pot elevar una càrrega de fins a $m_\\text{c} = 320\\ \\text{kg}$ disposa d'un contrapès de massa $m_\\text{cp} = 120\\ \\text{kg}$. S'acciona mitjançant un motor elèctric de rendiment $\\eta = 0{,}82$, que fa girar una politja per on circulen cintes planes d'acer recobertes de poliuretà. El recorregut de les cintes fa que la relació entre la velocitat de pujada de la càrrega $v_\\text{c}$ i la velocitat de baixada del contrapès $v_\\text{cp}$ sigui la següent:\n\n$$v_\\text{c} = \\frac{v_\\text{cp}}{2}$$\n\nSi les resistències passives es consideren negligibles i la càrrega puja a una velocitat $v_\\text{c} = 1\\ \\text{m/s}$, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La potència mecànica $P_\\text{mec}$ necessària per a elevar la càrrega màxima.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La potència elèctrica $P_\\text{elèctr}$ consumida.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La massa de la càrrega per a la qual el motor ha de desenvolupar una potència nul·la.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "Si la càrrega és suportada per $n = 6$ cintes i cada cinta té una secció rectangular $s = 30\\ \\text{mm} \\times 2{,}5\\ \\text{mm}$, determineu la tensió normal $\\sigma_\\text{n}$ màxima que suporten les cintes.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Càrrega màxima: $m_\\text{c} = 320\\ \\text{kg}$, puja a $v_\\text{c} = 1\\ \\text{m/s}$\n- Contrapès: $m_\\text{cp} = 120\\ \\text{kg}$, baixa a $v_\\text{cp} = 2\\, v_\\text{c} = 2\\ \\text{m/s}$\n- Rendiment del motor: $\\eta = 0{,}82$\n- Cintes: $n = 6$, secció $s = 30 \\cdot 2{,}5 = 75\\ \\text{mm}^2$\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnites: $P_\\text{mec}$, $P_\\text{elèctr}$, $m_\\text{c}$ per a potència nul·la, $\\sigma_\\text{n}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Balanç de potències: la càrrega puja i el contrapès baixa",
+            "cos": "A velocitat constant i sense fregaments, la potència que ha de donar el motor és la que guanya la càrrega en energia potencial menys la que perd el contrapès en baixar (que ajuda el motor). La potència associada a un pes que es mou verticalment és $m\\, g\\, v$:\n\n$$P_\\text{mec} = m_\\text{c}\\, g\\, v_\\text{c} - m_\\text{cp}\\, g\\, v_\\text{cp}$$\n\nCom que $v_\\text{cp} = 2\\, v_\\text{c}$, el contrapès «val» el doble de la seva massa:\n\n$$P_\\text{mec} = (m_\\text{c} - 2\\, m_\\text{cp})\\, g\\, v_\\text{c} = (320 - 2 \\cdot 120) \\cdot 9{,}807 \\cdot 1 = 80 \\cdot 9{,}807 = 784{,}6\\ \\text{W}$$\n\nResultat: **$P_\\text{mec} \\approx 784{,}6\\ \\text{W}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència elèctrica amb el rendiment del motor",
+            "cos": "$$\\eta = \\frac{P_\\text{mec}}{P_\\text{elèctr}} \\quad\\Rightarrow\\quad P_\\text{elèctr} = \\frac{P_\\text{mec}}{\\eta} = \\frac{784{,}6}{0{,}82} = 956{,}8\\ \\text{W}$$\n\nResultat: **$P_\\text{elèctr} \\approx 956{,}8\\ \\text{W}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Càrrega que equilibra el contrapès",
+            "cos": "El motor no ha de fer potència quan la potència que guanya la càrrega és igual a la que perd el contrapès:\n\n$$P_\\text{mec} = 0 = (m_\\text{c} - 2\\, m_\\text{cp})\\, g\\, v_\\text{c} \\quad\\Rightarrow\\quad m_\\text{c} = 2\\, m_\\text{cp} = 2 \\cdot 120 = 240\\ \\text{kg}$$\n\nResultat: **$m_\\text{c} = 240\\ \\text{kg}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Força i tensió normal a cada cinta",
+            "cos": "La càrrega màxima es reparteix entre les 6 cintes:\n\n$$F_\\text{cinta} = \\frac{m_\\text{c}\\, g}{6} = \\frac{320 \\cdot 9{,}807}{6} = 523{,}0\\ \\text{N}$$\n\nLa tensió normal és la força dividida per la secció de la cinta ($30 \\cdot 2{,}5 = 75\\ \\text{mm}^2$):\n\n$$\\sigma_\\text{n} = \\frac{F_\\text{cinta}}{s} = \\frac{523{,}0\\ \\text{N}}{75\\ \\text{mm}^2} = 6{,}974\\ \\text{N/mm}^2 = 6{,}974\\ \\text{MPa}$$\n\nResultat: **$\\sigma_\\text{n} \\approx 6{,}974\\ \\text{MPa}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P_\\text{mec} \\approx 784{,}6\\ \\text{W}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{elèctr} \\approx 956{,}8\\ \\text{W}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$m_\\text{c} = 240\\ \\text{kg}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$F_\\text{cinta} \\approx 523{,}0\\ \\text{N}$; $\\sigma_\\text{n} \\approx 6{,}974\\ \\text{MPa}$"
+          }
+        ],
+        "nota": "Error típic a l'apartat a: restar directament les masses ($320 - 120 = 200\\ \\text{kg}$) sense tenir en compte que el contrapès es mou al doble de velocitat. Com en una palanca o una politja, el que s'ha d'igualar són les potències (força per velocitat), no les masses. Com la solució oficial, no es considera la massa de la cabina i a l'apartat d se suposa que el pes de la càrrega es reparteix entre les 6 cintes."
+      }
+    },
+    {
+      "id": "tecno-2017-J-s5-e3-b",
+      "serie": "5",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Potenciòmetre lineal com a sensor de distància",
+      "tema": "electronica",
+      "temes_secundaris": [
+        "circuits",
+        "control"
+      ],
+      "conceptes": [
+        "potenciòmetre",
+        "divisor de tensió",
+        "sensor de posició",
+        "sensibilitat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "Per a mesurar una distància s'utilitza un potenciòmetre lineal com el que mostra la figura. El palpador mòbil canvia el punt de mesurament del voltatge de sortida $U_\\text{s}$ i això fa que variïn les resistències $R_1$ i $R_2$. La suma de les resistències $R = R_1 + R_2$ es manté constant i igual a $R = 5\\ \\text{k}\\Omega$. Si el circuit s'alimenta amb una tensió $U_\\text{e} = 24\\ \\text{V}$:",
+      "figures": [
+        {
+          "src": "img/tecno/2017-J/s5-e3-b.png",
+          "peu": "Potenciòmetre lineal amb palpador mòbil; la tensió de sortida es pren sobre R2"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu la intensitat $I$ que circula pel circuit.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la tensió mesurada $U_\\text{s}$ quan $R_1 = 2\\ \\text{k}\\Omega$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu, de manera aproximada i indicant les escales, la corba de la tensió de sortida $U_\\text{s}$ en funció de la resistència $R_1$, per a $0 \\le R_1 \\le 5\\ \\text{k}\\Omega$.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "Si el sistema està calibrat perquè la distància mesurada sigui $d = 150\\ \\text{mm}$ per a $R_1 = 0$, i sigui $d = 1\\,200\\ \\text{mm}$ per a $R_1 = 5\\ \\text{k}\\Omega$: determineu el factor de sensibilitat $k = |\\Delta U_\\text{s}| / |\\Delta d|$ del sensor.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $U_\\text{e} = 24\\ \\text{V}$\n- $R = R_1 + R_2 = 5\\ \\text{k}\\Omega = 5\\,000\\ \\Omega$ (constant)\n- A la figura, la sortida $U_\\text{s}$ es pren entre el palpador i el borne inferior, que està connectat a l'extrem dret de $R_2$: per tant, **$U_\\text{s}$ és la tensió als borns de $R_2$**.\n- Calibratge: $d = 150\\ \\text{mm}$ per a $R_1 = 0$; $d = 1\\,200\\ \\text{mm}$ per a $R_1 = 5\\ \\text{k}\\Omega$\n- Incògnites: $I$, $U_\\text{s}$, corba $U_\\text{s}(R_1)$, $k$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Intensitat del circuit",
+            "cos": "Per la sortida no hi circula corrent (el voltímetre ideal no en consumeix), de manera que $R_1$ i $R_2$ estan en sèrie i la resistència total sempre és $R$:\n\n$$I = \\frac{U_\\text{e}}{R} = \\frac{24\\ \\text{V}}{5\\,000\\ \\Omega} = 4{,}8 \\cdot 10^{-3}\\ \\text{A} = 4{,}8\\ \\text{mA}$$\n\nResultat: **$I = 4{,}8\\ \\text{mA}$** (no depèn de la posició del palpador)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Tensió de sortida amb R1 = 2 kΩ",
+            "cos": "És un **divisor de tensió**: la sortida és la caiguda de tensió a $R_2 = R - R_1 = 3\\ \\text{k}\\Omega$:\n\n$$U_\\text{s} = I\\, R_2 = I\\,(R - R_1) = 4{,}8 \\cdot 10^{-3} \\cdot 3\\,000 = 14{,}4\\ \\text{V}$$\n\nResultat: **$U_\\text{s} = 14{,}4\\ \\text{V}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Expressió i gràfica de Us en funció de R1",
+            "cos": "De manera general:\n\n$$U_\\text{s} = \\frac{U_\\text{e}}{R}\\,(R - R_1) = 24 - 4{,}8\\, R_1 \\quad (R_1 \\text{ en k}\\Omega)$$\n\nÉs una **recta decreixent**: val $24\\ \\text{V}$ per a $R_1 = 0$ i $0\\ \\text{V}$ per a $R_1 = 5\\ \\text{k}\\Omega$.\n\n![Gràfica de la tensió de sortida en funció de R1: recta de 24 V a 0 V](img/tecno/2017-J/s5-e3-b-sol.png)"
+          },
+          {
+            "apartat": "d",
+            "titol": "Factor de sensibilitat",
+            "cos": "La sensibilitat diu quants volts canvia la sortida per cada mil·límetre de desplaçament. Quan el palpador va d'un extrem a l'altre, la tensió passa de 24 V a 0 V i la distància de 150 mm a 1 200 mm:\n\n$$k = \\frac{|\\Delta U_\\text{s}|}{|\\Delta d|} = \\frac{(24 - 0)\\ \\text{V}}{(1\\,200 - 150)\\ \\text{mm}} = \\frac{24}{1\\,050} = 0{,}02286\\ \\text{V/mm}$$\n\nResultat: **$k \\approx 0{,}02286\\ \\text{V/mm}$** (uns 22,9 mV per mil·límetre)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$I = 4{,}8\\ \\text{mA}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$U_\\text{s} = 14{,}4\\ \\text{V}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$U_\\text{s} = 24 - 4{,}8\\, R_1$ (recta de $24\\ \\text{V}$ a $0\\ \\text{V}$)"
+          },
+          {
+            "apartat": "d",
+            "valor": "$k \\approx 0{,}02286\\ \\text{V/mm}$"
+          }
+        ],
+        "nota": "La solució oficial anomena $U_\\text{i}$ i $U_\\text{o}$ les tensions d'entrada i de sortida, que a l'enunciat són $U_\\text{e}$ i $U_\\text{s}$. Error típic: calcular la sortida com $I R_1$ (9,6 V); cal mirar a l'esquema entre quins punts es mesura $U_\\text{s}$."
+      }
+    },
+    {
+      "id": "tecno-2017-J-s5-e4-b",
+      "serie": "5",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Rendiment d'una central de cicle combinat de gas natural",
+      "tema": "energia",
+      "temes_secundaris": [
+        "termica"
+      ],
+      "conceptes": [
+        "central de cicle combinat",
+        "poder calorífic",
+        "rendiment",
+        "potència consumida"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        8
+      ],
+      "enunciat": "Una central elèctrica de cicle combinat produeix electricitat mitjançant dos cicles termodinàmics: un primer cicle de combustió de gas natural, de poder calorífic $p = 32{,}1\\ \\text{MJ/kg}$, i un segon cicle en què s'aprofita la calor residual del primer cicle per a moure una turbina de vapor. El gas natural es distribueix liquat, amb una densitat $\\rho = 0{,}423\\ \\text{kg/L}$, i a la central es cremen $V = 4\\,515\\ \\text{m}^3$ d'aquest gas liquat en $24\\ \\text{h}$. La potència elèctrica que proporciona la central és $P_\\text{elèctr} = 390\\ \\text{MW}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La potència mitjana consumida $P_\\text{cons}$ per la central.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El rendiment total $\\eta$ de la central elèctrica.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El rendiment del cicle de gas $\\eta_\\text{g}$ si el rendiment del cicle de vapor és $\\eta_\\text{v} = 0{,}31$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Poder calorífic: $p = 32{,}1\\ \\text{MJ/kg}$\n- Densitat del gas liquat: $\\rho = 0{,}423\\ \\text{kg/L} = 423\\ \\text{kg/m}^3$\n- Volum cremat: $V = 4\\,515\\ \\text{m}^3$ en $t = 24\\ \\text{h} = 86\\,400\\ \\text{s}$\n- $P_\\text{elèctr} = 390\\ \\text{MW}$, $\\eta_\\text{v} = 0{,}31$\n- Incògnites: $P_\\text{cons}$, $\\eta$, $\\eta_\\text{g}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Massa de combustible i energia alliberada",
+            "cos": "Primer passem el volum a massa amb la densitat (compte: $1\\ \\text{m}^3 = 1\\,000\\ \\text{L}$):\n\n$$m = \\rho\\, V = 423\\ \\text{kg/m}^3 \\cdot 4\\,515\\ \\text{m}^3 = 1\\,909\\,845\\ \\text{kg}$$\n\nL'energia que allibera en cremar-se és la massa pel poder calorífic:\n\n$$E = p\\, m = 32{,}1 \\cdot 10^6 \\cdot 1\\,909\\,845 = 6{,}131 \\cdot 10^{13}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència mitjana consumida",
+            "cos": "Aquesta energia es consumeix en 24 h:\n\n$$P_\\text{cons} = \\frac{p\\, \\rho\\, V}{t} = \\frac{32{,}1 \\cdot 10^6 \\cdot 0{,}423 \\cdot 10^3 \\cdot 4\\,515}{24 \\cdot 3\\,600} = 709{,}6 \\cdot 10^6\\ \\text{W}$$\n\nResultat: **$P_\\text{cons} \\approx 709{,}6\\ \\text{MW}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Rendiment total",
+            "cos": "$$\\eta = \\frac{P_\\text{elèctr}}{P_\\text{cons}} = \\frac{390}{709{,}6} = 0{,}5496$$\n\nResultat: **$\\eta \\approx 0{,}5496$ (55,0 %)**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Com es combinen els dos rendiments",
+            "cos": "El cicle de gas aprofita una fracció $\\eta_\\text{g}$ de la potència consumida: $P_\\text{cg} = \\eta_\\text{g}\\, P_\\text{cons}$. La resta, $(1 - \\eta_\\text{g})\\, P_\\text{cons}$, és calor residual que passa al cicle de vapor, que n'aprofita una fracció $\\eta_\\text{v}$: $P_\\text{cv} = \\eta_\\text{v}\\,(1 - \\eta_\\text{g})\\, P_\\text{cons}$.\n\nLa potència elèctrica total és la suma de les dues:\n\n$$\\eta = \\frac{P_\\text{cg} + P_\\text{cv}}{P_\\text{cons}} = \\eta_\\text{g} + \\eta_\\text{v}\\,(1 - \\eta_\\text{g})$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Rendiment del cicle de gas",
+            "cos": "Aïllem $\\eta_\\text{g}$: $\\eta = \\eta_\\text{g}\\,(1 - \\eta_\\text{v}) + \\eta_\\text{v}$, per tant\n\n$$\\eta_\\text{g} = \\frac{\\eta - \\eta_\\text{v}}{1 - \\eta_\\text{v}} = \\frac{0{,}5496 - 0{,}31}{1 - 0{,}31} = \\frac{0{,}2396}{0{,}69} = 0{,}3473$$\n\nResultat: **$\\eta_\\text{g} \\approx 0{,}3473$ (34,7 %)**.\n\nComprovació: $0{,}3473 + 0{,}31 \\cdot (1 - 0{,}3473) = 0{,}3473 + 0{,}2023 = 0{,}5496$ ✓"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P_\\text{cons} \\approx 709{,}6\\ \\text{MW}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\eta \\approx 0{,}5496$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\eta_\\text{g} \\approx 0{,}3473$"
+          }
+        ],
+        "nota": "Error típic a l'apartat c: pensar que el rendiment total és el producte $\\eta_\\text{g}\\,\\eta_\\text{v}$ (això seria si els cicles fossin en sèrie i el segon aprofités el treball del primer) o la suma $\\eta_\\text{g} + \\eta_\\text{v}$. El cicle de vapor només aprofita la calor que el cicle de gas **no** ha convertit, $(1 - \\eta_\\text{g})$."
+      }
+    }
+  ]
+}

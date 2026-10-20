@@ -1,0 +1,724 @@
+{
+  "examen": {
+    "id": "fisica-2022-J",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2022,
+    "convocatoria": "juny",
+    "serie": "2",
+    "pdf_examen": "pdfs/fisica/2022-J-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2022-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels vuit problemes (P1–P8). Cada problema val 2,5 punts (dos apartats de 1,25 punts). Si es responen més problemes, només es valoren els quatre primers."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2022-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Camp gravitatori a l'òrbita de la Lluna i energia d'escapament Terra/Lluna",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp gravitatori",
+        "moviment circular uniforme",
+        "període orbital",
+        "energia d'escapament",
+        "conservació de l'energia mecànica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Responeu a QUATRE dels vuit problemes. Cada problema val 2,5 punts.\n\n**Dades:** $M_\\text{Terra} = 81{,}3\\,M_\\text{Lluna}$; $R_\\text{Terra} = 3{,}67\\,R_\\text{Lluna}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Un satèl·lit descriu una trajectòria circular de radi $R$ al voltant d'una massa central. El temps que triga a donar-hi una volta sencera és $T$. Deduïu l'expressió per a calcular la intensitat del camp gravitatori, $g$, creat per la massa central en els punts de l'òrbita del satèl·lit en funció dels paràmetres $R$ i $T$. Considereu que la Lluna descriu una òrbita circular al voltant de la Terra amb una distància entre centres de $384 \\times 10^{6}\\ \\text{m}$ i amb un període de $27{,}3$ dies. Fent ús només d'aquestes dues dades i de l'expressió trobada anteriorment, calculeu la intensitat del camp gravitatori als punts de l'òrbita de la Lluna.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Deduïu l'expressió de l'energia cinètica mínima necessària perquè un coet de massa $m$ pugui escapar d'un objecte astronòmic de massa $M$ i radi $R$. Quantes vegades més gran és l'energia cinètica mínima perquè el coet pugui escapar de la Terra respecte de l'energia mínima que necessita per a escapar de la Lluna? (Només podeu fer servir les dades donades.)",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Radi de l'òrbita de la Lluna: $R = 384 \\times 10^{6}\\ \\text{m}$\n- Període: $T = 27{,}3\\ \\text{dies} = 27{,}3 \\cdot 24 \\cdot 3600 = 2{,}359 \\times 10^{6}\\ \\text{s}$\n- $M_T = 81{,}3\\,M_L$, $\\ R_T = 3{,}67\\,R_L$\n- Incògnites: a) $g$ a l'òrbita de la Lluna; b) quocient $E_{C,\\text{Terra}}/E_{C,\\text{Lluna}}$ de les energies cinètiques mínimes d'escapament."
+          },
+          {
+            "apartat": "a",
+            "titol": "La gravetat és l'única força: fa de força centrípeta",
+            "cos": "Sobre el satèl·lit només actua la força gravitatòria, $F_g = m\\,g$, on $g$ és la intensitat del camp creat per la massa central a la distància $R$. Per la segona llei de Newton, $m\\,g = m\\,a$, és a dir, **l'acceleració del satèl·lit és $g$**.\n\nCom que el moviment és circular uniforme, aquesta acceleració és la centrípeta:\n\n$$a = \\omega^2 R, \\qquad \\omega = \\frac{2\\pi}{T}$$\n\nPer tant:\n\n$$g = \\omega^2 R = \\left(\\frac{2\\pi}{T}\\right)^2 R \\quad\\Longrightarrow\\quad \\boxed{g = \\frac{4\\pi^2 R}{T^2}}$$\n\nFixa't que no cal conèixer ni $G$ ni la massa de la Terra: el moviment del satèl·lit ja ens \"mesura\" el camp."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul per a l'òrbita de la Lluna",
+            "cos": "Passem el període a segons: $T = 27{,}3 \\cdot 24 \\cdot 60 \\cdot 60 = 2{,}359 \\times 10^{6}\\ \\text{s}$.\n\n$$g = \\frac{4\\pi^2 \\cdot 384 \\times 10^{6}}{(2{,}359 \\times 10^{6})^2} = 2{,}72 \\times 10^{-3}\\ \\text{m/s}^2$$\n\nResultat: **$g = 2{,}72 \\times 10^{-3}\\ \\text{m/s}^2$** (unes 3 600 vegades més petit que a la superfície terrestre)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Condició d'escapament: energia mecànica nul·la",
+            "cos": "El camp gravitatori és **conservatiu**, de manera que l'energia mecànica del coet es conserva entre la superfície i l'infinit. Escapar vol dir arribar a l'infinit ($E_P(\\infty) = 0$); el cas **mínim** és arribar-hi amb velocitat zero, $E_C(\\infty) = 0$. Per tant, l'energia mecànica mínima és zero:\n\n$$E_m = E_C + E_P = 0 \\quad\\Longrightarrow\\quad E_C = -E_P$$\n\nA la superfície, $E_P = -\\dfrac{G M m}{R}$, així que:\n\n$$\\boxed{E_{C,\\text{mín}} = \\frac{G M m}{R}}$$\n\non $M$ i $R$ són la massa i el radi de l'astre."
+          },
+          {
+            "apartat": "b",
+            "titol": "Quocient Terra / Lluna",
+            "cos": "Apliquem l'expressió a la Terra i a la Lluna per al mateix coet (la $m$ i la $G$ se simplifiquen):\n\n$$\\frac{E_C(\\text{Terra})}{E_C(\\text{Lluna})} = \\frac{G M_T m / R_T}{G M_L m / R_L} = \\frac{M_T}{M_L}\\cdot\\frac{R_L}{R_T} = \\frac{81{,}3}{3{,}67} = 22{,}2$$\n\nResultat: **escapar de la Terra costa, com a mínim, unes 22 vegades més energia que escapar de la Lluna.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$g = \\dfrac{4\\pi^2 R}{T^2} = 2{,}72 \\times 10^{-3}\\ \\text{m/s}^2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_{C,\\text{mín}} = \\dfrac{GMm}{R}$; $\\ E_C(\\text{Terra})/E_C(\\text{Lluna}) = 81{,}3/3{,}67 \\approx 22$"
+          }
+        ],
+        "nota": "La solució oficial dona $22{,}1$; el quocient $81{,}3/3{,}67 = 22{,}15$ s'arrodoneix a $22{,}2$. La diferència és només d'arrodoniment (en tots dos casos, unes 22 vegades). Error típic a l'apartat a): oblidar passar els dies a segons."
+      }
+    },
+    {
+      "id": "fisica-2022-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Línies de camp i equipotencials d'un dipol; camp i potencial al centre",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "dipol elèctric",
+        "línies de camp",
+        "superfícies equipotencials",
+        "principi de superposició",
+        "potencial elèctric"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Un dipol elèctric és un sistema de dues càrregues puntuals d'igual magnitud $Q$ i signe oposat.\n\n**Dada:** $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2022-J/e2.png",
+          "peu": "Requadre per representar el camp del dipol (càrrega positiva a l'esquerra, negativa a la dreta)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Representeu dins del requadre adjunt les línies de camp elèctric creades per un dipol elèctric. Representeu la projecció de les superfícies equipotencials en el pla de la figura. Orientació: per al camp elèctric dibuixeu 12 línies de camp i 3 línies equipotencials per cada càrrega.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "El valor de la càrrega és $|Q| = 1{,}50\\ \\mu\\text{C}$, la càrrega positiva està situada a $-5\\,\\vec{\\imath}\\ \\text{cm}$ i la càrrega negativa està situada a $5\\,\\vec{\\imath}\\ \\text{cm}$. Calculeu el camp elèctric creat pel dipol elèctric a l'origen de coordenades i també el valor del potencial elèctric a l'origen de coordenades. Per a les magnituds vectorials podeu donar les components o el mòdul, la direcció i el sentit.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Com són les línies de camp d'un dipol",
+            "cos": "Les regles que cal respectar:\n\n- Les línies de camp **surten de la càrrega positiva i entren a la negativa** (cal dibuixar-hi fletxes).\n- A prop de cada càrrega, les línies són **radials** i repartides **uniformement** (12 línies → una cada $30^\\circ$), perquè allà domina el camp d'aquella càrrega.\n- Lluny de les càrregues, les línies es corben i van de la $+$ a la $-$; mai no es tallen.\n- Al punt mitjà (origen) el camp és horitzontal i apunta cap a la càrrega negativa."
+          },
+          {
+            "apartat": "a",
+            "titol": "Com són les equipotencials",
+            "cos": "Les superfícies equipotencials són sempre **perpendiculars a les línies de camp**. A prop de cada càrrega són gairebé cercles centrats en ella (3 per càrrega); en allunyar-se es deformen. Per simetria, el pla mediador (l'eix $y$) és una equipotencial de potencial $V = 0$ (no és obligatori dibuixar-la).\n\n![Línies de camp (vermell) i equipotencials (blau) del dipol, segons la solució oficial](img/fisica/2022-J/e2-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Dades de l'apartat b",
+            "cos": "- $|Q| = 1{,}50\\ \\mu\\text{C} = 1{,}50 \\times 10^{-6}\\ \\text{C}$\n- $+Q$ a $x = -0{,}05\\ \\text{m}$; $\\ -Q$ a $x = +0{,}05\\ \\text{m}$\n- Distància de cada càrrega a l'origen: $r = 0{,}05\\ \\text{m}$\n- Incògnites: $\\vec{E}(0,0)$ i $V(0,0)$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Camp de cada càrrega a l'origen",
+            "cos": "El mòdul del camp d'una càrrega puntual és $E = k\\dfrac{|Q|}{r^2}$. Totes dues càrregues tenen el mateix $|Q|$ i són a la mateixa distància, per tant creen camps del mateix mòdul:\n\n$$E_p = E_n = 8{,}99 \\times 10^{9}\\cdot\\frac{1{,}50 \\times 10^{-6}}{0{,}05^2} = 5{,}39 \\times 10^{6}\\ \\text{N/C}$$\n\n**Sentits:** el camp de la positiva *s'allunya* d'ella: a l'origen apunta cap a $+x$. El camp de la negativa *apunta cap a ella*: també cap a $+x$. Per tant:\n\n$$\\vec{E}_p = \\vec{E}_n = 5{,}39 \\times 10^{6}\\,\\vec{\\imath}\\ \\text{N/C}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Superposició: camp total",
+            "cos": "Pel principi de superposició sumem vectorialment:\n\n$$\\vec{E} = \\vec{E}_p + \\vec{E}_n = 2 \\cdot 5{,}39 \\times 10^{6}\\,\\vec{\\imath} = 1{,}08 \\times 10^{7}\\,\\vec{\\imath}\\ \\text{N/C}$$\n\nÉs a dir, mòdul **$1{,}08 \\times 10^{7}\\ \\text{N/C}$**, direcció de l'eix $x$, sentit cap a la càrrega negativa ($+x$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potencial a l'origen",
+            "cos": "El potencial és un **escalar** i té el signe de la càrrega: $V = k\\dfrac{Q}{r}$.\n\n$$V_p = 8{,}99 \\times 10^{9}\\cdot\\frac{1{,}50 \\times 10^{-6}}{0{,}05} = 2{,}70 \\times 10^{5}\\ \\text{V}, \\qquad V_n = -2{,}70 \\times 10^{5}\\ \\text{V}$$\n\n$$V = V_p + V_n = \\mathbf{0\\ V}$$\n\nEl camp no és zero però el potencial sí: no hi ha cap contradicció, perquè $\\vec{E}$ està relacionat amb com *varia* $V$, no amb el seu valor."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Línies de $+$ a $-$, radials i uniformes a prop de cada càrrega; equipotencials perpendiculars (quasi cercles al voltant de cada càrrega)."
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\vec{E}(0,0) = 1{,}08 \\times 10^{7}\\,\\vec{\\imath}\\ \\text{N/C}$; $\\ V(0,0) = 0\\ \\text{V}$"
+          }
+        ],
+        "nota": "Error típic: restar els dos camps perquè les càrregues tenen signe oposat. A l'origen tots dos camps apunten en el mateix sentit (de la $+$ cap a la $-$) i se sumen; en canvi, els potencials sí que es cancel·len."
+      }
+    },
+    {
+      "id": "fisica-2022-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Ona harmònica en el cos d'una anguila: equació d'ona, velocitat i acceleració",
+      "tema": "ones",
+      "temes_secundaris": [
+        "oscillacions"
+      ],
+      "conceptes": [
+        "equació d'ona",
+        "nombre d'ona",
+        "freqüència angular",
+        "fase inicial",
+        "velocitat transversal",
+        "acceleració transversal"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "El moviment d'una anguila es pot aproximar al d'una ona harmònica transversal que es propaga des del cap fins a la cua. Per a estudiar-ne el moviment hem de simplificar: no considerem l'aportació al moviment de la resta de músculs del cos, i suposem, simplement, que l'ona es genera al cap de l'anguila, que vibra amb una freqüència de $0{,}50\\ \\text{Hz}$ i amb una amplitud de $5{,}00\\ \\text{cm}$. La distància entre dos punts consecutius del cos de l'anguila que estan en el mateix estat de vibració és de $20{,}0\\ \\text{cm}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2022-J/e3.png",
+          "peu": "Anguila amb el cap a l'origen i l'eix x en el sentit de propagació"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la velocitat a la qual es propaga l'ona pel cos de l'anguila, la freqüència angular i el nombre d'ona. Si a l'instant inicial el cap té una elongació zero i la velocitat d'oscil·lació transversal és positiva, determineu l'expressió de l'equació d'ona. Per a l'equació d'ona utilitzeu el sistema de coordenades de la figura superior, on el cap de l'anguila es troba sempre a l'origen de les abscisses.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "A partir de l'equació d'ona, deduïu i calculeu els mòduls de la velocitat i de l'acceleració màximes de l'oscil·lació transversal. Si la longitud total de l'anguila és de $58{,}0\\ \\text{cm}$, calculeu també la velocitat i l'acceleració transversals a la cua $10\\ \\text{s}$ més tard d'haver iniciat el moviment.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Freqüència: $f = 0{,}50\\ \\text{Hz}$\n- Amplitud: $A = 5{,}00\\ \\text{cm} = 0{,}0500\\ \\text{m}$\n- Distància entre punts consecutius en el mateix estat de vibració = **longitud d'ona**: $\\lambda = 20{,}0\\ \\text{cm} = 0{,}200\\ \\text{m}$\n- Condicions inicials al cap: $y(0,0) = 0$, $v_y(0,0) > 0$\n- Longitud de l'anguila: $L = 0{,}580\\ \\text{m}$; instant $t = 10\\ \\text{s}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat de propagació, freqüència angular i nombre d'ona",
+            "cos": "$$v = \\lambda f = 0{,}200 \\cdot 0{,}50 = \\mathbf{0{,}10\\ m/s}$$\n\n$$\\omega = 2\\pi f = 2\\pi \\cdot 0{,}50 = \\pi\\ \\text{rad/s} = \\mathbf{3{,}14\\ rad/s}$$\n\n$$k = \\frac{2\\pi}{\\lambda} = \\frac{2\\pi}{0{,}200} = 10\\pi\\ \\text{m}^{-1} = \\mathbf{31{,}4\\ m^{-1}}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Forma general i fase inicial",
+            "cos": "L'ona es propaga cap a $+x$ (del cap a la cua), per tant la fase és del tipus $kx - \\omega t$:\n\n$$y(x,t) = A\\sin(kx - \\omega t + \\varphi_0), \\qquad v_y(x,t) = \\frac{\\partial y}{\\partial t} = -A\\omega\\cos(kx - \\omega t + \\varphi_0)$$\n\nImposem les condicions inicials al cap ($x = 0$, $t = 0$):\n\n- $y(0,0) = A\\sin\\varphi_0 = 0 \\Rightarrow \\varphi_0 = 0$ o $\\varphi_0 = \\pi$.\n- $v_y(0,0) = -A\\omega\\cos\\varphi_0$: amb $\\varphi_0 = 0$ dona $-A\\omega < 0$ (no serveix); amb $\\varphi_0 = \\pi$ dona $+A\\omega > 0$ ✓.\n\nPer tant $\\varphi_0 = \\pi$ rad."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació d'ona",
+            "cos": "$$y(x,t) = 0{,}0500\\,\\sin(10\\pi x - \\pi t + \\pi)\\quad (y,\\ x \\text{ en m};\\ t \\text{ en s})$$\n\nCom que $\\sin(\\alpha + \\pi) = -\\sin\\alpha = \\sin(-\\alpha)$, és equivalent a escriure:\n\n$$\\boxed{y(x,t) = 0{,}0500\\,\\sin(\\pi t - 10\\pi x)}$$\n\n(Comprovació: a $x = 0$, $y = 0{,}05\\sin(\\pi t)$, que comença a zero i puja: velocitat positiva ✓.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat i acceleració transversals derivant l'equació d'ona",
+            "cos": "Fem servir la forma $y = A\\sin(\\pi t - 10\\pi x)$ i derivem respecte del temps (amb $x$ fixa):\n\n$$v_y(x,t) = \\frac{\\partial y}{\\partial t} = A\\omega\\cos(\\pi t - 10\\pi x)$$\n\n$$a_y(x,t) = \\frac{\\partial v_y}{\\partial t} = -A\\omega^2\\sin(\\pi t - 10\\pi x)$$\n\nEls valors màxims (en mòdul) s'obtenen quan el cosinus o el sinus valen $\\pm 1$:\n\n$$v_\\text{màx} = A\\omega = 0{,}0500 \\cdot \\pi = \\mathbf{0{,}157\\ m/s}$$\n\n$$a_\\text{màx} = A\\omega^2 = 0{,}0500 \\cdot \\pi^2 = \\mathbf{0{,}493\\ m/s^2}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat i acceleració a la cua per a t = 10 s",
+            "cos": "La cua és a $x = 0{,}580\\ \\text{m}$. L'ona hi arriba al cap de $x/v = 0{,}58/0{,}10 = 5{,}8\\ \\text{s}$, per tant a $t = 10\\ \\text{s}$ la cua ja oscil·la i podem aplicar l'equació.\n\nFase: $\\pi \\cdot 10 - 10\\pi \\cdot 0{,}580 = 10\\pi - 5{,}8\\pi = 4{,}2\\pi\\ \\text{rad}$ (equivalent a $0{,}2\\pi$).\n\n$$v_y = 0{,}157\\cos(4{,}2\\pi) = 0{,}157 \\cdot 0{,}809 = \\mathbf{0{,}127\\ m/s}$$\n\n$$a_y = -0{,}493\\sin(4{,}2\\pi) = -0{,}493 \\cdot 0{,}588 = \\mathbf{-0{,}290\\ m/s^2}$$\n\nRecorda posar la calculadora en **radians**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v = 0{,}10\\ \\text{m/s}$; $\\omega = \\pi\\ \\text{rad/s} = 3{,}14\\ \\text{rad/s}$; $k = 10\\pi\\ \\text{m}^{-1} = 31{,}4\\ \\text{m}^{-1}$; $y = 0{,}05\\sin(\\pi t - 10\\pi x)$ (SI)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_\\text{màx} = 0{,}157\\ \\text{m/s}$; $a_\\text{màx} = 0{,}493\\ \\text{m/s}^2$; a la cua per a $t = 10\\ \\text{s}$: $v_y = 0{,}127\\ \\text{m/s}$, $a_y = -0{,}290\\ \\text{m/s}^2$"
+          }
+        ],
+        "nota": "També són correctes altres formes equivalents, com $y = 0{,}05\\cos(10\\pi x - \\pi t + \\pi/2)$. L'enunciat demana explícitament obtenir $v$ i $a$ **derivant** l'equació d'ona: donar directament $A\\omega$ i $A\\omega^2$ sense derivar no es puntua completament. Error típic: confondre la velocitat de propagació ($0{,}10\\ \\text{m/s}$) amb la velocitat d'oscil·lació transversal."
+      }
+    },
+    {
+      "id": "fisica-2022-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Ciclotró: velocitat, freqüència del camp elèctric i longitud d'ona dels protons",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [
+        "quantica",
+        "relativitat"
+      ],
+      "conceptes": [
+        "ciclotró",
+        "força de Lorentz",
+        "moviment circular uniforme",
+        "freqüència de ciclotró",
+        "longitud d'ona de De Broglie"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        8
+      ],
+      "enunciat": "Un ciclotró és un accelerador de partícules format per dos elèctrodes buits semicirculars (en forma de D) on actua un camp magnètic homogeni $\\vec{B}$ perpendicular al pla horitzontal (pla de la figura). Així, a l'interior dels elèctrodes les partícules carregades positives, que es mouen en el pla horitzontal, descriuen una trajectòria circular. A l'espai buit que separa els dos elèctrodes s'aplica un camp elèctric altern $\\vec{E}$, de manera que les partícules són accelerades. Inicialment, les partícules tenen poca velocitat i a cada cicle, en passar d'un semicercle a l'altre, van augmentant de velocitat i de radi de gir fins que finalment surten fora del ciclotró.\n\n**Dades:** $m_p = 1{,}67 \\times 10^{-27}\\ \\text{kg}$; $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$; $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2022-J/e4.png",
+          "peu": "Esquema del ciclotró: camp B sortint del paper dins les D i camp elèctric E altern a l'espai entre elles"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Les partícules tenen una càrrega elèctrica positiva $q$ i una massa $m$. Deduïu l'expressió de la velocitat de les partícules en funció del quocient càrrega-massa ($q/m$), del radi $r$ de la trajectòria de les partícules i del mòdul del camp magnètic. Comproveu que el temps de recorregut dins una D no depèn de la velocitat de les partícules. Per què el camp elèctric ha de ser altern? Trobeu l'expressió de la freqüència del camp elèctric.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "El ciclotró té un radi de $0{,}50\\ \\text{m}$ i un camp magnètic de $0{,}20\\ \\text{T}$. Quan hi accelerem protons, quina velocitat tenen quan surten del ciclotró? Quina és la longitud d'ona associada a aquests protons? Quin radi mínim hauria de tenir el ciclotró per a considerar que els protons tenen velocitats relativistes (és a dir, un $10\\ \\%$ de la velocitat de la llum)?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Força magnètica sobre la partícula",
+            "cos": "La força que fa un camp magnètic sobre una càrrega en moviment és la **força de Lorentz**:\n\n$$\\vec{F}_m = q\\,\\vec{v} \\times \\vec{B}$$\n\nDins les D, $\\vec{B}$ és perpendicular al pla horitzontal i $\\vec{v}$ està continguda en aquest pla: formen $90^\\circ$, de manera que el mòdul és $F_m = qvB\\sin 90^\\circ = qvB$.\n\n$\\vec{F}_m$ és perpendicular a $\\vec{B}$ (és horitzontal) i a $\\vec{v}$ (és perpendicular a la trajectòria). Una força constant en mòdul i sempre perpendicular a la velocitat no canvia el mòdul de la velocitat, només la direcció: la partícula fa un **moviment circular uniforme** i la força apunta cap al centre.\n\n![Força magnètica cap al centre del semicercle](img/fisica/2022-J/e4-sol.png)\n\n![Direccions de B, v i F (regla de la mà dreta, q > 0)](img/fisica/2022-J/e4-sol-2.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat en funció de q/m, r i B",
+            "cos": "La força magnètica fa de **força centrípeta**:\n\n$$qvB = m\\frac{v^2}{r} \\quad\\Longrightarrow\\quad \\boxed{v = \\frac{q}{m}\\,r\\,B}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Temps dins d'una D: no depèn de la velocitat",
+            "cos": "Dins d'una D la partícula recorre mitja circumferència, de longitud $\\pi r$, a velocitat constant:\n\n$$t = \\frac{\\pi r}{v} = \\frac{\\pi r}{\\dfrac{q r B}{m}} \\quad\\Longrightarrow\\quad \\boxed{t = \\frac{\\pi m}{qB}}$$\n\nEl radi se simplifica: com més ràpida va la partícula, més gran és el semicercle, però triga **el mateix temps**. Només depèn de $m$, $q$ i $B$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Per què el camp elèctric ha de ser altern i quina freqüència té",
+            "cos": "Perquè la partícula s'acceleri a l'espai entre les D, el camp elèctric hi ha de tenir el **mateix sentit que la velocitat**. Però la partícula travessa aquest espai una vegada en un sentit i, mitja volta després, en el sentit contrari (vegeu la figura de l'enunciat). Per això el camp ha de **canviar de polaritat** cada vegada: ha de ser altern.\n\nEn un cicle complet la partícula passa per les dues D, de manera que el període del camp és el doble del temps dins d'una D:\n\n$$T = 2t = \\frac{2\\pi m}{qB} \\quad\\Longrightarrow\\quad \\boxed{f = \\frac{1}{2\\pi}\\,\\frac{q B}{m}}$$\n\nCom que $t$ no depèn de $v$, una sola freqüència fixa serveix per a totes les voltes (aquesta és la clau del ciclotró)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat de sortida dels protons",
+            "cos": "Els protons surten quan el radi de la trajectòria és el del ciclotró, $R = 0{,}50\\ \\text{m}$:\n\n$$v = \\frac{R B q}{m} = \\frac{0{,}50 \\cdot 0{,}20 \\cdot 1{,}602 \\times 10^{-19}}{1{,}67 \\times 10^{-27}} = \\mathbf{9{,}59 \\times 10^{6}\\ m/s}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud d'ona de De Broglie",
+            "cos": "Tota partícula amb quantitat de moviment $p = mv$ té associada una ona de longitud $\\lambda = h/p$:\n\n$$\\lambda = \\frac{h}{m v} = \\frac{6{,}63 \\times 10^{-34}}{1{,}67 \\times 10^{-27} \\cdot 9{,}59 \\times 10^{6}} = \\mathbf{4{,}14 \\times 10^{-14}\\ m}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Radi per arribar al 10 % de c",
+            "cos": "Volem $v = 0{,}1\\,c = 3{,}00 \\times 10^{7}\\ \\text{m/s}$. Aïllem el radi de $v = qRB/m$:\n\n$$R = \\frac{m v}{q B} = \\frac{1{,}67 \\times 10^{-27} \\cdot 3{,}00 \\times 10^{7}}{1{,}602 \\times 10^{-19} \\cdot 0{,}20} = \\mathbf{1{,}56\\ m}$$\n\nPer a radis més grans, els efectes relativistes ja no són negligibles."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v = \\dfrac{q}{m}rB$; $\\ t_D = \\dfrac{\\pi m}{qB}$ (independent de $v$); el camp ha de ser altern perquè la partícula travessa l'espai entre D en sentits oposats; $f = \\dfrac{qB}{2\\pi m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v = 9{,}59 \\times 10^{6}\\ \\text{m/s}$; $\\lambda = 4{,}14 \\times 10^{-14}\\ \\text{m}$; $R_\\text{mín} = 1{,}56\\ \\text{m}$"
+          }
+        ],
+        "nota": "Amb les dades de l'apartat b), la freqüència del camp elèctric seria $f = qB/(2\\pi m) \\approx 3{,}05 \\times 10^{6}\\ \\text{Hz}$ (no es demana). Als criteris oficials es resten 0,25 punts si no es justifica, a partir de les direccions dels vectors, que $F_m = qvB$ i que la força és normal a la trajectòria."
+      }
+    },
+    {
+      "id": "fisica-2022-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cadena de desintegració del radó-222 i període de semidesintegració del bismut-210",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "desintegració alfa",
+        "desintegració beta",
+        "cadena radioactiva",
+        "període de semidesintegració",
+        "constant de desintegració",
+        "llei de desintegració"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10
+      ],
+      "enunciat": "El gas radó és una de les fonts de radioactivitat natural més abundants de la Terra. El radó prové de la descomposició d'elements radioactius naturals (com l'urani i el tori). El gas es difon a través del sòl fins a arribar a la superfície. La cadena de desintegració del radó $^{222}_{86}\\text{Rn}$ inclou vuit desintegracions radioactives, fins que es forma l'isòtop estable del plom $^{206}_{82}\\text{Pb}$. En la figura següent es representen els nuclis que formen part d'aquesta cadena de desintegració nuclear. Al costat de cada nucli, se n'indica el període de semidesintegració.",
+      "figures": [
+        {
+          "src": "img/fisica/2022-J/e5.png",
+          "peu": "Cadena de desintegració del radó-222 amb els períodes de semidesintegració"
+        },
+        {
+          "src": "img/fisica/2022-J/e5-2.png",
+          "peu": "Evolució del nombre de nuclis d'una de les desintegracions de la cadena (en unitats de 10²³)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu les reaccions nuclears que permeten arribar al $^{206}_{82}\\text{Pb}$ a partir del $^{222}_{86}\\text{Rn}$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "El gràfic següent correspon a l'evolució dels nuclis d'una de les desintegracions radioactives de la cadena del radó. La mostra estudiada inicialment tenia $8{,}00 \\times 10^{23}$ nuclis. A partir del gràfic, determineu quin és el període de semidesintegració de la mostra, i raoneu a quin nucli de la cadena correspon. Amb aquesta dada calculeu quants dies han de passar fins que s'hagin desintegrat $7{,}95 \\times 10^{23}$ àtoms.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Com identificar cada desintegració",
+            "cos": "A la figura, cada fletxa és una desintegració. Mirem com canvien $A$ (nombre màssic) i $Z$ (nombre atòmic):\n\n- **Alfa** ($\\alpha = {}^{4}_{2}\\text{He}$): $A$ baixa 4 i $Z$ baixa 2 (fletxes verticals cap avall a la figura).\n- **Beta menys** ($\\beta^- = {}^{0}_{-1}e$, amb un antineutrí): $A$ no canvia i $Z$ puja 1 (fletxes diagonals cap amunt).\n\nEn totes les reaccions s'han de conservar $A$ (a dalt) i $Z$ (a baix)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Les vuit reaccions",
+            "cos": "$$^{222}_{86}\\text{Rn} \\rightarrow {}^{218}_{84}\\text{Po} + {}^{4}_{2}\\alpha$$\n$$^{218}_{84}\\text{Po} \\rightarrow {}^{214}_{82}\\text{Pb} + {}^{4}_{2}\\alpha$$\n$$^{214}_{82}\\text{Pb} \\rightarrow {}^{214}_{83}\\text{Bi} + {}^{0}_{-1}e + \\bar{\\nu}_e$$\n$$^{214}_{83}\\text{Bi} \\rightarrow {}^{214}_{84}\\text{Po} + {}^{0}_{-1}e + \\bar{\\nu}_e$$\n$$^{214}_{84}\\text{Po} \\rightarrow {}^{210}_{82}\\text{Pb} + {}^{4}_{2}\\alpha$$\n$$^{210}_{82}\\text{Pb} \\rightarrow {}^{210}_{83}\\text{Bi} + {}^{0}_{-1}e + \\bar{\\nu}_e$$\n$$^{210}_{83}\\text{Bi} \\rightarrow {}^{210}_{84}\\text{Po} + {}^{0}_{-1}e + \\bar{\\nu}_e$$\n$$^{210}_{84}\\text{Po} \\rightarrow {}^{206}_{82}\\text{Pb} + {}^{4}_{2}\\alpha$$\n\n**Comprovació global:** 4 desintegracions $\\alpha$ i 4 $\\beta^-$. $A$: $222 - 4\\cdot 4 = 206$ ✓. $Z$: $86 - 4\\cdot 2 + 4\\cdot 1 = 82$ ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "Període de semidesintegració a partir del gràfic",
+            "cos": "El període de semidesintegració $T_{1/2}$ és el temps que triga a desintegrar-se **la meitat** dels nuclis inicials: passar de $8{,}00 \\times 10^{23}$ a $4{,}00 \\times 10^{23}$. Al gràfic, la corba passa per $N = 4$ (×10²³) a $t \\approx 3{,}5$ dies:\n\n![Lectura del període de semidesintegració al gràfic (solució oficial)](img/fisica/2022-J/e5-sol.png)\n\n$$T_{1/2} \\approx 3{,}5\\ \\text{dies}$$\n\nComparant amb la figura de la cadena, l'únic nucli amb un període d'aquest ordre és el **$^{210}_{83}\\text{Bi}$** ($3{,}47$ dies)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Constant de desintegració",
+            "cos": "La llei de desintegració és $N(t) = N_0\\,e^{-\\lambda t}$. Quan $t = T_{1/2}$, $N = N_0/2$:\n\n$$\\frac{1}{2} = e^{-\\lambda T_{1/2}} \\quad\\Longrightarrow\\quad \\lambda = \\frac{\\ln 2}{T_{1/2}} = \\frac{0{,}693}{3{,}5\\ \\text{dies}} = 0{,}198\\ \\text{dies}^{-1}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Temps perquè es desintegrin 7,95·10²³ nuclis",
+            "cos": "Atenció: es demanen els nuclis **desintegrats**; els que queden són\n\n$$N(t) = 8{,}00 \\times 10^{23} - 7{,}95 \\times 10^{23} = 5{,}0 \\times 10^{21}$$\n\n$$\\frac{N}{N_0} = \\frac{5{,}0 \\times 10^{21}}{8{,}00 \\times 10^{23}} = 6{,}25 \\times 10^{-3} = e^{-\\lambda t}$$\n\n$$t = -\\frac{\\ln(6{,}25 \\times 10^{-3})}{\\lambda} = \\frac{5{,}075}{0{,}198\\ \\text{dies}^{-1}} \\approx \\mathbf{25{,}6\\ dies}$$\n\n(Equivalentment, $t = T_{1/2}\\,\\dfrac{\\ln(6{,}25 \\times 10^{-3})}{\\ln 0{,}5} = 3{,}5 \\cdot 7{,}32 = 25{,}6$ dies, unes 7,3 vegades el període.)\n\nSi en lloc de llegir el gràfic es fa servir el valor tabulat del bismut-210, $T_{1/2} = 3{,}47$ dies, surt $\\lambda = 0{,}200\\ \\text{dies}^{-1}$ i $t = 25{,}4$ dies."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "4 desintegracions $\\alpha$ i 4 $\\beta^-$: Rn-222 →α Po-218 →α Pb-214 →β Bi-214 →β Po-214 →α Pb-210 →β Bi-210 →β Po-210 →α Pb-206"
+          },
+          {
+            "apartat": "b",
+            "valor": "$T_{1/2} \\approx 3{,}5$ dies → $^{210}_{83}\\text{Bi}$; $\\lambda \\approx 0{,}20\\ \\text{dies}^{-1}$; $t \\approx 25{,}5$ dies ($25{,}6$ amb $T_{1/2} = 3{,}5$ d; $25{,}4$ amb $3{,}47$ d)"
+          }
+        ],
+        "nota": "**Discrepància amb l'oficial:** la pauta llegeix $T_{1/2} = 3{,}5$ dies però dona $\\lambda = 0{,}200\\ \\text{dies}^{-1}$ i $t = 25{,}4$ dies, valors que corresponen a $T_{1/2} = 3{,}47$ dies. Amb $3{,}5$ dies s'obté $\\lambda = 0{,}198\\ \\text{dies}^{-1}$ i $t = 25{,}6$ dies (la mateixa fórmula alternativa de la pauta, $t = T_{1/2}\\ln(6{,}25\\times10^{-3})/\\ln 0{,}5$, dona $25{,}6$ dies). Totes dues respostes s'han de considerar correctes; la diferència prové només de la lectura del gràfic. Error típic: posar $N = 7{,}95 \\times 10^{23}$ (els desintegrats) a la llei de desintegració en lloc dels que queden."
+      }
+    },
+    {
+      "id": "fisica-2022-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Aterratge del Perseverance a Mart: g a partir del potencial i treball de la grua",
+      "tema": "gravitacio",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "potencial gravitatori",
+        "camp gravitatori uniforme",
+        "superfícies equipotencials",
+        "treball",
+        "teorema de les forces vives"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12
+      ],
+      "enunciat": "El juliol del 2020 la NASA va posar en marxa una missió espacial que, entre altres tasques, havia de fer arribar el vehicle d'exploració *Perseverance* a la superfície de Mart. El 18 de febrer de 2021 va tenir lloc l'aterratge del vehicle. En la darrera etapa d'aquest procés complex d'aterratge, una grua fa baixar d'una manera controlada el vehicle des d'una altura de $20{,}0\\ \\text{m}$ per sobre de la superfície de Mart. Durant tot aquest recorregut, la intensitat del camp gravitatori es pot considerar uniforme.\n\n**Dada:** la massa del vehicle és $1\\,025\\ \\text{kg}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2022-J/e6.png",
+          "peu": "Esquemes a, b, c i d proposats per a les línies equipotencials prop de la superfície de Mart"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El valor absolut de la diferència de potencial gravitatori entre la superfície del planeta i un punt elevat $20{,}0\\ \\text{m}$ per sobre de la superfície és $74{,}4\\ \\text{J/kg}$. A partir de la diferència de potencial, determineu el mòdul de la intensitat del camp gravitatori a la superfície de Mart. Quin dels esquemes següents (a, b, c o d) representa les línies equipotencials a la superfície de Mart? Situeu en el diagrama triat la línia de menor potencial ($V_\\text{baix}$) i la de major potencial ($V_\\text{alt}$). Justifiqueu totes les respostes.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Si durant aquesta darrera etapa, el vehicle fa un descens de $20{,}0\\ \\text{m}$ a una velocitat constant, quin treball ha fet la grua? Podeu negligir el treball fet per les forces de fregament.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Altura: $d = h = 20{,}0\\ \\text{m}$\n- $|\\Delta V| = 74{,}4\\ \\text{J/kg}$ entre la superfície i $20{,}0\\ \\text{m}$ d'altura\n- Massa del vehicle: $m = 1\\,025\\ \\text{kg}$\n- Incògnites: a) $g_\\text{Mart}$ i l'esquema correcte; b) $W_\\text{grua}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Relació entre camp i potencial en un camp uniforme",
+            "cos": "En un camp uniforme, la diferència de potencial entre dos punts separats una distància $d$ en la direcció del camp és $|\\Delta V| = g\\,d$ (és l'anàleg de $U = mgh$ dividit per la massa). Per tant:\n\n$$g = \\frac{|\\Delta V|}{d} = \\frac{74{,}4\\ \\text{J/kg}}{20{,}0\\ \\text{m}} = \\mathbf{3{,}72\\ m/s^2}$$\n\n(Unitats: $\\text{J}/(\\text{kg}\\cdot\\text{m}) = \\text{N/kg} = \\text{m/s}^2$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Quin esquema representa les equipotencials",
+            "cos": "- El potencial és una magnitud **escalar**, no té sentit: les línies amb fletxes (**a** i **b**) no poden ser equipotencials.\n- Les línies de camp gravitatori són **verticals i cap avall** (indiquen la força sobre una massa). Les equipotencials són **perpendiculars** a les línies de camp, per tant són **horitzontals**, paral·leles a la superfície.\n\nL'esquema correcte és el **c**."
+          },
+          {
+            "apartat": "a",
+            "titol": "On és el potencial més alt i el més baix",
+            "cos": "Les línies de camp apunten en el sentit en què el potencial **disminueix**. Com que $\\vec{g}$ apunta cap avall, el potencial augmenta amb l'altura: $V_\\text{alt}$ és la línia de dalt (a 20 m) i $V_\\text{baix}$ la de prop de la superfície. També es veu amb $V = g\\,h$ (prenent $V = 0$ a la superfície) o amb $V(r) = -GM/r$: en allunyar-nos del planeta $r$ **augmenta** i $V$ es fa menys negatiu, és a dir, augmenta.\n\n![Esquema c amb les línies de camp (vermell) i V_alt / V_baix (solució oficial)](img/fisica/2022-J/e6-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball del camp gravitatori",
+            "cos": "El treball d'una força conservativa és menys la variació d'energia potencial, $W_{cg} = -\\Delta U = -m\\,\\Delta V$. El vehicle baixa d'un potencial alt a un de baix, així que $\\Delta V = -74{,}4\\ \\text{J/kg}$:\n\n$$W_{cg} = -m\\,\\Delta V = -1\\,025 \\cdot (-74{,}4) = +7{,}63 \\times 10^{4}\\ \\text{J}$$\n\nÉs positiu: el pes té el mateix sentit que el desplaçament (cap avall)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Teorema de les forces vives: treball de la grua",
+            "cos": "El treball total sobre el vehicle és igual a la variació d'energia cinètica. Com que baixa a **velocitat constant**, $\\Delta E_C = 0$, i el treball total és zero. Sense fregament, les úniques forces que fan treball són el pes i la grua:\n\n$$W_\\text{grua} + W_{cg} = \\Delta E_C = 0 \\quad\\Longrightarrow\\quad W_\\text{grua} = -W_{cg} = \\mathbf{-7{,}63 \\times 10^{4}\\ J}$$\n\nEl signe negatiu és important: la grua estira cap amunt mentre el vehicle baixa (la força s'oposa al desplaçament). També es pot calcular directament: $W_\\text{grua} = F\\,d\\cos 180^\\circ = -m g d = -1\\,025 \\cdot 3{,}72 \\cdot 20{,}0 = -7{,}63 \\times 10^{4}\\ \\text{J}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$g = 3{,}72\\ \\text{m/s}^2$; esquema **c** (equipotencials horitzontals); $V_\\text{alt}$ a dalt (20 m) i $V_\\text{baix}$ a la superfície"
+          },
+          {
+            "apartat": "b",
+            "valor": "$W_\\text{grua} = -7{,}63 \\times 10^{4}\\ \\text{J}$ (el pes fa $+7{,}63 \\times 10^{4}\\ \\text{J}$)"
+          }
+        ],
+        "nota": "L'enunciat demana obtenir $g$ **a partir de la diferència de potencial**: no es considera correcte fer servir $g = GM/R^2$. A la pauta oficial hi ha un lapsus: diu que \"quan ens allunyem de la superfície $r$ disminueix\"; en realitat $r$ **augmenta**, i per això $V = -GM/r$ augmenta. Per tenir els 0,25 p finals cal que el treball de la grua tingui el signe correcte (negatiu)."
+      }
+    },
+    {
+      "id": "fisica-2022-J-e7",
+      "exercici": 7,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Identificar un oboè pel seu espectre i potència sonora d'un quintet de vent",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ones estacionàries",
+        "harmònics",
+        "tub obert-tancat",
+        "nivell d'intensitat sonora",
+        "intensitat sonora",
+        "potència sonora"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        13
+      ],
+      "enunciat": "Per a identificar els instruments musicals es pot utilitzar un espectre de freqüències. A la figura següent es representa l'espectre d'un instrument que es vol identificar. L'oboè és un instrument que té un extrem obert i un extrem tancat que és l'embocadura amb una canya. A l'extrem obert, l'amplitud de la vibració de les molècules és màxima: tenim un ventre. En canvi, a l'altre extrem, el tudell per on es bufa és una canya que comunica pressió a l'aire i impedeix que aquest es pugui moure amb llibertat: és un node. D'altra banda, en un piano les cordes estan pinçades pels dos extrems, és a dir, els dos extrems de la corda són nodes.\n\n**Dades:** $I_0 = 10^{-12}\\ \\text{W m}^{-2}$. La velocitat del so en l'aire és de $340\\ \\text{m s}^{-1}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2022-J/e7.png",
+          "peu": "Espectre de freqüències de l'instrument: pics a 440 Hz i a 1 320 Hz"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina és la freqüència fonamental d'aquest espectre? Determineu si es tracta d'un oboè o d'un piano, i justifiqueu la resposta. Determineu també la llargària del tub o de la corda.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Un quintet de vent acostuma a estar format per cinc instrumentistes, normalment flauta travessera, oboè, clarinet, trompa i fagot. A l'inici de la interpretació d'una composició tots 5 toquen de forma suau i amb la mateixa intensitat, generant un nivell d'intensitat sonora de $80\\ \\text{dB}$ a un espectador que es troba a una distància d'$1{,}5\\ \\text{m}$. Quina és la potència sonora de cada instrument? Suposeu que aquesta potència es distribueix uniformement per tota l'àrea d'una semiesfera.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Freqüència fonamental",
+            "cos": "La freqüència fonamental (primer harmònic) és la **més baixa** que apareix a l'espectre: el primer pic és a\n\n$$f_1 = 440\\ \\text{Hz}$$\n\nEl segon pic és a $1\\,320\\ \\text{Hz} = 3 \\cdot 440\\ \\text{Hz}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Harmònics d'una corda (node-node) i d'un tub obert-tancat (node-ventre)",
+            "cos": "Les ones estacionàries han de complir les condicions als extrems:\n\n![Ones estacionàries en un piano (node-node) i en un oboè (node-ventre)](img/fisica/2022-J/e7-sol.png)\n\n- **Piano** (nodes als dos extrems): hi caben un nombre sencer de mitges longituds d'ona,\n$$L = n\\frac{\\lambda}{2} \\Rightarrow f_n = n\\frac{v}{2L} = n f_1, \\quad n = 1, 2, 3, \\dots$$\nHi ha **tots** els harmònics: el segon seria a $880\\ \\text{Hz}$.\n- **Oboè** (node a un extrem, ventre a l'altre): hi cap un nombre senar de quarts de longitud d'ona,\n$$L = n\\frac{\\lambda}{4} \\Rightarrow f_n = n\\frac{v}{4L} = n f_1, \\quad n = 1, 3, 5, \\dots$$\nNomés hi ha els harmònics **senars**: després de $440\\ \\text{Hz}$ ve $3 \\cdot 440 = 1\\,320\\ \\text{Hz}$.\n\nL'espectre té pics a 440 Hz i 1 320 Hz i **no** a 880 Hz: correspon a un **oboè**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Llargària del tub",
+            "cos": "Per al fonamental d'un tub obert-tancat ($n = 1$):\n\n$$f_1 = \\frac{v}{4L} \\quad\\Longrightarrow\\quad L = \\frac{v}{4 f_1} = \\frac{340}{4 \\cdot 440} = \\mathbf{0{,}193\\ m}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat que arriba de cada instrument",
+            "cos": "El nivell d'intensitat sonora és $\\beta = 10\\log\\dfrac{I_\\text{total}}{I_0}$. Els cinc instruments sonen amb la mateixa intensitat $I$, i les intensitats se sumen: $I_\\text{total} = 5I$.\n\n$$80 = 10\\log\\frac{5I}{I_0} \\;\\Rightarrow\\; 5I = I_0 \\cdot 10^{8} = 10^{-12}\\cdot 10^{8} = 10^{-4}\\ \\text{W/m}^2$$\n\n$$I = \\frac{10^{-4}}{5} = 2{,}00 \\times 10^{-5}\\ \\text{W/m}^2$$\n\nCompte: els decibels **no** se sumen; el que se suma són les intensitats."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència de cada instrument (semiesfera)",
+            "cos": "La intensitat és la potència repartida per unitat d'àrea. La potència de cada instrument es reparteix sobre una **semiesfera** de radi $r = 1{,}5\\ \\text{m}$, d'àrea $2\\pi r^2$:\n\n$$I = \\frac{P}{2\\pi r^2} \\quad\\Longrightarrow\\quad P = I \\cdot 2\\pi r^2 = 2{,}00 \\times 10^{-5} \\cdot 2\\pi \\cdot 1{,}5^2 = \\mathbf{2{,}83 \\times 10^{-4}\\ W}$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$f_1 = 440\\ \\text{Hz}$; és un **oboè** (només harmònics senars: 440 Hz i 1 320 Hz, no hi ha 880 Hz); $L = 0{,}193\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I = 2{,}00 \\times 10^{-5}\\ \\text{W/m}^2$ per instrument; $P = 2{,}83 \\times 10^{-4}\\ \\text{W}$ per instrument"
+          }
+        ],
+        "nota": "Errors típics: fer servir l'àrea d'una esfera sencera ($4\\pi r^2$) en lloc de la semiesfera, o dividir els 80 dB entre 5 instruments en lloc de dividir la intensitat."
+      }
+    },
+    {
+      "id": "fisica-2022-J-e8",
+      "exercici": 8,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Efecte fotoelèctric amb un càtode de cesi i tres punters làser",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "freqüència llindar",
+        "treball d'extracció",
+        "energia del fotó",
+        "energia cinètica màxima",
+        "longitud d'ona de De Broglie"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        14
+      ],
+      "enunciat": "Considereu un experiment d'efecte fotoelèctric en què el càtode és una làmina de cesi que té una freqüència llindar de $4{,}59 \\times 10^{14}\\ \\text{Hz}$.\n\n**Dades:** $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$; $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$; $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2022-J/e8.png",
+          "peu": "Quadrícula per representar l'energia cinètica màxima dels electrons en funció de la freqüència (3,0–7,0 ×10¹⁴ Hz)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el treball d'extracció del càtode. Si il·luminem el càtode amb els diferents punters làser de la taula que hi ha a continuació, justifiqueu amb quins punters làser es produirà l'efecte fotoelèctric. Completeu la taula i representeu gràficament en la quadrícula adjunta l'energia cinètica màxima dels electrons (en eV) en funció de la freqüència dels fotons incidents (en Hz) per a un interval de freqüències entre $3{,}00 \\times 10^{14}\\ \\text{Hz}$ i $7{,}00 \\times 10^{14}\\ \\text{Hz}$.\n\n| Tipus de punter làser | Longitud d'ona (nm) | Freqüència ($\\times 10^{14}$ Hz) | Energia fotó ($\\times 10^{-19}$ J) | $E_c$ electró ($\\times 10^{-19}$ J) | $E_c$ electró (eV) |\n|---|---|---|---|---|---|\n| Làser blau | 460 | | | | |\n| Làser verd | 532 | | | | |\n| Làser infraroig | 1 080 | | | | |",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Il·luminem el càtode amb un làser de freqüència $8{,}00 \\times 10^{14}\\ \\text{Hz}$. Calculeu la velocitat i la longitud d'ona de De Broglie dels electrons arrencats del càtode amb la radiació d'aquest làser.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Treball d'extracció",
+            "cos": "El treball d'extracció és l'energia mínima per arrencar un electró del metall; correspon a l'energia d'un fotó de la freqüència llindar:\n\n$$W_0 = h f_0 = 6{,}63 \\times 10^{-34} \\cdot 4{,}59 \\times 10^{14} = \\mathbf{3{,}04 \\times 10^{-19}\\ J}\\ (= 1{,}90\\ \\text{eV})$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Quins làsers produeixen efecte fotoelèctric",
+            "cos": "Segons Einstein, cada electró absorbeix **un sol fotó**. Hi ha emissió només si l'energia del fotó supera $W_0$, és a dir, si $f > f_0$ (no importa la intensitat del làser). Calculem $f = c/\\lambda$ i $E = hf$:\n\n- **Blau** ($460\\ \\text{nm}$): $f = \\dfrac{3{,}00 \\times 10^{8}}{460 \\times 10^{-9}} = 6{,}52 \\times 10^{14}\\ \\text{Hz} > f_0$ → **sí** hi ha emissió.\n- **Verd** ($532\\ \\text{nm}$): $f = 5{,}64 \\times 10^{14}\\ \\text{Hz} > f_0$ → **sí**.\n- **Infraroig** ($1\\,080\\ \\text{nm}$): $f = 2{,}78 \\times 10^{14}\\ \\text{Hz} < f_0$ → **no**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia cinètica màxima i taula completa",
+            "cos": "Balanç d'energia: l'energia del fotó serveix per arrencar l'electró i la resta li queda com a energia cinètica (màxima):\n\n$$E_c = h f - W_0, \\qquad E_c(\\text{eV}) = \\frac{E_c(\\text{J})}{1{,}602 \\times 10^{-19}}$$\n\nPer exemple, per al blau: $E_c = 4{,}32 \\times 10^{-19} - 3{,}04 \\times 10^{-19} = 1{,}28 \\times 10^{-19}\\ \\text{J} = 0{,}799\\ \\text{eV}$.\n\n| Làser | $\\lambda$ (nm) | $f$ (×10¹⁴ Hz) | $E_\\text{fotó}$ (×10⁻¹⁹ J) | $E_c$ (×10⁻¹⁹ J) | $E_c$ (eV) |\n|---|---|---|---|---|---|\n| Blau | 460 | 6,52 | 4,32 | 1,28 | 0,799 |\n| Verd | 532 | 5,64 | 3,74 | 0,696 | 0,434 |\n| Infraroig | 1 080 | 2,78 | 1,84 | — (no n'emet) | — |\n| Llindar | — | 4,59 | 3,04 | 0 | 0 |"
+          },
+          {
+            "apartat": "a",
+            "titol": "Gràfica Ec – f",
+            "cos": "$E_c = h(f - f_0)$ és una **recta** de pendent $h$ (en eV: $h/e = 4{,}14 \\times 10^{-15}\\ \\text{eV/Hz}$) que talla l'eix de freqüències a $f_0 = 4{,}59 \\times 10^{14}\\ \\text{Hz}$. Per sota de $f_0$ no hi ha electrons: $E_c = 0$ (no es dibuixen valors negatius). Passa pels punts del verd ($5{,}64$; $0{,}434$) i del blau ($6{,}52$; $0{,}799$) i arriba a $\\approx 1{,}0\\ \\text{eV}$ a $7{,}0 \\times 10^{14}\\ \\text{Hz}$. Cal posar títols i unitats als eixos.\n\n![Energia cinètica màxima dels electrons en funció de la freqüència (solució oficial)](img/fisica/2022-J/e8-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica dels electrons amb f = 8,00·10¹⁴ Hz",
+            "cos": "$$h f = 6{,}63 \\times 10^{-34} \\cdot 8{,}00 \\times 10^{14} = 5{,}30 \\times 10^{-19}\\ \\text{J}$$\n\n$$E_c = h f - W_0 = 5{,}30 \\times 10^{-19} - 3{,}04 \\times 10^{-19} = 2{,}26 \\times 10^{-19}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat dels electrons",
+            "cos": "Com que $v \\ll c$, fem servir l'expressió clàssica $E_c = \\frac{1}{2} m_e v^2$:\n\n$$v = \\sqrt{\\frac{2 E_c}{m_e}} = \\sqrt{\\frac{2 \\cdot 2{,}26 \\times 10^{-19}}{9{,}11 \\times 10^{-31}}} = \\mathbf{7{,}04 \\times 10^{5}\\ m/s}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud d'ona de De Broglie",
+            "cos": "$$\\lambda = \\frac{h}{m_e v} = \\frac{6{,}63 \\times 10^{-34}}{9{,}11 \\times 10^{-31} \\cdot 7{,}04 \\times 10^{5}} = \\mathbf{1{,}03 \\times 10^{-9}\\ m}\\ (\\approx 1\\ \\text{nm})$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$W_0 = 3{,}04 \\times 10^{-19}\\ \\text{J}$; efecte fotoelèctric amb el blau ($E_c = 0{,}799\\ \\text{eV}$) i el verd ($E_c = 0{,}434\\ \\text{eV}$), no amb l'infraroig; gràfica: recta de pendent $h$ que comença a $f_0 = 4{,}59 \\times 10^{14}\\ \\text{Hz}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_c = 2{,}26 \\times 10^{-19}\\ \\text{J}$; $v = 7{,}04 \\times 10^{5}\\ \\text{m/s}$; $\\lambda = 1{,}03 \\times 10^{-9}\\ \\text{m}$"
+          }
+        ],
+        "nota": "Errors típics: pensar que un làser infraroig més intens sí que arrencaria electrons (no: depèn de la freqüència, no de la intensitat), o dibuixar la recta per sota de la freqüència llindar amb valors negatius d'energia cinètica."
+      }
+    }
+  ]
+}

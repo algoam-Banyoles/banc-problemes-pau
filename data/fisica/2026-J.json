@@ -1,0 +1,549 @@
+{
+  "examen": {
+    "id": "fisica-2026-J",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2026,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/fisica/2026-J-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2026-J-solucio.pdf",
+    "estructura": "4 exercicis obligatoris de 2,5 punts (dos apartats d'1,25 punts cadascun). Als exercicis 1 (Camps gravitatoris) i 4 (Física relativista, quàntica, nuclear i de partícules) cal triar UNA de les dues opcions (A o B). Els exercicis 2 (Camps electromagnètics) i 3 (Vibracions i ones) són únics."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2026-J-e1-a",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Període i energia d'un nanosatèl·lit en òrbita a 500 km",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "òrbita circular",
+        "període orbital",
+        "energia potencial gravitatòria",
+        "energia mecànica",
+        "força centrípeta"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "A finals de l'any 2025, la Generalitat de Catalunya va llançar a l'espai un nanosatèl·lit que descriu una òrbita circular al voltant de la Terra a una altura aproximada de $500\\ \\text{km}$ per sobre de la superfície terrestre.\n\n**Dades:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$. Massa de la Terra: $M_\\text{T} = 5{,}98 \\times 10^{24}\\ \\text{kg}$. Radi de la Terra: $R_\\text{T} = 6\\,370\\ \\text{km}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "A partir de la llei de la gravitació universal, deduïu l'expressió del període orbital en funció del radi orbital i de la massa de la Terra, i calculeu el període orbital del nanosatèl·lit.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Sabent que la massa del nanosatèl·lit és d'$11{,}1\\ \\text{kg}$, calculeu l'increment d'energia potencial gravitatòria del satèl·lit en passar de la superfície terrestre a l'òrbita. Calculeu també l'energia mecànica del satèl·lit a l'òrbita. Es tracta d'una òrbita tancada? Justifiqueu la resposta.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$\n- $M_\\text{T} = 5{,}98 \\times 10^{24}\\ \\text{kg}$\n- $R_\\text{T} = 6\\,370\\ \\text{km} = 6{,}37 \\times 10^{6}\\ \\text{m}$\n- Altura: $h = 500\\ \\text{km} = 5{,}00 \\times 10^{5}\\ \\text{m}$\n- Massa del satèl·lit: $m_s = 11{,}1\\ \\text{kg}$\n- Incògnites: a) expressió de $T(r, M_\\text{T})$ i valor de $T$; b) $\\Delta U$, $E_m$ i si l'òrbita és tancada.\n\nCompte: el radi de l'òrbita es mesura **des del centre de la Terra**, no des de la superfície."
+          },
+          {
+            "apartat": "a",
+            "titol": "La gravetat fa de força centrípeta",
+            "cos": "L'única força que actua sobre el satèl·lit és l'atracció gravitatòria de la Terra (llei de la gravitació universal):\n\n$$F = G\\,\\frac{m_s M_\\text{T}}{r^2}$$\n\nCom que el satèl·lit fa un moviment circular uniforme, aquesta força és la que el manté en la circumferència: fa de **força centrípeta**. Per la segona llei de Newton, $F = m_s a_c = m_s \\dfrac{v^2}{r}$:\n\n$$G\\,\\frac{m_s M_\\text{T}}{r^2} = m_s\\,\\frac{v^2}{r} \\;\\Rightarrow\\; v^2 = \\frac{G M_\\text{T}}{r} \\;\\Rightarrow\\; v = \\sqrt{\\frac{G M_\\text{T}}{r}}$$\n\nFixa't que la massa del satèl·lit es simplifica: la velocitat orbital no depèn de $m_s$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Expressió del període orbital",
+            "cos": "En un MCU, el període és el temps que tarda a fer una volta (recórrer $2\\pi r$) a velocitat $v$:\n\n$$T = \\frac{2\\pi r}{v} = 2\\pi r\\,\\sqrt{\\frac{r}{G M_\\text{T}}} \\;\\Rightarrow\\; \\boxed{T = 2\\pi\\sqrt{\\frac{r^3}{G M_\\text{T}}}}$$\n\nÉs la tercera llei de Kepler per a òrbites circulars ($T^2 \\propto r^3$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul del període",
+            "cos": "Radi orbital: $r = R_\\text{T} + h = 6\\,370 + 500 = 6\\,870\\ \\text{km} = 6{,}87 \\times 10^{6}\\ \\text{m}$.\n\n$$T = 2\\pi\\sqrt{\\frac{(6{,}87 \\times 10^{6})^3}{6{,}67 \\times 10^{-11} \\cdot 5{,}98 \\times 10^{24}}} = 5{,}66 \\times 10^{3}\\ \\text{s}$$\n\nResultat: **$T = 5{,}66 \\times 10^{3}\\ \\text{s}$** (unes $94$ minuts, aproximadament una hora i mitja)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Increment d'energia potencial gravitatòria",
+            "cos": "Lluny de la superfície no podem fer servir $mgh$ (la $g$ no és constant): cal l'expressió general de l'energia potencial gravitatòria, $U(r) = -G\\dfrac{m_s M_\\text{T}}{r}$. L'increment en passar de $R_\\text{T}$ a $r$ és:\n\n$$\\Delta U = U(r) - U(R_\\text{T}) = -G m_s M_\\text{T}\\left(\\frac{1}{r} - \\frac{1}{R_\\text{T}}\\right)$$\n\n$$\\Delta U = -6{,}67 \\times 10^{-11} \\cdot 11{,}1 \\cdot 5{,}98 \\times 10^{24}\\left(\\frac{1}{6{,}87 \\times 10^{6}} - \\frac{1}{6{,}37 \\times 10^{6}}\\right) = 5{,}06 \\times 10^{7}\\ \\text{J}$$\n\nResultat: **$\\Delta U = 5{,}06 \\times 10^{7}\\ \\text{J}$**. És positiu: l'energia potencial augmenta en allunyar-se de la Terra (es torna «menys negativa»)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia mecànica a l'òrbita",
+            "cos": "L'energia mecànica és la suma de la cinètica i la potencial: $E_m = E_c + U$.\n\n- Velocitat orbital: $v = \\sqrt{\\dfrac{G M_\\text{T}}{r}} = \\sqrt{\\dfrac{6{,}67 \\times 10^{-11} \\cdot 5{,}98 \\times 10^{24}}{6{,}87 \\times 10^{6}}} = 7{,}62 \\times 10^{3}\\ \\text{m/s}$\n- Energia cinètica: $E_c = \\tfrac{1}{2} m_s v^2 = \\tfrac{1}{2} \\cdot 11{,}1 \\cdot (7{,}62 \\times 10^{3})^2 = 3{,}22 \\times 10^{8}\\ \\text{J}$\n- Energia potencial: $U = -G\\dfrac{m_s M_\\text{T}}{r} = -6{,}44 \\times 10^{8}\\ \\text{J}$\n\n$$E_m = E_c + U = 3{,}22 \\times 10^{8} - 6{,}44 \\times 10^{8} = -3{,}22 \\times 10^{8}\\ \\text{J}$$\n\nDrecera: en una òrbita circular $E_c = -\\tfrac{1}{2}U$, i per tant $E_m = -G\\dfrac{m_s M_\\text{T}}{2r}$, que dona el mateix.\n\nResultat: **$E_m = -3{,}22 \\times 10^{8}\\ \\text{J}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "És una òrbita tancada?",
+            "cos": "Sí. L'energia mecànica és **negativa**: el satèl·lit no té prou energia per arribar a l'infinit (on $U = 0$ i caldria $E_c \\ge 0$), de manera que queda **lligat** a la Terra i descriu una òrbita tancada. Si $E_m \\ge 0$ la trajectòria seria oberta (paràbola o hipèrbola) i s'escaparia."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$T = 2\\pi\\sqrt{r^3/(G M_\\text{T})}$; $T = 5{,}66 \\times 10^{3}\\ \\text{s}$ ($\\approx 94$ min)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\Delta U = 5{,}06 \\times 10^{7}\\ \\text{J}$; $E_m = -3{,}22 \\times 10^{8}\\ \\text{J}$ < 0 → òrbita tancada (lligada)"
+          }
+        ],
+        "nota": "Error típic: fer servir l'altura $h = 500\\ \\text{km}$ com a radi de l'òrbita, o calcular $\\Delta U$ amb $mgh$ (dona $5{,}4 \\times 10^{7}\\ \\text{J}$, un resultat aproximat que no és vàlid perquè $g$ disminueix amb l'altura)."
+      }
+    },
+    {
+      "id": "fisica-2026-J-e1-b",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Òrbita el·líptica del cometa Halley: període i velocitat al periheli",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "lleis de Kepler",
+        "òrbita el·líptica",
+        "període orbital",
+        "conservació del moment angular",
+        "conservació de l'energia mecànica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Edmond Halley (1656-1742) va estudiar els registres històrics d'observacions de cometes dels segles XVI i XVII, i va concloure que diverses d'aquestes observacions corresponien al mateix objecte. Es tractava d'un cometa periòdic gran i brillant que orbitava al voltant del Sol i que havia estat observat per darrera vegada l'any 1682. Actualment aquest cometa és conegut com el cometa Halley.\n\n**Dades:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$. Massa del Sol: $M_\\text{S} = 1{,}99 \\times 10^{30}\\ \\text{kg}$. Distància del periheli al centre del Sol: $r_\\text{P} = 0{,}575\\ \\text{ua}$. Velocitat a l'afeli: $v_\\text{A} = 896\\ \\text{m s}^{-1}$. Distància de l'afeli al centre del Sol: $r_\\text{A} = 35{,}3\\ \\text{ua}$. $1\\ \\text{ua} = 1{,}50 \\times 10^{11}\\ \\text{m}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Feu un dibuix esquemàtic de l'òrbita el·líptica del cometa Halley, indicant-ne el periheli i l'afeli. Calculeu el semieix major de l'el·lipse i el període orbital del cometa. Raoneu si Edmond Halley va poder observar el cometa que porta el seu nom més d'una vegada.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Raoneu en quin punt de l'òrbita el cometa assoleix la velocitat màxima. A partir de les dades que es faciliten, calculeu la velocitat del cometa Halley quan passa pel periheli de l'òrbita, indicant clarament els principis físics que heu emprat.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$, $M_\\text{S} = 1{,}99 \\times 10^{30}\\ \\text{kg}$\n- $r_\\text{P} = 0{,}575\\ \\text{ua} = 8{,}63 \\times 10^{10}\\ \\text{m}$ (periheli: punt més proper al Sol)\n- $r_\\text{A} = 35{,}3\\ \\text{ua} = 5{,}30 \\times 10^{12}\\ \\text{m}$ (afeli: punt més allunyat)\n- $v_\\text{A} = 896\\ \\text{m/s}$\n- Incògnites: a) semieix major $a$, període $T$; b) on és màxima la velocitat i $v_\\text{P}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Dibuix de l'òrbita",
+            "cos": "Segons la **primera llei de Kepler**, l'òrbita és una el·lipse amb el Sol en un dels focus. El periheli i l'afeli són els extrems de l'eix major: el periheli, el més proper al Sol, i l'afeli, el més allunyat. L'òrbita del Halley és molt excèntrica (el Sol queda molt a prop d'un extrem).\n\n![Òrbita el·líptica del cometa Halley amb el Sol en un focus (solució oficial)](img/fisica/2026-J/e1-b-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Semieix major",
+            "cos": "L'eix major és la suma de les distàncies al Sol del periheli i de l'afeli, $2a = r_\\text{P} + r_\\text{A}$:\n\n$$a = \\frac{r_\\text{P} + r_\\text{A}}{2} = \\frac{0{,}575 + 35{,}3}{2} = 17{,}94\\ \\text{ua} = 2{,}69 \\times 10^{12}\\ \\text{m}$$\n\nResultat: **$a = 17{,}9\\ \\text{ua} = 2{,}69 \\times 10^{12}\\ \\text{m}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Període amb la tercera llei de Kepler",
+            "cos": "La **tercera llei de Kepler** diu que el quadrat del període és proporcional al cub del semieix major. Per a òrbites al voltant del Sol, la constant és la mateixa que en l'òrbita circular (canviant $r$ per $a$):\n\n$$T^2 = \\frac{4\\pi^2}{G M_\\text{S}}\\,a^3, \\qquad \\frac{4\\pi^2}{G M_\\text{S}} = \\frac{4\\pi^2}{6{,}67 \\times 10^{-11} \\cdot 1{,}99 \\times 10^{30}} = 2{,}97 \\times 10^{-19}\\ \\text{s}^2\\,\\text{m}^{-3}$$\n\n$$T = \\sqrt{2{,}97 \\times 10^{-19} \\cdot (2{,}69 \\times 10^{12})^3} = 2{,}41 \\times 10^{9}\\ \\text{s} \\approx 76\\ \\text{anys}$$\n\nAlternativa ràpida: per a qualsevol cos que orbita el Sol, amb $T$ en anys i $a$ en ua, la constant val pràcticament 1 (és la de la Terra: $T = 1$ any, $a = 1$ ua), i per tant $T = \\sqrt{a^3} = \\sqrt{17{,}94^3} = 76{,}0$ anys.\n\nResultat: **$T = 2{,}41 \\times 10^{9}\\ \\text{s} \\approx 76$ anys**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Va poder veure Halley el cometa més d'una vegada?",
+            "cos": "Halley va néixer el 1656, i el cometa va passar el 1682 (Halley tenia 26 anys). La passada anterior havia estat cap al $1682 - 76 = 1606$, abans que nasqués, i la següent va ser el $1682 + 76 = 1758$, 16 anys després que morís (1742). Per tant, **només el va poder observar una vegada**, el 1682 (per això va haver de predir-ne el retorn sense poder-lo veure)."
+          },
+          {
+            "apartat": "b",
+            "titol": "On és màxima la velocitat",
+            "cos": "La velocitat és **màxima al periheli**, el punt més proper al Sol. Es pot justificar de dues maneres:\n\n- **Segona llei de Kepler**: el radi vector Sol-cometa escombra àrees iguals en temps iguals. Quan el cometa és a prop del Sol el radi és curt, i per escombrar la mateixa àrea en el mateix temps ha de recórrer un arc més llarg: va més de pressa.\n- **Conservació de l'energia mecànica**: $E_m = \\tfrac{1}{2} m v^2 - G\\dfrac{m M_\\text{S}}{r}$ és constant. Quan $r$ és mínim, l'energia potencial és la més negativa i, per tant, l'energia cinètica (i la velocitat) ha de ser màxima.\n\n(Argumentar-ho només amb $L = m r v \\sin\\theta$ constant és incomplet, perquè al llarg de l'òrbita també varia $\\sin\\theta$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat al periheli: conservació del moment angular",
+            "cos": "La força gravitatòria és **central** (sempre apunta cap al Sol), i per això no fa moment respecte del Sol: el **moment angular del cometa es conserva**. Al periheli i a l'afeli, $\\vec r$ i $\\vec v$ són perpendiculars ($\\sin\\theta = 1$), de manera que $L = m r v$:\n\n$$m\\,r_\\text{P}\\,v_\\text{P} = m\\,r_\\text{A}\\,v_\\text{A} \\;\\Rightarrow\\; v_\\text{P} = v_\\text{A}\\,\\frac{r_\\text{A}}{r_\\text{P}} = 896 \\cdot \\frac{35{,}3}{0{,}575} = 5{,}50 \\times 10^{4}\\ \\text{m/s}$$\n\n(Com que és un quocient de distàncies, no cal passar les ua a metres.)\n\nResultat: **$v_\\text{P} = 5{,}5 \\times 10^{4}\\ \\text{m/s}$** (unes 61 vegades més ràpid que a l'afeli)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovació per conservació de l'energia",
+            "cos": "Igualant l'energia mecànica a l'afeli i al periheli (la massa del cometa es simplifica):\n\n$$\\tfrac{1}{2}v_\\text{A}^2 - \\frac{G M_\\text{S}}{r_\\text{A}} = \\tfrac{1}{2}v_\\text{P}^2 - \\frac{G M_\\text{S}}{r_\\text{P}} \\;\\Rightarrow\\; v_\\text{P} = \\sqrt{v_\\text{A}^2 + 2 G M_\\text{S}\\left(\\frac{1}{r_\\text{P}} - \\frac{1}{r_\\text{A}}\\right)}$$\n\n$$v_\\text{P} = \\sqrt{896^2 + \\frac{2 \\cdot 6{,}67 \\times 10^{-11} \\cdot 1{,}99 \\times 10^{30}}{1{,}50 \\times 10^{11}}\\left(\\frac{1}{0{,}575} - \\frac{1}{35{,}3}\\right)} = 5{,}50 \\times 10^{4}\\ \\text{m/s}$$\n\nSurt el mateix valor, cosa que confirma que les dades són coherents."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a = 17{,}9\\ \\text{ua} = 2{,}69 \\times 10^{12}\\ \\text{m}$; $T = 2{,}41 \\times 10^{9}\\ \\text{s} \\approx 76$ anys; Halley només el va poder veure una vegada (1682)"
+          },
+          {
+            "apartat": "b",
+            "valor": "Velocitat màxima al periheli; $v_\\text{P} = 5{,}5 \\times 10^{4}\\ \\text{m/s}$"
+          }
+        ],
+        "nota": "Petites diferències amb l'oficial: amb les dades en SI, $T = 2{,}41 \\times 10^{9}\\ \\text{s}$ equival a $76{,}3$ anys, mentre que amb $T = \\sqrt{a^3}$ (constant aproximada a 1 any²/ua³) surten $76{,}0$ anys; tots dos valors són acceptables. A la solució oficial, en la substitució numèrica de la conservació de l'energia, els termes $\\frac{1}{35{,}3} - \\frac{1}{0{,}575}$ apareixen intercanviats (donaria un nombre negatiu); l'ordre correcte és $\\frac{1}{r_\\text{P}} - \\frac{1}{r_\\text{A}}$, com a la fórmula general."
+      }
+    },
+    {
+      "id": "fisica-2026-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Tub de raigs X: camp elèctric entre plaques i energia de l'electró i del fotó",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "quantica"
+      ],
+      "conceptes": [
+        "camp elèctric uniforme",
+        "força elèctrica",
+        "diferència de potencial",
+        "energia cinètica",
+        "energia del fotó",
+        "raigs X"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Els raigs X es generen mitjançant un tub on s'ha fet el buit i que conté dues plaques de tungstè. La placa negativa (càtode) s'escalfa i emet electrons, els quals són accelerats cap a la placa positiva (ànode). En xocar contra aquesta altra placa, els electrons s'aturen bruscament i es generen els raigs X.\n\n**Dades:** $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$. $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$. $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$. $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$.\n\n**Nota:** Negligiu els efectes del camp magnètic terrestre i els efectes relativistes.",
+      "figures": [
+        {
+          "src": "img/fisica/2026-J/e2.png",
+          "peu": "Tub de raigs X: càtode, ànode, electró accelerat i fotó emès en el xoc"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La diferència de potencial entre dues plaques d'un tub de raigs X és de $70{,}0\\ \\text{kV}$ i la separació entre elles és de $2{,}00\\ \\text{cm}$. Calculeu el mòdul del camp elèctric (suposeu que és constant i uniforme entre les plaques) i, tot seguit, el mòdul de la força elèctrica que experimenta un electró dins del tub. A la figura adjunta, representeu el camp elèctric entre plaques i la força elèctrica que actua sobre l'electró.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu l'energia cinètica i la velocitat d'un electró quan arriba a l'ànode, suposant que parteix del repòs des del càtode. A continuació, sabent que en el xoc amb l'ànode l'electró perd part de la seva energia, que es transforma en un fotó de raigs X amb una longitud d'ona d'$1{,}00\\ \\text{nm}$, calculeu l'energia d'aquest fotó i la nova velocitat de l'electró després de l'emissió.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $\\Delta V = 70{,}0\\ \\text{kV} = 7{,}00 \\times 10^{4}\\ \\text{V}$\n- $d = 2{,}00\\ \\text{cm} = 2{,}00 \\times 10^{-2}\\ \\text{m}$\n- $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$, $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$\n- $\\lambda_\\text{fotó} = 1{,}00\\ \\text{nm} = 1{,}00 \\times 10^{-9}\\ \\text{m}$, $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$\n- Incògnites: a) $E$, $F$ i el dibuix; b) $E_c$ i $v$ a l'ànode, $E_\\text{fotó}$ i $v_f$ després del xoc."
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp elèctric uniforme entre plaques",
+            "cos": "Entre dues plaques paral·leles el camp és uniforme i es relaciona amb la diferència de potencial i la distància per $\\Delta V = E\\,d$:\n\n$$E = \\frac{\\Delta V}{d} = \\frac{7{,}00 \\times 10^{4}\\ \\text{V}}{2{,}00 \\times 10^{-2}\\ \\text{m}} = 3{,}50 \\times 10^{6}\\ \\text{V/m}$$\n\nResultat: **$E = 3{,}50 \\times 10^{6}\\ \\text{V/m} = 3{,}50 \\times 10^{6}\\ \\text{N/C}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Força sobre l'electró",
+            "cos": "La força elèctrica sobre una càrrega és $\\vec F = q\\vec E$. En mòdul:\n\n$$F = |e|\\,E = 1{,}602 \\times 10^{-19} \\cdot 3{,}50 \\times 10^{6} = 5{,}61 \\times 10^{-13}\\ \\text{N}$$\n\nResultat: **$F = 5{,}61 \\times 10^{-13}\\ \\text{N}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Dibuix del camp i de la força",
+            "cos": "- El camp elèctric va del potencial alt al baix, és a dir, de la placa positiva (**ànode**) cap a la negativa (**càtode**). Es dibuixa amb línies de camp **paral·leles, equidistants** (camp uniforme) i perpendiculars a les plaques, apuntant cap al càtode.\n- Com que l'electró té càrrega **negativa**, la força té sentit **contrari** al camp: apunta cap a l'ànode (per això l'electró s'accelera cap a l'ànode).\n\n![Línies de camp de l'ànode cap al càtode i força sobre l'electró cap a l'ànode (solució oficial)](img/fisica/2026-J/e2-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica a l'ànode (teorema de les forces vives)",
+            "cos": "El treball que fa el camp elèctric sobre l'electró es converteix en energia cinètica. Com que surt del repòs:\n\n$$E_c = W_\\text{elèctric} = |e|\\,\\Delta V = 1{,}602 \\times 10^{-19} \\cdot 7{,}00 \\times 10^{4} = 1{,}12 \\times 10^{-14}\\ \\text{J}$$\n\n(És a dir, $70{,}0\\ \\text{keV}$.) Resultat: **$E_c = 1{,}12 \\times 10^{-14}\\ \\text{J}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat a l'ànode",
+            "cos": "De $E_c = \\tfrac{1}{2} m_e v^2$:\n\n$$v = \\sqrt{\\frac{2E_c}{m_e}} = \\sqrt{\\frac{2 \\cdot 1{,}121 \\times 10^{-14}}{9{,}11 \\times 10^{-31}}} = 1{,}57 \\times 10^{8}\\ \\text{m/s}$$\n\nAlternativament, per forces: $a = F/m_e = 6{,}15 \\times 10^{17}\\ \\text{m/s}^2$ i $v = \\sqrt{2ad} = 1{,}57 \\times 10^{8}\\ \\text{m/s}$.\n\nResultat: **$v = 1{,}57 \\times 10^{8}\\ \\text{m/s}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia del fotó de raigs X",
+            "cos": "L'energia d'un fotó és $E = hf = h\\dfrac{c}{\\lambda}$:\n\n$$E_\\text{fotó} = 6{,}63 \\times 10^{-34} \\cdot \\frac{3{,}00 \\times 10^{8}}{1{,}00 \\times 10^{-9}} = 1{,}99 \\times 10^{-16}\\ \\text{J}$$\n\nResultat: **$E_\\text{fotó} = 1{,}99 \\times 10^{-16}\\ \\text{J}$** (uns $1{,}24\\ \\text{keV}$, una petita part de l'energia de l'electró)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat de l'electró després de l'emissió",
+            "cos": "Per conservació de l'energia, l'energia cinètica inicial es reparteix entre l'electró i el fotó:\n\n$$E_{c,f} = E_{c,i} - E_\\text{fotó} = 1{,}121 \\times 10^{-14} - 1{,}99 \\times 10^{-16} = 1{,}10 \\times 10^{-14}\\ \\text{J}$$\n\n$$v_f = \\sqrt{\\frac{2E_{c,f}}{m_e}} = \\sqrt{\\frac{2 \\cdot 1{,}101 \\times 10^{-14}}{9{,}11 \\times 10^{-31}}} = 1{,}56 \\times 10^{8}\\ \\text{m/s}$$\n\nResultat: **$v_f = 1{,}56 \\times 10^{8}\\ \\text{m/s}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 3{,}50 \\times 10^{6}\\ \\text{V/m}$; $F = 5{,}61 \\times 10^{-13}\\ \\text{N}$; $\\vec E$ de l'ànode cap al càtode, $\\vec F$ cap a l'ànode"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_c = 1{,}12 \\times 10^{-14}\\ \\text{J}$, $v = 1{,}57 \\times 10^{8}\\ \\text{m/s}$; $E_\\text{fotó} = 1{,}99 \\times 10^{-16}\\ \\text{J}$; $v_f = 1{,}56 \\times 10^{8}\\ \\text{m/s}$"
+          }
+        ],
+        "nota": "Error típic: dibuixar el camp en el mateix sentit que la força. Per a un electró (càrrega negativa), $\\vec F$ i $\\vec E$ tenen sentits oposats. Curiositat: la velocitat obtinguda és més de la meitat de la de la llum; un càlcul relativista donaria una velocitat una mica menor (uns $1{,}43 \\times 10^{8}\\ \\text{m/s}$), però l'enunciat demana negligir aquests efectes."
+      }
+    },
+    {
+      "id": "fisica-2026-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Vibrador d'un mòbil: equació del MHS, ona transversal i nivell d'intensitat sonora",
+      "tema": "ones",
+      "temes_secundaris": [
+        "oscillacions"
+      ],
+      "conceptes": [
+        "moviment harmònic simple",
+        "equació d'ona",
+        "longitud d'ona",
+        "nombre d'ona",
+        "intensitat sonora",
+        "nivell d'intensitat sonora"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Un telèfon mòbil conté un motor vibrador que genera un moviment harmònic simple (al llarg de l'eix $y$) al xassís del dispositiu quan es reben trucades o notificacions. Suposem que aquest moviment té una amplitud de $2{,}00\\ \\text{mm}$ i una freqüència de $150\\ \\text{Hz}$.\n\n**Dades:** $I_0 = 10^{-12}\\ \\text{W m}^{-2}$.\n\n**Nota:** Assumiu que el front d'ona és esfèric.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu l'equació de moviment del telèfon si considerem que inicialment es troba a la posició d'equilibri $y = 0\\ \\text{m}$. Quan es col·loca el telèfon damunt d'una superfície metàl·lica rígida, les vibracions es transmeten al material i generen ones mecàniques transversals que es propaguen a $3\\,200\\ \\text{m s}^{-1}$. Calculeu la longitud d'ona de l'ona mecànica que es propaga per la superfície i escriviu l'equació de l'ona corresponent, suposant que la propagació es produeix en el sentit positiu de l'eix $x$, que inicialment es troba en la posició d'equilibri $y = 0\\ \\text{m}$, i que l'amplitud de l'ona és de $2{,}00\\ \\text{mm}$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Suposant que el telèfon emet una potència acústica d'$1{,}00\\ \\text{mW}$ durant la vibració i que el so es propaga per l'aire de manera isotròpica (uniformement en totes direccions), calculeu el nivell d'intensitat sonora que percebrà una persona situada a $3{,}00\\ \\text{m}$ del telèfon.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Amplitud: $A = 2{,}00\\ \\text{mm} = 2{,}00 \\times 10^{-3}\\ \\text{m}$\n- Freqüència: $f = 150\\ \\text{Hz}$\n- Velocitat de propagació a la superfície: $v = 3\\,200\\ \\text{m/s}$\n- Potència acústica: $P = 1{,}00\\ \\text{mW} = 1{,}00 \\times 10^{-3}\\ \\text{W}$; distància $r = 3{,}00\\ \\text{m}$; $I_0 = 10^{-12}\\ \\text{W/m}^2$\n- Incògnites: a) $y(t)$, $\\lambda$ i $y(x,t)$; b) nivell d'intensitat $\\beta$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació del MHS",
+            "cos": "L'equació general d'un MHS és $y(t) = A\\sin(\\omega t + \\varphi_0)$. La pulsació (freqüència angular) és:\n\n$$\\omega = 2\\pi f = 2\\pi \\cdot 150 = 300\\pi\\ \\text{rad/s} \\approx 942\\ \\text{rad/s}$$\n\nLa fase inicial surt de la condició inicial $y(0) = 0$: $0 = A\\sin\\varphi_0 \\Rightarrow \\varphi_0 = 0$ (o $\\pi$, si comença movent-se cap a $y$ negatives; l'enunciat no ho especifica). Prenent $\\varphi_0 = 0$:\n\n$$y(t) = 2{,}00 \\times 10^{-3}\\,\\sin(300\\pi\\,t)\\quad (y\\ \\text{en m},\\ t\\ \\text{en s})$$\n\nEquivalentment, amb cosinus: $y(t) = 2{,}00 \\times 10^{-3}\\cos\\left(300\\pi t - \\tfrac{\\pi}{2}\\right)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud d'ona",
+            "cos": "L'ona té la mateixa freqüència que la font que la produeix. La longitud d'ona és la distància que avança l'ona en un període, $\\lambda = v T = v/f$:\n\n$$\\lambda = \\frac{v}{f} = \\frac{3\\,200}{150} = 21{,}3\\ \\text{m}$$\n\nResultat: **$\\lambda = 21{,}3\\ \\text{m}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de l'ona",
+            "cos": "Una ona harmònica que es propaga en el sentit **positiu** de l'eix $x$ s'escriu $y(x,t) = A\\sin(kx - \\omega t + \\varphi_0)$ (o, equivalentment, $A\\sin(\\omega t - kx + \\varphi_0)$): el signe relatiu entre $kx$ i $\\omega t$ ha de ser oposat. El nombre d'ona és:\n\n$$k = \\frac{2\\pi}{\\lambda} = \\frac{2\\pi}{21{,}33} = 0{,}295\\ \\text{m}^{-1}$$\n\nCondició inicial $y(0,0) = 0 \\Rightarrow \\sin\\varphi_0 = 0 \\Rightarrow \\varphi_0 = 0$ (o $\\pi$). Per tant:\n\n$$y(x,t) = 2{,}00 \\times 10^{-3}\\,\\sin(0{,}295\\,x - 300\\pi\\,t)\\quad (x, y\\ \\text{en m},\\ t\\ \\text{en s})$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat a 3 m (front d'ona esfèric)",
+            "cos": "Si el so es propaga igual en totes direccions, la potència es reparteix sobre una esfera de radi $r$, de superfície $4\\pi r^2$. La intensitat és potència per unitat de superfície:\n\n$$I = \\frac{P}{4\\pi r^2} = \\frac{1{,}00 \\times 10^{-3}}{4\\pi \\cdot 3{,}00^2} = 8{,}84 \\times 10^{-6}\\ \\text{W/m}^2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Nivell d'intensitat sonora",
+            "cos": "L'orella respon de manera logarítmica; per això es fa servir el nivell d'intensitat en decibels, comparant amb el llindar d'audició $I_0$:\n\n$$\\beta = 10\\log\\frac{I}{I_0} = 10\\log\\frac{8{,}84 \\times 10^{-6}}{10^{-12}} = 69{,}5\\ \\text{dB}$$\n\nResultat: **$\\beta = 69{,}5\\ \\text{dB}$** (semblant a una conversa en veu alta)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y(t) = 2{,}00 \\times 10^{-3}\\sin(300\\pi t)$ m; $\\lambda = 21{,}3\\ \\text{m}$; $y(x,t) = 2{,}00 \\times 10^{-3}\\sin(0{,}295x - 300\\pi t)$ m"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I = 8{,}84 \\times 10^{-6}\\ \\text{W/m}^2$; $\\beta = 69{,}5\\ \\text{dB}$"
+          }
+        ],
+        "nota": "La solució oficial escriu $k = 0{,}294\\ \\text{m}^{-1}$ (truncant); arrodonint correctament $2\\pi/21{,}33 = 0{,}2945$ surt $0{,}295\\ \\text{m}^{-1}$. Error típic penalitzat: escriure $kx + \\omega t$, que correspon a una ona que avança en el sentit negatiu de l'eix $x$."
+      }
+    },
+    {
+      "id": "fisica-2026-J-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cesi-137 de Txernòbil: desintegració beta i temps per tornar a habitar la zona",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "desintegració beta",
+        "llei de desintegració radioactiva",
+        "període de semidesintegració",
+        "constant de desintegració",
+        "activitat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "Enguany fa 40 anys de l'accident nuclear més greu de la història. La central nuclear de Txernòbil va alliberar una gran quantitat de materials radioactius a l'atmosfera. En particular, cesi-137 ($^{137}_{55}\\text{Cs}$), que en desintegrar-se mitjançant una emissió $\\beta^-$ genera un nucli de bari. Aquest isòtop té una vida mitjana llarga (30,17 anys) i, per tant, representa un perill durant dècades.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu la reacció de desintegració del cesi-137. Calculeu quin percentatge de la quantitat inicial de cesi-137 queda avui, 40 anys després de l'accident.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "En una zona a uns $10{,}0\\ \\text{km}$ de la central es va detectar una concentració inicial de $6{,}00 \\times 10^{5}\\ \\text{Bq m}^{-2}$ de cesi-137, immediatament després de l'accident. Segons alguns estudis, es considera segur tornar a habitar una zona afectada quan la concentració estigui per sota de $3{,}70 \\times 10^{4}\\ \\text{Bq m}^{-2}$. Quin any podrà tornar-se a habitar aquesta zona si només considerem la desintegració natural del cesi-137?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Període de semidesintegració del $^{137}\\text{Cs}$: $t_{1/2} = 30{,}17$ anys (l'enunciat en diu «vida mitjana», però la solució oficial el fa servir com a període de semidesintegració; vegeu la nota)\n- Temps transcorregut: $t = 40$ anys (accident el 1986, avui 2026)\n- Activitat inicial per unitat de superfície: $A_0 = 6{,}00 \\times 10^{5}\\ \\text{Bq/m}^2$; límit segur: $A = 3{,}70 \\times 10^{4}\\ \\text{Bq/m}^2$\n- Incògnites: a) reacció i percentatge que queda; b) any en què $A$ baixa fins al límit."
+          },
+          {
+            "apartat": "a",
+            "titol": "Reacció de desintegració β⁻",
+            "cos": "En una desintegració $\\beta^-$ un neutró del nucli es transforma en un protó, i s'emeten un **electró** i un **antineutrí**. Cal que es conservin el nombre màssic i la càrrega:\n\n$$^{137}_{55}\\text{Cs} \\to\\ ^{x}_{y}\\text{Ba} +\\ ^{\\ \\,0}_{-1}e + \\bar\\nu_e$$\n\n- Nombre màssic: $137 = x + 0 \\Rightarrow x = 137$\n- Càrrega: $55 = y - 1 \\Rightarrow y = 56$ (el bari té $Z = 56$, com era d'esperar)\n\n$$^{137}_{55}\\text{Cs} \\to\\ ^{137}_{56}\\text{Ba} +\\ ^{\\ \\,0}_{-1}e + \\bar\\nu_e$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Constant de desintegració",
+            "cos": "La llei de desintegració és $N = N_0\\,e^{-\\lambda t}$. Quan $t = t_{1/2}$ queda la meitat: $\\tfrac{1}{2} = e^{-\\lambda t_{1/2}} \\Rightarrow \\lambda = \\dfrac{\\ln 2}{t_{1/2}}$.\n\n$$t_{1/2} = 30{,}17 \\cdot 365 \\cdot 24 \\cdot 3600 = 9{,}51 \\times 10^{8}\\ \\text{s}, \\qquad \\lambda = \\frac{\\ln 2}{9{,}51 \\times 10^{8}} = 7{,}28 \\times 10^{-10}\\ \\text{s}^{-1}$$\n\n(També es pot treballar en anys: $\\lambda = \\ln 2 / 30{,}17 = 0{,}0230\\ \\text{anys}^{-1}$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Percentatge que queda al cap de 40 anys",
+            "cos": "$$\\frac{N}{N_0} = e^{-\\lambda t} = e^{-0{,}02297 \\cdot 40} = 0{,}399$$\n\no, de manera equivalent, $\\dfrac{N}{N_0} = \\left(\\tfrac{1}{2}\\right)^{t/t_{1/2}} = 2^{-40/30{,}17} = 0{,}399$.\n\nResultat: **queda el 39,9 %** del cesi-137 inicial (té sentit: han passat poc més d'un període, i per tant queda una mica menys de la meitat)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Temps per arribar al límit segur",
+            "cos": "L'activitat és proporcional al nombre de nuclis ($A = \\lambda N$), així que segueix la mateixa llei: $A = A_0 e^{-\\lambda t}$. Aïllem el temps prenent logaritmes:\n\n$$\\frac{A}{A_0} = e^{-\\lambda t} \\;\\Rightarrow\\; t = \\frac{1}{\\lambda}\\ln\\frac{A_0}{A}$$\n\n$$t = \\frac{1}{7{,}28 \\times 10^{-10}}\\ln\\frac{6{,}00 \\times 10^{5}}{3{,}70 \\times 10^{4}} = 3{,}82 \\times 10^{9}\\ \\text{s} = 121\\ \\text{anys}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Any en què es podrà tornar a habitar",
+            "cos": "L'accident va ser el 1986 (fa 40 anys respecte del 2026): $1986 + 121 = 2107$.\n\nResultat: **cap a l'any 2107** la zona es podrà tornar a habitar."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$^{137}_{55}\\text{Cs} \\to\\ ^{137}_{56}\\text{Ba} +\\ ^{\\ \\,0}_{-1}e + \\bar\\nu_e$; queda el $39{,}9\\ \\%$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$t = 3{,}82 \\times 10^{9}\\ \\text{s} \\approx 121$ anys → any 2107"
+          }
+        ],
+        "nota": "Discrepància terminològica a l'enunciat: diu que el cesi-137 té una «vida mitjana» de 30,17 anys, però 30,17 anys és el seu **període de semidesintegració** $t_{1/2}$ (la vida mitjana és $\\tau = 1/\\lambda = t_{1/2}/\\ln 2 \\approx 43{,}5$ anys). La solució oficial i aquesta resolució el tracten com a $t_{1/2}$. Si s'interpretés literalment com a vida mitjana ($\\lambda = 1/30{,}17$ anys⁻¹), sortiria que queda el 26,6 % i que caldrien uns 84 anys (any 2070). Error típic: oblidar l'antineutrí a la reacció (es penalitza)."
+      }
+    },
+    {
+      "id": "fisica-2026-J-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Efecte fotoelèctric: funció de treball i potencial de frenada amb llum blava, verda i vermella",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "funció de treball",
+        "potencial de frenada",
+        "energia del fotó",
+        "freqüència llindar"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "En un experiment d'efecte fotoelèctric, fem incidir una llum monocromàtica sobre el càtode d'una cèl·lula fotoelèctrica. Quan s'il·lumina el càtode amb llum blava de longitud d'ona $460\\ \\text{nm}$, s'observa un corrent fotoelèctric. Aplicant una diferència de potencial de com a mínim $0{,}50\\ \\text{V}$ entre càtode i ànode, el corrent desapareix completament.\n\n**Dades:** $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$. $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$. $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$. $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'energia mínima necessària per a arrencar un electró del càtode (funció de treball) i la velocitat màxima amb què surten els electrons emesos quan no s'aplica cap diferència de potencial.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu quina diferència de potencial caldria aplicar per a anul·lar el corrent fotoelèctric si primer el càtode s'il·lumina amb llum verda de longitud d'ona $520\\ \\text{nm}$, i després amb llum vermella de longitud d'ona $650\\ \\text{nm}$. Justifiqueu els resultats obtinguts.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Llum blava: $\\lambda_\\text{b} = 460\\ \\text{nm} = 4{,}60 \\times 10^{-7}\\ \\text{m}$; potencial de frenada $V_f = 0{,}50\\ \\text{V}$\n- Llum verda: $\\lambda_\\text{v} = 520\\ \\text{nm}$; llum vermella: $\\lambda_\\text{r} = 650\\ \\text{nm}$\n- $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$, $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$\n- Incògnites: a) funció de treball $W$ i $v_\\text{màx}$; b) potencial de frenada per a la llum verda i la vermella."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia dels fotons de llum blava",
+            "cos": "Segons Einstein, la llum està formada per fotons d'energia $E = hf = h\\dfrac{c}{\\lambda}$:\n\n$$E_\\text{b} = 6{,}63 \\times 10^{-34} \\cdot \\frac{3{,}00 \\times 10^{8}}{4{,}60 \\times 10^{-7}} = 4{,}32 \\times 10^{-19}\\ \\text{J} = 2{,}70\\ \\text{eV}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Funció de treball a partir del potencial de frenada",
+            "cos": "Cada fotó dona tota la seva energia a un electró: una part, $W$, serveix per arrencar-lo del metall i la resta queda com a energia cinètica màxima, $E_{c,\\text{màx}} = E_\\text{fotó} - W$.\n\nEl **potencial de frenada** és la diferència de potencial mínima que atura fins i tot els electrons més ràpids: el treball elèctric de frenada iguala la seva energia cinètica, $E_{c,\\text{màx}} = |e|V_f$. Combinant:\n\n$$W = E_\\text{b} - |e|V_f = 4{,}32 \\times 10^{-19} - 1{,}602 \\times 10^{-19} \\cdot 0{,}50 = 3{,}52 \\times 10^{-19}\\ \\text{J}$$\n\nResultat: **$W = 3{,}52 \\times 10^{-19}\\ \\text{J} = 2{,}20\\ \\text{eV}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat màxima dels electrons",
+            "cos": "$$E_{c,\\text{màx}} = |e|V_f = 8{,}01 \\times 10^{-20}\\ \\text{J}$$\n\n$$v_\\text{màx} = \\sqrt{\\frac{2E_{c,\\text{màx}}}{m_e}} = \\sqrt{\\frac{2 \\cdot 8{,}01 \\times 10^{-20}}{9{,}11 \\times 10^{-31}}} = 4{,}19 \\times 10^{5}\\ \\text{m/s}$$\n\nResultat: **$v_\\text{màx} = 4{,}19 \\times 10^{5}\\ \\text{m/s}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potencial de frenada amb llum verda",
+            "cos": "La funció de treball és una propietat del metall del càtode i no canvia. De $|e|V_f = E_\\text{fotó} - W$:\n\n$$E_\\text{v} = h\\frac{c}{\\lambda_\\text{v}} = 6{,}63 \\times 10^{-34} \\cdot \\frac{3{,}00 \\times 10^{8}}{5{,}20 \\times 10^{-7}} = 3{,}82 \\times 10^{-19}\\ \\text{J} = 2{,}39\\ \\text{eV}$$\n\n$$V_f = \\frac{E_\\text{v} - W}{|e|} = \\frac{3{,}82 \\times 10^{-19} - 3{,}52 \\times 10^{-19}}{1{,}602 \\times 10^{-19}} = 0{,}19\\ \\text{V}$$\n\nResultat: **$V_f = 0{,}19\\ \\text{V}$**. És més petit que amb la llum blava perquè els fotons verds tenen menys energia (més longitud d'ona) i els electrons surten més lents."
+          },
+          {
+            "apartat": "b",
+            "titol": "Llum vermella: no hi ha efecte fotoelèctric",
+            "cos": "$$E_\\text{r} = 6{,}63 \\times 10^{-34} \\cdot \\frac{3{,}00 \\times 10^{8}}{6{,}50 \\times 10^{-7}} = 3{,}06 \\times 10^{-19}\\ \\text{J} = 1{,}91\\ \\text{eV}$$\n\nCom que $E_\\text{r} < W$ ($1{,}91\\ \\text{eV} < 2{,}20\\ \\text{eV}$), cada fotó vermell **no té prou energia per arrencar cap electró**. No s'emeten electrons, no hi ha corrent fotoelèctric i, per tant, **no cal aplicar cap potencial de frenada**. Augmentar la intensitat de la llum vermella no ho canviaria: només hi hauria més fotons, cadascun amb massa poca energia.\n\n(La longitud d'ona llindar del metall és $\\lambda_0 = hc/W = 565\\ \\text{nm}$: només la llum de longitud d'ona menor arrenca electrons.)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$W = 3{,}52 \\times 10^{-19}\\ \\text{J} = 2{,}20\\ \\text{eV}$; $v_\\text{màx} = 4{,}19 \\times 10^{5}\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Llum verda: $V_f = 0{,}19\\ \\text{V}$; llum vermella: $E_\\text{fotó} < W$, no hi ha efecte fotoelèctric (no cal cap potencial)"
+          }
+        ],
+        "nota": "Error típic: pensar que amb llum vermella prou intensa s'arrencarien electrons. L'efecte fotoelèctric depèn de l'energia de cada fotó (de la freqüència), no de la intensitat."
+      }
+    }
+  ]
+}

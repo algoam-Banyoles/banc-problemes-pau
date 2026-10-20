@@ -1,0 +1,244 @@
+{
+  "examen": {
+    "id": "mates-2021-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2021,
+    "convocatoria": "juny",
+    "serie": "2",
+    "pdf_examen": "pdfs/mates/2021-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2021-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE de les sis qüestions proposades. Cada qüestió val 2,5 punts. Es pot utilitzar calculadora (no programable ni amb capacitat d'emmagatzemar o transmetre dades)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2021-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Triangle d'àrea mínima format per una tangent a la paràbola y = 4 − x² i els eixos",
+      "tema": "optimitzacio",
+      "temes_secundaris": ["derivades"],
+      "conceptes": ["recta tangent", "punts de tall", "àrea d'un triangle", "mínim relatiu", "derivada"],
+      "dificultat": 2,
+      "pagines": [2, 3],
+      "enunciat": "Considereu la paràbola $y = 4 - x^2$ i un valor $a > 0$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Comproveu que l'equació de la recta tangent a la gràfica de la paràbola en el punt d'abscissa $x = a$ és $y = -2ax + a^2 + 4$ i calculeu els punts de tall d'aquesta recta tangent amb els eixos de coordenades.", "punts": 1.25},
+        {"id": "b", "enunciat": "Calculeu el valor de $a > 0$ perquè l'àrea del triangle determinat per aquesta recta tangent i els eixos de coordenades sigui mínima.", "punts": 1.25}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Paràbola: $f(x) = 4 - x^2$, i un paràmetre $a > 0$.\n- (a) Cal comprovar l'equació de la tangent a $x = a$ i trobar on talla els eixos.\n- (b) Cal trobar el valor de $a$ que fa mínima l'àrea del triangle format per la tangent i els eixos: és un problema d'**optimització** d'una funció d'una variable, $S(a)$."},
+          {"apartat": "a", "titol": "Equació de la recta tangent", "cos": "La recta tangent en el punt $(a, f(a))$ té pendent $f'(a)$ i la seva equació punt-pendent és:\n\n$$y - f(a) = f'(a)\\,(x - a)$$\n\nCalculem: $f(a) = 4 - a^2$, $f'(x) = -2x$, per tant $f'(a) = -2a$. Substituint:\n\n$$y - (4 - a^2) = -2a\\,(x - a) \\;\\Rightarrow\\; y = -2ax + 2a^2 + 4 - a^2 \\;\\Rightarrow\\; \\boxed{y = -2ax + a^2 + 4}$$\n\nque és l'equació que demanaven comprovar."},
+          {"apartat": "a", "titol": "Punts de tall amb els eixos", "cos": "**Eix $OX$** ($y = 0$):\n\n$$0 = -2ax + a^2 + 4 \\;\\Rightarrow\\; x = \\frac{a^2 + 4}{2a}$$\n\nPunt **$\\left(\\dfrac{a^2+4}{2a},\\ 0\\right)$** (com que $a > 0$, és a la part positiva de l'eix).\n\n**Eix $OY$** ($x = 0$): $y = a^2 + 4$. Punt **$(0,\\ a^2 + 4)$**."},
+          {"apartat": "b", "titol": "Funció àrea del triangle", "cos": "La recta tangent i els dos eixos formen un triangle rectangle amb vèrtexs $(0,0)$, $\\left(\\frac{a^2+4}{2a}, 0\\right)$ i $(0, a^2+4)$. Els catets són la base $\\frac{a^2+4}{2a}$ i l'altura $a^2+4$:\n\n$$S(a) = \\frac{1}{2} \\cdot \\frac{a^2+4}{2a} \\cdot (a^2+4) = \\frac{(a^2+4)^2}{4a}, \\qquad a > 0$$"},
+          {"apartat": "b", "titol": "Derivada de la funció àrea", "cos": "Per trobar el mínim, derivem i igualem a zero. Amb la regla del quocient:\n\n$$S'(a) = \\frac{2(a^2+4)\\cdot 2a \\cdot 4a - (a^2+4)^2 \\cdot 4}{16a^2} = \\frac{4(a^2+4)\\left[4a^2 - (a^2+4)\\right]}{16a^2} = \\frac{(a^2+4)(3a^2-4)}{4a^2}$$"},
+          {"apartat": "b", "titol": "Punts crítics", "cos": "Com que $a^2 + 4 > 0$ sempre, $S'(a) = 0$ només si:\n\n$$3a^2 - 4 = 0 \\;\\Rightarrow\\; a = \\pm\\frac{2}{\\sqrt{3}} = \\pm\\frac{2\\sqrt{3}}{3}$$\n\nRebutgem el valor negatiu perquè ha de ser $a > 0$. Queda $a = \\dfrac{2\\sqrt{3}}{3} \\approx 1{,}155$."},
+          {"apartat": "b", "titol": "Comprovació que és un mínim", "cos": "Estudiem el signe de $S'(a)$, que només depèn de $3a^2 - 4$:\n\n| $a$ | $\\left(0, \\frac{2\\sqrt3}{3}\\right)$ | $\\frac{2\\sqrt3}{3}$ | $\\left(\\frac{2\\sqrt3}{3}, +\\infty\\right)$ |\n|---|---|---|---|\n| $S'(a)$ | $-$ | $0$ | $+$ |\n| $S(a)$ | decreix | mínim | creix |\n\nLa funció passa de decréixer a créixer, per tant hi ha un **mínim** (i és absolut a $a > 0$).\n\nResultat: **$a = \\dfrac{2\\sqrt{3}}{3} = \\dfrac{2}{\\sqrt3}$**. L'àrea mínima val $S = \\dfrac{32\\sqrt3}{9} \\approx 6{,}16\\ \\text{u}^2$."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$y = -2ax + a^2 + 4$; talls: $\\left(\\frac{a^2+4}{2a}, 0\\right)$ i $(0, a^2+4)$"},
+          {"apartat": "b", "valor": "$S(a) = \\frac{(a^2+4)^2}{4a}$; mínim a $a = \\frac{2\\sqrt3}{3}$ (àrea $\\frac{32\\sqrt3}{9} \\approx 6{,}16\\ \\text{u}^2$)"}
+        ],
+        "nota": "La solució oficial no calcula el valor de l'àrea mínima (no es demana); l'afegim com a comprovació. També s'admet la resposta sense racionalitzar, $a = 2/\\sqrt3$. Error típic: oblidar el factor $\\frac12$ de l'àrea del triangle (no canvia el valor de $a$, però sí l'àrea)."
+      }
+    },
+    {
+      "id": "mates-2021-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Discussió i resolució d'un sistema 3×3 amb paràmetre p",
+      "tema": "sistemes",
+      "temes_secundaris": ["matrius"],
+      "conceptes": ["teorema de Rouché-Fròbenius", "rang", "determinant", "sistema compatible indeterminat", "discussió amb paràmetre"],
+      "dificultat": 2,
+      "pagines": [4, 5],
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que depèn del paràmetre real $p$:\n\n$$\\begin{cases} px + y + z = 2 \\\\ 2x + py + p^2 z = 1 \\\\ 2x + y + z = 2 \\end{cases}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $p$.", "punts": 1.5},
+        {"id": "b", "enunciat": "Resoleu, si és possible, el sistema per al cas $p = 2$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Forma matricial del sistema", "cos": "Escrivim la matriu de coeficients $A$ i la matriu ampliada $A^*$:\n\n$$A^* = \\left(\\begin{array}{ccc|c} p & 1 & 1 & 2 \\\\ 2 & p & p^2 & 1 \\\\ 2 & 1 & 1 & 2 \\end{array}\\right)$$\n\nPer discutir-lo farem servir el **teorema de Rouché-Fròbenius**: el sistema és compatible si i només si $\\text{rang}(A) = \\text{rang}(A^*)$, i és determinat si aquest rang és igual al nombre d'incògnites (3)."},
+          {"apartat": "a", "titol": "Determinant de la matriu de coeficients", "cos": "Com que la matriu depèn d'un paràmetre, busquem els valors de $p$ que anul·len el determinant (són els únics on el rang pot baixar). Per Sarrus:\n\n$$|A| = \\begin{vmatrix} p & 1 & 1 \\\\ 2 & p & p^2 \\\\ 2 & 1 & 1 \\end{vmatrix} = p^2 + 2p^2 + 2 - 2p - p^3 - 2 = -p^3 + 3p^2 - 2p$$\n\n$$|A| = -p\\,(p^2 - 3p + 2) = -p\\,(p-1)(p-2)$$\n\nS'anul·la per a **$p = 0$, $p = 1$ i $p = 2$**."},
+          {"apartat": "a", "titol": "Cas p ≠ 0, 1, 2", "cos": "$|A| \\neq 0$, per tant $\\text{rang}(A) = 3 = \\text{rang}(A^*)$ (la matriu ampliada té 3 files, no pot tenir rang més gran) = nombre d'incògnites.\n\n**Sistema compatible determinat** (solució única)."},
+          {"apartat": "a", "titol": "Cas p = 0", "cos": "$$A^* = \\left(\\begin{array}{ccc|c} 0 & 1 & 1 & 2 \\\\ 2 & 0 & 0 & 1 \\\\ 2 & 1 & 1 & 2 \\end{array}\\right)$$\n\nEl menor $\\begin{vmatrix} 0 & 1 \\\\ 2 & 0 \\end{vmatrix} = -2 \\neq 0$, així que $\\text{rang}(A) = 2$. A l'ampliada, el menor format per les columnes 1, 2 i la de termes independents:\n\n$$\\begin{vmatrix} 0 & 1 & 2 \\\\ 2 & 0 & 1 \\\\ 2 & 1 & 2 \\end{vmatrix} = 0 + 2 + 4 - 0 - 0 - 4 = 2 \\neq 0 \\;\\Rightarrow\\; \\text{rang}(A^*) = 3$$\n\n$\\text{rang}(A) = 2 \\neq 3 = \\text{rang}(A^*)$: **sistema incompatible** (sense solució). Es veu també directament: la 3a equació menys la 1a dona $2x = 0$, i la 2a diu $2x = 1$."},
+          {"apartat": "a", "titol": "Cas p = 1", "cos": "$$A^* = \\left(\\begin{array}{ccc|c} 1 & 1 & 1 & 2 \\\\ 2 & 1 & 1 & 1 \\\\ 2 & 1 & 1 & 2 \\end{array}\\right)$$\n\nLes equacions 2a i 3a tenen els mateixos coeficients ($2x + y + z$) però termes independents diferents (1 i 2): són contradictòries. $\\text{rang}(A) = 2$ (menor $\\begin{vmatrix} 1 & 1 \\\\ 2 & 1 \\end{vmatrix} = -1 \\neq 0$) i $\\text{rang}(A^*) = 3$.\n\n**Sistema incompatible**."},
+          {"apartat": "a", "titol": "Cas p = 2", "cos": "$$A^* = \\left(\\begin{array}{ccc|c} 2 & 1 & 1 & 2 \\\\ 2 & 2 & 4 & 1 \\\\ 2 & 1 & 1 & 2 \\end{array}\\right)$$\n\nLa 1a i la 3a fila són idèntiques (també el terme independent), així que una sobra. Les dues files restants no són proporcionals, per tant:\n\n$\\text{rang}(A) = \\text{rang}(A^*) = 2 < 3$ incògnites: **sistema compatible indeterminat** (infinites solucions, amb $3 - 2 = 1$ paràmetre)."},
+          {"apartat": "b", "titol": "Sistema equivalent per a p = 2", "cos": "Com hem vist a l'apartat a), per a $p = 2$ el sistema és compatible indeterminat i la 1a i la 3a equació coincideixen. Ens quedem amb dues equacions i passem $z$ a la dreta com a paràmetre, $z = t$:\n\n$$\\begin{cases} 2x + y = 2 - t \\\\ 2x + 2y = 1 - 4t \\end{cases}$$"},
+          {"apartat": "b", "titol": "Resolució en funció del paràmetre", "cos": "Restant la primera equació de la segona eliminem $x$:\n\n$$y = (1 - 4t) - (2 - t) = -1 - 3t$$\n\nSubstituint a la primera: $2x = 2 - t - y = 2 - t + 1 + 3t = 3 + 2t$, per tant $x = \\dfrac{3}{2} + t$.\n\nSolució:\n\n$$\\boxed{(x, y, z) = \\left(\\tfrac{3}{2} + t,\\ -1 - 3t,\\ t\\right), \\quad t \\in \\mathbb{R}}$$\n\nComprovació amb $t = 0$: $(3/2, -1, 0)$ → $3 - 1 + 0 = 2$ ✓, $3 - 2 + 0 = 1$ ✓."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$|A| = -p(p-1)(p-2)$. $p \\neq 0,1,2$: SCD; $p = 0$ i $p = 1$: SI; $p = 2$: SCI"},
+          {"apartat": "b", "valor": "$x = \\frac32 + t$, $y = -1 - 3t$, $z = t$, $t \\in \\mathbb{R}$"}
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "mates-2021-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Simètric d'un punt respecte d'un pla i pla que conté una recta perpendicular a un altre pla",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": ["punt simètric", "punt mitjà", "vector normal", "producte vectorial", "equació del pla"],
+      "dificultat": 2,
+      "pagines": [6, 7],
+      "enunciat": "Considereu el punt $P = (-1, 3, 1)$, el pla $\\pi: x = y$ i la recta $r: \\dfrac{x-1}{2} = \\dfrac{y}{3} = z - 2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Trobeu les coordenades del punt $P'$ simètric a $P$ respecte al pla $\\pi$.", "punts": 1.25},
+        {"id": "b", "enunciat": "De tots els plans que contenen la recta $r$, trobeu l'equació cartesiana del que és perpendicular al pla $\\pi$.", "punts": 1.25}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i elements geomètrics", "cos": "- Punt: $P = (-1, 3, 1)$.\n- Pla $\\pi: x - y = 0$, amb vector normal $\\vec{n}_\\pi = (1, -1, 0)$.\n- Recta $r$ en forma contínua: passa pel punt $Q_r = (1, 0, 2)$ i té vector director $\\vec{v}_r = (2, 3, 1)$ (el denominador de $z - 2$ és 1)."},
+          {"apartat": "a", "titol": "Estratègia per trobar el simètric", "cos": "El simètric $P'$ de $P$ respecte de $\\pi$ compleix que el segment $PP'$ és **perpendicular** al pla i que el seu **punt mitjà** $M$ és **sobre el pla**. Per tant:\n\n1. Traçem la recta perpendicular a $\\pi$ per $P$ (director $\\vec{n}_\\pi$).\n2. La tallem amb $\\pi$: obtenim $M$.\n3. Fem $P' = 2M - P$."},
+          {"apartat": "a", "titol": "Recta perpendicular i punt mitjà", "cos": "Recta perpendicular a $\\pi$ per $P$:\n\n$$s: (x, y, z) = (-1, 3, 1) + t\\,(1, -1, 0) = (-1 + t,\\ 3 - t,\\ 1)$$\n\nLa tallem amb $\\pi$ ($x = y$):\n\n$$-1 + t = 3 - t \\;\\Rightarrow\\; 2t = 4 \\;\\Rightarrow\\; t = 2 \\;\\Rightarrow\\; M = (1, 1, 1)$$"},
+          {"apartat": "a", "titol": "Punt simètric", "cos": "Com que $M = \\dfrac{P + P'}{2}$, aïllem $P'$:\n\n$$P' = 2M - P = (2 - (-1),\\ 2 - 3,\\ 2 - 1) = (3, -1, 1)$$\n\nResultat: **$P' = (3, -1, 1)$**. Comprovació: el punt mitjà de $P$ i $P'$ és $(1, 1, 1) \\in \\pi$ i $\\overrightarrow{PP'} = (4, -4, 0)$ és paral·lel a $\\vec n_\\pi$ ✓."},
+          {"apartat": "b", "titol": "Vector normal del pla buscat", "cos": "El pla buscat $\\sigma$ conté $r$, per tant el seu vector normal és perpendicular a $\\vec{v}_r$. A més, $\\sigma$ és perpendicular a $\\pi$, de manera que el seu normal també és perpendicular a $\\vec{n}_\\pi$ (és a dir, $\\vec n_\\pi$ és paral·lel a $\\sigma$). Un vector perpendicular a tots dos s'obté amb el **producte vectorial**:\n\n$$\\vec{n}_\\sigma = \\vec{v}_r \\times \\vec{n}_\\pi = \\begin{vmatrix} \\vec{e}_1 & \\vec{e}_2 & \\vec{e}_3 \\\\ 2 & 3 & 1 \\\\ 1 & -1 & 0 \\end{vmatrix} = (0 + 1)\\,\\vec e_1 - (0 - 1)\\,\\vec e_2 + (-2 - 3)\\,\\vec e_3 = (1, 1, -5)$$"},
+          {"apartat": "b", "titol": "Equació cartesiana del pla", "cos": "El pla té la forma $x + y - 5z + D = 0$. Com que conté $r$, passa per $Q_r = (1, 0, 2)$:\n\n$$1 + 0 - 10 + D = 0 \\;\\Rightarrow\\; D = 9$$\n\nResultat: **$\\sigma: x + y - 5z + 9 = 0$**.\n\nComprovació: $\\vec n_\\sigma \\cdot \\vec v_r = 2 + 3 - 5 = 0$ ✓ (conté la direcció de $r$) i $\\vec n_\\sigma \\cdot \\vec n_\\pi = 1 - 1 + 0 = 0$ ✓ (és perpendicular a $\\pi$)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$M = (1, 1, 1)$; $P' = (3, -1, 1)$"},
+          {"apartat": "b", "valor": "$x + y - 5z + 9 = 0$"}
+        ],
+        "nota": "A l'apartat b també es pot escriure el pla amb el determinant $\\begin{vmatrix} x-1 & y & z-2 \\\\ 2 & 3 & 1 \\\\ 1 & -1 & 0 \\end{vmatrix} = 0$ (punt de $r$ i dos vectors directors, $\\vec v_r$ i $\\vec n_\\pi$), que dona el mateix resultat."
+      }
+    },
+    {
+      "id": "mates-2021-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Funció ln(x)/x: màxim relatiu, asímptota horitzontal i àrea entre x = 1 i x = e",
+      "tema": "integrals",
+      "temes_secundaris": ["derivades", "funcions"],
+      "conceptes": ["recta tangent horitzontal", "segona derivada", "asímptota horitzontal", "regla de l'Hôpital", "integral definida", "àrea"],
+      "dificultat": 2,
+      "pagines": [8, 9],
+      "enunciat": "Sigui la funció $f(x) = \\dfrac{\\ln(x)}{x}$ definida en el domini $x > 0$, en què $\\ln$ és el logaritme neperià.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Trobeu les coordenades d'un punt de la corba $y = f(x)$ en el qual la recta tangent a la corba sigui horitzontal i analitzeu si la funció té un extrem relatiu en aquest punt.", "punts": 1},
+        {"id": "b", "enunciat": "Determineu si la funció $f(x)$ té alguna asímptota horitzontal.", "punts": 0.5},
+        {"id": "c", "enunciat": "Calculeu l'àrea de la regió delimitada per la corba $y = f(x)$ i les rectes $x = 1$ i $x = e$. Feu un dibuix aproximat de la gràfica de la funció en el domini $0 < x < 5$, en què quedi representada l'àrea que heu calculat.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Derivada de la funció", "cos": "Una recta tangent és horitzontal quan el seu pendent és zero, és a dir, als punts on $f'(x) = 0$. Derivem amb la regla del quocient:\n\n$$f'(x) = \\frac{\\frac{1}{x}\\cdot x - \\ln x \\cdot 1}{x^2} = \\frac{1 - \\ln x}{x^2}$$"},
+          {"apartat": "a", "titol": "Punt amb tangent horitzontal", "cos": "El denominador $x^2$ és positiu, així que:\n\n$$f'(x) = 0 \\;\\Leftrightarrow\\; 1 - \\ln x = 0 \\;\\Leftrightarrow\\; \\ln x = 1 \\;\\Leftrightarrow\\; x = e$$\n\nI $f(e) = \\dfrac{\\ln e}{e} = \\dfrac{1}{e}$. L'únic punt amb tangent horitzontal és **$\\left(e,\\ \\dfrac{1}{e}\\right) \\approx (2{,}718;\\ 0{,}368)$**."},
+          {"apartat": "a", "titol": "És un extrem relatiu? (criteri de la segona derivada)", "cos": "Derivem $f'(x) = \\dfrac{1 - \\ln x}{x^2}$ una altra vegada:\n\n$$f''(x) = \\frac{-\\frac{1}{x}\\cdot x^2 - (1 - \\ln x)\\cdot 2x}{x^4} = \\frac{-x - 2x + 2x\\ln x}{x^4} = \\frac{-3 + 2\\ln x}{x^3}$$\n\n$$f''(e) = \\frac{-3 + 2}{e^3} = -\\frac{1}{e^3} < 0$$\n\nLa segona derivada és negativa (la funció és còncava cap avall), per tant a **$\\left(e, \\frac1e\\right)$ hi ha un màxim relatiu**.\n\n(També es veu amb el signe de $f'$: per a $x < e$, $\\ln x < 1$ i $f' > 0$ (creix); per a $x > e$, $f' < 0$ (decreix).)"},
+          {"apartat": "b", "titol": "Asímptota horitzontal", "cos": "Com que la funció només està definida per a $x > 0$, només cal estudiar el límit quan $x \\to +\\infty$:\n\n$$\\lim_{x\\to+\\infty} \\frac{\\ln x}{x} = \\frac{\\infty}{\\infty}\\ \\text{(indeterminació)}$$\n\nApliquem la **regla de l'Hôpital** (derivem numerador i denominador per separat):\n\n$$\\lim_{x\\to+\\infty} \\frac{\\ln x}{x} = \\lim_{x\\to+\\infty} \\frac{1/x}{1} = 0$$\n\nPer tant **$y = 0$ (l'eix d'abscisses) és asímptota horitzontal** quan $x \\to +\\infty$."},
+          {"apartat": "c", "titol": "Plantejament de l'àrea", "cos": "A l'interval $[1, e]$ tenim $\\ln x \\geq 0$ i $x > 0$, així que $f(x) \\geq 0$: la corba està per sobre de l'eix $OX$ i l'àrea és directament la integral definida (la regió queda tancada per la corba, les rectes $x = 1$, $x = e$ i l'eix d'abscisses, que la corba toca a $x = 1$):\n\n$$A = \\int_1^e \\frac{\\ln x}{x}\\,dx$$"},
+          {"apartat": "c", "titol": "Primitiva (integral immediata) i regla de Barrow", "cos": "Observem que $\\frac{1}{x}$ és la derivada de $\\ln x$, així que l'integrand té la forma $u \\cdot u'$ amb $u = \\ln x$, la primitiva de la qual és $\\frac{u^2}{2}$ (o, amb el canvi $u = \\ln x$, $du = \\frac{dx}{x}$):\n\n$$\\int \\frac{\\ln x}{x}\\,dx = \\frac{(\\ln x)^2}{2} + C$$\n\nAplicant la regla de Barrow:\n\n$$A = \\left[\\frac{(\\ln x)^2}{2}\\right]_1^e = \\frac{(\\ln e)^2}{2} - \\frac{(\\ln 1)^2}{2} = \\frac{1}{2} - 0 = \\frac{1}{2}\\ \\text{u}^2$$\n\nResultat: **$A = \\dfrac{1}{2}\\ \\text{u}^2$**."},
+          {"apartat": "c", "titol": "Dibuix aproximat de la gràfica", "cos": "Per fer l'esbós a $0 < x < 5$ fem servir el que ja sabem:\n\n- $\\lim_{x\\to 0^+} \\frac{\\ln x}{x} = \\frac{-\\infty}{0^+} = -\\infty$: la recta $x = 0$ és asímptota vertical (la corba baixa molt a prop de l'eix $OY$).\n- Talla l'eix $OX$ a $x = 1$ ($\\ln 1 = 0$).\n- Creix fins al màxim $(e, 1/e) \\approx (2{,}72;\\ 0{,}37)$ i després decreix lentament cap a $y = 0$.\n\nL'àrea calculada és la regió entre la corba i l'eix $OX$, entre les rectes verticals $x = 1$ i $x = e$:\n\n![Gràfica de f(x) = ln(x)/x amb les rectes x = 1 i x = e (solució oficial)](img/mates/2021-J/e4-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$f'(x) = \\frac{1-\\ln x}{x^2}$; tangent horitzontal a $\\left(e, \\frac1e\\right)$, que és un màxim relatiu ($f''(e) = -1/e^3 < 0$)"},
+          {"apartat": "b", "valor": "$y = 0$ és asímptota horitzontal (quan $x \\to +\\infty$)"},
+          {"apartat": "c", "valor": "$A = \\int_1^e \\frac{\\ln x}{x}\\,dx = \\frac12\\ \\text{u}^2$"}
+        ],
+        "nota": "L'enunciat no esmenta l'eix d'abscisses com a frontera de la regió; els criteris oficials diuen que també es dona per bona, ben raonada, la resposta que l'àrea és infinita si no es considera l'eix $OX$. La interpretació habitual (i la de la solució oficial) és la regió entre la corba, l'eix $OX$ i les dues rectes."
+      }
+    },
+    {
+      "id": "mates-2021-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Equació matricial A²X = A − 3I i inversa d'una matriu que compleix M³ − 3M² + 3M − I = 0",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": ["equació matricial", "matriu inversa", "determinant", "potència d'una matriu", "matriu identitat"],
+      "dificultat": 2,
+      "pagines": [10, 11],
+      "enunciat": "Responeu els dos apartats següents, independents entre si, sobre matrius quadrades i matrius inverses.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Donada la matriu $A = \\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix}$, resoleu l'equació matricial $A^2 X = A - 3I$, en què $I$ és la matriu identitat.", "punts": 1.25},
+        {"id": "b", "enunciat": "Una matriu quadrada $M$ satisfà que $M^3 - 3M^2 + 3M - I = 0$, en què $I$ és la matriu identitat. Justifiqueu que $M$ és invertible i expresseu la inversa de $M$ en funció de les matrius $M$ i $I$.", "punts": 1.25}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Càlcul de A²", "cos": "$$A^2 = A \\cdot A = \\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix} \\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix} = \\begin{pmatrix} 0 & 1 & 0 \\\\ 0 & 0 & 1 \\\\ 1 & 0 & 0 \\end{pmatrix}$$\n\nEl seu determinant és $|A^2| = |A|^2 = 1^2 = 1 \\neq 0$, per tant $A^2$ és **invertible**."},
+          {"apartat": "a", "titol": "Aïllar X", "cos": "Com que $A^2$ és invertible, multipliquem l'equació **per l'esquerra** per $(A^2)^{-1}$ (en matrius l'ordre importa: ha de ser pel mateix costat on hi ha $A^2$):\n\n$$(A^2)^{-1} A^2 X = (A^2)^{-1}(A - 3I) \\;\\Rightarrow\\; X = (A^2)^{-1}(A - 3I)$$"},
+          {"apartat": "a", "titol": "Inversa de A²", "cos": "Si calculem $A^3 = A^2 \\cdot A$:\n\n$$A^3 = \\begin{pmatrix} 0 & 1 & 0 \\\\ 0 & 0 & 1 \\\\ 1 & 0 & 0 \\end{pmatrix} \\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix} = I$$\n\nAixò vol dir que $A^2 \\cdot A = I$, és a dir, **$(A^2)^{-1} = A$**. (Es pot comprovar també amb el mètode de l'adjunta o de Gauss-Jordan: $A^2$ és una matriu de permutació i la seva inversa és la seva transposada, que és $A$.)"},
+          {"apartat": "a", "titol": "Resultat de X", "cos": "$$X = A\\,(A - 3I) = A^2 - 3A$$\n\n$$X = \\begin{pmatrix} 0 & 1 & 0 \\\\ 0 & 0 & 1 \\\\ 1 & 0 & 0 \\end{pmatrix} - \\begin{pmatrix} 0 & 0 & 3 \\\\ 3 & 0 & 0 \\\\ 0 & 3 & 0 \\end{pmatrix} = \\begin{pmatrix} 0 & 1 & -3 \\\\ -3 & 0 & 1 \\\\ 1 & -3 & 0 \\end{pmatrix}$$\n\nResultat: **$X = \\begin{pmatrix} 0 & 1 & -3 \\\\ -3 & 0 & 1 \\\\ 1 & -3 & 0 \\end{pmatrix}$**."},
+          {"apartat": "b", "titol": "Manipular la igualtat donada", "cos": "Passem $I$ a l'altra banda sumant-la:\n\n$$M^3 - 3M^2 + 3M = I$$\n\nTraiem $M$ factor comú **per l'esquerra** (cada terme comença amb $M$):\n\n$$M\\,(M^2 - 3M + 3I) = I \\qquad (*)$$\n\nCompte: el terme $3M$ s'escriu $M \\cdot 3I$, per això dins el parèntesi hi ha $3I$ i no el nombre 3."},
+          {"apartat": "b", "titol": "M és invertible", "cos": "Prenent determinants a banda i banda de $(*)$ i fent servir que $\\det(BC) = \\det B \\cdot \\det C$:\n\n$$\\det M \\cdot \\det(M^2 - 3M + 3I) = \\det I = 1$$\n\nSi fos $\\det M = 0$, el producte de l'esquerra valdria 0 i no 1. Per tant **$\\det M \\neq 0$ i $M$ és invertible**."},
+          {"apartat": "b", "titol": "Expressió de la inversa", "cos": "La igualtat $(*)$ diu que multiplicar $M$ per la matriu $M^2 - 3M + 3I$ dona la identitat. Per definició d'inversa (i com que $M$ commuta amb qualsevol polinomi en $M$, també es compleix per la dreta):\n\n$$\\boxed{M^{-1} = M^2 - 3M + 3I}$$"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$A^2 = \\begin{pmatrix} 0&1&0\\\\0&0&1\\\\1&0&0 \\end{pmatrix}$, $(A^2)^{-1} = A$, $X = \\begin{pmatrix} 0&1&-3\\\\-3&0&1\\\\1&-3&0 \\end{pmatrix}$"},
+          {"apartat": "b", "valor": "$M(M^2 - 3M + 3I) = I$ ⇒ $\\det M \\neq 0$; $M^{-1} = M^2 - 3M + 3I$"}
+        ],
+        "nota": "L'oficial indica que de l'expressió $(*)$ ja es pot deduir directament que $M$ és invertible sense passar pels determinants. Error típic a l'apartat a: multiplicar per $(A^2)^{-1}$ per la dreta, o escriure $X = (A-3I)(A^2)^{-1}$, que en general no és el mateix."
+      }
+    },
+    {
+      "id": "mates-2021-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Monotonia de f(x) = e^(x−1) − x − 1 i nombre d'arrels amb Bolzano",
+      "tema": "derivades",
+      "temes_secundaris": ["funcions"],
+      "conceptes": ["continuïtat", "monotonia", "extrems relatius", "teorema de Bolzano", "unicitat d'arrels"],
+      "dificultat": 2,
+      "pagines": [12, 13],
+      "enunciat": "Considereu la funció $f(x) = e^{x-1} - x - 1$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Estudieu-ne la continuïtat, els extrems relatius i els intervals de creixement i decreixement.", "punts": 1.25},
+        {"id": "b", "enunciat": "Demostreu que l'equació $f(x) = 0$ té exactament dues solucions entre $x = -1$ i $x = 3$.", "punts": 1.25}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Continuïtat", "cos": "$f(x)$ és la suma d'una funció exponencial ($e^{x-1}$) i d'un polinomi de primer grau ($-x - 1$), que són contínues a tot $\\mathbb{R}$. Per tant **$f$ és contínua a tot $\\mathbb{R}$** (i també derivable)."},
+          {"apartat": "a", "titol": "Derivada i punt crític", "cos": "Per estudiar la monotonia mirem el signe de la derivada:\n\n$$f'(x) = e^{x-1} - 1$$\n\n$$f'(x) = 0 \\;\\Leftrightarrow\\; e^{x-1} = 1 \\;\\Leftrightarrow\\; x - 1 = 0 \\;\\Leftrightarrow\\; x = 1$$\n\nL'únic punt crític és $x = 1$, amb $f(1) = e^0 - 1 - 1 = -1$."},
+          {"apartat": "a", "titol": "Taula de signes i monotonia", "cos": "Com que l'exponencial és creixent: si $x < 1$, $e^{x-1} < 1$ i $f'(x) < 0$; si $x > 1$, $e^{x-1} > 1$ i $f'(x) > 0$.\n\n| $x$ | $(-\\infty, 1)$ | $1$ | $(1, +\\infty)$ |\n|---|---|---|---|\n| $f'(x)$ | $-$ | $0$ | $+$ |\n| $f(x)$ | decreix | $-1$ | creix |\n\n- **Decreixent** a $(-\\infty, 1)$ i **creixent** a $(1, +\\infty)$.\n- **Mínim relatiu (i absolut) a $(1, -1)$**. No té màxims relatius."},
+          {"apartat": "b", "titol": "Teorema de Bolzano: hipòtesis", "cos": "El **teorema de Bolzano** diu que si $f$ és contínua a $[a, b]$ i $f(a)$, $f(b)$ tenen signes oposats, aleshores existeix almenys un $c \\in (a, b)$ amb $f(c) = 0$.\n\n$f$ és contínua a tot $\\mathbb{R}$ (apartat a), per tant a qualsevol interval tancat. Calculem els valors que necessitem:\n\n$$f(-1) = e^{-2} + 1 - 1 = e^{-2} \\approx 0{,}135 > 0$$\n$$f(1) = -1 < 0$$\n$$f(3) = e^{2} - 3 - 1 = e^2 - 4 \\approx 3{,}389 > 0$$"},
+          {"apartat": "b", "titol": "Existència de dues arrels", "cos": "Com que a $[-1, 3]$ la funció és positiva als extrems però negativa al mig, partim l'interval pel mínim $x = 1$:\n\n- A $[-1, 1]$: $f(-1) > 0$ i $f(1) < 0$ → per Bolzano hi ha **almenys una arrel a $(-1, 1)$**.\n- A $[1, 3]$: $f(1) < 0$ i $f(3) > 0$ → per Bolzano hi ha **almenys una arrel a $(1, 3)$**."},
+          {"apartat": "b", "titol": "Unicitat: exactament dues", "cos": "Bolzano només garanteix l'existència; per veure que n'hi ha exactament una a cada tros fem servir la monotonia de l'apartat a):\n\n- A $(-1, 1)$, $f$ és **estrictament decreixent**: no pot passar per zero dues vegades → l'arrel és única.\n- A $(1, 3)$, $f$ és **estrictament creixent** → l'arrel també és única.\n- A $x = 1$, $f(1) = -1 \\neq 0$.\n\nPer tant l'equació $f(x) = 0$ té **exactament dues solucions** a $[-1, 3]$ (numèricament, $x \\approx -0{,}84$ i $x \\approx 2{,}15$)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Contínua a $\\mathbb{R}$; decreix a $(-\\infty, 1)$, creix a $(1, +\\infty)$; mínim relatiu i absolut a $(1, -1)$"},
+          {"apartat": "b", "valor": "$f(-1) = e^{-2} > 0$, $f(1) = -1 < 0$, $f(3) = e^2 - 4 > 0$: una arrel única a $(-1, 1)$ i una a $(1, 3)$ ($x \\approx -0{,}84$ i $x \\approx 2{,}15$)"}
+        ],
+        "nota": "Error típic: aplicar Bolzano directament a $[-1, 3]$; com que $f(-1)$ i $f(3)$ són tots dos positius, no es pot concloure res. Cal partir l'interval pel mínim. Els valors aproximats de les arrels no es demanen; els donem com a comprovació."
+      }
+    }
+  ]
+}

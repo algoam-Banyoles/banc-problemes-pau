@@ -1,0 +1,470 @@
+{
+  "examen": {
+    "id": "mates-2013-S",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2013,
+    "convocatoria": "setembre",
+    "serie": "1",
+    "pdf_examen": "pdfs/mates/2013-S-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2013-S-solucio.pdf",
+    "estructura": "Cal respondre CINC de les sis qüestions. Cada qüestió val 2 punts. En les respostes, cal explicar sempre què es vol fer i per què. Es pot utilitzar calculadora (no programable ni amb informació emmagatzemada o capacitat de transmetre-la)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2013-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Dependència lineal de tres vectors amb un paràmetre i combinació lineal",
+      "tema": "matrius",
+      "temes_secundaris": [
+        "sistemes"
+      ],
+      "conceptes": [
+        "dependència lineal",
+        "determinant",
+        "rang",
+        "combinació lineal",
+        "sistema d'equacions lineals"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Sigui $V = \\{(-1, 1, 1),\\ (-2, -1, 0),\\ (1, 2, a)\\}$ un conjunt de vectors de $\\mathbb{R}^3$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu el valor o els valors de $a$ perquè $V$ sigui linealment dependent.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Quan $a = 4$, expresseu el vector $\\vec v = (3, 9, 14)$ com a combinació lineal dels vectors de $V$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Vectors: $\\vec u_1 = (-1, 1, 1)$, $\\vec u_2 = (-2, -1, 0)$, $\\vec u_3 = (1, 2, a)$.\n- a) Valors de $a$ que fan $V$ linealment dependent.\n- b) Amb $a = 4$, nombres $\\alpha, \\beta, \\gamma$ tals que $\\vec v = \\alpha\\vec u_1 + \\beta\\vec u_2 + \\gamma\\vec u_3$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Criteri: tres vectors de R³ són dependents si el determinant és zero",
+            "cos": "Tres vectors de $\\mathbb{R}^3$ són linealment dependents si i només si la matriu que formen té rang menor que 3, és a dir, si el seu determinant val zero. Com que el determinant depèn de $a$, busquem quan s'anul·la.\n\n$$\\det A = \\begin{vmatrix} -1 & -2 & 1 \\\\ 1 & -1 & 2 \\\\ 1 & 0 & a \\end{vmatrix}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul del determinant",
+            "cos": "Desenvolupem per la primera fila:\n\n$$\\det A = -1\\cdot\\begin{vmatrix} -1 & 2 \\\\ 0 & a \\end{vmatrix} - (-2)\\cdot\\begin{vmatrix} 1 & 2 \\\\ 1 & a \\end{vmatrix} + 1\\cdot\\begin{vmatrix} 1 & -1 \\\\ 1 & 0 \\end{vmatrix}$$\n\n$$= -1\\cdot(-a) + 2\\,(a - 2) + 1\\cdot(0 + 1) = a + 2a - 4 + 1 = 3a - 3$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valor del paràmetre",
+            "cos": "$$3a - 3 = 0 \\iff a = 1$$\n\n**$V$ és linealment dependent només si $a = 1$.** Per a qualsevol altre valor els tres vectors són independents (i formen una base de $\\mathbb{R}^3$).\n\nComprovació: amb $a = 1$, $\\vec u_1 - \\vec u_2 = (1, 2, 1) = \\vec u_3$ ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantegem la combinació lineal com un sistema",
+            "cos": "Amb $a = 4$ els vectors són independents ($\\det = 9 \\neq 0$), així que la combinació existeix i és única. Escrivim\n\n$$\\alpha(-1, 1, 1) + \\beta(-2, -1, 0) + \\gamma(1, 2, 4) = (3, 9, 14)$$\n\ni igualem coordenada a coordenada:\n\n$$\\begin{cases} -\\alpha - 2\\beta + \\gamma = 3 \\\\ \\alpha - \\beta + 2\\gamma = 9 \\\\ \\alpha + 4\\gamma = 14 \\end{cases}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resolució del sistema per substitució",
+            "cos": "De la tercera equació, $\\alpha = 14 - 4\\gamma$. Substituint a les altres dues:\n\n- 1a: $-(14 - 4\\gamma) - 2\\beta + \\gamma = 3 \\Rightarrow 5\\gamma - 2\\beta = 17$\n- 2a: $(14 - 4\\gamma) - \\beta + 2\\gamma = 9 \\Rightarrow \\beta = 5 - 2\\gamma$\n\nLlavors $5\\gamma - 2(5 - 2\\gamma) = 17 \\Rightarrow 9\\gamma = 27 \\Rightarrow \\gamma = 3$, $\\ \\beta = 5 - 6 = -1$, $\\ \\alpha = 14 - 12 = 2$.\n\n**$$\\vec v = 2\\,(-1, 1, 1) - (-2, -1, 0) + 3\\,(1, 2, 4)$$**\n\nComprovació: $(-2 + 2 + 3,\\ 2 + 1 + 6,\\ 2 + 0 + 12) = (3, 9, 14)$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a = 1$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\vec v = 2(-1,1,1) - (-2,-1,0) + 3(1,2,4)$, és a dir, $\\alpha = 2,\\ \\beta = -1,\\ \\gamma = 3$"
+          }
+        ],
+        "nota": "La solució oficial també proposa calcular el rang per Gauss (s'arriba a una fila $(0, 0, a - 1)$), plantejar directament $\\alpha\\vec u_1 + \\beta\\vec u_2 + \\gamma\\vec u_3 = \\vec 0$ o imposar que el tercer vector sigui combinació dels dos primers ($\\alpha = 1$, $\\beta = -1$, $a = 1$). Tots els camins donen $a = 1$."
+      }
+    },
+    {
+      "id": "mates-2013-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Paràmetres d'un polinomi cúbic a partir d'un extrem relatiu i una integral definida",
+      "tema": "derivades",
+      "temes_secundaris": [
+        "integrals"
+      ],
+      "conceptes": [
+        "extrem relatiu",
+        "derivada",
+        "integral definida",
+        "regla de Barrow",
+        "sistema d'equacions lineals"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "De la funció polinòmica $P(x) = x^3 + ax^2 + bx + 2$ sabem que\n\n- té un extrem relatiu en el punt d'abscissa $x = -3$;\n- la integral definida en l'interval $[0, 1]$ val $-\\dfrac{5}{4}$.\n\nCalculeu el valor dels paràmetres $a$ i $b$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $P(x) = x^3 + ax^2 + bx + 2$.\n- Extrem relatiu a $x = -3$.\n- $\\displaystyle\\int_0^1 P(x)\\,dx = -\\frac54$.\n- Incògnites: $a$ i $b$. Cada condició ens donarà una equació."
+          },
+          {
+            "apartat": null,
+            "titol": "Primera condició: la derivada s'anul·la a l'extrem",
+            "cos": "Un polinomi és derivable a tot arreu, i en un extrem relatiu la recta tangent és horitzontal: $P'(-3) = 0$.\n\n$$P'(x) = 3x^2 + 2ax + b \\ \\Rightarrow\\ P'(-3) = 27 - 6a + b = 0 \\ \\Rightarrow\\ -6a + b = -27$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Segona condició: la integral definida (regla de Barrow)",
+            "cos": "Busquem una primitiva i l'avaluem entre 0 i 1:\n\n$$\\int_0^1 (x^3 + ax^2 + bx + 2)\\,dx = \\left[\\frac{x^4}{4} + \\frac{ax^3}{3} + \\frac{bx^2}{2} + 2x\\right]_0^1 = \\frac14 + \\frac a3 + \\frac b2 + 2$$\n\nIgualant a $-\\frac54$: $\\ \\dfrac a3 + \\dfrac b2 = -\\dfrac54 - \\dfrac14 - 2 = -\\dfrac72$, i multiplicant per 6: $\\ 2a + 3b = -21$."
+          },
+          {
+            "apartat": null,
+            "titol": "Resolució del sistema",
+            "cos": "$$\\begin{cases} -6a + b = -27 \\\\ 2a + 3b = -21 \\end{cases}$$\n\nDe la primera, $b = 6a - 27$. A la segona: $2a + 3(6a - 27) = -21 \\Rightarrow 20a = 60 \\Rightarrow a = 3$, i $b = 18 - 27 = -9$.\n\n**$a = 3$, $\\ b = -9$.**"
+          },
+          {
+            "apartat": null,
+            "titol": "Comprovació",
+            "cos": "$P(x) = x^3 + 3x^2 - 9x + 2$, $\\ P'(x) = 3x^2 + 6x - 9 = 3(x - 1)(x + 3)$, que s'anul·la a $x = -3$ ✓. A més, $P''(-3) = 6(-3) + 6 = -12 < 0$, per tant és un **màxim** relatiu (de veritat hi ha un extrem).\n\n$\\displaystyle\\int_0^1 P = \\frac14 + 1 - \\frac92 + 2 = -\\frac54$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$a = 3$, $b = -9$"
+          }
+        ],
+        "nota": "Error típic: oblidar el terme $2x$ de la primitiva de la constant 2, o fer malament els signes en passar termes d'un costat a l'altre."
+      }
+    },
+    {
+      "id": "mates-2013-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Posició relativa d'una recta i un pla segons un paràmetre",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "posició relativa recta-pla",
+        "vector normal",
+        "vector director",
+        "producte escalar",
+        "equació contínua de la recta"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Donats el pla $\\pi: x + 2y - z = 3$ i la recta $r: \\dfrac{x - 1}{2} = y = \\dfrac{z + m}{4}$,",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Comproveu que el vector característic (o normal) de $\\pi$ i el vector director de $r$ són perpendiculars.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Estudieu la posició relativa de $\\pi$ i $r$ en funció del paràmetre $m$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Pla $\\pi: x + 2y - z = 3$: el vector normal són els coeficients de $x, y, z$, $\\ \\vec n = (1, 2, -1)$.\n- Recta en forma contínua $\\dfrac{x - 1}{2} = \\dfrac{y - 0}{1} = \\dfrac{z - (-m)}{4}$: vector director $\\vec v = (2, 1, 4)$ i un punt $P_r = (1, 0, -m)$.\n- Atenció: $y$ sol equival a $\\frac{y - 0}{1}$, i $z + m = z - (-m)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Producte escalar",
+            "cos": "Dos vectors són perpendiculars si i només si el seu producte escalar és zero:\n\n$$\\vec n \\cdot \\vec v = (1, 2, -1)\\cdot(2, 1, 4) = 2 + 2 - 4 = 0$$\n\n**Són perpendiculars.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Què implica l'apartat a)",
+            "cos": "Si el vector director de la recta és perpendicular al normal del pla, la recta té una direcció paral·lela al pla: no el pot tallar en un sol punt. Només queden dues possibilitats: $r$ és **paral·lela** a $\\pi$ o bé està **continguda** a $\\pi$. Per decidir-ho n'hi ha prou de mirar si un punt de la recta és del pla."
+          },
+          {
+            "apartat": "b",
+            "titol": "Imposem que el punt de la recta sigui del pla",
+            "cos": "Substituïm $P_r = (1, 0, -m)$ a l'equació del pla:\n\n$$1 + 2\\cdot 0 - (-m) = 3 \\iff 1 + m = 3 \\iff m = 2$$\n\n- **Si $m = 2$:** la recta està continguda en el pla (tots els seus punts hi són).\n- **Si $m \\neq 2$:** la recta és paral·lela al pla (no tenen cap punt comú)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\vec n\\cdot\\vec v = 0$: perpendiculars"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m = 2$: $r \\subset \\pi$; $\\ m \\neq 2$: $r$ paral·lela a $\\pi$"
+          }
+        ],
+        "nota": "També es pot fer passant la recta a paramètriques, $(1 + 2t,\\ t,\\ -m + 4t)$, i substituint al pla: surt $1 + m = 3$, independent de $t$. Si $m = 2$ es compleix per a tot $t$ (continguda); si no, no hi ha cap solució (paral·lela). Error típic: llegir el punt com $(1, 0, m)$ en lloc de $(1, 0, -m)$."
+      }
+    },
+    {
+      "id": "mates-2013-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Paràmetres perquè tres matrius 3×3 no tinguin inversa",
+      "tema": "matrius",
+      "temes_secundaris": [
+        "sistemes"
+      ],
+      "conceptes": [
+        "matriu inversa",
+        "determinant",
+        "regla de Sarrus",
+        "sistema d'equacions lineals"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Siguin les matrius\n\n$$A = \\begin{pmatrix} 2 & a & 1 \\\\ 1 & b & 4 \\\\ 3 & c & 5 \\end{pmatrix},\\quad B = \\begin{pmatrix} 5 & b & 8 \\\\ 1 & c & 3 \\\\ 4 & a & 3 \\end{pmatrix},\\quad C = \\begin{pmatrix} 2 & 4 & 7 \\\\ -1 & 5 & 5 \\\\ -b & -a & -2 \\end{pmatrix},$$\n\non $a$, $b$ i $c$ són paràmetres reals. Calculeu el valor d'aquests paràmetres perquè cap de les tres matrius tingui inversa.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Idea: no tenir inversa equival a determinant zero",
+            "cos": "Una matriu quadrada té inversa si i només si el seu determinant és diferent de zero. Per tant, volem que $\\det A = \\det B = \\det C = 0$: tres equacions amb tres incògnites $a, b, c$."
+          },
+          {
+            "apartat": null,
+            "titol": "Determinant de A",
+            "cos": "Desenvolupem per la primera fila:\n\n$$\\det A = 2(5b - 4c) - a(5 - 12) + 1(c - 3b) = 10b - 8c + 7a + c - 3b = 7a + 7b - 7c$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Determinant de B",
+            "cos": "$$\\det B = 5(3c - 3a) - b(3 - 12) + 8(a - 4c) = 15c - 15a + 9b + 8a - 32c = -7a + 9b - 17c$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Determinant de C",
+            "cos": "$$\\det C = 2\\big(5\\cdot(-2) - 5\\cdot(-a)\\big) - 4\\big((-1)(-2) - 5(-b)\\big) + 7\\big((-1)(-a) - 5(-b)\\big)$$\n\n$$= 2(-10 + 5a) - 4(2 + 5b) + 7(a + 5b) = 17a + 15b - 28$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Sistema d'equacions",
+            "cos": "$$\\begin{cases} 7a + 7b - 7c = 0 \\\\ -7a + 9b - 17c = 0 \\\\ 17a + 15b = 28 \\end{cases}$$\n\nDe la primera (dividint per 7): $c = a + b$. Substituint a la segona: $-7a + 9b - 17a - 17b = 0 \\Rightarrow -24a - 8b = 0 \\Rightarrow b = -3a$.\n\nA la tercera: $17a - 45a = 28 \\Rightarrow -28a = 28 \\Rightarrow a = -1$. Llavors $b = 3$ i $c = -1 + 3 = 2$.\n\n**$a = -1$, $\\ b = 3$, $\\ c = 2$.**"
+          },
+          {
+            "apartat": null,
+            "titol": "Comprovació",
+            "cos": "$\\det A = -7 + 21 - 14 = 0$ ✓, $\\ \\det B = 7 + 27 - 34 = 0$ ✓, $\\ \\det C = -17 + 45 - 28 = 0$ ✓. La solució és única (el sistema és compatible determinat)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$a = -1$, $b = 3$, $c = 2$"
+          }
+        ],
+        "nota": "Els determinants també es poden calcular amb la regla de Sarrus; cal anar amb compte amb els signes, sobretot a $C$, que té els paràmetres amb signe negatiu a la tercera fila."
+      }
+    },
+    {
+      "id": "mates-2013-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Recta perpendicular a un pla per un punt i projecció ortogonal del punt",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "recta perpendicular a un pla",
+        "vector normal",
+        "equació contínua de la recta",
+        "projecció ortogonal",
+        "punt més proper"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Donats el pla $\\pi: 2x - y + 3z - 8 = 0$ i el punt $P = (6, -3, 7)$,",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu l'equació contínua de la recta que passa per $P$ i és perpendicular a $\\pi$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu el punt del pla $\\pi$ que està més proper al punt $P$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Pla $\\pi: 2x - y + 3z - 8 = 0$, amb vector normal $\\vec n = (2, -1, 3)$.\n- Punt $P = (6, -3, 7)$ (no és del pla: $12 + 3 + 21 - 8 = 28 \\neq 0$).\n- a) Recta $s$ per $P$ perpendicular a $\\pi$. b) Projecció ortogonal $Q$ de $P$ sobre $\\pi$."
+          },
+          {
+            "apartat": "a",
+            "titol": "El vector normal del pla fa de vector director",
+            "cos": "Una recta perpendicular a un pla té la direcció del vector normal del pla. Per tant $\\vec v_s = \\vec n = (2, -1, 3)$, i amb el punt $P$:\n\n$$s:\\ \\frac{x - 6}{2} = \\frac{y + 3}{-1} = \\frac{z - 7}{3}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "El punt més proper és el peu de la perpendicular",
+            "cos": "De tots els punts del pla, el més proper a $P$ és el que s'obté baixant la perpendicular des de $P$: la intersecció de la recta $s$ amb $\\pi$. Escrivim $s$ en paramètriques:\n\n$$x = 6 + 2\\lambda,\\quad y = -3 - \\lambda,\\quad z = 7 + 3\\lambda$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Intersecció amb el pla",
+            "cos": "Substituïm a l'equació del pla:\n\n$$2(6 + 2\\lambda) - (-3 - \\lambda) + 3(7 + 3\\lambda) - 8 = 0 \\ \\Rightarrow\\ 12 + 4\\lambda + 3 + \\lambda + 21 + 9\\lambda - 8 = 0$$\n\n$$14\\lambda + 28 = 0 \\ \\Rightarrow\\ \\lambda = -2$$\n\nLlavors $x = 6 - 4 = 2$, $\\ y = -3 + 2 = -1$, $\\ z = 7 - 6 = 1$.\n\n**$Q = (2, -1, 1)$.**\n\nComprovació: $2\\cdot 2 - (-1) + 3\\cdot 1 - 8 = 0$ ✓ (és del pla) i $\\overrightarrow{QP} = (4, -2, 6) = 2\\,\\vec n$ ✓ (és perpendicular al pla)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\dfrac{x - 6}{2} = \\dfrac{y + 3}{-1} = \\dfrac{z - 7}{3}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$Q = (2, -1, 1)$"
+          }
+        ],
+        "nota": "La solució oficial també resol el sistema format per les dues equacions implícites de la recta ($x + 2y = 0$, $3y + z = -2$) i l'equació del pla; dona el mateix punt. De passada, la distància de $P$ al pla és $|\\overrightarrow{QP}| = \\sqrt{56} = 2\\sqrt{14}$."
+      }
+    },
+    {
+      "id": "mates-2013-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Tenda piramidal de base quadrada amb volum màxim",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "optimització",
+        "volum de la piràmide",
+        "teorema de Pitàgores",
+        "derivada",
+        "apotema"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Volem construir una tenda en forma de piràmide regular de base quadrada. Disposem de $300\\ \\text{m}^2$ de tela per a la fabricació de les quatre cares de la tenda (se suposa que en l'elaboració de les cares no es perd gens de tela). Designem $x$ la longitud d'un costat de la base de la tenda.",
+      "figures": [
+        {
+          "src": "img/mates/2013-S/e6.png",
+          "peu": "Piràmide de base quadrada de costat x, altura h i apotema a"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Sabent que el volum d'una piràmide és igual a un terç del producte de l'àrea de la base per l'altura, comproveu que, en aquest cas,\n\n$$V(x) = \\frac{x\\sqrt{(9\\times 10^4) - x^4}}{6}$$",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu el valor de $x$ perquè el volum sigui el més gran possible (no cal que comproveu que el valor obtingut correspon realment a un màxim).",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $x$: costat de la base (m); $\\ a$: apotema (altura de cada cara triangular); $\\ h$: altura de la piràmide.\n- Superfície lateral (4 cares) $= 300\\ \\text{m}^2$.\n- a) Expressar el volum en funció només de $x$. b) Trobar el $x$ que el fa màxim."
+          },
+          {
+            "apartat": "a",
+            "titol": "Condició de la tela: apotema en funció de x",
+            "cos": "Cada cara és un triangle de base $x$ i altura $a$, d'àrea $\\frac{x\\,a}{2}$. Les quatre cares:\n\n$$S = 4\\cdot\\frac{x\\,a}{2} = 2ax = 300 \\ \\Rightarrow\\ a = \\frac{150}{x}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Altura de la piràmide per Pitàgores",
+            "cos": "L'altura $h$, l'apotema $a$ i la meitat del costat, $\\frac x2$, formen un triangle rectangle (vegeu la figura: $h$ va del vèrtex al centre de la base i $a$ del vèrtex al punt mitjà d'un costat). La hipotenusa és $a$:\n\n$$a^2 = h^2 + \\left(\\frac x2\\right)^2 \\ \\Rightarrow\\ h = \\sqrt{\\frac{150^2}{x^2} - \\frac{x^2}{4}} = \\sqrt{\\frac{4\\cdot 22\\,500 - x^4}{4x^2}} = \\frac{\\sqrt{9\\cdot 10^4 - x^4}}{2x}$$\n\n(fixeu-vos que $4\\cdot 22\\,500 = 90\\,000 = 9\\cdot 10^4$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Volum",
+            "cos": "$$V = \\frac13\\cdot(\\text{àrea base})\\cdot h = \\frac13\\, x^2\\cdot\\frac{\\sqrt{9\\cdot 10^4 - x^4}}{2x} = \\frac{x\\sqrt{9\\cdot 10^4 - x^4}}{6}$$\n\n**Queda comprovada l'expressió de l'enunciat.** Té sentit per a $0 < x < \\sqrt[4]{9\\cdot 10^4} = \\sqrt{300} \\approx 17{,}32$ m (per a valors més grans, la tela no arriba a tancar la tenda)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivada del volum",
+            "cos": "Per trobar el màxim, derivem i igualem a zero. Fem servir la regla del producte i la derivada de l'arrel, $\\left(\\sqrt{u}\\right)' = \\frac{u'}{2\\sqrt u}$:\n\n$$V'(x) = \\frac16\\left[\\sqrt{9\\cdot 10^4 - x^4} + x\\cdot\\frac{-4x^3}{2\\sqrt{9\\cdot 10^4 - x^4}}\\right] = \\frac16\\cdot\\frac{2(9\\cdot 10^4 - x^4) - 4x^4}{2\\sqrt{9\\cdot 10^4 - x^4}}$$\n\n$$V'(x) = \\frac{3\\cdot 10^4 - x^4}{2\\sqrt{9\\cdot 10^4 - x^4}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punt crític",
+            "cos": "Una fracció val zero quan s'anul·la el numerador:\n\n$$3\\cdot 10^4 - x^4 = 0 \\ \\Rightarrow\\ x = \\sqrt[4]{3\\cdot 10^4} = 10\\sqrt[4]{3} \\approx 13{,}1607\\ \\text{m}$$\n\n(descartem la solució negativa perquè $x$ és una longitud). Abans d'aquest valor $V' > 0$ i després $V' < 0$, així que efectivament és un màxim.\n\n**$x = 10\\sqrt[4]{3} \\approx 13{,}16$ m.** Aleshores $a = 150/x \\approx 11{,}40$ m, $h \\approx 9{,}31$ m i el volum màxim és $V \\approx 537{,}3\\ \\text{m}^3$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a = \\dfrac{150}{x}$, $h = \\dfrac{\\sqrt{9\\cdot10^4 - x^4}}{2x}$ i $V = \\dfrac13 x^2 h = \\dfrac{x\\sqrt{9\\cdot10^4 - x^4}}{6}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$x = 10\\sqrt[4]{3} \\approx 13{,}16$ m ($V_\\text{màx} \\approx 537{,}3\\ \\text{m}^3$)"
+          }
+        ],
+        "nota": "La solució oficial proposa un mètode alternatiu més còmode: maximitzar $f(x) = x^2(9\\cdot 10^4 - x^4)$, que és $36\\,V^2$ (on $V$ és màxim, també ho és $V^2$, ja que $V > 0$). Llavors $f'(x) = 18\\cdot 10^4 x - 6x^5 = 0 \\Rightarrow x = 0$ (absurd, no hi ha tenda) o $x = 10\\sqrt[4]{3}$. El volum màxim no el demana l'enunciat; l'hem afegit per completesa. Error típic: confondre l'apotema $a$ amb l'altura $h$ o amb l'aresta lateral."
+      }
+    }
+  ]
+}

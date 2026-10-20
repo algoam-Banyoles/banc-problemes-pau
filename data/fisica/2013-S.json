@@ -1,0 +1,709 @@
+{
+  "examen": {
+    "id": "fisica-2013-S",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2013,
+    "convocatoria": "setembre",
+    "serie": "1",
+    "pdf_examen": "pdfs/fisica/2013-S-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2013-S-solucio.pdf",
+    "estructura": "Part comuna obligatòria (P1 i P2) i part optativa: cal escollir UNA de les dues opcions (A o B) i fer-ne els problemes P3, P4 i P5. Cada problema val 2 punts i té dos apartats d'1 punt. A l'opció B, l'apartat b del P3 va quedar anul·lat per un error de l'enunciat."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2013-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Massa de la Lluna, gravetat superficial i velocitat d'escapament a partir de l'òrbita del mòdul Columbia",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "òrbita circular",
+        "tercera llei de Kepler",
+        "massa d'un astre",
+        "intensitat del camp gravitatori",
+        "velocitat d'escapament"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "L'any 1969, el mòdul de comandament *Columbia*, de la missió Apollo 11, tripulada per l'astronauta Michael Collins, orbitava a $100\\ \\text{km}$ d'altura sobre la superfície de la Lluna amb un període de 118 minuts. Mentrestant, Neil Armstrong i Edwin Aldrin, els altres dos tripulants, caminaven sobre la Lluna. Calculeu:\n\nDades: $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$; $R_\\text{Lluna} = 1{,}74 \\times 10^{3}\\ \\text{km}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La massa de la Lluna i la intensitat del camp gravitatori a la superfície lunar.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La velocitat d'escapament des de la superfície lunar.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Radi de la Lluna: $R_L = 1{,}74 \\times 10^{3}\\ \\text{km} = 1{,}74 \\times 10^{6}\\ \\text{m}$\n- Altura de l'òrbita: $h = 100\\ \\text{km} = 1{,}00 \\times 10^{5}\\ \\text{m}$\n- Radi de l'òrbita: $r = R_L + h = 1{,}74 \\times 10^{6} + 0{,}10 \\times 10^{6} = 1{,}84 \\times 10^{6}\\ \\text{m}$\n- Període: $T = 118\\ \\text{min} = 118 \\cdot 60 = 7\\,080\\ \\text{s}$\n- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$\n- Incògnites: $M_L$, $g_L$ (a la superfície) i $v_e$ (velocitat d'escapament)"
+          },
+          {
+            "apartat": "a",
+            "titol": "La gravetat fa de força centrípeta",
+            "cos": "El mòdul descriu una òrbita circular al voltant de la Lluna. L'única força que hi actua és l'atracció gravitatòria de la Lluna, i aquesta força és la que el fa girar, és a dir, **fa de força centrípeta**:\n\n$$G\\,\\frac{M_L\\, m}{r^2} = m\\,\\omega^2\\, r \\qquad \\text{amb} \\qquad \\omega = \\frac{2\\pi}{T}$$\n\nLa massa $m$ del mòdul se simplifica. Aïllant la massa de la Lluna:\n\n$$M_L = \\frac{\\omega^2\\, r^3}{G} = \\frac{4\\pi^2\\, r^3}{G\\, T^2}$$\n\n(és la tercera llei de Kepler)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul de la massa de la Lluna",
+            "cos": "$$\\omega = \\frac{2\\pi}{7\\,080} = 8{,}87 \\times 10^{-4}\\ \\text{rad/s}$$\n\n$$M_L = \\frac{(8{,}87 \\times 10^{-4})^2 \\cdot (1{,}84 \\times 10^{6})^3}{6{,}67 \\times 10^{-11}} = 7{,}36 \\times 10^{22}\\ \\text{kg}$$\n\nResultat: **$M_L = 7{,}36 \\times 10^{22}\\ \\text{kg}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Intensitat del camp gravitatori a la superfície",
+            "cos": "A la superfície, la distància al centre de la Lluna és el radi lunar $R_L$ (no el de l'òrbita):\n\n$$g_L = G\\,\\frac{M_L}{R_L^2} = 6{,}67 \\times 10^{-11} \\cdot \\frac{7{,}36 \\times 10^{22}}{(1{,}74 \\times 10^{6})^2} = 1{,}62\\ \\text{m/s}^2$$\n\nResultat: **$g_L = 1{,}62\\ \\text{m/s}^2$** (aproximadament una sisena part de la terrestre)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Condició d'escapament: energia mecànica nul·la",
+            "cos": "Un objecte s'escapa del camp gravitatori de la Lluna si pot arribar a l'infinit (on $E_p = 0$) amb velocitat zero o més. La velocitat mínima per fer-ho, la **velocitat d'escapament**, és la que fa que l'energia mecànica a la superfície sigui exactament zero:\n\n$$E_m = \\frac{1}{2}\\, m\\, v_e^2 - G\\,\\frac{M_L\\, m}{R_L} = 0$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Càlcul de la velocitat d'escapament",
+            "cos": "Aïllem $v_e$ (la massa de l'objecte se simplifica):\n\n$$v_e = \\sqrt{\\frac{2\\,G\\,M_L}{R_L}} = \\sqrt{\\frac{2 \\cdot 6{,}67 \\times 10^{-11} \\cdot 7{,}36 \\times 10^{22}}{1{,}74 \\times 10^{6}}} = 2{,}37 \\times 10^{3}\\ \\text{m/s}$$\n\nResultat: **$v_e \\approx 2{,}37 \\times 10^{3}\\ \\text{m/s} \\approx 2{,}4\\ \\text{km/s}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$M_L = 7{,}36 \\times 10^{22}\\ \\text{kg}$; $g_L = 1{,}62\\ \\text{m/s}^2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_e \\approx 2{,}37 \\times 10^{3}\\ \\text{m/s}$"
+          }
+        ],
+        "nota": "La solució oficial dona $v_e = 2{,}38 \\times 10^{3}\\ \\text{m/s}$; la diferència és només d'arrodoniment. Error típic: usar $R_L$ en lloc de $R_L + h$ per a l'òrbita, o oblidar passar el període a segons."
+      }
+    },
+    {
+      "id": "fisica-2013-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Dos electrons que entren en sentits contraris en un camp magnètic: forces, trajectòries i camp que no els desvia",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [],
+      "conceptes": [
+        "força de Lorentz",
+        "moviment circular",
+        "sentit de gir",
+        "producte vectorial"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "En una regió de l'espai hi ha un camp magnètic constant dirigit cap a l'interior del paper. En aquesta regió entren dos electrons amb la mateixa rapidesa i la mateixa direcció, però movent-se en sentits contraris, tal com indica la figura.",
+      "figures": [
+        {
+          "src": "img/fisica/2013-S/e2.png",
+          "peu": "Regió amb camp magnètic cap a dins del paper i dos electrons que hi entren en sentits contraris"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu la força magnètica que actua sobre cada electró quan entra en la regió on hi ha el camp magnètic. Justifiqueu i dibuixeu les trajectòries dels dos electrons i indiqueu el sentit de gir.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Eliminem aquest camp magnètic i el substituïm per un altre camp magnètic, de manera que els electrons no es desvien quan entren en aquesta regió. Dibuixeu com hauria de ser aquest nou camp magnètic. Justifiqueu la resposta.\n\nNOTA: No és vàlida la resposta $\\vec{B} = 0$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i plantejament",
+            "cos": "- Càrrega de l'electró: $q = -e < 0$\n- Camp: $\\vec{B} = -B\\,\\vec{k}$ (cap a dins del paper, prenent $\\vec{i}$ cap a la dreta, $\\vec{j}$ cap amunt i $\\vec{k}$ cap a fora)\n- Electró de l'esquerra: $\\vec{v} = +v\\,\\vec{i}$; electró de la dreta: $\\vec{v} = -v\\,\\vec{i}$\n\nLa força sobre una càrrega en moviment dins d'un camp magnètic és la **força de Lorentz**:\n\n$$\\vec{F} = q\\,\\vec{v} \\times \\vec{B}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Força sobre l'electró de l'esquerra",
+            "cos": "$$\\vec{v} \\times \\vec{B} = v\\,\\vec{i} \\times (-B\\,\\vec{k}) = -vB\\,(\\vec{i} \\times \\vec{k}) = +vB\\,\\vec{j}$$\n\nCom que la càrrega és negativa, la força té sentit contrari: $\\vec{F} = -e\\,vB\\,\\vec{j}$, és a dir, **cap avall**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Força sobre l'electró de la dreta",
+            "cos": "$$\\vec{v} \\times \\vec{B} = (-v\\,\\vec{i}) \\times (-B\\,\\vec{k}) = vB\\,(\\vec{i} \\times \\vec{k}) = -vB\\,\\vec{j}$$\n\nAmb $q = -e$: $\\vec{F} = +e\\,vB\\,\\vec{j}$, és a dir, **cap amunt**. Totes dues forces tenen el mateix mòdul $F = e\\,v\\,B$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Trajectòries circulars del mateix radi",
+            "cos": "La força magnètica és sempre **perpendicular a la velocitat**: no canvia el mòdul de la velocitat, només la direcció. Per això fa de força centrípeta i els electrons descriuen arcs de circumferència:\n\n$$e\\,v\\,B = m\\,\\frac{v^2}{R} \\quad\\Rightarrow\\quad R = \\frac{m\\,v}{e\\,B}$$\n\nCom que els dos electrons tenen la mateixa massa, càrrega i rapidesa, **els radis són iguals**. Dins la regió fan mitja volta i en surten pel mateix costat per on han entrat: l'electró de l'esquerra es corba cap avall i el de la dreta cap amunt.\n\n![Forces i trajectòries dels electrons (solució oficial)](img/fisica/2013-S/e2-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Sentit de gir",
+            "cos": "L'electró de l'esquerra entra cap a la dreta i es desvia cap avall: el centre de la circumferència és a sota del punt d'entrada i gira en **sentit horari**.\n\nL'electró de la dreta entra cap a l'esquerra i es desvia cap amunt: el centre és a sobre del punt d'entrada; a la part de baix d'una circumferència, moure's cap a l'esquerra correspon també a un gir **horari**.\n\nDe fet, el sentit de gir només depèn del signe de la càrrega i del sentit de $\\vec{B}$, no de cap on entra la partícula: tots els electrons en aquest camp giren en sentit horari (vist des de davant del paper). Les dues trajectòries són simètriques respecte del centre de la regió."
+          },
+          {
+            "apartat": "b",
+            "titol": "Quan la força magnètica és nul·la",
+            "cos": "El mòdul de la força de Lorentz és\n\n$$F = |q|\\, v\\, B\\, \\sin\\varphi$$\n\non $\\varphi$ és l'angle entre $\\vec{v}$ i $\\vec{B}$. Perquè els electrons no es desviïn amb $B \\neq 0$, cal que $\\sin\\varphi = 0$, és a dir, $\\varphi = 0^\\circ$ o $180^\\circ$: el camp ha de ser **paral·lel a la velocitat** dels electrons."
+          },
+          {
+            "apartat": "b",
+            "titol": "El nou camp",
+            "cos": "Com que els dos electrons es mouen en la mateixa direcció (horitzontal), un camp magnètic **horitzontal**, en la direcció del moviment (cap a la dreta o cap a l'esquerra, és indiferent), fa que la força sobre tots dos sigui nul·la i continuïn en línia recta:\n\n![Camp magnètic paral·lel a la velocitat dels electrons (solució oficial)](img/fisica/2013-S/e2-sol-2.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Esquerra: $\\vec{F}$ cap avall; dreta: $\\vec{F}$ cap amunt; mateix mòdul $evB$; trajectòries semicirculars del mateix radi $R = mv/(eB)$, totes dues en sentit horari"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\vec{B}$ paral·lel a la velocitat (horitzontal, en qualsevol dels dos sentits) → $F = qvB\\sin 0^\\circ = 0$"
+          }
+        ],
+        "nota": "**Discrepància amb l'oficial:** la solució oficial diu que l'electró de la dreta gira en sentit antihorari, però amb la seva pròpia figura (entra cap a l'esquerra i es corba cap amunt) el gir és **horari**, igual que el de l'esquerra: el sentit de gir d'una càrrega en un camp magnètic uniforme només depèn del signe de la càrrega i del sentit de $\\vec{B}$. Les forces i les trajectòries dibuixades a l'oficial sí que són correctes. Error típic: aplicar la regla de la mà dreta oblidant que la càrrega de l'electró és negativa."
+      }
+    },
+    {
+      "id": "fisica-2013-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Electroforesi: camp elèctric uniforme entre elèctrodes, equipotencials i força de fricció",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "camp elèctric uniforme",
+        "superfícies equipotencials",
+        "diferència de potencial",
+        "força elèctrica",
+        "moviment rectilini uniforme"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "L'electroforesi és un mètode per a analitzar mescles. Disposem una mostra entre dos elèctrodes connectats a una diferència de potencial de $300\\ \\text{V}$. La distància entre els elèctrodes és de $20{,}0\\ \\text{cm}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2013-S/e3-a.png",
+          "peu": "Mostra entre dos elèctrodes connectats a 300 V de corrent continu (+ a l'esquerra, − a la dreta)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu les línies del camp elèctric que hi ha entre els dos elèctrodes i les diferents superfícies equipotencials. Indiqueu el potencial de cada una de les superfícies. Calculeu el valor del camp elèctric que hi ha entre els dos elèctrodes, i indiqueu la direcció i el sentit de les partícules positives i les negatives.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "En les condicions adequades, les molècules adquireixen càrrega elèctrica i es desplacen en l'aparell d'electroforesi amb un moviment rectilini lent i uniforme. Calculeu la força elèctrica i la força de fricció que actuen sobre una molècula de timina amb una càrrega de $-1{,}60 \\times 10^{-19}\\ \\text{C}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Diferència de potencial: $\\Delta V = 300\\ \\text{V}$ (elèctrode + a l'esquerra, − a la dreta)\n- Distància entre elèctrodes: $d = 20{,}0\\ \\text{cm} = 0{,}200\\ \\text{m}$\n- Càrrega de la molècula de timina: $q = -1{,}60 \\times 10^{-19}\\ \\text{C}$\n- Incògnites: $E$, sentit del moviment de les càrregues, $\\vec{F}_e$ i $\\vec{F}_\\text{fricció}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Línies de camp i equipotencials",
+            "cos": "Entre dues plaques planes i paral·leles el camp elèctric és **uniforme**: les línies de camp són rectes paral·leles, perpendiculars als elèctrodes i equidistants, i van del pol positiu al negatiu (sentit en què disminueix el potencial).\n\nLes superfícies equipotencials són sempre perpendiculars a les línies de camp: aquí són **plans paral·lels als elèctrodes**. Com que el camp és uniforme, el potencial disminueix linealment amb la distància; si en dibuixem quatre d'equiespaiades, tenen potencials de $300\\ \\text{V}$ (elèctrode +), $200\\ \\text{V}$, $100\\ \\text{V}$ i $0\\ \\text{V}$ (elèctrode −), separades $6{,}67\\ \\text{cm}$.\n\n![Línies de camp i equipotencials (solució oficial)](img/fisica/2013-S/e3-a-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valor del camp elèctric",
+            "cos": "En un camp uniforme, la diferència de potencial i el camp estan relacionats per $\\Delta V = E\\, d$:\n\n$$E = \\frac{\\Delta V}{d} = \\frac{300\\ \\text{V}}{0{,}200\\ \\text{m}} = 1{,}50 \\times 10^{3}\\ \\text{V/m}$$\n\nResultat: **$E = 1{,}50 \\times 10^{3}\\ \\text{V/m} = 1{,}50 \\times 10^{3}\\ \\text{N/C}$**, horitzontal i dirigit de l'elèctrode + cap al −."
+          },
+          {
+            "apartat": "a",
+            "titol": "Moviment de les partícules carregades",
+            "cos": "La força elèctrica és $\\vec{F} = q\\,\\vec{E}$:\n\n- Les partícules **positives** reben una força en el sentit del camp: es mouen cap a l'**elèctrode negatiu** (cap a la dreta).\n- Les partícules **negatives** reben una força en sentit contrari al camp: es mouen cap a l'**elèctrode positiu** (cap a l'esquerra).\n\nTotes es mouen en la direcció horitzontal, perpendicular als elèctrodes."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força elèctrica sobre la molècula de timina",
+            "cos": "Prenent $\\vec{i}$ cap a la dreta (sentit del camp):\n\n$$\\vec{F}_e = q\\,\\vec{E} = (-1{,}60 \\times 10^{-19}\\ \\text{C}) \\cdot (1{,}50 \\times 10^{3}\\ \\text{N/C})\\,\\vec{i} = -2{,}40 \\times 10^{-16}\\,\\vec{i}\\ \\text{N}$$\n\nResultat: **$F_e = 2{,}40 \\times 10^{-16}\\ \\text{N}$**, cap a l'elèctrode positiu (cap a l'esquerra), perquè la molècula és negativa."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força de fricció: moviment uniforme",
+            "cos": "La molècula es mou amb **moviment rectilini uniforme** (velocitat constant). Per la primera llei de Newton, la força resultant ha de ser nul·la:\n\n$$\\sum \\vec{F} = \\vec{F}_e + \\vec{F}_\\text{fricció} = 0 \\quad\\Rightarrow\\quad \\vec{F}_\\text{fricció} = -\\vec{F}_e = +2{,}40 \\times 10^{-16}\\,\\vec{i}\\ \\text{N}$$\n\nResultat: **$F_\\text{fricció} = 2{,}40 \\times 10^{-16}\\ \\text{N}$**, de sentit contrari a la força elèctrica (cap a l'elèctrode negatiu, és a dir, oposat al moviment)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Línies de camp horitzontals de + a −; equipotencials planes paral·leles als elèctrodes (300, 200, 100, 0 V); $E = 1{,}50 \\times 10^{3}\\ \\text{V/m}$; positives cap al −, negatives cap al +"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\vec{F}_e = -2{,}40 \\times 10^{-16}\\,\\vec{i}\\ \\text{N}$; $\\vec{F}_\\text{fricció} = +2{,}40 \\times 10^{-16}\\,\\vec{i}\\ \\text{N}$"
+          }
+        ],
+        "nota": "La solució oficial indica que no cal que el potencial zero correspongui a l'elèctrode negatiu: el que importa és que la diferència entre elèctrodes sigui de 300 V i que el potencial disminueixi en el sentit del camp. Error típic: no passar els 20 cm a metres i obtenir $15\\ \\text{V/m}$."
+      }
+    },
+    {
+      "id": "fisica-2013-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Moviment harmònic simple a partir de la gràfica elongació-temps: equació i energia mecànica",
+      "tema": "oscillacions",
+      "temes_secundaris": [],
+      "conceptes": [
+        "moviment harmònic simple",
+        "amplitud",
+        "freqüència angular",
+        "període",
+        "fase inicial",
+        "energia mecànica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "La gràfica següent representa el moviment d'un cos de $250\\ \\text{g}$ de massa que oscil·la, sense fregament, unit a una molla.",
+      "figures": [
+        {
+          "src": "img/fisica/2013-S/e4-a.png",
+          "peu": "Elongació (cm) en funció del temps (s) del cos unit a la molla"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'amplitud, la freqüència angular, el període i la fase inicial d'aquest moviment.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Escriviu l'equació del moviment i calculeu l'energia mecànica total del sistema.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i lectura de la gràfica",
+            "cos": "- Massa: $m = 250\\ \\text{g} = 0{,}250\\ \\text{kg}$\n- De la gràfica: l'elongació màxima és $12\\ \\text{cm}$ (a $t = 1{,}5\\ \\text{s}$) i la mínima $-12\\ \\text{cm}$ (a $t = 4{,}5\\ \\text{s}$).\n- A $t = 0$ el cos és a $x = 0$ i es mou cap a valors positius; torna a passar per $x = 0$ a $t = 3\\ \\text{s}$ (ara cap a valors negatius).\n- Incògnites: $A$, $\\omega$, $T$, $\\varphi_0$, $x(t)$ i $E_m$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Amplitud",
+            "cos": "L'amplitud és l'elongació màxima, que es llegeix directament a la gràfica:\n\n$$A = 12\\ \\text{cm} = 0{,}12\\ \\text{m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Període i freqüència angular",
+            "cos": "El període és el temps d'una oscil·lació completa. Entre $t = 0$ i $t = 3\\ \\text{s}$ el cos fa mitja oscil·lació (de $x = 0$ a $x = 0$ passant pel màxim), per tant:\n\n$$T = 2 \\cdot 3{,}0 = 6{,}0\\ \\text{s}$$\n\n(També es veu entre el màxim a $1{,}5\\ \\text{s}$ i el mínim a $4{,}5\\ \\text{s}$, que és mig període.)\n\n$$\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{6{,}0} = \\frac{\\pi}{3} \\approx 1{,}05\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Fase inicial",
+            "cos": "Escrivim l'equació general del MHS amb la funció sinus: $x(t) = A\\sin(\\omega t + \\varphi_0)$. A $t = 0$, $x = 0$:\n\n$$0 = 0{,}12\\,\\sin\\varphi_0 \\quad\\Rightarrow\\quad \\varphi_0 = 0 \\ \\text{o}\\ \\pi$$\n\nCom que just després de $t = 0$ l'elongació creix (velocitat positiva, $v_0 = A\\omega\\cos\\varphi_0 > 0$), cal $\\cos\\varphi_0 > 0$, i per tant **$\\varphi_0 = 0$ rad**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació del moviment",
+            "cos": "Substituïm els valors trobats:\n\n$$x(t) = 0{,}12\\,\\sin\\!\\left(\\frac{\\pi}{3}\\,t\\right)\\ \\text{(m, s)} \\qquad \\text{o bé} \\qquad x(t) = 12\\,\\sin\\!\\left(\\frac{\\pi}{3}\\,t\\right)\\ \\text{cm}$$\n\nSi es fa servir la funció cosinus, la mateixa equació és $x(t) = 0{,}12\\,\\cos\\!\\left(\\dfrac{\\pi}{3}\\,t - \\dfrac{\\pi}{2}\\right)$ m."
+          },
+          {
+            "apartat": "b",
+            "titol": "Constant elàstica de la molla",
+            "cos": "En un MHS, la freqüència angular depèn de la massa i de la constant de la molla: $\\omega = \\sqrt{k/m}$. Per tant:\n\n$$k = m\\,\\omega^2 = 0{,}250 \\cdot \\left(\\frac{\\pi}{3}\\right)^2 = 0{,}274\\ \\text{N/m}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia mecànica total",
+            "cos": "Sense fregament l'energia mecànica es conserva. Als extrems ($x = \\pm A$) la velocitat és nul·la i tota l'energia és potencial elàstica, així que:\n\n$$E_m = \\frac{1}{2}\\,k\\,A^2 = \\frac{1}{2} \\cdot 0{,}274 \\cdot (0{,}12)^2 = 1{,}97 \\times 10^{-3}\\ \\text{J}$$\n\nResultat: **$E_m \\approx 2{,}0 \\times 10^{-3}\\ \\text{J}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$A = 0{,}12\\ \\text{m}$; $T = 6{,}0\\ \\text{s}$; $\\omega = \\pi/3 \\approx 1{,}05\\ \\text{rad/s}$; $\\varphi_0 = 0$ (amb sinus)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$x(t) = 0{,}12\\sin(\\pi t/3)$ m; $k = 0{,}274\\ \\text{N/m}$; $E_m \\approx 1{,}97 \\times 10^{-3}\\ \\text{J}$"
+          }
+        ],
+        "nota": "**Discrepàncies amb l'oficial:** (1) l'oficial dona com a equivalent amb cosinus $x = 12\\cos(\\pi t/3 + \\pi/2)$, però això val $-12\\sin(\\pi t/3)$ (començaria cap a valors negatius); la forma correcta és $12\\cos(\\pi t/3 - \\pi/2)$ (fase inicial $-\\pi/2$ o, equivalentment, $3\\pi/2$). (2) L'oficial dona $E = 1{,}9 \\times 10^{-3}\\ \\text{J}$ perquè arrodoneix $k$ a $0{,}27\\ \\text{N/m}$; amb el valor sense arrodonir surt $1{,}97 \\times 10^{-3} \\approx 2{,}0 \\times 10^{-3}\\ \\text{J}$. L'oficial també escriu $\\omega = \\pi/3 = 1{,}0\\ \\text{rad/s}$, que és un arrodoniment massa groller ($\\pi/3 = 1{,}047$)."
+      }
+    },
+    {
+      "id": "fisica-2013-S-e5-a",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Efecte fotoelèctric en un tub de buit: velocitat dels electrons i identificació del metall pel potencial de frenada",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "treball d'extracció",
+        "energia del fotó",
+        "potencial de frenada",
+        "energia cinètica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Disposem d'un tub de buit com el de la figura. L'elèctrode A és fet de potassi, que té $W_0 = 2{,}29\\ \\text{eV}$ com a valor de treball d'extracció.\n\nDades: massa de l'electró, $m_\\text{electró} = 9{,}11 \\times 10^{-31}\\ \\text{kg}$; constant de Planck, $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$; velocitat de la llum, $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2013-S/e5-a.png",
+          "peu": "Tub de buit amb l'elèctrode A il·luminat i l'elèctrode B a una distància d"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu la velocitat amb què surten els electrons arrancats de l'elèctrode A quan l'il·luminem amb llum de color violat de $400\\ \\text{nm}$ de longitud d'ona.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "A continuació canviem l'elèctrode A per un altre que és fet d'un material desconegut. Per tal de determinar de quin material es tracta, l'il·luminem un altre cop amb la mateixa llum d'abans, i determinem que el potencial de frenada dels electrons de l'elèctrode A és $V_\\text{f} = 0{,}17\\ \\text{V}$. Determineu el treball d'extracció del material i indiqueu de quin element és fet a partir de la taula de valors següent:\n\n| Element | Ba | Li | Mg | As | Al | Bi | Cr | Ag | Be |\n|---|---|---|---|---|---|---|---|---|---|\n| $W_0$ (eV) | 2,70 | 2,93 | 3,66 | 3,75 | 4,08 | 4,34 | 4,50 | 4,73 | 4,98 |",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Treball d'extracció del potassi: $W_0 = 2{,}29\\ \\text{eV} = 2{,}29 \\cdot 1{,}60 \\times 10^{-19} = 3{,}66 \\times 10^{-19}\\ \\text{J}$\n- Longitud d'ona: $\\lambda = 400\\ \\text{nm} = 4{,}00 \\times 10^{-7}\\ \\text{m}$\n- $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$\n- Potencial de frenada amb el material desconegut: $V_\\text{f} = 0{,}17\\ \\text{V}$\n- Incògnites: $v$ dels electrons (potassi) i $W_0'$ del material desconegut"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia dels fotons incidents",
+            "cos": "Segons Einstein, la llum està formada per fotons d'energia $E = h f$, amb $f = c/\\lambda$:\n\n$$f = \\frac{c}{\\lambda} = \\frac{3{,}00 \\times 10^{8}}{4{,}00 \\times 10^{-7}} = 7{,}50 \\times 10^{14}\\ \\text{Hz}$$\n\n$$E_\\text{fotó} = h f = 6{,}63 \\times 10^{-34} \\cdot 7{,}50 \\times 10^{14} = 4{,}97 \\times 10^{-19}\\ \\text{J} \\ (= 3{,}11\\ \\text{eV})$$\n\nCom que $E_\\text{fotó} > W_0$, sí que hi ha efecte fotoelèctric."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia cinètica dels electrons (equació d'Einstein)",
+            "cos": "Cada fotó dona tota la seva energia a un electró: una part, $W_0$, serveix per arrencar-lo del metall i la resta es converteix en energia cinètica (màxima):\n\n$$h f = W_0 + E_c \\quad\\Rightarrow\\quad E_c = h f - W_0 = 4{,}97 \\times 10^{-19} - 3{,}66 \\times 10^{-19} = 1{,}31 \\times 10^{-19}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat dels electrons",
+            "cos": "$$E_c = \\frac{1}{2}\\, m_e\\, v^2 \\quad\\Rightarrow\\quad v = \\sqrt{\\frac{2\\,E_c}{m_e}} = \\sqrt{\\frac{2 \\cdot 1{,}31 \\times 10^{-19}}{9{,}11 \\times 10^{-31}}} = 5{,}36 \\times 10^{5}\\ \\text{m/s}$$\n\nResultat: **$v \\approx 5{,}36 \\times 10^{5}\\ \\text{m/s}$** (velocitat màxima dels electrons arrencats)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Què és el potencial de frenada",
+            "cos": "El **potencial de frenada** és la diferència de potencial mínima entre els elèctrodes que atura els electrons més ràpids abans d'arribar a B. Al llarg del recorregut, l'energia cinètica de l'electró es transforma en energia potencial elèctrica:\n\n$$E_c = e\\,V_\\text{f}$$\n\nAmb electronvolts el càlcul és immediat: si $V_\\text{f} = 0{,}17\\ \\text{V}$, aleshores $E_c = 0{,}17\\ \\text{eV}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball d'extracció del material desconegut",
+            "cos": "La llum és la mateixa, per tant l'energia dels fotons és la de l'apartat a: $h f = \\dfrac{4{,}97 \\times 10^{-19}}{1{,}60 \\times 10^{-19}} = 3{,}11\\ \\text{eV}$. De l'equació d'Einstein:\n\n$$W_0' = h f - E_c = h f - e\\,V_\\text{f} = 3{,}11 - 0{,}17 = 2{,}94\\ \\text{eV}$$\n\nResultat: **$W_0' \\approx 2{,}94\\ \\text{eV}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Identificació de l'element",
+            "cos": "El valor de la taula més proper a $2{,}94\\ \\text{eV}$ és el del **liti** ($2{,}93\\ \\text{eV}$). Per tant, l'elèctrode és fet de **liti (Li)**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E_\\text{fotó} = 4{,}97 \\times 10^{-19}\\ \\text{J}$; $E_c = 1{,}31 \\times 10^{-19}\\ \\text{J}$; $v \\approx 5{,}36 \\times 10^{5}\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$W_0' \\approx 2{,}94\\ \\text{eV}$ → liti (Li)"
+          }
+        ],
+        "nota": "Error típic a l'apartat b: sumar el potencial de frenada al treball d'extracció del potassi, o barrejar joules i electronvolts. Treballar tot en eV simplifica molt el càlcul."
+      }
+    },
+    {
+      "id": "fisica-2013-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Iode-123 com a radiofàrmac: fracció que queda al cos al cap de 24 hores",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "desintegració radioactiva",
+        "període de semidesintegració",
+        "llei de desintegració",
+        "emissió beta"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        3
+      ],
+      "enunciat": "El iode pot ser un radiofàrmac. L'isòtop ${}^{123}_{53}\\text{I}$ és una font de raigs gamma. S'injecta al pacient per poder obtenir imatges gammagràfiques. Aquest radioisòtop té un període de semidesintegració de $13{,}2\\ \\text{h}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina fracció de ${}^{123}_{53}\\text{I}$ resta al cos $24{,}0$ hores després d'injectar el fàrmac?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "En un altre procés, el ${}^{123}_{53}\\text{I}$ també pot produir ${}^{131}_{54}\\text{Xe}$. Escriviu l'esquema del procés nuclear. Quina partícula s'emet?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Període de semidesintegració: $T_{1/2} = 13{,}2\\ \\text{h}$\n- Temps transcorregut: $t = 24{,}0\\ \\text{h}$\n- Incògnita: fracció de nuclis que queden, $N/N_0$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Llei de la desintegració radioactiva",
+            "cos": "El nombre de nuclis radioactius disminueix exponencialment amb el temps:\n\n$$N(t) = N_0\\, e^{-\\lambda t} \\qquad \\text{amb} \\qquad \\lambda = \\frac{\\ln 2}{T_{1/2}}$$\n\nLa constant de desintegració és $\\lambda = \\dfrac{\\ln 2}{13{,}2\\ \\text{h}} = 5{,}25 \\times 10^{-2}\\ \\text{h}^{-1}$. Com que només ens demanen una fracció, podem treballar en hores sense passar a segons."
+          },
+          {
+            "apartat": "a",
+            "titol": "Fracció que resta al cap de 24 h",
+            "cos": "$$\\frac{N}{N_0} = e^{-\\lambda t} = e^{-\\frac{24{,}0\\, \\ln 2}{13{,}2}} = e^{-1{,}260} = 0{,}284$$\n\n(Equivalentment, $N/N_0 = (1/2)^{t/T_{1/2}} = 2^{-1{,}818} = 0{,}284$.)\n\nResultat: **resta un $28\\ \\%$ del iode-123** injectat. Té sentit: 24 h són una mica menys de dos períodes, i al cap de dos períodes en quedaria un 25 %."
+          },
+          {
+            "apartat": "b",
+            "titol": "L'enunciat té una errada",
+            "cos": "En una desintegració es conserven el **nombre màssic** $A$ i el **nombre atòmic** $Z$. Passar de ${}^{123}_{53}\\text{I}$ a ${}^{131}_{54}\\text{Xe}$ requeriria augmentar el nombre màssic en 8 unitats, cosa que cap desintegració radioactiva espontània fa (les emissions $\\beta$ i $\\gamma$ no canvien $A$, i l'$\\alpha$ el disminueix en 4). Per això la solució oficial **anul·la aquest apartat** per error tipogràfic i tota la nota va a l'apartat a."
+          },
+          {
+            "apartat": "b",
+            "titol": "El procés que probablement es volia preguntar",
+            "cos": "El procés que té sentit és el del iode-131 (un altre radioisòtop mèdic), que es desintegra en xenó-131. El nombre atòmic augmenta en 1 i el màssic no canvia, cosa que correspon a una **desintegració beta menys**: un neutró del nucli es converteix en un protó, i s'emeten un electró i un antineutrí:\n\n$${}^{131}_{53}\\text{I} \\;\\longrightarrow\\; {}^{131}_{54}\\text{Xe} + {}^{\\;\\,0}_{-1}e + \\bar{\\nu}_e$$\n\nComprovació: $A$: $131 = 131 + 0$; $Z$: $53 = 54 + (-1)$. La partícula emesa és un **electró (partícula $\\beta^-$)**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$N/N_0 = e^{-24{,}0\\ln 2/13{,}2} \\approx 0{,}28$ (28 %)"
+          },
+          {
+            "apartat": "b",
+            "valor": "Apartat anul·lat (errada a l'enunciat). Amb ${}^{131}_{53}\\text{I}$: ${}^{131}_{53}\\text{I} \\to {}^{131}_{54}\\text{Xe} + {}^{\\;\\,0}_{-1}e + \\bar{\\nu}_e$, emissió $\\beta^-$"
+          }
+        ],
+        "nota": "La solució oficial anul·la l'apartat b per un error tipogràfic de l'enunciat (de ${}^{123}\\text{I}$ no es pot obtenir ${}^{131}\\text{Xe}$) i compta tot el problema sobre l'apartat a. La resolució de l'apartat b amb el iode-131 és una interpretació nostra del que probablement es volia preguntar."
+      }
+    },
+    {
+      "id": "fisica-2013-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Clarinet com a tub tancat per un extrem: llargària a partir d'un harmònic i augment del nivell sonor en doblar la intensitat",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ones estacionàries",
+        "tub tancat per un extrem",
+        "harmònics",
+        "nivell d'intensitat sonora",
+        "decibels"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "El clarinet és un instrument de fusta en forma de tub en el qual es generen ones estacionàries. L'instrument es pot assimilar a un tub ple d'aire obert per un extrem i tancat per l'altre. La figura mostra el mode tercer harmònic, on l'aire vibra amb una freqüència de $637\\ \\text{Hz}$.\n\nDada: $v_\\text{so} = 340\\ \\text{m s}^{-1}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2013-S/e4-b.png",
+          "peu": "Ona estacionària al clarinet: extrem obert (ventre) a l'esquerra i extrem tancat (node) a la dreta"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina és la llargària del clarinet?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si la nota es toca amb una intensitat d'$1{,}00 \\times 10^{-5}\\ \\text{W m}^{-2}$ i produeix una intensitat sonora determinada a dos metres de distància, en quants decibels augmenta el nivell de sensació sonora a la mateixa distància si la intensitat es duplica?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Freqüència del mode de la figura: $f = 637\\ \\text{Hz}$\n- Velocitat del so: $v = 340\\ \\text{m/s}$\n- Intensitat de la nota: $I_1 = 1{,}00 \\times 10^{-5}\\ \\text{W/m}^2$, que passa a $I_2 = 2 I_1$\n- Incògnites: llargària $L$ del tub i augment del nivell sonor $\\Delta\\beta$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Lectura de la figura: nodes i ventres",
+            "cos": "En un tub obert per un extrem i tancat per l'altre, a l'extrem obert hi ha un **ventre** (màxima vibració de l'aire) i a l'extrem tancat un **node**. A la figura, d'esquerra a dreta hi ha: un quart de longitud d'ona (del ventre de l'extrem obert al primer node) i després dos fusos sencers, cadascun de mitja longitud d'ona, fins al node de l'extrem tancat:\n\n$$L = \\frac{\\lambda}{4} + \\frac{\\lambda}{2} + \\frac{\\lambda}{2} = \\frac{5\\,\\lambda}{4} \\quad\\Rightarrow\\quad \\lambda = \\frac{4L}{5}$$\n\n(En un tub tancat per un extrem només hi ha harmònics senars, $L = n\\lambda/4$ amb $n = 1, 3, 5\\ldots$; el de la figura és el **tercer mode** de vibració, $n = 5$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Llargària del clarinet",
+            "cos": "La longitud d'ona i la freqüència estan relacionades per $v = \\lambda f$. Per tant:\n\n$$v = \\frac{4L}{5}\\, f \\quad\\Rightarrow\\quad L = \\frac{5\\,v}{4\\,f} = \\frac{5 \\cdot 340}{4 \\cdot 637} = 0{,}667\\ \\text{m}$$\n\nResultat: **$L \\approx 0{,}667\\ \\text{m} = 66{,}7\\ \\text{cm}$** (la longitud d'ona és $\\lambda = 340/637 = 0{,}534\\ \\text{m}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Nivell d'intensitat sonora",
+            "cos": "El nivell de sensació sonora (en decibels) es defineix respecte de la intensitat llindar $I_0 = 10^{-12}\\ \\text{W/m}^2$:\n\n$$\\beta = 10\\,\\log\\frac{I}{I_0}\\ \\text{dB}$$\n\nSigui quina sigui la intensitat $I_1$ que arriba a 2 m, en duplicar la potència de l'emissor també es duplica la intensitat en aquell punt: $I_2 = 2 I_1$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Augment del nivell en duplicar la intensitat",
+            "cos": "Fem servir la propietat dels logaritmes $\\log(ab) = \\log a + \\log b$:\n\n$$\\beta_2 = 10\\,\\log\\frac{2 I_1}{I_0} = 10\\,\\log 2 + 10\\,\\log\\frac{I_1}{I_0} = 10\\,\\log 2 + \\beta_1$$\n\n$$\\Delta\\beta = \\beta_2 - \\beta_1 = 10\\,\\log 2 = 3{,}01\\ \\text{dB}$$\n\nResultat: **el nivell augmenta $3{,}01\\ \\text{dB}$**, independentment de la intensitat inicial i de la distància. Doblar la intensitat no dobla els decibels: només hi suma uns 3 dB."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$L = 5\\lambda/4$; $L = \\dfrac{5 \\cdot 340}{4 \\cdot 637} \\approx 0{,}667\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\Delta\\beta = 10\\log 2 \\approx 3{,}01\\ \\text{dB}$"
+          }
+        ],
+        "nota": "L'enunciat parla de «tercer harmònic» en el sentit de tercer mode de vibració. Com que el tub tancat per un extrem només té harmònics senars, aquest mode correspon a $L = 5\\lambda/4$ (freqüència 5 vegades la fonamental), que és el que es veu a la figura i el que fa servir la solució oficial. Error típic: usar $L = 3\\lambda/4$ i obtenir $0{,}400\\ \\text{m}$. A l'apartat b, la dada de $1{,}00 \\times 10^{-5}\\ \\text{W/m}^2$ i la distància de 2 m no calen per al resultat."
+      }
+    },
+    {
+      "id": "fisica-2013-S-e5-b",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Quatre càrregues als vèrtexs d'un quadrat: energia de formació i càrrega central que les equilibra",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "energia potencial electrostàtica",
+        "llei de Coulomb",
+        "principi de superposició",
+        "equilibri de forces"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Quatre càrregues elèctriques positives, d'$1{,}00 \\times 10^{-5}\\ \\text{C}$ cadascuna, es troben als vèrtexs respectius d'un quadrat de $\\sqrt{2}\\ \\text{m}$ de costat. Calculeu:\n\nDada: $k = 9{,}00 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'energia necessària per a la formació del sistema de càrregues.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El valor de la càrrega elèctrica negativa que hem de situar al centre del quadrat perquè la força electrostàtica sobre cadascuna de les càrregues sigui nul·la.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i geometria",
+            "cos": "- Càrregues: $Q = 1{,}00 \\times 10^{-5}\\ \\text{C}$ (les quatre iguals i positives)\n- Costat del quadrat: $l = \\sqrt{2}\\ \\text{m}$\n- Diagonal: $D = l\\sqrt{2} = \\sqrt{2} \\cdot \\sqrt{2} = 2\\ \\text{m}$\n- Distància de cada vèrtex al centre: $d = D/2 = 1\\ \\text{m}$\n- $k = 9{,}00 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$\n- Incògnites: energia de formació $E$ i càrrega central $q$ (negativa)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia de formació: suma sobre totes les parelles",
+            "cos": "L'energia necessària per portar les càrregues des de l'infinit fins a la seva posició és l'energia potencial electrostàtica del sistema, que és la suma de les energies de **cada parella** de càrregues (comptada una sola vegada):\n\n$$E = k\\left(\\frac{q_1 q_2}{r_{12}} + \\frac{q_1 q_3}{r_{13}} + \\frac{q_1 q_4}{r_{14}} + \\frac{q_2 q_3}{r_{23}} + \\frac{q_2 q_4}{r_{24}} + \\frac{q_3 q_4}{r_{34}}\\right)$$\n\nAmb 4 càrregues hi ha 6 parelles: **4 costats** (distància $\\sqrt{2}\\ \\text{m}$) i **2 diagonals** (distància $2\\ \\text{m}$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul de l'energia",
+            "cos": "$$E = k\\,Q^2\\left(\\frac{4}{\\sqrt{2}} + \\frac{2}{2}\\right) = 9{,}00 \\times 10^{9} \\cdot (1{,}00 \\times 10^{-5})^2 \\cdot \\left(2\\sqrt{2} + 1\\right)$$\n\n$$E = 0{,}900 \\cdot 3{,}828 = 3{,}45\\ \\text{J}$$\n\nResultat: **$E \\approx 3{,}45\\ \\text{J}$**. És positiva: cal fer treball per ajuntar càrregues del mateix signe, que es repel·leixen."
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantejament per simetria",
+            "cos": "Les quatre càrregues són iguals i estan col·locades simètricament, de manera que si la força total sobre una d'elles és nul·la, també ho serà sobre les altres. Estudiem la càrrega $q_1$. Les altres tres la repel·leixen, i la resultant d'aquestes tres forces va en la direcció de la diagonal, **cap enfora** del quadrat. La càrrega negativa $q$ del centre l'atrau cap a dins, al llarg de la mateixa diagonal. Cal que totes dues forces tinguin el mateix mòdul.\n\n![Forces sobre la càrrega q1 (solució oficial)](img/fisica/2013-S/e5-b-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resultant de les repulsions sobre q1",
+            "cos": "- Dels dos veïns ($q_2$ i $q_4$, a distància $\\sqrt{2}\\ \\text{m}$): $F_{12} = F_{14} = k\\dfrac{Q^2}{(\\sqrt{2})^2} = k\\dfrac{Q^2}{2}$, perpendiculars entre si. Les seves components sobre la diagonal valen $F\\cos 45^\\circ$ cadascuna.\n- Del vèrtex oposat ($q_3$, a distància $2\\ \\text{m}$): $F_{13} = k\\dfrac{Q^2}{4}$, ja en la direcció de la diagonal.\n\nResultant (sobre la diagonal, cap enfora):\n\n$$F_\\text{rep} = 2\\,k\\frac{Q^2}{2}\\cos 45^\\circ + k\\frac{Q^2}{4} = k\\,Q^2\\left(\\frac{1}{\\sqrt{2}} + \\frac{1}{4}\\right)$$\n\n(Les components perpendiculars a la diagonal de $F_{12}$ i $F_{14}$ s'anul·len entre si.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Càrrega central necessària",
+            "cos": "La càrrega $q$, a $d = 1\\ \\text{m}$, atrau $q_1$ amb una força $F_q = k\\dfrac{Q\\,|q|}{d^2} = k\\,Q\\,|q|$. Igualem:\n\n$$k\\,Q\\,|q| = k\\,Q^2\\left(\\frac{1}{\\sqrt{2}} + \\frac{1}{4}\\right) \\quad\\Rightarrow\\quad |q| = Q\\left(\\frac{1}{\\sqrt{2}} + \\frac{1}{4}\\right) = 1{,}00 \\times 10^{-5} \\cdot 0{,}957$$\n\n$$|q| = 9{,}57 \\times 10^{-6}\\ \\text{C}$$\n\nResultat: **$q = -9{,}57 \\times 10^{-6}\\ \\text{C} = -9{,}57\\ \\mu\\text{C}$**. La força sobre la càrrega central és automàticament nul·la per simetria."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = kQ^2\\,(2\\sqrt{2} + 1) \\approx 3{,}45\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$q = -9{,}57 \\times 10^{-6}\\ \\text{C}$"
+          }
+        ],
+        "nota": "La solució oficial planteja l'equilibri per components ($x$ o $y$) en lloc de projectar sobre la diagonal; el resultat és el mateix. Error típic a l'apartat a: comptar cada parella dues vegades (dona el doble) o oblidar les diagonals."
+      }
+    }
+  ]
+}

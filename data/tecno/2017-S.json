@@ -1,0 +1,825 @@
+{
+  "examen": {
+    "id": "tecno-2017-S",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2017,
+    "convocatoria": "setembre",
+    "serie": "2",
+    "pdf_examen": "pdfs/tecno/2017-S-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2017-S-solucio.pdf",
+    "estructura": "La prova consta de dues parts de dos exercicis cadascuna (2,5 punts per exercici). Primera part (comuna, obligatòria): exercici 1, amb 5 qüestions de test (0,5 punts cadascuna; cada resposta errònia descompta 0,16 punts i les no contestades no descompten), i exercici 2. Segona part: cal escollir UNA de les dues opcions (A o B) i fer-ne els exercicis 3 i 4."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2017-S-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Diàmetre mínim d'una peça d'alumini a tracció sense deformació plàstica",
+      "tema": "resistencia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "límit elàstic",
+        "tensió normal",
+        "tracció",
+        "secció circular"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "El límit elàstic d'un aliatge d'alumini és $\\sigma_\\text{e} = 85\\ \\text{MPa}$. Si una peça cilíndrica d'aquest material està sotmesa a una força de tracció de $1\\,400\\ \\text{N}$, quin és el diàmetre mínim que ha de tenir la secció perquè no es produeixi deformació plàstica?",
+      "figures": [],
+      "opcions": {
+        "a": "$3{,}24\\ \\text{mm}$",
+        "b": "$16{,}47\\ \\text{mm}$",
+        "c": "$4{,}58\\ \\text{mm}$",
+        "d": "$2{,}29\\ \\text{mm}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Límit elàstic: $\\sigma_\\text{e} = 85\\ \\text{MPa} = 85\\ \\text{N/mm}^2$\n- Força de tracció: $F = 1\\,400\\ \\text{N}$\n- Incògnita: diàmetre mínim $d_\\text{mín}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Condició per no deformar plàsticament",
+            "cos": "Perquè la peça treballi en zona elàstica, la tensió normal no pot superar el límit elàstic. El diàmetre mínim és el que fa que la tensió sigui exactament $\\sigma_\\text{e}$:\n\n$$\\sigma = \\frac{F}{S} \\le \\sigma_\\text{e} \\quad\\Rightarrow\\quad S_\\text{mín} = \\frac{F}{\\sigma_\\text{e}} = \\frac{1\\,400\\ \\text{N}}{85\\ \\text{N/mm}^2} = 16{,}47\\ \\text{mm}^2$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Diàmetre a partir de la secció circular",
+            "cos": "$$S = \\frac{\\pi d^2}{4} \\quad\\Rightarrow\\quad d_\\text{mín} = \\sqrt{\\frac{4\\,S_\\text{mín}}{\\pi}} = \\sqrt{\\frac{4 \\cdot 16{,}47}{\\pi}} = 4{,}58\\ \\text{mm}$$\n\nResultat: **$d_\\text{mín} = 4{,}58\\ \\text{mm}$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **b)** $16{,}47$ és el valor de la **secció** en $\\text{mm}^2$, no el diàmetre.\n- **d)** $2{,}29\\ \\text{mm}$ és el **radi** (la meitat del diàmetre).\n- **a)** $3{,}24\\ \\text{mm}$ correspon a $\\sqrt{2S/\\pi}$: surt d'un error en la fórmula de l'àrea del cercle."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$d_\\text{mín} = 4{,}58\\ \\text{mm}$ → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-S-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Viatgers màxims diaris d'un tren automàtic entre terminals",
+      "tema": "mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "temps de cicle",
+        "capacitat de transport",
+        "conversió d'unitats de temps"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Dues terminals d'un aeroport estan comunicades per un tren autònom que en un trajecte pot transportar fins a tres-centes persones. El temps del trajecte és de $3\\ \\text{min}$ i $15\\ \\text{s}$; i el temps d'espera entre dos trajectes és de $45\\ \\text{s}$ de les 5.30 h a les 23.30 h, i d'$1\\ \\text{min}$ i $15\\ \\text{s}$ de les 23.30 h a les 5.30 h. Quin és el nombre màxim de viatgers que pot transportar un tren durant tot un dia?",
+      "figures": [],
+      "opcions": {
+        "a": "$105\\,000$",
+        "b": "$96\\,000$",
+        "c": "$108\\,000$",
+        "d": "$101\\,647$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Capacitat per trajecte: $300$ persones\n- Temps de trajecte: $t_\\text{t} = 3\\ \\text{min}\\ 15\\ \\text{s} = 195\\ \\text{s}$\n- Espera de dia (5.30 h – 23.30 h, és a dir, $18\\ \\text{h}$): $t_\\text{e,dia} = 45\\ \\text{s}$\n- Espera de nit (23.30 h – 5.30 h, és a dir, $6\\ \\text{h}$): $t_\\text{e,nit} = 1\\ \\text{min}\\ 15\\ \\text{s} = 75\\ \\text{s}$\n- Incògnita: nombre màxim de viatgers en $24\\ \\text{h}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Trajectes durant la franja de dia",
+            "cos": "Cada trajecte ocupa el temps de viatge més l'espera: és el **temps de cicle**. De dia:\n\n$$t_\\text{cicle,dia} = 195 + 45 = 240\\ \\text{s}$$\n\n$$N_\\text{dia} = \\frac{18 \\cdot 3\\,600\\ \\text{s}}{240\\ \\text{s}} = \\frac{64\\,800}{240} = 270\\ \\text{trajectes}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Trajectes durant la franja de nit",
+            "cos": "$$t_\\text{cicle,nit} = 195 + 75 = 270\\ \\text{s}$$\n\n$$N_\\text{nit} = \\frac{6 \\cdot 3\\,600\\ \\text{s}}{270\\ \\text{s}} = \\frac{21\\,600}{270} = 80\\ \\text{trajectes}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Viatgers totals",
+            "cos": "$$N_\\text{viatgers} = (270 + 80) \\cdot 300 = 350 \\cdot 300 = 105\\,000\\ \\text{viatgers}$$\n\nResultat: **$105\\,000$ viatgers** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **c)** $108\\,000$ surt de suposar l'espera de $45\\ \\text{s}$ durant les 24 h ($86\\,400/240 = 360$ trajectes).\n- **b)** $96\\,000$ surt de suposar l'espera de $75\\ \\text{s}$ durant les 24 h ($86\\,400/270 = 320$ trajectes).\n- **d)** $101\\,647$ no és un múltiple de 300: no pot ser un nombre de viatgers amb trajectes complets."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$350$ trajectes → $105\\,000$ viatgers → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-S-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Interval de la resistència equivalent de dues resistències en paral·lel amb tolerància",
+      "tema": "circuits",
+      "temes_secundaris": [],
+      "conceptes": [
+        "resistències en paral·lel",
+        "tolerància",
+        "resistència equivalent"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "En un circuit elèctric, es connecten en paral·lel dues resistències de $30\\ \\Omega$ cadascuna i toleràncies de $\\pm 2\\ \\%$ i $\\pm 5\\ \\%$, respectivament. Entre quins valors es troba la resistència equivalent?",
+      "figures": [],
+      "opcions": {
+        "a": "$57{,}90\\ \\Omega$ i $62{,}10\\ \\Omega$.",
+        "b": "$14{,}47\\ \\Omega$ i $15{,}52\\ \\Omega$.",
+        "c": "$14{,}25\\ \\Omega$ i $15{,}75\\ \\Omega$.",
+        "d": "$57\\ \\Omega$ i $63\\ \\Omega$."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Valors extrems de cada resistència",
+            "cos": "La tolerància indica quant es pot desviar el valor real del nominal:\n\n- $R_1 = 30\\ \\Omega \\pm 2\\ \\%$: entre $30 \\cdot 0{,}98 = 29{,}4\\ \\Omega$ i $30 \\cdot 1{,}02 = 30{,}6\\ \\Omega$\n- $R_2 = 30\\ \\Omega \\pm 5\\ \\%$: entre $30 \\cdot 0{,}95 = 28{,}5\\ \\Omega$ i $30 \\cdot 1{,}05 = 31{,}5\\ \\Omega$"
+          },
+          {
+            "apartat": null,
+            "titol": "Resistència equivalent en paral·lel",
+            "cos": "En paral·lel, $\\dfrac{1}{R_\\text{eq}} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}$, és a dir, $R_\\text{eq} = \\dfrac{R_1 R_2}{R_1 + R_2}$. La $R_\\text{eq}$ creix si creixen $R_1$ o $R_2$, per tant el mínim s'obté amb els dos valors mínims i el màxim amb els dos màxims:\n\n$$R_\\text{eq,mín} = \\frac{29{,}4 \\cdot 28{,}5}{29{,}4 + 28{,}5} = 14{,}47\\ \\Omega$$\n\n$$R_\\text{eq,màx} = \\frac{30{,}6 \\cdot 31{,}5}{30{,}6 + 31{,}5} = 15{,}52\\ \\Omega$$\n\nResultat: **$14{,}47\\ \\Omega \\le R_\\text{eq} \\le 15{,}52\\ \\Omega$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** i **d)** són valors al voltant de $60\\ \\Omega$: corresponen a una connexió en **sèrie**, no en paral·lel.\n- **c)** $14{,}25$ i $15{,}75\\ \\Omega$ surten d'aplicar un $\\pm 5\\ \\%$ a tots dos resistors (o directament a $15\\ \\Omega$), ignorant que un és del $\\pm 2\\ \\%$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$14{,}47\\ \\Omega \\le R_\\text{eq} \\le 15{,}52\\ \\Omega$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-S-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Diàmetre dels cilindres d'un motor V6 a partir de la cilindrada i la cursa",
+      "tema": "termica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "cilindrada",
+        "cursa",
+        "diàmetre del cilindre",
+        "motor de combustió"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un cotxe té un motor de combustió V6 amb sis cilindres. La cilindrada és de $2\\,792\\ \\text{cm}^3$ i la cursa dels cilindres és de $90\\ \\text{mm}$. Quant fa el diàmetre dels cilindres?",
+      "figures": [],
+      "opcions": {
+        "a": "$70{,}32\\ \\text{mm}$",
+        "b": "$40{,}57\\ \\text{mm}$",
+        "c": "$198{,}74\\ \\text{mm}$",
+        "d": "$81{,}14\\ \\text{mm}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Cilindrada total: $V_\\text{T} = 2\\,792\\ \\text{cm}^3 = 2\\,792\\,000\\ \\text{mm}^3$\n- Nombre de cilindres: $z = 6$\n- Cursa: $s = 90\\ \\text{mm}$\n- Incògnita: diàmetre (alesatge) $D$"
+          },
+          {
+            "apartat": null,
+            "titol": "Cilindrada unitària",
+            "cos": "La cilindrada total és la suma del volum que escombra cada pistó:\n\n$$V_\\text{u} = \\frac{V_\\text{T}}{z} = \\frac{2\\,792\\,000}{6} = 465\\,333\\ \\text{mm}^3$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Diàmetre del cilindre",
+            "cos": "El volum escombrat per un pistó és un cilindre de diàmetre $D$ i altura igual a la cursa $s$:\n\n$$V_\\text{u} = \\frac{\\pi D^2}{4}\\, s \\quad\\Rightarrow\\quad D = \\sqrt{\\frac{4\\, V_\\text{u}}{\\pi\\, s}} = \\sqrt{\\frac{4 \\cdot 465\\,333}{\\pi \\cdot 90}} = 81{,}14\\ \\text{mm}$$\n\nResultat: **$D = 81{,}14\\ \\text{mm}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **c)** $198{,}74\\ \\text{mm}$ surt d'usar la cilindrada **total** en lloc de la d'un cilindre ($81{,}14 \\cdot \\sqrt{6}$).\n- **b)** $40{,}57\\ \\text{mm}$ és el **radi**, no el diàmetre."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$D = 81{,}14\\ \\text{mm}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-S-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Consum en L/100 km d'un Fórmula 1 a partir del consum per volta",
+      "tema": "energia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "consum de combustible",
+        "densitat",
+        "conversió d'unitats"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "En un gran premi de Fórmula 1, un vehicle ha tingut un consum mitjà de combustible per volta $c_\\text{m} = 2{,}9\\ \\text{kg}$. El combustible utilitzat té una densitat $\\rho = 0{,}75\\ \\text{kg/L}$. Si el circuit té una longitud $d = 5{,}543\\ \\text{km}$, quin ha estat el consum del vehicle en $\\text{L}/(100\\ \\text{km})$?",
+      "figures": [],
+      "opcions": {
+        "a": "$75\\ \\text{L}/(100\\ \\text{km})$",
+        "b": "$52{,}32\\ \\text{L}/(100\\ \\text{km})$",
+        "c": "$254{,}9\\ \\text{L}/(100\\ \\text{km})$",
+        "d": "$69{,}76\\ \\text{L}/(100\\ \\text{km})$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Volum de combustible per volta",
+            "cos": "Passem la massa consumida a volum amb la densitat ($V = m/\\rho$):\n\n$$V_\\text{volta} = \\frac{c_\\text{m}}{\\rho} = \\frac{2{,}9\\ \\text{kg}}{0{,}75\\ \\text{kg/L}} = 3{,}867\\ \\text{L}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Consum per cada 100 km",
+            "cos": "Aquests litres es gasten en $5{,}543\\ \\text{km}$. Fem una regla de tres per a $100\\ \\text{km}$:\n\n$$c = \\frac{3{,}867\\ \\text{L}}{5{,}543\\ \\text{km}} \\cdot 100\\ \\text{km} = 69{,}76\\ \\text{L}/(100\\ \\text{km})$$\n\nResultat: **$c = 69{,}76\\ \\text{L}/(100\\ \\text{km})$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **b)** $52{,}32$ surt d'oblidar la densitat: són **kg**/(100 km), no litres ($2{,}9 / 5{,}543 \\cdot 100$).\n- **a)** $75$ i **c)** $254{,}9$ no surten de cap combinació coherent de les dades."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$c = 69{,}76\\ \\text{L}/(100\\ \\text{km})$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Control d'enllumenat públic amb sensor crepuscular i dos sensors de moviment",
+      "tema": "digital",
+      "temes_secundaris": [],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "simplificació",
+        "esquema de contactes"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Per a reduir el consum energètic d'una ciutat s'ha instal·lat un sistema intel·ligent de control de la il·luminació. Els fanals d'un carrer determinat es controlen mitjançant un sensor crepuscular, que detecta si és de nit o de dia, i dos sensors de moviment situats estratègicament, que detecten la presència de persones al carrer. Els fanals s'encenen quan és de nit i, a més, algun dels dos sensors detecta moviment. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- sensor crepuscular: $c = \\begin{cases} 1: \\text{és de nit} \\\\ 0: \\text{és de dia} \\end{cases}$\n- sensor de moviment 1: $m_1 = \\begin{cases} 1: \\text{detecta moviment} \\\\ 0: \\text{no detecta moviment} \\end{cases}$\n- sensor de moviment 2: $m_2 = \\begin{cases} 1: \\text{detecta moviment} \\\\ 0: \\text{no detecta moviment} \\end{cases}$\n- estat dels fanals: $f = \\begin{cases} 1: \\text{encesos} \\\\ 0: \\text{apagats} \\end{cases}$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Elaboreu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Traduir l'enunciat a lògica",
+            "cos": "Els fanals s'encenen quan **és de nit** ($c = 1$) **i** a més **algun** dels dos sensors detecta moviment ($m_1 = 1$ **o** $m_2 = 1$). La paraula «i» correspon a un producte lògic (AND) i «algun dels dos» a una suma lògica (OR)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "Amb 3 variables hi ha $2^3 = 8$ combinacions. Posem $f = 1$ només quan $c = 1$ i almenys un dels $m$ val 1:\n\n| $c$ | $m_1$ | $m_2$ | $f$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | 0 |\n| 1 | 0 | 0 | 0 |\n| 1 | 0 | 1 | 1 |\n| 1 | 1 | 0 | 1 |\n| 1 | 1 | 1 | 1 |\n\nDe dia ($c = 0$) els fanals sempre estan apagats; de nit, s'encenen si hi ha moviment en algun sensor."
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica (suma de productes)",
+            "cos": "Escrivim un terme producte per a cada fila amb $f = 1$ (variable negada si val 0):\n\n$$f = c\\,\\bar{m}_1\\,m_2 + c\\,m_1\\,\\bar{m}_2 + c\\,m_1\\,m_2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació",
+            "cos": "Traiem factor comú $c$ i simplifiquem el parèntesi. Com que $x = x + x$, podem duplicar el terme $m_1 m_2$:\n\n$$f = c\\,(\\bar{m}_1 m_2 + m_1 m_2 + m_1 \\bar{m}_2 + m_1 m_2) = c\\,[\\,m_2(\\bar{m}_1 + m_1) + m_1(\\bar{m}_2 + m_2)\\,] = c\\,(m_2 + m_1)$$\n\nAmb el mapa de Karnaugh s'arriba al mateix: les tres caselles amb 1 (fila $c = 1$, columnes $m_1 m_2 = 01, 11, 10$) es cobreixen amb dos grups de dues, $c\\,m_2$ i $c\\,m_1$.\n\nResultat: **$f = c \\cdot (m_1 + m_2)$**, que és exactament la frase de l'enunciat."
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de contactes",
+            "cos": "En un esquema de contactes, un producte (AND) són contactes **en sèrie** i una suma (OR) són contactes **en paral·lel**. Per tant: el contacte $c$ en sèrie amb el paral·lel dels contactes $m_1$ i $m_2$, i tot plegat alimentant el fanal $f$:\n\n![Esquema de contactes: c en sèrie amb m1 i m2 en paral·lel, alimentant el fanal f](img/tecno/2017-S/e2-sol.png)\n\n(A la figura oficial, el contacte de la branca superior és $m_1$ i el de la branca inferior és $m_2$.)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$f = 1$ només a les files $c\\,m_1\\,m_2 = 101,\\ 110,\\ 111$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$f = c\\,\\bar{m}_1 m_2 + c\\,m_1 \\bar{m}_2 + c\\,m_1 m_2 = c \\cdot (m_1 + m_2)$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Contacte $c$ en sèrie amb ($m_1$ en paral·lel amb $m_2$)"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2017-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Tetera elèctrica amb resistència d'escalfament i de manteniment",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "termica"
+      ],
+      "conceptes": [
+        "calor específica",
+        "energia",
+        "potència elèctrica",
+        "resistències en sèrie",
+        "llei d'Ohm"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "En la figura es mostra el circuit d'una tetera elèctrica connectada a la xarxa de tensió $U = 230\\ \\text{V}$. El circuit consta d'una resistència d'escalfament $R_\\text{e}$ i d'una resistència de manteniment $R_\\text{m}$. En la primera fase l'interruptor A està tancat i, en aquesta configuració, la resistència $R_\\text{e}$ escalfa l'aigua dipositada a la tetera fins a la temperatura $T_1 = 95\\ ^\\circ\\text{C}$. Quan l'aigua arriba a aquesta temperatura, l'interruptor s'obre i les dues resistències mantenen l'aigua calenta. La temperatura inicial de l'aigua és $T_0 = 20\\ ^\\circ\\text{C}$ i la tetera tarda $4\\ \\text{min}$ i $30\\ \\text{s}$ a escalfar un volum d'aigua $V = 1{,}4\\ \\text{L}$. Sabent que la calor específica de l'aigua és $c_\\text{e} = 4{,}18\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$, determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2017-S/e3-a.png",
+          "peu": "Circuit de la tetera: R_e en sèrie amb R_m, i l'interruptor A en paral·lel amb R_m"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'energia $E$ necessària per a escalfar l'aigua en la primera fase.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "El valor de la resistència $R_\\text{e}$ i el corrent $I$ que circula pel circuit durant la fase d'escalfament.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "El valor que ha de tenir la resistència $R_\\text{m}$ perquè la potència consumida quan l'aigua es manté calenta sigui $P_\\text{m} = 300\\ \\text{W}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Tensió de xarxa: $U = 230\\ \\text{V}$\n- Volum d'aigua: $V = 1{,}4\\ \\text{L}$ → massa $m = \\rho V = 1\\ \\text{kg/L} \\cdot 1{,}4\\ \\text{L} = 1{,}4\\ \\text{kg}$\n- Temperatures: $T_0 = 20\\ ^\\circ\\text{C}$, $T_1 = 95\\ ^\\circ\\text{C}$\n- Calor específica: $c_\\text{e} = 4{,}18\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$\n- Temps d'escalfament: $\\Delta t = 4\\ \\text{min}\\ 30\\ \\text{s} = 270\\ \\text{s}$\n- Potència de manteniment: $P_\\text{m} = 300\\ \\text{W}$\n- Incògnites: $E$, $R_\\text{e}$, $I$, $R_\\text{m}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Com funciona el circuit",
+            "cos": "Mirant la figura, $R_\\text{e}$ i $R_\\text{m}$ estan en sèrie, i l'interruptor A està connectat en paral·lel amb $R_\\text{m}$:\n\n- **A tancat** (escalfament): l'interruptor curtcircuita $R_\\text{m}$, i només treballa $R_\\text{e}$ sotmesa a tota la tensió $U$.\n- **A obert** (manteniment): el corrent passa per $R_\\text{e}$ i $R_\\text{m}$ en sèrie; la resistència total és més gran i la potència, més petita."
+          },
+          {
+            "apartat": "a",
+            "titol": "Calor necessària per escalfar l'aigua",
+            "cos": "La calor sensible per elevar la temperatura d'una massa d'aigua és:\n\n$$E = m\\, c_\\text{e}\\, (T_1 - T_0) = 1{,}4\\ \\text{kg} \\cdot 4{,}18\\ \\tfrac{\\text{kJ}}{\\text{kg}\\ ^\\circ\\text{C}} \\cdot (95 - 20)\\ ^\\circ\\text{C} = 438{,}9\\ \\text{kJ}$$\n\nResultat: **$E = 438{,}9\\ \\text{kJ}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència d'escalfament",
+            "cos": "Aquesta energia es subministra en $270\\ \\text{s}$ (suposem que tota l'energia elèctrica passa a l'aigua):\n\n$$P = \\frac{E}{\\Delta t} = \\frac{438\\,900\\ \\text{J}}{270\\ \\text{s}} = 1\\,626\\ \\text{W} = 1{,}626\\ \\text{kW}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resistència d'escalfament i corrent",
+            "cos": "Amb A tancat, $R_\\text{e}$ té tota la tensió $U$. De $P = U^2/R$:\n\n$$R_\\text{e} = \\frac{U^2}{P} = \\frac{230^2}{1\\,626} = 32{,}54\\ \\Omega$$\n\nI el corrent, de $P = U\\, I$:\n\n$$I = \\frac{P}{U} = \\frac{1\\,626\\ \\text{W}}{230\\ \\text{V}} = 7{,}068\\ \\text{A}$$\n\nResultat: **$R_\\text{e} = 32{,}54\\ \\Omega$; $I = 7{,}068\\ \\text{A}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Resistència total en la fase de manteniment",
+            "cos": "Amb A obert, el circuit és $R_\\text{e}$ + $R_\\text{m}$ en sèrie connectat a $U$. La resistència equivalent que dona $300\\ \\text{W}$ és:\n\n$$R_\\text{eq} = \\frac{U^2}{P_\\text{m}} = \\frac{230^2}{300} = 176{,}3\\ \\Omega$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Resistència de manteniment",
+            "cos": "En sèrie, les resistències se sumen: $R_\\text{eq} = R_\\text{e} + R_\\text{m}$:\n\n$$R_\\text{m} = R_\\text{eq} - R_\\text{e} = 176{,}3 - 32{,}54 = 143{,}8\\ \\Omega$$\n\nResultat: **$R_\\text{m} = 143{,}8\\ \\Omega$** (el corrent en aquesta fase és $I_\\text{m} = U/R_\\text{eq} = 1{,}304\\ \\text{A}$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 438{,}9\\ \\text{kJ}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P = 1{,}626\\ \\text{kW}$; $R_\\text{e} = 32{,}54\\ \\Omega$; $I = 7{,}068\\ \\text{A}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$R_\\text{eq} = 176{,}3\\ \\Omega$; $R_\\text{m} = 143{,}8\\ \\Omega$"
+          }
+        ],
+        "nota": "Error típic a l'apartat c: calcular $R_\\text{m} = U^2/P_\\text{m} = 176{,}3\\ \\Omega$ sense restar-hi $R_\\text{e}$. En la fase de manteniment les dues resistències estan en sèrie i els $300\\ \\text{W}$ són la potència del conjunt."
+      }
+    },
+    {
+      "id": "tecno-2017-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Aerogenerador amb multiplicador: potències, parells i rendiments",
+      "tema": "mecanismes",
+      "temes_secundaris": [
+        "energia",
+        "maquines-electriques"
+      ],
+      "conceptes": [
+        "relació de transmissió",
+        "parell",
+        "potència mecànica",
+        "rendiment",
+        "aerogenerador"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Un aerogenerador està format per un rotor amb tres pales, un multiplicador d'engranatges i un generador elèctric. L'aerogenerador té una relació de transmissió $\\tau = \\omega_2/\\omega_1 = 90$ i el seu sistema de control permet que la potència elèctrica generada es mantingui constant, $P_\\text{elèctr} = 1{,}5\\ \\text{MW}$, per a una velocitat de gir del rotor $15\\ \\text{min}^{-1} \\le n_1 \\le 25\\ \\text{min}^{-1}$. El rendiment del generador és $\\eta_\\text{gen} = 0{,}85$ i el parell màxim a l'eix d'entrada del multiplicador és $\\Gamma_1 = 1\\,600\\ \\text{kN}\\cdot\\text{m}$. Si la potència generada es manté constant, determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2017-S/e4-a.png",
+          "peu": "Esquema de l'aerogenerador: rotor (eix 1), multiplicador i generador (eix 2), amb les dades"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La potència $P_2$ i el parell màxim $\\Gamma_2$ a l'eix de sortida del multiplicador.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El rendiment del multiplicador $\\eta_\\text{mult}$ quan el parell al seu eix d'entrada és màxim.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "La potència dissipada en el multiplicador $P_\\text{mult}$ i en el generador $P_\\text{gen}$ quan el parell a l'eix d'entrada del multiplicador és màxim.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Relació de transmissió: $\\tau = \\omega_2/\\omega_1 = 90$ (el multiplicador fa girar l'eix 2 noranta vegades més de pressa)\n- Potència elèctrica (constant): $P_\\text{elèctr} = 1{,}5\\ \\text{MW}$\n- Rang de velocitat del rotor: $15\\ \\text{min}^{-1} \\le n_1 \\le 25\\ \\text{min}^{-1}$\n- Rendiment del generador: $\\eta_\\text{gen} = 0{,}85$\n- Parell màxim a l'entrada: $\\Gamma_1 = 1\\,600\\ \\text{kN}\\cdot\\text{m}$\n- Incògnites: $P_2$, $\\Gamma_2$, $\\eta_\\text{mult}$, $P_\\text{mult}$, $P_\\text{gen}$\n\nCadena de potència: rotor → (eix 1, $P_1$) → multiplicador → (eix 2, $P_2$) → generador → $P_\\text{elèctr}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència a l'eix de sortida del multiplicador",
+            "cos": "L'eix 2 és l'entrada del generador. El generador converteix en electricitat només una part ($\\eta_\\text{gen}$) de la potència mecànica que rep:\n\n$$\\eta_\\text{gen} = \\frac{P_\\text{elèctr}}{P_2} \\quad\\Rightarrow\\quad P_2 = \\frac{P_\\text{elèctr}}{\\eta_\\text{gen}} = \\frac{1{,}5\\ \\text{MW}}{0{,}85} = 1{,}765\\ \\text{MW}$$\n\nCom que $P_\\text{elèctr}$ és constant, $P_2$ també ho és."
+          },
+          {
+            "apartat": "a",
+            "titol": "Quan el parell és màxim",
+            "cos": "Potència, parell i velocitat angular es relacionen per $P = \\Gamma\\,\\omega$. Amb la potència constant, el parell és **màxim quan la velocitat és mínima**, és a dir, a $n_1 = 15\\ \\text{min}^{-1}$:\n\n$$\\omega_{1} = 15\\ \\frac{\\text{volta}}{\\text{min}} \\cdot \\frac{2\\pi\\ \\text{rad}}{1\\ \\text{volta}} \\cdot \\frac{1\\ \\text{min}}{60\\ \\text{s}} = 1{,}571\\ \\text{rad/s}$$\n\n$$\\omega_{2} = \\tau\\, \\omega_1 = 90 \\cdot 1{,}571 = 141{,}4\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Parell màxim a l'eix de sortida",
+            "cos": "$$\\Gamma_2 = \\frac{P_2}{\\omega_2} = \\frac{1{,}765 \\cdot 10^6\\ \\text{W}}{141{,}4\\ \\text{rad/s}} = 12\\,480\\ \\text{N}\\cdot\\text{m} = 12{,}48\\ \\text{kN}\\cdot\\text{m}$$\n\nResultat: **$P_2 = 1{,}765\\ \\text{MW}$; $\\Gamma_{2,\\text{màx}} = 12{,}48\\ \\text{kN}\\cdot\\text{m}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència d'entrada amb el parell màxim",
+            "cos": "El parell d'entrada màxim $\\Gamma_1 = 1\\,600\\ \\text{kN}\\cdot\\text{m}$ es dona en la mateixa situació de velocitat mínima ($\\omega_1 = 1{,}571\\ \\text{rad/s}$). La potència que entra al multiplicador és:\n\n$$P_1 = \\Gamma_1\\, \\omega_1 = 1\\,600 \\cdot 10^3 \\cdot 1{,}571 = 2{,}513 \\cdot 10^6\\ \\text{W} = 2{,}513\\ \\text{MW}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Rendiment del multiplicador",
+            "cos": "$$\\eta_\\text{mult} = \\frac{P_2}{P_1} = \\frac{\\Gamma_2\\, \\omega_2}{\\Gamma_1\\, \\omega_1} = \\frac{\\Gamma_2\\, \\tau}{\\Gamma_1} = \\frac{12{,}48 \\cdot 90}{1\\,600} = 0{,}7022$$\n\nResultat: **$\\eta_\\text{mult} = 0{,}7022$** (un 70,2 %). Fixeu-vos que, com que $\\omega_2 = \\tau\\,\\omega_1$, no cal conèixer la velocitat: n'hi ha prou amb el quocient de parells i $\\tau$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència dissipada en el multiplicador",
+            "cos": "La potència perduda en una màquina és la diferència entre la que entra i la que surt:\n\n$$P_\\text{mult} = P_1 - P_2 = \\frac{P_2}{\\eta_\\text{mult}}(1 - \\eta_\\text{mult}) = 2{,}513 - 1{,}765 = 0{,}7486\\ \\text{MW} = 748{,}6\\ \\text{kW}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència dissipada en el generador",
+            "cos": "$$P_\\text{gen} = P_2 - P_\\text{elèctr} = \\frac{P_\\text{elèctr}}{\\eta_\\text{gen}}(1 - \\eta_\\text{gen}) = 1{,}765 - 1{,}5 = 0{,}2647\\ \\text{MW} = 264{,}7\\ \\text{kW}$$\n\nResultat: **$P_\\text{mult} = 748{,}6\\ \\text{kW}$; $P_\\text{gen} = 264{,}7\\ \\text{kW}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P_2 = 1{,}765\\ \\text{MW}$; $\\omega_2 = 141{,}4\\ \\text{rad/s}$; $\\Gamma_{2} = 12{,}48\\ \\text{kN}\\cdot\\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_1 = 2{,}513\\ \\text{MW}$; $\\eta_\\text{mult} = 0{,}7022$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{mult} = 748{,}6\\ \\text{kW}$; $P_\\text{gen} = 264{,}7\\ \\text{kW}$"
+          }
+        ],
+        "nota": "Error típic: calcular el parell màxim amb la velocitat màxima ($25\\ \\text{min}^{-1}$). Amb potència constant, $\\Gamma = P/\\omega$ és màxim quan la velocitat és **mínima**. Un altre error és oblidar passar els $\\text{min}^{-1}$ a $\\text{rad/s}$ abans d'aplicar $P = \\Gamma\\,\\omega$."
+      }
+    },
+    {
+      "id": "tecno-2017-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Rampa de patinatge feta amb impressora 3D: volum, massa i filament",
+      "tema": "fabricacio",
+      "temes_secundaris": [
+        "disseny"
+      ],
+      "conceptes": [
+        "impressió 3D",
+        "volum",
+        "densitat",
+        "massa",
+        "fabricació additiva"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "S'està preparant una maqueta d'un nou equipament esportiu per a una població. La maqueta està formada per diferents peces que s'elaboren amb una impressora 3D, una de les quals és una rampa per a patinadors com la que es mostra en la figura ($L_1 = 15\\ \\text{mm}$, $L_2 = 30\\ \\text{mm}$, $L_3 = 40\\ \\text{mm}$, $L_4 = 120\\ \\text{mm}$). La impressora fabrica la figura massissa de plàstic a còpia d'anar dipositant capes horitzontals de gruix $e = 0{,}2\\ \\text{mm}$. S'alimenta amb un filament de PLA (àcid polilàctic) de diàmetre $d = 3\\ \\text{mm}$ i densitat $\\rho = 1\\,250\\ \\text{kg/m}^3$ que passa per un extrusor on s'escalfa i es prem per a poder-lo dipositar adequadament. Determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2017-S/e3-b.png",
+          "peu": "Rampa per a patinadors amb les cotes L1 a L4"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El volum $V$ i la massa $m$ del sòlid construït.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La longitud $L$ de filament de PLA utilitzat.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "El nombre mínim $n$ de capes que ha de dipositar la impressora.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Cotes: $L_1 = 15\\ \\text{mm}$, $L_2 = 30\\ \\text{mm}$, $L_3 = 40\\ \\text{mm}$, $L_4 = 120\\ \\text{mm}$\n- Gruix de capa: $e = 0{,}2\\ \\text{mm}$\n- Filament: $d = 3\\ \\text{mm}$, $\\rho = 1\\,250\\ \\text{kg/m}^3$\n- Incògnites: $V$, $m$, $L$ (filament), $n$ (capes)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Interpretar la figura",
+            "cos": "La rampa és un **prisma**: un perfil lateral (la cara gran, vista de costat) extrudit una profunditat $L_3 = 40\\ \\text{mm}$ (la cota $L_3$ de baix a l'esquerra i la de dalt a la dreta). El perfil té:\n\n- una base de llargada $L_4 = 120\\ \\text{mm}$;\n- a l'esquerra, un replà baix d'alçada $L_1 = 15\\ \\text{mm}$ i amplada $L_2 = 30\\ \\text{mm}$;\n- a la dreta, un replà alt d'alçada $L_3 = 40\\ \\text{mm}$ i amplada $L_2 = 30\\ \\text{mm}$;\n- entre els dos, el pla inclinat, d'amplada horitzontal $L_4 - 2L_2 = 60\\ \\text{mm}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Àrea del perfil per descomposició",
+            "cos": "Dividim el perfil en tres figures simples:\n\n1. Rectangle inferior de tota la llargada i alçada $L_1$: $A_1 = L_4\\,L_1 = 120 \\cdot 15 = 1\\,800\\ \\text{mm}^2$\n2. Triangle de la rampa, sobre el rectangle anterior: base $L_4 - 2L_2 = 60\\ \\text{mm}$ i alçada $L_3 - L_1 = 25\\ \\text{mm}$: $A_2 = \\tfrac{1}{2} \\cdot 60 \\cdot 25 = 750\\ \\text{mm}^2$\n3. Rectangle del replà alt, sobre el primer: $L_2 \\cdot (L_3 - L_1) = 30 \\cdot 25 = 750\\ \\text{mm}^2$\n\n$$A = L_4 L_1 + \\tfrac{1}{2}(L_4 - 2L_2)(L_3 - L_1) + L_2 (L_3 - L_1) = 1\\,800 + 750 + 750 = 3\\,300\\ \\text{mm}^2$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Volum i massa",
+            "cos": "Volum del prisma = àrea del perfil × profunditat:\n\n$$V = A\\, L_3 = 3\\,300\\ \\text{mm}^2 \\cdot 40\\ \\text{mm} = 132\\,000\\ \\text{mm}^3 = 132 \\cdot 10^{-6}\\ \\text{m}^3$$\n\n$$m = \\rho\\, V = 1\\,250\\ \\text{kg/m}^3 \\cdot 132 \\cdot 10^{-6}\\ \\text{m}^3 = 0{,}165\\ \\text{kg}$$\n\nResultat: **$V = 132 \\cdot 10^{-6}\\ \\text{m}^3$ ($132\\ \\text{cm}^3$); $m = 0{,}165\\ \\text{kg}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud de filament",
+            "cos": "El filament és un cilindre de diàmetre $d$. Com que la peça és massissa, tot el volum de la peça prové del filament (el material només canvia de forma a l'extrusor):\n\n$$V = \\frac{\\pi d^2}{4}\\, L \\quad\\Rightarrow\\quad L = \\frac{4\\,V}{\\pi\\, d^2} = \\frac{4 \\cdot 132\\,000\\ \\text{mm}^3}{\\pi \\cdot 3^2\\ \\text{mm}^2} = 18\\,674\\ \\text{mm}$$\n\nResultat: **$L = 18{,}67\\ \\text{m}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Nombre de capes",
+            "cos": "Les capes són horitzontals, per tant s'apilen al llarg de l'alçada total de la peça, que és $L_3 = 40\\ \\text{mm}$:\n\n$$n = \\frac{L_3}{e} = \\frac{40\\ \\text{mm}}{0{,}2\\ \\text{mm}} = 200\\ \\text{capes}$$\n\nResultat: **$n = 200$ capes**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$V = 132 \\cdot 10^{-6}\\ \\text{m}^3$; $m = 0{,}165\\ \\text{kg}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$L = 18{,}67\\ \\text{m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$n = 200$ capes"
+          }
+        ],
+        "nota": "Cal anar amb compte a identificar les cotes: $L_3$ apareix tres vegades a la figura (profunditat de la peça i alçada del replà alt). Error típic a l'apartat b: oblidar dividir per 4 a l'àrea del cercle ($\\pi d^2/4$) o usar el radi com si fos el diàmetre."
+      }
+    },
+    {
+      "id": "tecno-2017-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Ascensor hidràulic d'acció directa: força, pressió, tensió a la tija i rendiment",
+      "tema": "pneumatica",
+      "temes_secundaris": [
+        "resistencia"
+      ],
+      "conceptes": [
+        "cilindre hidràulic",
+        "pressió",
+        "cabal",
+        "tensió normal",
+        "potència hidràulica",
+        "rendiment"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Un ascensor hidràulic d'acció directa funciona mitjançant un cilindre hidràulic connectat directament a la part inferior de la cabina de l'ascensor en direcció vertical. El cilindre té un diàmetre interior $d_\\text{int} = 100\\ \\text{mm}$ i el diàmetre de la tija és $d_\\text{tija} = 65\\ \\text{mm}$. La massa conjunta de la cabina i la càrrega és $m = 1\\,250\\ \\text{kg}$, i les altres masses es consideren negligibles. Quan el cilindre manté la cabina i la càrrega en repòs, determineu els apartats a i b.\n\nQuan l'ascensor eleva la mateixa càrrega a una velocitat constant $v$, una bomba subministra un cabal d'oli $q = 2{,}5\\ \\text{L/s}$ al cilindre a una pressió $p = 1{,}94\\ \\text{MPa}$. Per a aquesta situació, determineu els apartats c i d.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La força $F_\\text{ch}$ que fa el cilindre hidràulic i la pressió relativa $p_\\text{int}$ a l'interior del cilindre.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La tensió normal a compressió $\\sigma$ de la tija.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La velocitat $v$ d'ascens de la càrrega en m/s.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "La potència $P_\\text{h}$ que proporciona la bomba i el rendiment $\\eta$ del cilindre hidràulic.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Diàmetre interior del cilindre: $d_\\text{int} = 100\\ \\text{mm} = 0{,}1\\ \\text{m}$\n- Diàmetre de la tija: $d_\\text{tija} = 65\\ \\text{mm} = 0{,}065\\ \\text{m}$\n- Massa (cabina + càrrega): $m = 1\\,250\\ \\text{kg}$\n- Cabal de la bomba: $q = 2{,}5\\ \\text{L/s} = 2{,}5 \\cdot 10^{-3}\\ \\text{m}^3/\\text{s}$\n- Pressió de la bomba en l'ascens: $p = 1{,}94\\ \\text{MPa}$\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: $F_\\text{ch}$, $p_\\text{int}$, $\\sigma$, $v$, $P_\\text{h}$, $\\eta$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Força del cilindre en repòs",
+            "cos": "En repòs, la cabina està en equilibri: el cilindre ha de compensar exactament el pes:\n\n$$F_\\text{ch} = m\\, g = 1\\,250 \\cdot 9{,}807 = 12\\,259\\ \\text{N} = 12{,}26\\ \\text{kN}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Pressió a l'interior del cilindre",
+            "cos": "L'oli empeny el pistó per tota la seva secció, de diàmetre $d_\\text{int}$ (en un cilindre d'acció directa que empeny cap amunt, l'oli actua per la cara sense tija):\n\n$$S_\\text{int} = \\frac{\\pi\\, d_\\text{int}^2}{4} = \\frac{\\pi \\cdot 0{,}1^2}{4} = 7{,}854 \\cdot 10^{-3}\\ \\text{m}^2$$\n\n$$p_\\text{int} = \\frac{F_\\text{ch}}{S_\\text{int}} = \\frac{12\\,259\\ \\text{N}}{7{,}854 \\cdot 10^{-3}\\ \\text{m}^2} = 1{,}561 \\cdot 10^6\\ \\text{Pa} = 1{,}561\\ \\text{MPa}$$\n\nResultat: **$F_\\text{ch} = 12{,}26\\ \\text{kN}$; $p_\\text{int} = 1{,}561\\ \\text{MPa}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Tensió de compressió a la tija",
+            "cos": "La tija transmet tota la força $F_\\text{ch}$ a la cabina i treballa a compressió. La tensió és la força dividida per la secció de la tija:\n\n$$S_\\text{tija} = \\frac{\\pi\\, d_\\text{tija}^2}{4} = \\frac{\\pi \\cdot 0{,}065^2}{4} = 3{,}318 \\cdot 10^{-3}\\ \\text{m}^2$$\n\n$$\\sigma = \\frac{F_\\text{ch}}{S_\\text{tija}} = \\frac{12\\,259}{3{,}318 \\cdot 10^{-3}} = 3{,}694 \\cdot 10^6\\ \\text{Pa} = 3{,}694\\ \\text{MPa}$$\n\nResultat: **$\\sigma = 3{,}694\\ \\text{MPa}$** (compressió)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Velocitat d'ascens a partir del cabal",
+            "cos": "El cabal és el volum d'oli que entra per segon. Aquest volum omple el cilindre i fa avançar el pistó: $q = S_\\text{int}\\, v$:\n\n$$v = \\frac{q}{S_\\text{int}} = \\frac{2{,}5 \\cdot 10^{-3}\\ \\text{m}^3/\\text{s}}{7{,}854 \\cdot 10^{-3}\\ \\text{m}^2} = 0{,}3183\\ \\text{m/s}$$\n\nResultat: **$v = 0{,}3183\\ \\text{m/s}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Potència hidràulica de la bomba",
+            "cos": "La potència hidràulica és el producte de la pressió pel cabal:\n\n$$P_\\text{h} = p\\, q = 1{,}94 \\cdot 10^6\\ \\text{Pa} \\cdot 2{,}5 \\cdot 10^{-3}\\ \\text{m}^3/\\text{s} = 4\\,850\\ \\text{W}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Rendiment del cilindre",
+            "cos": "La potència útil és la mecànica que rep la càrrega: pujar el pes a velocitat constant, $P_\\text{mec} = F_\\text{ch}\\, v$:\n\n$$P_\\text{mec} = 12\\,259\\ \\text{N} \\cdot 0{,}3183\\ \\text{m/s} = 3\\,902\\ \\text{W}$$\n\n$$\\eta = \\frac{P_\\text{mec}}{P_\\text{h}} = \\frac{3\\,902}{4\\,850} = 0{,}8046$$\n\nResultat: **$P_\\text{h} = 4\\,850\\ \\text{W}$; $\\eta = 0{,}8046$** (un 80,5 %). Les pèrdues es deuen principalment al fregament de les juntes del pistó: per això la pressió en moviment ($1{,}94\\ \\text{MPa}$) és més gran que en repòs ($1{,}561\\ \\text{MPa}$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$F_\\text{ch} = 12{,}26\\ \\text{kN}$; $p_\\text{int} = 1{,}561\\ \\text{MPa}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\sigma = 3{,}694\\ \\text{MPa}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$v = 0{,}3183\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$P_\\text{h} = 4\\,850\\ \\text{W}$; $\\eta = 0{,}8046$"
+          }
+        ],
+        "nota": "Error típic: calcular la pressió amb la secció anular ($S_\\text{int} - S_\\text{tija}$). Aquí l'oli empeny per la cara del pistó sense tija, que té tota la secció $\\pi d_\\text{int}^2/4$; la secció de la tija només s'usa per a la tensió de l'apartat b. Amb $g = 9{,}81\\ \\text{m/s}^2$ surten $\\sigma = 3{,}695\\ \\text{MPa}$ i $\\eta = 0{,}8048$, diferències sense importància."
+      }
+    }
+  ]
+}

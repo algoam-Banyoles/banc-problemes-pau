@@ -1,0 +1,1545 @@
+{
+  "examen": {
+    "id": "tecno-2014-J",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2014,
+    "convocatoria": "juny",
+    "serie": "3 i 4",
+    "pdf_examen": "pdfs/tecno/2014-J-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2014-J-solucio.pdf",
+    "estructura": "El PDF conté dues sèries (3 i 4) amb la mateixa estructura. Cada prova consta de dues parts de dos exercicis cadascuna (2,5 punts per exercici). Primera part, comuna: exercici 1 (5 qüestions de test de 0,5 punts; resposta errònia −0,16 punts, no contestada 0) i exercici 2. Segona part: cal escollir UNA de les dues opcions (A o B) i fer-ne els exercicis 3 i 4."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2014-J-s3-e1-q1",
+      "serie": "3",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Temps mínim d'una unitat en una línia de producció amb operacions simultànies i seqüencials",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "línia de producció",
+        "temps de cicle",
+        "operacions simultànies",
+        "camí crític"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "En una línia de producció es duen a terme quatre operacions. Les operacions A i B, d'una durada de $25\\ \\text{s}$ i $30\\ \\text{s}$, respectivament, es poden dur a terme simultàniament. Les operacions C i D tenen una durada de $30\\ \\text{s}$ i $45\\ \\text{s}$, respectivament, i no es poden dur a terme simultàniament. Les operacions C i D s'han de dur a terme necessàriament després de les operacions A i B. En règim estacionari, entra una unitat cada $25\\ \\text{s}$ a la línia. Quin és el temps mínim d'una unitat dins de la línia?",
+      "figures": [],
+      "opcions": {
+        "a": "$130\\ \\text{s}$",
+        "b": "$45\\ \\text{s}$",
+        "c": "$105\\ \\text{s}$",
+        "d": "$100\\ \\text{s}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Operacions simultànies: A ($25\\ \\text{s}$) i B ($30\\ \\text{s}$)\n- Operacions una darrere l'altra: C ($30\\ \\text{s}$) i D ($45\\ \\text{s}$), després d'A i B\n- Cadència d'entrada: una unitat cada $25\\ \\text{s}$\n- Incògnita: temps mínim que una unitat passa dins la línia, $t_\\text{mín}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Fase 1: operacions simultànies A i B",
+            "cos": "Si A i B es fan alhora, la fase s'acaba quan acaba la **més llarga** de les dues:\n\n$$t_1 = \\max(25,\\ 30) = 30\\ \\text{s}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Fase 2: operacions seqüencials C i D",
+            "cos": "C i D no es poden fer alhora, per tant els seus temps **se sumen**:\n\n$$t_2 = 30 + 45 = 75\\ \\text{s}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Temps mínim total",
+            "cos": "Les dues fases van una darrere l'altra:\n\n$$t_\\text{mín} = t_1 + t_2 = 30 + 75 = 105\\ \\text{s}$$\n\nResultat: **$t_\\text{mín} = 105\\ \\text{s}$** → resposta **c**. La cadència d'entrada (25 s) no canvia el temps que triga una unitat a recórrer la línia en el millor cas."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $130\\ \\text{s} = 25 + 30 + 30 + 45$: sumar-ho tot, oblidant que A i B són simultànies.\n- **d)** $100\\ \\text{s} = 25 + 75$: agafar la durada d'A (la més curta) en lloc de la més llarga de les simultànies.\n- **b)** $45\\ \\text{s}$ és només l'operació més llarga (D)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$t_\\text{mín} = 30 + 30 + 45 = 105\\ \\text{s}$ → resposta **c**"
+          }
+        ],
+        "nota": "Error típic: en operacions simultànies cal agafar el temps més llarg, no sumar-los."
+      }
+    },
+    {
+      "id": "tecno-2014-J-s3-e1-q2",
+      "serie": "3",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Nombre de viatges d'un camió per transportar 50 cotxes",
+      "tema": "mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "capacitat de càrrega",
+        "massa",
+        "arrodoniment per excés"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Un camió amb capacitat per a transportar fins a $10$ tones ($1\\ \\text{tona} = 1\\,000\\ \\text{kg}$) ha de transportar $50$ cotxes de $1\\,200\\ \\text{kg}$ cadascun. Quants viatges haurà de fer?",
+      "figures": [],
+      "opcions": {
+        "a": "6",
+        "b": "8",
+        "c": "7",
+        "d": "10"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Cotxes per viatge",
+            "cos": "La capacitat és $10\\ \\text{t} = 10\\,000\\ \\text{kg}$. Els cotxes no es poden partir, així que el nombre de cotxes per viatge és la part entera de:\n\n$$\\frac{10\\,000}{1\\,200} = 8{,}33 \\ \\Rightarrow\\ 8\\ \\text{cotxes/viatge}$$\n\n(9 cotxes pesarien $10\\,800\\ \\text{kg}$, que supera la capacitat.)"
+          },
+          {
+            "apartat": null,
+            "titol": "Nombre de viatges",
+            "cos": "$$\\frac{50}{8} = 6{,}25 \\ \\Rightarrow\\ 7\\ \\text{viatges}$$\n\nAmb 6 viatges només es porten $48$ cotxes; cal un setè viatge per als 2 que queden. Resultat: **7 viatges** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** 6 surt de dividir la massa total entre la capacitat, $60\\,000/10\\,000 = 6$, com si els cotxes es poguessin repartir a trossos.\n- **b)** 8 és el nombre de cotxes per viatge, no de viatges."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "8 cotxes/viatge → $\\lceil 50/8 \\rceil = 7$ viatges → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-J-s3-e1-q3",
+      "serie": "3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat d'avanç d'un cargol M12",
+      "tema": "mecanismes",
+      "temes_secundaris": [],
+      "conceptes": [
+        "cargol-femella",
+        "pas de rosca",
+        "velocitat d'avanç",
+        "velocitat de rotació"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un cargol M12 de pas (avanç per volta) $p = 1{,}75\\ \\text{mm}$ es cargola a una velocitat de rotació $n = 300\\ \\text{min}^{-1}$. Quina és la velocitat d'avanç del cargol?",
+      "figures": [],
+      "opcions": {
+        "a": "$14{,}29\\ \\text{mm/s}$",
+        "b": "$54{,}98\\ \\text{mm/s}$",
+        "c": "$25\\ \\text{mm/s}$",
+        "d": "$8{,}75\\ \\text{mm/s}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Pas: $p = 1{,}75\\ \\text{mm/volta}$\n- Velocitat de rotació: $n = 300\\ \\text{min}^{-1} = \\dfrac{300}{60} = 5\\ \\text{voltes/s}$\n- Incògnita: velocitat d'avanç, $v$"
+          },
+          {
+            "apartat": null,
+            "titol": "Velocitat d'avanç",
+            "cos": "A cada volta el cargol avança un pas. La velocitat d'avanç és el pas per les voltes per segon:\n\n$$v = p\\, n = 1{,}75\\ \\text{mm/volta} \\cdot 5\\ \\text{voltes/s} = 8{,}75\\ \\text{mm/s}$$\n\nResultat: **$v = 8{,}75\\ \\text{mm/s}$** → resposta **d**. (El diàmetre M12 no intervé.)"
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **b)** $54{,}98\\ \\text{mm/s}$ surt de fer servir la velocitat angular en rad/s ($\\omega = 31{,}42\\ \\text{rad/s}$) en lloc de voltes/s.\n- **a)** i **c)** surten de fer servir el diàmetre de 12 mm en lloc del pas."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$v = p\\,n = 8{,}75\\ \\text{mm/s}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-J-s3-e1-q4",
+      "serie": "3",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Autonomia d'una bateria que alimenta un motor elèctric",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "capacitat de bateria",
+        "potència elèctrica",
+        "intensitat",
+        "autonomia"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un motor elèctric té un consum de $216\\ \\text{W}$ de potència i s'alimenta amb una tensió $U = 36\\ \\text{V}$ mitjançant una bateria de $10\\ \\text{A h}$ de capacitat. Quant de temps durarà la bateria si està totalment carregada?",
+      "figures": [],
+      "opcions": {
+        "a": "$21{,}6\\ \\text{h}$",
+        "b": "$3{,}6\\ \\text{h}$",
+        "c": "$6\\ \\text{h}$",
+        "d": "$1{,}67\\ \\text{h}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Potència: $P = 216\\ \\text{W}$\n- Tensió: $U = 36\\ \\text{V}$\n- Capacitat de la bateria: $Q = 10\\ \\text{A h}$\n- Incògnita: temps de funcionament, $t$"
+          },
+          {
+            "apartat": null,
+            "titol": "Corrent que consumeix el motor",
+            "cos": "De la potència elèctrica $P = U\\,I$:\n\n$$I = \\frac{P}{U} = \\frac{216}{36} = 6\\ \\text{A}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Temps que dura la bateria",
+            "cos": "La capacitat en A h indica la càrrega que pot subministrar: $Q = I\\,t$. Per tant:\n\n$$t = \\frac{Q}{I} = \\frac{10\\ \\text{A h}}{6\\ \\text{A}} = 1{,}67\\ \\text{h}$$\n\nResultat: **$t \\approx 1{,}67\\ \\text{h}$** (1 h 40 min) → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **c)** 6 h confon el corrent (6 A) amb el temps.\n- **a)** 21,6 h = 216/10 i **b)** 3,6 h = 36/10 combinen malament les dades."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$I = 6\\ \\text{A}$; $t = 10/6 \\approx 1{,}67\\ \\text{h}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-J-s3-e1-q5",
+      "serie": "3",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Resistència equivalent i tolerància de dues resistències iguals en paral·lel",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "fabricacio"
+      ],
+      "conceptes": [
+        "resistències en paral·lel",
+        "resistència equivalent",
+        "tolerància"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "En un circuit elèctric, es connecten en paral·lel dues resistències iguals de valor nominal $50\\ \\Omega$ i tolerància $\\pm 2\\ \\%$. Quina és la resistència equivalent?",
+      "figures": [],
+      "opcions": {
+        "a": "$100\\ \\Omega \\pm 4\\ \\%$",
+        "b": "$100\\ \\Omega \\pm 2\\ \\%$",
+        "c": "$25\\ \\Omega \\pm 2\\ \\%$",
+        "d": "$25\\ \\Omega \\pm 1\\ \\%$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Valor nominal de l'equivalent",
+            "cos": "Dues resistències iguals en paral·lel donen la meitat del valor de cadascuna:\n\n$$R_\\text{eq} = \\frac{R\\,R}{R + R} = \\frac{R}{2} = \\frac{50}{2} = 25\\ \\Omega$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Tolerància de l'equivalent",
+            "cos": "Mirem els casos extrems. Si totes dues estan al màxim ($50 \\cdot 1{,}02 = 51\\ \\Omega$), l'equivalent és $51/2 = 25{,}5\\ \\Omega$; si totes dues estan al mínim ($49\\ \\Omega$), és $24{,}5\\ \\Omega$. Per tant:\n\n$$R_\\text{eq} = 25 \\pm 0{,}5\\ \\Omega = 25\\ \\Omega \\pm \\frac{0{,}5}{25}\\cdot 100\\ \\% = 25\\ \\Omega \\pm 2\\ \\%$$\n\nLa tolerància **relativa** es manté igual. Resultat: **$25\\ \\Omega \\pm 2\\ \\%$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** i **b)** donen $100\\ \\Omega$, que seria la connexió en **sèrie**.\n- **d)** divideix també la tolerància per dos: és l'error absolut ($\\pm 0{,}5\\ \\Omega$) que es redueix a la meitat, no el percentatge."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$R_\\text{eq} = 25\\ \\Omega \\pm 2\\ \\%$ → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-J-s3-e2",
+      "serie": "3",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Butlleta premiada si coincideixen dues o tres xifres (funció majoria i esquema de contactes)",
+      "tema": "digital",
+      "temes_secundaris": [],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "simplificació",
+        "esquema de contactes",
+        "funció majoria"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Una loteria duu a terme un sorteig escollint a l'atzar un número de tres xifres. Les butlletes resulten premiades si dues o tres xifres coincideixen amb les del número escollit. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- xifres $x_1$, $x_2$ i $x_3$ = 1: coincideix amb el número escollit; 0: no coincideix amb el número escollit\n- butlleta premiada: $p$ = 1: sí; 0: no",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Traduir l'enunciat",
+            "cos": "La butlleta és premiada ($p = 1$) quan **almenys dues** de les tres variables valen 1. És l'anomenada **funció majoria**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "Amb 3 variables hi ha $2^3 = 8$ combinacions. Posem $p = 1$ quan hi ha dos o tres 1:\n\n| $x_1$ | $x_2$ | $x_3$ | $p$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | **1** |\n| 1 | 0 | 0 | 0 |\n| 1 | 0 | 1 | **1** |\n| 1 | 1 | 0 | **1** |\n| 1 | 1 | 1 | **1** |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica (suma de productes)",
+            "cos": "Un terme per a cada fila amb $p = 1$ (variable negada si val 0):\n\n$$p = \\bar{x}_1\\,x_2\\,x_3 + x_1\\,\\bar{x}_2\\,x_3 + x_1\\,x_2\\,\\bar{x}_3 + x_1\\,x_2\\,x_3$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació per Karnaugh",
+            "cos": "Mapa amb files $x_1$ i columnes $x_2\\,x_3$ (ordre de Gray 00, 01, 11, 10):\n\n| $x_1 \\backslash x_2x_3$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **0** | 0 | 0 | 1 | 0 |\n| **1** | 0 | 1 | 1 | 1 |\n\nFem tres grups de dos (tots comparteixen la casella 111):\n\n- Columna 11 (files 0 i 1): $x_1$ canvia → $x_2\\,x_3$\n- Fila 1, columnes 01 i 11: $x_2$ canvia → $x_1\\,x_3$\n- Fila 1, columnes 11 i 10: $x_3$ canvia → $x_1\\,x_2$\n\n$$\\boxed{p = x_1\\,x_2 + x_1\\,x_3 + x_2\\,x_3}$$\n\nTé sentit: n'hi ha prou que coincideixi **alguna parella** de xifres."
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de contactes",
+            "cos": "En un esquema de contactes, el producte (AND) són contactes **en sèrie** i la suma (OR) són branques **en paral·lel**. Calen tres branques en paral·lel, cadascuna amb dos contactes normalment oberts en sèrie: $x_1$–$x_2$, $x_1$–$x_3$ i $x_2$–$x_3$, que alimenten el llum $p$.\n\nEsquema de la solució oficial (els contactes amb el mateix nom, units per una línia, s'accionen alhora):\n\n![Esquema de contactes de la funció majoria](img/tecno/2014-J/s3-e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Taula de veritat amb $p = 1$ a les files 011, 101, 110 i 111"
+          },
+          {
+            "apartat": "b",
+            "valor": "$p = x_1\\,x_2 + x_1\\,x_3 + x_2\\,x_3$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Tres branques en paral·lel de dos contactes en sèrie: $x_1x_2$, $x_1x_3$, $x_2x_3$"
+          }
+        ],
+        "nota": "Error típic: posar $p = 1$ també quan només coincideix una xifra, o oblidar el cas de tres coincidències (111). L'esquema no és únic: qualsevol esquema equivalent és vàlid."
+      }
+    },
+    {
+      "id": "tecno-2014-J-s3-e3-a",
+      "serie": "3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cost de construir una estrella de fusta: triangles o perfil complex",
+      "tema": "economia",
+      "temes_secundaris": [
+        "fabricacio"
+      ],
+      "conceptes": [
+        "cost de fabricació",
+        "superfície",
+        "perímetre",
+        "teorema de Pitàgores"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Es vol construir una estrella com la de la figura a partir d'un tauler de fusta. La botiga en calcula el cost segons l'expressió $c = c_1\\, s + c_2\\, p$, en què $s$ és la superfície de fusta utilitzada i $p$ és el perímetre de les peces tallades. El primer coeficient de cost és $c_1 = 10$ €/m² i l'altre coeficient de cost és $c_2 = 0{,}5$ €/m si el perfil és senzill (com, per exemple, un triangle) o $c_2 = 1{,}3$ €/m si el perfil és complex (com, per exemple, una estrella). L'estrella està formada per 10 triangles isòsceles iguals de base $b = 1{,}010\\ \\text{m}$ i altura $h = 0{,}370\\ \\text{m}$. Determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2014-J/s3-e3-a.png",
+          "peu": "Estrella formada per 10 triangles i dimensions del triangle (b = 1,010 m, h = 0,370 m)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La superfície, $s$, de fusta utilitzada.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "El perímetre tallat, $p_1$, si es construeix a partir de triangles com el de la figura.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "El perímetre tallat, $p_2$, si es construeix tallant el perfil exterior de l'estrella.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "El cost de cadascuna de les opcions. Quina és la més econòmica?",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- 10 triangles isòsceles: base $b = 1{,}010\\ \\text{m}$, altura $h = 0{,}370\\ \\text{m}$\n- $c_1 = 10$ €/m²; $c_2 = 0{,}5$ €/m (perfil senzill) o $1{,}3$ €/m (perfil complex)\n- Incògnites: $s$, $p_1$, $p_2$, $c_A$ (triangles), $c_B$ (estrella)\n\nMirant la figura: cada triangle té la base $b$ al **centre** de l'estrella (és el segment que va del centre a una punta o a un entrant) i els dos costats iguals, de llargària $L$, formen el **perfil exterior**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Superfície de l'estrella",
+            "cos": "La superfície de l'estrella és la de 10 triangles:\n\n$$s = 10\\,\\frac{b\\,h}{2} = 10 \\cdot \\frac{1{,}010 \\cdot 0{,}370}{2} = 1{,}869\\ \\text{m}^2$$\n\nResultat: **$s \\approx 1{,}869\\ \\text{m}^2$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Costat inclinat del triangle (Pitàgores)",
+            "cos": "L'altura divideix el triangle isòsceles en dos triangles rectangles de catets $b/2$ i $h$. El costat igual $L$ és la hipotenusa:\n\n$$L = \\sqrt{\\left(\\frac{b}{2}\\right)^2 + h^2} = \\sqrt{0{,}505^2 + 0{,}370^2} = 0{,}6260\\ \\text{m}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Perímetre tallat amb triangles",
+            "cos": "Si es tallen 10 triangles separats, cal tallar el perímetre complet de cadascun ($b + 2L$):\n\n$$p_1 = 10\\,(b + 2L) = 10\\,(1{,}010 + 2 \\cdot 0{,}6260) = 22{,}62\\ \\text{m}$$\n\nResultat: **$p_1 \\approx 22{,}62\\ \\text{m}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Perímetre del perfil exterior",
+            "cos": "El contorn de l'estrella està format per 10 costats inclinats $L$ (2 per punta):\n\n$$p_2 = 10\\,L = 10 \\cdot 0{,}6260 = 6{,}260\\ \\text{m}$$\n\nResultat: **$p_2 \\approx 6{,}260\\ \\text{m}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Cost de cada opció",
+            "cos": "La superfície de fusta és la mateixa en tots dos casos; canvien el perímetre i el coeficient $c_2$:\n\n- **Opció A (triangles, perfil senzill):**\n\n$$c_A = 10 \\cdot 1{,}869 + 0{,}5 \\cdot 22{,}62 = 18{,}69 + 11{,}31 = 30{,}00\\ \\text{euros}$$\n\n- **Opció B (perfil d'estrella, complex):**\n\n$$c_B = 10 \\cdot 1{,}869 + 1{,}3 \\cdot 6{,}260 = 18{,}69 + 8{,}14 = 26{,}82\\ \\text{euros}$$\n\nResultat: **l'opció B (tallar el perfil de l'estrella) és la més econòmica**, perquè tot i que el tall és més car per metre, cal tallar molt menys perímetre."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$s \\approx 1{,}869\\ \\text{m}^2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$L = 0{,}6260\\ \\text{m}$; $p_1 \\approx 22{,}62\\ \\text{m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$p_2 \\approx 6{,}260\\ \\text{m}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$c_A = 30{,}00$ €; $c_B = 26{,}82$ € → l'opció B és més econòmica"
+          }
+        ],
+        "nota": "Error típic: fer servir $h$ com a costat del triangle en lloc de calcular la hipotenusa $L$, o comptar al perímetre exterior les bases (que queden a l'interior de l'estrella)."
+      }
+    },
+    {
+      "id": "tecno-2014-J-s3-e4-a",
+      "serie": "3",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Consum, potència tèrmica, rendiment i autonomia d'un vehicle de gasolina",
+      "tema": "termica",
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "poder calorífic",
+        "consum de combustible",
+        "potència tèrmica",
+        "rendiment"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Un vehicle utilitza gasolina de poder calorífic $p_\\text{c} = 42\\ \\text{MJ/L}$. Quan circula per un terreny horitzontal a una velocitat $v = 100\\ \\text{km/h}$, el motor gasta $c_\\text{e} = 4{,}7\\ \\text{L/(100 km)}$ i desenvolupa una potència mecànica $P_\\text{mec} = 21\\ \\text{kW}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El consum, $c$, de gasolina en L/s.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "La potència tèrmica consumida, $P_\\text{tèrm}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El rendiment, $\\eta$, del motor.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "La distància, $d$, que pot recórrer el vehicle si el dipòsit de combustible té una capacitat $V = 45\\ \\text{L}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Poder calorífic: $p_\\text{c} = 42\\ \\text{MJ/L} = 42 \\cdot 10^6\\ \\text{J/L}$\n- Velocitat: $v = 100\\ \\text{km/h} = \\dfrac{100}{3\\,600}\\ \\text{km/s}$\n- Consum per distància: $c_\\text{e} = 4{,}7\\ \\text{L/(100 km)} = 0{,}047\\ \\text{L/km}$\n- Potència mecànica: $P_\\text{mec} = 21\\ \\text{kW}$\n- Dipòsit: $V = 45\\ \\text{L}$\n- Incògnites: $c$ (L/s), $P_\\text{tèrm}$, $\\eta$, $d$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Consum per unitat de temps",
+            "cos": "El consum per quilòmetre multiplicat pels quilòmetres que es fan cada segon dona els litres per segon:\n\n$$c = c_\\text{e}\\, v = 0{,}047\\ \\frac{\\text{L}}{\\text{km}} \\cdot \\frac{100}{3\\,600}\\ \\frac{\\text{km}}{\\text{s}} = 1{,}306 \\cdot 10^{-3}\\ \\text{L/s}$$\n\nResultat: **$c \\approx 1{,}306 \\cdot 10^{-3}\\ \\text{L/s}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència tèrmica",
+            "cos": "Cada litre cremat allibera $p_\\text{c}$ joules; per tant, la potència tèrmica és el cabal de combustible pel poder calorífic:\n\n$$P_\\text{tèrm} = c\\, p_\\text{c} = 1{,}306 \\cdot 10^{-3} \\cdot 42 \\cdot 10^6 = 54\\,833\\ \\text{W} \\approx 54{,}83\\ \\text{kW}$$\n\nResultat: **$P_\\text{tèrm} \\approx 54{,}83\\ \\text{kW}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Rendiment del motor",
+            "cos": "El rendiment és la fracció de la potència tèrmica que es converteix en potència mecànica útil:\n\n$$\\eta = \\frac{P_\\text{mec}}{P_\\text{tèrm}} = \\frac{21}{54{,}83} = 0{,}3830$$\n\nResultat: **$\\eta \\approx 0{,}383$** (un 38,3 %)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Autonomia amb el dipòsit ple",
+            "cos": "Si gasta $0{,}047\\ \\text{L}$ per quilòmetre, amb $45\\ \\text{L}$ pot fer:\n\n$$d = \\frac{V}{c_\\text{e}} = \\frac{45\\ \\text{L}}{0{,}047\\ \\text{L/km}} = 957{,}4\\ \\text{km}$$\n\nResultat: **$d \\approx 957{,}4\\ \\text{km}$** (circulant en aquestes condicions)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$c \\approx 1{,}306 \\cdot 10^{-3}\\ \\text{L/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{tèrm} \\approx 54{,}83\\ \\text{kW}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\eta \\approx 0{,}383$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$d \\approx 957{,}4\\ \\text{km}$"
+          }
+        ],
+        "nota": "Discrepància amb la solució oficial: a l'apartat c dona $\\eta = 0{,}3833$, però $21/54{,}83 = 0{,}3830$ (diferència d'arrodoniment sense importància). Error típic: no passar el consum de L/(100 km) a L/km, o la velocitat de km/h a km/s."
+      }
+    },
+    {
+      "id": "tecno-2014-J-s3-e3-b",
+      "serie": "3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Massa màxima que pot elevar una grua amb contrapès sense bolcar, energia i potència d'elevació",
+      "tema": "estatica",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "equilibri de moments",
+        "bolcada",
+        "contrapès",
+        "energia potencial",
+        "potència mecànica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "La figura mostra les dimensions d'una grua amb contrapès a la base ($L_1 = 25\\ \\text{m}$, $L_2 = 1{,}5\\ \\text{m}$, $b = 1{,}9\\ \\text{m}$). La massa del contrapès és $m_\\text{c} = 12\\,500\\ \\text{kg}$ i la massa de la resta d'elements de la grua es considera negligible. Determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2014-J/s3-e3-b.png",
+          "peu": "Grua amb contrapès a la base i detall dels suports A i B (L1 = 25 m, L2 = 1,5 m, b = 1,9 m)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La massa màxima, $m_\\text{màx}$, que pot elevar la grua, amb el ganxo situat a l'extrem, sense que bolqui.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La grua s'utilitza per a fer pujar una massa $m = 1\\,000\\ \\text{kg}$ fins a una altura $\\Delta h = 20\\ \\text{m}$, amb el ganxo situat a $15\\ \\text{m}$ de l'eix de la torre. La velocitat d'elevació de la càrrega és $v = 30\\ \\text{m/min}$. Determineu: L'energia mecànica, $E_\\text{mec}$, necessària per a fer l'elevació.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "La potència, $P_\\text{m}$, que ha de desenvolupar el motor.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $L_1 = 25\\ \\text{m}$: distància de l'eix de la grua a l'extrem de la ploma (on penja la càrrega)\n- $L_2 = 1{,}5\\ \\text{m}$: distància del centre de gravetat G del contrapès a l'eix\n- $b = 1{,}9\\ \\text{m}$: distància de cada suport (A i B) a l'eix\n- $m_\\text{c} = 12\\,500\\ \\text{kg}$; $g = 9{,}807\\ \\text{m/s}^2$\n- Elevació: $m = 1\\,000\\ \\text{kg}$, $\\Delta h = 20\\ \\text{m}$, $v = 30\\ \\text{m/min} = 0{,}5\\ \\text{m/s}$\n- Incògnites: $m_\\text{màx}$, $E_\\text{mec}$, $P_\\text{m}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Condició de bolcada",
+            "cos": "La càrrega penja al costat del suport A i el contrapès és al costat del suport B. Si anem augmentant la càrrega, la grua tendeix a girar al voltant de **A**, i el suport B es va descarregant. El límit (just abans de bolcar) és quan $F_\\text{B} = 0$: tot el pes recau sobre A."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equilibri de moments respecte d'A",
+            "cos": "Prenem moments respecte del suport A (així $F_\\text{A}$ no hi apareix i $F_\\text{B} = 0$). Els braços es mesuren horitzontalment des d'A:\n\n- Càrrega: és a $L_1$ de l'eix i A és a $b$ de l'eix pel mateix costat → braç $L_1 - b$\n- Contrapès: és a $L_2$ de l'eix pel costat contrari → braç $L_2 + b$\n\n$$\\sum M_\\text{A} = 0:\\quad m_\\text{màx}\\, g\\,(L_1 - b) - m_\\text{c}\\, g\\,(L_2 + b) = 0$$\n\n$$m_\\text{màx} = m_\\text{c}\\,\\frac{L_2 + b}{L_1 - b} = 12\\,500 \\cdot \\frac{1{,}5 + 1{,}9}{25 - 1{,}9} = 12\\,500 \\cdot \\frac{3{,}4}{23{,}1} = 1\\,840\\ \\text{kg}$$\n\nResultat: **$m_\\text{màx} \\approx 1\\,840\\ \\text{kg}$**. (La $g$ se simplifica.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia mecànica per elevar la càrrega",
+            "cos": "Pujar la massa a velocitat constant n'augmenta l'energia potencial (la posició horitzontal del ganxo, 15 m, no hi influeix):\n\n$$E_\\text{mec} = m\\, g\\, \\Delta h = 1\\,000 \\cdot 9{,}807 \\cdot 20 = 196\\,140\\ \\text{J} \\approx 196{,}1\\ \\text{kJ}$$\n\nResultat: **$E_\\text{mec} \\approx 196{,}1\\ \\text{kJ}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència del motor",
+            "cos": "A velocitat constant, la força que cal fer és el pes, i la potència és força per velocitat:\n\n$$P_\\text{m} = m\\, g\\, v = 1\\,000 \\cdot 9{,}807 \\cdot \\frac{30}{60} = 4\\,904\\ \\text{W}$$\n\n(Equivalent: l'elevació dura $t = 20/0{,}5 = 40\\ \\text{s}$ i $P = E/t = 196\\,140/40 = 4\\,904\\ \\text{W}$.)\n\nResultat: **$P_\\text{m} \\approx 4{,}904\\ \\text{kW}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$m_\\text{màx} \\approx 1\\,840\\ \\text{kg}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_\\text{mec} \\approx 196{,}1\\ \\text{kJ}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{m} \\approx 4\\,904\\ \\text{W}$"
+          }
+        ],
+        "nota": "Error típic: prendre moments respecte de l'eix de la torre en lloc del punt de bolcada A (cal sumar i restar $b$ als braços). Se suposa que no hi ha pèrdues en el motor ni en la transmissió."
+      }
+    },
+    {
+      "id": "tecno-2014-J-s3-e4-b",
+      "serie": "3",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Captadors solars per escalfar l'aigua calenta d'un centre d'ensenyament",
+      "tema": "energia",
+      "temes_secundaris": [
+        "termica"
+      ],
+      "conceptes": [
+        "energia solar tèrmica",
+        "calor sensible",
+        "rendiment",
+        "irradiància"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "En un centre d'ensenyament, el consum diari d'aigua calenta sanitària és $c = 850\\ \\text{L}$. Cal incrementar la temperatura de l'aigua $\\Delta t = 20\\ ^\\circ\\text{C}$ i per això s'hi instal·len 20 captadors solars de rendiment $\\eta = 0{,}45$ i superfície $s = 1{,}3\\ \\text{m}^2$. La calor específica de l'aigua és $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'energia diària que cal per a escalfar l'aigua.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "L'energia diària que ha de captar cadascun dels captadors.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Si la població on està situat el centre té una mitjana anual de sol de $2\\,600\\ \\text{h}$, quina és la potència mitjana necessària de radiació solar per unitat de superfície?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Consum diari: $c = 850\\ \\text{L}$ → massa $m = 850\\ \\text{L} \\cdot 1\\,000\\ \\text{g/L} = 850\\,000\\ \\text{g}$\n- $\\Delta t = 20\\ ^\\circ\\text{C}$; $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$\n- 20 captadors, $\\eta = 0{,}45$, $s = 1{,}3\\ \\text{m}^2$ cadascun\n- Sol anual: $2\\,600\\ \\text{h}$\n- Incògnites: $E_\\text{aigua}$ (diària), $E_\\text{captador}$ (diària), $P_\\text{solar}$ (W/m²)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia diària per escalfar l'aigua",
+            "cos": "És calor sensible: $Q = m\\, c_\\text{e}\\, \\Delta t$, amb la massa en grams perquè $c_\\text{e}$ està en J/(g °C):\n\n$$E_\\text{aigua} = c\\,\\rho\\, c_\\text{e}\\, \\Delta t = 850 \\cdot 1\\,000 \\cdot 4{,}18 \\cdot 20 = 71{,}06 \\cdot 10^6\\ \\text{J} = 71{,}06\\ \\text{MJ}$$\n\nResultat: **$E_\\text{aigua} \\approx 71{,}06\\ \\text{MJ}$** cada dia."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia solar que ha de captar cada captador",
+            "cos": "Els captadors només transfereixen a l'aigua el 45 % de l'energia solar que reben. Entre els 20 han de rebre:\n\n$$\\eta = \\frac{E_\\text{aigua}}{20\\, E_\\text{captador}} \\ \\Rightarrow\\ E_\\text{captador} = \\frac{E_\\text{aigua}}{20\\,\\eta} = \\frac{71{,}06}{20 \\cdot 0{,}45} = 7{,}896\\ \\text{MJ}$$\n\nResultat: **$E_\\text{captador} \\approx 7{,}896\\ \\text{MJ}$ per dia**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Energia anual per captador i temps de sol",
+            "cos": "En un any, cada captador ha de rebre $365 \\cdot 7{,}896\\ \\text{MJ} = 2\\,882\\ \\text{MJ}$, i només hi ha sol durant $2\\,600\\ \\text{h} = 2\\,600 \\cdot 3\\,600 = 9{,}36 \\cdot 10^6\\ \\text{s}$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència de radiació per unitat de superfície",
+            "cos": "La potència mitjana és l'energia dividida pel temps de sol, i per unitat de superfície dividim també per l'àrea del captador:\n\n$$P_\\text{solar} = \\frac{365\\, E_\\text{captador}}{2\\,600 \\cdot 3\\,600 \\cdot s} = \\frac{365 \\cdot 7{,}896 \\cdot 10^6}{2\\,600 \\cdot 3\\,600 \\cdot 1{,}3} = 236{,}8\\ \\text{W/m}^2$$\n\nResultat: **$P_\\text{solar} \\approx 236{,}8\\ \\text{W/m}^2$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E_\\text{aigua} \\approx 71{,}06\\ \\text{MJ}$/dia"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_\\text{captador} \\approx 7{,}896\\ \\text{MJ}$/dia"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{solar} \\approx 236{,}8\\ \\text{W/m}^2$"
+          }
+        ],
+        "nota": "Error típic: oblidar passar els litres a grams (la calor específica és en J/(g °C)), o multiplicar pel rendiment en lloc de dividir: els captadors han de rebre **més** energia de la que arriba a l'aigua. Se suposa densitat de l'aigua $1\\ \\text{kg/L}$ i el mateix consum els 365 dies de l'any."
+      }
+    },
+    {
+      "id": "tecno-2014-J-s4-e1-q1",
+      "serie": "4",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Massa de Vitallium que es pot obtenir amb 15 kg de crom",
+      "tema": "materials",
+      "temes_secundaris": [],
+      "conceptes": [
+        "aliatge",
+        "composició percentual",
+        "proporcions"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        5
+      ],
+      "enunciat": "El Vitallium és un aliatge utilitzat en odontologia i en la fabricació de pròtesis que conté un $65\\ \\%$ de cobalt (Co), un $30\\ \\%$ de crom (Cr) i un $5\\ \\%$ de molibdè (Mb). Quina quantitat de Vitallium es pot obtenir amb $15\\ \\text{kg}$ de crom?",
+      "figures": [],
+      "opcions": {
+        "a": "$15\\ \\text{kg}$",
+        "b": "$30\\ \\text{kg}$",
+        "c": "$70\\ \\text{kg}$",
+        "d": "$50\\ \\text{kg}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Plantejament",
+            "cos": "El crom és el $30\\ \\%$ de la massa de l'aliatge: $m_\\text{Cr} = 0{,}30\\, m_\\text{aliatge}$. Si el crom disponible és el que limita, aïllem la massa d'aliatge."
+          },
+          {
+            "apartat": null,
+            "titol": "Càlcul",
+            "cos": "$$m_\\text{aliatge} = \\frac{m_\\text{Cr}}{0{,}30} = \\frac{15}{0{,}30} = 50\\ \\text{kg}$$\n\n(Caldrien $0{,}65 \\cdot 50 = 32{,}5\\ \\text{kg}$ de Co i $2{,}5\\ \\text{kg}$ de Mo.) Resultat: **$50\\ \\text{kg}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $15\\ \\text{kg}$ és només el crom.\n- **b)** $30\\ \\text{kg}$ confon el percentatge amb la massa.\n- **c)** $70\\ \\text{kg}$ no correspon a cap proporció de l'aliatge."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$m = 15/0{,}30 = 50\\ \\text{kg}$ → resposta **d**"
+          }
+        ],
+        "nota": "El símbol químic del molibdè és Mo (l'enunciat escriu «Mb»)."
+      }
+    },
+    {
+      "id": "tecno-2014-J-s4-e1-q2",
+      "serie": "4",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Joc màxim de l'ajust 36 G7/h6",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ajust",
+        "joc màxim",
+        "tolerància",
+        "sistema ISO"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        5
+      ],
+      "enunciat": "En l'ajust 36 G7/h6, la tolerància G7 del forat és $\\left(\\begin{smallmatrix} +34 \\\\ +9 \\end{smallmatrix}\\right)\\ \\mu\\text{m}$ i la h6 de l'eix és $\\left(\\begin{smallmatrix} 0 \\\\ -13 \\end{smallmatrix}\\right)\\ \\mu\\text{m}$. Quin és el joc màxim d'aquest ajust?",
+      "figures": [],
+      "opcions": {
+        "a": "$22\\ \\mu\\text{m}$",
+        "b": "$47\\ \\mu\\text{m}$",
+        "c": "$34\\ \\mu\\text{m}$",
+        "d": "No hi ha joc en aquest ajust."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Mides límit",
+            "cos": "Desviacions respecte de la mida nominal de $36\\ \\text{mm}$:\n\n- Forat: $D_\\text{màx} = 36{,}034\\ \\text{mm}$, $D_\\text{mín} = 36{,}009\\ \\text{mm}$\n- Eix: $d_\\text{màx} = 36{,}000\\ \\text{mm}$, $d_\\text{mín} = 35{,}987\\ \\text{mm}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Joc màxim",
+            "cos": "El joc màxim es dona amb el forat **més gran** i l'eix **més petit**:\n\n$$J_\\text{màx} = D_\\text{màx} - d_\\text{mín} = 36{,}034 - 35{,}987 = 0{,}047\\ \\text{mm} = 47\\ \\mu\\text{m}$$\n\nO amb les desviacions: $J_\\text{màx} = 34 - (-13) = 47\\ \\mu\\text{m}$. Resultat: **$47\\ \\mu\\text{m}$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $22\\ \\mu\\text{m} = 9 + 13$ barreja límits (el joc mínim és $9 - 0 = 9\\ \\mu\\text{m}$).\n- **c)** $34\\ \\mu\\text{m}$ només té en compte el forat.\n- **d)** Com que el forat mínim (36,009) és més gran que l'eix màxim (36,000), sempre hi ha joc: és un ajust amb joc."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$J_\\text{màx} = 34 - (-13) = 47\\ \\mu\\text{m}$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-J-s4-e1-q3",
+      "serie": "4",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Estalvi energètic en substituir bombetes incandescents per LED",
+      "tema": "energia",
+      "temes_secundaris": [
+        "circuits"
+      ],
+      "conceptes": [
+        "estalvi energètic",
+        "potència elèctrica",
+        "energia elèctrica",
+        "kW h"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6
+      ],
+      "enunciat": "La substitució de 10 bombetes incandescents de $60\\ \\text{W}$ per 10 bombetes de LED de $7\\ \\text{W}$ comporta un estalvi energètic, després de $100\\ \\text{h}$ de funcionament, de",
+      "figures": [],
+      "opcions": {
+        "a": "$530\\ \\text{kW h}$.",
+        "b": "$60\\ \\text{kW h}$.",
+        "c": "$53\\ \\text{kW h}$.",
+        "d": "$16{,}67\\ \\text{kW h}$."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Potència estalviada",
+            "cos": "Cada bombeta passa de $60\\ \\text{W}$ a $7\\ \\text{W}$; amb 10 bombetes:\n\n$$\\Delta P = 10\\,(60 - 7) = 530\\ \\text{W} = 0{,}53\\ \\text{kW}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Energia estalviada",
+            "cos": "$$\\Delta E = \\Delta P\\, t = 0{,}53\\ \\text{kW} \\cdot 100\\ \\text{h} = 53\\ \\text{kW h}$$\n\nResultat: **$53\\ \\text{kW h}$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $530\\ \\text{kW h}$: error de factor 10 (prendre $530\\ \\text{W}$ com si fossin $5{,}3\\ \\text{kW}$).\n- **b)** $60\\ \\text{kW h}$ és el consum total de les incandescents, no l'estalvi."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\Delta E = 10 \\cdot 53\\ \\text{W} \\cdot 100\\ \\text{h} = 53\\ \\text{kW h}$ → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-J-s4-e1-q4",
+      "serie": "4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Error màxim d'una lectura d'un acceleròmetre",
+      "tema": "control",
+      "temes_secundaris": [
+        "fabricacio"
+      ],
+      "conceptes": [
+        "precisió",
+        "error de mesura",
+        "sensors"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6
+      ],
+      "enunciat": "El full de característiques d'un acceleròmetre indica que, per a l'interval de mesures comprès entre $0{,}5\\ \\text{m/s}^2$ i $100\\ \\text{m/s}^2$, la precisió és de $\\pm 10\\ \\text{mm/s}^2$ i $\\pm 0{,}5\\ \\%$ de la lectura. Quin és l'error màxim d'una lectura de $15\\ \\text{m/s}^2$?",
+      "figures": [],
+      "opcions": {
+        "a": "$85\\ \\text{mm/s}^2$",
+        "b": "$15\\ \\text{mm/s}^2$",
+        "c": "$10{,}5\\ \\text{mm/s}^2$",
+        "d": "$500\\ \\text{mm/s}^2$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Com es combina la precisió",
+            "cos": "La precisió té dues parts que se **sumen**: un error fix ($\\pm 10\\ \\text{mm/s}^2$) i un error proporcional a la lectura ($\\pm 0{,}5\\ \\%$)."
+          },
+          {
+            "apartat": null,
+            "titol": "Càlcul",
+            "cos": "Lectura: $15\\ \\text{m/s}^2 = 15\\,000\\ \\text{mm/s}^2$.\n\n$$e_\\text{màx} = 10 + 0{,}005 \\cdot 15\\,000 = 10 + 75 = 85\\ \\text{mm/s}^2$$\n\nResultat: **$85\\ \\text{mm/s}^2$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **c)** $10{,}5$ surt d'aplicar el $0{,}5\\ \\%$ sense passar la lectura a mm/s² (o sumant 0,5 directament).\n- **d)** $500\\ \\text{mm/s}^2$ és el $0{,}5\\ \\%$ de $100\\ \\text{m/s}^2$ (el final de l'interval), no de la lectura."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$e_\\text{màx} = 10 + 0{,}005 \\cdot 15\\,000 = 85\\ \\text{mm/s}^2$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-J-s4-e1-q5",
+      "serie": "4",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Temperatura a la qual una barra d'acer inoxidable s'allarga un 0,1 %",
+      "tema": "materials",
+      "temes_secundaris": [],
+      "conceptes": [
+        "dilatació tèrmica",
+        "coeficient de dilatació lineal",
+        "allargament relatiu"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Una barra d'acer inoxidable té una llargària $L = 250\\ \\text{mm}$ a $20\\ ^\\circ\\text{C}$. El coeficient de dilatació tèrmica de l'acer inoxidable és $\\alpha_\\text{inox} = 17{,}3 \\cdot 10^{-6}\\ \\text{K}^{-1}$. A quina temperatura la barra s'haurà allargat un $0{,}1\\ \\%$?",
+      "figures": [],
+      "opcions": {
+        "a": "$58{,}70\\ ^\\circ\\text{C}$",
+        "b": "$173\\ ^\\circ\\text{C}$",
+        "c": "$32{,}50\\ ^\\circ\\text{C}$",
+        "d": "$77{,}80\\ ^\\circ\\text{C}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dilatació lineal",
+            "cos": "L'allargament relatiu d'una barra és proporcional a l'increment de temperatura:\n\n$$\\frac{\\Delta L}{L} = \\alpha\\, \\Delta T$$\n\nUn allargament del $0{,}1\\ \\%$ vol dir $\\Delta L / L = 0{,}001$ (la llargària de 250 mm no cal)."
+          },
+          {
+            "apartat": null,
+            "titol": "Increment de temperatura i temperatura final",
+            "cos": "$$\\Delta T = \\frac{\\Delta L / L}{\\alpha} = \\frac{0{,}001}{17{,}3 \\cdot 10^{-6}} = 57{,}80\\ \\text{K}$$\n\n$$T = 20 + 57{,}80 = 77{,}80\\ ^\\circ\\text{C}$$\n\nResultat: **$T \\approx 77{,}80\\ ^\\circ\\text{C}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **a)** $58{,}70$ és gairebé l'increment $\\Delta T$ (oblidar sumar els 20 °C inicials).\n- **b)** i **c)** surten d'errors amb el percentatge o amb les potències de 10 del coeficient."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\Delta T = 57{,}80\\ \\text{K}$; $T \\approx 77{,}80\\ ^\\circ\\text{C}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-J-s4-e2",
+      "serie": "4",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Retorn al menú principal d'una màquina expenedora (casos impossibles)",
+      "tema": "digital",
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "casos indiferents",
+        "portes lògiques"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Una màquina expenedora automàtica disposa d'una pantalla tàctil amb un sistema de menús. La màquina retorna al menú principal si es prem el botó habilitat per a aquesta finalitat, després de fer una comanda o quan transcorren 30 segons sense que ningú toqui la pantalla. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- botó menú: $b$ = 1: premut; 0: no premut\n- comanda: $c$ = 1: realitzada; 0: no realitzada\n- 30 s sense activitat: $t$ = 1: sí; 0: no\n- retorn al menú principal: $m$ = 1: sí; 0: no",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu la taula de veritat del sistema i indiqueu els casos que no són possibles.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Traduir l'enunciat",
+            "cos": "La màquina torna al menú ($m = 1$) si passa **qualsevol** de les tres coses: es prem el botó ($b = 1$), s'ha fet una comanda ($c = 1$) o han passat 30 s sense activitat ($t = 1$).\n\n**Casos impossibles:** si $t = 1$ vol dir que ningú ha tocat la pantalla en 30 s, per tant no pot ser que alhora s'hagi premut el botó ($b = 1$) ni s'hagi fet una comanda ($c = 1$). Les combinacions amb $t = 1$ i $b = 1$ o $c = 1$ no són possibles; les marquem amb X (indiferent)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "| $b$ | $c$ | $t$ | $m$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 1 |\n| 0 | 1 | 0 | 1 |\n| 0 | 1 | 1 | X (no és possible) |\n| 1 | 0 | 0 | 1 |\n| 1 | 0 | 1 | X (no és possible) |\n| 1 | 1 | 0 | 1 |\n| 1 | 1 | 1 | X (no és possible) |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció lògica aprofitant els casos indiferents",
+            "cos": "Les X es poden prendre com a 0 o com a 1, segons convingui per simplificar. Si les prenem totes com a **X = 1**, l'única fila amb $m = 0$ és la 000. Treballant amb els zeros:\n\n$$\\bar{m} = \\bar{b}\\,\\bar{c}\\,\\bar{t}$$\n\ni aplicant De Morgan:\n\n$$m = \\overline{\\bar{b}\\,\\bar{c}\\,\\bar{t}} = \\boxed{m = b + c + t}$$\n\nAmb Karnaugh (files $b$, columnes $ct$): totes les caselles valen 1 o X excepte la 000, i els tres grups de 4 ($b$, $c$ i $t$) donen el mateix resultat."
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de portes lògiques",
+            "cos": "La funció $m = b + c + t$ es fa amb **una sola porta OR de 3 entrades** ($\\geq 1$ en simbologia IEC):\n\n![Porta OR de tres entrades](img/tecno/2014-J/s4-e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$m = 1$ a 001, 010, 100, 110; $m = 0$ a 000; impossibles (X): 011, 101, 111"
+          },
+          {
+            "apartat": "b",
+            "valor": "Amb X = 1: $m = b + c + t$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Una porta OR de 3 entrades"
+          }
+        ],
+        "nota": "La solució oficial considera possible $b = c = 1$ amb $t = 0$ (fila 110, $m = 1$) i impossibles les tres files amb $t = 1$ i alguna altra variable a 1. Si es prenguessin les X com a 0 la funció seria més llarga ($m = b\\,\\bar{t} + c\\,\\bar{t} + \\bar{b}\\,\\bar{c}\\,t$), però funcionaria igual en tots els casos possibles; la versió simplificada és la recomanable."
+      }
+    },
+    {
+      "id": "tecno-2014-J-s4-e3-a",
+      "serie": "4",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Equilibri d'una porta de garatge basculant amb contrapès i barra",
+      "tema": "estatica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "equilibri de forces",
+        "equilibri de moments",
+        "barra articulada",
+        "descomposició de forces"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        7
+      ],
+      "enunciat": "La porta de garatge de la figura s'acciona manualment fent una força vertical, $F$, a l'extrem A. En el punt B, la porta rep l'acció d'un contrapès $F_\\text{cp} = 500\\ \\text{N}$, el pes de la porta, $F_\\text{pes}$, i una força horitzontal provinent de la guia, $F_\\text{guia}$. La massa de la porta és $m = 30\\ \\text{kg}$. Les dimensions són $L_1 = 0{,}6\\ \\text{m}$ i $L_2 = 1{,}06\\ \\text{m}$. Per tal de mantenir la porta immobilitzada a $\\alpha = 45^\\circ$, determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2014-J/s4-e3-a.png",
+          "peu": "Porta de garatge basculant amb la barra CD, el contrapès i la guia (L1 = 0,6 m, L2 = 1,06 m, α = 45°)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La força, $F$, necessària.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La força que fa la barra CD.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "La força horitzontal, $F_\\text{guia}$, que rep la porta de la guia en el punt B.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $F_\\text{cp} = 500\\ \\text{N}$ (cap amunt, a B)\n- $F_\\text{pes} = m\\,g = 30 \\cdot 9{,}807 = 294{,}2\\ \\text{N}$ (cap avall, a B)\n- $L_1 = 0{,}6\\ \\text{m}$ (BC i també la barra CD); $L_2 = 1{,}06\\ \\text{m}$ (BA)\n- $\\alpha = 45^\\circ$\n- Incògnites: $F$ (vertical, a A), $F_\\text{CD}$, $F_\\text{guia}$ (horitzontal, a B)"
+          },
+          {
+            "apartat": null,
+            "titol": "Geometria: direcció de la barra CD",
+            "cos": "El triangle DBC té $DC = BC = L_1$, per tant és isòsceles i la porta forma també un angle $\\alpha$ amb la vertical. Amb $\\alpha = 45^\\circ$, l'angle a C és $180^\\circ - 2 \\cdot 45^\\circ = 90^\\circ$: **la barra CD és perpendicular a la porta**. La barra (articulada als dos extrems) només fa força en la seva direcció, que forma un angle $\\alpha$ amb la vertical. A la solució suposem que empeny la porta (compressió), és a dir, la força a C va cap avall i cap a la dreta."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equilibri de moments respecte de B",
+            "cos": "Prenent moments respecte de B, desapareixen $F_\\text{cp}$, $F_\\text{pes}$ i $F_\\text{guia}$ (totes passen per B):\n\n- $F_\\text{CD}$ és perpendicular a la porta a una distància $L_1$ → moment $F_\\text{CD}\\,L_1$\n- $F$ és vertical a A; el seu braç és la distància horitzontal de B a A, $L_2 \\cos\\alpha$ (a 45°, igual a $L_2 \\sin\\alpha$)\n\n$$\\sum M_\\text{B} = 0:\\quad F_\\text{CD}\\, L_1 - F\\, L_2 \\cos\\alpha = 0 \\ \\Rightarrow\\ F_\\text{CD} = \\frac{F\\, L_2 \\cos\\alpha}{L_1}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Equilibri de forces verticals",
+            "cos": "Cap amunt només hi ha el contrapès; cap avall, el pes, la força $F$ i la component vertical de la barra:\n\n$$\\sum F_y = 0:\\quad F_\\text{cp} - m\\,g - F - F_\\text{CD}\\cos\\alpha = 0$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Resolució: força F",
+            "cos": "Substituïm $F_\\text{CD}$ de l'equació de moments a la de forces verticals:\n\n$$F_\\text{cp} - m\\,g - F - \\frac{F\\, L_2 \\cos^2\\alpha}{L_1} = 0 \\ \\Rightarrow\\ F = \\frac{(F_\\text{cp} - m\\,g)\\, L_1}{L_1 + L_2 \\cos^2\\alpha}$$\n\n$$F = \\frac{(500 - 294{,}2) \\cdot 0{,}6}{0{,}6 + 1{,}06 \\cdot 0{,}5} = \\frac{123{,}5}{1{,}13} = 109{,}3\\ \\text{N}$$\n\nResultat: **$F \\approx 109{,}3\\ \\text{N}$** (cap avall)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força de la barra CD",
+            "cos": "$$F_\\text{CD} = \\frac{F\\, L_2 \\cos\\alpha}{L_1} = \\frac{109{,}3 \\cdot 1{,}06 \\cdot \\cos 45^\\circ}{0{,}6} = 136{,}5\\ \\text{N}$$\n\nResultat: **$F_\\text{CD} \\approx 136{,}5\\ \\text{N}$** (el signe positiu confirma que la barra treballa a compressió, empenyent la porta)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Força horitzontal de la guia",
+            "cos": "Les úniques forces horitzontals són la de la guia (cap a l'esquerra) i la component horitzontal de la barra (cap a la dreta):\n\n$$\\sum F_x = 0:\\quad F_\\text{guia} - F_\\text{CD}\\sin\\alpha = 0 \\ \\Rightarrow\\ F_\\text{guia} = 136{,}5 \\cdot \\sin 45^\\circ = 96{,}52\\ \\text{N}$$\n\nResultat: **$F_\\text{guia} \\approx 96{,}52\\ \\text{N}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$F \\approx 109{,}3\\ \\text{N}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F_\\text{CD} \\approx 136{,}5\\ \\text{N}$ (compressió)"
+          },
+          {
+            "apartat": "c",
+            "valor": "$F_\\text{guia} \\approx 96{,}52\\ \\text{N}$"
+          }
+        ],
+        "nota": "Truc: prendre moments respecte de B elimina tres incògnites/forces de cop. Com que $\\alpha = 45^\\circ$, $\\sin\\alpha = \\cos\\alpha$, i no importa si el braç de $F$ s'escriu amb sinus o cosinus (la solució oficial fa servir $\\cos\\alpha$)."
+      }
+    },
+    {
+      "id": "tecno-2014-J-s4-e4-a",
+      "serie": "4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Treball, rendiment i pressió d'una bomba que puja aigua d'una cisterna",
+      "tema": "mecanica",
+      "temes_secundaris": [
+        "pneumatica"
+      ],
+      "conceptes": [
+        "energia potencial",
+        "rendiment",
+        "potència hidràulica",
+        "pressió",
+        "cabal"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        7
+      ],
+      "enunciat": "En un habitatge, s'utilitza una bomba elèctrica per a fer pujar l'aigua procedent d'una cisterna. La bomba eleva un volum $V = 45\\,600\\ \\text{L}$ d'aigua en un temps $t = 8\\ \\text{h}$ de funcionament a una altura $h = 10{,}4\\ \\text{m}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El treball, $W$, fet per la bomba.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El rendiment de la bomba, $\\eta_\\text{b}$, si s'acciona mitjançant un motor elèctric de potència $P_\\text{m} = 525\\ \\text{W}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La pressió mitjana, $p$, de funcionament de la bomba.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Volum: $V = 45\\,600\\ \\text{L} = 45{,}6\\ \\text{m}^3$ → massa $m = \\rho V = 1\\,000 \\cdot 45{,}6 = 45\\,600\\ \\text{kg}$\n- Temps: $t = 8\\ \\text{h} = 8 \\cdot 3\\,600 = 28\\,800\\ \\text{s}$\n- Altura: $h = 10{,}4\\ \\text{m}$; $g = 9{,}807\\ \\text{m/s}^2$\n- Potència del motor: $P_\\text{m} = 525\\ \\text{W}$\n- Incògnites: $W$, $\\eta_\\text{b}$, $p$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Treball fet per la bomba",
+            "cos": "El treball útil de la bomba és l'energia potencial que guanya l'aigua en pujar l'altura $h$:\n\n$$W = E_p = m\\,g\\,h = V\\,\\rho\\,g\\,h = 45{,}6 \\cdot 1\\,000 \\cdot 9{,}807 \\cdot 10{,}4 = 4{,}651 \\cdot 10^6\\ \\text{J}$$\n\nResultat: **$W \\approx 4{,}651\\ \\text{MJ}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Rendiment de la bomba",
+            "cos": "El motor subministra a la bomba una energia $P_\\text{m}\\,t$ durant les 8 hores. El rendiment és el treball útil dividit per aquesta energia:\n\n$$\\eta_\\text{b} = \\frac{W}{P_\\text{m}\\, t} = \\frac{4{,}651 \\cdot 10^6}{525 \\cdot 8 \\cdot 3\\,600} = \\frac{4{,}651 \\cdot 10^6}{15{,}12 \\cdot 10^6} = 0{,}3076$$\n\nResultat: **$\\eta_\\text{b} \\approx 0{,}308$** (un 30,8 %)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Pressió mitjana a partir de la potència hidràulica",
+            "cos": "La potència hidràulica és pressió per cabal, $P_\\text{h} = p\\,q$, amb $q = V/t$. Com que $P_\\text{h} = W/t$:\n\n$$\\frac{W}{t} = p\\,\\frac{V}{t} \\ \\Rightarrow\\ p = \\frac{W}{V} = \\frac{4{,}651 \\cdot 10^6\\ \\text{J}}{45{,}6\\ \\text{m}^3} = 1{,}020 \\cdot 10^5\\ \\text{Pa}$$\n\nResultat: **$p \\approx 1{,}020 \\cdot 10^5\\ \\text{Pa} = 1{,}020\\ \\text{bar}$**. Comprovació: és la pressió d'una columna d'aigua de 10,4 m, $p = \\rho\\,g\\,h = 1\\,000 \\cdot 9{,}807 \\cdot 10{,}4 = 1{,}020 \\cdot 10^5\\ \\text{Pa}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$W \\approx 4{,}651\\ \\text{MJ}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\eta_\\text{b} \\approx 0{,}3076$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$p \\approx 1{,}020 \\cdot 10^5\\ \\text{Pa} = 1{,}020\\ \\text{bar}$"
+          }
+        ],
+        "nota": "Error típic: no passar els litres a m³ (cal $V$ en m³ perquè la pressió surti en Pa) o les hores a segons al rendiment."
+      }
+    },
+    {
+      "id": "tecno-2014-J-s4-e3-b",
+      "serie": "4",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Resistència d'una torradora de nicrom a 20 °C i a 600 °C",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "materials"
+      ],
+      "conceptes": [
+        "resistivitat",
+        "resistència d'un conductor",
+        "coeficient de temperatura",
+        "llei d'Ohm"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "Una torradora de pa consta, bàsicament, de dues resistències, col·locades a banda i banda de l'espai on s'introdueix la llesca de pa, i d'un termòstat que permet regular el grau de torrat que es desitja. Les dues resistències són de fil de nicrom de diàmetre $d = 0{,}4\\ \\text{mm}$ i de llargària $L = 3{,}5\\ \\text{m}$ cadascuna i estan connectades en sèrie. La torradora s'alimenta amb una tensió $U = 230\\ \\text{V}$ i la resistivitat del nicrom a $20\\ ^\\circ\\text{C}$ és $\\rho_{20} = 10{,}8 \\cdot 10^{-7}\\ \\Omega\\,\\text{m}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La resistència total, $R_{20}$, de la torradora a $20\\ ^\\circ\\text{C}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La resistivitat varia amb la temperatura segons l'expressió $\\rho = \\rho_{20}\\,(1 + \\alpha\\,\\Delta T)$, en què $\\alpha = 0{,}4 \\cdot 10^{-3}\\ ^\\circ\\text{C}^{-1}$ és el coeficient de temperatura de la resistència elèctrica del nicrom i $\\Delta T$ és l'increment de temperatura des del valor de referència de $20\\ ^\\circ\\text{C}$. Si el fil de nicrom s'escalfa fins a $600\\ ^\\circ\\text{C}$, determineu: La resistència total, $R_{600}$, de la torradora quan el fil de nicrom és a $600\\ ^\\circ\\text{C}$.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "(Amb el fil a $600\\ ^\\circ\\text{C}$.) La variació de la intensitat que circula per les resistències a $20\\ ^\\circ\\text{C}$ i a $600\\ ^\\circ\\text{C}$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Dues resistències en sèrie, cadascuna de $L = 3{,}5\\ \\text{m}$ de fil\n- Diàmetre: $d = 0{,}4\\ \\text{mm} = 0{,}4 \\cdot 10^{-3}\\ \\text{m}$\n- $\\rho_{20} = 10{,}8 \\cdot 10^{-7}\\ \\Omega\\,\\text{m}$; $\\alpha = 0{,}4 \\cdot 10^{-3}\\ ^\\circ\\text{C}^{-1}$\n- $U = 230\\ \\text{V}$\n- Incògnites: $R_{20}$, $R_{600}$, $\\Delta I$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Secció del fil",
+            "cos": "$$S = \\frac{\\pi\\, d^2}{4} = \\frac{\\pi\\,(0{,}4 \\cdot 10^{-3})^2}{4} = 1{,}257 \\cdot 10^{-7}\\ \\text{m}^2$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Resistència total a 20 °C",
+            "cos": "La resistència d'un fil és $R = \\rho\\,L/S$. Com que les dues resistències estan en sèrie, se sumen (és com un sol fil de $2L$):\n\n$$R_{20} = 2\\,\\rho_{20}\\,\\frac{L}{\\pi d^2/4} = 2 \\cdot 10{,}8 \\cdot 10^{-7} \\cdot \\frac{3{,}5}{1{,}257 \\cdot 10^{-7}} = 60{,}16\\ \\Omega$$\n\nResultat: **$R_{20} \\approx 60{,}16\\ \\Omega$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Resistivitat a 600 °C",
+            "cos": "L'increment de temperatura respecte de la referència és $\\Delta T = 600 - 20 = 580\\ ^\\circ\\text{C}$:\n\n$$\\rho_{600} = \\rho_{20}\\,(1 + \\alpha\\,\\Delta T) = 10{,}8 \\cdot 10^{-7}\\,(1 + 0{,}4 \\cdot 10^{-3} \\cdot 580) = 10{,}8 \\cdot 10^{-7} \\cdot 1{,}232 = 13{,}31 \\cdot 10^{-7}\\ \\Omega\\,\\text{m}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resistència total a 600 °C",
+            "cos": "$$R_{600} = 2\\,\\rho_{600}\\,\\frac{L}{\\pi d^2/4} = 2 \\cdot 13{,}31 \\cdot 10^{-7} \\cdot \\frac{3{,}5}{1{,}257 \\cdot 10^{-7}} = 74{,}12\\ \\Omega$$\n\n(O directament: $R_{600} = R_{20}\\,(1 + \\alpha\\,\\Delta T) = 60{,}16 \\cdot 1{,}232 = 74{,}12\\ \\Omega$.)\n\nResultat: **$R_{600} \\approx 74{,}12\\ \\Omega$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Intensitats i variació",
+            "cos": "Amb la llei d'Ohm a les dues temperatures:\n\n$$I_{20} = \\frac{U}{R_{20}} = \\frac{230}{60{,}16} = 3{,}823\\ \\text{A} \\qquad I_{600} = \\frac{U}{R_{600}} = \\frac{230}{74{,}12} = 3{,}103\\ \\text{A}$$\n\n$$\\Delta I = I_{600} - I_{20} = 3{,}103 - 3{,}823 = -0{,}720\\ \\text{A}$$\n\nResultat: **$\\Delta I \\approx -0{,}720\\ \\text{A}$**: en escalfar-se, la resistència augmenta i el corrent disminueix uns 0,72 A."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$R_{20} \\approx 60{,}16\\ \\Omega$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\rho_{600} \\approx 13{,}31 \\cdot 10^{-7}\\ \\Omega\\,\\text{m}$; $R_{600} \\approx 74{,}12\\ \\Omega$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$I_{20} \\approx 3{,}823\\ \\text{A}$, $I_{600} \\approx 3{,}103\\ \\text{A}$, $\\Delta I \\approx -0{,}720\\ \\text{A}$"
+          }
+        ],
+        "nota": "Errors típics: oblidar que són **dues** resistències en sèrie (factor 2), fer servir el diàmetre en lloc del radi a la secció, o no passar els mm a m. Si s'arrodoneix $\\rho_{600}$ a $13{,}3 \\cdot 10^{-7}$ abans de calcular surt $74{,}09\\ \\Omega$; la solució oficial dona 74,12 Ω, que correspon a no arrodonir."
+      }
+    },
+    {
+      "id": "tecno-2014-J-s4-e4-b",
+      "serie": "4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Consum, temps de cursa i combustible inicial d'un Fórmula 1 a Montmeló",
+      "tema": "mecanica",
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "consum de combustible",
+        "densitat",
+        "velocitat mitjana",
+        "percentatge"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "En un gran premi de Fórmula 1 del circuit de Montmeló, un vehicle ha circulat a una velocitat mitjana $v = 192\\ \\text{km/h}$ i ha tingut un consum mitjà de combustible per volta $c_\\text{m} = 2{,}5\\ \\text{kg}$. El combustible utilitzat tenia una densitat $\\rho = 0{,}74\\ \\text{kg/L}$. El circuit té una longitud $d = 4{,}655\\ \\text{km}$ i el gran premi es disputava a 66 voltes. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El consum del vehicle, $c$, en L/(100 km).",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El temps, $t$, que ha necessitat el vehicle per a completar el gran premi en hores, minuts, segons i mil·lèsimes de segon.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "La massa de combustible, $m_\\text{comb}$, que portava inicialment el vehicle si en finalitzar la cursa li n'ha sobrat un $1{,}5\\ \\%$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Velocitat mitjana: $v = 192\\ \\text{km/h}$\n- Consum per volta: $c_\\text{m} = 2{,}5\\ \\text{kg/volta}$\n- Densitat: $\\rho = 0{,}74\\ \\text{kg/L}$\n- Longitud d'una volta: $d = 4{,}655\\ \\text{km}$; 66 voltes\n- Incògnites: $c$ (L/100 km), $t$, $m_\\text{comb}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Consum en litres per 100 km",
+            "cos": "Passem la massa per volta a volum amb la densitat, $V = m/\\rho$, i la dividim per la distància d'una volta:\n\n$$\\frac{c_\\text{m}}{\\rho} = \\frac{2{,}5}{0{,}74} = 3{,}378\\ \\text{L/volta}$$\n\n$$c = \\frac{c_\\text{m}}{\\rho\\, d}\\cdot 100 = \\frac{2{,}5}{0{,}74 \\cdot 4{,}655} \\cdot 100 = 72{,}58\\ \\text{L/(100 km)}$$\n\nResultat: **$c \\approx 72{,}58\\ \\text{L/(100 km)}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Temps total de la cursa",
+            "cos": "Distància total: $66 \\cdot 4{,}655 = 307{,}23\\ \\text{km}$. Amb la velocitat mitjana:\n\n$$t = \\frac{66\\, d}{v} = \\frac{307{,}23}{192} = 1{,}600156\\ \\text{h}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Pas a hores, minuts, segons i mil·lèsimes",
+            "cos": "- Hores: 1 h; queden $0{,}600156\\ \\text{h} \\cdot 60 = 36{,}0094\\ \\text{min}$\n- Minuts: 36 min; queden $0{,}0094\\ \\text{min} \\cdot 60 = 0{,}5625\\ \\text{s}$\n- Segons: 0 s i $563\\ \\text{ms}$\n\nResultat: **$t = 1\\ \\text{h}\\ 36\\ \\text{min}\\ 0\\ \\text{s}\\ 563\\ \\text{ms}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Combustible inicial",
+            "cos": "Durant la cursa es consumeixen $66 \\cdot 2{,}5 = 165\\ \\text{kg}$. Si en sobra un 1,5 % del que portava, el consum és el 98,5 % de la massa inicial:\n\n$$m_\\text{comb} = \\frac{66\\, c_\\text{m}}{1 - 0{,}015} = \\frac{165}{0{,}985} = 167{,}5\\ \\text{kg}$$\n\nResultat: **$m_\\text{comb} \\approx 167{,}5\\ \\text{kg}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$c \\approx 72{,}58\\ \\text{L/(100 km)}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$t = 1\\ \\text{h}\\ 36\\ \\text{min}\\ 0\\ \\text{s}\\ 563\\ \\text{ms}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$m_\\text{comb} \\approx 167{,}5\\ \\text{kg}$"
+          }
+        ],
+        "nota": "A l'apartat c la solució oficial calcula $m_\\text{comb} = 66\\,c_\\text{m}\\,(1 + 0{,}015) = 167{,}475\\ \\text{kg}$, és a dir, pren l'1,5 % sobre el combustible consumit. Si l'1,5 % es refereix a la massa inicial (com diu l'enunciat), el càlcul exacte és $165/0{,}985 = 167{,}51\\ \\text{kg}$. Tots dos arrodoneixen a $167{,}5\\ \\text{kg}$, així que el resultat coincideix."
+      }
+    }
+  ]
+}

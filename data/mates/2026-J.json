@@ -1,0 +1,547 @@
+{
+  "examen": {
+    "id": "mates-2026-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2026,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/mates/2026-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2026-J-solucio.pdf",
+    "estructura": "4 exercicis obligatoris de 2,5 punts. Els exercicis 1, 2 i 3 s'han de respondre sencers. A l'exercici 4 cal triar UNA de les dues opcions (A o B). Es pot utilitzar calculadora (no programable)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2026-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Funció a trossos amb exponencial i paràbola: continuïtat, àrea i recta tangent",
+      "tema": "funcions",
+      "temes_secundaris": [
+        "integrals",
+        "derivades"
+      ],
+      "conceptes": [
+        "funció definida a trossos",
+        "continuïtat",
+        "límits laterals",
+        "integral definida",
+        "àrea sota una corba",
+        "recta tangent"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2,
+        3
+      ],
+      "enunciat": "Considereu la funció definida a trossos següent:\n\n$$f(x) = \\begin{cases} 5e^{2x} & x \\le 0 \\\\ (x+m)^2 + 1 & 0 < x < 2 \\\\ 1 & 2 \\le x \\end{cases},$$\n\non $m$ és un paràmetre real.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "1.1",
+          "enunciat": "Determineu els valors de $m$ que fan que la funció $f(x)$ sigui contínua en tot el seu domini. Justifiqueu la resposta.",
+          "punts": 1
+        },
+        {
+          "id": "1.2",
+          "enunciat": "Feu un esbós de la gràfica de $y = f(x)$ per al cas $m = -2$, i calculeu l'àrea delimitada per aquesta gràfica, l'eix $OX$ i les rectes $x = -1$ i $x = 3$.",
+          "punts": 1
+        },
+        {
+          "id": "1.3",
+          "enunciat": "Per a $m = -2$, trobeu un punt on la recta tangent a $y = f(x)$ sigui paral·lela a $y = -2x$. Calculeu l'equació d'aquesta recta tangent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "1.1",
+            "titol": "On pot fallar la continuïtat",
+            "cos": "Cada tros és una funció contínua en el seu interval: $5e^{2x}$ és una exponencial, $(x+m)^2+1$ és un polinomi i $1$ és una constant. Per tant, $f$ és contínua a tot arreu **excepte potser als punts de canvi de definició**, $x = 0$ i $x = 2$. Allà cal comprovar que els dos límits laterals i el valor de la funció coincideixen."
+          },
+          {
+            "apartat": "1.1",
+            "titol": "Continuïtat a x = 0",
+            "cos": "$$\\lim_{x\\to 0^-} f(x) = \\lim_{x\\to 0^-} 5e^{2x} = 5e^0 = 5, \\qquad f(0) = 5e^{0} = 5$$\n\n$$\\lim_{x\\to 0^+} f(x) = \\lim_{x\\to 0^+} \\left[(x+m)^2 + 1\\right] = m^2 + 1$$\n\nCal que coincideixin: $m^2 + 1 = 5 \\iff m^2 = 4 \\iff m = \\pm 2$."
+          },
+          {
+            "apartat": "1.1",
+            "titol": "Continuïtat a x = 2",
+            "cos": "$$\\lim_{x\\to 2^-} f(x) = \\lim_{x\\to 2^-}\\left[(x+m)^2 + 1\\right] = (2+m)^2 + 1$$\n\n$$f(2) = 1, \\qquad \\lim_{x\\to 2^+} f(x) = \\lim_{x\\to 2^+} 1 = 1$$\n\nCal que $(2+m)^2 + 1 = 1 \\iff (2+m)^2 = 0 \\iff m = -2$."
+          },
+          {
+            "apartat": "1.1",
+            "titol": "Combinem les dues condicions",
+            "cos": "La funció ha de ser contínua **alhora** a $x=0$ (cal $m = 2$ o $m = -2$) i a $x = 2$ (cal $m = -2$). L'únic valor que compleix totes dues condicions és\n\n$$\\boxed{m = -2}$$\n\nPer a qualsevol altre valor, $f$ té almenys un salt (a $x=0$, a $x=2$ o a tots dos)."
+          },
+          {
+            "apartat": "1.2",
+            "titol": "La funció per a m = −2",
+            "cos": "Per a $m=-2$:\n\n$$f(x) = \\begin{cases} 5e^{2x} & x \\le 0 \\\\ (x-2)^2 + 1 & 0 < x < 2 \\\\ 1 & 2 \\le x \\end{cases}$$\n\n- **Tros exponencial** ($x \\le 0$): és creixent, sempre positiu, tendeix a $0$ quan $x\\to-\\infty$ (asímptota horitzontal $y=0$ per l'esquerra) i val $5$ a $x=0$. A $x=-1$ val $5e^{-2} \\approx 0{,}68$.\n- **Tros parabòlic** ($0<x<2$): és la paràbola $y=x^2$ desplaçada 2 unitats a la dreta i 1 amunt. El vèrtex és a $x = -\\frac{b}{2a} = 2$, és a dir, al punt $(2, 1)$. Va de $(0,5)$ fins a $(2,1)$ decreixent; a $x=1$ val $2$.\n- **Tros constant** ($x\\ge 2$): recta horitzontal $y = 1$.\n\nCom que $m=-2$ és el valor que fa $f$ contínua, la gràfica es dibuixa sense aixecar el llapis (té un «pic» a $(0,5)$)."
+          },
+          {
+            "apartat": "1.2",
+            "titol": "Esbós de la gràfica",
+            "cos": "![Gràfica de f(x) per a m = −2 (solució oficial)](img/mates/2026-J/e1-sol.png)"
+          },
+          {
+            "apartat": "1.2",
+            "titol": "Plantejament de l'àrea",
+            "cos": "A l'interval $[-1, 3]$ la funció és sempre positiva (l'exponencial i la paràbola $+1$ no s'anul·len mai, i el tros constant val 1). Per tant l'àrea és directament la integral definida, que partim segons els trossos:\n\n$$A = \\int_{-1}^{3} f(x)\\,dx = \\int_{-1}^{0} 5e^{2x}\\,dx + \\int_{0}^{2}\\left[(x-2)^2+1\\right]dx + \\int_{2}^{3} 1\\,dx$$"
+          },
+          {
+            "apartat": "1.2",
+            "titol": "Integral de la part exponencial",
+            "cos": "Una primitiva de $e^{2x}$ és $\\frac{1}{2}e^{2x}$ (en derivar surt el factor $2$ que la compensa):\n\n$$\\int_{-1}^{0} 5e^{2x}\\,dx = \\left[\\frac{5}{2}e^{2x}\\right]_{-1}^{0} = \\frac{5}{2} - \\frac{5}{2}e^{-2} = \\frac{5}{2} - \\frac{5}{2e^2} \\approx 2{,}162$$"
+          },
+          {
+            "apartat": "1.2",
+            "titol": "Integral de la part parabòlica i de la constant",
+            "cos": "Una primitiva de $(x-2)^2$ és $\\frac{(x-2)^3}{3}$:\n\n$$\\int_{0}^{2}\\left[(x-2)^2+1\\right]dx = \\left[\\frac{(x-2)^3}{3} + x\\right]_{0}^{2} = (0 + 2) - \\left(\\frac{-8}{3} + 0\\right) = 2 + \\frac{8}{3} = \\frac{14}{3}$$\n\n$$\\int_{2}^{3} 1\\,dx = \\big[x\\big]_{2}^{3} = 3 - 2 = 1$$"
+          },
+          {
+            "apartat": "1.2",
+            "titol": "Àrea total",
+            "cos": "$$A = \\frac{5}{2} - \\frac{5}{2e^2} + \\frac{14}{3} + 1 = \\frac{49}{6} - \\frac{5}{2e^2} \\approx 2{,}162 + 4{,}667 + 1$$\n\n$$\\boxed{A \\approx 7{,}83\\ u^2}$$"
+          },
+          {
+            "apartat": "1.3",
+            "titol": "On pot haver-hi pendent −2",
+            "cos": "Rectes paral·leles tenen el mateix pendent: busquem un punt amb $f'(x) = -2$.\n\n- Al tros exponencial, $f'(x) = 10e^{2x} > 0$: el pendent sempre és positiu.\n- Al tros constant, $f'(x) = 0$.\n- Al tros parabòlic ($0<x<2$), $f'(x) = 2(x-2)$, que és negatiu.\n\nPer tant, el punt només pot ser al tros del mig."
+          },
+          {
+            "apartat": "1.3",
+            "titol": "Punt de tangència",
+            "cos": "$$f'(x) = 2(x-2) = -2 \\iff x - 2 = -1 \\iff x = 1$$\n\n$x=1$ és dins de $(0,2)$, i $f(1) = (1-2)^2 + 1 = 2$. El punt és **$(1, 2)$**."
+          },
+          {
+            "apartat": "1.3",
+            "titol": "Equació de la recta tangent",
+            "cos": "Fem servir l'equació punt-pendent $y - f(a) = f'(a)(x - a)$ amb $a = 1$:\n\n$$y - 2 = -2(x - 1) \\implies \\boxed{y = -2x + 4}$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "1.1",
+            "valor": "$f$ és contínua a tot $\\mathbb{R}$ només per a $m = -2$"
+          },
+          {
+            "apartat": "1.2",
+            "valor": "$A = \\frac{49}{6} - \\frac{5}{2e^2} \\approx 7{,}83\\ u^2$"
+          },
+          {
+            "apartat": "1.3",
+            "valor": "Punt $(1, 2)$; recta tangent $y = -2x + 4$"
+          }
+        ],
+        "nota": "Error típic a 1.1: quedar-se amb $m = \\pm 2$ mirant només el punt $x=0$; cal imposar la continuïtat als dos punts de contacte alhora."
+      }
+    },
+    {
+      "id": "mates-2026-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Discussió i interpretació geomètrica d'un sistema de tres plans amb paràmetre",
+      "tema": "sistemes",
+      "temes_secundaris": [
+        "matrius",
+        "geometria"
+      ],
+      "conceptes": [
+        "discussió de sistemes",
+        "teorema de Rouché-Fröbenius",
+        "rang",
+        "determinant",
+        "posició relativa de plans",
+        "regla de Cramer"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que està format per tres plans a l'espai i depèn del paràmetre real $m$:\n\n$$\\left.\\begin{aligned} x + my + z &= 4 \\\\ x + 3y + z &= 5 \\\\ mx + y + z &= 4 \\end{aligned}\\right\\}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "2.1",
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $m$.",
+          "punts": 1
+        },
+        {
+          "id": "2.2",
+          "enunciat": "Interpreteu geomètricament aquest sistema per a tots els valors del paràmetre $m$ i resoleu-lo, si és possible, per al cas $m = 1$.",
+          "punts": 1
+        },
+        {
+          "id": "2.3",
+          "enunciat": "Per a $m = 1$, és possible afegir una quarta equació de manera que el sistema resultant sigui compatible determinat i tingui com a solució $(x, y, z) = \\left(3, \\frac{1}{2}, \\frac{1}{2}\\right)$? Raoneu la resposta.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "2.1",
+            "titol": "Matrius del sistema",
+            "cos": "Fem servir el **teorema de Rouché-Fröbenius**: comparem el rang de la matriu de coeficients $A$ amb el de la matriu ampliada $\\bar{A}$.\n\n$$A = \\begin{pmatrix} 1 & m & 1 \\\\ 1 & 3 & 1 \\\\ m & 1 & 1 \\end{pmatrix}, \\qquad \\bar{A} = \\left(\\begin{array}{ccc|c} 1 & m & 1 & 4 \\\\ 1 & 3 & 1 & 5 \\\\ m & 1 & 1 & 4 \\end{array}\\right)$$\n\nCom que $A$ és quadrada i depèn de $m$, estudiem primer quan el seu determinant és zero."
+          },
+          {
+            "apartat": "2.1",
+            "titol": "Determinant de A i valors crítics",
+            "cos": "Per la regla de Sarrus:\n\n$$|A| = 1\\cdot3\\cdot1 + m\\cdot1\\cdot m + 1\\cdot1\\cdot1 - 1\\cdot3\\cdot m - 1\\cdot1\\cdot1 - m\\cdot1\\cdot1 = 3 + m^2 + 1 - 3m - 1 - m = m^2 - 4m + 3$$\n\n$$|A| = 0 \\iff m^2 - 4m + 3 = 0 \\iff m = \\frac{4 \\pm \\sqrt{16 - 12}}{2} = \\frac{4\\pm 2}{2} \\iff m = 1 \\ \\text{o}\\ m = 3$$"
+          },
+          {
+            "apartat": "2.1",
+            "titol": "Cas m ≠ 1 i m ≠ 3",
+            "cos": "$|A| \\neq 0$, per tant $\\text{rang}(A) = 3 = \\text{rang}(\\bar{A})$ (l'ampliada no pot tenir rang més gran que 3) $=$ nombre d'incògnites.\n\n**Sistema compatible determinat** (solució única)."
+          },
+          {
+            "apartat": "2.1",
+            "titol": "Cas m = 3",
+            "cos": "$$\\bar{A} = \\left(\\begin{array}{ccc|c} 1 & 3 & 1 & 4 \\\\ 1 & 3 & 1 & 5 \\\\ 3 & 1 & 1 & 4 \\end{array}\\right)$$\n\n$|A| = 0$ i el menor $\\begin{vmatrix} 1 & 3 \\\\ 3 & 1 \\end{vmatrix} = 1 - 9 = -8 \\neq 0$ (files 1 i 3, columnes 1 i 2), així que $\\text{rang}(A) = 2$.\n\nPer a l'ampliada, orlem amb la columna de termes independents (columnes $x$, $y$ i termes independents):\n\n$$\\begin{vmatrix} 1 & 3 & 4 \\\\ 1 & 3 & 5 \\\\ 3 & 1 & 4 \\end{vmatrix} \\overset{F_2 - F_1}{=} \\begin{vmatrix} 1 & 3 & 4 \\\\ 0 & 0 & 1 \\\\ 3 & 1 & 4 \\end{vmatrix} = -1\\cdot\\begin{vmatrix} 1 & 3 \\\\ 3 & 1 \\end{vmatrix} = -(-8) = 8 \\neq 0$$\n\nPer tant $\\text{rang}(\\bar{A}) = 3 \\neq \\text{rang}(A) = 2$: **sistema incompatible** (no té solució)."
+          },
+          {
+            "apartat": "2.1",
+            "titol": "Cas m = 1",
+            "cos": "$$\\bar{A} = \\left(\\begin{array}{ccc|c} 1 & 1 & 1 & 4 \\\\ 1 & 3 & 1 & 5 \\\\ 1 & 1 & 1 & 4 \\end{array}\\right)$$\n\n$|A| = 0$ i $\\begin{vmatrix} 1 & 1 \\\\ 1 & 3 \\end{vmatrix} = 2 \\neq 0$, així que $\\text{rang}(A) = 2$. A l'ampliada, la primera i la tercera fila són **iguals**, de manera que tampoc no pot tenir rang 3: $\\text{rang}(\\bar{A}) = 2$.\n\n$\\text{rang}(A) = \\text{rang}(\\bar{A}) = 2 < 3$ incògnites: **sistema compatible indeterminat** amb $3 - 2 = 1$ grau de llibertat."
+          },
+          {
+            "apartat": "2.2",
+            "titol": "Interpretació geomètrica",
+            "cos": "Cada equació és un pla de l'espai. Llegim la discussió anterior en termes de plans:\n\n- **$m \\neq 1, 3$** (SCD): els tres plans es tallen en **un únic punt**.\n- **$m = 3$** (SI): no hi ha cap punt comú als tres plans. De fet, el primer pla $x + 3y + z = 4$ i el segon $x + 3y + z = 5$ tenen els mateixos coeficients però diferent terme independent: són **paral·lels i no coincidents**. El tercer pla ($3x+y+z=4$) els talla tots dos en dues rectes paral·leles.\n- **$m = 1$** (SCI amb 1 grau de llibertat): el primer i el tercer pla són **el mateix pla** ($x+y+z=4$), i el segon el talla. Els tres plans tenen en comú **una recta**."
+          },
+          {
+            "apartat": "2.2",
+            "titol": "Resolució per a m = 1",
+            "cos": "Com que $F_1 = F_3$, n'hi ha prou amb dues equacions:\n\n$$\\left.\\begin{aligned} x + y + z &= 4 \\\\ x + 3y + z &= 5 \\end{aligned}\\right\\}$$\n\nPrenem $z = \\lambda$ com a paràmetre i resolem en $x$, $y$. Restant la primera equació de la segona: $2y = 1 \\implies y = \\frac{1}{2}$. Substituint a la primera:\n\n$$x = 4 - \\lambda - \\frac{1}{2} = \\frac{7}{2} - \\lambda$$\n\n(També es pot fer per Cramer: $x = \\frac{\\begin{vmatrix} 4-\\lambda & 1 \\\\ 5-\\lambda & 3 \\end{vmatrix}}{\\begin{vmatrix} 1 & 1 \\\\ 1 & 3\\end{vmatrix}} = \\frac{7-2\\lambda}{2}$, $y = \\frac{\\begin{vmatrix} 1 & 4-\\lambda \\\\ 1 & 5-\\lambda \\end{vmatrix}}{2} = \\frac{1}{2}$.)\n\nSolució:\n\n$$\\boxed{(x, y, z) = \\left(\\frac{7}{2} - \\lambda,\\ \\frac{1}{2},\\ \\lambda\\right),\\quad \\lambda\\in\\mathbb{R}}$$\n\nÉs a dir, la recta $(x,y,z) = \\left(\\frac{7}{2}, \\frac{1}{2}, 0\\right) + \\lambda(-1, 0, 1)$."
+          },
+          {
+            "apartat": "2.3",
+            "titol": "El punt és solució del sistema?",
+            "cos": "Primer comprovem que $\\left(3, \\frac{1}{2}, \\frac{1}{2}\\right)$ és de la recta solució: amb $\\lambda = \\frac{1}{2}$ tenim $x = \\frac{7}{2} - \\frac{1}{2} = 3$, $y = \\frac{1}{2}$, $z = \\frac{1}{2}$. **Sí que ho és.**\n\nAfegir una quarta equació (un quart pla) que passi per aquest punt i que **talli la recta** solució (no la contingui) deixa com a única solució comuna aquest punt."
+          },
+          {
+            "apartat": "2.3",
+            "titol": "Una equació que ho aconsegueix",
+            "cos": "Proposem, per exemple, $x = 3$ (el punt la compleix). El nou sistema té matrius\n\n$$A' = \\begin{pmatrix} 1 & 1 & 1 \\\\ 1 & 3 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 0 & 0 \\end{pmatrix}, \\qquad \\bar{A}' = \\left(\\begin{array}{ccc|c} 1 & 1 & 1 & 4 \\\\ 1 & 3 & 1 & 5 \\\\ 1 & 1 & 1 & 4 \\\\ 1 & 0 & 0 & 3 \\end{array}\\right)$$\n\nEl menor format per les files 1, 2 i 4 de $A'$ val $\\begin{vmatrix} 1 & 1 & 1 \\\\ 1 & 3 & 1 \\\\ 1 & 0 & 0 \\end{vmatrix} = 1\\cdot\\begin{vmatrix} 1 & 1 \\\\ 3 & 1 \\end{vmatrix} = 1 - 3 = -2 \\neq 0$, de manera que $\\text{rang}(A') = 3$. L'ampliada també té rang 3 (el sistema té el punt com a solució, i per tant és compatible). Rang $= 3 =$ nombre d'incògnites: **compatible determinat** amb solució única $\\left(3, \\frac{1}{2}, \\frac{1}{2}\\right)$.\n\n**Resposta: sí, és possible**; per exemple afegint l'equació $x = 3$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "2.1",
+            "valor": "$m \\neq 1, 3$: SCD; $m = 3$: SI; $m = 1$: SCI (1 grau de llibertat)"
+          },
+          {
+            "apartat": "2.2",
+            "valor": "$m\\neq1,3$: tres plans amb un punt comú; $m=3$: dos plans paral·lels (cap punt comú); $m=1$: dos plans coincidents que es tallen amb el tercer en una recta. Per a $m=1$: $(x,y,z) = \\left(\\frac{7}{2} - \\lambda, \\frac{1}{2}, \\lambda\\right)$"
+          },
+          {
+            "apartat": "2.3",
+            "valor": "Sí: per exemple afegint $x = 3$, el sistema passa a ser SCD amb solució $\\left(3, \\frac{1}{2}, \\frac{1}{2}\\right)$"
+          }
+        ],
+        "nota": "A 2.3 hi ha infinites respostes vàlides: qualsevol pla que passi per $(3, \\frac{1}{2}, \\frac{1}{2})$ i que no contingui la recta solució (per exemple $x = 3$, $z = \\frac{1}{2}$ o $x - z = \\frac{5}{2}$). Error típic: proposar una equació combinació lineal de les altres (p. ex. $x + y + z = 4$), que no fa augmentar el rang."
+      }
+    },
+    {
+      "id": "mates-2026-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Sorteig i venda web d'entrades d'un concert, i teorema de Bolzano per al nivell de decibels",
+      "tema": "probabilitat",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "probabilitat total",
+        "teorema de Bayes",
+        "probabilitat condicionada",
+        "teorema de Bolzano",
+        "mètode de la bisecció"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "L'Ajuntament de Canet de Mar ha aconseguit 24 entrades gratuïtes per a un concert d'un grup de rock català, i ha decidit sortejar-les entre els veïns interessats a assistir-hi. Tots els veïns del poble seguidors d'aquest grup s'apunten al sorteig, i només al 16 % els toca una entrada. De la resta de seguidors del grup, sis setenes parts intenten comprar una entrada per la web, on la probabilitat d'aconseguir-ne és del 25 %.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "3.1",
+          "enunciat": "Quantes persones d'aquest municipi tenen entrada per al concert?",
+          "punts": 0.75
+        },
+        {
+          "id": "3.2",
+          "enunciat": "Si escollim a l'atzar un veí de Canet seguidor d'aquest grup de rock i no té entrada per al concert, quina és la probabilitat que hagués intentat aconseguir-la via web?",
+          "punts": 0.75
+        },
+        {
+          "id": "3.3",
+          "enunciat": "El dia del concert, l'equip de so mesura el nivell de decibels generat pels crits entusiastes del públic durant els 5 minuts de durada de la cançó més famosa del grup; es pot aproximar per la funció següent:\n\n$$S(t) = -t^3 + 12t^2 - 30t + 90, \\qquad t \\in [0, 5],$$\n\non $t$ és el temps en minuts i $S(t)$ els decibels. Quan se superen els 100 decibels es considera que el públic està molt entregat i s'activen automàticament uns efectes lumínics especials. S'activaran en algun moment durant aquests cinc minuts? Si la resposta és afirmativa, calculeu en quin minut s'activen, aproximat a les dècimes.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "3.1",
+            "titol": "Dades i successos",
+            "cos": "Considerem un seguidor del grup triat a l'atzar i els successos:\n\n- $ES$ = «li toca entrada al sorteig»: $P(ES) = 0{,}16$\n- $W$ = «intenta comprar-la a la web»: només ho fan els que no han tingut sort al sorteig, i d'aquests, $\\frac{6}{7}$\n- $EW$ = «aconsegueix entrada a la web»: dels que ho intenten, el $25\\,\\%$\n\nA més, sabem que les $24$ entrades del sorteig corresponen al $16\\,\\%$ dels seguidors."
+          },
+          {
+            "apartat": "3.1",
+            "titol": "Probabilitat d'aconseguir entrada a la web",
+            "cos": "Els que no guanyen al sorteig són el $1 - 0{,}16 = 0{,}84$ dels seguidors:\n\n$$P(W) = 0{,}84 \\cdot \\frac{6}{7} = 0{,}72$$\n\n$$P(EW) = P(W)\\cdot P(\\text{aconseguir-la}\\mid W) = 0{,}72 \\cdot 0{,}25 = 0{,}18$$"
+          },
+          {
+            "apartat": "3.1",
+            "titol": "Probabilitat total de tenir entrada",
+            "cos": "Les dues maneres de tenir entrada són incompatibles (qui la guanya al sorteig no la compra a la web):\n\n$$P(E) = P(ES) + P(EW) = 0{,}16 + 0{,}18 = 0{,}34$$\n\nÉs a dir, el $34\\,\\%$ dels seguidors té entrada."
+          },
+          {
+            "apartat": "3.1",
+            "titol": "Nombre de persones",
+            "cos": "Si el $16\\,\\%$ dels seguidors són $24$ persones, el total de seguidors és\n\n$$N = \\frac{24}{0{,}16} = 150 \\text{ seguidors}$$\n\ni els que tenen entrada són\n\n$$0{,}34 \\cdot 150 = \\boxed{51 \\text{ persones}}$$\n\n(Equivalent amb una regla de tres: $\\frac{24}{16} = \\frac{x}{34} \\Rightarrow x = 51$.)"
+          },
+          {
+            "apartat": "3.2",
+            "titol": "Què ens demanen: probabilitat condicionada",
+            "cos": "Sigui $\\bar{E}$ = «no té entrada». Ens diuen que la persona **no té entrada** i ens pregunten per la causa (si ho havia intentat per la web): és una probabilitat «a posteriori», que es calcula amb el **teorema de Bayes**:\n\n$$P(W \\mid \\bar{E}) = \\frac{P(\\bar{E} \\mid W)\\cdot P(W)}{P(\\bar{E})}$$"
+          },
+          {
+            "apartat": "3.2",
+            "titol": "Càlcul",
+            "cos": "- $P(W) = 0{,}72$ (de l'apartat anterior)\n- $P(\\bar{E}\\mid W) = 1 - 0{,}25 = 0{,}75$ (qui ho intenta a la web i no ho aconsegueix)\n- $P(\\bar{E}) = 1 - P(E) = 1 - 0{,}34 = 0{,}66$\n\n$$P(W\\mid\\bar{E}) = \\frac{0{,}75 \\cdot 0{,}72}{0{,}66} = \\frac{0{,}54}{0{,}66} = \\frac{9}{11} \\approx \\boxed{0{,}82}$$\n\nTé sentit: dels que no tenen entrada ($66\\,\\%$), la majoria ($54\\,\\%$ del total) són persones que ho van intentar per la web sense èxit; la resta ($12\\,\\%$) no ho van intentar."
+          },
+          {
+            "apartat": "3.3",
+            "titol": "Plantejament: una equació que no sabem resoldre",
+            "cos": "Volem saber si en algun moment $S(t) = 100$. Definim\n\n$$D(t) = S(t) - 100 = -t^3 + 12t^2 - 30t - 10$$\n\ni ens preguntem si $D$ s'anul·la a $[0,5]$. És una equació de tercer grau sense arrels senzilles, per això fem servir el **teorema de Bolzano**: si una funció és contínua a $[a,b]$ i canvia de signe entre $a$ i $b$, té almenys un zero a $(a,b)$."
+          },
+          {
+            "apartat": "3.3",
+            "titol": "Aplicació del teorema de Bolzano",
+            "cos": "$D$ és un polinomi, per tant contínua a $[0,5]$. Avaluem als extrems:\n\n$$D(0) = -10 < 0, \\qquad D(5) = -125 + 300 - 150 - 10 = 15 > 0$$\n\nHi ha canvi de signe, de manera que existeix $c \\in (0,5)$ amb $D(c) = 0$, és a dir, $S(c) = 100$. **Sí, els efectes s'activaran.**"
+          },
+          {
+            "apartat": "3.3",
+            "titol": "Aproximació a les dècimes (bisecció)",
+            "cos": "Anem reduint l'interval on hi ha el canvi de signe:\n\n| $t$ | $D(t)$ | interval amb l'arrel |\n|---|---|---|\n| $2$ | $-30 < 0$ | $(2, 5)$ |\n| $4$ | $-2 < 0$ | $(4, 5)$ |\n| $4{,}5$ | $6{,}875 > 0$ | $(4; 4{,}5)$ |\n| $4{,}2$ | $1{,}592 > 0$ | $(4; 4{,}2)$ |\n| $4{,}1$ | $-0{,}201 < 0$ | $(4{,}1; 4{,}2)$ |\n\nL'arrel és entre $4{,}1$ i $4{,}2$ (més a prop de $4{,}1$, perquè $|D(4{,}1)|$ és molt més petit que $|D(4{,}2)|$; de fet $c \\approx 4{,}11$).\n\n**Els efectes lumínics s'activen aproximadament al minut $4{,}1$.**"
+          },
+          {
+            "apartat": "3.3",
+            "titol": "És el primer moment en què se superen els 100 dB?",
+            "cos": "Per estar segurs que no se superen abans, mirem la monotonia: $D'(t) = -3t^2 + 24t - 30 = 0 \\iff t = 4 \\pm \\sqrt{6}$, i dins $[0,5]$ només hi ha $t = 4 - \\sqrt 6 \\approx 1{,}55$, que és un mínim. Així $D$ decreix a $[0; 1{,}55]$ (partint de $-10$) i creix a $[1{,}55; 5]$: només talla el zero una vegada, a $t \\approx 4{,}1$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "3.1",
+            "valor": "$P(E) = 0{,}34$; tenen entrada **51 persones** (de 150 seguidors)"
+          },
+          {
+            "apartat": "3.2",
+            "valor": "$P(W\\mid\\bar{E}) = \\frac{9}{11} \\approx 0{,}82$"
+          },
+          {
+            "apartat": "3.3",
+            "valor": "Sí (Bolzano a $[0,5]$); s'activen cap al minut $t \\approx 4{,}1$"
+          }
+        ],
+        "nota": "Petita errada a la solució oficial: escriu $D(4{,}5) = 6{,}85$, però el valor exacte és $6{,}875$ (no afecta el resultat). L'últim pas (monotonia) no el demana l'oficial, però garanteix que $4{,}1$ és el primer instant en què se superen els 100 dB."
+      }
+    },
+    {
+      "id": "mates-2026-J-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Repartir 10 m de barana entre un cercle i un quadrat per minimitzar l'àrea total",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "optimització",
+        "mínim absolut",
+        "derivada segona",
+        "àrea del cercle",
+        "perímetre"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "L'alcalde d'un poble de Catalunya encarrega a l'arquitecte municipal el disseny d'un parc infantil que es construirà en un terreny públic. Per a complir la normativa vigent, en el parc hi ha d'haver dos espais ben delimitats: un per a una boca de reg —el qual, segons l'arquitecte, ha de tenir forma circular—, i un altre per a una caseta on es guardin les eines de manteniment —el qual ha de tenir forma quadrada. Per motius estètics, l'arquitecte vol delimitar cadascun d'aquests dos espais amb una barana de forja. Sabent que les dues baranes mesuren exactament $10\\ \\text{m}$ de longitud en total, quina mida ha de tenir la barana de cada espai per tal que la suma de les superfícies dels dos espais sigui la més petita possible? Quina és aquesta superfície mínima?",
+      "figures": [],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud total de barana: $10\\ \\text{m}$, repartida entre el perímetre d'un cercle i el d'un quadrat.\n- Variable: $x$ = metres de barana del **cercle**; la resta, $10 - x$, és per al **quadrat**. Ha de ser $0 \\le x \\le 10$.\n- Objectiu: **minimitzar** l'àrea total $A(x)$."
+          },
+          {
+            "apartat": null,
+            "titol": "Àrea de cada espai en funció de x",
+            "cos": "**Cercle**: el perímetre és $2\\pi r = x$, per tant $r = \\frac{x}{2\\pi}$ i\n\n$$A_1 = \\pi r^2 = \\pi\\left(\\frac{x}{2\\pi}\\right)^2 = \\frac{x^2}{4\\pi}$$\n\n**Quadrat**: el perímetre és $4c = 10 - x$, per tant $c = \\frac{10-x}{4}$ i\n\n$$A_2 = c^2 = \\left(\\frac{10-x}{4}\\right)^2 = \\frac{(10-x)^2}{16}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Funció a minimitzar",
+            "cos": "$$A(x) = \\frac{x^2}{4\\pi} + \\frac{(10-x)^2}{16} = \\frac{x^2}{4\\pi} + \\frac{100 - 20x + x^2}{16} = \\frac{(4+\\pi)x^2 - 20\\pi x + 100\\pi}{16\\pi}, \\quad x\\in[0,10]$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Derivada i punt crític",
+            "cos": "Els extrems d'una funció derivable es troben on la derivada s'anul·la:\n\n$$A'(x) = \\frac{2x}{4\\pi} - \\frac{2(10-x)}{16} = \\frac{x}{2\\pi} - \\frac{10-x}{8} = \\frac{(8+2\\pi)x - 20\\pi}{16\\pi}$$\n\n$$A'(x) = 0 \\iff (8 + 2\\pi)x = 20\\pi \\iff x = \\frac{20\\pi}{8 + 2\\pi} = \\frac{10\\pi}{4+\\pi} \\approx 4{,}40\\ \\text{m}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "És un mínim?",
+            "cos": "Fem la derivada segona:\n\n$$A''(x) = \\frac{8 + 2\\pi}{16\\pi} > 0$$\n\nÉs positiva per a tot $x$ (la funció és una paràbola oberta cap amunt), per tant el punt crític és un **mínim**, i a més és el mínim absolut a $[0,10]$. (Comprovació als extrems: $A(0) = 6{,}25\\ \\text{m}^2$ i $A(10) \\approx 7{,}96\\ \\text{m}^2$, tots dos més grans.)"
+          },
+          {
+            "apartat": null,
+            "titol": "Resposta",
+            "cos": "- Barana del cercle: $x = \\frac{10\\pi}{4+\\pi} \\approx$ **$4{,}4\\ \\text{m}$**\n- Barana del quadrat: $10 - x \\approx$ **$5{,}6\\ \\text{m}$**\n\nSuperfície mínima:\n\n$$A_\\text{mín} = \\frac{x^2}{4\\pi} + \\frac{(10-x)^2}{16} \\approx \\frac{4{,}399^2}{4\\pi} + \\frac{5{,}601^2}{16} \\approx 1{,}540 + 1{,}961$$\n\n$$\\boxed{A_\\text{mín} = \\frac{25}{4+\\pi} \\approx 3{,}5\\ \\text{m}^2}$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "Cercle: $\\frac{10\\pi}{4+\\pi} \\approx 4{,}4\\ \\text{m}$ de barana; quadrat: $\\approx 5{,}6\\ \\text{m}$; àrea mínima $\\frac{25}{4+\\pi} \\approx 3{,}5\\ \\text{m}^2$"
+          }
+        ],
+        "nota": "Error típic: confondre el perímetre del cercle ($2\\pi r$) amb l'àrea ($\\pi r^2$), o oblidar comprovar que el punt crític és un mínim."
+      }
+    },
+    {
+      "id": "mates-2026-J-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Pla per tres punts, àrea d'un triangle i punts que formen un tetraedre de volum 1",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "equació del pla",
+        "producte vectorial",
+        "àrea del triangle",
+        "distància punt-pla",
+        "volum del tetraedre",
+        "plans paral·lels"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "Considereu els punts de l'espai $P = (1, 0, -1)$, $Q = (3, -2, 0)$ i $R = (1, 1, 1)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "4.1",
+          "enunciat": "Calculeu l'equació del pla que conté els punts $P$, $Q$ i $R$.",
+          "punts": 0.75
+        },
+        {
+          "id": "4.2",
+          "enunciat": "Comproveu que l'àrea del triangle $\\Delta PQR$ és $\\frac{3\\sqrt{5}}{2}\\ u^2$.",
+          "punts": 0.75
+        },
+        {
+          "id": "4.3",
+          "enunciat": "Determineu les condicions que han de complir les coordenades d'un quart punt $S = (x, y, z)$ per tal que $P$, $Q$, $R$ i $S$ formin un tetraedre de volum 1. (El volum del tetraedre format pels punts $P$, $Q$, $R$ i $S$ és: $\\text{volum}(PQRS) = \\dfrac{\\text{àrea}(\\Delta PQR)\\cdot\\text{altura}}{3}$.)",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "4.1",
+            "titol": "Dos vectors del pla",
+            "cos": "Un pla queda determinat per un punt i dos vectors directors no paral·lels. Prenem el punt $P$ i els vectors\n\n$$\\vec{PQ} = Q - P = (2, -2, 1), \\qquad \\vec{PR} = R - P = (0, 1, 2)$$\n\nNo són proporcionals, així que els tres punts no estan alineats i determinen un pla."
+          },
+          {
+            "apartat": "4.1",
+            "titol": "Vector normal amb el producte vectorial",
+            "cos": "El producte vectorial de dos vectors del pla és perpendicular a tots dos, és a dir, és un **vector normal** del pla:\n\n$$\\vec{n} = \\vec{PQ}\\times\\vec{PR} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 2 & -2 & 1 \\\\ 0 & 1 & 2 \\end{vmatrix} = \\vec{i}\\,(-4 - 1) - \\vec{j}\\,(4 - 0) + \\vec{k}\\,(2 - 0) = (-5, -4, 2)$$\n\nPodem fer servir també el vector proporcional $(5, 4, -2)$."
+          },
+          {
+            "apartat": "4.1",
+            "titol": "Equació del pla",
+            "cos": "El pla té equació $5x + 4y - 2z + D = 0$. Imposem que hi passi $R = (1,1,1)$:\n\n$$5 + 4 - 2 + D = 0 \\implies D = -7$$\n\n$$\\boxed{\\pi:\\ 5x + 4y - 2z - 7 = 0}$$\n\nComprovació: $P$: $5 + 0 + 2 - 7 = 0$ ✓; $Q$: $15 - 8 - 0 - 7 = 0$ ✓."
+          },
+          {
+            "apartat": "4.2",
+            "titol": "Àrea amb el producte vectorial",
+            "cos": "El mòdul del producte vectorial $|\\vec{PQ}\\times\\vec{PR}|$ és l'àrea del paral·lelogram format pels dos vectors; el triangle n'és la meitat:\n\n$$\\text{Àrea}(\\Delta PQR) = \\frac{1}{2}\\,|\\vec{PQ}\\times\\vec{PR}| = \\frac{1}{2}\\sqrt{(-5)^2 + (-4)^2 + 2^2} = \\frac{1}{2}\\sqrt{45} = \\frac{1}{2}\\cdot 3\\sqrt{5}$$\n\n$$\\boxed{\\text{Àrea} = \\frac{3\\sqrt{5}}{2}\\ u^2} \\approx 3{,}35\\ u^2$$"
+          },
+          {
+            "apartat": "4.2",
+            "titol": "Comprovació amb base per altura",
+            "cos": "$\\vec{PQ}\\cdot\\vec{PR} = 2\\cdot 0 + (-2)\\cdot 1 + 1\\cdot 2 = 0$: els dos vectors són **perpendiculars**, és a dir, el triangle és rectangle a $P$. Llavors els catets són base i altura:\n\n$$|\\vec{PQ}| = \\sqrt{4 + 4 + 1} = 3, \\qquad |\\vec{PR}| = \\sqrt{0 + 1 + 4} = \\sqrt{5}$$\n\n$$\\text{Àrea} = \\frac{3\\cdot\\sqrt{5}}{2}\\ u^2 \\ ✓$$"
+          },
+          {
+            "apartat": "4.3",
+            "titol": "L'altura és la distància de S al pla",
+            "cos": "Si prenem el triangle $PQR$ com a base del tetraedre, l'altura és la distància del vèrtex $S$ al pla $\\pi$ que conté la base:\n\n$$d(S, \\pi) = \\frac{|5x + 4y - 2z - 7|}{\\sqrt{5^2 + 4^2 + (-2)^2}} = \\frac{|5x + 4y - 2z - 7|}{\\sqrt{45}} = \\frac{|5x + 4y - 2z - 7|}{3\\sqrt{5}}$$"
+          },
+          {
+            "apartat": "4.3",
+            "titol": "Imposem volum 1",
+            "cos": "$$V = \\frac{\\text{Àrea}\\cdot d(S,\\pi)}{3} = \\frac{1}{3}\\cdot\\frac{3\\sqrt{5}}{2}\\cdot\\frac{|5x + 4y - 2z - 7|}{3\\sqrt{5}} = \\frac{|5x + 4y - 2z - 7|}{6}$$\n\n$$V = 1 \\iff |5x + 4y - 2z - 7| = 6$$"
+          },
+          {
+            "apartat": "4.3",
+            "titol": "Tractament del valor absolut",
+            "cos": "$|u| = 6$ vol dir $u = 6$ o $u = -6$:\n\n- $5x + 4y - 2z - 7 = 6 \\iff 5x + 4y - 2z - 13 = 0$\n- $5x + 4y - 2z - 7 = -6 \\iff 5x + 4y - 2z - 1 = 0$\n\n**$S$ ha de pertànyer a un d'aquests dos plans**, que són paral·lels a $\\pi$ (mateix vector normal), un a cada costat i tots dos a distància $\\frac{6}{3\\sqrt5} = \\frac{2\\sqrt5}{5}$ de $\\pi$. És lògic: tots els punts a la mateixa altura sobre la base donen el mateix volum."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "4.1",
+            "valor": "$\\pi: 5x + 4y - 2z - 7 = 0$"
+          },
+          {
+            "apartat": "4.2",
+            "valor": "$\\text{Àrea} = \\frac{1}{2}|\\vec{PQ}\\times\\vec{PR}| = \\frac{3\\sqrt{5}}{2}\\ u^2$ (triangle rectangle a $P$)"
+          },
+          {
+            "apartat": "4.3",
+            "valor": "$S$ ha de complir $5x + 4y - 2z - 13 = 0$ o bé $5x + 4y - 2z - 1 = 0$"
+          }
+        ],
+        "nota": "La solució oficial de 4.2 calcula primer la projecció de $R$ sobre la recta $PQ$ (que resulta ser el mateix $P$) i després fa base per altura; aquí hem triat el mètode del producte vectorial, més ràpid, i ho hem comprovat veient que l'angle a $P$ és recte. També es pot fer 4.3 amb el producte mixt: $V = \\frac{1}{6}|[\\vec{PQ}, \\vec{PR}, \\vec{PS}]|$."
+      }
+    }
+  ]
+}

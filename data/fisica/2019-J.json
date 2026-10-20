@@ -1,0 +1,689 @@
+{
+  "examen": {
+    "id": "fisica-2019-J",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2019,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/fisica/2019-J-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2019-J-solucio.pdf",
+    "estructura": "Part comuna obligatòria (P1 i P2) i part optativa: cal escollir UNA de les dues opcions (A o B) i fer-ne els problemes P3, P4 i P5. Cada problema val 2 punts (dos apartats d'1 punt)."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2019-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Sincrotró Alba: camp elèctric de l'accelerador lineal i força magnètica sobre l'electró",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [
+        "camp-electric"
+      ],
+      "conceptes": [
+        "camp elèctric uniforme",
+        "diferència de potencial",
+        "energia cinètica",
+        "força de lorentz",
+        "moviment circular"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "El sincrotró Alba és una instal·lació de recerca que utilitza llum generada per electrons accelerats per a analitzar les propietats i l'estructura de la matèria. Les principals qualitats d'aquesta radiació són un ampli espectre, una intensitat elevada i una brillantor extraordinària. Per a accelerar els electrons s'utilitzen camps elèctrics i magnètics. L'esquema mostra un model molt simplificat de funcionament: al començament del procés es generen electrons que s'acceleren en un accelerador lineal mitjançant un camp elèctric que suposarem uniforme al llarg de la zona d'acceleració, la qual té una longitud $d = 1{,}00\\ \\text{m}$.\n\nL'energia cinètica inicial dels electrons és zero, però quan surten de l'accelerador és d'$1{,}00\\ \\text{keV}$.\n\n**Dades:** $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$; $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$; $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2019-J/e1.png",
+          "peu": "Accelerador lineal de longitud d i regió amb camp magnètic entrant al paper"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la intensitat del camp elèctric dins de l'accelerador i dibuixeu com són les línies de camp en aquesta regió.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Un cop els electrons han estat accelerats, se'ls condueix a l'anell de propulsió. Per a guiar els electrons al llarg de l'anell s'utilitzen camps magnètics. En l'esquema es mostra el primer camp magnètic que troben els electrons quan surten de l'accelerador lineal i entren a l'anell de propulsió. Si en aquesta regió no hi ha camp elèctric i el camp magnètic és de $0{,}15\\ \\text{T}$, calculeu la magnitud de la força que actuarà sobre l'electró. Quin tipus de trajectòria descriurà l'electró en aquesta regió? Justifiqueu la resposta.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud de la zona d'acceleració: $d = 1{,}00\\ \\text{m}$\n- Energia cinètica inicial: $E_{c,0} = 0$; final: $E_c = 1{,}00\\ \\text{keV} = 1000\\ \\text{eV} = 1{,}602 \\times 10^{-16}\\ \\text{J}$\n- Camp magnètic: $B = 0{,}15\\ \\text{T}$ (entrant al paper, $\\otimes$)\n- $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$, $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$\n- Incògnites: a) $E$ i línies de camp; b) $F$ magnètica i tipus de trajectòria."
+          },
+          {
+            "apartat": "a",
+            "titol": "Diferència de potencial que accelera l'electró",
+            "cos": "El camp elèctric fa un treball sobre l'electró que es converteix en energia cinètica: $W = |e|\\,\\Delta V = \\Delta E_c$. Per tant:\n\n$$\\Delta V = \\frac{\\Delta E_c}{|e|} = \\frac{1000\\ \\text{eV}}{e} = 1000\\ \\text{V}$$\n\n(Per definició, un electró que guanya $1\\ \\text{eV}$ ha estat accelerat per una diferència de potencial d'$1\\ \\text{V}$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Intensitat del camp elèctric uniforme",
+            "cos": "En un camp uniforme, la diferència de potencial i el camp es relacionen per $\\Delta V = E\\,d$:\n\n$$E = \\frac{\\Delta V}{d} = \\frac{1000\\ \\text{V}}{1{,}00\\ \\text{m}} = 1000\\ \\text{V/m}$$\n\nResultat: **$E = 1{,}00 \\times 10^{3}\\ \\text{V/m} = 1{,}00 \\times 10^{3}\\ \\text{N/C}$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Línies de camp dins de l'accelerador",
+            "cos": "L'electró surt del repòs i es mou en línia recta cap a la dreta, de manera que la força elèctrica ha d'anar cap a la dreta (en el sentit del desplaçament). Com que $\\vec F = q\\vec E$ i la càrrega de l'electró és **negativa**, el camp té **sentit contrari** a la força: les línies de camp són **rectes paral·leles, equiespaiades** (camp uniforme), perpendiculars a les plaques i dirigides **cap a l'esquerra**.\n\n![Camp elèctric cap a l'esquerra i força sobre l'electró cap a la dreta (solució oficial)](img/fisica/2019-J/e1-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat de l'electró en sortir de l'accelerador",
+            "cos": "A partir de l'energia cinètica (en J):\n\n$$E_c = \\frac{1}{2} m_e v^2 \\quad\\Rightarrow\\quad v = \\sqrt{\\frac{2E_c}{m_e}} = \\sqrt{\\frac{2 \\cdot 1{,}602 \\times 10^{-16}}{9{,}11 \\times 10^{-31}}} = 1{,}875 \\times 10^{7}\\ \\text{m/s}$$\n\n(És un 6 % de la velocitat de la llum, de manera que el tractament no relativista és acceptable.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Força magnètica (força de Lorentz)",
+            "cos": "Sobre una càrrega en moviment dins d'un camp magnètic actua la força $\\vec F = q\\,\\vec v \\times \\vec B$, de mòdul $F = |q|\\,v\\,B\\sin\\alpha$. Aquí la velocitat (cap a la dreta) és perpendicular al camp (entrant al paper), de manera que $\\sin 90^\\circ = 1$:\n\n$$F = |e|\\,v\\,B = 1{,}602 \\times 10^{-19} \\cdot 1{,}875 \\times 10^{7} \\cdot 0{,}15 = 4{,}51 \\times 10^{-13}\\ \\text{N}$$\n\nResultat: **$F = 4{,}51 \\times 10^{-13}\\ \\text{N}$**\n\nDirecció: $\\vec v \\times \\vec B$ apunta cap amunt, però com que la càrrega és negativa la força apunta **cap avall** (en entrar a la regió)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Tipus de trajectòria",
+            "cos": "La força magnètica és **sempre perpendicular a la velocitat**: no fa treball, no canvia el mòdul de la velocitat i només en canvia la direcció. Per tant, l'acceleració és només normal (centrípeta) i de mòdul constant ($a = F/m_e$), i l'electró descriu un **moviment circular uniforme** (un arc de circumferència mentre és dins del camp).\n\nEl radi seria $r = \\dfrac{m_e v}{|e| B} = \\dfrac{9{,}11 \\times 10^{-31} \\cdot 1{,}875 \\times 10^{7}}{1{,}602 \\times 10^{-19} \\cdot 0{,}15} = 7{,}1 \\times 10^{-4}\\ \\text{m}$ (no es demana).\n\n![Velocitat, força i acceleració de l'electró en entrar al camp: trajectòria circular (solució oficial)](img/fisica/2019-J/e1-sol-2.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 1{,}00 \\times 10^{3}\\ \\text{V/m}$; línies paral·leles cap a l'esquerra (contràries al moviment de l'electró)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F = 4{,}51 \\times 10^{-13}\\ \\text{N}$; trajectòria circular (MCU)"
+          }
+        ],
+        "nota": "Error típic a l'apartat a): dibuixar el camp en el sentit del moviment. Per a una càrrega negativa, $\\vec E$ i $\\vec F$ tenen sentits oposats."
+      }
+    },
+    {
+      "id": "fisica-2019-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Nanosatèl·lit CubeCat-1: període orbital, voltes diàries i pes en òrbita",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "satèl·lits",
+        "òrbita circular",
+        "força centrípeta",
+        "període orbital",
+        "intensitat del camp gravitatori",
+        "pes"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "El 29 de novembre de 2018, el nanosatèl·lit *CubeCat-1*, desenvolupat per estudiants i investigadors de la Universitat Politècnica de Catalunya (UPC), es va llançar a l'espai des de la base espacial de Sriharikota, a la costa est de l'Índia, dins d'un coet de l'agència espacial índia ISRO.\n\nEl *CubeCat-1* té una massa d'$1{,}30\\ \\text{kg}$ i orbita a $530\\ \\text{km}$ de la superfície de la Terra.\n\n**Dades:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$; $M_\\text{Terra} = 5{,}98 \\times 10^{24}\\ \\text{kg}$; $R_\\text{Terra} = 6{,}37 \\times 10^{6}\\ \\text{m}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el període orbital del *CubeCat-1* i indiqueu el nombre de voltes completes que fa cada dia al voltant de la Terra.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Quin és el pes del nanosatèl·lit en la seva òrbita?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa del satèl·lit: $m = 1{,}30\\ \\text{kg}$\n- Altura: $h = 530\\ \\text{km} = 5{,}30 \\times 10^{5}\\ \\text{m}$\n- $M_T = 5{,}98 \\times 10^{24}\\ \\text{kg}$, $R_T = 6{,}37 \\times 10^{6}\\ \\text{m}$, $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$\n- Radi orbital (des del centre de la Terra): $r = R_T + h = 6{,}37 \\times 10^{6} + 0{,}53 \\times 10^{6} = 6{,}90 \\times 10^{6}\\ \\text{m}$\n- Incògnites: a) $T$ i nombre de voltes per dia; b) pes a l'òrbita."
+          },
+          {
+            "apartat": "a",
+            "titol": "La força gravitatòria fa de força centrípeta",
+            "cos": "L'única força sobre el satèl·lit és l'atracció gravitatòria de la Terra, que el manté en òrbita circular: fa de **força centrípeta**. Amb $a_c = \\omega^2 r$ i $\\omega = 2\\pi/T$:\n\n$$G\\frac{M_T\\,m}{r^2} = m\\,\\omega^2 r = m\\left(\\frac{2\\pi}{T}\\right)^2 r \\quad\\Rightarrow\\quad T = 2\\pi\\sqrt{\\frac{r^3}{G M_T}}$$\n\nLa massa del satèl·lit se simplifica."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul del període",
+            "cos": "$$T = 2\\pi\\sqrt{\\frac{(6{,}90 \\times 10^{6})^3}{6{,}67 \\times 10^{-11} \\cdot 5{,}98 \\times 10^{24}}} = 5{,}70 \\times 10^{3}\\ \\text{s}$$\n\nResultat: **$T \\approx 5\\,700\\ \\text{s}$** (uns 95 minuts)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Voltes completes en un dia",
+            "cos": "Un dia té $24 \\cdot 3600 = 86\\,400\\ \\text{s}$:\n\n$$N = \\frac{86\\,400\\ \\text{s}}{5\\,700\\ \\text{s}} = 15{,}15$$\n\nResultat: **15 voltes completes** cada dia."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat del camp gravitatori a l'òrbita",
+            "cos": "El pes és la força gravitatòria que la Terra fa sobre el satèl·lit a la seva posició, $P = m\\,g(r)$, on $g(r)$ és la intensitat del camp gravitatori a la distància $r$ del centre de la Terra:\n\n$$g = G\\frac{M_T}{r^2} = 6{,}67 \\times 10^{-11}\\cdot\\frac{5{,}98 \\times 10^{24}}{(6{,}90 \\times 10^{6})^2} = 8{,}38\\ \\text{m/s}^2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Pes del nanosatèl·lit",
+            "cos": "$$P = m\\,g = 1{,}30 \\cdot 8{,}38 = 10{,}9\\ \\text{N}$$\n\nResultat: **$P = 10{,}9\\ \\text{N}$**\n\nFixa't que el satèl·lit **no** té pes nul: a $530\\ \\text{km}$ el camp és només un 15 % menor que a la superfície ($9{,}83\\ \\text{m/s}^2$). La sensació d'imponderabilitat es deu al fet que el satèl·lit està en caiguda lliure contínua, no a l'absència de gravetat."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$T \\approx 5{,}70 \\times 10^{3}\\ \\text{s}$; 15 voltes completes al dia"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P = 10{,}9\\ \\text{N}$ ($g = 8{,}38\\ \\text{m/s}^2$)"
+          }
+        ],
+        "nota": "Error típic: usar com a radi orbital l'altura (530 km) en lloc de $R_T + h$."
+      }
+    },
+    {
+      "id": "fisica-2019-J-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Massa d'un astronauta amb una molla i gravetat i massa de la Lluna amb un pèndol",
+      "tema": "oscillacions",
+      "temes_secundaris": [
+        "gravitacio"
+      ],
+      "conceptes": [
+        "moviment harmònic simple",
+        "oscil·lador massa-molla",
+        "pèndol simple",
+        "període",
+        "intensitat del camp gravitatori"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un astronauta que és a l'espai vol mesurar la seva massa. Per fer-ho, s'asseu i es lliga a una cadira de $2{,}00\\ \\text{kg}$ de massa que està unida a una molla de constant elàstica $k = 320\\ \\text{N m}^{-1}$. L'astronauta s'impulsa i triga $62{,}8\\ \\text{s}$ a fer 20 oscil·lacions completes.\n\n**Dades:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$; $R_\\text{Lluna} = 1{,}737 \\times 10^{6}\\ \\text{m}$. El període d'oscil·lació d'un pèndol de longitud $L$ és $T = 2\\pi\\sqrt{\\dfrac{L}{g}}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina és la massa de l'astronauta?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Posteriorment aquest astronauta arriba a la Lluna, on fa oscil·lar un pèndol simple d'$1{,}00\\ \\text{kg}$ de massa i $1{,}50\\ \\text{m}$ de longitud. Aquest pèndol triga 2 min i 1 s a fer 20 oscil·lacions completes. Quina és la intensitat del camp gravitatori a la superfície de la Lluna? Quina és la massa de la Lluna?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa de la cadira: $m_c = 2{,}00\\ \\text{kg}$; constant de la molla: $k = 320\\ \\text{N/m}$\n- 20 oscil·lacions en $62{,}8\\ \\text{s}$ (molla)\n- Pèndol: $L = 1{,}50\\ \\text{m}$; 20 oscil·lacions en $2\\ \\text{min}\\ 1\\ \\text{s} = 121\\ \\text{s}$\n- $R_L = 1{,}737 \\times 10^{6}\\ \\text{m}$, $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$\n- Incògnites: a) massa de l'astronauta $m$; b) $g_L$ i $M_L$.\n\nLa massa del pèndol ($1{,}00\\ \\text{kg}$) no cal: el període d'un pèndol simple no depèn de la massa."
+          },
+          {
+            "apartat": "a",
+            "titol": "Període i freqüència angular de l'oscil·lador",
+            "cos": "$$T = \\frac{62{,}8\\ \\text{s}}{20} = 3{,}14\\ \\text{s} \\qquad \\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{3{,}14} = 2{,}00\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Massa total que oscil·la i massa de l'astronauta",
+            "cos": "En un oscil·lador massa-molla, la freqüència angular depèn de la massa que oscil·la (astronauta + cadira), $m_T$, i no de la gravetat; per això serveix per «pesar» a l'espai:\n\n$$\\omega = \\sqrt{\\frac{k}{m_T}} \\quad\\Rightarrow\\quad m_T = \\frac{k}{\\omega^2} = \\frac{320}{2{,}00^2} = 80{,}0\\ \\text{kg}$$\n\nRestem la massa de la cadira:\n\n$$m = m_T - m_c = 80{,}0 - 2{,}00 = 78{,}0\\ \\text{kg}$$\n\nResultat: **$m = 78\\ \\text{kg}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Període del pèndol i gravetat a la Lluna",
+            "cos": "$$T = \\frac{121\\ \\text{s}}{20} = 6{,}05\\ \\text{s}$$\n\nAïllem $g$ de l'expressió del període del pèndol:\n\n$$T = 2\\pi\\sqrt{\\frac{L}{g_L}} \\quad\\Rightarrow\\quad g_L = \\left(\\frac{2\\pi}{T}\\right)^2 L = \\left(\\frac{2\\pi}{6{,}05}\\right)^2 \\cdot 1{,}50 = 1{,}62\\ \\text{m/s}^2$$\n\nResultat: **$g_L = 1{,}62\\ \\text{m/s}^2$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa de la Lluna",
+            "cos": "La intensitat del camp gravitatori a la superfície d'un astre esfèric és $g = G M/R^2$:\n\n$$g_L = G\\frac{M_L}{R_L^2} \\quad\\Rightarrow\\quad M_L = \\frac{g_L R_L^2}{G} = \\frac{1{,}62 \\cdot (1{,}737 \\times 10^{6})^2}{6{,}67 \\times 10^{-11}} = 7{,}32 \\times 10^{22}\\ \\text{kg}$$\n\nResultat: **$M_L = 7{,}32 \\times 10^{22}\\ \\text{kg}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$m = 78\\ \\text{kg}$ (massa total oscil·lant $80\\ \\text{kg}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$g_L = 1{,}62\\ \\text{m/s}^2$; $M_L = 7{,}32 \\times 10^{22}\\ \\text{kg}$"
+          }
+        ],
+        "nota": "Error típic a l'apartat a): oblidar restar la massa de la cadira, que també oscil·la."
+      }
+    },
+    {
+      "id": "fisica-2019-J-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Càrregues als vèrtexs d'un quadrat: càrrega que anul·la la força i treball fins al centre",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "llei de coulomb",
+        "principi de superposició",
+        "potencial elèctric",
+        "treball elèctric",
+        "equilibri de forces"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Hem situat una partícula puntual amb una càrrega $q = 10\\ \\mu\\text{C}$ i dues partícules puntuals amb una càrrega $-q$ als vèrtexs d'un quadrat de costat $a = 1{,}50\\ \\text{cm}$ tal com s'indica en la figura.\n\n**Dada:** $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$.\n\n**Nota:** Suposeu que les velocitats inicial i final de la càrrega que portem fins al centre del quadrat són nul·les.",
+      "figures": [
+        {
+          "src": "img/fisica/2019-J/e4-a.png",
+          "peu": "Quadrat de costat a amb q (dalt a la dreta), −q (dalt a l'esquerra i baix a la dreta) i q₀ (baix a l'esquerra)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quin és el valor de la càrrega puntual $q_0$ situada al quart vèrtex si la força elèctrica sobre la càrrega $q$ és nul·la?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Quin treball haurem de fer per a portar una càrrega puntual de $0{,}50\\ \\mu\\text{C}$ des d'una distància molt gran fins al centre del quadrat?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $q = 10\\ \\mu\\text{C} = 1{,}0 \\times 10^{-5}\\ \\text{C}$ (vèrtex de dalt a la dreta)\n- $-q$ als vèrtexs de dalt a l'esquerra i de baix a la dreta; $q_0$ al vèrtex de baix a l'esquerra (oposat a $q$)\n- $a = 1{,}50\\ \\text{cm} = 1{,}50 \\times 10^{-2}\\ \\text{m}$; diagonal $a\\sqrt2$\n- $q' = 0{,}50\\ \\mu\\text{C} = 5{,}0 \\times 10^{-7}\\ \\text{C}$\n- Incògnites: a) $q_0$; b) treball extern $W$ per dur $q'$ de l'infinit al centre."
+          },
+          {
+            "apartat": "a",
+            "titol": "Forces de les dues càrregues −q sobre q",
+            "cos": "Les càrregues $-q$ atreuen $q$: la de l'esquerra l'estira cap a l'esquerra ($\\vec F_1$) i la de sota, cap avall ($\\vec F_2$). Totes dues són a distància $a$, així que tenen el mateix mòdul (llei de Coulomb):\n\n$$F_1 = F_2 = k\\frac{q^2}{a^2} = 8{,}99 \\times 10^{9}\\cdot\\frac{(1{,}0 \\times 10^{-5})^2}{(1{,}50 \\times 10^{-2})^2} = 4{,}0 \\times 10^{3}\\ \\text{N}$$\n\nLa seva resultant apunta cap al vèrtex oposat (al llarg de la diagonal, cap a $q_0$), de mòdul $\\sqrt2\\,F_1$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Condició de força nul·la",
+            "cos": "Perquè la força total sobre $q$ sigui zero, $q_0$ ha de fer una força $\\vec F_3$ al llarg de la diagonal i **cap enfora** (a $45^\\circ$, allunyant-se de $q_0$): és una **repulsió**, de manera que $q_0$ ha de ser **positiva**. La distància entre $q_0$ i $q$ és la diagonal $a\\sqrt2$:\n\n$$F_3 = k\\frac{q\\,q_0}{(a\\sqrt2)^2} = k\\frac{q\\,q_0}{2a^2}$$\n\nComponents (eix $x$ cap a la dreta, $y$ cap amunt):\n\n$$\\sum F_x = -F_1 + F_3\\cos 45^\\circ = 0 \\qquad \\sum F_y = -F_2 + F_3\\sin 45^\\circ = 0$$\n\n$$\\Rightarrow\\quad F_3 = \\frac{F_1}{\\cos 45^\\circ} = \\sqrt2\\,F_1 = \\frac{8\\,000}{\\sqrt2} = 5{,}66 \\times 10^{3}\\ \\text{N}$$\n\n![Forces sobre la càrrega q (solució oficial)](img/fisica/2019-J/e4-a-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valor de q₀",
+            "cos": "Igualant $k\\dfrac{q\\,q_0}{2a^2} = \\sqrt2\\,k\\dfrac{q^2}{a^2}$ i simplificant:\n\n$$q_0 = 2\\sqrt2\\,q = 2\\sqrt2 \\cdot 1{,}0 \\times 10^{-5} = 2{,}83 \\times 10^{-5}\\ \\text{C}$$\n\nResultat: **$q_0 = +28{,}3\\ \\mu\\text{C}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Potencial elèctric al centre del quadrat",
+            "cos": "El potencial és una magnitud escalar: el potencial al centre és la suma dels potencials de les quatre càrregues. Totes són a la mateixa distància del centre (mitja diagonal):\n\n$$d = \\frac{\\sqrt2}{2}a = \\frac{\\sqrt2}{2}\\cdot 1{,}50 \\times 10^{-2} = 1{,}06 \\times 10^{-2}\\ \\text{m}$$\n\n$$V_O = k\\frac{q}{d} - k\\frac{q}{d} - k\\frac{q}{d} + k\\frac{q_0}{d} = k\\frac{q_0 - q}{d}$$\n\n$$V_O = 8{,}99 \\times 10^{9}\\cdot\\frac{2{,}83 \\times 10^{-5} - 1{,}0 \\times 10^{-5}}{1{,}06 \\times 10^{-2}} = 1{,}55 \\times 10^{7}\\ \\text{V}$$\n\nA l'infinit el potencial és zero: $V_\\infty = 0$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball necessari",
+            "cos": "Com que la càrrega comença i acaba en repòs, no hi ha variació d'energia cinètica: el treball que hem de fer nosaltres és igual a la variació d'energia potencial, i és el contrari del que fa el camp:\n\n$$W_\\text{ext} = -W_\\text{camp} = q'\\,(V_O - V_\\infty) = 5{,}0 \\times 10^{-7}\\cdot(1{,}55 \\times 10^{7} - 0) = 7{,}75\\ \\text{J}$$\n\nResultat: **$W = 7{,}75\\ \\text{J}$** (positiu: hem de fer treball contra el camp, perquè el potencial al centre és positiu i la càrrega és positiva)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$q_0 = 2\\sqrt2\\,q = +2{,}83 \\times 10^{-5}\\ \\text{C} = 28{,}3\\ \\mu\\text{C}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$V_O = 1{,}55 \\times 10^{7}\\ \\text{V}$; $W_\\text{ext} = 7{,}75\\ \\text{J}$"
+          }
+        ],
+        "nota": "Errors típics: a l'apartat a), oblidar que la distància entre $q$ i $q_0$ és la diagonal $a\\sqrt2$; a l'apartat b), equivocar el signe del treball (la solució oficial resta 0,2 punts per un error de signe)."
+      }
+    },
+    {
+      "id": "fisica-2019-J-e5-a",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Fusió deuteri-triti a l'ITER: composició dels nuclis i energia alliberada",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "fusió nuclear",
+        "isòtops",
+        "equació nuclear",
+        "defecte de massa",
+        "equivalència massa-energia"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        3
+      ],
+      "enunciat": "El Reactor Experimental Termonuclear Internacional (International Thermonuclear Experimental Reactor, ITER) és el primer projecte que estudia la possibilitat de produir energia per fusió nuclear. De totes les reaccions de fusió possibles, la reacció entre el deuteri i el triti (dos isòtops de l'hidrogen) és la més factible amb la tecnologia actual. Aquesta fusió dona ${}^{4}_{2}\\text{He}$ i un neutró.\n\n**Dades:** $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$; $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$.\n\nMasses (en kg):\n\n| ${}^{1}_{0}\\text{n}$ (neutró) | ${}^{4}_{2}\\text{He}$ (heli) | ${}^{2}_{1}\\text{H}$ (deuteri) | ${}^{3}_{1}\\text{H}$ (triti) |\n|---|---|---|---|\n| $1{,}674\\,927 \\times 10^{-27}$ | $6{,}644\\,657 \\times 10^{-27}$ | $3{,}343\\,584 \\times 10^{-27}$ | $5{,}007\\,357 \\times 10^{-27}$ |",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "A partir de les dades, digueu quants protons i quants neutrons tenen el deuteri, el triti i el ${}^{4}_{2}\\text{He}$. Escriviu l'equació nuclear que correspon a aquest procés de fusió.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'energia que s'allibera en la reacció de fusió anterior.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Masses: $m_n = 1{,}674\\,927 \\times 10^{-27}\\ \\text{kg}$, $m_\\text{He} = 6{,}644\\,657 \\times 10^{-27}\\ \\text{kg}$, $m_D = 3{,}343\\,584 \\times 10^{-27}\\ \\text{kg}$, $m_T = 5{,}007\\,357 \\times 10^{-27}\\ \\text{kg}$\n- $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$\n- Incògnites: a) composició dels nuclis i equació; b) energia alliberada $E$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Protons i neutrons de cada nucli",
+            "cos": "En la notació ${}^{A}_{Z}\\text{X}$, $Z$ és el nombre atòmic (protons) i $A$ el nombre màssic (protons + neutrons), de manera que $N = A - Z$:\n\n| Nucli | $Z$ (protons) | $N = A - Z$ (neutrons) |\n|---|---|---|\n| Deuteri ${}^{2}_{1}\\text{H}$ | 1 | 1 |\n| Triti ${}^{3}_{1}\\text{H}$ | 1 | 2 |\n| Heli ${}^{4}_{2}\\text{He}$ | 2 | 2 |"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació nuclear",
+            "cos": "En una reacció nuclear es conserven el nombre màssic i la càrrega (nombre atòmic):\n\n$${}^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\;\\longrightarrow\\; {}^{4}_{2}\\text{He} + {}^{1}_{0}\\text{n}$$\n\nComprovació: $A$: $2 + 3 = 4 + 1$; $Z$: $1 + 1 = 2 + 0$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Defecte de massa",
+            "cos": "La massa dels productes és més petita que la dels reactius; aquesta massa «desapareguda» es converteix en energia:\n\n$$\\Delta m = (m_D + m_T) - (m_\\text{He} + m_n)$$\n\n$$\\Delta m = (3{,}343\\,584 + 5{,}007\\,357 - 6{,}644\\,657 - 1{,}674\\,927) \\times 10^{-27} = 3{,}1357 \\times 10^{-29}\\ \\text{kg}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia alliberada",
+            "cos": "Per l'equivalència massa-energia d'Einstein:\n\n$$E = \\Delta m\\,c^2 = 3{,}14 \\times 10^{-29}\\cdot(3{,}00 \\times 10^{8})^2 = 2{,}82 \\times 10^{-12}\\ \\text{J}$$\n\nResultat: **$E = 2{,}82 \\times 10^{-12}\\ \\text{J}$** per reacció, que equival a $\\dfrac{2{,}82 \\times 10^{-12}}{1{,}602 \\times 10^{-19}} = 1{,}76 \\times 10^{7}\\ \\text{eV} = 17{,}6\\ \\text{MeV}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "D: 1 p + 1 n; T: 1 p + 2 n; He: 2 p + 2 n. ${}^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\to {}^{4}_{2}\\text{He} + {}^{1}_{0}\\text{n}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\Delta m = 3{,}14 \\times 10^{-29}\\ \\text{kg}$; $E = 2{,}82 \\times 10^{-12}\\ \\text{J} \\approx 17{,}6\\ \\text{MeV}$"
+          }
+        ],
+        "nota": "Les masses es donen amb 7 xifres perquè el defecte de massa és una resta de nombres molt semblants: no arrodoniu les masses abans de restar."
+      }
+    },
+    {
+      "id": "fisica-2019-J-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Camp magnètic d'un fil infinit sobre una espira i corrent induït per un corrent variable",
+      "tema": "induccio",
+      "temes_secundaris": [
+        "camp-magnetic"
+      ],
+      "conceptes": [
+        "camp magnètic d'un fil rectilini",
+        "regla de la mà dreta",
+        "flux magnètic",
+        "llei de faraday",
+        "corrent induït"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Una espira rectangular i conductora es troba a prop d'un fil conductor rectilini infinit pel qual circula una intensitat de corrent $I$ cap avall, tal com es mostra en la figura *a*.",
+      "figures": [
+        {
+          "src": "img/fisica/2019-J/e3-b.png",
+          "peu": "(a) Fil vertical amb corrent cap avall i espira rectangular a la dreta; (b) intensitat del corrent en funció del temps"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Representeu el sentit i la direcció del camp magnètic creat pel fil conductor en la regió plana delimitada per l'espira. Aquest camp magnètic és uniforme en la regió delimitada per l'espira? Justifiqueu la resposta.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El fil conductor i l'espira no es mouen, però la intensitat del corrent que circula pel conductor varia amb el temps, tal com indica la gràfica (figura *b*). Argumenteu si s'indueix o no corrent en l'espira en els intervals de temps següents: de 0 a 20 s, de 20 a 80 s i de 80 a 120 s. En quin d'aquests tres intervals de temps la intensitat del corrent induït és més gran? Justifiqueu la resposta.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Fil rectilini infinit vertical (eix $y$) amb corrent $I$ cap avall; espira rectangular a la dreta del fil (zona $x > 0$), en el mateix pla.\n- Gràfica $I(t)$: puja linealment de $0$ a $1{,}0\\ \\text{A}$ entre $0$ i $20\\ \\text{s}$; es manté a $1{,}0\\ \\text{A}$ entre $20$ i $80\\ \\text{s}$; baixa linealment fins a $0$ entre $80$ i $120\\ \\text{s}$.\n- Incògnites: a) direcció, sentit i uniformitat de $\\vec B$ a l'espira; b) intervals amb corrent induït i on és més gran."
+          },
+          {
+            "apartat": "a",
+            "titol": "Direcció i sentit del camp magnètic",
+            "cos": "Les línies de camp d'un fil rectilini són circumferències centrades en el fil, en plans perpendiculars al fil. El sentit es troba amb la **regla de la mà dreta**: el polze en el sentit del corrent (cap avall) i els dits envolten el fil en el sentit del camp.\n\nEquivalentment, amb la llei de Biot-Savart $d\\vec B \\propto I\\,d\\vec l \\times \\vec u_r$: $d\\vec l$ apunta cap avall ($-\\vec j$) i $\\vec u_r$ cap a la dreta ($+\\vec i$), de manera que $(-\\vec j)\\times\\vec i = +\\vec k$.\n\nPer tant, a la regió de l'espira (a la dreta del fil) el camp és **perpendicular al pla de l'espira i surt del paper** ($\\odot$).\n\n![Camp magnètic sortint del paper a la regió de l'espira (solució oficial)](img/fisica/2019-J/e3-b-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "El camp no és uniforme",
+            "cos": "El mòdul del camp creat per un fil infinit és inversament proporcional a la distància al fil:\n\n$$B = \\frac{\\mu_0 I}{2\\pi r}$$\n\nDins de l'espira hi ha punts a diferents distàncies del fil, de manera que el camp **no és uniforme**: té sempre la mateixa direcció i sentit (sortint), però és **més intens al costat de l'espira més proper al fil** i més feble al costat més allunyat."
+          },
+          {
+            "apartat": "b",
+            "titol": "Quan hi ha corrent induït (llei de Faraday)",
+            "cos": "El camp en cada punt és proporcional a $I$, i per tant el flux magnètic a través de l'espira també ho és: $\\Phi = C\\cdot I$ (amb $C$ una constant geomètrica, perquè res no es mou). Segons la **llei de Faraday**, només hi ha força electromotriu (i corrent) induïda si el flux **varia** amb el temps:\n\n$$\\varepsilon = -\\frac{d\\Phi}{dt} = -C\\,\\frac{dI}{dt}$$\n\n- **De 0 a 20 s:** el corrent augmenta → el flux augmenta → **sí que hi ha corrent induït**.\n- **De 20 a 80 s:** el corrent és constant → flux constant → **no hi ha corrent induït**.\n- **De 80 a 120 s:** el corrent disminueix → el flux disminueix → **sí que hi ha corrent induït** (de sentit contrari al del primer interval, per la llei de Lenz)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Interval amb el corrent induït més gran",
+            "cos": "La fem és proporcional a la rapidesa amb què varia el corrent, és a dir, al pendent de la gràfica:\n\n$$\\left|\\frac{\\Delta I}{\\Delta t}\\right|_{0\\text{–}20} = \\frac{1{,}0\\ \\text{A}}{20\\ \\text{s}} = 0{,}050\\ \\text{A/s} \\qquad \\left|\\frac{\\Delta I}{\\Delta t}\\right|_{80\\text{–}120} = \\frac{1{,}0\\ \\text{A}}{40\\ \\text{s}} = 0{,}025\\ \\text{A/s}$$\n\nCom que el corrent varia el doble de ràpid en el primer tram, la fem (i el corrent induït) hi és el doble.\n\nResultat: **el corrent induït és més gran de 0 a 20 s**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\vec B$ perpendicular al pla de l'espira, sortint del paper; no és uniforme ($B = \\mu_0 I / 2\\pi r$, més intens a prop del fil)"
+          },
+          {
+            "apartat": "b",
+            "valor": "Hi ha corrent induït de 0 a 20 s i de 80 a 120 s, no de 20 a 80 s; és més gran de 0 a 20 s (pendent 0,050 A/s davant 0,025 A/s)"
+          }
+        ],
+        "nota": "Sentit del corrent induït (no es demana): de 0 a 20 s el flux sortint augmenta i el corrent induït crea un camp entrant (sentit horari); de 80 a 120 s és antihorari. La solució oficial també accepta, com a criteri alternatiu, comparar els intervals pel signe del corrent si es justifica el sentit en tots dos casos."
+      }
+    },
+    {
+      "id": "fisica-2019-J-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Tercer harmònic d'una corda de violoncel: nodes, ventres, longitud d'ona i temps entre extrems",
+      "tema": "ones",
+      "temes_secundaris": [
+        "oscillacions"
+      ],
+      "conceptes": [
+        "ones estacionàries",
+        "harmònics",
+        "nodes i ventres",
+        "longitud d'ona",
+        "freqüència",
+        "període"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "La longitud de la corda d'un violoncel és de $70\\ \\text{cm}$ i la velocitat de propagació de les ones en aquesta corda és de $308\\ \\text{m s}^{-1}$. Per al tercer harmònic:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Representeu esquemàticament l'ona estacionària d'aquest harmònic i indiqueu-hi tots els nodes i tots els ventres. Calculeu la longitud d'ona. Quina és la distància entre dos nodes consecutius?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Suposant que la corda està en posició horitzontal, calculeu, per a un ventre, el temps que triga la posició vertical a passar del seu valor màxim al valor mínim (del punt més alt al punt més baix).",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud de la corda (fixa pels dos extrems): $L = 70\\ \\text{cm} = 0{,}70\\ \\text{m}$\n- Velocitat de propagació: $v = 308\\ \\text{m/s}$\n- Harmònic: $n = 3$\n- Incògnites: a) esquema, $\\lambda$ i distància entre nodes; b) temps d'un ventre de màxim a mínim."
+          },
+          {
+            "apartat": "a",
+            "titol": "Esquema del tercer harmònic",
+            "cos": "En una corda fixa pels dos extrems, els extrems són sempre **nodes**. L'harmònic $n$ té $n$ ventres i $n+1$ nodes. Per al tercer harmònic: **4 nodes** (inclosos els dos extrems) i **3 ventres**, i la corda conté tres «fusos» (mitges longituds d'ona).\n\n![Tercer harmònic: nodes N i ventres V (solució oficial)](img/fisica/2019-J/e4-b-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud d'ona",
+            "cos": "A la corda hi caben $n$ mitges longituds d'ona: $L = n\\dfrac{\\lambda}{2}$. Per a $n = 3$, $L = 1{,}5\\,\\lambda$:\n\n$$\\lambda = \\frac{2L}{n} = \\frac{2 \\cdot 0{,}70}{3} = 0{,}467\\ \\text{m}$$\n\nResultat: **$\\lambda = 0{,}467\\ \\text{m}$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Distància entre nodes consecutius",
+            "cos": "Dos nodes consecutius estan separats mitja longitud d'ona (també és $L/3$ en aquest cas):\n\n$$d_{NN} = \\frac{\\lambda}{2} = \\frac{0{,}467}{2} = 0{,}233\\ \\text{m}$$\n\nResultat: **$d_{NN} = 0{,}233\\ \\text{m} = 23{,}3\\ \\text{cm}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Freqüència i període",
+            "cos": "$$f = \\frac{v}{\\lambda} = \\frac{308}{0{,}467} = 660\\ \\text{Hz} \\qquad T = \\frac{1}{f} = \\frac{1}{660} = 1{,}52 \\times 10^{-3}\\ \\text{s}$$\n\nCada punt de la corda fa un MHS amb aquest període."
+          },
+          {
+            "apartat": "b",
+            "titol": "Temps del màxim al mínim",
+            "cos": "Un ventre oscil·la verticalment entre la posició més alta i la més baixa; passar d'un extrem a l'altre és **mig període**:\n\n$$\\Delta t = \\frac{T}{2} = \\frac{1}{2f} = \\frac{1}{2 \\cdot 660} = 7{,}58 \\times 10^{-4}\\ \\text{s}$$\n\nResultat: **$\\Delta t = 7{,}58 \\times 10^{-4}\\ \\text{s}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "4 nodes i 3 ventres; $\\lambda = 0{,}467\\ \\text{m}$; distància entre nodes $0{,}233\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$f = 660\\ \\text{Hz}$, $T = 1{,}52 \\times 10^{-3}\\ \\text{s}$; $\\Delta t = T/2 = 7{,}58 \\times 10^{-4}\\ \\text{s}$"
+          }
+        ],
+        "nota": "La solució oficial escriu $T = 1{,}51 \\times 10^{-3}\\ \\text{s}$ (truncant); arrodonit és $1{,}515 \\times 10^{-3} \\approx 1{,}52 \\times 10^{-3}\\ \\text{s}$. El resultat final $7{,}58 \\times 10^{-4}\\ \\text{s}$ coincideix."
+      }
+    },
+    {
+      "id": "fisica-2019-J-e5-b",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Efecte fotoelèctric: energia del fotó, treball d'extracció i velocitat màxima dels electrons",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "energia del fotó",
+        "treball d'extracció",
+        "potencial de frenada",
+        "energia cinètica màxima"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Quan s'il·lumina una superfície metàl·lica amb una radiació ultraviolada $\\lambda = 300\\ \\text{nm}$, el metall emet electrons amb una energia cinètica tan gran que, per a frenar-los (anul·lar el corrent), cal aplicar-hi un potencial de frenada d'$1{,}04\\ \\text{V}$.\n\n**Dades:** $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$; $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'energia dels fotons incidents i el treball d'extracció (o funció de treball) d'aquest metall.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "A partir del balanç d'energia de l'efecte fotoelèctric, trobeu l'expressió de la velocitat màxima dels fotoelectrons emesos en funció de la massa dels electrons ($m$), la constant de Planck, la velocitat de la llum, la longitud d'ona de la llum incident i el treball d'extracció ($W_e$).",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud d'ona: $\\lambda = 300\\ \\text{nm} = 3{,}00 \\times 10^{-7}\\ \\text{m}$\n- Potencial de frenada: $V_f = 1{,}04\\ \\text{V}$\n- $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$\n- Incògnites: a) $E_\\text{fotó}$ i $W_e$; b) expressió de $v_\\text{màx}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia dels fotons",
+            "cos": "Segons Planck-Einstein, cada fotó porta una energia $E = hf = hc/\\lambda$:\n\n$$E_\\text{fotó} = \\frac{hc}{\\lambda} = \\frac{6{,}63 \\times 10^{-34}\\cdot 3{,}00 \\times 10^{8}}{3{,}00 \\times 10^{-7}} = 6{,}63 \\times 10^{-19}\\ \\text{J}$$\n\nEn electronvolts: $\\dfrac{6{,}63 \\times 10^{-19}}{1{,}602 \\times 10^{-19}} = 4{,}14\\ \\text{eV}$.\n\nResultat: **$E_\\text{fotó} = 6{,}63 \\times 10^{-19}\\ \\text{J} = 4{,}14\\ \\text{eV}$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia cinètica màxima a partir del potencial de frenada",
+            "cos": "El potencial de frenada és el que atura justament els electrons més ràpids: el camp els treu tota l'energia cinètica, $E_{c,\\text{màx}} = |e|\\,V_f$:\n\n$$E_{c,\\text{màx}} = 1{,}04\\ \\text{eV} = 1{,}04 \\cdot 1{,}602 \\times 10^{-19} = 1{,}67 \\times 10^{-19}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Treball d'extracció (balanç d'energia)",
+            "cos": "L'energia del fotó serveix per arrencar l'electró del metall ($W_e$) i la resta queda com a energia cinètica:\n\n$$hf = W_e + E_{c,\\text{màx}} \\quad\\Rightarrow\\quad W_e = hf - E_{c,\\text{màx}} = 4{,}14 - 1{,}04 = 3{,}10\\ \\text{eV}$$\n\n$$W_e = 3{,}10 \\cdot 1{,}602 \\times 10^{-19} = 4{,}96 \\times 10^{-19}\\ \\text{J}$$\n\nResultat: **$W_e = 3{,}10\\ \\text{eV} = 4{,}96 \\times 10^{-19}\\ \\text{J}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Expressió de la velocitat màxima",
+            "cos": "Escrivim el balanç d'energia amb $f = c/\\lambda$ i $E_{c,\\text{màx}} = \\frac{1}{2}m v_\\text{màx}^2$:\n\n$$h\\frac{c}{\\lambda} = W_e + \\frac{1}{2} m\\,v_\\text{màx}^2$$\n\nAïllem la velocitat:\n\n$$v_\\text{màx} = \\sqrt{\\frac{2}{m}\\left(\\frac{hc}{\\lambda} - W_e\\right)}$$\n\nResultat: **$v_\\text{màx} = \\sqrt{\\dfrac{2}{m}\\left(\\dfrac{hc}{\\lambda} - W_e\\right)}$**\n\nAmb les dades de l'apartat a) i $m = 9{,}11 \\times 10^{-31}\\ \\text{kg}$ donaria $v_\\text{màx} \\approx 6{,}05 \\times 10^{5}\\ \\text{m/s}$ (no es demana el valor numèric)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E_\\text{fotó} = 6{,}63 \\times 10^{-19}\\ \\text{J} = 4{,}14\\ \\text{eV}$; $W_e = 3{,}10\\ \\text{eV} = 4{,}96 \\times 10^{-19}\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_\\text{màx} = \\sqrt{\\dfrac{2}{m}\\left(\\dfrac{hc}{\\lambda} - W_e\\right)}$"
+          }
+        ],
+        "nota": "La massa de l'electró no és a les dades d'aquest problema; el valor numèric de $v_\\text{màx}$ s'ha calculat amb $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$ (dada del P1)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "examen": {
+    "id": "mates-2018-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2018,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/mates/2018-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2018-J-solucio.pdf",
+    "estructura": "Cal respondre CINC de les sis qüestions proposades. Cada qüestió val 2 punts (1 punt per apartat). Es pot utilitzar calculadora, però no de les que permeten emmagatzemar dades o transmetre o rebre informació."
+  },
+  "problemes": [
+    {
+      "id": "mates-2018-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Productes M·N i N·M d'una matriu 3×2 i una 2×3 amb paràmetre t: invertibilitat",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": ["producte de matrius", "determinant", "matriu inversa", "regla de Sarrus", "paràmetre"],
+      "dificultat": 2,
+      "pagines": [1],
+      "enunciat": "Siguin les matrius $M = \\begin{pmatrix} 1 & 2 \\\\ 0 & -1 \\\\ t & 2 \\end{pmatrix}$ i $N = \\begin{pmatrix} -1 & t & 2 \\\\ 1 & 0 & -1 \\end{pmatrix}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Calculeu $M \\cdot N$ i comproveu que la matriu resultant no és invertible.", "punts": 1},
+        {"id": "b", "enunciat": "Trobeu els valors de $t$ per als quals la matriu $N \\cdot M$ és invertible.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Idea clau", "cos": "- $M$ és $3\\times 2$ i $N$ és $2\\times 3$. Per tant $M\\cdot N$ és una matriu $3\\times 3$ i $N \\cdot M$ és una matriu $2\\times 2$.\n- Una matriu quadrada és **invertible si i només si el seu determinant és diferent de zero**. Així doncs, a cada apartat calcularem el producte i després el seu determinant."},
+          {"apartat": "a", "titol": "Producte M·N", "cos": "Cada element $(i,j)$ és la fila $i$ de $M$ per la columna $j$ de $N$:\n\n$$M\\cdot N = \\begin{pmatrix} 1 & 2 \\\\ 0 & -1 \\\\ t & 2 \\end{pmatrix}\\begin{pmatrix} -1 & t & 2 \\\\ 1 & 0 & -1 \\end{pmatrix} = \\begin{pmatrix} -1+2 & t+0 & 2-2 \\\\ 0-1 & 0 & 0+1 \\\\ -t+2 & t^2 & 2t-2 \\end{pmatrix} = \\begin{pmatrix} 1 & t & 0 \\\\ -1 & 0 & 1 \\\\ 2-t & t^2 & 2t-2 \\end{pmatrix}$$"},
+          {"apartat": "a", "titol": "Determinant de M·N (regla de Sarrus)", "cos": "$$|M\\cdot N| = 1\\cdot 0\\cdot(2t-2) + t\\cdot 1\\cdot(2-t) + 0\\cdot(-1)\\cdot t^2 - \\big[0\\cdot 0\\cdot(2-t) + 1\\cdot 1\\cdot t^2 + t\\cdot(-1)\\cdot(2t-2)\\big]$$\n\n$$= 2t - t^2 - \\big[t^2 - 2t^2 + 2t\\big] = 2t - t^2 - t^2 + 2t^2 - 2t = 0$$\n\nEl determinant és **0 per a qualsevol valor de $t$**, per tant **$M\\cdot N$ no és mai invertible**.\n\n*Per què passa?* El rang d'un producte no pot superar el rang de cap dels factors; com que $M$ i $N$ tenen rang com a màxim 2, $M\\cdot N$ ($3\\times3$) té rang $\\le 2 < 3$."},
+          {"apartat": "b", "titol": "Producte N·M", "cos": "$$N\\cdot M = \\begin{pmatrix} -1 & t & 2 \\\\ 1 & 0 & -1 \\end{pmatrix}\\begin{pmatrix} 1 & 2 \\\\ 0 & -1 \\\\ t & 2 \\end{pmatrix} = \\begin{pmatrix} -1 + 0 + 2t & -2 - t + 4 \\\\ 1 + 0 - t & 2 + 0 - 2 \\end{pmatrix} = \\begin{pmatrix} 2t-1 & 2-t \\\\ 1-t & 0 \\end{pmatrix}$$"},
+          {"apartat": "b", "titol": "Determinant i valors que l'anul·len", "cos": "$$|N\\cdot M| = (2t-1)\\cdot 0 - (2-t)(1-t) = -(1-t)(2-t)$$\n\nAquest producte s'anul·la quan $1-t=0$ o $2-t=0$, és a dir, a $t=1$ i $t=2$.\n\nConclusió: **$N\\cdot M$ és invertible per a tot $t \\neq 1$ i $t \\neq 2$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$M\\cdot N = \\begin{pmatrix} 1 & t & 0 \\\\ -1 & 0 & 1 \\\\ 2-t & t^2 & 2t-2 \\end{pmatrix}$, $|M\\cdot N| = 0$ per a tot $t$: no és invertible"},
+          {"apartat": "b", "valor": "$|N\\cdot M| = -(1-t)(2-t)$; invertible si $t \\neq 1$ i $t \\neq 2$"}
+        ],
+        "nota": "Coincideix amb la solució oficial. Error típic: pensar que $M\\cdot N = N\\cdot M$; el producte de matrius no és commutatiu i aquí ni tan sols tenen la mateixa mida."
+      }
+    },
+    {
+      "id": "mates-2018-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Recta per dos punts i punts de la recta equidistants de dos plans",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": ["equació paramètrica de la recta", "vector director", "distància d'un punt a un pla", "valor absolut"],
+      "dificultat": 2,
+      "pagines": [1],
+      "enunciat": "Sigui $r$ la recta que passa pels punts $A = (0, 1, 1)$ i $B = (1, 1, -1)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Trobeu l'equació paramètrica de la recta $r$.", "punts": 1},
+        {"id": "b", "enunciat": "Calculeu tots els punts de la recta $r$ que estan a la mateixa distància dels plans $\\pi_1: x + y = -2$ i $\\pi_2: x - z = 1$.\n\n*Nota:* Podeu calcular la distància d'un punt de coordenades $(x_0, y_0, z_0)$ al pla d'equació $Ax + By + Cz + D = 0$ amb l'expressió $\\dfrac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}}$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Punt i vector director", "cos": "Per escriure una recta necessitem un punt i un vector director. Prenem el punt $A = (0,1,1)$ i el vector que va de $A$ a $B$:\n\n$$\\vec{v} = \\overrightarrow{AB} = B - A = (1-0,\\ 1-1,\\ -1-1) = (1, 0, -2)$$"},
+          {"apartat": "a", "titol": "Equació paramètrica", "cos": "L'equació vectorial és $(x,y,z) = A + t\\,\\vec v = (0,1,1) + t(1,0,-2)$, i component a component:\n\n$$r:\\ \\begin{cases} x = t \\\\ y = 1 \\\\ z = 1 - 2t \\end{cases} \\qquad t \\in \\mathbb{R}$$\n\nEl punt genèric de la recta és **$P_t = (t,\\ 1,\\ 1-2t)$**."},
+          {"apartat": "b", "titol": "Plans en la forma Ax + By + Cz + D = 0", "cos": "Per aplicar la fórmula de la distància passem tot a un costat:\n\n- $\\pi_1: x + y + 2 = 0$, amb $\\sqrt{1^2+1^2+0^2} = \\sqrt2$.\n- $\\pi_2: x - z - 1 = 0$, amb $\\sqrt{1^2+0^2+(-1)^2} = \\sqrt2$."},
+          {"apartat": "b", "titol": "Igualtat de distàncies per al punt genèric", "cos": "Substituïm $P_t = (t, 1, 1-2t)$ a les dues fórmules:\n\n$$d(P_t,\\pi_1) = \\frac{|t + 1 + 2|}{\\sqrt2} = \\frac{|t+3|}{\\sqrt2}, \\qquad d(P_t,\\pi_2) = \\frac{|t - (1-2t) - 1|}{\\sqrt2} = \\frac{|3t-2|}{\\sqrt2}$$\n\nIgualant i com que els denominadors són iguals:\n\n$$|t+3| = |3t-2|$$"},
+          {"apartat": "b", "titol": "Resolució de l'equació amb valors absoluts", "cos": "Dos nombres tenen el mateix valor absolut si són iguals o oposats:\n\n- **Iguals:** $t + 3 = 3t - 2 \\Rightarrow 2t = 5 \\Rightarrow t = \\dfrac52$. Punt $P_1 = \\left(\\dfrac52,\\ 1,\\ 1 - 5\\right) = \\left(\\dfrac52, 1, -4\\right)$.\n- **Oposats:** $t + 3 = -(3t - 2) \\Rightarrow 4t = -1 \\Rightarrow t = -\\dfrac14$. Punt $P_2 = \\left(-\\dfrac14,\\ 1,\\ 1 + \\dfrac12\\right) = \\left(-\\dfrac14, 1, \\dfrac32\\right)$.\n\n**Comprovació** amb $P_1$: $d(P_1,\\pi_1) = \\frac{|5/2+1+2|}{\\sqrt2} = \\frac{11/2}{\\sqrt2}$ i $d(P_1,\\pi_2) = \\frac{|5/2+4-1|}{\\sqrt2} = \\frac{11/2}{\\sqrt2}$. ✓\n\nHi ha **dos punts**: $P_1 = \\left(\\frac52, 1, -4\\right)$ i $P_2 = \\left(-\\frac14, 1, \\frac32\\right)$."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$r: x = t,\\ y = 1,\\ z = 1-2t$"},
+          {"apartat": "b", "valor": "$P_1 = \\left(\\frac52, 1, -4\\right)$ i $P_2 = \\left(-\\frac14, 1, \\frac32\\right)$"}
+        ],
+        "nota": "Coincideix amb la solució oficial. Error típic: treure el valor absolut sense considerar el cas dels oposats i trobar només un punt."
+      }
+    },
+    {
+      "id": "mates-2018-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Tangent paral·lela a una recta, extrems i inflexió de f(x) = x³ − x²",
+      "tema": "derivades",
+      "temes_secundaris": [],
+      "conceptes": ["recta tangent", "pendent", "màxim relatiu", "mínim relatiu", "punt d'inflexió", "derivada segona"],
+      "dificultat": 2,
+      "pagines": [1],
+      "enunciat": "Sigui la funció $f(x) = x^3 - x^2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Trobeu l'equació de la recta tangent a la gràfica i que és paral·lela a la recta d'equació $x + 3y = 0$.", "punts": 1},
+        {"id": "b", "enunciat": "Calculeu, si n'hi ha, els punts de la gràfica en què la funció presenta un màxim o mínim relatiu o un punt d'inflexió.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Pendent de la recta donada", "cos": "Dues rectes són paral·leles si tenen el mateix pendent. Aïllem $y$ a $x + 3y = 0$:\n\n$$y = -\\frac13 x \\quad\\Rightarrow\\quad m = -\\frac13$$\n\nEl pendent de la tangent en un punt d'abscissa $a$ és $f'(a)$, així que busquem on $f'(a) = -\\frac13$."},
+          {"apartat": "a", "titol": "Punt de tangència", "cos": "$f'(x) = 3x^2 - 2x$. Imposem:\n\n$$3x^2 - 2x = -\\frac13 \\;\\Rightarrow\\; 9x^2 - 6x + 1 = 0 \\;\\Rightarrow\\; (3x-1)^2 = 0 \\;\\Rightarrow\\; x = \\frac13$$\n\n(solució doble: només hi ha un punt). L'ordenada és\n\n$$f\\left(\\tfrac13\\right) = \\frac1{27} - \\frac19 = \\frac{1-3}{27} = -\\frac{2}{27}$$"},
+          {"apartat": "a", "titol": "Equació de la recta tangent", "cos": "Fórmula punt-pendent $y - f(a) = f'(a)(x-a)$:\n\n$$y + \\frac2{27} = -\\frac13\\left(x - \\frac13\\right) \\;\\Rightarrow\\; y = -\\frac{x}{3} + \\frac19 - \\frac2{27} \\;\\Rightarrow\\; \\boxed{y = -\\frac{x}{3} + \\frac1{27}}$$\n\nMultiplicant per 27: **$9x + 27y = 1$**."},
+          {"apartat": "b", "titol": "Derivades primera i segona", "cos": "$$f'(x) = 3x^2 - 2x = x(3x-2), \\qquad f''(x) = 6x - 2$$"},
+          {"apartat": "b", "titol": "Punts crítics i classificació (extrems)", "cos": "Els candidats a extrem són els punts on $f'(x) = 0$: $x(3x-2) = 0 \\Rightarrow x = 0$ o $x = \\frac23$.\n\nEls classifiquem amb el signe de la derivada segona:\n\n- $f''(0) = -2 < 0$ → **màxim relatiu** a $(0, f(0)) = (0, 0)$.\n- $f''\\left(\\frac23\\right) = 4 - 2 = 2 > 0$ → **mínim relatiu**. $f\\left(\\frac23\\right) = \\frac8{27} - \\frac49 = \\frac{8-12}{27} = -\\frac4{27}$, punt $\\left(\\frac23, -\\frac4{27}\\right)$."},
+          {"apartat": "b", "titol": "Punt d'inflexió", "cos": "Els candidats són on $f''(x) = 0$: $6x - 2 = 0 \\Rightarrow x = \\frac13$.\n\n| $x$ | $\\left(-\\infty, \\frac13\\right)$ | $\\frac13$ | $\\left(\\frac13, +\\infty\\right)$ |\n|---|---|---|---|\n| $f''(x)$ | $-$ | $0$ | $+$ |\n| $f$ | còncava ($\\cap$) | inflexió | convexa ($\\cup$) |\n\nHi ha canvi de curvatura, per tant hi ha un **punt d'inflexió** a $\\left(\\frac13, f\\left(\\frac13\\right)\\right) = \\left(\\frac13, -\\frac2{27}\\right)$.\n\nObserva que és el mateix punt de l'apartat a): la tangent paral·lela a $x+3y=0$ és la tangent d'inflexió."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$y = -\\frac{x}{3} + \\frac1{27}$ (o $9x + 27y = 1$), tangent a $\\left(\\frac13, -\\frac2{27}\\right)$"},
+          {"apartat": "b", "valor": "Màxim relatiu $(0,0)$; mínim relatiu $\\left(\\frac23, -\\frac4{27}\\right)$; inflexió $\\left(\\frac13, -\\frac2{27}\\right)$"}
+        ],
+        "nota": "Coincideix amb la solució oficial. Els criteris remarquen que es demanen *punts de la gràfica*: cal donar abscissa i ordenada (donar només les abscisses es penalitza amb 0,25 punts)."
+      }
+    },
+    {
+      "id": "mates-2018-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Pla per dos punts paral·lel a una recta i pla paral·lel al determinat per tres punts",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": ["equació general del pla", "producte vectorial", "vector normal", "plans paral·lels", "vector director"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Considereu els punts $P = (3, -2, 1)$, $Q = (5, 0, 3)$, $R = (1, 2, 3)$ i la recta $r: \\begin{cases} x + y + 1 = 0 \\\\ 2y + 3z - 5 = 0 \\end{cases}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Determineu l'equació general (és a dir, que té la forma $Ax + By + Cz = D$) del pla que passa per $P$ i $Q$ i és paral·lel a la recta $r$.", "punts": 1},
+        {"id": "b", "enunciat": "Donats el pla $x + 2y + m \\cdot z = 7$ i el pla que passa per $P$, $Q$ i $R$, trobeu $m$ perquè siguin paral·lels i no coincidents.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Vector director de la recta r", "cos": "La recta ve donada com a intersecció de dos plans. El seu vector director és perpendicular als dos vectors normals, $(1,1,0)$ i $(0,2,3)$, així que el trobem amb el producte vectorial:\n\n$$\\vec v_r = (1,1,0)\\times(0,2,3) = \\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ 1 & 1 & 0 \\\\ 0 & 2 & 3 \\end{vmatrix} = (1\\cdot3 - 0\\cdot2,\\ -(1\\cdot 3 - 0\\cdot 0),\\ 1\\cdot 2 - 1\\cdot 0) = (3, -3, 2)$$"},
+          {"apartat": "a", "titol": "Vectors del pla i vector normal", "cos": "El pla conté el vector $\\overrightarrow{PQ} = Q - P = (2, 2, 2)$, o el proporcional $(1,1,1)$, i, com que és paral·lel a $r$, també conté la direcció $(3,-3,2)$. El vector normal és perpendicular a tots dos:\n\n$$\\vec n = (3,-3,2)\\times(1,1,1) = \\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ 3 & -3 & 2 \\\\ 1 & 1 & 1 \\end{vmatrix} = (-3-2,\\ -(3-2),\\ 3+3) = (-5, -1, 6)$$\n\nPodem fer servir el proporcional $\\vec n = (5, 1, -6)$."},
+          {"apartat": "a", "titol": "Equació general del pla", "cos": "Pla que passa per $P = (3,-2,1)$ amb normal $(5,1,-6)$:\n\n$$5(x-3) + 1\\,(y+2) - 6(z-1) = 0 \\;\\Rightarrow\\; 5x + y - 6z - 15 + 2 + 6 = 0 \\;\\Rightarrow\\; \\boxed{5x + y - 6z = 7}$$\n\nComprovació amb $Q$: $25 + 0 - 18 = 7$. ✓"},
+          {"apartat": "b", "titol": "Vector normal del pla PQR", "cos": "Dos vectors del pla: $\\overrightarrow{PQ} = (2,2,2) \\sim (1,1,1)$ i $\\overrightarrow{PR} = R - P = (-2, 4, 2) \\sim (-1, 2, 1)$.\n\n$$\\vec n' = (1,1,1)\\times(-1,2,1) = \\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ 1 & 1 & 1 \\\\ -1 & 2 & 1 \\end{vmatrix} = (1-2,\\ -(1+1),\\ 2+1) = (-1, -2, 3)$$\n\nL'equació del pla $PQR$ és $-x - 2y + 3z = D$ amb $D = -3 + 4 + 3 = 4$, és a dir, $-x - 2y + 3z = 4$, o bé $x + 2y - 3z = -4$."},
+          {"apartat": "b", "titol": "Condició de paral·lelisme", "cos": "Dos plans són paral·lels si els seus vectors normals són proporcionals. La normal del pla $x + 2y + mz = 7$ és $(1, 2, m)$:\n\n$$\\frac{1}{-1} = \\frac{2}{-2} = \\frac{m}{3} \\;\\Rightarrow\\; \\frac m3 = -1 \\;\\Rightarrow\\; \\boxed{m = -3}$$"},
+          {"apartat": "b", "titol": "Comprovació que no són coincidents", "cos": "Amb $m=-3$ el pla és $x + 2y - 3z = 7$, i el pla $PQR$ és $x + 2y - 3z = -4$. Els coeficients coincideixen però els termes independents no ($7 \\neq -4$), per tant són **paral·lels i diferents**.\n\nEquivalentment: el punt $P$ no hi pertany, perquè $3 + 2(-2) - 3\\cdot 1 = -4 \\neq 7$."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$5x + y - 6z = 7$"},
+          {"apartat": "b", "valor": "$m = -3$ (pla $x + 2y - 3z = 7$, paral·lel al pla $PQR$: $x + 2y - 3z = -4$)"}
+        ],
+        "nota": "Coincideix amb la solució oficial. L'oficial comprova la no coincidència substituint $P$; també es pot veure amb la no proporcionalitat dels termes independents, com fem aquí."
+      }
+    },
+    {
+      "id": "mates-2018-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Teorema de Bolzano, unicitat de l'arrel i àrea per a f(x) = √x + x − 2",
+      "tema": "derivades",
+      "temes_secundaris": ["integrals", "funcions"],
+      "conceptes": ["teorema de Bolzano", "continuïtat", "monotonia", "àrea sota una corba", "regla de Barrow"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Sigui la funció $f(x) = \\sqrt{x} + x - 2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Comproveu que la funció $f(x)$ compleix l'enunciat del teorema de Bolzano a l'interval $[0, 2]$ i que, per tant, l'equació $f(x) = 0$ té alguna solució a l'interval $(0, 2)$. Comproveu que $x = 1$ és una solució de l'equació $f(x) = 0$ i raoneu, tenint en compte el signe de $f'(x)$, que la solució és única.", "punts": 1},
+        {"id": "b", "enunciat": "A partir del resultat final de l'apartat anterior, trobeu l'àrea limitada per la gràfica de la funció $f(x)$, l'eix de les abscisses i les rectes $x = 0$ i $x = 1$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Hipòtesis del teorema de Bolzano", "cos": "El teorema de Bolzano diu: si $f$ és **contínua** a $[a,b]$ i $f(a)$ i $f(b)$ tenen **signes diferents**, aleshores existeix almenys un $c \\in (a,b)$ amb $f(c) = 0$.\n\n- **Continuïtat:** $\\sqrt x$ és contínua a $[0, +\\infty)$ i $x - 2$ és un polinomi; la suma és contínua a $[0,2]$.\n- **Signes als extrems:** $f(0) = 0 + 0 - 2 = -2 < 0$ i $f(2) = \\sqrt2 + 2 - 2 = \\sqrt2 > 0$.\n\nEs compleixen les hipòtesis, per tant **existeix almenys una solució de $f(x)=0$ a $(0,2)$**."},
+          {"apartat": "a", "titol": "x = 1 és solució", "cos": "$$f(1) = \\sqrt1 + 1 - 2 = 1 + 1 - 2 = 0 \\quad ✓$$"},
+          {"apartat": "a", "titol": "Unicitat a partir del signe de f′(x)", "cos": "$$f'(x) = \\frac{1}{2\\sqrt x} + 1$$\n\nPer a $x > 0$ els dos sumands són positius, així que $f'(x) > 0$: la funció és **estrictament creixent** en tot el seu domini. Una funció estrictament creixent només pot tallar l'eix $OX$ una vegada (si ho fes dues vegades, entre els dos talls hauria de baixar o quedar-se constant). Per tant **$x = 1$ és l'única solució**."},
+          {"apartat": "b", "titol": "Signe de f a l'interval [0, 1]", "cos": "Com que $f$ és creixent i $f(1) = 0$, a l'interval $[0,1)$ es compleix $f(x) < 0$ (la gràfica és per sota de l'eix). L'àrea és el valor absolut de la integral:\n\n$$A = \\left| \\int_0^1 \\left(\\sqrt x + x - 2\\right) dx \\right|$$"},
+          {"apartat": "b", "titol": "Primitiva i regla de Barrow", "cos": "Escrivim $\\sqrt x = x^{1/2}$ i integrem terme a terme:\n\n$$\\int \\left(x^{1/2} + x - 2\\right) dx = \\frac{x^{3/2}}{3/2} + \\frac{x^2}{2} - 2x = \\frac23 x^{3/2} + \\frac{x^2}{2} - 2x$$\n\n$$\\int_0^1 \\left(\\sqrt x + x - 2\\right) dx = \\left[\\frac23 x^{3/2} + \\frac{x^2}2 - 2x\\right]_0^1 = \\frac23 + \\frac12 - 2 - 0 = \\frac{4 + 3 - 12}{6} = -\\frac56$$\n\nLa integral és negativa (com esperàvem), i l'àrea és\n\n$$A = \\left|-\\frac56\\right| = \\mathbf{\\frac56\\ u^2} \\approx 0{,}833\\ \\text{u}^2$$"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$f$ contínua a $[0,2]$, $f(0) = -2 < 0$, $f(2) = \\sqrt2 > 0$; $f(1) = 0$; $f'(x) = \\frac{1}{2\\sqrt x} + 1 > 0$ ⇒ solució única $x = 1$"},
+          {"apartat": "b", "valor": "$A = \\frac56\\ \\text{u}^2$"}
+        ],
+        "nota": "Coincideix amb la solució oficial. Els criteris accepten plantejar la integral sense valor absolut i canviar el signe al final, però es penalitza donar una àrea negativa."
+      }
+    },
+    {
+      "id": "mates-2018-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Sistema 3×3 en un full de càlcul: comprovació de la solució i valor de a₃₃ que el fa incompatible",
+      "tema": "sistemes",
+      "temes_secundaris": ["matrius"],
+      "conceptes": ["teorema de Rouché-Fròbenius", "rang", "determinant", "sistema incompatible", "matriu ampliada"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Uns estudiants de batxillerat han programat un full de càlcul com el de la figura següent que dona la solució d'un sistema d'equacions compatible determinat d'una manera automàtica:",
+      "figures": [{"src": "img/mates/2018-J/e6.png", "peu": "Full de càlcul amb la matriu ampliada del sistema i la solució x = 1, y = −2, z = 3"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Escriviu el sistema i comproveu que els valors proposats com a solució són correctes.", "punts": 1},
+        {"id": "b", "enunciat": "Quin valor s'hauria de posar en lloc del 2 que està emmarcat en la imatge, corresponent a la cel·la E8 ($a_{33}$ de la matriu de coeficients), perquè el sistema fos incompatible?", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Lectura del sistema", "cos": "Les columnes C, D, E són els coeficients de $x$, $y$, $z$ i la columna F són els termes independents. El sistema és:\n\n$$\\begin{cases} x + 2y - z = -6 \\\\ x - y - 2z = -3 \\\\ 2x + y + 2z = 6 \\end{cases}$$"},
+          {"apartat": "a", "titol": "Comprovació de la solució x = 1, y = −2, z = 3", "cos": "Substituïm a cada equació:\n\n- $1 + 2(-2) - 3 = 1 - 4 - 3 = -6$ ✓\n- $1 - (-2) - 2\\cdot 3 = 1 + 2 - 6 = -3$ ✓\n- $2\\cdot 1 + (-2) + 2\\cdot 3 = 2 - 2 + 6 = 6$ ✓\n\nEs compleixen les tres equacions: **la solució és correcta**."},
+          {"apartat": "b", "titol": "Plantejament: canviem a₃₃ per un paràmetre t", "cos": "Posem $t$ en lloc del 2 de la cel·la E8. Pel teorema de Rouché-Fròbenius, el sistema és incompatible quan $\\text{rang}\\,A \\neq \\text{rang}\\,A'$. Com que $A$ és $3\\times3$, primer mirem quan el seu determinant s'anul·la:\n\n$$A = \\begin{pmatrix} 1 & 2 & -1 \\\\ 1 & -1 & -2 \\\\ 2 & 1 & t \\end{pmatrix}$$"},
+          {"apartat": "b", "titol": "Determinant de A (Sarrus)", "cos": "$$|A| = 1\\cdot(-1)\\cdot t + 2\\cdot(-2)\\cdot 2 + (-1)\\cdot 1\\cdot 1 - \\big[(-1)(-1)\\cdot 2 + (-2)\\cdot 1\\cdot 1 + t\\cdot 1\\cdot 2\\big]$$\n\n$$= -t - 8 - 1 - [2 - 2 + 2t] = -3t - 9$$\n\n$|A| = 0 \\iff -3t - 9 = 0 \\iff t = -3$.\n\n- Si $t \\neq -3$: $\\text{rang}\\,A = 3 = \\text{rang}\\,A' = $ nombre d'incògnites → **compatible determinat** (com el full original amb $t = 2$)."},
+          {"apartat": "b", "titol": "Cas t = −3: rangs de A i A′", "cos": "**Rang de $A$:** el menor $\\begin{vmatrix} 1 & 2 \\\\ 1 & -1 \\end{vmatrix} = -1 - 2 = -3 \\neq 0$, i $|A| = 0$, per tant $\\text{rang}\\,A = 2$.\n\n**Rang de $A'$:** $A' = \\begin{pmatrix} 1 & 2 & -1 & -6 \\\\ 1 & -1 & -2 & -3 \\\\ 2 & 1 & -3 & 6 \\end{pmatrix}$. Prenem el menor de les columnes 1, 2 i 4 (no depèn de $t$):\n\n$$\\begin{vmatrix} 1 & 2 & -6 \\\\ 1 & -1 & -3 \\\\ 2 & 1 & 6 \\end{vmatrix} = 1(-6+3) - 2(6+6) + (-6)(1+2) = -3 - 24 - 18 = -45 \\neq 0$$\n\nPer tant $\\text{rang}\\,A' = 3$.\n\nCom que $\\text{rang}\\,A = 2 \\neq 3 = \\text{rang}\\,A'$, el sistema és **incompatible**. Cal posar **$-3$** en lloc del 2."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$x + 2y - z = -6$, $x - y - 2z = -3$, $2x + y + 2z = 6$; $(1, -2, 3)$ és solució"},
+          {"apartat": "b", "valor": "$a_{33} = -3$ (rang $A = 2$, rang $A' = 3$: incompatible)"}
+        ],
+        "nota": "Coincideix amb la solució oficial. Observació: el menor de $A'$ format per les columnes de $x$, $y$ i els termes independents no conté $t$, i per això podem assegurar que per a $t=-3$ el rang de $A'$ és 3."
+      }
+    }
+  ]
+}

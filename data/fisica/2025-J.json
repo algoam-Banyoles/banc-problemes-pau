@@ -1,0 +1,548 @@
+{
+  "examen": {
+    "id": "fisica-2025-J",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2025,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/fisica/2025-J-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2025-J-solucio.pdf",
+    "estructura": "4 exercicis obligatoris de 2,5 punts (dos apartats d'1,25 punts cadascun). Als exercicis 2 (camps electromagnètics) i 3 (vibracions i ones) cal triar UNA de les dues opcions (A o B). Els exercicis 1 (camps gravitatoris) i 4 (física moderna) no tenen optativitat."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2025-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Caixa d'eines en òrbita i caiguda final de l'Estació Espacial Internacional",
+      "tema": "gravitacio",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "velocitat orbital",
+        "període orbital",
+        "energia mecànica orbital",
+        "energia potencial gravitatòria",
+        "conservació de l'energia"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "**Camps gravitatoris.** La brossa espacial deixada per satèl·lits antics i els seus coets llançadors s'està convertint en un perill per a altres satèl·lits. El novembre de 2023, durant unes tasques de reparació, dos astronautes es van deixar una caixa d'eines a l'exterior de l'*Estació Espacial Internacional* (EEI).\n\nDades: $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$. Massa de la Terra: $M_\\text{T} = 5{,}98 \\times 10^{24}\\ \\text{kg}$. Radi de la Terra: $R_\\text{T} = 6{,}37 \\times 10^{6}\\ \\text{m}$. Massa de l'EEI: $M_\\text{EEI} = 430 \\times 10^{3}\\ \\text{kg}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "punts": 1.25,
+          "enunciat": "A partir de la llei de gravitació universal, deduïu l'expressió de la velocitat orbital en funció del radi orbital. Calculeu la velocitat de la caixa d'eines en òrbita a $400\\ \\text{km}$ per sobre de la superfície terrestre i el nombre de voltes que farà la caixa cada dia al voltant de la Terra."
+        },
+        {
+          "id": "b",
+          "punts": 1.25,
+          "enunciat": "La fi de l'EEI està planificada per a l'any 2031. D'una manera gradual i controlada se'n baixarà l'òrbita fins als $280\\ \\text{km}$ d'altura per sobre de la superfície terrestre. Calculeu l'energia mecànica de l'EEI en aquesta òrbita i justifiqueu-ne el signe. L'última tripulació abandonarà l'estació i, posteriorment, l'estació caurà des d'aquesta altura al mig de l'oceà Pacífic. Calculeu amb quina energia cinètica impactarà l'estació contra l'aigua, sense tenir en compte els efectes de l'atmosfera terrestre."
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$\n- $M_\\text{T} = 5{,}98 \\times 10^{24}\\ \\text{kg}$, $R_\\text{T} = 6{,}37 \\times 10^{6}\\ \\text{m}$\n- $M_\\text{EEI} = 4{,}30 \\times 10^{5}\\ \\text{kg}$\n- Altura de la caixa: $h_1 = 400\\ \\text{km} = 4{,}00 \\times 10^{5}\\ \\text{m}$\n- Altura final de l'EEI: $h_2 = 280\\ \\text{km} = 2{,}80 \\times 10^{5}\\ \\text{m}$\n- Incògnites: $v(r)$, $v_\\text{caixa}$, voltes per dia; $E_\\text{m}$ a $280\\ \\text{km}$; $E_\\text{c}$ en arribar a la superfície."
+          },
+          {
+            "apartat": "a",
+            "titol": "La gravetat fa de força centrípeta",
+            "cos": "L'única força que actua sobre la caixa (massa $m$) és l'atracció gravitatòria de la Terra, que segons la llei de gravitació universal val:\n\n$$F = G\\,\\frac{M_\\text{T}\\, m}{r^2}$$\n\nSi l'òrbita és circular i uniforme, l'acceleració de la caixa és l'acceleració centrípeta $a = v^2/r$. Per la segona llei de Newton ($F = m\\,a$), **la força gravitatòria fa de força centrípeta**:\n\n$$G\\,\\frac{M_\\text{T}\\, m}{r^2} = m\\,\\frac{v^2}{r} \\quad\\Rightarrow\\quad \\boxed{v = \\sqrt{\\frac{G\\,M_\\text{T}}{r}}}$$\n\nFixa't que la massa de la caixa se simplifica: la velocitat orbital només depèn del radi de l'òrbita (com més lluny, més lenta)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat de la caixa a 400 km d'altura",
+            "cos": "El radi orbital es compta des del **centre** de la Terra:\n\n$$r_1 = R_\\text{T} + h_1 = 6{,}37 \\times 10^{6} + 4{,}00 \\times 10^{5} = 6{,}77 \\times 10^{6}\\ \\text{m}$$\n\n$$v = \\sqrt{\\frac{6{,}67 \\times 10^{-11} \\cdot 5{,}98 \\times 10^{24}}{6{,}77 \\times 10^{6}}} = 7{,}68 \\times 10^{3}\\ \\text{m/s}$$\n\nResultat: **$v_\\text{caixa} = 7{,}68 \\times 10^{3}\\ \\text{m/s}$** (uns $27\\,600\\ \\text{km/h}$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Període i nombre de voltes en un dia",
+            "cos": "El període és el temps d'una volta: longitud de la circumferència dividida per la velocitat.\n\n$$T = \\frac{2\\pi r_1}{v} = \\frac{2\\pi \\cdot 6{,}77 \\times 10^{6}}{7{,}68 \\times 10^{3}} = 5{,}54 \\times 10^{3}\\ \\text{s} \\ (\\approx 92\\ \\text{min})$$\n\nUn dia té $t_\\text{dia} = 24\\ \\text{h} \\cdot 3600\\ \\text{s/h} = 8{,}64 \\times 10^{4}\\ \\text{s}$. El nombre de voltes és:\n\n$$n = \\frac{t_\\text{dia}}{T} = \\frac{8{,}64 \\times 10^{4}}{5{,}54 \\times 10^{3}} = 15{,}6\\ \\text{voltes}$$\n\nResultat: **la caixa fa unes $15{,}6$ voltes cada dia**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia mecànica d'una òrbita circular",
+            "cos": "L'energia mecànica és la suma de la cinètica i la potencial gravitatòria. Per a una òrbita circular, substituïm $v^2 = G M_\\text{T}/r$ (de l'apartat a):\n\n$$E_\\text{m} = \\frac{1}{2} M_\\text{EEI}\\, v^2 - G\\,\\frac{M_\\text{EEI} M_\\text{T}}{r} = \\frac{1}{2} G\\,\\frac{M_\\text{EEI} M_\\text{T}}{r} - G\\,\\frac{M_\\text{EEI} M_\\text{T}}{r} = -G\\,\\frac{M_\\text{EEI} M_\\text{T}}{2r}$$\n\nRadi de l'òrbita final: $r_2 = 6{,}37 \\times 10^{6} + 2{,}80 \\times 10^{5} = 6{,}65 \\times 10^{6}\\ \\text{m}$.\n\n$$E_\\text{m} = -6{,}67 \\times 10^{-11}\\,\\frac{4{,}30 \\times 10^{5} \\cdot 5{,}98 \\times 10^{24}}{2 \\cdot 6{,}65 \\times 10^{6}} = -1{,}29 \\times 10^{13}\\ \\text{J}$$\n\nResultat: **$E_\\text{m} = -1{,}29 \\times 10^{13}\\ \\text{J}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Per què l'energia mecànica és negativa",
+            "cos": "Prenem l'origen d'energia potencial a l'infinit ($E_\\text{p} \\to 0$ quan $r \\to \\infty$), de manera que $E_\\text{p}$ sempre és negativa. El signe **negatiu** de l'energia mecànica indica que l'EEI està **lligada** a la Terra: descriu una òrbita tancada i no té prou energia per escapar-se'n (per escapar caldria $E_\\text{m} \\geq 0$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica en arribar a l'aigua (conservació de l'energia)",
+            "cos": "Si no tenim en compte l'atmosfera, l'única força és la gravitatòria, que és conservativa: **l'energia mecànica es conserva** durant la caiguda.\n\n$$E_\\text{m,ini} = E_\\text{m,fi} = E_\\text{c,fi} + E_\\text{p,fi} \\quad\\Rightarrow\\quad E_\\text{c,fi} = E_\\text{m,ini} - E_\\text{p,fi}$$\n\nL'energia potencial a la superfície ($r = R_\\text{T}$):\n\n$$E_\\text{p,fi} = -G\\,\\frac{M_\\text{EEI} M_\\text{T}}{R_\\text{T}} = -6{,}67 \\times 10^{-11}\\,\\frac{4{,}30 \\times 10^{5} \\cdot 5{,}98 \\times 10^{24}}{6{,}37 \\times 10^{6}} = -2{,}69 \\times 10^{13}\\ \\text{J}$$\n\n$$E_\\text{c,fi} = -1{,}290 \\times 10^{13} - (-2{,}693 \\times 10^{13}) = 1{,}40 \\times 10^{13}\\ \\text{J}$$\n\nResultat: **$E_\\text{c,fi} = 1{,}40 \\times 10^{13}\\ \\text{J}$**.\n\nAtenció: no es pot fer servir $E_\\text{p} = m g h$, perquè $280\\ \\text{km}$ no és una altura petita comparada amb el radi terrestre i $g$ no és constant."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v = \\sqrt{G M_\\text{T}/r}$; $v_\\text{caixa} = 7{,}68 \\times 10^{3}\\ \\text{m/s}$; $T = 5{,}54 \\times 10^{3}\\ \\text{s}$; $15{,}6$ voltes/dia"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_\\text{m} = -1{,}29 \\times 10^{13}\\ \\text{J}$ (negativa: òrbita lligada); $E_\\text{c}$ a l'impacte $= 1{,}40 \\times 10^{13}\\ \\text{J}$"
+          }
+        ],
+        "nota": "Error típic: oblidar sumar el radi de la Terra a l'altura per obtenir el radi orbital. Un altre: calcular l'energia cinètica final amb $mgh$ en lloc de fer servir l'energia potencial gravitatòria $-GMm/r$."
+      }
+    },
+    {
+      "id": "fisica-2025-J-e2-a",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Experiment de Millikan: camp entre plaques i càrrega d'una gota d'oli",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "quantica"
+      ],
+      "conceptes": [
+        "experiment de millikan",
+        "camp elèctric uniforme",
+        "condensador pla",
+        "equilibri de forces",
+        "quantització de la càrrega"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "**Camps electromagnètics.** L'experiment de Millikan va permetre determinar la càrrega de l'electró. El muntatge d'aquest experiment consta de dues plaques metàl·liques horitzontals, una sobre de l'altra, separades verticalment per una distància $d$ i connectades a una font de potencial elèctric regulable. En l'espai que hi ha entre les plaques s'introdueixen algunes gotetes d'oli carregades negativament. L'experiment consisteix a crear un camp elèctric entre les plaques i aconseguir una posició d'equilibri de les gotetes d'oli contrarestant el seu pes.\n\nDades: $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$. $m_\\text{e} = 9{,}11 \\times 10^{-31}\\ \\text{kg}$. $g = 9{,}8\\ \\text{m s}^{-2}$. Volum d'una esfera: $\\frac{4}{3}\\pi r^3$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "punts": 1.25,
+          "enunciat": "Feu un esquema del dispositiu emprat per Millikan, dibuixant les forces que actuen sobre una gota d'oli esfèrica. Indiqueu i raoneu el signe de la càrrega que tindrà cada placa i la direcció i el sentit del camp elèctric generat per aquestes plaques. Suposant que les plaques es connecten a un potencial elèctric de $2{,}00\\ \\text{kV}$ i que la distància entre plaques és $d = 2{,}00\\ \\text{cm}$, calculeu el camp elèctric creat entre plaques i dibuixeu-lo en el mateix esquema."
+        },
+        {
+          "id": "b",
+          "punts": 1.25,
+          "enunciat": "Tenint en compte que la densitat de l'oli és de $923\\ \\text{kg m}^{-3}$ i que el radi d'una gota és d'$1{,}08\\ \\mu\\text{m}$, calculeu la càrrega d'una gota que es troba en equilibri. Quants electrons calen per a generar aquesta càrrega? Què s'observaria si il·luminéssim la gota amb raigs ultraviolats i aquesta perdés un electró? Justifiqueu la resposta."
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Diferència de potencial: $V = 2{,}00\\ \\text{kV} = 2{,}00 \\times 10^{3}\\ \\text{V}$\n- Separació de les plaques: $d = 2{,}00\\ \\text{cm} = 2{,}00 \\times 10^{-2}\\ \\text{m}$\n- Densitat de l'oli: $\\rho = 923\\ \\text{kg/m}^3$; radi de la gota: $r = 1{,}08\\ \\mu\\text{m} = 1{,}08 \\times 10^{-6}\\ \\text{m}$\n- $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$, $g = 9{,}8\\ \\text{m/s}^2$\n- Incògnites: $E$ entre plaques, càrrega $q$ de la gota, nombre d'electrons $n$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Esquema i signe de les plaques",
+            "cos": "Les dues plaques formen un **condensador pla**. Sobre la gota actuen dues forces verticals: el **pes** $\\vec P$, cap avall, i la **força elèctrica** $\\vec F_\\text{e}$, que per equilibrar-lo ha d'anar **cap amunt**.\n\nCom que la gota és **negativa**, la força elèctrica té sentit **contrari** al camp ($\\vec F_\\text{e} = q\\,\\vec E$ amb $q<0$). Perquè $\\vec F_\\text{e}$ apunti cap amunt, el camp ha d'apuntar **cap avall**. El camp va de la placa positiva a la negativa, per tant:\n\n- **placa superior: positiva (+)**\n- **placa inferior: negativa (−)**\n- camp elèctric **vertical i cap avall**, uniforme: línies de camp verticals, paral·leles i equiespaiades.\n\n![Esquema del muntatge de Millikan (criteris oficials)](img/fisica/2025-J/e2-a-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Mòdul del camp elèctric entre les plaques",
+            "cos": "En un camp **uniforme** la diferència de potencial i el camp es relacionen per $V = E\\,d$:\n\n$$E = \\frac{V}{d} = \\frac{2{,}00 \\times 10^{3}\\ \\text{V}}{2{,}00 \\times 10^{-2}\\ \\text{m}} = 1{,}00 \\times 10^{5}\\ \\text{V/m}$$\n\nResultat: **$E = 1{,}00 \\times 10^{5}\\ \\text{V/m}$ (o N/C), vertical i cap avall**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa i pes de la gota",
+            "cos": "La massa s'obté de la densitat i el volum de l'esfera:\n\n$$m = \\rho\\,\\frac{4}{3}\\pi r^3 = 923 \\cdot \\frac{4}{3}\\pi\\,(1{,}08 \\times 10^{-6})^3 = 4{,}87 \\times 10^{-15}\\ \\text{kg}$$\n\n$$P = m\\,g = 4{,}87 \\times 10^{-15} \\cdot 9{,}8 = 4{,}77 \\times 10^{-14}\\ \\text{N}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Càrrega de la gota en equilibri",
+            "cos": "En equilibri, la força elèctrica compensa exactament el pes:\n\n$$|q|\\,E = m\\,g \\quad\\Rightarrow\\quad |q| = \\frac{m\\,g}{E} = \\frac{4{,}87 \\times 10^{-15} \\cdot 9{,}8}{1{,}00 \\times 10^{5}} = 4{,}77 \\times 10^{-19}\\ \\text{C}$$\n\nResultat: **$q = -4{,}77 \\times 10^{-19}\\ \\text{C}$** (la gota és negativa)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Nombre d'electrons",
+            "cos": "La càrrega està **quantitzada**: sempre és un múltiple enter de la càrrega elemental.\n\n$$n = \\frac{|q|}{|e|} = \\frac{4{,}77 \\times 10^{-19}}{1{,}602 \\times 10^{-19}} = 2{,}98 \\approx 3$$\n\nResultat: **calen 3 electrons en excés**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Què passa si la gota perd un electró",
+            "cos": "La llum ultraviolada pot arrencar un electró de la gota (efecte fotoelèctric). Llavors la gota passa a tenir només 2 electrons en excés, la seva càrrega disminueix en valor absolut i també la força elèctrica, mentre que el pes no canvia:\n\n$$F_\\text{e} = 2\\,|e|\\,E = 2 \\cdot 1{,}602 \\times 10^{-19} \\cdot 1{,}00 \\times 10^{5} = 3{,}20 \\times 10^{-14}\\ \\text{N} < P = 4{,}77 \\times 10^{-14}\\ \\text{N}$$\n\nAra la força resultant apunta cap avall: **l'equilibri es trenca i la gota cau** (accelera cap a la placa inferior). Per tornar-la a equilibrar caldria augmentar el voltatge."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Placa superior +, inferior −; $\\vec E$ vertical cap avall; $E = 1{,}00 \\times 10^{5}\\ \\text{V/m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m = 4{,}87 \\times 10^{-15}\\ \\text{kg}$; $q = -4{,}77 \\times 10^{-19}\\ \\text{C}$; $n = 3$ electrons; si perd un electró, $F_\\text{e} < P$ i la gota cau"
+          }
+        ],
+        "nota": "La massa de l'electró que dona l'enunciat no cal per res: la massa dels electrons és negligible davant de la de la gota. Els criteris oficials parlen de les forces 'sobre l'electró', però es refereixen a la gota."
+      }
+    },
+    {
+      "id": "fisica-2025-J-e2-b",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Barra lliscant sobre un circuit en U dins d'un camp magnètic",
+      "tema": "induccio",
+      "temes_secundaris": [
+        "camp-magnetic"
+      ],
+      "conceptes": [
+        "flux magnètic",
+        "llei de faraday",
+        "llei de lenz",
+        "força electromotriu induïda",
+        "força magnètica sobre un conductor"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Formem un circuit amb un cable metàl·lic en forma de U i tanquem la part superior amb una barra metàl·lica que pot lliscar lliurement, tal com mostra la figura. L'amplària de la U és de $0{,}25\\ \\text{m}$, i inicialment l'alçària del circuit és de $0{,}30\\ \\text{m}$. A continuació, desplacem la barra cap avall a una velocitat constant de $5{,}00\\ \\text{m s}^{-1}$. Aquest circuit es troba situat en una regió de l'espai on hi ha un camp magnètic de mòdul $B = 2{,}00\\ \\text{T}$, perpendicular al pla que forma el circuit i amb sentit cap enfora del paper.",
+      "figures": [
+        {
+          "src": "img/fisica/2025-J/e2-b.png",
+          "peu": "Circuit en U amb la barra lliscant cap avall dins del camp magnètic B, sortint del paper"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "punts": 1.25,
+          "enunciat": "Calculeu l'expressió del flux magnètic del circuit en funció del temps i la força electromotriu induïda al circuit. Indiqueu el sentit de circulació del corrent induït i justifiqueu la resposta."
+        },
+        {
+          "id": "b",
+          "punts": 1.25,
+          "enunciat": "Suposem que la barra presenta una resistència de $50{,}0\\ \\Omega$ i la resta del circuit no presenta cap resistència. Calculeu la intensitat elèctrica que circularà pel circuit. Calculeu la força magnètica que actua sobre la barra i representeu-la en la figura."
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Amplària de la U (longitud de la barra): $l = 0{,}25\\ \\text{m}$\n- Alçària inicial: $h_0 = 0{,}30\\ \\text{m}$\n- Velocitat de la barra: $v = 5{,}00\\ \\text{m/s}$, cap avall (el circuit s'escurça)\n- $B = 2{,}00\\ \\text{T}$, perpendicular al pla, cap enfora\n- Resistència de la barra: $R = 50{,}0\\ \\Omega$\n- Incògnites: $\\Phi(t)$, $\\varepsilon$, sentit del corrent, $I$, $\\vec F$ sobre la barra."
+          },
+          {
+            "apartat": "a",
+            "titol": "Flux magnètic en funció del temps",
+            "cos": "El flux és el producte escalar $\\Phi = \\vec B \\cdot \\vec S = B\\,S\\cos\\alpha$. Com que $\\vec B$ és perpendicular al pla del circuit, és paral·lel al vector superfície ($\\alpha = 0$) i $\\Phi = B\\,S$.\n\nCom que la barra baixa, l'alçària del circuit disminueix: $h(t) = 0{,}30 - 5{,}00\\,t$ (en metres). L'àrea és:\n\n$$S(t) = l\\,h(t) = 0{,}25\\,(0{,}30 - 5{,}00\\,t)\\ \\text{m}^2$$\n\n$$\\Phi(t) = B\\,S(t) = 2{,}00 \\cdot 0{,}25\\,(0{,}30 - 5{,}00\\,t) = (0{,}15 - 2{,}5\\,t)\\ \\text{Wb}$$\n\nvàlida mentre la barra no arriba al fons, és a dir, per a $0 \\le t \\le 0{,}06\\ \\text{s}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Força electromotriu induïda (llei de Faraday)",
+            "cos": "Segons la llei de Faraday, la fem induïda és la variació del flux amb el temps, canviada de signe:\n\n$$\\varepsilon = -\\frac{d\\Phi}{dt} = -\\frac{d}{dt}(0{,}15 - 2{,}5\\,t) = 2{,}5\\ \\text{V}$$\n\n(Equivalentment, $\\varepsilon = B\\,l\\,v = 2{,}00 \\cdot 0{,}25 \\cdot 5{,}00 = 2{,}5\\ \\text{V}$.)\n\nResultat: **$\\varepsilon = 2{,}5\\ \\text{V}$**, constant."
+          },
+          {
+            "apartat": "a",
+            "titol": "Sentit del corrent induït (llei de Lenz)",
+            "cos": "Segons la llei de Lenz, el corrent induït s'oposa a la **variació** de flux que el produeix. Aquí el flux (cap enfora) **disminueix**, perquè l'àrea es fa petita. Per compensar-ho, el corrent induït ha de crear un camp magnètic **cap enfora** dins del circuit, en el mateix sentit que $\\vec B$.\n\nAmb la regla de la mà dreta, un corrent que crea un camp cap enfora dins de l'espira circula en **sentit antihorari**: per la barra va de dreta a esquerra.\n\n![Sentit del corrent induït (criteris oficials)](img/fisica/2025-J/e2-b-sol.png)\n\nResultat: **corrent induït en sentit antihorari**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat del corrent (llei d'Ohm)",
+            "cos": "Tota la resistència del circuit és a la barra:\n\n$$I = \\frac{\\varepsilon}{R} = \\frac{2{,}5\\ \\text{V}}{50{,}0\\ \\Omega} = 0{,}050\\ \\text{A}$$\n\nResultat: **$I = 0{,}050\\ \\text{A} = 50\\ \\text{mA}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força magnètica sobre la barra",
+            "cos": "Sobre un conductor rectilini amb corrent dins d'un camp magnètic actua la força $\\vec F = I\\,\\vec l \\times \\vec B$. Com que la barra i el camp són perpendiculars, $\\sin 90^\\circ = 1$:\n\n$$F = I\\,l\\,B = 0{,}050 \\cdot 0{,}25 \\cdot 2{,}00 = 0{,}025\\ \\text{N}$$\n\n**Direcció i sentit:** $\\vec l$ apunta cap a l'esquerra (sentit del corrent a la barra) i $\\vec B$ cap enfora; el producte vectorial $(-\\hat\\imath) \\times \\hat k = +\\hat\\jmath$ dona una força **vertical cap amunt**, en el pla del paper.\n\nTambé es dedueix de la llei de Lenz: la força sobre la barra s'ha d'**oposar al moviment** que causa la inducció; com que la barra baixa, la força apunta cap amunt.\n\n![Força magnètica sobre la barra (criteris oficials)](img/fisica/2025-J/e2-b-sol-2.png)\n\nResultat: **$F = 0{,}025\\ \\text{N}$, vertical cap amunt**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\Phi(t) = (0{,}15 - 2{,}5\\,t)\\ \\text{Wb}$; $\\varepsilon = 2{,}5\\ \\text{V}$; corrent en sentit antihorari"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I = 0{,}050\\ \\text{A} = 50\\ \\text{mA}$; $F = 0{,}025\\ \\text{N}$, vertical cap amunt (oposada al moviment)"
+          }
+        ],
+        "nota": "Com que la barra es mou a velocitat constant, cal que una força externa (cap avall) compensi la força magnètica de 0,025 N: el treball d'aquesta força és el que es transforma en calor a la resistència."
+      }
+    },
+    {
+      "id": "fisica-2025-J-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Moneda dins d'un bloc de policarbonat: angle límit i reflexió total",
+      "tema": "optica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "llei de snell",
+        "angle límit",
+        "reflexió total",
+        "índex de refracció"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "**Vibracions i ones.** En una exposició d'art hi ha una obra que consisteix en una moneda situada a l'interior d'un bloc massís de policarbonat transparent, just al centre de la cara posterior, tal com indica la figura. El bloc té forma d'ortoedre (de capsa de sabates) i un índex de refracció d'$1{,}58$. Una persona està observant l'obra des del punt mitjà de la cara oposada i arriba una segona persona i se situa a la dreta de la primera. Sorprenentment, no veu la moneda de l'interior del bloc.\n\nDada: Índex de refracció de l'aire $= 1$.",
+      "figures": [
+        {
+          "src": "img/fisica/2025-J/e3-a.png",
+          "peu": "Bloc de policarbonat de 4 m × 2 m amb la moneda al centre de la cara posterior i les dues persones separades una distància d"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "punts": 1.25,
+          "enunciat": "A partir de la llei de Snell, deduïu l'expressió de l'angle límit (o angle crític) en funció dels índexs de refracció dels dos medis. Calculeu l'angle límit amb les dades del problema. Justifiqueu si es podria donar aquest fenomen en el cas que s'invertissin els medis."
+        },
+        {
+          "id": "b",
+          "punts": 1.25,
+          "enunciat": "A quina distància màxima, $d$, s'hauria de col·locar la segona persona respecte de la primera per veure la moneda? Considereu un raig de llum que surt de la moneda i arriba a la interfície de policarbonat-aire amb aquest angle límit i dibuixeu un esquema dels raigs incident, reflectit i refractat per a aquest cas."
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Índex del policarbonat: $n_\\text{bloc} = 1{,}58$; índex de l'aire: $n_\\text{aire} = 1$\n- Gruix del bloc (de la moneda a la cara on són les persones): $2\\ \\text{m}$; amplada total $4\\ \\text{m}$ (2 m a cada costat de la moneda)\n- Incògnites: $\\theta_\\text{límit}$ i distància màxima $d$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Expressió de l'angle límit",
+            "cos": "Quan la llum passa d'un medi a un altre, es compleix la llei de Snell:\n\n$$n_\\text{bloc}\\sin\\theta_\\text{i} = n_\\text{aire}\\sin\\theta_\\text{r}$$\n\nSi la llum passa a un medi **menys refringent** ($n_\\text{aire} < n_\\text{bloc}$), el raig refractat s'allunya de la normal ($\\theta_\\text{r} > \\theta_\\text{i}$). L'**angle límit** és l'angle d'incidència per al qual el raig refractat surt rasant, $\\theta_\\text{r} = 90^\\circ$:\n\n$$n_\\text{bloc}\\sin\\theta_\\text{límit} = n_\\text{aire}\\sin 90^\\circ \\quad\\Rightarrow\\quad \\boxed{\\theta_\\text{límit} = \\arcsin\\left(\\frac{n_\\text{aire}}{n_\\text{bloc}}\\right)}$$\n\nPer a angles d'incidència més grans que $\\theta_\\text{límit}$ no hi ha raig refractat: tota la llum es reflecteix (**reflexió total**)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Valor numèric de l'angle límit",
+            "cos": "$$\\theta_\\text{límit} = \\arcsin\\left(\\frac{1}{1{,}58}\\right) = 39{,}3^\\circ$$\n\nResultat: **$\\theta_\\text{límit} = 39{,}3^\\circ$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "I si s'invertissin els medis?",
+            "cos": "**No.** Si la llum passés de l'aire ($n = 1$) al policarbonat ($n = 1{,}58$), aniria cap a un medi **més** refringent i el raig refractat s'acostaria a la normal: $\\theta_\\text{r} < \\theta_\\text{i}$. Mai no arribaria a $90^\\circ$. Matemàticament caldria\n\n$$\\sin\\theta_\\text{límit} = \\frac{1{,}58}{1} > 1,$$\n\nque no té solució. La reflexió total només és possible quan la llum va d'un medi de més índex a un de menys índex."
+          },
+          {
+            "apartat": "b",
+            "titol": "Geometria: relació entre d i l'angle d'incidència",
+            "cos": "La segona persona veu la moneda si li arriba un raig que surt de la moneda i **es refracta** a la cara davantera. El raig recorre el gruix de $2\\ \\text{m}$ del bloc i es desplaça horitzontalment una distància $d$. La normal a la cara davantera és vertical (paral·lela a la línia moneda–primera persona), de manera que l'angle d'incidència compleix:\n\n$$\\tan\\theta_\\text{i} = \\frac{d}{2\\ \\text{m}}$$\n\nCom més a la dreta, més gran és $\\theta_\\text{i}$. Quan $\\theta_\\text{i} > \\theta_\\text{límit}$ hi ha reflexió total i la llum no surt del bloc: per això la segona persona, massa lluny, no veu la moneda."
+          },
+          {
+            "apartat": "b",
+            "titol": "Distància màxima",
+            "cos": "La distància màxima correspon a l'angle límit:\n\n$$d_\\text{màx} = 2 \\cdot \\tan\\theta_\\text{límit} = 2 \\cdot \\tan 39{,}3^\\circ = 1{,}64\\ \\text{m}$$\n\nResultat: **$d_\\text{màx} = 1{,}64\\ \\text{m}$**. Com que és menor que els $2\\ \\text{m}$ fins a la vora del bloc, el punt de sortida és sobre la cara davantera."
+          },
+          {
+            "apartat": "b",
+            "titol": "Esquema dels raigs",
+            "cos": "Per a un raig que incideix exactament amb l'angle límit:\n\n- **raig incident:** de la moneda a la cara davantera, formant $39{,}3^\\circ$ amb la normal;\n- **raig reflectit:** torna cap a l'interior del bloc, amb el mateix angle de $39{,}3^\\circ$ (llei de la reflexió);\n- **raig refractat:** surt rasant a la superfície, a $90^\\circ$ de la normal (també és correcte dir que, al límit, pràcticament no hi ha raig refractat).\n\n![Esquema dels raigs a l'angle límit (criteris oficials)](img/fisica/2025-J/e3-a-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\theta_\\text{límit} = \\arcsin(n_\\text{aire}/n_\\text{bloc}) = 39{,}3^\\circ$; amb els medis invertits no hi ha angle límit ni reflexió total"
+          },
+          {
+            "apartat": "b",
+            "valor": "$d_\\text{màx} = 2 \\tan 39{,}3^\\circ = 1{,}64\\ \\text{m}$"
+          }
+        ],
+        "nota": "Els criteris oficials donen $d_\\text{màx} = 1{,}635\\ \\text{m}$; arrodonit a tres xifres significatives és 1,64 m, el mateix valor que surt al seu esquema."
+      }
+    },
+    {
+      "id": "fisica-2025-J-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Harmònics d'una flauta travessera: tub obert i tub tancat per un extrem",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ones estacionàries",
+        "tub obert",
+        "tub tancat",
+        "harmònics",
+        "nodes i ventres"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Una flauta travessera és un tub metàl·lic obert pels dos extrems que té una longitud de $67{,}0\\ \\text{cm}$. El seu so abraça un interval extens de freqüències i és un instrument molt comú en orquestres.\n\nDada: Velocitat del so en l'aire $= 343\\ \\text{m s}^{-1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "punts": 1.25,
+          "enunciat": "Per a tocar la nota més greu, el flautista ha de tapar amb els dits tots els forats laterals del tub. Calculeu les freqüències del primer i el tercer harmònics d'una flauta travessera en aquest cas. Dibuixeu aquests dos harmònics i calculeu per a cada un la posició dels nodes i els ventres respecte d'un extrem de la flauta."
+        },
+        {
+          "id": "b",
+          "punts": 1.25,
+          "enunciat": "Tapem un dels extrems de la flauta de manera que aquesta es comporta com un tub amb un extrem obert i un de tancat. Dibuixeu l'ona estacionària corresponent al primer i el segon modes de vibració possibles i indiqueu els seus nodes i ventres. Calculeu la longitud d'ona i la freqüència d'aquests dos modes de vibració."
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud del tub: $L = 67{,}0\\ \\text{cm} = 0{,}670\\ \\text{m}$\n- Velocitat del so: $v = 343\\ \\text{m/s}$\n- Incògnites: $f_1$, $f_3$ i posicions de nodes i ventres (tub obert); $\\lambda$ i $f$ dels dos primers modes (tub tancat per un extrem)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Condició de ressonància en un tub obert pels dos extrems",
+            "cos": "En un extrem **obert** l'aire pot vibrar lliurement: hi ha un **ventre** de desplaçament. Amb ventres als dos extrems, la longitud del tub ha de ser un nombre enter de mitges longituds d'ona:\n\n$$L = n\\,\\frac{\\lambda_n}{2} \\;\\Rightarrow\\; \\lambda_n = \\frac{2L}{n}, \\qquad f_n = \\frac{v}{\\lambda_n} = n\\,\\frac{v}{2L}, \\quad n = 1, 2, 3, \\dots$$\n\nEn un tub obert hi ha **tots** els harmònics."
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüències del primer i el tercer harmònics",
+            "cos": "$$f_1 = \\frac{v}{2L} = \\frac{343}{2 \\cdot 0{,}670} = 256\\ \\text{Hz}$$\n\n$$f_3 = 3\\,f_1 = 3 \\cdot 256 = 768\\ \\text{Hz}$$\n\nResultats: **$f_1 = 256\\ \\text{Hz}$**, **$f_3 = 768\\ \\text{Hz}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Nodes i ventres",
+            "cos": "Dos ventres consecutius estan separats $\\lambda/2$, i cada node és a mig camí entre dos ventres. Mesurant des d'un extrem: ventres a $x_\\text{V} = k\\,\\frac{\\lambda}{2}$ i nodes a $x_\\text{N} = (2k+1)\\,\\frac{\\lambda}{4}$ ($k = 0, 1, 2, \\dots$).\n\n**Primer harmònic** ($\\lambda_1 = 2L = 1{,}34\\ \\text{m}$, $\\lambda_1/2 = 0{,}670\\ \\text{m}$):\n- Ventres: $x = 0$ i $x = 0{,}670\\ \\text{m}$\n- Node: $x = 0{,}335\\ \\text{m}$ (al centre)\n\n**Tercer harmònic** ($\\lambda_3 = 2L/3 = 0{,}447\\ \\text{m}$, $\\lambda_3/2 = 0{,}223\\ \\text{m}$):\n- Ventres: $x = 0$; $0{,}223$; $0{,}447$; $0{,}670\\ \\text{m}$\n- Nodes: $x = 0{,}112$; $0{,}335$; $0{,}558\\ \\text{m}$\n\n![Primer i tercer harmònics del tub obert (criteris oficials)](img/fisica/2025-J/e3-b-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Condició de ressonància en un tub tancat per un extrem",
+            "cos": "Ara hi ha un **node** a l'extrem **tancat** (l'aire no s'hi pot moure) i un **ventre** a l'extrem **obert**. La distància node–ventre és $\\lambda/4$, de manera que la longitud del tub ha de ser un nombre **senar** de quarts de longitud d'ona:\n\n$$L = n\\,\\frac{\\lambda_n}{4} \\;\\Rightarrow\\; \\lambda_n = \\frac{4L}{n}, \\qquad f_n = n\\,\\frac{v}{4L}, \\quad n = 1, 3, 5, \\dots$$\n\nNomés hi ha els harmònics **senars**: el segon mode possible és $n = 3$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Primer mode de vibració (n = 1, fonamental)",
+            "cos": "$$\\lambda_1 = 4L = 4 \\cdot 0{,}670 = 2{,}68\\ \\text{m}, \\qquad f_1 = \\frac{v}{\\lambda_1} = \\frac{343}{2{,}68} = 128\\ \\text{Hz}$$\n\nUn node a l'extrem tancat ($x = 0$) i un ventre a l'extrem obert ($x = 0{,}670\\ \\text{m}$).\n\nResultat: **$\\lambda_1 = 2{,}68\\ \\text{m}$, $f_1 = 128\\ \\text{Hz}$** (una octava per sota del fonamental del tub obert)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Segon mode de vibració (n = 3)",
+            "cos": "$$\\lambda_3 = \\frac{4L}{3} = \\frac{4 \\cdot 0{,}670}{3} = 0{,}893\\ \\text{m}, \\qquad f_3 = \\frac{343}{0{,}893} = 384\\ \\text{Hz}$$\n\nDes de l'extrem tancat: node a $x = 0$, ventre a $x = \\lambda_3/4 = 0{,}223\\ \\text{m}$, node a $x = \\lambda_3/2 = 0{,}447\\ \\text{m}$ i ventre a l'extrem obert, $x = 0{,}670\\ \\text{m}$.\n\nResultat: **$\\lambda_3 = 0{,}893\\ \\text{m}$, $f_3 = 384\\ \\text{Hz}$**.\n\n![Primer i segon modes del tub tancat per un extrem (criteris oficials)](img/fisica/2025-J/e3-b-sol-2.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$f_1 = 256\\ \\text{Hz}$ (ventres a 0 i 0,670 m; node a 0,335 m); $f_3 = 768\\ \\text{Hz}$ (ventres a 0; 0,223; 0,447; 0,670 m; nodes a 0,112; 0,335; 0,558 m)"
+          },
+          {
+            "apartat": "b",
+            "valor": "Mode 1: $\\lambda = 2{,}68\\ \\text{m}$, $f = 128\\ \\text{Hz}$; mode 2 ($n = 3$): $\\lambda = 0{,}893\\ \\text{m}$, $f = 384\\ \\text{Hz}$"
+          }
+        ],
+        "nota": "Error típic a l'apartat b: prendre $n = 2$ com a segon mode. En un tub tancat per un extrem només hi ha harmònics senars, per tant el segon mode és el tercer harmònic ($n = 3$)."
+      }
+    },
+    {
+      "id": "fisica-2025-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Desintegració beta del sodi 24 i mesura del volum de sang",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "desintegració beta",
+        "antineutrí",
+        "període de semidesintegració",
+        "constant de desintegració",
+        "activitat radioactiva"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "**Física relativista, quàntica, nuclear i de partícules.** L'isòtop del sodi ${}^{24}_{11}\\text{Na}$ té un excés de neutrons i sabem que és un emissor beta.\n\nDades:\n\n| Element | F | Ne | Na | Mg | Al |\n|---|---|---|---|---|---|\n| $Z$ | 9 | 10 | 11 | 12 | 13 |",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "punts": 1.25,
+          "enunciat": "Raoneu si el sodi 24 serà una font d'emissió d'electrons o de positrons. Escriviu la reacció de la desintegració beta del ${}^{24}_{11}\\text{Na}$ sense oblidar els neutrins o antineutrins. Quin és l'altre nucli resultant?"
+        },
+        {
+          "id": "b",
+          "punts": 1.25,
+          "enunciat": "L'isòtop del sodi 24 té un període de semidesintegració de $15{,}0\\ \\text{h}$. Una solució salina amb àtoms de sodi 24 té una activitat inicial de $580\\ \\text{kBq}$. Aquesta solució s'injecta a un pacient i es dissol per tota la seva sang. Trobeu l'activitat de la solució injectada al cap de $10{,}0\\ \\text{h}$. Si al cap d'aquest temps en $1{,}00\\ \\text{mL}$ de sang hi ha una activitat de $60{,}0\\ \\text{Bq}$, quin és el volum de sang del pacient?"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Nucli inicial: ${}^{24}_{11}\\text{Na}$ (11 protons, 13 neutrons), emissor beta amb excés de neutrons\n- Període de semidesintegració: $T_{1/2} = 15{,}0\\ \\text{h}$\n- Activitat inicial: $A_0 = 580\\ \\text{kBq} = 5{,}80 \\times 10^{5}\\ \\text{Bq}$\n- Temps: $t = 10{,}0\\ \\text{h}$\n- Activitat d'una mostra d'$1{,}00\\ \\text{mL}$ de sang: $60{,}0\\ \\text{Bq}$\n- Incògnites: tipus d'emissió, reacció i nucli fill; $A(10\\ \\text{h})$; volum de sang $V$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Electrons o positrons?",
+            "cos": "Un nucli amb **excés de neutrons** s'estabilitza transformant un neutró en un protó. Perquè es conservi la càrrega, s'ha d'emetre una partícula negativa, un **electró** (desintegració $\\beta^-$), acompanyat d'un **antineutrí electrònic** (que garanteix la conservació del nombre leptònic i de l'energia):\n\n$${}^{1}_{0}\\text{n} \\;\\rightarrow\\; {}^{1}_{1}\\text{p} + {}^{0}_{-1}\\text{e} + {}^{0}_{0}\\bar{\\nu}_e$$\n\nPer tant, el sodi 24 és una **font d'electrons** ($\\beta^-$). (L'emissió de positrons, $\\beta^+$, és pròpia dels nuclis amb excés de protons.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Reacció de desintegració i nucli resultant",
+            "cos": "El nombre màssic es conserva ($A = 24$) i el nombre atòmic augmenta en una unitat ($Z: 11 \\rightarrow 12$). Segons la taula, $Z = 12$ és el **magnesi**:\n\n$${}^{24}_{11}\\text{Na} \\;\\rightarrow\\; {}^{24}_{12}\\text{Mg} + {}^{0}_{-1}\\text{e} + {}^{0}_{0}\\bar{\\nu}_e$$\n\nComprovació: nombres màssics $24 = 24 + 0 + 0$; càrregues $11 = 12 + (-1) + 0$.\n\nResultat: **el nucli resultant és el magnesi-24, $^{24}_{12}\\text{Mg}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Constant de desintegració",
+            "cos": "L'activitat decreix exponencialment, $A(t) = A_0\\,e^{-\\lambda t}$. Al cap d'un període de semidesintegració l'activitat s'ha reduït a la meitat:\n\n$$\\frac{A_0}{2} = A_0\\,e^{-\\lambda T_{1/2}} \\;\\Rightarrow\\; \\lambda = \\frac{\\ln 2}{T_{1/2}} = \\frac{\\ln 2}{15{,}0\\ \\text{h}} = 4{,}62 \\times 10^{-2}\\ \\text{h}^{-1}$$\n\n(Podem treballar en hores perquè el temps també ens el donen en hores.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Activitat al cap de 10 h",
+            "cos": "$$A = A_0\\,e^{-\\lambda t} = 5{,}80 \\times 10^{5} \\cdot e^{-4{,}62 \\times 10^{-2} \\cdot 10{,}0} = 3{,}65 \\times 10^{5}\\ \\text{Bq}$$\n\nResultat: **$A(10\\ \\text{h}) = 3{,}65 \\times 10^{5}\\ \\text{Bq} = 365\\ \\text{kBq}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Volum de sang del pacient",
+            "cos": "Com que el sodi s'ha repartit uniformement per tota la sang, l'activitat és proporcional al volum: l'activitat total (de tota la sang) és a l'activitat d'1 mL com el volum total és a 1 mL.\n\n$$\\frac{3{,}65 \\times 10^{5}\\ \\text{Bq}}{V} = \\frac{60{,}0\\ \\text{Bq}}{1{,}00\\ \\text{mL}} \\;\\Rightarrow\\; V = \\frac{3{,}65 \\times 10^{5}}{60{,}0}\\ \\text{mL} = 6{,}09 \\times 10^{3}\\ \\text{mL}$$\n\nResultat: **$V = 6{,}09\\ \\text{L}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Emissor d'electrons ($\\beta^-$): ${}^{24}_{11}\\text{Na} \\rightarrow {}^{24}_{12}\\text{Mg} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}_e$; nucli fill: magnesi-24"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\lambda = 4{,}62 \\times 10^{-2}\\ \\text{h}^{-1}$; $A(10\\ \\text{h}) = 3{,}65 \\times 10^{5}\\ \\text{Bq}$; $V = 6{,}09\\ \\text{L}$"
+          }
+        ],
+        "nota": "Alternativa sense calcular λ: $A = A_0 \\cdot 2^{-t/T_{1/2}} = 580 \\cdot 2^{-10/15} = 365\\ \\text{kBq}$."
+      }
+    }
+  ]
+}

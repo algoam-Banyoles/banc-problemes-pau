@@ -1,0 +1,520 @@
+{
+  "examen": {
+    "id": "mates-2020-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2020,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/mates/2020-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2020-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE de les sis qüestions. Cada qüestió val 2,5 punts. Es pot utilitzar calculadora (no programable ni amb capacitat d'emmagatzemar o transmetre dades)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2020-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Triangle format per la tangent a 1/x² + 1 i els eixos: àrea mínima",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "recta tangent",
+        "punts de tall amb els eixos",
+        "àrea d'un triangle",
+        "mínim relatiu",
+        "monotonia"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        2,
+        3
+      ],
+      "enunciat": "Tracem la recta tangent a la funció $f(x) = \\dfrac{1}{x^2} + 1$ per un punt $P = (a,\\, f(a))$ del primer quadrant. Aquesta recta juntament amb els eixos de coordenades formen un triangle.",
+      "figures": [
+        {
+          "src": "img/mates/2020-J/e1.png",
+          "peu": "Gràfica de la funció f(x) = 1/x² + 1"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Comproveu que l'àrea d'aquest triangle, en funció de $a$, ve donada per la funció $$g(a) = \\frac{(a^2+3)^2}{4a}.$$",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "En quin punt $P$ l'àrea del triangle és mínima? Calculeu aquest valor mínim.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Funció: $f(x) = \\dfrac{1}{x^2} + 1 = x^{-2} + 1$.\n- Punt de tangència: $P = (a,\\, f(a))$ amb $a > 0$ (primer quadrant).\n- Busquem: l'àrea del triangle que formen la tangent i els eixos en funció de $a$, i el valor de $a$ que la fa mínima."
+          },
+          {
+            "apartat": "a",
+            "titol": "Derivada i equació de la recta tangent",
+            "cos": "L'equació de la recta tangent a $y=f(x)$ en el punt d'abscissa $x=a$ és $y = f'(a)(x-a) + f(a)$. Derivem amb la regla de la potència:\n\n$$f'(x) = -2x^{-3} = \\frac{-2}{x^3} \\;\\Rightarrow\\; f'(a) = \\frac{-2}{a^3}, \\qquad f(a) = \\frac{1}{a^2} + 1$$\n\nSubstituïm i simplifiquem ($\\frac{-2}{a^3}\\cdot(-a) = \\frac{2}{a^2}$):\n\n$$y = \\frac{-2}{a^3}(x-a) + \\frac{1}{a^2} + 1 = \\frac{-2}{a^3}\\,x + \\frac{2}{a^2} + \\frac{1}{a^2} + 1 = \\frac{-2}{a^3}\\,x + \\frac{a^2+3}{a^2}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Punts de tall de la tangent amb els eixos",
+            "cos": "El triangle té els vèrtexs a l'origen i als dos punts on la tangent talla els eixos (com que el pendent és negatiu i l'ordenada a l'origen positiva, tots dos talls són al semieix positiu).\n\n- **Tall amb l'eix $OY$** ($x=0$): $y = \\dfrac{a^2+3}{a^2}$ → punt $\\left(0,\\, \\dfrac{a^2+3}{a^2}\\right)$.\n- **Tall amb l'eix $OX$** ($y=0$):\n$$0 = \\frac{-2}{a^3}\\,x + \\frac{a^2+3}{a^2} \\;\\Rightarrow\\; \\frac{2}{a^3}\\,x = \\frac{a^2+3}{a^2} \\;\\Rightarrow\\; x = \\frac{a(a^2+3)}{2}$$\n→ punt $\\left(\\dfrac{a(a^2+3)}{2},\\, 0\\right)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Àrea del triangle rectangle",
+            "cos": "És un triangle rectangle amb els catets sobre els eixos, de manera que l'àrea és la meitat del producte dels catets:\n\n$$g(a) = \\frac{1}{2}\\cdot\\frac{a(a^2+3)}{2}\\cdot\\frac{a^2+3}{a^2} = \\frac{a\\,(a^2+3)^2}{4a^2} = \\frac{(a^2+3)^2}{4a}$$\n\nTal com volíem comprovar: **$g(a) = \\dfrac{(a^2+3)^2}{4a}$**, amb $a>0$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivada de la funció àrea",
+            "cos": "Per trobar el mínim de $g(a)$ busquem els punts on $g'(a) = 0$. Derivem amb la regla del quocient; el numerador $(a^2+3)^2$ es deriva amb la regla de la cadena: $2(a^2+3)\\cdot 2a$.\n\n$$g'(a) = \\frac{2(a^2+3)\\cdot 2a\\cdot 4a - (a^2+3)^2\\cdot 4}{(4a)^2} = \\frac{4(a^2+3)\\left[4a^2 - (a^2+3)\\right]}{16a^2} = \\frac{4(a^2+3)(3a^2-3)}{16a^2}$$\n\n$$g'(a) = \\frac{3(a^2+3)(a^2-1)}{4a^2}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punts crítics",
+            "cos": "$$g'(a) = 0 \\;\\Leftrightarrow\\; (a^2+3)(a^2-1) = 0$$\n\nEl factor $a^2+3$ no s'anul·la mai, per tant $a^2 = 1 \\Rightarrow a = \\pm 1$. Com que $P$ és al primer quadrant, $a>0$: **$a = 1$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovem que és un mínim",
+            "cos": "El signe de $g'(a)$ és el signe de $a^2-1$, perquè $3(a^2+3)$ i $4a^2$ són positius:\n\n| | $(0,\\,1)$ | $a=1$ | $(1,\\,+\\infty)$ |\n|---|---|---|---|\n| $g'(a)$ | $g'(0{,}9) < 0$ | $0$ | $g'(1{,}1) > 0$ |\n| $g(a)$ | decreixent | mínim | creixent |\n\nLa funció passa de decreixent a creixent a $a=1$, per tant hi ha un **mínim** (de fet absolut a $(0,+\\infty)$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Punt P i àrea mínima",
+            "cos": "El punt és $P = (1,\\, f(1)) = \\left(1,\\, \\frac{1}{1}+1\\right) = $ **$(1,\\,2)$**.\n\nL'àrea mínima:\n\n$$g(1) = \\frac{(1+3)^2}{4\\cdot 1} = \\frac{16}{4} = 4\\ u^2$$\n\nComprovació: la tangent a $(1,2)$ és $y = -2x + 4$, que talla els eixos a $(2,0)$ i $(0,4)$; àrea $\\frac{2\\cdot 4}{2} = 4$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Tangent: $y = -\\frac{2}{a^3}x + \\frac{a^2+3}{a^2}$; talls $\\left(\\frac{a(a^2+3)}{2},0\\right)$ i $\\left(0,\\frac{a^2+3}{a^2}\\right)$ → $g(a) = \\frac{(a^2+3)^2}{4a}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P = (1,\\,2)$; àrea mínima $4\\ u^2$"
+          }
+        ],
+        "nota": "També es pot justificar el mínim amb la derivada segona: $g''(1) = 3 > 0$. Error típic: oblidar la regla de la cadena en derivar $(a^2+3)^2$."
+      }
+    },
+    {
+      "id": "mates-2020-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Discussió d'un sistema 3x3 amb paràmetre k i resolució per a k = 0",
+      "tema": "sistemes",
+      "temes_secundaris": [
+        "matrius"
+      ],
+      "conceptes": [
+        "discussió de sistemes",
+        "teorema de Rouché-Fröbenius",
+        "rang",
+        "determinant",
+        "mètode de Gauss"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que depèn del paràmetre real $k$:\n\n$$\\begin{cases} 5x + y + 4z = 19 \\\\ kx + 2y + 8z = 28 \\\\ 5x + y - kz = 23 + k \\end{cases}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $k$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Resoleu, si és possible, el sistema per al cas $k = 0$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "Escrivim el sistema en forma matricial. $A$ és la matriu de coeficients i $A^*$ l'ampliada:\n\n$$A^* = \\left(\\begin{array}{ccc|c} 5 & 1 & 4 & 19 \\\\ k & 2 & 8 & 28 \\\\ 5 & 1 & -k & 23+k \\end{array}\\right)$$\n\nBusquem per a quins valors de $k$ el sistema és compatible determinat, indeterminat o incompatible (teorema de Rouché-Fröbenius), i la solució per a $k=0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Determinant de la matriu de coeficients",
+            "cos": "Com que $A$ és quadrada i depèn de $k$, estudiem quan el seu determinant és zero. Desenvolupem per la primera fila:\n\n$$|A| = \\begin{vmatrix} 5 & 1 & 4 \\\\ k & 2 & 8 \\\\ 5 & 1 & -k \\end{vmatrix} = 5(-2k-8) - 1(-k^2-40) + 4(k-10)$$\n\n$$|A| = -10k - 40 + k^2 + 40 + 4k - 40 = k^2 - 6k - 40$$\n\nL'igualem a zero:\n\n$$k^2 - 6k - 40 = 0 \\;\\Rightarrow\\; k = \\frac{6 \\pm \\sqrt{36+160}}{2} = \\frac{6 \\pm 14}{2} \\;\\Rightarrow\\; k = 10 \\text{ o } k = -4$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas k ≠ 10 i k ≠ −4",
+            "cos": "$|A| \\neq 0$, per tant $\\text{rang}(A) = 3 = \\text{rang}(A^*) = $ nombre d'incògnites. **Sistema compatible determinat** (solució única)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas k = 10",
+            "cos": "Fem Gauss: $F_2 \\to F_2 - 2F_1$ i $F_3 \\to F_3 - F_1$:\n\n$$\\left(\\begin{array}{ccc|c} 5 & 1 & 4 & 19 \\\\ 10 & 2 & 8 & 28 \\\\ 5 & 1 & -10 & 33 \\end{array}\\right) \\to \\left(\\begin{array}{ccc|c} 5 & 1 & 4 & 19 \\\\ 0 & 0 & 0 & -10 \\\\ 0 & 0 & -14 & 14 \\end{array}\\right)$$\n\nLa segona fila diu $0 = -10$, impossible. $\\text{rang}(A) = 2$ i $\\text{rang}(A^*) = 3$: **sistema incompatible** (no té solució)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas k = −4",
+            "cos": "Ara la tercera equació és $5x + y + 4z = 19$, idèntica a la primera. Fem $F_2 \\to 5F_2 + 4F_1$ (i dividim per 2) i $F_3 \\to F_3 - F_1$:\n\n$$\\left(\\begin{array}{ccc|c} 5 & 1 & 4 & 19 \\\\ -4 & 2 & 8 & 28 \\\\ 5 & 1 & 4 & 19 \\end{array}\\right) \\to \\left(\\begin{array}{ccc|c} 5 & 1 & 4 & 19 \\\\ 0 & 7 & 28 & 108 \\\\ 0 & 0 & 0 & 0 \\end{array}\\right)$$\n\n$\\text{rang}(A) = \\text{rang}(A^*) = 2 < 3$ incògnites: **sistema compatible indeterminat** amb $3-2 = 1$ grau de llibertat (infinites solucions que depenen d'un paràmetre)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Sistema per a k = 0",
+            "cos": "Com que $k=0$ no és ni $10$ ni $-4$, pel cas general el sistema és **compatible determinat**: té solució única. Substituïm $k=0$:\n\n$$\\begin{cases} 5x + y + 4z = 19 \\\\ 2y + 8z = 28 \\\\ 5x + y = 23 \\end{cases}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resolució per reducció",
+            "cos": "Restem la tercera equació de la primera: $(5x+y+4z) - (5x+y) = 19 - 23$:\n\n$$4z = -4 \\;\\Rightarrow\\; z = -1$$\n\nDe la segona: $2y + 8(-1) = 28 \\Rightarrow 2y = 36 \\Rightarrow y = 18$.\n\nDe la tercera: $5x + 18 = 23 \\Rightarrow 5x = 5 \\Rightarrow x = 1$.\n\nSolució: **$x = 1,\\ y = 18,\\ z = -1$**.\n\nComprovació a la 1a equació: $5 + 18 - 4 = 19$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$k \\neq 10, -4$: SCD; $k = 10$: SI; $k = -4$: SCI (1 grau de llibertat)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$x = 1,\\ y = 18,\\ z = -1$"
+          }
+        ],
+        "nota": "Per a $k=-4$, si es vol, la solució general és $x = \\frac{5}{7},\\ y = \\frac{108}{7} - 4\\lambda,\\ z = \\lambda$ (no es demana). Els rangs també es poden justificar amb menors no nuls; l'apartat b) es pot resoldre igualment per Cramer."
+      }
+    },
+    {
+      "id": "mates-2020-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Pla per un punt amb dos vectors directors i recta perpendicular al pla",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "equació general del pla",
+        "vector normal",
+        "producte vectorial",
+        "equacions paramètriques de la recta",
+        "recta perpendicular a un pla"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació general del pla $\\pi$ que passa pel punt $(8, 8, 8)$ i té com a vectors directors $\\vec u = (1, 2, -3)$ i $\\vec v = (-1, 0, 3)$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu el valor del paràmetre $a$ perquè el punt $(1, -5, a)$ pertanyi al pla $\\pi$ i calculeu l'equació paramètrica de la recta que passa per aquest punt i és perpendicular al pla $\\pi$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Punt del pla: $(8,8,8)$. Vectors directors: $\\vec u = (1,2,-3)$, $\\vec v = (-1,0,3)$.\n- Busquem: l'equació general $Ax + By + Cz + D = 0$ del pla, el valor de $a$ i la recta perpendicular."
+          },
+          {
+            "apartat": "a",
+            "titol": "Plantejament amb el determinant",
+            "cos": "Un punt $(x,y,z)$ és del pla si el vector $(x-8,\\, y-8,\\, z-8)$ és combinació lineal de $\\vec u$ i $\\vec v$, és a dir, si els tres vectors són linealment dependents i el determinant que formen és zero:\n\n$$\\begin{vmatrix} x-8 & 1 & -1 \\\\ y-8 & 2 & 0 \\\\ z-8 & -3 & 3 \\end{vmatrix} = 0$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Desenvolupem el determinant",
+            "cos": "Per la primera columna:\n\n$$(x-8)\\,(2\\cdot 3 - 0\\cdot(-3)) - (y-8)\\,(1\\cdot 3 - (-1)(-3)) + (z-8)\\,(1\\cdot 0 - (-1)\\cdot 2) = 0$$\n\n$$6(x-8) - 0\\cdot(y-8) + 2(z-8) = 0 \\;\\Rightarrow\\; 6x + 2z - 64 = 0$$\n\nDividim per 2: **$\\pi:\\ 3x + z = 32$** (o $3x + z - 32 = 0$).\n\nComprovació: $(8,8,8)$ compleix $24 + 8 = 32$ ✓. El vector normal $(3,0,1)$ és perpendicular a $\\vec u$ ($3 + 0 - 3 = 0$) i a $\\vec v$ ($-3+0+3=0$) ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "Valor de a",
+            "cos": "Perquè el punt $(1,-5,a)$ sigui del pla, ha de complir-ne l'equació:\n\n$$3\\cdot 1 + a = 32 \\;\\Rightarrow\\; \\mathbf{a = 29}$$\n\nEl punt és $(1,\\,-5,\\,29)$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Recta perpendicular al pla",
+            "cos": "Una recta perpendicular a un pla té com a vector director el **vector normal** del pla. De $3x + 0y + z = 32$ llegim $\\vec n = (A,B,C) = (3,0,1)$.\n\nRecta pel punt $(1,-5,29)$ amb direcció $(3,0,1)$:\n\n$$r:\\ \\begin{cases} x = 1 + 3t \\\\ y = -5 \\\\ z = 29 + t \\end{cases} \\qquad t \\in \\mathbb{R}$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\pi:\\ 3x + z = 32$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$a = 29$; $r:\\ (x,y,z) = (1,-5,29) + t\\,(3,0,1)$"
+          }
+        ],
+        "nota": "També es pot obtenir el vector normal com el producte vectorial $\\vec u \\times \\vec v = (6,0,2)$, que és proporcional a $(3,0,1)$. Fixeu-vos que l'equació del pla no té terme en $y$: el pla és paral·lel a l'eix $OY$."
+      }
+    },
+    {
+      "id": "mates-2020-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Paràmetres d'una funció racional amb asímptota obliqua de pendent 1 i mínim a x = 2",
+      "tema": "derivades",
+      "temes_secundaris": [
+        "funcions"
+      ],
+      "conceptes": [
+        "asímptota obliqua",
+        "límits a l'infinit",
+        "mínim relatiu",
+        "monotonia",
+        "funció racional"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "Considereu la funció $f(x) = \\dfrac{ax^2 + b}{x}$, en què $a$ i $b$ són dos paràmetres reals. Calculeu els valors de $a$ i $b$ de manera que la funció $f(x)$ tingui una asímptota obliqua de pendent 1 i un mínim en el punt de la gràfica d'abscissa $x = 2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $f(x) = \\dfrac{ax^2+b}{x}$, definida per a $x \\neq 0$.\n- Condicions: asímptota obliqua de pendent $m = 1$ i mínim a $x = 2$.\n- Busquem: $a$ i $b$."
+          },
+          {
+            "apartat": null,
+            "titol": "Pendent de l'asímptota obliqua",
+            "cos": "L'asímptota obliqua $y = mx + n$ té pendent $m = \\lim_{x\\to\\infty} \\dfrac{f(x)}{x}$. El calculem i l'igualem a 1:\n\n$$m = \\lim_{x\\to\\infty} \\frac{ax^2+b}{x^2} = \\lim_{x\\to\\infty}\\left(a + \\frac{b}{x^2}\\right) = a$$\n\nPer tant **$a = 1$** i la funció queda $f(x) = \\dfrac{x^2+b}{x}$.\n\n(De fet $f(x) = x + \\frac{b}{x}$, i l'asímptota és $y = x$.)"
+          },
+          {
+            "apartat": null,
+            "titol": "Condició de mínim: f'(2) = 0",
+            "cos": "En un mínim relatiu d'una funció derivable, la derivada s'anul·la. Derivem amb la regla del quocient:\n\n$$f'(x) = \\frac{2x\\cdot x - (x^2+b)\\cdot 1}{x^2} = \\frac{x^2 - b}{x^2}$$\n\n$$f'(2) = \\frac{4-b}{4} = 0 \\;\\Rightarrow\\; \\mathbf{b = 4}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Comprovem que és un mínim",
+            "cos": "Amb $a = 1$, $b = 4$: $f'(x) = \\dfrac{x^2-4}{x^2}$. El denominador és positiu, així que el signe és el de $x^2 - 4 = (x-2)(x+2)$:\n\n| | $(-\\infty,-2)$ | $(-2,0)$ | $(0,2)$ | $x=2$ | $(2,+\\infty)$ |\n|---|---|---|---|---|---|\n| $f'(x)$ | $+$ | $-$ | $-$ | $0$ | $+$ |\n| $f(x)$ | creixent | decreixent | decreixent | mínim | creixent |\n\nA $x=2$ la funció passa de decreixent a creixent: hi ha un **mínim relatiu**, al punt $(2,\\, f(2)) = \\left(2,\\, \\frac{4+4}{2}\\right) = (2,\\,4)$.\n\n(També: $f''(x) = \\frac{8}{x^3}$, $f''(2) = 1 > 0$ → mínim.)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$a = 1,\\ b = 4$: $f(x) = \\frac{x^2+4}{x}$, amb asímptota $y = x$ i mínim a $(2,\\,4)$"
+          }
+        ],
+        "nota": "La taula oficial escriu $f' \\le 0$ a $-2 \\le x \\le 2$ sense excloure $x = 0$; cal recordar que $x=0$ no és del domini (hi ha una asímptota vertical), tot i que no afecta el resultat."
+      }
+    },
+    {
+      "id": "mates-2020-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Equació matricial AX = I − 3X i inversa de X",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "equació matricial",
+        "matriu inversa",
+        "determinant",
+        "matriu identitat"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        10,
+        11
+      ],
+      "enunciat": "Sigui la matriu $A = \\begin{pmatrix} 1 & 1 \\\\ -3 & -4 \\end{pmatrix}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu la matriu $X$ que satisfà l'equació $AX = I - 3X$, en què $I$ és la matriu identitat d'ordre 2.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Comproveu que la matriu $X$ és invertible i calculeu-ne la matriu inversa.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $A = \\begin{pmatrix} 1 & 1 \\\\ -3 & -4 \\end{pmatrix}$, $I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$.\n- Busquem $X$ (ha de ser $2\\times 2$ perquè les operacions tinguin sentit) i $X^{-1}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Aïllem X",
+            "cos": "Passem tots els termes amb $X$ a l'esquerra i traiem factor comú **per la dreta** (el producte de matrius no és commutatiu, cal respectar l'ordre; $3X = 3IX$):\n\n$$AX + 3X = I \\;\\Rightarrow\\; (A + 3I)\\,X = I \\;\\Rightarrow\\; X = (A+3I)^{-1}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Calculem A + 3I",
+            "cos": "$$A + 3I = \\begin{pmatrix} 1 & 1 \\\\ -3 & -4 \\end{pmatrix} + \\begin{pmatrix} 3 & 0 \\\\ 0 & 3 \\end{pmatrix} = \\begin{pmatrix} 4 & 1 \\\\ -3 & -1 \\end{pmatrix}$$\n\nEl seu determinant és $|A+3I| = 4\\cdot(-1) - 1\\cdot(-3) = -4 + 3 = -1 \\neq 0$, per tant és invertible."
+          },
+          {
+            "apartat": "a",
+            "titol": "Inversa de A + 3I",
+            "cos": "Per a una matriu $2\\times 2$, $\\begin{pmatrix} p & q \\\\ r & s \\end{pmatrix}^{-1} = \\dfrac{1}{ps - qr}\\begin{pmatrix} s & -q \\\\ -r & p \\end{pmatrix}$ (intercanviem la diagonal i canviem el signe dels altres dos elements):\n\n$$X = (A+3I)^{-1} = \\frac{1}{-1}\\begin{pmatrix} -1 & -1 \\\\ 3 & 4 \\end{pmatrix} = \\begin{pmatrix} 1 & 1 \\\\ -3 & -4 \\end{pmatrix}$$\n\nResultat: **$X = \\begin{pmatrix} 1 & 1 \\\\ -3 & -4 \\end{pmatrix}$** (curiosament, $X = A$).\n\nComprovació: $AX = A^2 = \\begin{pmatrix} -2 & -3 \\\\ 9 & 13 \\end{pmatrix}$ i $I - 3X = \\begin{pmatrix} 1-3 & -3 \\\\ 9 & 1+12 \\end{pmatrix} = \\begin{pmatrix} -2 & -3 \\\\ 9 & 13 \\end{pmatrix}$ ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "X és invertible",
+            "cos": "Una matriu quadrada és invertible si i només si el seu determinant no és zero:\n\n$$|X| = 1\\cdot(-4) - 1\\cdot(-3) = -4 + 3 = -1 \\neq 0$$\n\nPer tant **$X$ és invertible**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Inversa de X",
+            "cos": "De l'apartat a) sabem que $(A+3I)\\,X = I$, és a dir, $A + 3I$ és precisament la inversa de $X$:\n\n$$X^{-1} = A + 3I = \\begin{pmatrix} 4 & 1 \\\\ -3 & -1 \\end{pmatrix}$$\n\nHo comprovem amb la fórmula: $X^{-1} = \\dfrac{1}{-1}\\begin{pmatrix} -4 & -1 \\\\ 3 & 1 \\end{pmatrix} = \\begin{pmatrix} 4 & 1 \\\\ -3 & -1 \\end{pmatrix}$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$X = (A+3I)^{-1} = \\begin{pmatrix} 1 & 1 \\\\ -3 & -4 \\end{pmatrix}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$|X| = -1 \\neq 0$; $X^{-1} = \\begin{pmatrix} 4 & 1 \\\\ -3 & -1 \\end{pmatrix}$"
+          }
+        ],
+        "nota": "Error típic: escriure $X(A+3I) = I$ o $X = I\\cdot(A+3I)^{-1}$ canviant l'ordre; aquí no afecta el resultat perquè una matriu i la seva inversa commuten, però en general cal treure el factor comú pel costat correcte. Els criteris també accepten plantejar $X$ amb 4 incògnites i resoldre el sistema lineal."
+      }
+    },
+    {
+      "id": "mates-2020-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Tangent a y = x³ paral·lela a una recta i àrea entre la cúbica i la tangent",
+      "tema": "derivades",
+      "temes_secundaris": [
+        "integrals"
+      ],
+      "conceptes": [
+        "recta tangent",
+        "rectes paral·leles",
+        "àrea entre dues corbes",
+        "regla de Barrow",
+        "regla de Ruffini"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12,
+        13
+      ],
+      "enunciat": "Considereu la funció $f(x) = x^3$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu en quin punt del tercer quadrant la recta tangent a $y = f(x)$ és paral·lela a la recta $3x - y = 4$. Calculeu l'equació de la recta tangent a la gràfica en aquest punt i feu un dibuix aproximat de la gràfica de la funció i les dues rectes.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'àrea de la regió delimitada per $y = f(x)$ i la recta $y = 3x + 2$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $f(x) = x^3$, $f'(x) = 3x^2$.\n- Recta donada: $3x - y = 4 \\Leftrightarrow y = 3x - 4$, de pendent $3$.\n- Busquem: el punt del 3r quadrant ($x<0$, $y<0$) amb tangent de pendent 3, la tangent, i l'àrea entre la cúbica i $y = 3x+2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Pendent igual a 3",
+            "cos": "Dues rectes són paral·leles si tenen el mateix pendent, i el pendent de la tangent en $x=a$ és $f'(a)$:\n\n$$f'(a) = 3a^2 = 3 \\;\\Rightarrow\\; a^2 = 1 \\;\\Rightarrow\\; a = \\pm 1$$\n\nEl punt ha de ser del **tercer quadrant**, així que $a = -1$: el punt és **$(-1,\\, f(-1)) = (-1,\\,-1)$**. (L'altre, $(1,1)$, és del primer quadrant.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de la recta tangent",
+            "cos": "$$y = f'(-1)(x+1) + f(-1) = 3(x+1) - 1 \\;\\Rightarrow\\; \\mathbf{y = 3x + 2}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Dibuix aproximat",
+            "cos": "La cúbica $y = x^3$ passa per l'origen, és creixent i té inflexió a $(0,0)$. La tangent $y = 3x+2$ la toca a $(-1,-1)$ i la torna a tallar a $(2,8)$; la recta $y = 3x-4$ és paral·lela a la tangent, 6 unitats més avall.\n\n![Gràfica de y = x³ (vermell), la tangent y = 3x + 2 (blau) i la recta y = 3x − 4 (verd)](img/mates/2020-J/e6-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punts de tall de la cúbica i la recta",
+            "cos": "Els límits d'integració són els punts on les dues gràfiques es tallen:\n\n$$x^3 = 3x + 2 \\;\\Rightarrow\\; x^3 - 3x - 2 = 0$$\n\nSabem que $x = -1$ n'és arrel (és el punt de tangència, de fet arrel doble). Per Ruffini:\n\n$$x^3 - 3x - 2 = (x+1)(x^2 - x - 2) = (x+1)^2(x-2)$$\n\nTalls: $x = -1$ i $x = 2$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Quina gràfica queda per sobre",
+            "cos": "Prenem un punt intermedi, $x = 0$: la recta val $3\\cdot 0+2 = 2$ i la cúbica $0$. Per tant a $[-1,2]$ la **recta queda per sobre** i l'àrea és\n\n$$\\text{Àrea} = \\int_{-1}^{2} \\left(3x + 2 - x^3\\right)dx$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Primitiva i regla de Barrow",
+            "cos": "$$\\int_{-1}^{2} \\left(3x + 2 - x^3\\right)dx = \\left[\\frac{3x^2}{2} + 2x - \\frac{x^4}{4}\\right]_{-1}^{2}$$\n\n$$= \\left(6 + 4 - 4\\right) - \\left(\\frac{3}{2} - 2 - \\frac{1}{4}\\right) = 6 - \\left(-\\frac{3}{4}\\right) = \\frac{27}{4}$$\n\nResultat: **$\\text{Àrea} = \\dfrac{27}{4}\\ u^2 = 6{,}75\\ u^2$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Punt $(-1,\\,-1)$; tangent $y = 3x + 2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Àrea $= \\frac{27}{4}\\ u^2 = 6{,}75\\ u^2$"
+          }
+        ],
+        "nota": "Error típic: integrar $x^3 - (3x+2)$ i obtenir $-\\frac{27}{4}$; l'àrea sempre és positiva, cal restar la funció de sota a la de sobre."
+      }
+    }
+  ]
+}

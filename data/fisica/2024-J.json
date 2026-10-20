@@ -1,0 +1,645 @@
+{
+  "examen": {
+    "id": "fisica-2024-J",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2024,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/fisica/2024-J-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2024-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels set problemes (P1-P7); si se'n responen més, només es valoren els quatre primers. Cada problema val 2,5 punts i té dos apartats d'1,25 punts."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2024-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Satèl·lit MPO de BepiColombo en òrbita al voltant de Mercuri",
+      "tema": "gravitacio",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "velocitat orbital",
+        "període orbital",
+        "energia mecànica orbital",
+        "velocitat d'escapament",
+        "força centrípeta"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "BepiColombo és una missió espacial que té per objectiu l'exploració de Mercuri. La missió va ser llançada l'any 2018, i hi arribarà el 2025. Un cop allà, posarà en òrbita dos satèl·lits al voltant del planeta. Un dels satèl·lits és el *Mercury Planetary Orbiter* (MPO), construït per l'Agència Espacial Europea, que orbitarà al voltant de Mercuri amb un radi orbital mitjà de $3\\,360\\ \\text{km}$.\n\n**Dades:**\n- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$\n- Massa de Mercuri, $M_\\text{M} = 3{,}285 \\times 10^{23}\\ \\text{kg}$\n- Any terrestre $= 365{,}25$ dies",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Considereu un satèl·lit que fa una òrbita circular al voltant de Mercuri. Deduïu l'expressió de la velocitat orbital del satèl·lit en funció del radi orbital i la massa de Mercuri (indiqueu clarament en quins principis o lleis físiques us baseu per fer la vostra deducció). Amb aquesta expressió, calculeu la velocitat orbital del satèl·lit MPO mentre orbita al voltant de Mercuri. Calculeu quantes voltes haurà fet al planeta al cap d'un any terrestre.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "A partir de l'expressió general de l'energia mecànica, obtingueu la seva equació per al cas particular d'un satèl·lit en òrbita circular (cal que l'equació final només estigui expressada en funció de $G$, el radi orbital i les masses del satèl·lit i del planeta). Una vegada el satèl·lit MPO estigui orbitant al voltant de Mercuri, encara tindrà combustible per a poder fer maniobres. Considereu que el combustible disponible pot proporcionar una energia de $4{,}5 \\times 10^{9}\\ \\text{J}$. Determineu el valor màxim que podria tenir la massa del MPO per tal que amb l'energia disponible pogués escapar del camp gravitatori de Mercuri.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$\n- $M_\\text{M} = 3{,}285 \\times 10^{23}\\ \\text{kg}$\n- Radi orbital: $r = 3\\,360\\ \\text{km} = 3{,}36 \\times 10^{6}\\ \\text{m}$\n- Any terrestre: $t = 365{,}25 \\cdot 24 \\cdot 3\\,600 = 3{,}16 \\times 10^{7}\\ \\text{s}$\n- Energia del combustible: $\\Delta E = 4{,}5 \\times 10^{9}\\ \\text{J}$\n- Incògnites: $v$, nombre de voltes en un any (a); expressió de $E_m$ i massa màxima $m_\\text{MPO}$ (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Deducció de la velocitat orbital",
+            "cos": "Ens basem en dues lleis: la **llei de la gravitació universal** de Newton (Mercuri atrau el satèl·lit amb una força $F = G\\,\\dfrac{M_\\text{M}\\,m}{r^2}$) i la **segona llei de Newton** ($\\vec F = m\\,\\vec a$). Com que l'òrbita és circular i a velocitat constant (MCU), l'acceleració és la **centrípeta**, $a = v^2/r$. És a dir, la força gravitatòria fa de força centrípeta:\n\n$$G\\,\\frac{M_\\text{M}\\,m}{r^2} = m\\,\\frac{v^2}{r} \\quad\\Longrightarrow\\quad v = \\sqrt{\\frac{G\\,M_\\text{M}}{r}}$$\n\nFixa't que la massa del satèl·lit $m$ es simplifica: la velocitat orbital no depèn de la massa del satèl·lit."
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat orbital del MPO",
+            "cos": "$$v = \\sqrt{\\frac{6{,}67 \\times 10^{-11} \\cdot 3{,}285 \\times 10^{23}}{3{,}36 \\times 10^{6}}} = 2{,}55 \\times 10^{3}\\ \\text{m/s}$$\n\nResultat: **$v = 2{,}55 \\times 10^{3}\\ \\text{m/s}$** (uns $2{,}55\\ \\text{km/s}$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Període i nombre de voltes en un any",
+            "cos": "En un MCU, el satèl·lit recorre una circumferència ($2\\pi r$) en un període $T$:\n\n$$T = \\frac{2\\pi r}{v} = \\frac{2\\pi \\cdot 3{,}36 \\times 10^{6}}{2{,}55 \\times 10^{3}} = 8{,}27 \\times 10^{3}\\ \\text{s}\\ (\\approx 2{,}3\\ \\text{h})$$\n\nEl nombre de voltes en un any terrestre és el temps total dividit pel temps d'una volta:\n\n$$n = \\frac{t}{T} = \\frac{3{,}156 \\times 10^{7}\\ \\text{s}}{8{,}27 \\times 10^{3}\\ \\text{s}} \\approx 3{,}82 \\times 10^{3}\\ \\text{voltes}$$\n\nResultat: **unes $3\\,817$ voltes** (≈ $3{,}82 \\times 10^{3}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia mecànica en una òrbita circular",
+            "cos": "L'energia mecànica és la suma de la cinètica i la potencial gravitatòria (amb l'origen d'energia potencial a l'infinit):\n\n$$E_m = E_c + E_p = \\frac{1}{2}\\,m\\,v^2 - G\\,\\frac{M_\\text{M}\\,m}{r}$$\n\nSubstituïm $v^2 = G M_\\text{M}/r$ (resultat de l'apartat a):\n\n$$E_m = \\frac{1}{2}\\,m\\,\\frac{G M_\\text{M}}{r} - G\\,\\frac{M_\\text{M}\\,m}{r} = -\\,\\frac{G\\,M_\\text{M}\\,m}{2r}$$\n\nL'energia mecànica és **negativa**: el satèl·lit està lligat al planeta."
+          },
+          {
+            "apartat": "b",
+            "titol": "Condició per escapar del camp gravitatori",
+            "cos": "Per escapar, el satèl·lit ha d'arribar a l'infinit (on $E_p = 0$) amb velocitat zero com a mínim, és a dir, amb energia mecànica final $E_{m,f} = 0$. L'energia que han d'aportar els motors (treball de les forces no conservatives) és l'increment d'energia mecànica:\n\n$$\\Delta E_m = E_{m,f} - E_{m,i} = 0 - \\left(-\\frac{G\\,M_\\text{M}\\,m}{2r}\\right) = \\frac{G\\,M_\\text{M}\\,m}{2r}$$\n\nCom més massa té el satèl·lit, més energia necessita. La massa màxima és la que fa que aquesta energia sigui just la del combustible, $4{,}5 \\times 10^{9}\\ \\text{J}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa màxima del MPO",
+            "cos": "$$m_\\text{màx} = \\frac{2r\\,\\Delta E}{G\\,M_\\text{M}} = \\frac{2 \\cdot 3{,}36 \\times 10^{6} \\cdot 4{,}5 \\times 10^{9}}{6{,}67 \\times 10^{-11} \\cdot 3{,}285 \\times 10^{23}} = 1{,}38 \\times 10^{3}\\ \\text{kg}$$\n\nResultat: **$m_\\text{màx} = 1{,}38 \\times 10^{3}\\ \\text{kg}$**. Si el MPO fos més pesant, l'energia del combustible no n'hi hauria prou per escapar de Mercuri."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v = \\sqrt{G M_\\text{M}/r} = 2{,}55 \\times 10^{3}\\ \\text{m/s}$; $T = 8{,}27 \\times 10^{3}\\ \\text{s}$; unes $3{,}82 \\times 10^{3}$ voltes en un any"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_m = -\\dfrac{G M_\\text{M} m}{2r}$; $m_\\text{màx} = 1{,}38 \\times 10^{3}\\ \\text{kg}$"
+          }
+        ],
+        "nota": "La solució oficial arrodoneix $T = 8{,}28 \\times 10^{3}\\ \\text{s}$ i $t = 3{,}16 \\times 10^{7}\\ \\text{s}$ i obté $3\\,816$ voltes; sense arrodonir intermèdiament surten $3\\,817$. La diferència només és d'arrodoniment."
+      }
+    },
+    {
+      "id": "fisica-2024-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Ombra d'una massa en un disc giratori i d'una molla: MHS i energies",
+      "tema": "oscillacions",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "moviment harmònic simple",
+        "constant elàstica",
+        "energia mecànica",
+        "energia cinètica",
+        "energia potencial elàstica",
+        "moviment circular uniforme"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Al laboratori dissenyem un experiment amb dues masses que fan moviments independents. La primera massa és de $0{,}5\\ \\text{kg}$ i penja d'una molla vertical. La segona massa es troba subjectada a un disc vertical que gira a una velocitat angular de $6{,}41\\ \\text{rad/s}$ i el centre d'aquesta massa és a una distància de $19\\ \\text{cm}$ del centre del disc. Ambdues masses s'il·luminen lateralment i s'observa que les seves ombres segueixen exactament el mateix moviment harmònic simple. Per a aconseguir-ho, deixem anar des de baix la massa de la molla just a $t = 0\\ \\text{s}$, moment en què la massa del disc també passa pel punt més baix de la rotació.",
+      "figures": [
+        {
+          "src": "img/fisica/2024-J/e2.png",
+          "peu": "Muntatge experimental: disc giratori amb una massa i molla vertical amb una altra massa, i les seves ombres a la paret"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu l'equació de la posició vertical de les ombres respecte al temps. Trobeu la constant elàstica de la molla i l'energia mecànica del moviment harmònic simple.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'equació de la velocitat i l'energia cinètica respecte al temps de la massa que penja de la molla. Representeu en la quadrícula adjunta l'energia mecànica, l'energia potencial i l'energia cinètica en funció de la posició vertical per a la massa que penja de la molla (quadrícula amb eixos $E\\ (\\text{J})$ i $y\\ (\\text{m})$).",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa de la molla: $m = 0{,}5\\ \\text{kg}$\n- Velocitat angular del disc: $\\omega = 6{,}41\\ \\text{rad/s}$\n- Radi de gir de la massa del disc: $R = 19\\ \\text{cm} = 0{,}19\\ \\text{m}$\n- A $t = 0$ totes dues masses són al punt més baix\n- Incògnites: $y(t)$, $k$, $E_m$ (a); $v(t)$, $E_c(t)$ i gràfica de $E_m$, $E_p$, $E_c$ en funció de $y$ (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "L'ombra d'un MCU és un MHS",
+            "cos": "Si una massa gira amb MCU en un cercle de radi $R$, la seva projecció (l'ombra) sobre un eix vertical fa un **moviment harmònic simple** d'amplitud igual al radi i pulsació igual a la velocitat angular. Si $\\theta = \\omega t + \\varphi_0$ és l'angle respecte de l'eix vertical:\n\n$$y(t) = A\\cos(\\omega t + \\varphi_0), \\qquad A = R = 0{,}19\\ \\text{m}, \\quad \\omega = 6{,}41\\ \\text{rad/s}$$\n\nCom que les dues ombres fan exactament el mateix moviment, la massa de la molla té també $A = 0{,}19\\ \\text{m}$ i $\\omega = 6{,}41\\ \\text{rad/s}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Fase inicial i equació de la posició",
+            "cos": "Prenem l'origen a la posició d'equilibri i el sentit positiu **cap amunt**. A $t = 0$ la massa és al punt més baix, $y(0) = -A$:\n\n$$-A = A\\cos\\varphi_0 \\;\\Rightarrow\\; \\cos\\varphi_0 = -1 \\;\\Rightarrow\\; \\varphi_0 = \\pi\\ \\text{rad}$$\n\n$$y(t) = 0{,}19\\cos(6{,}41\\,t + \\pi)\\ \\text{m} = -0{,}19\\cos(6{,}41\\,t)\\ \\text{m} \\quad (t \\text{ en s})$$\n\nSi es pren el sentit positiu cap avall, el punt més baix és $y = +A$, $\\varphi_0 = 0$ i $y(t) = 0{,}19\\cos(6{,}41\\,t)\\ \\text{m}$. Totes dues respostes són correctes si s'indica el criteri de signes."
+          },
+          {
+            "apartat": "a",
+            "titol": "Constant elàstica de la molla",
+            "cos": "En un oscil·lador massa-molla la pulsació és $\\omega = \\sqrt{k/m}$. Com que ha de coincidir amb la del disc:\n\n$$k = m\\,\\omega^2 = 0{,}5 \\cdot 6{,}41^2 = 20{,}5\\ \\text{N/m}$$\n\nResultat: **$k = 20{,}5\\ \\text{N/m}$** (més exactament $20{,}54\\ \\text{N/m}$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia mecànica del MHS",
+            "cos": "L'energia mecànica d'un MHS es conserva i és igual a l'energia potencial als extrems (on la velocitat és nul·la):\n\n$$E_m = \\frac{1}{2}\\,k\\,A^2 = \\frac{1}{2} \\cdot 20{,}54 \\cdot 0{,}19^2 = 0{,}371\\ \\text{J}$$\n\nResultat: **$E_m = 0{,}371\\ \\text{J}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació de la velocitat",
+            "cos": "La velocitat és la derivada de la posició respecte del temps (sentit positiu cap amunt):\n\n$$v(t) = \\frac{dy}{dt} = -A\\omega\\sin(\\omega t + \\pi) = -0{,}19 \\cdot 6{,}41\\,\\sin(6{,}41\\,t + \\pi)$$\n\n$$v(t) = -1{,}218\\,\\sin(6{,}41\\,t + \\pi)\\ \\text{m/s} = 1{,}218\\,\\sin(6{,}41\\,t)\\ \\text{m/s}$$\n\nLa velocitat màxima és $v_\\text{màx} = A\\omega = 1{,}218\\ \\text{m/s}$, quan la massa passa per l'equilibri. (Amb el sentit positiu cap avall: $v(t) = -1{,}218\\,\\sin(6{,}41\\,t)\\ \\text{m/s}$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica en funció del temps",
+            "cos": "$$E_c(t) = \\frac{1}{2}\\,m\\,v^2 = \\frac{1}{2} \\cdot 0{,}5 \\cdot 1{,}218^2\\,\\sin^2(6{,}41\\,t) = 0{,}371\\,\\sin^2(6{,}41\\,t)\\ \\text{J}$$\n\nComprovació: el valor màxim de $E_c$ és $0{,}371\\ \\text{J}$, igual que l'energia mecànica, com ha de ser."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energies en funció de la posició",
+            "cos": "Prenent $y$ des de la posició d'equilibri (on la molla ja està estirada pel pes), l'energia potencial total del sistema massa-molla vertical (elàstica + gravitatòria) es pot escriure com $\\frac{1}{2}ky^2$:\n\n- Energia mecànica (constant): $E_m = 0{,}371\\ \\text{J}$\n- Energia potencial: $E_p = \\frac{1}{2}k y^2 = 10{,}27\\,y^2\\ \\text{J}$ (paràbola amb mínim 0 a $y = 0$)\n- Energia cinètica: $E_c = E_m - E_p = 0{,}371 - 10{,}27\\,y^2\\ \\text{J}$ (paràbola invertida, màxim a $y=0$)\n\nNomés té sentit dibuixar-les entre $y = -0{,}19\\ \\text{m}$ i $y = +0{,}19\\ \\text{m}$ (l'amplitud). Als extrems $E_p = E_m$ i $E_c = 0$; a l'origen $E_c = E_m$ i $E_p = 0$. Les dues paràboles es tallen on $E_p = E_c = E_m/2$, és a dir a $y = \\pm A/\\sqrt{2} = \\pm 0{,}134\\ \\text{m}$.\n\n![Gràfica oficial: energia mecànica (recta horitzontal), potencial (vermella) i cinètica (blava) en funció de y](img/fisica/2024-J/e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y(t) = -0{,}19\\cos(6{,}41\\,t)\\ \\text{m}$ (positiu cap amunt); $k = 20{,}5\\ \\text{N/m}$; $E_m = 0{,}371\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v(t) = 1{,}218\\,\\sin(6{,}41\\,t)\\ \\text{m/s}$; $E_c = 0{,}371\\,\\sin^2(6{,}41\\,t)\\ \\text{J}$; $E_p = 10{,}27\\,y^2\\ \\text{J}$, $E_c = 0{,}371 - 10{,}27\\,y^2\\ \\text{J}$ per a $|y| \\le 0{,}19\\ \\text{m}$"
+          }
+        ],
+        "nota": "El criteri oficial accepta qualsevol dels dos sentits positius (cap amunt o cap avall) sempre que s'indiqui. A la gràfica, la pauta resta 0,25 punts si l'escala no és correcta: marca bé $\\pm 0{,}19\\ \\text{m}$ a l'eix horitzontal i $0{,}371\\ \\text{J}$ a l'eix vertical."
+      }
+    },
+    {
+      "id": "fisica-2024-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Camp elèctric terrestre: càrrega de la Terra i gota d'aigua en equilibri",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "camp elèctric",
+        "llei de coulomb",
+        "força elèctrica",
+        "equilibri de forces",
+        "càrrega elèctrica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "La superfície de la Terra és principalment aigua que conté ions en dissolució i que li fan adquirir una càrrega neta negativa. Es pot considerar que la Terra té un camp elèctric en punts propers a la seva superfície amb un mòdul constant de $150\\ \\text{N/C}$.\n\n**Dades:**\n- Radi de la Terra, $R_\\text{T} = 6{,}37 \\times 10^{6}\\ \\text{m}$\n- Densitat de l'aigua, $\\rho = 10^{3}\\ \\text{kg/m}^3$\n- Massa de l'electró, $M_\\text{e} = 9{,}11 \\times 10^{-31}\\ \\text{kg}$\n- Superfície esfèrica: $4\\pi r^2$\n- Volum d'una esfera: $\\frac{4}{3}\\pi r^3$\n- $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$\n- $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$\n- $g = 9{,}81\\ \\text{m/s}^2$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu l'esfera terrestre i representeu-hi el camp elèctric al voltant de la superfície. Calculeu el valor de la càrrega total que produeix aquest camp elèctric. Per fer-ho, considereu que el camp elèctric creat per una superfície esfèrica carregada uniformement és igual al generat per tota la càrrega situada al centre de l'esfera.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el mòdul de la força elèctrica que produirà el camp elèctric sobre un electró lliure situat a la vora de la superfície de la Terra. Calculeu la massa que ha de tenir una gota esfèrica d'aigua amb una càrrega extra d'un sol electró perquè el seu pes es compensi amb la força elèctrica. Feu un esquema en què es mostrin les forces que actuen sobre la gota. Calculeu el diàmetre d'aquesta gota d'aigua.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $|\\vec E| = 150\\ \\text{N/C}$ a prop de la superfície\n- $R_\\text{T} = 6{,}37 \\times 10^{6}\\ \\text{m}$, $k = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$\n- $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$, $\\rho = 10^{3}\\ \\text{kg/m}^3$, $g = 9{,}81\\ \\text{m/s}^2$\n- Incògnites: càrrega de la Terra $q$ (a); força sobre un electró $F_e$, massa $m$ i diàmetre $d$ de la gota (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Dibuix del camp elèctric",
+            "cos": "Les línies de camp elèctric **neixen a les càrregues positives i moren a les negatives**. Com que la Terra té càrrega negativa repartida uniformement, el camp és **radial i dirigit cap al centre** de la Terra en tots els punts de la superfície:\n\n![Camp elèctric radial cap a la Terra](img/fisica/2024-J/e3-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Càrrega total de la Terra",
+            "cos": "Segons l'enunciat, el camp a fora de l'esfera és el d'una càrrega puntual $q$ situada al centre. A la superfície, $r = R_\\text{T}$:\n\n$$|\\vec E| = k\\,\\frac{|q|}{R_\\text{T}^2} \\quad\\Longrightarrow\\quad |q| = \\frac{|\\vec E|\\,R_\\text{T}^2}{k} = \\frac{150 \\cdot (6{,}37 \\times 10^{6})^2}{8{,}99 \\times 10^{9}} = 6{,}77 \\times 10^{5}\\ \\text{C}$$\n\nCom que la càrrega és negativa: **$q = -6{,}77 \\times 10^{5}\\ \\text{C}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força elèctrica sobre un electró",
+            "cos": "La força que un camp elèctric fa sobre una càrrega és $\\vec F = q\\,\\vec E$. En mòdul:\n\n$$|\\vec F_e| = |e|\\,|\\vec E| = 1{,}602 \\times 10^{-19} \\cdot 150 = 2{,}40 \\times 10^{-17}\\ \\text{N}$$\n\nCom que l'electró és negatiu, la força té **sentit contrari al camp**: el camp apunta cap a la Terra, i per tant la força sobre l'electró apunta **cap amunt** (la Terra negativa repel·leix l'electró)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa de la gota en equilibri",
+            "cos": "Una gota amb un electró de més rep la mateixa força elèctrica cap amunt. Perquè estigui en equilibri, el pes (cap avall) ha de compensar exactament la força elèctrica:\n\n$$|\\vec F_e| = m\\,g \\quad\\Longrightarrow\\quad m = \\frac{|\\vec F_e|}{g} = \\frac{2{,}403 \\times 10^{-17}}{9{,}81} = 2{,}45 \\times 10^{-18}\\ \\text{kg}$$\n\nEsquema de forces sobre la gota: força elèctrica cap amunt (contrària al camp) i pes cap avall, de mòduls iguals:\n\n![Forces sobre la gota carregada negativament](img/fisica/2024-J/e3-sol-2.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Diàmetre de la gota",
+            "cos": "La massa és densitat per volum, i el volum és el d'una esfera: $m = \\rho\\,\\frac{4}{3}\\pi r^3$. Aïllem el radi:\n\n$$r = \\sqrt[3]{\\frac{3m}{4\\pi\\rho}} = \\sqrt[3]{\\frac{3 \\cdot 2{,}45 \\times 10^{-18}}{4\\pi \\cdot 10^{3}}} = 8{,}36 \\times 10^{-8}\\ \\text{m}$$\n\n$$d = 2r = 1{,}67 \\times 10^{-7}\\ \\text{m} = 167\\ \\text{nm}$$\n\nResultat: **$d = 1{,}67 \\times 10^{-7}\\ \\text{m}$** (una gota microscòpica)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Camp radial cap al centre de la Terra; $q = -6{,}77 \\times 10^{5}\\ \\text{C}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F_e = 2{,}40 \\times 10^{-17}\\ \\text{N}$ (cap amunt); $m = 2{,}45 \\times 10^{-18}\\ \\text{kg}$; $d = 1{,}67 \\times 10^{-7}\\ \\text{m} = 167\\ \\text{nm}$"
+          }
+        ],
+        "nota": "La massa de l'electró que dona l'enunciat no cal: és negligible davant la massa de la gota ($9{,}11 \\times 10^{-31}\\ \\text{kg} \\ll 2{,}45 \\times 10^{-18}\\ \\text{kg}$)."
+      }
+    },
+    {
+      "id": "fisica-2024-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Camp magnètic d'un parallamps i força sobre un electró",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp magnètic d'un fil",
+        "regla de la mà dreta",
+        "força de lorentz",
+        "línies de camp magnètic"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "Un parallamps és una barra metàl·lica vertical que atrau i dirigeix grans descàrregues de corrent cap a terra. La gran majoria de llamps núvol-terra són negatius, és a dir, són transferències de càrrega negativa del núvol cap a terra. En el moment de la descàrrega es crea un camp magnètic al voltant del parallamps que podem equiparar al creat per un fil de corrent infinit. El corrent màxim que pot assumir un parallamps és d'uns $100\\ \\text{kA}$.\n\n**Dades:**\n- El mòdul del camp magnètic creat per un fil infinit per on circula un corrent $I$ a una distància $r$ del fil és $B = \\dfrac{\\mu_0\\,I}{2\\pi r}$.\n- $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T m A}^{-1}$\n- $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el camp magnètic màxim que pot crear el parallamps a una distància de $10\\ \\text{cm}$. Feu un dibuix esquemàtic del parallamps indicant el sentit del moviment dels electrons, la intensitat de corrent i tres línies de camp magnètic. Justifiqueu el sentit de les línies de camp.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Representeu gràficament, en la quadrícula de sota, el mòdul d'aquest camp magnètic màxim en funció de la distància $r$ al parallamps en l'interval següent: $10\\ \\text{cm} \\le r \\le 50\\ \\text{cm}$. Suposem que hi ha un electró que en el moment de la descàrrega es troba a $10\\ \\text{cm}$ del parallamps i que té una velocitat de $10^{3}\\ \\text{m/s}$ paral·lela al parallamps i cap a terra. Calculeu el mòdul de la força que crea el camp magnètic sobre l'electró i justifiqueu-ne la direcció i el sentit.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $I_\\text{màx} = 100\\ \\text{kA} = 10^{5}\\ \\text{A}$\n- $r = 10\\ \\text{cm} = 0{,}1\\ \\text{m}$\n- $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T m A}^{-1}$, $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$\n- Velocitat de l'electró: $v = 10^{3}\\ \\text{m/s}$, vertical cap avall\n- Incògnites: $B_\\text{màx}$ i dibuix (a); gràfica $B(r)$ i força $\\vec F$ sobre l'electró (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp magnètic màxim a 10 cm",
+            "cos": "El parallamps es comporta com un fil infinit. Amb el corrent màxim:\n\n$$B_\\text{màx} = \\frac{\\mu_0\\,I_\\text{màx}}{2\\pi r} = \\frac{4\\pi \\times 10^{-7} \\cdot 10^{5}}{2\\pi \\cdot 0{,}1} = 0{,}2\\ \\text{T}$$\n\nResultat: **$B_\\text{màx} = 0{,}2\\ \\text{T}$** (un camp molt intens, milers de vegades el terrestre)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Sentit del corrent i de les línies de camp",
+            "cos": "Els **electrons baixen** del núvol cap a terra. El sentit convencional del corrent és el del moviment de les càrregues positives, és a dir, **contrari al dels electrons**: el corrent $I$ va **cap amunt** pel parallamps.\n\nLes línies de camp d'un fil rectilini són **circumferències concèntriques** al fil, en plans perpendiculars a ell. El sentit el dona la **regla de la mà dreta**: amb el polze en el sentit del corrent (cap amunt), els dits envolten el fil en el sentit del camp, que vist des de dalt és **antihorari**.\n\n![Esquema del parallamps: electrons cap avall, corrent cap amunt i línies de camp circulars](img/fisica/2024-J/e4-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Gràfica de B en funció de r",
+            "cos": "Amb $I = 10^{5}\\ \\text{A}$: $B(r) = \\dfrac{4\\pi \\times 10^{-7} \\cdot 10^{5}}{2\\pi\\,r} = \\dfrac{0{,}02}{r}$ (amb $B$ en T i $r$ en m). És una **hipèrbola**: si la distància es duplica, el camp es redueix a la meitat. Calculem alguns punts:\n\n| $r$ (m) | 0,1 | 0,2 | 0,3 | 0,4 | 0,5 |\n|---|---|---|---|---|---|\n| $B$ (T) | 0,2 | 0,1 | 0,0667 | 0,05 | 0,04 |\n\nCal posar títol i unitats a tots dos eixos ($r$ (m) i $B$ (T)).\n\n![Gràfica oficial de B en funció de r](img/fisica/2024-J/e4-sol-2.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Mòdul de la força sobre l'electró",
+            "cos": "Sobre una càrrega en moviment dins d'un camp magnètic actua la **força de Lorentz**, $\\vec F = q\\,\\vec v \\times \\vec B$. La velocitat (vertical) i el camp (horitzontal, tangent a les circumferències) són perpendiculars ($\\sin 90^\\circ = 1$):\n\n$$|\\vec F| = |e|\\,v\\,B = 1{,}602 \\times 10^{-19} \\cdot 10^{3} \\cdot 0{,}2 = 3{,}20 \\times 10^{-17}\\ \\text{N}$$\n\nResultat: **$F = 3{,}20 \\times 10^{-17}\\ \\text{N}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Direcció i sentit de la força",
+            "cos": "Posem eixos: el parallamps sobre l'eix $z$ (cap amunt), l'electró sobre l'eix $x$ positiu. Amb el corrent cap amunt, a la posició de l'electró el camp és $\\vec B = B\\,\\hat{j}$ (sentit antihorari vist des de dalt). La velocitat és $\\vec v = -v\\,\\hat{k}$. Llavors:\n\n$$\\vec v \\times \\vec B = (-v\\,\\hat k) \\times (B\\,\\hat j) = +vB\\,\\hat i \\qquad \\vec F = (-|e|)\\,vB\\,\\hat i = -|e|\\,vB\\,\\hat i$$\n\nLa força és **horitzontal i dirigida cap al parallamps** (radial, cap a dins). Intuïtivament: un electró que baixa equival a un corrent que puja, paral·lel al del parallamps, i dos corrents paral·lels del mateix sentit s'atrauen.\n\n![Força magnètica sobre l'electró, dirigida cap al parallamps](img/fisica/2024-J/e4-sol-3.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$B_\\text{màx} = 0{,}2\\ \\text{T}$; electrons cap avall, corrent cap amunt, línies circulars antihoràries vistes des de dalt"
+          },
+          {
+            "apartat": "b",
+            "valor": "$B(r) = 0{,}02/r$ (hipèrbola de $0{,}2\\ \\text{T}$ a $0{,}04\\ \\text{T}$); $F = 3{,}20 \\times 10^{-17}\\ \\text{N}$, horitzontal i cap al parallamps"
+          }
+        ],
+        "nota": "Error típic: aplicar la regla de la mà dreta amb el sentit dels electrons en lloc del corrent convencional, o oblidar que la càrrega de l'electró és negativa (cosa que inverteix el sentit de la força). La pauta resta 0,1 punts si l'eix de la gràfica no té títol i 0,2 si no té unitats."
+      }
+    },
+    {
+      "id": "fisica-2024-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Nivell d'intensitat sonora dels coets de Sant Joan i altura d'explosió",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "nivell d'intensitat sonora",
+        "intensitat sonora",
+        "potència sonora",
+        "decibels",
+        "ona esfèrica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10
+      ],
+      "enunciat": "L'Ainhoa està intrigada per saber a quina altura exploten els coets llançats a la revetlla de Sant Joan. Per a poder-ho determinar se situa a una distància de 50 metres del punt on es llancen els coets i enregistra, amb un sonòmetre, un nivell d'intensitat sonora de 100 decibels en l'explosió d'un coet que no s'ha enlairat.\n\n**Nota:** Considereu que les ones sonores es propaguen en les tres dimensions de l'espai i la seva energia es distribueix en superfícies esfèriques.\n\n**Dades:**\n- $I_0 = 10^{-12}\\ \\text{W m}^{-2}$\n- La velocitat del so en l'aire és de $340\\ \\text{m/s}$.\n- Superfície esfèrica: $4\\pi r^2$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina potència sonora emet el coet en el moment de l'explosió? Si l'explosió ha durat $0{,}03\\ \\text{s}$, quina energia sonora s'ha alliberat?",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Des de la mateixa distància al punt de llançament, enregistra 90 decibels d'intensitat sonora en el cas d'un coet igual a l'anterior que s'ha enlairat verticalment i ha explotat a certa altura. Calculeu a quina altura ha explotat el coet. Si dos coets idèntics a l'anterior exploten simultàniament a la mateixa altura que abans, quin nivell d'intensitat sonora percebrà l'Ainhoa, si està situada a la mateixa posició d'abans?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Distància horitzontal al punt de llançament: $d = 50\\ \\text{m}$\n- Coet a terra: $\\beta_1 = 100\\ \\text{dB}$; durada de l'explosió $\\Delta t = 0{,}03\\ \\text{s}$\n- Coet enlairat: $\\beta_2 = 90\\ \\text{dB}$\n- $I_0 = 10^{-12}\\ \\text{W/m}^2$\n- Incògnites: $P$ i $E$ (a); altura $h$ i nivell amb dos coets $\\beta'$ (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Intensitat a partir del nivell d'intensitat sonora",
+            "cos": "El nivell d'intensitat sonora (en dB) és $\\beta = 10\\log\\dfrac{I}{I_0}$. Aïllem la intensitat:\n\n$$I_1 = I_0 \\cdot 10^{\\beta_1/10} = 10^{-12} \\cdot 10^{10} = 10^{-2}\\ \\text{W/m}^2$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència sonora i energia alliberada",
+            "cos": "La potència es reparteix uniformement sobre una esfera de radi $r = 50\\ \\text{m}$ centrada al coet, per tant $I = \\dfrac{P}{4\\pi r^2}$:\n\n$$P = I_1 \\cdot 4\\pi r^2 = 10^{-2} \\cdot 4\\pi \\cdot 50^2 = 314\\ \\text{W}$$\n\nL'energia és la potència pel temps que dura l'explosió:\n\n$$E = P\\,\\Delta t = 314{,}16 \\cdot 0{,}03 = 9{,}42\\ \\text{J}$$\n\nResultats: **$P = 314\\ \\text{W}$** i **$E = 9{,}42\\ \\text{J}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Distància al coet que explota enlaire",
+            "cos": "Amb $90\\ \\text{dB}$: $I_2 = 10^{-12} \\cdot 10^{9} = 10^{-3}\\ \\text{W/m}^2$. El coet és igual i emet la mateixa potència, així que la distància $r_2$ entre l'Ainhoa i el punt d'explosió és:\n\n$$r_2 = \\sqrt{\\frac{P}{4\\pi I_2}} = \\sqrt{\\frac{314{,}16}{4\\pi \\cdot 10^{-3}}} = \\sqrt{25\\,000} = 158{,}1\\ \\text{m}$$\n\n(Alternativament: com que $I \\propto 1/r^2$, si la intensitat és 10 vegades menor, $r_2^2 = 10 \\cdot 50^2$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Altura de l'explosió (Pitàgores)",
+            "cos": "El coet puja verticalment, de manera que l'Ainhoa, el punt de llançament i el punt d'explosió formen un triangle rectangle: catets $d = 50\\ \\text{m}$ (horitzontal) i $h$ (vertical), hipotenusa $r_2$:\n\n$$h = \\sqrt{r_2^2 - d^2} = \\sqrt{25\\,000 - 2\\,500} = \\sqrt{22\\,500} = 150\\ \\text{m}$$\n\nResultat: **$h = 150\\ \\text{m}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Nivell d'intensitat amb dos coets",
+            "cos": "Dues fonts idèntiques que sonen alhora (no coherents) **sumen les intensitats**, no els decibels: $I' = 2 I_2 = 2 \\times 10^{-3}\\ \\text{W/m}^2$.\n\n$$\\beta' = 10\\log\\frac{2 \\times 10^{-3}}{10^{-12}} = 10\\log(2 \\times 10^{9}) = 10\\,(9 + \\log 2) = 93\\ \\text{dB}$$\n\nResultat: **$\\beta' = 93\\ \\text{dB}$**. Duplicar la intensitat només augmenta el nivell en $10\\log 2 \\approx 3\\ \\text{dB}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P = 314\\ \\text{W}$; $E = 9{,}42\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$h = 150\\ \\text{m}$ (distància al punt d'explosió $158\\ \\text{m}$); amb dos coets $\\beta' = 93\\ \\text{dB}$"
+          }
+        ],
+        "nota": "**Discrepància amb la solució oficial:** la pauta escriu $\\beta = 10\\log\\left(\\frac{2 \\cdot 10^{-3}}{10^{-12}}\\right) = 103\\ \\text{dB}$, però aquest càlcul dona $93\\ \\text{dB}$ ($10\\log(2 \\times 10^{9}) = 93{,}0$). El valor de 103 dB és un error de transcripció: és impossible que dos coets a 150 m sonin més fort que un sol coet a 50 m (100 dB). Error típic dels alumnes: sumar els decibels ($90 + 90 = 180\\ \\text{dB}$). La velocitat del so que dona l'enunciat no cal per resoldre el problema."
+      }
+    },
+    {
+      "id": "fisica-2024-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Desintegració alfa del Po-210 i energia d'un àtom d'heli",
+      "tema": "nuclear",
+      "temes_secundaris": [
+        "camp-electric"
+      ],
+      "conceptes": [
+        "desintegració alfa",
+        "activitat radioactiva",
+        "període de semidesintegració",
+        "constant de desintegració",
+        "energia potencial electrostàtica",
+        "treball del camp elèctric"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        12
+      ],
+      "enunciat": "El poloni ($Z = 84$) fou descobert el 1898 per Marie Sklodowska-Curie i Pierre Curie. L'isòtop de poloni amb un temps de semidesintegració més llarg és el Po-210, que el té de 138 dies. Es desintegra per emissió d'una partícula alfa i origina un isòtop estable de plom (Pb).\n\n**Dades:**\n- $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$\n- $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$",
+      "figures": [
+        {
+          "src": "img/fisica/2024-J/e6.png",
+          "peu": "Configuració final: partícula alfa al centre i un electró a cada banda, a 0,6 × 10⁻¹⁰ m"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu la desintegració del Po-210. Si l'activitat inicial per unitat de massa del Po-210 és d'$1{,}66 \\times 10^{14}\\ \\text{Bq/g}$, quina serà l'activitat de $5\\ \\text{mg}$ d'aquest element al cap d'una setmana?",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Els nuclis d'heli que es produeixen en les desintegracions alfa no triguen a captar dos electrons. Suposem que es forma un àtom d'heli en dos passos ben diferenciats. Primerament, es transporta des d'una distància molt gran un primer electró a $0{,}6 \\times 10^{-10}\\ \\text{m}$ de la partícula alfa i es manté allà. Posteriorment, un segon electró es porta a l'altra banda de la partícula alfa a $0{,}6 \\times 10^{-10}\\ \\text{m}$. La configuració final es mostra en la figura.\n\nCalculeu el treball realitzat pel camp elèctric en cada un dels dos passos. Quina és l'energia potencial electroestàtica de la configuració final?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $t_{1/2} = 138$ dies; $t = 1$ setmana $= 7$ dies\n- Activitat específica: $a = 1{,}66 \\times 10^{14}\\ \\text{Bq/g}$; massa $m = 5\\ \\text{mg} = 5 \\times 10^{-3}\\ \\text{g}$\n- Càrrega de la partícula alfa: $q_\\alpha = +2|e| = 3{,}204 \\times 10^{-19}\\ \\text{C}$; càrrega de l'electró: $q_e = -|e|$\n- Distància alfa-electró: $r = 0{,}6 \\times 10^{-10}\\ \\text{m}$; distància electró-electró: $2r = 1{,}2 \\times 10^{-10}\\ \\text{m}$\n- Incògnites: reacció i activitat $A(7\\ \\text{d})$ (a); treballs $W_1$, $W_2$ i energia potencial final $U_f$ (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de la desintegració alfa",
+            "cos": "Una partícula alfa és un nucli d'heli, ${}^{4}_{2}\\text{He}$. En la desintegració es conserven el **nombre màssic** ($A$) i el **nombre atòmic** (càrrega, $Z$): el plom tindrà $A = 210 - 4 = 206$ i $Z = 84 - 2 = 82$.\n\n$${}^{210}_{84}\\text{Po} \\;\\longrightarrow\\; {}^{4}_{2}\\text{He} + {}^{206}_{82}\\text{Pb}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Activitat inicial i constant de desintegració",
+            "cos": "L'activitat inicial de la mostra és l'activitat per gram per la massa:\n\n$$A_0 = 1{,}66 \\times 10^{14}\\ \\frac{\\text{Bq}}{\\text{g}} \\cdot 5 \\times 10^{-3}\\ \\text{g} = 8{,}3 \\times 10^{11}\\ \\text{Bq}$$\n\nLa constant de desintegració surt del període de semidesintegració (quan $A = A_0/2$):\n\n$$\\lambda = \\frac{\\ln 2}{t_{1/2}} = \\frac{\\ln 2}{138\\ \\text{dies}} = 5{,}023 \\times 10^{-3}\\ \\text{dies}^{-1}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Activitat al cap d'una setmana",
+            "cos": "L'activitat decreix exponencialment, $A(t) = A_0\\,e^{-\\lambda t}$ (podem treballar en dies perquè $\\lambda t$ és adimensional):\n\n$$A = 8{,}3 \\times 10^{11} \\cdot e^{-5{,}023 \\times 10^{-3} \\cdot 7} = 8{,}01 \\times 10^{11}\\ \\text{Bq}$$\n\nResultat: **$A = 8{,}01 \\times 10^{11}\\ \\text{Bq}$**. Com que una setmana és molt menys que 138 dies, l'activitat gairebé no ha disminuït (un 3,5 %)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball del camp i energia potencial",
+            "cos": "El camp elèctric és conservatiu: el treball que fa en portar una càrrega $q$ d'un punt a un altre és menys la variació d'energia potencial:\n\n$$W = -\\Delta U = -q\\,\\Delta V = -q\\,(V_f - V_i)$$\n\nLes càrregues vénen d'una distància molt gran, on el potencial és nul ($V_i = 0$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Primer pas: primer electró",
+            "cos": "Només hi ha la partícula alfa. El potencial que crea a la distància $r$ és:\n\n$$V_{f1} = k\\,\\frac{q_\\alpha}{r} = 8{,}99 \\times 10^{9} \\cdot \\frac{2 \\cdot 1{,}602 \\times 10^{-19}}{0{,}6 \\times 10^{-10}} = 48{,}0\\ \\text{V}$$\n\n$$W_1 = -q_e\\,\\Delta V_1 = -(-1{,}602 \\times 10^{-19}) \\cdot 48{,}0 = 7{,}69 \\times 10^{-18}\\ \\text{J}$$\n\nEl treball és **positiu**: l'alfa (positiva) atrau l'electró (negatiu), i el camp fa el treball espontàniament."
+          },
+          {
+            "apartat": "b",
+            "titol": "Segon pas: segon electró",
+            "cos": "Ara el segon electró sent el potencial de l'alfa (a distància $r$) i el del primer electró (a distància $2r$):\n\n$$V_{f2} = k\\,\\frac{q_\\alpha}{r} + k\\,\\frac{q_e}{2r} = 48{,}0 - 8{,}99 \\times 10^{9} \\cdot \\frac{1{,}602 \\times 10^{-19}}{1{,}2 \\times 10^{-10}} = 48{,}0 - 12{,}0 = 36{,}0\\ \\text{V}$$\n\n$$W_2 = -q_e\\,\\Delta V_2 = 1{,}602 \\times 10^{-19} \\cdot 36{,}0 = 5{,}77 \\times 10^{-18}\\ \\text{J}$$\n\nÉs menor que $W_1$ perquè el primer electró repel·leix el segon."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia potencial de la configuració final",
+            "cos": "Inicialment (càrregues molt separades) $U_i = 0$. Per tant, $U_f = -W_\\text{total}$:\n\n$$U_f = -(W_1 + W_2) = -(7{,}69 + 5{,}77) \\times 10^{-18} = -1{,}35 \\times 10^{-17}\\ \\text{J}$$\n\nComprovació sumant les energies de cada parella de càrregues (dues parelles alfa-electró i una electró-electró):\n\n$$U = 2\\,k\\,\\frac{q_\\alpha q_e}{r} + k\\,\\frac{q_e^2}{2r} = \\frac{k e^2}{r}\\left(-4 + \\frac{1}{2}\\right) = -3{,}5 \\cdot \\frac{8{,}99 \\times 10^{9} \\cdot (1{,}602 \\times 10^{-19})^2}{0{,}6 \\times 10^{-10}} = -1{,}35 \\times 10^{-17}\\ \\text{J}$$\n\nResultat: **$U_f = -1{,}35 \\times 10^{-17}\\ \\text{J}$** (negativa: el sistema és lligat)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "${}^{210}_{84}\\text{Po} \\to {}^{4}_{2}\\text{He} + {}^{206}_{82}\\text{Pb}$; $A = 8{,}01 \\times 10^{11}\\ \\text{Bq}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$W_1 = 7{,}69 \\times 10^{-18}\\ \\text{J}$; $W_2 = 5{,}77 \\times 10^{-18}\\ \\text{J}$; $U_f = -1{,}35 \\times 10^{-17}\\ \\text{J}$"
+          }
+        ],
+        "nota": "A la solució oficial la partícula alfa apareix escrita com ${}^{4}_{2}\\text{H}$ en lloc de ${}^{4}_{2}\\text{He}$ (errada tipogràfica). Error típic: oblidar el signe negatiu de la càrrega de l'electró, que faria sortir treballs negatius."
+      }
+    },
+    {
+      "id": "fisica-2024-J-e7",
+      "exercici": 7,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Efecte fotoelèctric: treball d'extracció, potencial de frenada i longitud d'ona de De Broglie",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "treball d'extracció",
+        "potencial de frenada",
+        "longitud d'ona de de broglie",
+        "freqüència llindar"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        14
+      ],
+      "enunciat": "Observem que en una mostra metàl·lica apareix l'efecte fotoelèctric quan la il·luminem amb llum monocromàtica de longituds d'ona més petites o iguals a $650\\ \\text{nm}$.\n\n**Dades:**\n- $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$\n- $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$\n- $m_\\text{e} = 9{,}11 \\times 10^{-31}\\ \\text{kg}$\n- $h = 6{,}626 \\times 10^{-34}\\ \\text{J s}$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el treball d'extracció del metall. Determineu el potencial de frenada si il·luminem el metall amb llum de $300\\ \\text{nm}$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu l'expressió de la velocitat dels electrons en funció de la longitud d'ona incident per a aquest metall. Calculeu la velocitat dels electrons per a una longitud d'ona incident de $500\\ \\text{nm}$ i la longitud d'ona de De Broglie associada a aquests electrons.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud d'ona llindar: $\\lambda_0 = 650\\ \\text{nm} = 6{,}50 \\times 10^{-7}\\ \\text{m}$\n- $\\lambda_1 = 300\\ \\text{nm} = 3{,}00 \\times 10^{-7}\\ \\text{m}$; $\\lambda_2 = 500\\ \\text{nm} = 5{,}00 \\times 10^{-7}\\ \\text{m}$\n- $h = 6{,}626 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $m_\\text{e} = 9{,}11 \\times 10^{-31}\\ \\text{kg}$, $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$\n- Incògnites: $W_0$ i $V_\\text{fre}$ (a); $v(\\lambda)$, $v(500\\ \\text{nm})$ i $\\lambda_\\text{dB}$ (b)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Treball d'extracció a partir de la longitud d'ona llindar",
+            "cos": "Segons Einstein, cada fotó d'energia $hf$ cedeix tota la seva energia a un electró: $hf = W_0 + E_c$. La longitud d'ona **llindar** (la més gran que produeix efecte) correspon a fotons que només tenen l'energia justa per arrencar l'electró ($E_c = 0$):\n\n$$f_0 = \\frac{c}{\\lambda_0} = \\frac{3{,}00 \\times 10^{8}}{650 \\times 10^{-9}} = 4{,}62 \\times 10^{14}\\ \\text{Hz}$$\n\n$$W_0 = h f_0 = 6{,}626 \\times 10^{-34} \\cdot 4{,}62 \\times 10^{14} = 3{,}06 \\times 10^{-19}\\ \\text{J} = 1{,}91\\ \\text{eV}$$\n\nResultat: **$W_0 = 3{,}06 \\times 10^{-19}\\ \\text{J}$** ($1{,}91\\ \\text{eV}$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia cinètica màxima amb llum de 300 nm",
+            "cos": "$$f = \\frac{c}{\\lambda_1} = \\frac{3{,}00 \\times 10^{8}}{300 \\times 10^{-9}} = 1{,}00 \\times 10^{15}\\ \\text{Hz}$$\n\n$$E_c = h f - W_0 = 6{,}626 \\times 10^{-34} \\cdot 1{,}00 \\times 10^{15} - 3{,}06 \\times 10^{-19} = 3{,}57 \\times 10^{-19}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potencial de frenada",
+            "cos": "El potencial de frenada és la diferència de potencial que cal aplicar per aturar els electrons més ràpids: l'energia potencial elèctrica que guanyen ha d'igualar la seva energia cinètica, $|e|\\,\\Delta V = E_c$:\n\n$$\\Delta V = \\frac{E_c}{|e|} = \\frac{3{,}57 \\times 10^{-19}}{1{,}602 \\times 10^{-19}} = 2{,}23\\ \\text{V}$$\n\nResultat: **$V_\\text{fre} = 2{,}23\\ \\text{V}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Expressió de la velocitat en funció de λ",
+            "cos": "De $\\frac{1}{2}m_\\text{e} v^2 = hf - W_0$ amb $f = c/\\lambda$, aïllem la velocitat:\n\n$$v(\\lambda) = \\sqrt{\\frac{2}{m_\\text{e}}\\left(\\frac{hc}{\\lambda} - W_0\\right)} = \\sqrt{\\frac{2}{9{,}11 \\times 10^{-31}}\\left(\\frac{6{,}626 \\times 10^{-34} \\cdot 3{,}00 \\times 10^{8}}{\\lambda} - 3{,}06 \\times 10^{-19}\\right)}$$\n\nCalculant els coeficients ($2hc/m_\\text{e} = 4{,}36 \\times 10^{5}$ i $2W_0/m_\\text{e} = 6{,}71 \\times 10^{11}$):\n\n$$v(\\lambda) = \\sqrt{\\frac{4{,}36 \\times 10^{5}}{\\lambda} - 6{,}71 \\times 10^{11}}\\ \\ \\text{m/s} \\quad (\\lambda \\text{ en m},\\ \\lambda \\le 650\\ \\text{nm})$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat per a 500 nm",
+            "cos": "$$v = \\sqrt{\\frac{4{,}36 \\times 10^{5}}{500 \\times 10^{-9}} - 6{,}71 \\times 10^{11}} = \\sqrt{8{,}73 \\times 10^{11} - 6{,}71 \\times 10^{11}} = 4{,}49 \\times 10^{5}\\ \\text{m/s}$$\n\nResultat: **$v = 4{,}49 \\times 10^{5}\\ \\text{m/s}$** (molt menor que $c$, no cal relativitat)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud d'ona de De Broglie",
+            "cos": "Segons De Broglie, tota partícula amb quantitat de moviment $p = m v$ té associada una ona de longitud $\\lambda = h/p$:\n\n$$\\lambda_\\text{dB} = \\frac{h}{m_\\text{e} v} = \\frac{6{,}626 \\times 10^{-34}}{9{,}11 \\times 10^{-31} \\cdot 4{,}49 \\times 10^{5}} = 1{,}62 \\times 10^{-9}\\ \\text{m} = 1{,}62\\ \\text{nm}$$\n\nResultat: **$\\lambda_\\text{dB} = 1{,}62\\ \\text{nm}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$W_0 = 3{,}06 \\times 10^{-19}\\ \\text{J} = 1{,}91\\ \\text{eV}$; $V_\\text{fre} = 2{,}23\\ \\text{V}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v(\\lambda) = \\sqrt{4{,}36 \\times 10^{5}/\\lambda - 6{,}71 \\times 10^{11}}\\ \\text{m/s}$; $v(500\\ \\text{nm}) = 4{,}49 \\times 10^{5}\\ \\text{m/s}$; $\\lambda_\\text{dB} = 1{,}62\\ \\text{nm}$"
+          }
+        ],
+        "nota": "**Discrepància amb la solució oficial:** la pauta escriu el terme constant com $6{,}61 \\times 10^{11}$, però $2W_0/m_\\text{e} = 2 \\cdot 3{,}06 \\times 10^{-19} / 9{,}11 \\times 10^{-31} = 6{,}71 \\times 10^{11}\\ \\text{m}^2/\\text{s}^2$. Amb aquest error obté $v = 4{,}59 \\times 10^{5}\\ \\text{m/s}$ i $\\lambda_\\text{dB} = 1{,}58\\ \\text{nm}$; els valors correctes són $v = 4{,}49 \\times 10^{5}\\ \\text{m/s}$ i $\\lambda_\\text{dB} = 1{,}62\\ \\text{nm}$. El mètode és el mateix."
+      }
+    }
+  ]
+}

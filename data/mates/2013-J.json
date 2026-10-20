@@ -1,0 +1,1343 @@
+{
+  "examen": {
+    "id": "mates-2013-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2013,
+    "convocatoria": "juny",
+    "serie": "3, 4 i 5",
+    "pdf_examen": "pdfs/mates/2013-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2013-J-solucio.pdf",
+    "estructura": "El PDF conté tres sèries (4, 3 i 5, en aquest ordre). A cada sèrie cal respondre CINC de les sis qüestions. Cada qüestió val 2 punts. En les respostes, cal explicar sempre què es vol fer i per què. Es pot utilitzar calculadora (no programable ni amb informació emmagatzemada o capacitat de transmetre-la)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2013-J-s3-e1",
+      "serie": "3",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Recta perpendicular i pla paral·lel a un pla donat per un punt",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "vector normal",
+        "equació contínua de la recta",
+        "equació general del pla",
+        "plans paral·lels",
+        "recta perpendicular a un pla"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Sigui $\\pi: 3x - 2y + z = 10$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu l'equació contínua de la recta $r$ perpendicular a $\\pi$ que passa pel punt $P = (-1, 3, 2)$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu també l'equació cartesiana (és a dir, de la forma $Ax + By + Cz + D = 0$) del pla $\\pi_1$ paral·lel a $\\pi$ que passa pel mateix punt $P$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Pla $\\pi: 3x - 2y + z = 10$. Els coeficients de $x, y, z$ formen el **vector normal** (característic) del pla: $\\vec n = (3, -2, 1)$.\n- Punt $P = (-1, 3, 2)$.\n- Incògnites: a) la recta $r \\perp \\pi$ per $P$; b) el pla $\\pi_1 \\parallel \\pi$ per $P$."
+          },
+          {
+            "apartat": "a",
+            "titol": "El vector normal del pla fa de vector director",
+            "cos": "Una recta perpendicular a un pla té la direcció del vector normal del pla. Per tant, prenem $\\vec v_r = \\vec n = (3, -2, 1)$ i el punt $P = (-1, 3, 2)$.\n\nL'equació contínua d'una recta per $(x_0, y_0, z_0)$ amb director $(v_1, v_2, v_3)$ és $\\dfrac{x - x_0}{v_1} = \\dfrac{y - y_0}{v_2} = \\dfrac{z - z_0}{v_3}$:\n\n$$r:\\ \\frac{x + 1}{3} = \\frac{y - 3}{-2} = \\frac{z - 2}{1}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Els plans paral·lels tenen el mateix vector normal",
+            "cos": "Dos plans paral·lels tenen vectors normals proporcionals; podem prendre el mateix: $\\pi_1: 3x - 2y + z + D = 0$. Imposem que passi per $P = (-1, 3, 2)$:\n\n$$3(-1) - 2\\cdot 3 + 2 + D = 0 \\ \\Rightarrow\\ -3 - 6 + 2 + D = 0 \\ \\Rightarrow\\ D = 7$$\n\n**$\\pi_1: 3x - 2y + z + 7 = 0$**\n\nComprovació: $\\pi_1$ i $\\pi$ tenen el mateix normal i termes independents diferents ($7 \\ne -10$), així que són paral·lels i no coincidents."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$r: \\dfrac{x+1}{3} = \\dfrac{y-3}{-2} = \\dfrac{z-2}{1}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\pi_1: 3x - 2y + z + 7 = 0$"
+          }
+        ],
+        "nota": "També es pot escriure directament $\\pi_1$ amb la fórmula $A(x - x_0) + B(y - y_0) + C(z - z_0) = 0$: $3(x + 1) - 2(y - 3) + (z - 2) = 0$, que és el mateix pla."
+      }
+    },
+    {
+      "id": "mates-2013-J-s3-e2",
+      "serie": "3",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Equació matricial amb paràmetre i inversa d'una matriu 2×2",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "producte de matrius",
+        "matriu identitat",
+        "matriu inversa",
+        "determinant",
+        "igualtat de matrius"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Considereu la matriu $A = \\begin{pmatrix} a - 1 & 1 \\\\ 1 & a + 1 \\end{pmatrix}$. Sigui $I$ la matriu identitat d'ordre 2.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu el valor del paràmetre $a$ perquè es compleixi que $A^2 - 2A = I$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la matriu inversa de la matriu $A$ quan $a = -2$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Calculem $A^2$",
+            "cos": "Multipliquem files per columnes:\n\n$$A^2 = \\begin{pmatrix} a-1 & 1 \\\\ 1 & a+1 \\end{pmatrix}\\begin{pmatrix} a-1 & 1 \\\\ 1 & a+1 \\end{pmatrix} = \\begin{pmatrix} (a-1)^2 + 1 & (a-1) + (a+1) \\\\ (a-1) + (a+1) & 1 + (a+1)^2 \\end{pmatrix} = \\begin{pmatrix} a^2 - 2a + 2 & 2a \\\\ 2a & a^2 + 2a + 2 \\end{pmatrix}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Calculem $A^2 - 2A$",
+            "cos": "$$A^2 - 2A = \\begin{pmatrix} a^2 - 2a + 2 - 2a + 2 & 2a - 2 \\\\ 2a - 2 & a^2 + 2a + 2 - 2a - 2 \\end{pmatrix} = \\begin{pmatrix} a^2 - 4a + 4 & 2a - 2 \\\\ 2a - 2 & a^2 \\end{pmatrix}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Igualem a la identitat element a element",
+            "cos": "Dues matrius són iguals si ho són tots els seus elements. Cal que:\n\n$$a^2 - 4a + 4 = 1, \\qquad 2a - 2 = 0, \\qquad a^2 = 1$$\n\nDe la segona equació, $a = 1$. **Cal comprovar** que també compleix les altres: $1 - 4 + 4 = 1$ ✓ i $1^2 = 1$ ✓.\n\n**$a = 1$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "La matriu per a $a = -2$ i el seu determinant",
+            "cos": "Amb $a = -2$: $A = \\begin{pmatrix} -3 & 1 \\\\ 1 & -1 \\end{pmatrix}$. Una matriu és invertible si el seu determinant no és zero:\n\n$$\\det A = (-3)(-1) - 1\\cdot 1 = 3 - 1 = 2 \\ne 0$$\n\nPer tant, $A$ és invertible."
+          },
+          {
+            "apartat": "b",
+            "titol": "Inversa amb la fórmula de les matrius 2×2",
+            "cos": "Per a $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, $A^{-1} = \\dfrac{1}{\\det A}\\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$ (s'intercanvien els elements de la diagonal i es canvia el signe dels altres):\n\n$$A^{-1} = \\frac{1}{2}\\begin{pmatrix} -1 & -1 \\\\ -1 & -3 \\end{pmatrix} = \\begin{pmatrix} -1/2 & -1/2 \\\\ -1/2 & -3/2 \\end{pmatrix}$$\n\nComprovació: $A \\cdot A^{-1} = \\frac12\\begin{pmatrix} 3 - 1 & 3 - 3 \\\\ -1 + 1 & -1 + 3 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$ ✓"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a = 1$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A^{-1} = \\begin{pmatrix} -1/2 & -1/2 \\\\ -1/2 & -3/2 \\end{pmatrix}$"
+          }
+        ],
+        "nota": "La solució oficial també calcula la inversa pel mètode dels adjunts ($A_{11} = -1$, $A_{12} = -1$, $A_{21} = -1$, $A_{22} = -3$) i pel mètode de Gauss-Jordan sobre $(A \\mid I)$; tots donen el mateix. Error típic a l'apartat a): quedar-se amb una sola equació (per exemple $a^2 = 1$ dona $a = \\pm 1$, però $a = -1$ no compleix les altres)."
+      }
+    },
+    {
+      "id": "mates-2013-J-s3-e3",
+      "serie": "3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Àrea entre una arrel quadrada, una recta horitzontal i els eixos",
+      "tema": "integrals",
+      "temes_secundaris": [
+        "funcions"
+      ],
+      "conceptes": [
+        "àrea entre corbes",
+        "integral definida",
+        "regla de Barrow",
+        "canvi de variable",
+        "esbós de funcions"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Donada la funció $f(x) = \\sqrt{x - 1}$ i la recta horitzontal $y = k$, amb $k > 0$,",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Feu un esbós del recinte limitat per les gràfiques de la funció i la recta, i els eixos de coordenades.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu el valor de $k$ sabent que l'àrea d'aquest recinte és igual a $14/3$.",
+          "punts": 1.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Esbós de la funció i de la recta",
+            "cos": "$f(x) = \\sqrt{x - 1}$ només existeix per a $x \\ge 1$; comença a $(1, 0)$ i és creixent (és mitja paràbola tombada, $y^2 = x - 1$). La recta $y = k$ és horitzontal. El recinte queda limitat a l'esquerra per l'eix $OY$ ($x = 0$), a sota per l'eix $OX$, a dalt per $y = k$ i a la dreta per la corba:\n\n![Esbós del recinte (solució oficial)](img/mates/2013-J/s3-e3-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punt de tall entre la corba i la recta",
+            "cos": "$$\\sqrt{x - 1} = k \\ \\Rightarrow\\ x - 1 = k^2 \\ \\Rightarrow\\ x = k^2 + 1$$\n\nLa corba talla l'eix $OX$ a $x = 1$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantegem l'àrea com a rectangle menys la zona sota la corba",
+            "cos": "El recinte és el rectangle $[0, k^2 + 1] \\times [0, k]$ menys la part que queda per sota de la corba entre $x = 1$ i $x = k^2 + 1$:\n\n$$A = k(k^2 + 1) - \\int_1^{k^2 + 1} (x - 1)^{1/2}\\,dx$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Càlcul de la integral (regla de Barrow)",
+            "cos": "Una primitiva de $(x - 1)^{1/2}$ és $\\dfrac{(x - 1)^{3/2}}{3/2} = \\dfrac{2}{3}(x - 1)^{3/2}$:\n\n$$\\int_1^{k^2 + 1} (x - 1)^{1/2}\\,dx = \\frac{2}{3}\\left[(x - 1)^{3/2}\\right]_1^{k^2 + 1} = \\frac{2}{3}\\left((k^2)^{3/2} - 0\\right) = \\frac{2k^3}{3}$$\n\n(hem usat que $k > 0$, per tant $(k^2)^{3/2} = k^3$). Llavors:\n\n$$A = k^3 + k - \\frac{2k^3}{3} = \\frac{k^3}{3} + k$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Imposem que l'àrea valgui 14/3",
+            "cos": "$$\\frac{k^3}{3} + k = \\frac{14}{3} \\ \\Rightarrow\\ k^3 + 3k - 14 = 0$$\n\nProvem divisors de 14 (Ruffini): $k = 2$ dona $8 + 6 - 14 = 0$ ✓. Factoritzant, $k^3 + 3k - 14 = (k - 2)(k^2 + 2k + 7)$, i el segon factor no té arrels reals (discriminant $4 - 28 < 0$).\n\n**$k = 2$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Recinte entre $x = 0$, $y = 0$, $y = k$ i la corba $y = \\sqrt{x-1}$ (de $x = 1$ a $x = k^2 + 1$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A(k) = \\dfrac{k^3}{3} + k$; $\\ k = 2$"
+          }
+        ],
+        "nota": "La solució oficial també proposa calcular la integral amb el canvi $x - 1 = t^2$ ($dx = 2t\\,dt$, límits $t = 0$ i $t = k$), que dona $2\\int_0^k t^2\\,dt = \\frac{2k^3}{3}$. Atenció: si es fa canvi de variable, cal canviar també els límits d'integració."
+      }
+    },
+    {
+      "id": "mates-2013-J-s3-e4",
+      "serie": "3",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Vèrtex d'un triangle d'àrea donada sobre una recta",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "producte vectorial",
+        "àrea d'un triangle",
+        "equacions paramètriques de la recta",
+        "mòdul d'un vector"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Un triangle d'àrea $3/2$ té dos dels vèrtexs als punts $P = (0, 0, 0)$ i $Q = (2, 0, 1)$. El tercer vèrtex, $R$, és un punt de la recta\n\n$$r: \\begin{cases} x + y + z = 0 \\\\ y = 1 \\end{cases}$$\n\ni té la primera coordenada no nul·la. Calculeu les coordenades del vèrtex $R$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $P = (0, 0, 0)$, $Q = (2, 0, 1)$; àrea del triangle $PQR$: $3/2$.\n- $R \\in r$, amb primera coordenada $\\ne 0$.\n- Incògnita: les coordenades de $R$."
+          },
+          {
+            "apartat": null,
+            "titol": "Punt genèric de la recta",
+            "cos": "De $y = 1$ i $x + y + z = 0$ surt $x = -1 - z$. Prenent $z = \\lambda$ com a paràmetre:\n\n$$R = (-1 - \\lambda,\\ 1,\\ \\lambda)$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Àrea amb el producte vectorial",
+            "cos": "L'àrea del triangle és la meitat del mòdul del producte vectorial de dos costats: $A = \\frac12 \\lVert \\overrightarrow{PQ} \\times \\overrightarrow{PR} \\rVert$. Amb $\\overrightarrow{PQ} = (2, 0, 1)$ i $\\overrightarrow{PR} = (-1 - \\lambda, 1, \\lambda)$:\n\n$$\\overrightarrow{PQ} \\times \\overrightarrow{PR} = \\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ 2 & 0 & 1 \\\\ -1-\\lambda & 1 & \\lambda \\end{vmatrix} = (0\\cdot\\lambda - 1\\cdot 1,\\ 1\\cdot(-1-\\lambda) - 2\\lambda,\\ 2\\cdot 1 - 0) = (-1,\\ -3\\lambda - 1,\\ 2)$$\n\n$$\\lVert \\overrightarrow{PQ} \\times \\overrightarrow{PR} \\rVert = \\sqrt{1 + (3\\lambda + 1)^2 + 4} = \\sqrt{9\\lambda^2 + 6\\lambda + 6}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Imposem que l'àrea valgui 3/2",
+            "cos": "$$\\frac{1}{2}\\sqrt{9\\lambda^2 + 6\\lambda + 6} = \\frac{3}{2} \\ \\Rightarrow\\ 9\\lambda^2 + 6\\lambda + 6 = 9 \\ \\Rightarrow\\ 9\\lambda^2 + 6\\lambda - 3 = 0 \\ \\Rightarrow\\ 3\\lambda^2 + 2\\lambda - 1 = 0$$\n\n$$\\lambda = \\frac{-2 \\pm \\sqrt{4 + 12}}{6} = \\frac{-2 \\pm 4}{6} \\ \\Rightarrow\\ \\lambda = \\frac{1}{3}\\ \\text{ o }\\ \\lambda = -1$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Triem el punt amb primera coordenada no nul·la",
+            "cos": "- $\\lambda = -1$: $R_1 = (0, 1, -1)$ → primera coordenada nul·la, **es descarta**.\n- $\\lambda = \\frac13$: $R_2 = \\left(-\\frac43, 1, \\frac13\\right)$.\n\nComprovació: $R_2$ compleix $-\\frac43 + 1 + \\frac13 = 0$ ✓ i $y = 1$ ✓.\n\n**$R = \\left(-\\dfrac{4}{3},\\ 1,\\ \\dfrac{1}{3}\\right)$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$R = \\left(-\\frac{4}{3}, 1, \\frac{1}{3}\\right)$ (l'altra solució, $(0, 1, -1)$, té la primera coordenada nul·la)"
+          }
+        ],
+        "nota": "La solució oficial també obté la direcció de la recta com $(1,1,1)\\times(0,1,0) = (-1, 0, 1)$, i proposa una segona via: base $d(P,Q) = \\sqrt5$ i altura $d(R, \\overline{PQ}) = \\dfrac{\\lVert \\overrightarrow{PR} \\times \\overrightarrow{PQ}\\rVert}{\\lVert\\overrightarrow{PQ}\\rVert}$, que porta a la mateixa equació."
+      }
+    },
+    {
+      "id": "mates-2013-J-s3-e5",
+      "serie": "3",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Con de volum màxim inscrit en una semiesfera",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades",
+        "geometria"
+      ],
+      "conceptes": [
+        "optimització",
+        "volum del con",
+        "teorema de Pitàgores",
+        "derivada segona",
+        "màxim relatiu"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "En una semiesfera de radi $R$ inscrivim un con situant el vèrtex al centre de la semiesfera, tal com es veu en el dibuix.",
+      "figures": [
+        {
+          "src": "img/mates/2013-J/s3-e5.png",
+          "peu": "Con inscrit en una semiesfera de radi R"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Sabent que el volum d'un con és igual a l'àrea de la base multiplicada per l'altura i dividida per 3, comproveu que, en aquest cas, podem expressar el volum com $V = \\dfrac{\\pi \\cdot h}{3}(R^2 - h^2)$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu les dimensions d'aquest con (el radi de la base i l'altura) perquè el seu volum sigui màxim i comproveu que es tracta realment d'un màxim.",
+          "punts": 1.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Semiesfera de radi $R$ (constant). Con amb vèrtex al centre, radi de la base $r$ i altura $h$, amb $0 < h < R$.\n- Incògnites: a) $V$ en funció de $h$; b) $r$ i $h$ que fan $V$ màxim."
+          },
+          {
+            "apartat": "a",
+            "titol": "Relació entre $r$, $h$ i $R$ (Pitàgores)",
+            "cos": "La circumferència de la base del con està sobre la semiesfera, per tant la distància del centre a qualsevol punt d'aquesta circumferència és $R$. Es forma un triangle rectangle de catets $h$ i $r$ i hipotenusa $R$:\n\n$$h^2 + r^2 = R^2 \\ \\Rightarrow\\ r^2 = R^2 - h^2$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Volum en funció de $h$",
+            "cos": "$$V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (R^2 - h^2) h = \\frac{\\pi \\cdot h}{3}(R^2 - h^2)$$\n\ntal com volíem comprovar."
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivem i igualem a zero",
+            "cos": "Escrivim $V(h) = \\dfrac{\\pi}{3}(R^2 h - h^3)$ i derivem respecte de $h$ ($R$ és constant):\n\n$$V'(h) = \\frac{\\pi}{3}(R^2 - 3h^2) = 0 \\ \\Rightarrow\\ h^2 = \\frac{R^2}{3} \\ \\Rightarrow\\ h = \\pm\\frac{R}{\\sqrt3}$$\n\nDescartem la solució negativa (una altura no pot ser negativa): $h = \\dfrac{R}{\\sqrt3} = \\dfrac{R\\sqrt3}{3}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovem que és un màxim",
+            "cos": "Derivada segona: $V''(h) = \\dfrac{\\pi}{3}(-6h) = -2\\pi h$. Per a $h = \\frac{R\\sqrt3}{3} > 0$, $V''(h) < 0$, per tant és un **màxim relatiu**. (També: $V' > 0$ per a $h$ petita i $V' < 0$ per a $h$ propera a $R$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Radi de la base",
+            "cos": "$$r = \\sqrt{R^2 - h^2} = \\sqrt{R^2 - \\frac{R^2}{3}} = R\\sqrt{\\frac{2}{3}} = \\frac{R\\sqrt6}{3}$$\n\n**Con de volum màxim: $h = \\dfrac{R\\sqrt3}{3}$, $\\ r = \\dfrac{R\\sqrt6}{3}$** (amb volum $V_\\text{màx} = \\dfrac{2\\sqrt3\\,\\pi R^3}{27}$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$V = \\frac{\\pi h}{3}(R^2 - h^2)$, usant $r^2 = R^2 - h^2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$h = \\frac{R\\sqrt3}{3}$, $r = \\frac{R\\sqrt6}{3}$ (màxim perquè $V''(h) = -2\\pi h < 0$)"
+          }
+        ],
+        "nota": "El volum màxim $\\frac{2\\sqrt3\\pi R^3}{27}$ no es demana; l'hem afegit com a informació. Error típic: derivar respecte de $R$ en lloc de $h$; aquí $R$ és un valor fix."
+      }
+    },
+    {
+      "id": "mates-2013-J-s3-e6",
+      "serie": "3",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Paràmetres d'una cúbica a partir de condicions de tangència",
+      "tema": "derivades",
+      "temes_secundaris": [
+        "sistemes"
+      ],
+      "conceptes": [
+        "recta tangent",
+        "pendent",
+        "rectes paral·leles",
+        "sistema d'equacions lineals",
+        "polinomis"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Sigui $f(x) = x^3 + ax^2 + bx + c$. Sabem que la gràfica d'aquesta funció és tangent a la recta $r: y = x + 3$ en el punt d'abscissa $x = -1$, i que en el punt d'abscissa $x = 1$ la recta tangent és paral·lela a la recta $r$.\n\nCalculeu el valor dels paràmetres $a$, $b$ i $c$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Traduïm les condicions a equacions",
+            "cos": "- **Tangent a $r$ en $x = -1$**: la corba i la recta passen pel mateix punt i tenen el mateix pendent. La recta en $x = -1$ val $-1 + 3 = 2$ i té pendent 1, per tant $f(-1) = 2$ i $f'(-1) = 1$.\n- **Tangent en $x = 1$ paral·lela a $r$**: rectes paral·leles tenen el mateix pendent, per tant $f'(1) = 1$."
+          },
+          {
+            "apartat": null,
+            "titol": "Plantegem el sistema",
+            "cos": "Amb $f'(x) = 3x^2 + 2ax + b$:\n\n$$f(-1) = -1 + a - b + c = 2 \\ \\Rightarrow\\ a - b + c = 3$$\n$$f'(-1) = 3 - 2a + b = 1 \\ \\Rightarrow\\ -2a + b = -2$$\n$$f'(1) = 3 + 2a + b = 1 \\ \\Rightarrow\\ 2a + b = -2$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Resolem el sistema",
+            "cos": "Sumant les dues últimes equacions: $2b = -4 \\Rightarrow b = -2$. Restant-les: $4a = 0 \\Rightarrow a = 0$. De la primera: $0 + 2 + c = 3 \\Rightarrow c = 1$.\n\n**$a = 0,\\ b = -2,\\ c = 1$**, és a dir, $f(x) = x^3 - 2x + 1$.\n\nComprovació: $f(-1) = -1 + 2 + 1 = 2$ ✓; $f'(x) = 3x^2 - 2$, $f'(\\pm 1) = 1$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$a = 0$, $b = -2$, $c = 1$ ($f(x) = x^3 - 2x + 1$)"
+          }
+        ],
+        "nota": "Error típic: oblidar la condició $f(-1) = 2$ (que la corba passi pel punt de tangència) i usar només les condicions de pendent; sense ella no es pot trobar $c$."
+      }
+    },
+    {
+      "id": "mates-2013-J-s4-e1",
+      "serie": "4",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Paràmetres d'un sistema sabent-ne una solució",
+      "tema": "sistemes",
+      "temes_secundaris": [],
+      "conceptes": [
+        "sistema d'equacions lineals",
+        "solució d'un sistema",
+        "mètode de Gauss",
+        "paràmetres"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Sabem que el vector $(2, 1, -1)$ és una solució del sistema\n\n$$\\left.\\begin{aligned} ax + by + cz &= a + c \\\\ bx - y + bz &= a - b - c \\\\ cx - by + 2z &= b \\end{aligned}\\right\\}$$\n\nCalculeu el valor dels paràmetres $a$, $b$ i $c$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Idea: substituïm la solució",
+            "cos": "Que $(x, y, z) = (2, 1, -1)$ sigui solució vol dir que, en substituir-la, les tres equacions es compleixen. Així obtenim un nou sistema on les incògnites són $a$, $b$ i $c$:\n\n$$\\left.\\begin{aligned} 2a + b - c &= a + c \\\\ 2b - 1 - b &= a - b - c \\\\ 2c - b - 2 &= b \\end{aligned}\\right\\}\n\\ \\Rightarrow\\\n\\left.\\begin{aligned} a + b - 2c &= 0 \\\\ -a + 2b + c &= 1 \\\\ -2b + 2c &= 2 \\end{aligned}\\right\\}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Resolem el sistema en $a$, $b$, $c$",
+            "cos": "De la tercera: $c = b + 1$. Substituïm a la primera: $a + b - 2b - 2 = 0 \\Rightarrow a = b + 2$. Substituïm a la segona:\n\n$$-(b + 2) + 2b + (b + 1) = 1 \\ \\Rightarrow\\ 2b - 1 = 1 \\ \\Rightarrow\\ b = 1$$\n\nLlavors $a = 3$ i $c = 2$.\n\n**$a = 3,\\ b = 1,\\ c = 2$**"
+          },
+          {
+            "apartat": null,
+            "titol": "Comprovació",
+            "cos": "Amb $a = 3, b = 1, c = 2$ i $(2, 1, -1)$:\n- $3\\cdot 2 + 1 - 2 = 5 = 3 + 2$ ✓\n- $2 - 1 - 1 = 0 = 3 - 1 - 2$ ✓\n- $2\\cdot 2 - 1 - 2 = 1 = b$ ✓"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$a = 3$, $b = 1$, $c = 2$"
+          }
+        ],
+        "nota": "Error típic: intentar discutir el sistema en $x, y, z$. Aquí ja coneixem $x, y, z$; les incògnites són els paràmetres."
+      }
+    },
+    {
+      "id": "mates-2013-J-s4-e2",
+      "serie": "4",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Àrea entre una paràbola i una recta horitzontal amb paràmetre",
+      "tema": "integrals",
+      "temes_secundaris": [],
+      "conceptes": [
+        "àrea entre corbes",
+        "integral definida",
+        "regla de Barrow",
+        "paràbola",
+        "simetria"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "La corba $y = x^2$ i la recta $y = k$, amb $k > 0$, determinen una regió plana.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el valor de l'àrea d'aquesta regió en funció del paràmetre $k$.",
+          "punts": 1.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu el valor de $k$ perquè l'àrea limitada sigui $\\sqrt{6}\\ u^2$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Esbós i punts de tall",
+            "cos": "La regió és la que queda per sota de la recta $y = k$ i per sobre de la paràbola:\n\n![Regió entre la paràbola i la recta (solució oficial)](img/mates/2013-J/s4-e2-sol.png)\n\nPunts de tall: $x^2 = k \\Rightarrow x = \\pm\\sqrt{k}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Plantegem i calculem la integral",
+            "cos": "Entre $-\\sqrt k$ i $\\sqrt k$ la recta està per sobre de la paràbola, per tant integrem (funció de dalt) $-$ (funció de baix):\n\n$$A = \\int_{-\\sqrt k}^{\\sqrt k} (k - x^2)\\,dx = \\left[kx - \\frac{x^3}{3}\\right]_{-\\sqrt k}^{\\sqrt k}$$\n\n$$= \\left(k\\sqrt k - \\frac{k\\sqrt k}{3}\\right) - \\left(-k\\sqrt k + \\frac{k\\sqrt k}{3}\\right) = 2\\cdot\\frac{2k\\sqrt k}{3} = \\frac{4k\\sqrt k}{3}$$\n\n**$A(k) = \\dfrac{4k\\sqrt k}{3}\\ u^2$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Imposem $A = \\sqrt 6$",
+            "cos": "$$\\frac{4k\\sqrt k}{3} = \\sqrt 6$$\n\nElevem al quadrat els dos membres (tots dos són positius):\n\n$$\\frac{16k^3}{9} = 6 \\ \\Rightarrow\\ k^3 = \\frac{54}{16} = \\frac{27}{8} \\ \\Rightarrow\\ k = \\frac{3}{2}$$\n\nComprovació: $\\frac{4\\cdot\\frac32\\sqrt{3/2}}{3} = 2\\sqrt{\\tfrac32} = \\sqrt{6}$ ✓\n\n**$k = \\dfrac32$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$A(k) = \\dfrac{4k\\sqrt k}{3}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$k = \\dfrac{3}{2}$"
+          }
+        ],
+        "nota": "Per simetria també es pot fer $A = 2\\int_0^{\\sqrt k}(k - x^2)\\,dx$. Discrepància menor: les pautes oficials indiquen \\\"1 punt per cada apartat\\\", mentre que l'enunciat de l'examen diu 1,5 punts per a l'apartat a) i 0,5 per al b); hem seguit l'enunciat."
+      }
+    },
+    {
+      "id": "mates-2013-J-s4-e3",
+      "serie": "4",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Matriu inversa igual a la transposada (matriu ortogonal)",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "matriu inversa",
+        "matriu transposada",
+        "producte de matrius",
+        "matriu ortogonal",
+        "radicals"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Sigui $A = \\begin{pmatrix} \\frac{1}{\\sqrt2} & \\frac{1}{\\sqrt3} & \\frac{1}{\\sqrt6} \\\\ 0 & \\frac{1}{\\sqrt3} & -\\frac{2}{\\sqrt6} \\\\ p & -\\frac{1}{\\sqrt3} & -\\frac{1}{\\sqrt6} \\end{pmatrix}$.\n\n*Nota:* No aproximeu les arrels mitjançant valors amb decimals; treballeu amb els radicals.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Què significa que la matriu $B$ sigui la matriu inversa de $A$?",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu el valor del paràmetre $p$ perquè la matriu inversa de $A$ i la matriu transposada de $A$ coincideixin.",
+          "punts": 1.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Definició de matriu inversa",
+            "cos": "$B$ és la inversa de $A$ si i només si\n\n$$A \\cdot B = I \\quad \\text{i} \\quad B \\cdot A = I,$$\n\non $I$ és la matriu identitat del mateix ordre que $A$ (i $B$). Per a matrius quadrades n'hi ha prou de comprovar-ne una de les dues."
+          },
+          {
+            "apartat": "b",
+            "titol": "Estratègia",
+            "cos": "Volem $A^{-1} = A^T$. Pel que hem dit a l'apartat a), això és equivalent a $A \\cdot A^T = I$. És molt més senzill calcular aquest producte que calcular la inversa d'una matriu amb paràmetre."
+          },
+          {
+            "apartat": "b",
+            "titol": "Calculem $A\\cdot A^T$",
+            "cos": "L'element $(i, j)$ de $A\\cdot A^T$ és el producte escalar de la fila $i$ per la fila $j$ de $A$:\n\n- Fila 1 · fila 1: $\\frac12 + \\frac13 + \\frac16 = 1$\n- Fila 2 · fila 2: $0 + \\frac13 + \\frac46 = 1$\n- Fila 3 · fila 3: $p^2 + \\frac13 + \\frac16 = p^2 + \\frac12$\n- Fila 1 · fila 2: $0 + \\frac13 - \\frac{2}{6} = 0$\n- Fila 1 · fila 3: $\\frac{p}{\\sqrt2} - \\frac13 - \\frac16 = \\frac{p}{\\sqrt2} - \\frac12$\n- Fila 2 · fila 3: $0 - \\frac13 + \\frac{2}{6} = 0$\n\n$$A\\cdot A^T = \\begin{pmatrix} 1 & 0 & \\frac{p}{\\sqrt2} - \\frac12 \\\\ 0 & 1 & 0 \\\\ \\frac{p}{\\sqrt2} - \\frac12 & 0 & p^2 + \\frac12 \\end{pmatrix}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Igualem a la identitat",
+            "cos": "Cal que\n\n$$\\frac{p}{\\sqrt2} - \\frac12 = 0 \\quad \\text{i} \\quad p^2 + \\frac12 = 1$$\n\nDe la primera, $p = \\dfrac{\\sqrt2}{2} = \\dfrac{1}{\\sqrt2}$. La segona dona $p = \\pm\\frac{1}{\\sqrt2}$, i el valor comú a les dues és $p = \\frac{1}{\\sqrt2}$ (comprovació: $\\frac12 + \\frac12 = 1$ ✓).\n\n**$p = \\dfrac{1}{\\sqrt2} = \\dfrac{\\sqrt2}{2}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$A\\cdot B = B\\cdot A = I$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$p = \\dfrac{1}{\\sqrt2} = \\dfrac{\\sqrt2}{2}$"
+          }
+        ],
+        "nota": "La solució oficial també proposa calcular $A^{-1}$ (amb $\\det A = -\\left(\\frac{p}{\\sqrt2} + \\frac12\\right)$) i igualar-la a $A^T$, però ella mateixa adverteix que és molt més llarg i propens a errors. Una matriu amb $A^{-1} = A^T$ s'anomena **ortogonal**: les seves files són vectors unitaris i perpendiculars entre si. Error típic: usar només $p^2 + \\frac12 = 1$ i donar també $p = -\\frac{1}{\\sqrt2}$, que no anul·la l'element $(1,3)$."
+      }
+    },
+    {
+      "id": "mates-2013-J-s4-e4",
+      "serie": "4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Secció trapezoïdal d'un canal d'àrea màxima",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "optimització",
+        "teorema de Pitàgores",
+        "àrea del trapezi",
+        "derivada",
+        "regla de la cadena"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Es vol construir un canal que tingui com a secció un trapezi isòsceles de manera que l'amplària superior del canal sigui el doble de l'amplària inferior i que els costats no paral·lels siguin de 8 metres. A la dreta teniu un esquema de la secció del canal.",
+      "figures": [
+        {
+          "src": "img/mates/2013-J/s4-e4.png",
+          "peu": "Secció trapezoïdal del canal"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu el valor del segment $L$ de la gràfica en funció de la variable $x$ (amplària inferior del canal).",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Sabem que l'àrea d'un trapezi és igual a l'altura multiplicada per la semisuma de les bases. Comproveu que, en aquest cas, l'àrea de la secció és donada per $$A(x) = \\frac{3x\\sqrt{256 - x^2}}{4}$$",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Calculeu el valor de $x$ perquè l'àrea de la secció del canal sigui màxima (no cal que comproveu que és realment un màxim).",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Base inferior $b_1 = x$, base superior $b_2 = 2x$, costats no paral·lels de 8 m.\n- Incògnites: a) $L$; b) comprovar $A(x)$; c) $x$ que fa màxima l'àrea."
+          },
+          {
+            "apartat": "a",
+            "titol": "El segment $L$",
+            "cos": "El trapezi és isòsceles, per tant l'excés de la base gran sobre la petita es reparteix igual als dos costats: $L + x + L = 2x$.\n\n$$2L = x \\ \\Rightarrow\\ L = \\frac{x}{2}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Altura amb Pitàgores",
+            "cos": "Al triangle rectangle lateral, la hipotenusa és el costat de 8 m i els catets són $h$ i $L$:\n\n$$h^2 + L^2 = 8^2 \\ \\Rightarrow\\ h = \\sqrt{64 - \\frac{x^2}{4}} = \\sqrt{\\frac{256 - x^2}{4}} = \\frac{\\sqrt{256 - x^2}}{2}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Àrea del trapezi",
+            "cos": "$$A(x) = \\frac{b_1 + b_2}{2}\\cdot h = \\frac{3x}{2}\\cdot\\frac{\\sqrt{256 - x^2}}{2} = \\frac{3x\\sqrt{256 - x^2}}{4}$$\n\ntal com volíem comprovar (amb $0 < x < 16$)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Derivada de l'àrea",
+            "cos": "Derivem amb la regla del producte i la de la cadena ($(\\sqrt u)' = \\frac{u'}{2\\sqrt u}$):\n\n$$A'(x) = \\frac34\\left[\\sqrt{256 - x^2} + x\\cdot\\frac{-2x}{2\\sqrt{256 - x^2}}\\right] = \\frac34\\cdot\\frac{256 - x^2 - x^2}{\\sqrt{256 - x^2}} = \\frac{3(256 - 2x^2)}{4\\sqrt{256 - x^2}}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Punt crític",
+            "cos": "$A'(x) = 0$ quan el numerador s'anul·la:\n\n$$256 - 2x^2 = 0 \\ \\Rightarrow\\ x^2 = 128 \\ \\Rightarrow\\ x = \\sqrt{128} = 8\\sqrt2 \\approx 11{,}31\\ \\text{m}$$\n\n(descartem la solució negativa). **L'àrea és màxima per a $x = 8\\sqrt2$ m**, i val $A(8\\sqrt2) = \\frac{3\\cdot 8\\sqrt2\\cdot\\sqrt{128}}{4} = 96\\ \\text{m}^2$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$L = \\dfrac{x}{2}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$h = \\dfrac{\\sqrt{256 - x^2}}{2}$ i $A(x) = \\dfrac{3x\\sqrt{256-x^2}}{4}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$x = 8\\sqrt2 \\approx 11{,}31$ m (àrea màxima $96\\ \\text{m}^2$)"
+          }
+        ],
+        "nota": "La solució oficial suggereix també maximitzar $f(x) = x^2(256 - x^2)$ (l'àrea al quadrat sense els factors constants), que té el màxim al mateix punt i s'evita derivar l'arrel: $f'(x) = 512x - 4x^3 = 0 \\Rightarrow x^2 = 128$. El valor de l'àrea màxima (96 m²) no es demana."
+      }
+    },
+    {
+      "id": "mates-2013-J-s4-e5",
+      "serie": "4",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Punt d'una recta que forma un triangle isòsceles",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "distància entre dos punts",
+        "equacions paramètriques de la recta",
+        "pla mediador",
+        "triangle isòsceles"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Donats els punts $P = (1, 0, -1)$ i $Q = (-1, 2, 3)$, trobeu un punt $R$ de la recta $r: \\dfrac{x + 3}{2} = \\dfrac{y + 4}{3} = \\dfrac{z - 3}{-1}$ que compleixi que el triangle de vèrtexs $P$, $Q$ i $R$ és isòsceles, en què $\\overline{PR}$ i $\\overline{QR}$ són els costats iguals del triangle.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Punt genèric de la recta",
+            "cos": "De l'equació contínua llegim un punt $(-3, -4, 3)$ i el vector director $(2, 3, -1)$. Les equacions paramètriques donen el punt genèric:\n\n$$R = (-3 + 2\\lambda,\\ -4 + 3\\lambda,\\ 3 - \\lambda)$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Condició d'isòsceles: $d(P, R) = d(Q, R)$",
+            "cos": "Calculem els quadrats de les distàncies (és equivalent i evitem arrels):\n\n$$d(P,R)^2 = (2\\lambda - 4)^2 + (3\\lambda - 4)^2 + (4 - \\lambda)^2 = 14\\lambda^2 - 48\\lambda + 48$$\n\n$$d(Q,R)^2 = (2\\lambda - 2)^2 + (3\\lambda - 6)^2 + (-\\lambda)^2 = 14\\lambda^2 - 44\\lambda + 40$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Resolem",
+            "cos": "$$14\\lambda^2 - 48\\lambda + 48 = 14\\lambda^2 - 44\\lambda + 40 \\ \\Rightarrow\\ -4\\lambda = -8 \\ \\Rightarrow\\ \\lambda = 2$$\n\n$$R = (-3 + 4,\\ -4 + 6,\\ 3 - 2) = (1, 2, 1)$$\n\nComprovació: $d(P,R) = \\sqrt{0 + 4 + 4} = 2\\sqrt2$ i $d(Q,R) = \\sqrt{4 + 0 + 4} = 2\\sqrt2$ ✓. A més, $R$ no està alineat amb $P$ i $Q$, així que és un triangle de debò.\n\n**$R = (1, 2, 1)$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$R = (1, 2, 1)$"
+          }
+        ],
+        "nota": "La solució oficial dona un segon mètode: els punts que equidisten de $P$ i $Q$ formen el **pla mediador**, que passa pel punt mitjà $M = (0, 1, 1)$ amb vector normal $\\overrightarrow{PQ} = (-2, 2, 4)$; substituint-hi el punt genèric de $r$ també surt $\\lambda = 2$. Discrepància: l'oficial escriu el pla mediador com $x + y + 2z + 3 = 0$, però a partir de $-2(x - 0) + 2(y - 1) + 4(z - 1) = 0$ s'obté $-x + y + 2z - 3 = 0$ (el punt $R = (1, 2, 1)$ compleix aquesta: $-1 + 2 + 2 - 3 = 0$, i no la de l'oficial). El resultat final, $R = (1, 2, 1)$, coincideix."
+      }
+    },
+    {
+      "id": "mates-2013-J-s4-e6",
+      "serie": "4",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Recta tangent i extrems de f a partir de la gràfica de f'",
+      "tema": "derivades",
+      "temes_secundaris": [],
+      "conceptes": [
+        "recta tangent",
+        "gràfica de la derivada",
+        "extrems relatius",
+        "monotonia",
+        "punts crítics"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "La funció $f(x)$ és derivable i passa per l'origen de coordenades. La gràfica de la funció derivada és la que veieu aquí dibuixada, essent $f'(x)$ creixent als intervals $(-\\infty, -3]$ i $[2, +\\infty)$.",
+      "figures": [
+        {
+          "src": "img/mates/2013-J/s4-e6.png",
+          "peu": "Gràfica de y = f'(x)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu l'equació de la recta tangent a la gràfica de la funció $f(x)$ en el punt d'abscissa $x = 0$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Indiqueu les abscisses dels extrems relatius de la funció $f(x)$ i classifiqueu aquests extrems.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Fórmula de la recta tangent",
+            "cos": "La recta tangent a $y = f(x)$ en $x = a$ és\n\n$$y = f(a) + f'(a)(x - a)$$\n\nNecessitem $f(0)$ i $f'(0)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Llegim les dades",
+            "cos": "- $f$ passa per l'origen: $f(0) = 0$.\n- A la gràfica, $y = f'(x)$ talla l'eix $OY$ al punt d'ordenada 1: $f'(0) = 1$.\n\n$$y = 0 + 1\\cdot(x - 0) \\ \\Rightarrow\\ \\mathbf{y = x}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punts crítics: on s'anul·la $f'$",
+            "cos": "Com que $f$ és derivable, els seus extrems relatius han de ser en punts on $f'(x) = 0$. A la gràfica, $f'$ talla l'eix $OX$ a $x = -3$, $x = 1$ i $x = 2$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Signe de $f'$ i classificació",
+            "cos": "El signe de $f'$ ens diu si $f$ creix ($f' > 0$) o decreix ($f' < 0$):\n\n| interval | $(-\\infty, -3)$ | $(-3, 1)$ | $(1, 2)$ | $(2, +\\infty)$ |\n|---|---|---|---|---|\n| signe de $f'$ | $-$ | $+$ | $-$ | $+$ |\n| $f$ | decreix | creix | decreix | creix |\n\n- $x = -3$: $f$ passa de decréixer a créixer → **mínim relatiu**.\n- $x = 1$: $f$ passa de créixer a decréixer → **màxim relatiu**.\n- $x = 2$: $f$ passa de decréixer a créixer → **mínim relatiu**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y = x$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Mínims relatius a $x = -3$ i $x = 2$; màxim relatiu a $x = 1$"
+          }
+        ],
+        "nota": "Error típic: confondre la gràfica de $f'$ amb la de $f$ i buscar els extrems on la gràfica dibuixada té els seus màxims i mínims (aquests serien els punts d'inflexió de $f$). Els extrems de $f$ són on la gràfica de $f'$ **talla** l'eix $OX$ canviant de signe."
+      }
+    },
+    {
+      "id": "mates-2013-J-s5-e1",
+      "serie": "5",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Plans perpendiculars i recta paral·lela a dos plans",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "vector normal",
+        "producte escalar",
+        "producte vectorial",
+        "plans perpendiculars",
+        "equació contínua de la recta"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        5
+      ],
+      "enunciat": "Siguin $\\pi_1$ el pla $2x + 3y - z = 4$ i $\\pi_2$ el pla $x - 2y - 4z = 10$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Comproveu que els plans $\\pi_1$ i $\\pi_2$ són perpendiculars.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu l'equació contínua de la recta paral·lela als plans $\\pi_1$ i $\\pi_2$ i que passa pel punt $P = (-1, 3, 2)$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Plans perpendiculars ⇔ normals perpendiculars",
+            "cos": "Els vectors normals són $\\vec v_1 = (2, 3, -1)$ i $\\vec v_2 = (1, -2, -4)$. Dos plans són perpendiculars si ho són els seus vectors normals, és a dir, si el producte escalar és zero:\n\n$$\\vec v_1 \\cdot \\vec v_2 = 2\\cdot 1 + 3\\cdot(-2) + (-1)(-4) = 2 - 6 + 4 = 0$$\n\n**Els plans són perpendiculars.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Director: perpendicular als dos normals",
+            "cos": "Si la recta és paral·lela a tots dos plans, el seu vector director ha de ser perpendicular als dos vectors normals. El producte vectorial ens dona un vector així:\n\n$$\\vec v_1 \\times \\vec v_2 = \\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ 2 & 3 & -1 \\\\ 1 & -2 & -4 \\end{vmatrix} = (3(-4) - (-1)(-2),\\ (-1)\\cdot 1 - 2(-4),\\ 2(-2) - 3\\cdot 1) = (-14, 7, -7)$$\n\nPodem prendre qualsevol vector proporcional; dividint per $-7$: $\\vec v_r = (2, -1, 1)$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació contínua",
+            "cos": "Amb el punt $P = (-1, 3, 2)$:\n\n$$r:\\ \\frac{x + 1}{2} = \\frac{y - 3}{-1} = \\frac{z - 2}{1}$$\n\nComprovació: $(2,-1,1)\\cdot(2,3,-1) = 4 - 3 - 1 = 0$ ✓ i $(2,-1,1)\\cdot(1,-2,-4) = 2 + 2 - 4 = 0$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\vec v_1 \\cdot \\vec v_2 = 0$ ⇒ perpendiculars"
+          },
+          {
+            "apartat": "b",
+            "valor": "$r: \\dfrac{x+1}{2} = \\dfrac{y-3}{-1} = \\dfrac{z-2}{1}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "mates-2013-J-s5-e2",
+      "serie": "5",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Sistema homogeni amb paràmetre: solució única i solució general",
+      "tema": "sistemes",
+      "temes_secundaris": [
+        "matrius"
+      ],
+      "conceptes": [
+        "sistema homogeni",
+        "determinant",
+        "rang",
+        "teorema de Rouché-Frobenius",
+        "mètode de Gauss"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        5
+      ],
+      "enunciat": "La matriu de coeficients d'un sistema d'equacions lineals homogeni és\n\n$$A = \\begin{pmatrix} -1 & 2 & 3 \\\\ 2 & 1 - a & 0 \\\\ 4 & 1 & 2a + 2 \\end{pmatrix}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Per a quins valors del paràmetre $a$ el sistema té una sola solució? Quina és aquesta solució única?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Resoleu el sistema si $a = 2$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Idea: un sistema homogeni sempre és compatible",
+            "cos": "Un sistema homogeni (tots els termes independents nuls) sempre té almenys la solució trivial $x = y = z = 0$. Té **una sola** solució quan és compatible determinat, és a dir, quan $\\text{rang}\\,A = 3$ = nombre d'incògnites, cosa que passa si $\\det A \\ne 0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Calculem el determinant (Sarrus)",
+            "cos": "$$\\det A = (-1)(1-a)(2a+2) + 2\\cdot 0\\cdot 4 + 3\\cdot 2\\cdot 1 - 3(1-a)\\cdot 4 - 2\\cdot 2(2a+2) - (-1)\\cdot 0\\cdot 1$$\n\n$$= -(2a + 2 - 2a^2 - 2a) + 6 - 12 + 12a - 8a - 8 = 2a^2 - 2 - 14 + 4a = 2a^2 + 4a - 16$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Quan s'anul·la",
+            "cos": "$$2a^2 + 4a - 16 = 0 \\ \\Rightarrow\\ a^2 + 2a - 8 = 0 \\ \\Rightarrow\\ a = \\frac{-2 \\pm \\sqrt{4 + 32}}{2} = \\frac{-2 \\pm 6}{2} \\ \\Rightarrow\\ a = 2\\ \\text{ o }\\ a = -4$$\n\n**Si $a \\ne 2$ i $a \\ne -4$**, $\\det A \\ne 0$, el sistema és compatible determinat i la seva única solució és la trivial: **$x = 0,\\ y = 0,\\ z = 0$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Gauss per a $a = 2$",
+            "cos": "Amb $a = 2$: $A = \\begin{pmatrix} -1 & 2 & 3 \\\\ 2 & -1 & 0 \\\\ 4 & 1 & 6 \\end{pmatrix}$. Fem zeros a la primera columna ($F_2 + 2F_1$, $F_3 + 4F_1$):\n\n$$\\begin{pmatrix} -1 & 2 & 3 \\\\ 0 & 3 & 6 \\\\ 0 & 9 & 18 \\end{pmatrix} \\xrightarrow{F_3 - 3F_2} \\begin{pmatrix} -1 & 2 & 3 \\\\ 0 & 3 & 6 \\\\ 0 & 0 & 0 \\end{pmatrix}$$\n\n$\\text{rang}\\,A = 2 < 3$: sistema compatible indeterminat amb $3 - 2 = 1$ grau de llibertat."
+          },
+          {
+            "apartat": "b",
+            "titol": "Solució en funció d'un paràmetre",
+            "cos": "El sistema equivalent és $-x + 2y + 3z = 0$, $\\ 3y + 6z = 0$ (és a dir, $y + 2z = 0$). Prenent $z = t$:\n\n$$y = -2t, \\qquad x = 2y + 3z = -4t + 3t = -t$$\n\n**Solució: $(x, y, z) = (-t, -2t, t)$, $t \\in \\mathbb{R}$.**\n\nComprovació amb $t = 1$, $(-1, -2, 1)$: $1 - 4 + 3 = 0$ ✓, $-2 + 2 = 0$ ✓, $-4 - 2 + 6 = 0$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Solució única si $a \\ne 2$ i $a \\ne -4$: $x = y = z = 0$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$x = -t$, $y = -2t$, $z = t$, $t \\in \\mathbb{R}$"
+          }
+        ],
+        "nota": "La solució oficial també estudia el rang per Gauss: després de fer zeros surten les files $(0, 5-a, 6)$ i $(0, 9, 2a+14)$, i imposa que siguin proporcionals: $\\frac{5-a}{9} = \\frac{6}{2a+14}$, que porta a la mateixa equació. Discrepància menor: l'oficial diu que cal suposar $a \\ne 7$, però en realitat la condició és $a \\ne -7$ (on s'anul·la $2a + 14$)."
+      }
+    },
+    {
+      "id": "mates-2013-J-s5-e3",
+      "serie": "5",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Pla per tres punts i punt d'una recta que dona un tetraedre de volum donat",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "equació general del pla",
+        "producte vectorial",
+        "producte mixt",
+        "volum del tetraedre",
+        "equacions paramètriques de la recta"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        5
+      ],
+      "enunciat": "Donats els punts $P = (1, -1, 2)$, $Q = (2, 0, 1)$ i $R = (3, 2, -1)$,",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu l'equació cartesiana (és a dir, de la forma $Ax + By + Cz + D = 0$) del pla que determinen.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu un punt $S$ pertanyent a la recta $r: \\dfrac{x - 5}{2} = \\dfrac{y - 1}{-1} = \\dfrac{z - 5}{-3}$, de manera que el tetraedre de vèrtexs $P$, $Q$, $R$ i $S$ tingui un volum igual a $1/2$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Vectors del pla i vector normal",
+            "cos": "$$\\overrightarrow{PQ} = (1, 1, -1), \\qquad \\overrightarrow{PR} = (2, 3, -3)$$\n\nEl vector normal és perpendicular a tots dos; el trobem amb el producte vectorial:\n\n$$\\vec n = \\overrightarrow{PQ} \\times \\overrightarrow{PR} = \\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ 1 & 1 & -1 \\\\ 2 & 3 & -3 \\end{vmatrix} = (-3 + 3,\\ -2 + 3,\\ 3 - 2) = (0, 1, 1)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació del pla",
+            "cos": "Pla $y + z + D = 0$ que passa per $P = (1, -1, 2)$: $-1 + 2 + D = 0 \\Rightarrow D = -1$.\n\n**$\\pi: y + z - 1 = 0$**\n\nComprovació: $Q$: $0 + 1 - 1 = 0$ ✓; $R$: $2 - 1 - 1 = 0$ ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "Punt genèric de la recta",
+            "cos": "$$S = (5 + 2\\lambda,\\ 1 - \\lambda,\\ 5 - 3\\lambda)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Volum del tetraedre amb el producte mixt",
+            "cos": "El volum del tetraedre és $\\frac16$ del valor absolut del determinant dels tres vectors que surten d'un vèrtex:\n\n$$V = \\frac{1}{6}\\left|\\det\\left(\\overrightarrow{PQ}, \\overrightarrow{PR}, \\overrightarrow{PS}\\right)\\right|, \\qquad \\overrightarrow{PS} = (4 + 2\\lambda,\\ 2 - \\lambda,\\ 3 - 3\\lambda)$$\n\nCom que $\\overrightarrow{PQ}\\times\\overrightarrow{PR} = (0, 1, 1)$, el determinant és $(0,1,1)\\cdot\\overrightarrow{PS}$:\n\n$$\\det = 0\\cdot(4 + 2\\lambda) + (2 - \\lambda) + (3 - 3\\lambda) = 5 - 4\\lambda \\ \\Rightarrow\\ V = \\frac16|5 - 4\\lambda|$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Imposem $V = 1/2$",
+            "cos": "$$\\frac16|5 - 4\\lambda| = \\frac12 \\ \\Rightarrow\\ |5 - 4\\lambda| = 3$$\n\n- $5 - 4\\lambda = 3 \\Rightarrow \\lambda = \\frac12 \\Rightarrow S_1 = \\left(6, \\frac12, \\frac72\\right)$\n- $5 - 4\\lambda = -3 \\Rightarrow \\lambda = 2 \\Rightarrow S_2 = (9, -1, -1)$\n\nNomés es demana un punt, de manera que qualsevol dels dos és vàlid.\n\n**$S = \\left(6, \\frac12, \\frac72\\right)$ o $S = (9, -1, -1)$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y + z - 1 = 0$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$S_1 = \\left(6, \\frac12, \\frac72\\right)$ o $S_2 = (9, -1, -1)$"
+          }
+        ],
+        "nota": "La solució oficial dona altres dues vies per al b): amb $S = (x, y, z)$ el volum és $\\frac16|y + z - 1|$, i s'hi afegeixen dues equacions implícites de la recta ($x + 2y = 7$, $3y - z = -2$); o bé $V = \\frac{A_b\\cdot h}{3}$ amb $A_b = \\frac{\\sqrt2}{2}$ (àrea del triangle $PQR$) i $h = d(S, \\pi) = \\frac{|y + z - 1|}{\\sqrt2}$. Totes donen els mateixos dos punts. Error típic: oblidar el valor absolut i trobar només una de les dues solucions."
+      }
+    },
+    {
+      "id": "mates-2013-J-s5-e4",
+      "serie": "5",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Recta tangent i àrea sota la gràfica d'una arrel quadrada",
+      "tema": "integrals",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "recta tangent",
+        "derivada",
+        "integral definida",
+        "regla de Barrow",
+        "àrea sota una corba"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Per a $x \\ge 1$, considereu la funció $f(x) = +\\sqrt{x - 1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu l'equació de la recta tangent a la gràfica de $f(x)$ en el punt d'abscissa igual a 10.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'àrea del recinte limitat per la gràfica de $f(x)$, la recta d'equació $x = 5$ i l'eix $OX$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Valor i derivada en $x = 10$",
+            "cos": "Recta tangent en $x = a$: $y = f(a) + f'(a)(x - a)$. Derivem amb la regla de la cadena:\n\n$$f'(x) = \\frac{1}{2\\sqrt{x - 1}}$$\n\n$$f(10) = \\sqrt9 = 3, \\qquad f'(10) = \\frac{1}{2\\sqrt9} = \\frac16$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de la recta tangent",
+            "cos": "$$y = 3 + \\frac16(x - 10)$$\n\no, en forma implícita (multiplicant per 6): $6y = 18 + x - 10 \\Rightarrow$ **$x - 6y + 8 = 0$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Límits del recinte",
+            "cos": "La gràfica talla l'eix $OX$ quan $\\sqrt{x - 1} = 0$, és a dir, a $x = 1$. El recinte va de $x = 1$ a $x = 5$, per sota de la corba (que és positiva) i per sobre de l'eix:\n\n![Recinte sota la corba entre x = 1 i x = 5 (solució oficial)](img/mates/2013-J/s5-e4-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Càlcul de l'àrea",
+            "cos": "$$A = \\int_1^5 (x - 1)^{1/2}\\,dx = \\left[\\frac{(x - 1)^{3/2}}{3/2}\\right]_1^5 = \\frac23\\left(4^{3/2} - 0\\right) = \\frac23\\cdot 8 = \\frac{16}{3}$$\n\n**$A = \\dfrac{16}{3}\\ u^2 \\approx 5{,}33\\ u^2$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y = 3 + \\frac16(x - 10)$, és a dir, $x - 6y + 8 = 0$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A = \\dfrac{16}{3}\\ u^2$"
+          }
+        ],
+        "nota": "La solució oficial també fa la integral amb el canvi $x - 1 = t^2$ ($dx = 2t\\,dt$, $t$ de 0 a 2): $2\\int_0^2 t^2\\,dt = \\frac{16}{3}$. Recorda que, si canvies de variable, has de canviar també els límits (o desfer el canvi abans d'aplicar Barrow)."
+      }
+    },
+    {
+      "id": "mates-2013-J-s5-e5",
+      "serie": "5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Pla mediador d'un segment i divisió d'un segment en tres parts iguals",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "pla mediador",
+        "punt mitjà",
+        "distància entre dos punts",
+        "divisió d'un segment",
+        "vectors"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Considereu els punts $A = (-1, 2, 4)$ i $B = (3, 0, -2)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu l'equació del pla format per tots els punts que equidisten de $A$ i $B$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Donat un punt $C = (x, y, z)$, dividim el segment $\\overline{AC}$ en tres parts iguals i obtenim els punts $A$, $A_1$, $B$ i $C$. Trobeu el punt $C$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "El pla mediador",
+            "cos": "Els punts que equidisten de $A$ i $B$ formen el **pla mediador** del segment $\\overline{AB}$: passa pel punt mitjà i és perpendicular al segment (el seu vector normal és $\\overrightarrow{AB}$).\n\n$$M = \\frac{A + B}{2} = \\left(\\frac{-1 + 3}{2}, \\frac{2 + 0}{2}, \\frac{4 - 2}{2}\\right) = (1, 1, 1), \\qquad \\overrightarrow{AB} = (4, -2, -6)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació del pla",
+            "cos": "$$4(x - 1) - 2(y - 1) - 6(z - 1) = 0 \\ \\Rightarrow\\ 4x - 2y - 6z + 4 = 0$$\n\nDividint per 2: **$2x - y - 3z + 2 = 0$**\n\nComprovació amb la definició: $d(X,A)^2 = d(X,B)^2 \\iff (x+1)^2 + (y-2)^2 + (z-4)^2 = (x-3)^2 + y^2 + (z+2)^2$; desenvolupant, els quadrats es cancel·len i queda $8x - 4y - 12z + 8 = 0$, que és el mateix pla ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "Interpretem la divisió",
+            "cos": "Dividir $\\overline{AC}$ en tres parts iguals dona els punts $A$, $A_1$, $A_2$, $C$ amb $\\overrightarrow{AA_1} = \\overrightarrow{A_1A_2} = \\overrightarrow{A_2C}$. L'enunciat diu que el segon punt de divisió és $B$, per tant $\\overrightarrow{AB} = 2\\,\\overrightarrow{AA_1}$ i $\\overrightarrow{AC} = 3\\,\\overrightarrow{AA_1}$:\n\n![Divisió del segment AC (solució oficial)](img/mates/2013-J/s5-e5-sol.png)\n\nAixí doncs, $\\overrightarrow{AC} = \\dfrac32\\,\\overrightarrow{AB}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Calculem $C$",
+            "cos": "$$C = A + \\frac32\\,\\overrightarrow{AB} = (-1, 2, 4) + \\frac32(4, -2, -6) = (-1 + 6,\\ 2 - 3,\\ 4 - 9) = (5, -1, -5)$$\n\nComprovació: $A_1 = A + \\frac12\\overrightarrow{AB} = (1, 1, 1)$, i $B$ és el punt mitjà de $A_1$ i $C$: $\\frac{(1,1,1) + (5,-1,-5)}{2} = (3, 0, -2)$ ✓.\n\n**$C = (5, -1, -5)$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$2x - y - 3z + 2 = 0$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$C = (5, -1, -5)$"
+          }
+        ],
+        "nota": "La solució oficial també resol el b) observant que $A_1$ és el punt mitjà de $\\overline{AB}$ i $B$ és el punt mitjà de $\\overline{A_1C}$, o amb l'equació vectorial $X = A + \\lambda\\overrightarrow{AB}$ per a $\\lambda = 3/2$. Fixa't que el punt $A_1$ coincideix amb el punt mitjà $M$ de l'apartat a)."
+      }
+    },
+    {
+      "id": "mates-2013-J-s5-e6",
+      "serie": "5",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Triangle rectangle d'àrea màxima amb un vèrtex sobre una recta",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "optimització",
+        "àrea del triangle",
+        "derivada segona",
+        "màxim relatiu",
+        "paràbola"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Un triangle rectangle situat en el primer quadrant té el vèrtex $A$ en l'origen de coordenades, el vèrtex $B = (x, 0)$ en el semieix positiu d'abscisses i el vèrtex $C$ pertany a la recta $x + 2y = 8$. L'angle recte és el que correspon al vèrtex $B$.",
+      "figures": [
+        {
+          "src": "img/mates/2013-J/s5-e6.png",
+          "peu": "Triangle rectangle ABC amb C sobre la recta x + 2y = 8"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Comproveu que l'àrea del triangle es pot expressar de la manera següent: $A(x) = 2x - \\dfrac{x^2}{4}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu els vèrtexs $B$ i $C$ perquè l'àrea del triangle sigui màxima i comproveu que es tracta realment d'un màxim.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Coordenades de $C$",
+            "cos": "L'angle recte és a $B = (x, 0)$, per tant $\\overline{BC}$ és vertical i $C$ té la mateixa abscissa $x$. Com que $C$ és de la recta $x + 2y = 8$, la seva ordenada és $y = \\dfrac{8 - x}{2}$:\n\n$$C = \\left(x,\\ \\frac{8 - x}{2}\\right), \\qquad 0 < x < 8$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Àrea com a semiproducte dels catets",
+            "cos": "Els catets són $\\overline{AB}$ (longitud $x$) i $\\overline{BC}$ (longitud $\\frac{8 - x}{2}$):\n\n$$A(x) = \\frac{x\\cdot\\frac{8 - x}{2}}{2} = \\frac{8x - x^2}{4} = 2x - \\frac{x^2}{4}$$\n\ntal com volíem comprovar."
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivem i igualem a zero",
+            "cos": "$$A'(x) = 2 - \\frac{x}{2} = 0 \\ \\Rightarrow\\ x = 4$$\n\nLlavors $B = (4, 0)$ i $C = \\left(4, \\frac{8 - 4}{2}\\right) = (4, 2)$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovem que és un màxim",
+            "cos": "$$A''(x) = -\\frac12 < 0$$\n\nLa derivada segona és negativa, per tant $x = 4$ és un **màxim**. (També: $A(x)$ és una paràbola amb el coeficient de $x^2$ negatiu, i el seu vèrtex és un màxim.) L'àrea màxima és $A(4) = 8 - 4 = 4\\ u^2$.\n\n**$B = (4, 0)$, $\\ C = (4, 2)$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$A(x) = \\dfrac{x(8 - x)}{4} = 2x - \\dfrac{x^2}{4}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$B = (4, 0)$, $C = (4, 2)$ (àrea màxima $4\\ u^2$; $A'' = -\\frac12 < 0$)"
+          }
+        ],
+        "nota": "També es pot justificar el màxim estudiant el signe de $A'(x)$: positiu per a $x < 4$ i negatiu per a $x > 4$."
+      }
+    }
+  ]
+}

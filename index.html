@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Banc de Problemes PAU</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="lib/katex.min.css">
+<style>
+/* Layout: quadern d'estudi — columna de filtres fixa a l'esquerra, fitxes de problemes a la dreta; a mòbil els filtres es pleguen a dalt. */
+:root {
+  --paper: #f5f7f8;
+  --sheet: #ffffff;
+  --ink: #17212b;
+  --ink-soft: #52606d;
+  --rule: #d9e0e5;
+  --accent: #1d5c8a;        /* tinta blava */
+  --accent-soft: #e3eef6;
+  --highlight: #ffe774;     /* subratllador */
+  --ok: #217a4b;
+  --ok-soft: #e1f3e8;
+  --bad: #b23a30;
+  --bad-soft: #fbe6e3;
+  --review: #a35d00;
+  --review-soft: #fdf0dc;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Mono", Consolas, monospace;
+  --step: 1rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #11171d; --sheet: #182129; --ink: #e4eaef; --ink-soft: #9aa8b4; --rule: #2b3843;
+    --accent: #7db8e4; --accent-soft: #1d3245; --highlight: #6b5a12;
+    --ok: #6fd19c; --ok-soft: #173426; --bad: #f08a80; --bad-soft: #3a1d1a; --review: #f0b465; --review-soft: #3a2c15;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #11171d; --sheet: #182129; --ink: #e4eaef; --ink-soft: #9aa8b4; --rule: #2b3843;
+  --accent: #7db8e4; --accent-soft: #1d3245; --highlight: #6b5a12;
+  --ok: #6fd19c; --ok-soft: #173426; --bad: #f08a80; --bad-soft: #3a1d1a; --review: #f0b465; --review-soft: #3a2c15;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 17px; line-height: 1.55;
+}
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+.wrap {
+  max-width: 1240px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px 64px;
+}
+header.top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; margin-bottom: 20px; }
+header.top h1 {
+  font-family: var(--font-display); font-weight: 800; font-size: clamp(1.7rem, 4vw, 2.4rem);
+  letter-spacing: -0.02em; margin: 0; line-height: 1.1; text-wrap: balance;
+}
+header.top h1 span { background: linear-gradient(transparent 58%, var(--highlight) 58%); padding: 0 2px; }
+header.top p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+
+.subjects { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.subj {
+  border: 1.5px solid var(--rule); background: var(--sheet); border-radius: 999px;
+  padding: 7px 16px; cursor: pointer; font-weight: 700; font-size: 0.95rem;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.subj small { font-family: var(--font-mono); font-weight: 400; font-size: 0.75rem; color: var(--ink-soft); }
+.subj[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.subj[aria-pressed="true"] small { color: inherit; opacity: 0.75; }
+.subj:disabled { opacity: 0.5; cursor: default; }
+
+.views { display: flex; gap: 4px; border-bottom: 1.5px solid var(--rule); margin-bottom: 20px; }
+.view {
+  background: none; border: none; border-bottom: 3px solid transparent; margin-bottom: -1.5px;
+  padding: 8px 14px; cursor: pointer; font-weight: 700; color: var(--ink-soft);
+}
+.view[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.exams { display: grid; gap: 10px; max-width: 900px; }
+.exams p.hint { margin: 0 0 6px; color: var(--ink-soft); }
+.exrow {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px;
+  background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; padding: 12px 16px;
+}
+.exrow .when { font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; min-width: 9.5em; }
+.exrow .what { color: var(--ink-soft); font-size: 0.9rem; flex: 1; min-width: 12em; }
+.exrow .dl { display: flex; gap: 8px; flex-wrap: wrap; }
+a.btn { text-decoration: none; color: inherit; display: inline-block; }
+.layout { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 28px; align-items: start; }
+aside.filters {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px);
+  display: grid; gap: 18px; max-height: calc(100vh - 32px); overflow-y: auto; padding-right: 4px;
+}
+.filters-toggle { display: none; }
+.fgroup { display: grid; gap: 8px; }
+.fgroup > label, .fgroup > .lbl {
+  font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft);
+}
+.search {
+  width: 100%; padding: 10px 12px; border-radius: 10px; border: 1.5px solid var(--rule); background: var(--sheet);
+}
+.search:focus { border-color: var(--accent); outline: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  border: 1px solid var(--rule); background: var(--sheet); border-radius: 8px; padding: 4px 10px;
+  cursor: pointer; font-size: 0.85rem; line-height: 1.3; display: inline-flex; gap: 6px; align-items: baseline;
+}
+.chip .n { font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-soft); }
+.chip[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 700; }
+.chip[aria-pressed="true"] .n { color: var(--accent); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+select { padding: 8px 10px; border-radius: 8px; border: 1.5px solid var(--rule); background: var(--sheet); width: 100%; }
+.linkbtn { background: none; border: none; color: var(--accent); cursor: pointer; padding: 0; text-decoration: underline; font-size: 0.9rem; justify-self: start; }
+
+main { min-width: 0; }
+.resultbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+.resultbar .count { font-family: var(--font-mono); font-size: 0.85rem; color: var(--ink-soft); }
+.resultbar .tools { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.resultbar select { width: auto; }
+.btn {
+  border: 1.5px solid var(--ink); background: var(--sheet); border-radius: 10px; padding: 7px 14px; cursor: pointer; font-weight: 700; font-size: 0.92rem;
+}
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--sheet); }
+.btn.ghost { border-color: var(--rule); font-weight: 400; }
+
+.list { display: grid; gap: 22px; }
+article.prob {
+  background: var(--sheet); border: 1px solid var(--rule); border-radius: 14px; padding: 20px 22px; min-width: 0;
+}
+article.prob.done { border-left: 5px solid var(--ok); }
+article.prob.review { border-left: 5px solid var(--review); }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 12px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-soft); align-items: center; }
+.meta .tag { background: var(--accent-soft); color: var(--accent); border-radius: 6px; padding: 2px 8px; font-weight: 600; }
+.meta .diff { letter-spacing: 1px; }
+article.prob h2 {
+  font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; line-height: 1.25; margin: 8px 0 12px; text-wrap: balance;
+}
+.md p { margin: 0 0 0.7em; }
+.md p:last-child { margin-bottom: 0; }
+.md ul, .md ol { margin: 0 0 0.7em; padding-left: 1.4em; }
+.md table { border-collapse: collapse; margin: 0.4em 0 0.8em; font-variant-numeric: tabular-nums; }
+.md th, .md td { border: 1px solid var(--rule); padding: 4px 10px; text-align: center; }
+.md th { background: var(--paper); }
+.tablewrap, .katex-display { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+.katex-display { padding: 4px 0; }
+.figs { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 0; }
+.figs figure { margin: 0; background: #fff; border-radius: 8px; padding: 8px; border: 1px solid var(--rule); max-width: 100%; }
+.figs img { display: block; max-height: 420px; width: auto; height: auto; }
+.figs figcaption { font-size: 0.8rem; color: #52606d; margin-top: 4px; }
+.md img { background: #fff; border-radius: 6px; padding: 6px; max-height: 420px; }
+
+.opts { display: grid; gap: 8px; margin: 14px 0 4px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+.opt {
+  display: flex; gap: 10px; align-items: baseline; text-align: left; width: 100%;
+  border: 1.5px solid var(--rule); background: var(--sheet); border-radius: 10px; padding: 8px 12px; cursor: pointer;
+}
+.opt b { font-family: var(--font-mono); }
+.opt:hover { border-color: var(--accent); }
+.opt.right { border-color: var(--ok); background: var(--ok-soft); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.opt:disabled { cursor: default; }
+.verdict { font-weight: 700; margin-top: 6px; }
+.verdict.ok { color: var(--ok); } .verdict.ko { color: var(--bad); }
+
+.parts { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.parts li { display: grid; grid-template-columns: 2em minmax(0, 1fr); gap: 4px; }
+.parts .pl { font-weight: 700; font-family: var(--font-mono); }
+.parts .md > p:last-of-type { display: inline; }
+.parts .pts { margin-left: 4px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); }
+
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; align-items: center; }
+.actions .sp { flex: 1; }
+.mark { border: 1.5px solid var(--rule); background: var(--sheet); border-radius: 999px; padding: 5px 12px; cursor: pointer; font-size: 0.85rem; }
+.mark[aria-pressed="true"].m-done { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); font-weight: 700; }
+.mark[aria-pressed="true"].m-review { background: var(--review-soft); border-color: var(--review); color: var(--review); font-weight: 700; }
+.pdflinks { font-size: 0.8rem; display: flex; gap: 12px; flex-wrap: wrap; }
+.pdflinks a { color: var(--ink-soft); }
+
+.sol { margin-top: 18px; border-top: 2px dashed var(--rule); padding-top: 16px; display: grid; gap: 14px; }
+.sol h3 { margin: 0; font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft); }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; counter-reset: step; }
+.step { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; animation: rise 0.25s ease-out; }
+.step::before {
+  counter-increment: step; content: counter(step);
+  width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--sheet);
+  display: grid; place-items: center; font-family: var(--font-mono); font-weight: 600; font-size: 0.85rem;
+}
+.step .st { font-weight: 700; margin-bottom: 4px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.step .ap { font-family: var(--font-mono); font-size: 0.72rem; background: var(--paper); border: 1px solid var(--rule); border-radius: 5px; padding: 0 6px; }
+.step .body { min-width: 0; }
+@keyframes rise { from { transform: translateY(6px); opacity: 0.4; } to { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .step { animation: none; } }
+.stepnav { display: flex; gap: 8px; flex-wrap: wrap; }
+.results { background: var(--paper); border-radius: 10px; padding: 12px 14px; display: grid; gap: 4px; }
+.results .r { display: grid; grid-template-columns: 2em minmax(0, 1fr); }
+.results .r .v { min-width: 0; }
+.results mark, .md mark { background: var(--highlight); color: inherit; padding: 0 3px; border-radius: 2px; }
+.note { border-left: 4px solid var(--review); background: var(--review-soft); padding: 10px 14px; border-radius: 0 10px 10px 0; font-size: 0.95rem; }
+
+.empty { background: var(--sheet); border: 1.5px dashed var(--rule); border-radius: 14px; padding: 32px; text-align: center; color: var(--ink-soft); }
+.more { justify-self: center; }
+.stats { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); display: flex; gap: 14px; flex-wrap: wrap; }
+.stats b { color: var(--ink); }
+
+@media (max-width: 860px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  aside.filters { position: static; max-height: none; overflow: visible; }
+  .filters-toggle { display: inline-block; }
+  aside.filters.collapsed .fgroup.opt-mobile { display: none; }
+  article.prob { padding: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1><span>Banc de Problemes</span> PAU</h1>
+    <p id="subtitle">Per a les meves filles preferides · exàmens de selectivitat resolts pas a pas</p>
+  </header>
+
+  <nav class="subjects" id="subjects" aria-label="Assignatura"></nav>
+
+  <div class="views" role="tablist" aria-label="Vista">
+    <button type="button" class="view" role="tab" data-view="problemes" aria-selected="true">Problemes</button>
+    <button type="button" class="view" role="tab" data-view="examens" aria-selected="false">Exàmens en PDF</button>
+  </div>
+
+  <section class="exams" id="exams" hidden></section>
+
+  <div class="layout" id="layout">
+    <aside class="filters collapsed" id="filters" aria-label="Filtres">
+      <div class="fgroup">
+        <label for="q">Cerca</label>
+        <input id="q" class="search" type="search" placeholder="p. ex. engranatges, rendiment, Karnaugh…" autocomplete="off">
+      </div>
+      <button class="btn ghost filters-toggle" id="ftoggle" type="button" aria-expanded="false">Més filtres</button>
+      <div class="fgroup opt-mobile">
+        <span class="lbl">Tema</span>
+        <div class="chips" id="temes"></div>
+      </div>
+      <div class="fgroup opt-mobile">
+        <span class="lbl">Any</span>
+        <div class="row2">
+          <select id="anyFrom" aria-label="Des de l'any"></select>
+          <select id="anyTo" aria-label="Fins a l'any"></select>
+        </div>
+      </div>
+      <div class="fgroup opt-mobile">
+        <span class="lbl">Convocatòria</span>
+        <div class="chips" id="convs"></div>
+      </div>
+      <div class="fgroup opt-mobile">
+        <span class="lbl">Tipus</span>
+        <div class="chips" id="tipus"></div>
+      </div>
+      <div class="fgroup opt-mobile">
+        <span class="lbl">Dificultat</span>
+        <div class="chips" id="difs"></div>
+      </div>
+      <div class="fgroup opt-mobile">
+        <span class="lbl">El meu progrés</span>
+        <div class="chips" id="estats"></div>
+      </div>
+      <div class="fgroup opt-mobile">
+        <span class="lbl">Matèria (pla d'estudis)</span>
+        <div class="chips" id="materies"></div>
+      </div>
+      <button class="linkbtn" id="reset" type="button">Esborra els filtres</button>
+      <div class="stats" id="stats"></div>
+    </aside>
+
+    <main>
+      <div class="resultbar">
+        <span class="count" id="count"></span>
+        <div class="tools">
+          <label for="order" class="count">Ordre</label>
+          <select id="order">
+            <option value="new">Més recents primer</option>
+            <option value="old">Més antics primer</option>
+            <option value="exam">Per examen</option>
+            <option value="rand">Barrejats</option>
+          </select>
+          <button class="btn" id="random" type="button">Un a l'atzar</button>
+        </div>
+      </div>
+      <div class="list" id="list"></div>
+    </main>
+  </div>
+</div>
+
+<script src="lib/katex.min.js"></script>
+<script src="lib/marked.min.js"></script>
+<script src="data.js"></script>
+<script>
+(() => {
+"use strict";
+const DB = window.SELE || { examens: [], problemes: [] };
+
+const ASSIGS = [
+  { id: "tecno", nom: "Tecnologia" },
+  { id: "mates", nom: "Matemàtiques" },
+  { id: "fisica", nom: "Física" },
+  { id: "dibuix", nom: "Dibuix tècnic" },
+];
+const TEMES_PER_ASSIG = {
+  tecno: {
+    estatica: "Estàtica i estructures", resistencia: "Resistència de materials", materials: "Materials",
+    mecanismes: "Mecanismes i transmissions", mecanica: "Treball, energia i potència", termica: "Màquines tèrmiques",
+    energia: "Energia i recursos", circuits: "Circuits elèctrics", "maquines-electriques": "Màquines elèctriques",
+    electronica: "Electrònica", digital: "Sistemes digitals", control: "Control i automatització",
+    pneumatica: "Pneumàtica i hidràulica", fabricacio: "Fabricació i toleràncies", programacio: "Programació",
+    disseny: "Disseny i projecte", economia: "Costos i economia",
+  },
+  mates: {
+    matrius: "Matrius i determinants", sistemes: "Sistemes d'equacions", geometria: "Geometria a l'espai",
+    funcions: "Límits, continuïtat i funcions", derivades: "Derivades i aplicacions", optimitzacio: "Optimització",
+    integrals: "Integrals i àrees", probabilitat: "Probabilitat", estadistica: "Estadística i distribucions",
+  },
+  fisica: {
+    mecanica: "Mecànica", gravitacio: "Camp gravitatori", "camp-electric": "Camp elèctric", "camp-magnetic": "Camp magnètic",
+    induccio: "Inducció electromagnètica", oscillacions: "Moviment harmònic simple", ones: "Ones i so", optica: "Òptica",
+    relativitat: "Relativitat", quantica: "Física quàntica", nuclear: "Física nuclear",
+  },
+  dibuix: {
+    "geometria-plana": "Geometria plana", transformacions: "Transformacions", corbes: "Corbes i còniques",
+    diedric: "Sistema dièdric", cossos: "Cossos i seccions", axonometria: "Axonometria", conica: "Perspectiva cònica",
+    normalitzacio: "Normalització i vistes",
+  },
+};
+const temaNom = (assig, t) => (TEMES_PER_ASSIG[assig] || {})[t] || t;
+const DIFS = { 1: "Directe", 2: "Diversos passos", 3: "Repte" };
+
+const exById = Object.fromEntries(DB.examens.map((e) => [e.id, e]));
+const PROBS = DB.problemes.map((p) => {
+  const e = exById[p.examen] || {};
+  const hay = [p.titol, p.enunciat, (p.conceptes || []).join(" "), temaNom(e.assignatura, p.tema), ...(p.temes_secundaris || []).map((t) => temaNom(e.assignatura, t)),
+    ...(p.apartats || []).map((a) => a.enunciat), ...Object.values(p.opcions || {}), e.materia, String(e.any)].join(" ");
+  return { ...p, ex: e, _hay: norm(hay) };
+});
+
+// ---------- estat (es recorda en aquest navegador) ----------
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("pau:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("pau:" + k, JSON.stringify(v)); } catch {} },
+};
+let progress = store.get("progress", {}); // id -> "done" | "review"
+const DEFAULT_F = { assig: "tecno", q: "", temes: [], from: null, to: null, convs: [], tipus: [], difs: [], estats: [], materies: [], order: "new" };
+let F = Object.assign({}, DEFAULT_F, store.get("filters", {}));
+let shown = 15;
+let view = "problemes";
+let randSeed = Math.random();
+
+function norm(s) { return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/·|ŀ/g, "l").toLowerCase(); }
+function esc(s) { return String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+// ---------- Markdown + KaTeX ----------
+function md(text, inline) {
+  if (!text) return "";
+  const maths = [];
+  let s = String(text).replace(/\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g, (m, d, i) => {
+    maths.push({ tex: d ?? i, display: d != null });
+    return `@@M${maths.length - 1}@@`;
+  });
+  s = s.replace(/==([^=\n]+)==/g, "<mark>$1</mark>");
+  let html = inline ? marked.parseInline(s) : marked.parse(s);
+  html = html.replace(/@@M(\d+)@@/g, (m, n) => {
+    const x = maths[+n];
+    try { return katex.renderToString(x.tex, { displayMode: x.display, throwOnError: false, strict: "ignore" }); }
+    catch { return esc(x.tex); }
+  });
+  return html.replace(/<table>/g, '<div class="tablewrap"><table>').replace(/<\/table>/g, "</table></div>");
+}
+marked.use({ breaks: false, gfm: true });
+
+// ---------- filtres ----------
+function inAssig(p) { return !F.assig || p.ex.assignatura === F.assig; }
+function matches(p, skip) {
+  if (!inAssig(p)) return false;
+  if (skip !== "temes" && F.temes.length && !F.temes.some((t) => p.tema === t || (p.temes_secundaris || []).includes(t))) return false;
+  if (F.from && p.ex.any < F.from) return false;
+  if (F.to && p.ex.any > F.to) return false;
+  if (skip !== "convs" && F.convs.length && !F.convs.includes(p.ex.convocatoria)) return false;
+  if (skip !== "tipus" && F.tipus.length && !F.tipus.includes(p.tipus)) return false;
+  if (skip !== "difs" && F.difs.length && !F.difs.includes(String(p.dificultat))) return false;
+  if (skip !== "materies" && F.materies.length && !F.materies.includes(p.ex.materia)) return false;
+  if (skip !== "estats" && F.estats.length) {
+    const st = progress[p.id] || "pending";
+    if (!F.estats.includes(st)) return false;
+  }
+  if (F.q) {
+    const words = norm(F.q).split(/\s+/).filter(Boolean);
+    if (!words.every((w) => p._hay.includes(w))) return false;
+  }
+  return true;
+}
+
+function chipGroup(el, key, options, counts) {
+  el.innerHTML = options.map(([v, label]) => {
+    const on = F[key].includes(v);
+    const n = counts ? counts[v] || 0 : null;
+    return `<button type="button" class="chip" data-k="${key}" data-v="${esc(v)}" aria-pressed="${on}">${esc(label)}${n != null ? `<span class="n">${n}</span>` : ""}</button>`;
+  }).join("");
+}
+function countBy(skip, fn) {
+  const c = {};
+  for (const p of PROBS) if (matches(p, skip)) for (const v of [].concat(fn(p))) c[v] = (c[v] || 0) + 1;
+  return c;
+}
+
+function renderSubjects() {
+  const n = (id) => PROBS.filter((p) => p.ex.assignatura === id).length;
+  document.getElementById("subjects").innerHTML = ASSIGS.map((a) => {
+    const k = n(a.id);
+    return `<button type="button" class="subj" data-assig="${a.id}" aria-pressed="${F.assig === a.id}" ${k ? "" : "disabled"}>${a.nom}<small>${k ? k : "aviat"}</small></button>`;
+  }).join("");
+}
+
+function renderFilters() {
+  const pool = PROBS.filter(inAssig);
+  const temes = [...new Set(pool.flatMap((p) => [p.tema, ...(p.temes_secundaris || [])]))].sort((a, b) => temaNom(F.assig, a).localeCompare(temaNom(F.assig, b)));
+  chipGroup(document.getElementById("temes"), "temes", temes.map((t) => [t, temaNom(F.assig, t)]),
+    countBy("temes", (p) => [p.tema, ...(p.temes_secundaris || [])]));
+  const anys = [...new Set(pool.map((p) => p.ex.any))].sort();
+  const opt = (sel) => (a) => `<option value="${a}" ${a === sel ? "selected" : ""}>${a}</option>`;
+  document.getElementById("anyFrom").innerHTML = `<option value="">des de…</option>` + anys.map(opt(F.from)).join("");
+  document.getElementById("anyTo").innerHTML = `<option value="">fins a…</option>` + anys.map(opt(F.to)).join("");
+  chipGroup(document.getElementById("convs"), "convs", [["juny", "Juny (ordinària)"], ["setembre", "Setembre (extraordinària)"]], countBy("convs", (p) => p.ex.convocatoria));
+  chipGroup(document.getElementById("tipus"), "tipus", [["problema", "Problemes"], ["test", "Qüestions de test"]], countBy("tipus", (p) => p.tipus));
+  chipGroup(document.getElementById("difs"), "difs", Object.entries(DIFS).map(([k, v]) => [k, "●".repeat(k) + " " + v]), countBy("difs", (p) => String(p.dificultat)));
+  chipGroup(document.getElementById("estats"), "estats", [["pending", "Pendents"], ["done", "Fets"], ["review", "Per repassar"]], countBy("estats", (p) => progress[p.id] || "pending"));
+  const mats = [...new Set(pool.map((p) => p.ex.materia))].sort();
+  document.getElementById("materies").closest(".fgroup").hidden = mats.length < 2;
+  chipGroup(document.getElementById("materies"), "materies", mats.map((m) => [m, m]), countBy("materies", (p) => p.ex.materia));
+  const done = pool.filter((p) => progress[p.id] === "done").length;
+  const rev = pool.filter((p) => progress[p.id] === "review").length;
+  document.getElementById("stats").innerHTML = pool.length
+    ? `<span><b>${done}</b> fets</span><span><b>${rev}</b> per repassar</span><span><b>${pool.length - done - rev}</b> pendents</span>` : "";
+}
+
+function sorted(list) {
+  const key = (p) => p.ex.any * 10 + (p.ex.convocatoria === "setembre" ? 5 : 0);
+  const pos = (p) => (p.exercici || 0) * 100 + (p.questio || 0) + (p.opcio === "B" ? 50 : 0);
+  const l = list.slice();
+  if (F.order === "rand") {
+    const h = (s) => { let x = Math.floor(randSeed * 2 ** 31); for (const c of s) x = (x * 31 + c.charCodeAt(0)) | 0; return x; };
+    return l.sort((a, b) => h(a.id) - h(b.id));
+  }
+  if (F.order === "old") return l.sort((a, b) => key(a) - key(b) || pos(a) - pos(b));
+  if (F.order === "exam") return l.sort((a, b) => key(b) - key(a) || pos(a) - pos(b));
+  return l.sort((a, b) => key(b) - key(a) || pos(a) - pos(b));
+}
+
+function pdfName(e, kind) {
+  const a = (ASSIGS.find((x) => x.id === e.assignatura) || {}).nom || e.assignatura;
+  return `PAU ${e.any} ${e.convocatoria} - ${a} - ${kind === "examen" ? "examen" : "solucio"}.pdf`;
+}
+
+function renderExams() {
+  const list = DB.examens.filter((e) => e.assignatura === F.assig)
+    .sort((a, b) => b.any - a.any || (a.convocatoria === "setembre") - (b.convocatoria === "setembre"));
+  const count = (id) => PROBS.filter((p) => p.examen === id).length;
+  document.getElementById("exams").innerHTML =
+    `<p class="hint">Descarrega l'examen sencer per fer-lo en paper amb temps, i després corregeix-lo amb els criteris oficials o amb les solucions pas a pas de l'app.</p>` +
+    list.map((e) => `<div class="exrow">
+      <span class="when">${esc(e.any)} · ${e.convocatoria === "setembre" ? "Setembre" : "Juny"}</span>
+      <span class="what">${esc(e.materia)}${e.serie ? " · Sèrie " + esc(e.serie) : ""} · ${count(e.id)} problemes</span>
+      <span class="dl">
+        <a class="btn primary" href="${esc(e.pdf_examen)}" download="${esc(pdfName(e, "examen"))}">Examen</a>
+        ${e.pdf_solucio ? `<a class="btn" href="${esc(e.pdf_solucio)}" download="${esc(pdfName(e, "solucio"))}">Solució oficial</a>` : ""}
+        <button type="button" class="btn ghost" data-act="exprobs" data-any="${esc(e.any)}" data-conv="${esc(e.convocatoria)}">Veure'n els problemes</button>
+      </span>
+    </div>`).join("");
+}
+
+function setView(v) {
+  view = v;
+  document.querySelectorAll(".view").forEach((b) => b.setAttribute("aria-selected", b.dataset.view === v));
+  document.getElementById("exams").hidden = v !== "examens";
+  document.getElementById("layout").hidden = v === "examens";
+  if (v === "examens") renderExams();
+}
+
+function probLabel(p) {
+  let s = `Ex. ${p.exercici}`;
+  if (p.questio) s += ` · Q${p.questio}`;
+  if (p.opcio) s += ` · opció ${p.opcio}`;
+  return s;
+}
+
+function renderCard(p) {
+  const e = p.ex;
+  const st = progress[p.id];
+  const temes = [p.tema, ...(p.temes_secundaris || [])].map((t) => `<span class="tag">${esc(temaNom(e.assignatura, t))}</span>`).join("");
+  const figs = (p.figures || []).length
+    ? `<div class="figs">${p.figures.map((f) => `<figure><img src="${esc(f.src)}" alt="${esc(f.peu || "Figura de l'enunciat")}" loading="lazy">${f.peu ? `<figcaption>${esc(f.peu)}</figcaption>` : ""}</figure>`).join("")}</div>` : "";
+  const opts = p.tipus === "test" && p.opcions
+    ? `<div class="opts" role="group" aria-label="Opcions">${Object.entries(p.opcions).map(([k, v]) =>
+        `<button type="button" class="opt" data-act="answer" data-v="${esc(k)}"><b>${esc(k)})</b><span class="md">${md(v, true)}</span></button>`).join("")}</div><div class="verdict" data-role="verdict" aria-live="polite"></div>` : "";
+  const parts = (p.apartats || []).length
+    ? `<ol class="parts">${p.apartats.map((a) => `<li><span class="pl">${esc(a.id)})</span><div class="md">${md(a.enunciat)}${a.punts ? ` <span class="pts">[${String(a.punts).replace(".", ",")} p]</span>` : ""}</div></li>`).join("")}</ol>` : "";
+  const page = (p.pagines || [])[0];
+  return `<article class="prob ${st || ""}" data-id="${esc(p.id)}" id="p-${esc(p.id)}">
+    <div class="meta">
+      <span>${esc(e.any)} · ${e.convocatoria === "setembre" ? "Setembre" : "Juny"}${e.serie ? " · Sèrie " + esc(e.serie) : ""}</span>
+      <span>${probLabel(p)}</span>
+      ${p.punts ? `<span>${String(p.punts).replace(".", ",")} punts</span>` : ""}
+      <span class="diff" title="Dificultat: ${DIFS[p.dificultat] || ""}">${"●".repeat(p.dificultat || 1)}${"○".repeat(3 - (p.dificultat || 1))}</span>
+      ${temes}
+    </div>
+    <h2>${md(p.titol, true)}</h2>
+    <div class="md">${md(p.enunciat)}</div>
+    ${figs}${parts}${opts}
+    <div class="actions">
+      <button type="button" class="btn primary" data-act="sol" aria-expanded="false">Mostra la solució</button>
+      <button type="button" class="mark m-done" data-act="mark" data-v="done" aria-pressed="${st === "done"}">✓ Fet</button>
+      <button type="button" class="mark m-review" data-act="mark" data-v="review" aria-pressed="${st === "review"}">↻ Per repassar</button>
+      <span class="sp"></span>
+      <span class="pdflinks">
+        <a href="${esc(e.pdf_examen)}${page ? "#page=" + page : ""}" target="_blank" rel="noopener">Examen original${page ? " (pàg. " + page + ")" : ""}</a>
+        <a href="${esc(e.pdf_examen)}" download="${esc(pdfName(e, "examen"))}">Descarrega l'examen</a>
+        ${e.pdf_solucio ? `<a href="${esc(e.pdf_solucio)}" target="_blank" rel="noopener">Criteris oficials</a>` : ""}
+      </span>
+    </div>
+    <section class="sol" data-role="sol" hidden></section>
+  </article>`;
+}
+
+function renderSolution(art, p, mode) {
+  const sec = art.querySelector('[data-role="sol"]');
+  const s = p.solucio || {};
+  const steps = s.passos || [];
+  let n = mode === "all" ? steps.length : Math.max(1, +(sec.dataset.n || 0));
+  sec.dataset.n = n;
+  const items = steps.slice(0, n).map((st) =>
+    `<li class="step"><div class="body"><div class="st">${st.apartat ? `<span class="ap">${esc(st.apartat)})</span>` : ""}<span>${md(st.titol, true)}</span></div><div class="md">${md(st.cos)}</div></div></li>`).join("");
+  const finished = n >= steps.length;
+  const res = finished && (s.resultats || []).length
+    ? `<div class="results"><h3>Resultats</h3>${s.resultats.map((r) => `<div class="r"><b>${r.apartat ? esc(r.apartat) + ")" : "→"}</b><div class="v md"><mark>${md(r.valor, true)}</mark></div></div>`).join("")}</div>` : "";
+  const note = finished && s.nota ? `<div class="note md">${md(s.nota)}</div>` : "";
+  sec.innerHTML = `<h3>Solució pas a pas · ${n} de ${steps.length}</h3><ol class="steps">${items}</ol>
+    ${finished ? "" : `<div class="stepnav"><button type="button" class="btn" data-act="next">Pas següent →</button><button type="button" class="btn ghost" data-act="all">Mostra-ho tot</button></div>`}
+    ${res}${note}`;
+}
+
+function render() {
+  store.set("filters", F);
+  renderSubjects();
+  renderFilters();
+  document.getElementById("q").value = F.q;
+  document.getElementById("order").value = F.order;
+  const list = sorted(PROBS.filter((p) => matches(p)));
+  const total = PROBS.filter(inAssig).length;
+  const nExams = new Set(list.map((p) => p.examen)).size;
+  document.getElementById("count").textContent = `${list.length} de ${total} problemes · ${nExams} exàmens`;
+  const el = document.getElementById("list");
+  if (!list.length) {
+    el.innerHTML = `<div class="empty">Cap problema compleix aquests filtres. Prova d'esborrar-ne algun o de cercar una altra paraula.</div>`;
+    return;
+  }
+  el.innerHTML = list.slice(0, shown).map(renderCard).join("") +
+    (list.length > shown ? `<button type="button" class="btn more" data-act="more">Mostra'n ${Math.min(15, list.length - shown)} més (queden ${list.length - shown})</button>` : "");
+}
+
+// ---------- esdeveniments ----------
+const byId = Object.fromEntries(PROBS.map((p) => [p.id, p]));
+document.addEventListener("click", (ev) => {
+  const t = ev.target.closest("button");
+  if (!t) return;
+  if (t.dataset.assig) { F = { ...DEFAULT_F, assig: t.dataset.assig, order: F.order }; shown = 15; render(); return setView(view); }
+  if (t.dataset.view) return setView(t.dataset.view);
+  if (t.dataset.act === "exprobs") {
+    F = { ...DEFAULT_F, assig: F.assig, from: +t.dataset.any, to: +t.dataset.any, convs: [t.dataset.conv], order: "exam" };
+    shown = 50; setView("problemes"); render(); window.scrollTo(0, 0); return;
+  }
+  if (t.classList.contains("chip")) {
+    const k = t.dataset.k, v = t.dataset.v;
+    F[k] = F[k].includes(v) ? F[k].filter((x) => x !== v) : [...F[k], v];
+    shown = 15; return render();
+  }
+  if (t.id === "reset") { F = { ...DEFAULT_F, assig: F.assig }; shown = 15; return render(); }
+  if (t.id === "ftoggle") {
+    const a = document.getElementById("filters");
+    const open = a.classList.toggle("collapsed") === false;
+    t.setAttribute("aria-expanded", open); t.textContent = open ? "Menys filtres" : "Més filtres"; return;
+  }
+  if (t.id === "random") {
+    const list = PROBS.filter((p) => matches(p));
+    if (!list.length) return;
+    const p = list[Math.floor(Math.random() * list.length)];
+    const el = document.getElementById("list");
+    el.innerHTML = renderCard(p) + `<button type="button" class="btn more" data-act="back">← Torna a la llista</button>`;
+    document.getElementById("count").textContent = "Problema a l'atzar";
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+  const act = t.dataset.act;
+  if (act === "more") { shown += 15; return render(); }
+  if (act === "back") return render();
+  const art = t.closest("article.prob");
+  if (!art) return;
+  const p = byId[art.dataset.id];
+  if (act === "sol") {
+    const sec = art.querySelector('[data-role="sol"]');
+    const open = sec.hidden;
+    sec.hidden = !open;
+    t.setAttribute("aria-expanded", open);
+    t.textContent = open ? "Amaga la solució" : "Mostra la solució";
+    if (open && !sec.innerHTML) renderSolution(art, p);
+  } else if (act === "next") {
+    const sec = art.querySelector('[data-role="sol"]');
+    sec.dataset.n = +sec.dataset.n + 1; renderSolution(art, p);
+  } else if (act === "all") renderSolution(art, p, "all");
+  else if (act === "answer") {
+    const right = p.solucio?.resposta;
+    art.querySelectorAll(".opt").forEach((b) => {
+      b.disabled = true;
+      if (b.dataset.v === right) b.classList.add("right");
+      else if (b === t) b.classList.add("wrong");
+    });
+    const v = art.querySelector('[data-role="verdict"]');
+    v.className = "verdict " + (t.dataset.v === right ? "ok" : "ko");
+    v.textContent = t.dataset.v === right ? "Correcte! Mira la solució per repassar el raonament." : `No. La correcta és la ${right}). Obre la solució per veure per què.`;
+  } else if (act === "mark") {
+    progress[p.id] = progress[p.id] === t.dataset.v ? undefined : t.dataset.v;
+    if (!progress[p.id]) delete progress[p.id];
+    store.set("progress", progress);
+    art.classList.remove("done", "review");
+    if (progress[p.id]) art.classList.add(progress[p.id]);
+    art.querySelectorAll(".mark").forEach((b) => b.setAttribute("aria-pressed", progress[p.id] === b.dataset.v));
+    renderFilters();
+  }
+});
+let qTimer;
+document.getElementById("q").addEventListener("input", (e) => {
+  clearTimeout(qTimer);
+  qTimer = setTimeout(() => { F.q = e.target.value; shown = 15; render(); document.getElementById("q").focus(); }, 200);
+});
+document.getElementById("anyFrom").addEventListener("change", (e) => { F.from = e.target.value ? +e.target.value : null; shown = 15; render(); });
+document.getElementById("anyTo").addEventListener("change", (e) => { F.to = e.target.value ? +e.target.value : null; shown = 15; render(); });
+document.getElementById("order").addEventListener("change", (e) => { F.order = e.target.value; randSeed = Math.random(); render(); });
+
+if (!PROBS.some((p) => p.ex.assignatura === F.assig)) F.assig = (PROBS[0] && PROBS[0].ex.assignatura) || "tecno";
+render();
+})();
+</script>
+</body>
+</html>

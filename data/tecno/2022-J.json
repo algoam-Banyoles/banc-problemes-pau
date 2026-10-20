@@ -1,0 +1,351 @@
+{
+  "examen": {
+    "id": "tecno-2022-J",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2022,
+    "convocatoria": "juny",
+    "serie": "2",
+    "pdf_examen": "pdfs/tecno/2022-J-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2022-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels sis exercicis (2,5 punts cadascun); si se'n responen més, només es valoren els quatre primers. L'exercici 1 té 5 qüestions de test de 0,5 punts (cada resposta errònia descompta 0,16 punts i les no contestades no descompten)."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2022-J-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Energia absorbida en un assaig de Charpy amb pèndol",
+      "tema": "materials",
+      "temes_secundaris": ["mecanica"],
+      "conceptes": ["assaig de Charpy", "resiliència", "energia potencial"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Per a realitzar un assaig de Charpy s'utilitza un pèndol d'$1\\ \\text{m}$ de longitud que a l'extrem té una massa de $22\\ \\text{kg}$. S'usa una proveta amb una entalla en forma de U i una secció de $80\\ \\text{mm}^2$. A l'instant inicial, el pèndol està en posició horitzontal (la barra del pèndol és paral·lela al terra), i després de xocar contra la proveta al punt més baix de la seva trajectòria, el seu extrem s'eleva $250\\ \\text{mm}$. Quanta energia s'ha absorbit en el xoc?",
+      "figures": [],
+      "opcions": {"a": "$202{,}3\\ \\text{J}$", "b": "$215{,}7\\ \\text{J}$", "c": "$53{,}94\\ \\text{J}$", "d": "$161{,}8\\ \\text{J}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Longitud del pèndol: $L = 1\\ \\text{m}$; massa a l'extrem: $m = 22\\ \\text{kg}$\n- Posició inicial horitzontal → l'extrem és a una alçada $h_0 = L = 1\\ \\text{m}$ per sobre del punt més baix\n- Alçada final després del xoc: $h_f = 250\\ \\text{mm} = 0{,}25\\ \\text{m}$\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnita: energia absorbida per la proveta, $E_\\text{abs}$ (la secció de $80\\ \\text{mm}^2$ no cal: només serviria per calcular la resiliència en J/mm²)"},
+          {"apartat": null, "titol": "Balanç d'energia potencial", "cos": "El pèndol surt amb energia potencial $m\\,g\\,h_0$ i, després de trencar la proveta, només arriba a $h_f$. La diferència és l'energia que ha absorbit la proveta en trencar-se:\n\n$$E_\\text{abs} = m\\, g\\, (h_0 - h_f) = 22 \\cdot 9{,}807 \\cdot (1 - 0{,}25) = 161{,}8\\ \\text{J}$$\n\nResultat: **$E_\\text{abs} \\approx 161{,}8\\ \\text{J}$** → resposta **d**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **b)** $215{,}7\\ \\text{J} = m\\,g\\,L$ és l'energia **inicial** del pèndol, no l'absorbida.\n- **c)** $53{,}94\\ \\text{J} = m\\,g\\,h_f$ és l'energia que **li queda** al pèndol després del xoc.\n- **a)** $202{,}3\\ \\text{J}$ no correspon a cap balanç correcte."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$E_\\text{abs} \\approx 161{,}8\\ \\text{J}$ → resposta **d**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2022-J-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Tolerància d'una resistència normalitzada de 390 Ω",
+      "tema": "circuits",
+      "temes_secundaris": ["electronica"],
+      "conceptes": ["tolerància", "resistència", "valor nominal"],
+      "dificultat": 1,
+      "pagines": [2],
+      "enunciat": "Una resistència elèctrica normalitzada de $390\\ \\Omega$ el valor de la qual pot estar comprès entre $382{,}2\\ \\Omega$ i $397{,}8\\ \\Omega$ té una tolerància del",
+      "figures": [],
+      "opcions": {"a": "$\\pm 1\\ \\%$.", "b": "$\\pm 2\\ \\%$.", "c": "$\\pm 5\\ \\%$.", "d": "$\\pm 10\\ \\%$."},
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {"apartat": null, "titol": "Desviació màxima respecte del valor nominal", "cos": "La tolerància és la desviació màxima permesa respecte del valor nominal, expressada en percentatge. L'interval és simètric:\n\n$$\\Delta R = 397{,}8 - 390 = 390 - 382{,}2 = 7{,}8\\ \\Omega$$"},
+          {"apartat": null, "titol": "Tolerància en percentatge", "cos": "$$\\text{tol} = \\frac{\\Delta R}{R_\\text{nom}} \\cdot 100 = \\frac{7{,}8}{390} \\cdot 100 = 2\\ \\%$$\n\nResultat: **$\\pm 2\\ \\%$** → resposta **b**."},
+          {"apartat": null, "titol": "Error típic", "cos": "Si es divideix l'amplada total de l'interval ($15{,}6\\ \\Omega$) pel valor nominal surt un 4 %, que no és cap opció: la tolerància es refereix a la meitat de l'interval ($\\pm$)."}
+        ],
+        "resultats": [{"apartat": null, "valor": "Tolerància $\\pm 2\\ \\%$ → resposta **b**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2022-J-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Petjada de carboni setmanal d'un automòbil de gasoil",
+      "tema": "energia",
+      "temes_secundaris": [],
+      "conceptes": ["emissions de CO2", "petjada de carboni", "consum de combustible"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Un automòbil emet $157{,}8\\ \\text{g}$ de $\\text{CO}_2$ per cada kilòmetre recorregut en vies interurbanes. Setmanalment gasta un dipòsit de $60\\ \\text{L}$ de gasoil en aquests recorreguts i té un consum mitjà de $5{,}6\\ \\text{L/(100 km)}$. Quina és la petjada de carboni que deixarà a l'atmosfera en una setmana?",
+      "figures": [],
+      "opcions": {"a": "$169{,}1\\ \\text{kg}$ de $\\text{CO}_2$", "b": "$169{,}1$ tones de $\\text{CO}_2$", "c": "$1{,}691\\ \\text{kg}$ de $\\text{CO}_2$", "d": "$16{,}91\\ \\text{kg}$ de $\\text{CO}_2$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Emissions: $e = 157{,}8\\ \\text{g CO}_2\\text{/km}$\n- Combustible gastat a la setmana: $V = 60\\ \\text{L}$\n- Consum: $c = 5{,}6\\ \\text{L}/100\\ \\text{km} = 0{,}056\\ \\text{L/km}$\n- Incògnita: massa de $\\text{CO}_2$ emesa en una setmana"},
+          {"apartat": null, "titol": "Quilòmetres recorreguts en una setmana", "cos": "Si cada 100 km gasta 5,6 L, amb 60 L recorre:\n\n$$d = \\frac{V}{c} = \\frac{60\\ \\text{L}}{5{,}6\\ \\text{L}} \\cdot 100\\ \\text{km} = 1\\,071\\ \\text{km}$$"},
+          {"apartat": null, "titol": "Massa de CO₂ emesa", "cos": "$$m_{\\text{CO}_2} = e \\cdot d = 157{,}8\\ \\text{g/km} \\cdot 1\\,071\\ \\text{km} = 169\\,071\\ \\text{g} = 169{,}1\\ \\text{kg}$$\n\nResultat: **$169{,}1\\ \\text{kg}$ de $\\text{CO}_2$** → resposta **a**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "Les opcions **b**, **c** i **d** tenen les mateixes xifres però amb errors d'unitats o de factors de 10 (per exemple, oblidar el «per 100 km» del consum)."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$m_{\\text{CO}_2} \\approx 169{,}1\\ \\text{kg}$ → resposta **a**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2022-J-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Unitats de la potència elèctrica instantània d'una llar",
+      "tema": "energia",
+      "temes_secundaris": ["circuits"],
+      "conceptes": ["potència elèctrica", "energia elèctrica", "unitats"],
+      "dificultat": 1,
+      "pagines": [3],
+      "enunciat": "Amb quines unitats es pot expressar la potència elèctrica consumida en un instant determinat en una llar?",
+      "figures": [],
+      "opcions": {"a": "$\\text{kW/h}$", "b": "$\\text{kW} \\cdot \\text{h}$", "c": "$\\text{kW}$", "d": "$\\text{kJ} \\cdot \\text{s}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {"apartat": null, "titol": "Potència vs. energia", "cos": "La **potència** és energia per unitat de temps ($P = E/t$). La seva unitat al SI és el watt ($1\\ \\text{W} = 1\\ \\text{J/s}$), i en una llar s'expressa habitualment en **kW** → resposta **c**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **b)** $\\text{kW} \\cdot \\text{h}$ és una unitat d'**energia** (potència × temps): és el que es paga a la factura.\n- **a)** $\\text{kW/h}$ no té sentit físic aquí (seria una variació de potència en el temps); és un error molt habitual en confondre-la amb kW·h.\n- **d)** $\\text{kJ} \\cdot \\text{s}$ és energia × temps, tampoc és potència (la correcta seria kJ/s)."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$\\text{kW}$ → resposta **c**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2022-J-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Relació de transmissió d'un tren d'engranatges de quatre rodes",
+      "tema": "mecanismes",
+      "temes_secundaris": [],
+      "conceptes": ["tren d'engranatges", "relació de transmissió", "nombre de dents"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "Un tren d'engranatges es connecta entre els eixos d'un motor elèctric i d'una roda. Disposa de 4 rodes dentades de $z_1 = 14$, $z_2 = 48$, $z_3 = 16$ i $z_4 = 25$ dents com es veu en la figura. Determineu la relació de transmissió $\\omega_\\text{roda}/\\omega_\\text{motor}$.",
+      "figures": [{"src": "img/tecno/2022-J/e1-q5.png", "peu": "Tren d'engranatges entre el motor i la roda"}],
+      "opcions": {"a": "$0{,}186\\,7$", "b": "$5{,}357$", "c": "$0{,}291\\,7$", "d": "$0{,}411\\,0$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {"apartat": null, "titol": "Com està muntat el tren", "cos": "A la figura es veu que:\n\n- $z_1$ va a l'eix del **motor** i engrana amb $z_2$.\n- $z_2$ i $z_3$ estan al **mateix eix** (eix intermedi), per tant giren a la mateixa velocitat.\n- $z_3$ engrana amb $z_4$, que va a l'eix de la **roda**."},
+          {"apartat": null, "titol": "Relació de cada parell d'engranatges", "cos": "En dues rodes que engranen, la velocitat angular és inversament proporcional al nombre de dents: $\\omega_\\text{conduïda}/\\omega_\\text{motriu} = z_\\text{motriu}/z_\\text{conduïda}$.\n\n$$\\frac{\\omega_2}{\\omega_1} = \\frac{z_1}{z_2} = \\frac{14}{48} \\qquad \\frac{\\omega_4}{\\omega_3} = \\frac{z_3}{z_4} = \\frac{16}{25}$$"},
+          {"apartat": null, "titol": "Relació total", "cos": "Com que $\\omega_3 = \\omega_2$, la relació total és el producte de les dues:\n\n$$\\frac{\\omega_\\text{roda}}{\\omega_\\text{motor}} = \\frac{z_1}{z_2} \\cdot \\frac{z_3}{z_4} = \\frac{14}{48} \\cdot \\frac{16}{25} = 0{,}186\\,7$$\n\nResultat: **$0{,}186\\,7$** → resposta **a** (la roda gira unes 5,36 vegades més lenta que el motor)."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **b)** $5{,}357$ és la relació **inversa** ($\\omega_\\text{motor}/\\omega_\\text{roda}$).\n- **c)** $0{,}291\\,7 = 14/48$: només té en compte el primer parell.\n- **d)** $0{,}411\\,0 = (14+16)/(48+25)$: sumar dents en lloc de multiplicar relacions."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$\\omega_\\text{roda}/\\omega_\\text{motor} = 0{,}186\\,7$ → resposta **a**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2022-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Sentit de marxa d'un ascensor de quatre plantes (comparador binari)",
+      "tema": "digital",
+      "temes_secundaris": ["control"],
+      "conceptes": ["taula de veritat", "funció lògica", "mapa de Karnaugh", "portes lògiques", "codificació binària"],
+      "dificultat": 2,
+      "pagines": [4, 5],
+      "enunciat": "El controlador d'un motor d'ascensor necessita un senyal que determini en quin sentit ha de posar-se en marxa l'ascensor (per a pujar o baixar). Per a aconseguir això, es dissenya un sistema digital on la sortida $z$ pren valor 1 si l'ascensor ha de pujar i 0 en cas contrari.\n\nEl sistema té com a entrades 4 variables digitals ($a$, $b$, $c$, $d$) per a codificar la planta on es troba l'ascensor i la planta on vol anar l'usuari de les quatre possibles: planta 0, planta 1, planta 2 i planta 3. Les dues primeres entrades codifiquen, en numeració binària, la planta en què es troba l'ascensor (per exemple, si es troba a la planta 3 els valors seran $a = 1$ i $b = 1$); les altres dues entrades ($c$, $d$) codifiquen, de la mateixa manera, el número de la planta que l'usuari selecciona.\n\nUtilitzant les variables d'estat descrites, dissenyeu el sistema digital que permeti determinar quan l'ascensor ha de moure's en sentit ascendent. Per fer-ho:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Elaboreu la taula de veritat del sistema.", "punts": 1},
+        {"id": "b", "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.", "punts": 1},
+        {"id": "c", "enunciat": "Dibuixeu el diagrama de portes lògiques equivalent.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Traduir l'enunciat a una condició", "cos": "- Planta actual: número binari $ab$ (de 0 a 3).\n- Planta demanada: número binari $cd$ (de 0 a 3).\n\nL'ascensor ha de **pujar** ($z = 1$) quan la planta demanada és **més alta** que l'actual: $cd > ab$. Si són iguals o la demanada és més baixa, $z = 0$."},
+          {"apartat": "a", "titol": "Taula de veritat", "cos": "Recorrem les 16 combinacions i comparem els dos números:\n\n| $a$ | $b$ | $c$ | $d$ | actual → demanada | $z$ |\n|---|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 0 → 0 | 0 |\n| 0 | 0 | 0 | 1 | 0 → 1 | **1** |\n| 0 | 0 | 1 | 0 | 0 → 2 | **1** |\n| 0 | 0 | 1 | 1 | 0 → 3 | **1** |\n| 0 | 1 | 0 | 0 | 1 → 0 | 0 |\n| 0 | 1 | 0 | 1 | 1 → 1 | 0 |\n| 0 | 1 | 1 | 0 | 1 → 2 | **1** |\n| 0 | 1 | 1 | 1 | 1 → 3 | **1** |\n| 1 | 0 | 0 | 0 | 2 → 0 | 0 |\n| 1 | 0 | 0 | 1 | 2 → 1 | 0 |\n| 1 | 0 | 1 | 0 | 2 → 2 | 0 |\n| 1 | 0 | 1 | 1 | 2 → 3 | **1** |\n| 1 | 1 | 0 | 0 | 3 → 0 | 0 |\n| 1 | 1 | 0 | 1 | 3 → 1 | 0 |\n| 1 | 1 | 1 | 0 | 3 → 2 | 0 |\n| 1 | 1 | 1 | 1 | 3 → 3 | 0 |"},
+          {"apartat": "b", "titol": "Funció canònica (suma de productes)", "cos": "Un terme per a cada fila amb $z = 1$ (variable negada si val 0):\n\n$$z = \\bar{a}\\,\\bar{b}\\,\\bar{c}\\,d + \\bar{a}\\,\\bar{b}\\,c\\,\\bar{d} + \\bar{a}\\,\\bar{b}\\,c\\,d + \\bar{a}\\,b\\,c\\,\\bar{d} + \\bar{a}\\,b\\,c\\,d + a\\,\\bar{b}\\,c\\,d$$"},
+          {"apartat": "b", "titol": "Simplificació per Karnaugh", "cos": "Mapa amb files $ab$ i columnes $cd$ (ordre de Gray 00, 01, 11, 10):\n\n| $ab \\backslash cd$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **00** | 0 | 1 | 1 | 1 |\n| **01** | 0 | 0 | 1 | 1 |\n| **11** | 0 | 0 | 0 | 0 |\n| **10** | 0 | 0 | 1 | 0 |\n\n- **Grup de 4** (files 00 i 01, columnes 11 i 10): hi canvien $b$ i $d$, es mantenen $a = 0$ i $c = 1$ → $\\bar{a}\\,c$.\n- **Grup de 2** (fila 00, columnes 01 i 11): canvia $c$ → $\\bar{a}\\,\\bar{b}\\,d$.\n- **Grup de 2** (columna 11, files 00 i 10, que són adjacents pels extrems): canvia $a$ → $\\bar{b}\\,c\\,d$.\n\n$$\\boxed{z = \\bar{a}\\,\\bar{b}\\,d + \\bar{b}\\,c\\,d + \\bar{a}\\,c}$$\n\nInterpretació: $\\bar{a}\\,c$ = «soc a la planta 0 o 1 i vaig a la 2 o 3»; $\\bar{a}\\,\\bar{b}\\,d$ = «soc a la 0 i vaig a una planta senar (1 o 3)»; $\\bar{b}\\,c\\,d$ = «soc a la 0 o 2 i vaig a la 3»."},
+          {"apartat": "c", "titol": "Diagrama de portes lògiques", "cos": "Per implementar $z = \\bar{a}\\,\\bar{b}\\,d + \\bar{b}\\,c\\,d + \\bar{a}\\,c$ calen:\n\n- 2 portes **NOT** per obtenir $\\bar{a}$ i $\\bar{b}$ (a l'esquema oficial n'hi ha 4, perquè es repeteixen $\\bar{a}$ i $\\bar{b}$; amb 2 n'hi ha prou si es comparteixen).\n- 2 portes **AND de 3 entrades**: ($\\bar{a}$, $\\bar{b}$, $d$) i ($\\bar{b}$, $c$, $d$).\n- 1 porta **AND de 2 entrades**: ($\\bar{a}$, $c$).\n- 1 porta **OR de 3 entrades** que dona $z$.\n\nEsquema de la solució oficial (simbologia IEC: «1» amb cercle = NOT, «&» = AND, «≥1» = OR):\n\n![Esquema de portes lògiques del sistema de l'ascensor](img/tecno/2022-J/e2-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$z = 1$ a les files 0001, 0010, 0011, 0110, 0111 i 1011 ($cd > ab$)"},
+          {"apartat": "b", "valor": "$z = \\bar{a}\\,\\bar{b}\\,d + \\bar{b}\\,c\\,d + \\bar{a}\\,c$"},
+          {"apartat": "c", "valor": "NOT per a $\\bar{a}$ i $\\bar{b}$, 2 AND de 3 entrades, 1 AND de 2 entrades i 1 OR de 3 entrades"}
+        ],
+        "nota": "La funció simplificada i l'esquema no són únics: qualsevol circuit equivalent és vàlid. Truc per a la taula: escriu al costat de cada fila el número de planta actual i demanat (en decimal) i compara; així és molt difícil equivocar-se."
+      }
+    },
+    {
+      "id": "tecno-2022-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Consum i cost d'una rentadora amb tarifa de discriminació horària",
+      "tema": "energia",
+      "temes_secundaris": ["economia", "circuits"],
+      "conceptes": ["energia elèctrica", "potència elèctrica", "factura elèctrica", "discriminació horària", "estalvi"],
+      "dificultat": 2,
+      "pagines": [6, 7],
+      "enunciat": "El cicle de funcionament d'una rentadora es pot dividir bàsicament en tres fases: rentada, esbandida i centrifugació. La primera fase concentra el percentatge de consum energètic més elevat perquè escalfa l'aigua mitjançant una resistència. En un programa estàndard de $t = 1{,}5\\ \\text{h}$ de durada, en els primers $30\\ \\text{min}$ (fase de rentada) la potència mitjana consumida és $P_1 = 2\\,000\\ \\text{W}$, mentre que les fases d'esbandida i centrifugació consumeixen, de mitjana, $P_2 = 250\\ \\text{W}$. La rentadora es connecta a la xarxa a una tensió $U = 230\\ \\text{V}$.\n\nS'ha contractat una tarifa amb discriminació horària que determina el preu del $\\text{kW} \\cdot \\text{h}$ segons la franja horària en què es consumeix l'electricitat, tal com es mostra en la taula següent:\n\n| Període | De dilluns a divendres | Caps de setmana i festius | Preu [€/(kW·h)] |\n|---|---|---|---|\n| Hores Vall | 0 h a 8 h | 24 hores | 0,216 951 |\n| Hores Plana | 8 h a 10 h, 14 a 18 h, 22 h a 0 h | | 0,292 728 |\n| Hores Punta | 10 h a 14 h, 18 h a 22 h | | 0,342 930 |\n\nEs considera que s'utilitza el programa estàndard $n = 10$ vegades al mes. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "L'energia consumida en un cicle de funcionament $E_\\text{cons}$.", "punts": 0.5},
+        {"id": "b", "enunciat": "El percentatge d'energia consumida en la fase de rentada $c_\\text{r}$.", "punts": 0.5},
+        {"id": "c", "enunciat": "El cost de posar una rentadora en hores punta $c_\\text{punta}$ i en hores vall $c_\\text{vall}$.", "punts": 1},
+        {"id": "d", "enunciat": "L'estalvi anual $e_\\text{a}$ que s'obtindrà si la rentadora sempre es posa en hores vall respecte al cost de posar-la sempre en hores punta.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Durada del programa: $t = 1{,}5\\ \\text{h}$\n- Rentada: $t_1 = 30\\ \\text{min} = 0{,}5\\ \\text{h}$ a $P_1 = 2\\,000\\ \\text{W}$\n- Esbandida i centrifugació: $t - t_1 = 1\\ \\text{h}$ a $P_2 = 250\\ \\text{W}$\n- Preus: $p_\\text{punta} = 0{,}342\\,930$ €/(kW·h), $p_\\text{vall} = 0{,}216\\,951$ €/(kW·h)\n- Rentades: $n = 10$ al mes → $10 \\cdot 12 = 120$ a l'any\n- La tensió $U = 230\\ \\text{V}$ no cal per a cap apartat\n- Incògnites: $E_\\text{cons}$, $c_\\text{r}$, $c_\\text{punta}$, $c_\\text{vall}$, $e_\\text{a}$"},
+          {"apartat": "a", "titol": "Energia consumida en un cicle", "cos": "L'energia és potència per temps. Sumem l'energia de les dues etapes, cadascuna amb la seva potència mitjana:\n\n$$E_\\text{cons} = P_1\\, t_1 + P_2\\, (t - t_1) = 2\\,000 \\cdot 0{,}5 + 250 \\cdot 1 = 1\\,000 + 250 = 1\\,250\\ \\text{W}\\cdot\\text{h}$$\n\nEn unitats del SI: $1{,}25\\ \\text{kW}\\cdot\\text{h} \\cdot 3\\,600\\ \\text{kJ/(kW}\\cdot\\text{h)} = 4\\,500\\ \\text{kJ}$.\n\nResultat: **$E_\\text{cons} = 1{,}25\\ \\text{kW}\\cdot\\text{h} = 4\\,500\\ \\text{kJ}$**."},
+          {"apartat": "b", "titol": "Percentatge d'energia de la rentada", "cos": "$$c_\\text{r} = \\frac{P_1\\, t_1}{E_\\text{cons}} \\cdot 100 = \\frac{1\\,000}{1\\,250} \\cdot 100 = 80\\ \\%$$\n\nResultat: **$c_\\text{r} = 80\\ \\%$**. Té sentit: escalfar l'aigua amb la resistència és el que més energia gasta, tot i durar només un terç del programa."},
+          {"apartat": "c", "titol": "Cost d'una rentada en hores punta i en hores vall", "cos": "El cost és l'energia (en kW·h) pel preu de cada kW·h:\n\n$$c_\\text{punta} = E_\\text{cons}\\, p_\\text{punta} = 1{,}25 \\cdot 0{,}342\\,930 = 0{,}428\\,7\\ \\text{euros}$$\n\n$$c_\\text{vall} = E_\\text{cons}\\, p_\\text{vall} = 1{,}25 \\cdot 0{,}216\\,951 = 0{,}271\\,2\\ \\text{euros}$$\n\nResultat: **$c_\\text{punta} \\approx 0{,}428\\,7$ €** i **$c_\\text{vall} \\approx 0{,}271\\,2$ €** per rentada. Compte: cal posar l'energia en **kW·h** (no en W·h) perquè el preu és en €/(kW·h)."},
+          {"apartat": "d", "titol": "Estalvi anual", "cos": "Cada rentada en hores vall estalvia $c_\\text{punta} - c_\\text{vall}$. A l'any se'n fan $n \\cdot 12 = 120$:\n\n$$e_\\text{a} = (c_\\text{punta} - c_\\text{vall})\\, n \\cdot 12 = (0{,}428\\,7 - 0{,}271\\,2) \\cdot 10 \\cdot 12 = 18{,}90\\ \\text{euros}$$\n\nResultat: **$e_\\text{a} \\approx 18{,}90$ €/any**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$E_\\text{cons} = 1\\,250\\ \\text{W}\\cdot\\text{h} = 4\\,500\\ \\text{kJ}$"},
+          {"apartat": "b", "valor": "$c_\\text{r} = 80\\ \\%$"},
+          {"apartat": "c", "valor": "$c_\\text{punta} \\approx 0{,}428\\,7$ €; $c_\\text{vall} \\approx 0{,}271\\,2$ €"},
+          {"apartat": "d", "valor": "$e_\\text{a} \\approx 18{,}90$ €"}
+        ],
+        "nota": "Sense arrodonir els costos intermedis l'estalvi surt 18,897 €, que arrodonit també dona 18,90 €. Error típic a l'apartat d: oblidar multiplicar per 12 mesos i obtenir només l'estalvi mensual (1,57 €)."
+      }
+    },
+    {
+      "id": "tecno-2022-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Frenada d'un volant d'inèrcia per un parell de fricció constant",
+      "tema": "mecanica",
+      "temes_secundaris": [],
+      "conceptes": ["moviment circular uniformement accelerat", "acceleració angular", "moment d'inèrcia", "energia cinètica de rotació"],
+      "dificultat": 2,
+      "pagines": [8, 9],
+      "enunciat": "Un volant amb un moment d'inèrcia al voltant del seu eix $I = 0{,}9\\ \\text{kg} \\cdot \\text{m}^2$ gira a $n_0 = 5\\,000\\ \\text{min}^{-1}$ gràcies a l'acció d'un motor. Es desconnecta el motor i s'observa que el volant triga $t = 1\\ \\text{min}$ a quedar-se en repòs a causa d'un parell de fricció que se suposa constant. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "L'acceleració angular del volant $\\alpha$.", "punts": 0.5},
+        {"id": "b", "enunciat": "El nombre de voltes $n$ que farà el volant abans d'aturar-se.", "punts": 1},
+        {"id": "c", "enunciat": "L'energia mecànica dissipada en aquest procés $E_\\text{diss}$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Moment d'inèrcia: $I = 0{,}9\\ \\text{kg}\\cdot\\text{m}^2$\n- Velocitat inicial: $n_0 = 5\\,000\\ \\text{min}^{-1}$ → $\\omega_0 = 5\\,000 \\cdot \\dfrac{2\\pi}{60} = 523{,}6\\ \\text{rad/s}$\n- Velocitat final: $\\omega_f = 0$ (en repòs)\n- Temps de frenada: $t = 1\\ \\text{min} = 60\\ \\text{s}$\n- Parell de fricció constant → acceleració angular constant (MCUA)\n- Incògnites: $\\alpha$, nombre de voltes $n$, $E_\\text{diss}$"},
+          {"apartat": "a", "titol": "Acceleració angular", "cos": "Amb un parell de fricció constant, la velocitat angular disminueix linealment amb el temps (moviment circular uniformement accelerat):\n\n$$\\alpha = \\frac{\\omega_f - \\omega_0}{t} = \\frac{0 - 523{,}6}{60} = -8{,}727\\ \\text{rad/s}^2$$\n\nResultat: **$\\alpha \\approx -8{,}727\\ \\text{rad/s}^2$** (el signe negatiu indica que frena)."},
+          {"apartat": "b", "titol": "Angle girat fins que s'atura", "cos": "L'equació de la posició angular en un MCUA (prenent $\\varphi_0 = 0$) és:\n\n$$\\varphi = \\varphi_0 + \\omega_0\\, t + \\frac{1}{2}\\,\\alpha\\, t^2 = 523{,}6 \\cdot 60 + \\frac{1}{2}\\,(-8{,}727) \\cdot 60^2 = 15{,}71 \\cdot 10^3\\ \\text{rad}$$\n\n(Equivalentment, amb la velocitat mitjana: $\\varphi = \\dfrac{\\omega_0 + \\omega_f}{2}\\, t = \\dfrac{523{,}6}{2} \\cdot 60$.)"},
+          {"apartat": "b", "titol": "De radians a voltes", "cos": "Cada volta són $2\\pi$ radians:\n\n$$n = \\frac{\\varphi}{2\\pi} = \\frac{15\\,708}{2\\pi} = 2\\,500\\ \\text{voltes}$$\n\nResultat: **$n = 2\\,500\\ \\text{voltes}$**. Comprovació ràpida: a velocitat mitjana de $2\\,500\\ \\text{min}^{-1}$ durant 1 minut fa 2 500 voltes."},
+          {"apartat": "c", "titol": "Energia dissipada per la fricció", "cos": "Tota l'energia cinètica de rotació que tenia el volant es perd per fricció, perquè acaba aturat:\n\n$$E_\\text{diss} = \\frac{1}{2}\\, I\\, (\\omega_0^2 - \\omega_f^2) = \\frac{1}{2} \\cdot 0{,}9 \\cdot 523{,}6^2 = 123\\,370\\ \\text{J}$$\n\nResultat: **$E_\\text{diss} \\approx 123{,}4\\ \\text{kJ}$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$\\alpha \\approx -8{,}727\\ \\text{rad/s}^2$"},
+          {"apartat": "b", "valor": "$\\varphi \\approx 15{,}71 \\cdot 10^3\\ \\text{rad}$; $n = 2\\,500\\ \\text{voltes}$"},
+          {"apartat": "c", "valor": "$E_\\text{diss} \\approx 123{,}4\\ \\text{kJ}$"}
+        ],
+        "nota": "Error típic: treballar amb $\\text{min}^{-1}$ en lloc de rad/s o amb el temps en minuts. També es podria calcular el parell de fricció: $\\Gamma_f = I\\,|\\alpha| = 0{,}9 \\cdot 8{,}727 = 7{,}854\\ \\text{N}\\cdot\\text{m}$, i comprovar que $E_\\text{diss} = \\Gamma_f\\, \\varphi = 7{,}854 \\cdot 15\\,708 \\approx 123{,}4\\ \\text{kJ}$."
+      }
+    },
+    {
+      "id": "tecno-2022-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Barra articulada sostinguda per un cable enrotllat en un tambor motoritzat",
+      "tema": "estatica",
+      "temes_secundaris": ["mecanismes"],
+      "conceptes": ["diagrama de cos lliure", "equilibri", "moment d'una força", "reaccions a l'articulació", "parell motor"],
+      "dificultat": 3,
+      "pagines": [10, 11],
+      "enunciat": "El sistema de la figura permet manipular una barra de longitud $2L$ mitjançant un motor que s'uneix a un tambor de diàmetre $d = 450\\ \\text{mm}$ on s'enrotlla el cable. La barra, que és homogènia i té una massa $m = 50\\ \\text{kg}$, es troba articulada al punt O, el qual està fixat a terra. La resta d'elements són de massa negligible. En la posició mostrada en la figura, el sistema està en equilibri estàtic i $\\alpha = \\varphi = 30^\\circ$. ($L = 1\\ \\text{m}$.)",
+      "figures": [{"src": "img/tecno/2022-J/e5.png", "peu": "Barra OA articulada a O, cable des d'A fins al tambor del motor passant per una politja"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu el diagrama de cos lliure de la barra OA.", "punts": 0.5},
+        {"id": "b", "enunciat": "Determineu la força $T$ a la qual està sotmès el cable.", "punts": 0.5},
+        {"id": "c", "enunciat": "Determineu les forces vertical $F_\\text{V}$ i horitzontal $F_\\text{H}$ a l'articulació O.", "punts": 1},
+        {"id": "d", "enunciat": "Determineu el parell $\\Gamma$ que subministra el motor.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Barra homogènia de longitud $2L = 2\\ \\text{m}$ i massa $m = 50\\ \\text{kg}$ → pes $m\\,g = 50 \\cdot 9{,}807 = 490{,}4\\ \\text{N}$, aplicat al centre (a una distància $L$ d'O)\n- Inclinació de la barra: $\\varphi = 30^\\circ$ respecte de l'horitzontal (puja cap a l'esquerra des d'O fins a A)\n- Cable a l'extrem A, inclinat $\\alpha = 30^\\circ$ per sobre de l'horitzontal cap a la dreta\n- Diàmetre del tambor: $d = 450\\ \\text{mm}$ → radi $0{,}225\\ \\text{m}$\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnites: $T$, $F_\\text{H}$, $F_\\text{V}$, $\\Gamma$"},
+          {"apartat": "a", "titol": "Diagrama de cos lliure de la barra", "cos": "Aïllem la barra OA i hi dibuixem totes les forces externes:\n\n- **Pes** $m\\,g$, vertical cap avall, al centre de la barra.\n- **Tensió del cable** $T$ a l'extrem A, en la direcció del cable ($30^\\circ$ sobre l'horitzontal, cap a la dreta). Com que la barra forma $30^\\circ$ amb l'horitzontal en sentit contrari, l'angle entre el cable i la barra és de $120^\\circ$: el cable forma $30^\\circ$ amb la perpendicular a la barra.\n- **Reacció a l'articulació O**, que descomponem en una component horitzontal $F_\\text{H}$ i una de vertical $F_\\text{V}$.\n\n![Diagrama de cos lliure de la barra OA (solució oficial)](img/tecno/2022-J/e5-sol.png)"},
+          {"apartat": "b", "titol": "Tensió del cable: moments respecte d'O", "cos": "Prenem moments respecte de l'articulació O: així $F_\\text{H}$ i $F_\\text{V}$ no hi intervenen (passen per O) i només queda una incògnita.\n\n- Braç del pes: distància horitzontal d'O al centre de la barra, $L\\cos 30^\\circ$.\n- Braç de la tensió: la component de $T$ perpendicular a la barra és $T\\cos 30^\\circ$ i actua a una distància $2L$ d'O.\n\n$$\\sum M_\\text{O} = 0 \\;\\Rightarrow\\; T\\cos 30^\\circ \\cdot 2L - m\\,g\\cos 30^\\circ \\cdot L = 0$$\n\n$$T = \\frac{m\\,g}{2} = \\frac{50 \\cdot 9{,}807}{2} = 245{,}2\\ \\text{N}$$\n\nResultat: **$T \\approx 245{,}2\\ \\text{N}$**."},
+          {"apartat": "c", "titol": "Reaccions a O: equilibri de forces", "cos": "La suma de forces horitzontals i verticals sobre la barra ha de ser zero. La tensió té components $T\\cos 30^\\circ$ (cap a la dreta) i $T\\sin 30^\\circ$ (cap amunt). Prenem $F_\\text{H}$ cap a l'esquerra i $F_\\text{V}$ cap amunt (com al diagrama):\n\n$$\\sum F_x = 0 \\;\\Rightarrow\\; T\\cos 30^\\circ - F_\\text{H} = 0 \\;\\Rightarrow\\; F_\\text{H} = T\\,\\frac{\\sqrt{3}}{2} = 245{,}2 \\cdot 0{,}866 = 212{,}3\\ \\text{N}$$\n\n$$\\sum F_y = 0 \\;\\Rightarrow\\; T\\sin 30^\\circ - m\\,g + F_\\text{V} = 0 \\;\\Rightarrow\\; F_\\text{V} = m\\,g - \\frac{T}{2} = \\frac{3\\,m\\,g}{4} = 490{,}4 - 122{,}6 = 367{,}8\\ \\text{N}$$\n\nResultat: **$F_\\text{H} \\approx 212{,}3\\ \\text{N}$** (cap a l'esquerra) i **$F_\\text{V} \\approx 367{,}8\\ \\text{N}$** (cap amunt)."},
+          {"apartat": "d", "titol": "Parell del motor al tambor", "cos": "La politja només canvia la direcció del cable (sense fregament, la tensió és la mateixa a tot el cable). Al tambor, el cable tira tangencialment amb força $T$ a una distància igual al radi $d/2$. Per mantenir l'equilibri, el motor ha de fer un parell igual:\n\n$$\\Gamma = T\\,\\frac{d}{2} = 245{,}2 \\cdot \\frac{0{,}450}{2} = 55{,}16\\ \\text{N}\\cdot\\text{m}$$\n\nResultat: **$\\Gamma \\approx 55{,}16\\ \\text{N}\\cdot\\text{m}$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Forces: $m\\,g$ al centre, $T$ a A (a $30^\\circ$ de la perpendicular a la barra), $F_\\text{H}$ i $F_\\text{V}$ a O"},
+          {"apartat": "b", "valor": "$T \\approx 245{,}2\\ \\text{N}$"},
+          {"apartat": "c", "valor": "$F_\\text{H} \\approx 212{,}3\\ \\text{N}$; $F_\\text{V} \\approx 367{,}8\\ \\text{N}$"},
+          {"apartat": "d", "valor": "$\\Gamma \\approx 55{,}16\\ \\text{N}\\cdot\\text{m}$"}
+        ],
+        "nota": "Error típic a l'apartat b: prendre com a braç de la tensió la longitud $2L$ sencera (sense projectar), o usar el diàmetre en lloc del radi a l'apartat d (surt el doble, 110,3 N·m)."
+      }
+    },
+    {
+      "id": "tecno-2022-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Circuit mixt de quatre resistències alimentat a 230 V",
+      "tema": "circuits",
+      "temes_secundaris": [],
+      "conceptes": ["resistència equivalent", "associació sèrie-paral·lel", "llei d'Ohm", "potència elèctrica"],
+      "dificultat": 1,
+      "pagines": [12, 13],
+      "enunciat": "Un circuit elèctric està format per quatre resistències. Les tres primeres, de valor $R_1 = R_2 = R_3 = 20\\ \\Omega$, estan connectades en sèrie, i la quarta, de valor $R_4 = 100\\ \\Omega$, es connecta en paral·lel al conjunt anterior. El circuit s'alimenta entre els extrems de $R_4$ a una tensió sinusoidal $U = 230\\ \\text{V}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu l'esquema elèctric del circuit.", "punts": 0.5},
+        {"id": "b", "enunciat": "Determineu el valor de la resistència equivalent total $R_\\text{eq}$.", "punts": 1},
+        {"id": "c", "enunciat": "Determineu els valors de la intensitat $I$ i la potència $P$ consumides pel circuit elèctric.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $R_1 = R_2 = R_3 = 20\\ \\Omega$ (en sèrie)\n- $R_4 = 100\\ \\Omega$ (en paral·lel amb el conjunt sèrie)\n- Tensió eficaç d'alimentació: $U = 230\\ \\text{V}$ (aplicada als extrems de $R_4$)\n- Incògnites: $R_\\text{eq}$, $I$, $P$"},
+          {"apartat": "a", "titol": "Esquema elèctric", "cos": "Les tres resistències $R_1$, $R_2$, $R_3$ van una darrere l'altra en una branca; $R_4$ va en una segona branca connectada als mateixos dos nusos; la font sinusoidal s'hi connecta també entre aquests dos nusos (és a dir, en paral·lel amb $R_4$):\n\n![Esquema elèctric del circuit (solució oficial)](img/tecno/2022-J/e6-sol.png)"},
+          {"apartat": "b", "titol": "Resistència de la branca en sèrie", "cos": "En sèrie, les resistències se sumen:\n\n$$R_{123} = R_1 + R_2 + R_3 = 20 + 20 + 20 = 60\\ \\Omega$$"},
+          {"apartat": "b", "titol": "Paral·lel amb R₄", "cos": "En paral·lel se sumen les inverses:\n\n$$R_\\text{eq} = \\frac{1}{\\dfrac{1}{R_1 + R_2 + R_3} + \\dfrac{1}{R_4}} = \\frac{1}{\\dfrac{1}{60} + \\dfrac{1}{100}} = \\frac{60 \\cdot 100}{60 + 100} = 37{,}5\\ \\Omega$$\n\nResultat: **$R_\\text{eq} = 37{,}5\\ \\Omega$** (més petita que la menor de les dues branques, com ha de ser en un paral·lel)."},
+          {"apartat": "c", "titol": "Intensitat total", "cos": "Com que només hi ha resistències, la llei d'Ohm s'aplica directament amb valors eficaços:\n\n$$I = \\frac{U}{R_\\text{eq}} = \\frac{230}{37{,}5} = 6{,}133\\ \\text{A}$$\n\n(Comprovació: per la branca sèrie passen $230/60 = 3{,}833\\ \\text{A}$ i per $R_4$, $230/100 = 2{,}3\\ \\text{A}$; la suma és $6{,}133\\ \\text{A}$.)"},
+          {"apartat": "c", "titol": "Potència consumida", "cos": "$$P = \\frac{U^2}{R_\\text{eq}} = \\frac{230^2}{37{,}5} = 1\\,411\\ \\text{W} = U\\, I = 230 \\cdot 6{,}133$$\n\nResultat: **$I \\approx 6{,}133\\ \\text{A}$** i **$P \\approx 1{,}411\\ \\text{kW}$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$R_1$-$R_2$-$R_3$ en sèrie, en paral·lel amb $R_4$ i amb la font"},
+          {"apartat": "b", "valor": "$R_\\text{eq} = 37{,}5\\ \\Omega$"},
+          {"apartat": "c", "valor": "$I \\approx 6{,}133\\ \\text{A}$; $P \\approx 1{,}411\\ \\text{kW}$"}
+        ],
+        "nota": "Error típic: sumar totes les resistències ($160\\ \\Omega$) o fer el paral·lel de les quatre per separat. Cal identificar primer la branca sèrie i després fer el paral·lel amb $R_4$."
+      }
+    }
+  ]
+}

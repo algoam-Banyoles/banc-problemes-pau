@@ -1,0 +1,671 @@
+{
+  "examen": {
+    "id": "fisica-2016-S",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2016,
+    "convocatoria": "setembre",
+    "serie": "1",
+    "pdf_examen": "pdfs/fisica/2016-S-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2016-S-solucio.pdf",
+    "estructura": "Part comuna obligatòria (P1 i P2) i part optativa: cal escollir UNA de les dues opcions (A o B) i fer-ne els problemes P3, P4 i P5. Cada problema val 2 punts (dos apartats d'1 punt)."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2016-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Descens del Curiosity a Mart: variació d'energia mecànica i camp gravitatori a 125 km",
+      "tema": "gravitacio",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "energia mecànica",
+        "energia potencial gravitatòria",
+        "intensitat de camp gravitatori",
+        "força gravitatòria"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "El 6 d'agost de 2012, el robot *Curiosity* va ser dipositat damunt la superfície de Mart per una càpsula d'entrada atmosfèrica ideada pel Mars Science Laboratory. Aquesta càpsula va iniciar l'entrada a l'atmosfera a $125\\ \\text{km}$ de la superfície de Mart i a una velocitat de $5\\,845\\ \\text{m s}^{-1}$. Les tècniques usades en el descens van fer que el vehicle arribés a la superfície marciana a una velocitat de només $0{,}60\\ \\text{m s}^{-1}$. Tenint en compte que la massa del *Curiosity* és de $899\\ \\text{kg}$, calculeu:\n\n**Dades:** Massa de Mart, $M_\\text{Mart} = 6{,}42 \\times 10^{23}\\ \\text{kg}$. Radi de Mart, $R_\\text{Mart} = 3{,}39 \\times 10^{6}\\ \\text{m}$. $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'increment de l'energia mecànica del vehicle en el descens.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El mòdul de la intensitat de camp gravitatori que fa Mart en el punt inicial del descens del *Curiosity* i la força (mòdul, direcció i sentit) que el planeta fa sobre el robot en aquest punt.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa del robot: $m = 899\\ \\text{kg}$\n- Altura inicial: $h = 125\\ \\text{km} = 1{,}25 \\times 10^{5}\\ \\text{m}$\n- Velocitat inicial: $v_i = 5\\,845\\ \\text{m/s}$; velocitat final (a terra): $v_f = 0{,}60\\ \\text{m/s}$\n- $M = 6{,}42 \\times 10^{23}\\ \\text{kg}$, $R = 3{,}39 \\times 10^{6}\\ \\text{m}$, $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2/\\text{kg}^2$\n- Incògnites: $\\Delta E_\\text{m}$ (a); $g$ a $125\\ \\text{km}$ d'altura i la força $F$ sobre el robot (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia mecànica inicial i final",
+            "cos": "L'energia mecànica és la suma de la cinètica i la potencial gravitatòria. Com que 125 km no és una altura petita comparada amb el radi de Mart (i, sobretot, perquè no tenim $g$), fem servir l'expressió general de l'energia potencial gravitatòria, $E_p = -GMm/r$, amb $r$ la distància al **centre** del planeta:\n\n$$E_i = \\frac{1}{2} m v_i^2 - G\\frac{Mm}{R+h} \\qquad E_f = \\frac{1}{2} m v_f^2 - G\\frac{Mm}{R}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Increment d'energia mecànica",
+            "cos": "$$\\Delta E = E_f - E_i = \\frac{1}{2} m\\left(v_f^2 - v_i^2\\right) + GMm\\left(\\frac{1}{R+h} - \\frac{1}{R}\\right)$$\n\nTerme cinètic: $\\frac{1}{2}\\cdot 899 \\cdot (0{,}60^2 - 5\\,845^2) = -1{,}536 \\times 10^{10}\\ \\text{J}$\n\nTerme potencial: $6{,}67\\times10^{-11}\\cdot 6{,}42\\times10^{23}\\cdot 899 \\left(\\frac{1}{3{,}515\\times10^{6}} - \\frac{1}{3{,}39\\times10^{6}}\\right) = -4{,}04 \\times 10^{8}\\ \\text{J}$\n\n$$\\Delta E = -1{,}536\\times10^{10} - 0{,}040\\times10^{10} = \\mathbf{-1{,}58 \\times 10^{10}\\ \\text{J}}$$\n\nEl signe negatiu indica que el vehicle **perd** energia mecànica: es dissipa (fregament amb l'atmosfera, paracaigudes, retrocoets...). Si l'única força fos la gravetat, l'energia mecànica es conservaria."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat del camp gravitatori a 125 km d'altura",
+            "cos": "La intensitat del camp gravitatori creat per un planeta esfèric a una distància $r$ del seu centre és $g = GM/r^2$. El punt inicial és a $r = R + h = 3{,}515 \\times 10^{6}\\ \\text{m}$:\n\n$$g = \\frac{GM}{(R+h)^2} = \\frac{6{,}67\\times10^{-11}\\cdot 6{,}42\\times10^{23}}{(3{,}515\\times10^{6})^2} = \\mathbf{3{,}47\\ \\text{m/s}^2}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Força sobre el robot",
+            "cos": "La força gravitatòria (el pes del robot en aquell punt) és $F = mg$:\n\n$$F = 899 \\cdot 3{,}47 = \\mathbf{3{,}12 \\times 10^{3}\\ \\text{N}}$$\n\n**Direcció:** radial (la recta que uneix el robot amb el centre de Mart). **Sentit:** cap al centre del planeta (la gravetat sempre és atractiva)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\Delta E_\\text{m} = -1{,}58 \\times 10^{10}\\ \\text{J}$ (es perd energia mecànica)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$g = 3{,}47\\ \\text{m/s}^2$; $F = 3{,}12 \\times 10^{3}\\ \\text{N}$, radial i cap al centre de Mart"
+          }
+        ],
+        "nota": "Error típic: usar $E_p = mgh$ amb $g$ constant. A 125 km d'altura sobre Mart el camp ja ha baixat de $3{,}73$ a $3{,}47\\ \\text{m/s}^2$, i a més l'enunciat no dona $g$, sinó $G$, $M$ i $R$."
+      }
+    },
+    {
+      "id": "fisica-2016-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Camp magnètic creat per dos fils paral·lels amb corrents del mateix sentit",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp magnètic d'un fil",
+        "principi de superposició",
+        "regla de la mà dreta",
+        "fils paral·lels"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Per un fil recte molt llarg circula un corrent d'$1{,}5\\ \\text{A}$ en el sentit positiu de la direcció $y$, seguint la línia $x = -3{,}0\\ \\text{cm}$. Un altre fil amb les mateixes característiques, pel qual també circula un corrent d'$1{,}5\\ \\text{A}$ en el sentit positiu de la direcció $y$, segueix la línia $x = 3{,}0\\ \\text{cm}$, com mostra la figura.\n\n**Dada:** $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T m A}^{-1}$.\n\n**Nota:** El mòdul del camp magnètic creat per un fil conductor infinit pel qual circula una intensitat de corrent $I$ és: $B = \\dfrac{\\mu_0 I}{2\\pi r}$, en què $r$ és la distància al fil conductor.",
+      "figures": [
+        {
+          "src": "img/fisica/2016-S/e2.png",
+          "peu": "Dos fils paral·lels a l'eix y, a x = −3,0 cm i x = 3,0 cm, amb corrents d'1,5 A cap a +y"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el camp magnètic (mòdul, direcció i sentit) en $x = 0$ i feu un esquema que justifiqui el resultat.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el camp magnètic (mòdul, direcció i sentit) en $x = 5{,}0\\ \\text{cm}$ i feu un esquema que justifiqui el resultat.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Fil 1: $x_1 = -3{,}0\\ \\text{cm}$, $I_1 = 1{,}5\\ \\text{A}$ cap a $+y$\n- Fil 2: $x_2 = +3{,}0\\ \\text{cm}$, $I_2 = 1{,}5\\ \\text{A}$ cap a $+y$\n- $\\mu_0 = 4\\pi\\times10^{-7}\\ \\text{T m/A}$, per tant $\\dfrac{\\mu_0}{2\\pi} = 2\\times10^{-7}\\ \\text{T m/A}$\n- Incògnita: $\\vec B$ total en $x = 0$ (a) i en $x = 5{,}0\\ \\text{cm}$ (b), sobre l'eix $x$."
+          },
+          {
+            "apartat": null,
+            "titol": "Com és el camp d'un fil: regla de la mà dreta",
+            "cos": "Les línies de camp d'un fil rectilini són circumferències centrades en el fil. El sentit es troba amb la **regla de la mà dreta**: el polze en el sentit del corrent i els dits es dobleguen en el sentit de $\\vec B$.\n\nPer a un corrent cap a $+y$ en el pla $XY$: als punts situats **a la dreta** del fil, $\\vec B$ entra al paper ($-z$, $\\otimes$); als punts situats **a l'esquerra**, $\\vec B$ surt del paper ($+z$, $\\odot$). En tots dos casos és perpendicular al pla $XY$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp en x = 0",
+            "cos": "El punt $x = 0$ és a $r = 3{,}0\\ \\text{cm}$ de tots dos fils, i els corrents són iguals, per tant els mòduls són iguals:\n\n$$B_1 = B_2 = \\frac{\\mu_0 I}{2\\pi r} = 2\\times10^{-7}\\cdot\\frac{1{,}5}{0{,}030} = 1{,}0\\times10^{-5}\\ \\text{T}$$\n\nSentits: el punt és a la **dreta** del fil 1 ($\\vec B_1$ entra, $\\otimes$) i a l'**esquerra** del fil 2 ($\\vec B_2$ surt, $\\odot$). Tenen la mateixa direcció i sentits oposats, així que s'anul·len:\n\n$$\\vec B_\\text{total}(x=0) = \\vec B_1 + \\vec B_2 = \\mathbf{0}$$\n\n![Esquema de la solució oficial: sentits dels camps a x = 0 i a x = 5,0 cm](img/fisica/2016-S/e2-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Distàncies als fils en x = 5,0 cm",
+            "cos": "El punt $x = 5{,}0\\ \\text{cm}$ és a $r_1 = 5{,}0 - (-3{,}0) = 8{,}0\\ \\text{cm}$ del fil 1 i a $r_2 = 5{,}0 - 3{,}0 = 2{,}0\\ \\text{cm}$ del fil 2. Ara el punt és **a la dreta dels dos fils**, de manera que tots dos camps entren al paper ($\\otimes$) i se sumen."
+          },
+          {
+            "apartat": "b",
+            "titol": "Camp total en x = 5,0 cm",
+            "cos": "$$B = \\frac{\\mu_0 I}{2\\pi}\\left(\\frac{1}{r_1} + \\frac{1}{r_2}\\right) = 2\\times10^{-7}\\cdot 1{,}5\\left(\\frac{1}{0{,}080} + \\frac{1}{0{,}020}\\right)$$\n\n$$B = 3\\times10^{-7}\\cdot(12{,}5 + 50) = \\mathbf{1{,}9\\times10^{-5}\\ \\text{T}}\\ (1{,}875\\times10^{-5}\\ \\text{T})$$\n\n($B_1 = 3{,}75\\times10^{-6}\\ \\text{T}$ i $B_2 = 1{,}5\\times10^{-5}\\ \\text{T}$.)\n\n**Direcció:** perpendicular al pla $XY$ (eix $z$). **Sentit:** cap a dins del paper ($-z$): $\\vec B = -1{,}9\\times10^{-5}\\ \\vec k\\ \\text{T}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\vec B = 0$ (els dos camps tenen el mateix mòdul, $1{,}0\\times10^{-5}\\ \\text{T}$, i sentits oposats)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$B = 1{,}88\\times10^{-5}\\ \\text{T}$, perpendicular al pla $XY$, cap a dins del paper ($-z$)"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2016-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Ones estacionàries en un tub d'orgue obert: freqüències amb aire i amb heli",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ones estacionàries",
+        "tub obert",
+        "harmònics",
+        "freqüència fonamental",
+        "velocitat del so"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un tub d'un orgue de la basílica de la Sagrada Família està obert pels dos extrems i fa $1{,}0\\ \\text{m}$ de longitud.\n\n**Dada:** Velocitat del so en l'aire $= 343{,}0\\ \\text{m s}^{-1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu les freqüències i les longituds d'ona de les ones estacionàries que es poden propagar per aquest tub.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si el tub estigués ple d'heli, el so s'hi propagaria a una velocitat de $975{,}0\\ \\text{m s}^{-1}$. En aquest cas, quines serien les freqüències?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Tub obert pels dos extrems, $L = 1{,}0\\ \\text{m}$\n- $v_\\text{aire} = 343{,}0\\ \\text{m/s}$; $v_\\text{He} = 975{,}0\\ \\text{m/s}$\n- Incògnites: $\\lambda_n$ i $f_n$ amb aire (a); $f'_n$ amb heli (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Condició d'ona estacionària en un tub obert",
+            "cos": "En un extrem obert l'aire vibra lliurement: hi ha un **ventre** de desplaçament. Amb ventres als dos extrems, la longitud del tub ha de contenir un nombre enter de mitges longituds d'ona:\n\n$$L = n\\frac{\\lambda_n}{2} \\quad\\Longrightarrow\\quad \\lambda_n = \\frac{2L}{n}, \\qquad n = 1, 2, 3, \\ldots$$\n\nEl mode fonamental ($n = 1$) té un ventre a cada extrem i un node al mig:\n\n![Mode fonamental en un tub obert (solució oficial)](img/fisica/2016-S/e3-a-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longituds d'ona i freqüències permeses",
+            "cos": "$$\\lambda_n = \\frac{2\\cdot 1{,}0}{n} = \\frac{2{,}0}{n}\\ \\text{m} \\qquad (\\lambda_1 = 2{,}0\\ \\text{m},\\ \\lambda_2 = 1{,}0\\ \\text{m},\\ \\lambda_3 = 0{,}67\\ \\text{m}, \\ldots)$$\n\nAmb $v = \\lambda f$:\n\n$$f_1 = \\frac{v}{\\lambda_1} = \\frac{343{,}0}{2{,}0} = 171{,}5\\ \\text{Hz} \\qquad f_n = n f_1 = \\mathbf{n \\cdot 171{,}5\\ \\text{Hz}}$$\n\nÉs a dir, $171{,}5\\ \\text{Hz}$, $343\\ \\text{Hz}$, $514{,}5\\ \\text{Hz}$... (un tub obert fa sonar tots els harmònics, parells i senars)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Freqüències amb heli",
+            "cos": "Les longituds d'ona permeses depenen només de la geometria del tub (no del gas), per tant continuen sent $\\lambda_n = 2{,}0/n\\ \\text{m}$. El que canvia és la velocitat del so:\n\n$$f'_n = n\\frac{v_\\text{He}}{2L} = n\\cdot\\frac{975{,}0}{2{,}0} = \\mathbf{n \\cdot 487{,}5\\ \\text{Hz}}, \\qquad n = 1, 2, 3, \\ldots$$\n\nLes freqüències augmenten en el factor $975/343 \\approx 2{,}84$: per això la veu sona aguda quan s'inhala heli."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\lambda_n = \\dfrac{2{,}0}{n}\\ \\text{m}$; $f_n = n\\cdot 171{,}5\\ \\text{Hz}$ ($n = 1, 2, 3, \\ldots$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$f'_n = n \\cdot 487{,}5\\ \\text{Hz}$ ($n = 1, 2, 3, \\ldots$)"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2016-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Gota d'aigua carregada que puja a velocitat constant entre un núvol i el terra",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "camp elèctric uniforme",
+        "diferència de potencial",
+        "força elèctrica",
+        "equilibri de forces"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un núvol elèctricament carregat està situat a $4{,}7\\ \\text{km}$ d'altura sobre el terra. La diferència de potencial entre la base del núvol i el terra és de $2{,}3 \\times 10^{6}\\ \\text{V}$. Suposem que el camp elèctric en aquesta regió és uniforme i que la càrrega elèctrica del núvol és positiva.\n\nUna gota d'aigua que es troba entre el núvol i el terra té una massa d'$1{,}3\\ \\text{mg}$ i una càrrega de valor $Q$. En un moment donat, la gota ascendeix cap al núvol amb una velocitat constant de $2\\ \\text{m s}^{-1}$ (sense tenir en compte els corrents d'aire ni el fregament).\n\n**Dada:** $g = 9{,}81\\ \\text{m s}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu un esquema de la situació descrita pel problema i representeu-hi les càrregues elèctriques implicades i els camps vectorials (gravitatori i elèctric). Calculeu la intensitat del camp elèctric que hi ha entre el núvol i el terra, i indiqueu-ne el mòdul, la direcció i el sentit.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el valor de la càrrega $Q$ (en nC) i expliqueu raonadament quin signe hauria de tenir.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Distància núvol–terra: $d = 4{,}7\\ \\text{km} = 4\\,700\\ \\text{m}$\n- Diferència de potencial: $\\Delta V = 2{,}3\\times10^{6}\\ \\text{V}$ (núvol positiu)\n- Massa de la gota: $m = 1{,}3\\ \\text{mg} = 1{,}3\\times10^{-6}\\ \\text{kg}$\n- Velocitat constant cap amunt: $v = 2\\ \\text{m/s}$; $g = 9{,}81\\ \\text{m/s}^2$\n- Incògnites: $\\vec E$ (a); $Q$ i el seu signe (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Esquema",
+            "cos": "El núvol (càrrega positiva a la base) i el terra (càrrega negativa induïda) formen com un condensador pla: el camp elèctric va de les càrregues positives a les negatives, és a dir, **verticalment cap avall**. El camp gravitatori $\\vec g$ també apunta cap avall. La gota puja amb velocitat constant.\n\n![Esquema de la solució oficial: núvol positiu, terra negatiu, camp elèctric cap avall i gota amb el pes i la velocitat](img/fisica/2016-S/e4-a-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Intensitat del camp elèctric",
+            "cos": "En un camp uniforme, la relació entre el camp i la diferència de potencial és $\\Delta V = E\\,d$:\n\n$$E = \\frac{\\Delta V}{d} = \\frac{2{,}3\\times10^{6}}{4\\,700} = \\mathbf{489\\ \\text{V/m}}\\ (= 489\\ \\text{N/C})$$\n\n**Direcció:** vertical. **Sentit:** cap avall, del núvol (potencial alt) cap al terra (potencial baix)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Condició de velocitat constant",
+            "cos": "Si la gota es mou amb **velocitat constant**, la seva acceleració és zero i, per la primera llei de Newton, la força neta és nul·la. Sobre la gota actuen el pes (cap avall) i la força elèctrica, que per tant ha de ser **cap amunt** i igual en mòdul al pes:\n\n$$\\sum \\vec F = 0 \\quad\\Longrightarrow\\quad |Q|\\,E = m g$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Signe de la càrrega",
+            "cos": "La força elèctrica és $\\vec F = Q\\vec E$. Com que $\\vec E$ apunta cap avall i la força ha d'apuntar cap amunt, $Q$ ha de ser **negativa** (la gota és atreta pel núvol positiu i repel·lida pel terra negatiu)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Valor de la càrrega",
+            "cos": "$$|Q| = \\frac{m g}{E} = \\frac{1{,}3\\times10^{-6}\\cdot 9{,}81}{489} = 2{,}6\\times10^{-8}\\ \\text{C}$$\n\n$$Q = \\mathbf{-26\\ \\text{nC}}$$\n\nFixa't que el valor de la velocitat ($2\\ \\text{m/s}$) no intervé: només importa que sigui constant."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 489\\ \\text{V/m}$, vertical i cap avall (del núvol al terra)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$Q = -26\\ \\text{nC}$ ($-2{,}6\\times10^{-8}\\ \\text{C}$), negativa perquè la força elèctrica ha d'anar cap amunt"
+          }
+        ],
+        "nota": "Error típic: oblidar passar la massa de mil·ligrams a quilograms ($1\\ \\text{mg} = 10^{-6}\\ \\text{kg}$)."
+      }
+    },
+    {
+      "id": "fisica-2016-S-e5-a",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Fluor 18 en la tomografia per emissió de positrons: desintegració β+, aniquilació i període",
+      "tema": "nuclear",
+      "temes_secundaris": [
+        "quantica"
+      ],
+      "conceptes": [
+        "desintegració beta més",
+        "aniquilació electró-positró",
+        "equivalència massa-energia",
+        "període de semidesintegració",
+        "llei de desintegració radioactiva"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "L'isòtop radioactiu fluor 18 es fa servir com a radiofàrmac en tomografies per emissió de positrons (TEP). Quan es desintegra radioactivament, aquest isòtop desprèn un positró que s'anihila ràpidament amb un electró de l'entorn i produeix dos fotons gamma amb la mateixa energia. Aquests fotons, detectats per l'aparell mèdic, permeten obtenir imatges útils per a la diagnosi. El període de semidesintegració del fluor 18 és de $109{,}77$ minuts i podem escriure l'equació de la desintegració de la manera següent:\n\n$${}^{18}_{9}\\text{F} \\rightarrow {}^{A}_{B}\\text{Y} + {}^{C}_{D}\\text{positró} + {}^{0}_{0}\\nu_e$$\n\nen què Y és el nucli fill i $\\nu_e$ és un neutrí electrònic.\n\n**Dades:** Velocitat de la llum, $c = 3{,}00\\times10^{8}\\ \\text{m s}^{-1}$. $m_\\text{electró} = 9{,}11\\times10^{-31}\\ \\text{kg}$. Constant de Planck, $h = 6{,}63\\times10^{-34}\\ \\text{J s}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Indiqueu quants protons i quants neutrons té el nucli de fluor 18. Calculeu els coeficients $A$, $B$, $C$ i $D$ de l'equació i la freqüència dels fotons gamma detectats per l'aparell de la tomografia.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el temps que ha de transcórrer perquè el nombre de nuclis de fluor 18 que queden sense desintegrar en el cos del pacient sigui l'$1\\ \\%$ dels que hi havia a l'inici de la prova.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- ${}^{18}_{9}\\text{F}$: nombre màssic $18$, nombre atòmic $9$\n- $T_{1/2} = 109{,}77\\ \\text{min}$\n- $m_e = 9{,}11\\times10^{-31}\\ \\text{kg}$, $c = 3{,}00\\times10^{8}\\ \\text{m/s}$, $h = 6{,}63\\times10^{-34}\\ \\text{J s}$\n- Incògnites: protons i neutrons, $A$, $B$, $C$, $D$ i la freqüència dels fotons (a); temps fins que $N = 0{,}01\\,N_0$ (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Protons i neutrons del fluor 18",
+            "cos": "El nombre inferior és el nombre atòmic $Z$ (protons) i el superior el nombre màssic $A$ (protons + neutrons):\n\n$$Z = \\mathbf{9\\ \\text{protons}} \\qquad N = A - Z = 18 - 9 = \\mathbf{9\\ \\text{neutrons}}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Coeficients de l'equació",
+            "cos": "El positró és l'antipartícula de l'electró: té la mateixa massa i càrrega $+e$. El seu nombre màssic és $0$ i el seu «nombre atòmic» (càrrega) és $+1$: ${}^{0}_{1}e^{+}$, per tant $C = 0$ i $D = 1$.\n\nEn tota reacció nuclear es conserven el nombre màssic i la càrrega:\n\n$$18 = A + 0 + 0 \\Rightarrow A = 18 \\qquad 9 = B + 1 + 0 \\Rightarrow B = 8$$\n\nResultat: $\\mathbf{A = 18,\\ B = 8,\\ C = 0,\\ D = 1}$. El nucli fill té $Z = 8$: és l'oxigen 18, ${}^{18}_{8}\\text{O}$ (en la desintegració $\\beta^+$ un protó es transforma en un neutró)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia i freqüència dels fotons d'aniquilació",
+            "cos": "Quan el positró s'anihila amb un electró, tota la seva massa en repòs es converteix en energia ($E = mc^2$, l'energia cinètica és negligible) i es reparteix entre **dos fotons idèntics** que surten en sentits oposats (per conservar la quantitat de moviment):\n\n$$2h\\nu = 2m_e c^2 \\quad\\Longrightarrow\\quad \\nu = \\frac{m_e c^2}{h}$$\n\n$$\\nu = \\frac{9{,}11\\times10^{-31}\\cdot(3{,}00\\times10^{8})^2}{6{,}63\\times10^{-34}} = \\mathbf{1{,}24\\times10^{20}\\ \\text{Hz}}$$\n\n(Cada fotó porta $E = m_e c^2 = 8{,}20\\times10^{-14}\\ \\text{J} \\approx 0{,}511\\ \\text{MeV}$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Constant de desintegració",
+            "cos": "La llei de desintegració és $N = N_0\\,e^{-\\lambda t}$. Quan $t = T_{1/2}$ queda la meitat: $\\tfrac{1}{2} = e^{-\\lambda T_{1/2}}$, d'on\n\n$$\\lambda = \\frac{\\ln 2}{T_{1/2}} = \\frac{0{,}6931}{109{,}77\\ \\text{min}} = 6{,}315\\times10^{-3}\\ \\text{min}^{-1}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Temps fins que queda l'1 %",
+            "cos": "Imposem $N = 0{,}01\\,N_0$:\n\n$$0{,}01 = e^{-\\lambda t} \\quad\\Longrightarrow\\quad t = -\\frac{\\ln 0{,}01}{\\lambda} = \\frac{\\ln 100}{\\ln 2}\\,T_{1/2} = 6{,}644 \\cdot 109{,}77$$\n\n$$t = \\mathbf{729{,}3\\ \\text{min} \\approx 12{,}2\\ \\text{h}}$$\n\nComprovació ràpida: després de 7 períodes queda $1/2^7 = 0{,}78\\ \\%$, i després de 6, $1{,}6\\ \\%$; el resultat (6,64 períodes) és coherent."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "9 protons i 9 neutrons; $A = 18$, $B = 8$, $C = 0$, $D = 1$; $\\nu = 1{,}24\\times10^{20}\\ \\text{Hz}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$t = 729{,}3\\ \\text{min} \\approx 12\\ \\text{h}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2016-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Boia marina que oscil·la amb l'onatge: longitud d'ona, nombre d'ona i equació de l'ona",
+      "tema": "ones",
+      "temes_secundaris": [
+        "oscillacions"
+      ],
+      "conceptes": [
+        "equació d'ona",
+        "longitud d'ona",
+        "nombre d'ona",
+        "freqüència angular",
+        "velocitat de propagació"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Les boies marines s'utilitzen sovint per mesurar l'alçària de l'onatge. Una d'aquestes boies es mou seguint una oscil·lació harmònica de $3{,}00\\ \\text{m}$ d'amplitud i $0{,}10\\ \\text{Hz}$ de freqüència i l'ona es propaga a una velocitat de $0{,}50\\ \\text{m s}^{-1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la longitud d'ona i el nombre d'ona.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Escriviu l'equació de les ones que fan moure la boia suposant que la fase inicial és zero.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Amplitud: $A = 3{,}00\\ \\text{m}$\n- Freqüència: $f = 0{,}10\\ \\text{Hz}$\n- Velocitat de propagació: $v = 0{,}50\\ \\text{m/s}$\n- Incògnites: $\\lambda$ i $k$ (a); l'equació $y(x,t)$ (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud d'ona",
+            "cos": "En un període l'ona avança una longitud d'ona, per tant $v = \\lambda f$:\n\n$$\\lambda = \\frac{v}{f} = \\frac{0{,}50}{0{,}10} = \\mathbf{5{,}0\\ \\text{m}}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Nombre d'ona",
+            "cos": "El nombre d'ona és el desfasament per unitat de longitud:\n\n$$k = \\frac{2\\pi}{\\lambda} = \\frac{2\\pi}{5{,}0} = \\mathbf{0{,}4\\pi\\ \\text{rad/m} \\approx 1{,}26\\ \\text{rad/m}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Freqüència angular",
+            "cos": "$$\\omega = 2\\pi f = 2\\pi\\cdot 0{,}10 = 0{,}2\\pi\\ \\text{rad/s} \\approx 0{,}63\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació de l'ona",
+            "cos": "Una ona harmònica que es propaga en el sentit positiu de l'eix $x$ amb fase inicial zero s'escriu $y(x,t) = A\\sin(kx - \\omega t)$. Substituint:\n\n$$\\mathbf{y(x,t) = 3{,}00 \\sin(0{,}4\\pi x - 0{,}2\\pi t)}\\ \\ (\\text{SI}) = 3{,}00\\sin\\big[0{,}2\\pi(2x - t)\\big]\\ \\text{m}$$\n\namb $x$ en metres i $t$ en segons. Es pot comprovar que $\\omega/k = 0{,}2\\pi/0{,}4\\pi = 0{,}50\\ \\text{m/s} = v$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\lambda = 5{,}0\\ \\text{m}$; $k = 0{,}4\\pi\\ \\text{rad/m} \\approx 1{,}26\\ \\text{rad/m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$y(x,t) = 3{,}00\\sin(0{,}4\\pi x - 0{,}2\\pi t)$ (SI)"
+          }
+        ],
+        "nota": "L'enunciat no diu cap a on es propaga l'ona; se suposa el sentit positiu de $x$. També són correctes les formes $y = 3{,}00\\sin(\\omega t - kx)$ o amb cosinus, sempre que la fase inicial sigui zero."
+      }
+    },
+    {
+      "id": "fisica-2016-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Camp i potencial elèctric creats per dues càrregues i punt on s'anul·la el camp",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "llei de coulomb",
+        "camp elèctric",
+        "potencial elèctric",
+        "principi de superposició",
+        "punt de camp nul"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Dues càrregues elèctriques ($Q_1$ i $Q_2$) estan disposades tal com mostra la figura. Coneixem les dades següents: $Q_1 = 2{,}00\\ \\mu\\text{C}$, $Q_2 = -4{,}00\\ \\mu\\text{C}$, $x = 5{,}00\\ \\text{m}$ i $d = 3{,}00\\ \\text{m}$.\n\n**Dada:** $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99\\times10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2016-S/e4-b.png",
+          "peu": "Càrregues Q1 i Q2 separades una distància x; el punt P és a una distància d de cadascuna"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Representeu i calculeu el camp elèctric (mòdul, direcció i sentit) en el punt $P$, i calculeu també el potencial elèctric en el mateix punt.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Canviem les dues càrregues $Q_1$ i $Q_2$ per unes altres amb valors diferents, però situades en la mateixa posició que les originals. Amb aquesta nova configuració, el camp elèctric creat per les dues càrregues sobre el segment $x$ s'anul·la a $1\\ \\text{m}$ de distància de la nova càrrega $Q_1$. Expliqueu raonadament quin serà el signe d'aquestes càrregues i calculeu la relació que hi haurà entre els seus valors.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $Q_1 = 2{,}00\\ \\mu\\text{C} = 2{,}00\\times10^{-6}\\ \\text{C}$; $Q_2 = -4{,}00\\ \\mu\\text{C} = -4{,}00\\times10^{-6}\\ \\text{C}$\n- Separació entre càrregues: $x = 5{,}00\\ \\text{m}$; distància de cada càrrega a $P$: $d = 3{,}00\\ \\text{m}$\n- $k = 8{,}99\\times10^{9}\\ \\text{N m}^2/\\text{C}^2$\n- Incògnites: $\\vec E$ i $V$ a $P$ (a); signe de les noves càrregues i $Q_2/Q_1$ (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Geometria",
+            "cos": "El triangle $Q_1 P Q_2$ és isòsceles. Prenem l'eix $X$ paral·lel al segment $Q_1Q_2$ (cap a $Q_2$) i l'eix $Y$ cap amunt. Si $\\theta$ és l'angle a la base del triangle:\n\n$$\\cos\\theta = \\frac{x/2}{d} = \\frac{2{,}50}{3{,}00} = 0{,}833 \\qquad \\sin\\theta = \\frac{\\sqrt{3{,}00^2 - 2{,}50^2}}{3{,}00} = \\frac{\\sqrt{2{,}75}}{3{,}00} = 0{,}553$$\n\n($\\theta = 33{,}6^\\circ$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp creat per cada càrrega",
+            "cos": "Mòdul del camp d'una càrrega puntual: $E = k|Q|/r^2$, amb $r = d = 3{,}00\\ \\text{m}$ per a totes dues:\n\n$$E_1 = 8{,}99\\times10^{9}\\cdot\\frac{2{,}00\\times10^{-6}}{9{,}00} = 1\\,998\\ \\text{N/C} \\qquad E_2 = 8{,}99\\times10^{9}\\cdot\\frac{4{,}00\\times10^{-6}}{9{,}00} = 3\\,996\\ \\text{N/C}$$\n\nSentits: $Q_1$ és positiva, el seu camp **s'allunya** de $Q_1$ (cap avall i a la dreta). $Q_2$ és negativa, el seu camp **apunta cap a** $Q_2$ (cap amunt i a la dreta).\n\n![Esquema de la solució oficial amb els camps a P](img/fisica/2016-S/e4-b-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp total a P (superposició)",
+            "cos": "Sumem components:\n\n$$E_x = E_1\\cos\\theta + E_2\\cos\\theta = (1\\,998 + 3\\,996)\\cdot 0{,}833 = 4\\,994\\ \\text{N/C}$$\n\n$$E_y = -E_1\\sin\\theta + E_2\\sin\\theta = (3\\,996 - 1\\,998)\\cdot 0{,}553 = 1\\,104\\ \\text{N/C}$$\n\n$$|\\vec E| = \\sqrt{4\\,994^2 + 1\\,104^2} = \\mathbf{5{,}12\\times10^{3}\\ \\text{N/C}} \\qquad \\varphi = \\arctan\\frac{1\\,104}{4\\,994} = \\mathbf{12{,}5^\\circ}$$\n\n$\\vec E \\approx (4\\,994\\,\\vec i + 1\\,104\\,\\vec j)\\ \\text{N/C}$: apunta cap a la dreta (cap al costat de $Q_2$) i lleugerament cap amunt, formant $12{,}5^\\circ$ amb l'eix $X$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Potencial a P",
+            "cos": "El potencial és una magnitud **escalar**: se sumen els potencials de cada càrrega amb el seu signe, $V = kQ/r$:\n\n$$V_P = k\\frac{Q_1}{d} + k\\frac{Q_2}{d} = \\frac{8{,}99\\times10^{9}}{3{,}00}\\,(2{,}00 - 4{,}00)\\times10^{-6} = \\mathbf{-5{,}99\\times10^{3}\\ \\text{V}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Signe de les càrregues",
+            "cos": "En un punt del segment entre les dues càrregues, el camp de $Q_1$ i el de $Q_2$ tenen la mateixa direcció (la del segment). Si les càrregues fossin de signe contrari, tots dos camps apuntarien cap a la càrrega negativa i se sumarien: no es podrien anul·lar mai. Perquè s'anul·lin cal que tinguin sentits oposats, i això passa quan les dues càrregues tenen **el mateix signe** (totes dues positives o totes dues negatives)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Relació entre les càrregues",
+            "cos": "Al punt on el camp és nul (a $r_1 = 1\\ \\text{m}$ de $Q_1$ i, per tant, a $r_2 = 5 - 1 = 4\\ \\text{m}$ de $Q_2$) els mòduls són iguals:\n\n$$k\\frac{Q_1}{r_1^2} = k\\frac{Q_2}{r_2^2} \\quad\\Longrightarrow\\quad \\frac{Q_2}{Q_1} = \\frac{r_2^2}{r_1^2} = \\frac{4^2}{1^2} = 16$$\n\n$$\\mathbf{Q_2 = 16\\,Q_1}$$\n\nTé sentit: el punt de camp nul és més a prop de la càrrega més petita."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$|\\vec E| = 5{,}12\\times10^{3}\\ \\text{N/C}$, a $12{,}5^\\circ$ sobre l'eix $X$ (cap al costat de $Q_2$); $V_P = -5{,}99\\times10^{3}\\ \\text{V}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Les dues càrregues del mateix signe; $Q_2 = 16\\,Q_1$"
+          }
+        ],
+        "nota": "La solució oficial arrodoneix $k\\cdot 10^{-6}/9 \\approx 1\\,000$ i obté $E_x = 5\\,000\\ \\text{N/C}$, $E_y = 1\\,105\\ \\text{N/C}$, $|E| = 5\\,120\\ \\text{N/C}$ i $V = -6\\,000\\ \\text{V}$; amb $k = 8{,}99\\times10^{9}$ exacte surt $E_x = 4\\,994\\ \\text{N/C}$, $E_y = 1\\,104\\ \\text{N/C}$ i $V = -5\\,993\\ \\text{V}$ (diferències d'arrodoniment, menys de l'1 %)."
+      }
+    },
+    {
+      "id": "fisica-2016-S-e5-b",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Fotons solars: longitud d'ona mitjana i nombre de fotons per segon i cm²",
+      "tema": "quantica",
+      "temes_secundaris": [
+        "optica"
+      ],
+      "conceptes": [
+        "energia del fotó",
+        "constant de planck",
+        "irradiància",
+        "longitud d'ona",
+        "nombre de fotons"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        4
+      ],
+      "enunciat": "La irradiància solar que arriba a la superfície de la Terra (potència incident per unitat de superfície) és aproximadament de $1\\,400\\ \\text{W m}^{-2}$. Suposem que l'energia mitjana dels fotons que hi arriben és de $2{,}20\\ \\text{eV}$.\n\n**Dades:** Velocitat de la llum, $c = 3{,}00\\times10^{8}\\ \\text{m s}^{-1}$. Constant de Planck, $h = 6{,}63\\times10^{-34}\\ \\text{J s}$. $1\\ \\text{eV} = 1{,}602\\times10^{-19}\\ \\text{J}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina és la longitud d'ona mitjana (en nm) dels fotons que arriben a la Terra?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el nombre de fotons que incideixen sobre una superfície d'$1{,}00\\ \\text{cm}^2$ cada segon.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Irradiància: $I = 1\\,400\\ \\text{W/m}^2$\n- Energia mitjana d'un fotó: $E = 2{,}20\\ \\text{eV}$\n- $h = 6{,}63\\times10^{-34}\\ \\text{J s}$, $c = 3{,}00\\times10^{8}\\ \\text{m/s}$, $1\\ \\text{eV} = 1{,}602\\times10^{-19}\\ \\text{J}$\n- Superfície: $S = 1{,}00\\ \\text{cm}^2 = 1{,}00\\times10^{-4}\\ \\text{m}^2$; temps $t = 1\\ \\text{s}$\n- Incògnites: $\\lambda$ en nm (a); nombre de fotons $n$ (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia d'un fotó en joules",
+            "cos": "$$E = 2{,}20\\ \\text{eV}\\cdot 1{,}602\\times10^{-19}\\ \\frac{\\text{J}}{\\text{eV}} = 3{,}52\\times10^{-19}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud d'ona",
+            "cos": "Segons Planck, l'energia d'un fotó és $E = h\\nu = hc/\\lambda$. Aïllem $\\lambda$:\n\n$$\\lambda = \\frac{hc}{E} = \\frac{6{,}63\\times10^{-34}\\cdot 3{,}00\\times10^{8}}{3{,}52\\times10^{-19}} = 5{,}64\\times10^{-7}\\ \\text{m} = \\mathbf{564\\ \\text{nm}}$$\n\nCorrespon a la llum visible verda-groguenca, on l'espectre solar és més intens."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia que arriba a 1 cm² en 1 s",
+            "cos": "La irradiància és potència per unitat de superfície, de manera que la potència sobre $S$ és $P = I\\,S$, i l'energia en $1\\ \\text{s}$ és $E_\\text{tot} = P\\,t$:\n\n$$P = 1\\,400\\cdot 1{,}00\\times10^{-4} = 0{,}140\\ \\text{W} \\qquad E_\\text{tot} = 0{,}140\\cdot 1 = 0{,}140\\ \\text{J}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Nombre de fotons",
+            "cos": "Cada fotó porta $3{,}52\\times10^{-19}\\ \\text{J}$, per tant:\n\n$$n = \\frac{E_\\text{tot}}{E_\\text{fotó}} = \\frac{0{,}140}{3{,}52\\times10^{-19}} = \\mathbf{3{,}97\\times10^{17}\\ \\text{fotons}}$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\lambda = 564\\ \\text{nm}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$n \\approx 3{,}97\\times10^{17}$ fotons per segon"
+          }
+        ],
+        "nota": "La solució oficial dona $3{,}98\\times10^{17}$ fotons; la diferència és només d'arrodoniment ($E = 3{,}5244\\times10^{-19}\\ \\text{J}$ dona $3{,}97\\times10^{17}$)."
+      }
+    }
+  ]
+}

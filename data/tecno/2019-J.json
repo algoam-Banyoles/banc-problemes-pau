@@ -1,0 +1,366 @@
+{
+  "examen": {
+    "id": "tecno-2019-J",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2019,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/tecno/2019-J-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2019-J-solucio.pdf",
+    "estructura": "La prova té dues parts amb dos exercicis cadascuna (2,5 punts per exercici). Primera part, comuna: l'exercici 1 són 5 qüestions de test (0,5 punts per qüestió ben contestada; –0,16 punts per qüestió mal contestada; 0 punts si no es contesta) i l'exercici 2 és un problema. Segona part: cal escollir UNA de les dues opcions (A o B) i fer-ne els exercicis 3 i 4."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2019-J-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Resiliència d'un material en un assaig Charpy",
+      "tema": "materials",
+      "temes_secundaris": ["mecanica"],
+      "conceptes": ["assaig Charpy", "resiliència", "energia potencial"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "Es duu a terme un assaig Charpy amb un pèndol que a l'extrem té una massa de $20{,}4\\ \\text{kg}$. Es deixa caure el pèndol des d'una altura inicial de $0{,}9\\ \\text{m}$ i, després de xocar contra una proveta, arriba a una altura final de $350\\ \\text{mm}$. La secció de la proveta a la zona de l'entalla és de $80\\ \\text{mm}^2$. Quina és la resiliència del material?",
+      "figures": [],
+      "opcions": {"a": "$1{,}375\\ \\text{J/mm}^2$", "b": "$140{,}3\\ \\text{kJ/mm}^2$", "c": "$1{,}375\\ \\text{MJ/mm}^2$", "d": "$140{,}3\\ \\text{kJ/m}^2$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Massa del pèndol: $m = 20{,}4\\ \\text{kg}$\n- Altura inicial: $h_0 = 0{,}9\\ \\text{m}$\n- Altura final: $h_f = 350\\ \\text{mm} = 0{,}35\\ \\text{m}$\n- Secció a l'entalla: $S = 80\\ \\text{mm}^2$\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnita: resiliència $\\rho$ (energia absorbida per unitat de secció)"},
+          {"apartat": null, "titol": "Energia absorbida per la proveta", "cos": "El pèndol perd energia potencial en trencar la proveta: l'energia que absorbeix la proveta és la diferència entre l'energia potencial inicial i la final.\n\n$$E = m\\,g\\,(h_0 - h_f) = 20{,}4 \\cdot 9{,}807 \\cdot (0{,}9 - 0{,}35) = 110{,}0\\ \\text{J}$$"},
+          {"apartat": null, "titol": "Resiliència", "cos": "La resiliència és l'energia absorbida dividida per la secció de la proveta a l'entalla:\n\n$$\\rho = \\frac{E}{S} = \\frac{110{,}0\\ \\text{J}}{80\\ \\text{mm}^2} = 1{,}375\\ \\text{J/mm}^2$$\n\nResultat: **$\\rho = 1{,}375\\ \\text{J/mm}^2$** → resposta **a**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **c)** té el número bo però la unitat no: $1{,}375\\ \\text{J/mm}^2 = 1{,}375\\ \\text{MJ/m}^2$ (no per mm²).\n- **b)** i **d)**: $140{,}3$ surt de dividir el resultat per $g$ (treballar en kp·m en lloc de J) i, a més, amb unitats incorrectes. En kJ/m² el valor correcte seria $1\\,375\\ \\text{kJ/m}^2$."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$\\rho = 1{,}375\\ \\text{J/mm}^2$ → resposta **a**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2019-J-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Joc i serratge màxims en un ajust 68 H7/j6",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": ["ajust", "tolerància", "joc màxim", "serratge màxim", "ajust indeterminat"],
+      "dificultat": 2,
+      "pagines": [1],
+      "enunciat": "En un ajust $68\\ \\text{H7/j6}$, la tolerància H7 del forat és $\\left(\\begin{smallmatrix} +30 \\\\ 0 \\end{smallmatrix}\\right)\\ \\mu\\text{m}$ i la tolerància j6 de l'eix és $\\left(\\begin{smallmatrix} +12 \\\\ -7 \\end{smallmatrix}\\right)\\ \\mu\\text{m}$. Tenint en compte aquestes dades, es pot afirmar que",
+      "figures": [],
+      "opcions": {"a": "el joc màxim és $31\\ \\mu\\text{m}$.", "b": "el serratge màxim és $37\\ \\mu\\text{m}$.", "c": "és un ajust indeterminat.", "d": "el joc màxim és $12\\ \\mu\\text{m}$."},
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {"apartat": null, "titol": "Mesures límit del forat i de l'eix", "cos": "Les desviacions s'apliquen sobre la mida nominal $68\\ \\text{mm}$:\n\n- Forat (H7, $+30/0\\ \\mu\\text{m}$): $D_\\text{mín} = 68{,}000\\ \\text{mm}$, $D_\\text{màx} = 68{,}030\\ \\text{mm}$\n- Eix (j6, $+12/-7\\ \\mu\\text{m}$): $d_\\text{mín} = 67{,}993\\ \\text{mm}$, $d_\\text{màx} = 68{,}012\\ \\text{mm}$"},
+          {"apartat": null, "titol": "Joc màxim i serratge màxim", "cos": "El **joc màxim** es dona amb el forat més gran i l'eix més petit; el **serratge màxim**, amb l'eix més gran i el forat més petit:\n\n$$J_\\text{màx} = D_\\text{màx} - d_\\text{mín} = 30 - (-7) = 37\\ \\mu\\text{m}$$\n\n$$S_\\text{màx} = d_\\text{màx} - D_\\text{mín} = 12 - 0 = 12\\ \\mu\\text{m}$$"},
+          {"apartat": null, "titol": "Tipus d'ajust", "cos": "Com que segons les peces concretes que s'aparellin hi pot haver joc (fins a $37\\ \\mu\\text{m}$) o serratge (fins a $12\\ \\mu\\text{m}$), l'ajust és **indeterminat** → resposta **c**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **b)** $37\\ \\mu\\text{m}$ és el joc màxim, no el serratge màxim.\n- **d)** $12\\ \\mu\\text{m}$ és el serratge màxim, no el joc màxim.\n- **a)** $31\\ \\mu\\text{m}$ no correspon a cap combinació correcta de les desviacions."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$J_\\text{màx} = 37\\ \\mu\\text{m}$, $S_\\text{màx} = 12\\ \\mu\\text{m}$ → ajust indeterminat, resposta **c**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2019-J-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Petjada de carboni d'un automòbil segons el consum de gasoil",
+      "tema": "energia",
+      "temes_secundaris": [],
+      "conceptes": ["emissions de CO2", "petjada de carboni", "consum de combustible"],
+      "dificultat": 1,
+      "pagines": [2],
+      "enunciat": "Un automòbil emet $118\\ \\text{g}$ de $\\text{CO}_2$ per cada kilòmetre recorregut. Si consumeix $50\\ \\text{L}$ de gasoil, quants kilograms de $\\text{CO}_2$ (petjada de carboni) deixarà a l'atmosfera sabent que el seu consum mitjà és de $5{,}4\\ \\text{L}/100\\ \\text{km}$?",
+      "figures": [],
+      "opcions": {"a": "$590{,}0\\ \\text{kg}$", "b": "$270{,}0\\ \\text{kg}$", "c": "$109{,}3\\ \\text{kg}$", "d": "$10{,}93\\ \\text{kg}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {"apartat": null, "titol": "Distància recorreguda amb 50 L", "cos": "El consum mitjà ens diu quants litres gasta cada $100\\ \\text{km}$. Amb $50\\ \\text{L}$:\n\n$$s = \\frac{50\\ \\text{L}}{5{,}4\\ \\text{L}/100\\ \\text{km}} = 925{,}9\\ \\text{km}$$"},
+          {"apartat": null, "titol": "Massa de CO₂ emesa", "cos": "$$m_{\\text{CO}_2} = 118\\ \\text{g/km} \\cdot 925{,}9\\ \\text{km} = 109\\,259\\ \\text{g} = 109{,}3\\ \\text{kg}$$\n\nResultat: **$m_{\\text{CO}_2} \\approx 109{,}3\\ \\text{kg}$** → resposta **c**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **d)** és el resultat dividit per 10 (error en el factor 100 km).\n- **a)** surt de suposar $5\\,000\\ \\text{km}$ ($50 \\cdot 100$), oblidant el consum de $5{,}4\\ \\text{L}/100\\ \\text{km}$.\n- **b)** multiplica $50 \\cdot 5{,}4$, que no té sentit físic."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$m_{\\text{CO}_2} \\approx 109{,}3\\ \\text{kg}$ → resposta **c**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2019-J-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Volum de la cambra de combustió a partir de la relació de compressió",
+      "tema": "termica",
+      "temes_secundaris": [],
+      "conceptes": ["cilindrada", "relació de compressió", "cambra de combustió", "motor de combustió interna"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Un motor de 4 cilindres i amb una cilindrada total de $1\\,461\\ \\text{cm}^3$ té una relació de compressió de $18{,}8$. Quin és el volum de la cambra de combustió?",
+      "figures": [],
+      "opcions": {"a": "$365{,}3\\ \\text{cm}^3$", "b": "$19{,}43\\ \\text{cm}^3$", "c": "$77{,}71\\ \\text{cm}^3$", "d": "$20{,}52\\ \\text{cm}^3$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {"apartat": null, "titol": "Cilindrada unitària", "cos": "La relació de compressió es defineix per a **un** cilindre. Primer repartim la cilindrada total entre els 4 cilindres:\n\n$$V_u = \\frac{V_T}{4} = \\frac{1\\,461}{4} = 365{,}25\\ \\text{cm}^3$$"},
+          {"apartat": null, "titol": "Relació de compressió", "cos": "La relació de compressió compara el volum màxim del cilindre (pistó a baix, $V_u + V_c$) amb el mínim (pistó a dalt, només la cambra $V_c$):\n\n$$r_c = \\frac{V_u + V_c}{V_c} \\quad\\Rightarrow\\quad V_c = \\frac{V_u}{r_c - 1}$$\n\n$$V_c = \\frac{365{,}25}{18{,}8 - 1} = \\frac{365{,}25}{17{,}8} = 20{,}52\\ \\text{cm}^3$$\n\nResultat: **$V_c = 20{,}52\\ \\text{cm}^3$** → resposta **d**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **a)** és la cilindrada unitària, no la cambra.\n- **b)** surt de fer $V_u / r_c = 365{,}25/18{,}8$ (oblidar el $-1$).\n- **c)** surt de fer $V_T / r_c = 1\\,461/18{,}8$ (usar la cilindrada total i oblidar el $-1$)."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$V_c = 20{,}52\\ \\text{cm}^3$ → resposta **d**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2019-J-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Força de retrocés d'un cilindre pneumàtic de doble efecte",
+      "tema": "pneumatica",
+      "temes_secundaris": [],
+      "conceptes": ["cilindre de doble efecte", "força de retrocés", "pressió", "secció útil"],
+      "dificultat": 1,
+      "pagines": [2],
+      "enunciat": "Un cilindre de doble efecte té un diàmetre interior de $40\\ \\text{mm}$, un diàmetre de tija de $25\\ \\text{mm}$ i una cursa de $300\\ \\text{mm}$. Si la pressió de treball és de $0{,}6\\ \\text{MPa}$, quina és la força que fa el cilindre en el procés de retrocés?",
+      "figures": [],
+      "opcions": {"a": "$294{,}5\\ \\text{N}$", "b": "$459{,}5\\ \\text{N}$", "c": "$754{,}0\\ \\text{N}$", "d": "$1{,}051\\ \\text{kN}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {"apartat": null, "titol": "Secció útil en el retrocés", "cos": "En el retrocés l'aire empeny la cara del pistó on hi ha la tija, de manera que la superfície útil és la corona: àrea del pistó menys àrea de la tija.\n\n$$A_\\text{ret} = \\frac{\\pi}{4}\\left(D^2 - d^2\\right) = \\frac{\\pi}{4}\\left(40^2 - 25^2\\right) = 765{,}8\\ \\text{mm}^2$$"},
+          {"apartat": null, "titol": "Força de retrocés", "cos": "Amb $p = 0{,}6\\ \\text{MPa} = 0{,}6\\ \\text{N/mm}^2$:\n\n$$F_\\text{ret} = p \\cdot A_\\text{ret} = 0{,}6\\ \\text{N/mm}^2 \\cdot 765{,}8\\ \\text{mm}^2 = 459{,}5\\ \\text{N}$$\n\nResultat: **$F_\\text{ret} \\approx 459{,}5\\ \\text{N}$** → resposta **b**. (La cursa no intervé en el càlcul de la força.)"},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **c)** $754{,}0\\ \\text{N}$ és la força d'**avanç** (tota la secció del pistó, $\\frac{\\pi}{4}40^2$).\n- **a)** $294{,}5\\ \\text{N}$ és la pressió per l'àrea de la tija sola ($\\frac{\\pi}{4}25^2$), no la de la corona."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$F_\\text{ret} \\approx 459{,}5\\ \\text{N}$ → resposta **b**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2019-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Control lògic d'una porta automàtica (detectors de presència i moviment i interruptor manual)",
+      "tema": "digital",
+      "temes_secundaris": ["control"],
+      "conceptes": ["taula de veritat", "funció lògica", "mapa de Karnaugh", "esquema de contactes"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "El sistema de control d'obertura i tancament d'una porta automàtica de vidre és regulat per un sistema format per un detector de presència, un detector de moviment i un interruptor manual situat a la cabina de control. La porta, que en general està tancada, s'obre quan s'activa l'interruptor manual (independentment de l'estat de la resta d'elements de control) o quan s'activen els detectors de presència i de moviment a la vegada. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- detector de presència: $d$ = 1: detecta presència; 0: no detecta presència\n- detector de moviment: $m$ = 1: detecta moviment; 0: no detecta moviment\n- interruptor manual: $i$ = 1: activat; 0: no activat\n- porta: $p$ = 1: oberta; 0: tancada",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Elaboreu la taula de veritat del sistema.", "punts": 1},
+        {"id": "b", "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.", "punts": 1},
+        {"id": "c", "enunciat": "Dibuixeu l'esquema de contactes equivalent.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Traduir l'enunciat a condicions lògiques", "cos": "La porta s'obre ($p = 1$) en dos casos:\n\n1. L'interruptor manual està activat: $i = 1$ (sigui com sigui $d$ i $m$).\n2. Els dos detectors estan activats a la vegada: $d = 1$ **i** $m = 1$.\n\nEn qualsevol altre cas la porta queda tancada ($p = 0$)."},
+          {"apartat": "a", "titol": "Taula de veritat", "cos": "Amb 3 variables hi ha $2^3 = 8$ combinacions:\n\n| $d$ | $m$ | $i$ | $p$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | **1** |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | **1** |\n| 1 | 0 | 0 | 0 |\n| 1 | 0 | 1 | **1** |\n| 1 | 1 | 0 | **1** |\n| 1 | 1 | 1 | **1** |"},
+          {"apartat": "b", "titol": "Funció canònica", "cos": "Com a suma de productes (un terme per cada fila amb $p = 1$):\n\n$$p = \\bar{d}\\,\\bar{m}\\,i + \\bar{d}\\,m\\,i + d\\,\\bar{m}\\,i + d\\,m\\,\\bar{i} + d\\,m\\,i$$\n\nO bé, com a producte de sumes (un terme per cada fila amb $p = 0$):\n\n$$p = (d + m + i)\\,(d + \\bar{m} + i)\\,(\\bar{d} + m + i)$$"},
+          {"apartat": "b", "titol": "Simplificació per Karnaugh", "cos": "Mapa amb files $d$ i columnes $m\\,i$ (ordre de Gray 00, 01, 11, 10):\n\n| $d \\backslash mi$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **0** | 0 | 1 | 1 | 0 |\n| **1** | 0 | 1 | 1 | 1 |\n\n- **Grup de 4** (columnes $mi = 01$ i $11$): només $i$ hi val sempre 1 → terme $i$.\n- **Grup de 2** (fila $d = 1$, columnes 11 i 10): $i$ hi canvia, s'elimina → terme $d\\,m$.\n\n$$\\boxed{p = d\\,m + i}$$\n\nÉs exactament la traducció directa de l'enunciat."},
+          {"apartat": "c", "titol": "Esquema de contactes", "cos": "Una funció AND es fa amb contactes **en sèrie** i una OR amb contactes **en paral·lel**. Per a $p = d\\,m + i$: dos contactes normalment oberts $d$ i $m$ en sèrie, i tota aquesta branca en paral·lel amb el contacte $i$; el conjunt alimenta el llum o actuador $p$.\n\n![Esquema de contactes de la solució oficial](img/tecno/2019-J/e2-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$p = 1$ a les files 001, 011, 101, 110 i 111 ($d\\,m\\,i$)"},
+          {"apartat": "b", "valor": "$p = d\\,m + i$"},
+          {"apartat": "c", "valor": "Contactes $d$ i $m$ en sèrie, en paral·lel amb el contacte $i$"}
+        ],
+        "nota": "Error típic: posar el terme $d\\,m\\,\\bar{i}$ en lloc de $d\\,m$, oblidant que si $i = 1$ la porta ja s'obre igualment. La solució oficial dona tant la forma de producte de sumes com la de suma de productes abans de simplificar."
+      }
+    },
+    {
+      "id": "tecno-2019-J-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Parc eòlic: potència del vent, energia anual, ingressos i efecte de la velocitat del vent",
+      "tema": "energia",
+      "temes_secundaris": ["economia"],
+      "conceptes": ["energia eòlica", "potència del vent", "rendiment", "energia elèctrica", "ingressos"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "S'han instal·lat $n = 50$ aerogeneradors de 3 pales en un parc eòlic. El diàmetre de l'àrea d'escombratge de les pales és $d = 77\\ \\text{m}$ i el rendiment dels aerogeneradors $\\eta_\\text{aerog} = 0{,}68$. S'estima que la velocitat mitjana del vent al parc és $v = 25\\ \\text{km/h}$; el parc està en funcionament 300 dies a l'any i obté energia 18 hores diàries. La potència mitjana del vent $P_\\text{vent}$ es pot estimar, per a un aerogenerador, com l'energia cinètica del vent per unitat de temps mitjançant l'expressió:\n\n$$P_\\text{vent} = \\frac{1}{2}\\,A \\cdot \\rho \\cdot v^3$$\n\nen què $A$ és l'àrea que escombren les pales de l'aerogenerador, $\\rho$ és la densitat de l'aire i $v$ és la velocitat del vent. D'aquesta potència, el coeficient d'aprofitament del vent és $c_\\text{a} = 0{,}42$.\n\nSabent que $1\\,225\\ \\text{g}$ d'aire ocupen un volum d'$1\\ \\text{m}^3$, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La potència mitjana del vent $P_\\text{vent}$ per a un aerogenerador.", "punts": 0.5},
+        {"id": "b", "enunciat": "La potència elèctrica útil $P_\\text{útil}$ que generarà cada aerogenerador.", "punts": 0.5},
+        {"id": "c", "enunciat": "L'energia elèctrica total $E_\\text{total}$ que es generarà al parc durant un any.", "punts": 0.5},
+        {"id": "d", "enunciat": "Els ingressos que tindrà el parc eòlic si el preu de venda de l'energia eòlica és $p_\\text{venda} = 7{,}624$ cèntims d'euro per kW h.", "punts": 0.5},
+        {"id": "e", "enunciat": "En quin percentatge disminuirien els ingressos anteriors si la velocitat mitjana del vent es reduís un $10\\ \\%$.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Nombre d'aerogeneradors: $n = 50$\n- Diàmetre d'escombratge: $d = 77\\ \\text{m}$ → radi $r = 38{,}5\\ \\text{m}$\n- Rendiment de l'aerogenerador: $\\eta_\\text{aerog} = 0{,}68$; coeficient d'aprofitament: $c_\\text{a} = 0{,}42$\n- Velocitat del vent: $v = 25\\ \\text{km/h} = \\dfrac{25}{3{,}6} = 6{,}944\\ \\text{m/s}$\n- Densitat de l'aire: $\\rho = 1\\,225\\ \\text{g/m}^3 = 1{,}225\\ \\text{kg/m}^3$\n- Temps de funcionament: $t = 300 \\cdot 18 = 5\\,400\\ \\text{h/any}$\n- Preu: $p_\\text{venda} = 0{,}07624$ €/(kW h)\n- Incògnites: $P_\\text{vent}$, $P_\\text{útil}$, $E_\\text{total}$, ingressos i reducció percentual"},
+          {"apartat": "a", "titol": "Àrea escombrada per les pales", "cos": "Les pales escombren un cercle de diàmetre $d$:\n\n$$A = \\frac{\\pi\\, d^2}{4} = \\frac{\\pi \\cdot 77^2}{4} = 4\\,657\\ \\text{m}^2$$"},
+          {"apartat": "a", "titol": "Potència del vent", "cos": "Apliquem l'expressió de l'enunciat (energia cinètica de l'aire que travessa l'àrea per unitat de temps), amb totes les dades en unitats SI:\n\n$$P_\\text{vent} = \\frac{1}{2}\\,A\\,\\rho\\,v^3 = \\frac{1}{2} \\cdot 4\\,657 \\cdot 1{,}225 \\cdot 6{,}944^3 = 955\\,190\\ \\text{W}$$\n\nResultat: **$P_\\text{vent} \\approx 955{,}2\\ \\text{kW}$**."},
+          {"apartat": "b", "titol": "Potència elèctrica útil d'un aerogenerador", "cos": "Només una part de la potència del vent s'aprofita a les pales ($c_\\text{a}$), i d'aquesta, l'aerogenerador en converteix en electricitat la fracció $\\eta_\\text{aerog}$:\n\n$$P_\\text{útil} = P_\\text{vent} \\cdot c_\\text{a} \\cdot \\eta_\\text{aerog} = 955{,}2 \\cdot 0{,}42 \\cdot 0{,}68 = 272{,}8\\ \\text{kW}$$\n\nResultat: **$P_\\text{útil} \\approx 272{,}8\\ \\text{kW}$**."},
+          {"apartat": "c", "titol": "Energia elèctrica anual de tot el parc", "cos": "Energia = potència · temps, multiplicada pels 50 aerogeneradors:\n\n$$E_\\text{total} = n \\cdot P_\\text{útil} \\cdot t = 50 \\cdot 272{,}8\\ \\text{kW} \\cdot 5\\,400\\ \\text{h} = 73{,}66 \\cdot 10^{6}\\ \\text{kW h}$$\n\nEn altres unitats: $73{,}66 \\cdot 10^{9}\\ \\text{W h} = 73{,}66 \\cdot 10^{9} \\cdot 3\\,600\\ \\text{J} = 265{,}2 \\cdot 10^{12}\\ \\text{J}$.\n\nResultat: **$E_\\text{total} \\approx 73{,}66 \\cdot 10^{6}\\ \\text{kW h} = 265{,}2\\ \\text{TJ}$**."},
+          {"apartat": "d", "titol": "Ingressos anuals", "cos": "Multipliquem l'energia (en kW h) pel preu, passat a euros ($7{,}624$ cèntims $= 0{,}07624\\ \\text{euros}$):\n\n$$\\text{Ingressos} = p_\\text{venda} \\cdot E_\\text{total} = 0{,}07624\\ \\tfrac{\\text{euros}}{\\text{kW h}} \\cdot 73{,}66 \\cdot 10^{6}\\ \\text{kW h} = 5{,}616 \\cdot 10^{6}\\ \\text{euros}$$\n\nResultat: **Ingressos ≈ 5 616 k€** (uns 5,6 milions d'euros)."},
+          {"apartat": "e", "titol": "Efecte d'una reducció del 10 % de la velocitat del vent", "cos": "La potència del vent és proporcional a $v^3$, i la resta de factors ($c_\\text{a}$, $\\eta$, temps, preu) no canvien; per tant els ingressos també són proporcionals a $v^3$. Si $v' = 0{,}9\\,v$:\n\n$$\\frac{\\text{Ingressos}'}{\\text{Ingressos}} = \\left(\\frac{v'}{v}\\right)^3 = 0{,}9^3 = 0{,}729$$\n\n$$\\text{Reducció} = (1 - 0{,}9^3) \\cdot 100 = 27{,}1\\ \\%$$\n\nResultat: **els ingressos disminuirien un $27{,}1\\ \\%$** (no un 10 %!)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$P_\\text{vent} \\approx 955{,}2\\ \\text{kW}$"},
+          {"apartat": "b", "valor": "$P_\\text{útil} \\approx 272{,}8\\ \\text{kW}$"},
+          {"apartat": "c", "valor": "$E_\\text{total} \\approx 73{,}66 \\cdot 10^{9}\\ \\text{W h} = 265{,}2 \\cdot 10^{12}\\ \\text{J}$"},
+          {"apartat": "d", "valor": "Ingressos ≈ 5 616 k€ ($5{,}616 \\cdot 10^{6}$ euros)"},
+          {"apartat": "e", "valor": "Reducció del $27{,}1\\ \\%$"}
+        ],
+        "nota": "Errors típics: no passar la velocitat a m/s abans d'elevar-la al cub (el resultat surt 46 656 vegades més gran), usar el radi en lloc del diàmetre a l'àrea (o al revés), i oblidar els cèntims → euros al preu."
+      }
+    },
+    {
+      "id": "tecno-2019-J-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Patinet elèctric: parell, velocitat, energia útil i autonomia",
+      "tema": "mecanica",
+      "temes_secundaris": ["maquines-electriques"],
+      "conceptes": ["parell motor", "velocitat angular", "potència mecànica", "rendiment", "autonomia"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "Un patinet elèctric utilitza una bateria ideal de tensió $U = 24\\ \\text{V}$ i energia $E_\\text{bat} = 250\\ \\text{W h}$ per a alimentar un motor de rendiment $\\eta_\\text{motor} = 0{,}89$. La roda motriu del patinet, de diàmetre $d_\\text{roda} = 160\\ \\text{mm}$, està connectada directament a l'eix de sortida del motor. A l'inici del trajecte la bateria està totalment carregada. En les condicions d'estudi, el patinet avança sempre a velocitat constant per un terreny pla, les rodes giren a $n_\\text{roda} = 664\\ \\text{min}^{-1}$ i el motor subministra a l'eix de la roda una potència $P_\\text{subm} = 200\\ \\text{W}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "El parell $\\Gamma$ que subministra el motor.", "punts": 0.5},
+        {"id": "b", "enunciat": "La velocitat d'avanç $v_\\text{pat}$ del patinet.", "punts": 0.5},
+        {"id": "c", "enunciat": "L'energia mecànica útil disponible a l'eix de la roda $E_\\text{útil}$.", "punts": 0.5},
+        {"id": "d", "enunciat": "El temps màxim $t_\\text{màx}$ de funcionament del patinet i la distància màxima recorreguda $s_\\text{màx}$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Bateria: $U = 24\\ \\text{V}$, $E_\\text{bat} = 250\\ \\text{W h} = 250 \\cdot 3\\,600 = 900\\,000\\ \\text{J}$\n- Rendiment del motor: $\\eta_\\text{motor} = 0{,}89$\n- Diàmetre de la roda: $d_\\text{roda} = 160\\ \\text{mm} = 0{,}16\\ \\text{m}$ (radi $0{,}08\\ \\text{m}$)\n- Velocitat de gir: $n_\\text{roda} = 664\\ \\text{min}^{-1}$\n- Potència a l'eix: $P_\\text{subm} = 200\\ \\text{W}$\n- Incògnites: $\\Gamma$, $v_\\text{pat}$, $E_\\text{útil}$, $t_\\text{màx}$, $s_\\text{màx}$"},
+          {"apartat": "a", "titol": "Velocitat angular de la roda", "cos": "Per relacionar potència i parell cal la velocitat angular en rad/s (1 volta = $2\\pi$ rad, 1 min = 60 s):\n\n$$\\omega = n_\\text{roda} \\cdot \\frac{2\\pi}{60} = 664 \\cdot \\frac{2\\pi}{60} = 69{,}53\\ \\text{rad/s}$$"},
+          {"apartat": "a", "titol": "Parell del motor", "cos": "En un eix que gira, la potència mecànica és parell per velocitat angular, $P = \\Gamma\\,\\omega$:\n\n$$\\Gamma = \\frac{P_\\text{subm}}{\\omega} = \\frac{200\\ \\text{W}}{69{,}53\\ \\text{rad/s}} = 2{,}876\\ \\text{N m}$$\n\nResultat: **$\\Gamma \\approx 2{,}876\\ \\text{N m}$**."},
+          {"apartat": "b", "titol": "Velocitat d'avanç", "cos": "Si la roda no llisca, la velocitat del patinet és la velocitat lineal de la perifèria de la roda, $v = \\omega\\, r$:\n\n$$v_\\text{pat} = \\omega \\cdot \\frac{d_\\text{roda}}{2} = 69{,}53 \\cdot 0{,}08 = 5{,}563\\ \\text{m/s}$$\n\nEn km/h: $5{,}563 \\cdot 3{,}6 = 20{,}03\\ \\text{km/h}$.\n\nResultat: **$v_\\text{pat} \\approx 5{,}563\\ \\text{m/s} = 20{,}03\\ \\text{km/h}$**."},
+          {"apartat": "c", "titol": "Energia mecànica útil a l'eix", "cos": "La bateria és ideal (lliura tota la seva energia) però el motor només en converteix en energia mecànica la fracció $\\eta_\\text{motor}$:\n\n$$E_\\text{útil} = E_\\text{bat} \\cdot \\eta_\\text{motor} = 250 \\cdot 0{,}89 = 222{,}5\\ \\text{W h}$$\n\n$$E_\\text{útil} = 222{,}5 \\cdot 3\\,600 = 801\\,000\\ \\text{J}$$\n\nResultat: **$E_\\text{útil} = 222{,}5\\ \\text{W h} = 801{,}0\\ \\text{kJ}$**."},
+          {"apartat": "d", "titol": "Temps màxim de funcionament", "cos": "L'eix consumeix energia útil al ritme de $P_\\text{subm} = 200\\ \\text{W}$. El temps que dura és l'energia disponible dividida per aquesta potència:\n\n$$t_\\text{màx} = \\frac{E_\\text{útil}}{P_\\text{subm}} = \\frac{801\\,000\\ \\text{J}}{200\\ \\text{W}} = 4\\,005\\ \\text{s} = 1{,}113\\ \\text{h}$$\n\nResultat: **$t_\\text{màx} = 4\\,005\\ \\text{s} \\approx 1{,}113\\ \\text{h}$** (uns 66,75 min)."},
+          {"apartat": "d", "titol": "Distància màxima", "cos": "A velocitat constant, la distància és velocitat per temps:\n\n$$s_\\text{màx} = v_\\text{pat} \\cdot t_\\text{màx} = 5{,}563\\ \\text{m/s} \\cdot 4\\,005\\ \\text{s} = 22\\,279\\ \\text{m}$$\n\nResultat: **$s_\\text{màx} \\approx 22{,}28\\ \\text{km}$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$\\Gamma \\approx 2{,}876\\ \\text{N m}$"},
+          {"apartat": "b", "valor": "$v_\\text{pat} \\approx 5{,}563\\ \\text{m/s} = 20{,}03\\ \\text{km/h}$"},
+          {"apartat": "c", "valor": "$E_\\text{útil} = 222{,}5\\ \\text{W h} = 801{,}0\\ \\text{kJ}$"},
+          {"apartat": "d", "valor": "$t_\\text{màx} = 4\\,005\\ \\text{s} = 1{,}113\\ \\text{h}$; $s_\\text{màx} \\approx 22{,}28\\ \\text{km}$"}
+        ],
+        "nota": "La tensió de la bateria ($U = 24\\ \\text{V}$) no cal per a cap apartat (només serviria per calcular el corrent). Error típic a l'apartat d: dividir $E_\\text{bat}$ (sense rendiment) per la potència a l'eix, o aplicar el rendiment dues vegades."
+      }
+    },
+    {
+      "id": "tecno-2019-J-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cartell penjat d'una barra articulada amb tirant: tensions i reaccions",
+      "tema": "estatica",
+      "temes_secundaris": [],
+      "conceptes": ["equilibri", "moments", "diagrama de cos lliure", "tirant", "reaccions en una articulació"],
+      "dificultat": 2,
+      "pagines": [4],
+      "enunciat": "Un cartell rectangular i homogeni de massa $m = 12\\ \\text{kg}$ està subjecte a la barra BO mitjançant dos petits cables d'acer en els punts C i D. El tirant AB manté el sistema en equilibri. La barra està articulada amb la paret en el punt O, i les masses de tots els elements són negligibles, excepte la del cartell rectangular.",
+      "figures": [{"src": "img/tecno/2019-J/e3-b.png", "peu": "Cartell penjat de la barra BO (cables a C i D) amb el tirant AB i l'articulació O"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Determineu les forces $T_\\text{C}$ i $T_\\text{D}$ a les quals estan sotmesos els cables d'acer.", "punts": 0.5},
+        {"id": "b", "enunciat": "Dibuixeu el diagrama de cos lliure de la barra BO.", "punts": 0.5},
+        {"id": "c", "enunciat": "Determineu l'angle $\\varphi$.", "punts": 0.5},
+        {"id": "d", "enunciat": "Determineu la força $T_\\text{AB}$ a la qual està sotmès el tirant AB.", "punts": 0.5},
+        {"id": "e", "enunciat": "Determineu les forces horitzontal $F_\\text{H}$ i vertical $F_\\text{V}$ a l'articulació O.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Massa del cartell: $m = 12\\ \\text{kg}$ → pes $m\\,g = 12 \\cdot 9{,}807 = 117{,}7\\ \\text{N}$\n- Geometria (figura): $BC = CD = DO = L$; l'alçada d'A sobre O és $L$; els cables estan a una distància $d$ de cada vora del cartell i separats $2d$ entre ells (cables simètrics respecte del centre del cartell)\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: $T_\\text{C}$, $T_\\text{D}$, $\\varphi$, $T_\\text{AB}$, $F_\\text{H}$, $F_\\text{V}$"},
+          {"apartat": "a", "titol": "Equilibri del cartell", "cos": "Aïllem el cartell: hi actuen el seu pes $m g$ (al centre de gravetat G, al mig) i les dues tensions $T_\\text{C}$ i $T_\\text{D}$ cap amunt.\n\n![Diagrama de cos lliure del cartell](img/tecno/2019-J/e3-b-sol.png)\n\nForces verticals:\n\n$$\\sum F_\\text{v} = 0 \\;\\Rightarrow\\; T_\\text{C} + T_\\text{D} = m\\,g$$\n\nMoments respecte de G (cada cable és a $d$ del centre):\n\n$$\\sum M_\\text{G} = 0 \\;\\Rightarrow\\; T_\\text{C}\\,d - T_\\text{D}\\,d = 0 \\;\\Rightarrow\\; T_\\text{C} = T_\\text{D}$$"},
+          {"apartat": "a", "titol": "Tensió de cada cable", "cos": "$$T_\\text{C} = T_\\text{D} = \\frac{m\\,g}{2} = \\frac{12 \\cdot 9{,}807}{2} = 58{,}84\\ \\text{N}$$\n\nResultat: **$T_\\text{C} = T_\\text{D} \\approx 58{,}84\\ \\text{N}$**."},
+          {"apartat": "b", "titol": "Diagrama de cos lliure de la barra BO", "cos": "Sobre la barra (de massa negligible) actuen:\n\n- A B: la tensió del tirant $T_\\text{AB}$, dirigida cap a A (amunt i cap a la paret), formant l'angle $\\varphi$ amb la barra.\n- A C i D: els cables tiren la barra **cap avall** amb $T_\\text{C}$ i $T_\\text{D}$ (acció i reacció amb el cartell).\n- A O: la reacció de l'articulació, amb components $F_\\text{H}$ (horitzontal) i $F_\\text{V}$ (vertical).\n\n![Diagrama de cos lliure de la barra BO](img/tecno/2019-J/e3-b-sol-2.png)\n\nCom que la component horitzontal de $T_\\text{AB}$ empeny la barra cap a la paret, $F_\\text{H}$ ha d'anar en sentit contrari (la barra treballa a compressió)."},
+          {"apartat": "c", "titol": "Angle del tirant", "cos": "El tirant va de B a A. Horitzontalment recorre $BO = 3L$ i verticalment puja $L$ (l'alçada d'A sobre la barra):\n\n$$\\tan\\varphi = \\frac{L}{3L} = \\frac{1}{3} \\;\\Rightarrow\\; \\varphi = \\arctan\\frac{1}{3} = 18{,}43^\\circ$$\n\nResultat: **$\\varphi \\approx 18{,}43^\\circ$**."},
+          {"apartat": "d", "titol": "Tensió del tirant (moments respecte d'O)", "cos": "Prenem moments respecte d'O perquè així $F_\\text{H}$ i $F_\\text{V}$ no hi intervenen. La component horitzontal de $T_\\text{AB}$ passa per la barra i no fa moment; només en fa la vertical, $T_\\text{AB}\\sin\\varphi$, amb braç $3L$. Les distàncies d'O a D i C són $L$ i $2L$:\n\n$$\\sum M_\\text{O} = 0 \\;\\Rightarrow\\; -T_\\text{AB}\\sin\\varphi \\cdot 3L + T_\\text{C} \\cdot 2L + T_\\text{D} \\cdot L = 0$$\n\n$$T_\\text{AB} = \\frac{2\\,T_\\text{C} + T_\\text{D}}{3\\sin\\varphi} = \\frac{2 \\cdot 58{,}84 + 58{,}84}{3 \\cdot 0{,}3162} = 186{,}1\\ \\text{N}$$\n\nResultat: **$T_\\text{AB} \\approx 186{,}1\\ \\text{N}$**. (La $L$ se simplifica: no cal saber-ne el valor.)"},
+          {"apartat": "e", "titol": "Reacció horitzontal a O", "cos": "$$\\sum F_\\text{h} = 0 \\;\\Rightarrow\\; F_\\text{H} = T_\\text{AB}\\cos\\varphi = 186{,}1 \\cdot 0{,}9487 = 176{,}5\\ \\text{N}$$\n\nResultat: **$F_\\text{H} \\approx 176{,}5\\ \\text{N}$**, dirigida en sentit contrari a la paret (cap a B)."},
+          {"apartat": "e", "titol": "Reacció vertical a O", "cos": "$$\\sum F_\\text{v} = 0 \\;\\Rightarrow\\; T_\\text{AB}\\sin\\varphi + F_\\text{V} = T_\\text{C} + T_\\text{D}$$\n\n$$F_\\text{V} = 117{,}7 - 186{,}1 \\cdot 0{,}3162 = 117{,}7 - 58{,}84 = 58{,}84\\ \\text{N}$$\n\nResultat: **$F_\\text{V} \\approx 58{,}84\\ \\text{N}$ cap amunt**. Comprovació amb moments respecte de B: $F_\\text{V} \\cdot 3L = T_\\text{C} \\cdot L + T_\\text{D} \\cdot 2L$ → $F_\\text{V} = 58{,}84\\ \\text{N}$."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$T_\\text{C} = T_\\text{D} \\approx 58{,}84\\ \\text{N}$"},
+          {"apartat": "b", "valor": "Barra amb $T_\\text{AB}$ a B (cap a A), $T_\\text{C}$ i $T_\\text{D}$ cap avall, i $F_\\text{H}$, $F_\\text{V}$ a O"},
+          {"apartat": "c", "valor": "$\\varphi \\approx 18{,}43^\\circ$"},
+          {"apartat": "d", "valor": "$T_\\text{AB} \\approx 186{,}1\\ \\text{N}$"},
+          {"apartat": "e", "valor": "$F_\\text{H} \\approx 176{,}5\\ \\text{N}$; $F_\\text{V} \\approx 58{,}84\\ \\text{N}$"}
+        ],
+        "nota": "Error típic a l'apartat d: posar tota la $T_\\text{AB}$ amb braç $3L$ (en lloc de la seva component vertical $T_\\text{AB}\\sin\\varphi$) o calcular el braç com la distància al llarg del tirant."
+      }
+    },
+    {
+      "id": "tecno-2019-J-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Caldera de condensació: cabal d'aigua calenta, potència consumida i consum de gas",
+      "tema": "termica",
+      "temes_secundaris": ["energia"],
+      "conceptes": ["calor específica", "poder calorífic", "rendiment", "cabal", "consum de combustible"],
+      "dificultat": 2,
+      "pagines": [4],
+      "enunciat": "Una caldera mixta de condensació funciona amb gas natural de poder calorífic $p_\\text{c} = 62\\ \\text{MJ/kg}$. La seva potència útil és $P_\\text{útil} = 28\\ \\text{kW}$ quan només subministra aigua calenta i n'eleva la temperatura $\\Delta T = 25\\ ^\\circ\\text{C}$. En aquesta situació, el rendiment de la caldera és $\\eta_\\text{cald} = 0{,}87$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "El cabal $q_\\text{aigua}$ (en L/min) que subministra la caldera, tenint en compte que la calor específica de l'aigua és $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$.", "punts": 0.5},
+        {"id": "b", "enunciat": "La potència consumida $P_\\text{cons}$ i el consum de combustible $q_\\text{comb}$ per unitat de temps.", "punts": 1},
+        {"id": "c", "enunciat": "El temps $t$ i el combustible $m$ necessaris per a fer augmentar $25\\ ^\\circ\\text{C}$ la temperatura d'un volum d'aigua $V = 0{,}1\\ \\text{m}^3$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Poder calorífic del gas: $p_\\text{c} = 62\\ \\text{MJ/kg} = 62\\,000\\ \\text{J/g}$\n- Potència útil: $P_\\text{útil} = 28\\ \\text{kW} = 28\\,000\\ \\text{W}$\n- Increment de temperatura: $\\Delta T = 25\\ ^\\circ\\text{C}$\n- Rendiment: $\\eta_\\text{cald} = 0{,}87$\n- Calor específica de l'aigua: $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$; densitat de l'aigua $\\rho = 1\\ \\text{kg/L} = 1\\,000\\ \\text{g/L}$\n- Volum a escalfar (apartat c): $V = 0{,}1\\ \\text{m}^3 = 100\\ \\text{L}$\n- Incògnites: $q_\\text{aigua}$, $P_\\text{cons}$, $q_\\text{comb}$, $t$, $m$"},
+          {"apartat": "a", "titol": "Relació entre potència útil i cabal d'aigua", "cos": "La potència útil és la calor que rep l'aigua per unitat de temps. La calor per escalfar una massa d'aigua és $Q = m\\,c_\\text{e}\\,\\Delta T$, i la massa que passa per unitat de temps és $\\rho\\,q_\\text{aigua}$:\n\n$$P_\\text{útil} = \\frac{m\\,c_\\text{e}\\,\\Delta T}{t} = \\rho\\, q_\\text{aigua}\\, c_\\text{e}\\, \\Delta T$$"},
+          {"apartat": "a", "titol": "Cabal d'aigua", "cos": "Aïllem el cabal màssic primer:\n\n$$\\frac{m}{t} = \\frac{P_\\text{útil}}{c_\\text{e}\\,\\Delta T} = \\frac{28\\,000\\ \\text{W}}{4{,}18\\ \\text{J/(g °C)} \\cdot 25\\ ^\\circ\\text{C}} = 267{,}9\\ \\text{g/s}$$\n\nAmb $1\\,000\\ \\text{g} = 1\\ \\text{L}$: $q_\\text{aigua} = 0{,}2679\\ \\text{L/s}$, i multiplicant per 60:\n\n$$q_\\text{aigua} = 0{,}2679 \\cdot 60 = 16{,}08\\ \\text{L/min}$$\n\nResultat: **$q_\\text{aigua} \\approx 16{,}08\\ \\text{L/min}$**."},
+          {"apartat": "b", "titol": "Potència consumida", "cos": "El rendiment és $\\eta = P_\\text{útil}/P_\\text{cons}$; la caldera ha de consumir més potència de la que dona a l'aigua:\n\n$$P_\\text{cons} = \\frac{P_\\text{útil}}{\\eta_\\text{cald}} = \\frac{28}{0{,}87} = 32{,}18\\ \\text{kW}$$\n\nResultat: **$P_\\text{cons} \\approx 32{,}18\\ \\text{kW}$**."},
+          {"apartat": "b", "titol": "Consum de combustible per unitat de temps", "cos": "Cada gram de gas aporta $p_\\text{c} = 62\\,000\\ \\text{J}$. Els grams per segon necessaris són la potència consumida dividida pel poder calorífic:\n\n$$q_\\text{comb} = \\frac{P_\\text{cons}}{p_\\text{c}} = \\frac{32\\,184\\ \\text{J/s}}{62\\,000\\ \\text{J/g}} = 0{,}5191\\ \\text{g/s}$$\n\nResultat: **$q_\\text{comb} \\approx 0{,}5191\\ \\text{g/s}$** (uns $1{,}869\\ \\text{kg/h}$)."},
+          {"apartat": "c", "titol": "Temps per escalfar 100 L", "cos": "Funcionant en les mateixes condicions, la caldera escalfa $25\\ ^\\circ\\text{C}$ un cabal de $16{,}08\\ \\text{L/min}$. Per a $100\\ \\text{L}$:\n\n$$t = \\frac{V}{q_\\text{aigua}} = \\frac{100\\ \\text{L}}{16{,}08\\ \\text{L/min}} = 6{,}22\\ \\text{min} = 373{,}2\\ \\text{s}$$\n\nResultat: **$t \\approx 6{,}22\\ \\text{min}$**."},
+          {"apartat": "c", "titol": "Combustible necessari", "cos": "$$m = q_\\text{comb} \\cdot t = 0{,}5191\\ \\text{g/s} \\cdot 373{,}2\\ \\text{s} = 193{,}7\\ \\text{g}$$\n\nComprovació per energia: $Q = 100\\,000\\ \\text{g} \\cdot 4{,}18 \\cdot 25 = 10{,}45\\ \\text{MJ}$ útils; $m = \\dfrac{Q}{\\eta\\,p_\\text{c}} = \\dfrac{10{,}45}{0{,}87 \\cdot 62}\\ \\text{kg} = 193{,}7\\ \\text{g}$.\n\nResultat: **$m \\approx 193{,}7\\ \\text{g}$** de gas natural."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$q_\\text{aigua} \\approx 16{,}08\\ \\text{L/min}$"},
+          {"apartat": "b", "valor": "$P_\\text{cons} \\approx 32{,}18\\ \\text{kW}$; $q_\\text{comb} \\approx 0{,}5191\\ \\text{g/s}$"},
+          {"apartat": "c", "valor": "$t \\approx 6{,}22\\ \\text{min}$; $m \\approx 193{,}7\\ \\text{g}$"}
+        ],
+        "nota": "Cal suposar que la densitat de l'aigua és $1\\ \\text{kg/L}$ (la solució oficial ho fa implícitament). Compte amb les unitats de $c_\\text{e}$: està en J/(g °C), de manera que la massa ha d'anar en grams."
+      }
+    }
+  ]
+}

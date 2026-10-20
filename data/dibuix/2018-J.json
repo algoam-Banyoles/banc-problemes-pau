@@ -1,0 +1,405 @@
+{
+  "examen": {
+    "id": "dibuix-2018-J",
+    "assignatura": "dibuix",
+    "materia": "Dibuix tècnic",
+    "any": 2018,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/dibuix/2018-J-examen.pdf",
+    "pdf_solucio": "pdfs/dibuix/2018-J-solucio.pdf",
+    "estructura": "Cal fer TRES dibuixos i, de cadascun, triar una de les dues opcions (A o B): dibuix 1, geometria plana (2 punts); dibuix 2, dièdric (4 punts); dibuix 3, axonometria (4 punts). Es resolen a la mateixa pàgina de l'enunciat. El 80 % de la nota de cada dibuix és per al procés i la solució correcta, i el 20 % per a la qualitat gràfica. Les mesures sense escala indicada s'entenen a escala 1:1."
+  },
+  "problemes": [
+    {
+      "id": "dibuix-2018-J-e1-a",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Figura simètrica respecte d'un eix d'una silueta d'arcs i rectes tangents",
+      "tema": "transformacions",
+      "temes_secundaris": ["geometria-plana"],
+      "conceptes": ["simetria axial", "eix de simetria", "tangències", "enllaç d'arcs", "punt de tangència"],
+      "dificultat": 2,
+      "pagines": [5],
+      "enunciat": "Dibuixeu la figura simètrica a la donada de manera que l'eix de simetria sigui la recta *R*. Deixeu constància del procés gràfic seguit.",
+      "figures": [
+        {"src": "img/dibuix/2018-J/1A.png", "peu": "Silueta formada per arcs i segments amb els punts A–H marcats i l'eix de simetria R (traç i punt)"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Idea clau: com es fa el simètric d'un punt",
+            "cos": "En una **simetria axial** d'eix $R$, el simètric $P'$ d'un punt $P$ és sobre la **perpendicular a $R$ que passa per $P$**, a l'altre costat de l'eix i a la **mateixa distància**.\n\nConseqüències útils:\n\n- una recta i la seva simètrica es tallen **sobre l'eix** (o són paral·leles a l'eix);\n- una circumferència es transforma en una circumferència del **mateix radi**, amb el centre simètric;\n- les tangències es conserven: si un arc i un segment són tangents en $T$, els seus simètrics són tangents en $T'$.\n\nPer tant, n'hi ha prou de trobar els simètrics dels **punts de tangència** (A, B, D, E, F, G, H), del punt angulós C i dels **centres** dels arcs."
+          },
+          {
+            "apartat": null,
+            "titol": "Analitzar la figura: centres dels arcs",
+            "cos": "La silueta té quatre segments (AB, CD, EF i GH) i quatre arcs. El centre de cada arc és a la perpendicular al segment en el punt de tangència (el radi és perpendicular a la tangent):\n\n- **Arc HA** (l'arc gran de l'esquerra): centre $O_1$ = intersecció de la perpendicular a AB per A i la perpendicular a GH per H. Radi $\\approx 19\\ \\text{mm}$.\n- **Arc BC**: centre $O_2$ a la perpendicular a AB per B; com que C no és de tangència (és un punt angulós, marcat amb ×), el centre s'obté amb la mediatriu de BC. Radi $\\approx 12{,}5\\ \\text{mm}$ (el segment CD segueix la direcció del radi $O_2C$).\n- **Arc DE**: centre $O_3$ = perpendicular a CD per D ∩ perpendicular a EF per E. Radi $\\approx 10\\ \\text{mm}$.\n- **Arc FG**: centre $O_4$ = perpendicular a EF per F ∩ perpendicular a GH per G. Radi $\\approx 22{,}5\\ \\text{mm}$."
+          },
+          {
+            "apartat": null,
+            "titol": "Simètrics dels punts i dels centres",
+            "cos": "Per a cada punt (A … H i $O_1$ … $O_4$):\n\n1. Traça la perpendicular a $R$ que hi passa (amb escaire i cartabó, totes són paral·leles entre elles).\n2. Amb el compàs, pren la distància del punt a l'eix i porta-la a l'altre costat sobre la mateixa perpendicular.\n\nPer exemple, A és a uns $74\\ \\text{mm}$ de l'eix, H a uns $80\\ \\text{mm}$ i E, el més proper, a uns $11\\ \\text{mm}$.\n\nTruc per comprovar els segments: allarga el segment (per exemple, GH o EF) fins que talli l'eix $R$. El seu simètric ha de passar pel **mateix punt de l'eix**. A la solució oficial es veu aquesta construcció amb les rectes discontínues que es tallen sobre $R$."
+          },
+          {
+            "apartat": null,
+            "titol": "Dibuixar la figura simètrica",
+            "cos": "- Uneix amb regle A′B′, C′D′, E′F′ i G′H′.\n- Amb centre $O_1'$ dibuixa l'arc H′A′; amb centre $O_2'$ l'arc B′C′; amb centre $O_3'$ l'arc D′E′, i amb centre $O_4'$ l'arc F′G′, amb els mateixos radis que els originals.\n\nComprovació: cada arc ha d'arribar exactament als punts de tangència transformats i enllaçar sense punxes amb els segments (excepte a C′, que és angulós com C). La figura nova queda **girada en sentit contrari** (és una figura invertida, com un reflex en un mirall)."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2018-J/1A-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Figura simètrica respecte de R, obtinguda traslladant cada punt de tangència i cada centre sobre la perpendicular a R a la mateixa distància; els arcs conserven els radis (≈ 19, 12,5, 10 i 22,5 mm)."}
+        ],
+        "nota": "Error típic: oblidar els centres dels arcs i intentar dibuixar els arcs simètrics a ull. Els radis s'han mesurat sobre el dibuix i són orientatius."
+      }
+    },
+    {
+      "id": "dibuix-2018-J-e1-b",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Circumferència que passa per dos punts i és tangent a una recta (escala 1:125)",
+      "tema": "geometria-plana",
+      "temes_secundaris": [],
+      "conceptes": ["tangències", "circumferència per dos punts", "mediatriu", "punt de tangència", "escales"],
+      "dificultat": 2,
+      "pagines": [7],
+      "enunciat": "",
+      "figures": [
+        {"src": "img/dibuix/2018-J/1B.png", "peu": "Recta R, punts A i B i casella per escriure la longitud real de AB (escala 1:125)"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu la circumferència tangent a la recta *R* que passa pels punts *A* i *B*. Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, els punts de tangència.", "punts": 1.5},
+        {"id": "b", "enunciat": "Determineu el valor real del segment *AB*, tenint en compte que el dibuix està a escala 1:125, i escriviu-lo a la casella situada a la part inferior del full.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Observació clau: AB és paral·lel a R",
+            "cos": "Si mesures la direcció de AB i la de R, veuràs que són **paral·leles** (A i B són tots dos a uns $76\\ \\text{mm}$ de la recta). Això simplifica molt el problema: en general hi hauria dues solucions (trobades amb la potència d'un punt), però quan AB és paral·lel a R **només n'hi ha una**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punt de tangència T",
+            "cos": "El centre $O$ de qualsevol circumferència que passa per A i B equidista d'A i de B, per tant és sobre la **mediatriu de AB**.\n\nA més, el radi en el punt de tangència $T$ és perpendicular a $R$. Com que $R \\parallel AB$, la perpendicular a $R$ per $T$ és perpendicular a AB i passa per $O$: és la mateixa mediatriu.\n\nPer tant: traça la mediatriu de AB (arcs des d'A i des de B) i on talla la recta $R$ hi ha el **punt de tangència $T$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Centre i traçat de la circumferència",
+            "cos": "Ara la circumferència ha de passar per tres punts coneguts: A, B i T. El centre $O$ és la intersecció de dues mediatrius:\n\n1. la mediatriu de AB (que ja tens);\n2. la mediatriu de TB (o de TA).\n\nAmb centre $O$ i radi $OT$ dibuixa la circumferència. Comprovació: ha de passar per A i per B, i tocar $R$ només en $T$.\n\nSurt un radi d'uns $42\\ \\text{mm}$ al paper. Es pot verificar amb càlcul: si $d \\approx 76{,}2\\ \\text{mm}$ és la distància entre AB i R i $AB = 50\\ \\text{mm}$,\n$$r = \\frac{d^2 + (AB/2)^2}{2d} = \\frac{76{,}2^2 + 25^2}{2 \\cdot 76{,}2} \\approx 42{,}2\\ \\text{mm}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud real de AB",
+            "cos": "Mesurem AB al dibuix: $AB_\\text{paper} = 50\\ \\text{mm}$. A escala 1:125, cada mil·límetre del paper són 125 mm reals:\n$$AB_\\text{real} = 50\\ \\text{mm} \\cdot 125 = 6\\,250\\ \\text{mm} = \\mathbf{6{,}25\\ m}$$\nS'escriu **6,25** a la casella de metres."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2018-J/1B-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Una única circumferència: T = mediatriu de AB ∩ R; centre a la intersecció de les mediatrius de AB i TB; radi ≈ 42 mm al paper."},
+          {"apartat": "b", "valor": "AB = 50 mm al paper → 6,25 m reals."}
+        ],
+        "nota": "Si AB no fos paral·lel a R, caldria usar l'eix radical: la recta AB talla R en un punt M i els punts de tangència compleixen $MT^2 = MA \\cdot MB$ (dues solucions). Aquí aquest mètode no funciona perquè AB i R no es tallen."
+      }
+    },
+    {
+      "id": "dibuix-2018-J-e2-a",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Piràmide hexagonal regular a partir d'una cara lateral i tronc de piràmide per un pla de cantell",
+      "tema": "cossos",
+      "temes_secundaris": ["diedric"],
+      "conceptes": ["piràmide hexagonal", "secció plana", "pla de cantell", "tronc de piràmide", "visibilitat"],
+      "dificultat": 3,
+      "pagines": [9],
+      "enunciat": "Dades: Projeccions horitzontal i vertical dels punts *a-a′*, *b-b′*, *v-v′* i *p-p′*.",
+      "figures": [
+        {"src": "img/dibuix/2018-J/2A.png", "peu": "Projeccions dels punts a-a′, b-b′ (a′ i b′ coincideixen), v-v′ i p-p′"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Determineu les projeccions de la piràmide hexagonal regular que té el triangle *abv-a′b′v′* com una de les cares laterals i que està situada per sobre d'aquesta cara.", "punts": 2.5},
+        {"id": "b", "enunciat": "Dibuixeu les projeccions horitzontal i vertical del tronc de piràmide que s'obté en tallar la piràmide determinada en l'apartat anterior pel pla de cantell que passa pel punt *p-p′* i forma a la dreta un angle de 45° amb el pla horitzontal.", "punts": 1},
+        {"id": "c", "enunciat": "Diferencieu les arestes vistes de les ocultes.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Interpretar les dades",
+            "cos": "- $a'$, $b'$, $v'$ i $p'$ són a la mateixa altura: la cara $abv$ és **horitzontal** i es veu en vertadera forma a la planta.\n- $a'$ i $b'$ coincideixen: l'aresta de la base $ab$ és una **recta de punta** (perpendicular al pla vertical). Mesura $ab = 40\\ \\text{mm}$, que és el costat $l$ de l'hexàgon.\n- $v$ és a l'altura del punt mitjà $m$ de $ab$: la piràmide és simètrica respecte del pla frontal que passa per $v$ i $m$. La distància $mv = 136{,}5\\ \\text{mm}$ és l'**apotema de la cara lateral** en vertadera magnitud.\n\nCom que $ab$ és de punta, el pla de la base (que conté $ab$) és un **pla de cantell**: a l'alçat es veurà com una recta que passa per $a'b'$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Pla de la base a l'alçat: triangle rectangle m–o–v",
+            "cos": "Sigui $o$ el centre de la base. El triangle $m\\,o\\,v$ és rectangle en $o$ (l'eix $ov$ és perpendicular a la base) i és al pla de simetria frontal, per tant a l'alçat es veu en vertadera magnitud:\n\n- hipotenusa $m'v' = 136{,}5\\ \\text{mm}$ (apotema de la cara);\n- catet $m'o'$ = apotema de l'hexàgon $= l\\frac{\\sqrt{3}}{2} = 40 \\cdot 0{,}866 \\approx 34{,}6\\ \\text{mm}$.\n\nConstrucció: dibuixa la **semicircumferència de diàmetre $a'v'$** (arc capaç de 90°, teorema de Tales) i un arc de centre $a'$ i radi $34{,}6\\ \\text{mm}$. On es tallen hi ha $o'$. La recta $a'o'$ és la traça del pla de la base; forma uns $75°$ amb l'horitzontal ($\\cos\\alpha = 34{,}6/136{,}5$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vèrtexs de la base a l'alçat",
+            "cos": "L'hexàgon té l'aresta $ab$ en un extrem. Sobre la recta $a'o'$, comptant des de $a'$:\n\n- a $0$: $a'$, $b'$;\n- a $l\\frac{\\sqrt3}{2} \\approx 34{,}6\\ \\text{mm}$ (punt $o'$): els dos vèrtexs mitjans $c'$, $f'$ (coincidents);\n- a $l\\sqrt3 \\approx 69{,}3\\ \\text{mm}$: els dos vèrtexs de l'aresta oposada $d'$, $e'$ (coincidents).\n\nTota la base es veu a l'alçat com el segment $a'd'$. Uneix cada punt amb $v'$: tens l'alçat de la piràmide (la cara $abv$ és el segment horitzontal $a'v'$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Base a la planta (abatiment)",
+            "cos": "Per tenir la planta, abat l'hexàgon de la base sobre el pla horitzontal girant-lo al voltant de $ab$: dibuixa l'hexàgon regular de costat $40\\ \\text{mm}$ en vertadera forma, amb l'aresta $ab$ a la planta (cap a l'esquerra, amb arcs de centre $a'$ a l'alçat).\n\nDesfés l'abatiment: cada vèrtex conserva la seva distància al pla de simetria (la coordenada vertical a la planta: $\\pm 20$ o $\\pm 40\\ \\text{mm}$ respecte de l'eix $mv$), i la seva posició horitzontal es baixa des de l'alçat amb línies de referència verticals:\n\n| Vèrtex | Distància horitzontal des de $ab$ | Distància a l'eix $mv$ | Altura sobre $abv$ |\n|---|---|---|---|\n| $a$, $b$ | 0 | 20 mm | 0 |\n| $c$, $f$ | 8,8 mm | 40 mm | 33,5 mm |\n| $d$, $e$ | 17,6 mm | 20 mm | 67 mm |\n\nUneix els vèrtexs de la base entre ells i amb $v$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Pla de cantell per p′ a 45°",
+            "cos": "Un pla de cantell és perpendicular al pla vertical, i per tant a l'alçat es veu com una recta. Per $p'$ traça una recta que pugi cap a la dreta formant $45°$ amb l'horitzontal.\n\nAquesta recta talla a l'alçat les sis arestes laterals (tots els vèrtexs de la base queden a l'esquerra del pla i el vèrtex $v$ a la dreta):\n\n- $av$ i $bv$ (sobre la cara horitzontal): en el mateix $p'$, a $57{,}8\\ \\text{mm}$ de $a'$;\n- $cv$ i $fv$: a uns $16\\ \\text{mm}$ d'altura;\n- $dv$ i $ev$: a uns $28\\ \\text{mm}$ d'altura.\n\nLa secció és un **hexàgon** irregular. Baixa cada punt de tall amb una línia de referència fins a la projecció horitzontal de la seva aresta."
+          },
+          {
+            "apartat": "b",
+            "titol": "Tronc de piràmide",
+            "cos": "Elimina la part de la piràmide que conté el vèrtex $v$. El tronc queda limitat per la base hexagonal, la secció i sis cares laterals trapezials.\n\nA la planta, la secció surt en forma d'hexàgon allargat entre $x \\approx 57{,}8$ i $86\\ \\text{mm}$ (comptant des de $ab$). A l'alçat, la secció és el segment de la recta de 45° comprès entre $p'$ i l'aresta $d'v'$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Visibilitat",
+            "cos": "- **Alçat**: la figura és simètrica respecte del pla frontal, així que les arestes de davant i de darrere es superposen. Totes es dibuixen vistes.\nAnomenem els vèrtexs de la base en ordre $a, c, d, e, f, b$ ($c$ i $f$ són els vèrtexs mitjans, $d$ i $e$ els de l'aresta oposada a $ab$).\n\n- **Planta** (mirant des de dalt): són vistes la base (mira amunt i a l'esquerra) i les cares laterals $cdv$, $dev$ i $efv$, que tenen la normal cap amunt. Són ocultes la cara inferior $abv$ (horitzontal, mira avall), les cares $acv$ i $bfv$ i la cara de la secció (el pla de tall deixa el sòlid per sobre, i per tant la cara de tall mira cap avall).\n\nPer tant, a la planta són discontínues les arestes del tronc sobre $av$ i $bv$ i els costats de la secció que limiten amb les cares $abv$, $acv$ i $bfv$. Són vistes les arestes laterals $c$, $d$, $e$, $f$ i els costats de la secció de les cares $cdv$, $dev$ i $efv$."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2018-J/2A-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Hexàgon de costat 40 mm en un pla de cantell que forma ≈ 75° amb l'horitzontal (centre o′ amb la semicircumferència de diàmetre a′v′ i un arc de radi 34,6 mm); altura de la piràmide ≈ 132 mm."},
+          {"apartat": "b", "valor": "Secció hexagonal pel pla de cantell a 45° per p′; tronc entre la base i la secció."},
+          {"apartat": "c", "valor": "Alçat: tot vist. Planta: ocultes la cara abv, les dues cares contigües (acv i bfv) i la cara de tall."}
+        ],
+        "nota": "Les mides s'han mesurat sobre el dibuix donat (ab = 40 mm, mv = 136,5 mm). La clau del problema és veure que el triangle m–o–v és rectangle i es veu en vertadera magnitud a l'alçat."
+      }
+    },
+    {
+      "id": "dibuix-2018-J-e2-b",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Tetraedre regular amb una cara en un pla de perfil",
+      "tema": "cossos",
+      "temes_secundaris": ["diedric"],
+      "conceptes": ["tetraedre regular", "pla de perfil", "triangle equilàter", "altura del tetraedre", "visibilitat"],
+      "dificultat": 3,
+      "pagines": [11],
+      "enunciat": "Dades: Projeccions horitzontal i vertical dels punts *a-a′* i *b-b′*.",
+      "figures": [
+        {"src": "img/dibuix/2018-J/2B.png", "peu": "Projeccions dels punts a-a′ i b-b′, alineats en una mateixa línia de referència"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Determineu les projeccions d'un triangle equilàter *abc-a′b′c′* situat en un pla de perfil, que té el segment *ab-a′b′* com un dels costats i el vèrtex *c-c′* per sobre del segment *ab-a′b′*.", "punts": 1},
+        {"id": "b", "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un tetraedre regular de manera que una de les cares sigui el triangle determinat en l'apartat anterior i que tingui un vèrtex situat a la dreta d'aquesta cara.", "punts": 2.5},
+        {"id": "c", "enunciat": "Diferencieu les arestes vistes de les ocultes.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Interpretar les dades",
+            "cos": "$a$ i $b$ (i també $a'$ i $b'$) són en la mateixa línia de referència vertical: el segment $ab$ és en un **pla de perfil** (perpendicular a tots dos plans de projecció). En planta i alçat, qualsevol figura d'aquest pla es veu com un segment vertical.\n\nCal, doncs, una **tercera vista (perfil)** o un abatiment del pla de perfil per veure el triangle en vertadera forma. Mesures: diferència de cotes $b'$–$a'$ $\\approx 23{,}9\\ \\text{mm}$ i diferència d'allunyament $a$–$b \\approx 65{,}7\\ \\text{mm}$, de manera que\n$$l = ab = \\sqrt{65{,}7^2 + 23{,}9^2} \\approx 70\\ \\text{mm}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Triangle equilàter en vertadera forma (perfil)",
+            "cos": "Dibuixa el perfil del segment: a la solució oficial es fa a la dreta, portant l'allunyament de cada punt (des de la planta, línies horitzontals) i la cota (des de l'alçat, distàncies $b$, $c$, $a$ preses amb el compàs). Obtens $a''$ i $b''$, i $a''b''$ en vertadera magnitud.\n\nConstrueix el triangle equilàter $a''b''c''$ amb el compàs (arcs de radi $a''b''$ centrats a $a''$ i a $b''$), triant el vèrtex $c''$ que queda **per sobre** del segment (cota més alta).\n\nTorna $c''$ a les projeccions: $c'$ és a la mateixa línia de referència, a uns $68{,}9\\ \\text{mm}$ per sobre de $a'$, i $c$ a uns $12\\ \\text{mm}$ per darrere de $a$."
+          },
+          {
+            "apartat": "b",
+            "titol": "On és el quart vèrtex d",
+            "cos": "En un tetraedre regular, el vèrtex oposat a una cara és sobre la **perpendicular a la cara pel seu baricentre $G$**, a una distància igual a l'**altura del tetraedre**:\n$$H = l\\sqrt{\\tfrac{2}{3}} = 70 \\cdot 0{,}816 \\approx 57{,}1\\ \\text{mm}$$\nCom que la cara és en un pla de perfil, la perpendicular és una **recta paral·lela a la LT** (horitzontal i frontal). Per tant:\n\n- al perfil, $d''$ coincideix amb $G''$;\n- a la planta i a l'alçat, $d$ i $d'$ estan a l'altura de $G$ i a $H$ a la **dreta** de la línia de referència de la cara."
+          },
+          {
+            "apartat": "b",
+            "titol": "Construcció gràfica de H i del vèrtex d",
+            "cos": "1. Troba el baricentre $G''$ del triangle $a''b''c''$ (intersecció de dues mitjanes).\n2. Per obtenir $H$ sense calcular: l'aresta lateral $dc$ (de longitud $l$) és la hipotenusa d'un triangle rectangle amb catets $G c$ i $H$. Traça la perpendicular a $G''c''$ per $G''$ i talla-la amb un arc de centre $c''$ i radi $l$: la distància des de $G''$ fins al punt de tall és $H$.\n3. Porta $G$ a les projeccions (cota a l'alçat, allunyament a la planta) i desplaça'l $H$ cap a la dreta: obtens $d'$ i $d$.\n4. Uneix $d$ amb $a$, $b$ i $c$ a totes dues projeccions."
+          },
+          {
+            "apartat": "c",
+            "titol": "Visibilitat",
+            "cos": "- **Alçat** (mirem des de davant): $b$ és el vèrtex més allunyat de l'observador i queda darrere de la cara $acd$. L'aresta **$b'd'$ és oculta**; la resta són vistes.\n- **Planta** (mirem des de dalt): $c$ és el vèrtex més alt, de manera que les arestes que hi arriben són vistes, i el contorn també. Totes les arestes surten vistes.\n\nLa cara $abc$ es veu de cantell (com un segment vertical) a totes dues projeccions."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2018-J/2B-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Triangle equilàter de costat ≈ 70 mm en el pla de perfil; c′ ≈ 69 mm per sobre de a′, a la mateixa línia de referència."},
+          {"apartat": "b", "valor": "Vèrtex d a H = l·√(2/3) ≈ 57 mm a la dreta del baricentre de la cara, sobre una recta paral·lela a la LT."},
+          {"apartat": "c", "valor": "Alçat: b′d′ oculta. Planta: totes les arestes vistes."}
+        ],
+        "nota": "Error típic: posar d a l'altura del punt mitjà d'un costat en lloc del baricentre. Les mides s'han mesurat sobre el dibuix donat i són orientatives."
+      }
+    },
+    {
+      "id": "dibuix-2018-J-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Isometria d'una peça amb base hexagonal, prisma triangular i tres braços inclinats",
+      "tema": "axonometria",
+      "temes_secundaris": [],
+      "conceptes": ["perspectiva isomètrica", "axonometria ortogonal", "interpretació de vistes", "escala", "prisma"],
+      "dificultat": 3,
+      "pagines": [13],
+      "enunciat": "Interpreteu el sòlid polièdric representat en planta i alçats, i, situant el punt *p-p′* en la posició *P* del paper, dibuixeu l'axonometria amb la terna proposada (ortogonal isomètrica) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [4 punts: 0,5 punts per la base de l'objecte, 0,5 punts pel cos vertical i 1 punt per cadascun dels cossos inclinats]",
+      "figures": [
+        {"src": "img/dibuix/2018-J/3A.png", "peu": "Alçat, planta i perfil (girat 90°) de la peça, punt P i terna isomètrica (eixos a 120°, coeficients 1)"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Interpretar les vistes",
+            "cos": "- **Alçat** ($p'$): a dalt. **Planta** ($p$): a sota, amb els eixos X (cap a l'esquerra) i Y (cap avall). **Perfil** ($p''$): a la dreta de la planta, **girat 90°** (l'altura Z hi va en horitzontal, cap a la dreta).\n- El punt $p-p'$ és el **vèrtex de davant de l'hexàgon**, a la cara inferior de la base.\n\nLa peça té tres parts:\n\n1. **Base**: prisma hexagonal regular de costat $25\\ \\text{mm}$ i gruix $5\\ \\text{mm}$, amb un vèrtex cap a davant (on és $p$).\n2. **Cos vertical**: prisma triangular equilàter de costat $15\\ \\text{mm}$, centrat a la base, amb una cara perpendicular a X (a la dreta de la planta) i el vèrtex oposat cap a l'esquerra. Puja $30\\ \\text{mm}$ per sobre de la base (35 mm d'altura total).\n3. **Tres cossos inclinats** iguals, un per cara del prisma, perpendiculars a cada cara (a 0°, 120° i 240° a la planta). Cada un és un prisma de $\\approx 5{,}8\\ \\text{mm}$ d'amplada amb les cares superior i inferior inclinades (uns 58° amb l'horitzontal, 5 mm de gruix). Es recolza a la base, entre $6{,}4$ i $12{,}3\\ \\text{mm}$ de la cara del prisma, i arriba a la cara del prisma entre $10{,}5$ i $20\\ \\text{mm}$ d'altura sobre la base."
+          },
+          {
+            "apartat": null,
+            "titol": "Terna i escala",
+            "cos": "Isomètrica: els tres eixos formen 120° entre ells, Z vertical, X baixa cap a l'esquerra i Y cap a la dreta (30° sota l'horitzontal). La terna indica coeficients (1): es dibuixa **sense reducció** (dibuix isomètric) i, a **escala doble**, totes les mides es multipliquen per 2.\n\nNomés es pot mesurar en direccions paral·leles als eixos: els punts inclinats (vèrtexs de l'hexàgon, del triangle i dels braços) s'han de situar per **coordenades (x, y, z)**."
+          },
+          {
+            "apartat": null,
+            "titol": "Base hexagonal",
+            "cos": "Coordenades a la planta respecte de $p$ (X cap a l'esquerra, Y cap avall, en mm reals; al dibuix, multiplica per 2):\n\n| Vèrtex | x | y |\n|---|---|---|\n| $p$ (davant) | 0 | 0 |\n| davant dreta | −21,65 | −12,5 |\n| darrere dreta | −21,65 | −37,5 |\n| darrere | 0 | −50 |\n| darrere esquerra | 21,65 | −37,5 |\n| davant esquerra | 21,65 | −12,5 |\n\nEl centre de l'hexàgon és $(0, -25)$. Situa $p$ en $P$, dibuixa l'hexàgon inferior i aixeca verticals de $2 \\cdot 5 = 10\\ \\text{mm}$ per a la cara superior. Tip: és més còmode dibuixar primer el rectangle envolupant de $43{,}3 \\times 50\\ \\text{mm}$ (×2) i trobar-hi els vèrtexs."
+          },
+          {
+            "apartat": null,
+            "titol": "Prisma triangular vertical",
+            "cos": "Triangle a la planta (respecte de $p$): cara de la dreta a $x = -4{,}33$, entre $y = -32{,}5$ i $y = -17{,}5$; vèrtex esquerre a $(8{,}66, -25)$.\n\nDibuixa el triangle sobre la cara superior de la base ($z = 5$) i puja'l $30\\ \\text{mm}$ reals (60 mm al dibuix) fins a $z = 35$."
+          },
+          {
+            "apartat": null,
+            "titol": "Braç perpendicular a X (el de la dreta de la planta)",
+            "cos": "És el més fàcil, perquè és paral·lel als eixos: ocupa $y$ entre $-27{,}9$ i $-22{,}1$ i surt de la cara $x = -4{,}33$ en sentit $-x$.\n\n- Aresta superior: de $(x = -4{,}33,\\ z = 25)$ a $(x = -16{,}6,\\ z = 5)$.\n- Aresta inferior: de $(x = -4{,}33,\\ z = 15{,}5)$ a $(x = -10{,}7,\\ z = 5)$.\n\n(Les altures inclouen els 5 mm de la base.) Dibuixa aquest paral·lelogram a les dues cares laterals ($y = -27{,}9$ i $y = -22{,}1$) i uneix-les."
+          },
+          {
+            "apartat": null,
+            "titol": "Els dos braços oblics",
+            "cos": "Els altres dos braços són iguals al primer, però girats $120°$ i $240°$ al voltant de l'eix del prisma. Com que les seves direccions no són paral·leles als eixos X i Y, cal trobar a la planta les coordenades $(x, y)$ de cada vèrtex de la seva petjada (els rectangles de la planta) i aixecar-hi les altures, que són les mateixes que les del primer braç ($z$ de 5, 15,5 i 25 mm).\n\nFes servir el perfil per comprovar les altures: allà el braç de la dreta queda ocult darrere del prisma i els dos braços oblics es veuen inclinats."
+          },
+          {
+            "apartat": null,
+            "titol": "Visibilitat i acabat",
+            "cos": "La isometria mira des del costat de $+x$, $+y$, $+z$ (els semieixos positius de X i Y baixen cap a l'observador). Es veuen la cara superior de la base i les tres cares laterals de davant. El braç que surt cap a $+x$, $+y$ (el de baix a l'esquerra de la planta) queda **davant** del prisma, i el braç perpendicular a X (el de la dreta de la planta, que va cap a $-x$) queda **darrere**, parcialment tapat pel prisma.\n\nRemarca només les arestes vistes i deixa fines les línies auxiliars (rectangle envolupant, coordenades)."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2018-J/3A-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Isometria sense reducció a escala doble: base hexagonal de 50 mm de costat i 10 mm de gruix, prisma triangular de 30 mm de costat i 60 mm d'altura, i tres braços inclinats iguals a 120° entre ells; només línies vistes."}
+        ],
+        "nota": "Les mides s'han mesurat sobre les vistes (hexàgon de 25 mm, base de 5 mm, triangle de 15 mm i 30 mm d'altura són valors exactes; les dels braços són aproximades). Error típic: mesurar els vèrtexs de l'hexàgon en direccions que no són paral·leles als eixos."
+      }
+    },
+    {
+      "id": "dibuix-2018-J-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Perspectiva militar d'un tronc de con tallat per un pla inclinat amb dos buits",
+      "tema": "axonometria",
+      "temes_secundaris": ["corbes"],
+      "conceptes": ["perspectiva militar", "axonometria obliqua", "tronc de con", "secció el·líptica", "contorn aparent", "interpretació de vistes"],
+      "dificultat": 3,
+      "pagines": [15],
+      "enunciat": "Interpreteu el sòlid representat en planta i alçats, i, situant el punt *p-p′* en la posició *P* del paper, dibuixeu l'axonometria amb la terna proposada (militar sense reducció) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [4 punts: 1 punt per la superfície corba (con), 0,5 del qual correspondrà als contorns aparents; 1,5 punts per la base superior del tronc de con, i 1,5 punts pels buits de l'objecte]",
+      "figures": [
+        {"src": "img/dibuix/2018-J/3B.png", "peu": "Alçat, planta i perfil (girat 90°) del tronc de con, punt P i terna militar (X a 60° de l'horitzontal, X i Y a 90°, coeficients 1)"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Interpretar les vistes",
+            "cos": "- **Planta**: X cap avall, Y cap a la dreta. **Alçat**: a sobre, amb Y en horitzontal. **Perfil**: a la dreta de la planta, **girat 90°** (el con hi apareix ajagut, amb l'altura Z en horitzontal).\n- $p-p'$ és el **centre de la base** del con.\n\nEl sòlid és un **con recte** de base circular de radi $20\\ \\text{mm}$ i altura (fins al vèrtex) $40\\ \\text{mm}$; a cada altura $z$ el radi és $r = 20 - z/2$.\n\n- **Tall superior**: un pla perpendicular a l'alçat, que talla la generatriu esquerra a $z = 30$ ($y = -5$) i la dreta a $z = 20$ ($y = 10$). La base superior és, doncs, una **el·lipse**.\n- **Buit 1 (osca)**: entre les direccions a $-60°$ i $-30°$ de l'eix X (cap al costat $-Y$), amb el terra horitzontal a $z = 10$, on el con té radi 15 mm. Les parets són dos plans verticals que passen per l'eix; el buit arriba fins al tall superior.\n- **Buit 2 (ranura)**: entre les direccions a $15°$ i $60°$ de l'eix X (cap al costat $+Y$), entre $z = 5$ i $z = 10$, amb la paret interior cilíndrica de radi 15 mm i el terra horitzontal a $z = 5$ (corona entre 15 i 17,5 mm)."
+          },
+          {
+            "apartat": null,
+            "titol": "Propietat clau de la perspectiva militar",
+            "cos": "En la perspectiva militar, el pla horitzontal XY es dibuixa en **vertadera forma** (només girat; aquí X a 60° per sota de l'horitzontal cap a l'esquerra i Y a 90° de X), i les altures es dibuixen verticals sense reducció. Per tant:\n\n- **les circumferències horitzontals es dibuixen com a circumferències**: la base és una circumferència de radi $2 \\cdot 20 = 40\\ \\text{mm}$ amb centre a $P$;\n- un punt d'altura $z$ es troba dibuixant-ne la planta i pujant-lo $2z$ verticalment."
+          },
+          {
+            "apartat": null,
+            "titol": "Con i contorns aparents",
+            "cos": "1. Amb centre $P$ i radi $40\\ \\text{mm}$, dibuixa la base.\n2. El vèrtex (virtual) del con és sobre la vertical de $P$, a $2 \\cdot 40 = 80\\ \\text{mm}$.\n3. Les **generatrius de contorn aparent** són les tangents des del vèrtex a la circumferència de la base. Troba els punts de tangència amb l'arc capaç: circumferència de diàmetre (vèrtex–$P$), on talla la base.\n\nNomés es dibuixa el tros de cada generatriu de contorn entre la base i la base superior (el·lipse)."
+          },
+          {
+            "apartat": null,
+            "titol": "Base superior: el·lipse de la secció",
+            "cos": "El pla de tall conté la direcció X i té pendent en Y: $z = 26{,}7 - \\tfrac{2}{3}y$ (en mm reals). La secció és una el·lipse de:\n\n- eix major (al pla de simetria $x = 0$): de $(0, -5, 30)$ a $(0, 10, 20)$, longitud $\\approx 18\\ \\text{mm}$;\n- eix menor (horitzontal, paral·lel a X) pel centre $(0;\\ 2{,}5;\\ 25)$: semieix $\\sqrt{7{,}5^2 - 2{,}5^2} \\approx 7{,}07\\ \\text{mm}$.\n\nMètode pràctic: dibuixa la **planta de la secció** (una el·lipse de $15 \\times 14{,}1\\ \\text{mm}$ amb centre a $y = 2{,}5$, que en militar es dibuixa en vertadera forma, a escala doble) i puja cada punt la seva altura $2z$. Com a mínim, puja els extrems dels dos eixos i els punts de tangència amb els contorns aparents (que han de ser tangents a l'el·lipse). La solució oficial fa servir un paral·lelogram circumscrit a l'el·lipse com a construcció auxiliar."
+          },
+          {
+            "apartat": null,
+            "titol": "Buit 1: l'osca",
+            "cos": "- Dibuixa la circumferència auxiliar de radi $2 \\cdot 15 = 30\\ \\text{mm}$ amb el centre pujat $2 \\cdot 10 = 20\\ \\text{mm}$ (és la intersecció del con amb el pla $z = 10$, punts a la solució oficial).\n- Traça els dos radis a $-60°$ i $-30°$ de X: el sector circular entre ells és el terra de l'osca.\n- Les arestes exteriors de les parets són **generatrius** del con: uneix els extrems de l'arc amb el vèrtex del con i atura-les al pla de tall.\n- Les parets tallen el pla superior en dos segments que van des del punt de l'eix sobre el pla de tall ($z = 26{,}7$) fins a l'el·lipse: a la solució oficial formen la \"V\" que retalla l'el·lipse."
+          },
+          {
+            "apartat": null,
+            "titol": "Buit 2: la ranura",
+            "cos": "- Dibuixa les circumferències auxiliars de radi $2 \\cdot 15 = 30\\ \\text{mm}$ a altura $20\\ \\text{mm}$ i de radi $2 \\cdot 17{,}5 = 35\\ \\text{mm}$ a altura $10\\ \\text{mm}$ (són al con).\n- Entre les direccions a $15°$ i $60°$ de X, l'arc superior (radi 30, altura 20) i l'arc inferior (radi 35, altura 10) limiten la ranura a la superfície del con.\n- Els costats són trossos de generatrius entre les dues circumferències.\n- Dins la ranura es veu el terra (corona a l'altura 10, entre radis 30 i 35) i la paret cilíndrica interior."
+          },
+          {
+            "apartat": null,
+            "titol": "Visibilitat i acabat",
+            "cos": "La militar mira des de dalt: es veu tota la base superior (el·lipse) i la part del con que dona cap a l'observador, limitada pels contorns aparents. Tots dos buits queden al costat vist. Remarca només les línies vistes; deixa fines les circumferències auxiliars, el vèrtex i les construccions de l'el·lipse."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2018-J/3B-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Perspectiva militar a escala doble: base circular de radi 40 mm, contorns aparents tangents des del vèrtex (80 mm sobre P), base superior el·líptica (secció d'eixos reals 18 × 14,1 mm, que a escala doble surten 36 × 28,3 mm), obtinguda pujant la planta de la secció, osca amb terra a 20 mm i ranura entre 10 i 20 mm d'altura; només línies vistes."}
+        ],
+        "nota": "Error típic: dibuixar la base superior com una circumferència. És una el·lipse inclinada, i no és en un pla horitzontal, de manera que en militar no es veu en vertadera forma. Les mides s'han llegit de les vistes (radi 20 mm, altura del con 40 mm)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "examen": {
+    "id": "mates-2025-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2025,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/mates/2025-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2025-J-solucio.pdf",
+    "estructura": "4 exercicis obligatoris de 2,5 punts cadascun. Els exercicis 1, 2 i 3 s'han de respondre sencers. A l'exercici 4 cal triar UNA de les dues opcions (A o B). Es pot utilitzar calculadora (no programable ni amb capacitat d'emmagatzemar o transmetre dades)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2025-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Funció racional: talls, asímptotes i rectes tangents paral·leles",
+      "tema": "funcions",
+      "temes_secundaris": ["derivades"],
+      "conceptes": ["funció racional", "asímptota vertical", "asímptota obliqua", "recta tangent", "punts de tall"],
+      "dificultat": 2,
+      "pagines": [2, 3],
+      "enunciat": "Considereu la funció $f(x) = \\dfrac{x^2 - 2x}{x - 1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Determineu els talls de la corba $y = f(x)$ amb els eixos de coordenades, i les equacions de les seves possibles asímptotes verticals, horitzontals i obliqües.", "punts": 1},
+        {"id": "b", "enunciat": "Calculeu les equacions de les rectes tangents a la corba $y = f(x)$ en els punts $x = 0$ i $x = 2$. Aquestes dues rectes són paral·leles? Justifiqueu la resposta.", "punts": 1},
+        {"id": "c", "enunciat": "Hi ha algun punt on la recta tangent a $f(x)$ tingui pendent 1? En cas afirmatiu, trobeu-lo.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Funció: $f(x) = \\dfrac{x^2 - 2x}{x - 1}$. És una funció racional: el denominador s'anul·la a $x = 1$, per tant el domini és $\\mathbb{R} \\setminus \\{1\\}$.\n- Busquem: talls amb els eixos, asímptotes (a), rectes tangents a $x=0$ i $x=2$ (b) i si hi ha algun punt amb $f'(x) = 1$ (c)."},
+          {"apartat": "a", "titol": "Talls amb els eixos", "cos": "**Eix d'ordenades** ($x = 0$): $f(0) = \\dfrac{0}{-1} = 0$, punt $(0, 0)$.\n\n**Eix d'abscisses** ($y = 0$): una fracció és zero quan ho és el numerador (i no el denominador):\n\n$$x^2 - 2x = x(x - 2) = 0 \\;\\Rightarrow\\; x = 0,\\ x = 2$$\n\nCap dels dos anul·la el denominador, així que els talls són **$(0, 0)$ i $(2, 0)$**."},
+          {"apartat": "a", "titol": "Asímptota vertical", "cos": "Les asímptotes verticals d'una funció racional es busquen als punts que anul·len el denominador: $x = 1$. Com que el numerador val $1 - 2 = -1 \\neq 0$, el límit és infinit:\n\n$$\\lim_{x \\to 1^+} \\frac{x^2 - 2x}{x - 1} = \\frac{-1}{0^+} = -\\infty, \\qquad \\lim_{x \\to 1^-} \\frac{x^2 - 2x}{x - 1} = \\frac{-1}{0^-} = +\\infty$$\n\nPer tant hi ha una **asímptota vertical $x = 1$**."},
+          {"apartat": "a", "titol": "Asímptota horitzontal o obliqua", "cos": "El numerador té grau 2 i el denominador grau 1: el grau del numerador supera en **una unitat** el del denominador, de manera que $f(x) \\to \\pm\\infty$ quan $x \\to \\pm\\infty$ (**no hi ha asímptota horitzontal**) però sí que hi ha una **asímptota obliqua** $y = mx + n$:\n\n$$m = \\lim_{x \\to \\infty} \\frac{f(x)}{x} = \\lim_{x \\to \\infty} \\frac{x^2 - 2x}{x^2 - x} = 1$$\n\n$$n = \\lim_{x \\to \\infty} \\left(f(x) - x\\right) = \\lim_{x \\to \\infty} \\frac{x^2 - 2x - x^2 + x}{x - 1} = \\lim_{x \\to \\infty} \\frac{-x}{x - 1} = -1$$\n\n(El mateix surt quan $x \\to -\\infty$.) L'asímptota obliqua és **$y = x - 1$**.\n\nTambé es pot obtenir fent la divisió de polinomis: $\\dfrac{x^2 - 2x}{x - 1} = x - 1 - \\dfrac{1}{x - 1}$, i el darrer terme tendeix a 0."},
+          {"apartat": "b", "titol": "Derivada de f (regla del quocient)", "cos": "Fem servir $\\left(\\dfrac{u}{v}\\right)' = \\dfrac{u'v - uv'}{v^2}$ amb $u = x^2 - 2x$, $u' = 2x - 2$, $v = x - 1$, $v' = 1$:\n\n$$f'(x) = \\frac{(2x - 2)(x - 1) - (x^2 - 2x)}{(x - 1)^2} = \\frac{2x^2 - 4x + 2 - x^2 + 2x}{(x - 1)^2} = \\frac{x^2 - 2x + 2}{(x - 1)^2}$$"},
+          {"apartat": "b", "titol": "Recta tangent a x = 0", "cos": "La recta tangent a $x = a$ és $y - f(a) = f'(a)(x - a)$.\n\n$f(0) = 0$ i $f'(0) = \\dfrac{0 - 0 + 2}{(-1)^2} = 2$, per tant:\n\n$$y - 0 = 2(x - 0) \\;\\Rightarrow\\; \\mathbf{y = 2x}$$"},
+          {"apartat": "b", "titol": "Recta tangent a x = 2 i paral·lelisme", "cos": "$f(2) = \\dfrac{4 - 4}{1} = 0$ i $f'(2) = \\dfrac{4 - 4 + 2}{1^2} = 2$, per tant:\n\n$$y - 0 = 2(x - 2) \\;\\Rightarrow\\; \\mathbf{y = 2x - 4}$$\n\nDues rectes són paral·leles si tenen el mateix pendent. Aquí $f'(0) = f'(2) = 2$ i les ordenades a l'origen són diferents (0 i $-4$), així que **sí, són paral·leles** (i no coincidents)."},
+          {"apartat": "c", "titol": "Equació f'(x) = 1", "cos": "El pendent de la recta tangent és el valor de la derivada. Imposem $f'(x) = 1$:\n\n$$\\frac{x^2 - 2x + 2}{(x - 1)^2} = 1 \\;\\Rightarrow\\; x^2 - 2x + 2 = x^2 - 2x + 1 \\;\\Rightarrow\\; 2 = 1$$\n\nÉs una igualtat impossible: l'equació **no té solució**. Per tant, **no hi ha cap punt** on la recta tangent tingui pendent 1.\n\nInterpretació: $f'(x) = \\dfrac{(x-1)^2 + 1}{(x-1)^2} = 1 + \\dfrac{1}{(x-1)^2} > 1$ sempre; el pendent s'acosta a 1 (el de l'asímptota obliqua) quan $x \\to \\pm\\infty$, però no hi arriba mai."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Talls: $(0,0)$ i $(2,0)$. A.V.: $x = 1$. No hi ha A.H. A.O.: $y = x - 1$."},
+          {"apartat": "b", "valor": "$f'(x) = \\dfrac{x^2-2x+2}{(x-1)^2}$; tangents $y = 2x$ i $y = 2x - 4$: són paral·leles (pendent 2)."},
+          {"apartat": "c", "valor": "No hi ha cap punt amb pendent 1 ($f'(x) = 1$ porta a $2 = 1$)."}
+        ],
+        "nota": "Error típic a l'apartat a): dir que hi ha asímptota horitzontal. Quan el grau del numerador és exactament una unitat més gran que el del denominador, hi ha asímptota obliqua i no horitzontal."
+      }
+    },
+    {
+      "id": "mates-2025-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Discussió d'un sistema amb paràmetre i solucions amb xy = 10",
+      "tema": "sistemes",
+      "temes_secundaris": ["matrius"],
+      "conceptes": ["teorema de Rouché-Fröbenius", "discussió de sistemes", "rang", "determinant", "sistema compatible indeterminat"],
+      "dificultat": 2,
+      "pagines": [4, 5],
+      "enunciat": "Considereu el sistema d'equacions lineals següent:\n\n$$\\left.\\begin{aligned} y - z &= p + 3 \\\\ p^2 x - z &= 5 \\\\ x - y &= 3 \\end{aligned}\\right\\}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $p$.", "punts": 1.25},
+        {"id": "b", "enunciat": "Resoleu el sistema per al cas $p = -1$.", "punts": 0.5},
+        {"id": "c", "enunciat": "Per al cas $p = -1$, hi ha alguna solució que compleixi, a més, $xy = 10$? En cas afirmatiu, indiqueu quantes n'hi ha i trobeu-les totes.", "punts": 0.75}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Matriu de coeficients i matriu ampliada", "cos": "Ordenem les incògnites $x, y, z$ i escrivim la matriu de coeficients $A$ i l'ampliada $A'$:\n\n$$A' = \\left(\\begin{array}{ccc|c} 0 & 1 & -1 & p + 3 \\\\ p^2 & 0 & -1 & 5 \\\\ 1 & -1 & 0 & 3 \\end{array}\\right)$$\n\nFarem servir el **teorema de Rouché-Fröbenius**: el sistema és compatible si $\\text{rang}(A) = \\text{rang}(A')$, i determinat si aquest rang és igual al nombre d'incògnites (3). Com que $A$ depèn de $p$, estudiem quan el seu determinant és zero."},
+          {"apartat": "a", "titol": "Determinant de A i valors crítics", "cos": "Desenvolupem per la primera fila:\n\n$$|A| = \\begin{vmatrix} 0 & 1 & -1 \\\\ p^2 & 0 & -1 \\\\ 1 & -1 & 0 \\end{vmatrix} = 0 \\cdot (0 - 1) - 1 \\cdot (0 + 1) + (-1) \\cdot (-p^2 - 0) = -1 + p^2$$\n\n$$|A| = p^2 - 1 = 0 \\;\\Rightarrow\\; p = 1 \\ \\text{o} \\ p = -1$$"},
+          {"apartat": "a", "titol": "Cas p ≠ 1 i p ≠ −1", "cos": "$|A| \\neq 0$, per tant $\\text{rang}(A) = 3 = \\text{rang}(A')$ (l'ampliada no pot tenir rang més gran que 3) = nombre d'incògnites.\n\n**Sistema compatible determinat** (una única solució)."},
+          {"apartat": "a", "titol": "Cas p = 1", "cos": "Ara $|A| = 0$, i com que el menor $\\begin{vmatrix} 0 & 1 \\\\ 1 & 0 \\end{vmatrix} = -1 \\neq 0$, tenim $\\text{rang}(A) = 2$.\n\nL'ampliada és $\\left(\\begin{array}{ccc|c} 0 & 1 & -1 & 4 \\\\ 1 & 0 & -1 & 5 \\\\ 1 & -1 & 0 & 3 \\end{array}\\right)$. Prenem el menor format per les columnes de $x$, $y$ i termes independents:\n\n$$\\begin{vmatrix} 0 & 1 & 4 \\\\ 1 & 0 & 5 \\\\ 1 & -1 & 3 \\end{vmatrix} = 0 - 1\\cdot(3 - 5) + 4 \\cdot(-1 - 0) = 2 - 4 = -2 \\neq 0$$\n\nAixí $\\text{rang}(A') = 3 \\neq \\text{rang}(A) = 2$: **sistema incompatible** (no té solució).\n\n(Es veu també directament: sumant la 1a i la 3a equació surt $x - z = 7$, que contradiu la 2a, $x - z = 5$.)"},
+          {"apartat": "a", "titol": "Cas p = −1", "cos": "El sistema queda:\n\n$$\\left.\\begin{aligned} y - z &= 2 \\\\ x - z &= 5 \\\\ x - y &= 3 \\end{aligned}\\right\\}$$\n\nLa segona equació és la **suma** de la primera i la tercera ($(y - z) + (x - y) = x - z$ i $2 + 3 = 5$), per tant és redundant. Les altres dues són independents (el menor $\\begin{vmatrix} 0 & 1 \\\\ 1 & 0 \\end{vmatrix} \\neq 0$), així que $\\text{rang}(A) = \\text{rang}(A') = 2 < 3$.\n\n**Sistema compatible indeterminat** amb $3 - 2 = 1$ grau de llibertat (infinites solucions)."},
+          {"apartat": "b", "titol": "Resolució per a p = −1", "cos": "Ens quedem amb les dues equacions independents:\n\n$$\\left.\\begin{aligned} y - z &= 2 \\\\ x - y &= 3 \\end{aligned}\\right\\}$$\n\nCom que hi ha un grau de llibertat, prenem una incògnita com a paràmetre: $y = \\lambda$. Llavors:\n\n- de la 1a: $z = y - 2 = \\lambda - 2$\n- de la 3a: $x = y + 3 = \\lambda + 3$\n\n$$\\mathbf{(x, y, z) = (\\lambda + 3,\\ \\lambda,\\ \\lambda - 2), \\quad \\lambda \\in \\mathbb{R}}$$\n\nComprovació a la 2a equació: $x - z = (\\lambda + 3) - (\\lambda - 2) = 5$ ✓."},
+          {"apartat": "c", "titol": "Imposem xy = 10", "cos": "Substituïm la solució general de l'apartat b) a la condició $xy = 10$:\n\n$$(\\lambda + 3)\\lambda = 10 \\;\\Rightarrow\\; \\lambda^2 + 3\\lambda - 10 = 0$$\n\n$$\\lambda = \\frac{-3 \\pm \\sqrt{9 + 40}}{2} = \\frac{-3 \\pm 7}{2} \\;\\Rightarrow\\; \\lambda = 2 \\ \\text{o} \\ \\lambda = -5$$"},
+          {"apartat": "c", "titol": "Les dues solucions", "cos": "- $\\lambda = 2$: $(x, y, z) = (5, 2, 0)$. Comprovació: $xy = 5 \\cdot 2 = 10$ ✓\n- $\\lambda = -5$: $(x, y, z) = (-2, -5, -7)$. Comprovació: $xy = (-2)(-5) = 10$ ✓\n\nHi ha **exactament dues solucions**: **$(5, 2, 0)$ i $(-2, -5, -7)$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$|A| = p^2 - 1$. Si $p \\neq \\pm 1$: SCD. Si $p = 1$: SI. Si $p = -1$: SCI (1 grau de llibertat)."},
+          {"apartat": "b", "valor": "$(x, y, z) = (\\lambda + 3, \\lambda, \\lambda - 2)$, $\\lambda \\in \\mathbb{R}$"},
+          {"apartat": "c", "valor": "Dues solucions: $(5, 2, 0)$ i $(-2, -5, -7)$"}
+        ],
+        "nota": "La discussió també es pot fer per Gauss: la condició $p^2 = 1$ apareix en esglaonar. A l'apartat b) es pot triar qualsevol incògnita com a paràmetre; la solució tindrà un aspecte diferent però representarà la mateixa recta de solucions."
+      }
+    },
+    {
+      "id": "mates-2025-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Peces defectuoses: probabilitat total, binomial i màxim d'una funció",
+      "tema": "probabilitat",
+      "temes_secundaris": ["estadistica", "derivades"],
+      "conceptes": ["probabilitat total", "distribució binomial", "extrems absoluts", "segona derivada"],
+      "dificultat": 2,
+      "pagines": [6, 7],
+      "enunciat": "Una empresa produeix dos tipus de peces, de ferro i d'acer. El $60\\ \\%$ de la producció total correspon a peces de ferro i la resta són d'acer. Sabem que el $95\\ \\%$ de les peces de ferro produïdes no tenen cap defecte, mentre que el $3\\ \\%$ de les peces d'acer són defectuoses.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Si agafem una peça a l'atzar, quina és la probabilitat que sigui defectuosa?", "punts": 0.75},
+        {"id": "b", "enunciat": "L'empresa aviat diversificarà la producció i començarà a produir també peces de titani, que es vendran en paquets de 5. Si la probabilitat que una peça de titani sigui defectuosa és un valor desconegut $p$, i cada peça és defectuosa independentment de les altres, comproveu que l'expressió que ens dona la probabilitat que en un paquet de 5 peces n'hi hagi exactament 4 de defectuoses (en funció de $p$) és $f(p) = 5(p^4 - p^5)$.", "punts": 0.75},
+        {"id": "c", "enunciat": "Considereu la funció $f(p)$ de l'apartat anterior. Determineu el valor màxim que pren $f(p)$ quan $p \\geq 0$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "Definim els successos: $F$ = «la peça és de ferro», $A$ = «la peça és d'acer», $D$ = «la peça és defectuosa».\n\n- $P(F) = 0{,}6$, $P(A) = 1 - 0{,}6 = 0{,}4$\n- El $95\\ \\%$ de les de ferro **no** tenen defecte, per tant $P(D \\mid F) = 1 - 0{,}95 = 0{,}05$\n- $P(D \\mid A) = 0{,}03$\n\nAtenció: la dada del ferro és de peces **bones** i la de l'acer de peces **defectuoses**; cal passar-les a la mateixa cosa."},
+          {"apartat": "a", "titol": "Llei de les probabilitats totals", "cos": "Una peça defectuosa pot ser de ferro o d'acer (successos incompatibles que cobreixen tots els casos). Per la **llei de probabilitats totals** (o un arbre de probabilitats):\n\n$$P(D) = P(D \\mid F)\\,P(F) + P(D \\mid A)\\,P(A)$$\n\n$$P(D) = 0{,}05 \\cdot 0{,}6 + 0{,}03 \\cdot 0{,}4 = 0{,}030 + 0{,}012 = 0{,}042$$\n\nResultat: **$P(D) = 0{,}042$** (un $4{,}2\\ \\%$ de les peces són defectuoses)."},
+          {"apartat": "b", "titol": "Model binomial", "cos": "Sigui $X$ = nombre de peces defectuoses en un paquet de 5. Cada peça és defectuosa amb probabilitat $p$ independentment de les altres, i comptem quantes ho són: això és una **distribució binomial** $X \\sim B(5, p)$:\n\n$$P(X = k) = \\binom{n}{k} p^k (1 - p)^{n - k}$$"},
+          {"apartat": "b", "titol": "Probabilitat de 4 defectuoses", "cos": "Amb $n = 5$ i $k = 4$:\n\n$$P(X = 4) = \\binom{5}{4} p^4 (1 - p)^1 = \\frac{5!}{4!\\,1!} p^4 (1 - p) = 5p^4(1 - p) = 5(p^4 - p^5)$$\n\nque és l'expressió $f(p)$ de l'enunciat ✓.\n\n**Raonament directe** (sense la fórmula): si n'hi ha 4 de defectuoses, n'hi ha exactament 1 de bona. Que una peça concreta sigui la bona i les altres quatre defectuoses té probabilitat $(1 - p)p^4$; i hi ha 5 maneres de triar quina és la bona. Per tant, $5(1 - p)p^4$."},
+          {"apartat": "c", "titol": "Punts crítics", "cos": "Per trobar el màxim d'una funció derivable, busquem on s'anul·la la derivada:\n\n$$f'(p) = 5(4p^3 - 5p^4) = 5p^3(4 - 5p) = 0 \\;\\Rightarrow\\; p = 0 \\ \\text{o} \\ p = \\frac{4}{5}$$"},
+          {"apartat": "c", "titol": "Monotonia i tipus d'extrem", "cos": "Estudiem el signe de $f'(p) = 5p^3(4 - 5p)$ per a $p \\geq 0$:\n\n| interval | $(0, \\tfrac45)$ | $(\\tfrac45, +\\infty)$ |\n|---|---|---|\n| signe de $f'$ | $+$ | $-$ |\n| $f$ | creix | decreix |\n\nTambé amb la segona derivada: $f''(p) = 5(12p^2 - 20p^3)$, i\n\n$$f''\\left(\\tfrac45\\right) = 5\\left(12 \\cdot \\tfrac{16}{25} - 20 \\cdot \\tfrac{64}{125}\\right) = 5\\left(\\tfrac{192}{25} - \\tfrac{256}{25}\\right) = -\\tfrac{64}{5} < 0$$\n\nper tant a $p = \\frac45$ hi ha un màxim local. Com que la funció creix en tot $(0, \\frac45)$ i decreix en tot $(\\frac45, +\\infty)$, aquest màxim és **absolut** a $p \\geq 0$ (a $p = 0$ val $f(0) = 0$, que és més petit)."},
+          {"apartat": "c", "titol": "Valor màxim", "cos": "$$f\\left(\\tfrac45\\right) = 5\\left(\\left(\\tfrac45\\right)^4 - \\left(\\tfrac45\\right)^5\\right) = 5 \\cdot \\left(\\tfrac45\\right)^4\\left(1 - \\tfrac45\\right) = 5 \\cdot \\frac{256}{625} \\cdot \\frac15 = \\frac{256}{625} = 0{,}4096$$\n\nResultat: el valor màxim és **$f(4/5) = 256/625 \\approx 0{,}41$**.\n\nInterpretació: la probabilitat de tenir exactament 4 peces defectuoses en un paquet de 5 és com a molt d'un $41\\ \\%$, i s'assoleix quan $p = 0{,}8$ (és lògic: el valor més probable de $X$ és $np = 4$)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$P(D) = 0{,}042$"},
+          {"apartat": "b", "valor": "$X \\sim B(5, p)$: $P(X = 4) = \\binom54 p^4(1-p) = 5(p^4 - p^5)$"},
+          {"apartat": "c", "valor": "Màxim a $p = 4/5$: $f(4/5) = 256/625 \\approx 0{,}41$"}
+        ],
+        "nota": "Error típic a l'apartat a): fer servir $0{,}95$ com a probabilitat de ser defectuosa per a les de ferro; el 95 % és de les peces sense defecte. A l'apartat c), com que $p$ és una probabilitat, en realitat només té sentit $0 \\leq p \\leq 1$; el resultat és el mateix."
+      }
+    },
+    {
+      "id": "mates-2025-J-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cost d'una vela semiparabòlica: àrees entre corbes",
+      "tema": "integrals",
+      "temes_secundaris": [],
+      "conceptes": ["integral definida", "àrea entre corbes", "regla de Barrow", "aplicació de la integral"],
+      "dificultat": 2,
+      "pagines": [8],
+      "enunciat": "La vela major d'un veler té forma semiparabòlica i està delimitada per les gràfiques de $f(x) = -x^2 + 25$, $y = 0$ i $x = 0$, tal com s'indica a la figura.\n\nLa vela té dues parts separades per la recta $y = 9$. Per a construir-la, s'empra un teixit de niló a la part superior, que costa 50 €/u², i un teixit de polièster a la part inferior, que costa 70 €/u². Calculeu el cost total del material que es necessita per a construir aquesta vela.",
+      "figures": [{"src": "img/mates/2025-J/e4-a.png", "peu": "Vela delimitada per $f(x) = -x^2 + 25$, els eixos i dividida per la recta $y = 9$ en regió superior i inferior"}],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Plantejament", "cos": "El cost total és la suma de (àrea de cada regió) × (preu del seu teixit):\n\n$$C = 50 \\cdot A_\\text{sup} + 70 \\cdot A_\\text{inf}$$\n\nPer tant cal calcular les dues àrees amb integrals definides. Primer trobem els punts de tall que fan de límits d'integració."},
+          {"apartat": null, "titol": "Punts de tall", "cos": "- Paràbola amb l'eix $OX$ ($y = 0$), part positiva: $-x^2 + 25 = 0 \\Rightarrow x^2 = 25 \\Rightarrow x = 5$.\n- Paràbola amb la recta $y = 9$: $-x^2 + 25 = 9 \\Rightarrow x^2 = 16 \\Rightarrow x = 4$.\n\nAixí, la regió superior va de $x = 0$ a $x = 4$, i la inferior de $x = 0$ a $x = 5$."},
+          {"apartat": null, "titol": "Àrea de la regió superior", "cos": "La regió superior està entre la paràbola (a dalt) i la recta $y = 9$ (a baix), per a $0 \\leq x \\leq 4$. L'àrea entre dues corbes és la integral de (corba de dalt − corba de baix):\n\n$$A_\\text{sup} = \\int_0^4 \\left[(-x^2 + 25) - 9\\right] dx = \\int_0^4 (16 - x^2)\\, dx = \\left[16x - \\frac{x^3}{3}\\right]_0^4 = 64 - \\frac{64}{3} = \\frac{128}{3}\\ \\text{u}^2$$"},
+          {"apartat": null, "titol": "Àrea de la regió inferior", "cos": "La regió inferior té per sostre la recta $y = 9$ entre $x = 0$ i $x = 4$ (un rectangle $4 \\times 9$), i la paràbola entre $x = 4$ i $x = 5$:\n\n$$A_\\text{inf} = \\int_0^4 9\\, dx + \\int_4^5 (-x^2 + 25)\\, dx = 36 + \\left[-\\frac{x^3}{3} + 25x\\right]_4^5$$\n\n$$\\left[-\\frac{x^3}{3} + 25x\\right]_4^5 = \\left(-\\frac{125}{3} + 125\\right) - \\left(-\\frac{64}{3} + 100\\right) = \\frac{250}{3} - \\frac{236}{3} = \\frac{14}{3}$$\n\n$$A_\\text{inf} = 36 + \\frac{14}{3} = \\frac{122}{3}\\ \\text{u}^2$$"},
+          {"apartat": null, "titol": "Comprovació amb l'àrea total", "cos": "L'àrea total sota la paràbola entre $x = 0$ i $x = 5$ és\n\n$$A_\\text{total} = \\int_0^5 (-x^2 + 25)\\, dx = \\left[-\\frac{x^3}{3} + 25x\\right]_0^5 = -\\frac{125}{3} + 125 = \\frac{250}{3}\\ \\text{u}^2$$\n\ni efectivament $\\dfrac{128}{3} + \\dfrac{122}{3} = \\dfrac{250}{3}$ ✓. (Una altra manera: calcular $A_\\text{total}$ i $A_\\text{inf}$ i obtenir $A_\\text{sup}$ per diferència.)"},
+          {"apartat": null, "titol": "Cost total", "cos": "$$C = \\frac{128}{3} \\cdot 50 + \\frac{122}{3} \\cdot 70 = \\frac{6\\,400 + 8\\,540}{3} = \\frac{14\\,940}{3} = 4\\,980$$\n\nResultat: el cost total del material és de **4 980 €**."}
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "$A_\\text{sup} = \\frac{128}{3}\\ \\text{u}^2$, $A_\\text{inf} = \\frac{122}{3}\\ \\text{u}^2$; cost total = 4 980 €"}
+        ],
+        "nota": "La solució oficial calcula $A_\\text{total}$ i $A_\\text{inf}$ i obté $A_\\text{sup}$ per diferència; aquí s'ha calculat directament i s'ha fet servir l'àrea total com a comprovació. Error típic: calcular l'àrea inferior com $\\int_0^5 9\\,dx = 45$, oblidant que entre $x = 4$ i $x = 5$ la paràbola queda per sota de $y = 9$."
+      }
+    },
+    {
+      "id": "mates-2025-J-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Pla perpendicular per dos punts i recta d'equidistància (mediatriu)",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": ["equació del pla", "plans perpendiculars", "pla mediador", "equació paramètrica de la recta", "producte vectorial"],
+      "dificultat": 2,
+      "pagines": [8],
+      "enunciat": "Considereu el pla $\\pi$ d'equació $x + y = 0$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Calculeu l'equació del pla $\\pi'$ que és perpendicular a $\\pi$ i conté els punts $P = (1, -1, 2)$ i $Q = (3, -3, 6)$.", "punts": 1},
+        {"id": "b", "enunciat": "Calculeu l'equació paramètrica de la recta continguda en $\\pi'$ i que conté els punts de $\\pi'$ a la mateixa distància de $P$ que de $Q$.", "punts": 1.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Pla $\\pi: x + y = 0$, amb vector normal $\\vec n_\\pi = (1, 1, 0)$.\n- Punts $P = (1, -1, 2)$ i $Q = (3, -3, 6)$.\n- Busquem: el pla $\\pi'$ (a) i la recta de $\\pi'$ formada pels punts equidistants de $P$ i $Q$ (b)."},
+          {"apartat": "a", "titol": "Dos vectors directors de π'", "cos": "Per determinar un pla necessitem un punt i dos vectors directors no paral·lels.\n\n- Com que $\\pi'$ conté $P$ i $Q$, conté el vector $\\overrightarrow{PQ} = Q - P = (2, -2, 4)$, o un de proporcional més senzill, $(1, -1, 2)$.\n- Com que $\\pi'$ és **perpendicular** a $\\pi$, el vector normal de $\\pi$, $\\vec n_\\pi = (1, 1, 0)$, és paral·lel a $\\pi'$: és un altre vector director.\n\nNo són proporcionals, així que determinen el pla."},
+          {"apartat": "a", "titol": "Equació del pla π'", "cos": "Un punt $X = (x, y, z)$ és de $\\pi'$ si $\\overrightarrow{PX}$, $(1, 1, 0)$ i $(1, -1, 2)$ són linealment dependents, és a dir, si el determinant és zero:\n\n$$\\begin{vmatrix} x - 1 & y + 1 & z - 2 \\\\ 1 & 1 & 0 \\\\ 1 & -1 & 2 \\end{vmatrix} = (x - 1)(2 - 0) - (y + 1)(2 - 0) + (z - 2)(-1 - 1) = 0$$\n\n$$2x - 2 - 2y - 2 - 2z + 4 = 0 \\;\\Rightarrow\\; 2x - 2y - 2z = 0$$\n\nSimplificant: **$\\pi': x - y - z = 0$**.\n\nComprovació: $P$: $1 + 1 - 2 = 0$ ✓; $Q$: $3 + 3 - 6 = 0$ ✓; perpendicularitat: $(1, -1, -1) \\cdot (1, 1, 0) = 0$ ✓."},
+          {"apartat": "b", "titol": "Pla mediador de PQ", "cos": "Els punts de l'espai que equidisten de $P$ i $Q$ formen el **pla mediador** del segment $PQ$: el pla perpendicular a $\\overrightarrow{PQ}$ que passa pel seu punt mitjà.\n\n$$M = \\frac{P + Q}{2} = \\frac{(4, -4, 8)}{2} = (2, -2, 4)$$\n\nAmb vector normal $(1, -1, 2)$: $x - y + 2z = D$, i imposant que passi per $M$: $D = 2 - (-2) + 2 \\cdot 4 = 12$.\n\n$$x - y + 2z = 12$$\n\n(El mateix s'obté imposant $d(X, P)^2 = d(X, Q)^2$ i simplificant.)"},
+          {"apartat": "b", "titol": "Recta intersecció amb π'", "cos": "Els punts **de $\\pi'$** equidistants de $P$ i $Q$ són els de la intersecció dels dos plans:\n\n$$\\left.\\begin{aligned} x - y - z &= 0 \\\\ x - y + 2z &= 12 \\end{aligned}\\right\\}$$\n\nRestant la primera equació de la segona: $3z = 12 \\Rightarrow z = 4$. Llavors $x - y = 4$. Prenent $y = k$ com a paràmetre, $x = k + 4$:\n\n$$\\mathbf{(x, y, z) = (4, 0, 4) + k\\,(1, 1, 0), \\quad k \\in \\mathbb{R}}$$\n\nés a dir, $x = 4 + k$, $y = k$, $z = 4$."},
+          {"apartat": "b", "titol": "Comprovació", "cos": "- El punt mitjà $M = (2, -2, 4)$ és de la recta ($k = -2$) ✓.\n- El vector director $(1, 1, 0)$ és perpendicular a $\\overrightarrow{PQ} \\sim (1, -1, 2)$: $1 - 1 + 0 = 0$ ✓.\n- Per exemple, $(4, 0, 4)$: $d^2$ a $P$ $= 9 + 1 + 4 = 14$ i a $Q$ $= 1 + 9 + 4 = 14$ ✓."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$\\pi': x - y - z = 0$"},
+          {"apartat": "b", "valor": "$(x, y, z) = (4, 0, 4) + k(1, 1, 0)$, $k \\in \\mathbb{R}$"}
+        ],
+        "nota": "La recta demanada és la mediatriu del segment $PQ$ dins del pla $\\pi'$. Error típic: donar només el pla mediador (que conté tots els punts de l'espai equidistants), sense intersecar-lo amb $\\pi'$."
+      }
+    }
+  ]
+}

@@ -1,0 +1,742 @@
+{
+  "examen": {
+    "id": "fisica-2021-J",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2021,
+    "convocatoria": "juny",
+    "serie": "2",
+    "pdf_examen": "pdfs/fisica/2021-J-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2021-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels vuit problemes (P1–P8). Cada problema val 2,5 punts (dos apartats d'1,25 punts). Si es responen més de quatre problemes, només es valoren els quatre primers."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2021-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Tercera llei de Kepler i massa del Sol a partir de les òrbites dels planetes",
+      "tema": "gravitacio",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "tercera llei de kepler",
+        "llei de gravitació universal",
+        "força centrípeta",
+        "moviment circular uniforme",
+        "massa del sol"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Gràcies a les valuoses dades sobre les posicions dels astres que Tycho Brahe va recollir al llarg de la seva vida, Johannes Kepler va poder formular les seves famoses tres lleis.\n\n| Planeta | Radi de l'òrbita ($10^{9}\\ \\text{m}$) | Període (anys) |\n|---|---|---|\n| Mercuri | $57{,}90$ | $0{,}240\\,8$ |\n| Venus | $108{,}2$ | $0{,}615\\,2$ |\n| Terra | $149{,}6$ | $1{,}000$ |\n| Mart | $228{,}0$ | $1{,}881$ |\n\nDada: $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Deduïu la tercera llei de Kepler a partir de la segona llei de Newton i de la llei de gravitació universal, suposant que els planetes descriuen moviments circulars uniformes.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "A partir de les dades de la taula, determineu la massa del Sol.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$\n- Òrbita de la Terra: $r = 149{,}6 \\times 10^{9}\\ \\text{m}$, $T = 1{,}000\\ \\text{any} = 365 \\cdot 24 \\cdot 3600\\ \\text{s} = 3{,}154 \\times 10^{7}\\ \\text{s}$\n- Incògnites: la relació entre $T$ i $r$ (tercera llei de Kepler) i la massa del Sol $M_\\text{S}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Acceleració d'un moviment circular uniforme",
+            "cos": "Si el planeta (massa $m$) fa un moviment circular uniforme de radi $r$ i període $T$, la seva velocitat és constant en mòdul, $v = \\dfrac{2\\pi r}{T}$, i l'única acceleració que té és la **centrípeta**:\n\n$$a_\\text{N} = \\frac{v^2}{r} = \\left(\\frac{2\\pi}{T}\\right)^2 r$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "La gravetat fa de força centrípeta",
+            "cos": "L'única força sobre el planeta és l'atracció gravitatòria del Sol, dirigida cap al centre de l'òrbita:\n\n$$F = G\\,\\frac{M_\\text{S}\\, m}{r^2}$$\n\nPer la segona llei de Newton, $F = m\\,a_\\text{N}$: **la força gravitatòria fa de força centrípeta**.\n\n$$G\\,\\frac{M_\\text{S}\\, m}{r^2} = m \\left(\\frac{2\\pi}{T}\\right)^2 r$$\n\nLa massa del planeta se simplifica. Aïllant $T^2$:\n\n$$\\boxed{T^2 = \\frac{4\\pi^2}{G\\,M_\\text{S}}\\, r^3} \\qquad\\text{o bé}\\qquad \\frac{r^3}{T^2} = \\frac{G\\,M_\\text{S}}{4\\pi^2}$$\n\nAquesta és la **tercera llei de Kepler** per a òrbites circulars: el quadrat del període és proporcional al cub del radi de l'òrbita, amb una constant que només depèn de la massa del Sol (és la mateixa per a tots els planetes)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa del Sol amb les dades de la Terra",
+            "cos": "Aïllem $M_\\text{S}$ de la llei anterior i usem les dades de qualsevol planeta. Amb la Terra (cal passar el període a segons):\n\n$$M_\\text{S} = \\frac{4\\pi^2\\, r^3}{G\\, T^2} = \\frac{4\\pi^2 \\cdot (149{,}6 \\times 10^{9})^3}{6{,}67 \\times 10^{-11} \\cdot (3{,}154 \\times 10^{7})^2} = 1{,}99 \\times 10^{30}\\ \\text{kg}$$\n\nResultat: **$M_\\text{S} \\approx 1{,}99 \\times 10^{30}\\ \\text{kg}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovació amb els altres planetes",
+            "cos": "Si es fa el mateix càlcul amb Mercuri, Venus o Mart s'obté pràcticament el mateix valor (entre $1{,}992$ i $1{,}994 \\times 10^{30}\\ \\text{kg}$), perquè el quocient $r^3/T^2 \\approx 3{,}37 \\times 10^{18}\\ \\text{m}^3\\ \\text{s}^{-2}$ és el mateix per a tots: és justament el que diu la tercera llei de Kepler. També es pot fer la mitjana dels quatre valors."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$T^2 = \\dfrac{4\\pi^2}{G\\,M_\\text{S}}\\, r^3$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$M_\\text{S} \\approx 1{,}99 \\times 10^{30}\\ \\text{kg}$"
+          }
+        ],
+        "nota": "Error típic: no passar el període d'anys a segons, o el radi de $10^{9}\\ \\text{m}$ a metres. Recorda que el radi de l'òrbita es mesura des del centre del Sol."
+      }
+    },
+    {
+      "id": "fisica-2021-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Camp elèctric i energia de formació de tres càrregues negatives en un triangle equilàter",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp elèctric",
+        "principi de superposició",
+        "simetria",
+        "energia potencial electrostàtica",
+        "energia de formació"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Tres càrregues negatives iguals, $-q$, es troben situades en els vèrtexs d'un triangle equilàter de costat $d$.",
+      "figures": [
+        {
+          "src": "img/fisica/2021-J/e2.png",
+          "peu": "Tres càrregues $-q$ als vèrtexs d'un triangle equilàter de costat $d$"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Hi ha algun punt a l'interior del triangle on el camp elèctric sigui nul? Justifiqueu la resposta.\n\nDetermineu el mòdul, la direcció i el sentit del camp elèctric en el vèrtex superior del triangle creat per les dues càrregues situades a la base. Expresseu el resultat en funció de $q$, $d$ i la constant de Coulomb.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu l'energia de formació d'aquest sistema de càrregues. Expresseu el resultat en funció de $q$, $d$ i la constant de Coulomb.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Tres càrregues iguals $-q$ als vèrtexs d'un triangle equilàter de costat $d$; constant de Coulomb $k$.\n- Incògnites: punt interior amb $\\vec E = 0$; camp al vèrtex superior creat per les dues càrregues de la base; energia de formació $U$ del sistema."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punt de camp nul: el centre del triangle",
+            "cos": "El camp creat per una càrrega puntual val $E = k\\,\\dfrac{|q|}{r^2}$ i, com que la càrrega és negativa, **apunta cap a la càrrega**.\n\nAl **centre** del triangle (baricentre), les tres càrregues són a la mateixa distància $r$, per tant creen tres camps del mateix mòdul $E_1 = E_2 = E_3 = k\\,q/r^2$, que formen entre si angles de $120^\\circ$. Si posem $\\vec E_1$ vertical cap amunt (cap a la càrrega de dalt), els altres dos formen $60^\\circ$ amb la vertical cap avall; les seves components horitzontals s'anul·len i les verticals sumen:\n\n$$E_{23,y} = -2\\,E\\cos 60^\\circ = -2\\,k\\frac{q}{r^2}\\cdot\\frac12 = -k\\frac{q}{r^2}$$\n\n$$E_{T,y} = E_1 + E_{23,y} = k\\frac{q}{r^2} - k\\frac{q}{r^2} = 0$$\n\n**Sí: al centre del triangle el camp és nul.** També es pot argumentar per simetria: si girem el sistema $120^\\circ$ al voltant del centre, la distribució queda igual, i per tant el camp al centre també hauria de quedar igual; l'únic vector que no canvia en girar-lo $120^\\circ$ és el vector zero.\n\n![Camps de les tres càrregues al centre del triangle](img/fisica/2021-J/e2-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp al vèrtex superior: mòdul de cada contribució",
+            "cos": "Les dues càrregues de la base són a una distància $d$ del vèrtex superior, així que cadascuna hi crea un camp de mòdul:\n\n$$E_1 = E_2 = k\\,\\frac{q}{d^2}$$\n\nCada camp va dirigit **cap a la càrrega que el crea** (són negatives), és a dir, al llarg de cadascun dels costats inclinats, cap avall. El camp total és la suma vectorial $\\vec E_T = \\vec E_1 + \\vec E_2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Suma vectorial per components",
+            "cos": "Cada costat forma amb la vertical (l'altura del triangle) un angle de $30^\\circ$, la meitat de l'angle de $60^\\circ$ del vèrtex. Amb l'eix $x$ horitzontal i l'eix $y$ vertical cap amunt:\n\n$$E_{T,x} = E_2 \\sin 30^\\circ - E_1 \\sin 30^\\circ = 0$$\n\n$$E_{T,y} = -E_1\\cos 30^\\circ - E_2 \\cos 30^\\circ = -2\\,k\\frac{q}{d^2}\\cdot\\frac{\\sqrt3}{2} = -\\sqrt3\\, k\\,\\frac{q}{d^2}$$\n\n$$\\boxed{\\vec E_T = -\\sqrt3\\, k\\,\\frac{q}{d^2}\\ \\vec j}$$\n\nResultat: **mòdul $E_T = \\sqrt3\\,k\\,q/d^2$, direcció vertical (la de l'altura del triangle) i sentit cap avall, cap a la base.**\n\n![Camp al vèrtex superior](img/fisica/2021-J/e2-sol-2.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Què és l'energia de formació",
+            "cos": "L'**energia de formació** (energia potencial electrostàtica del sistema) és el treball que cal fer per portar les càrregues des de l'infinit (on no interaccionen) fins a la seva posició final. La construïm portant les càrregues una a una."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball per portar cada càrrega",
+            "cos": "- **Primera càrrega**: no hi ha cap altra càrrega, no hi ha força i el treball és nul: $W_1 = 0$.\n- **Segona càrrega**: cal vèncer la repulsió de la primera, a distància $d$:\n$$W_2 = k\\,\\frac{(-q)(-q)}{d} = k\\,\\frac{q^2}{d}$$\n- **Tercera càrrega**: cal vèncer la repulsió de les dues primeres, totes dues a distància $d$:\n$$W_3 = k\\,\\frac{q^2}{d} + k\\,\\frac{q^2}{d} = 2\\,k\\,\\frac{q^2}{d}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia total del sistema",
+            "cos": "Sumant (equivalent a sumar l'energia de cada parella de càrregues):\n\n$$U = W_1 + W_2 + W_3 = k\\frac{q_1 q_2}{d} + k\\frac{q_1 q_3}{d} + k\\frac{q_2 q_3}{d} = \\boxed{3\\,k\\,\\frac{q^2}{d}}$$\n\nResultat: **$U = 3kq^2/d$**. És positiva perquè les tres càrregues tenen el mateix signe i es repel·leixen: hem de fer treball des de fora per ajuntar-les."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Al centre del triangle $\\vec E = 0$. Al vèrtex superior: $E_T = \\sqrt3\\,k\\,q/d^2$, vertical i cap avall (cap a la base)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$U = 3\\,k\\,q^2/d$"
+          }
+        ],
+        "nota": "Error típic: dibuixar els camps sortint de les càrregues (això seria per a càrregues positives). Amb càrregues negatives el camp apunta cap a la càrrega. A l'apartat b, cal comptar cada parella només una vegada (3 parelles)."
+      }
+    },
+    {
+      "id": "fisica-2021-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Bloc lligat a una molla horitzontal: equació del MHS i gràfica de les energies",
+      "tema": "oscillacions",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "moviment harmònic simple",
+        "molla",
+        "període",
+        "energia cinètica",
+        "energia potencial elàstica",
+        "conservació de l'energia"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Un bloc de massa $2\\ \\text{kg}$, que inicialment es troba en repòs, està lligat a l'extrem d'una molla de constant elàstica $300\\ \\text{N/m}$ i de longitud natural $30\\ \\text{cm}$. Per l'altre extrem, la molla està unida a una paret. Desplacem el bloc cap a la dreta fins que la molla assoleix una longitud total de $45\\ \\text{cm}$ i el deixem anar, de manera que el bloc es posa a oscil·lar al voltant de la posició d'equilibri. La fricció entre el terra i el bloc és negligible.",
+      "figures": [
+        {
+          "src": "img/fisica/2021-J/e3.png",
+          "peu": "Bloc de 2 kg unit a una molla de k = 300 N/m; x = 0 a la posició d'equilibri (30 cm)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu l'amplitud i el període de l'oscil·lació. Escriviu l'equació del moviment.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Representeu en la quadrícula adjunta l'evolució de l'energia mecànica, de l'energia cinètica i de l'energia potencial en funció del temps durant un període.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 2\\ \\text{kg}$, $k = 300\\ \\text{N/m}$\n- Longitud natural: $L_0 = 30\\ \\text{cm} = 0{,}30\\ \\text{m}$ (posició d'equilibri, $x = 0$)\n- Longitud inicial: $L = 45\\ \\text{cm} = 0{,}45\\ \\text{m}$; es deixa anar des del repòs\n- Incògnites: $A$, $T$, $x(t)$; $E_\\text{m}(t)$, $E_\\text{c}(t)$, $E_\\text{p}(t)$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Amplitud",
+            "cos": "Com que el bloc es deixa anar **des del repòs**, el punt on el deixem anar és un extrem de l'oscil·lació. L'amplitud és la distància a la posició d'equilibri (molla sense deformar):\n\n$$A = 0{,}45 - 0{,}30 = 0{,}15\\ \\text{m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüència angular i període",
+            "cos": "Per a una massa unida a una molla, la força recuperadora $F = -kx$ produeix un MHS de freqüència angular:\n\n$$\\omega = \\sqrt{\\frac{k}{m}} = \\sqrt{\\frac{300}{2}} = 12{,}2\\ \\text{rad/s}$$\n\n$$T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{12{,}25} = 0{,}513\\ \\text{s}$$\n\nResultat: **$A = 0{,}15\\ \\text{m}$, $T = 0{,}513\\ \\text{s}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació del moviment",
+            "cos": "Prenem $x$ des de la posició d'equilibri, positiu cap a la dreta. Escrivim $x(t) = A\\cos(\\omega t + \\varphi_0)$. A $t = 0$ el bloc és a l'extrem dret: $x(0) = A$, per tant $\\cos\\varphi_0 = 1$ i $\\varphi_0 = 0$:\n\n$$\\boxed{x(t) = 0{,}15\\cos(12{,}2\\, t)}\\quad (x \\text{ en m},\\ t \\text{ en s})$$\n\nDe manera equivalent, amb sinus: $x(t) = 0{,}15\\sin\\left(12{,}2\\,t + \\dfrac{\\pi}{2}\\right)$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia mecànica (constant)",
+            "cos": "Sense fricció, l'energia mecànica es conserva. Al punt de partida tota l'energia és potencial elàstica:\n\n$$E_\\text{m} = \\frac12 k A^2 = \\frac12 \\cdot 300 \\cdot 0{,}15^2 = 3{,}38\\ \\text{J}$$\n\nA la gràfica és una **recta horitzontal** a $3{,}38\\ \\text{J}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia potencial i cinètica en funció del temps",
+            "cos": "Derivant la posició obtenim la velocitat:\n\n$$v(t) = \\frac{dx}{dt} = -A\\omega\\sin(\\omega t) = -1{,}84\\sin(12{,}2\\,t)\\ \\text{m/s}$$\n\n$$E_\\text{p}(t) = \\frac12 k x^2 = \\frac12 k A^2 \\cos^2(\\omega t) = 3{,}38\\cos^2(12{,}2\\,t)\\ \\text{J}$$\n\n$$E_\\text{c}(t) = \\frac12 m v^2 = \\frac12 m A^2\\omega^2\\sin^2(\\omega t) = 3{,}38\\sin^2(12{,}2\\,t)\\ \\text{J}$$\n\n(fixa't que $m\\omega^2 = k$, per això els dos coeficients són iguals, i $E_\\text{c} + E_\\text{p} = 3{,}38\\ \\text{J}$ sempre)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Com és la gràfica en un període",
+            "cos": "En un període ($0$ a $0{,}513\\ \\text{s}$):\n\n- $E_\\text{p}$ comença al màxim ($3{,}38\\ \\text{J}$), és zero a $T/4 = 0{,}128\\ \\text{s}$ (el bloc passa per l'equilibri), torna al màxim a $T/2 = 0{,}257\\ \\text{s}$ (extrem esquerre), zero a $3T/4 = 0{,}385\\ \\text{s}$ i màxim a $T$.\n- $E_\\text{c}$ fa el contrari: zero als extrems ($t = 0$, $T/2$, $T$) i màxima ($3{,}38\\ \\text{J}$) a $T/4$ i $3T/4$.\n- Les dues corbes es creuen a $1{,}69\\ \\text{J}$ (meitat de l'energia) i oscil·len amb període $T/2$.\n- Cal posar títols als eixos amb unitats: energia (J) i temps (s).\n\n![Gràfica de les energies (solució oficial)](img/fisica/2021-J/e3-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$A = 0{,}15\\ \\text{m}$; $\\omega = 12{,}2\\ \\text{rad/s}$; $T = 0{,}513\\ \\text{s}$; $x(t) = 0{,}15\\cos(12{,}2\\,t)$ m"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_\\text{m} = 3{,}38\\ \\text{J}$ (constant); $E_\\text{p} = 3{,}38\\cos^2(12{,}2t)$ J; $E_\\text{c} = 3{,}38\\sin^2(12{,}2t)$ J"
+          }
+        ],
+        "nota": "Discrepància amb l'oficial: a l'apartat b la pauta escriu $v(t) = 1{,}84\\cos(12{,}2t)$, $E_\\text{c} = 3{,}38\\cos^2(12{,}2t)$ i $U = 3{,}38\\sin^2(12{,}2t)$, que correspondrien a un bloc que surt de l'equilibri, cosa que no és coherent amb l'equació de l'apartat a ni amb la seva pròpia gràfica (on $E_\\text{p}$ comença al màxim). Les expressions correctes per a $x = A\\cos(\\omega t)$ són $E_\\text{p} = 3{,}38\\cos^2$ i $E_\\text{c} = 3{,}38\\sin^2$, com a la gràfica oficial. Error típic: prendre l'amplitud com $0{,}45\\ \\text{m}$ (la longitud total) en lloc de l'allargament."
+      }
+    },
+    {
+      "id": "fisica-2021-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Diferència de potencial i acceleració d'un protó en un camp elèctric uniforme",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "camp elèctric uniforme",
+        "diferència de potencial",
+        "superfície equipotencial",
+        "treball del camp elèctric",
+        "moviment rectilini uniformement accelerat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "En una regió de l'espai de forma quadrada i de costat $d = 12\\ \\text{mm}$, hi ha un camp elèctric uniforme i constant de valor $2{,}00 \\times 10^{6}\\ \\text{N/C}$.\n\nDades: $m_\\text{p} = 1{,}67 \\times 10^{-27}\\ \\text{kg}$; $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2021-J/e4.png",
+          "peu": "Regió quadrada amb camp uniforme horitzontal cap a la dreta; A i B als costats esquerre i dret, C i D a baix i a dalt"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina és la diferència de potencial, $V_B - V_A$, entre els punts $A$ i $B$ de la figura? Quina és la diferència de potencial, $V_D - V_C$, entre els punts $C$ i $D$ de la figura? Justifiqueu les respostes.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Deixem un protó, inicialment aturat, en el punt $A$. Quin moviment descriurà? Justifiqueu la resposta. Quina velocitat (només el mòdul) tindrà en l'instant en què abandoni aquesta regió quadrada? Quin treball ha fet el camp elèctric sobre el protó?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $E = 2{,}00 \\times 10^{6}\\ \\text{N/C}$, horitzontal cap a la dreta (d'$A$ cap a $B$)\n- Costat del quadrat: $d = 12\\ \\text{mm} = 1{,}2 \\times 10^{-2}\\ \\text{m}$\n- $m_\\text{p} = 1{,}67 \\times 10^{-27}\\ \\text{kg}$, $q = |e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$\n- Incògnites: $V_B - V_A$, $V_D - V_C$; tipus de moviment, $v$ final, $W$ del camp."
+          },
+          {
+            "apartat": "a",
+            "titol": "Diferència de potencial entre A i B",
+            "cos": "El camp elèctric apunta en el sentit en què **disminueix el potencial**. Com que va d'$A$ cap a $B$, $V_B < V_A$. En un camp uniforme, la diferència de potencial entre dos punts separats una distància $d$ en la direcció del camp és:\n\n$$V_B - V_A = -\\int_A^B \\vec E\\cdot d\\vec l = -E\\,d = -2{,}00 \\times 10^{6} \\cdot 1{,}2 \\times 10^{-2} = -2{,}40 \\times 10^{4}\\ \\text{V}$$\n\nResultat: **$V_B - V_A = -24\\ \\text{kV}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Diferència de potencial entre C i D",
+            "cos": "Per anar de $C$ a $D$ ens movem verticalment, **perpendicularment** a les línies de camp: $\\vec E\\cdot d\\vec l = 0$ en tot el camí. Els punts $C$ i $D$ són sobre la mateixa superfície equipotencial (les equipotencials són perpendiculars al camp):\n\n$$V_D - V_C = -\\int_C^D \\vec E\\cdot d\\vec l = 0$$\n\nResultat: **$V_D - V_C = 0$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Tipus de moviment",
+            "cos": "Sobre el protó actua la força elèctrica $\\vec F = q\\vec E$, que és **constant** (en mòdul, direcció i sentit) perquè el camp és uniforme, i té el mateix sentit que $\\vec E$ (càrrega positiva). Com que parteix del repòs, el protó fa un **moviment rectilini uniformement accelerat** al llarg de la línia de camp que passa per $A$, cap a la dreta, i surt de la regió pel punt $B$ després de recórrer $d = 12\\ \\text{mm}$ (el pes és negligible davant la força elèctrica)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball del camp elèctric",
+            "cos": "El treball del camp és igual a menys la variació d'energia potencial:\n\n$$W = -\\Delta U = -q\\,(V_B - V_A) = -1{,}602 \\times 10^{-19} \\cdot (-2{,}40 \\times 10^{4}) = 3{,}84 \\times 10^{-15}\\ \\text{J}$$\n\nResultat: **$W \\approx 3{,}84 \\times 10^{-15}\\ \\text{J}$** (positiu: el camp accelera el protó)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat de sortida (per energies)",
+            "cos": "Pel teorema de l'energia cinètica, tot el treball del camp es converteix en energia cinètica ($v_0 = 0$):\n\n$$\\frac12 m_\\text{p} v^2 = W \\quad\\Rightarrow\\quad v = \\sqrt{\\frac{2W}{m_\\text{p}}} = \\sqrt{\\frac{2 \\cdot 3{,}84 \\times 10^{-15}}{1{,}67 \\times 10^{-27}}} = 2{,}15 \\times 10^{6}\\ \\text{m/s}$$\n\nComprovació per cinemàtica: $a = \\dfrac{qE}{m_\\text{p}} = \\dfrac{1{,}602 \\times 10^{-19}\\cdot 2{,}00 \\times 10^{6}}{1{,}67 \\times 10^{-27}} = 1{,}92 \\times 10^{14}\\ \\text{m/s}^2$ i $v = \\sqrt{2ad} = \\sqrt{2 \\cdot 1{,}92 \\times 10^{14} \\cdot 0{,}012} = 2{,}15 \\times 10^{6}\\ \\text{m/s}$.\n\nResultat: **$v \\approx 2{,}15 \\times 10^{6}\\ \\text{m/s}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$V_B - V_A = -2{,}40 \\times 10^{4}\\ \\text{V} = -24\\ \\text{kV}$; $V_D - V_C = 0$"
+          },
+          {
+            "apartat": "b",
+            "valor": "MRUA cap a la dreta; $v \\approx 2{,}15 \\times 10^{6}\\ \\text{m/s}$; $W \\approx 3{,}84 \\times 10^{-15}\\ \\text{J}$"
+          }
+        ],
+        "nota": "La pauta oficial dona $W = 3{,}85 \\times 10^{-15}\\ \\text{J}$ i $v = 2{,}14 \\times 10^{6}\\ \\text{m/s}$; la diferència és només d'arrodoniment ($1{,}602 \\cdot 2{,}4 = 3{,}845$ i $v = 2{,}146 \\times 10^{6}\\ \\text{m/s}$). Error típic: oblidar el signe de $V_B - V_A$ (el potencial disminueix en el sentit del camp)."
+      }
+    },
+    {
+      "id": "fisica-2021-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Desintegració beta més del nitrogen-13: reacció, període de semidesintegració i activitat",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "desintegració beta més",
+        "nombre màssic",
+        "constant de desintegració",
+        "període de semidesintegració",
+        "activitat radioactiva",
+        "llei de desintegració radioactiva"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10
+      ],
+      "enunciat": "Dades: ${}_{4}\\text{Be}$, ${}_{5}\\text{B}$, ${}_{6}\\text{C}$, ${}_{7}\\text{N}$, ${}_{8}\\text{O}$, ${}_{9}\\text{F}$, ${}_{10}\\text{Ne}$, ${}_{84}\\text{Po}$, ${}_{85}\\text{At}$, ${}_{86}\\text{Rn}$, ${}_{87}\\text{Fr}$, ${}_{88}\\text{Ra}$, ${}_{89}\\text{Ac}$, ${}_{90}\\text{Th}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu el nombre màssic, el nombre atòmic i el nombre de neutrons que té el ${}^{13}_{7}\\text{N}$. En la desintegració del ${}^{13}_{7}\\text{N}$, un dels protons del nucli de nitrogen es transforma segons una desintegració $\\beta^+:\\ {}^{1}_{1}\\text{p}^+ \\rightarrow {}^{1}_{0}\\text{n} + {}^{0}_{+1}\\text{e}^+ + {}^{0}_{0}\\nu$. Escriviu la reacció de desintegració del ${}^{13}_{7}\\text{N}$. Justifiqueu per què la desintegració $\\beta^+$ no pot tenir lloc fora d'un nucli.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "A partir de l'equació de l'evolució de la desintegració, determineu la relació entre la constant de desintegració $\\lambda$ i el període de semidesintegració. El període de semidesintegració del ${}^{13}_{7}\\text{N}$ és de $9{,}965\\ \\text{min}$. Si en un instant determinat hi ha una massa de $5\\ \\text{ng}$ de ${}^{13}_{7}\\text{N}$, quina quantitat en romandrà al cap de $30\\ \\text{min}$?\n\nDoneu l'expressió de l'activitat radioactiva en funció del temps. Quant de temps cal esperar perquè l'activitat radioactiva es redueixi fins a un $1\\ \\%$ del seu valor inicial?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Nucli: ${}^{13}_{7}\\text{N}$\n- $T_{1/2} = 9{,}965\\ \\text{min}$\n- Massa inicial: $m_0 = 5\\ \\text{ng}$; temps: $t = 30\\ \\text{min}$\n- Incògnites: $A$, $Z$, $N$; reacció; relació $\\lambda$–$T_{1/2}$; $m(30\\ \\text{min})$; $A(t)$; temps fins a l'1 % de l'activitat."
+          },
+          {
+            "apartat": "a",
+            "titol": "Composició del nucli",
+            "cos": "En la notació ${}^{A}_{Z}\\text{X}$, el número de dalt és el **nombre màssic** (protons + neutrons) i el de baix el **nombre atòmic** (protons):\n\n- Nombre màssic: $A = 13$\n- Nombre atòmic: $Z = 7$\n- Nombre de neutrons: $N = A - Z = 13 - 7 = 6$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Reacció de desintegració",
+            "cos": "En la desintegració $\\beta^+$ un protó es converteix en neutró: el nombre màssic no canvia i el nombre atòmic baixa una unitat ($Z = 6$, que segons les dades és el carboni). S'emeten un positró i un neutrí:\n\n$$ {}^{13}_{7}\\text{N} \\rightarrow {}^{13}_{6}\\text{C} + {}^{0}_{+1}\\text{e}^+ + {}^{0}_{0}\\nu $$\n\nComprovació: nombre màssic $13 = 13 + 0 + 0$; càrrega $7 = 6 + 1 + 0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Per què no passa amb un protó lliure",
+            "cos": "La massa del neutró és **més gran** que la del protó (i a més cal crear el positró). Per tant, la reacció ${}^{1}_{1}\\text{p} \\rightarrow {}^{1}_{0}\\text{n} + {}^{0}_{+1}\\text{e}^+ + \\nu$ tindria més massa (energia en repòs) al final que al principi: caldria **aportar energia**. Un protó aïllat no té d'on treure-la, i per conservació de l'energia no es pot desintegrar. Dins d'un nucli sí que és possible, perquè l'energia surt de la diferència d'energia d'enllaç entre el nucli inicial i el final."
+          },
+          {
+            "apartat": "b",
+            "titol": "Relació entre λ i el període de semidesintegració",
+            "cos": "La llei de desintegració diu que el nombre de nuclis decreix exponencialment: $N(t) = N_0\\, e^{-\\lambda t}$. El període de semidesintegració és el temps en què queden la meitat:\n\n$$\\frac{N_0}{2} = N_0\\, e^{-\\lambda T_{1/2}} \\;\\Rightarrow\\; \\frac12 = e^{-\\lambda T_{1/2}} \\;\\Rightarrow\\; \\boxed{T_{1/2} = \\frac{\\ln 2}{\\lambda}}$$\n\n$$\\lambda = \\frac{\\ln 2}{T_{1/2}} = \\frac{0{,}693}{9{,}965\\ \\text{min}} = 0{,}0696\\ \\text{min}^{-1} = 1{,}16 \\times 10^{-3}\\ \\text{s}^{-1}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa que queda al cap de 30 min",
+            "cos": "La massa és proporcional al nombre de nuclis, així que segueix la mateixa llei:\n\n$$m(t) = m_0\\, e^{-\\lambda t} = 5 \\cdot e^{-0{,}0696 \\cdot 30} = 5 \\cdot 0{,}124 = 0{,}620\\ \\text{ng}$$\n\nResultat: **$m(30\\ \\text{min}) \\approx 0{,}620\\ \\text{ng}$** (30 min són unes 3 vegades el període: $5 \\to 2{,}5 \\to 1{,}25 \\to 0{,}62$ ng)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Activitat i temps fins a l'1 %",
+            "cos": "L'activitat és el nombre de desintegracions per unitat de temps, $\\mathcal{A} = \\lambda N$; per tant també decreix exponencialment:\n\n$$\\mathcal{A}(t) = \\mathcal{A}_0\\, e^{-\\lambda t}$$\n\nVolem $\\mathcal{A}(t)/\\mathcal{A}_0 = 0{,}01$:\n\n$$0{,}01 = e^{-\\lambda t} \\;\\Rightarrow\\; t = -\\frac{\\ln 0{,}01}{\\lambda} = \\frac{4{,}605}{0{,}0696\\ \\text{min}^{-1}} = 66{,}2\\ \\text{min} = 3\\,972\\ \\text{s}$$\n\nResultat: **$t \\approx 66{,}2\\ \\text{min}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$A = 13$, $Z = 7$, $N = 6$; ${}^{13}_{7}\\text{N} \\rightarrow {}^{13}_{6}\\text{C} + {}^{0}_{+1}\\text{e}^+ + \\nu$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$T_{1/2} = \\ln 2/\\lambda$; $\\lambda = 0{,}0696\\ \\text{min}^{-1} = 1{,}16 \\times 10^{-3}\\ \\text{s}^{-1}$; $m = 0{,}620\\ \\text{ng}$; $\\mathcal{A} = \\mathcal{A}_0 e^{-\\lambda t}$; $t \\approx 66{,}2\\ \\text{min}$"
+          }
+        ],
+        "nota": "Discrepància amb l'oficial: la pauta escriu $\\lambda = 0{,}0696\\ \\text{min}^{-1} = 4{,}17\\ \\text{s}^{-1}$, però la conversió és errònia: $0{,}0696/60 = 1{,}16 \\times 10^{-3}\\ \\text{s}^{-1}$ ($4{,}17$ seria el valor en $\\text{h}^{-1}$). La resta de resultats ($0{,}620\\ \\text{ng}$ i $66{,}2\\ \\text{min}$) coincideixen. La pauta penalitza oblidar el neutrí a la reacció."
+      }
+    },
+    {
+      "id": "fisica-2021-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "FEM induïda en una bobina per un imant que oscil·la amb MHS",
+      "tema": "induccio",
+      "temes_secundaris": [
+        "oscillacions"
+      ],
+      "conceptes": [
+        "flux magnètic",
+        "llei de faraday",
+        "llei de lenz",
+        "força electromotriu induïda",
+        "freqüència angular"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        11
+      ],
+      "enunciat": "Un imant es desplaça horitzontalment, entrant i sortint d'una bobina plana (de $N$ espires i secció $S$), seguint un moviment harmònic simple, que crea un camp magnètic $\\vec B$ perpendicular a la bobina i de mòdul $B(t) = B_0\\cos(\\omega t + \\varphi_0)$.\n\nDada: en totes les gràfiques s'utilitza la mateixa escala per al temps (eix $x$) i per a la FEM (eix $y$).",
+      "figures": [
+        {
+          "src": "img/fisica/2021-J/e6.png",
+          "peu": "Gràfica de la FEM original"
+        },
+        {
+          "src": "img/fisica/2021-J/e6-2.png",
+          "peu": "Gràfiques A, B, C i D de la FEM (apartat b)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu el flux del camp magnètic a través d'una espira i la força electromotriu (FEM) en funció dels paràmetres $B_0$, $\\omega$, $\\varphi_0$, $N$ i $S$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Si la bobina té una resistència $R$, determineu el corrent màxim que pot circular per la bobina en funció dels paràmetres $B_0$, $\\omega$, $\\varphi_0$, $N$, $S$ i $R$. Indiqueu quina de les gràfiques següents (de la A fins a la D) mostra correctament la FEM si es redueix la freqüència del moviment de l'imant. Justifiqueu la resposta.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Bobina plana de $N$ espires i secció $S$; resistència $R$\n- Camp perpendicular a la bobina: $B(t) = B_0\\cos(\\omega t + \\varphi_0)$\n- Incògnites: $\\Phi(t)$ per espira, $\\varepsilon(t)$, $I_\\text{màx}$, i quina gràfica correspon a una freqüència menor."
+          },
+          {
+            "apartat": "a",
+            "titol": "Flux a través d'una espira",
+            "cos": "El flux magnètic és $\\Phi = \\vec B\\cdot\\vec S = B\\,S\\cos\\alpha$. Com que el camp és **perpendicular** a la bobina, és paral·lel al vector superfície ($\\alpha = 0$):\n\n$$\\Phi(t) = B(t)\\,S = B_0\\, S\\cos(\\omega t + \\varphi_0)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "FEM induïda (llei de Faraday-Lenz)",
+            "cos": "Quan el flux varia amb el temps s'indueix una FEM. Per a $N$ espires, la llei de Faraday (amb el signe de Lenz) diu:\n\n$$\\varepsilon(t) = -N\\,\\frac{d\\Phi}{dt} = -N S\\,\\frac{dB}{dt} = -N S B_0 \\cdot\\left[-\\omega\\sin(\\omega t + \\varphi_0)\\right]$$\n\n$$\\boxed{\\varepsilon(t) = N S B_0\\,\\omega\\,\\sin(\\omega t + \\varphi_0)}$$\n\nEl signe menys (llei de Lenz) indica que la FEM s'oposa a la variació del flux."
+          },
+          {
+            "apartat": "b",
+            "titol": "Corrent màxim",
+            "cos": "Per la llei d'Ohm, $I(t) = \\varepsilon(t)/R$:\n\n$$I(t) = \\frac{N S B_0\\,\\omega}{R}\\sin(\\omega t + \\varphi_0) \\quad\\Rightarrow\\quad \\boxed{I_\\text{màx} = \\frac{N S B_0\\,\\omega}{R}}$$\n\n(no depèn de $\\varphi_0$, que només desplaça la sinusoide en el temps)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Què passa si es redueix la freqüència",
+            "cos": "La FEM és $\\varepsilon = \\varepsilon_\\text{màx}\\sin(\\omega t + \\varphi_0)$ amb $\\varepsilon_\\text{màx} = N S B_0\\,\\omega$. Si la freqüència disminueix ($\\omega = 2\\pi f$ més petita), passen **dues coses alhora**:\n\n1. **L'amplitud disminueix**, perquè $\\varepsilon_\\text{màx}$ és proporcional a $\\omega$ (el flux canvia més a poc a poc).\n2. **El període augmenta**, perquè $T = 2\\pi/\\omega$: els màxims queden més separats.\n\nA la gràfica original l'amplitud és d'uns $3{,}5\\ \\text{V}$ i el període d'uns $1{,}25\\ \\text{s}$. Comparem:\n\n- **A**: amplitud menor ($\\approx 2{,}5\\ \\text{V}$) i període més gran ($\\approx 1{,}75\\ \\text{s}$) → **correcta**. A més, totes dues canvien en la mateixa proporció ($3{,}5/2{,}5 = 1{,}75/1{,}25 = 1{,}4$).\n- **B**: període més gran però amplitud més gran: impossible.\n- **C**: amplitud menor però període més petit (més freqüència): impossible.\n- **D**: més freqüència i més amplitud: correspondria a augmentar la freqüència.\n\nResultat: **la gràfica correcta és la A**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\Phi(t) = B_0 S\\cos(\\omega t + \\varphi_0)$; $\\varepsilon(t) = N S B_0\\,\\omega\\sin(\\omega t + \\varphi_0)$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I_\\text{màx} = N S B_0\\,\\omega/R$; gràfica **A** (menys amplitud i més període)"
+          }
+        ],
+        "nota": "Error típic: pensar que en reduir la freqüència només canvia el període i triar una gràfica amb la mateixa amplitud o més gran. L'amplitud de la FEM és proporcional a $\\omega$. La pauta resta 0,25 punts si no es té en compte el signe negatiu de la llei de Lenz."
+      }
+    },
+    {
+      "id": "fisica-2021-J-e7",
+      "exercici": 7,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Harmònics d'una corda de violí i nivell d'intensitat sonora al Palau de la Música",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ones estacionàries",
+        "harmònics",
+        "nodes i ventres",
+        "velocitat de propagació",
+        "intensitat sonora",
+        "nivell d'intensitat sonora"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        13
+      ],
+      "enunciat": "*Magnificat en re major* (BWV 243) és una de les grans obres vocals de Johann Sebastian Bach, publicada el 1723 i escrita per a cor a cinc veus i orquestra. La corda d'un violí fa $32{,}5\\ \\text{cm}$ de llargària i la freqüència fonamental corresponent al re major és de $38{,}89\\ \\text{Hz}$.\n\nDada: $I_0 = 10^{-12}\\ \\text{W m}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu l'harmònic fonamental i el tercer harmònic i indiqueu-ne els nodes i els ventres. Determineu les longituds d'ona de cadascun dels harmònics i calculeu la velocitat de propagació de l'ona que produeix aquesta nota en la corda del violí. Quina serà la freqüència de l'harmònic fonamental si reduïm la llargària de la corda a $27\\ \\text{cm}$ tot mantenint la mateixa tensió a la corda?",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Un espectador situat al segon pis del Palau de la Música Catalana percep un nivell d'intensitat sonora de $30\\ \\text{dB}$, corresponent al so dels violins, situats a $23\\ \\text{m}$. Quina és la potència amb què els violins emeten el so? Si, degut a les restriccions per la COVID-19, el nombre de violinistes es redueix a la meitat, quin serà el nivell de la intensitat sonora generada pels violins a $23\\ \\text{m}$ de distància?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Llargària de la corda: $L = 32{,}5\\ \\text{cm} = 0{,}325\\ \\text{m}$; nova llargària $L' = 27\\ \\text{cm} = 0{,}27\\ \\text{m}$\n- Freqüència fonamental: $f_1 = 38{,}89\\ \\text{Hz}$\n- Nivell d'intensitat: $\\beta = 30\\ \\text{dB}$ a $r = 23\\ \\text{m}$; $I_0 = 10^{-12}\\ \\text{W m}^{-2}$\n- Incògnites: $\\lambda_1$, $\\lambda_3$, $v$, $f_1'$; potència $P$; nou nivell $\\beta'$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Ones estacionàries en una corda fixa pels dos extrems",
+            "cos": "La corda està subjecta pels dos extrems, que no es poden moure: hi ha d'haver un **node a cada extrem**. Els modes possibles són els que hi caben un nombre enter de mitges longituds d'ona: $L = n\\,\\dfrac{\\lambda_n}{2}$.\n\n- **Fonamental** ($n = 1$): mitja longitud d'ona. **2 nodes** (els extrems) i **1 ventre** al mig.\n- **Tercer harmònic** ($n = 3$): tres mitges longituds d'ona. **4 nodes** (a $0$, $L/3$, $2L/3$ i $L$) i **3 ventres** (a $L/6$, $L/2$ i $5L/6$).\n\n![Tercer harmònic (esquerra) i harmònic fonamental (dreta); N = node, V = ventre](img/fisica/2021-J/e7-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longituds d'ona",
+            "cos": "$$\\lambda_1 = 2L = 2 \\cdot 0{,}325 = 0{,}65\\ \\text{m}$$\n\n$$\\lambda_3 = \\frac{2L}{3} = \\frac{2 \\cdot 0{,}325}{3} = 0{,}217\\ \\text{m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat de propagació",
+            "cos": "La velocitat de l'ona a la corda és $v = \\lambda f$. Amb el fonamental:\n\n$$v = \\lambda_1 f_1 = 0{,}65 \\cdot 38{,}89 = 25{,}3\\ \\text{m/s}$$\n\n(el tercer harmònic té $f_3 = 3f_1 = 116{,}7\\ \\text{Hz}$ i dona la mateixa velocitat: $0{,}217 \\cdot 116{,}7 = 25{,}3\\ \\text{m/s}$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Nova freqüència fonamental amb la corda més curta",
+            "cos": "La velocitat de propagació en una corda depèn només de la tensió i de la densitat lineal ($v = \\sqrt{T/\\mu}$). Si la tensió no canvia, **$v$ no canvia**: $v' = 25{,}3\\ \\text{m/s}$. El que canvia és la longitud d'ona del fonamental:\n\n$$\\lambda_1' = 2L' = 2 \\cdot 0{,}27 = 0{,}54\\ \\text{m}$$\n\n$$f_1' = \\frac{v}{\\lambda_1'} = \\frac{25{,}3}{0{,}54} = 46{,}8\\ \\text{Hz}$$\n\nResultat: **$f_1' \\approx 46{,}8\\ \\text{Hz}$** (escurçar la corda fa el so més agut)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat a partir del nivell en dB",
+            "cos": "El nivell d'intensitat sonora es defineix com $\\beta = 10\\log\\dfrac{I}{I_0}$. Aïllant $I$:\n\n$$I = I_0\\cdot 10^{\\beta/10} = 10^{-12}\\cdot 10^{30/10} = 10^{-9}\\ \\text{W m}^{-2}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència emesa",
+            "cos": "Suposem que els violins emeten com una font puntual en totes direccions: la potència es reparteix sobre una esfera de radi $r$, d'àrea $4\\pi r^2$:\n\n$$I = \\frac{P}{4\\pi r^2} \\;\\Rightarrow\\; P = 4\\pi r^2 I = 4\\pi \\cdot 23^2 \\cdot 10^{-9} = 6{,}65 \\times 10^{-6}\\ \\text{W}$$\n\nResultat: **$P \\approx 6{,}65 \\times 10^{-6}\\ \\text{W}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Nivell amb la meitat de violinistes",
+            "cos": "Amb la meitat de violins, la potència i la intensitat a $23\\ \\text{m}$ es redueixen a la meitat: $P' = 3{,}32 \\times 10^{-6}\\ \\text{W}$ i $I' = 5{,}00 \\times 10^{-10}\\ \\text{W m}^{-2}$.\n\n$$\\beta' = 10\\log\\frac{I'}{I_0} = 10\\log\\frac{5{,}00 \\times 10^{-10}}{10^{-12}} = 27{,}0\\ \\text{dB}$$\n\nO directament: $\\beta' = 10\\log\\dfrac{I/2}{I_0} = 30 - 10\\log 2 = 30 - 3{,}0 = 27{,}0\\ \\text{dB}$.\n\nResultat: **$\\beta' \\approx 27{,}0\\ \\text{dB}$**. Dividir la intensitat per 2 només fa baixar el nivell 3 dB (no a la meitat!)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\lambda_1 = 0{,}65\\ \\text{m}$; $\\lambda_3 = 0{,}217\\ \\text{m}$; $v = 25{,}3\\ \\text{m/s}$; $f_1' \\approx 46{,}8\\ \\text{Hz}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I = 10^{-9}\\ \\text{W m}^{-2}$; $P \\approx 6{,}65 \\times 10^{-6}\\ \\text{W}$; $\\beta' \\approx 27{,}0\\ \\text{dB}$"
+          }
+        ],
+        "nota": "A la figura de la solució oficial els rètols estan intercanviats: el dibuix de l'esquerra (tres ventres) és el **tercer harmònic** i el de la dreta (un ventre) és el **fonamental**. Error típic a l'apartat b: pensar que amb la meitat de violins el nivell passa a 15 dB; l'escala de decibels és logarítmica."
+      }
+    },
+    {
+      "id": "fisica-2021-J-e8",
+      "exercici": 8,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Energia dels fotons vermells i verds i efecte fotoelèctric en el rubidi",
+      "tema": "quantica",
+      "temes_secundaris": [
+        "optica"
+      ],
+      "conceptes": [
+        "energia del fotó",
+        "constant de planck",
+        "efecte fotoelèctric",
+        "funció de treball",
+        "freqüència llindar",
+        "energia cinètica màxima"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        14
+      ],
+      "enunciat": "Tenim dues ones monocromàtiques, una de $\\lambda = 750\\ \\text{nm}$, corresponent al color vermell, i una altra de $\\lambda = 550\\ \\text{nm}$, corresponent al color verd.\n\nDades: la funció de treball del rubidi és $3{,}46 \\times 10^{-19}\\ \\text{J}$; $N_\\text{A} = 6{,}022 \\times 10^{23}$; $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$; $m_\\text{e} = 9{,}11 \\times 10^{-31}\\ \\text{kg}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina de les dues ones té els fotons més energètics? Calculeu la freqüència i l'energia d'un fotó i les d'un mol de fotons per a cadascuna de les dues radiacions.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "A continuació, volem reproduir l'efecte fotoelèctric il·luminant amb llum monocromàtica una placa de rubidi. Determineu la longitud d'ona llindar perquè es produeixi l'efecte fotoelèctric. Les ones visibles de l'apartat anterior seran capaces d'arrencar un electró de la superfície del rubidi? Si això és possible, quina serà l'energia cinètica adquirida per l'electró?\n\nPer a l'efecte fotoelèctric, representeu esquemàticament com varia l'energia cinètica màxima dels electrons arrencats en funció de l'energia dels fotons incidents. Comenteu el significat de les dues zones diferenciades.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $\\lambda_\\text{r} = 750\\ \\text{nm} = 7{,}50 \\times 10^{-7}\\ \\text{m}$ (vermell); $\\lambda_\\text{g} = 550\\ \\text{nm} = 5{,}50 \\times 10^{-7}\\ \\text{m}$ (verd)\n- $W_0 = 3{,}46 \\times 10^{-19}\\ \\text{J}$ (rubidi)\n- $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $N_\\text{A} = 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$\n- Incògnites: $f$, $E_\\text{fotó}$ i $E_\\text{mol}$ de cada color; $\\lambda_0$; si hi ha efecte fotoelèctric i $E_\\text{c,màx}$; gràfica $E_\\text{c,màx}(E_\\text{fotó})$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Quin fotó és més energètic",
+            "cos": "Segons Planck, l'energia d'un fotó és proporcional a la freqüència:\n\n$$E = h f = \\frac{h c}{\\lambda}$$\n\nCom més petita és la longitud d'ona, més gran és la freqüència i l'energia. Per tant, **els fotons verds ($550\\ \\text{nm}$) són més energètics** que els vermells."
+          },
+          {
+            "apartat": "a",
+            "titol": "Llum vermella",
+            "cos": "$$f_\\text{r} = \\frac{c}{\\lambda_\\text{r}} = \\frac{3{,}00 \\times 10^{8}}{7{,}50 \\times 10^{-7}} = 4{,}00 \\times 10^{14}\\ \\text{Hz}$$\n\n$$E_\\text{r} = h f_\\text{r} = 6{,}63 \\times 10^{-34} \\cdot 4{,}00 \\times 10^{14} = 2{,}65 \\times 10^{-19}\\ \\text{J}$$\n\nUn mol de fotons són $N_\\text{A}$ fotons:\n\n$$E_\\text{mol,r} = N_\\text{A}\\, E_\\text{r} = 6{,}022 \\times 10^{23} \\cdot 2{,}65 \\times 10^{-19} = 1{,}60 \\times 10^{5}\\ \\text{J} = 160\\ \\text{kJ}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Llum verda",
+            "cos": "$$f_\\text{g} = \\frac{c}{\\lambda_\\text{g}} = \\frac{3{,}00 \\times 10^{8}}{5{,}50 \\times 10^{-7}} = 5{,}45 \\times 10^{14}\\ \\text{Hz}$$\n\n$$E_\\text{g} = h f_\\text{g} = 6{,}63 \\times 10^{-34} \\cdot 5{,}45 \\times 10^{14} = 3{,}62 \\times 10^{-19}\\ \\text{J}$$\n\n$$E_\\text{mol,g} = N_\\text{A}\\, E_\\text{g} = 6{,}022 \\times 10^{23} \\cdot 3{,}62 \\times 10^{-19} = 2{,}18 \\times 10^{5}\\ \\text{J} = 218\\ \\text{kJ}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Freqüència i longitud d'ona llindar",
+            "cos": "Per arrencar un electró, el fotó ha de tenir com a mínim l'energia de la funció de treball: $h f_0 = W_0$.\n\n$$f_0 = \\frac{W_0}{h} = \\frac{3{,}46 \\times 10^{-19}}{6{,}63 \\times 10^{-34}} = 5{,}22 \\times 10^{14}\\ \\text{Hz}$$\n\n$$\\lambda_0 = \\frac{c}{f_0} = \\frac{3{,}00 \\times 10^{8}}{5{,}22 \\times 10^{14}} = 5{,}75 \\times 10^{-7}\\ \\text{m} = 575\\ \\text{nm}$$\n\nResultat: **$\\lambda_0 \\approx 575\\ \\text{nm}$**. Només la llum de longitud d'ona **menor** que $575\\ \\text{nm}$ produeix efecte fotoelèctric."
+          },
+          {
+            "apartat": "b",
+            "titol": "Quina llum arrenca electrons",
+            "cos": "- **Vermell**: $f_\\text{r} = 4{,}00 \\times 10^{14}\\ \\text{Hz} < f_0$ (o $750\\ \\text{nm} > 575\\ \\text{nm}$): l'energia del fotó ($2{,}65 \\times 10^{-19}\\ \\text{J}$) és menor que $W_0$. **No arrenca electrons**, per molt intensa que sigui la llum.\n- **Verd**: $f_\\text{g} = 5{,}45 \\times 10^{14}\\ \\text{Hz} > f_0$: **sí que arrenca electrons**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica dels electrons (llum verda)",
+            "cos": "Per l'equació d'Einstein de l'efecte fotoelèctric, l'energia del fotó que sobra després d'arrencar l'electró es converteix en energia cinètica:\n\n$$E_\\text{c,màx} = h f_\\text{g} - W_0 = 3{,}62 \\times 10^{-19} - 3{,}46 \\times 10^{-19} = 1{,}56 \\times 10^{-20}\\ \\text{J}$$\n\nResultat: **$E_\\text{c,màx} \\approx 1{,}56 \\times 10^{-20}\\ \\text{J}$**. (Amb la massa de l'electró, això correspon a una velocitat màxima $v = \\sqrt{2E_\\text{c}/m_\\text{e}} \\approx 1{,}85 \\times 10^{5}\\ \\text{m/s}$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Gràfica de l'energia cinètica màxima",
+            "cos": "Representem $E_\\text{c,màx}$ (eix vertical) en funció de l'energia del fotó $E_\\text{fotó}$ (eix horitzontal). Hi ha dues zones:\n\n- **$E_\\text{fotó} < W_0$ ($f < f_0$)**: no s'arrenquen electrons; $E_\\text{c,màx} = 0$ (tram horitzontal sobre l'eix).\n- **$E_\\text{fotó} > W_0$ ($f > f_0$)**: s'arrenquen electrons i $E_\\text{c,màx} = E_\\text{fotó} - W_0$: una **recta de pendent 1** que talla l'eix horitzontal a $E_\\text{fotó} = W_0$.\n\n![Energia cinètica màxima en funció de l'energia dels fotons (solució oficial)](img/fisica/2021-J/e8-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Verd més energètic. Vermell: $f = 4{,}00 \\times 10^{14}\\ \\text{Hz}$, $E = 2{,}65 \\times 10^{-19}\\ \\text{J}$, $160\\ \\text{kJ/mol}$. Verd: $f = 5{,}45 \\times 10^{14}\\ \\text{Hz}$, $E = 3{,}62 \\times 10^{-19}\\ \\text{J}$, $218\\ \\text{kJ/mol}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$f_0 = 5{,}22 \\times 10^{14}\\ \\text{Hz}$, $\\lambda_0 \\approx 575\\ \\text{nm}$; només el verd arrenca electrons; $E_\\text{c,màx} \\approx 1{,}56 \\times 10^{-20}\\ \\text{J}$"
+          }
+        ],
+        "nota": "A la pauta oficial, a l'apartat b, les freqüències del vermell i del verd apareixen com $4{,}00 \\times 10^{15}$ i $5{,}45 \\times 10^{15}\\ \\text{Hz}$: és una errata, són $10^{14}\\ \\text{Hz}$ (com a l'apartat a). Error típic: pensar que una llum vermella molt intensa pot arrencar electrons; el que compta és l'energia de cada fotó, no la intensitat."
+      }
+    }
+  ]
+}

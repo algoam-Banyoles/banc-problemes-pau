@@ -1,0 +1,596 @@
+{
+  "examen": {
+    "id": "mates-2023-S",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2023,
+    "convocatoria": "setembre",
+    "serie": "2",
+    "pdf_examen": "pdfs/mates/2023-S-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2023-S-solucio.pdf",
+    "estructura": "Cal respondre QUATRE de les sis qüestions. Cada qüestió val 2,5 punts. Es pot usar calculadora (no programable ni amb capacitat d'emmagatzemar o transmetre dades). Convocatòria extraordinària."
+  },
+  "problemes": [
+    {
+      "id": "mates-2023-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Inversa d'una matriu a partir d'una igualtat matricial i equació AX = B",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "matriu inversa",
+        "producte de matrius",
+        "equació matricial",
+        "matriu identitat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2,
+        3
+      ],
+      "enunciat": "Siguin $A = \\begin{pmatrix} 2 & 1 \\\\ 3 & 2 \\end{pmatrix}$, $B = \\begin{pmatrix} 2 & -1 \\\\ -3 & 2 \\end{pmatrix}$ i la matriu identitat d'ordre dos $I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Comproveu que $(A - 2I)^2 = 3I$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Utilitzant la igualtat de l'apartat anterior, trobeu la matriu inversa de la matriu $A$ en funció de les matrius $A$ i $I$, i comproveu que coincideix amb la matriu $B$.",
+          "punts": 1.25
+        },
+        {
+          "id": "c",
+          "enunciat": "Calculeu la matriu $X$ que satisfà la igualtat $A \\cdot X = B$.",
+          "punts": 0.75
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $A = \\begin{pmatrix} 2 & 1 \\\\ 3 & 2 \\end{pmatrix}$, $B = \\begin{pmatrix} 2 & -1 \\\\ -3 & 2 \\end{pmatrix}$, $I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$\n- a) Comprovar una igualtat: només cal calcular el costat esquerre.\n- b) Expressar $A^{-1}$ com a combinació de $A$ i $I$ (sense calcular adjunts).\n- c) Trobar $X$ tal que $AX = B$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Calculem primer A − 2I",
+            "cos": "Restem a $A$ el doble de la identitat (només canvia la diagonal):\n\n$$A - 2I = \\begin{pmatrix} 2 & 1 \\\\ 3 & 2 \\end{pmatrix} - \\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix} = \\begin{pmatrix} 0 & 1 \\\\ 3 & 0 \\end{pmatrix}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Elevem al quadrat (producte fila per columna)",
+            "cos": "Elevar al quadrat una matriu vol dir multiplicar-la per ella mateixa:\n\n$$(A-2I)^2 = \\begin{pmatrix} 0 & 1 \\\\ 3 & 0 \\end{pmatrix} \\cdot \\begin{pmatrix} 0 & 1 \\\\ 3 & 0 \\end{pmatrix} = \\begin{pmatrix} 0\\cdot 0 + 1\\cdot 3 & 0\\cdot 1 + 1\\cdot 0 \\\\ 3\\cdot 0 + 0\\cdot 3 & 3\\cdot 1 + 0\\cdot 0 \\end{pmatrix} = \\begin{pmatrix} 3 & 0 \\\\ 0 & 3 \\end{pmatrix} = 3I$$\n\n**Queda comprovat que $(A-2I)^2 = 3I$.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Desenvolupem el quadrat",
+            "cos": "La idea és manipular la igualtat fins a obtenir una expressió del tipus $(\\ldots)\\cdot A = I$: el que multiplica $A$ serà la seva inversa.\n\nCom que $A$ i $I$ commuten ($AI = IA = A$), podem desenvolupar el quadrat com un binomi:\n\n$$(A-2I)^2 = A^2 - 2AI - 2IA + 4I^2 = A^2 - 4A + 4I$$\n\nPer tant la igualtat de l'apartat a) queda:\n\n$$A^2 - 4A + 4I = 3I \\;\\Longleftrightarrow\\; A^2 - 4A = -I \\;\\Longleftrightarrow\\; 4A - A^2 = I$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Traiem factor comú i identifiquem la inversa",
+            "cos": "Traiem $A$ factor comú per la dreta:\n\n$$(4I - A)\\cdot A = I$$\n\n(també $A\\cdot(4I - A) = I$, perquè $A$ commuta amb $I$). Per definició d'inversa:\n\n$$\\boxed{A^{-1} = 4I - A}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Calculem la inversa i la comparem amb B",
+            "cos": "$$A^{-1} = 4I - A = \\begin{pmatrix} 4 & 0 \\\\ 0 & 4 \\end{pmatrix} - \\begin{pmatrix} 2 & 1 \\\\ 3 & 2 \\end{pmatrix} = \\begin{pmatrix} 2 & -1 \\\\ -3 & 2 \\end{pmatrix} = B$$\n\n**Coincideix amb $B$.** Comprovació ràpida: $A\\cdot B = \\begin{pmatrix} 4-3 & -2+2 \\\\ 6-6 & -3+4 \\end{pmatrix} = I$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Aïllem X multiplicant per l'esquerra per la inversa",
+            "cos": "En matrius no es pot «dividir»: per aïllar $X$ multipliquem els dos costats **per l'esquerra** per $A^{-1}$ (l'ordre importa, perquè el producte no és commutatiu):\n\n$$A^{-1}(AX) = A^{-1}B \\;\\Longrightarrow\\; (A^{-1}A)X = A^{-1}B \\;\\Longrightarrow\\; X = A^{-1}B$$\n\nCom que a l'apartat b) hem vist que $A^{-1} = B$:\n\n$$X = B\\cdot B = B^2$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Calculem B²",
+            "cos": "$$X = \\begin{pmatrix} 2 & -1 \\\\ -3 & 2 \\end{pmatrix}\\cdot\\begin{pmatrix} 2 & -1 \\\\ -3 & 2 \\end{pmatrix} = \\begin{pmatrix} 4+3 & -2-2 \\\\ -6-6 & 3+4 \\end{pmatrix}$$\n\n$$\\boxed{X = \\begin{pmatrix} 7 & -4 \\\\ -12 & 7 \\end{pmatrix}}$$\n\nComprovació: $AX = \\begin{pmatrix} 14-12 & -8+7 \\\\ 21-24 & -12+14 \\end{pmatrix} = \\begin{pmatrix} 2 & -1 \\\\ -3 & 2 \\end{pmatrix} = B$ ✓"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$(A-2I)^2 = \\begin{pmatrix} 3 & 0 \\\\ 0 & 3 \\end{pmatrix} = 3I$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A^{-1} = 4I - A = \\begin{pmatrix} 2 & -1 \\\\ -3 & 2 \\end{pmatrix} = B$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$X = B^2 = \\begin{pmatrix} 7 & -4 \\\\ -12 & 7 \\end{pmatrix}$"
+          }
+        ],
+        "nota": "Error típic a c): escriure $X = BA^{-1}$ (multiplicar per la dreta). A l'apartat c) també es pot plantejar $X = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ i resoldre el sistema lineal que surt d'$AX = B$; el resultat és el mateix."
+      }
+    },
+    {
+      "id": "mates-2023-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Rectes tangents a la hipèrbola y = 1/x i triangle d'àrea constant",
+      "tema": "derivades",
+      "temes_secundaris": [
+        "funcions"
+      ],
+      "conceptes": [
+        "recta tangent",
+        "derivada",
+        "punts de tall amb els eixos",
+        "àrea del triangle"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "Sigui la funció $f(x) = \\dfrac{1}{x}$.",
+      "figures": [
+        {
+          "src": "img/mates/2023-S/e2.png",
+          "peu": "Gràfica de f(x) = 1/x, una recta tangent i el triangle que determina amb els semieixos positius"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de la funció $f$ en el punt d'abscissa $x = 2$.",
+          "punts": 0.75
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de la funció $f$ en el punt d'abscissa $x = k$, en què $k$ és un nombre real positiu.",
+          "punts": 0.75
+        },
+        {
+          "id": "c",
+          "enunciat": "Comproveu que, tal com es pot veure en la figura de sota, la recta de l'apartat b determina un triangle d'àrea constant amb els semieixos positius de coordenades. Calculeu aquesta àrea.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Mètode: equació de la recta tangent",
+            "cos": "La recta tangent a $y = f(x)$ en el punt d'abscissa $a$ passa pel punt $(a, f(a))$ i té pendent $f'(a)$:\n\n$$y - f(a) = f'(a)\\,(x - a)$$\n\nNecessitem la derivada: $f(x) = x^{-1} \\Rightarrow f'(x) = -x^{-2} = -\\dfrac{1}{x^2}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punt i pendent per a x = 2",
+            "cos": "- Punt: $f(2) = \\dfrac{1}{2}$, és a dir, $\\left(2, \\tfrac{1}{2}\\right)$.\n- Pendent: $f'(2) = -\\dfrac{1}{2^2} = -\\dfrac{1}{4}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de la tangent",
+            "cos": "$$y - \\frac{1}{2} = -\\frac{1}{4}(x - 2) \\;\\Longrightarrow\\; y = -\\frac{1}{4}x + \\frac{1}{2} + \\frac{1}{2}$$\n\n$$\\boxed{y = -\\frac{1}{4}x + 1}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punt i pendent per a x = k",
+            "cos": "Fem el mateix però amb una abscissa genèrica $k > 0$:\n\n- Punt: $\\left(k, \\tfrac{1}{k}\\right)$.\n- Pendent: $f'(k) = -\\dfrac{1}{k^2}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació de la tangent en funció de k",
+            "cos": "$$y - \\frac{1}{k} = -\\frac{1}{k^2}(x - k) \\;\\Longrightarrow\\; y = -\\frac{x}{k^2} + \\frac{k}{k^2} + \\frac{1}{k}$$\n\n$$\\boxed{y = -\\frac{1}{k^2}x + \\frac{2}{k}}$$\n\nComprovació: amb $k = 2$ surt $y = -\\frac{1}{4}x + 1$, la recta de l'apartat a)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Punt de tall amb l'eix d'abscisses (y = 0)",
+            "cos": "El triangle té vèrtexs a l'origen i als punts on la tangent talla els eixos. Fent $y = 0$:\n\n$$0 = -\\frac{x}{k^2} + \\frac{2}{k} \\;\\Longrightarrow\\; \\frac{x}{k^2} = \\frac{2}{k} \\;\\Longrightarrow\\; x = 2k$$\n\nPunt de tall: $(2k, 0)$, que és al semieix positiu perquè $k > 0$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Punt de tall amb l'eix d'ordenades (x = 0)",
+            "cos": "Fent $x = 0$: $y = \\dfrac{2}{k}$. Punt de tall: $\\left(0, \\tfrac{2}{k}\\right)$, també positiu."
+          },
+          {
+            "apartat": "c",
+            "titol": "Àrea del triangle",
+            "cos": "És un triangle rectangle amb catets sobre els eixos, de longituds $2k$ (base) i $\\frac{2}{k}$ (altura):\n\n$$\\text{Àrea} = \\frac{1}{2}\\cdot 2k \\cdot \\frac{2}{k} = 2\\ \\text{u}^2$$\n\nLa $k$ es simplifica: **l'àrea val sempre $2$ unitats quadrades, sigui quin sigui el punt de tangència $k > 0$.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y = -\\frac{1}{4}x + 1$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$y = -\\frac{1}{k^2}x + \\frac{2}{k}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Talls $(2k, 0)$ i $(0, 2/k)$; àrea $= 2\\ \\text{u}^2$ (constant, no depèn de $k$)"
+          }
+        ],
+        "nota": "Curiositat: el punt de tangència $\\left(k, \\frac{1}{k}\\right)$ és exactament el punt mitjà del segment entre $(2k,0)$ i $(0,2/k)$."
+      }
+    },
+    {
+      "id": "mates-2023-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Discussió d'un sistema 3×3 amb paràmetre i resolució per a m = 1",
+      "tema": "sistemes",
+      "temes_secundaris": [
+        "matrius"
+      ],
+      "conceptes": [
+        "discussió de sistemes",
+        "teorema de rouché-frobenius",
+        "determinant",
+        "mètode de gauss",
+        "rang"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "Sigui el sistema d'equacions lineals\n\n$$\\begin{cases} 2x + y = 1 + z \\\\ my + z = 2 - x \\\\ mz + 3 = 3x + y \\end{cases}$$\n\nen què $m$ és un nombre real.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Discutiu el sistema segons els valors del paràmetre $m$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Resoleu el sistema, si té solució, per al cas $m = 1$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Escrivim el sistema en forma normal",
+            "cos": "Abans de res, passem totes les incògnites a l'esquerra i els termes independents a la dreta, **ordenant $x$, $y$, $z$**:\n\n$$\\begin{cases} 2x + y - z = 1 \\\\ x + my + z = 2 \\\\ 3x + y - mz = 3 \\end{cases}$$\n\nMatriu de coeficients $A$ i matriu ampliada $A^*$:\n\n$$A = \\begin{pmatrix} 2 & 1 & -1 \\\\ 1 & m & 1 \\\\ 3 & 1 & -m \\end{pmatrix}, \\qquad A^* = \\left(\\begin{array}{ccc|c} 2 & 1 & -1 & 1 \\\\ 1 & m & 1 & 2 \\\\ 3 & 1 & -m & 3 \\end{array}\\right)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Determinant de la matriu de coeficients",
+            "cos": "Com que el sistema és quadrat (3 equacions, 3 incògnites) i depèn d'un paràmetre, estudiem quan $|A| = 0$: si $|A| \\neq 0$, el rang és 3 i el sistema té solució única.\n\nPer Sarrus:\n\n$$|A| = \\begin{vmatrix} 2 & 1 & -1 \\\\ 1 & m & 1 \\\\ 3 & 1 & -m \\end{vmatrix} = (-2m^2 + 3 - 1) - (-3m + 2 - m) = -2m^2 + 2 + 4m - 2$$\n\n$$|A| = -2m^2 + 4m = 2m(2 - m)$$\n\n$|A| = 0 \\iff m = 0$ o $m = 2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas m ≠ 0 i m ≠ 2",
+            "cos": "$|A| \\neq 0 \\Rightarrow \\text{rang}(A) = 3 = \\text{rang}(A^*) = $ nombre d'incògnites.\n\nPel teorema de Rouché-Frobenius: **sistema compatible determinat (SCD), solució única.**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas m = 0 (Gauss)",
+            "cos": "Substituïm $m = 0$ i esglaonem (intercanviem $f_1 \\leftrightarrow f_2$ per tenir un 1 a dalt):\n\n$$\\left(\\begin{array}{ccc|c} 1 & 0 & 1 & 2 \\\\ 2 & 1 & -1 & 1 \\\\ 3 & 1 & 0 & 3 \\end{array}\\right) \\xrightarrow[f_3 - 3f_1]{f_2 - 2f_1} \\left(\\begin{array}{ccc|c} 1 & 0 & 1 & 2 \\\\ 0 & 1 & -3 & -3 \\\\ 0 & 1 & -3 & -3 \\end{array}\\right) \\xrightarrow{f_3 - f_2} \\left(\\begin{array}{ccc|c} 1 & 0 & 1 & 2 \\\\ 0 & 1 & -3 & -3 \\\\ 0 & 0 & 0 & 0 \\end{array}\\right)$$\n\n$\\text{rang}(A) = 2 = \\text{rang}(A^*) < 3$: **sistema compatible indeterminat (SCI)**, infinites solucions amb $3 - 2 = 1$ grau de llibertat."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas m = 2 (Gauss)",
+            "cos": "Substituïm $m = 2$ i esglaonem:\n\n$$\\left(\\begin{array}{ccc|c} 1 & 2 & 1 & 2 \\\\ 2 & 1 & -1 & 1 \\\\ 3 & 1 & -2 & 3 \\end{array}\\right) \\xrightarrow[f_3 - 3f_1]{f_2 - 2f_1} \\left(\\begin{array}{ccc|c} 1 & 2 & 1 & 2 \\\\ 0 & -3 & -3 & -3 \\\\ 0 & -5 & -5 & -3 \\end{array}\\right) \\xrightarrow{3f_3 - 5f_2} \\left(\\begin{array}{ccc|c} 1 & 2 & 1 & 2 \\\\ 0 & -3 & -3 & -3 \\\\ 0 & 0 & 0 & 6 \\end{array}\\right)$$\n\nL'última fila diu $0 = 6$, impossible: $\\text{rang}(A) = 2 \\neq \\text{rang}(A^*) = 3$. **Sistema incompatible (SI), no té solució.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Substituïm m = 1",
+            "cos": "Com que $m = 1$ no és ni 0 ni 2, per l'apartat a) el sistema és **compatible determinat**: té solució única.\n\n$$\\begin{cases} 2x + y - z = 1 \\\\ x + y + z = 2 \\\\ 3x + y - z = 3 \\end{cases}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resolem per Gauss",
+            "cos": "$$\\left(\\begin{array}{ccc|c} 1 & 1 & 1 & 2 \\\\ 2 & 1 & -1 & 1 \\\\ 3 & 1 & -1 & 3 \\end{array}\\right) \\xrightarrow[3f_1 - f_3]{2f_1 - f_2} \\left(\\begin{array}{ccc|c} 1 & 1 & 1 & 2 \\\\ 0 & 1 & 3 & 3 \\\\ 0 & 2 & 4 & 3 \\end{array}\\right) \\xrightarrow{f_3 - 2f_2} \\left(\\begin{array}{ccc|c} 1 & 1 & 1 & 2 \\\\ 0 & 1 & 3 & 3 \\\\ 0 & 0 & -2 & -3 \\end{array}\\right)$$\n\nSubstitució enrere:\n\n- $-2z = -3 \\Rightarrow z = \\dfrac{3}{2}$\n- $y + 3z = 3 \\Rightarrow y = 3 - \\dfrac{9}{2} = -\\dfrac{3}{2}$\n- $x + y + z = 2 \\Rightarrow x = 2 + \\dfrac{3}{2} - \\dfrac{3}{2} = 2$\n\n$$\\boxed{x = 2,\\quad y = -\\tfrac{3}{2},\\quad z = \\tfrac{3}{2}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovació",
+            "cos": "Substituïm a les equacions originals:\n\n- $2(2) + (-\\tfrac32) - \\tfrac32 = 4 - 3 = 1$ ✓\n- $2 - \\tfrac32 + \\tfrac32 = 2$ ✓\n- $3(2) - \\tfrac32 - \\tfrac32 = 6 - 3 = 3$ ✓\n\n(Drecera: restant la 1a equació de la 3a surt directament $x = 2$.)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$m \\neq 0, 2$: SCD (solució única); $m = 0$: SCI (infinites solucions, 1 grau de llibertat); $m = 2$: SI (sense solució)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m = 1$: $x = 2$, $y = -\\frac{3}{2}$, $z = \\frac{3}{2}$"
+          }
+        ],
+        "nota": "Error típic: no passar les incògnites a l'esquerra abans d'escriure la matriu (p. ex. a la 2a equació la $x$ és a la dreta i a la 3a hi ha $3x + y$ a la dreta). L'oficial indica que a) es pot fer també calculant rangs per menors i b) amb la regla de Cramer ($|A| = 2$ per a $m = 1$)."
+      }
+    },
+    {
+      "id": "mates-2023-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Teorema de Bolzano i àrea entre dues corbes amb la mateixa exponencial",
+      "tema": "integrals",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "teorema de bolzano",
+        "continuïtat",
+        "àrea entre corbes",
+        "regla de barrow"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8,
+        9
+      ],
+      "enunciat": "Sigui la funció $f(x)$ definida per $f(x) = -3x + e^{2x^3 - 1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Justifiqueu que $f(x) = 2$ té una solució en l'interval $(-1, 0)$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Sigui la funció $h(x) = -3x^2 + e^{2x^3 - 1}$. Calculeu l'àrea de la regió compresa entre les gràfiques de les funcions $f(x)$ i $h(x)$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Reformulem: buscar un zero",
+            "cos": "Que l'equació $f(x) = 2$ tingui solució equival a que la funció\n\n$$g(x) = f(x) - 2 = -3x + e^{2x^3-1} - 2$$\n\ntingui algun zero. Per garantir l'existència d'un zero en un interval sense resoldre l'equació, fem servir el **teorema de Bolzano**: si $g$ és contínua a $[a,b]$ i $g(a)$, $g(b)$ tenen signes oposats, existeix $c \\in (a,b)$ amb $g(c) = 0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Continuïtat",
+            "cos": "$g$ és la suma d'una funció polinòmica ($-3x - 2$) i d'una exponencial composta amb un polinomi ($e^{2x^3-1}$); totes dues són contínues a tot $\\mathbb{R}$. Per tant **$g$ és contínua a $[-1, 0]$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Signes als extrems",
+            "cos": "$$g(-1) = 3 + e^{2(-1)^3 - 1} - 2 = 1 + e^{-3} \\approx 1{,}05 > 0$$\n\n$$g(0) = 0 + e^{-1} - 2 \\approx 0{,}368 - 2 = -1{,}63 < 0$$\n\nPer tant $g(-1)\\cdot g(0) < 0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Conclusió",
+            "cos": "Per Bolzano existeix $c \\in (-1, 0)$ amb $g(c) = 0$, és a dir, **$f(c) = 2$: l'equació $f(x) = 2$ té almenys una solució a $(-1, 0)$** (numèricament, $c \\approx -0{,}584$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Punts de tall entre les gràfiques",
+            "cos": "Per calcular l'àrea entre dues corbes cal saber entre quins punts es tallen (seran els límits d'integració). Igualem:\n\n$$-3x + e^{2x^3-1} = -3x^2 + e^{2x^3-1}$$\n\nL'exponencial és la mateixa a les dues bandes i es cancel·la:\n\n$$-3x = -3x^2 \\;\\Longrightarrow\\; 3x^2 - 3x = 0 \\;\\Longrightarrow\\; 3x(x - 1) = 0$$\n\nEs tallen a **$x = 0$ i $x = 1$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantejament de la integral",
+            "cos": "L'àrea és la integral de la diferència de les funcions entre els punts de tall:\n\n$$h(x) - f(x) = \\left(-3x^2 + e^{2x^3-1}\\right) - \\left(-3x + e^{2x^3-1}\\right) = -3x^2 + 3x$$\n\nA $(0,1)$ aquesta diferència és $3x(1-x) > 0$, així que $h$ queda per sobre de $f$:\n\n$$A = \\int_0^1 \\left(h(x) - f(x)\\right)dx = \\int_0^1 (-3x^2 + 3x)\\,dx$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Primitiva i regla de Barrow",
+            "cos": "$$\\int (-3x^2 + 3x)\\,dx = -x^3 + \\frac{3x^2}{2}$$\n\n$$A = \\left[-x^3 + \\frac{3x^2}{2}\\right]_0^1 = \\left(-1 + \\frac{3}{2}\\right) - 0 = \\frac{1}{2}$$\n\n**Àrea $= \\dfrac{1}{2}\\ \\text{u}^2$.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$g = f - 2$ contínua a $[-1,0]$, $g(-1) = 1 + e^{-3} > 0$, $g(0) = e^{-1} - 2 < 0$ ⇒ per Bolzano hi ha solució a $(-1,0)$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Talls a $x = 0$ i $x = 1$; àrea $= \\frac{1}{2}\\ \\text{u}^2$"
+          }
+        ],
+        "nota": "La clau de b) és veure que l'exponencial es cancel·la a la diferència; no cal integrar mai $e^{2x^3-1}$ (que no té primitiva elemental). L'oficial calcula l'àrea amb valor absolut de la integral; és equivalent perquè la diferència no canvia de signe a $(0,1)$."
+      }
+    },
+    {
+      "id": "mates-2023-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Perpendicular comuna a dues rectes que s'encreuen i distància entre elles",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "perpendicular comuna",
+        "rectes que s'encreuen",
+        "producte escalar",
+        "distància entre rectes",
+        "equació paramètrica"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        10,
+        11
+      ],
+      "enunciat": "Siguin $r_1$ i $r_2$ les rectes definides per $r_1\\colon x - 1 = y = -z$ i per $r_2\\colon x = y = z$, respectivament.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació paramètrica de la recta que talla perpendicularment les rectes $r_1$ i $r_2$.",
+          "punts": 1.75
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la distància entre $r_1$ i $r_2$.",
+          "punts": 0.75
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Equacions paramètriques de les dues rectes",
+            "cos": "Passem de les equacions contínues a paramètriques igualant-les a un paràmetre.\n\n- $r_1$: $x - 1 = y = -z = \\lambda \\Rightarrow (x,y,z) = (1+\\lambda,\\ \\lambda,\\ -\\lambda)$. Punt $(1,0,0)$, vector $\\vec{v}_1 = (1,1,-1)$.\n- $r_2$: $x = y = z = \\mu \\Rightarrow (x,y,z) = (\\mu,\\ \\mu,\\ \\mu)$. Punt $(0,0,0)$, vector $\\vec{v}_2 = (1,1,1)$.\n\nEls vectors no són proporcionals i (com veurem) les rectes no es tallen: s'encreuen."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vector entre un punt genèric de cada recta",
+            "cos": "Prenem un punt qualsevol de cada recta, $A_1 = (1+\\lambda, \\lambda, -\\lambda) \\in r_1$ i $A_2 = (\\mu, \\mu, \\mu) \\in r_2$:\n\n$$\\overrightarrow{A_1A_2} = (\\mu - \\lambda - 1,\\ \\mu - \\lambda,\\ \\mu + \\lambda)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Condició de doble perpendicularitat",
+            "cos": "La perpendicular comuna és la recta $A_1A_2$ quan $\\overrightarrow{A_1A_2}$ és perpendicular als **dos** vectors directors, és a dir, quan els productes escalars són zero:\n\n$$\\overrightarrow{A_1A_2}\\cdot(1,1,-1) = (\\mu-\\lambda-1) + (\\mu-\\lambda) - (\\mu+\\lambda) = \\mu - 3\\lambda - 1 = 0$$\n\n$$\\overrightarrow{A_1A_2}\\cdot(1,1,1) = (\\mu-\\lambda-1) + (\\mu-\\lambda) + (\\mu+\\lambda) = 3\\mu - \\lambda - 1 = 0$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Resolem el sistema i trobem els peus",
+            "cos": "$$\\begin{cases} \\mu - 3\\lambda = 1 \\\\ 3\\mu - \\lambda = 1 \\end{cases}$$\n\nRestant a la 2a equació 3 vegades la 1a: $8\\lambda = -2 \\Rightarrow \\lambda = -\\dfrac{1}{4}$. Llavors $\\mu = 1 + 3\\lambda = 1 - \\dfrac34 = \\dfrac{1}{4}$.\n\nPunts de tall de la perpendicular comuna amb cada recta:\n\n$$A_1 = \\left(\\tfrac{3}{4},\\ -\\tfrac{1}{4},\\ \\tfrac{1}{4}\\right), \\qquad A_2 = \\left(\\tfrac{1}{4},\\ \\tfrac{1}{4},\\ \\tfrac{1}{4}\\right)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de la perpendicular comuna",
+            "cos": "Vector director: $\\overrightarrow{A_1A_2} = \\left(-\\tfrac12, \\tfrac12, 0\\right)$, o el proporcional $(-1, 1, 0)$. Comprovem: $(-1,1,0)\\cdot(1,1,-1) = 0$ ✓ i $(-1,1,0)\\cdot(1,1,1) = 0$ ✓.\n\nAgafant el punt $A_2$:\n\n$$\\boxed{\\begin{cases} x = \\tfrac{1}{4} - \\alpha \\\\ y = \\tfrac{1}{4} + \\alpha \\\\ z = \\tfrac{1}{4} \\end{cases},\\quad \\alpha \\in \\mathbb{R}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Distància = longitud del segment de la perpendicular comuna",
+            "cos": "La distància entre dues rectes que s'encreuen és la longitud del segment de perpendicular comuna entre elles, és a dir, $d(A_1, A_2)$:\n\n$$d(r_1, r_2) = \\left|\\overrightarrow{A_1A_2}\\right| = \\sqrt{\\left(-\\tfrac12\\right)^2 + \\left(\\tfrac12\\right)^2 + 0^2} = \\sqrt{\\tfrac{1}{2}} = \\frac{1}{\\sqrt2} = \\frac{\\sqrt2}{2}$$\n\n**$d(r_1, r_2) = \\dfrac{\\sqrt{2}}{2} \\approx 0{,}707$ u.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovació amb la fórmula general",
+            "cos": "Amb $P_1 = (1,0,0)$, $P_2 = (0,0,0)$, $\\vec{v}_1\\times\\vec{v}_2 = (1,1,-1)\\times(1,1,1) = (2,-2,0)$:\n\n$$d = \\frac{\\left|\\overrightarrow{P_1P_2}\\cdot(\\vec{v}_1\\times\\vec{v}_2)\\right|}{|\\vec{v}_1\\times\\vec{v}_2|} = \\frac{|(-1,0,0)\\cdot(2,-2,0)|}{\\sqrt{8}} = \\frac{2}{2\\sqrt2} = \\frac{\\sqrt2}{2}$$ ✓"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$(x,y,z) = \\left(\\frac14 - \\alpha,\\ \\frac14 + \\alpha,\\ \\frac14\\right)$, $\\alpha\\in\\mathbb{R}$ (talla $r_1$ a $(\\frac34,-\\frac14,\\frac14)$ i $r_2$ a $(\\frac14,\\frac14,\\frac14)$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$d(r_1, r_2) = \\frac{\\sqrt2}{2} \\approx 0{,}707$ u"
+          }
+        ],
+        "nota": "Cal tenir present que la recta perpendicular ha de **tallar** les dues rectes: no n'hi ha prou amb un vector perpendicular a tots dos ($\\vec v_1 \\times \\vec v_2$), cal també trobar els punts de tall. L'oficial esmenta que b) també es pot fer amb la fórmula general (com a la comprovació) o projectant una recta sobre l'altra."
+      }
+    },
+    {
+      "id": "mates-2023-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Trapezi isòsceles d'àrea màxima amb costats laterals de 10 mm",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "optimització",
+        "teorema de pitàgores",
+        "àrea del trapezi",
+        "derivada",
+        "màxim relatiu"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12
+      ],
+      "enunciat": "Volem construir una peça metàl·lica que tingui per secció un trapezi isòsceles amb la base superior tres vegades més llarga que la base inferior. Els altres costats del trapezi fan $10\\ \\text{mm}$, tal com podeu observar en la figura següent:",
+      "figures": [
+        {
+          "src": "img/mates/2023-S/e6.png",
+          "peu": "Trapezi isòsceles de bases x i 3x i costats laterals de 10 mm"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Expresseu l'altura del trapezi en funció de la longitud $x$ de la base inferior.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la longitud de la base inferior del trapezi de manera que l'àrea de la peça sigui màxima i trobeu el valor d'aquesta àrea màxima.",
+          "punts": 2
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Base inferior: $x$ (mm); base superior: $3x$; costats laterals: $10\\ \\text{mm}$.\n- a) Altura $h(x)$.\n- b) Valor de $x$ que fa màxima l'àrea, i l'àrea màxima.\n- Perquè el trapezi existeixi: $0 < x < 10$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Triangle rectangle lateral i Pitàgores",
+            "cos": "Si baixem l'altura des d'un extrem de la base inferior, la base superior queda dividida: com que el trapezi és isòsceles, el que sobra de la base gran, $3x - x = 2x$, es reparteix a parts iguals als dos costats, és a dir, $x$ a cada banda. Es forma un triangle rectangle de hipotenusa $10$, un catet $x$ i l'altre catet $h$:\n\n![Triangle rectangle lateral (solució oficial)](img/mates/2023-S/e6-sol.png)\n\n$$x^2 + h^2 = 10^2 \\;\\Longrightarrow\\; \\boxed{h(x) = \\sqrt{100 - x^2}}\\ \\text{mm}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció a optimitzar",
+            "cos": "Àrea del trapezi = semisuma de les bases per l'altura:\n\n$$A(x) = \\frac{x + 3x}{2}\\cdot h = 2x\\sqrt{100 - x^2}, \\qquad 0 < x < 10$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivada (regla del producte i de la cadena)",
+            "cos": "$$A'(x) = 2\\sqrt{100 - x^2} + 2x\\cdot\\frac{-2x}{2\\sqrt{100 - x^2}} = 2\\sqrt{100 - x^2} - \\frac{2x^2}{\\sqrt{100 - x^2}}$$\n\nPosem-ho tot amb el mateix denominador:\n\n$$A'(x) = \\frac{2(100 - x^2) - 2x^2}{\\sqrt{100 - x^2}} = \\frac{200 - 4x^2}{\\sqrt{100 - x^2}} = \\frac{4(50 - x^2)}{\\sqrt{100 - x^2}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punt crític",
+            "cos": "Els candidats a màxim són els punts on $A'(x) = 0$, és a dir, on s'anul·la el numerador:\n\n$$50 - x^2 = 0 \\;\\Longrightarrow\\; x = \\pm\\sqrt{50} = \\pm 5\\sqrt2$$\n\nCom que $x$ és una longitud, només serveix $x = 5\\sqrt2 \\approx 7{,}07\\ \\text{mm}$ (que és dins de $(0, 10)$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovem que és un màxim",
+            "cos": "Estudiem el signe de $A'$ (el denominador és sempre positiu, així que mana el numerador $4(50 - x^2)$):\n\n| interval | $(0,\\ 5\\sqrt2)$ | $(5\\sqrt2,\\ 10)$ |\n|---|---|---|\n| signe de $A'$ | $+$ | $-$ |\n| $A$ | creix | decreix |\n\nL'àrea creix i després decreix: **a $x = 5\\sqrt2$ hi ha el màxim**. (Numèricament també es veu: $A(7) \\approx 99{,}980$ i $A(7{,}1) \\approx 99{,}997$, tots dos per sota de $100$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Àrea màxima",
+            "cos": "$$A(5\\sqrt2) = 2\\cdot\\sqrt{50}\\cdot\\sqrt{100 - 50} = 2\\cdot\\sqrt{50}\\cdot\\sqrt{50} = 2\\cdot 50 = 100\\ \\text{mm}^2$$\n\n**La base inferior ha de fer $x = 5\\sqrt2 \\approx 7{,}07\\ \\text{mm}$ (la superior $15\\sqrt2 \\approx 21{,}21\\ \\text{mm}$, l'altura $5\\sqrt2\\ \\text{mm}$) i l'àrea màxima és $100\\ \\text{mm}^2$.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$h(x) = \\sqrt{100 - x^2}$ mm"
+          },
+          {
+            "apartat": "b",
+            "valor": "$x = 5\\sqrt2 \\approx 7{,}07$ mm; $A_\\text{màx} = 100\\ \\text{mm}^2$"
+          }
+        ],
+        "nota": "Error típic a a): fer Pitàgores amb catet $2x$ en lloc de $x$ (la diferència de bases $2x$ es reparteix entre els dos costats). L'oficial comprova el màxim avaluant valors propers; també es pot fer amb la derivada segona, que dona $A''(5\\sqrt2) = -8 < 0$."
+      }
+    }
+  ]
+}

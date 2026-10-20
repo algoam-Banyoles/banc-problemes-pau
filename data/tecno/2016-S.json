@@ -1,0 +1,349 @@
+{
+  "examen": {
+    "id": "tecno-2016-S",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2016,
+    "convocatoria": "setembre",
+    "serie": "1",
+    "pdf_examen": "pdfs/tecno/2016-S-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2016-S-solucio.pdf",
+    "estructura": "La prova consta de dues parts de dos exercicis cadascuna (2,5 punts per exercici). La primera part (exercicis 1 i 2) és comuna i obligatòria; l'exercici 1 té 5 qüestions de test (0,5 punts cadascuna; resposta errònia: −0,16 punts; no contestada: 0 punts). A la segona part cal escollir UNA de les dues opcions (A o B) i fer-ne els exercicis 3 i 4."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2016-S-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat de sincronisme d'un motor asíncron de quatre parells de pols",
+      "tema": "maquines-electriques",
+      "temes_secundaris": [],
+      "conceptes": ["motor asíncron", "velocitat de sincronisme", "parells de pols", "freqüència"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "En un motor asíncron de corrent altern de quatre parells de pols, que està connectat a la xarxa de tensió $U = 230\\ \\text{V}$ i freqüència $f = 50\\ \\text{Hz}$, la velocitat de sincronisme és",
+      "figures": [],
+      "opcions": {"a": "$750\\ \\text{min}^{-1}$.", "b": "$1\\,800\\ \\text{min}^{-1}$.", "c": "$1\\,500\\ \\text{min}^{-1}$.", "d": "$3\\,000\\ \\text{min}^{-1}$."},
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Nombre de parells de pols: $p = 4$\n- Freqüència de la xarxa: $f = 50\\ \\text{Hz}$\n- Tensió: $U = 230\\ \\text{V}$ (no influeix en la velocitat de sincronisme)\n- Incògnita: velocitat de sincronisme $n_s$ en $\\text{min}^{-1}$"},
+          {"apartat": null, "titol": "Velocitat del camp magnètic giratori", "cos": "En un motor asíncron, el camp magnètic de l'estator gira a la **velocitat de sincronisme**, que només depèn de la freqüència de la xarxa i del nombre de parells de pols. Expressada en voltes per minut:\n\n$$n_s = \\frac{60\\, f}{p} = \\frac{60 \\cdot 50}{4} = 750\\ \\text{min}^{-1}$$\n\nResultat: **$n_s = 750\\ \\text{min}^{-1}$** → resposta **a**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **d)** $3\\,000\\ \\text{min}^{-1}$ correspondria a 1 parell de pols.\n- **c)** $1\\,500\\ \\text{min}^{-1}$ correspondria a 2 parells de pols (o a confondre 4 pols amb 4 parells de pols).\n- **b)** $1\\,800\\ \\text{min}^{-1}$ correspondria a una xarxa de $60\\ \\text{Hz}$ amb 2 parells de pols.\n\nLa tensió de $230\\ \\text{V}$ és una dada que no cal fer servir."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$n_s = 750\\ \\text{min}^{-1}$ → resposta **a**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-S-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Taxa de rebuig d'un procés de rectificació després d'un fresatge",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": ["taxa de rebuig", "control de qualitat", "processos de fabricació"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "La fabricació d'una peça es duu a terme en dos processos: el primer en una fresadora i el segon en una rectificadora. Després de cada procés, es controla la qualitat de les peces i es desestimen les que no són correctes. D'un total inicial de $1\\,500$ peces, se n'han desestimat 75 després del fresatge i 6 després de la rectificació. Quina és la taxa de rebuig del procés de rectificació?",
+      "figures": [],
+      "opcions": {"a": "$8\\ \\%$", "b": "$0{,}42\\ \\%$", "c": "$0{,}40\\ \\%$", "d": "$5{,}4\\ \\%$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {"apartat": null, "titol": "Quantes peces arriben a la rectificadora", "cos": "La taxa de rebuig d'un procés es calcula sobre les peces que **entren en aquell procés**, no sobre el total inicial. Les 75 peces rebutjades al fresatge ja no arriben a la rectificadora:\n\n$$N_\\text{rect} = 1\\,500 - 75 = 1\\,425\\ \\text{peces}$$"},
+          {"apartat": null, "titol": "Taxa de rebuig de la rectificació", "cos": "$$t_\\text{rect} = \\frac{\\text{peces rebutjades}}{\\text{peces processades}} = \\frac{6}{1\\,425} = 0{,}00421 = 0{,}42\\ \\%$$\n\nResultat: **$t_\\text{rect} = 0{,}42\\ \\%$** → resposta **b**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **c)** $0{,}40\\ \\%$ surt de dividir per les $1\\,500$ peces inicials ($6/1\\,500$): error típic.\n- **d)** $5{,}4\\ \\%$ és la taxa de rebuig total dels dos processos: $(75+6)/1\\,500 = 5{,}4\\ \\%$.\n- **a)** $8\\ \\%$ no correspon a cap càlcul raonable ($6/75$ sí que dona $8\\ \\%$, però no té sentit)."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$t_\\text{rect} = 6/1\\,425 = 0{,}42\\ \\%$ → resposta **b**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-S-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Massa de cobalt per a un aliatge de coure per a elèctrodes",
+      "tema": "materials",
+      "temes_secundaris": [],
+      "conceptes": ["aliatge", "composició en massa", "percentatge"],
+      "dificultat": 1,
+      "pagines": [2],
+      "enunciat": "Un aliatge de coure, que s'utilitza per a elèctrodes de soldadura, conté un $96{,}9\\ \\%$ de coure (Cu), un $2{,}5\\ \\%$ de cobalt (Co) i un $0{,}6\\ \\%$ de beril·li (Be). Amb $500\\ \\text{kg}$ de coure, quina quantitat de cobalt cal per a obtenir aquest aliatge?",
+      "figures": [],
+      "opcions": {"a": "$96{,}9\\ \\text{kg}$", "b": "$12{,}50\\ \\text{kg}$", "c": "$12{,}90\\ \\text{kg}$", "d": "$2{,}5\\ \\text{kg}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {"apartat": null, "titol": "Massa total d'aliatge", "cos": "Els percentatges són sobre la massa **total** de l'aliatge. Els $500\\ \\text{kg}$ de coure han de ser el $96{,}9\\ \\%$ del total:\n\n$$m_\\text{total} = \\frac{m_\\text{Cu}}{0{,}969} = \\frac{500}{0{,}969} = 516{,}0\\ \\text{kg}$$"},
+          {"apartat": null, "titol": "Massa de cobalt", "cos": "$$m_\\text{Co} = 0{,}025 \\cdot m_\\text{total} = 0{,}025 \\cdot 516{,}0 = 12{,}90\\ \\text{kg}$$\n\nO directament amb la proporció entre components: $m_\\text{Co} = 500 \\cdot \\dfrac{2{,}5}{96{,}9} = 12{,}90\\ \\text{kg}$.\n\nResultat: **$m_\\text{Co} = 12{,}90\\ \\text{kg}$** → resposta **c**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **b)** $12{,}50\\ \\text{kg}$ surt de fer el $2{,}5\\ \\%$ de $500\\ \\text{kg}$, com si 500 kg fos la massa total de l'aliatge (error típic).\n- **a)** i **d)** són simplement els percentatges escrits com si fossin quilograms."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$m_\\text{Co} = 12{,}90\\ \\text{kg}$ → resposta **c**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-S-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Tolerància general necessària en una cadena de cotes",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": ["tolerància", "cadena de cotes", "acotació"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "En un plànol s'acoten les mides $L_1$, $L_2$ i $L_3$. Si es vol que la tolerància de l'amplària $s$ sigui de $\\pm 150\\ \\mu\\text{m}$, quina tolerància general cal indicar?",
+      "figures": [{"src": "img/tecno/2016-S/e1-q4.png", "peu": "Peça acotada amb les mides L1, L2 i L3; l'amplària s no està acotada"}],
+      "opcions": {"a": "$\\pm 50\\ \\mu\\text{m}$", "b": "$\\pm 150\\ \\mu\\text{m}$", "c": "$\\pm 300\\ \\mu\\text{m}$", "d": "$\\pm 100\\ \\mu\\text{m}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {"apartat": null, "titol": "L'amplària s depèn de tres cotes", "cos": "A la figura, la mida $s$ no està acotada directament: s'obté de les altres tres,\n\n$$s = L_1 - L_2 - L_3$$\n\nCada cota acotada té la mateixa tolerància general $\\pm t$."},
+          {"apartat": null, "titol": "Les toleràncies se sumen", "cos": "En una cadena de cotes, el cas més desfavorable és quan totes les errors s'acumulen en el mateix sentit (per exemple, $L_1$ màxima i $L_2$, $L_3$ mínimes). Per tant, la tolerància de $s$ és la **suma** de les toleràncies de les tres cotes, encara que algunes es restin:\n\n$$t_s = t_{L_1} + t_{L_2} + t_{L_3} = 3\\,t$$\n\n$$3\\,t = 150\\ \\mu\\text{m} \\;\\Rightarrow\\; t = \\frac{150}{3} = 50\\ \\mu\\text{m}$$\n\nResultat: **tolerància general $\\pm 50\\ \\mu\\text{m}$** → resposta **a**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **b)** $\\pm 150\\ \\mu\\text{m}$: oblida que els errors de les tres cotes s'acumulen.\n- **d)** $\\pm 100\\ \\mu\\text{m}$: considera només dues cotes.\n- **c)** $\\pm 300\\ \\mu\\text{m}$: multiplica en lloc de dividir."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$t = \\pm 150/3 = \\pm 50\\ \\mu\\text{m}$ → resposta **a**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-S-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Resultat d'una sèrie de mesures de temps: valor mitjà",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": ["mesura", "valor mitjà", "metrologia"],
+      "dificultat": 1,
+      "pagines": [2],
+      "enunciat": "Es mesura diverses vegades el temps que tarda un tren a recórrer un tram de $10\\ \\text{km}$ i s'obtenen els temps següents: $11{,}23\\ \\text{min}$, $9{,}61\\ \\text{min}$, $10{,}47\\ \\text{min}$ i $9{,}86\\ \\text{min}$. Seria correcte dir que el temps obtingut en el procés de mesurament ha estat de $10{,}29\\ \\text{min}$?",
+      "figures": [],
+      "opcions": {"a": "No, el resultat hauria de ser el valor més baix obtingut.", "b": "Sí, ja que és el valor mitjà de les mesures.", "c": "Sí, ja que es troba entre els marges dels valors obtinguts.", "d": "No, caldria donar el resultat amb menys xifres decimals."},
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {"apartat": null, "titol": "Valor mitjà de les mesures", "cos": "Quan es repeteix una mesura diverses vegades, el valor que es dona com a resultat és la **mitjana aritmètica**, perquè compensa els errors aleatoris:\n\n$$\\bar{t} = \\frac{11{,}23 + 9{,}61 + 10{,}47 + 9{,}86}{4} = \\frac{41{,}17}{4} = 10{,}29\\ \\text{min}$$\n\nEl valor $10{,}29\\ \\text{min}$ és exactament la mitjana → resposta **b**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **a)** El valor més baix no té cap significat especial: no hi ha cap raó per pensar que és el més exacte.\n- **c)** Estar entre el mínim i el màxim no basta: qualsevol valor entre $9{,}61$ i $11{,}23$ ho compliria.\n- **d)** Les mesures es donen amb dues xifres decimals, i la mitjana s'expressa amb la mateixa resolució."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$\\bar{t} = 10{,}29\\ \\text{min}$ (valor mitjà) → resposta **b**"}],
+        "nota": "En un informe rigorós, a més de la mitjana caldria indicar-ne la incertesa (amb mesures tan disperses, de l'ordre de $\\pm 0{,}4\\ \\text{min}$ o més), i aleshores tindria sentit arrodonir a menys decimals. La solució oficial dona per bona la **b**."
+      }
+    },
+    {
+      "id": "tecno-2016-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Control lògic d'un climatitzador d'automòbil (temperatures i finestres)",
+      "tema": "digital",
+      "temes_secundaris": ["control"],
+      "conceptes": ["taula de veritat", "funció lògica", "portes lògiques", "simplificació"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Un climatitzador automàtic posa en marxa el mode «aire condicionat» si la temperatura interior del vehicle és superior a la temperatura de consigna $T_\\text{c}$, sempre que la temperatura de consigna sigui més de $3\\ ^\\circ\\text{C}$ inferior a la temperatura exterior del vehicle. El sistema també té un sensor que apaga l'aire condicionat si detecta que hi ha alguna finestra oberta. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- temperatura interior: $i$ = 1: si $T_\\text{interior} > T_\\text{c}$; 0: si $T_\\text{interior} \\le T_\\text{c}$\n- temperatura exterior: $e$ = 1: si $T_\\text{c} \\ge T_\\text{exterior} - 3\\ ^\\circ\\text{C}$; 0: si $T_\\text{c} < T_\\text{exterior} - 3\\ ^\\circ\\text{C}$\n- finestres: $f$ = 1: obertes; 0: tancades\n- aire condicionat: $ac$ = 1: engegat; 0: apagat",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Escriviu la taula de veritat del sistema.", "punts": 1},
+        {"id": "b", "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.", "punts": 1},
+        {"id": "c", "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Traduir l'enunciat a condicions lògiques", "cos": "L'aire condicionat s'engega ($ac = 1$) només si es compleixen **les tres** condicions alhora:\n\n1. Temperatura interior superior a la de consigna → $i = 1$.\n2. Temperatura de consigna **més de 3 °C inferior** a l'exterior, és a dir $T_\\text{c} < T_\\text{exterior} - 3\\ ^\\circ\\text{C}$ → segons la definició, això és $e = 0$ (compte: la variable $e$ val 1 precisament quan **no** es compleix la condició).\n3. Cap finestra oberta → $f = 0$."},
+          {"apartat": "a", "titol": "Taula de veritat", "cos": "Amb 3 variables hi ha $2^3 = 8$ combinacions. Només la fila $i = 1$, $e = 0$, $f = 0$ dona $ac = 1$:\n\n| $i$ | $e$ | $f$ | $ac$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | 0 |\n| 1 | 0 | 0 | **1** |\n| 1 | 0 | 1 | 0 |\n| 1 | 1 | 0 | 0 |\n| 1 | 1 | 1 | 0 |"},
+          {"apartat": "b", "titol": "Funció lògica", "cos": "Hi ha un sol 1 a la taula, de manera que la funció canònica (suma de productes) té un sol terme, amb les variables negades quan valen 0:\n\n$$\\boxed{ac = i\\cdot\\bar{e}\\cdot\\bar{f}}$$\n\nUn terme únic amb totes les variables (minterme aïllat) **no es pot simplificar** més: no hi ha cap 1 adjacent per agrupar."},
+          {"apartat": "c", "titol": "Esquema de portes lògiques", "cos": "Cal una porta **AND de 3 entrades** amb les entrades $e$ i $f$ negades. Es pot fer amb 2 portes NOT ($\\bar{e}$, $\\bar{f}$) + 1 AND de 3 entrades, o bé, com a la solució oficial, amb una AND que té cercles de negació a les entrades $e$ i $f$:\n\n![Porta AND de tres entrades amb les entrades e i f negades](img/tecno/2016-S/e2-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$ac = 1$ només a la fila $i=1,\\ e=0,\\ f=0$"},
+          {"apartat": "b", "valor": "$ac = i\\cdot\\bar{e}\\cdot\\bar{f}$ (no simplificable)"},
+          {"apartat": "c", "valor": "1 AND de 3 entrades amb $e$ i $f$ negades (o 2 NOT + 1 AND)"}
+        ],
+        "nota": "Error típic: posar $e$ sense negar. La variable $e$ val 1 quan la consigna **no** és més de 3 °C inferior a l'exterior, i en aquest cas l'aire condicionat ha d'estar apagat."
+      }
+    },
+    {
+      "id": "tecno-2016-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cost de fabricar una estrella de fusta: superfície, perímetre tallat i opció més econòmica",
+      "tema": "economia",
+      "temes_secundaris": ["fabricacio"],
+      "conceptes": ["cost de fabricació", "superfície", "perímetre", "teorema de Pitàgores"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "Es vol construir una estrella com la de la figura a partir d'un tauler de fusta. La botiga en calcula el cost segons l'expressió $c = c_1\\, s + c_2\\, p$, en què $s$ és la superfície de fusta utilitzada i $p$ és el perímetre de les peces tallades. El primer coeficient de cost és $c_1 = 10\\ \\text{€/m}^2$ i l'altre coeficient de cost és $c_2 = 0{,}5\\ \\text{€/m}$ si el perfil és senzill (com, per exemple, un triangle) o és $c_2 = 1{,}3\\ \\text{€/m}$ si el perfil és complex (com, per exemple, una estrella).\n\nDades: $b = 0{,}455\\ \\text{m}$, $h_1 = 0{,}700\\ \\text{m}$, $h_2 = 0{,}313\\ \\text{m}$. L'estrella es pot formar amb 5 triangles de base $b$ i altura $h_1$ (puntes) i 5 triangles de base $b$ i altura $h_2$ (centre).\n\nDetermineu:",
+      "figures": [{"src": "img/tecno/2016-S/e3-a.png", "peu": "Estrella de fusta i els dos tipus de triangles isòsceles que la formen (5 de cada)"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La superfície $s$ de fusta utilitzada.", "punts": 0.5},
+        {"id": "b", "enunciat": "El perímetre tallat $p_1$ si es construeix a partir de triangles com els de la figura.", "punts": 1},
+        {"id": "c", "enunciat": "El perímetre tallat $p_2$ si es construeix tallant el perfil exterior de l'estrella.", "punts": 0.5},
+        {"id": "d", "enunciat": "El cost de cadascuna de les opcions. Quina és la més econòmica?", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Base dels triangles: $b = 0{,}455\\ \\text{m}$\n- Altura dels triangles de les puntes: $h_1 = 0{,}700\\ \\text{m}$ (5 triangles)\n- Altura dels triangles del centre: $h_2 = 0{,}313\\ \\text{m}$ (5 triangles)\n- Coeficients de cost: $c_1 = 10\\ \\text{€/m}^2$; $c_2 = 0{,}5\\ \\text{€/m}$ (triangles) o $1{,}3\\ \\text{€/m}$ (estrella)\n- Incògnites: $s$, $p_1$, $p_2$, $c_A$ (triangles), $c_B$ (estrella sencera)"},
+          {"apartat": "a", "titol": "Superfície: suma de les àrees dels 10 triangles", "cos": "La superfície de l'estrella és la mateixa la fem com la fem: la suma de les àrees dels 10 triangles ($A = b\\,h/2$):\n\n$$s = 5\\,\\frac{b\\,h_1}{2} + 5\\,\\frac{b\\,h_2}{2} = \\frac{5 \\cdot 0{,}455\\,(0{,}700 + 0{,}313)}{2} = 1{,}152\\ \\text{m}^2$$\n\nResultat: **$s = 1{,}152\\ \\text{m}^2$**."},
+          {"apartat": "b", "titol": "Costat inclinat de cada triangle (Pitàgores)", "cos": "Els triangles són isòsceles: l'altura cau al punt mig de la base i forma un triangle rectangle de catets $b/2$ i $h$. El costat inclinat $L$ és la hipotenusa:\n\n$$L_1 = \\sqrt{\\left(\\frac{b}{2}\\right)^2 + h_1^2} = \\sqrt{0{,}2275^2 + 0{,}700^2} = 0{,}7360\\ \\text{m}$$\n\n$$L_2 = \\sqrt{\\left(\\frac{b}{2}\\right)^2 + h_2^2} = \\sqrt{0{,}2275^2 + 0{,}313^2} = 0{,}3869\\ \\text{m}$$"},
+          {"apartat": "b", "titol": "Perímetre tallat amb triangles", "cos": "Si es tallen els 10 triangles per separat, cal tallar el perímetre complet de cadascun (base + 2 costats iguals):\n\n$$p_1 = 5\\,(b + 2L_1) + 5\\,(b + 2L_2)$$\n\n$$p_1 = 5\\,(0{,}455 + 2 \\cdot 0{,}7360) + 5\\,(0{,}455 + 2 \\cdot 0{,}3869) = 9{,}635 + 6{,}144 = 15{,}78\\ \\text{m}$$\n\nResultat: **$p_1 = 15{,}78\\ \\text{m}$**."},
+          {"apartat": "c", "titol": "Perímetre del perfil exterior de l'estrella", "cos": "El contorn exterior de l'estrella està format pels dos costats inclinats de cada una de les 5 puntes, és a dir, 10 segments de longitud $L_1$:\n\n$$p_2 = 5\\,(2L_1) = 10 \\cdot 0{,}7360 = 7{,}360\\ \\text{m}$$\n\nResultat: **$p_2 = 7{,}360\\ \\text{m}$**."},
+          {"apartat": "d", "titol": "Cost de cada opció", "cos": "Apliquem $c = c_1\\, s + c_2\\, p$ amb el coeficient $c_2$ que correspon a cada perfil.\n\n**Opció amb triangles** (perfil senzill, $c_2 = 0{,}5\\ \\text{€/m}$):\n\n$$c_A = 10 \\cdot 1{,}152 + 0{,}5 \\cdot 15{,}78 = 11{,}52 + 7{,}89 = 19{,}41\\ \\text{€}$$\n\n**Opció amb l'estrella sencera** (perfil complex, $c_2 = 1{,}3\\ \\text{€/m}$):\n\n$$c_B = 10 \\cdot 1{,}152 + 1{,}3 \\cdot 7{,}360 = 11{,}52 + 9{,}57 = 21{,}09\\ \\text{€}$$\n\nTot i que es talla més del doble de perímetre, l'opció de **triangles és la més econòmica** perquè el tall senzill és molt més barat per metre."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$s = 1{,}152\\ \\text{m}^2$"},
+          {"apartat": "b", "valor": "$L_1 = 0{,}7360\\ \\text{m}$, $L_2 = 0{,}3869\\ \\text{m}$, $p_1 = 15{,}78\\ \\text{m}$"},
+          {"apartat": "c", "valor": "$p_2 = 7{,}360\\ \\text{m}$"},
+          {"apartat": "d", "valor": "$c_\\text{triangles} = 19{,}41\\ \\text{€}$; $c_\\text{estrella} = 21{,}09\\ \\text{€}$ → més econòmica la de triangles"}
+        ],
+        "nota": "La solució oficial anomena «opció A» (triangles) i «opció B» (estrella) les dues maneres de tallar; no tenen res a veure amb les opcions A/B de l'examen."
+      }
+    },
+    {
+      "id": "tecno-2016-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Secció mínima del cable dels llums antiboira per una caiguda de tensió del 3 %",
+      "tema": "circuits",
+      "temes_secundaris": [],
+      "conceptes": ["resistivitat", "caiguda de tensió", "secció d'un conductor", "potència elèctrica", "llei d'Ohm"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "Els llums antiboira d'un automòbil consumeixen un corrent $I_\\text{b} = 10{,}22\\ \\text{A}$ quan s'alimenten directament a $12\\ \\text{V}$. La bateria i els llums es connecten amb un cable bipolar que té una longitud $L = 3\\ \\text{m}$ i és de coure de resistivitat $\\rho = 1{,}7 \\times 10^{-8}\\ \\Omega\\,\\text{m}$. El circuit s'alimenta amb una bateria de tensió $U = 12\\ \\text{V}$. Si es vol que la caiguda de tensió en el cable no sigui superior al $3\\ \\%$, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La secció mínima que ha de tenir el cable.", "punts": 1},
+        {"id": "b", "enunciat": "Si s'utilitza un cable de secció $S = 4\\ \\text{mm}^2$, determineu: la resistència del cable $R_\\text{cable}$.", "punts": 0.5},
+        {"id": "c", "enunciat": "(Amb el cable de $S = 4\\ \\text{mm}^2$.) La potència que consumeixen conjuntament el cable i els llums.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Corrent dels llums a $12\\ \\text{V}$: $I_\\text{b} = 10{,}22\\ \\text{A}$\n- Tensió de la bateria: $U = 12\\ \\text{V}$\n- Longitud del cable bipolar: $L = 3\\ \\text{m}$ → el corrent recorre **anada i tornada**, $2L = 6\\ \\text{m}$\n- Resistivitat del coure: $\\rho = 1{,}7 \\cdot 10^{-8}\\ \\Omega\\,\\text{m}$\n- Caiguda màxima al cable: $3\\ \\%$ de $U$\n- Incògnites: $S_\\text{mín}$, $R_\\text{cable}$ (amb $S = 4\\ \\text{mm}^2 = 4 \\cdot 10^{-6}\\ \\text{m}^2$), $P$"},
+          {"apartat": "a", "titol": "Resistència dels llums", "cos": "Suposem que els llums es comporten com una resistència constant. Amb les dades de l'alimentació directa:\n\n$$R_\\text{llums} = \\frac{U}{I_\\text{b}} = \\frac{12}{10{,}22} = 1{,}174\\ \\Omega$$"},
+          {"apartat": "a", "titol": "Repartiment de la tensió entre cable i llums", "cos": "Cable i llums estan en sèrie: $U = I\\,R_\\text{cable} + I\\,R_\\text{llums}$. Si al cable hi cau el $3\\ \\%$, als llums els arriba el $97\\ \\%$:\n\n$$I\\,R_\\text{llums} = 0{,}97\\,U \\;\\Rightarrow\\; I = \\frac{0{,}97 \\cdot 12}{1{,}174} = 9{,}913\\ \\text{A}$$\n\n$$I\\,R_\\text{cable} = 0{,}03\\,U \\;\\Rightarrow\\; R_\\text{cable} = \\frac{0{,}03 \\cdot 12}{9{,}913} = 0{,}03631\\ \\Omega$$\n\nAquesta és la resistència **màxima** que pot tenir el cable."},
+          {"apartat": "a", "titol": "Secció mínima", "cos": "La resistència d'un conductor és $R = \\rho\\,\\dfrac{\\ell}{S}$, amb $\\ell = 2L$ perquè el cable és bipolar (dos conductors). Una resistència màxima implica una secció mínima:\n\n$$S_\\text{mín} = \\rho\\,\\frac{2L}{R_\\text{cable}} = 1{,}7 \\cdot 10^{-8}\\,\\frac{6}{0{,}03631} = 2{,}809 \\cdot 10^{-6}\\ \\text{m}^2$$\n\nResultat: **$S_\\text{mín} = 2{,}809\\ \\text{mm}^2$**."},
+          {"apartat": "b", "titol": "Resistència del cable de 4 mm²", "cos": "$$R_\\text{cable} = \\rho\\,\\frac{2L}{S} = 1{,}7 \\cdot 10^{-8}\\,\\frac{6}{4 \\cdot 10^{-6}} = 0{,}0255\\ \\Omega$$\n\nResultat: **$R_\\text{cable} = 0{,}0255\\ \\Omega$** (més petita que el màxim de $0{,}03631\\ \\Omega$, per tant la caiguda serà inferior al 3 %)."},
+          {"apartat": "c", "titol": "Corrent del circuit", "cos": "Amb les dues resistències en sèrie:\n\n$$I = \\frac{U}{R_\\text{cable} + R_\\text{llums}} = \\frac{12}{0{,}0255 + 1{,}174} = 10{,}00\\ \\text{A}$$"},
+          {"apartat": "c", "titol": "Potència total (cable + llums)", "cos": "La potència que consumeix el conjunt és la que dona la bateria:\n\n$$P = I^2\\,(R_\\text{cable} + R_\\text{llums}) = U\\,I = 12 \\cdot 10{,}00 = 120{,}0\\ \\text{W}$$\n\nResultat: **$P = 120{,}0\\ \\text{W}$** (d'aquests, només uns $2{,}55\\ \\text{W}$ es perden al cable)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$R_\\text{llums} = 1{,}174\\ \\Omega$, $I = 9{,}913\\ \\text{A}$, $R_\\text{cable,màx} = 0{,}03631\\ \\Omega$, $S_\\text{mín} = 2{,}809\\ \\text{mm}^2$"},
+          {"apartat": "b", "valor": "$R_\\text{cable} = 0{,}0255\\ \\Omega$"},
+          {"apartat": "c", "valor": "$I = 10{,}00\\ \\text{A}$; $P = 120{,}0\\ \\text{W}$"}
+        ],
+        "nota": "Error típic: fer servir $L = 3\\ \\text{m}$ en lloc de $2L = 6\\ \\text{m}$. El cable és **bipolar**: el corrent va per un conductor i torna per l'altre."
+      }
+    },
+    {
+      "id": "tecno-2016-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Polispast diferencial: tensió i allargament del cable i parell del motor",
+      "tema": "resistencia",
+      "temes_secundaris": ["mecanismes", "estatica"],
+      "conceptes": ["tensió normal", "deformació unitària", "mòdul de Young", "parell motor", "politges"],
+      "dificultat": 2,
+      "pagines": [4],
+      "enunciat": "El sistema de la figura s'utilitza per a fer pujar un bloc de massa $m = 50\\ \\text{kg}$. La relació entre la variació d'altura $\\Delta h$ del bloc i l'angle girat pel motor $\\varphi_\\text{motor}$ és:\n\n$$\\Delta h = \\varphi_\\text{motor}\\,\\frac{(r_1 - r_2)\\,r_3}{2\\,r_1}$$\n\nEl cable utilitzat és de secció circular, amb un diàmetre $d = 5\\ \\text{mm}$, i té un mòdul d'elasticitat $E = 130\\ \\text{GPa}$. Dades: $r_1 = 250\\ \\text{mm}$, $r_2 = 230\\ \\text{mm}$, $r_3 = 150\\ \\text{mm}$.\n\nQuan el bloc puja a velocitat constant, determineu:",
+      "figures": [{"src": "img/tecno/2016-S/e3-b.png", "peu": "Sistema de politges: politja doble fixa (r1, r2), politja mòbil amb el bloc i tambor del motor (r3)"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La tensió $\\sigma_\\text{n}$ i la deformació $\\varepsilon$ normals del cable indicat en la figura.", "punts": 1},
+        {"id": "b", "enunciat": "L'allargament del cable $\\Delta L$, si la llargària lliure del cable sense el bloc penjat és $L = 2\\,000\\ \\text{mm}$.", "punts": 0.5},
+        {"id": "c", "enunciat": "El parell $\\Gamma$ que desenvolupa el motor.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Massa del bloc: $m = 50\\ \\text{kg}$; $g = 9{,}807\\ \\text{m/s}^2$\n- Radis: $r_1 = 0{,}250\\ \\text{m}$, $r_2 = 0{,}230\\ \\text{m}$, $r_3 = 0{,}150\\ \\text{m}$\n- Cable: $d = 5\\ \\text{mm}$, $E = 130\\ \\text{GPa} = 130\\,000\\ \\text{N/mm}^2$, $L = 2\\,000\\ \\text{mm}$\n- Velocitat constant → equilibri de forces (sense acceleració)\n- Incògnites: $F_\\text{cable}$, $\\sigma_\\text{n}$, $\\varepsilon$, $\\Delta L$, $\\Gamma$"},
+          {"apartat": "a", "titol": "Força al cable: equilibri de la politja mòbil", "cos": "La politja mòbil (la de baix) penja de dos trams del cable, que estiren cap amunt, i aguanta el pes del bloc cap avall. Com que puja a velocitat constant, la suma de forces és zero:\n\n![Diagrama de forces de la politja mòbil](img/tecno/2016-S/e3-b-sol.png)\n\n$$2F_\\text{cable} - m\\,g = 0 \\;\\Rightarrow\\; F_\\text{cable} = \\frac{m\\,g}{2} = \\frac{50 \\cdot 9{,}807}{2} = 245{,}2\\ \\text{N}$$"},
+          {"apartat": "a", "titol": "Tensió normal", "cos": "La tensió normal és la força dividida per la secció del cable (circular):\n\n$$S = \\frac{\\pi\\,d^2}{4} = \\frac{\\pi \\cdot 5^2}{4} = 19{,}63\\ \\text{mm}^2$$\n\n$$\\sigma_\\text{n} = \\frac{F_\\text{cable}}{S} = \\frac{245{,}2}{19{,}63} = 12{,}49\\ \\text{N/mm}^2 = 12{,}49\\ \\text{MPa}$$"},
+          {"apartat": "a", "titol": "Deformació unitària (llei de Hooke)", "cos": "En zona elàstica, $\\sigma = E\\,\\varepsilon$:\n\n$$\\varepsilon = \\frac{\\sigma_\\text{n}}{E} = \\frac{12{,}49}{130\\,000} = 96{,}05 \\cdot 10^{-6}$$\n\nResultat: **$\\sigma_\\text{n} = 12{,}49\\ \\text{MPa}$**, **$\\varepsilon = 96{,}05 \\cdot 10^{-6}$** (adimensional)."},
+          {"apartat": "b", "titol": "Allargament del cable", "cos": "La deformació unitària és l'allargament per unitat de longitud, $\\varepsilon = \\Delta L / L$:\n\n$$\\Delta L = \\varepsilon\\,L = 96{,}05 \\cdot 10^{-6} \\cdot 2\\,000 = 0{,}1921\\ \\text{mm}$$\n\nResultat: **$\\Delta L = 0{,}1921\\ \\text{mm}$**."},
+          {"apartat": "c", "titol": "Parell del motor pel principi del treball", "cos": "Sense pèrdues i a velocitat constant, el treball que fa el motor en girar un angle $\\varphi_\\text{motor}$ és igual a l'augment d'energia potencial del bloc:\n\n$$W_\\text{motor} = \\Gamma\\,\\varphi_\\text{motor} = m\\,g\\,\\Delta h$$\n\nSubstituint la relació $\\Delta h = \\varphi_\\text{motor}\\,\\dfrac{(r_1 - r_2)\\,r_3}{2\\,r_1}$, l'angle es simplifica:\n\n$$\\Gamma = m\\,g\\,\\frac{(r_1 - r_2)\\,r_3}{2\\,r_1} = 50 \\cdot 9{,}807 \\cdot \\frac{(0{,}250 - 0{,}230) \\cdot 0{,}150}{2 \\cdot 0{,}250} = 2{,}942\\ \\text{N\\,m}$$\n\nResultat: **$\\Gamma = 2{,}942\\ \\text{N\\,m}$**. El parell és molt petit perquè la diferència de radis $r_1 - r_2$ és petita: aquest polispast diferencial dona un gran avantatge mecànic."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$F_\\text{cable} = 245{,}2\\ \\text{N}$; $\\sigma_\\text{n} = 12{,}49\\ \\text{MPa}$; $\\varepsilon = 96{,}05 \\cdot 10^{-6}$"},
+          {"apartat": "b", "valor": "$\\Delta L = 0{,}1921\\ \\text{mm}$"},
+          {"apartat": "c", "valor": "$\\Gamma = 2{,}942\\ \\text{N\\,m}$"}
+        ],
+        "nota": "Error típic: oblidar que la politja mòbil penja de **dos** trams de cable i agafar $F_\\text{cable} = m\\,g$, cosa que duplica la tensió i l'allargament."
+      }
+    },
+    {
+      "id": "tecno-2016-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Motor de corrent continu: tensió, velocitat angular i corba del rendiment",
+      "tema": "maquines-electriques",
+      "temes_secundaris": [],
+      "conceptes": ["motor de corrent continu", "parell motor", "velocitat angular", "rendiment", "potència elèctrica"],
+      "dificultat": 2,
+      "pagines": [4],
+      "enunciat": "El parell motor $\\Gamma$ d'un motor de corrent continu i la intensitat $I$ del corrent que hi circula són donats per les expressions següents, en què $U$ és la tensió d'alimentació, $\\omega$ és la velocitat angular de l'eix, $R = 0{,}03\\ \\Omega$ i $c = 0{,}02\\ \\text{N\\,m/A}$.\n\n$$\\Gamma = c\\,I \\qquad\\qquad I = \\frac{U - c\\,\\omega}{R}$$\n\nQuan la intensitat $I$ és de $50\\ \\text{A}$, la potència que consumeix el motor és de $600\\ \\text{W}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La tensió d'alimentació $U$ del motor quan $I = 50\\ \\text{A}$.", "punts": 0.5},
+        {"id": "b", "enunciat": "Si el motor s'alimenta amb la tensió obtinguda en l'apartat anterior: determineu la velocitat angular $\\omega$ de l'eix del motor quan $I = 100\\ \\text{A}$.", "punts": 1},
+        {"id": "c", "enunciat": "(Amb la mateixa tensió.) Dibuixeu, d'una manera aproximada i indicant les escales, la corba del rendiment en funció de la velocitat de gir per a $0 \\le \\omega \\le 600\\ \\text{rad/s}$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Resistència interna: $R = 0{,}03\\ \\Omega$\n- Constant del motor: $c = 0{,}02\\ \\text{N\\,m/A}$ (també en $\\text{V\\,s/rad}$)\n- Per a $I = 50\\ \\text{A}$: potència consumida $P = 600\\ \\text{W}$\n- Incògnites: $U$, $\\omega$ per a $I = 100\\ \\text{A}$, i la corba $\\eta(\\omega)$"},
+          {"apartat": "a", "titol": "Tensió d'alimentació", "cos": "La potència elèctrica que consumeix el motor és $P = U\\,I$:\n\n$$U = \\frac{P}{I} = \\frac{600}{50} = 12\\ \\text{V}$$\n\nResultat: **$U = 12\\ \\text{V}$**."},
+          {"apartat": "b", "titol": "Velocitat angular per a I = 100 A", "cos": "Aïllem $\\omega$ de l'expressió del corrent: $I\\,R = U - c\\,\\omega$, és a dir, la tensió aplicada menys la caiguda a la resistència és la força contraelectromotriu $c\\,\\omega$:\n\n$$\\omega = \\frac{U - I\\,R}{c} = \\frac{12 - 100 \\cdot 0{,}03}{0{,}02} = \\frac{9}{0{,}02} = 450\\ \\text{rad/s}$$\n\nResultat: **$\\omega = 450\\ \\text{rad/s}$**."},
+          {"apartat": "c", "titol": "Expressió del rendiment", "cos": "El rendiment és la potència mecànica útil dividida per l'elèctrica consumida. La potència mecànica és parell per velocitat angular, $P_\\text{mec} = \\Gamma\\,\\omega = c\\,I\\,\\omega$, i l'elèctrica és $P_\\text{elèctr} = U\\,I$:\n\n$$\\eta = \\frac{P_\\text{mec}}{P_\\text{elèctr}} = \\frac{c\\,I\\,\\omega}{I\\,U} = \\frac{c\\,\\omega}{U} = \\frac{0{,}02\\,\\omega}{12} = \\frac{\\omega}{600\\ \\text{rad/s}}$$\n\nEl corrent es simplifica: el rendiment és **proporcional a la velocitat**. Per exemple, a $\\omega = 450\\ \\text{rad/s}$ (apartat b): $\\eta = 450/600 = 0{,}75$."},
+          {"apartat": "c", "titol": "Gràfica del rendiment", "cos": "És una **recta** que passa per l'origen:\n\n| $\\omega$ (rad/s) | 0 | 150 | 300 | 450 | 600 |\n|---|---|---|---|---|---|\n| $\\eta$ | 0 | 0,25 | 0,50 | 0,75 | 1 |\n\n- A $\\omega = 0$ (motor bloquejat) tota la potència es perd a la resistència: $\\eta = 0$.\n- A $\\omega = 600\\ \\text{rad/s}$, $c\\,\\omega = U$ i el corrent és zero (marxa en buit ideal): $\\eta \\to 1$.\n\n![Rendiment del motor en funció de la velocitat angular: recta de 0 a 1 entre 0 i 600 rad/s](img/tecno/2016-S/e4-b-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$U = 12\\ \\text{V}$"},
+          {"apartat": "b", "valor": "$\\omega = 450\\ \\text{rad/s}$"},
+          {"apartat": "c", "valor": "$\\eta = \\omega/600$: recta de $\\eta = 0$ ($\\omega = 0$) a $\\eta = 1$ ($\\omega = 600\\ \\text{rad/s}$)"}
+        ],
+        "nota": "El model només considera les pèrdues per efecte Joule a la resistència $R$; per això surt $\\eta = 1$ a $600\\ \\text{rad/s}$, on el corrent (i el parell) és nul. En un motor real hi ha fregaments i el rendiment cau a zero prop de la velocitat de buit."
+      }
+    }
+  ]
+}

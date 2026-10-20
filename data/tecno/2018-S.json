@@ -1,0 +1,365 @@
+{
+  "examen": {
+    "id": "tecno-2018-S",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2018,
+    "convocatoria": "setembre",
+    "serie": "3",
+    "pdf_examen": "pdfs/tecno/2018-S-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2018-S-solucio.pdf",
+    "estructura": "La prova consta de dues parts, amb dos exercicis de 2,5 punts cadascuna. La primera part (exercicis 1 i 2) és comuna i obligatòria: l'exercici 1 té 5 qüestions de test (0,5 punts cadascuna; una resposta errònia descompta 0,16 punts i les no contestades no descompten). A la segona part cal escollir UNA de les dues opcions (A o B) i fer-ne els dos exercicis (3 i 4)."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2018-S-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Lliscament d'un motor asíncron de dos parells de pols",
+      "tema": "maquines-electriques",
+      "temes_secundaris": [],
+      "conceptes": ["motor asíncron", "velocitat de sincronisme", "lliscament", "parells de pols"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "Un motor asíncron de corrent altern de dos parells de pols està connectat a la xarxa de tensió $U = 230\\ \\text{V}$ i freqüència $f = 50\\ \\text{Hz}$. Quin és el lliscament relatiu $s$ del motor en tant per cent (%) si gira a $n = 1\\,400\\ \\text{min}^{-1}$?",
+      "figures": [],
+      "opcions": {"a": "$6{,}667\\ \\%$", "b": "$7{,}143\\ \\%$", "c": "$5\\ \\%$", "d": "$53{,}33\\ \\%$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Parells de pols: $p = 2$\n- Freqüència de la xarxa: $f = 50\\ \\text{Hz}$\n- Velocitat del rotor: $n = 1\\,400\\ \\text{min}^{-1}$\n- Incògnita: lliscament relatiu $s$ (en %)\n\nLa tensió $U = 230\\ \\text{V}$ no intervé en el càlcul."},
+          {"apartat": null, "titol": "Velocitat de sincronisme", "cos": "El camp magnètic giratori de l'estator gira a la velocitat de sincronisme, que depèn de la freqüència i del nombre de parells de pols:\n\n$$n_\\text{s} = \\frac{60\\, f}{p} = \\frac{60 \\cdot 50}{2} = 1\\,500\\ \\text{min}^{-1}$$"},
+          {"apartat": null, "titol": "Lliscament relatiu", "cos": "El rotor d'un motor asíncron sempre gira una mica més lent que el camp. El lliscament mesura aquesta diferència respecte de la velocitat de sincronisme:\n\n$$s = \\frac{n_\\text{s} - n}{n_\\text{s}} \\cdot 100 = \\frac{1\\,500 - 1\\,400}{1\\,500} \\cdot 100 = 6{,}667\\ \\%$$\n\nResultat: **$s = 6{,}667\\ \\%$** → resposta **a**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **b)** $7{,}143\\ \\%$ surt de dividir per la velocitat del rotor ($100/1\\,400$) en lloc de la de sincronisme.\n- **d)** $53{,}33\\ \\%$ surt de prendre $n_\\text{s} = 3\\,000\\ \\text{min}^{-1}$ (confondre parells de pols amb pols: amb $p = 1$)."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$n_\\text{s} = 1\\,500\\ \\text{min}^{-1}$; $s = 6{,}667\\ \\%$ → resposta **a**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2018-S-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Massa de zinc per a l'aliatge magal a partir de la massa de magnesi",
+      "tema": "materials",
+      "temes_secundaris": [],
+      "conceptes": ["aliatge", "composició percentual", "proporcionalitat"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "El *magal* és un aliatge resistent i lleuger que s'utilitza per a l'elaboració d'instruments quirúrgics. Conté un $8\\ \\%$ d'alumini (Al), un $1\\ \\%$ de zinc (Zn), un $0{,}2\\ \\%$ de manganès (Mn) i la resta és magnesi (Mg). En l'obtenció d'aquest aliatge, quina quantitat de zinc cal per a aliar-lo amb $350\\ \\text{kg}$ de magnesi?",
+      "figures": [],
+      "opcions": {"a": "$3{,}5\\ \\text{kg}$", "b": "$3{,}855\\ \\text{kg}$", "c": "$30{,}84\\ \\text{kg}$", "d": "$35\\ \\text{kg}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {"apartat": null, "titol": "Percentatge de magnesi", "cos": "El magnesi és «la resta», és a dir, el que falta fins al 100 %:\n\n$$\\%\\text{Mg} = 100 - 8 - 1 - 0{,}2 = 90{,}8\\ \\%$$"},
+          {"apartat": null, "titol": "Massa total d'aliatge i massa de zinc", "cos": "Els 350 kg de magnesi són el 90,8 % de la massa total de l'aliatge:\n\n$$m_\\text{total} = \\frac{350}{0{,}908} = 385{,}5\\ \\text{kg}$$\n\nEl zinc n'és l'1 %:\n\n$$m_\\text{Zn} = 0{,}01 \\cdot 385{,}5 = \\frac{1}{90{,}8} \\cdot 350 = 3{,}855\\ \\text{kg}$$\n\nResultat: **$m_\\text{Zn} = 3{,}855\\ \\text{kg}$** → resposta **b**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **a)** $3{,}5\\ \\text{kg}$ surt de calcular l'1 % dels 350 kg de magnesi, com si el magnesi fos tot l'aliatge.\n- **c)** $30{,}84\\ \\text{kg}$ és la massa d'**alumini** ($8/90{,}8 \\cdot 350$), no la de zinc.\n- **d)** $35\\ \\text{kg}$ és un error de decimals (10 % en lloc d'1 %)."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$m_\\text{Zn} = 3{,}855\\ \\text{kg}$ → resposta **b**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2018-S-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Nombre de cilindres d'un motor a partir de la cilindrada, el diàmetre i la cursa",
+      "tema": "termica",
+      "temes_secundaris": [],
+      "conceptes": ["cilindrada", "motor de combustió", "volum del cilindre"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "La cilindrada d'un motor de combustió és de $1\\,998\\ \\text{cm}^3$. Tant el diàmetre com la cursa dels cilindres del motor són de $86\\ \\text{mm}$. Quants cilindres té el motor?",
+      "figures": [],
+      "opcions": {"a": "4", "b": "5", "c": "6", "d": "8"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Cilindrada total: $V_\\text{T} = 1\\,998\\ \\text{cm}^3$\n- Diàmetre: $D = 86\\ \\text{mm} = 8{,}6\\ \\text{cm}$\n- Cursa: $L = 86\\ \\text{mm} = 8{,}6\\ \\text{cm}$\n- Incògnita: nombre de cilindres $z$"},
+          {"apartat": null, "titol": "Cilindrada unitària", "cos": "El volum que escombra el pistó d'un cilindre és el d'un cilindre de diàmetre $D$ i alçada igual a la cursa $L$:\n\n$$V_1 = \\frac{\\pi D^2}{4}\\, L = \\frac{\\pi \\cdot 8{,}6^2}{4} \\cdot 8{,}6 = 499{,}6\\ \\text{cm}^3$$"},
+          {"apartat": null, "titol": "Nombre de cilindres", "cos": "La cilindrada total és la suma de la de tots els cilindres:\n\n$$z = \\frac{V_\\text{T}}{V_1} = \\frac{1\\,998}{499{,}6} = 4{,}00$$\n\nResultat: **$z = 4$ cilindres** → resposta **a**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "Si s'oblida el factor $1/4$ (usar $D$ com si fos el radi) surt $z \\approx 1$; si es treballa en mm sense passar a cm³ els números no quadren. Cal tenir les unitats coherents: $1\\ \\text{cm}^3 = 1\\,000\\ \\text{mm}^3$."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$V_1 = 499{,}6\\ \\text{cm}^3$; $z = 4$ → resposta **a**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2018-S-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Interval de la diferència de pressió amb precisió i deriva d'un sensor",
+      "tema": "fabricacio",
+      "temes_secundaris": ["control"],
+      "conceptes": ["precisió", "estabilitat", "error de mesura", "sensor de pressió"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Un sensor de pressió atmosfèrica té una precisió de $\\pm 0{,}3\\ \\text{hPa}$ i una estabilitat en la mesura al llarg del temps de $\\pm 0{,}1\\ \\text{hPa/any}$. La mesura de la pressió atmosfèrica l'1 de març de 2017 va ser de $990\\ \\text{hPa}$ i la del mateix dia de l'any 2018, de $1\\,030\\ \\text{hPa}$. La diferència entre la pressió atmosfèrica real dels dos dies està compresa entre",
+      "figures": [],
+      "opcions": {"a": "$40\\ \\text{hPa}$ i $40{,}3\\ \\text{hPa}$", "b": "$39{,}4\\ \\text{hPa}$ i $40{,}6\\ \\text{hPa}$", "c": "$39{,}7\\ \\text{hPa}$ i $40{,}3\\ \\text{hPa}$", "d": "$39{,}3\\ \\text{hPa}$ i $40{,}7\\ \\text{hPa}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {"apartat": null, "titol": "Diferència mesurada", "cos": "$$\\Delta p_\\text{mesurada} = 1\\,030 - 990 = 40\\ \\text{hPa}$$"},
+          {"apartat": null, "titol": "Incertesa de cada mesura", "cos": "- **Primera mesura (2017)**: només hi afecta la precisió, $\\pm 0{,}3\\ \\text{hPa}$.\n- **Segona mesura (2018)**: hi afecta la precisió ($\\pm 0{,}3$) **i** la deriva acumulada durant un any ($\\pm 0{,}1$), en total $\\pm 0{,}4\\ \\text{hPa}$.\n\nEn el cas més desfavorable els errors de les dues mesures van en sentits contraris i se sumen:\n\n$$\\varepsilon_\\text{total} = 0{,}3 + 0{,}4 = 0{,}7\\ \\text{hPa}$$"},
+          {"apartat": null, "titol": "Interval de la diferència real", "cos": "$$40 - 0{,}7 \\le \\Delta p_\\text{real} \\le 40 + 0{,}7 \\quad\\Rightarrow\\quad 39{,}3\\ \\text{hPa} \\le \\Delta p_\\text{real} \\le 40{,}7\\ \\text{hPa}$$\n\nResultat: **entre $39{,}3$ i $40{,}7\\ \\text{hPa}$** → resposta **d**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **c)** ($\\pm 0{,}3$) només té en compte la precisió d'una de les mesures.\n- **b)** ($\\pm 0{,}6$) suma les dues precisions però oblida la deriva d'un any.\n- **a)** no té sentit: l'interval no pot ser asimètric només cap amunt."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$39{,}3\\ \\text{hPa} \\le \\Delta p \\le 40{,}7\\ \\text{hPa}$ → resposta **d**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2018-S-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Taxa de rebuig del tractament tèrmic en un procés de fabricació en dues etapes",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": ["taxa de rebuig", "control de qualitat", "rendiment de producció"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "La fabricació d'una peça metàl·lica es duu a terme en dos processos. En primer lloc, la peça es mecanitza en un torn i, posteriorment, se'n milloren les propietats mecàniques mitjançant un tractament tèrmic. Després de cada procés, es controla la qualitat de les peces i es desestimen les que no són correctes. Si s'acaba produint correctament el $93{,}12\\ \\%$ de les peces inicials i la taxa de rebuig del tornejat és del $3\\ \\%$, quina és la taxa de rebuig del procés de tractament tèrmic?",
+      "figures": [],
+      "opcions": {"a": "$3{,}5\\ \\%$", "b": "$3{,}88\\ \\%$", "c": "$4\\ \\%$", "d": "$4{,}82\\ \\%$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {"apartat": null, "titol": "Fraccions de peces bones encadenades", "cos": "Després del tornejat queda el $97\\ \\%$ de les peces ($1 - 0{,}03$). El tractament tèrmic s'aplica només a aquestes peces i en rebutja una fracció $x$. La fracció final de peces bones és el producte de les fraccions bones de cada etapa:\n\n$$0{,}97 \\cdot (1 - x) = 0{,}9312$$"},
+          {"apartat": null, "titol": "Taxa de rebuig del tractament tèrmic", "cos": "$$1 - x = \\frac{0{,}9312}{0{,}97} = 0{,}96 \\quad\\Rightarrow\\quad x = 0{,}04 = 4\\ \\%$$\n\nResultat: **$x = 4\\ \\%$** → resposta **c**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **b)** $3{,}88\\ \\%$ surt de restar els percentatges directament: $100 - 93{,}12 - 3 = 3{,}88\\ \\%$. És incorrecte perquè el 4 % del tractament tèrmic s'aplica sobre el 97 % de peces que han superat el tornejat, no sobre les peces inicials ($0{,}04 \\cdot 97 = 3{,}88$ punts percentuals de les peces inicials)."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$x = 4\\ \\%$ → resposta **c**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2018-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Control lògic del motor d'un exoesquelet de rehabilitació (aplicació, electromiografia i força)",
+      "tema": "digital",
+      "temes_secundaris": ["control"],
+      "conceptes": ["taula de veritat", "funció lògica", "simplificació", "esquema de contactes"],
+      "dificultat": 1,
+      "pagines": [2],
+      "enunciat": "S'ha dissenyat un exoesquelet robòtic per a la rehabilitació de les extremitats superiors de persones amb lesions neurològiques. Aquest aparell disposa d'un motor elèctric per a assistir el moviment del colze afectat per la lesió. El motor s'activa quan l'aparell detecta la intenció de l'usuari de fer un moviment, ja sigui perquè detecta activitat muscular mitjançant un sensor d'electromiografia o bé perquè detecta que hi ha força d'interacció entre el braç de la persona i l'exoesquelet gràcies a un sensor de força. A més, el motor només funciona si l'usuari ha activat el funcionament de l'aparell mitjançant una aplicació mòbil. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- aplicació mòbil: $a$ = 1: aparell activat; 0: aparell desactivat\n- sensor d'electromiografia: $e$ = 1: detecta activitat muscular; 0: no detecta activitat muscular\n- sensor de força: $f$ = 1: detecta força d'interacció; 0: no detecta força d'interacció\n- motor: $m$ = 1: el motor assisteix; 0: el motor no assisteix",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Elaboreu la taula de veritat del sistema.", "punts": 1},
+        {"id": "b", "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.", "punts": 1},
+        {"id": "c", "enunciat": "Dibuixeu l'esquema de contactes equivalent.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Traduir l'enunciat a condicions lògiques", "cos": "El motor assisteix ($m = 1$) quan es compleixen **alhora** dues condicions:\n\n1. L'aparell està activat per l'aplicació: $a = 1$.\n2. Es detecta intenció de moviment: activitat muscular **o** força d'interacció, és a dir, $e = 1$ o $f = 1$ (o tots dos)."},
+          {"apartat": "a", "titol": "Taula de veritat", "cos": "Amb 3 variables hi ha $2^3 = 8$ combinacions:\n\n| $a$ | $e$ | $f$ | $m$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | 0 |\n| 1 | 0 | 0 | 0 |\n| 1 | 0 | 1 | **1** |\n| 1 | 1 | 0 | **1** |\n| 1 | 1 | 1 | **1** |\n\nAmb $a = 0$ el motor no funciona mai; amb $a = 1$ funciona sempre que algun sensor detecti alguna cosa."},
+          {"apartat": "b", "titol": "Funció canònica (suma de productes)", "cos": "Un terme producte per a cada fila amb $m = 1$ (variable negada si val 0):\n\n$$m = a\\,\\bar{e}\\,f + a\\,e\\,\\bar{f} + a\\,e\\,f$$"},
+          {"apartat": "b", "titol": "Simplificació", "cos": "Traiem factor comú $a$:\n\n$$m = a\\,(\\bar{e}\\,f + e\\,\\bar{f} + e\\,f)$$\n\nEl parèntesi val 1 en tots els casos excepte $e = f = 0$, és a dir, és la funció OR $e + f$ (algebraicament: $e\\,\\bar{f} + e\\,f = e$, i $e + \\bar{e}\\,f = e + f$). Per tant:\n\n$$\\boxed{m = a\\,(e + f)}$$\n\nTambé es pot veure amb un mapa de Karnaugh: dos grups de 2 cel·les, $a\\,e$ i $a\\,f$, que donen $m = a\\,e + a\\,f = a\\,(e + f)$."},
+          {"apartat": "c", "titol": "Esquema de contactes", "cos": "En un esquema de contactes, el producte (AND) són contactes **en sèrie** i la suma (OR) contactes **en paral·lel**. Per a $m = a\\,(e + f)$:\n\n- Un contacte normalment obert $a$ **en sèrie** amb\n- dos contactes normalment oberts $e$ i $f$ **en paral·lel** entre ells,\n- i la càrrega $m$ (el motor) al final.\n\nEsquema de la solució oficial (a la branca de dalt hi ha el contacte $e$ i a la de baix el contacte $f$):\n\n![Esquema de contactes: a en sèrie amb e i f en paral·lel](img/tecno/2018-S/e2-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$m = 1$ només a les files $a e f$ = 101, 110 i 111"},
+          {"apartat": "b", "valor": "$m = a\\,\\bar{e}\\,f + a\\,e\\,\\bar{f} + a\\,e\\,f = a\\,(e + f)$"},
+          {"apartat": "c", "valor": "Contacte $a$ en sèrie amb el paral·lel de $e$ i $f$, alimentant $m$"}
+        ],
+        "nota": "A l'esquema oficial l'etiqueta $f$ apareix desplaçada a sobre de la branca superior; en realitat el contacte $f$ és el de la branca inferior (paral·lel amb $e$). Error típic: posar $e$ i $f$ en sèrie (seria $a\\,e\\,f$, el motor només funcionaria si es detecten totes dues coses)."
+      }
+    },
+    {
+      "id": "tecno-2018-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Superfícies, perímetres i cost de fabricar o comprar les peces d'un tangram",
+      "tema": "economia",
+      "temes_secundaris": ["disseny"],
+      "conceptes": ["cost de producció", "superfície", "perímetre", "comparació de costos"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "S'ha dissenyat un puzle per a infants format per set peces. L'objectiu del joc és construir amb totes les peces el quadrat de costat $b = 0{,}25\\ \\text{m}$ que es mostra en la figura. Una empresa es planteja produir el puzle o comprar les peces ja elaborades directament a un proveïdor. Si l'empresa produeix el puzle, el cost de producció es calcula amb l'expressió $c = c_1\\, s + c_2\\, p$, en què $s$ és la superfície de fusta utilitzada i $p$ és el perímetre de les peces tallades per a construir el puzle. En aquest cas, el primer coeficient de cost és $c_1 = 13{,}5\\ \\text{€/m}^2$ i el segon és $c_2 = 0{,}85\\ \\text{€/m}$. En canvi, si l'empresa compra les peces ja elaborades directament a un proveïdor, el cost de cada peça és de $0{,}65\\ \\text{€}$ si la peça fa menys de $100\\ \\text{cm}^2$, i de $0{,}95\\ \\text{€}$ si la peça fa més de $100\\ \\text{cm}^2$. Determineu:",
+      "figures": [{"src": "img/tecno/2018-S/e3-a.png", "peu": "Puzle de set peces (tangram) que forma un quadrat de costat b = 0,25 m"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La superfície de cadascuna de les set peces. Comproveu que la suma de la superfície de totes les peces equival a la superfície $s$ del quadrat de la figura.", "punts": 1},
+        {"id": "b", "enunciat": "El perímetre $p$ de les peces tallades per a construir el puzle.", "punts": 1},
+        {"id": "c", "enunciat": "El cost de producció del puzle, d'una banda, i el cost de comprar les peces ja elaborades a un proveïdor, de l'altra. Quina és l'opció més econòmica per a l'empresa?", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Costat del quadrat: $b = 0{,}25\\ \\text{m}$\n- Coeficients de cost de producció: $c_1 = 13{,}5\\ \\text{€/m}^2$, $c_2 = 0{,}85\\ \\text{€/m}$\n- Preu del proveïdor: $0{,}65\\ \\text{€}$ (peça $< 100\\ \\text{cm}^2$), $0{,}95\\ \\text{€}$ (peça $> 100\\ \\text{cm}^2$)\n- Incògnites: superfície de cada peça $s_i$, perímetre total $p$, costos $c_\\text{empr}$ i $c_\\text{prov}$"},
+          {"apartat": "a", "titol": "Geometria de les peces", "cos": "Les dues diagonals del quadrat el divideixen en 4 triangles rectangles isòsceles iguals d'àrea $b^2/4$. Mirant la figura:\n\n- **Peces 6 i 7** (triangles grans): són dos d'aquests quarts sencers. Hipotenusa $b$, catets $b/\\sqrt{2}$.\n- **Peça 1** (triangle mitjà): té els catets sobre els costats del quadrat, de longitud $b/2$ cadascun. Hipotenusa $b/\\sqrt{2}$.\n- **Peces 2 i 5** (triangles petits): tenen la hipotenusa de longitud $b/2$ (vegeu la cota $b/2$) i els catets de $b/(2\\sqrt{2})$.\n- **Peces 3 i 4** (quadrats): el costat és igual al catet del triangle petit, $b/(2\\sqrt{2})$."},
+          {"apartat": "a", "titol": "Superfície de cada peça", "cos": "Àrea d'un triangle rectangle = $\\frac{1}{2}$ catet · catet; àrea d'un quadrat = costat².\n\n$$s_1 = \\frac{1}{2}\\cdot\\frac{b}{2}\\cdot\\frac{b}{2} = \\frac{b^2}{8} = \\frac{0{,}25^2}{8} = 0{,}007813\\ \\text{m}^2 = 78{,}13\\ \\text{cm}^2$$\n\n$$s_2 = s_5 = \\frac{1}{2}\\left(\\frac{b}{2\\sqrt{2}}\\right)^2 = \\frac{b^2}{16} = 0{,}003906\\ \\text{m}^2 = 39{,}06\\ \\text{cm}^2$$\n\n$$s_3 = s_4 = \\left(\\frac{b}{2\\sqrt{2}}\\right)^2 = \\frac{b^2}{8} = 0{,}007813\\ \\text{m}^2 = 78{,}13\\ \\text{cm}^2$$\n\n$$s_6 = s_7 = \\frac{1}{2}\\left(\\frac{b}{\\sqrt{2}}\\right)^2 = \\frac{b^2}{4} = 0{,}01563\\ \\text{m}^2 = 156{,}3\\ \\text{cm}^2$$"},
+          {"apartat": "a", "titol": "Comprovació: suma de superfícies", "cos": "$$s = \\sum_{i=1}^{7} s_i = \\frac{b^2}{8} + 2\\cdot\\frac{b^2}{16} + 2\\cdot\\frac{b^2}{8} + 2\\cdot\\frac{b^2}{4} = b^2\\left(\\frac{1}{8} + \\frac{1}{8} + \\frac{1}{4} + \\frac{1}{2}\\right) = b^2$$\n\n$$s = 0{,}25^2 = 0{,}0625\\ \\text{m}^2$$\n\nResultat: **la suma és $0{,}0625\\ \\text{m}^2 = b^2$**, la superfície del quadrat, com havia de ser."},
+          {"apartat": "b", "titol": "Perímetre de cada peça", "cos": "Sumem els costats de cada peça amb les longituds trobades abans:\n\n$$p_1 = 2\\cdot\\frac{b}{2} + \\frac{b}{\\sqrt{2}} = 0{,}25 + 0{,}1768 = 0{,}4268\\ \\text{m}$$\n\n$$p_2 = p_5 = \\frac{b}{2} + 2\\cdot\\frac{b}{2\\sqrt{2}} = 0{,}125 + 0{,}1768 = 0{,}3018\\ \\text{m}$$\n\n$$p_3 = p_4 = 4\\cdot\\frac{b}{2\\sqrt{2}} = 0{,}3536\\ \\text{m}$$\n\n$$p_6 = p_7 = b + 2\\cdot\\frac{b}{\\sqrt{2}} = 0{,}25 + 0{,}3536 = 0{,}6036\\ \\text{m}$$"},
+          {"apartat": "b", "titol": "Perímetre total de les peces tallades", "cos": "$$p = \\sum_{i=1}^{7} p_i = 0{,}4268 + 2\\cdot 0{,}3018 + 2\\cdot 0{,}3536 + 2\\cdot 0{,}6036 = 2{,}945\\ \\text{m}$$\n\nResultat: **$p \\approx 2{,}945\\ \\text{m}$**."},
+          {"apartat": "c", "titol": "Cost de produir el puzle a l'empresa", "cos": "Apliquem l'expressió de cost amb $s$ en m² i $p$ en m:\n\n$$c_\\text{empr} = c_1\\, s + c_2\\, p = 13{,}5 \\cdot 0{,}0625 + 0{,}85 \\cdot 2{,}945 = 0{,}844 + 2{,}503 = 3{,}35\\ \\text{€}$$"},
+          {"apartat": "c", "titol": "Cost de comprar les peces al proveïdor", "cos": "Només les peces 6 i 7 ($156{,}3\\ \\text{cm}^2$) superen els $100\\ \\text{cm}^2$; les altres cinc (1, 2, 3, 4 i 5) en fan menys:\n\n$$c_\\text{prov} = 2 \\cdot 0{,}95 + 5 \\cdot 0{,}65 = 1{,}90 + 3{,}25 = 5{,}15\\ \\text{€}$$"},
+          {"apartat": "c", "titol": "Opció més econòmica", "cos": "Com que $c_\\text{empr} = 3{,}35\\ \\text{€} < c_\\text{prov} = 5{,}15\\ \\text{€}$, **l'opció més econòmica és produir el puzle a la pròpia empresa**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$s_1 = s_3 = s_4 = 0{,}007813\\ \\text{m}^2$; $s_2 = s_5 = 0{,}003906\\ \\text{m}^2$; $s_6 = s_7 = 0{,}01563\\ \\text{m}^2$; $\\sum s_i = b^2 = 0{,}0625\\ \\text{m}^2$"},
+          {"apartat": "b", "valor": "$p \\approx 2{,}945\\ \\text{m}$"},
+          {"apartat": "c", "valor": "$c_\\text{empr} \\approx 3{,}35\\ \\text{€}$; $c_\\text{prov} = 5{,}15\\ \\text{€}$ → és més econòmic produir-lo"}
+        ],
+        "nota": "La solució oficial calcula el perímetre com la suma dels perímetres de totes les peces (cada línia de tall interior queda comptada dues vegades, una per cada peça que limita). Seguim aquest criteri. Error típic: confondre quin costat del triangle petit mesura $b/2$ (és la hipotenusa, no el catet)."
+      }
+    },
+    {
+      "id": "tecno-2018-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Plataforma elevadora amb motor de corrent continu i reductor: rendiments i massa de la càrrega",
+      "tema": "maquines-electriques",
+      "temes_secundaris": ["mecanica", "mecanismes"],
+      "conceptes": ["motor de corrent continu", "rendiment", "potència dissipada", "parell", "energia potencial"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "Una plataforma elevadora puja amb una velocitat constant una càrrega fins a una altura $\\Delta h = 4{,}5\\ \\text{m}$ en un temps $t = 50\\ \\text{s}$. La plataforma s'acciona amb un motor elèctric de corrent continu en sèrie amb un reductor d'engranatges. Segons el catàleg del fabricant, el rendiment del reductor d'engranatges és $\\eta_\\text{red} = 0{,}72$. El motor s'alimenta amb una tensió $U = 220\\ \\text{V}$, consumeix un corrent $I = 17{,}5\\ \\text{A}$ i gira a una velocitat $n = 1\\,500\\ \\text{min}^{-1}$. El parell a l'eix de sortida del motor és $\\Gamma_\\text{m} = 19{,}5\\ \\text{N m}$. Si les resistències passives a la plataforma elevadora es consideren negligibles, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La potència elèctrica $P_\\text{elèctr}$ que consumeix el motor i el rendiment electromecànic $\\eta_\\text{mot}$ d'aquest motor.", "punts": 1},
+        {"id": "b", "enunciat": "La potència total dissipada $P_\\text{diss}$ pel conjunt motor-reductor.", "punts": 0.5},
+        {"id": "c", "enunciat": "La potència mecànica $P_\\text{càrrega}$ requerida per a elevar la càrrega i la massa $m$ d'aquesta càrrega.", "punts": 0.5},
+        {"id": "d", "enunciat": "El corrent $I'$ que consumiria el motor si la massa de la càrrega fos la meitat, $m' = m/2$, i es mantingués la velocitat (considereu que els rendiments i la tensió d'alimentació del motor es mantenen constants).", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Elevació: $\\Delta h = 4{,}5\\ \\text{m}$ en $t = 50\\ \\text{s}$ (velocitat constant)\n- Rendiment del reductor: $\\eta_\\text{red} = 0{,}72$\n- Motor: $U = 220\\ \\text{V}$, $I = 17{,}5\\ \\text{A}$, $n = 1\\,500\\ \\text{min}^{-1}$, $\\Gamma_\\text{m} = 19{,}5\\ \\text{N m}$\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que dona el resultat oficial)\n- Incògnites: $P_\\text{elèctr}$, $\\eta_\\text{mot}$, $P_\\text{diss}$, $P_\\text{càrrega}$, $m$, $I'$\n\nCadena de potència: $P_\\text{elèctr} \\xrightarrow{\\ \\eta_\\text{mot}\\ } P_\\text{m} \\xrightarrow{\\ \\eta_\\text{red}\\ } P_\\text{càrrega}$."},
+          {"apartat": "a", "titol": "Potència elèctrica consumida", "cos": "En corrent continu, la potència elèctrica és el producte de tensió i corrent:\n\n$$P_\\text{elèctr} = U\\, I = 220 \\cdot 17{,}5 = 3\\,850\\ \\text{W}$$"},
+          {"apartat": "a", "titol": "Potència mecànica a l'eix del motor", "cos": "La potència mecànica d'un eix que gira és parell per velocitat angular. Passem la velocitat a rad/s:\n\n$$\\omega = n\\,\\frac{2\\pi}{60} = 1\\,500 \\cdot \\frac{2\\pi}{60} = 157{,}1\\ \\text{rad/s}$$\n\n$$P_\\text{m} = \\Gamma_\\text{m}\\, \\omega = 19{,}5 \\cdot 157{,}1 = 3\\,063\\ \\text{W}$$"},
+          {"apartat": "a", "titol": "Rendiment electromecànic del motor", "cos": "$$\\eta_\\text{mot} = \\frac{P_\\text{m}}{P_\\text{elèctr}} = \\frac{3\\,063}{3\\,850} = 0{,}7956$$\n\nResultat: **$P_\\text{elèctr} = 3\\,850\\ \\text{W}$, $\\eta_\\text{mot} \\approx 0{,}7956$**."},
+          {"apartat": "b", "titol": "Potència dissipada pel conjunt motor-reductor", "cos": "El rendiment global és el producte dels rendiments en sèrie, $\\eta_\\text{tot} = \\eta_\\text{mot}\\,\\eta_\\text{red} = 0{,}7956 \\cdot 0{,}72 = 0{,}5728$. Tot el que no arriba a la càrrega es dissipa (calor, fregaments):\n\n$$P_\\text{diss} = P_\\text{elèctr}\\,(1 - \\eta_\\text{mot}\\,\\eta_\\text{red}) = 3\\,850 \\cdot (1 - 0{,}5728) = 1\\,645\\ \\text{W}$$\n\nResultat: **$P_\\text{diss} \\approx 1\\,645\\ \\text{W}$** (787 W al motor i 858 W al reductor)."},
+          {"apartat": "c", "titol": "Potència que arriba a la càrrega", "cos": "El reductor rep $P_\\text{m}$ i en lliura el 72 %:\n\n$$P_\\text{càrrega} = \\eta_\\text{red}\\, P_\\text{m} = 0{,}72 \\cdot 3\\,063 = 2\\,205\\ \\text{W}$$\n\n(També: $P_\\text{càrrega} = P_\\text{elèctr} - P_\\text{diss} = 3\\,850 - 1\\,645 = 2\\,205\\ \\text{W}$.)"},
+          {"apartat": "c", "titol": "Massa de la càrrega", "cos": "Com que la pujada és a velocitat constant i sense resistències passives, tota la potència serveix per augmentar l'energia potencial:\n\n$$P_\\text{càrrega} = \\frac{m\\, g\\, \\Delta h}{t} \\quad\\Rightarrow\\quad m = \\frac{P_\\text{càrrega}\\, t}{g\\, \\Delta h} = \\frac{2\\,205 \\cdot 50}{9{,}807 \\cdot 4{,}5} = 2\\,499\\ \\text{kg}$$\n\nResultat: **$P_\\text{càrrega} \\approx 2\\,205\\ \\text{W}$, $m \\approx 2\\,499\\ \\text{kg}$**."},
+          {"apartat": "d", "titol": "Relació entre el corrent i la massa", "cos": "Recorrem la cadena de potència al revés amb rendiments i tensió constants:\n\n$$U\\, I = P_\\text{elèctr} = \\frac{P_\\text{càrrega}}{\\eta_\\text{mot}\\,\\eta_\\text{red}} = \\frac{m\\, g\\, \\Delta h}{t\\, \\eta_\\text{mot}\\,\\eta_\\text{red}} \\quad\\Rightarrow\\quad I = \\frac{m\\, g\\, \\Delta h}{t\\, U\\, \\eta_\\text{mot}\\,\\eta_\\text{red}}$$\n\nEl corrent és **proporcional a la massa** si es mantenen la velocitat ($\\Delta h/t$), la tensió i els rendiments."},
+          {"apartat": "d", "titol": "Corrent amb la meitat de massa", "cos": "$$I' = \\frac{(m/2)\\, g\\, \\Delta h}{t\\, U\\, \\eta_\\text{mot}\\,\\eta_\\text{red}} = \\frac{I}{2} = \\frac{17{,}5}{2} = 8{,}75\\ \\text{A}$$\n\nResultat: **$I' = 8{,}75\\ \\text{A}$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$P_\\text{elèctr} = 3\\,850\\ \\text{W}$; $\\eta_\\text{mot} \\approx 0{,}7956$"},
+          {"apartat": "b", "valor": "$P_\\text{diss} \\approx 1\\,645\\ \\text{W}$"},
+          {"apartat": "c", "valor": "$P_\\text{càrrega} \\approx 2\\,205\\ \\text{W}$; $m \\approx 2\\,499\\ \\text{kg}$"},
+          {"apartat": "d", "valor": "$I' = 8{,}75\\ \\text{A}$"}
+        ],
+        "nota": "Error típic a l'apartat b: calcular només la potència perduda al motor ($3\\,850 - 3\\,063 = 787\\ \\text{W}$) i oblidar la del reductor. A l'apartat a cal passar $n$ a rad/s abans de multiplicar pel parell."
+      }
+    },
+    {
+      "id": "tecno-2018-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Placa d'acer articulada sostinguda per un cilindre hidràulic: força, tensió a la tija i pressió",
+      "tema": "estatica",
+      "temes_secundaris": ["pneumatica", "resistencia"],
+      "conceptes": ["diagrama de cos lliure", "equilibri de moments", "cilindre de doble efecte", "pressió", "tensió normal"],
+      "dificultat": 2,
+      "pagines": [4],
+      "enunciat": "La placa quadrada d'acer de la figura, de costat $L = 1\\,000\\ \\text{mm}$ i gruix $e = 100\\ \\text{mm}$, està articulada a la paret en el punt O. Per a controlar la inclinació $\\varphi$ de la placa, s'utilitza un cilindre hidràulic de doble efecte. Un dels extrems del cilindre està articulat a la paret en el punt A, i l'altre extrem està articulat a la placa en el punt B. El diàmetre interior del cilindre és $d_\\text{int} = 70\\ \\text{mm}$ i el diàmetre de la tija és $d_\\text{tija} = 40\\ \\text{mm}$. La densitat de l'acer és $\\rho_\\text{acer} = 7\\,850\\ \\text{kg/m}^3$.",
+      "figures": [{"src": "img/tecno/2018-S/e3-b.png", "peu": "Placa quadrada articulada en O i cilindre hidràulic entre A (paret) i B (placa)"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu el diagrama de cos lliure de la placa per a $\\varphi = 0^\\circ$.", "punts": 0.5},
+        {"id": "b", "enunciat": "Determineu: la massa $m$ de la placa.", "punts": 0.5},
+        {"id": "c", "enunciat": "La força $F_\\text{c}$ que fa el cilindre hidràulic si la placa està en repòs amb una inclinació $\\varphi = 0^\\circ$.", "punts": 0.5},
+        {"id": "d", "enunciat": "La tensió normal a tracció $\\sigma$ de la tija del cilindre en la situació anterior. Quina és la pressió relativa $p_\\text{int}$ a l'interior del cilindre?", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Placa: $L = 1\\,000\\ \\text{mm} = 1\\ \\text{m}$, $e = 100\\ \\text{mm} = 0{,}1\\ \\text{m}$, $\\rho_\\text{acer} = 7\\,850\\ \\text{kg/m}^3$\n- Cilindre: $d_\\text{int} = 70\\ \\text{mm} = 0{,}07\\ \\text{m}$, $d_\\text{tija} = 40\\ \\text{mm} = 0{,}04\\ \\text{m}$\n- Geometria: A és a una distància $L$ per sobre de O; per a $\\varphi = 0^\\circ$, B és a una distància $L$ a la dreta de O.\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que dona el resultat oficial)\n- Incògnites: $m$, $F_\\text{c}$, $\\sigma$, $p_\\text{int}$"},
+          {"apartat": "a", "titol": "Diagrama de cos lliure per a φ = 0°", "cos": "Aïllem la placa i hi dibuixem totes les forces exteriors:\n\n- **Pes** $m\\,g$, vertical cap avall, aplicat al centre de masses G (al centre del quadrat, a $L/2$ horitzontalment de O).\n- **Reacció a l'articulació O**: com que és una articulació, la força pot tenir qualsevol direcció; la descomponem en $F_\\text{h}$ (horitzontal) i $F_\\text{v}$ (vertical).\n- **Força del cilindre** $F_\\text{c}$ a B: un cilindre articulat als dos extrems és una barra biarticulada, així que la força va **en la direcció de la recta AB**. Com que el cilindre aguanta la placa, estira B cap a A (la tija treballa a tracció). Amb $\\varphi = 0^\\circ$, el triangle OAB és rectangle isòsceles ($OA = OB = L$), de manera que $F_\\text{c}$ forma **45°** amb l'horitzontal.\n\n![Diagrama de cos lliure de la placa per a φ = 0°](img/tecno/2018-S/e3-b-sol.png)"},
+          {"apartat": "b", "titol": "Massa de la placa", "cos": "La massa és el volum per la densitat; el volum d'una placa quadrada és costat² × gruix:\n\n$$m = V\\,\\rho_\\text{acer} = L^2\\, e\\, \\rho_\\text{acer} = 1^2 \\cdot 0{,}1 \\cdot 7\\,850 = 785\\ \\text{kg}$$\n\nResultat: **$m = 785\\ \\text{kg}$**."},
+          {"apartat": "c", "titol": "Equilibri de moments respecte de O", "cos": "Prenem moments respecte de l'articulació O perquè així les reaccions $F_\\text{h}$ i $F_\\text{v}$ (incògnites) no hi apareixen. Descomponem $F_\\text{c}$: la component horitzontal passa per O (no fa moment) i la vertical, $F_\\text{c}\\sin 45^\\circ$, té braç $L$. El pes té braç $L/2$:\n\n$$\\sum M_\\text{O} = 0: \\quad F_\\text{c}\\, \\sin 45^\\circ \\cdot L = m\\, g\\, \\frac{L}{2}$$\n\n$$F_\\text{c} = \\frac{m\\, g}{2 \\sin 45^\\circ} = \\frac{785 \\cdot 9{,}807}{2 \\cdot 0{,}7071} = 5\\,444\\ \\text{N}$$\n\nResultat: **$F_\\text{c} \\approx 5\\,444\\ \\text{N}$**.\n\n(Per completar: $F_\\text{h} = F_\\text{c}\\cos 45^\\circ = 3\\,849\\ \\text{N}$ i $F_\\text{v} = m\\,g - F_\\text{c}\\sin 45^\\circ = 3\\,849\\ \\text{N}$.)"},
+          {"apartat": "d", "titol": "Tensió normal a la tija", "cos": "La tija està sotmesa a tracció per la força $F_\\text{c}$. La tensió normal és la força dividida per l'àrea de la secció circular de la tija:\n\n$$\\sigma = \\frac{F_\\text{c}}{\\pi\\, d_\\text{tija}^2/4} = \\frac{5\\,444}{\\pi \\cdot 0{,}04^2/4} = \\frac{5\\,444}{1{,}257 \\cdot 10^{-3}} = 4{,}332 \\cdot 10^6\\ \\text{Pa}$$\n\nResultat: **$\\sigma \\approx 4{,}332\\ \\text{MPa}$**."},
+          {"apartat": "d", "titol": "Pressió a l'interior del cilindre", "cos": "Perquè la tija estiri (tracció), el cilindre de doble efecte ha de tenir pressió a la **cambra del costat de la tija**. En aquesta cambra, l'oli empeny sobre una **corona circular**: l'àrea del pistó menys l'àrea de la tija:\n\n$$A_\\text{corona} = \\frac{\\pi}{4}\\left(d_\\text{int}^2 - d_\\text{tija}^2\\right) = \\frac{\\pi}{4}\\left(0{,}07^2 - 0{,}04^2\\right) = 2{,}592 \\cdot 10^{-3}\\ \\text{m}^2$$\n\n$$p_\\text{int} = \\frac{F_\\text{c}}{A_\\text{corona}} = \\frac{5\\,444}{2{,}592 \\cdot 10^{-3}} = 2{,}100 \\cdot 10^6\\ \\text{Pa}$$\n\nResultat: **$p_\\text{int} \\approx 2{,}100\\ \\text{MPa}$** (pressió relativa)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Forces: $m\\,g$ a G, $F_\\text{h}$ i $F_\\text{v}$ a O, $F_\\text{c}$ a B en la direcció BA (45°)"},
+          {"apartat": "b", "valor": "$m = 785\\ \\text{kg}$"},
+          {"apartat": "c", "valor": "$F_\\text{c} \\approx 5\\,444\\ \\text{N}$"},
+          {"apartat": "d", "valor": "$\\sigma \\approx 4{,}332\\ \\text{MPa}$; $p_\\text{int} \\approx 2{,}100\\ \\text{MPa}$"}
+        ],
+        "nota": "Error típic a l'apartat d: calcular la pressió amb l'àrea sencera del pistó ($\\pi d_\\text{int}^2/4$), cosa que donaria $1{,}415\\ \\text{MPa}$. Quan la tija treballa a tracció, la pressió actua a la cambra anular del costat de la tija."
+      }
+    },
+    {
+      "id": "tecno-2018-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Vehicle bifuel gasolina-GLP: potència tèrmica, cost per 100 km i amortització",
+      "tema": "energia",
+      "temes_secundaris": ["economia", "termica"],
+      "conceptes": ["poder calorífic", "potència tèrmica", "consum de combustible", "amortització", "autonomia"],
+      "dificultat": 2,
+      "pagines": [4],
+      "enunciat": "Per a reduir l'emissió de partícules de CO$_2$ d'un vehicle que funciona amb gasolina, és possible instal·lar-hi un sistema que fa que el motor pugui funcionar també amb gas liquat del petroli (GLP). La instal·lació d'aquest sistema té un cost de $2\\,000\\ \\text{€}$ addicionals, que caldria sumar al cost del vehicle, i inclou la col·locació d'un dipòsit de GLP de $V = 40\\ \\text{L}$ al maleter. Quan el vehicle circula a una velocitat $v = 120\\ \\text{km/h}$, consumeix una mitjana de $8\\ \\text{L/100 km}$ si funciona amb gasolina, o de $9{,}3\\ \\text{L/100 km}$ si funciona amb GLP. La gasolina té una densitat $\\rho_\\text{gasol} = 0{,}75\\ \\text{kg/L}$ i un poder calorífic $p_\\text{c,gasol} = 42{,}5\\ \\text{MJ/kg}$, i el GLP té una densitat $\\rho_\\text{GLP} = 0{,}56\\ \\text{kg/L}$ i un poder calorífic $p_\\text{c,GLP} = 46\\ \\text{MJ/kg}$. El preu de cada combustible és el següent: $1{,}36\\ \\text{€/L}$ en el cas de la gasolina i $0{,}73\\ \\text{€/L}$ en el cas del GLP. Si el vehicle circula a una velocitat $v = 120\\ \\text{km/h}$, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La potència tèrmica mitjana $P_\\text{gasol}$ i $P_\\text{GLP}$ consumida amb cada combustible.", "punts": 1},
+        {"id": "b", "enunciat": "El cost $c_\\text{gasol}$ i $c_\\text{GLP}$, en euros per cada 100 km, d'utilitzar cadascun dels combustibles.", "punts": 0.5},
+        {"id": "c", "enunciat": "La distància mitjana anual $d_\\text{any}$, en km per any, que ha de recórrer el vehicle si es vol amortitzar la instal·lació del sistema GLP en $t = 3$ anys.", "punts": 0.5},
+        {"id": "d", "enunciat": "La distància estimada $d_\\text{est}$ que pot recórrer el vehicle amb GLP si el dipòsit instal·lat es troba ple fins al $85\\ \\%$ de la seva capacitat.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Velocitat: $v = 120\\ \\text{km/h}$\n- Gasolina: $8\\ \\text{L/100 km} = 0{,}08\\ \\text{L/km}$, $\\rho_\\text{gasol} = 0{,}75\\ \\text{kg/L}$, $p_\\text{c,gasol} = 42{,}5\\ \\text{MJ/kg}$, $1{,}36\\ \\text{€/L}$\n- GLP: $9{,}3\\ \\text{L/100 km} = 0{,}093\\ \\text{L/km}$, $\\rho_\\text{GLP} = 0{,}56\\ \\text{kg/L}$, $p_\\text{c,GLP} = 46\\ \\text{MJ/kg}$, $0{,}73\\ \\text{€/L}$\n- Instal·lació GLP: $2\\,000\\ \\text{€}$; dipòsit $V = 40\\ \\text{L}$\n- Incògnites: $P_\\text{gasol}$, $P_\\text{GLP}$, $c_\\text{gasol}$, $c_\\text{GLP}$, $d_\\text{any}$, $d_\\text{est}$"},
+          {"apartat": "a", "titol": "Idea: de consum per km a energia per segon", "cos": "La potència tèrmica és l'energia química del combustible que es consumeix cada segon. Multiplicant el consum per km per la velocitat obtenim litres per hora; amb la densitat passem a kg/h i amb el poder calorífic a MJ/h:\n\n$$P = \\left(\\frac{V}{d}\\right) \\cdot \\rho \\cdot p_\\text{c} \\cdot v$$"},
+          {"apartat": "a", "titol": "Potència tèrmica amb gasolina", "cos": "Consum horari: $0{,}08\\ \\text{L/km} \\cdot 120\\ \\text{km/h} = 9{,}6\\ \\text{L/h}$ → $9{,}6 \\cdot 0{,}75 = 7{,}2\\ \\text{kg/h}$.\n\n$$P_\\text{gasol} = \\frac{7{,}2\\ \\text{kg/h} \\cdot 42{,}5\\ \\text{MJ/kg}}{3\\,600\\ \\text{s/h}} = \\frac{306\\ \\text{MJ}}{3\\,600\\ \\text{s}} = 0{,}085\\ \\text{MW} = 85\\ \\text{kW}$$\n\nResultat: **$P_\\text{gasol} = 85\\ \\text{kW}$**."},
+          {"apartat": "a", "titol": "Potència tèrmica amb GLP", "cos": "Consum horari: $0{,}093 \\cdot 120 = 11{,}16\\ \\text{L/h}$ → $11{,}16 \\cdot 0{,}56 = 6{,}250\\ \\text{kg/h}$.\n\n$$P_\\text{GLP} = \\frac{6{,}250 \\cdot 46}{3\\,600} = \\frac{287{,}5\\ \\text{MJ}}{3\\,600\\ \\text{s}} = 0{,}07986\\ \\text{MW} = 79{,}86\\ \\text{kW}$$\n\nResultat: **$P_\\text{GLP} \\approx 79{,}86\\ \\text{kW}$**. Encara que es gasten més litres de GLP, és menys dens i l'energia consumida és una mica menor."},
+          {"apartat": "b", "titol": "Cost per cada 100 km", "cos": "Multipliquem els litres per 100 km pel preu del litre:\n\n$$c_\\text{gasol} = 8\\ \\frac{\\text{L}}{100\\ \\text{km}} \\cdot 1{,}36\\ \\frac{\\text{€}}{\\text{L}} = 10{,}88\\ \\text{€/100 km}$$\n\n$$c_\\text{GLP} = 9{,}3\\ \\frac{\\text{L}}{100\\ \\text{km}} \\cdot 0{,}73\\ \\frac{\\text{€}}{\\text{L}} = 6{,}789\\ \\text{€/100 km}$$\n\nResultat: **$c_\\text{gasol} = 10{,}88\\ \\text{€/100 km}$, $c_\\text{GLP} \\approx 6{,}789\\ \\text{€/100 km}$**."},
+          {"apartat": "c", "titol": "Estalvi per km i distància per amortitzar", "cos": "Cada 100 km amb GLP s'estalvien $10{,}88 - 6{,}789 = 4{,}091\\ \\text{€}$. Per amortitzar els $2\\,000\\ \\text{€}$ en 3 anys, cada any cal estalviar $2\\,000/3 = 666{,}7\\ \\text{€}$:\n\n$$d_\\text{any} = \\frac{2\\,000\\ \\text{€}}{t} \\cdot \\frac{100\\ \\text{km}}{c_\\text{gasol} - c_\\text{GLP}} = \\frac{666{,}7\\ \\text{€/any} \\cdot 100\\ \\text{km}}{4{,}091\\ \\text{€}} = 16\\,296\\ \\text{km/any}$$\n\nResultat: **$d_\\text{any} \\approx 16\\,296\\ \\text{km/any}$**."},
+          {"apartat": "d", "titol": "Autonomia amb el dipòsit de GLP al 85 %", "cos": "Litres disponibles: $0{,}85 \\cdot 40 = 34\\ \\text{L}$. Amb un consum de $9{,}3\\ \\text{L}$ cada $100\\ \\text{km}$:\n\n$$d_\\text{est} = 0{,}85\\, V \\cdot \\frac{100\\ \\text{km}}{9{,}3\\ \\text{L}} = 34 \\cdot \\frac{100}{9{,}3} = 365{,}6\\ \\text{km}$$\n\nResultat: **$d_\\text{est} \\approx 365{,}6\\ \\text{km}$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$P_\\text{gasol} = 85\\ \\text{kW}$; $P_\\text{GLP} \\approx 79{,}86\\ \\text{kW}$"},
+          {"apartat": "b", "valor": "$c_\\text{gasol} = 10{,}88\\ \\text{€/100 km}$; $c_\\text{GLP} \\approx 6{,}789\\ \\text{€/100 km}$"},
+          {"apartat": "c", "valor": "$d_\\text{any} \\approx 16\\,296\\ \\text{km/any}$"},
+          {"apartat": "d", "valor": "$d_\\text{est} \\approx 365{,}6\\ \\text{km}$"}
+        ],
+        "nota": "Error típic a l'apartat a: oblidar passar les hores a segons (dividir per 3 600) i obtenir la potència en MJ/h. Cal multiplicar per la densitat abans d'aplicar el poder calorífic, que està donat per kg i no per litre."
+      }
+    }
+  ]
+}

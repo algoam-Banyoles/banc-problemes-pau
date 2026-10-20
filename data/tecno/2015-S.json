@@ -1,0 +1,824 @@
+{
+  "examen": {
+    "id": "tecno-2015-S",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2015,
+    "convocatoria": "setembre",
+    "serie": "5",
+    "pdf_examen": "pdfs/tecno/2015-S-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2015-S-solucio.pdf",
+    "estructura": "Dues parts de dos exercicis de 2,5 punts. Primera part (comuna): exercici 1, amb 5 qüestions de test (0,5 punts cadascuna; cada resposta errònia descompta 0,16 punts i les no contestades no descompten), i exercici 2. Segona part: cal escollir UNA de les dues opcions (A o B) i fer-ne els exercicis 3 i 4."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2015-S-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Pes d'una barra massissa d'alumini de secció circular",
+      "tema": "materials",
+      "temes_secundaris": [],
+      "conceptes": [
+        "densitat",
+        "volum del cilindre",
+        "pes"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "L'alumini té una densitat $\\rho = 2\\,700\\ \\text{kg/m}^3$. Quin és el pes d'una barra massissa de secció circular de $140\\ \\text{mm}$ de diàmetre i $1{,}3\\ \\text{m}$ de llargària? (Preneu $g = 10\\ \\text{m/s}^2$.)",
+      "figures": [],
+      "opcions": {
+        "a": "$688{,}0\\ \\text{N}$",
+        "b": "$540{,}3\\ \\text{N}$",
+        "c": "$216{,}1\\ \\text{N}$",
+        "d": "$3\\,088\\ \\text{N}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Densitat: $\\rho = 2\\,700\\ \\text{kg/m}^3$\n- Diàmetre: $d = 140\\ \\text{mm} = 0{,}14\\ \\text{m}$ (radi $r = 0{,}07\\ \\text{m}$)\n- Llargària: $L = 1{,}3\\ \\text{m}$\n- $g = 10\\ \\text{m/s}^2$\n- Incògnita: pes $W$"
+          },
+          {
+            "apartat": null,
+            "titol": "Volum de la barra (cilindre)",
+            "cos": "La barra és un cilindre: volum = àrea de la secció × llargària.\n\n$$V = \\frac{\\pi d^2}{4}\\, L = \\frac{\\pi \\cdot 0{,}14^2}{4} \\cdot 1{,}3 = 0{,}02001\\ \\text{m}^3$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Massa i pes",
+            "cos": "La massa és densitat × volum, i el pes és massa × $g$:\n\n$$m = \\rho V = 2\\,700 \\cdot 0{,}02001 = 54{,}03\\ \\text{kg}$$\n\n$$W = m g = 54{,}03 \\cdot 10 = 540{,}3\\ \\text{N}$$\n\nResultat: **$W = 540{,}3\\ \\text{N}$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- Usar el diàmetre en lloc del radi a $\\pi r^2$ dona un valor 4 vegades més gran ($2\\,161\\ \\text{N}$).\n- L'opció **a** ($688{,}0\\ \\text{N}$) surt de calcular el volum com si la secció fos quadrada ($d^2 L$) en lloc de circular.\n- Les opcions **c** i **d** no corresponen a cap plantejament correcte."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$W = 540{,}3\\ \\text{N}$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2015-S-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Tolerància d'un angle obtingut com a diferència de dos angles acotats",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "tolerància",
+        "acotació",
+        "cadena de cotes",
+        "dimensions angulars"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "En el plànol de la figura, les toleràncies per a les dimensions angulars són $\\pm 0^\\circ\\,30'$ per a $\\alpha_1$ i $\\pm 0^\\circ\\,20'$ per a $\\alpha_2$. Quina és la tolerància per a $\\beta$?",
+      "figures": [
+        {
+          "src": "img/tecno/2015-S/e1-q2.png",
+          "peu": "Peça amb els angles acotats α₁ i α₂ i l'angle resultant β"
+        }
+      ],
+      "opcions": {
+        "a": "$\\begin{pmatrix} +0^\\circ\\,30' \\\\ -0^\\circ\\,20' \\end{pmatrix}$",
+        "b": "$\\pm 0^\\circ\\,50'$",
+        "c": "$\\begin{pmatrix} +0^\\circ\\,30' \\\\ -0^\\circ\\,0' \\end{pmatrix}$",
+        "d": "$\\pm 0^\\circ\\,10'$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Relació entre els angles",
+            "cos": "A la figura es veu que $\\alpha_2$ és l'angle total i que $\\alpha_1$ i $\\beta$ en són les dues parts. Per tant, $\\beta$ no està acotat directament: surt de la diferència\n\n$$\\beta = \\alpha_2 - \\alpha_1$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Valors extrems de β",
+            "cos": "El valor **màxim** de $\\beta$ s'obté amb $\\alpha_2$ màxim i $\\alpha_1$ mínim; el **mínim**, amb $\\alpha_2$ mínim i $\\alpha_1$ màxim:\n\n$$\\beta_\\text{màx} = (\\alpha_2 + 20') - (\\alpha_1 - 30') = \\beta + 50'$$\n\n$$\\beta_\\text{mín} = (\\alpha_2 - 20') - (\\alpha_1 + 30') = \\beta - 50'$$\n\nEn una cadena de cotes, **les toleràncies sempre se sumen** (mai es resten), tant si la cota resultant és una suma com una diferència.\n\nResultat: **tolerància de $\\beta = \\pm 0^\\circ\\,50'$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **d)** $\\pm 10'$ surt de restar les toleràncies ($30' - 20'$): error típic, ja que restar angles no fa que les incerteses es compensin.\n- **a)** i **c)** són toleràncies asimètriques que no corresponen a cap combinació dels extrems."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\beta = \\alpha_2 - \\alpha_1$, tolerància $\\pm 0^\\circ\\,50'$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2015-S-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Quilòmetres necessaris per obtenir un benefici en un transport de palets",
+      "tema": "economia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "benefici",
+        "ingressos",
+        "costos variables",
+        "costos fixos"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un transportista porta en un camió un màxim de 48 palets de $500\\ \\text{kg}$. Per cada palet, cobra al client $50$ € fixos, més $0{,}40$ € per kilòmetre recorregut. Si les despeses del camió i de gestió són de $6{,}30$ € per kilòmetre recorregut, quants kilòmetres ha de recórrer amb el camió ple per a obtenir un benefici de $25\\,000$ €?",
+      "figures": [],
+      "opcions": {
+        "a": "$1\\,752\\ \\text{km}$",
+        "b": "$56\\,500\\ \\text{km}$",
+        "c": "$1\\,938\\ \\text{km}$",
+        "d": "$3\\,968\\ \\text{km}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Palets (camió ple): $N = 48$ (la massa de $500\\ \\text{kg}$ no cal)\n- Preu fix per palet: $50$ €; preu variable per palet: $0{,}40$ €/km\n- Despeses: $6{,}30$ €/km\n- Benefici desitjat: $B = 25\\,000$ €\n- Incògnita: distància $x$ (km)"
+          },
+          {
+            "apartat": null,
+            "titol": "Ingressos i despeses en funció dels km",
+            "cos": "Els ingressos tenen una part fixa i una que creix amb els km, i el benefici és ingressos menys despeses:\n\n$$I(x) = 48 \\cdot 50 + 48 \\cdot 0{,}40\\, x = 2\\,400 + 19{,}2\\, x\\ \\ \\text{(euros)}$$\n\n$$D(x) = 6{,}30\\, x\\ \\ \\text{(euros)}$$\n\n$$B = I - D = 2\\,400 + (19{,}2 - 6{,}30)\\, x = 2\\,400 + 12{,}9\\, x$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Distància per al benefici demanat",
+            "cos": "$$25\\,000 = 2\\,400 + 12{,}9\\, x \\ \\Rightarrow\\ x = \\frac{25\\,000 - 2\\,400}{12{,}9} = 1\\,751{,}9\\ \\text{km}$$\n\nResultat: **$x \\approx 1\\,752\\ \\text{km}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- Oblidar els $2\\,400$ € fixos dona $25\\,000/12{,}9 = 1\\,938\\ \\text{km}$, l'opció **c**.\n- Dividir el benefici entre les despeses per km ($25\\,000/6{,}30$) dona $3\\,968\\ \\text{km}$, l'opció **d**.\n- Dividir $25\\,000 - 2\\,400$ entre $0{,}40$ €/km (preu d'un sol palet i sense despeses) dona $56\\,500\\ \\text{km}$, l'opció **b**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$x \\approx 1\\,752\\ \\text{km}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2015-S-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Volum de la cambra de combustió d'un motor a partir de la relació de compressió",
+      "tema": "termica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "relació de compressió",
+        "cilindrada",
+        "volum de la cambra de combustió",
+        "motor de quatre temps"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "El motor d'una motocicleta de $125\\ \\text{cm}^3$ de quatre temps té una cursa de $50{,}6\\ \\text{mm}$ i una relació de compressió $r_c = 7{,}1$. Quin és el volum de la cambra de combustió?",
+      "figures": [],
+      "opcions": {
+        "a": "$125\\ \\text{cm}^3$",
+        "b": "$20{,}49\\ \\text{cm}^3$",
+        "c": "$17{,}61\\ \\text{cm}^3$",
+        "d": "$10{,}47\\ \\text{cm}^3$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Definició de relació de compressió",
+            "cos": "La relació de compressió és el quocient entre el volum màxim del cilindre (pistó al punt mort inferior) i el volum mínim (pistó al punt mort superior, que és la cambra de combustió $V_c$). El volum màxim és la cilindrada $V_d$ més la cambra:\n\n$$r_c = \\frac{V_d + V_c}{V_c}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Aïllem el volum de la cambra",
+            "cos": "$$r_c V_c = V_d + V_c \\ \\Rightarrow\\ V_c = \\frac{V_d}{r_c - 1} = \\frac{125}{7{,}1 - 1} = \\frac{125}{6{,}1} = 20{,}49\\ \\text{cm}^3$$\n\nResultat: **$V_c = 20{,}49\\ \\text{cm}^3$** → resposta **b**.\n\nLa cursa ($50{,}6\\ \\text{mm}$) no cal: només serviria per calcular el diàmetre del pistó."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- Fer $V_c = V_d / r_c = 125/7{,}1 = 17{,}61\\ \\text{cm}^3$ (opció **c**): és oblidar que el volum màxim inclou la cambra.\n- L'opció **a** és la cilindrada, no la cambra."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$V_c = 20{,}49\\ \\text{cm}^3$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2015-S-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Massa de titani en un aliatge Ti-6Al-7Nb per a pròtesis",
+      "tema": "materials",
+      "temes_secundaris": [],
+      "conceptes": [
+        "aliatges",
+        "composició percentual",
+        "titani"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "L'aliatge de titani Ti-6Al-7Nb que s'utilitza en pròtesis internes conté un $6{,}1\\ \\%$ d'alumini (Al), un $7{,}3\\ \\%$ de niobi (Nb), un $0{,}99\\ \\%$ d'altres components (C, H, Fe, N, O, Ta) i la resta és titani (Ti). Quina quantitat de titani (Ti) hi ha en $25\\ \\text{kg}$ d'aquest aliatge?",
+      "figures": [],
+      "opcions": {
+        "a": "$21{,}40\\ \\text{kg}$",
+        "b": "$1{,}525\\ \\text{kg}$",
+        "c": "$21{,}65\\ \\text{kg}$",
+        "d": "$3{,}35\\ \\text{kg}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Percentatge de titani",
+            "cos": "El titani és «la resta», és a dir, el 100 % menys la suma dels altres components:\n\n$$\\%\\text{Ti} = 100 - 6{,}1 - 7{,}3 - 0{,}99 = 85{,}61\\ \\%$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Massa de titani",
+            "cos": "$$m_\\text{Ti} = 0{,}8561 \\cdot 25 = 21{,}40\\ \\text{kg}$$\n\nResultat: **$m_\\text{Ti} = 21{,}40\\ \\text{kg}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **c)** $21{,}65\\ \\text{kg}$ surt d'oblidar el $0{,}99\\ \\%$ d'altres components ($86{,}6\\ \\%$).\n- **b)** $1{,}525\\ \\text{kg}$ és la massa d'alumini ($6{,}1\\ \\%$ de 25 kg), i **d)** $3{,}35\\ \\text{kg}$ és la massa d'Al + Nb ($13{,}4\\ \\%$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$m_\\text{Ti} = 21{,}40\\ \\text{kg}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2015-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Sistema lògic que detecta si la suma de dos nombres és múltiple de 3",
+      "tema": "digital",
+      "temes_secundaris": [],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "casos impossibles",
+        "mapa de Karnaugh",
+        "esquema de contactes"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        2
+      ],
+      "enunciat": "La divisió entera de dos nombres per 3 fa que es puguin escriure $z_1 = 3q_1 + r_1$ i $z_2 = 3q_2 + r_2$, on $r_1$ i $r_2$ s'anomenen *residus* i poden ser iguals a 0, 1 o 2. La suma dels dos nombres $s = z_1 + z_2$ pot ser múltiple de 3 o no. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- $z_1$ múltiple de 3: $m_1$ = 1: sí; 0: no\n- $z_2$ múltiple de 3: $m_2$ = 1: sí; 0: no\n- residus $r_1$ i $r_2$: $i$ = 1: $r_1 = r_2$; 0: $r_1 \\neq r_2$\n- $s$ múltiple de 3: $m_s$ = 1: sí; 0: no",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu la taula de veritat del sistema i indiqueu els casos que no són possibles.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Idea clau: la suma és múltiple de 3 segons els residus",
+            "cos": "$$s = z_1 + z_2 = 3(q_1 + q_2) + (r_1 + r_2)$$\n\nPer tant, $s$ és múltiple de 3 si i només si $r_1 + r_2$ és múltiple de 3, és a dir, si $(r_1, r_2)$ és $(0,0)$, $(1,2)$ o $(2,1)$.\n\nA més, $m_1 = 1$ vol dir $r_1 = 0$ i $m_1 = 0$ vol dir $r_1 \\in \\{1, 2\\}$ (igual per a $m_2$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Anàlisi de cada combinació",
+            "cos": "- $m_1 = 0,\\ m_2 = 0,\\ i = 0$: $r_1, r_2 \\in \\{1,2\\}$ i diferents → $(1,2)$ o $(2,1)$ → suma 3 → $m_s = 1$.\n- $m_1 = 0,\\ m_2 = 0,\\ i = 1$: $r_1 = r_2 = 1$ o $2$ → suma 2 o 4 → $m_s = 0$.\n- $m_1 = 0,\\ m_2 = 1,\\ i = 0$: $r_1 \\in \\{1,2\\}$, $r_2 = 0$ → suma 1 o 2 → $m_s = 0$.\n- $m_1 = 0,\\ m_2 = 1,\\ i = 1$: caldria $r_1 = r_2 = 0$, però $m_1 = 0$ diu que $r_1 \\neq 0$ → **impossible**.\n- $m_1 = 1,\\ m_2 = 0,\\ i = 0$: $r_1 = 0$, $r_2 \\in \\{1,2\\}$ → $m_s = 0$.\n- $m_1 = 1,\\ m_2 = 0,\\ i = 1$: **impossible** (mateix raonament).\n- $m_1 = 1,\\ m_2 = 1,\\ i = 0$: $r_1 = r_2 = 0$, per tant $i$ ha de valer 1 → **impossible**.\n- $m_1 = 1,\\ m_2 = 1,\\ i = 1$: $r_1 = r_2 = 0$ → suma 0 → $m_s = 1$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "Els casos impossibles es marquen amb X (indiferents):\n\n| $m_1$ | $m_2$ | $i$ | $m_s$ | |\n|---|---|---|---|---|\n| 0 | 0 | 0 | **1** | |\n| 0 | 0 | 1 | 0 | |\n| 0 | 1 | 0 | 0 | |\n| 0 | 1 | 1 | X | no és possible |\n| 1 | 0 | 0 | 0 | |\n| 1 | 0 | 1 | X | no és possible |\n| 1 | 1 | 0 | X | no és possible |\n| 1 | 1 | 1 | **1** | |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció lògica (prenent X = 0)",
+            "cos": "Com fa la solució oficial, si donem el valor 0 als casos impossibles, només hi ha dues files amb $m_s = 1$. Escrivim un terme producte per a cadascuna (variable negada si val 0):\n\n$$m_s = \\bar{m}_1\\,\\bar{m}_2\\,\\bar{i} + m_1\\,m_2\\,i$$\n\nAmb X = 0 aquesta funció ja no es pot simplificar: al mapa de Karnaugh els dos 1 (000 i 111) no són adjacents."
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació aprofitant els casos impossibles (opcional)",
+            "cos": "Com que els casos impossibles no passaran mai, podem posar-hi el valor que ens convingui. Mapa de Karnaugh (files $m_1$, columnes $m_2\\,i$):\n\n| $m_1 \\backslash m_2 i$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **0** | 1 | 0 | X | 0 |\n| **1** | 0 | X | 1 | X |\n\nEl 1 de la casella 111 es pot agrupar amb la X de 110 (grup $m_1\\,m_2$). El 1 de 000 queda sol (les seves veïnes són 0). Resulta:\n\n$$m_s = \\bar{m}_1\\,\\bar{m}_2\\,\\bar{i} + m_1\\,m_2$$\n\n(també serien vàlides $\\bar{m}_1\\bar{m}_2\\bar{i} + m_2\\, i$ o $\\bar{m}_1\\bar{m}_2\\bar{i} + m_1\\, i$). Totes donen el mateix resultat en els casos possibles."
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de contactes",
+            "cos": "Cada terme producte és una branca de contactes **en sèrie**, i la suma (OR) es fa posant les branques **en paraŀlel**:\n\n- Branca superior: contactes normalment oberts $m_1$, $m_2$ i $i$ en sèrie ($m_1\\,m_2\\,i$).\n- Branca inferior: contactes normalment tancats $\\bar{m}_1$, $\\bar{m}_2$ i $\\bar{i}$ en sèrie ($\\bar{m}_1\\,\\bar{m}_2\\,\\bar{i}$).\n- Les dues branques en paraŀlel alimenten el receptor $m_s$ (làmpada).\n\nEsquema de la solució oficial (cada polsador doble acciona alhora el contacte obert de dalt i el tancat de baix):\n\n![Esquema de contactes de la solució oficial](img/tecno/2015-S/e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "8 combinacions; impossibles: $(m_1,m_2,i) = (0,1,1),\\ (1,0,1),\\ (1,1,0)$; $m_s = 1$ només a $(0,0,0)$ i $(1,1,1)$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m_s = \\bar{m}_1\\,\\bar{m}_2\\,\\bar{i} + m_1\\,m_2\\,i$ (amb X = 0); aprofitant les X: $m_s = \\bar{m}_1\\,\\bar{m}_2\\,\\bar{i} + m_1\\,m_2$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Dues branques en paraŀlel: $m_1$–$m_2$–$i$ (oberts) i $\\bar{m}_1$–$\\bar{m}_2$–$\\bar{i}$ (tancats) en sèrie"
+          }
+        ],
+        "nota": "La solució oficial pren X = 0 i dona $m_s = \\bar{m}_1\\bar{m}_2\\bar{i} + m_1 m_2 i$, que és correcta. Aprofitar les combinacions impossibles permet estalviar un contacte, però no és imprescindible. Error típic: pensar que $m_1 = m_2 = 0$ ja implica que la suma no és múltiple de 3 (per exemple, $1 + 2 = 3$ sí que ho és)."
+      }
+    },
+    {
+      "id": "tecno-2015-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Llanterna de tres LED en paraŀlel alimentada amb dues o tres bateries",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "electronica"
+      ],
+      "conceptes": [
+        "llei d'Ohm",
+        "LED",
+        "bateries en sèrie",
+        "capacitat de la bateria",
+        "energia elèctrica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Una llanterna consta de tres LED connectats en paraŀlel. La caiguda de tensió de cada LED és $U_\\text{LED} = 3{,}1\\ \\text{V}$. La llanterna es pot alimentar amb dues o tres bateries connectades en sèrie. Cada bateria proporciona una tensió $U_\\text{bat} = 3{,}7\\ \\text{V}$ i té una capacitat $c_\\text{bat} = 3\\,000\\ \\text{mA h}$. Entre les bateries i els LED hi ha una resistència $R$. Quan hi ha les tres bateries connectades, per cada LED hi passa un corrent $I_\\text{LED} = 2\\,500\\ \\text{mA}$. Determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2015-S/e3-a.png",
+          "peu": "Circuit de la llanterna: resistència R en sèrie amb tres LED en paraŀlel"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El valor de la resistència $R$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "L'energia consumida pel conjunt $E_\\text{total}$ en el temps $t = 0{,}5\\ \\text{h}$ de funcionament quan les tres bateries estan connectades.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La intensitat $I_\\text{LED2}$ que circula per cada LED quan només hi ha dues bateries connectades.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "El temps $t_\\text{bat}$ que duren les bateries en cadascuna de les dues configuracions.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Tensió de cada LED: $U_\\text{LED} = 3{,}1\\ \\text{V}$ (els tres en paraŀlel, tots tenen aquesta tensió)\n- Tensió de cada bateria: $U_\\text{bat} = 3{,}7\\ \\text{V}$; capacitat $c_\\text{bat} = 3\\,000\\ \\text{mA h} = 3\\ \\text{A h}$\n- Corrent per LED amb 3 bateries: $I_\\text{LED} = 2\\,500\\ \\text{mA} = 2{,}5\\ \\text{A}$\n- Temps: $t = 0{,}5\\ \\text{h} = 1\\,800\\ \\text{s}$\n- Incògnites: $R$, $E_\\text{total}$, $I_\\text{LED2}$, $t_\\text{bat}$ (amb 3 i amb 2 bateries)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Malla del circuit amb tres bateries",
+            "cos": "Les bateries en sèrie sumen tensions: $3U_\\text{bat} = 11{,}1\\ \\text{V}$. Per la resistència passa el corrent dels tres LED: $I = 3I_\\text{LED} = 7{,}5\\ \\text{A}$. Aplicant la llei de Kirchhoff de tensions a la malla (bateries → $R$ → un LED):\n\n$$3U_\\text{bat} - 3I_\\text{LED}\\,R - U_\\text{LED} = 0 \\ \\Rightarrow\\ R = \\frac{3U_\\text{bat} - U_\\text{LED}}{3I_\\text{LED}} = \\frac{11{,}1 - 3{,}1}{7{,}5} = \\frac{8}{7{,}5}$$\n\nResultat: **$R = 1{,}067\\ \\Omega$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia consumida en 0,5 h",
+            "cos": "L'energia consumida pel conjunt és la que lliuren les bateries (la que es dissipa a $R$ més la dels LED): potència × temps.\n\n$$E_\\text{total} = \\left(R\\,(3I_\\text{LED})^2 + 3\\,U_\\text{LED}\\,I_\\text{LED}\\right) t = 3U_\\text{bat} \\cdot 3I_\\text{LED} \\cdot t$$\n\n$$E_\\text{total} = 11{,}1\\ \\text{V} \\cdot 7{,}5\\ \\text{A} \\cdot 0{,}5\\ \\text{h} = 41{,}63\\ \\text{W h}$$\n\nEn joules: $41{,}625 \\cdot 3\\,600 = 149\\,850\\ \\text{J}$.\n\nResultat: **$E_\\text{total} = 149{,}9\\ \\text{kJ} = 41{,}63\\ \\text{W h}$** (d'aquests, $60\\ \\text{W}$ es dissipen a $R$ i $23{,}25\\ \\text{W}$ als LED)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Corrent per LED amb dues bateries",
+            "cos": "Ara la tensió de les bateries és $2U_\\text{bat} = 7{,}4\\ \\text{V}$; la resistència és la mateixa i cada LED continua tenint $3{,}1\\ \\text{V}$:\n\n$$2U_\\text{bat} - 3I_\\text{LED2}\\,R - U_\\text{LED} = 0 \\ \\Rightarrow\\ I_\\text{LED2} = \\frac{2U_\\text{bat} - U_\\text{LED}}{3R} = \\frac{7{,}4 - 3{,}1}{3 \\cdot 1{,}067} = \\frac{4{,}3}{3{,}2}$$\n\nResultat: **$I_\\text{LED2} = 1{,}344\\ \\text{A}$** (el corrent total és $3 \\cdot 1{,}344 = 4{,}031\\ \\text{A}$)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Capacitat de bateries en sèrie",
+            "cos": "La capacitat en A h indica la **càrrega** que pot subministrar una bateria. Quan les bateries estan **en sèrie**, el mateix corrent travessa totes les bateries: la tensió es multiplica, però la capacitat del conjunt continua sent la d'una bateria, $c_\\text{bat} = 3\\ \\text{A h}$ (el que es multiplica és l'energia emmagatzemada).\n\nEl temps de funcionament és la capacitat dividida pel corrent que en surt:\n\n$$t_\\text{bat} = \\frac{c_\\text{bat}}{I_\\text{total}}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Temps amb tres i amb dues bateries",
+            "cos": "- Amb **3 bateries** ($I_\\text{total} = 3I_\\text{LED} = 7{,}5\\ \\text{A}$):\n\n$$t_\\text{bat,3} = \\frac{3\\ \\text{A h}}{7{,}5\\ \\text{A}} = 0{,}4\\ \\text{h} = 24\\ \\text{min}$$\n\n- Amb **2 bateries** ($I_\\text{total} = 3I_\\text{LED2} = 4{,}031\\ \\text{A}$):\n\n$$t_\\text{bat,2} = \\frac{3\\ \\text{A h}}{4{,}031\\ \\text{A}} = 0{,}744\\ \\text{h} \\approx 44{,}7\\ \\text{min}$$\n\n**Comprovació energètica**: tres bateries emmagatzemen $3 \\cdot 3{,}7\\ \\text{V} \\cdot 3\\ \\text{A h} = 33{,}3\\ \\text{W h}$, i la llanterna en consumeix $11{,}1 \\cdot 7{,}5 = 83{,}25\\ \\text{W}$: $33{,}3/83{,}25 = 0{,}4\\ \\text{h}$. Coincideix.\n\nResultat: **$t_\\text{bat,3} = 0{,}4\\ \\text{h}$; $t_\\text{bat,2} = 0{,}744\\ \\text{h}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$R = 1{,}067\\ \\Omega$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_\\text{total} = 149{,}9\\ \\text{kJ} = 41{,}63\\ \\text{W h}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$I_\\text{LED2} = 1{,}344\\ \\text{A}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$t_\\text{bat,3} = 0{,}4\\ \\text{h}$; $t_\\text{bat,2} = 0{,}744\\ \\text{h}$ (l'oficial dona 1,2 h i 1,488 h; vegeu la nota)"
+          }
+        ],
+        "nota": "**Discrepància amb la solució oficial a l'apartat d.** L'oficial calcula $t_\\text{bat} = 3c_\\text{bat}/(3I_\\text{LED}) = 1{,}2\\ \\text{h}$ i $t_\\text{bat} = 2c_\\text{bat}/(3I_\\text{LED2}) = 1{,}488\\ \\text{h}$, és a dir, multiplica la capacitat pel nombre de bateries. Això només seria correcte si les bateries estiguessin en **paraŀlel**; en sèrie (com diu l'enunciat) el corrent és el mateix per a totes i la capacitat del conjunt és la d'una sola bateria, de manera que els temps correctes són $0{,}4\\ \\text{h}$ i $0{,}744\\ \\text{h}$ (un terç i la meitat dels oficials). Ho confirma el balanç d'energia: tres bateries només guarden $33{,}3\\ \\text{W h}$, mentre que funcionar 1,2 h a $83{,}25\\ \\text{W}$ en requeriria $99{,}9\\ \\text{W h}$. Per la mateixa raó, l'energia de l'apartat b (41,63 W h en 0,5 h) és més gran que la que poden donar les bateries: l'enunciat no és del tot coherent, però l'apartat b es resol igualment com a potència × temps."
+      }
+    },
+    {
+      "id": "tecno-2015-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Estufa de butà: consum, durada de la bombona i reducció de volum en la liquació",
+      "tema": "energia",
+      "temes_secundaris": [
+        "termica"
+      ],
+      "conceptes": [
+        "poder calorífic",
+        "consum horari",
+        "densitat",
+        "potència calorífica",
+        "gràfic de funcions"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Una estufa de butà té una potència calorífica màxima $P_\\text{màx} = 3{,}05\\ \\text{kW}$. El butà es distribueix liquat, en bombones que contenen una massa de butà $m_\\text{b} = 12{,}5\\ \\text{kg}$ i que tenen una forma aproximadament cilíndrica de diàmetre $d = 300\\ \\text{mm}$ i alçària $h = 450\\ \\text{mm}$. El poder calorífic del butà és $c_\\text{b} = 49{,}61\\ \\text{MJ/kg}$ i té una densitat, abans del procés de liquació, de $\\rho = 2{,}52\\ \\text{kg/m}^3$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El consum $c$ en kg/h, si funciona a la màxima potència.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "La durada d'una bombona $t_\\text{b}$ si funciona a la màxima potència.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La reducció de volum, en tant per cent, que experimenta el butà en el procés de liquació per a introduir-lo a la bombona.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "Per a una potència de l'estufa $1\\ \\text{kW} \\le P \\le 3{,}05\\ \\text{kW}$, dibuixeu el gràfic de la durada d'una bombona en hores, en funció de la potència $P$, indicant les escales.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Potència màxima: $P_\\text{màx} = 3{,}05\\ \\text{kW} = 3\\,050\\ \\text{W}$\n- Massa de butà per bombona: $m_\\text{b} = 12{,}5\\ \\text{kg}$\n- Bombona cilíndrica: $d = 0{,}3\\ \\text{m}$, $h = 0{,}45\\ \\text{m}$\n- Poder calorífic: $c_\\text{b} = 49{,}61\\ \\text{MJ/kg} = 49{,}61 \\cdot 10^6\\ \\text{J/kg}$\n- Densitat del butà gasós: $\\rho = 2{,}52\\ \\text{kg/m}^3$\n- Incògnites: $c$ (kg/h), $t_\\text{b}$, reducció de volum (%), gràfic $t_\\text{b}(P)$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Consum a la màxima potència",
+            "cos": "La potència calorífica és l'energia alliberada per unitat de temps. Cada kg de butà dona $c_\\text{b}$ joules, de manera que el consum (massa per unitat de temps) és:\n\n$$c = \\frac{P}{c_\\text{b}} = \\frac{3\\,050\\ \\text{J/s}}{49{,}61 \\cdot 10^6\\ \\text{J/kg}} = 6{,}148 \\cdot 10^{-5}\\ \\text{kg/s}$$\n\nPassem a kg/h multiplicant per $3\\,600\\ \\text{s/h}$:\n\n$$c = 6{,}148 \\cdot 10^{-5} \\cdot 3\\,600 = 0{,}2213\\ \\text{kg/h}$$\n\nResultat: **$c = 0{,}2213\\ \\text{kg/h}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Durada d'una bombona",
+            "cos": "$$t_\\text{b} = \\frac{m_\\text{b}}{c} = \\frac{12{,}5\\ \\text{kg}}{0{,}2213\\ \\text{kg/h}} = 56{,}48\\ \\text{h}$$\n\nResultat: **$t_\\text{b} = 56{,}48\\ \\text{h}$** (uns 2 dies i 8,5 hores de funcionament continu)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Volum del butà abans i després de liquar-lo",
+            "cos": "Abans de la liquació, el butà és gas amb densitat $\\rho$:\n\n$$V_\\text{ini} = \\frac{m_\\text{b}}{\\rho} = \\frac{12{,}5}{2{,}52} = 4{,}960\\ \\text{m}^3$$\n\nDesprés ocupa (aproximadament) el volum de la bombona cilíndrica:\n\n$$V_\\text{fi} = \\frac{\\pi d^2}{4}\\, h = \\frac{\\pi \\cdot 0{,}3^2}{4} \\cdot 0{,}45 = 0{,}03181\\ \\text{m}^3$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Reducció de volum en tant per cent",
+            "cos": "$$\\frac{\\Delta V}{V_\\text{ini}} = \\frac{V_\\text{ini} - V_\\text{fi}}{V_\\text{ini}} = 1 - \\frac{V_\\text{fi}}{V_\\text{ini}} = 1 - \\frac{0{,}03181}{4{,}960} = 0{,}9936$$\n\nResultat: **reducció del $99{,}36\\ \\%$** (el volum es fa unes 156 vegades més petit)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Expressió de la durada en funció de la potència",
+            "cos": "La massa de la bombona es consumeix a ritme $c = P/c_\\text{b}$:\n\n$$m_\\text{b} = t_\\text{b}\\, c = t_\\text{b}\\,\\frac{P}{c_\\text{b}} \\ \\Rightarrow\\ t_\\text{b} = \\frac{m_\\text{b}\\, c_\\text{b}}{P}$$\n\nAmb $P$ en kW i $t_\\text{b}$ en hores: $m_\\text{b} c_\\text{b} = 12{,}5 \\cdot 49{,}61 \\cdot 10^6 = 620{,}1\\ \\text{MJ} = 172{,}3\\ \\text{kW h}$, de manera que\n\n$$t_\\text{b}\\,[\\text{h}] = \\frac{172{,}3}{P\\,[\\text{kW}]}$$\n\nÉs una **hipèrbola** (inversament proporcional): si la potència es duplica, la durada es redueix a la meitat."
+          },
+          {
+            "apartat": "d",
+            "titol": "Taula de valors i gràfic",
+            "cos": "| $P$ (kW) | 1 | 1,5 | 2 | 2,5 | 3 | 3,05 |\n|---|---|---|---|---|---|---|\n| $t_\\text{b}$ (h) | 172,3 | 114,8 | 86,13 | 68,90 | 57,42 | 56,48 |\n\nEs dibuixa $P$ a l'eix horitzontal (de 1 a 3,05 kW) i $t_\\text{b}$ a l'eix vertical (de 56,48 h a 172,3 h), unint els punts amb una corba decreixent i còncava cap amunt:\n\n![Gràfic de la durada de la bombona en funció de la potència (solució oficial)](img/tecno/2015-S/e4-a-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$c = 0{,}2213\\ \\text{kg/h}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$t_\\text{b} = 56{,}48\\ \\text{h}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Reducció de volum del $99{,}36\\ \\%$ ($V_\\text{ini} = 4{,}960\\ \\text{m}^3$, $V_\\text{fi} = 0{,}03181\\ \\text{m}^3$)"
+          },
+          {
+            "apartat": "d",
+            "valor": "$t_\\text{b} = 172{,}3/P$ (h, kW): hipèrbola de $172{,}3\\ \\text{h}$ (1 kW) a $56{,}48\\ \\text{h}$ (3,05 kW)"
+          }
+        ],
+        "nota": "Error típic a l'apartat a: oblidar passar de segons a hores (o de MJ a J). A l'apartat c es demana la **reducció** (99,36 %), no la relació $V_\\text{fi}/V_\\text{ini}$ (0,64 %)."
+      }
+    },
+    {
+      "id": "tecno-2015-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Placa triangular d'acer articulada i subjectada per un cable",
+      "tema": "estatica",
+      "temes_secundaris": [
+        "resistencia"
+      ],
+      "conceptes": [
+        "diagrama de cos lliure",
+        "equilibri de moments",
+        "reaccions en una articulació",
+        "centre de gravetat",
+        "tensió normal"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "La placa d'acer de la figura, de gruix $e = 5\\ \\text{mm}$, està articulada en el punt O i es manté en repòs mitjançant el cable PQ de secció nominal $s = 2{,}7\\ \\text{mm}^2$. Dades: $L = 700\\ \\text{mm}$.",
+      "figures": [
+        {
+          "src": "img/tecno/2015-S/e3-b.png",
+          "peu": "Placa triangular articulada a O i subjectada pel cable horitzontal PQ"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de cos lliure de la placa.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la massa $m$ de la placa ($\\rho_\\text{acer} = 7\\,850\\ \\text{kg/m}^3$).",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Determineu la força $T$ que fa el cable i les forces vertical $F_\\text{v}$ i horitzontal $F_\\text{h}$ en l'articulació O.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "Determineu la tensió normal $\\sigma$ del cable a causa de la força que fa.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Placa en forma de triangle rectangle de catets $L = 0{,}7\\ \\text{m}$ (vertical OP i horitzontal des d'O)\n- Gruix: $e = 5\\ \\text{mm} = 0{,}005\\ \\text{m}$\n- Densitat: $\\rho_\\text{acer} = 7\\,850\\ \\text{kg/m}^3$\n- Centre de gravetat G: a $L/3$ a la dreta d'O i $L/3$ per sota d'O\n- Secció del cable: $s = 2{,}7\\ \\text{mm}^2$; el cable PQ és horitzontal\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: DCL, $m$, $T$, $F_\\text{v}$, $F_\\text{h}$, $\\sigma$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de cos lliure",
+            "cos": "Aïllem la placa i hi dibuixem totes les forces exteriors:\n\n- **Pes** $m g$, vertical cap avall, aplicat a G.\n- **Força del cable** $T$, horitzontal, aplicada a P i dirigida cap a Q (un cable només pot estirar).\n- **Reacció de l'articulació** O, amb dues components desconegudes: $F_\\text{h}$ (horitzontal) i $F_\\text{v}$ (vertical). Es dibuixen amb un sentit suposat; si surten negatives, el sentit real és el contrari.\n\n![Diagrama de cos lliure de la placa (solució oficial)](img/tecno/2015-S/e3-b-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa de la placa",
+            "cos": "El volum és l'àrea del triangle per el gruix:\n\n$$m = \\rho_\\text{acer}\\, \\frac{1}{2} L^2\\, e = 7\\,850 \\cdot \\frac{0{,}7^2}{2} \\cdot 0{,}005 = 7\\,850 \\cdot 0{,}245 \\cdot 0{,}005$$\n\nResultat: **$m = 9{,}616\\ \\text{kg}$** (pes $m g = 94{,}31\\ \\text{N}$)"
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de moments respecte d'O: força del cable",
+            "cos": "Prenem moments respecte d'O perquè així $F_\\text{h}$ i $F_\\text{v}$ no hi intervenen. El pes té braç $L/3$ (distància horitzontal d'O a G) i el cable, braç $L$ (distància vertical d'O a P). Fan girs de sentit contrari:\n\n$$\\sum M_\\text{O} = 0:\\quad \\frac{L}{3}\\, m g - L\\, T = 0 \\ \\Rightarrow\\ T = \\frac{m g}{3} = \\frac{9{,}616 \\cdot 9{,}807}{3}$$\n\nResultat: **$T = 31{,}44\\ \\text{N}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de forces: reaccions a O",
+            "cos": "$$\\sum F_y = 0:\\quad F_\\text{v} - m g = 0 \\ \\Rightarrow\\ F_\\text{v} = 9{,}616 \\cdot 9{,}807 = 94{,}31\\ \\text{N}$$\n\n$$\\sum F_x = 0:\\quad F_\\text{h} + T = 0 \\ \\Rightarrow\\ F_\\text{h} = -31{,}44\\ \\text{N}$$\n\nResultat: **$F_\\text{v} = 94{,}31\\ \\text{N}$ (cap amunt)** i **$F_\\text{h} = -31{,}44\\ \\text{N}$**: el signe negatiu indica que, si l'havíem suposat cap a la dreta, en realitat va cap a l'esquerra (contrària a $T$), amb mòdul $31{,}44\\ \\text{N}$."
+          },
+          {
+            "apartat": "d",
+            "titol": "Tensió normal del cable",
+            "cos": "La tensió normal és la força dividida per la secció. Amb la força en N i la secció en mm² s'obté directament MPa ($1\\ \\text{N/mm}^2 = 1\\ \\text{MPa}$):\n\n$$\\sigma = \\frac{T}{s} = \\frac{31{,}44\\ \\text{N}}{2{,}7\\ \\text{mm}^2} = 11{,}64\\ \\text{N/mm}^2$$\n\nResultat: **$\\sigma = 11{,}64\\ \\text{MPa}$** (tracció)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Forces: pes $mg$ a G (avall), $T$ a P (horitzontal cap a Q), $F_\\text{h}$ i $F_\\text{v}$ a O"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m = 9{,}616\\ \\text{kg}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$T = 31{,}44\\ \\text{N}$; $F_\\text{v} = 94{,}31\\ \\text{N}$; $F_\\text{h} = -31{,}44\\ \\text{N}$ (sentit contrari a $T$)"
+          },
+          {
+            "apartat": "d",
+            "valor": "$\\sigma = 11{,}64\\ \\text{MPa}$"
+          }
+        ],
+        "nota": "Error típic: prendre com a braç del pes la distància d'O a G en línia recta (en lloc de la distància horitzontal $L/3$), o fer els moments respecte de P i oblidar $F_\\text{h}$. Amb $g = 9{,}81\\ \\text{m/s}^2$ s'obté $F_\\text{v} = 94{,}33\\ \\text{N}$; la solució oficial usa $g = 9{,}807\\ \\text{m/s}^2$."
+      }
+    },
+    {
+      "id": "tecno-2015-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Motor reductor d'una porta de garatge enrotllable",
+      "tema": "maquines-electriques",
+      "temes_secundaris": [
+        "mecanismes",
+        "mecanica"
+      ],
+      "conceptes": [
+        "rendiment",
+        "relació de transmissió",
+        "parell motor",
+        "potència elèctrica",
+        "reductor"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Una porta de garatge enrotllable és accionada per un motor reductor de rendiment global $\\eta_\\text{tot} = 0{,}33$. El motor reductor està format per un motor elèctric de rendiment $\\eta_\\text{motor} = 0{,}83$ i un reductor de relació de transmissió $\\tau = \\omega_\\text{s}/\\omega_\\text{e} = 1/285$. El motor s'alimenta amb una tensió $U = 230\\ \\text{V}$ i, en un instant concret, consumeix una intensitat $I = 1{,}8\\ \\text{A}$ quan la porta s'enrotlla a $n_\\text{s} = 10\\ \\text{min}^{-1}$ en un tambor de diàmetre $d = 220\\ \\text{mm}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La potència $P_\\text{motor}$ i el parell $\\Gamma_\\text{motor}$ a l'eix de sortida del motor.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La potència $P_\\text{s}$ i el parell $\\Gamma_\\text{s}$ a l'eix del tambor (eix de sortida del reductor).",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "La massa màxima $m$ que pot tenir la part que penja de la porta.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Rendiment global: $\\eta_\\text{tot} = 0{,}33$; rendiment del motor: $\\eta_\\text{motor} = 0{,}83$\n- Relació de transmissió del reductor: $\\tau = \\omega_\\text{s}/\\omega_\\text{e} = 1/285$\n- Alimentació: $U = 230\\ \\text{V}$, $I = 1{,}8\\ \\text{A}$\n- Velocitat del tambor: $n_\\text{s} = 10\\ \\text{min}^{-1}$\n- Diàmetre del tambor: $d = 220\\ \\text{mm} = 0{,}22\\ \\text{m}$\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnites: $P_\\text{motor}$, $\\Gamma_\\text{motor}$, $P_\\text{s}$, $\\Gamma_\\text{s}$, $m$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència elèctrica i potència a l'eix del motor",
+            "cos": "La potència elèctrica consumida és $P_\\text{elèc} = U I = 230 \\cdot 1{,}8 = 414\\ \\text{W}$. El motor en converteix en potència mecànica una fracció $\\eta_\\text{motor}$:\n\n$$P_\\text{motor} = \\eta_\\text{motor}\\, U I = 0{,}83 \\cdot 414 = 343{,}6\\ \\text{W}$$\n\nResultat: **$P_\\text{motor} = 343{,}6\\ \\text{W}$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat i parell del motor",
+            "cos": "El reductor redueix la velocitat 285 vegades, per tant el motor gira 285 vegades més de pressa que el tambor:\n\n$$n_\\text{motor} = \\frac{n_\\text{s}}{\\tau} = 10 \\cdot 285 = 2\\,850\\ \\text{min}^{-1} \\ \\Rightarrow\\ \\omega_\\text{motor} = 2\\,850 \\cdot \\frac{2\\pi}{60} = 298{,}5\\ \\text{rad/s}$$\n\nEl parell és la potència dividida per la velocitat angular ($P = \\Gamma\\,\\omega$):\n\n$$\\Gamma_\\text{motor} = \\frac{P_\\text{motor}}{\\omega_\\text{motor}} = \\frac{343{,}6}{298{,}5} = 1{,}151\\ \\text{N m}$$\n\nResultat: **$\\Gamma_\\text{motor} = 1{,}151\\ \\text{N m}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència a l'eix del tambor",
+            "cos": "El rendiment global inclou motor i reductor, i relaciona la potència a la sortida del reductor amb la potència elèctrica consumida:\n\n$$P_\\text{s} = \\eta_\\text{tot}\\, U I = 0{,}33 \\cdot 414 = 136{,}6\\ \\text{W}$$\n\nResultat: **$P_\\text{s} = 136{,}6\\ \\text{W}$** (el reductor té un rendiment $\\eta_\\text{red} = 0{,}33/0{,}83 = 0{,}398$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Parell a l'eix del tambor",
+            "cos": "$$\\omega_\\text{s} = 10 \\cdot \\frac{2\\pi}{60} = 1{,}047\\ \\text{rad/s}$$\n\n$$\\Gamma_\\text{s} = \\frac{P_\\text{s}}{\\omega_\\text{s}} = \\frac{136{,}6}{1{,}047} = 130{,}5\\ \\text{N m}$$\n\nResultat: **$\\Gamma_\\text{s} = 130{,}5\\ \\text{N m}$** (el reductor multiplica el parell, però no per 285, sinó per $285 \\cdot 0{,}398 \\approx 113$, a causa de les pèrdues)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Massa màxima que pot penjar",
+            "cos": "La part de la porta que penja fa una força igual al seu pes, aplicada a la superfície del tambor (braç $d/2$). En equilibri (o pujant a velocitat constant), el parell del tambor equilibra el moment del pes:\n\n$$\\Gamma_\\text{s} = m g\\, \\frac{d}{2} \\ \\Rightarrow\\ m = \\frac{2\\,\\Gamma_\\text{s}}{g\\, d} = \\frac{2 \\cdot 130{,}5}{9{,}807 \\cdot 0{,}22}$$\n\nResultat: **$m = 120{,}9\\ \\text{kg}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P_\\text{motor} = 343{,}6\\ \\text{W}$; $\\Gamma_\\text{motor} = 1{,}151\\ \\text{N m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{s} = 136{,}6\\ \\text{W}$; $\\Gamma_\\text{s} = 130{,}5\\ \\text{N m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$m = 120{,}9\\ \\text{kg}$"
+          }
+        ],
+        "nota": "Error típic: aplicar $\\eta_\\text{motor}$ i $\\eta_\\text{tot}$ un darrere l'altre a l'apartat b ($0{,}83 \\cdot 0{,}33$); el rendiment global ja inclou el del motor. Un altre error és usar el diàmetre en lloc del radi com a braç a l'apartat c."
+      }
+    }
+  ]
+}

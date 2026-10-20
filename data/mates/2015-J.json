@@ -1,0 +1,230 @@
+{
+  "examen": {
+    "id": "mates-2015-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2015,
+    "convocatoria": "juny",
+    "serie": "2",
+    "pdf_examen": "pdfs/mates/2015-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2015-J-solucio.pdf",
+    "estructura": "Cal respondre CINC de les sis qüestions; cada qüestió val 2 punts. En les respostes cal explicar sempre què es vol fer i per què. Es pot utilitzar calculadora (no programable ni que emmagatzemi o transmeti informació)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2015-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Sistema homogeni amb paràmetre: quan té infinites solucions",
+      "tema": "sistemes",
+      "temes_secundaris": ["matrius"],
+      "conceptes": ["sistema homogeni", "rang", "determinant", "sistema compatible indeterminat", "teorema de Rouché-Fröbenius"],
+      "dificultat": 2,
+      "pagines": [1],
+      "enunciat": "Considereu el sistema d'equacions lineals següent:\n\n$$\\begin{cases} -3x + 2y + 3z = 0 \\\\ (a-2)y - 3z = 0 \\\\ -x - y + (-a-3)z = 0 \\end{cases}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Calculeu per a quins valors del paràmetre $a$ el sistema té més d'una solució.", "punts": 1},
+        {"id": "b", "enunciat": "Resoleu el sistema per al cas $a = -3$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Idea: un sistema homogeni sempre és compatible", "cos": "Tots els termes independents són $0$, per tant el sistema és **homogeni**: sempre té com a mínim la solució trivial $x = y = z = 0$ (és compatible). Segons el teorema de Rouché-Fröbenius, tindrà **més d'una solució** (infinites) quan el rang de la matriu de coeficients sigui més petit que el nombre d'incògnites, és a dir, $\\text{rang}(A) < 3$. Això passa exactament quan $\\det A = 0$."},
+          {"apartat": "a", "titol": "Matriu de coeficients i determinant", "cos": "$$A = \\begin{pmatrix} -3 & 2 & 3 \\\\ 0 & a-2 & -3 \\\\ -1 & -1 & -a-3 \\end{pmatrix}$$\n\nCalculem el determinant per la regla de Sarrus:\n\n$$|A| = (-3)(a-2)(-a-3) + 2\\cdot(-3)\\cdot(-1) + 3\\cdot 0\\cdot(-1) - \\big[3(a-2)(-1) + (-3)(-3)(-1) + 2\\cdot 0\\cdot(-a-3)\\big]$$\n\n$$|A| = 3(a-2)(a+3) + 6 - \\big[-3(a-2) - 9\\big] = 3(a-2)(a+3) + 6 + 3(a-2) + 9$$\n\nDesenvolupem: $3(a^2 + a - 6) + 3a - 6 + 15 = 3a^2 + 3a - 18 + 3a + 9$:\n\n$$|A| = 3a^2 + 6a - 9 = 3(a^2 + 2a - 3) = 3(a-1)(a+3)$$"},
+          {"apartat": "a", "titol": "Valors que anul·len el determinant", "cos": "$$3(a^2 + 2a - 3) = 0 \\;\\Rightarrow\\; a = \\frac{-2 \\pm \\sqrt{4 + 12}}{2} = \\frac{-2 \\pm 4}{2} \\;\\Rightarrow\\; a = 1 \\ \\text{o} \\ a = -3$$\n\n- Si $a \\neq 1$ i $a \\neq -3$: $|A| \\neq 0$, $\\text{rang}(A) = 3$ i el sistema és compatible determinat (només la solució trivial).\n- Si $a = 1$ o $a = -3$: $\\text{rang}(A) < 3$ i el sistema és compatible indeterminat.\n\nEl sistema té més d'una solució **per a $a = 1$ i per a $a = -3$**."},
+          {"apartat": "b", "titol": "Sistema per a a = −3 i rang", "cos": "Substituïm $a = -3$: $a - 2 = -5$ i $-a - 3 = 0$:\n\n$$\\begin{cases} -3x + 2y + 3z = 0 \\\\ -5y - 3z = 0 \\\\ -x - y = 0 \\end{cases}$$\n\nPer l'apartat anterior $|A| = 0$, i el menor $\\begin{vmatrix} 0 & -5 \\\\ -1 & -1 \\end{vmatrix} = 0 - 5 = -5 \\neq 0$, així que $\\text{rang}(A) = 2$. El sistema és **compatible indeterminat amb $3 - 2 = 1$ grau de llibertat**: una incògnita farà de paràmetre."},
+          {"apartat": "b", "titol": "Resolució", "cos": "Ens quedem amb dues equacions independents (la primera és combinació lineal de les altres dues: $-(\\text{2a}) + 3\\cdot(\\text{3a}) = 5y + 3z - 3x - 3y = -3x + 2y + 3z$). Prenem $y$ com a paràmetre:\n\n- De la tercera: $-x - y = 0 \\Rightarrow x = -y$.\n- De la segona: $-5y - 3z = 0 \\Rightarrow z = -\\dfrac{5y}{3}$.\n\nComprovació a la primera: $-3(-y) + 2y + 3\\left(-\\frac{5y}{3}\\right) = 3y + 2y - 5y = 0$ ✓.\n\nLes solucions són\n\n$$(x, y, z) = \\left(-y,\\ y,\\ -\\frac{5y}{3}\\right), \\quad y \\in \\mathbb{R}$$\n\no, amb $y = -3t$ per evitar fraccions: $(x, y, z) = (3t, -3t, 5t)$, $t \\in \\mathbb{R}$."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Més d'una solució per a $a = 1$ i $a = -3$ (és on $|A| = 3(a-1)(a+3) = 0$)"},
+          {"apartat": "b", "valor": "$(x, y, z) = \\left(-y,\\ y,\\ -\\frac{5y}{3}\\right)$, $y \\in \\mathbb{R}$"}
+        ],
+        "nota": "L'oficial també admet fer l'apartat a) triangulant la matriu per Gauss. Recorda que un sistema homogeni mai no és incompatible: només cal distingir entre solució única (la trivial) i infinites solucions."
+      }
+    },
+    {
+      "id": "mates-2015-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Pla perpendicular a una recta per un punt i pla que conté la recta",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": ["equació del pla", "vector normal", "vector director", "equació paramètrica del pla", "equació contínua de la recta"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "Sigui $r$ la recta de l'espai que té per equació $r\\colon \\dfrac{x-1}{2} = \\dfrac{y+3}{-1} = z$ i sigui $P$ el punt de coordenades $(6, 0, -1)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Trobeu l'equació cartesiana (és a dir, que té la forma $Ax + By + Cz = D$) del pla que passa pel punt $P$ i talla perpendicularment la recta $r$.", "punts": 1},
+        {"id": "b", "enunciat": "Trobeu l'equació paramètrica del pla que passa pel punt $P$ i conté la recta $r$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Punt i vector director de la recta", "cos": "De l'equació contínua $\\dfrac{x - x_0}{v_1} = \\dfrac{y - y_0}{v_2} = \\dfrac{z - z_0}{v_3}$ llegim un punt i el vector director (el terme $z$ és $\\frac{z - 0}{1}$):\n\n$$Q = (1, -3, 0), \\qquad \\vec v = (2, -1, 1)$$"},
+          {"apartat": "a", "titol": "El vector director fa de vector normal", "cos": "Si el pla talla la recta **perpendicularment**, la recta és perpendicular al pla, i per tant el vector director $\\vec v$ és un vector normal del pla. Els coeficients $(A, B, C)$ de l'equació cartesiana són les components del vector normal:\n\n$$2x - y + z = D$$"},
+          {"apartat": "a", "titol": "Terme independent", "cos": "Imposem que el pla passi per $P = (6, 0, -1)$:\n\n$$2\\cdot 6 - 0 + (-1) = D \\;\\Rightarrow\\; D = 11$$\n\nEl pla és **$2x - y + z = 11$**."},
+          {"apartat": "b", "titol": "Dos vectors directors del pla", "cos": "Per a l'equació paramètrica necessitem un punt i dos vectors directors no paral·lels. Si el pla conté la recta $r$, conté el seu vector director $\\vec v = (2, -1, 1)$ i també el punt $Q$. Com que també passa per $P$, el vector $\\overrightarrow{PQ}$ és dins del pla:\n\n$$\\overrightarrow{PQ} = Q - P = (1, -3, 0) - (6, 0, -1) = (-5, -3, 1)$$\n\n$\\vec v$ i $\\overrightarrow{PQ}$ no són proporcionals (per exemple $2/(-5) \\neq -1/(-3)$), així que $P$ no és de la recta i el pla queda ben determinat."},
+          {"apartat": "b", "titol": "Equació paramètrica", "cos": "$$(x, y, z) = (6, 0, -1) + \\lambda(2, -1, 1) + \\mu(-5, -3, 1), \\quad \\lambda, \\mu \\in \\mathbb{R}$$\n\nés a dir,\n\n$$\\begin{cases} x = 6 + 2\\lambda - 5\\mu \\\\ y = -\\lambda - 3\\mu \\\\ z = -1 + \\lambda + \\mu \\end{cases}$$"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$2x - y + z = 11$"},
+          {"apartat": "b", "valor": "$(x, y, z) = (6 + 2\\lambda - 5\\mu,\\ -\\lambda - 3\\mu,\\ -1 + \\lambda + \\mu)$"}
+        ],
+        "nota": "Qualsevol altra parametrització equivalent és correcta (un altre punt del pla o vectors directors proporcionals). Si es vol, l'equació general del pla de b) és $2x - 7y - 11z = 23$ (vector normal $\\vec v \\times \\overrightarrow{PQ} = (2, -7, -11)$)."
+      }
+    },
+    {
+      "id": "mates-2015-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Recta tangent a y = x³ i àrea entre la cúbica i una recta",
+      "tema": "integrals",
+      "temes_secundaris": ["derivades"],
+      "conceptes": ["recta tangent", "àrea entre corbes", "regla de Barrow", "regla de Ruffini", "integral definida"],
+      "dificultat": 2,
+      "pagines": [1],
+      "enunciat": "Responeu a les qüestions següents:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Determineu l'equació de la recta tangent a la corba $y = x^3$ en el punt d'abscissa $x = 2$.", "punts": 1},
+        {"id": "b", "enunciat": "Calculeu l'àrea de la regió plana finita limitada per la corba $y = x^3$ i la recta $y = 3x - 2$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Punt de tangència i pendent", "cos": "La recta tangent en $x = a$ és $y - f(a) = f'(a)(x - a)$: passa pel punt de la corba i té per pendent la derivada.\n\n$$f(x) = x^3, \\qquad f'(x) = 3x^2$$\n\n$$f(2) = 8, \\qquad f'(2) = 3\\cdot 4 = 12$$"},
+          {"apartat": "a", "titol": "Equació de la tangent", "cos": "$$y - 8 = 12(x - 2) \\;\\Rightarrow\\; y = 12x - 24 + 8$$\n\n$$\\boxed{y = 12x - 16}$$"},
+          {"apartat": "b", "titol": "Punts de tall entre la corba i la recta", "cos": "Els límits d'integració són les abscisses dels punts de tall. Igualem:\n\n$$x^3 = 3x - 2 \\;\\Rightarrow\\; x^3 - 3x + 2 = 0$$\n\n$x = 1$ és arrel ($1 - 3 + 2 = 0$). Per Ruffini, $x^3 - 3x + 2 = (x - 1)(x^2 + x - 2) = (x - 1)^2(x + 2)$.\n\nEls punts de tall són a **$x = -2$ i $x = 1$** (a $x = 1$ la recta és tangent a la corba, per això l'arrel és doble)."},
+          {"apartat": "b", "titol": "Quina funció queda per sobre", "cos": "Com que les dues funcions són contínues i no es tallen dins de $(-2, 1)$, l'ordre entre elles és el mateix a tot l'interval. Provem amb $x = 0$: la corba val $0^3 = 0$ i la recta val $3\\cdot 0 - 2 = -2$. Per tant **la cúbica queda per sobre** de la recta, i l'àrea és\n\n$$S = \\int_{-2}^{1} \\big(x^3 - (3x - 2)\\big)\\,dx = \\int_{-2}^{1} (x^3 - 3x + 2)\\,dx$$"},
+          {"apartat": "b", "titol": "Primitiva i regla de Barrow", "cos": "$$\\int (x^3 - 3x + 2)\\,dx = \\frac{x^4}{4} - \\frac{3x^2}{2} + 2x$$\n\n$$S = \\left[\\frac{x^4}{4} - \\frac{3x^2}{2} + 2x\\right]_{-2}^{1} = \\left(\\frac14 - \\frac32 + 2\\right) - \\left(\\frac{16}{4} - \\frac{12}{2} - 4\\right)$$\n\n$$S = \\frac34 - (4 - 6 - 4) = \\frac34 + 6 = \\frac{27}{4}$$\n\nL'àrea és **$S = \\dfrac{27}{4} = 6{,}75\\ \\text{u}^2$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$y = 12x - 16$"},
+          {"apartat": "b", "valor": "$S = \\dfrac{27}{4}\\ \\text{u}^2$"}
+        ],
+        "nota": "També es pot calcular l'àrea com el valor absolut de la integral de la diferència sense decidir abans quina funció és més gran (l'oficial ho accepta), perquè entre $-2$ i $1$ la diferència no canvia de signe."
+      }
+    },
+    {
+      "id": "mates-2015-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Posició relativa de dos plans i recta equidistant de tots dos",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": ["posició relativa de plans", "vector normal", "distància d'un punt a un pla", "punt genèric d'una recta"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Considereu a $\\mathbb{R}^3$ la recta que té per equació $r\\colon (x, y, z) = (-4 + 2\\lambda, -2, 1 - \\lambda)$ i els plans $\\pi_1$ i $\\pi_2$ d'equacions $\\pi_1\\colon x + 2y + 2z = -1$ i $\\pi_2\\colon x - 2y + 2z = -3$, respectivament.\n\n**Nota:** Podeu calcular la distància d'un punt de coordenades $(x_0, y_0, z_0)$ al pla d'equació $Ax + By + Cz + D = 0$ amb l'expressió $\\dfrac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Determineu la posició relativa de $\\pi_1$ i $\\pi_2$.", "punts": 1},
+        {"id": "b", "enunciat": "Comproveu que tots els punts de la recta $r$ estan situats a la mateixa distància dels plans $\\pi_1$ i $\\pi_2$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Comparem els vectors normals", "cos": "Dos plans són paral·lels (o coincidents) si i només si els seus vectors normals són proporcionals. Llegim els coeficients de $x$, $y$, $z$:\n\n$$\\vec n_1 = (1, 2, 2), \\qquad \\vec n_2 = (1, -2, 2)$$\n\n$\\dfrac{1}{1} \\neq \\dfrac{2}{-2}$: **no són proporcionals**."},
+          {"apartat": "a", "titol": "Conclusió", "cos": "Com que els normals no són proporcionals, els plans no són paral·lels: **$\\pi_1$ i $\\pi_2$ són secants i es tallen en una recta**. (La recta intersecció té vector director $\\vec n_1 \\times \\vec n_2 = (8, 0, -4)$, proporcional a $(2, 0, -1)$.)"},
+          {"apartat": "b", "titol": "Punt genèric de la recta i plans en forma Ax + By + Cz + D = 0", "cos": "Per veure que **tots** els punts de $r$ compleixen la propietat, prenem un punt genèric (que depèn de $\\lambda$):\n\n$$R = (-4 + 2\\lambda,\\ -2,\\ 1 - \\lambda)$$\n\nEscrivim els plans igualats a zero: $\\pi_1\\colon x + 2y + 2z + 1 = 0$ i $\\pi_2\\colon x - 2y + 2z + 3 = 0$. Tots dos tenen $\\sqrt{A^2 + B^2 + C^2} = \\sqrt{1 + 4 + 4} = 3$."},
+          {"apartat": "b", "titol": "Distància de R a π₁", "cos": "$$d(R, \\pi_1) = \\frac{|(-4 + 2\\lambda) + 2(-2) + 2(1 - \\lambda) + 1|}{3} = \\frac{|-4 + 2\\lambda - 4 + 2 - 2\\lambda + 1|}{3} = \\frac{|-5|}{3} = \\frac53$$"},
+          {"apartat": "b", "titol": "Distància de R a π₂ i comparació", "cos": "$$d(R, \\pi_2) = \\frac{|(-4 + 2\\lambda) - 2(-2) + 2(1 - \\lambda) + 3|}{3} = \\frac{|-4 + 2\\lambda + 4 + 2 - 2\\lambda + 3|}{3} = \\frac{|5|}{3} = \\frac53$$\n\nEls termes amb $\\lambda$ s'anul·len en totes dues distàncies, per tant $d(R, \\pi_1) = d(R, \\pi_2) = \\dfrac53$ **per a qualsevol valor de $\\lambda$**: tots els punts de la recta $r$ equidisten dels dos plans."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Plans secants (es tallen en una recta): $\\vec n_1 = (1,2,2)$ i $\\vec n_2 = (1,-2,2)$ no són proporcionals"},
+          {"apartat": "b", "valor": "$d(R, \\pi_1) = d(R, \\pi_2) = \\dfrac{5}{3}$ per a tot $\\lambda$"}
+        ],
+        "nota": "Que els termes en $\\lambda$ desapareguin vol dir que la recta $r$ és paral·lela a tots dos plans: el seu vector director $(2, 0, -1)$ és perpendicular a $\\vec n_1$ i a $\\vec n_2$. L'oficial remarca que no cal dir explícitament que la distància és $5/3$; n'hi ha prou de comprovar la igualtat."
+      }
+    },
+    {
+      "id": "mates-2015-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Matriu que compleix A² − A = I i la seva inversa",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": ["producte de matrius", "equació matricial", "matriu inversa", "matriu adjunta"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Responeu a les qüestions següents:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Calculeu la matriu de la forma $A = \\begin{pmatrix} 1 & a \\\\ 1 & 0 \\end{pmatrix}$ que satisfà $A^2 - A = I$, en què $I$ és la matriu identitat, $I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$.", "punts": 1},
+        {"id": "b", "enunciat": "Calculeu $A^{-1}$ i comproveu que el resultat es correspon amb el que obteniu de deduir la matriu $A^{-1}$ a partir de la igualtat $A^2 - A = I$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Calculem A²", "cos": "Fem el producte fila per columna:\n\n$$A^2 = \\begin{pmatrix} 1 & a \\\\ 1 & 0 \\end{pmatrix}\\begin{pmatrix} 1 & a \\\\ 1 & 0 \\end{pmatrix} = \\begin{pmatrix} 1\\cdot 1 + a\\cdot 1 & 1\\cdot a + a\\cdot 0 \\\\ 1\\cdot 1 + 0\\cdot 1 & 1\\cdot a + 0\\cdot 0 \\end{pmatrix} = \\begin{pmatrix} 1 + a & a \\\\ 1 & a \\end{pmatrix}$$"},
+          {"apartat": "a", "titol": "Imposem A² − A = I", "cos": "$$A^2 - A = \\begin{pmatrix} 1 + a & a \\\\ 1 & a \\end{pmatrix} - \\begin{pmatrix} 1 & a \\\\ 1 & 0 \\end{pmatrix} = \\begin{pmatrix} a & 0 \\\\ 0 & a \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$$\n\nIgualant terme a terme, $a = 1$. La matriu és\n\n$$\\boxed{A = \\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}}$$"},
+          {"apartat": "b", "titol": "Inversa pel mètode de l'adjunta", "cos": "$$|A| = 1\\cdot 0 - 1\\cdot 1 = -1 \\neq 0 \\;\\Rightarrow\\; A \\text{ és invertible}$$\n\n$A^{-1} = \\dfrac{1}{|A|}(\\text{Adj}\\,A)^t$. Els adjunts són $A_{11} = 0$, $A_{12} = -1$, $A_{21} = -1$, $A_{22} = 1$:\n\n$$A^{-1} = \\frac{1}{-1}\\begin{pmatrix} 0 & -1 \\\\ -1 & 1 \\end{pmatrix}^t = -\\begin{pmatrix} 0 & -1 \\\\ -1 & 1 \\end{pmatrix} = \\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix}$$"},
+          {"apartat": "b", "titol": "Deducció de la inversa a partir de A² − A = I", "cos": "Traiem factor comú $A$ (per la propietat distributiva, tant per l'esquerra com per la dreta):\n\n$$A^2 - A = A(A - I) = (A - I)A = I$$\n\nAixò diu que, multiplicant $A$ per $A - I$ en qualsevol ordre, s'obté la identitat: és exactament la definició de matriu inversa. Per tant $A$ és invertible i\n\n$$A^{-1} = A - I = \\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix} - \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} = \\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix}$$\n\nCoincideix amb la inversa calculada abans ✓."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$a = 1$, $A = \\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}$"},
+          {"apartat": "b", "valor": "$A^{-1} = A - I = \\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix}$"}
+        ],
+        "nota": "Comprovació ràpida: $A\\cdot A^{-1} = \\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}\\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$."
+      }
+    },
+    {
+      "id": "mates-2015-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Portalada amb arc semicircular: àrea màxima amb perímetre fix",
+      "tema": "optimitzacio",
+      "temes_secundaris": ["derivades"],
+      "conceptes": ["optimització", "derivada segona", "àrea del cercle", "perímetre", "màxim relatiu"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "La portalada d'una catedral està formada, en la part superior, per un arc de mitja circumferència que recolza sobre dues columnes, com il·lustra la figura adjunta, en què $x$ és el diàmetre de la circumferència, és a dir, la distància entre columnes, i $y$ és l'alçària de cada columna.",
+      "figures": [{"src": "img/mates/2015-J/e6.png", "peu": "Portalada: rectangle de base x i alçària y coronat per una semicircumferència de radi x/2"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Comproveu que la funció $f(x, y) = \\dfrac{\\pi x^2}{8} + xy$ determina l'àrea d'aquesta portalada.", "punts": 1},
+        {"id": "b", "enunciat": "Si el perímetre de la portalada fa $20\\ \\text{m}$, determineu les mides $x$ i $y$ de la portalada que en maximitzen l'àrea.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Àrea = semicercle + rectangle", "cos": "La portalada es descompon en un **semicercle** de radi $r = \\dfrac{x}{2}$ i un **rectangle** de base $x$ i alçària $y$.\n\n- Semicercle: $\\dfrac{\\pi r^2}{2} = \\dfrac{\\pi (x/2)^2}{2} = \\dfrac{\\pi x^2/4}{2} = \\dfrac{\\pi x^2}{8}$\n- Rectangle: $x\\cdot y$\n\n$$f(x, y) = \\frac{\\pi x^2}{8} + xy$$\n\nque és l'expressió proposada ✓."},
+          {"apartat": "b", "titol": "Lligadura: el perímetre", "cos": "El contorn de la portalada està format per la mitja circumferència (longitud $\\dfrac{2\\pi r}{2} = \\pi\\dfrac{x}{2}$), les dues columnes ($2y$) i la base ($x$):\n\n$$\\frac{\\pi x}{2} + 2y + x = 20 \\;\\Rightarrow\\; \\frac{\\pi + 2}{2}x + 2y = 20$$\n\nAïllem $y$:\n\n$$y = 10 - \\frac{\\pi + 2}{4}x$$"},
+          {"apartat": "b", "titol": "Funció d'una variable a maximitzar", "cos": "Substituïm $y$ a l'àrea:\n\n$$A(x) = \\frac{\\pi x^2}{8} + x\\left(10 - \\frac{\\pi + 2}{4}x\\right) = \\frac{\\pi}{8}x^2 + 10x - \\frac{2\\pi + 4}{8}x^2 = -\\frac{\\pi + 4}{8}x^2 + 10x$$"},
+          {"apartat": "b", "titol": "Derivada, punt crític i comprovació del màxim", "cos": "$$A'(x) = -\\frac{\\pi + 4}{4}x + 10 = 0 \\;\\Rightarrow\\; x = \\frac{40}{\\pi + 4}$$\n\n$$A''(x) = -\\frac{\\pi + 4}{4} < 0$$\n\nper a qualsevol $x$, de manera que el punt crític és un **màxim**."},
+          {"apartat": "b", "titol": "Mides de la portalada", "cos": "$$x = \\frac{40}{\\pi + 4} \\approx 5{,}60\\ \\text{m}$$\n\n$$y = 10 - \\frac{\\pi + 2}{4}\\cdot\\frac{40}{\\pi + 4} = 10 - \\frac{10(\\pi + 2)}{\\pi + 4} = \\frac{10(\\pi + 4) - 10(\\pi + 2)}{\\pi + 4} = \\frac{20}{\\pi + 4} \\approx 2{,}80\\ \\text{m}$$\n\nL'àrea és màxima amb **$x = \\dfrac{40}{\\pi + 4} \\approx 5{,}60\\ \\text{m}$ i $y = \\dfrac{20}{\\pi + 4} \\approx 2{,}80\\ \\text{m}$**. L'àrea màxima val $\\dfrac{200}{\\pi + 4} \\approx 28{,}0\\ \\text{m}^2$."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$\\dfrac{\\pi (x/2)^2}{2} + xy = \\dfrac{\\pi x^2}{8} + xy$"},
+          {"apartat": "b", "valor": "$x = \\dfrac{40}{\\pi + 4} \\approx 5{,}60\\ \\text{m}$, $y = \\dfrac{20}{\\pi + 4} \\approx 2{,}80\\ \\text{m}$"}
+        ],
+        "nota": "La solució oficial inclou la base de la portalada (el tram $x$ de terra) dins del perímetre. Fixa't que a l'òptim $y = x/2$: l'alçària de les columnes és igual al radi de l'arc. Error típic: oblidar dividir entre 2 la longitud de la circumferència o confondre radi i diàmetre a l'àrea."
+      }
+    }
+  ]
+}

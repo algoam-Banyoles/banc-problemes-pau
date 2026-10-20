@@ -1,0 +1,396 @@
+{
+  "examen": {
+    "id": "dibuix-2022-J",
+    "assignatura": "dibuix",
+    "materia": "Dibuix tècnic",
+    "any": 2022,
+    "convocatoria": "juny",
+    "serie": "2",
+    "pdf_examen": "pdfs/dibuix/2022-J-examen.pdf",
+    "pdf_solucio": "pdfs/dibuix/2022-J-solucio.pdf",
+    "estructura": "Cal fer DOS dibuixos: una de les dues opcions (A o B) del dibuix 1 (geometria plana, 4 punts) i una de les quatre opcions (A, B, C o D) del dibuix 2 (A i B: dièdric; C i D: axonometria; 6 punts). Es resol a la mateixa pàgina de l'enunciat, amb llapis, deixant constància de les línies auxiliars. El 80 % de la nota de cada dibuix valora el procés i la solució; el 20 % restant, la qualitat gràfica. Si una mesura no indica escala, s'entén que és 1:1."
+  },
+  "problemes": [
+    {
+      "id": "dibuix-2022-J-e1-a",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Figura semblant a escala doble d'una figura d'arcs inscrita en un hexàgon, situada sobre dues rectes",
+      "tema": "geometria-plana",
+      "temes_secundaris": ["transformacions"],
+      "conceptes": ["semblança", "escales", "hexàgon regular", "enllaços", "tangències"],
+      "dificultat": 3,
+      "pagines": [5],
+      "enunciat": "Tema: Geometria plana.\n\nDibuixeu una figura semblant a la donada a escala doble de manera que el segment $AB$ se situï sobre la recta $S$ i el segment $CD$ sobre la recta $T$. Deixeu constància del procés gràfic seguit.\n\n[0,5 punts per l'encaix hexagonal, 0,5 punts per cada arc de radi $R_a$, 0,5 punts per cada arc de radi $R_b$ i 0,5 punts pels segments que els uneixen]",
+      "figures": [
+        {"src": "img/dibuix/2022-J/1A.png", "peu": "Dades: figura d'arcs inscrita en un hexàgon regular de costat 3 cm (vèrtexs A, B, C, D) i rectes S i T"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Analitzar la figura donada",
+            "cos": "La figura és una mena de \"trisquel\" de tres puntes (als vèrtexs $B$, $D$ i el vèrtex superior esquerre) inscrita en un hexàgon regular de costat $L = 3\\ \\text{cm}$ (mesurat). Té simetria de gir de $120^\\circ$ respecte al centre de l'hexàgon, de manera que n'hi ha prou d'entendre un dels tres braços, per exemple el que va de $B$ a $D$:\n\n- un **arc de radi $R_a$** amb centre al punt mitjà $M$ de $BC$, que surt de $B$ i puja un quart de circumferència fins al punt de damunt de $M$ ($R_a = MB = L/2$);\n- un **segment** paral·lel a $BC$ que enllaça aquest arc amb el següent;\n- un **arc de radi $R_b$** que acaba a $D$, amb centre $O_b$ sobre la **perpendicular a $CD$ per $D$** (l'angle de $90^\\circ$ marcat al dibuix) i sobre la recta que uneix $M$ amb el vèrtex superior dret (línies discontínues del dibuix). Aquest arc és tangent al segment just a la vertical de $O_b$."
+          },
+          {
+            "apartat": null,
+            "titol": "Situar l'hexàgon a escala doble: angle entre S i T",
+            "cos": "A escala doble el costat de l'hexàgon és $L' = 2 \\cdot 3 = 6\\ \\text{cm}$.\n\nEn un hexàgon regular, els costats $AB$ i $CD$ (separats pel costat $BC$) allargats es tallen formant un **triangle equilàter** amb $BC$: les rectes $AB$ i $CD$ fan $60^\\circ$. Comprova que $S$ i $T$ també fan $60^\\circ$ (és així: $S$ és a $15^\\circ$ i $T$ a $75^\\circ$ de l'horitzontal). Per tant, el triangle equilàter de costat $6\\ \\text{cm}$ amb vèrtex al punt d'intersecció $X = S \\cap T$ ens dona $B'$ i $C'$."
+          },
+          {
+            "apartat": null,
+            "titol": "Encaix de l'hexàgon de costat 6 cm",
+            "cos": "- Troba $X$, la intersecció de $S$ i $T$ (a la part inferior dreta).\n- Sobre $S$, des de $X$, porta $6\\ \\text{cm}$: obtens $B'$; i 6 cm més enllà, $A'$.\n- Sobre $T$, des de $X$, porta $6\\ \\text{cm}$: obtens $C'$; i 6 cm més enllà, $D'$.\n- $B'C'$ ha de mesurar també 6 cm (triangle equilàter $XB'C'$): és la comprovació.\n- Completa l'hexàgon $A'B'C'D'E'F'$ (costats de 6 cm i angles de $120^\\circ$) a la banda de $S$ i $T$ oposada a $X$.\n\nAquest encaix és la base de la semblança: la figura nova és l'antiga ampliada ×2 i girada."
+          },
+          {
+            "apartat": null,
+            "titol": "Arcs de radi Ra",
+            "cos": "Per a cada braç, el centre de l'arc $R_a$ és el punt mitjà del costat corresponent ($M'$ de $B'C'$, i els anàlegs dels altres dos costats girats $120^\\circ$). El radi és la meitat del costat:\n\n$$R_a' = \\frac{L'}{2} = 3\\ \\text{cm}$$\n\nTraça el quart de circumferència des del vèrtex ($B'$) fins al punt situat sobre la perpendicular al costat per $M'$ (a la solució oficial, angle de $90^\\circ$ marcat)."
+          },
+          {
+            "apartat": null,
+            "titol": "Arcs de radi Rb",
+            "cos": "El centre $O_b'$ és sobre la **perpendicular a $T$ per $D'$**: així l'arc acaba a $D'$ tangent a la recta del costat $C'D'$ (el radi al punt de tangència és perpendicular a la tangent). A més, és sobre la recta que uneix $M'$ amb el vèrtex $E'$, com a la figura donada. Amb centre $O_b'$ i radi $O_b'D'$ traça l'arc:\n\n$$R_b' \\approx 2 \\cdot 2{,}2 = 4{,}4\\ \\text{cm}$$\n\nFes el mateix als altres dos braços (centres girats $120^\\circ$ al voltant del centre de l'hexàgon)."
+          },
+          {
+            "apartat": null,
+            "titol": "Segments d'enllaç i comprovació",
+            "cos": "Cada segment surt de l'extrem de l'arc $R_a$ (a $3\\ \\text{cm}$ del costat), és paral·lel al costat ($B'C'$) i acaba al peu de la perpendicular des de $O_b'$: allà l'arc $R_b$ hi és tangent, de manera que l'enllaç és suau. Marca els punts d'enllaç (les ralletes de la solució) i repassa la figura amb traç gruixut. Comprova que les tres puntes cauen a $B'$, $D'$ i $F'$."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2022-J/1A-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Hexàgon d'encaix de costat 6 cm amb A'B' sobre S i C'D' sobre T (XB'C' equilàter); arcs Ra = 3 cm centrats als punts mitjans dels costats, arcs Rb ≈ 4,4 cm tangents a S/T als vèrtexs i segments d'enllaç paral·lels als costats."}
+        ],
+        "nota": "Si es calcula exactament la condició de tangència entre l'arc Rb i el segment (centre sobre la perpendicular a CD per D i tangent a la recta paral·lela a BC a distància L/2), surt $R_b = (\\sqrt{3}-1)L \\approx 0{,}73L$, és a dir, 2,2 cm a la figura donada i 4,4 cm a escala doble, coherent amb el que es mesura. L'error típic és no adonar-se que S i T formen 60° i intentar encaixar l'hexàgon a ull."
+      }
+    },
+    {
+      "id": "dibuix-2022-J-e1-b",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Circumferències tangents a dues circumferències secants, en un punt donat d'una d'elles",
+      "tema": "geometria-plana",
+      "temes_secundaris": [],
+      "conceptes": ["tangències", "reducció a punt", "mediatriu", "punts de tangència", "circumferències tangents interiors"],
+      "dificultat": 2,
+      "pagines": [7],
+      "enunciat": "Tema: Geometria plana.\n\nDibuixeu les circumferències tangents a les circumferències de centres $C_1$ i $C_2$ en el punt $T$. Deixeu constància del procés gràfic seguit.\n\n[2 punts per cada circumferència]",
+      "figures": [
+        {"src": "img/dibuix/2022-J/1B.png", "peu": "Dades: circumferències de centres C1 (R = 7 cm) i C2 (R = 6 cm) i punt T sobre la circumferència C2"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i anàlisi",
+            "cos": "Mesurant: $R_1 = 7\\ \\text{cm}$ (centre $C_1$), $R_2 = 6\\ \\text{cm}$ (centre $C_2$). El punt $T$ és **sobre la circumferència $C_2$** i a dins de la circumferència $C_1$ (a 2,4 cm de $C_1$).\n\nUna circumferència tangent a $C_2$ en el punt $T$ té el centre $O$ sobre la recta $C_2T$ (els centres i el punt de tangència estan alineats). Com que $T$ és dins de $C_1$, qualsevol circumferència que passi per $T$ i sigui tangent a $C_1$ ha de ser-hi **tangent interiorment**:\n\n$$OC_1 = R_1 - r, \\qquad r = OT$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Recta de centres",
+            "cos": "Uneix $C_2$ amb $T$ i allarga la recta cap a tots dos costats de $T$. Els dos centres buscats hi són, un a cada banda de $T$."
+          },
+          {
+            "apartat": null,
+            "titol": "Reducció a punt: portar R1 des de T",
+            "cos": "Amb centre $T$ i radi $R_1 = 7\\ \\text{cm}$ (circumferència auxiliar discontínua de la solució) talla la recta $C_2T$ en dos punts: $Q_1$ (cap a $C_2$) i $Q_2$ (a l'altra banda).\n\nPer què? Si el centre $O$ és entre $T$ i $Q_1$, llavors $OQ_1 = TQ_1 - TO = R_1 - r$, que és justament $OC_1$. Per tant $O$ **equidista de $Q_1$ i $C_1$** i és a la mediatriu de $Q_1C_1$. El mateix passa amb $Q_2$ per a l'altra solució."
+          },
+          {
+            "apartat": null,
+            "titol": "Centres amb les mediatrius",
+            "cos": "- Mediatriu de $C_1Q_1$: talla la recta $C_2T$ en $O_1$. Circumferència de centre $O_1$ i radi $O_1T$: $r_1 = 4\\ \\text{cm}$. Queda dins de $C_2$ (tangent interior, $O_1C_2 = 6 - 4 = 2\\ \\text{cm}$) i dins de $C_1$ ($O_1C_1 = 7 - 4 = 3\\ \\text{cm}$).\n- Mediatriu de $C_1Q_2$: talla la recta en $O_2$, a l'altra banda de $T$. Circumferència de centre $O_2$ i radi $O_2T$: $r_2 = 2{,}5\\ \\text{cm}$. És tangent exterior a $C_2$ ($O_2C_2 = 6 + 2{,}5 = 8{,}5\\ \\text{cm}$) i interior a $C_1$ ($O_2C_1 = 7 - 2{,}5 = 4{,}5\\ \\text{cm}$)."
+          },
+          {
+            "apartat": null,
+            "titol": "Punts de tangència amb C1",
+            "cos": "El punt de tangència amb $C_1$ és on la recta $C_1O_i$ (allargada) talla la circumferència $C_1$ (marcats \"tg\" a la solució). Amb $C_2$, el punt de tangència és $T$ en tots dos casos."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2022-J/1B-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Dues solucions amb centres sobre la recta C2T: r₁ = 4 cm (tangent interior a C2 i a C1) i r₂ = 2,5 cm (tangent exterior a C2 i interior a C1)."}
+        ],
+        "nota": "Error típic: buscar tangències exteriors amb C1; com que T és dins de C1, totes les solucions hi són tangents interiorment. Els radis s'han comprovat numèricament amb les coordenades del PDF (4,00 cm i 2,50 cm)."
+      }
+    },
+    {
+      "id": "dibuix-2022-J-e2-a",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Superfície plegada d'hexàgons i quadrats (mig octàedre truncat) i secció per un pla de cantell",
+      "tema": "cossos",
+      "temes_secundaris": ["diedric"],
+      "conceptes": ["desenvolupament", "girs", "visibilitat", "pla projectant", "secció plana", "octàedre truncat"],
+      "dificultat": 3,
+      "pagines": [9],
+      "enunciat": "Tema: Dièdric.",
+      "figures": [
+        {"src": "img/dibuix/2022-J/2A.png", "peu": "Dades: desenvolupament horitzontal (hexàgon abcdef, tres quadrats i tres hexàgons de costat L), projecció vertical de la base i pla de cantell P′"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'una superfície plegada formada per quadrats i hexàgons regulars a partir del seu desenvolupament horitzontal. En la superfície plegada, l'hexàgon $abcdef$-$a'b'c'd'e'f'$ correspon a la cara inferior, i els costats $L$ dels hexàgons i quadrats són coincidents.", "punts": 3},
+        {"id": "b", "enunciat": "Determineu la visibilitat del conjunt considerant totes les superfícies opaques i diferenciant les línies vistes de les ocultes.", "punts": 1},
+        {"id": "c", "enunciat": "Dibuixeu en projecció horitzontal les línies de la intersecció que produeix el pla de cantell $P'$ sobre la superfície plegada.", "punts": 2}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Què és la superfície plegada",
+            "cos": "L'hexàgon base $abcdef$ (horitzontal, sobre el pla de terra) té un **quadrat** enganxat als costats $fa$, $de$ i $bc$, i un **hexàgon** als costats $ef$, $ab$ i $cd$, tots de costat $L = 2{,}5\\ \\text{cm}$. En plegar-los cap amunt, cada quadrat i cada hexàgon gira al voltant del seu costat comú amb la base (el seu **eix de gir**) fins que els costats marcats $L$ dels quadrats i hexàgons veïns coincideixen. El resultat és la meitat inferior d'un octàedre truncat."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vèrtex comú: girs al voltant de dos eixos",
+            "cos": "Pren el vèrtex lliure que comparteixen el quadrat de $fa$ i l'hexàgon de $ef$ (el que és al costat de $f$).\n\n- Quan el quadrat gira al voltant de $fa$, aquest vèrtex es mou en un pla perpendicular a l'eix: **en planta es desplaça sobre la perpendicular a $fa$** que passa per la seva posició desenvolupada.\n- Quan l'hexàgon gira al voltant de $ef$, el seu vèrtex es desplaça en planta sobre la **perpendicular a $ef$**.\n\nCom que en l'estat plegat els dos vèrtexs són el mateix punt, la seva projecció horitzontal és la **intersecció de les dues perpendiculars** (marques d'angle recte a la solució, prop de $f$). Fes el mateix amb els altres dos parells quadrat-hexàgon veïns; per simetria de $120^\\circ$ tots els vèrtexs homòlegs queden a la mateixa alçària."
+          },
+          {
+            "apartat": "a",
+            "titol": "Alçària h amb una vista auxiliar",
+            "cos": "Fes una vista auxiliar en la direcció de l'eix $ef$ (punt $e''$-$f''$ de la solució): l'hexàgon hi apareix com un segment de longitud igual a la seva alçària vertadera $\\sqrt{3}\\,L$. Gira aquest segment al voltant de $e''$-$f''$ (arc puntejat des de la posició desenvolupada) fins que el seu punt mitjà es projecti sobre la línia de referència del vèrtex comú trobat al pas anterior. L'altre extrem dona:\n\n- l'alçària $h$ del costat superior dels hexàgons: $h \\approx 4{,}1\\ \\text{cm}$;\n- la seva posició en planta: a $\\approx 1{,}4\\ \\text{cm}$ del costat $ef$.\n\nEls quadrats arriben a mitja alçària ($\\approx 2{,}0\\ \\text{cm}$), que és la dels vèrtexs comuns."
+          },
+          {
+            "apartat": "a",
+            "titol": "Projeccions horitzontal i vertical",
+            "cos": "- **Planta**: uneix els punts trobats. El contorn exterior és un polígon de 12 costats format pels costats superiors dels tres hexàgons i els costats exteriors dels tres quadrats; per dins es veu la base i les arestes $L$ comunes.\n- **Alçat**: porta cada punt de la planta amb línies de referència verticals i dona-li la seva cota: $0$ per a la base ($a'$, $b'$-$f'$, $c'$-$e'$, $d'$ sobre la LT), $\\approx 2{,}0\\ \\text{cm}$ per als vèrtexs comuns i el costat lliure dels quadrats, i $h \\approx 4{,}1\\ \\text{cm}$ per al costat superior dels hexàgons."
+          },
+          {
+            "apartat": "b",
+            "titol": "Visibilitat",
+            "cos": "- **Planta**: la superfície és com un bol obert per dalt, i des de dalt se'n veu l'interior: totes les arestes són vistes.\n- **Alçat**: les cares de davant (quadrat $bc$ i hexàgons $ab$ i $cd$) es veuen per fora i amaguen la part de les cares del darrere que queda per sota del seu contorn superior. Aquestes arestes del darrere es dibuixen discontínues; per damunt del contorn de davant es veuen per dins i són vistes."
+          },
+          {
+            "apartat": "c",
+            "titol": "Secció pel pla de cantell P′",
+            "cos": "Com que $P'$ és perpendicular al pla vertical (de cantell), en alçat la secció és sobre la mateixa traça $P'$: els punts on $P'$ talla les arestes de l'alçat són els punts de la secció (creus de la solució). Porta cada punt a planta amb una línia de referència fins a l'aresta corresponent i uneix consecutivament els punts que pertanyen a una mateixa cara. Surt una poligonal oberta (el pla passa per damunt de la part esquerra i talla les cares de la dreta) que recorre l'hexàgon superior, els quadrats i els hexàgons laterals."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2022-J/2A-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Costat L = 2,5 cm; hexàgons inclinats ≈70,5° (costat superior a h ≈ 4,1 cm), quadrats inclinats ≈54,7° (costat lliure a ≈2,0 cm); en planta, contorn de 12 costats."},
+          {"apartat": "b", "valor": "Planta tota vista; en alçat, ocultes les arestes de les cares posteriors tapades per les de davant."},
+          {"apartat": "c", "valor": "Poligonal de secció obtinguda referint a planta els punts on P′ talla les arestes en alçat."}
+        ],
+        "nota": "Comprovació: en un octàedre truncat l'angle entre cares hexagonal i quadrada és 125,26° i entre dues hexagonals 109,47°; per tant h = √3·L·sin 70,53° ≈ 1,633·L ≈ 4,1 cm i el quadrat arriba a L·sin 54,74° ≈ 0,816·L ≈ 2,0 cm, que coincideix amb la solució oficial."
+      }
+    },
+    {
+      "id": "dibuix-2022-J-e2-b",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Quadrat amb dos costats sobre dues rectes paral·leles i cub construït sobre aquest quadrat",
+      "tema": "cossos",
+      "temes_secundaris": ["diedric"],
+      "conceptes": ["abatiment", "canvi de pla", "recta perpendicular a un pla", "cub", "visibilitat", "vertadera magnitud"],
+      "dificultat": 3,
+      "pagines": [11],
+      "enunciat": "Tema: Dièdric.",
+      "figures": [
+        {"src": "img/dibuix/2022-J/2B.png", "peu": "Dades: rectes paral·leles R-R′ i S-S′ i punt p-p′ sobre S"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un quadrat que tingui dos dels costats sobre les rectes $R$-$R'$ i $S$-$S'$, i el punt $p$-$p'$ com a vèrtex inferior.", "punts": 2.5},
+        {"id": "b", "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un cub de manera que el quadrat de l'apartat a sigui una de les seves cares i el punt $p$-$p'$ el seu vèrtex inferior.", "punts": 2.5},
+        {"id": "c", "enunciat": "Determineu la visibilitat del cub considerant-lo com un sòlid i diferenciant les línies vistes de les ocultes.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Anàlisi",
+            "cos": "$R$ i $S$ són paral·leles en totes dues projeccions, per tant són paral·leles a l'espai i defineixen un pla $\\alpha$. Si dos costats del quadrat són sobre $R$ i $S$, han de ser **costats oposats**, i el costat del quadrat és la **distància entre les dues rectes**. El punt $p$ és sobre $S$; com que ha de ser el vèrtex inferior i $R$ és més alta que $S$ (i totes dues pugen cap a la dreta), l'altre vèrtex sobre $S$ és cap amunt-dreta de $p$. No hi ha LT dibuixada: les cotes es prenen relatives a $p$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Horitzontal del pla i abatiment",
+            "cos": "Traça per $p'$ una recta horitzontal (paral·lela a la LT) fins a tallar $R'$, i porta el punt de tall a planta: unint-lo amb $p$ tens la **recta horitzontal $h$ del pla $\\alpha$** per $p$. Abat el pla al voltant de $h$ sobre el pla horitzontal de cota de $p$: els punts es mouen en planta perpendicularment a $h$, i la distància real de cada punt a la xarnera és la hipotenusa del triangle format per la seva distància en planta i la seva diferència de cota. Així obtens $R_0$ i $S_0$ abatudes (paral·leles) i $p_0 = p$ (és a la xarnera)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Quadrat en vertadera forma i desabatiment",
+            "cos": "En l'abatiment, traça per $p$ la perpendicular a $S_0$ fins a $R_0$: aquest segment és el costat en vertadera magnitud, $L = 3{,}5\\ \\text{cm}$. Porta $L$ sobre $S_0$ des de $p$ (cap al costat que puja) i completa el quadrat. Desabat els vèrtexs (perpendiculars a $h$ en planta fins a $R$ i $S$) i porta'ls a l'alçat amb línies de referència sobre $R'$ i $S'$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Arestes perpendiculars al pla: canvi de pla",
+            "cos": "Les arestes laterals del cub són **perpendiculars al pla $\\alpha$** i mesuren $L$. Fes un canvi de pla vertical amb la nova LT perpendicular a $h$: en aquesta vista el pla $\\alpha$ apareix **de cantell** (com una recta per $p''$), el quadrat hi queda com un segment, i les arestes perpendiculars es veuen en **vertadera magnitud**, perpendiculars a la traça del pla. Porta-hi $L = 3{,}5\\ \\text{cm}$ cap amunt (perquè $p$ continuï sent el vèrtex més baix). En planta les arestes són perpendiculars a $h$; les cotes dels vèrtexs superiors ($h_1$, $h_2$ de la solució) es prenen de la vista nova i es porten a l'alçat."
+          },
+          {
+            "apartat": "b",
+            "titol": "Cotes dels vuit vèrtexs (comprovació)",
+            "cos": "Respecte a $p$, les cotes dels vèrtexs del cub són aproximadament: quadrat $0$; $1{,}7$; $2{,}0$; $3{,}6\\ \\text{cm}$; i cara oposada $2{,}4$; $4{,}1$; $4{,}3$; $6{,}0\\ \\text{cm}$. El vèrtex més alt, oposat a $p$, és a $h_2 \\approx 6\\ \\text{cm}$, com a la solució oficial."
+          },
+          {
+            "apartat": "c",
+            "titol": "Visibilitat",
+            "cos": "En cada projecció, el contorn aparent (hexàgon exterior) sempre és vist. Dels dos vèrtexs interiors al contorn, és vist el que és més a prop de l'observador i ocult el contrari, amb les tres arestes que hi arriben:\n\n- en **planta**, és vist el vèrtex més alt i ocult el més baix ($p$);\n- en **alçat**, és vist el vèrtex de més allunyament (més endavant) i ocult el del darrere."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2022-J/2B-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Quadrat de costat L = 3,5 cm (distància entre R i S) amb dos costats sobre R i S i p com a vèrtex més baix."},
+          {"apartat": "b", "valor": "Cub d'aresta 3,5 cm amb arestes perpendiculars al pla RS cap amunt; vèrtex més alt a ≈6 cm per sobre de p."},
+          {"apartat": "c", "valor": "Contorns vistos; en planta ocultes les arestes que surten de p, en alçat les del vèrtex posterior."}
+        ],
+        "nota": "Les mides (L = 35,0 mm i cotes dels vèrtexs) s'han verificat numèricament a partir de les coordenades de les rectes al PDF. La solució oficial fa servir l'abatiment per al quadrat i un canvi de pla per a les arestes perpendiculars."
+      }
+    },
+    {
+      "id": "dibuix-2022-J-e2-c",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "C",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Axonometria dimètrica DIN 5 a escala doble d'un sòlid amb cares inclinades i cinc nivells d'alçària",
+      "tema": "axonometria",
+      "temes_secundaris": ["normalitzacio"],
+      "conceptes": ["dimètrica", "coeficients de reducció", "interpretació de vistes", "escala doble", "línies vistes"],
+      "dificultat": 3,
+      "pagines": [13],
+      "enunciat": "Tema: Axonometria.\n\nInterpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt $p$-$p'$-$p''$ a la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (ortogonal dimètrica normalitzada DIN 5) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes.\n\n[1,2 punts per cadascun dels cinc nivells d'alçària de la figura]",
+      "figures": [
+        {"src": "img/dibuix/2022-J/2C.png", "peu": "Dades: alçat, planta i perfil (girat al costat de la planta), posició P i terna dimètrica DIN 5 (X i Z coeficient 1, Y coeficient 1/2)"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Llegir les vistes",
+            "cos": "Disposició: l'alçat és a dalt a la dreta, la planta a sota (amb els eixos indicats: $Y$ cap a la dreta i $X$ cap avall, és a dir, cap a l'observador) i el perfil a l'esquerra de la planta, **girat**: hi tenen la mateixa fila les profunditats $X$ de la planta, i les alçàries $Z$ es llegeixen en horitzontal (cota 0 a $p''$, creixent cap a l'esquerra).\n\nEl sòlid es mesura sobre una quadrícula de 10 mm: amplada $Y = 40\\ \\text{mm}$, profunditat $X = 30\\ \\text{mm}$ (més una part inclinada que sobresurt 15 mm pel darrere entre $Y = 20$ i $Y = 30$) i alçària $Z = 50\\ \\text{mm}$. El punt $p$ és a l'aresta inferior de davant, a $Y = 20\\ \\text{mm}$."
+          },
+          {
+            "apartat": null,
+            "titol": "Els cinc nivells d'alçària",
+            "cos": "L'alçat i el perfil mostren arestes horitzontals a $Z = 10$, $20$, $30$, $40$ i $50\\ \\text{mm}$, que són els cinc nivells que puntua la correcció. Hi ha cares inclinades (plans que pugen cap a l'aresta més alta de $Z = 50$ sobre $Y = 20$, i triangles inclinats que es veuen en planta com a diagonals). Relaciona cada línia d'una vista amb la seva parella a les altres dues per saber si és una aresta o el cantell d'un pla inclinat."
+          },
+          {
+            "apartat": null,
+            "titol": "Terna DIN 5 i escala doble",
+            "cos": "A la dimètrica DIN 5 els eixos $X$ i $Z$ tenen coeficient 1 i l'eix $Y$ coeficient $1/2$ (les direccions es dibuixen com indica l'esquema de la terna). A escala doble, cada mesura de les vistes es multiplica per l'escala i pel coeficient:\n\n$$X: \\times 2, \\qquad Y: \\times 2 \\cdot \\tfrac{1}{2} = \\times 1, \\qquad Z: \\times 2$$\n\nAixí el prisma envolupant fa $60\\ \\text{mm}$ en $X$, $40\\ \\text{mm}$ en $Y$ i $100\\ \\text{mm}$ en $Z$."
+          },
+          {
+            "apartat": null,
+            "titol": "Construcció per nivells",
+            "cos": "Situa $P$ i, des d'aquest punt, dibuixa el contorn de la base (cota 0). Després, per a cada nivell ($Z = 10, 20, 30, 40, 50$ mm, és a dir, $20, 40, 60, 80, 100$ mm a l'eix $Z$ del dibuix) dibuixa el contorn de la planta que correspon a aquell nivell, i uneix els vèrtexs de nivells consecutius amb arestes verticals o amb les arestes inclinades que mostren les vistes. Els punts de les cares inclinades es troben per coordenades $(x, y, z)$: cada coordenada es porta paral·lela al seu eix amb el seu coeficient."
+          },
+          {
+            "apartat": null,
+            "titol": "Línies vistes i comprovació",
+            "cos": "Repassa només les arestes vistes (l'enunciat no vol les ocultes). Comprova que les cares inclinades són planes (els seus costats oposats han de ser paral·lels si ho són a les vistes) i que les alçàries coincideixen amb l'alçat i el perfil."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2022-J/2C-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Dimètrica DIN 5 a escala 2 amb P a l'aresta inferior de davant: prisma envolupant 60 (X) × 40 (Y, ja reduït) × 100 (Z) mm, amb els cinc nivells d'alçària i les cares inclinades, només línies vistes."}
+        ],
+        "nota": "Al PDF de criteris aquest exercici surt etiquetat com a \"3A\" tot i que a l'enunciat és el Dibuix 2, Opció C."
+      }
+    },
+    {
+      "id": "dibuix-2022-J-e2-d",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "D",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Dibuix isomètric a escala doble d'un sòlid amb arc semicircular i volta inferior",
+      "tema": "axonometria",
+      "temes_secundaris": ["normalitzacio"],
+      "conceptes": ["isomètrica", "el·lipses isomètriques", "interpretació de vistes", "escala doble", "línies vistes"],
+      "dificultat": 3,
+      "pagines": [15],
+      "enunciat": "Tema: Axonometria.\n\nInterpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt $p$-$p'$-$p''$ a la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (ortogonal isomètrica) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes.\n\n[2 punts pel volum dret i 4 punts pel volum posterior]",
+      "figures": [
+        {"src": "img/dibuix/2022-J/2D.png", "peu": "Dades: alçat, planta i perfil (girat), posició P i terna isomètrica (coeficients 1, eixos a 120°)"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Interpretar el sòlid",
+            "cos": "Mides (sobre el dibuix, 1:1): el conjunt fa $40 \\times 40\\ \\text{mm}$ en planta i $35\\ \\text{mm}$ d'alçària. El perfil està girat al costat de la planta (alçàries en horitzontal, cota 0 a $p''$). Hi ha dos volums:\n\n- **Volum dret**: una barra de $10\\ \\text{mm}$ d'amplada ($Y$ de 30 a 40) que va de davant a darrere. Al davant té un pilar de $5\\ \\text{mm}$ de gruix i $25\\ \\text{mm}$ d'alçària (on és $p$, cantonada inferior davantera dreta); la resta fa $20\\ \\text{mm}$ d'alçària i té per sota una **volta semicircular** de radi $15\\ \\text{mm}$ (centre a cota 0, que es veu al perfil).\n- **Volum posterior**: una placa de $5\\ \\text{mm}$ de gruix al darrere, amb forma d'**arc** a l'alçat: arc semicircular de centre a $Y = 20$, $Z = 20\\ \\text{mm}$, radis $10$ i $15\\ \\text{mm}$, amb una pota esquerra de $10\\ \\text{mm}$ d'amplada que baixa fins a $Z = 10\\ \\text{mm}$ i que per la dreta s'uneix amb la barra."
+          },
+          {
+            "apartat": null,
+            "titol": "Terna isomètrica a escala doble",
+            "cos": "Els tres eixos formen $120^\\circ$ i es dibuixen amb coeficient 1 (dibuix isomètric), de manera que a escala doble **totes les mesures paral·leles als eixos es multipliquen per 2**: el prisma envolupant fa $80 \\times 80 \\times 70\\ \\text{mm}$."
+          },
+          {
+            "apartat": null,
+            "titol": "Volum dret",
+            "cos": "Des de $P$ dibuixa el pilar de davant ($10 \\times 20$ de base, $50\\ \\text{mm}$ d'alçària al dibuix) i la barra de $40\\ \\text{mm}$ d'alçària que s'allarga cap enrere. La volta inferior és una semicircumferència en un pla paral·lel a $XZ$: en isomètrica és una **semiel·lipse**. Construeix-la per punts: dibuixa a part el quart de circumferència en vertadera forma (radi $R = 30\\ \\text{mm}$ a escala doble), inscriu-lo en un quadrat amb la seva diagonal, i porta els punts (tangències i talls amb la diagonal) al paral·lelogram isomètric corresponent, com fa la solució oficial. Repeteix-la a l'altra cara de la barra desplaçada $20\\ \\text{mm}$ en $Y$."
+          },
+          {
+            "apartat": null,
+            "titol": "Volum posterior",
+            "cos": "La placa del darrere és paral·lela al pla $YZ$. Situa el centre de l'arc (a $Y = 40$, $Z = 40\\ \\text{mm}$ al dibuix, respecte a l'origen del volum) i dibuixa les semiel·lipses dels radis $20$ i $30\\ \\text{mm}$ amb el mateix mètode de punts. Dibuixa-les a la cara de davant i a la del darrere de la placa (desplaçades $10\\ \\text{mm}$ en $X$), i uneix-les amb les generatrius de contorn (tangents comunes paral·leles a l'eix $X$). Afegeix la pota esquerra i l'encaix amb la barra dreta."
+          },
+          {
+            "apartat": null,
+            "titol": "Línies vistes",
+            "cos": "Repassa només les línies vistes: els contorns de les el·lipses fins als punts de tangència amb les generatrius, les arestes dels prismes i la part visible de la volta inferior. La part de la placa que queda darrere de la barra dreta no es dibuixa."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2022-J/2D-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Isomètrica a escala 2 (envolupant 80 × 80 × 70 mm) amb P a la cantonada inferior davantera de la barra dreta: barra amb volta semiel·líptica (R 30 mm) i placa posterior en arc (radis 20 i 30 mm), només línies vistes."}
+        ],
+        "nota": "Al PDF de criteris aquest exercici surt etiquetat com a \"3B\" tot i que a l'enunciat és el Dibuix 2, Opció D. Error típic: dibuixar els arcs com a circumferències; en isomètrica qualsevol circumferència paral·lela a un pla coordenat és una el·lipse."
+      }
+    }
+  ]
+}

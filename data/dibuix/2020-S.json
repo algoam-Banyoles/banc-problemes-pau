@@ -1,0 +1,427 @@
+{
+  "examen": {
+    "id": "dibuix-2020-S",
+    "assignatura": "dibuix",
+    "materia": "Dibuix tècnic",
+    "any": 2020,
+    "convocatoria": "setembre",
+    "serie": "4",
+    "pdf_examen": "pdfs/dibuix/2020-S-examen.pdf",
+    "pdf_solucio": "pdfs/dibuix/2020-S-solucio.pdf",
+    "estructura": "Cal fer DOS dibuixos: del dibuix 1 (geometria plana, 4 punts) s'escull UNA de les dues opcions (A o B), i del dibuix 2 (6 punts) s'escull UNA de les quatre opcions (A i B de dièdric, C i D d'axonometria). Es resolen a la mateixa pàgina de l'enunciat. El 80 % de la nota de cada dibuix és per al procés i la solució correcta, i el 20 % per a la qualitat gràfica. Les mesures sense escala indicada s'entenen a escala 1:1."
+  },
+  "problemes": [
+    {
+      "id": "dibuix-2020-S-e1-a",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Quadrilàter còncau a partir d'angles i costats iguals, i valor real a escala 1:450",
+      "tema": "geometria-plana",
+      "temes_secundaris": [],
+      "conceptes": ["arc capaç", "transport d'angles", "quadrilàter còncau", "escala"],
+      "dificultat": 2,
+      "pagines": [5],
+      "enunciat": "Dades (a la part inferior del full): angle $BAD = 45^\\circ$, angle $ABD = 105^\\circ$, angle $ADC = 45^\\circ$, segment $AB = BC$. El segment $AD$ ja és dibuixat.",
+      "figures": [
+        {"src": "img/dibuix/2020-S/1A.png", "peu": "Segment AD donat i dades angulars del quadrilàter"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu el quadrilàter còncau $ABCD$ amb les dades indicades a la part inferior del full, de manera que els vèrtexs $B$ i $C$ quedin per sobre del segment $AD$. Deixeu constància del procés gràfic seguit. [1,5 punts pel segment $AB$ i 2 punts pels segments $BC$ i $CD$]", "punts": 3.5},
+        {"id": "b", "enunciat": "Determineu el valor real del segment $AD$ tenint en compte que el dibuix està fet a escala 1:450, i escriviu-lo en la casella situada a la part inferior de la pàgina.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i estratègia",
+            "cos": "Tenim el segment $AD$ dibuixat (mesura $12\\ \\text{cm}$ al paper). Primer construirem el **triangle $ABD$**, del qual coneixem un costat ($AD$) i dos angles ($A = 45^\\circ$, $B = 105^\\circ$). Després trobarem $C$ com la intersecció de dos llocs geomètrics: la recta que surt de $D$ formant $45^\\circ$ amb $DA$ i la circumferència de centre $B$ i radi $BA$ (perquè $BC = AB$).\n\nL'angle que falta del triangle $ABD$ és $D = 180^\\circ - 45^\\circ - 105^\\circ = 30^\\circ$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Recta AB: angle de 45° a A",
+            "cos": "Transporta l'angle de $45^\\circ$ a $A$, per sobre de $AD$ (per exemple, construint la bisectriu d'un angle recte aixecat a $A$). El vèrtex $B$ és sobre aquesta semirecta."
+          },
+          {
+            "apartat": "a",
+            "titol": "Arc capaç de 105° sobre AD",
+            "cos": "Els punts des dels quals el segment $AD$ es veu sota un angle de $105^\\circ$ formen l'**arc capaç** de $105^\\circ$ sobre $AD$. Per construir-lo:\n\n- traça la mediatriu de $AD$;\n- a $A$, dibuixa una recta que formi $105^\\circ$ amb $AD$ (és la tangent a l'arc a $A$) i la seva perpendicular per $A$;\n- aquesta perpendicular talla la mediatriu en el centre $C_1$ de l'arc (aquí cau per sota de $AD$, perquè l'angle és obtús).\n\nL'arc de centre $C_1$ i radi $C_1A$ que passa per sobre de $AD$ és l'arc capaç. El radi val $\\dfrac{AD}{2\\sin 105^\\circ} = 6{,}21\\ \\text{cm}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vèrtex B",
+            "cos": "$B$ és la intersecció de la semirecta de $45^\\circ$ des de $A$ amb l'arc capaç. Comprovació: pel teorema del sinus,\n\n$$AB = AD\\,\\frac{\\sin 30^\\circ}{\\sin 105^\\circ} = 12 \\cdot \\frac{0{,}5}{0{,}966} = 6{,}21\\ \\text{cm}$$\n\ni el segment $BD$ (de $8{,}79\\ \\text{cm}$) queda **horitzontal** al full, perquè $AD$ està inclinat $30^\\circ$ i l'angle a $D$ també és de $30^\\circ$. (També es podia trobar $B$ directament amb un angle de $30^\\circ$ a $D$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Vèrtex C",
+            "cos": "- Des de $D$, traça la recta que forma $45^\\circ$ amb $DA$, per sobre de $AD$ (angle $ADC = 45^\\circ$).\n- Amb centre a $B$ i radi $BA$, traça la circumferència: $C$ ha de ser-hi, perquè $BC = AB$.\n\nLa recta i la circumferència es tallen en **dos punts**. Un dels dos (molt a prop de $D$, just per sobre de $BD$) dona un quadrilàter **convex**, i l'hem de descartar. L'altre, a l'esquerra i a dalt de tot, dona el quadrilàter **còncau** que demana l'enunciat: l'angle interior a $B$ és més gran de $180^\\circ$. Resulta $CD = 14{,}3\\ \\text{cm}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Concretar el quadrilàter",
+            "cos": "Uneix $A$–$B$–$C$–$D$ amb traç gruixut i deixa fines les línies auxiliars (mediatriu, arc capaç, circumferència de centre $B$, línies d'angle)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Valor real de AD",
+            "cos": "A escala $1:450$, cada unitat del dibuix representa 450 unitats reals:\n\n$$AD_\\text{real} = 120\\ \\text{mm} \\cdot 450 = 54\\,000\\ \\text{mm} = \\mathbf{54\\ m}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2020-S/1A-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Quadrilàter còncau ABCD amb AB = BC = 6,21 cm, BD horitzontal de 8,79 cm i CD = 14,3 cm al dibuix; B s'obté amb l'arc capaç de 105° sobre AD i C amb la recta a 45° des de D i la circumferència de centre B i radi AB."},
+          {"apartat": "b", "valor": "AD = 12 cm al dibuix → 54 m reals."}
+        ],
+        "nota": "Error típic: quedar-se amb el segon punt d'intersecció per a $C$ (a prop de $D$), que dona un quadrilàter convex. L'enunciat demana que sigui còncau."
+      }
+    },
+    {
+      "id": "dibuix-2020-S-e1-b",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Circumferències tangents a una recta i a una circumferència per un punt d'aquesta",
+      "tema": "geometria-plana",
+      "temes_secundaris": [],
+      "conceptes": ["tangències", "punts de tangència", "bisectriu", "escala"],
+      "dificultat": 2,
+      "pagines": [7],
+      "enunciat": "",
+      "figures": [
+        {"src": "img/dibuix/2020-S/1B.png", "peu": "Recta R, circumferència de centre C i punt P situat sobre la circumferència"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu les circumferències tangents a la recta $R$ i a la circumferència de centre $C$ que passen pel punt $P$. Deixeu constància gràfica dels punts de tangència i del procés gràfic seguit. [2,5 punts per les circumferències i 1 punt per la determinació dels punts de tangència i el procés gràfic]", "punts": 3.5},
+        {"id": "b", "enunciat": "Determineu el valor real de la recta $R$ tenint en compte que el dibuix està fet a escala 1:175, i escriviu-lo en la casella situada a la part inferior de la pàgina.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Observació clau: P és sobre la circumferència",
+            "cos": "El punt $P$ és **sobre** la circumferència donada (radi $3{,}48\\ \\text{cm}$). Per tant, les circumferències buscades són tangents a la de centre $C$ precisament en $P$. Dues circumferències tangents en un punt tenen els centres alineats amb aquest punt: **els centres buscats són a la recta $CP$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Tangent comuna a P",
+            "cos": "Traça per $P$ la perpendicular a $CP$: és la recta tangent a la circumferència donada a $P$, i serà també tangent a les solucions. Prolonga-la fins que talli la recta $R$ en un punt $M$.\n\nAra el problema és més senzill: busquem circumferències tangents a dues rectes ($R$ i la tangent per $P$) i que toquin la tangent precisament en $P$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Centres: bisectrius de l'angle a M",
+            "cos": "El centre d'una circumferència tangent a dues rectes equidista d'ambdues, i per això és a una **bisectriu** de l'angle que formen. A $M$ hi ha dues bisectrius (perpendiculars entre si). Cadascuna talla la recta $CP$ en un centre:\n\n- $C_1$, a l'altre costat de $P$ respecte de $C$: circumferència petita, tangent **exterior** a la donada (radi $\\approx 2{,}9\\ \\text{cm}$);\n- $C_2$, al mateix costat que $C$: circumferència gran que **envolta** la donada, tangent interior (radi $\\approx 6{,}5\\ \\text{cm}$).\n\nEls radis són $C_1P$ i $C_2P$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punts de tangència",
+            "cos": "- Amb la circumferència donada: el punt $P$ (comú a totes dues solucions).\n- Amb la recta $R$: el peu de la perpendicular a $R$ traçada des de cada centre ($C_1$ i $C_2$). Marca'ls amb *tg*.\n\nComprovació: com que $M$ és exterior a les solucions, les dues tangents des de $M$ fan la mateixa longitud, així que els punts de tangència sobre $R$ estan a la distància $MP$ ($\\approx 4{,}4\\ \\text{cm}$) de $M$, un a cada banda."
+          },
+          {
+            "apartat": "b",
+            "titol": "Valor real de la recta R",
+            "cos": "La recta $R$ dibuixada mesura $16\\ \\text{cm}$. A escala $1:175$:\n\n$$R_\\text{real} = 160\\ \\text{mm} \\cdot 175 = 28\\,000\\ \\text{mm} = \\mathbf{28\\ m}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2020-S/1B-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Dues solucions amb centres C₁ i C₂ sobre la recta CP, a les bisectrius de l'angle entre R i la tangent per P (radis ≈ 2,9 cm i ≈ 6,5 cm); tangents a la circumferència en P i a R als peus de les perpendiculars des dels centres."},
+          {"apartat": "b", "valor": "R = 16 cm al dibuix → 28 m reals."}
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "dibuix-2020-S-e2-a",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Tetraedre regular amb una aresta sobre una recta horitzontal i un vèrtex sobre un segment",
+      "tema": "cossos",
+      "temes_secundaris": ["diedric"],
+      "conceptes": ["tetraedre regular", "canvi de pla", "reducció a punt", "visibilitat"],
+      "dificultat": 3,
+      "pagines": [9],
+      "enunciat": "",
+      "figures": [
+        {"src": "img/dibuix/2020-S/2A.png", "peu": "Recta horitzontal R-R′ i segment ab-a′b′"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un tetraedre de 6 cm d'aresta, de manera que una de les arestes quedi situada sobre la recta $R$ i un dels vèrtexs estigui sobre el segment $ab$-$a'b'$. L'aresta sobre la recta $R$ ha de quedar per davant del vèrtex sobre el segment $ab$-$a'b'$. [2 punts pel procés gràfic i 1,5 punts per cadascuna de les dues projeccions]", "punts": 5},
+        {"id": "b", "enunciat": "Determineu la visibilitat del tetraedre en les dues projeccions diferenciant les línies vistes de les ocultes.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades",
+            "cos": "- $R'$ és paral·lela a la LT: la recta $R$ és **horitzontal** (tots els punts a la mateixa cota). En planta forma uns $20^\\circ$ amb la LT.\n- $a'b'$ també és paral·lel a la LT: el segment $ab$-$a'b'$ és horitzontal, $3{,}64\\ \\text{cm}$ per sota de $R$.\n- Tetraedre regular d'aresta $l = 6\\ \\text{cm}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Propietat del tetraedre que farem servir",
+            "cos": "Si mirem un tetraedre regular **en la direcció d'una aresta**, aquesta es veu com un punt i el sòlid es veu com un triangle isòsceles:\n\n- l'aresta oposada es veu en vertadera magnitud ($6\\ \\text{cm}$), perquè és perpendicular a la primera;\n- els altres dos costats del triangle són les altures de les cares, $m = \\dfrac{\\sqrt3}{2}\\,l = 5{,}20\\ \\text{cm}$.\n\nA més, l'aresta oposada és al pla perpendicular a la primera que passa pel seu punt mitjà."
+          },
+          {
+            "apartat": "a",
+            "titol": "Canvi de pla: reduir R a un punt",
+            "cos": "Com que $R$ és horitzontal, n'hi ha prou amb **un canvi de pla vertical**: traça una nova LT **perpendicular a $R$** en planta. En la nova vista $R$ es projecta com un punt $R''$, i el segment $ab$ es projecta com $a''b''$. Les cotes es conserven: $a''b''$ queda $3{,}64\\ \\text{cm}$ més a prop de la nova LT que $R''$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vèrtex sobre el segment",
+            "cos": "Aquest vèrtex $V$ és un extrem de l'aresta oposada, de manera que és a la distància $m = 5{,}20\\ \\text{cm}$ de $R$. Amb centre $R''$ i radi $m$, traça un arc que talli $a''b''$.\n\nHi ha dos punts a distància $m$ sobre la recta $ab$, però només un és **dins del segment** i **per darrere de $R$** (com demana l'enunciat): aquest és $V''$. En planta, es troba sobre $ab$ a uns $1{,}9\\ \\text{cm}$ de $b$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Quart vèrtex",
+            "cos": "El quart vèrtex $W$ és a $m$ de $R''$ i a $6\\ \\text{cm}$ de $V''$: intersecció de l'arc de centre $R''$ i radi $m$ amb l'arc de centre $V''$ i radi 6. Surten dues solucions; la de la solució oficial és la que queda **per sobre** de $R$ (a $n = 2{,}28\\ \\text{cm}$ d'altura sobre $R'$). Ara el triangle $R''V''W''$ és la vista del tetraedre en la direcció de $R$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Tornar a la planta i a l'alçat",
+            "cos": "- **Planta**: refereix $V''$ i $W''$ amb perpendiculars a la nova LT. Tots dos són a la mateixa recta de la planta, perpendicular a $R$ i que passa per $v$. Aquesta recta talla $R$ en el punt mitjà $M$ de l'aresta. Sobre $R$, que és horitzontal i per tant en vertadera magnitud, porta $3\\ \\text{cm}$ a cada costat de $M$: obtens els vèrtexs $e_1$ i $e_2$.\n- **Alçat**: $e_1'$ i $e_2'$ són sobre $R'$; $v'$ és sobre $a'b'$; $w'$ és a $2{,}28\\ \\text{cm}$ per sobre de $R'$ (la cota es pren de la vista auxiliar).\n\nUneix els quatre vèrtexs dos a dos: surten les 6 arestes."
+          },
+          {
+            "apartat": "b",
+            "titol": "Visibilitat",
+            "cos": "- **Planta** (es mira des de dalt): el vèrtex més alt, $W$, i les arestes que en surten són vistes. El vèrtex més baix, $V$, cau dins del contorn: les arestes $ve_1$ i $ve_2$ són **ocultes**, i $vw$ es veu.\n- **Alçat** (es mira des del davant): l'aresta $e_1e_2$ és la que és més al davant i es veu. $V$ i $W$ són al darrere, de manera que l'aresta $v'w'$ queda tapada per la cara del davant i és **oculta**.\n\nEl contorn aparent de cada projecció sempre és vist."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2020-S/2A-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Amb un canvi de pla que redueix R a un punt, el tetraedre es veu com un triangle de costats m = 5,20 cm, m i 6 cm. V és sobre ab, darrere de R. W queda 2,28 cm per sobre de R, i l'aresta sobre R va de M − 3 cm a M + 3 cm."},
+          {"apartat": "b", "valor": "Planta: ve₁ i ve₂ ocultes. Alçat: vw oculta. La resta d'arestes es veuen."}
+        ],
+        "nota": "El quart vèrtex té dues posicions possibles (per sobre o per sota de R a la vista auxiliar). Totes dues compleixen l'enunciat; l'oficial dibuixa la de sobre. Si en tries l'altra, la visibilitat canvia."
+      }
+    },
+    {
+      "id": "dibuix-2020-S-e2-b",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Tronc de piràmide pentagonal obliqua tallat per un pla de cantell i intersecció amb un segment",
+      "tema": "cossos",
+      "temes_secundaris": ["diedric"],
+      "conceptes": ["tronc de piràmide", "pla de cantell", "secció plana", "abatiment", "veritable magnitud", "intersecció de recta i poliedre"],
+      "dificultat": 3,
+      "pagines": [11],
+      "enunciat": "",
+      "figures": [
+        {"src": "img/dibuix/2020-S/2B.png", "peu": "Pentàgon de base abcde, vèrtex v-v′, pla de cantell P′ i segment mn-m′n′"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Donada una piràmide obliqua que té com a base el pentàgon regular $abcde$ i el vèrtex en el punt $v$-$v'$, dibuixeu les projeccions horitzontal i vertical del tronc de piràmide comprès entre la base i el pla de cantell $P'$.", "punts": 2},
+        {"id": "b", "enunciat": "Dibuixeu, en veritable magnitud, la cara superior del tronc, determinada per la secció que produeix el pla de cantell $P'$ a la piràmide.", "punts": 1.5},
+        {"id": "c", "enunciat": "Dibuixeu la intersecció entre el segment $mn$-$m'n'$ i el tronc de piràmide pentagonal. Determineu la visibilitat del conjunt en les dues projeccions diferenciant les línies vistes de les ocultes i considerant el tronc de piràmide com un sòlid. [1,5 punts per la intersecció de la recta i 1 punt per la visibilitat del conjunt]", "punts": 2.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades",
+            "cos": "- Base: pentàgon regular de costat $5{,}2\\ \\text{cm}$ al pla horitzontal (a l'alçat, el segment $a'd'$, de cota 0).\n- Vèrtex $v$-$v'$ a $4{,}2\\ \\text{cm}$ d'altura. Com que $v$ no és al centre del pentàgon, la piràmide és obliqua.\n- $P'$ és un **pla de cantell** (perpendicular al vertical): a l'alçat es veu com una recta, inclinada uns $29^\\circ$, que talla la línia de la base a la dreta de $d'$.\n- Segment $mn$-$m'n'$: $n'$ és sobre la línia de base (cota 0) i $m'$ és a $2{,}6\\ \\text{cm}$ d'altura."
+          },
+          {
+            "apartat": "a",
+            "titol": "Secció a l'alçat",
+            "cos": "Dibuixa les arestes laterals $v'a', v'b', \\dots, v'e'$ a l'alçat. Com que $P'$ és de cantell, tota la secció és sobre la recta $P'$: cada aresta lateral talla $P'$ en un punt ($1', 2', \\dots, 5'$) que es llegeix directament a l'alçat. Aquí **les cinc arestes laterals** queden tallades ($v'$ és per sobre de $P'$ i tota la base, per sota), de manera que la secció és un pentàgon. Les seves cotes són, aproximadament, $2{,}96$ ($a$), $2{,}69$ ($b$), $1{,}41$ ($c$), $0{,}98$ ($d$) i $2{,}49\\ \\text{cm}$ ($e$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Secció a la planta i tronc",
+            "cos": "Baixa cada punt $1', 2', \\dots$ amb una línia de referència perpendicular a la LT fins que talli la projecció horitzontal de la mateixa aresta ($va$, $vb$…). Uneix els cinc punts: és la cara superior del tronc a la planta.\n\nEl tronc té per arestes els cinc costats de la base, els cinc trams d'aresta lateral entre la base i la secció, i els cinc costats de la secció. Esborra (o deixa fina) la part de la piràmide per sobre de $P'$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Veritable magnitud: abatiment de P",
+            "cos": "Per veure la secció en veritable magnitud, **abat** el pla $P$ sobre el pla horitzontal. La xarnera és la traça horitzontal de $P$: la recta perpendicular a la LT que passa pel punt on $P'$ talla la línia de cota 0 (a la dreta de $d'$).\n\n- A l'alçat, amb centre en aquest punt, gira cada punt de la secció amb un arc fins a la línia de cota 0. La distància a la xarnera es conserva.\n- Des d'aquests punts, baixa línies de referència i talla-les amb paral·leles a la LT traçades des dels punts corresponents de la secció a la planta (al girar, la distància de cada punt al pla vertical no canvia).\n\nSurt un pentàgon irregular, de costats $\\approx 1{,}7$; $2{,}7$; $3{,}75$; $3{,}1$ i $1{,}9\\ \\text{cm}$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Intersecció recta-tronc: pla auxiliar",
+            "cos": "Per trobar on el segment entra i surt del sòlid, fes-lo passar per un **pla auxiliar projectant**: el pla vertical que conté $mn$, la traça horitzontal del qual és la mateixa recta $mn$ de la planta.\n\nAquest pla talla el tronc en un polígon:\n\n- a la planta, marca on $mn$ talla els costats de la base, les arestes laterals i els costats de la secció;\n- puja aquests punts a l'alçat, cadascun sobre la seva aresta, i uneix-los.\n\nLa recta $m'n'$ talla aquest polígon en dos punts: l'entrada $I'$, a la cara $vab$ (cota $\\approx 1{,}55\\ \\text{cm}$), i la sortida $J'$, a la cara $vde$ (cota $\\approx 0{,}35\\ \\text{cm}$). Baixa $I'$ i $J'$ a $mn$ per tenir $I$ i $J$ a la planta."
+          },
+          {
+            "apartat": "c",
+            "titol": "Visibilitat del conjunt",
+            "cos": "- El tram $IJ$ és **dins** del sòlid i no es dibuixa (o es fa amb línia oculta molt fina).\n- **Planta**: el tronc es mira des de dalt. La secció és vista i les cares laterals que dona el contorn també. Els trams del segment que passen per sota del tronc (prop de $I$ i de $J$) són ocults, i la resta, vistos.\n- **Alçat**: les arestes laterals del darrere ($vb$ i $vc$, les de menys allunyament) queden tapades i es fan discontínues. Del segment, el tram que queda darrere del tronc és ocult i la resta es veu."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2020-S/2B-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Tronc limitat per la base abcde i una secció pentagonal sobre P′, que talla les cinc arestes laterals (cotes ≈ 2,96 / 2,69 / 1,41 / 0,98 / 2,49 cm)."},
+          {"apartat": "b", "valor": "Secció en veritable magnitud per abatiment de P sobre l'horitzontal: un pentàgon irregular, a la dreta de la planta."},
+          {"apartat": "c", "valor": "El segment entra pel punt I de la cara vab (cota ≈ 1,55 cm) i surt pel punt J de la cara vde (cota ≈ 0,35 cm). El tram IJ és interior; vb i vc són ocultes a l'alçat."}
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "dibuix-2020-S-e2-c",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "C",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Isomètrica a escala doble d'un sòlid en forma de C amb cares obliqües",
+      "tema": "axonometria",
+      "temes_secundaris": ["normalitzacio"],
+      "conceptes": ["perspectiva isomètrica", "interpretació de vistes", "escala doble", "perfil girat", "línies vistes"],
+      "dificultat": 3,
+      "pagines": [13],
+      "enunciat": "Interpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt $p$-$p'$-$p''$ en la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (ortogonal isomètrica) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [2 punts per la base central i 2 punts per cadascun dels dos volums dels extrems]",
+      "figures": [
+        {"src": "img/dibuix/2020-S/2C.png", "peu": "Alçat (p′), planta (p), perfil girat (p″), posició P i terna isomètrica"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Interpretar les vistes i els eixos",
+            "cos": "- **Alçat** ($p'$): la vista de dalt. Hi veiem el perfil en forma de **C** del sòlid.\n- **Planta** ($p$): a sota de l'alçat.\n- **Perfil** ($p''$): a la dreta de la planta, **girat 90°** (l'etiqueta $p''$ està girada). Les altures s'hi mesuren en horitzontal, cap a la dreta des de $p''$. Les profunditats coincideixen amb les files de la planta.\n\nEl símbol d'eixos al costat de la planta indica que **X** és la direcció horitzontal de la planta (positiva cap a l'esquerra) i **Y** la vertical (positiva cap avall, cap al davant). $p$ és a la base, cota 0. Les vistes estan dibuixades sobre una quadrícula de $1\\ \\text{cm}$ (es poden mesurar amb el regle)."
+          },
+          {
+            "apartat": null,
+            "titol": "Forma del sòlid",
+            "cos": "Prisma envolupant: $7\\ \\text{cm}$ en X × $4\\ \\text{cm}$ en Y × $2\\ \\text{cm}$ en Z.\n\n- **Base central**: una llosa de $0{,}5\\ \\text{cm}$ de gruix (la línia inferior de la C a l'alçat). $p$ és el vèrtex del davant, al centre de la planta.\n- **Planta**: dos paral·lelograms units per l'aresta que va de $p$ a $(X, Y) = (-1, -2)$. El de l'esquerra té els costats a $45^\\circ$ (vèrtexs $(0,0), (2,-2), (1,-4), (-1,-2)$). El de la dreta té el costat del davant sobre $Y = 0$ i els laterals en pendent 2:1 (vèrtexs $(0,0), (-4,0), (-5,-2), (-1,-2)$).\n- **Volum de l'esquerra**: puja fins a $Z = 2$ i té un braç superior (de $Z = 1{,}5$ a $2$) que avança cap a la dreta per sobre de la base.\n- **Volum de la dreta**: puja fins a $Z = 1{,}5$ i té un braç (de $Z = 1$ a $1{,}5$) que avança cap a l'esquerra. Els dos braços tanquen la C.\n- Les cares exteriors dels extrems són **inclinades**: a l'alçat i al perfil, el contorn és $0{,}5\\ \\text{cm}$ més estret a la base que a dalt. Per això a les vistes surten costats oblics."
+          },
+          {
+            "apartat": null,
+            "titol": "Coeficients i escala doble",
+            "cos": "A la isomètrica que es demana, els tres eixos formen $120^\\circ$ i tenen coeficient $1$ (es mesura directament sobre els eixos). A escala doble:\n\n$$X_\\text{dib} = 2X, \\qquad Y_\\text{dib} = 2Y, \\qquad Z_\\text{dib} = 2Z$$\n\nEl prisma envolupant fa, doncs, $14 \\times 8 \\times 4\\ \\text{cm}$ al dibuix. L'eix X va cap avall a l'esquerra ($30^\\circ$ sota l'horitzontal), Y cap avall a la dreta i Z vertical."
+          },
+          {
+            "apartat": null,
+            "titol": "Base central",
+            "cos": "Situa $p$ a $P$. Dibuixa a la cota 0 el contorn de la planta (els dos paral·lelograms) portant les coordenades X i Y de cada vèrtex, multiplicades per 2, sobre paral·leles als eixos. Una recta de la planta a $45^\\circ$ (amb $\\Delta X = -\\Delta Y$) queda **horitzontal** a la isomètrica. És una bona comprovació.\n\nAixeca les arestes verticals $2 \\cdot 0{,}5 = 1\\ \\text{cm}$ i tanca la cara superior de la llosa."
+          },
+          {
+            "apartat": null,
+            "titol": "Volums dels extrems",
+            "cos": "Per a cada extrem:\n\n1. Dibuixa a la cota corresponent ($Z = 2$ a l'esquerra, $Z = 1{,}5$ a la dreta) el contorn superior, amb les coordenades de la planta.\n2. Dibuixa el contorn inferior (a $Z = 0$ o a $Z = 0{,}5$), $0{,}5\\ \\text{cm}$ més estret segons les vistes. Uneix-los: surten les cares inclinades. Les rectes inclinades no són paral·leles als eixos: cal situar-ne els dos extrems per coordenades.\n3. Dibuixa els braços: el seu gruix (de $1{,}5$ a $2$ i d'$1$ a $1{,}5$) es pren de l'alçat, i la llargada de la C també.\n\nTotes les arestes que són paral·leles a l'espai també ho són a l'axonometria: fes-ho servir per comprovar."
+          },
+          {
+            "apartat": null,
+            "titol": "Línies vistes",
+            "cos": "L'observador mira des del davant, des de dalt i des de la dreta (des de les X i les Y positives i des de dalt). Concreta només les arestes vistes: la cara superior dels dos volums, les cares de davant de la C i les cares inclinades de l'esquerra. Esborra les arestes ocultes del darrere."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2020-S/2C-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Isomètrica a escala doble (envolupant de 14 × 8 × 4 cm al dibuix) d'un sòlid en C: base central de 0,5 cm de gruix, volum esquerre de 2 cm d'altura i volum dret d'1,5 cm, amb cares exteriors inclinades. Només línies vistes."}
+        ],
+        "nota": "El perfil està girat 90° (les altures s'hi mesuren en horitzontal). Algunes mides de les parts obliqües no cauen sobre la quadrícula: pren-les directament de les vistes amb el compàs i multiplica-les per 2."
+      }
+    },
+    {
+      "id": "dibuix-2020-S-e2-d",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "D",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Dimètrica DIN 5 a escala doble d'un sòlid en forma de Y amb dos braços inclinats",
+      "tema": "axonometria",
+      "temes_secundaris": ["normalitzacio"],
+      "conceptes": ["axonometria dimètrica", "DIN 5", "interpretació de vistes", "escala doble", "coeficients de reducció", "perfil girat"],
+      "dificultat": 3,
+      "pagines": [15],
+      "enunciat": "Interpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt $p$-$p'$-$p''$ en la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (ortogonal dimètrica normalitzada DIN 5) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [1,5 punts pels dos volums inferiors, 1,5 punts pel volum central i 1,5 punts per cadascun dels dos volums més alts]",
+      "figures": [
+        {"src": "img/dibuix/2020-S/2D.png", "peu": "Alçat (p′), planta (p), perfil girat (p″), posició P i terna dimètrica DIN 5"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Interpretar les vistes i els eixos",
+            "cos": "- **Alçat** ($p'$): a dalt a l'esquerra. Mostra l'amplada en X i l'altura.\n- **Planta** ($p$): a sota.\n- **Perfil** ($p''$): a la dreta de la planta, **girat 90°**. Les altures (Z) s'hi mesuren en horitzontal, cap a la dreta des de $p''$, i les profunditats (Y) coincideixen amb les files de la planta.\n\nPel símbol d'eixos, a la planta **X** és horitzontal (positiva cap a l'esquerra) i **Y** vertical (positiva cap avall). Prenem l'origen a $p$, vèrtex inferior del bloc de baix. Totes les mides són múltiples de $0{,}5\\ \\text{cm}$ (quadrícula d'$1\\ \\text{cm}$)."
+          },
+          {
+            "apartat": null,
+            "titol": "Forma del sòlid",
+            "cos": "Prisma envolupant: X de $-2$ a $1$ ($3\\ \\text{cm}$), Y de $-3{,}5$ a $0{,}5$ ($4\\ \\text{cm}$), Z de $0$ a $4$ ($4\\ \\text{cm}$). Coordenades $(X, Y, Z)$ en cm:\n\n1. **Bloc inferior**: $X \\in [-1, 0]$, $Y \\in [-1{,}5, 0]$, $Z \\in [0, 1]$.\n2. **Tronc de transició** ($Z$ d'1 a 2): la base és la cara superior del bloc i la cara de dalt és $X \\in [-1, 1]$, $Y \\in [-2{,}5, 0{,}5]$. S'eixampla cap al davant (X) i cap als dos costats en Y. Les seves cares són inclinades.\n3. **Volum central**: $X \\in [-1, 1]$, $Y \\in [-2{,}5, 0{,}5]$, $Z \\in [2, 3]$.\n4. **Braç esquerre** (inclinat cap a $-Y$, a $45^\\circ$): $X \\in [0, 1]$. La secció al pla YZ té els vèrtexs $(Y, Z) = (-2{,}5;\\,2), (-3{,}5;\\,3), (-3{,}5;\\,4), (-2{,}5;\\,4), (-1{,}5;\\,3)$.\n5. **Braç dret** (inclinat cap a $-X$, a $45^\\circ$): $Y \\in [-0{,}5;\\,0{,}5]$. La secció al pla XZ té els vèrtexs $(X, Z) = (-1;\\,2), (-2;\\,3), (-2;\\,4), (-1;\\,4), (0;\\,3)$."
+          },
+          {
+            "apartat": null,
+            "titol": "Coeficients i escala doble",
+            "cos": "A la dimètrica DIN 5, l'eix X (cap avall a l'esquerra, uns $42^\\circ$ sota l'horitzontal) té coeficient $\\tfrac12$. Els eixos Y (uns $7^\\circ$ sota l'horitzontal, cap a la dreta) i Z (vertical) tenen coeficient $1$. A escala doble:\n\n$$X_\\text{dib} = 2 \\cdot \\tfrac12 \\cdot X = X, \\qquad Y_\\text{dib} = 2Y, \\qquad Z_\\text{dib} = 2Z$$\n\nEl prisma envolupant fa $3 \\times 8 \\times 8\\ \\text{cm}$ al dibuix."
+          },
+          {
+            "apartat": null,
+            "titol": "Volums inferiors",
+            "cos": "Situa $p$ a $P$. Dibuixa el bloc inferior: des de $P$, $3\\ \\text{cm}$ en $-Y$ (cap a l'esquerra, lleugerament amunt), $1\\ \\text{cm}$ en $-X$ (amunt a la dreta) i $2\\ \\text{cm}$ d'altura.\n\nA la cota $Z = 1$ (2 cm al dibuix) hi ha la base del tronc. A la cota $Z = 2$ (4 cm al dibuix), dibuixa el rectangle superior $X \\in [-1,1]$, $Y \\in [-2{,}5;\\,0{,}5]$: $2\\ \\text{cm} \\times 6\\ \\text{cm}$ al dibuix. Uneix els vèrtexs corresponents: surten les cares inclinades del tronc."
+          },
+          {
+            "apartat": null,
+            "titol": "Volum central",
+            "cos": "Sobre la cara superior del tronc, aixeca un prisma de $1\\ \\text{cm}$ d'altura real ($2\\ \\text{cm}$ al dibuix), amb la mateixa planta: $X \\in [-1, 1]$, $Y \\in [-2{,}5;\\,0{,}5]$."
+          },
+          {
+            "apartat": null,
+            "titol": "Braços superiors",
+            "cos": "- **Braç esquerre**: dibuixa la seva secció pentagonal al pla $X = 1$ (cara del davant), amb les coordenades $(Y, Z)$ de dalt. Trasllada-la paral·lelament $1\\ \\text{cm}$ en $-X$ ($1\\ \\text{cm}$ al dibuix) fins a $X = 0$.\n- **Braç dret**: dibuixa la seva secció al pla $Y = 0{,}5$ (cara de la dreta), amb les coordenades $(X, Z)$, i trasllada-la paral·lelament $1\\ \\text{cm}$ en $-Y$ ($2\\ \\text{cm}$ al dibuix).\n\nComprova que les cares superiors (a $Z = 4$) són quadrats d'$1 \\times 1\\ \\text{cm}$ reals i que les arestes inclinades de cada braç són paral·leles entre si."
+          },
+          {
+            "apartat": null,
+            "titol": "Línies vistes",
+            "cos": "La terna DIN 5 mira el sòlid des del davant (X positives), des de la dreta (Y positives) i des de dalt. Es veuen la cara del davant i la de la dreta del bloc inferior, les cares inclinades del tronc que donen al davant i a la dreta, i les cares superiors i exteriors dels braços. Esborra les arestes ocultes, com les del darrere del bloc inferior i del volum central."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2020-S/2D-sol.png)"
+          }
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Dimètrica DIN 5 a escala doble (envolupant de 3 × 8 × 8 cm al dibuix): bloc d'1 × 1,5 × 1 cm, tronc que s'eixampla fins a 2 × 3 cm, volum central de 2 × 3 × 1 cm i dos braços inclinats a 45° que acaben en caps d'1 × 1 cm a 4 cm d'altura. Només línies vistes."}
+        ],
+        "nota": "El perfil està girat 90° respecte de la posició habitual: les altures s'hi llegeixen en horitzontal des de $p''$. A la terna DIN 5 recorda que només l'eix X es redueix a la meitat."
+      }
+    }
+  ]
+}

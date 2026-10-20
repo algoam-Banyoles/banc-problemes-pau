@@ -1,0 +1,245 @@
+{
+  "examen": {
+    "id": "dibuix-2021-J",
+    "assignatura": "dibuix",
+    "materia": "Dibuix tècnic",
+    "any": 2021,
+    "convocatoria": "juny",
+    "serie": "2",
+    "pdf_examen": "pdfs/dibuix/2021-J-examen.pdf",
+    "pdf_solucio": "pdfs/dibuix/2021-J-solucio.pdf",
+    "estructura": "Cal fer DOS dibuixos: Dibuix 1 (geometria plana, 4 punts), escollint UNA de les dues opcions (A o B), i Dibuix 2 (6 punts), escollint UNA de les quatre opcions (A i B de dièdric, C i D d'axonometria). Si una mesura d'un element no dibuixat no fa referència a l'escala, s'entén a escala 1:1. Cal deixar constància de les línies auxiliars; el 80 % de la nota és per al procés i la solució correcta i el 20 % per a la qualitat gràfica."
+  },
+  "problemes": [
+    {
+      "id": "dibuix-2021-J-e1-a",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Circumferències tangents a un segment i a arcs de circumferència",
+      "tema": "geometria-plana",
+      "temes_secundaris": [],
+      "conceptes": ["tangències", "circumferència tangent a recta i circumferència", "dilatació", "problema d'Apol·loni", "punts de tangència"],
+      "dificultat": 3,
+      "pagines": [5],
+      "enunciat": "Es donen el segment $AB$ amb un punt $P$, un arc de circumferència de centre $T$ (a dalt a l'esquerra) i un arc de circumferència de centre $S$ (a la dreta, envoltant el segment).",
+      "figures": [
+        {"src": "img/dibuix/2021-J/1A.png", "peu": "Dibuix donat: segment AB amb el punt P, arc de centre T (a dalt) i arc de centre S (a la dreta)"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu les dues circumferències de 2 cm de radi tangents al segment $AB$ i a l'arc de circumferència de centre $S$.", "punts": 1},
+        {"id": "b", "enunciat": "Dibuixeu la circumferència tangent a les dues circumferències anteriors i a l'arc de circumferència de centre $S$.", "punts": 1.5},
+        {"id": "c", "enunciat": "Dibuixeu la circumferència tangent a l'arc de circumferència de centre $T$ i al segment $AB$ en el punt $P$.", "punts": 1.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades mesurades al dibuix", "cos": "- Arc de centre $T$: radi $R_T = 7$ cm (la solució oficial ho acota).\n- Arc de centre $S$: radi $R_S = 8$ cm.\n- Segment $AB \\approx 13{,}1$ cm; el centre $S$ queda a l'esquerra de la recta $AB$, a $\\approx 1{,}7$ cm.\n\nDues idees que farem servir a tot l'exercici:\n\n- El centre d'una circumferència de radi $r$ tangent a una recta és a una **paral·lela** a la recta a distància $r$.\n- El centre d'una circumferència de radi $r$ tangent **interiorment** a una de centre $S$ i radi $R$ és a la circumferència concèntrica de radi $R - r$; si és tangent **exteriorment**, a la de radi $R + r$. El punt de tangència és sobre la recta que uneix els dos centres."},
+          {"apartat": "a", "titol": "Lloc dels centres respecte del segment AB", "cos": "Les circumferències han de quedar entre el segment i l'arc de centre $S$ (a la dreta de $AB$). Tracem la **paral·lela a $AB$ a 2 cm**, pel costat de l'arc (perpendicular a $AB$ en un punt qualsevol, hi portem 2 cm i hi fem passar la paral·lela)."},
+          {"apartat": "a", "titol": "Lloc dels centres respecte de l'arc de centre S", "cos": "Les circumferències són a l'interior de l'arc i hi han de ser tangents interiorment, de manera que el centre és a distància $R_S - r = 8 - 2 = 6$ cm de $S$: dibuixem la **circumferència auxiliar de centre $S$ i radi 6 cm**.\n\nAquesta circumferència talla la paral·lela en dos punts: són els centres $O_1$ (a baix, a prop de $A$) i $O_2$ (a dalt, a prop de $B$)."},
+          {"apartat": "a", "titol": "Punts de tangència i traçat", "cos": "- Tangència amb el segment: peu de la perpendicular des de cada centre a $AB$ (punt $R$ per a la circumferència de baix).\n- Tangència amb l'arc: punt on la recta $SO_1$ (i $SO_2$), perllongada, talla l'arc.\n\nAmb centre $O_1$ i $O_2$ i radi 2 cm dibuixem les dues circumferències i marquem els quatre punts *tg*."},
+          {"apartat": "b", "titol": "Reduir el problema: dilatació de 2 cm", "cos": "Busquem una circumferència de centre $X$ i radi $r$ desconegut, tangent exteriorment a les dues de l'apartat a) i interiorment a l'arc de centre $S$:\n\n$$XO_1 = XO_2 = r + 2, \\qquad XS = 8 - r$$\n\nSi augmentem el radi buscat en 2 cm (dilatació), la circumferència de centre $X$ i radi $r+2$ **passa per $O_1$ i $O_2$** i és **tangent interiorment a la circumferència de centre $S$ i radi $8 + 2 = 10$ cm** (perquè $XS = (8+2) - (r+2)$). Hem convertit el problema en un de més senzill: circumferència que passa per dos punts i és tangent a una circumferència (PPC). A la solució oficial s'hi veu la circumferència auxiliar discontínua de radi 2 que serveix per portar els 2 cm de més sobre el radi de $S$."},
+          {"apartat": "b", "titol": "Resolució del cas PPC", "cos": "- El centre $X$ equidista de $O_1$ i $O_2$: és a la **mediatriu de $O_1O_2$**.\n- Per trobar el punt de tangència amb la circumferència $(S, 10)$ fem servir l'eix radical: dibuixem una circumferència auxiliar qualsevol que passi per $O_1$ i $O_2$ i talli la de radi 10; la corda comuna i la recta $O_1O_2$ es tallen en el centre radical $Q$. Des de $Q$ tracem la tangent a la circumferència $(S,10)$: el punt de tangència $T_0$ és on la solució la toca.\n- El centre $X$ és la intersecció de la recta $ST_0$ amb la mediatriu de $O_1O_2$.\n\nEl radi buscat és $r = XO_1 - 2$ (al dibuix, $r \\approx 2{,}9$ cm). Comprovació: $XS + r$ ha de ser 8 cm."},
+          {"apartat": "b", "titol": "Punts de tangència", "cos": "- Amb les circumferències de l'apartat a): sobre els segments $XO_1$ i $XO_2$, a 2 cm de $O_1$ i $O_2$.\n- Amb l'arc de centre $S$: a la recta $SX$ perllongada fins a l'arc.\n\nDibuixem la circumferència de centre $X$ i radi $r \\approx 2{,}9$ cm i marquem els tres punts *tg*."},
+          {"apartat": "c", "titol": "Primer lloc: perpendicular a AB per P", "cos": "La circumferència ha de ser tangent al segment justament en $P$, de manera que el seu centre és a la **perpendicular a $AB$ per $P$**. Per la posició de l'arc de centre $T$, la circumferència queda a l'esquerra del segment, a l'interior de l'arc (tangència interior)."},
+          {"apartat": "c", "titol": "Segon lloc: portar el radi de T sobre la perpendicular", "cos": "Si el centre és $Q$ i el radi $r$, la tangència interior amb l'arc de centre $T$ vol dir $QT = 7 - r$. Sobre la perpendicular, a partir de $P$ i cap a l'esquerra, portem **7 cm** (el radi de l'arc $T$) i obtenim el punt auxiliar $M$. Llavors $QM = 7 - r$ també, de manera que $Q$ equidista de $T$ i de $M$: és a la **mediatriu del segment $TM$**.\n\nLa intersecció de la mediatriu de $TM$ amb la perpendicular per $P$ és el centre $Q$. El radi és $r = QP \\approx 2{,}9$ cm."},
+          {"apartat": "c", "titol": "Traçat i comprovació", "cos": "Dibuixem la circumferència de centre $Q$ i radi $QP$. El punt de tangència amb l'arc de centre $T$ és on la recta $TQ$, perllongada, talla l'arc (es marca *tg*). Comprovació: $QT + QP = 7$ cm."},
+          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2021-J/1A-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Dues circumferències de radi 2 cm amb centres a la intersecció de la paral·lela a $AB$ a 2 cm amb la circumferència de centre $S$ i radi 6 cm."},
+          {"apartat": "b", "valor": "Circumferència de radi $\\approx 2{,}9$ cm, centre a la mediatriu dels dos centres anteriors, trobada reduint el problema a PPC amb la circumferència $(S, 10\\ \\text{cm})$."},
+          {"apartat": "c", "valor": "Circumferència de radi $\\approx 2{,}9$ cm, centre a la perpendicular a $AB$ per $P$ i a la mediatriu de $T$ i el punt situat a 7 cm de $P$."}
+        ],
+        "nota": "Les mides en cm (radis de 2,9 cm) s'han calculat a partir de les coordenades del PDF i són orientatives. A l'apartat a), les paral·leles a 2 cm pel costat esquerre de $AB$ també tallen la circumferència de radi 6, però el punt de tangència queda fora de l'arc dibuixat, per això només hi ha dues solucions. Al cas PPC de l'apartat b) hi ha matemàticament una segona solució (radi $\\approx 5{,}7$ cm) que talla el segment i no és la que es demana."
+      }
+    },
+    {
+      "id": "dibuix-2021-J-e1-b",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Polígon còncau ABCDEFG a partir d'angles, ortocentre i distàncies",
+      "tema": "geometria-plana",
+      "temes_secundaris": [],
+      "conceptes": ["arc capaç", "construcció de triangles", "ortocentre", "mediatriu", "teorema de Tales", "polígon còncau"],
+      "dificultat": 3,
+      "pagines": [7],
+      "enunciat": "Dibuixeu el polígon còncau $ABCDEFG$, de manera que tots els vèrtexs quedin per sota del segment $AB$, i el vèrtex $F$, a l'esquerra del vèrtex $A$. Tingueu en compte les dades facilitades a peu de pàgina. Deixeu constància del procés gràfic seguit. [0,8 punts per cadascun dels punts $C$, $D$, $E$, $F$ i $G$ i els segments que els uneixen]\n\nDades:\n\n- Angle $ABE = 60°$\n- Angle $AEB = 45°$\n- Angle $ABC = 105°$\n- Angle $BCE = 105°$\n- Vèrtex $D$ = ortocentre de $BCE$\n- Angle $AFE = 90°$\n- Distància $AF = EF = BG = EG$",
+      "figures": [
+        {"src": "img/dibuix/2021-J/1B.png", "peu": "Segment AB donat (B a l'esquerra, A a la dreta)"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Estratègia", "cos": "El punt clau és $E$, perquè gairebé totes les dades hi fan referència. L'ordre serà: $E$ (triangle $ABE$) → $C$ (triangle $BCE$) → $D$ (ortocentre) → $F$ (a partir de $AE$) → $G$ (a partir de $BE$). Al dibuix, $AB \\approx 9{,}2$ cm."},
+          {"apartat": null, "titol": "Vèrtex E: angle de 60° en B i arc capaç de 45°", "cos": "- Per $B$ tracem una semirecta que formi **60° amb $BA$**, cap a sota de $AB$.\n- $E$ veu el segment $AB$ sota un angle de 45°: és a l'**arc capaç de 45° sobre $AB$** (centre a la mediatriu de $AB$, on la recta que forma $90° - 45° = 45°$ amb $AB$ per $A$ la talla). Tracem l'arc per sota de $AB$.\n\nLa intersecció és **$E$**. (Equivalentment, l'angle en $A$ val $180° - 60° - 45° = 75°$ i es pot traçar directament.) Al dibuix, $AE \\approx 11{,}3$ cm i $BE \\approx 12{,}6$ cm."},
+          {"apartat": null, "titol": "Vèrtex C: angle de 105° en B i arc capaç de 105° sobre BE", "cos": "- Per $B$ tracem la semirecta que forma **105° amb $BA$** (queda més oberta que $BE$).\n- $C$ veu el segment $BE$ sota 105°: és a l'**arc capaç de 105° sobre $BE$**, pel costat esquerre.\n\nLa intersecció és **$C$**. Comprovació: al triangle $BCE$ l'angle en $B$ és $105° - 60° = 45°$, en $C$ 105° i, per tant, en $E$ $30°$. Surt $CE = AB$ ($\\approx 9{,}2$ cm), perquè als triangles $ABE$ i $CBE$ aquests costats són oposats a angles de 45° i comparteixen $BE$, i $\\sin 75° = \\sin 105°$."},
+          {"apartat": null, "titol": "Vèrtex D: ortocentre del triangle BCE", "cos": "L'ortocentre és el punt on es tallen les **altures** (perpendiculars des de cada vèrtex al costat oposat). Tracem:\n\n- la perpendicular a $CE$ per $B$,\n- la perpendicular a $BC$ per $E$.\n\nCom que el triangle $BCE$ és **obtusangle en $C$** (105°), les altures es tallen **fora** del triangle, més enllà de $C$: cal perllongar-les. El punt de tall és **$D$**, a l'esquerra de $C$. Comprovació: la recta $DC$ ha de ser perpendicular a $BE$."},
+          {"apartat": null, "titol": "Vèrtex F: semicircumferència sobre AE i mediatriu", "cos": "- Angle $AFE = 90°$: per Tales, $F$ és a la **circumferència de diàmetre $AE$** (centre al punt mig de $AE$).\n- $AF = EF$: $F$ és a la **mediatriu de $AE$**.\n\nLa mediatriu talla la circumferència en dos punts; triem el que queda **a l'esquerra de $A$** (l'altre queda a la dreta). Així $AFE$ és un triangle rectangle isòsceles i $AF = EF = AE/\\sqrt{2} \\approx 8{,}0$ cm."},
+          {"apartat": null, "titol": "Vèrtex G: mediatriu de BE i distància AF", "cos": "- $BG = EG$: $G$ és a la **mediatriu de $BE$**.\n- $EG = AF$: amb centre $E$ i radi $AF$ ($\\approx 8$ cm) fem un arc.\n\nL'arc talla la mediatriu en dos punts; triem el que queda **a la dreta**, entre $F$ i $A$, perquè el polígon es pugui tancar sense que els costats es creuin."},
+          {"apartat": null, "titol": "Tancar el polígon", "cos": "Unim per ordre $A\\,B\\,C\\,D\\,E\\,F\\,G$ i tornem a $A$ amb línia gruixuda. El polígon és **còncau**: els vèrtexs $C$ i $F$ tenen angle interior més gran de 180°. Tots els vèrtexs queden per sota de $AB$."},
+          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2021-J/1B-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "$E$ per angle de 60° en $B$ i arc capaç de 45°; $C$ per angle de 105° en $B$ i arc capaç de 105° sobre $BE$; $D$ = intersecció de les altures (fora del triangle, a l'esquerra de $C$); $F$ = punt mig de la semicircumferència sobre $AE$; $G$ a la mediatriu de $BE$ a $\\approx 8$ cm de $E$."}
+        ],
+        "nota": "Mides calculades a partir de les coordenades del PDF (orientatives): $AB \\approx 9{,}2$ cm, $AE \\approx 11{,}3$ cm, $BE \\approx 12{,}6$ cm, $BC \\approx 6{,}5$ cm, $AF = EF = BG = EG \\approx 8{,}0$ cm. Curiositat: els punts $C$, $F$ i $A$ surten alineats (a la solució oficial hi ha una línia de punts que ho mostra)."
+      }
+    },
+    {
+      "id": "dibuix-2021-J-e2-a",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Canvi de pla vertical d'una peça de tres nivells",
+      "tema": "diedric",
+      "temes_secundaris": ["normalitzacio"],
+      "conceptes": ["canvi de pla", "nova projecció vertical", "interpretació de vistes", "visibilitat", "cotes"],
+      "dificultat": 3,
+      "pagines": [9],
+      "enunciat": "Interpreteu la figura proposada i determineu-ne la nova projecció ortogonal, de manera que la projecció vertical del segment $ab$-$a'b'$-$a''b''$ passi a ser $a'''b'''$ (canvi de pla vertical). Dibuixeu únicament les línies vistes. [2 punts per cada nivell. Es restaran 0,25 punts per cada línia errònia o absent en cada nivell.]",
+      "figures": [
+        {"src": "img/dibuix/2021-J/2A.png", "peu": "Planta, alçat i perfil (girat) de la peça, i nova línia de terra amb a‴ i b‴"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Interpretació de les vistes", "cos": "La peça està dibuixada sobre una quadrícula d'1 cm: la planta ocupa $5 \\times 7$ cm i l'alçat té **tres nivells d'1 cm** (altures 0–1, 1–2 i 2–3 cm). El segment $ab$ és a l'altura 0: $a'$ i $b'$ són a la base de l'alçat i en planta $ab$ és la diagonal que va de l'extrem esquerre al cantó inferior dret (longitud $5\\sqrt{2} \\approx 7{,}07$ cm).\n\n**Atenció: el perfil està girat 90°.** És al costat de la planta i comparteix amb ella la coordenada de profunditat (en vertical); la distància horitzontal des de la línia $a''b''$ és l'**altura**. Les diagonals de l'alçat i del perfil són cares inclinades a 45° (pugen 1 cm en 1 cm)."},
+          {"apartat": null, "titol": "La nova línia de terra", "cos": "En un canvi de pla vertical, el pla horitzontal no canvia: la planta es manté i **les altures (cotes) també**. Com que $ab$ és a l'altura 0, la seva nova projecció $a'''b'''$ queda sobre la nova línia de terra: la recta donada que passa per $a'''$ i $b'''$ és la **nova LT**.\n\nComprovació: les rectes $a\\,a'''$ i $b\\,b'''$ són perpendiculars a la nova LT. La nova LT forma 15° amb $ab$ (60° amb l'horitzontal, mentre que $ab$ en fa 45°), per això $a'''b''' = 7{,}07 \\cdot \\cos 15° \\approx 6{,}8$ cm, una mica més curt que $ab$."},
+          {"apartat": null, "titol": "Projectar cada vèrtex", "cos": "Per a cada vèrtex de la planta:\n\n1. Tracem per ell la **perpendicular a la nova LT** (línia de referència).\n2. Sobre aquesta perpendicular, a partir de la nova LT i pel costat contrari a la planta, portem la **cota** del punt, llegida a l'alçat (0, 1, 2 o 3 cm) o al perfil girat.\n\nÉs pràctic treballar per nivells: primer tots els vèrtexs a cota 0 i 1 (nivell inferior), després els de cota 1–2 i finalment els de 2–3. Les arestes verticals de la peça surten perpendiculars a la nova LT i les horitzontals conserven la direcció que tenen en planta projectada."},
+          {"apartat": null, "titol": "Cares inclinades", "cos": "Els extrems de cada aresta inclinada estan a cotes diferents (per exemple, d'1 a 2 cm): es projecten els dos extrems amb la seva cota i s'uneixen. Les cares inclinades a 45° apareixen a la nova vista com a paral·lelograms deformats."},
+          {"apartat": null, "titol": "Visibilitat", "cos": "L'observador del nou pla vertical mira perpendicularment a la nova LT des del costat de la planta, és a dir, des de baix a l'esquerra del paper cap a dalt a la dreta: veu la cara esquerra i la cara frontal de la peça. Un element tapa un altre si és **més lluny de la nova LT** en planta (més a prop de l'observador). Es dibuixen només les arestes vistes, amb línia gruixuda; les ocultes no es representen."},
+          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2021-J/2A-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Nova vista obtinguda projectant la planta perpendicularment a la LT $a'''b'''$ i portant-hi les cotes de l'alçat (nivells de 0–1, 1–2 i 2–3 cm); només línies vistes."}
+        ],
+        "nota": "Error típic: mesurar les altures des de la planta o prendre-les del perfil sense adonar-se que està girat 90°. Les cotes sempre es mesuren des de la LT a l'alçat i es porten des de la nova LT."
+      }
+    },
+    {
+      "id": "dibuix-2021-J-e2-b",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Cub amb la base en un pla inclinat i tetraedre inscrit",
+      "tema": "cossos",
+      "temes_secundaris": ["diedric"],
+      "conceptes": ["cub", "tetraedre", "pla projectant", "veritable magnitud", "perfil", "poliedres inscrits"],
+      "dificultat": 3,
+      "pagines": [11],
+      "enunciat": "Es donen les tres projeccions (planta, alçat i perfil) dels punts $a$, $b$, $c$ i $d$. Al perfil, $a''$, $b''$, $d''$ i $c''$ estan alineats.",
+      "figures": [
+        {"src": "img/dibuix/2021-J/2B.png", "peu": "Projeccions dels vèrtexs a, b, c, d del quadrat inferior; al perfil els quatre punts estan alineats"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu la projecció horitzontal, la projecció vertical i el perfil d'un cub que té els punts $a$-$a'$-$a''$, $b$-$b'$-$b''$, $c$-$c'$-$c''$ i $d$-$d'$-$d''$ com a vèrtexs del quadrat inferior, sense diferenciar les línies vistes de les ocultes.", "punts": 2.5},
+        {"id": "b", "enunciat": "Dibuixeu la projecció horitzontal, la projecció vertical i el perfil del tetraedre que està inscrit en el cub anterior i que té el segment $ac$-$a'c'$-$a''c''$ com a aresta inferior, sense diferenciar les línies vistes de les ocultes.", "punts": 2},
+        {"id": "c", "enunciat": "Dibuixeu una de les cares del tetraedre en veritable magnitud.", "punts": 1.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Interpretació de les dades", "cos": "Els quatre punts formen el quadrat inferior del cub ($a$ i $c$ són vèrtexs oposats). Al perfil, $a''$, $b''$, $d''$, $c''$ estan **alineats**: el pla de la base és **perpendicular al pla de perfil** (pla projectant de perfil) i el perfil el mostra de cantell, com una recta inclinada uns 30° respecte de l'horitzontal.\n\nEl perfil està situat a la dreta de l'alçat, a la mateixa altura; la distància horitzontal entre punts del perfil correspon a la diferència d'allunyament en planta (per exemple, de $a''$ a $b''$ hi ha la mateixa distància que de $a$ a $b$ en vertical a la planta)."},
+          {"apartat": "a", "titol": "Aresta del cub en veritable magnitud", "cos": "Cap de les tres vistes mostra $ab$ en veritable magnitud. La trobem per gir o pel mètode del triangle: hipotenusa d'un triangle rectangle que té com a catets la projecció horitzontal $ab$ i la diferència de cotes entre $a'$ i $b'$. Surt **$m = 4{,}0$ cm** (aresta del cub). De la mateixa manera, la diagonal $ac$ fa $n = 4\\sqrt{2} \\approx 5{,}66$ cm."},
+          {"apartat": "a", "titol": "Quadrat superior a partir del perfil", "cos": "Les arestes laterals del cub són perpendiculars a la base. Com que la base és perpendicular al pla de perfil, aquestes arestes són **paral·leles al pla de perfil** i s'hi veuen en veritable magnitud i perpendiculars a la recta $a''c''$.\n\nPer $a''$, $b''$, $c''$, $d''$ tracem perpendiculars a $a''c''$ (cap amunt) i hi portem $m = 4$ cm: obtenim els vèrtexs superiors $e''$, $f''$, $g''$, $h''$ (sobre una recta paral·lela a $a''c''$). Cada vèrtex superior puja $4 \\cos 30° \\approx 3{,}46$ cm i s'acosta $4 \\sin 30° = 2$ cm al pla vertical."},
+          {"apartat": "a", "titol": "Retornar a planta i alçat", "cos": "- **Alçat**: l'altura de cada vèrtex superior es porta des del perfil amb horitzontals; la coordenada lateral és la mateixa que la del vèrtex inferior corresponent (les arestes laterals no tenen component lateral), de manera que $e'$ és a la vertical de $a'$, etc.\n- **Planta**: cada vèrtex superior és a la vertical de la seva projecció a l'alçat i desplaçat cap a la LT la mateixa distància que es veu al perfil (la distància $s$ de la solució oficial).\n\nUnim els vèrtexs: dos quadrats (inferior i superior) i quatre arestes laterals paral·leles entre si a cada vista."},
+          {"apartat": "b", "titol": "Tetraedre inscrit en el cub", "cos": "Un tetraedre regular inscrit en un cub té per arestes **sis diagonals de cara** del cub. Si $ac$ és l'aresta inferior (diagonal de la base), els altres dos vèrtexs són els vèrtexs superiors **que no estan sobre $a$ ni sobre $c$**: els que queden sobre $b$ i sobre $d$ (anomenem-los $f$ i $h$).\n\nEl tetraedre és $a\\,c\\,f\\,h$: unim a les tres vistes $ac$, $af$, $ah$, $cf$, $ch$ i $fh$. Totes les arestes fan $n \\approx 5{,}66$ cm en l'espai."},
+          {"apartat": "c", "titol": "Cara en veritable magnitud", "cos": "Com que el tetraedre és regular, cada cara és un **triangle equilàter de costat $n$**, la diagonal de cara del cub. Prenem $n$ en veritable magnitud (la diagonal $ac$ de la base trobada a l'apartat a) i construïm el triangle equilàter: amb centre a cada extrem de $n$ i radi $n$ fem dos arcs que es tallen al tercer vèrtex.\n\nCostat: $n = 4\\sqrt{2} \\approx 5{,}66$ cm."},
+          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2021-J/2B-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Cub d'aresta 4,0 cm; al perfil la base és una recta inclinada ~30° i les arestes laterals hi surten perpendiculars i en veritable magnitud."},
+          {"apartat": "b", "valor": "Tetraedre $a\\,c\\,f\\,h$ amb $f$ i $h$ els vèrtexs superiors sobre $b$ i $d$; arestes = diagonals de cara."},
+          {"apartat": "c", "valor": "Triangle equilàter de costat $n = 4\\sqrt{2} \\approx 5{,}66$ cm."}
+        ],
+        "nota": "Els valors (aresta 4,0 cm, inclinació de la base ~30°) s'han calculat a partir de les coordenades del PDF. La clau de l'exercici és adonar-se que el pla de la base és projectant de perfil: sense el perfil caldria un canvi de pla."
+      }
+    },
+    {
+      "id": "dibuix-2021-J-e2-c",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "C",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Perspectiva cavallera d'una peça amb arcs i nínxols",
+      "tema": "axonometria",
+      "temes_secundaris": ["normalitzacio"],
+      "conceptes": ["perspectiva cavallera", "escala 2:1", "interpretació de vistes", "arcs en axonometria", "visibilitat"],
+      "dificultat": 3,
+      "pagines": [13],
+      "enunciat": "Interpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt $p$-$p'$-$p''$ a la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (cavallera sense reducció), a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [1,5 punts per la base, 1,5 punts per l'arc dret, 1,5 punts pel nínxol inferior i 1,5 punts pel superior]",
+      "figures": [
+        {"src": "img/dibuix/2021-J/2C.png", "peu": "Planta, alçat i perfil (girat 90°) del sòlid, terna de la cavallera (Y horitzontal, Z vertical, X a 30°, tots amb coeficient 1) i posició del punt P"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Interpretació de les vistes", "cos": "Les vistes estan dibuixades sobre una quadrícula de 0,5 cm. **El perfil està girat 90°**: és a l'esquerra de la planta, comparteix amb ella la coordenada $Y$ (en vertical) i la distància horitzontal des de la vora dreta (on hi ha $p''$) és l'**altura $Z$**. Les creus són centres d'arcs.\n\nMides reals (abans d'aplicar l'escala): prisma envolupant $X = 3$ cm, $Y = 3{,}5$ cm, $Z = 4$ cm. Prenem $Y = 0$ a la vora de baix de la planta i $X = 0$ a la vora esquerra. El punt $p$ és $(3;\\ 1;\\ 0)$ (vora dreta de la base)."},
+          {"apartat": null, "titol": "Els quatre volums", "cos": "- **Base (canal)**: de $X = 0{,}5$ a $3$, de $Y = 0$ a $2$. Secció (vista al perfil) en forma de J: placa de 0,5 cm de gruix de $Y = 1$ a $2$, i una vora corbada amb arc exterior de radi 1 cm i interior de 0,5 cm centrats a $(Y, Z) = (1;\\ 1)$; la vora acaba a $Z = 1$ cm entre $Y = 0$ i $0{,}5$.\n- **Paret**: de $X = 0$ a $2{,}5$, de $Y = 2$ a $3{,}5$, d'altura 4 cm a davant, amb la part de dalt arrodonida (quart de cercle de radi 1,5 cm centrat a $(Y, Z) = (2;\\ 2{,}5)$).\n- **Arc dret**: de $X = 2{,}5$ a $3$, de $Y = 2$ a $3{,}5$; secció = rectangle fins a $Z = 1$ més un quart de cercle de radi 1,5 cm centrat a $(Y, Z) = (3{,}5;\\ 1)$.\n- **Nínxols** (forats a la cara davantera de la paret, de $X = 0{,}5$ a $2$ i fins a $Y = 3$): l'inferior és un quart de cilindre de radi 1 cm centrat a $(Y, Z) = (2;\\ 0{,}5)$; el superior té el terra a $Z = 2$, fons vertical a $Y = 3$ fins a $Z = 2{,}5$ i sostre de quart de cercle de radi 1 cm centrat a $(2;\\ 2{,}5)$, que arriba a $Z = 3{,}5$ a la cara davantera."},
+          {"apartat": null, "titol": "Terna i escala", "cos": "Cavallera sense reducció: el pla $YZ$ es veu en veritable forma (Y horitzontal, Z vertical) i l'eix $X$ va a 30° per sota de l'horitzontal, també amb coeficient 1. A escala doble, **totes les mides es multipliquen per 2** en les tres direccions: prisma envolupant $6 \\times 7 \\times 8$ cm.\n\nCom que el pla $YZ$ es veu sense deformar, **els arcs del perfil es dibuixen amb compàs** (radis dobles: 3 cm, 2 cm, 1 cm) a cada pla $X$ = constant. Això fa la cavallera molt adequada per a aquesta peça."},
+          {"apartat": null, "titol": "Ordre de construcció", "cos": "1. Situem $p$ a $P$. A partir d'aquí, per arribar a un punt $(X, Y, Z)$: $2(X-3)$ cm en la direcció de l'eix $X$, $2(Y-1)$ cm en horitzontal i $2Z$ cm en vertical.\n2. **Base**: dibuixem la secció en J a la cara $X = 3$ (que passa per $P$) i la repetim al pla $X = 0{,}5$, és a dir, $2 \\cdot 2{,}5 = 5$ cm enrere seguint l'eix $X$; unim amb generatrius paral·leles a $X$ i amb les tangents comunes dels arcs.\n3. **Arc dret**: secció a $X = 3$ i a $X = 2{,}5$ (1 cm enrere).\n4. **Paret**: secció a $X = 2{,}5$ i a $X = 0$ amb el quart de cercle de dalt.\n5. **Nínxols**: a la cara davantera de la paret ($Y = 2$), rectangles de $X = 0{,}5$ a $2$; dins, els arcs que fan de sostre/fons es veuen parcialment.\n\nPer a cada arc paral·lel al pla $YZ$, n'hi ha prou de traslladar el centre i dibuixar-lo amb el mateix radi."},
+          {"apartat": null, "titol": "Visibilitat", "cos": "L'observador veu les cares que miren cap a $+X$ (davant, cap a baix a la dreta), cap a $-Y$ (esquerra del paper, la cara davantera de la paret on hi ha els nínxols) i cap amunt. La paret tapa part de la base i del canal; l'arc dret queda en primer terme a la dreta. Es dibuixen només les línies vistes, incloses les **generatrius de contorn** dels arcs (tangents comunes paral·leles a $X$)."},
+          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2021-J/2C-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Cavallera a escala 2:1 amb prisma envolupant de $6 \\times 7 \\times 8$ cm; arcs del perfil dibuixats amb compàs (radis 3, 2 i 1 cm) en plans paral·lels al de la terna YZ."}
+        ],
+        "nota": "Error típic: no adonar-se que el perfil està girat 90° i confondre altures amb profunditats. Les coordenades indicades són reals (abans de l'escala doble) i s'han llegit sobre la quadrícula de 0,5 cm de les vistes."
+      }
+    },
+    {
+      "id": "dibuix-2021-J-e2-d",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "D",
+      "tipus": "problema",
+      "punts": 6,
+      "titol": "Dimètrica DIN 5 d'un prisma decagonal de quatre nivells",
+      "tema": "axonometria",
+      "temes_secundaris": ["normalitzacio"],
+      "conceptes": ["dimètrica normalitzada", "coeficients de reducció", "decàgon regular", "escala 2:1", "interpretació de vistes", "visibilitat"],
+      "dificultat": 3,
+      "pagines": [15],
+      "enunciat": "Interpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt $p$-$p'$-$p''$ a la posició $P$ del paper, dibuixeu-ne l'axonometria amb la terna proposada (ortogonal dimètrica normalitzada DIN 5), a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [1,5 punts per cadascun dels quatre nivells de la figura]",
+      "figures": [
+        {"src": "img/dibuix/2021-J/2D.png", "peu": "Planta decagonal (X cap avall, Y cap a la dreta), alçat, perfil (girat 90°), terna DIN 5 (X i Z coeficient 1, Y coeficient 1/2) i posició de P"}
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Interpretació de les vistes", "cos": "La planta és un **decàgon regular** amb dos vèrtexs sobre l'eix $Y$ (horitzontal): distància entre costats paral·lels 4,0 cm, entre vèrtexs oposats 4,2 cm (radi $R \\approx 2{,}1$ cm, costat $\\approx 1{,}3$ cm). A la planta $X$ va cap avall i $Y$ cap a la dreta. L'alçat és a sobre de la planta (mostra $Y$ i $Z$) i té **quatre nivells d'1 cm**. **El perfil està girat 90°**: és a l'esquerra de la planta, comparteix amb ella la coordenada $X$ (en vertical) i l'altura $Z$ es compta en horitzontal des de la vora dreta (on hi ha $p''$).\n\nAnomenem $O$ el centre i $V_0, V_1, \\dots, V_9$ els vèrtexs, amb $V_0$ el de la dreta i seguint cap avall; $p = V_1$. Prisma envolupant: $X = 4{,}0$ cm, $Y = 4{,}2$ cm, $Z = 4$ cm."},
+          {"apartat": null, "titol": "Lectura dels quatre nivells", "cos": "- **Nivell 1** ($Z$ 0–1): el decàgon tallat per la corda $V_4V_1$ (horitzontal en planta, discontínua): hi falta la part de davant amb $V_2$ i $V_3$.\n- **Nivell 2** ($Z$ 1–2): el decàgon sencer excepte la **falca** $O\\,V_9\\,V_0\\,V_1$ (entre els dos radis continus de la planta), que només arriba a $Z = 1$.\n- **Nivell 3** ($Z$ 2–3): el decàgon tallat per la corda $V_5V_1$ (discontínua) i sense la falca.\n- **Nivell 4** ($Z$ 3–4): decàgon sencer sense la falca.\n\nA més, hi ha una **ranura** amb planta en forma de paral·lelogram $O\\,V_9\\,V_8\\,Q$ ($Q$ a 0,62 del radi $OV_6$; $QV_8$ paral·lel a $OV_9$): el seu terra puja de $Z = 1$ (a $OV_9$) a $Z = 2$ (a $QV_8$), i el material de sobre té la cara inferior inclinada de $Z = 4$ (a $OV_9$) a $Z = 3$ (a $QV_8$). Són les diagonals discontínues de l'alçat i les del perfil."},
+          {"apartat": null, "titol": "Terna DIN 5 i coordenades", "cos": "Dimètrica normalitzada DIN 5: l'eix $X$ forma uns 7° amb l'horitzontal (pendent 1/8), l'eix $Y$ uns 41° (pendent 7/8) i $Z$ és vertical. Coeficients: $X$ i $Z$ = 1, $Y$ = 1/2. A escala doble, les mides en $X$ i $Z$ es multipliquen per 2 i les de $Y$ per $2 \\cdot \\tfrac{1}{2} = 1$.\n\nCoordenades reals dels vèrtexs del decàgon respecte de $p = V_1$ ($\\Delta X$; $\\Delta Y$ en cm): $V_0$ (−1,24; 0,40), $V_2$ (0,76; −1,05), $V_3$ (0,76; −2,35), $V_4$ (0; −3,40), $V_5$ (−1,24; −3,80), $V_6$ (−2,47; −3,40), $V_7$ (−3,24; −2,35), $V_8$ (−3,24; −1,05), $V_9$ (−2,47; 0), $O$ (−1,24; −1,70), $Q$ (−2,00; −2,75). A l'axonometria: $2\\Delta X$ en direcció $X$, $1 \\cdot \\Delta Y$ en direcció $Y$ i $2Z$ en vertical."},
+          {"apartat": null, "titol": "Ordre de construcció", "cos": "1. Situem $p$ a $P$ i dibuixem el decàgon de la base en axonometria a partir de les coordenades (és més precís portar coordenades que intentar construir el decàgon deformat).\n2. Aixequem verticals de 2 cm per nivell (escala doble) a cada vèrtex.\n3. Nivell per nivell, de baix a dalt: retallem la part de davant amb la corda $V_4V_1$ (nivell 1) i $V_5V_1$ (nivell 3), i traiem la falca $O V_9 V_0 V_1$ per sobre del nivell 1.\n4. Dibuixem la ranura: cara inclinada del terra ($OV_9$ a cota 1, $QV_8$ a cota 2), fons vertical a $QV_8$ entre les cotes 2 i 3, i cara inclinada de sobre ($QV_8$ a cota 3, $OV_9$ a cota 4)."},
+          {"apartat": null, "titol": "Visibilitat", "cos": "Amb aquesta terna l'observador veu la cara superior i les cares que miren cap a $+X$ (a l'esquerra del paper) i cap a $+Y$ (a la dreta i cap avall). Per tant, es veuen la falca baixa al voltant de $P$, les parets verticals $OV_1$ i $OV_9$, la ranura i els entrants dels nivells 1 i 3 a l'esquerra. Les cares posteriors ($V_5$ a $V_8$) queden ocultes i no es dibuixen."},
+          {"apartat": null, "titol": "Resultat final", "cos": "![Solució oficial](img/dibuix/2021-J/2D-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": null, "valor": "Prisma decagonal (radi ≈ 2,1 cm, alçada 4 cm en quatre nivells) amb la falca $OV_9V_0V_1$ rebaixada a cota 1, entrants de davant als nivells 1 i 3 i ranura inclinada $OV_9V_8Q$; dibuixat en DIN 5 a escala 2:1 (Y amb coeficient 1/2)."}
+        ],
+        "nota": "La lectura dels nivells s'ha fet a partir de les coordenades de les línies del PDF i s'ha contrastat amb la solució oficial. Error típic: oblidar el coeficient 1/2 de l'eix Y o no tenir en compte que el perfil està girat 90°."
+      }
+    }
+  ]
+}

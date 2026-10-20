@@ -1,0 +1,319 @@
+{
+  "examen": {
+    "id": "fisica-2018-S",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2018,
+    "convocatoria": "setembre",
+    "serie": "3",
+    "pdf_examen": "pdfs/fisica/2018-S-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2018-S-solucio.pdf",
+    "estructura": "Part comuna obligatòria (P1 i P2) i part optativa: cal escollir UNA de les dues opcions (A o B) i fer-ne els problemes P3, P4 i P5. Cada problema val 2 punts."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2018-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Exoplaneta Ross 128 b: massa de l'estrella, radi del planeta i gravetat a la superfície",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": ["tercera llei de kepler", "força centrípeta", "densitat", "intensitat del camp gravitatori", "òrbita circular"],
+      "dificultat": 2,
+      "pagines": [1],
+      "enunciat": "Un dels exoplanetes amb més possibilitats d'acollir vida és el Ross 128 b. Gira al voltant de l'estrella Ross 128 amb un període orbital de $9{,}9$ dies, en una òrbita pràcticament circular de radi $7{,}42 \\times 10^{6}\\ \\text{km}$, i la seva massa és $1{,}35$ vegades la massa de la Terra.\n\n**Dades:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$. Massa de la Terra, $M_\\text{T} = 5{,}98 \\times 10^{24}\\ \\text{kg}$. Radi de la Terra, $R_\\text{T} = 6{,}37 \\times 10^{6}\\ \\text{m}$.",
+      "figures": [
+        {"src": "img/fisica/2018-S/e1.png", "peu": "Òrbita circular de l'exoplaneta Ross 128 b al voltant de l'estrella Ross 128"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Calculeu la massa de l'estrella Ross 128.", "punts": 1},
+        {"id": "b", "enunciat": "Suposant que l'exoplaneta Ross 128 b tingui la mateixa densitat que la Terra, calculeu-ne el radi i el mòdul de la intensitat del camp gravitatori a la seva superfície.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Període orbital: $T = 9{,}9\\ \\text{dies} = 9{,}9 \\cdot 86\\,400 = 8{,}554 \\times 10^{5}\\ \\text{s}$\n- Radi de l'òrbita: $r = 7{,}42 \\times 10^{6}\\ \\text{km} = 7{,}42 \\times 10^{9}\\ \\text{m}$\n- Massa del planeta: $m_X = 1{,}35\\,M_\\text{T}$\n- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$, $M_\\text{T} = 5{,}98 \\times 10^{24}\\ \\text{kg}$, $R_\\text{T} = 6{,}37 \\times 10^{6}\\ \\text{m}$\n- Incògnites: a) massa de l'estrella $M$; b) radi del planeta $r_X$ i gravetat superficial $g_X$."},
+          {"apartat": "a", "titol": "La força gravitatòria fa de força centrípeta", "cos": "El planeta descriu un moviment circular uniforme. L'única força que hi actua és l'atracció gravitatòria de l'estrella, que fa de força centrípeta ($F = m a_c$, amb $a_c = \\omega^2 r$ i $\\omega = 2\\pi/T$):\n\n$$\\frac{G M m}{r^2} = m\\,\\omega^2 r = m \\frac{4\\pi^2}{T^2} r \\quad\\Rightarrow\\quad G M = \\frac{4\\pi^2 r^3}{T^2}$$\n\nÉs la tercera llei de Kepler. Fixeu-vos que la massa del planeta $m$ s'anul·la: amb les dades de l'òrbita obtenim la massa del cos **central**."},
+          {"apartat": "a", "titol": "Massa de l'estrella", "cos": "$$M = \\frac{4\\pi^2 r^3}{G\\,T^2} = \\frac{4\\pi^2 \\,(7{,}42 \\times 10^{9})^3}{6{,}67 \\times 10^{-11} \\cdot (8{,}554 \\times 10^{5})^2} = 3{,}30 \\times 10^{29}\\ \\text{kg}$$\n\nResultat: **$M = 3{,}30 \\times 10^{29}\\ \\text{kg}$** (unes 0,17 masses solars: és una nana vermella)."},
+          {"apartat": "b", "titol": "Radi del planeta a partir de la igualtat de densitats", "cos": "La densitat és massa dividida per volum, $\\rho = \\dfrac{m}{\\frac{4}{3}\\pi R^3}$. Si les densitats són iguals:\n\n$$\\frac{M_\\text{T}}{\\frac{4}{3}\\pi R_\\text{T}^3} = \\frac{m_X}{\\frac{4}{3}\\pi r_X^3} \\quad\\Rightarrow\\quad \\frac{r_X^3}{R_\\text{T}^3} = \\frac{m_X}{M_\\text{T}} = 1{,}35$$\n\n$$r_X = R_\\text{T}\\,\\sqrt[3]{1{,}35} = 6{,}37 \\times 10^{6} \\cdot 1{,}105 = 7{,}04 \\times 10^{6}\\ \\text{m}$$\n\nResultat: **$r_X = 7{,}04 \\times 10^{6}\\ \\text{m}$**"},
+          {"apartat": "b", "titol": "Intensitat del camp gravitatori a la superfície", "cos": "El camp gravitatori creat per una esfera a la seva superfície és $g = \\dfrac{G m}{R^2}$:\n\n$$g_X = \\frac{G\\, m_X}{r_X^2} = \\frac{6{,}67 \\times 10^{-11} \\cdot 1{,}35 \\cdot 5{,}98 \\times 10^{24}}{(7{,}04 \\times 10^{6})^2} = 10{,}9\\ \\text{m/s}^2$$\n\nResultat: **$g_X = 10{,}9\\ \\text{m/s}^2 = 10{,}9\\ \\text{N/kg}$**, una mica més que a la Terra ($9{,}83\\ \\text{m/s}^2$ amb aquestes dades)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$M = 3{,}30 \\times 10^{29}\\ \\text{kg}$"},
+          {"apartat": "b", "valor": "$r_X = 7{,}04 \\times 10^{6}\\ \\text{m}$; $g_X = 10{,}9\\ \\text{m/s}^2$"}
+        ],
+        "nota": "Drecera per a l'apartat b): amb la mateixa densitat, $g = \\frac{4}{3}\\pi G \\rho R$ és proporcional al radi, de manera que $g_X = g_\\text{T}\\,\\sqrt[3]{1{,}35} = 9{,}83 \\cdot 1{,}105 = 10{,}9\\ \\text{m/s}^2$. Error típic: oblidar passar els km a m o els dies a s."
+      }
+    },
+    {
+      "id": "fisica-2018-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "MHS a partir de la gràfica x-t i efectes de reflexió, refracció i Doppler sobre una ona sonora",
+      "tema": "oscillacions",
+      "temes_secundaris": ["ones"],
+      "conceptes": ["moviment harmònic simple", "amplitud", "freqüència", "equació del moviment", "efecte doppler", "longitud d'ona"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "La figura mostra la gràfica posició-temps d'un objecte que descriu un moviment harmònic simple (MHS).",
+      "figures": [
+        {"src": "img/fisica/2018-S/e2.png", "peu": "Gràfica posició-temps x(t) del MHS (x en m, t en s)"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Determineu l'amplitud i la freqüència i escriviu l'equació del moviment $x(t)$, incloent-hi totes les unitats. Representeu la gràfica $x$-$t$ d'un moviment harmònic simple (MHS) que tingui la mateixa amplitud però la meitat de freqüència (les escales dels eixos han d'estar indicades clarament).", "punts": 1},
+        {"id": "b", "enunciat": "Les vibracions de l'objecte generen una ona sonora en el medi que l'envolta. Quins efectes sobre la freqüència i la longitud d'ona d'aquesta ona sonora tindran els canvis següents?\n\n- L'ona es reflecteix en una superfície. [0,3 punts]\n- L'ona passa de l'aire a l'aigua (on la velocitat del so és més gran). [0,3 punts]\n- El focus sonor es posa en moviment en direcció a nosaltres. [0,4 punts]", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Amplitud: lectura a la gràfica", "cos": "L'amplitud és l'elongació màxima, el valor màxim de $x$. A la gràfica, la corba oscil·la entre $-0{,}02$ i $+0{,}02\\ \\text{m}$:\n\n**$A = 0{,}02\\ \\text{m}$**"},
+          {"apartat": "a", "titol": "Període i freqüència", "cos": "Per llegir bé el període comptem quantes oscil·lacions completes hi ha en un interval llarg: entre $t = 0$ i $t = 0{,}04\\ \\text{s}$ hi caben **5 oscil·lacions** (5 màxims). Per tant:\n\n$$T = \\frac{0{,}04\\ \\text{s}}{5} = 0{,}008\\ \\text{s} \\qquad f = \\frac{1}{T} = \\frac{1}{0{,}008} = 125\\ \\text{Hz}$$\n\nResultat: **$f = 125\\ \\text{Hz}$** ($T = 8\\ \\text{ms}$)."},
+          {"apartat": "a", "titol": "Equació del moviment", "cos": "L'equació general d'un MHS és $x(t) = A\\cos(\\omega t + \\varphi_0)$ amb $\\omega = 2\\pi f = 2\\pi \\cdot 125 = 250\\pi\\ \\text{rad/s}$.\n\nA $t = 0$ la gràfica comença en el màxim ($x = +A$), i $\\cos(\\varphi_0) = 1$ dona $\\varphi_0 = 0$:\n\n$$x(t) = 0{,}02\\ \\text{m} \\cdot \\cos\\left(250\\pi\\ \\tfrac{\\text{rad}}{\\text{s}}\\, t\\right)$$\n\nAmb sinus és equivalent: $x(t) = 0{,}02\\ \\text{m} \\cdot \\sin\\left(250\\pi\\ \\tfrac{\\text{rad}}{\\text{s}}\\, t + \\tfrac{\\pi}{2}\\ \\text{rad}\\right)$."},
+          {"apartat": "a", "titol": "Gràfica amb la meitat de freqüència", "cos": "Si la freqüència es redueix a la meitat, $f' = 62{,}5\\ \\text{Hz}$ i el període es duplica: $T' = 1/62{,}5 = 0{,}016\\ \\text{s}$. L'amplitud continua sent $0{,}02\\ \\text{m}$. Ara, en l'interval de $0$ a $0{,}08\\ \\text{s}$ hi caben $0{,}08/0{,}016 = 5$ oscil·lacions (abans n'hi havia 10):\n\n$$x'(t) = 0{,}02\\ \\text{m} \\cdot \\cos\\left(125\\pi\\ \\tfrac{\\text{rad}}{\\text{s}}\\, t\\right)$$\n\n![Gràfica x-t amb la meitat de freqüència: 5 oscil·lacions entre 0 i 0,08 s (solució oficial)](img/fisica/2018-S/e2-sol.png)"},
+          {"apartat": "b", "titol": "Idea clau: qui fixa la freqüència i qui la velocitat", "cos": "La **freqüència** d'una ona la imposa el **focus** que vibra; la **velocitat** de propagació la fixa el **medi**. La longitud d'ona les relaciona: $\\lambda = \\dfrac{v}{f}$."},
+          {"apartat": "b", "titol": "Reflexió en una superfície", "cos": "En reflectir-se, l'ona continua en el mateix medi (mateixa $v$) i el focus no ha canviat (mateixa $f$). Per tant:\n\n**Ni la freqüència ni la longitud d'ona canvien.**"},
+          {"apartat": "b", "titol": "Pas de l'aire a l'aigua (refracció)", "cos": "La freqüència no canvia (depèn del focus), però la velocitat augmenta. Com que $\\lambda = v/f$:\n\n**La freqüència es manté i la longitud d'ona augmenta** (en proporció a la velocitat: $\\lambda_\\text{aigua}/\\lambda_\\text{aire} = v_\\text{aigua}/v_\\text{aire}$)."},
+          {"apartat": "b", "titol": "Focus que s'acosta (efecte Doppler)", "cos": "Quan el focus es mou cap a nosaltres, cada nou front d'ona s'emet més a prop del que l'anterior: els fronts arriben més junts. És l'**efecte Doppler**:\n\n$$f' = f\\,\\frac{v}{v - v_\\text{focus}} > f$$\n\n**Percebem una freqüència més gran (so més agut) i una longitud d'ona més petita** (distància més curta entre fronts successius)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$A = 0{,}02\\ \\text{m}$; $f = 125\\ \\text{Hz}$; $x(t) = 0{,}02\\cos(250\\pi t)$ (m, s); amb $f/2$: $T' = 0{,}016\\ \\text{s}$"},
+          {"apartat": "b", "valor": "Reflexió: $f$ i $\\lambda$ iguals. Aire → aigua: $f$ igual, $\\lambda$ augmenta. Focus que s'acosta: $f$ percebuda augmenta, $\\lambda$ disminueix."}
+        ],
+        "nota": "La gràfica nova ha de tenir els eixos amb escala (t en s, x en m) i la mateixa amplitud; l'error típic és dibuixar-la amb més oscil·lacions (doblar la freqüència en lloc de reduir-la a la meitat)."
+      }
+    },
+    {
+      "id": "fisica-2018-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Pols en suspensió a la Lluna: relació càrrega/massa d'equilibri i moviment a la cara fosca",
+      "tema": "camp-electric",
+      "temes_secundaris": ["mecanica"],
+      "conceptes": ["força elèctrica", "pes", "equilibri de forces", "segona llei de newton", "mrua"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "A prop de la Lluna hi ha un camp elèctric que, en la cara il·luminada, està dirigit cap a l'exterior de la Lluna i, en la cara fosca, cap al centre. Tot i que a la Lluna no hi ha atmosfera, aquests camps elèctrics poden mantenir partícules de pols en suspensió.\n\nA la superfície de la cara il·luminada, el mòdul del camp és $10\\ \\text{N C}^{-1}$, mentre que a la superfície de la cara fosca és $1{,}0\\ \\text{N C}^{-1}$.\n\n**Dada:** $g\\ (\\text{Lluna}) = 1{,}62\\ \\text{m s}^{-2}$.",
+      "figures": [
+        {"src": "img/fisica/2018-S/e3-a.png", "peu": "Camp elèctric a la cara il·luminada (cap enfora, 10 N/C) i a la cara fosca (cap al centre, 1,0 N/C) de la Lluna"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Calculeu la relació $\\dfrac{q}{m}$ (càrrega elèctrica/massa) que ha de tenir una partícula de pols situada a la cara il·luminada de la Lluna perquè es trobi en situació d'equilibri de forces. Expliciteu el signe que ha de tenir la càrrega elèctrica.", "punts": 1},
+        {"id": "b", "enunciat": "Considereu una partícula amb una càrrega $q = +10\\ \\text{nC}$ i una massa $m = 0{,}020\\ \\text{mg}$ situada a la cara fosca de la Lluna. Calculeu la força total que actua sobre la partícula i el temps que tardarà a recórrer 10 metres partint del repòs.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Cara il·luminada: $E_1 = 10\\ \\text{N/C}$, cap enfora\n- Cara fosca: $E_2 = 1{,}0\\ \\text{N/C}$, cap al centre\n- $g_\\text{L} = 1{,}62\\ \\text{m/s}^2$ (cap al centre)\n- b) $q = +10\\ \\text{nC} = 1{,}0 \\times 10^{-8}\\ \\text{C}$; $m = 0{,}020\\ \\text{mg} = 0{,}020 \\times 10^{-6}\\ \\text{kg} = 2{,}0 \\times 10^{-8}\\ \\text{kg}$; $d = 10\\ \\text{m}$, $v_0 = 0$\n- Incògnites: a) $q/m$ i signe; b) força total i temps."},
+          {"apartat": "a", "titol": "Condició d'equilibri", "cos": "Sobre la partícula actuen el pes (cap al centre de la Lluna) i la força elèctrica $\\vec F_e = q\\vec E$. Per estar en equilibri, $\\sum \\vec F = 0$: la força elèctrica ha de ser igual en mòdul al pes i de sentit contrari, és a dir, **cap enfora**.\n\n$$F_e = F_g \\quad\\Rightarrow\\quad |q|\\,E = m\\,g \\quad\\Rightarrow\\quad \\frac{|q|}{m} = \\frac{g}{E}$$"},
+          {"apartat": "a", "titol": "Valor de q/m i signe de la càrrega", "cos": "$$\\frac{q}{m} = \\frac{1{,}62\\ \\text{m/s}^2}{10\\ \\text{N/C}} = 0{,}162\\ \\text{C/kg}$$\n\nCom que a la cara il·luminada el camp apunta **cap enfora** i la força elèctrica també ha d'anar cap enfora, $\\vec F_e$ i $\\vec E$ tenen el mateix sentit: la càrrega ha de ser **positiva**.\n\nResultat: **$q/m = +0{,}162\\ \\text{C/kg}$ (càrrega positiva)**"},
+          {"apartat": "b", "titol": "Forces a la cara fosca", "cos": "A la cara fosca el camp apunta cap al centre. Com que la càrrega és positiva, la força elèctrica també va cap al centre, igual que el pes: **les dues forces se sumen**.\n\n$$F_g = m g = 2{,}0 \\times 10^{-8} \\cdot 1{,}62 = 3{,}24 \\times 10^{-8}\\ \\text{N}$$\n\n$$F_e = q E = 1{,}0 \\times 10^{-8} \\cdot 1{,}0 = 1{,}0 \\times 10^{-8}\\ \\text{N}$$\n\n$$\\sum F = m g + q E = 3{,}24 \\times 10^{-8} + 1{,}0 \\times 10^{-8} = 4{,}24 \\times 10^{-8}\\ \\text{N}$$\n\nResultat: **$\\sum F = 4{,}2 \\times 10^{-8}\\ \\text{N}$, dirigida cap al centre de la Lluna.**"},
+          {"apartat": "b", "titol": "Acceleració (segona llei de Newton)", "cos": "En 10 m, $g$ i $E$ pràcticament no canvien, de manera que la força és constant i el moviment és rectilini uniformement accelerat:\n\n$$a = \\frac{\\sum F}{m} = \\frac{4{,}24 \\times 10^{-8}}{2{,}0 \\times 10^{-8}} = 2{,}12\\ \\text{m/s}^2$$\n\n(cap al centre de la Lluna)."},
+          {"apartat": "b", "titol": "Temps per recórrer 10 m des del repòs", "cos": "Amb l'equació del MRUA i $v_0 = 0$:\n\n$$d = \\frac{1}{2} a t^2 \\quad\\Rightarrow\\quad t = \\sqrt{\\frac{2d}{a}} = \\sqrt{\\frac{2 \\cdot 10}{2{,}12}} = \\sqrt{\\frac{10}{1{,}06}} = 3{,}07\\ \\text{s}$$\n\nResultat: **$t = 3{,}07\\ \\text{s}$**"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$q/m = 0{,}162\\ \\text{C/kg}$, càrrega positiva"},
+          {"apartat": "b", "valor": "$\\sum F = 4{,}24 \\times 10^{-8}\\ \\text{N}$ cap al centre; $a = 2{,}12\\ \\text{m/s}^2$; $t = 3{,}07\\ \\text{s}$"}
+        ],
+        "nota": "Compte amb la conversió de la massa: $1\\ \\text{mg} = 10^{-6}\\ \\text{kg}$, per tant $0{,}020\\ \\text{mg} = 2{,}0 \\times 10^{-8}\\ \\text{kg}$."
+      }
+    },
+    {
+      "id": "fisica-2018-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Partícula carregada en un camp magnètic uniforme: força, velocitat, període i energia cinètica",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [],
+      "conceptes": ["força de lorentz", "moviment circular uniforme", "radi de la trajectòria", "període", "energia cinètica"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "Una partícula amb una càrrega $q = -1{,}60 \\times 10^{-19}\\ \\text{C}$ i una massa $m = 1{,}70 \\times 10^{-27}\\ \\text{kg}$ entra amb una velocitat $\\vec v = v\\,\\vec\\imath$ en una regió de l'espai en la qual hi ha un camp magnètic uniforme $\\vec B = -0{,}50\\ \\text{T}\\ \\vec k$. El radi de la trajectòria circular que descriu és $r = 0{,}30\\ \\text{m}$.",
+      "figures": [
+        {"src": "img/fisica/2018-S/e4-a.png", "peu": "La partícula entra amb velocitat cap a la dreta en una regió de camp magnètic entrant al paper"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu la força que fa el camp sobre la partícula en l'instant inicial i calculeu la velocitat $v$.", "punts": 1},
+        {"id": "b", "enunciat": "Calculeu el període del moviment i la velocitat angular. Calculeu l'energia cinètica de la partícula en el moment que entra en el camp magnètic i també després de fer una volta completa.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $q = -1{,}60 \\times 10^{-19}\\ \\text{C}$ (negativa), $m = 1{,}70 \\times 10^{-27}\\ \\text{kg}$\n- $\\vec v = v\\,\\vec\\imath$ (cap a la dreta); $\\vec B = -0{,}50\\ \\text{T}\\ \\vec k$ (entrant al paper, $\\otimes$, si $\\vec k$ surt del paper)\n- $r = 0{,}30\\ \\text{m}$\n- Incògnites: a) $\\vec F$ inicial i $v$; b) $T$, $\\omega$ i $E_c$ inicial i després d'una volta."},
+          {"apartat": "a", "titol": "Direcció i sentit de la força magnètica", "cos": "La força de Lorentz sobre una càrrega en moviment és $\\vec F = q\\,\\vec v \\times \\vec B$. Calculem el producte vectorial:\n\n$$\\vec v \\times \\vec B = v\\,\\vec\\imath \\times (-B\\,\\vec k) = -vB\\,(\\vec\\imath \\times \\vec k) = -vB\\,(-\\vec\\jmath) = vB\\,\\vec\\jmath$$\n\n$$\\vec F = q\\,vB\\,\\vec\\jmath$$\n\nCom que $q < 0$, la força apunta en el sentit $-\\vec\\jmath$: **cap avall** (perpendicular a la velocitat). La partícula gira en sentit horari.\n\n![Força inicial cap avall, perpendicular a la velocitat, i trajectòria circular (solució oficial)](img/fisica/2018-S/e4-a-sol.png)"},
+          {"apartat": "a", "titol": "Velocitat: la força magnètica fa de força centrípeta", "cos": "La força magnètica és sempre perpendicular a la velocitat, per tant fa de força centrípeta ($F = m a_c$):\n\n$$|q|\\,v B = m\\,\\frac{v^2}{r} \\quad\\Rightarrow\\quad v = \\frac{|q|\\,B\\,r}{m}$$\n\n$$v = \\frac{1{,}60 \\times 10^{-19} \\cdot 0{,}50 \\cdot 0{,}30}{1{,}70 \\times 10^{-27}} = 1{,}41 \\times 10^{7}\\ \\text{m/s}$$\n\nResultat: **$v = 1{,}41 \\times 10^{7}\\ \\text{m/s}$**"},
+          {"apartat": "b", "titol": "Període i velocitat angular", "cos": "En un MCU, en un període es recorre una circumferència sencera:\n\n$$T = \\frac{2\\pi r}{v} = \\frac{2\\pi \\cdot 0{,}30}{1{,}41 \\times 10^{7}} = 1{,}34 \\times 10^{-7}\\ \\text{s}$$\n\n$$\\omega = \\frac{2\\pi}{T} = \\frac{v}{r} = \\frac{1{,}41 \\times 10^{7}}{0{,}30} = 4{,}71 \\times 10^{7}\\ \\text{rad/s}$$\n\nResultat: **$T = 1{,}34 \\times 10^{-7}\\ \\text{s}$**, **$\\omega = 4{,}71 \\times 10^{7}\\ \\text{rad/s}$**"},
+          {"apartat": "b", "titol": "Energia cinètica inicial", "cos": "$$E_c = \\frac{1}{2} m v^2 = \\frac{1}{2} \\cdot 1{,}70 \\times 10^{-27} \\cdot (1{,}41 \\times 10^{7})^2 = 1{,}69 \\times 10^{-13}\\ \\text{J}$$\n\nResultat: **$E_c = 1{,}69 \\times 10^{-13}\\ \\text{J}$**"},
+          {"apartat": "b", "titol": "Energia cinètica després d'una volta", "cos": "La força magnètica és perpendicular a la velocitat en tot moment: no hi ha acceleració tangencial i **no fa treball** ($W = \\vec F \\cdot \\Delta\\vec r = 0$). El mòdul de la velocitat es manté constant (MCU) i, pel teorema de l'energia cinètica, $\\Delta E_c = W = 0$.\n\nResultat: després d'una volta, **$E_c = 1{,}69 \\times 10^{-13}\\ \\text{J}$** (la mateixa)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Força inicial cap avall ($-\\vec\\jmath$); $v = 1{,}41 \\times 10^{7}\\ \\text{m/s}$"},
+          {"apartat": "b", "valor": "$T = 1{,}34 \\times 10^{-7}\\ \\text{s}$; $\\omega = 4{,}71 \\times 10^{7}\\ \\text{rad/s}$; $E_c = 1{,}69 \\times 10^{-13}\\ \\text{J}$ a l'entrada i després d'una volta"}
+        ],
+        "nota": "La solució oficial dona $T = 1{,}33 \\times 10^{-7}\\ \\text{s}$ i $\\omega = 4{,}72 \\times 10^{7}\\ \\text{rad/s}$ per arrodoniments intermedis; amb més precisió surten $1{,}34 \\times 10^{-7}\\ \\text{s}$ i $4{,}71 \\times 10^{7}\\ \\text{rad/s}$. Error típic: oblidar que la càrrega és negativa i dibuixar la força cap amunt."
+      }
+    },
+    {
+      "id": "fisica-2018-S-e5-a",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Carboni 14: reaccions de formació i desintegració β⁻ i percentatge restant en una mòmia",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": ["desintegració beta", "reacció nuclear", "període de semidesintegració", "constant de desintegració", "datació amb carboni 14"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "El carboni 14 ($^{14}\\text{C}$) és un isòtop radioactiu que es produeix a les capes altes de la troposfera i de l'estratosfera. La datació de restes orgàniques es basa en la desintegració d'aquest isòtop, que passa als organismes a través de la cadena alimentària. La desintegració d'una mostra de $^{14}\\text{C}$ produeix partícules $\\beta^-$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Completeu la reacció de formació del $^{14}\\text{C}$:\n\n$$^{14}_{7}\\text{N} + \\,? \\to {}^{14}_{6}\\text{C} + {}^{1}_{1}\\text{H}$$\n\nCompleteu també la reacció de desintegració d'aquest isòtop:\n\n$$^{14}_{6}\\text{C} \\to \\ldots$$", "punts": 1},
+        {"id": "b", "enunciat": "Quin percentatge quedarà del $^{14}\\text{C}$ que tenia originalment una mòmia de $4\\,000$ anys d'antiguitat si sabem que el període de semidesintegració del $^{14}\\text{C}$ és de $5\\,730$ anys?", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Conservació del nombre màssic i de la càrrega", "cos": "En tota reacció nuclear es conserven el **nombre màssic** $A$ (superíndex, nombre de nucleons) i el **nombre atòmic** $Z$ (subíndex, càrrega). Per a la partícula desconeguda $^{A}_{Z}\\text{X}$:\n\n- Nombre màssic: $14 + A = 14 + 1 \\Rightarrow A = 1$\n- Nombre atòmic: $7 + Z = 6 + 1 \\Rightarrow Z = 0$\n\nUna partícula amb $A = 1$ i $Z = 0$ és un **neutró**:\n\n$$^{14}_{7}\\text{N} + {}^{1}_{0}\\text{n} \\to {}^{14}_{6}\\text{C} + {}^{1}_{1}\\text{H}$$\n\n(Els neutrons provenen dels raigs còsmics que xoquen amb l'atmosfera.)"},
+          {"apartat": "a", "titol": "Desintegració β⁻ del carboni 14", "cos": "En la desintegració $\\beta^-$ un neutró del nucli es transforma en un protó, i s'emeten un electró ($^{0}_{-1}\\beta$) i un antineutrí electrònic. El nombre màssic no canvia i el nombre atòmic augmenta en 1 ($Z = 6 \\to 7$): el carboni es converteix en nitrogen.\n\n$$^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + {}^{0}_{-1}\\beta^- + {}^{0}_{0}\\bar\\nu_e$$\n\nComprovació: $14 = 14 + 0 + 0$; $6 = 7 - 1 + 0$."},
+          {"apartat": "b", "titol": "Llei de desintegració radioactiva", "cos": "El nombre de nuclis que queden decreix exponencialment:\n\n$$N(t) = N_0\\,e^{-\\lambda t}, \\qquad \\lambda = \\frac{\\ln 2}{t_{1/2}}$$\n\nConstant de desintegració:\n\n$$\\lambda = \\frac{\\ln 2}{5\\,730\\ \\text{anys}} = 1{,}21 \\times 10^{-4}\\ \\text{anys}^{-1}$$"},
+          {"apartat": "b", "titol": "Percentatge que queda després de 4 000 anys", "cos": "$$\\frac{N(4\\,000)}{N_0} \\cdot 100 = e^{-1{,}21 \\times 10^{-4} \\cdot 4\\,000} \\cdot 100 = e^{-0{,}484} \\cdot 100 = 61{,}6\\ \\%$$\n\nResultat: **queda un $61{,}6\\ \\%$ del $^{14}\\text{C}$ original.**\n\nÉs raonable: 4 000 anys és menys d'un període de semidesintegració, per tant ha de quedar més del 50 %."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$^{14}_{7}\\text{N} + {}^{1}_{0}\\text{n} \\to {}^{14}_{6}\\text{C} + {}^{1}_{1}\\text{H}$; $\\ ^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + {}^{0}_{-1}\\beta^- + \\bar\\nu_e$"},
+          {"apartat": "b", "valor": "Queda el $61{,}6\\ \\%$"}
+        ],
+        "nota": "Mètode alternatiu equivalent: $N/N_0 = (1/2)^{t/t_{1/2}} = 0{,}5^{4000/5730} = 0{,}616$. Les unitats de $\\lambda$ i de $t$ han de ser coherents (aquí, anys)."
+      }
+    },
+    {
+      "id": "fisica-2018-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Càrregues d'un núvol de tempesta: vector camp elèctric en un punt i energia potencial electrostàtica",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": ["llei de coulomb", "camp elèctric", "principi de superposició", "energia potencial electrostàtica", "càrregues puntuals"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "Un model simplificat de distribució de càrregues elèctriques a l'interior d'un núvol es pot aproximar a dues càrregues puntuals situades a diferents altures. La figura mostra aquesta distribució aproximada, que consta d'una càrrega de $+40\\ \\text{C}$ situada a $10\\ \\text{km}$ d'altura i una càrrega de $-30\\ \\text{C}$ situada a $4\\ \\text{km}$ d'altura.\n\n**Dada:** $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 9{,}0 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$.",
+      "figures": [
+        {"src": "img/fisica/2018-S/e3-b.png", "peu": "Núvol amb una càrrega positiva a 10 km d'altura i una de negativa a 4 km; el punt P és a 6 km horitzontalment de la càrrega positiva"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Calculeu el vector camp elèctric que crea el núvol en el punt P que s'indica a la figura.", "punts": 1},
+        {"id": "b", "enunciat": "Calculeu l'energia potencial electroestàtica emmagatzemada en el núvol.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $q_1 = +40\\ \\text{C}$ a $10\\ \\text{km}$ d'altura; $q_2 = -30\\ \\text{C}$ a $4\\ \\text{km}$ d'altura, a la mateixa vertical\n- P és a la mateixa altura que $q_1$ i a $6\\ \\text{km}$ a la seva dreta\n- Distàncies: $d_1 = 6\\ \\text{km} = 6 \\times 10^{3}\\ \\text{m}$; $q_2$ és $6\\ \\text{km}$ per sota de P i $6\\ \\text{km}$ a l'esquerra, $d_2 = \\sqrt{6^2 + 6^2} = 6\\sqrt{2}\\ \\text{km} = 8{,}49 \\times 10^{3}\\ \\text{m}$\n- Distància entre càrregues: $d = 10 - 4 = 6\\ \\text{km}$\n- $k = 9{,}0 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$\n- Eixos: $\\vec\\imath$ horitzontal cap a la dreta, $\\vec\\jmath$ vertical cap amunt."},
+          {"apartat": "a", "titol": "Camp creat per la càrrega positiva", "cos": "El camp d'una càrrega puntual té mòdul $E = k\\dfrac{|q|}{d^2}$; si la càrrega és positiva, apunta cap enfora (s'allunya de la càrrega). A P, $\\vec E_1$ apunta cap a la dreta:\n\n$$\\vec E_1 = k\\frac{q_1}{d_1^2}\\,\\vec\\imath = 9{,}0 \\times 10^{9}\\frac{40}{(6 \\times 10^{3})^2}\\,\\vec\\imath = 1{,}0 \\times 10^{4}\\,\\vec\\imath\\ \\text{N/C}$$"},
+          {"apartat": "a", "titol": "Camp creat per la càrrega negativa", "cos": "Una càrrega negativa crea un camp dirigit **cap a ella**. Des de P, $q_2$ és avall i a l'esquerra, a $45^\\circ$ (perquè les dues distàncies són de 6 km):\n\n$$E_2 = k\\frac{|q_2|}{d_2^2} = 9{,}0 \\times 10^{9}\\frac{30}{2 \\cdot (6 \\times 10^{3})^2} = 3{,}75 \\times 10^{3}\\ \\text{N/C}$$\n\n$$\\vec E_2 = -E_2\\cos 45^\\circ\\,\\vec\\imath - E_2\\sin 45^\\circ\\,\\vec\\jmath = -2{,}65 \\times 10^{3}\\,(\\vec\\imath + \\vec\\jmath)\\ \\text{N/C}$$\n\n![Camps E1 (cap a la dreta) i E2 (cap a la càrrega negativa) al punt P (solució oficial)](img/fisica/2018-S/e3-b-sol.png)"},
+          {"apartat": "a", "titol": "Camp total (principi de superposició)", "cos": "El camp total és la suma vectorial dels dos camps:\n\n$$\\vec E = \\vec E_1 + \\vec E_2 = (1{,}0 \\times 10^{4} - 2{,}65 \\times 10^{3})\\,\\vec\\imath - 2{,}65 \\times 10^{3}\\,\\vec\\jmath$$\n\n$$\\vec E = (7{,}35 \\times 10^{3}\\,\\vec\\imath - 2{,}65 \\times 10^{3}\\,\\vec\\jmath)\\ \\text{N/C}$$\n\nMòdul i direcció:\n\n$$E = \\sqrt{E_x^2 + E_y^2} = 7{,}81 \\times 10^{3}\\ \\text{N/C}, \\qquad \\beta = \\arctan\\frac{|E_y|}{E_x} = 19{,}8^\\circ$$\n\nResultat: **$\\vec E = (7{,}35 \\times 10^{3}\\,\\vec\\imath - 2{,}65 \\times 10^{3}\\,\\vec\\jmath)\\ \\text{N/C}$**, de mòdul $7{,}81 \\times 10^{3}\\ \\text{N/C}$ i $19{,}8^\\circ$ per sota de l'horitzontal."},
+          {"apartat": "b", "titol": "Energia potencial electrostàtica del sistema", "cos": "L'energia potencial d'un sistema de dues càrregues puntuals és el treball necessari per portar-les des de l'infinit fins a la seva posició:\n\n$$U = k\\frac{q_1 q_2}{d}$$\n\n$$U = 9{,}0 \\times 10^{9}\\,\\frac{40 \\cdot (-30)}{6 \\times 10^{3}} = -1{,}8 \\times 10^{9}\\ \\text{J}$$\n\nResultat: **$U = -1{,}8 \\times 10^{9}\\ \\text{J}$**. El signe negatiu indica que les càrregues (de signe contrari) s'atrauen: caldria aportar $1{,}8 \\times 10^{9}\\ \\text{J}$ per separar-les fins a l'infinit."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$\\vec E = (7{,}35 \\times 10^{3}\\,\\vec\\imath - 2{,}65 \\times 10^{3}\\,\\vec\\jmath)\\ \\text{N/C}$; $E = 7{,}81 \\times 10^{3}\\ \\text{N/C}$, $19{,}8^\\circ$ sota l'horitzontal"},
+          {"apartat": "b", "valor": "$U = -1{,}8 \\times 10^{9}\\ \\text{J}$"}
+        ],
+        "nota": "Error típic: fer servir les altures (10 km i 4 km) com a distàncies a P; cal la distància de cada càrrega al punt. Per a l'energia potencial, la distància és la que separa les dues càrregues (6 km)."
+      }
+    },
+    {
+      "id": "fisica-2018-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Espira quadrada en un camp magnètic sinusoidal: flux i força electromotriu induïda",
+      "tema": "induccio",
+      "temes_secundaris": [],
+      "conceptes": ["flux magnètic", "llei de faraday", "força electromotriu induïda", "camp magnètic variable"],
+      "dificultat": 2,
+      "pagines": [4],
+      "enunciat": "Tenim una espira quadrada de $5\\ \\text{cm}$ de costat. Un camp magnètic en direcció perpendicular al pla de l'espira varia en funció del temps segons l'equació $B_z(t) = B_{0z}\\cos(\\omega t)$, en què $B_{0z} = 5{,}0 \\times 10^{-6}\\ \\text{T}$ i $\\omega = 6{,}0 \\times 10^{8}\\ \\text{rad s}^{-1}$.",
+      "figures": [
+        {"src": "img/fisica/2018-S/e4-b.png", "peu": "Espira quadrada al pla xy; el camp magnètic té la direcció de l'eix z"}
+      ],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Escriviu l'expressió del flux magnètic a través de l'espira en funció del temps i calculeu-ne el valor màxim. Indiqueu explícitament totes les unitats que intervenen en l'equació.", "punts": 1},
+        {"id": "b", "enunciat": "Escriviu l'expressió de la força electromotriu induïda a l'espira.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Costat de l'espira: $L = 5\\ \\text{cm} = 0{,}05\\ \\text{m}$ → àrea $A = L^2 = 2{,}5 \\times 10^{-3}\\ \\text{m}^2$\n- $B_z(t) = B_{0z}\\cos(\\omega t)$, amb $B_{0z} = 5{,}0 \\times 10^{-6}\\ \\text{T}$ i $\\omega = 6{,}0 \\times 10^{8}\\ \\text{rad/s}$\n- El camp és perpendicular al pla de l'espira: l'angle entre $\\vec B$ i el vector superfície és $\\varphi = 0^\\circ$\n- Incògnites: a) $\\Phi(t)$ i $\\Phi_\\text{màx}$; b) $\\varepsilon(t)$."},
+          {"apartat": "a", "titol": "Flux magnètic en funció del temps", "cos": "El flux magnètic a través d'una superfície plana en un camp uniforme és $\\Phi = B\\,A\\cos\\varphi$. Com que el camp és perpendicular a l'espira, $\\cos\\varphi = \\cos 0^\\circ = 1$:\n\n$$\\Phi(t) = B_{0z}\\,A\\cos(\\omega t) = 5{,}0 \\times 10^{-6}\\ \\text{T} \\cdot 2{,}5 \\times 10^{-3}\\ \\text{m}^2 \\cdot \\cos(6{,}0 \\times 10^{8}\\,t)$$\n\n$$\\Phi(t) = 1{,}25 \\times 10^{-8}\\ \\text{Wb} \\cdot \\cos\\left(6{,}0 \\times 10^{8}\\ \\tfrac{\\text{rad}}{\\text{s}}\\, t\\right)$$\n\n(amb $t$ en segons; $1\\ \\text{Wb} = 1\\ \\text{T m}^2$)."},
+          {"apartat": "a", "titol": "Valor màxim del flux", "cos": "El flux és màxim quan $\\cos(\\omega t) = \\pm 1$:\n\n$$\\Phi_\\text{màx} = B_{0z}\\,A = 1{,}25 \\times 10^{-8}\\ \\text{Wb}$$\n\nResultat: **$\\Phi_\\text{màx} = 1{,}25 \\times 10^{-8}\\ \\text{Wb}$**"},
+          {"apartat": "b", "titol": "Llei de Faraday-Lenz", "cos": "Quan el flux magnètic que travessa un circuit varia amb el temps, s'hi indueix una força electromotriu igual a menys la derivada del flux (el signe menys expressa la llei de Lenz: el corrent induït s'oposa a la variació del flux):\n\n$$\\varepsilon(t) = -\\frac{d\\Phi}{dt}$$"},
+          {"apartat": "b", "titol": "Derivada i expressió de la fem", "cos": "Com que $\\dfrac{d}{dt}\\cos(\\omega t) = -\\omega\\sin(\\omega t)$:\n\n$$\\varepsilon(t) = -\\frac{d}{dt}\\left[B_{0z} A\\cos(\\omega t)\\right] = \\omega\\,B_{0z}\\,A\\sin(\\omega t)$$\n\nAmplitud: $\\varepsilon_0 = \\omega B_{0z} A = 6{,}0 \\times 10^{8} \\cdot 1{,}25 \\times 10^{-8} = 7{,}5\\ \\text{V}$\n\nResultat: **$\\varepsilon(t) = 7{,}5\\ \\text{V} \\cdot \\sin\\left(6{,}0 \\times 10^{8}\\ \\tfrac{\\text{rad}}{\\text{s}}\\, t\\right)$**"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$\\Phi(t) = 1{,}25 \\times 10^{-8}\\ \\text{Wb}\\cdot\\cos(6{,}0 \\times 10^{8}\\,t)$; $\\Phi_\\text{màx} = 1{,}25 \\times 10^{-8}\\ \\text{Wb}$"},
+          {"apartat": "b", "valor": "$\\varepsilon(t) = 7{,}5\\ \\text{V}\\cdot\\sin(6{,}0 \\times 10^{8}\\,t)$"}
+        ],
+        "nota": "Error típic: oblidar passar el costat a metres ($5\\ \\text{cm} = 0{,}05\\ \\text{m}$) o fer servir $A = 5^2 = 25$ sense unitats SI."
+      }
+    },
+    {
+      "id": "fisica-2018-S-e5-b",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Efecte fotoelèctric amb llum groga: freqüència i energia del fotó i energia cinètica dels electrons",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": ["efecte fotoelèctric", "energia del fotó", "funció de treball", "energia cinètica màxima", "electronvolt"],
+      "dificultat": 1,
+      "pagines": [4],
+      "enunciat": "Un material alcalí que pot emetre electrons per efecte fotoelèctric presenta una funció de treball d'$1{,}30\\ \\text{eV}$. Sobre la superfície d'aquest material incideix llum groga amb una longitud d'ona de $500\\ \\text{nm}$.\n\n**Dades:** Constant de Planck, $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$. Massa de l'electró, $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$. $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$. Velocitat de la llum, $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Quina freqüència i quina energia tenen els fotons de la llum groga?", "punts": 1},
+        {"id": "b", "enunciat": "Quina energia cinètica, en eV, tindran els electrons extrets per aquesta llum groga?", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Funció de treball: $W_e = 1{,}30\\ \\text{eV} = 1{,}30 \\cdot 1{,}60 \\times 10^{-19} = 2{,}08 \\times 10^{-19}\\ \\text{J}$\n- Longitud d'ona: $\\lambda = 500\\ \\text{nm} = 5{,}00 \\times 10^{-7}\\ \\text{m}$\n- $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$\n- Incògnites: a) $f$ i $E_\\text{fotó}$; b) $E_c$ dels electrons en eV."},
+          {"apartat": "a", "titol": "Freqüència de la llum", "cos": "Per a una ona electromagnètica en el buit, $c = \\lambda f$:\n\n$$f = \\frac{c}{\\lambda} = \\frac{3{,}00 \\times 10^{8}}{500 \\times 10^{-9}} = 6{,}0 \\times 10^{14}\\ \\text{Hz}$$\n\nResultat: **$f = 6{,}0 \\times 10^{14}\\ \\text{Hz}$**"},
+          {"apartat": "a", "titol": "Energia de cada fotó (Planck)", "cos": "Segons Planck i Einstein, la llum està formada per fotons d'energia $E = hf$:\n\n$$E_\\text{fotó} = h f = 6{,}63 \\times 10^{-34} \\cdot 6{,}0 \\times 10^{14} = 3{,}98 \\times 10^{-19}\\ \\text{J}$$\n\nResultat: **$E_\\text{fotó} = 3{,}98 \\times 10^{-19}\\ \\text{J}$** ($\\approx 2{,}49\\ \\text{eV}$)."},
+          {"apartat": "b", "titol": "Equació d'Einstein de l'efecte fotoelèctric", "cos": "Cada fotó cedeix tota la seva energia a un electró: una part, la funció de treball $W_e$, serveix per arrencar-lo del material i la resta es converteix en energia cinètica (màxima):\n\n$$E_c = h f - W_e$$\n\nCom que $E_\\text{fotó} = 3{,}98 \\times 10^{-19}\\ \\text{J} > W_e$, sí que hi ha emissió d'electrons."},
+          {"apartat": "b", "titol": "Energia cinètica dels electrons en J i en eV", "cos": "$$E_c = 3{,}98 \\times 10^{-19} - 2{,}08 \\times 10^{-19} = 1{,}90 \\times 10^{-19}\\ \\text{J}$$\n\nPassem a electronvolts:\n\n$$E_c = 1{,}90 \\times 10^{-19}\\ \\text{J} \\cdot \\frac{1\\ \\text{eV}}{1{,}60 \\times 10^{-19}\\ \\text{J}} = 1{,}19\\ \\text{eV}$$\n\nResultat: **$E_c = 1{,}19\\ \\text{eV}$**"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$f = 6{,}0 \\times 10^{14}\\ \\text{Hz}$; $E_\\text{fotó} = 3{,}98 \\times 10^{-19}\\ \\text{J}$"},
+          {"apartat": "b", "valor": "$E_c = 1{,}90 \\times 10^{-19}\\ \\text{J} = 1{,}19\\ \\text{eV}$"}
+        ],
+        "nota": "També es pot treballar directament en eV: $E_\\text{fotó} = 3{,}98 \\times 10^{-19}/1{,}60 \\times 10^{-19} = 2{,}49\\ \\text{eV}$ i $E_c = 2{,}49 - 1{,}30 = 1{,}19\\ \\text{eV}$. La massa de l'electró no cal per a aquestes preguntes (només caldria per calcular-ne la velocitat)."
+      }
+    }
+  ]
+}

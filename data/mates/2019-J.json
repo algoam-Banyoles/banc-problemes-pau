@@ -1,0 +1,227 @@
+{
+  "examen": {
+    "id": "mates-2019-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2019,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/mates/2019-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2019-J-solucio.pdf",
+    "estructura": "Cal respondre CINC de les sis qüestions; cada qüestió val 2 punts. En les respostes cal explicar sempre què es vol fer i per què. Es pot utilitzar calculadora (no programable ni que emmagatzemi o transmeti dades)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2019-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Pàgina d'un llibre amb marges: màxima superfície impresa",
+      "tema": "optimitzacio",
+      "temes_secundaris": ["derivades"],
+      "conceptes": ["optimització", "derivada segona", "màxim relatiu", "àrea d'un rectangle"],
+      "dificultat": 2,
+      "pagines": [1],
+      "enunciat": "Les pàgines d'un llibre han de tenir cada una $600\\ \\text{cm}^2$ de superfície, amb uns marges al voltant del text de $2\\ \\text{cm}$ a la part inferior, $3\\ \\text{cm}$ a la part superior i $2\\ \\text{cm}$ a cada costat. Calculeu les dimensions de la pàgina que permeten la superfície impresa més gran possible.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Anomenem $x$ l'amplada i $y$ l'alçada de la pàgina (en cm), amb $x > 4$ i $y > 5$ perquè hi càpiguen els marges.\n- Superfície de la pàgina: $xy = 600\\ \\text{cm}^2$ (lligadura).\n- Marges: $2 + 2 = 4\\ \\text{cm}$ en horitzontal i $3 + 2 = 5\\ \\text{cm}$ en vertical.\n- Incògnita: els valors de $x$ i $y$ que fan màxima la superfície impresa."},
+          {"apartat": null, "titol": "Funció a maximitzar", "cos": "La zona impresa és un rectangle d'amplada $x - 4$ i alçada $y - 5$:\n\n$$S(x, y) = (x - 4)(y - 5)$$\n\nDe la lligadura, aïllem $y = \\dfrac{600}{x}$ i ho substituïm per tenir una funció d'una sola variable:\n\n$$S(x) = (x - 4)\\left(\\frac{600}{x} - 5\\right) = 600 - 5x - \\frac{2400}{x} + 20 = 620 - 5x - \\frac{2400}{x}$$"},
+          {"apartat": null, "titol": "Derivades i punt crític", "cos": "Els candidats a màxim són els punts on s'anul·la la derivada:\n\n$$S'(x) = -5 + \\frac{2400}{x^2} \\qquad S''(x) = -\\frac{4800}{x^3}$$\n\n$$S'(x) = 0 \\;\\Rightarrow\\; 5 = \\frac{2400}{x^2} \\;\\Rightarrow\\; x^2 = 480 \\;\\Rightarrow\\; x = \\sqrt{480} = 4\\sqrt{30}$$\n\n(El valor negatiu $x = -4\\sqrt{30}$ no té sentit, perquè $x$ és una longitud.)"},
+          {"apartat": null, "titol": "Comprovació que és un màxim", "cos": "Com que $x > 0$, $S''(4\\sqrt{30}) = -\\dfrac{4800}{(4\\sqrt{30})^3} < 0$: la funció és còncava i el punt crític és un **màxim** relatiu (de fet, l'únic punt crític a $x > 4$, per tant és el màxim absolut)."},
+          {"apartat": null, "titol": "Dimensions de la pàgina", "cos": "$$x = 4\\sqrt{30} \\approx 21{,}91\\ \\text{cm}$$\n\n$$y = \\frac{600}{4\\sqrt{30}} = \\frac{600\\sqrt{30}}{4 \\cdot 30} = 5\\sqrt{30} \\approx 27{,}39\\ \\text{cm}$$\n\nLa pàgina ha de fer **$4\\sqrt{30} \\approx 21{,}91\\ \\text{cm}$ d'amplada i $5\\sqrt{30} \\approx 27{,}39\\ \\text{cm}$ d'alçada**. La superfície impresa màxima és $S = 620 - 40\\sqrt{30} \\approx 400{,}9\\ \\text{cm}^2$.\n\nObservem que $x : y = 4 : 5$, la mateixa proporció que els marges totals horitzontal i vertical."}
+        ],
+        "resultats": [{"apartat": null, "valor": "Amplada $x = 4\\sqrt{30} \\approx 21{,}91\\ \\text{cm}$, alçada $y = 5\\sqrt{30} \\approx 27{,}39\\ \\text{cm}$"}],
+        "nota": "Error típic: restar només un marge lateral (x − 2) en lloc dels dos (x − 4). No cal donar l'expressió decimal per tenir l'exercici complet."
+      }
+    },
+    {
+      "id": "mates-2019-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Discussió i resolució d'un sistema 3×3 amb paràmetre k²",
+      "tema": "sistemes",
+      "temes_secundaris": ["matrius"],
+      "conceptes": ["teorema de Rouché-Fröbenius", "rang", "determinant", "sistema compatible indeterminat", "mètode de Gauss"],
+      "dificultat": 2,
+      "pagines": [1],
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que depèn del paràmetre real $k$:\n\n$$\\begin{cases} x + 3y + 2z = -1 \\\\ x + k^2 y + 3z = 2k \\\\ 3x + 7y + 7z = k - 3 \\end{cases}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $k$.", "punts": 1},
+        {"id": "b", "enunciat": "Resoleu el sistema per al cas $k = -1$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Matriu del sistema i determinant", "cos": "Escrivim la matriu de coeficients $A$ i l'ampliada $\\bar{A}$:\n\n$$\\bar{A} = \\left(\\begin{array}{ccc|c} 1 & 3 & 2 & -1 \\\\ 1 & k^2 & 3 & 2k \\\\ 3 & 7 & 7 & k-3 \\end{array}\\right)$$\n\nCom que $A$ és quadrada i depèn de $k$, estudiem quan el seu determinant és zero (Sarrus):\n\n$$|A| = 7k^2 + 27 + 14 - 6k^2 - 21 - 21 = k^2 - 1$$\n\n$$k^2 - 1 = 0 \\;\\Rightarrow\\; k = 1 \\ \\text{o}\\ k = -1$$"},
+          {"apartat": "a", "titol": "Cas k ≠ ±1", "cos": "$|A| \\neq 0$, per tant $\\text{rg}(A) = \\text{rg}(\\bar{A}) = 3 =$ nombre d'incògnites. Pel teorema de Rouché-Fröbenius, el sistema és **compatible determinat** (solució única)."},
+          {"apartat": "a", "titol": "Cas k = 1", "cos": "$\\text{rg}(A) = 2$, perquè $|A| = 0$ i el menor $\\begin{vmatrix} 1 & 3 \\\\ 1 & 1 \\end{vmatrix} = 1 - 3 = -2 \\neq 0$.\n\nPer a l'ampliada fem Gauss ($F_2 - F_1$, $F_3 - 3F_1$ i després $F_3 + F_2$):\n\n$$\\left(\\begin{array}{ccc|c} 1 & 3 & 2 & -1 \\\\ 1 & 1 & 3 & 2 \\\\ 3 & 7 & 7 & -2 \\end{array}\\right) \\to \\left(\\begin{array}{ccc|c} 1 & 3 & 2 & -1 \\\\ 0 & -2 & 1 & 3 \\\\ 0 & -2 & 1 & 1 \\end{array}\\right) \\to \\left(\\begin{array}{ccc|c} 1 & 3 & 2 & -1 \\\\ 0 & -2 & 1 & 3 \\\\ 0 & 0 & 0 & -2 \\end{array}\\right)$$\n\nL'última fila diu $0 = -2$: $\\text{rg}(\\bar{A}) = 3$. Com que $\\text{rg}(A) = 2 < \\text{rg}(\\bar{A}) = 3$, el sistema és **incompatible** (no té solució)."},
+          {"apartat": "a", "titol": "Cas k = −1", "cos": "Ara $k^2 = 1$ i $2k = -2$, $k - 3 = -4$. De nou $\\text{rg}(A) = 2$ (mateix menor). Per a l'ampliada:\n\n$$\\left(\\begin{array}{ccc|c} 1 & 3 & 2 & -1 \\\\ 1 & 1 & 3 & -2 \\\\ 3 & 7 & 7 & -4 \\end{array}\\right) \\to \\left(\\begin{array}{ccc|c} 1 & 3 & 2 & -1 \\\\ 0 & -2 & 1 & -1 \\\\ 0 & -2 & 1 & -1 \\end{array}\\right)$$\n\nLes dues últimes files són iguals: $\\text{rg}(\\bar{A}) = 2$. Com que $\\text{rg}(A) = \\text{rg}(\\bar{A}) = 2 < 3$, el sistema és **compatible indeterminat** amb $3 - 2 = 1$ grau de llibertat."},
+          {"apartat": "b", "titol": "Sistema equivalent per a k = −1", "cos": "De l'esglaonament anterior, n'hi ha prou amb dues equacions independents:\n\n$$\\begin{cases} x + 3y + 2z = -1 \\\\ -2y + z = -1 \\end{cases} \\;\\Longleftrightarrow\\; \\begin{cases} x + 3y + 2z = -1 \\\\ 2y - z = 1 \\end{cases}$$"},
+          {"apartat": "b", "titol": "Solució en funció d'un paràmetre", "cos": "Prenem $y = t$ com a paràmetre. De la segona equació, $z = 2t - 1$. Substituint a la primera:\n\n$$x = -1 - 3t - 2(2t - 1) = -1 - 3t - 4t + 2 = 1 - 7t$$\n\n$$\\boxed{(x, y, z) = (1 - 7t,\\ t,\\ 2t - 1),\\quad t \\in \\mathbb{R}}$$\n\n**Comprovació** amb la tercera equació: $3(1 - 7t) + 7t + 7(2t - 1) = 3 - 21t + 7t + 14t - 7 = -4$ ✓."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$k \\neq \\pm 1$: SCD; $k = 1$: SI; $k = -1$: SCI (1 grau de llibertat)"},
+          {"apartat": "b", "valor": "$(x, y, z) = (1 - 7t,\\ t,\\ 2t - 1)$, $t \\in \\mathbb{R}$"}
+        ],
+        "nota": "Qualsevol parametrització equivalent és correcta; per exemple, prenent z = λ: x = −5/2 − 7λ/2, y = 1/2 + λ/2."
+      }
+    },
+    {
+      "id": "mates-2019-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Trajectòria d'un dron fins al punt més proper d'un pla",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": ["recta perpendicular a un pla", "vector normal", "distància punt-pla", "projecció ortogonal", "equació paramètrica"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "Un dron es troba en el punt $P = (2, -3, 1)$ i volem dirigir-lo en línia recta fins al punt més proper del pla d'equació $\\pi : 3x + 4z + 15 = 0$.\n\n*Nota:* Podeu calcular la distància que hi ha d'un punt de coordenades $(x_0, y_0, z_0)$ al pla d'equació $Ax + By + Cz + D = 0$ amb l'expressió $\\dfrac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Calculeu l'equació de la recta, en forma paramètrica, que ha de seguir el dron. Quina distància ha de recórrer fins a arribar al pla?", "punts": 1},
+        {"id": "b", "enunciat": "Trobeu les coordenades del punt del pla on arribarà el dron.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Idea: el camí més curt és perpendicular al pla", "cos": "El punt del pla més proper a $P$ s'obté anant en la direcció **perpendicular** al pla. El vector normal del pla $Ax + By + Cz + D = 0$ és $(A, B, C)$; per a $\\pi : 3x + 0y + 4z + 15 = 0$:\n\n$$\\vec{n}_\\pi = (3, 0, 4)$$\n\nAquest serà el vector director de la recta: $\\vec{v}_r = (3, 0, 4)$."},
+          {"apartat": "a", "titol": "Equació paramètrica de la recta", "cos": "Recta que passa per $P = (2, -3, 1)$ amb direcció $(3, 0, 4)$:\n\n$$r : \\begin{cases} x = 2 + 3t \\\\ y = -3 \\\\ z = 1 + 4t \\end{cases} \\qquad t \\in \\mathbb{R}$$"},
+          {"apartat": "a", "titol": "Distància que recorre", "cos": "La distància recorreguda és la distància de $P$ al pla:\n\n$$d(P, \\pi) = \\frac{|3 \\cdot 2 + 0 \\cdot (-3) + 4 \\cdot 1 + 15|}{\\sqrt{3^2 + 0^2 + 4^2}} = \\frac{25}{5} = 5$$\n\nEl dron recorre **5 unitats**."},
+          {"apartat": "b", "titol": "Intersecció de la recta amb el pla", "cos": "El punt d'arribada és el punt de $r$ que compleix l'equació de $\\pi$. Substituïm les paramètriques al pla:\n\n$$3(2 + 3t) + 4(1 + 4t) + 15 = 0 \\;\\Rightarrow\\; 6 + 9t + 4 + 16t + 15 = 0 \\;\\Rightarrow\\; 25t = -25 \\;\\Rightarrow\\; t = -1$$\n\nAmb $t = -1$: $x = 2 - 3 = -1$, $y = -3$, $z = 1 - 4 = -3$.\n\nEl dron arriba al punt **$Q = (-1, -3, -3)$**."},
+          {"apartat": "b", "titol": "Comprovació", "cos": "- $Q$ és del pla: $3(-1) + 4(-3) + 15 = -3 - 12 + 15 = 0$ ✓\n- $\\overrightarrow{PQ} = (-3, 0, -4)$, de mòdul $\\sqrt{9 + 16} = 5$, que coincideix amb la distància de l'apartat a ✓"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$r: (x, y, z) = (2 + 3t,\\ -3,\\ 1 + 4t)$; distància $= 5$ u"},
+          {"apartat": "b", "valor": "$Q = (-1, -3, -3)$"}
+        ],
+        "nota": "Error típic: prendre com a vector normal (3, 4, 0) en lloc de (3, 0, 4), oblidant que al pla no hi apareix la y (coeficient 0)."
+      }
+    },
+    {
+      "id": "mates-2019-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Domini, asímptota vertical i teorema de Bolzano en una funció racional",
+      "tema": "funcions",
+      "temes_secundaris": ["derivades"],
+      "conceptes": ["domini", "continuïtat", "asímptota vertical", "límits laterals", "teorema de Bolzano"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Considereu la funció $f(x) = \\dfrac{2x^3 - 5x + 4}{1 - x}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Calculeu-ne el domini i estudieu-ne la continuïtat. Té cap asímptota vertical?", "punts": 1},
+        {"id": "b", "enunciat": "Observeu que $f(-2) = -\\dfrac{2}{3}$, $f(0) = 4$ i $f(2) = -10$. Raoneu si, a partir d'aquesta informació, podem deduir que l'interval $(-2, 0)$ conté un zero de la funció. Podem deduir-ho per a l'interval $(0, 2)$? Trobeu un interval determinat per dos enters consecutius que contingui, com a mínim, un zero d'aquesta funció.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Domini", "cos": "És un quocient de polinomis: està definit a tot arreu excepte on s'anul·la el denominador.\n\n$$1 - x = 0 \\;\\Rightarrow\\; x = 1$$\n\n$$\\text{Dom} f = \\mathbb{R} - \\{1\\} = (-\\infty, 1) \\cup (1, +\\infty)$$"},
+          {"apartat": "a", "titol": "Continuïtat", "cos": "Els polinomis són funcions contínues i el quocient de funcions contínues és continu allà on el denominador no és zero. Per tant, **$f$ és contínua a tot el seu domini**, $\\mathbb{R} - \\{1\\}$. A $x = 1$ no és contínua perquè no hi està definida."},
+          {"apartat": "a", "titol": "Asímptota vertical: límits laterals a x = 1", "cos": "L'únic candidat és $x = 1$. El numerador hi val $2 - 5 + 4 = 1 \\neq 0$, i el denominador tendeix a 0, així que el límit és infinit. Mirem el signe:\n\n- Si $x \\to 1^-$ ($x < 1$): $1 - x \\to 0^+$, i $\\displaystyle\\lim_{x \\to 1^-} \\frac{2x^3 - 5x + 4}{1 - x} = \\frac{1}{0^+} = +\\infty$\n- Si $x \\to 1^+$ ($x > 1$): $1 - x \\to 0^-$, i $\\displaystyle\\lim_{x \\to 1^+} \\frac{2x^3 - 5x + 4}{1 - x} = \\frac{1}{0^-} = -\\infty$\n\nSí: **$x = 1$ és una asímptota vertical**."},
+          {"apartat": "b", "titol": "Teorema de Bolzano", "cos": "Si $f$ és **contínua** en un interval tancat $[a, b]$ i $f(a)$ i $f(b)$ tenen signes oposats, aleshores existeix almenys un $c \\in (a, b)$ amb $f(c) = 0$. Cal comprovar les dues hipòtesis."},
+          {"apartat": "b", "titol": "Interval (−2, 0)", "cos": "$f$ és contínua a $[-2, 0]$ (no conté $x = 1$) i\n\n$$f(-2) = -\\frac{2}{3} < 0, \\qquad f(0) = 4 > 0$$\n\nPel teorema de Bolzano, **sí: hi ha almenys un zero a $(-2, 0)$**."},
+          {"apartat": "b", "titol": "Interval (0, 2)", "cos": "Encara que $f(0) = 4 > 0$ i $f(2) = -10 < 0$, l'interval $[0, 2]$ conté $x = 1$, on $f$ no és contínua (hi ha l'asímptota vertical). No es compleix la hipòtesi de continuïtat, així que **no podem aplicar Bolzano** ni deduir que hi hagi un zero. El canvi de signe es pot deure al salt de $+\\infty$ a $-\\infty$ de l'asímptota."},
+          {"apartat": "b", "titol": "Interval entre dos enters consecutius", "cos": "Dividim $[-2, 0]$ pel punt mig enter $x = -1$:\n\n$$f(-1) = \\frac{2(-1)^3 - 5(-1) + 4}{1 - (-1)} = \\frac{-2 + 5 + 4}{2} = \\frac{7}{2} > 0$$\n\nCom que $f(-2) < 0$ i $f(-1) > 0$, i $f$ és contínua a $[-2, -1]$, pel teorema de Bolzano **l'interval $(-2, -1)$ conté un zero** de $f$."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$\\text{Dom} f = \\mathbb{R} - \\{1\\}$, contínua a tot el domini; asímptota vertical $x = 1$ ($+\\infty$ per l'esquerra, $-\\infty$ per la dreta)"},
+          {"apartat": "b", "valor": "Sí a $(-2, 0)$ (Bolzano); no es pot deduir a $(0, 2)$ (discontinuïtat a $x = 1$); hi ha un zero a $(-2, -1)$"}
+        ],
+        "nota": "Comprovació numèrica: l'únic zero real del numerador és x ≈ −1,887, que efectivament és a (−2, −1). A (0, 2) la funció no té cap zero (el numerador no s'hi anul·la), cosa que confirma que el canvi de signe allà és degut a l'asímptota."
+      }
+    },
+    {
+      "id": "mates-2019-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Equació matricial M² − M − 2I = 0 i inversa a partir d'ella",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": ["producte de matrius", "matriu inversa", "matriu identitat", "equació matricial", "paràmetre"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Sigui la matriu $M = \\begin{pmatrix} 1 & a \\\\ a & 0 \\end{pmatrix}$, en què $a$ és un paràmetre real.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Calculeu per a quins valors del paràmetre $a$ se satisfà la igualtat $M^2 - M - 2I = 0$, en què $I$ és la matriu identitat i $0$ és la matriu nul·la, totes dues d'ordre 2.", "punts": 1},
+        {"id": "b", "enunciat": "Fent servir la igualtat de l'apartat anterior, trobeu una expressió general per a calcular la matriu inversa de la matriu $M$ i, a continuació, calculeu la inversa de $M$ per al cas $a = \\sqrt{2}$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Càlcul de M²", "cos": "Multipliquem files per columnes:\n\n$$M^2 = \\begin{pmatrix} 1 & a \\\\ a & 0 \\end{pmatrix}\\begin{pmatrix} 1 & a \\\\ a & 0 \\end{pmatrix} = \\begin{pmatrix} 1 + a^2 & a \\\\ a & a^2 \\end{pmatrix}$$"},
+          {"apartat": "a", "titol": "Imposem la igualtat", "cos": "$$M^2 - M - 2I = \\begin{pmatrix} 1 + a^2 & a \\\\ a & a^2 \\end{pmatrix} - \\begin{pmatrix} 1 & a \\\\ a & 0 \\end{pmatrix} - \\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix} = \\begin{pmatrix} a^2 - 2 & 0 \\\\ 0 & a^2 - 2 \\end{pmatrix}$$\n\nPerquè sigui la matriu nul·la, cal $a^2 - 2 = 0$:\n\n$$a = \\sqrt{2} \\quad \\text{o} \\quad a = -\\sqrt{2}$$"},
+          {"apartat": "b", "titol": "Expressió general de la inversa", "cos": "La idea és aïllar $I$ com a producte de $M$ per una altra matriu: aquesta serà la inversa. Traiem $M$ factor comú (per l'esquerra):\n\n$$M^2 - M - 2I = 0 \\;\\Rightarrow\\; M^2 - M = 2I \\;\\Rightarrow\\; M(M - I) = 2I \\;\\Rightarrow\\; M \\cdot \\frac{1}{2}(M - I) = I$$\n\nPer tant (per als valors $a = \\pm\\sqrt{2}$, on es compleix la igualtat):\n\n$$\\boxed{M^{-1} = \\frac{1}{2}(M - I)}$$\n\n(També $\\frac{1}{2}(M - I) \\cdot M = I$, ja que $M$ commuta amb $I$ i amb ella mateixa.)"},
+          {"apartat": "b", "titol": "Inversa per a a = √2", "cos": "Per a $a = \\sqrt{2}$ es compleix la igualtat, així que podem aplicar la fórmula:\n\n$$M^{-1} = \\frac{1}{2}\\left(\\begin{pmatrix} 1 & \\sqrt{2} \\\\ \\sqrt{2} & 0 \\end{pmatrix} - \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}\\right) = \\frac{1}{2}\\begin{pmatrix} 0 & \\sqrt{2} \\\\ \\sqrt{2} & -1 \\end{pmatrix} = \\begin{pmatrix} 0 & \\frac{\\sqrt{2}}{2} \\\\ \\frac{\\sqrt{2}}{2} & -\\frac{1}{2} \\end{pmatrix}$$"},
+          {"apartat": "b", "titol": "Comprovació", "cos": "$$M \\cdot M^{-1} = \\begin{pmatrix} 1 & \\sqrt{2} \\\\ \\sqrt{2} & 0 \\end{pmatrix} \\cdot \\frac{1}{2}\\begin{pmatrix} 0 & \\sqrt{2} \\\\ \\sqrt{2} & -1 \\end{pmatrix} = \\frac{1}{2}\\begin{pmatrix} 2 & \\sqrt{2} - \\sqrt{2} \\\\ 0 & 2 \\end{pmatrix} = I \\ ✓$$"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$a = \\sqrt{2}$ o $a = -\\sqrt{2}$"},
+          {"apartat": "b", "valor": "$M^{-1} = \\frac{1}{2}(M - I)$; per a $a = \\sqrt{2}$: $M^{-1} = \\frac{1}{2}\\begin{pmatrix} 0 & \\sqrt{2} \\\\ \\sqrt{2} & -1 \\end{pmatrix}$"}
+        ],
+        "nota": "Segons els criteris oficials, si es calcula directament la inversa (per adjunts o per Gauss) sense fer servir l'expressió general, l'apartat b) només val 0,5 punts."
+      }
+    },
+    {
+      "id": "mates-2019-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Àrea entre y = x², y = 1/x, la recta x = e i l'eix OX",
+      "tema": "integrals",
+      "temes_secundaris": ["funcions"],
+      "conceptes": ["àrea sota una corba", "integral definida", "regla de Barrow", "punt de tall", "logaritme neperià"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Considereu les funcions $f(x) = x^2$ i $g(x) = \\dfrac{1}{x}$, i la recta $x = e$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Feu un esbós de la regió delimitada per les seves gràfiques i l'eix de les abscisses. Calculeu les coordenades del punt de tall de $y = f(x)$ amb $y = g(x)$.", "punts": 1},
+        {"id": "b", "enunciat": "Calculeu l'àrea de la regió descrita en l'apartat anterior.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Punt de tall de les dues corbes", "cos": "Igualem les dues funcions:\n\n$$x^2 = \\frac{1}{x} \\;\\Rightarrow\\; x^3 = 1 \\;\\Rightarrow\\; x = 1, \\quad y = 1^2 = 1$$\n\nEl punt de tall és **$(1, 1)$**."},
+          {"apartat": "a", "titol": "Esbós de la regió", "cos": "- $y = x^2$ és la paràbola amb vèrtex a l'origen, creixent per a $x > 0$.\n- $y = \\frac{1}{x}$ és una hipèrbola, decreixent per a $x > 0$, amb asímptotes els eixos.\n- $x = e \\approx 2{,}72$ és una recta vertical.\n\nLa regió va de $x = 0$ a $x = e$, per sobre de l'eix $OX$: entre $0$ i $1$ el sostre és la paràbola $y = x^2$ i entre $1$ i $e$ el sostre és la hipèrbola $y = \\frac{1}{x}$, fins a la recta $x = e$.\n\n![Esbós de la regió (solució oficial)](img/mates/2019-J/e6-sol.png)"},
+          {"apartat": "b", "titol": "Plantejament: dues integrals", "cos": "Com que la corba que fa de sostre canvia a $x = 1$, partim l'àrea en dues integrals (totes dues funcions són positives a $x > 0$):\n\n$$\\text{Àrea} = \\int_0^1 x^2\\,dx + \\int_1^e \\frac{1}{x}\\,dx$$"},
+          {"apartat": "b", "titol": "Càlcul amb la regla de Barrow", "cos": "Les primitives són $\\int x^2\\,dx = \\frac{x^3}{3}$ i $\\int \\frac{1}{x}\\,dx = \\ln|x|$:\n\n$$\\int_0^1 x^2\\,dx = \\left[\\frac{x^3}{3}\\right]_0^1 = \\frac{1}{3} - 0 = \\frac{1}{3}$$\n\n$$\\int_1^e \\frac{1}{x}\\,dx = \\Big[\\ln x\\Big]_1^e = \\ln e - \\ln 1 = 1 - 0 = 1$$\n\n$$\\text{Àrea} = \\frac{1}{3} + 1 = \\frac{4}{3}\\ \\text{u}^2$$"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Punt de tall $(1, 1)$"},
+          {"apartat": "b", "valor": "Àrea $= \\frac{4}{3}\\ \\text{u}^2$"}
+        ],
+        "nota": "Error típic: calcular la integral de (1/x − x²) entre 1 i e, que seria l'àrea entre les dues corbes, i no la regió limitada per l'eix OX que demana l'enunciat."
+      }
+    }
+  ]
+}

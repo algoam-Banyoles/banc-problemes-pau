@@ -1,0 +1,713 @@
+{
+  "examen": {
+    "id": "fisica-2022-S",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2022,
+    "convocatoria": "setembre",
+    "serie": "3",
+    "pdf_examen": "pdfs/fisica/2022-S-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2022-S-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels vuit problemes (P1–P8); si se'n responen més, només es valoren els quatre primers. Cada problema val 2,5 punts (dos apartats d'1,25 punts). Al P7, l'apartat b) va quedar anul·lat (faltava una dada) i l'apartat a) es puntua sobre 2,5 punts."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2022-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Velocitat orbital, període i velocitat de llançament d'un nanosatèl·lit a 500 km",
+      "tema": "gravitacio",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "velocitat orbital",
+        "període orbital",
+        "energia mecànica",
+        "velocitat de llançament",
+        "força centrípeta"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "El març del 2021 es va llançar el primer nanosatèl·lit de la Generalitat de Catalunya a l'espai. Els nanosatèl·lits tenen com a funció millorar les comunicacions, controlar els cabals dels cursos d'aigua i prevenir incendis. També contribueixen a la recerca i realització de missions espacials més àgils i econòmiques. Aquests nanosatèl·lits acostumen a orbitar a uns $500\\ \\text{km}$ d'altura (distància respecte a la superfície de la Terra).\n\n**Dades:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$; $M_\\text{Terra} = 5{,}98 \\times 10^{24}\\ \\text{kg}$; $R_\\text{Terra} = 6{,}37 \\times 10^{3}\\ \\text{km}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Suposant que l'òrbita d'un d'aquests nanosatèl·lits és circular, a partir de la llei de la gravitació universal deduïu-ne l'expressió de la velocitat orbital en funció del radi orbital. Calculeu també la velocitat i el període orbitals d'aquests nanosatèl·lits.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Partint de la llei de la conservació de l'energia mecànica (negligiu la força de fregament), deduïu l'expressió de la velocitat de llançament necessària per a posar en òrbita un satèl·lit en funció del radi orbital. Calculeu la velocitat de llançament necessària per a posar en òrbita el nanosatèl·lit a $500\\ \\text{km}$ d'altura.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$\n- $M_T = 5{,}98 \\times 10^{24}\\ \\text{kg}$\n- $R_T = 6{,}37 \\times 10^{3}\\ \\text{km} = 6{,}37 \\times 10^{6}\\ \\text{m}$\n- Altura: $h = 500\\ \\text{km} = 5{,}00 \\times 10^{5}\\ \\text{m}$\n- Radi orbital (es mesura des del **centre** de la Terra): $r = R_T + h = 6{,}37 \\times 10^{6} + 0{,}50 \\times 10^{6} = 6{,}87 \\times 10^{6}\\ \\text{m}$\n- Incògnites: velocitat orbital $v$, període $T$ (a) i velocitat de llançament $v_0$ des de la superfície (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "La força gravitatòria fa de força centrípeta",
+            "cos": "L'única força que actua sobre el satèl·lit és l'atracció gravitatòria de la Terra (llei de la gravitació universal):\n\n$$F = G\\,\\frac{m\\,M_T}{r^2}$$\n\nCom que el satèl·lit fa un moviment circular uniforme, aquesta força és la que el manté a l'òrbita: és la **força centrípeta**. Aplicant la segona llei de Newton, $F = m\\,a_c$ amb $a_c = \\dfrac{v^2}{r}$:\n\n$$G\\,\\frac{m\\,M_T}{r^2} = m\\,\\frac{v^2}{r} \\;\\Rightarrow\\; v = \\sqrt{\\frac{G\\,M_T}{r}}$$\n\nFixa't que la massa del satèl·lit $m$ se simplifica: la velocitat orbital no depèn de la massa del satèl·lit, només del radi de l'òrbita."
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat orbital del nanosatèl·lit",
+            "cos": "$$v = \\sqrt{\\frac{G\\,M_T}{r}} = \\sqrt{\\frac{6{,}67 \\times 10^{-11} \\cdot 5{,}98 \\times 10^{24}}{6{,}87 \\times 10^{6}}} = 7{,}62 \\times 10^{3}\\ \\text{m/s}$$\n\nResultat: **$v \\approx 7\\,620\\ \\text{m/s}$** (uns $27\\,400\\ \\text{km/h}$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Període orbital",
+            "cos": "En un moviment circular uniforme, en un període el satèl·lit recorre una circumferència sencera, $2\\pi r$:\n\n$$T = \\frac{2\\pi r}{v} = \\frac{2\\pi \\cdot 6{,}87 \\times 10^{6}}{7\\,620} = 5{,}66 \\times 10^{3}\\ \\text{s}$$\n\nResultat: **$T \\approx 5\\,660\\ \\text{s}$** (aproximadament $94$ minuts, una hora i mitja)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia mecànica a l'òrbita",
+            "cos": "Com que la força gravitatòria és **conservativa** (i negligim el fregament), l'energia mecànica del satèl·lit es conserva des que surt de la superfície fins que és a l'òrbita.\n\nA l'òrbita, usant el resultat de l'apartat a) ($v^2 = G M_T / r$):\n\n$$E_c(r) = \\frac{1}{2} m v^2 = \\frac{1}{2}\\,G\\,\\frac{M_T\\,m}{r} \\qquad E_p(r) = -G\\,\\frac{M_T\\,m}{r}$$\n\n$$E_m(r) = E_c + E_p = -\\frac{1}{2}\\,G\\,\\frac{M_T\\,m}{r}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Conservació de l'energia: superfície → òrbita",
+            "cos": "A la superfície el satèl·lit té la velocitat de llançament $v_0$ i és a una distància $R_T$ del centre:\n\n$$E_m(R_T) = \\frac{1}{2} m v_0^2 - G\\,\\frac{M_T\\,m}{R_T}$$\n\nIgualem les dues energies mecàniques:\n\n$$\\frac{1}{2} m v_0^2 - G\\,\\frac{M_T\\,m}{R_T} = -\\frac{1}{2}\\,G\\,\\frac{M_T\\,m}{r} \\;\\Rightarrow\\; \\frac{1}{2} v_0^2 = G M_T\\left(\\frac{1}{R_T} - \\frac{1}{2r}\\right)$$\n\nAïllant:\n\n$$v_0 = \\sqrt{G\\,M_T\\left(\\frac{2}{R_T} - \\frac{1}{r}\\right)}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat de llançament del nanosatèl·lit",
+            "cos": "$$v_0 = \\sqrt{6{,}67 \\times 10^{-11} \\cdot 5{,}98 \\times 10^{24}\\left(\\frac{2}{6{,}37 \\times 10^{6}} - \\frac{1}{6{,}87 \\times 10^{6}}\\right)} = 8{,}20 \\times 10^{3}\\ \\text{m/s}$$\n\nResultat: **$v_0 \\approx 8\\,200\\ \\text{m/s}$**.\n\nÉs lògic que sigui més gran que la velocitat orbital: a més de l'energia cinètica de l'òrbita, cal aportar l'energia per pujar 500 km dins del camp gravitatori."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v = \\sqrt{G M_T / r} \\approx 7{,}62 \\times 10^{3}\\ \\text{m/s}$; $T \\approx 5{,}66 \\times 10^{3}\\ \\text{s}$ (≈ 94 min)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_0 = \\sqrt{G M_T\\,(2/R_T - 1/r)} \\approx 8{,}20 \\times 10^{3}\\ \\text{m/s}$"
+          }
+        ],
+        "nota": "Error típic: fer servir $r = 500\\ \\text{km}$ o $r = R_T$ en lloc de $r = R_T + h$. Recorda passar els km a metres abans de substituir."
+      }
+    },
+    {
+      "id": "fisica-2022-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Equipotencials i línies de camp d'una càrrega puntual",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "potencial elèctric",
+        "superfícies equipotencials",
+        "línies de camp",
+        "càrrega puntual"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "En la figura 1 adjunta, hem situat una càrrega puntual $Q = +1{,}00\\ \\text{nC}$ a l'origen de coordenades.\n\n**Dada:** $k = \\dfrac{1}{4\\pi\\varepsilon_0} \\cong 9{,}00 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2022-S/e2.png",
+          "peu": "Figura 1: quadrícula amb la càrrega Q a l'origen (eixos en metres)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu a quina distància de la càrrega el potencial és igual a $3{,}00\\ \\text{V}$, $6{,}00\\ \\text{V}$, $9{,}00\\ \\text{V}$ i $12{,}0\\ \\text{V}$, respectivament. Representeu dins de la figura les línies equipotencials corresponents als potencials de $3{,}00\\ \\text{V}$, $6{,}00\\ \\text{V}$, $9{,}00\\ \\text{V}$ i $12{,}0\\ \\text{V}$. Digueu si la distància entre les línies equipotencials és constant i quant val o valen aquestes distàncies.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "En la mateixa figura, representeu 8 línies de camp elèctric. Quin angle formen les línies de camp amb les línies equipotencials en el punt on es creuen?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $Q = +1{,}00\\ \\text{nC} = 1{,}00 \\times 10^{-9}\\ \\text{C}$, a l'origen\n- $k = 9{,}00 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$\n- Potencials: $V_1 = 3{,}00\\ \\text{V}$, $V_2 = 6{,}00\\ \\text{V}$, $V_3 = 9{,}00\\ \\text{V}$, $V_4 = 12{,}0\\ \\text{V}$\n- Incògnites: distàncies $r_1, r_2, r_3, r_4$; separació entre equipotencials; dibuix de les línies de camp i angle amb les equipotencials."
+          },
+          {
+            "apartat": "a",
+            "titol": "Potencial d'una càrrega puntual",
+            "cos": "El potencial creat per una càrrega puntual a una distància $r$ és\n\n$$V = k\\,\\frac{Q}{r} \\;\\Rightarrow\\; r = k\\,\\frac{Q}{V}$$\n\nNomés depèn de la distància $r$: tots els punts a la mateixa distància de la càrrega tenen el mateix potencial. Per això les superfícies equipotencials són **esferes** centrades a la càrrega, i en el pla de la figura es veuen com **circumferències** centrades a l'origen."
+          },
+          {
+            "apartat": "a",
+            "titol": "Radis de les equipotencials",
+            "cos": "$$r_1 = k\\,\\frac{Q}{V_1} = 9{,}00 \\times 10^{9}\\cdot\\frac{1{,}00 \\times 10^{-9}}{3{,}00} = 3{,}00\\ \\text{m}$$\n\n$$r_2 = 9{,}00 \\times 10^{9}\\cdot\\frac{1{,}00 \\times 10^{-9}}{6{,}00} = 1{,}50\\ \\text{m} \\qquad r_3 = 9{,}00 \\times 10^{9}\\cdot\\frac{1{,}00 \\times 10^{-9}}{9{,}00} = 1{,}00\\ \\text{m}$$\n\n$$r_4 = 9{,}00 \\times 10^{9}\\cdot\\frac{1{,}00 \\times 10^{-9}}{12{,}0} = 0{,}750\\ \\text{m}$$\n\nResultat: **$r_{3\\,\\text{V}} = 3{,}00\\ \\text{m}$, $r_{6\\,\\text{V}} = 1{,}50\\ \\text{m}$, $r_{9\\,\\text{V}} = 1{,}00\\ \\text{m}$, $r_{12\\,\\text{V}} = 0{,}750\\ \\text{m}$**.\n\nA la figura es dibuixen quatre circumferències centrades a l'origen amb aquests radis."
+          },
+          {
+            "apartat": "a",
+            "titol": "La separació entre equipotencials no és constant",
+            "cos": "Tot i que els potencials augmenten de 3 en 3 V, les distàncies no es redueixen de manera uniforme, perquè $V$ és proporcional a $1/r$ (no a $r$):\n\n$$r_1 - r_2 = 3{,}00 - 1{,}50 = 1{,}50\\ \\text{m} \\qquad r_2 - r_3 = 1{,}50 - 1{,}00 = 0{,}50\\ \\text{m} \\qquad r_3 - r_4 = 1{,}00 - 0{,}75 = 0{,}25\\ \\text{m}$$\n\n**La distància entre equipotencials no és constant**: val $1{,}50\\ \\text{m}$, $0{,}50\\ \\text{m}$ i $0{,}25\\ \\text{m}$. Les equipotencials estan més juntes a prop de la càrrega, on el camp és més intens."
+          },
+          {
+            "apartat": "b",
+            "titol": "Línies de camp i angle amb les equipotencials",
+            "cos": "El camp d'una càrrega puntual és **radial**. Com que $Q > 0$, les línies de camp **surten** de la càrrega cap a fora. Per representar-ne 8 de manera simètrica, es dibuixen 8 semirectes que surten de l'origen separades $45^\\circ$ (sobre els eixos i les bisectrius), amb fletxes cap enfora.\n\nLes línies de camp són sempre **perpendiculars** a les superfícies equipotencials: el camp apunta en la direcció en què el potencial disminueix més ràpidament, i al llarg d'una equipotencial no es fa cap treball ($W = q\\,\\Delta V = 0$), de manera que el camp no pot tenir component tangent a l'equipotencial. Aquí ho veiem directament: un radi és perpendicular a la circumferència en el punt on la talla.\n\nResultat: **l'angle és de $90^\\circ$**.\n\n![Equipotencials i línies de camp (solució oficial)](img/fisica/2022-S/e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$r = 3{,}00\\ \\text{m}$ (3 V), $1{,}50\\ \\text{m}$ (6 V), $1{,}00\\ \\text{m}$ (9 V), $0{,}750\\ \\text{m}$ (12 V); separacions no constants: $1{,}50$, $0{,}50$ i $0{,}25\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "8 línies radials sortints (cada $45^\\circ$); formen $90^\\circ$ amb les equipotencials"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2022-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "El volcà com a tub tancat: ona estacionària i nivell d'intensitat sonora",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ones estacionàries",
+        "tub tancat per un extrem",
+        "freqüència fonamental",
+        "nivell d'intensitat sonora",
+        "intensitat sonora"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "El volcà Cumbre Vieja va entrar en erupció el 19 de setembre de 2021 a l'illa de La Palma. El so de l'erupció volcànica va ser mesurat per un equip de vulcanòlegs, que van detectar que estava format per diferents freqüències i que tenia un nivell d'intensitat sonora variant. Pel que fa al so que produeix en alguns moments de l'erupció, un volcà es pot modelitzar com si fos un instrument musical de vent gegant. D'una manera simplificada, podem considerar un volcà com un tub d'aire amb un extrem tancat i l'altre obert, on es produeixen ones estacionàries d'una manera semblant a una trompeta.\n\n**Dades:** $I_0 = 10^{-12}\\ \\text{W m}^{-2}$. La velocitat del so en l'aire és de $340\\ \\text{m/s}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "En un moment determinat de l'erupció del Cumbre Vieja, es va detectar que la freqüència fonamental del so que emetia era de $5{,}40\\ \\text{Hz}$. Calculeu la longitud d'ona d'aquest so. Dibuixeu el perfil de l'ona estacionària corresponent i calculeu la longitud del tub, que correspon a la longitud del tram de la xemeneia ple d'aire.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "En un moment de l'erupció, es va detectar un nivell d'intensitat sonora de $72{,}0\\ \\text{dB}$ a la localitat de Todoque, que és a $5{,}22\\ \\text{km}$ del con del volcà. Calculeu el nivell d'intensitat sonora que se sentirà des de la costa de l'illa d'El Hierro, que és a $92{,}3\\ \\text{km}$ del volcà Cumbre Vieja. (Suposeu que no hi ha obstacles en la propagació del so entre el volcà Cumbre Vieja i l'illa d'El Hierro.)",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Velocitat del so: $v = 340\\ \\text{m/s}$\n- Freqüència fonamental: $f_1 = 5{,}40\\ \\text{Hz}$\n- Todoque: $\\beta_1 = 72{,}0\\ \\text{dB}$, $r_1 = 5{,}22\\ \\text{km} = 5{,}22 \\times 10^{3}\\ \\text{m}$\n- El Hierro: $r_2 = 92{,}3\\ \\text{km} = 9{,}23 \\times 10^{4}\\ \\text{m}$\n- $I_0 = 10^{-12}\\ \\text{W m}^{-2}$\n- Incògnites: $\\lambda$ i longitud del tub $L$ (a); nivell d'intensitat $\\beta_2$ a El Hierro (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud d'ona",
+            "cos": "Per a qualsevol ona, la velocitat de propagació és $v = \\lambda f$:\n\n$$\\lambda = \\frac{v}{f} = \\frac{340}{5{,}40} = 63{,}0\\ \\text{m}$$\n\nResultat: **$\\lambda = 63{,}0\\ \\text{m}$** (és un infrasò: $f < 20\\ \\text{Hz}$, no l'oïm)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Perfil de l'ona estacionària en un tub tancat per un extrem",
+            "cos": "En un tub tancat per un extrem i obert per l'altre:\n\n- A l'extrem **tancat** (la lava, on l'aire no es pot moure) hi ha un **node** (N) de desplaçament.\n- A l'extrem **obert** (la boca del volcà) hi ha un **ventre** (V).\n\nEl mode fonamental és el més senzill que compleix aquestes condicions: un node a baix i un ventre a dalt, sense cap altre node entremig. La distància entre un node i el ventre consecutiu és un quart de longitud d'ona.\n\n![Perfil del mode fonamental: node a la lava i ventre a la boca (solució oficial)](img/fisica/2022-S/e3-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud del tub",
+            "cos": "Del dibuix, en el mode fonamental el tub conté $\\lambda/4$:\n\n$$L = \\frac{\\lambda}{4} = \\frac{63{,}0}{4} = 15{,}7\\ \\text{m}$$\n\nResultat: **$L \\approx 15{,}7\\ \\text{m}$** de xemeneia plena d'aire."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat sonora a Todoque",
+            "cos": "El nivell d'intensitat sonora es defineix com $\\beta = 10\\log\\dfrac{I}{I_0}$. Aïllem la intensitat:\n\n$$I_1 = I_0 \\cdot 10^{\\beta_1/10} = 10^{-12}\\cdot 10^{72{,}0/10} = 10^{-12}\\cdot 10^{7{,}2} = 1{,}58 \\times 10^{-5}\\ \\text{W m}^{-2}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat a El Hierro: el so es reparteix sobre esferes",
+            "cos": "El volcà emet amb una potència $P$ que es reparteix (sense obstacles ni absorció) sobre superfícies esfèriques d'àrea $4\\pi r^2$. Per tant $I = \\dfrac{P}{4\\pi r^2}$, i com que la potència és la mateixa a qualsevol distància:\n\n$$I_1 \\cdot 4\\pi r_1^2 = I_2 \\cdot 4\\pi r_2^2 \\;\\Rightarrow\\; I_2 = I_1\\,\\frac{r_1^2}{r_2^2}$$\n\n$$I_2 = 1{,}58 \\times 10^{-5}\\cdot\\frac{(5{,}22 \\times 10^{3})^2}{(92{,}3 \\times 10^{3})^2} = 5{,}07 \\times 10^{-8}\\ \\text{W m}^{-2}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Nivell d'intensitat sonora a El Hierro",
+            "cos": "$$\\beta_2 = 10\\log\\frac{I_2}{I_0} = 10\\log\\frac{5{,}07 \\times 10^{-8}}{10^{-12}} = 47{,}0\\ \\text{dB}$$\n\nResultat: **$\\beta_2 \\approx 47{,}0\\ \\text{dB}$**.\n\nComprovació ràpida: $\\beta_2 = \\beta_1 - 20\\log\\dfrac{r_2}{r_1} = 72{,}0 - 20\\log\\dfrac{92{,}3}{5{,}22} = 72{,}0 - 25{,}0 = 47{,}0\\ \\text{dB}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\lambda = 63{,}0\\ \\text{m}$; node a la lava i ventre a la boca; $L = \\lambda/4 \\approx 15{,}7\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I_1 = 1{,}58 \\times 10^{-5}\\ \\text{W m}^{-2}$, $I_2 = 5{,}07 \\times 10^{-8}\\ \\text{W m}^{-2}$, $\\beta_2 \\approx 47{,}0\\ \\text{dB}$"
+          }
+        ],
+        "nota": "Error típic: pensar que els decibels disminueixen proporcionalment a la distància. El que és inversament proporcional a $r^2$ és la **intensitat** $I$, no el nivell $\\beta$ (que és logarítmic)."
+      }
+    },
+    {
+      "id": "fisica-2022-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Camp magnètic i força entre dos fils paral·lels amb corrents oposats",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp magnètic d'un fil",
+        "regla de la mà dreta",
+        "superposició de camps",
+        "força entre corrents",
+        "força de Lorentz"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        8
+      ],
+      "enunciat": "Dos fils conductors rectilinis molt llargs es troben situats paral·lels a l'eix $z$ (perpendiculars al pla $xy$) i separats una distància de $16{,}0\\ \\text{cm}$. Pel fil 1 circula un corrent $I_1 = 1{,}50\\ \\text{A}$ dirigit cap avall i pel fil 2 circula un corrent $I_2 = 1{,}50\\ \\text{A}$ dirigit cap amunt.\n\n**Dades:** El mòdul de camp magnètic creat per un fil infinit per on circula un corrent $I$ a una distància $r$ del fil és $B = \\dfrac{\\mu_0\\,I}{2\\pi r}$. $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T m A}^{-1}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2022-S/e4.png",
+          "peu": "Els dos fils paral·lels a l'eix z i vista del pla xy amb el punt P"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Donat un punt $P$ situat al pla $xy$ i equidistant als dos fils (la distància a cada fil és de $10{,}0\\ \\text{cm}$), feu un esquema sobre el pla $xy$ del camp magnètic creat per cada fil al punt $P$ i justifiqueu la direcció i el sentit del camp. Quin és el sentit i la direcció del camp magnètic total al punt $P$? Justifiqueu la resposta.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la força per unitat de longitud que fa el fil 1 sobre el fil 2, és a dir, la força que fa el fil 1 sobre un tram d'$1{,}00\\ \\text{m}$ de longitud del fil 2. Indiqueu tant el mòdul com la direcció i el sentit de la força.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $I_1 = 1{,}50\\ \\text{A}$ cap avall ($-z$): al pla $xy$ vist des de dalt, **entra** al paper ($\\otimes$)\n- $I_2 = 1{,}50\\ \\text{A}$ cap amunt ($+z$): **surt** del paper ($\\odot$)\n- Distància entre fils: $d = 16{,}0\\ \\text{cm} = 0{,}160\\ \\text{m}$ (fil 2 a la dreta del fil 1, en el sentit $+y$)\n- Distància de $P$ a cada fil: $r = 10{,}0\\ \\text{cm} = 0{,}100\\ \\text{m}$; $P$ és a la mediatriu, a $\\sqrt{10^2 - 8^2} = 6\\ \\text{cm}$ de la línia dels fils, en el sentit $+x$\n- $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T m A}^{-1}$\n- Incògnites: direcció i sentit de $\\vec B_1$, $\\vec B_2$ i $\\vec B_\\text{total}$ a $P$ (a); força per unitat de longitud del fil 1 sobre el fil 2 (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp creat pel fil 1 a P",
+            "cos": "Les línies de camp d'un fil rectilini són **circumferències** centrades al fil, en plans perpendiculars a ell. El sentit es troba amb la **regla de la mà dreta**: polze en el sentit del corrent, i els dits doblegats indiquen el sentit del camp.\n\nEl corrent $I_1$ entra al paper, de manera que les línies giren en sentit **horari** (vist des de dalt). A $P$, $\\vec B_1$ és tangent a la circumferència de radi 10 cm (perpendicular al radi $I_1P$) i apunta **cap avall i cap a l'esquerra**: té component $+x$ i component $-y$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp creat pel fil 2 a P",
+            "cos": "El corrent $I_2$ surt del paper, i les seves línies de camp giren en sentit **antihorari**. A $P$, $\\vec B_2$ és perpendicular al radi $I_2P$ i apunta **cap avall i cap a la dreta**: component $+x$ i component $+y$.\n\nCom que tots dos fils porten el mateix corrent i $P$ és a la mateixa distància de tots dos, els mòduls són iguals:\n\n$$B_1 = B_2 = \\frac{\\mu_0\\,I}{2\\pi r} = \\frac{4\\pi \\times 10^{-7}\\cdot 1{,}50}{2\\pi \\cdot 0{,}100} = 3{,}00 \\times 10^{-6}\\ \\text{T}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp total a P (superposició)",
+            "cos": "El camp total és la suma vectorial $\\vec B = \\vec B_1 + \\vec B_2$. Per simetria, els dos vectors formen el mateix angle $\\alpha$ amb l'eix $y$:\n\n- Les components $y$ són iguals i de sentit contrari ($B_{y,2} = -B_{y,1}$): **s'anul·len**.\n- Les components $x$ són iguals i positives: **se sumen**.\n\nPer tant, **el camp total a $P$ té la direcció de l'eix $x$ i sentit positiu** (perpendicular a la línia que uneix els fils, allunyant-se'n).\n\nSi en volem el mòdul (no es demana): l'angle amb el radi fa que la component $x$ de cada camp sigui $B\\cdot\\frac{8}{10}$, i\n\n$$B = 2 \\cdot 3{,}00 \\times 10^{-6}\\cdot 0{,}8 = 4{,}80 \\times 10^{-6}\\ \\text{T}$$\n\n![Camps B1, B2 i camp total a P (solució oficial)](img/fisica/2022-S/e4-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Camp del fil 1 a la posició del fil 2",
+            "cos": "El fil 2 és a $d = 0{,}160\\ \\text{m}$ del fil 1:\n\n$$B_1 = \\frac{\\mu_0\\,I_1}{2\\pi d} = \\frac{4\\pi \\times 10^{-7}\\cdot 1{,}50}{2\\pi \\cdot 0{,}160} = 1{,}875 \\times 10^{-6}\\ \\text{T}$$\n\nAmb la regla de la mà dreta (circulació horària al voltant del fil 1), al punt on hi ha el fil 2 (a la dreta del fil 1, sobre l'eix $y$) el camp apunta en el sentit **$+x$**: $\\vec B_1 = 1{,}875 \\times 10^{-6}\\,\\vec i\\ \\text{T}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força sobre un tram d'1 m del fil 2",
+            "cos": "La força magnètica sobre un tram de fil de longitud $\\vec l$ (en el sentit del corrent) és\n\n$$\\vec F = I_2\\,(\\vec l \\times \\vec B_1)$$\n\n$\\vec l$ va segons $+z$ i $\\vec B_1$ segons $+x$: són perpendiculars, de manera que el mòdul és\n\n$$\\frac{F}{l} = I_2\\,B_1 = 1{,}50 \\cdot 1{,}875 \\times 10^{-6} = 2{,}81 \\times 10^{-6}\\ \\text{N/m}$$\n\nDirecció i sentit: $\\vec k \\times \\vec i = \\vec j$, és a dir, segons l'eix $y$ positiu:\n\n$$\\frac{\\vec F}{l} = 2{,}81 \\times 10^{-6}\\,\\vec j\\ \\text{N/m}$$\n\nEl fil 2 és empès **en sentit contrari al fil 1**: corrents de sentits oposats es **repel·leixen**. Sobre un tram d'1,00 m, $F = 2{,}81 \\times 10^{-6}\\ \\text{N}$.\n\n![Força del fil 1 sobre el fil 2 (solució oficial)](img/fisica/2022-S/e4-sol-2.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\vec B_1$ i $\\vec B_2$ tangents a les circumferències (mòduls iguals, $3{,}00 \\times 10^{-6}\\ \\text{T}$); les components $y$ s'anul·len i $\\vec B_\\text{total}$ va segons $+x$ ($4{,}80 \\times 10^{-6}\\ \\text{T}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\vec F / l = 2{,}81 \\times 10^{-6}\\,\\vec j\\ \\text{N/m}$ (repulsió: el fil 2 s'allunya del fil 1)"
+          }
+        ],
+        "nota": "La solució oficial no calcula el mòdul del camp total a l'apartat a) (no es demana); el valor $4{,}80 \\times 10^{-6}\\ \\text{T}$ s'hi afegeix com a comprovació. Truc per recordar: corrents paral·lels s'atrauen, antiparal·lels es repel·leixen."
+      }
+    },
+    {
+      "id": "fisica-2022-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Període de semidesintegració i activitat del radó en una estança",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "desintegració radioactiva",
+        "període de semidesintegració",
+        "constant de desintegració",
+        "activitat",
+        "radó"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10
+      ],
+      "enunciat": "Per a mesurar la concentració de radó d'una estança, s'agafa una mostra de $180\\ \\text{cm}^3$ d'aire. Es col·loca la mostra dins d'un detector que compta el nombre total de desintegracions $\\alpha$. Considerem que totes les desintegracions provenen del radó 222, ${}^{222}_{86}\\text{Rn}$. S'efectua un mesurament de les desintegracions durant 10 minuts cada dia, 10 dies seguits, i sempre a la mateixa hora. Les dades obtingudes són les següents:\n\n| $t$ (dies) | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| $N$ (nuclis desintegrats) | 130 | 108 | 91 | 77 | 65 | 55 | 45 | 38 | 33 | 30 |\n\n**Dada:** $1\\ \\text{Ci} = 3{,}70 \\times 10^{10}\\ \\text{Bq}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Representeu, dins la quadrícula adjunta, els nuclis desintegrats en funció del temps. A partir de la gràfica determineu el període de semidesintegració. Tenint en compte que l'evolució temporal del nombre de nuclis desintegrats és la mateixa que la del nombre total de nuclis de radó a l'estança, calculeu la constant de desintegració.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Tenint en compte que un mesurament dura 10 minuts, quina activitat té la mostra de $180\\ \\text{cm}^3$ d'aire de l'estança el dia $t = 0$? L'Agència de Protecció Ambiental dels Estats Units (EPA) recomana no sobrepassar l'activitat de $4\\ \\text{pCi}$ per litre d'aire. Segons aquest límit, és perillosa la concentració a $t = 0$ a l'estança d'on s'ha extret la mostra?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Volum de la mostra: $V = 180\\ \\text{cm}^3 = 180 \\times 10^{-6}\\ \\text{m}^3 = 0{,}180\\ \\text{L}$\n- Durada de cada mesurament: $\\Delta t = 10\\ \\text{min} = 600\\ \\text{s}$\n- Desintegracions a $t = 0$: $N_0 = 130$ en 600 s\n- $1\\ \\text{Ci} = 3{,}70 \\times 10^{10}\\ \\text{Bq}$; $1\\ \\text{pCi} = 10^{-12}\\ \\text{Ci}$\n- Límit EPA: $4\\ \\text{pCi/L}$\n- Incògnites: $T_{1/2}$ i $\\lambda$ (a); activitat $A_0$ i comparació amb el límit (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Representació gràfica",
+            "cos": "Es posa el temps (dies) a l'eix horitzontal i el nombre de nuclis desintegrats a l'eix vertical, amb títols i unitats als eixos i una escala que aprofiti la quadrícula (p. ex. de 0 a 10 dies i de 0 a 140 nuclis). Es marquen els 10 punts i es traça una corba suau: és una **exponencial decreixent**, típica de la desintegració radioactiva.\n\n![Gràfica N(t) amb la lectura del període de semidesintegració (solució oficial)](img/fisica/2022-S/e5-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Període de semidesintegració a partir de la gràfica",
+            "cos": "El període de semidesintegració $T_{1/2}$ és el temps que tarda a reduir-se a la meitat el nombre de nuclis (i, per tant, el nombre de desintegracions per mesurament). Partim de $N_0 = 130$ i busquem quan la gràfica val $130/2 = 65$: és a $t = 4$ dies.\n\nResultat: **$T_{1/2} = 4$ dies**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Constant de desintegració",
+            "cos": "La llei de desintegració és $N(t) = N_0\\,e^{-\\lambda t}$. Quan $t = T_{1/2}$, $N = N_0/2$:\n\n$$\\frac{1}{2} = e^{-\\lambda T_{1/2}} \\;\\Rightarrow\\; \\lambda = \\frac{\\ln 2}{T_{1/2}} = \\frac{0{,}693}{4\\ \\text{dies}} = 0{,}173\\ \\text{dies}^{-1}$$\n\nEn unitats SI ($1\\ \\text{dia} = 86\\,400\\ \\text{s}$):\n\n$$\\lambda = \\frac{0{,}173}{86\\,400\\ \\text{s}} = 2{,}00 \\times 10^{-6}\\ \\text{s}^{-1}$$\n\nResultat: **$\\lambda = 0{,}173\\ \\text{dies}^{-1} = 2{,}00 \\times 10^{-6}\\ \\text{s}^{-1}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Activitat de la mostra a t = 0",
+            "cos": "L'activitat és el nombre de desintegracions per unitat de temps (en Bq = desintegracions/s). El dia $t = 0$ es compten 130 desintegracions en 10 minuts (com que $T_{1/2}$ és de dies, durant 10 minuts l'activitat pràcticament no canvia):\n\n$$A_0 = \\frac{N_0}{\\Delta t} = \\frac{130}{600\\ \\text{s}} = 0{,}217\\ \\text{Bq}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Concentració d'activitat de l'estança",
+            "cos": "Dividim per volum de la mostra:\n\n$$C_0 = \\frac{A_0}{V} = \\frac{0{,}217\\ \\text{Bq}}{180 \\times 10^{-6}\\ \\text{m}^3} = 1{,}20 \\times 10^{3}\\ \\text{Bq/m}^3$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Límit de l'EPA en Bq/m³ i comparació",
+            "cos": "Passem el límit a les mateixes unitats:\n\n$$C_\\text{lím} = 4\\,\\frac{\\text{pCi}}{\\text{L}}\\cdot\\frac{10^{-12}\\ \\text{Ci}}{1\\ \\text{pCi}}\\cdot\\frac{3{,}70 \\times 10^{10}\\ \\text{Bq}}{1\\ \\text{Ci}}\\cdot\\frac{10^{3}\\ \\text{L}}{1\\ \\text{m}^3} = 148\\ \\text{Bq/m}^3$$\n\n$$\\frac{C_0}{C_\\text{lím}} = \\frac{1\\,200}{148} = 8{,}1$$\n\nResultat: la concentració de radó és **unes 8 vegades superior** al límit recomanat per l'EPA; per tant, **sí que és perillosa**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Corba exponencial decreixent; $T_{1/2} = 4$ dies; $\\lambda = 0{,}173\\ \\text{dies}^{-1} = 2{,}00 \\times 10^{-6}\\ \\text{s}^{-1}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A_0 = 0{,}217\\ \\text{Bq}$; $C_0 = 1{,}20 \\times 10^{3}\\ \\text{Bq/m}^3$ davant d'un límit de $148\\ \\text{Bq/m}^3$: unes 8 vegades més, és perillosa"
+          }
+        ],
+        "nota": "Es pot comparar també per litre: $0{,}217\\ \\text{Bq}/0{,}180\\ \\text{L} = 1{,}20\\ \\text{Bq/L}$, mentre que el límit és $4\\ \\text{pCi/L} = 0{,}148\\ \\text{Bq/L}$. El període real del radó 222 és de 3,8 dies, molt proper al valor que s'obté de la gràfica."
+      }
+    },
+    {
+      "id": "fisica-2022-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Efecte fotoelèctric: efecte de la freqüència i funció de treball",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "funció de treball",
+        "potencial de frenada",
+        "energia del fotó",
+        "intensitat de la llum"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12
+      ],
+      "enunciat": "S'observa que els fotons d'una determinada freqüència que incideixen sobre una superfície metàl·lica provoquen l'emissió d'electrons d'aquesta superfície.\n\n**Dades:** $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$; $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Si mantenim la intensitat de la llum constant i augmentem la freqüència dels fotons, com varia el nombre d'electrons emesos i l'energia d'aquests? Encercleu la resposta correcta dins del requadre següent i, a continuació, justifiqueu les dues respostes.\n\n- Nombre d'electrons emesos: Disminueix / Es manté constant / Augmenta\n- Energia dels electrons emesos: Disminueix / Es manté constant / Augmenta",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció de treball dels electrons emesos sabent que el potencial de frenada és de $0{,}29\\ \\text{V}$, quan la longitud d'ona incident és de $550\\ \\text{nm}$. Expresseu el resultat en eV.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Potencial de frenada: $V_f = 0{,}29\\ \\text{V}$\n- Longitud d'ona: $\\lambda = 550\\ \\text{nm} = 550 \\times 10^{-9}\\ \\text{m}$\n- $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$\n- Incògnites: com varien el nombre i l'energia dels electrons (a); funció de treball $W_0$ en eV (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Nombre d'electrons emesos: es manté constant",
+            "cos": "Segons el model d'Einstein, la llum està formada per fotons i **cada fotó pot arrencar com a màxim un electró**. El nombre d'electrons emesos depèn, doncs, del **nombre de fotons** que arriben a la superfície per unitat de temps, que és el que mesura la intensitat. Si la intensitat es manté constant, el nombre de fotons que arriben es manté (vegeu el matís a la nota), i també el nombre d'electrons emesos.\n\nResposta: **Nombre d'electrons emesos: es manté constant.**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia dels electrons emesos: augmenta",
+            "cos": "L'energia de cada fotó és $E = hf$. Una part s'inverteix a arrencar l'electró (la funció de treball $W_0$) i la resta queda com a energia cinètica:\n\n$$E_c = hf - W_0$$\n\nSi augmenta $f$, augmenta l'energia de cada fotó i, com que $W_0$ és una propietat del metall que no canvia, **augmenta l'energia cinètica dels electrons**.\n\nResposta: **Energia dels electrons emesos: augmenta.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica màxima a partir del potencial de frenada",
+            "cos": "El potencial de frenada és la diferència de potencial que cal aplicar per aturar els electrons més ràpids: el treball elèctric $e\\,V_f$ iguala la seva energia cinètica.\n\n$$E_c = e\\,V_f = 0{,}29\\ \\text{eV} = 0{,}29 \\cdot 1{,}602 \\times 10^{-19} = 4{,}64 \\times 10^{-20}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia dels fotons incidents",
+            "cos": "$$f = \\frac{c}{\\lambda} = \\frac{3{,}00 \\times 10^{8}}{550 \\times 10^{-9}} = 5{,}45 \\times 10^{14}\\ \\text{Hz}$$\n\n$$E_\\text{fotó} = h f = 6{,}63 \\times 10^{-34}\\cdot 5{,}45 \\times 10^{14} = 3{,}62 \\times 10^{-19}\\ \\text{J} = \\frac{3{,}62 \\times 10^{-19}}{1{,}602 \\times 10^{-19}} = 2{,}26\\ \\text{eV}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció de treball (balanç energètic)",
+            "cos": "$$W_0 = hf - E_c = 3{,}62 \\times 10^{-19} - 4{,}64 \\times 10^{-20} = 3{,}15 \\times 10^{-19}\\ \\text{J}$$\n\n$$W_0 = \\frac{3{,}15 \\times 10^{-19}}{1{,}602 \\times 10^{-19}} = 1{,}97\\ \\text{eV}$$\n\nO directament en eV: $W_0 = 2{,}26 - 0{,}29 = 1{,}97\\ \\text{eV}$.\n\nResultat: **$W_0 \\approx 1{,}97\\ \\text{eV}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Nombre d'electrons: **es manté constant**; energia dels electrons: **augmenta**"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_c = 4{,}64 \\times 10^{-20}\\ \\text{J}$, $f = 5{,}45 \\times 10^{14}\\ \\text{Hz}$, $W_0 = 3{,}15 \\times 10^{-19}\\ \\text{J} \\approx 1{,}97\\ \\text{eV}$"
+          }
+        ],
+        "nota": "Matís: estrictament, si la intensitat (energia per unitat de temps i d'àrea) és constant i cada fotó porta més energia, arriben **menys** fotons per segon i el nombre d'electrons podria disminuir lleugerament. La pauta oficial, però, considera que la resposta correcta és «es manté constant», interpretant la intensitat com el nombre de fotons que arriben a la superfície."
+      }
+    },
+    {
+      "id": "fisica-2022-S-e7",
+      "exercici": 7,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Corrent altern d'un generador: freqüència, I(t) i transformador",
+      "tema": "induccio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "corrent altern",
+        "alternador",
+        "freqüència angular",
+        "transformador",
+        "valor eficaç"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        13
+      ],
+      "enunciat": "Considereu un petit generador elèctric domèstic que està format per una bobina que pot girar tallant les línies de camp magnètic d'un imant fix. Aquest generador produeix el corrent altern representat en el gràfic següent:",
+      "figures": [
+        {
+          "src": "img/fisica/2022-S/e7.png",
+          "peu": "Intensitat del corrent altern en funció del temps"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "A partir del gràfic, deduïu la freqüència de gir de la bobina (en Hz) i el valor de la intensitat màxima $I_\\text{màx}$. Escriviu la funció $I(t)$ que descriu la relació entre la intensitat i el temps que mostra el gràfic.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Per a poder connectar electrodomèstics a aquest generador elèctric, disposem d'un transformador. Connectem aquest corrent altern al primari d'un transformador. La bobina del primari del transformador té 124 voltes. Calculeu el nombre de voltes que són necessàries a la bobina del secundari per a obtenir una FEM eficaç ($\\varepsilon_\\text{ef}$) de $220\\ \\text{V}$. Suposeu que es tracta d'un transformador ideal. Es tracta d'un transformador elevador o reductor?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Del gràfic: la intensitat val 0 a $t = 0$, augmenta fins a un màxim de $3\\ \\text{A}$ a $t = 0{,}005\\ \\text{s}$, torna a 0 a $0{,}01\\ \\text{s}$, arriba al mínim $-3\\ \\text{A}$ a $0{,}015\\ \\text{s}$ i torna a 0 a $0{,}02\\ \\text{s}$.\n- Primari del transformador: $N_1 = 124$ voltes; FEM eficaç desitjada al secundari: $\\varepsilon_{2,\\text{ef}} = 220\\ \\text{V}$\n- Incògnites: $f$, $I_\\text{màx}$ i $I(t)$ (a); $N_2$ i tipus de transformador (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Període i freqüència de gir",
+            "cos": "El període és el temps que tarda el senyal a repetir-se (un cicle complet). Al gràfic, el primer cicle va de $t = 0$ a $t = 0{,}02\\ \\text{s}$:\n\n$$T = 0{,}020\\ \\text{s} \\;\\Rightarrow\\; f = \\frac{1}{T} = \\frac{1}{0{,}020} = 50{,}0\\ \\text{Hz}$$\n\nEn un alternador, cada volta de la bobina produeix un cicle complet del corrent, de manera que la bobina gira a **$f = 50{,}0\\ \\text{Hz}$** (50 voltes per segon)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Intensitat màxima i freqüència angular",
+            "cos": "El valor màxim del gràfic és **$I_\\text{màx} = 3{,}0\\ \\text{A}$**.\n\n$$\\omega = 2\\pi f = 2\\pi \\cdot 50{,}0 = 100\\pi\\ \\text{rad/s} \\approx 314\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Funció I(t)",
+            "cos": "El corrent és sinusoïdal: $I(t) = I_\\text{màx}\\sin(\\omega t + \\varphi_0)$. Com que a $t = 0$ val $I = 0$ i després **creix**, $\\sin\\varphi_0 = 0$ amb pendent positiu, és a dir, $\\varphi_0 = 0$:\n\n$$I(t) = 3{,}0\\,\\sin(100\\pi\\,t)\\quad (I\\ \\text{en A},\\ t\\ \\text{en s})$$\n\nDe manera equivalent, amb cosinus: $I(t) = 3{,}0\\cos\\left(100\\pi\\,t - \\dfrac{\\pi}{2}\\right)$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Relació de transformació d'un transformador ideal",
+            "cos": "En un transformador ideal, el flux magnètic és el mateix a les dues bobines, i la FEM induïda a cada bobina és proporcional al seu nombre d'espires:\n\n$$\\frac{\\varepsilon_2}{\\varepsilon_1} = \\frac{N_2}{N_1} \\;\\Rightarrow\\; N_2 = N_1\\,\\frac{\\varepsilon_{2,\\text{ef}}}{\\varepsilon_{1,\\text{ef}}}$$\n\nPer calcular $N_2$ caldria conèixer la FEM (eficaç o màxima) del generador, $\\varepsilon_{1}$, que s'aplica al primari. **Aquesta dada no apareix a l'enunciat** (el gràfic només dona la intensitat, i sense la resistència o la impedància del circuit no se'n pot deduir la tensió). Per tant, l'apartat no es pot resoldre numèricament.\n\nEl criteri seria: si $\\varepsilon_{1,\\text{ef}} < 220\\ \\text{V}$, caldria $N_2 > 124$ i seria un transformador **elevador**; si $\\varepsilon_{1,\\text{ef}} > 220\\ \\text{V}$, seria **reductor**. (Per a un petit generador domèstic, el més probable és que la tensió sigui inferior a 220 V i calgui un transformador elevador.)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$T = 0{,}020\\ \\text{s}$, $f = 50{,}0\\ \\text{Hz}$, $I_\\text{màx} = 3{,}0\\ \\text{A}$, $I(t) = 3{,}0\\sin(100\\pi t)$ A"
+          },
+          {
+            "apartat": "b",
+            "valor": "$N_2 = 124\\cdot\\dfrac{220}{\\varepsilon_{1,\\text{ef}}}$: no es pot calcular perquè l'enunciat no dona la FEM del generador (apartat anul·lat a la pauta oficial)"
+          }
+        ],
+        "nota": "**Apartat b) anul·lat:** la pauta oficial reconeix que per resoldre'l calia la tensió eficaç o màxima del generador, que no surt a l'enunciat, i que per això l'apartat a) es puntua sobre 2,5 punts.\n\n**Discrepància amb l'oficial a l'apartat a):** la pauta dona com a primera opció $I(t) = 3\\cos\\left(100\\pi t + \\dfrac{\\pi}{2}\\right)$. Però $\\cos\\left(\\omega t + \\dfrac{\\pi}{2}\\right) = -\\sin(\\omega t)$, que comença decreixent cap a valors negatius, al contrari del gràfic. La fase correcta amb cosinus és $\\varphi_0 = -\\dfrac{\\pi}{2}$; la condició $\\cos\\varphi_0 = 0$ té dues solucions i cal triar la que dona pendent positiu a $t = 0$. L'alternativa oficial amb sinus, $I(t) = 3\\sin(100\\pi t)$, sí que és correcta."
+      }
+    },
+    {
+      "id": "fisica-2022-S-e8",
+      "exercici": 8,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Experiment de Pound-Rebka: desplaçament gravitatori de la freqüència dels fotons",
+      "tema": "relativitat",
+      "temes_secundaris": [
+        "quantica",
+        "gravitacio"
+      ],
+      "conceptes": [
+        "energia del fotó",
+        "massa equivalent",
+        "quantitat de moviment del fotó",
+        "desplaçament gravitatori cap al roig",
+        "conservació de l'energia"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        15
+      ],
+      "enunciat": "A principis dels anys seixanta del segle xx, els físics Robert Pound, Glen Anderson Rebka i Joseph Snider van verificar al Jefferson Physical Laboratory de Harvard la predicció d'Einstein que la gravetat canvia la freqüència de la llum. Entendre aquest efecte és essencial per a la navegació moderna, com per exemple per al funcionament del GPS. L'experiment consistia a mesurar la variació de freqüència d'uns fotons entre dos punts a diferent altura.\n\n**Nota:** Tot i que la massa en repòs d'un fotó és zero, la seva massa efectiva quan és atret per les altres masses és: $m = \\dfrac{E_\\text{fotó}}{c^2}$.\n\n**Dades:** $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$; $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$; $g = 9{,}81\\ \\text{m/s}^2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la freqüència, la massa (vegeu la nota) i la quantitat de moviment dels fotons al terra del laboratori de l'experiment si tenen una energia de $14{,}4\\ \\text{keV}$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "L'energia mecànica dels fotons és la suma de l'energia dels fotons i de l'energia potencial gravitatòria. A partir del principi de conservació de l'energia mecànica, calculeu la variació (en valor absolut) de l'energia i de la freqüència dels fotons entre dos punts separats verticalment $22{,}6\\ \\text{m}$. És a dir, entre el terra del laboratori i un altre punt a la mateixa vertical, $22{,}6\\ \\text{m}$ més amunt. En quin punt el fotó té una freqüència més gran, quan es troba al terra o quan està $22{,}6\\ \\text{m}$ per sobre del terra?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Energia del fotó al terra: $E = 14{,}4\\ \\text{keV} = 14{,}4 \\times 10^{3}\\ \\text{eV}$\n- Desnivell: $h = 22{,}6\\ \\text{m}$\n- $h_\\text{Planck} = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $g = 9{,}81\\ \\text{m/s}^2$, $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$\n- Incògnites: $f$, $m$ i $p$ del fotó (a); $|\\Delta E|$, $|\\Delta f|$ i on la freqüència és més gran (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia del fotó en joules",
+            "cos": "$$E = 14{,}4 \\times 10^{3}\\ \\text{eV}\\cdot\\frac{1{,}602 \\times 10^{-19}\\ \\text{J}}{1\\ \\text{eV}} = 2{,}31 \\times 10^{-15}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüència (relació de Planck)",
+            "cos": "L'energia d'un fotó és proporcional a la seva freqüència: $E = h f$.\n\n$$f = \\frac{E}{h} = \\frac{2{,}31 \\times 10^{-15}}{6{,}63 \\times 10^{-34}} = 3{,}48 \\times 10^{18}\\ \\text{Hz}$$\n\n(És un fotó de raigs gamma.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Massa efectiva i quantitat de moviment",
+            "cos": "Amb la massa efectiva de la nota (equivalència massa-energia d'Einstein):\n\n$$m = \\frac{E}{c^2} = \\frac{2{,}31 \\times 10^{-15}}{(3{,}00 \\times 10^{8})^2} = 2{,}56 \\times 10^{-32}\\ \\text{kg}$$\n\nLa quantitat de moviment d'un fotó, que es mou a velocitat $c$, és\n\n$$p = m\\,c = \\frac{E}{c} = 2{,}56 \\times 10^{-32}\\cdot 3{,}00 \\times 10^{8} = 7{,}69 \\times 10^{-24}\\ \\text{kg m s}^{-1}$$\n\nResultat: **$f = 3{,}48 \\times 10^{18}\\ \\text{Hz}$, $m = 2{,}56 \\times 10^{-32}\\ \\text{kg}$, $p = 7{,}69 \\times 10^{-24}\\ \\text{kg m s}^{-1}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Conservació de l'energia mecànica del fotó",
+            "cos": "Tractem el fotó com una partícula de massa $m$ dins del camp gravitatori: la seva energia mecànica és l'energia del fotó més l'energia potencial gravitatòria (prop de la superfície, $E_p = mgh$):\n\n$$E_m = h f + m g h$$\n\nSi l'energia mecànica es conserva entre el terra ($h_0 = 0$) i el punt elevat ($h_1 = 22{,}6\\ \\text{m}$):\n\n$$h f_0 + m g \\cdot 0 = h f_1 + m g h_1 \\;\\Rightarrow\\; |\\Delta E_\\text{fotó}| = h f_0 - h f_1 = m g h_1$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Variació de l'energia",
+            "cos": "La variació de $m$ entre els dos punts és insignificant, així que fem servir la massa de l'apartat a):\n\n$$|\\Delta E| = m g h_1 = 2{,}56 \\times 10^{-32}\\cdot 9{,}81 \\cdot 22{,}6 = 5{,}68 \\times 10^{-30}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Variació de la freqüència",
+            "cos": "$$|\\Delta f| = \\frac{|\\Delta E|}{h} = \\frac{5{,}68 \\times 10^{-30}}{6{,}63 \\times 10^{-34}} = 8{,}57 \\times 10^{3}\\ \\text{Hz}$$\n\nÉs una variació relativa minúscula, $\\dfrac{\\Delta f}{f} = \\dfrac{g h}{c^2} \\approx 2{,}5 \\times 10^{-15}$: per això l'experiment va ser tan difícil.\n\nResultat: **$|\\Delta E| = 5{,}68 \\times 10^{-30}\\ \\text{J}$, $|\\Delta f| = 8{,}57 \\times 10^{3}\\ \\text{Hz}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "On la freqüència és més gran",
+            "cos": "L'energia mecànica és la mateixa als dos punts, però al punt elevat l'energia potencial gravitatòria és més gran; per tant, l'energia del fotó $hf$ hi és més petita. Un fotó que puja «perd» energia (desplaçament cap al roig) i un que baixa en «guanya».\n\nResultat: **el fotó té una freqüència més gran al terra del laboratori**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 2{,}31 \\times 10^{-15}\\ \\text{J}$; $f = 3{,}48 \\times 10^{18}\\ \\text{Hz}$; $m = 2{,}56 \\times 10^{-32}\\ \\text{kg}$; $p = 7{,}69 \\times 10^{-24}\\ \\text{kg m s}^{-1}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$|\\Delta E| = 5{,}68 \\times 10^{-30}\\ \\text{J}$; $|\\Delta f| = 8{,}57 \\times 10^{3}\\ \\text{Hz}$; la freqüència és més gran al terra"
+          }
+        ],
+        "nota": "La pauta oficial escriu $\\Delta f = 8{,}570 \\times 10^{3}\\ \\text{Hz}$ (amb una xifra de més); aquí s'arrodoneix a 3 xifres significatives, com les dades."
+      }
+    }
+  ]
+}

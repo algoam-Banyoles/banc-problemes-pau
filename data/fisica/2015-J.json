@@ -1,0 +1,647 @@
+{
+  "examen": {
+    "id": "fisica-2015-J",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2015,
+    "convocatoria": "juny",
+    "serie": "2",
+    "pdf_examen": "pdfs/fisica/2015-J-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2015-J-solucio.pdf",
+    "estructura": "Part comuna obligatòria (P1 i P2) i part optativa: cal escollir UNA de les dues opcions (A o B) i fer-ne els problemes P3, P4 i P5. Cada problema val 2 punts (dos apartats d'1 punt)."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2015-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Teranyina com a oscil·lador harmònic: constant elàstica, massa d'un insecte i acceleració màxima",
+      "tema": "oscillacions",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "moviment harmònic simple",
+        "constant elàstica",
+        "freqüència angular",
+        "període",
+        "acceleració màxima"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Les aranyes tenen uns òrgans sensibles en els extrems de les potes que els permeten detectar les vibracions que produeixen els insectes que queden atrapats a la seva teranyina. Considereu que en una teranyina el moviment dels insectes és equivalent al que tindrien en un sistema que es mogués amb un moviment harmònic simple (MHS). Hem observat que un insecte de massa $1{,}58\\ \\text{g}$ atrapat en una teranyina produeix una vibració de $12\\ \\text{Hz}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la constant elàstica d'aquesta teranyina.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la massa d'un insecte que, en quedar atrapat a la teranyina, té un període d'oscil·lació de $0{,}12\\ \\text{s}$. Calculeu el valor absolut de l'acceleració màxima de l'insecte, durant el temps en què es mou a la teranyina, si l'amplitud de l'oscil·lació és de $2{,}0\\ \\text{mm}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Primer insecte: $m_1 = 1{,}58\\ \\text{g} = 1{,}58 \\times 10^{-3}\\ \\text{kg}$, freqüència $f_1 = 12\\ \\text{Hz}$\n- Segon insecte: període $T_2 = 0{,}12\\ \\text{s}$, amplitud $A = 2{,}0\\ \\text{mm} = 2{,}0 \\times 10^{-3}\\ \\text{m}$\n- Incògnites: a) constant elàstica $k$ de la teranyina; b) massa $m_2$ del segon insecte i $|a_\\text{max}|$.\n\nLa teranyina fa el paper d'una molla: és la mateixa teranyina (mateixa $k$) per als dos insectes."
+          },
+          {
+            "apartat": "a",
+            "titol": "Relació entre k, la massa i la freqüència angular en un MHS",
+            "cos": "En un MHS la posició és $x(t) = A\\sin(\\omega t)$ i, derivant dues vegades, l'acceleració és $a = -A\\omega^2\\sin(\\omega t) = -\\omega^2 x$. La força recuperadora (llei de Hooke) és $F = -kx$, i per la segona llei de Newton $F = ma$:\n\n$$-kx = -m\\omega^2 x \\quad\\Rightarrow\\quad k = m\\,\\omega^2 = m\\,(2\\pi f)^2$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul de la constant elàstica",
+            "cos": "$$\\omega_1 = 2\\pi f_1 = 2\\pi \\cdot 12 = 75{,}4\\ \\text{rad/s}$$\n\n$$k = m_1\\omega_1^2 = 1{,}58 \\times 10^{-3} \\cdot (2\\pi \\cdot 12)^2 = 8{,}98\\ \\text{N/m}$$\n\nResultat: **$k \\approx 9{,}0\\ \\text{N/m}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa del segon insecte",
+            "cos": "La constant $k$ és la mateixa (és la mateixa teranyina), però ara el període és diferent. La freqüència angular és $\\omega_2 = \\dfrac{2\\pi}{T_2}$:\n\n$$\\omega_2 = \\frac{2\\pi}{0{,}12} = 52{,}4\\ \\text{rad/s}$$\n\n$$m_2 = \\frac{k}{\\omega_2^2} = \\frac{9{,}0}{52{,}4^2} = 3{,}3 \\times 10^{-3}\\ \\text{kg}$$\n\nResultat: **$m_2 \\approx 3{,}3 \\times 10^{-3}\\ \\text{kg} = 3{,}3\\ \\text{g}$** (més massa → oscil·la més lentament: període més llarg)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Acceleració màxima",
+            "cos": "Com que $a = -A\\omega^2\\sin(\\omega t)$, el valor absolut de l'acceleració és màxim quan $|\\sin(\\omega t)| = 1$, és a dir, als extrems de l'oscil·lació ($x = \\pm A$):\n\n$$|a_\\text{max}| = \\omega_2^2 A = \\left(\\frac{2\\pi}{0{,}12}\\right)^2 \\cdot 2{,}0 \\times 10^{-3} = 5{,}5\\ \\text{m/s}^2$$\n\nResultat: **$|a_\\text{max}| \\approx 5{,}5\\ \\text{m/s}^2$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$k \\approx 9{,}0\\ \\text{N/m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m \\approx 3{,}3 \\times 10^{-3}\\ \\text{kg}$; $|a_\\text{max}| \\approx 5{,}5\\ \\text{m/s}^2$"
+          }
+        ],
+        "nota": "Error típic: fer servir la freqüència $f$ en lloc de la freqüència angular $\\omega = 2\\pi f$ a $k = m\\omega^2$."
+      }
+    },
+    {
+      "id": "fisica-2015-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Camp elèctric uniforme entre dues plaques: diferència de potencial i càrrega de partícules de pols",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "camp elèctric uniforme",
+        "diferència de potencial",
+        "plaques paral·leles",
+        "força elèctrica",
+        "segona llei de newton"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Per a obtenir un camp elèctric vertical aproximadament uniforme de $5\\,000\\ \\text{N/C}$ i dirigit cap amunt, disposem de dues plaques metàl·liques paral·leles separades $10{,}0\\ \\text{mm}$, a les quals apliquem una diferència de potencial.\n\n**Dada:** $g = 9{,}81\\ \\text{m}\\,\\text{s}^{-2}$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Feu un esquema del muntatge en què indiqueu el signe de la càrrega de cada placa i representeu-hi les línies del camp elèctric. Calculeu la diferència de potencial entre les plaques i justifiqueu el signe del resultat.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Dues partícules de pols, de $0{,}50\\ \\mu\\text{g}$ de massa cadascuna, es troben entre les dues plaques. Una de les partícules (A) queda suspesa en equilibri i l'altra (B) es mou amb una acceleració de $14{,}7\\ \\text{m/s}^2$ cap avall. Determineu la càrrega elèctrica de cada partícula. Considereu que entre les plaques no hi ha aire.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Camp elèctric: $E = 5\\,000\\ \\text{N/C}$, vertical i cap amunt\n- Separació de les plaques: $d = 10{,}0\\ \\text{mm} = 1{,}00 \\times 10^{-2}\\ \\text{m}$\n- Massa de cada partícula: $m = 0{,}50\\ \\mu\\text{g} = 0{,}50 \\times 10^{-6}\\ \\text{g} = 0{,}50 \\times 10^{-9}\\ \\text{kg}$\n- Acceleració de B: $a = 14{,}7\\ \\text{m/s}^2$ cap avall; $g = 9{,}81\\ \\text{m/s}^2$\n- Incògnites: a) esquema i $\\Delta V$; b) càrregues $q_A$ i $q_B$ (amb signe)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Signe de les plaques i línies de camp",
+            "cos": "Les línies de camp elèctric surten de les càrregues positives i van cap a les negatives. Si el camp ha d'anar **cap amunt**, la placa **inferior és positiva** i la **superior negativa**. Entre les plaques les línies són rectes, paral·leles, equiespaiades (camp uniforme) i perpendiculars a les plaques:\n\n![Esquema de les plaques: placa inferior positiva, superior negativa i camp cap amunt (solució oficial)](img/fisica/2015-J/e2-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diferència de potencial entre les plaques",
+            "cos": "En un camp uniforme, el mòdul de la diferència de potencial és $|\\Delta V| = E\\,d$:\n\n$$|\\Delta V| = 5\\,000 \\cdot 1{,}00 \\times 10^{-2} = 50\\ \\text{V}$$\n\n**Signe:** el camp elèctric apunta sempre cap als potencials decreixents. Com que va de la placa positiva (a baix) a la negativa (a dalt), la placa positiva és la de més potencial:\n\n$$V_+ - V_- = +50\\ \\text{V} \\qquad\\text{o bé}\\qquad V_- - V_+ = -50\\ \\text{V}$$\n\nResultat: **$|\\Delta V| = 50\\ \\text{V}$, amb la placa inferior (positiva) a més potencial.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Diagrama de forces de cada partícula",
+            "cos": "Sobre cada partícula actuen el pes $mg$ (cap avall) i la força elèctrica $\\vec F = q\\vec E$. Si $q > 0$, la força va en el sentit del camp (amunt); si $q < 0$, en sentit contrari (avall).\n\n![Forces sobre les partícules A (qE amunt, equilibri) i B (qE i mg cap avall) (solució oficial)](img/fisica/2015-J/e2-sol-2.png)\n\n- **A** està en equilibri: la força elèctrica ha de compensar el pes → ha d'anar amunt → $q_A > 0$.\n- **B** baixa amb $a = 14{,}7\\ \\text{m/s}^2 > g$: a més del pes, ha d'haver-hi una força elèctrica cap avall → $q_B < 0$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Càrrega de la partícula A (equilibri)",
+            "cos": "$$\\sum F = 0 \\quad\\Rightarrow\\quad q_A E = mg \\quad\\Rightarrow\\quad q_A = \\frac{mg}{E} = \\frac{0{,}50 \\times 10^{-9} \\cdot 9{,}81}{5\\,000} = 9{,}8 \\times 10^{-13}\\ \\text{C}$$\n\nResultat: **$q_A = +9{,}8 \\times 10^{-13}\\ \\text{C}$** (positiva)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Càrrega de la partícula B (accelerada cap avall)",
+            "cos": "Prenent sentit positiu cap avall, totes dues forces (pes i força elèctrica) van cap avall:\n\n$$mg + |q_B|E = ma \\quad\\Rightarrow\\quad |q_B| = \\frac{m(a - g)}{E} = \\frac{0{,}50 \\times 10^{-9} \\cdot (14{,}7 - 9{,}81)}{5\\,000} = 4{,}9 \\times 10^{-13}\\ \\text{C}$$\n\nResultat: **$q_B = -4{,}9 \\times 10^{-13}\\ \\text{C}$** (negativa)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Placa inferior positiva, superior negativa; $|\\Delta V| = 50\\ \\text{V}$ ($V_+ - V_- = 50\\ \\text{V}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$q_A = +9{,}8 \\times 10^{-13}\\ \\text{C}$; $q_B = -4{,}9 \\times 10^{-13}\\ \\text{C}$"
+          }
+        ],
+        "nota": "La solució oficial fa servir $g = 9{,}8\\ \\text{m/s}^2$ (en lloc del $9{,}81$ de l'enunciat); el resultat amb dues xifres significatives és el mateix ($9{,}8 \\times 10^{-13}$ i $4{,}9 \\times 10^{-13}\\ \\text{C}$). Recordeu: $1\\ \\mu\\text{g} = 10^{-9}\\ \\text{kg}$."
+      }
+    },
+    {
+      "id": "fisica-2015-J-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Satèl·lit Galatea: velocitat orbital, massa de Neptú i gravetat a la seva superfície",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "òrbita circular",
+        "velocitat orbital",
+        "força centrípeta",
+        "massa d'un planeta",
+        "intensitat del camp gravitatori"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Galatea és el quart satèl·lit de Neptú més allunyat del planeta. Va ser descobert per la sonda espacial *Voyager 2* l'any 1989. Suposem que l'òrbita que descriu és circular.\n\n**Dades:** Període de l'òrbita de Galatea, $T_\\text{Galatea} = 0{,}428$ dies; radi de l'òrbita de Galatea, $R_\\text{Galatea} = 6{,}20 \\times 10^{4}\\ \\text{km}$; radi de Neptú, $R_\\text{Neptú} = 2{,}46 \\times 10^{4}\\ \\text{km}$; $G = 6{,}67 \\times 10^{-11}\\ \\text{N}\\,\\text{m}^2\\,\\text{kg}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la velocitat lineal orbital de Galatea en el sistema de referència centrat en Neptú i calculeu la massa de Neptú.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el valor de la intensitat de camp gravitatori que Neptú crea a la seva pròpia superfície.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Període orbital: $T_G = 0{,}428\\ \\text{dies} = 0{,}428 \\cdot 24 \\cdot 3600 = 3{,}70 \\times 10^{4}\\ \\text{s}$\n- Radi de l'òrbita: $R_G = 6{,}20 \\times 10^{4}\\ \\text{km} = 6{,}20 \\times 10^{7}\\ \\text{m}$\n- Radi de Neptú: $R_N = 2{,}46 \\times 10^{4}\\ \\text{km} = 2{,}46 \\times 10^{7}\\ \\text{m}$\n- $G = 6{,}67 \\times 10^{-11}\\ \\text{N}\\,\\text{m}^2\\,\\text{kg}^{-2}$\n- Incògnites: a) $v_G$ i $M_N$; b) $g_N$ a la superfície de Neptú."
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat orbital",
+            "cos": "En una òrbita circular el satèl·lit recorre la circumferència $2\\pi R_G$ en un període $T_G$ (moviment circular uniforme):\n\n$$v_G = \\frac{2\\pi R_G}{T_G} = \\frac{2\\pi \\cdot 6{,}20 \\times 10^{7}}{3{,}70 \\times 10^{4}} = 1{,}05 \\times 10^{4}\\ \\text{m/s}$$\n\nResultat: **$v_G = 1{,}05 \\times 10^{4}\\ \\text{m/s}$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Massa de Neptú: la força gravitatòria fa de força centrípeta",
+            "cos": "L'única força sobre Galatea és l'atracció gravitatòria de Neptú, que és la força centrípeta que la manté en l'òrbita:\n\n$$G\\frac{M_N m_G}{R_G^2} = m_G\\frac{v_G^2}{R_G} \\quad\\Rightarrow\\quad M_N = \\frac{R_G\\,v_G^2}{G}$$\n\n(La massa del satèl·lit $m_G$ se simplifica.)\n\n$$M_N = \\frac{6{,}20 \\times 10^{7} \\cdot (1{,}05 \\times 10^{4})^2}{6{,}67 \\times 10^{-11}} = 1{,}03 \\times 10^{26}\\ \\text{kg}$$\n\nResultat: **$M_N \\approx 1{,}03 \\times 10^{26}\\ \\text{kg}$** (la solució oficial dona $1{,}02 \\times 10^{26}\\ \\text{kg}$ per arrodoniment)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat del camp gravitatori a la superfície",
+            "cos": "El camp gravitatori creat per una massa esfèrica a una distància $r$ del centre és $g = G\\dfrac{M}{r^2}$. A la superfície, $r = R_N$:\n\n$$g_N = G\\frac{M_N}{R_N^2} = \\frac{6{,}67 \\times 10^{-11} \\cdot 1{,}03 \\times 10^{26}}{(2{,}46 \\times 10^{7})^2} = 11{,}4\\ \\text{N/kg}$$\n\nResultat: **$g_N \\approx 11{,}4\\ \\text{m/s}^2$ (N/kg)** (amb $M_N = 1{,}02 \\times 10^{26}\\ \\text{kg}$ s'obté $11{,}2\\ \\text{m/s}^2$, com a la solució oficial)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v_G = 1{,}05 \\times 10^{4}\\ \\text{m/s}$; $M_N \\approx 1{,}03 \\times 10^{26}\\ \\text{kg}$ (oficial: $1{,}02 \\times 10^{26}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$g_N \\approx 11{,}4\\ \\text{m/s}^2$ (oficial: $11{,}2\\ \\text{m/s}^2$)"
+          }
+        ],
+        "nota": "Discrepància menor d'arrodoniment: la solució oficial dona $M_N = 1{,}02 \\times 10^{26}\\ \\text{kg}$ i $g_N = 11{,}2\\ \\text{m/s}^2$. Sense arrodonir els resultats intermedis ($T_G = 36\\,979\\ \\text{s}$, $v_G = 10\\,535\\ \\text{m/s}$) s'obté $M_N = 1{,}03 \\times 10^{26}\\ \\text{kg}$ i $g_N = 11{,}4\\ \\text{m/s}^2$. Tots dos valors es consideren correctes. També es pot obtenir $M_N$ directament amb la tercera llei de Kepler: $M_N = \\dfrac{4\\pi^2 R_G^3}{G\\,T_G^2}$."
+      }
+    },
+    {
+      "id": "fisica-2015-J-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Tres fils conductors als vèrtexs d'un quadrat: camp magnètic total i força sobre un fil",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp magnètic d'un fil rectilini",
+        "superposició de camps",
+        "força entre corrents",
+        "regla de la mà dreta"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "En la figura es mostren tres fils conductors rectilinis i infinitament llargs, perpendiculars al pla del paper, per cadascun dels quals circula una mateixa intensitat de corrent de $0{,}30\\ \\text{A}$ en el sentit que va cap a dins del paper. Aquests tres conductors estan situats en tres vèrtexs d'un quadrat de $0{,}20\\ \\text{m}$ de costat.\n\n**Nota:** El mòdul del camp magnètic a una distància $r$ d'un fil infinit pel qual circula una intensitat $I$ és: $B = \\dfrac{\\mu_0 I}{2\\pi r}$, on $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T}\\,\\text{m}\\,\\text{A}^{-1}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2015-J/e4-a.png",
+          "peu": "Fils A, B i C (corrent entrant al paper) en tres vèrtexs d'un quadrat de 0,20 m de costat"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Representeu en un esquema els camps magnètics, en el vèrtex $C$, generats pels conductors $A$ i $B$, i també el camp total. Calculeu el mòdul del camp magnètic total en aquest punt.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Representeu la força total sobre el conductor $C$ i calculeu el mòdul de la força que suporten $2{,}00\\ \\text{m}$ del conductor que passa per $C$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Intensitat de cada fil: $I = 0{,}30\\ \\text{A}$, tots cap a dins del paper ($\\otimes$)\n- Costat del quadrat: $d = 0{,}20\\ \\text{m}$ ($A$ és just a sobre de $C$ i $B$ just a la dreta de $C$)\n- Longitud del tram de fil: $L = 2{,}00\\ \\text{m}$; $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T}\\,\\text{m}\\,\\text{A}^{-1}$\n- Incògnites: a) $\\vec B_A$, $\\vec B_B$ i $|\\vec B_\\text{total}|$ a $C$; b) força sobre $2{,}00\\ \\text{m}$ del fil $C$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Direcció i sentit dels camps a C",
+            "cos": "Les línies de camp d'un fil rectilini són circumferències centrades en el fil, i el camp és tangent a elles. El sentit el dona la **regla de la mà dreta**: amb el polze en el sentit del corrent (cap a dins del paper), els dits giren en sentit **horari**.\n\n- $\\vec B_A$: $C$ és just a sota d'$A$; en el punt inferior d'una circumferència horària, el camp apunta **cap a l'esquerra**.\n- $\\vec B_B$: $C$ és just a l'esquerra de $B$; en el punt esquerre d'una circumferència horària, el camp apunta **cap amunt**.\n\nEls dos camps són perpendiculars i el total apunta en diagonal amunt i a l'esquerra:\n\n![Camps B_A (esquerra), B_B (amunt) i camp total a C (solució oficial)](img/fisica/2015-J/e4-a-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Mòdul de cada camp i del camp total",
+            "cos": "Tots dos fils són a la mateixa distància $d = 0{,}20\\ \\text{m}$ de $C$ i porten el mateix corrent, de manera que els dos camps tenen el mateix mòdul:\n\n$$B_A = B_B = \\frac{\\mu_0 I}{2\\pi d} = \\frac{4\\pi \\times 10^{-7} \\cdot 0{,}30}{2\\pi \\cdot 0{,}20} = 3{,}0 \\times 10^{-7}\\ \\text{T}$$\n\nCom que són perpendiculars, el mòdul del camp total s'obté amb Pitàgores:\n\n$$B_\\text{total} = \\sqrt{B_A^2 + B_B^2} = \\sqrt{2}\\cdot 3{,}0 \\times 10^{-7} = 4{,}2 \\times 10^{-7}\\ \\text{T}$$\n\nResultat: **$B_\\text{total} = 4{,}2 \\times 10^{-7}\\ \\text{T}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Direcció de la força sobre el fil C",
+            "cos": "La força sobre un tram de fil és $\\vec F = I\\,\\vec L \\times \\vec B$, perpendicular al fil i al camp. Equivalentment: **dos corrents paral·lels del mateix sentit s'atrauen**. Per tant:\n\n- $\\vec F_{A}$ (deguda al fil $A$) apunta cap a $A$: **amunt**.\n- $\\vec F_{B}$ (deguda al fil $B$) apunta cap a $B$: **cap a la dreta**.\n\nLa força total apunta en diagonal, cap al vèrtex buit del quadrat (perpendicular a $\\vec B_\\text{total}$):\n\n![Forces F_A (amunt), F_B (dreta) i força total sobre C (solució oficial)](img/fisica/2015-J/e4-a-sol-2.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Mòdul de la força sobre 2,00 m de fil",
+            "cos": "El fil $C$ (cap a dins del paper) és perpendicular a $\\vec B_\\text{total}$ (que és en el pla del paper), així que $\\sin 90^\\circ = 1$:\n\n$$F = I\\,L\\,B_\\text{total} = 0{,}30 \\cdot 2{,}00 \\cdot 4{,}24 \\times 10^{-7} = 2{,}5 \\times 10^{-7}\\ \\text{N}$$\n\n(Comprovació: cada força parcial val $F_A = F_B = I L B_A = 1{,}8 \\times 10^{-7}\\ \\text{N}$ i $\\sqrt{2}\\cdot 1{,}8 \\times 10^{-7} = 2{,}5 \\times 10^{-7}\\ \\text{N}$.)\n\nResultat: **$F \\approx 2{,}5 \\times 10^{-7}\\ \\text{N}$**, dirigida en diagonal cap amunt i a la dreta."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$B_A = B_B = 3{,}0 \\times 10^{-7}\\ \\text{T}$; $B_\\text{total} = 4{,}2 \\times 10^{-7}\\ \\text{T}$ (en diagonal, amunt i a l'esquerra)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F \\approx 2{,}5 \\times 10^{-7}\\ \\text{N}$ (oficial: $2{,}55 \\times 10^{-7}\\ \\text{N}$), cap amunt i a la dreta"
+          }
+        ],
+        "nota": "Error típic: confondre el sentit del camp; recordeu que per a un corrent entrant al paper les línies de camp giren en sentit horari."
+      }
+    },
+    {
+      "id": "fisica-2015-J-e5-a",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Desintegració de l'urani 235: activitat inicial i massa que queda al cap de 10^8 anys",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "període de semidesintegració",
+        "constant de desintegració",
+        "activitat",
+        "llei de desintegració radioactiva",
+        "nombre d'avogadro"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "El període de semidesintegració de l'isòtop ${}^{235}\\text{U}$ és de $7{,}00 \\times 10^{8}$ anys. Per a una mostra d'$1{,}000\\ \\text{g}$, calculeu:\n\n**Dades:** Nombre d'Avogadro, $N_A = 6{,}022 \\times 10^{23}\\ \\text{nuclis}\\cdot\\text{mol}^{-1}$; $1\\ \\text{Bq} = 1$ desintegració$\\cdot\\text{s}^{-1}$; massa molar de ${}^{235}\\text{U}$, $M = 235\\ \\text{g}\\cdot\\text{mol}^{-1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'activitat inicial en becquerels (Bq).",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La massa de ${}^{235}\\text{U}$ quan hagin passat $10^{8}$ anys.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Període de semidesintegració: $T_{1/2} = 7{,}00 \\times 10^{8}\\ \\text{anys} = 7{,}00 \\times 10^{8} \\cdot 365 \\cdot 24 \\cdot 3600\\ \\text{s} = 2{,}21 \\times 10^{16}\\ \\text{s}$\n- Massa inicial: $m_0 = 1{,}000\\ \\text{g}$; $M = 235\\ \\text{g/mol}$; $N_A = 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$\n- Temps de l'apartat b): $t = 10^{8}\\ \\text{anys} = 3{,}15 \\times 10^{15}\\ \\text{s}$\n- Incògnites: a) activitat inicial $A_0$; b) massa $m(t)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Constant de desintegració",
+            "cos": "La llei de desintegració és $N(t) = N_0 e^{-\\lambda t}$. El període de semidesintegració és el temps en què queden la meitat dels nuclis: $\\tfrac{1}{2}N_0 = N_0 e^{-\\lambda T_{1/2}}$, d'on:\n\n$$\\lambda = \\frac{\\ln 2}{T_{1/2}} = \\frac{0{,}693}{2{,}21 \\times 10^{16}\\ \\text{s}} = 3{,}14 \\times 10^{-17}\\ \\text{s}^{-1}$$\n\n(Cal expressar $\\lambda$ en $\\text{s}^{-1}$ perquè l'activitat surti en Bq = desintegracions per segon.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Nombre inicial de nuclis",
+            "cos": "Passem la massa a mols i els mols a nuclis:\n\n$$N_0 = \\frac{m_0}{M}\\,N_A = \\frac{1{,}000}{235} \\cdot 6{,}022 \\times 10^{23} = 2{,}56 \\times 10^{21}\\ \\text{nuclis}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Activitat inicial",
+            "cos": "L'activitat és el nombre de desintegracions per unitat de temps: $A = -\\dfrac{dN}{dt} = \\lambda N$. A l'instant inicial:\n\n$$A_0 = \\lambda N_0 = 3{,}14 \\times 10^{-17} \\cdot 2{,}56 \\times 10^{21} = 8{,}05 \\times 10^{4}\\ \\text{Bq}$$\n\nResultat: **$A_0 \\approx 8{,}05 \\times 10^{4}\\ \\text{Bq}$** (oficial: $8{,}04 \\times 10^{4}\\ \\text{Bq}$)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa que queda al cap de 10^8 anys",
+            "cos": "La massa és proporcional al nombre de nuclis, així que segueix la mateixa llei exponencial: $m(t) = m_0 e^{-\\lambda t}$.\n\n$$\\lambda t = 3{,}14 \\times 10^{-17} \\cdot 3{,}15 \\times 10^{15} = 0{,}0990$$\n\n$$m = 1{,}000 \\cdot e^{-0{,}0990} = 0{,}906\\ \\text{g}$$\n\n(Equivalentment, $m = m_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}} = 1{,}000 \\cdot 2^{-1/7} = 0{,}906\\ \\text{g}$, i aquí no cal passar els anys a segons.)\n\nResultat: **$m = 0{,}906\\ \\text{g}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$A_0 \\approx 8{,}05 \\times 10^{4}\\ \\text{Bq}$ (oficial: $8{,}04 \\times 10^{4}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m = 0{,}906\\ \\text{g}$"
+          }
+        ],
+        "nota": "Diferència mínima d'arrodoniment a l'apartat a): la solució oficial arrodoneix $N_A$ a $6{,}02 \\times 10^{23}$ i dona $8{,}04 \\times 10^{4}\\ \\text{Bq}$; amb les dades de l'enunciat surt $8{,}05 \\times 10^{4}\\ \\text{Bq}$."
+      }
+    },
+    {
+      "id": "fisica-2015-J-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Estació Espacial Internacional: velocitat orbital, període i velocitat addicional per escapar",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "òrbita circular",
+        "velocitat orbital",
+        "període orbital",
+        "velocitat d'escapament",
+        "energia mecànica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "L'*Estació Espacial Internacional* es mou en una òrbita pràcticament circular al voltant de la Terra a $385\\ \\text{km}$ d'altura sobre la superfície terrestre. Des de la superfície terrestre som capaços de veure l'estació orbital.\n\n**Dades:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N}\\,\\text{m}^2\\,\\text{kg}^{-2}$; $M_\\text{Terra} = 5{,}98 \\times 10^{24}\\ \\text{kg}$; $R_\\text{Terra} = 6\\,370\\ \\text{km}$.\n\n**Nota:** Considereu negligible el moviment de rotació de la Terra.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina és la velocitat lineal orbital de l'estació i quin és el temps que s'ha d'esperar entre dues visualitzacions consecutives?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Des de l'estació espacial es vol llançar un coet que escapi de l'atracció terrestre. Considerant negligible la massa de l'estació, quina velocitat addicional hem de donar al coet en el moment del llançament?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Altura de l'òrbita: $h = 385\\ \\text{km} = 3{,}85 \\times 10^{5}\\ \\text{m}$\n- $R_T = 6\\,370\\ \\text{km} = 6{,}37 \\times 10^{6}\\ \\text{m}$; $M_T = 5{,}98 \\times 10^{24}\\ \\text{kg}$; $G = 6{,}67 \\times 10^{-11}\\ \\text{N}\\,\\text{m}^2\\,\\text{kg}^{-2}$\n- Radi de l'òrbita (distància al **centre** de la Terra): $r = R_T + h = 6{,}37 \\times 10^{6} + 3{,}85 \\times 10^{5} = 6{,}76 \\times 10^{6}\\ \\text{m}$\n- Incògnites: a) $v$ orbital i període $T$; b) $\\Delta v$ per escapar."
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat orbital: la força gravitatòria fa de força centrípeta",
+            "cos": "$$G\\frac{M_T m}{r^2} = m\\frac{v^2}{r} \\quad\\Rightarrow\\quad v = \\sqrt{\\frac{G M_T}{r}}$$\n\n$$v = \\sqrt{\\frac{6{,}67 \\times 10^{-11} \\cdot 5{,}98 \\times 10^{24}}{6{,}76 \\times 10^{6}}} = 7{,}68 \\times 10^{3}\\ \\text{m/s}$$\n\nResultat: **$v = 7{,}68 \\times 10^{3}\\ \\text{m/s}$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Temps entre dues visualitzacions: el període",
+            "cos": "Com que menyspreem la rotació de la Terra, un observador a la superfície torna a veure l'estació cada vegada que aquesta fa una volta completa, és a dir, el temps entre dues visualitzacions és el **període orbital**:\n\n$$T = \\frac{2\\pi r}{v} = \\frac{2\\pi \\cdot 6{,}76 \\times 10^{6}}{7{,}68 \\times 10^{3}} = 5{,}53 \\times 10^{3}\\ \\text{s} \\approx 92\\ \\text{min}$$\n\nResultat: **$T \\approx 5{,}5 \\times 10^{3}\\ \\text{s} \\approx 92\\ \\text{min}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat d'escapament des de l'òrbita",
+            "cos": "Per escapar de l'atracció terrestre, el coet ha d'arribar a l'infinit amb velocitat (com a mínim) zero, és a dir, amb energia mecànica total nul·la: $E_c + E_p = 0$.\n\n$$\\frac{1}{2}m v_\\text{esc}^2 - G\\frac{M_T m}{r} = 0 \\quad\\Rightarrow\\quad v_\\text{esc} = \\sqrt{\\frac{2 G M_T}{r}} = \\sqrt{2}\\,v$$\n\n$$v_\\text{esc} = \\sqrt{\\frac{2 \\cdot 6{,}67 \\times 10^{-11} \\cdot 5{,}98 \\times 10^{24}}{6{,}76 \\times 10^{6}}} = 1{,}09 \\times 10^{4}\\ \\text{m/s}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat addicional",
+            "cos": "El coet ja té la velocitat orbital de l'estació, $v = 7{,}68 \\times 10^{3}\\ \\text{m/s}$. Si el llancem en el mateix sentit del moviment, només cal afegir-hi la diferència:\n\n$$\\Delta v = v_\\text{esc} - v = 1{,}087 \\times 10^{4} - 7{,}68 \\times 10^{3} = 3{,}18 \\times 10^{3}\\ \\text{m/s}$$\n\nResultat: **$\\Delta v \\approx 3{,}18 \\times 10^{3}\\ \\text{m/s}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v = 7{,}68 \\times 10^{3}\\ \\text{m/s}$; $T \\approx 5{,}5 \\times 10^{3}\\ \\text{s} \\approx 92\\ \\text{min}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\Delta v \\approx 3{,}18 \\times 10^{3}\\ \\text{m/s}$"
+          }
+        ],
+        "nota": "La solució oficial dona $T = 5\\,530\\ \\text{s} = 92{,}2\\ \\text{min}$; sense arrodonir els valors intermedis surt $5\\,523\\ \\text{s} = 92{,}1\\ \\text{min}$ (diferència d'arrodoniment). Error típic: fer servir l'altura $h$ en lloc del radi orbital $r = R_T + h$."
+      }
+    },
+    {
+      "id": "fisica-2015-J-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Muntatge d'un transformador reductor de 220 V a 110 V amb bobines de 1000 i 500 espires",
+      "tema": "induccio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "transformador",
+        "relació de transformació",
+        "valor eficaç",
+        "valor màxim",
+        "potència"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Un grup d'alumnes disposa de bobines de $1\\,000$ i de $500$ espires, nuclis de ferro laminats i connectors, en quantitats suficients. A partir d'una tensió eficaç de $220\\ \\text{V}$ i d'una intensitat eficaç d'$1{,}00\\ \\text{A}$, volen obtenir una tensió final de $110\\ \\text{V}$ de valor eficaç.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Feu un esquema i expliqueu raonadament quin muntatge cal fer. Especifiqueu clarament on estarà connectat el circuit primari i on estarà connectat el circuit secundari.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu els valors màxims de la tensió i la intensitat en el circuit primari. Quina intensitat circula a la part del circuit que es troba a $110\\ \\text{V}$?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Bobines disponibles: $1\\,000$ i $500$ espires; nucli de ferro laminat\n- Primari: $\\varepsilon_1 = 220\\ \\text{V}$ (eficaç), $I_1 = 1{,}00\\ \\text{A}$ (eficaç)\n- Secundari desitjat: $\\varepsilon_2 = 110\\ \\text{V}$ (eficaç)\n- Incògnites: a) muntatge (quina bobina és el primari i quina el secundari); b) $\\varepsilon_{1,\\text{max}}$, $I_{1,\\text{max}}$ i $I_2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Principi de funcionament del transformador",
+            "cos": "Cal fer un **transformador**: dues bobines enrotllades sobre un mateix nucli de ferro laminat (circuit magnètic tancat). El corrent altern del primari crea un flux magnètic variable que el nucli condueix fins al secundari, de manera que **la variació de flux per espira, $\\Delta\\phi/\\Delta t$, és la mateixa a totes dues bobines**. Per la llei de Faraday:\n\n$$|\\varepsilon_1| = N_1\\frac{\\Delta\\phi}{\\Delta t}, \\qquad |\\varepsilon_2| = N_2\\frac{\\Delta\\phi}{\\Delta t} \\quad\\Rightarrow\\quad \\frac{\\varepsilon_1}{N_1} = \\frac{\\varepsilon_2}{N_2}$$\n\n(El nucli laminat redueix les pèrdues per corrents de Foucault; considerem el transformador ideal.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Quina bobina va al primari i quina al secundari",
+            "cos": "$$\\frac{N_1}{N_2} = \\frac{\\varepsilon_1}{\\varepsilon_2} = \\frac{220}{110} = 2$$\n\nNecessitem que el primari tingui el doble d'espires que el secundari: $N_1 = 1\\,000$ i $N_2 = 500$ (comprovació: $220 \\cdot 500 = 110 \\cdot 1\\,000$).\n\n- **Primari** (connectat a la font de $220\\ \\text{V}$): bobina de **$1\\,000$ espires**.\n- **Secundari** (on obtenim els $110\\ \\text{V}$): bobina de **$500$ espires**.\n\n![Esquema d'un transformador: bobina primària N1 i secundària N2 sobre un nucli de ferro tancat (solució oficial)](img/fisica/2015-J/e4-b-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Valors màxims al primari",
+            "cos": "Per a un senyal altern sinusoidal, el valor màxim és $\\sqrt{2}$ vegades el valor eficaç:\n\n$$\\varepsilon_{1,\\text{max}} = \\sqrt{2}\\,\\varepsilon_1 = \\sqrt{2} \\cdot 220 = 311\\ \\text{V}$$\n\n$$I_{1,\\text{max}} = \\sqrt{2}\\,I_1 = \\sqrt{2} \\cdot 1{,}00 = 1{,}41\\ \\text{A}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat al secundari",
+            "cos": "En un transformador ideal no hi ha pèrdues: la potència del primari es transmet íntegrament al secundari:\n\n$$\\varepsilon_1 I_1 = \\varepsilon_2 I_2 \\quad\\Rightarrow\\quad I_2 = \\frac{\\varepsilon_1}{\\varepsilon_2}\\,I_1 = \\frac{220}{110} \\cdot 1{,}00 = 2{,}00\\ \\text{A}$$\n\nResultat: **$I_2 = 2{,}00\\ \\text{A}$ (eficaç)**: el transformador reductor de tensió augmenta la intensitat en la mateixa proporció."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Transformador amb nucli de ferro: primari = bobina de 1 000 espires (a 220 V), secundari = bobina de 500 espires (110 V)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\varepsilon_{1,\\text{max}} = 311\\ \\text{V}$; $I_{1,\\text{max}} = 1{,}41\\ \\text{A}$; $I_2 = 2{,}00\\ \\text{A}$"
+          }
+        ],
+        "nota": "També serien vàlids altres muntatges amb la mateixa relació 2:1 (per exemple, dues bobines de 1 000 espires en sèrie al primari i una de 1 000 al secundari), però el més senzill és 1 000 : 500."
+      }
+    },
+    {
+      "id": "fisica-2015-J-e5-b",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Cèl·lula fotoelèctrica amb llum blava: energia del fotó, treball d'extracció i potencial de frenada",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "energia del fotó",
+        "treball d'extracció",
+        "freqüència llindar",
+        "potencial de frenada"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Una cèl·lula fotoelèctrica és il·luminada amb llum blava de $4\\,750\\ \\text{Å}$. La freqüència llindar de la cèl·lula és de $4{,}75 \\times 10^{14}\\ \\text{Hz}$. Calculeu:\n\n**Dades:** Velocitat de la llum, $c = 3{,}00 \\times 10^{8}\\ \\text{m}\\,\\text{s}^{-1}$; constant de Planck, $h = 6{,}63 \\times 10^{-34}\\ \\text{J}\\,\\text{s}$; càrrega de l'electró, $Q_\\text{electró} = -1{,}602 \\times 10^{-19}\\ \\text{C}$; $1\\ \\text{Å} = 10^{-10}\\ \\text{m}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'energia dels fotons incidents i el treball d'extracció característic del metall de la cèl·lula.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "L'energia cinètica màxima dels electrons emesos i el seu potencial de frenada.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud d'ona: $\\lambda = 4\\,750\\ \\text{Å} = 4\\,750 \\times 10^{-10}\\ \\text{m} = 4{,}75 \\times 10^{-7}\\ \\text{m}$\n- Freqüència llindar: $f_0 = 4{,}75 \\times 10^{14}\\ \\text{Hz}$\n- $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$; $h = 6{,}63 \\times 10^{-34}\\ \\text{J}\\,\\text{s}$; $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$\n- Incògnites: a) $E_\\text{fotó}$ i $W_0$; b) $E_{c,\\text{max}}$ i $V_0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia dels fotons incidents",
+            "cos": "Segons Einstein, la llum està formada per fotons d'energia $E = hf$, amb $f = c/\\lambda$:\n\n$$f = \\frac{c}{\\lambda} = \\frac{3{,}00 \\times 10^{8}}{4{,}75 \\times 10^{-7}} = 6{,}32 \\times 10^{14}\\ \\text{Hz}$$\n\n$$E = hf = 6{,}63 \\times 10^{-34} \\cdot 6{,}32 \\times 10^{14} = 4{,}19 \\times 10^{-19}\\ \\text{J}$$\n\nResultat: **$E = 4{,}19 \\times 10^{-19}\\ \\text{J}$** ($\\approx 2{,}61\\ \\text{eV}$)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Treball d'extracció",
+            "cos": "La freqüència llindar és la freqüència mínima que ha de tenir un fotó per arrencar un electró: la seva energia és just el treball d'extracció del metall:\n\n$$W_0 = h f_0 = 6{,}63 \\times 10^{-34} \\cdot 4{,}75 \\times 10^{14} = 3{,}15 \\times 10^{-19}\\ \\text{J}$$\n\nResultat: **$W_0 = 3{,}15 \\times 10^{-19}\\ \\text{J}$** ($\\approx 1{,}97\\ \\text{eV}$). Com que $f > f_0$, sí que hi ha efecte fotoelèctric."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica màxima (equació d'Einstein)",
+            "cos": "L'energia del fotó es fa servir per arrencar l'electró ($W_0$) i la resta es converteix en energia cinètica de l'electró:\n\n$$E_{c,\\text{max}} = E - W_0 = 4{,}19 \\times 10^{-19} - 3{,}15 \\times 10^{-19} = 1{,}04 \\times 10^{-19}\\ \\text{J}$$\n\nResultat: **$E_{c,\\text{max}} \\approx 1{,}04 \\times 10^{-19}\\ \\text{J}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Potencial de frenada",
+            "cos": "El potencial de frenada és la diferència de potencial que cal aplicar per aturar els electrons més ràpids: el treball elèctric $|e|V_0$ ha d'igualar la seva energia cinètica màxima:\n\n$$|e|\\,V_0 = E_{c,\\text{max}} \\quad\\Rightarrow\\quad V_0 = \\frac{E_{c,\\text{max}}}{|e|} = \\frac{1{,}04 \\times 10^{-19}}{1{,}602 \\times 10^{-19}} = 0{,}648\\ \\text{V}$$\n\nResultat: **$V_0 \\approx 0{,}65\\ \\text{V}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 4{,}19 \\times 10^{-19}\\ \\text{J}$; $W_0 = 3{,}15 \\times 10^{-19}\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_{c,\\text{max}} \\approx 1{,}04 \\times 10^{-19}\\ \\text{J}$; $V_0 \\approx 0{,}65\\ \\text{V}$ (oficial: $1{,}05 \\times 10^{-19}\\ \\text{J}$ i $0{,}655\\ \\text{V}$)"
+          }
+        ],
+        "nota": "Discrepància amb la solució oficial: escriu $4{,}19 \\times 10^{-19} - 3{,}15 \\times 10^{-19} = 1{,}05 \\times 10^{-19}\\ \\text{J}$, però la resta dona $1{,}04 \\times 10^{-19}\\ \\text{J}$ (sense arrodonir, $1{,}038 \\times 10^{-19}\\ \\text{J}$), i per tant el potencial de frenada és $0{,}648\\ \\text{V}$ en lloc de $0{,}655\\ \\text{V}$. La diferència és petita i tots dos valors arrodoneixen a $0{,}65\\ \\text{V}$."
+      }
+    }
+  ]
+}

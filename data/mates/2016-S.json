@@ -1,0 +1,556 @@
+{
+  "examen": {
+    "id": "mates-2016-S",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2016,
+    "convocatoria": "setembre",
+    "serie": "1",
+    "pdf_examen": "pdfs/mates/2016-S-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2016-S-solucio.pdf",
+    "estructura": "Cal respondre CINC de les sis qüestions. Cada qüestió val 2 punts (dos apartats d'1 punt). Es pot usar calculadora (no programable ni amb capacitat d'emmagatzemar o transmetre informació)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2016-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Recta perpendicular al pla determinat per una recta i un punt; punt de la recta equidistant de dos punts",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "producte vectorial",
+        "vector normal",
+        "equació paramètrica",
+        "distància entre punts",
+        "pla determinat per recta i punt"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Siguin la recta $r: (x, y, z) = (5 + k,\\ k,\\ -2 - 2k)$ i els punts $P = (1, 0, -1)$ i $Q = (2, 1, 1)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació paramètrica de la recta que passa pel punt $Q$ i és perpendicular al pla determinat per la recta $r$ i el punt $P$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el punt de la recta $r$ que equidista dels punts $P$ i $Q$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Recta $r$ en forma paramètrica: $(x,y,z) = (5,0,-2) + k\\,(1,1,-2)$.\n- Punts $P = (1,0,-1)$ i $Q = (2,1,1)$.\n- a) La recta que passa per $Q$ i és perpendicular al pla que contenen $r$ i $P$.\n- b) El punt $R \\in r$ tal que $d(P,R) = d(Q,R)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Idea: el vector director buscat és el normal del pla",
+            "cos": "Una recta perpendicular a un pla té com a vector director el **vector normal** del pla. El pla que contenen $r$ i $P$ té dos vectors directors: el de la recta $r$ i un vector que va de $P$ a un punt de $r$. El seu producte vectorial és perpendicular a tots dos, és a dir, és el vector normal del pla."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punt i vector director de r; vector PR",
+            "cos": "De l'expressió de $r$ (fent $k = 0$) llegim un punt i el vector director (els coeficients de $k$):\n\n$$R_0 = (5, 0, -2), \\qquad \\vec v_r = (1, 1, -2)$$\n\nVector que uneix $P$ amb aquest punt de la recta:\n\n$$\\overrightarrow{PR_0} = R_0 - P = (5,0,-2) - (1,0,-1) = (4, 0, -1)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Producte vectorial (vector normal del pla)",
+            "cos": "$$\\vec n = \\vec v_r \\times \\overrightarrow{PR_0} = \\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ 1 & 1 & -2 \\\\ 4 & 0 & -1 \\end{vmatrix}$$\n\n$$= \\vec i\\,\\big(1\\cdot(-1) - (-2)\\cdot 0\\big) - \\vec j\\,\\big(1\\cdot(-1) - (-2)\\cdot 4\\big) + \\vec k\\,\\big(1\\cdot 0 - 1\\cdot 4\\big) = (-1, -7, -4)$$\n\nQualsevol vector proporcional serveix; per comoditat prenem $\\vec v = (1, 7, 4)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació paramètrica de la recta",
+            "cos": "La recta passa per $Q = (2,1,1)$ amb direcció $\\vec v = (1,7,4)$:\n\n$$\\boxed{(x, y, z) = (2 + \\lambda,\\ 1 + 7\\lambda,\\ 1 + 4\\lambda),\\quad \\lambda \\in \\mathbb{R}}$$\n\nÉs a dir, $x = 2 + \\lambda$, $y = 1 + 7\\lambda$, $z = 1 + 4\\lambda$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantejament: punt genèric de r i igualtat de distàncies",
+            "cos": "Un punt qualsevol de $r$ és $R = (5 + k,\\ k,\\ -2 - 2k)$. Volem $d(P,R) = d(Q,R)$; com que les distàncies són positives, podem igualar-ne els quadrats (així ens estalviem les arrels):\n\n$$\\overrightarrow{PR} = (4 + k,\\ k,\\ -1 - 2k), \\qquad \\overrightarrow{QR} = (3 + k,\\ k - 1,\\ -3 - 2k)$$\n\n$$\\|\\overrightarrow{PR}\\|^2 = \\|\\overrightarrow{QR}\\|^2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Càlcul de les normes al quadrat",
+            "cos": "$$\\|\\overrightarrow{PR}\\|^2 = (4+k)^2 + k^2 + (-1-2k)^2 = 16 + 8k + k^2 + k^2 + 1 + 4k + 4k^2 = 6k^2 + 12k + 17$$\n\n$$\\|\\overrightarrow{QR}\\|^2 = (3+k)^2 + (k-1)^2 + (-3-2k)^2 = 9 + 6k + k^2 + k^2 - 2k + 1 + 9 + 12k + 4k^2 = 6k^2 + 16k + 19$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resolució de l'equació i punt solució",
+            "cos": "Igualant, els termes en $k^2$ es cancel·len i queda una equació de primer grau:\n\n$$6k^2 + 12k + 17 = 6k^2 + 16k + 19 \\;\\Longrightarrow\\; 4k + 2 = 0 \\;\\Longrightarrow\\; k = -\\frac{1}{2}$$\n\nSubstituint a $R$:\n\n$$R = \\left(5 - \\tfrac12,\\ -\\tfrac12,\\ -2 + 1\\right) = \\boxed{\\left(\\frac{9}{2},\\ -\\frac{1}{2},\\ -1\\right)}$$\n\n**Comprovació:** $\\|\\overrightarrow{PR}\\|^2 = \\|\\overrightarrow{QR}\\|^2 = \\frac{6}{4} - 6 + 17 = 12{,}5$, de manera que $d = \\sqrt{12{,}5} \\approx 3{,}54$ en tots dos casos."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$(x,y,z) = (2 + \\lambda,\\ 1 + 7\\lambda,\\ 1 + 4\\lambda)$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$R = \\left(\\frac92, -\\frac12, -1\\right)$ (per a $k = -\\frac12$)"
+          }
+        ],
+        "nota": "Geomètricament, el punt de b) és la intersecció de la recta $r$ amb el **pla mediador** del segment $PQ$ (el lloc dels punts que equidisten de $P$ i $Q$). També es pot resoldre així: el pla mediador és $x + y + 2z = \\frac{5}{2}$ i en substituir-hi el punt genèric de $r$ s'obté igualment $k = -\\frac12$."
+      }
+    },
+    {
+      "id": "mates-2016-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Tres nombres amb dues condicions: sistema homogeni compatible indeterminat",
+      "tema": "sistemes",
+      "temes_secundaris": [],
+      "conceptes": [
+        "plantejament de sistemes",
+        "sistema homogeni",
+        "teorema de Rouché-Fröbenius",
+        "rang",
+        "sistema compatible indeterminat",
+        "mètode de Gauss"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Tres nombres, $x$, $y$ i $z$, compleixen dues condicions: que el primer és la suma dels altres dos, i que el segon és la suma de la meitat del primer i el doble del tercer.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Comproveu que el càlcul dels tres nombres, $x$, $y$ i $z$, té una infinitat de solucions.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu una expressió general de les solucions.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Incògnites: els tres nombres $x$, $y$, $z$.\n- Condició 1: el primer és la suma dels altres dos.\n- Condició 2: el segon és la meitat del primer més el doble del tercer.\n- a) Veure que hi ha infinites solucions. b) Escriure-les totes en funció d'un paràmetre."
+          },
+          {
+            "apartat": "a",
+            "titol": "Traducció de l'enunciat a equacions",
+            "cos": "Escrivim cada condició com una equació i passem totes les incògnites a l'esquerra:\n\n$$\\begin{cases} x = y + z \\\\ y = \\dfrac{1}{2}x + 2z \\end{cases} \\;\\Longrightarrow\\; \\begin{cases} x - y - z = 0 \\\\ x - 2y + 4z = 0 \\end{cases}$$\n\n(a la segona equació hem multiplicat per 2 per treure el denominador: $2y = x + 4z \\Rightarrow x - 2y + 4z = 0$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Forma matricial i discussió (Rouché-Fröbenius)",
+            "cos": "$$A = \\begin{pmatrix} 1 & -1 & -1 \\\\ 1 & -2 & 4 \\end{pmatrix}, \\qquad A' = \\begin{pmatrix} 1 & -1 & -1 & 0 \\\\ 1 & -2 & 4 & 0 \\end{pmatrix}$$\n\nÉs un sistema **homogeni** (tots els termes independents són 0), per tant sempre és compatible: $(0,0,0)$ n'és solució i $\\operatorname{rang} A = \\operatorname{rang} A'$.\n\nBusquem un menor d'ordre 2 no nul:\n\n$$\\begin{vmatrix} 1 & -1 \\\\ 1 & -2 \\end{vmatrix} = -2 - (-1) = -1 \\neq 0 \\;\\Longrightarrow\\; \\operatorname{rang} A = \\operatorname{rang} A' = 2$$\n\nCom que el rang (2) és més petit que el nombre d'incògnites (3), el sistema és **compatible indeterminat**, amb $3 - 2 = 1$ grau de llibertat: **té infinites solucions**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Resolució per Gauss",
+            "cos": "Restem la primera fila a la segona ($F_2 \\to F_2 - F_1$):\n\n$$\\begin{pmatrix} 1 & -1 & -1 & 0 \\\\ 0 & -1 & 5 & 0 \\end{pmatrix} \\;\\Longrightarrow\\; \\begin{cases} x - y - z = 0 \\\\ -y + 5z = 0 \\end{cases}$$\n\nPrenem $z$ com a paràmetre, $z = p$. De la segona equació: $y = 5p$. De la primera: $x = y + z = 5p + p = 6p$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Expressió general de les solucions",
+            "cos": "$$\\boxed{\\begin{cases} x = 6p \\\\ y = 5p \\\\ z = p \\end{cases}\\qquad p \\in \\mathbb{R}}$$\n\n**Comprovació** (per exemple $p = 1$: $6, 5, 1$): $6 = 5 + 1$ ✓ i $5 = \\frac{6}{2} + 2\\cdot 1 = 3 + 2$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\operatorname{rang} A = \\operatorname{rang} A' = 2 < 3$: sistema compatible indeterminat (infinites solucions)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$(x, y, z) = (6p,\\ 5p,\\ p)$, $p \\in \\mathbb{R}$"
+          }
+        ],
+        "nota": "La solució oficial accepta qualsevol mètode correcte. Qualsevol paràmetre és vàlid: per exemple, posant $x = t$ queda $(t,\\ \\frac{5}{6}t,\\ \\frac{1}{6}t)$, que és la mateixa família de solucions."
+      }
+    },
+    {
+      "id": "mates-2016-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Envàs de gelat de base quadrada de cost mínim",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "funció a optimitzar",
+        "lligadura",
+        "derivada",
+        "mínim relatiu",
+        "segona derivada",
+        "prisma"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Volem fer un envàs de gelat amb forma de prisma regular de base quadrada i amb una capacitat de $80\\ \\text{cm}^3$. Per a elaborar-ne la tapa i la superfície lateral, farem servir un material determinat que costa $1$ €/cm², però per a la base haurem d'utilitzar un material que és un $50\\,\\%$ més car.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Si $x$ és la mesura, en cm, del costat de la base, comproveu que la funció que determina el preu de l'envàs és $P(x) = 2{,}5x^2 + \\dfrac{320}{x}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu les mides que ha de tenir l'envàs perquè el preu sigui el mínim possible.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Prisma de base quadrada: costat de la base $x$ (cm), altura $y$ (cm).\n- Volum: $V = x^2 y = 80\\ \\text{cm}^3$.\n- Tapa i cares laterals: $1$ €/cm². Base: $50\\,\\%$ més car, és a dir $1{,}5$ €/cm².\n- a) Deduir $P(x)$. b) Les mides $x$ i $y$ que fan el preu mínim."
+          },
+          {
+            "apartat": "a",
+            "titol": "Àrees de cada part de l'envàs",
+            "cos": "- Tapa: un quadrat de costat $x$ → $x^2$.\n- Superfície lateral: 4 rectangles de $x \\times y$ → $4xy$.\n- Base: un quadrat de costat $x$ → $x^2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Preu en funció de x i y",
+            "cos": "Multipliquem cada àrea pel preu del seu material:\n\n$$P(x, y) = 1\\cdot\\left(x^2 + 4xy\\right) + 1{,}5\\, x^2$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Lligadura del volum i preu en funció de x",
+            "cos": "Com que el volum és fix, podem aïllar l'altura:\n\n$$x^2 y = 80 \\;\\Longrightarrow\\; y = \\frac{80}{x^2}$$\n\nSubstituint:\n\n$$P(x) = x^2 + 4x\\cdot\\frac{80}{x^2} + 1{,}5x^2 = \\boxed{2{,}5x^2 + \\frac{320}{x}}, \\qquad x > 0$$\n\nque és l'expressió que demanava l'enunciat."
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivada i punt crític",
+            "cos": "Per trobar el mínim derivem i igualem a zero:\n\n$$P'(x) = 5x - \\frac{320}{x^2} = 0 \\;\\Longrightarrow\\; 5x^3 = 320 \\;\\Longrightarrow\\; x^3 = 64 \\;\\Longrightarrow\\; x = 4$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "És un mínim? Segona derivada",
+            "cos": "$$P''(x) = 5 + \\frac{640}{x^3} \\;\\Longrightarrow\\; P''(4) = 5 + \\frac{640}{64} = 15 > 0$$\n\nLa segona derivada és positiva, així que a $x = 4$ hi ha un **mínim**. (De fet $P''(x) > 0$ per a tot $x > 0$, de manera que és el mínim absolut.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Mides de l'envàs",
+            "cos": "$$y = \\frac{80}{x^2} = \\frac{80}{16} = 5$$\n\nL'envàs més barat té **base de $4\\ \\text{cm} \\times 4\\ \\text{cm}$ i altura de $5\\ \\text{cm}$**. El seu preu és $P(4) = 2{,}5\\cdot 16 + \\frac{320}{4} = 40 + 80 = 120$ €."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P(x) = x^2 + 4xy + 1{,}5x^2$ amb $y = \\frac{80}{x^2}$ ⟹ $P(x) = 2{,}5x^2 + \\frac{320}{x}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Costat de la base $x = 4\\ \\text{cm}$, altura $y = 5\\ \\text{cm}$ (preu mínim $120$ €)"
+          }
+        ],
+        "nota": "El preu mínim (120 €) no el demana l'enunciat ni surt a la solució oficial; l'afegim només com a comprovació. Error típic: oblidar que la tapa i la base són dues cares diferents (cal comptar $x^2$ dues vegades amb preus diferents)."
+      }
+    },
+    {
+      "id": "mates-2016-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Rectes tangents a y = sin x en x = 0 i x = π i àrea que tanquen amb la corba",
+      "tema": "integrals",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "recta tangent",
+        "derivada",
+        "àrea entre corbes",
+        "integral definida",
+        "regla de Barrow",
+        "concavitat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Sigui la funció $f(x) = \\sin(x)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació de les rectes tangents a la funció $f$ en els punts d'abscissa $x = 0$ i $x = \\pi$, respectivament. Trobeu les coordenades del punt en què es tallen les dues rectes.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'àrea de la regió limitada per la gràfica de la funció $f$ i les rectes tangents de l'apartat anterior (en cas de no haver resolt l'apartat anterior, suposeu que les rectes són $y = x$ i $y = -x + \\pi$, respectivament).",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $f(x) = \\sin x$, $f'(x) = \\cos x$.\n- a) Tangents a $x = 0$ i $x = \\pi$ i el seu punt de tall.\n- b) Àrea tancada per l'arc de sinus entre $0$ i $\\pi$ i les dues tangents."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de la recta tangent",
+            "cos": "La recta tangent a $f$ en $x = a$ és\n\n$$y = f(a) + f'(a)\\,(x - a)$$\n\nNecessitem el valor de la funció i de la derivada en cada punt."
+          },
+          {
+            "apartat": "a",
+            "titol": "Tangent a x = 0",
+            "cos": "$f(0) = \\sin 0 = 0$, $\\;f'(0) = \\cos 0 = 1$:\n\n$$y = 0 + 1\\cdot(x - 0) \\;\\Longrightarrow\\; \\boxed{y = x}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Tangent a x = π",
+            "cos": "$f(\\pi) = \\sin\\pi = 0$, $\\;f'(\\pi) = \\cos\\pi = -1$:\n\n$$y = 0 - 1\\cdot(x - \\pi) \\;\\Longrightarrow\\; \\boxed{y = -x + \\pi}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Punt de tall de les dues tangents",
+            "cos": "Igualem les dues expressions:\n\n$$x = -x + \\pi \\;\\Longrightarrow\\; 2x = \\pi \\;\\Longrightarrow\\; x = \\frac{\\pi}{2}, \\quad y = \\frac{\\pi}{2}$$\n\nLes rectes es tallen al punt $\\boxed{\\left(\\dfrac{\\pi}{2},\\ \\dfrac{\\pi}{2}\\right)}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Posició relativa de les corbes",
+            "cos": "La regió és un «triangle» de vèrtexs $(0,0)$, $(\\pi, 0)$ i $\\left(\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ amb el costat de baix corbat (l'arc de sinus). Entre $0$ i $\\pi$ la funció $\\sin x$ és **còncava** ($f''(x) = -\\sin x \\le 0$), i per això les tangents queden **per sobre** de la gràfica. Per exemple, a $x = \\frac{\\pi}{2}$: la tangent val $\\frac{\\pi}{2} \\approx 1{,}57$ i el sinus val $1$.\n\nEl sostre de la regió canvia a $x = \\frac{\\pi}{2}$: a l'esquerra és $y = x$ i a la dreta $y = -x + \\pi$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantejament de les integrals",
+            "cos": "Àrea = $\\int$ (funció de dalt − funció de baix):\n\n$$S = \\int_0^{\\pi/2} (x - \\sin x)\\,dx + \\int_{\\pi/2}^{\\pi} (-x + \\pi - \\sin x)\\,dx$$\n\nLa regió és simètrica respecte de la recta $x = \\frac{\\pi}{2}$ (tant el sinus com el parell de tangents ho són), de manera que les dues integrals valen el mateix i $S = 2\\int_0^{\\pi/2}(x - \\sin x)\\,dx$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Primitiva i regla de Barrow",
+            "cos": "Una primitiva de $x - \\sin x$ és $\\frac{x^2}{2} + \\cos x$:\n\n$$\\int_0^{\\pi/2} (x - \\sin x)\\,dx = \\left[\\frac{x^2}{2} + \\cos x\\right]_0^{\\pi/2} = \\left(\\frac{\\pi^2}{8} + 0\\right) - (0 + 1) = \\frac{\\pi^2}{8} - 1$$\n\n(Si es fa la segona integral per separat: $\\left[-\\frac{x^2}{2} + \\pi x + \\cos x\\right]_{\\pi/2}^{\\pi} = \\left(\\frac{\\pi^2}{2} - 1\\right) - \\frac{3\\pi^2}{8} = \\frac{\\pi^2}{8} - 1$, el mateix.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Àrea total",
+            "cos": "$$S = 2\\left(\\frac{\\pi^2}{8} - 1\\right) = \\boxed{\\frac{\\pi^2}{4} - 2\\ \\text{u}^2} \\approx 0{,}467\\ \\text{u}^2$$\n\nTé sentit: l'àrea del triangle de les tangents és $\\frac{\\pi\\cdot\\pi/2}{2} = \\frac{\\pi^2}{4} \\approx 2{,}47$ i l'àrea sota l'arc de sinus és $\\int_0^\\pi \\sin x\\,dx = 2$; la diferència és la regió buscada."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y = x$ (a $x=0$), $y = -x + \\pi$ (a $x = \\pi$); es tallen a $\\left(\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$S = \\frac{\\pi^2}{4} - 2 \\approx 0{,}467\\ \\text{u}^2$"
+          }
+        ],
+        "nota": "La solució oficial aprofita la simetria, però indica que es puntua igual calcular les dues integrals per separat."
+      }
+    },
+    {
+      "id": "mates-2016-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Matrius idempotents (A² = A): A i A − I no són invertibles",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "producte de matrius",
+        "matriu idempotent",
+        "matriu inversa",
+        "determinant",
+        "demostració"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Responeu a les qüestions següents:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu l'única matriu de la forma $A = \\begin{pmatrix} \\frac{1}{2} & \\frac{1}{4} \\\\ a & \\frac{1}{2} \\end{pmatrix}$ que satisfà que $A^2 = A$, i comproveu que $A$ i $A - I$ no són invertibles.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Justifiqueu raonadament que si $A$ és una matriu quadrada d'ordre $n$ diferent de la matriu nul·la, $0$, i de la matriu identitat, $I$, i satisfà la igualtat $A^2 = A$, aleshores les matrius $A$ i $A - I$ no són invertibles.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- a) $A = \\begin{pmatrix} 1/2 & 1/4 \\\\ a & 1/2 \\end{pmatrix}$; cal trobar $a$ perquè $A^2 = A$ i veure que $\\det A = 0$ i $\\det(A - I) = 0$.\n- b) Demostrar en general: si $A^2 = A$, $A \\neq 0$ i $A \\neq I$, aleshores ni $A$ ni $A - I$ tenen inversa."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul de A²",
+            "cos": "Multipliquem files per columnes:\n\n$$A^2 = \\begin{pmatrix} \\frac12 & \\frac14 \\\\ a & \\frac12 \\end{pmatrix}\\begin{pmatrix} \\frac12 & \\frac14 \\\\ a & \\frac12 \\end{pmatrix} = \\begin{pmatrix} \\frac14 + \\frac{a}{4} & \\frac18 + \\frac18 \\\\ \\frac{a}{2} + \\frac{a}{2} & \\frac{a}{4} + \\frac14 \\end{pmatrix} = \\begin{pmatrix} \\frac{a+1}{4} & \\frac14 \\\\ a & \\frac{a+1}{4} \\end{pmatrix}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Imposem A² = A",
+            "cos": "Igualem element a element:\n\n$$\\frac{a+1}{4} = \\frac12, \\qquad \\frac14 = \\frac14, \\qquad a = a, \\qquad \\frac{a+1}{4} = \\frac12$$\n\nLa segona i la tercera es compleixen sempre; les altres dues donen $a + 1 = 2 \\Rightarrow a = 1$. Per tant, l'única matriu és\n\n$$\\boxed{A = \\begin{pmatrix} \\frac12 & \\frac14 \\\\ 1 & \\frac12 \\end{pmatrix}}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "A i A − I no són invertibles",
+            "cos": "Una matriu quadrada és invertible si i només si el seu determinant és diferent de zero.\n\n$$\\det A = \\frac12\\cdot\\frac12 - \\frac14\\cdot 1 = \\frac14 - \\frac14 = 0$$\n\n$$A - I = \\begin{pmatrix} -\\frac12 & \\frac14 \\\\ 1 & -\\frac12 \\end{pmatrix}, \\qquad \\det(A - I) = \\left(-\\frac12\\right)\\left(-\\frac12\\right) - \\frac14\\cdot 1 = 0$$\n\nTots dos determinants són zero: **ni $A$ ni $A - I$ són invertibles**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Factoritzem la condició A² = A",
+            "cos": "Passant-ho tot a un costat i traient factor comú $A$ (per l'esquerra):\n\n$$A^2 - A = 0 \\;\\Longrightarrow\\; A\\,(A - I) = 0$$\n\n(i també $(A - I)\\,A = A^2 - A = 0$). Ara raonem per **reducció a l'absurd**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Si A fos invertible…",
+            "cos": "Multipliquem $A(A - I) = 0$ per l'esquerra per $A^{-1}$:\n\n$$A^{-1}A\\,(A - I) = A^{-1}\\cdot 0 \\;\\Longrightarrow\\; A - I = 0 \\;\\Longrightarrow\\; A = I$$\n\nperò l'enunciat diu que $A \\neq I$. Contradicció: **$A$ no és invertible**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Si A − I fos invertible…",
+            "cos": "Multipliquem $A(A - I) = 0$ per la dreta per $(A - I)^{-1}$:\n\n$$A\\,(A - I)(A - I)^{-1} = 0\\cdot(A - I)^{-1} \\;\\Longrightarrow\\; A = 0$$\n\nperò $A \\neq 0$. Contradicció: **$A - I$ no és invertible**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a = 1$, $A = \\begin{pmatrix} 1/2 & 1/4 \\\\ 1 & 1/2 \\end{pmatrix}$; $\\det A = \\det(A - I) = 0$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A(A-I) = 0$; si existís $A^{-1}$ sortiria $A = I$, i si existís $(A-I)^{-1}$ sortiria $A = 0$: contradicció en tots dos casos"
+          }
+        ],
+        "nota": "Atenció: a b) no es pot «dividir» per $A$ ni dir que de $A(A - I) = 0$ es dedueix $A = 0$ o $A = I$ (amb matrius això és fals, com mostra l'apartat a). Per això cal multiplicar per la inversa *suposant* que existeix. Alternativa amb determinants: $\\det(A)\\det(A - I) = \\det(0) = 0$ només diu que almenys un dels dos és zero, no tots dos; per això el raonament per l'absurd és el bo."
+      }
+    },
+    {
+      "id": "mates-2016-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Pla perpendicular a dos plans donats; la perpendicularitat entre plans no és transitiva",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "vector normal",
+        "plans perpendiculars",
+        "equació cartesiana del pla",
+        "producte vectorial",
+        "producte escalar",
+        "contraexemple"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Responeu a les qüestions següents:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació cartesiana (és a dir, que té la forma $Ax + By + Cz = D$) del pla que passa pel punt de coordenades $(0, 0, 1)$ i és perpendicular als plans $3x + y - z = 1$ i $x + y + 2z = 5$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Suposeu que un pla $\\pi_1$ és perpendicular a un segon pla $\\pi_2$ i que el pla $\\pi_2$ és a la vegada perpendicular a un tercer pla $\\pi_3$. Expliqueu raonadament si necessàriament els plans $\\pi_1$ i $\\pi_3$ han de ser perpendiculars entre ells.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Punt $A = (0, 0, 1)$; plans $3x + y - z = 1$ (normal $\\vec n_1 = (3,1,-1)$) i $x + y + 2z = 5$ (normal $\\vec n_2 = (1,1,2)$).\n- a) Pla per $A$ perpendicular als dos plans.\n- b) Si $\\pi_1 \\perp \\pi_2$ i $\\pi_2 \\perp \\pi_3$, és cert sempre que $\\pi_1 \\perp \\pi_3$?"
+          },
+          {
+            "apartat": "a",
+            "titol": "Idea: els normals dels plans donats són directors del pla buscat",
+            "cos": "Dos plans són perpendiculars quan els seus vectors normals són perpendiculars. Això vol dir que el vector normal de cada pla donat és **paral·lel** al pla que busquem, és a dir, és un vector director seu. Per tant, el pla buscat passa per $(0,0,1)$ i té vectors directors $(3,1,-1)$ i $(1,1,2)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació del pla amb un determinant",
+            "cos": "Un punt $(x,y,z)$ és del pla si el vector $(x, y, z - 1)$ i els dos directors són linealment dependents:\n\n$$\\begin{vmatrix} x & 3 & 1 \\\\ y & 1 & 1 \\\\ z - 1 & -1 & 2 \\end{vmatrix} = 0$$\n\nDesenvolupant per la primera columna:\n\n$$x\\,(1\\cdot 2 - 1\\cdot(-1)) - y\\,(3\\cdot 2 - 1\\cdot(-1)) + (z - 1)(3\\cdot 1 - 1\\cdot 1) = 3x - 7y + 2(z - 1) = 0$$\n\n$$\\boxed{3x - 7y + 2z = 2}$$\n\n(Equivalentment, el normal del pla és $\\vec n_1 \\times \\vec n_2 = (3, -7, 2)$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Comprovació",
+            "cos": "- Passa per $(0,0,1)$: $0 - 0 + 2 = 2$ ✓\n- $(3,-7,2)\\cdot(3,1,-1) = 9 - 7 - 2 = 0$ ✓ (perpendicular al primer pla)\n- $(3,-7,2)\\cdot(1,1,2) = 3 - 7 + 4 = 0$ ✓ (perpendicular al segon pla)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Traducció a vectors normals",
+            "cos": "Siguin $\\vec n_1$, $\\vec n_2$, $\\vec n_3$ els vectors normals dels tres plans. Les hipòtesis diuen\n\n$$\\vec n_1 \\cdot \\vec n_2 = 0, \\qquad \\vec n_2 \\cdot \\vec n_3 = 0$$\n\nAixò només diu que $\\vec n_1$ i $\\vec n_3$ són tots dos perpendiculars a $\\vec n_2$, però **no obliga** que $\\vec n_1 \\cdot \\vec n_3 = 0$: dos vectors perpendiculars a un mateix vector poden formar qualsevol angle entre ells (fins i tot ser paral·lels)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Contraexemple amb l'apartat a)",
+            "cos": "Prenem\n\n$$\\pi_1: 3x + y - z = 1, \\qquad \\pi_2: 3x - 7y + 2z = 2, \\qquad \\pi_3: x + y + 2z = 5$$\n\nPer l'apartat a), $\\pi_1 \\perp \\pi_2$ i $\\pi_2 \\perp \\pi_3$. Però\n\n$$\\vec n_1 \\cdot \\vec n_3 = (3,1,-1)\\cdot(1,1,2) = 3 + 1 - 2 = 2 \\neq 0$$\n\nde manera que $\\pi_1$ i $\\pi_3$ **no** són perpendiculars."
+          },
+          {
+            "apartat": "b",
+            "titol": "Exemple gràfic i conclusió",
+            "cos": "Un exemple encara més senzill: el terra ($\\pi_2: z = 0$) és perpendicular a una paret ($\\pi_1: x = 0$) i també a la paret paral·lela del davant ($\\pi_3: x = 5$), però aquestes dues parets són **paral·leles**, no perpendiculars.\n\n**Conclusió:** no necessàriament $\\pi_1$ i $\\pi_3$ han de ser perpendiculars; la perpendicularitat entre plans no és transitiva."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$3x - 7y + 2z = 2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "No: per exemple $\\pi_1: 3x+y-z=1$, $\\pi_2: 3x-7y+2z=2$, $\\pi_3: x+y+2z=5$ compleixen $\\pi_1\\perp\\pi_2$, $\\pi_2\\perp\\pi_3$ però $\\vec n_1\\cdot\\vec n_3 = 2 \\neq 0$"
+          }
+        ],
+        "nota": "La solució oficial indica que no cal fer servir l'exemple de l'apartat a): una il·lustració gràfica (dos plans paral·lels tallats per un pla perpendicular comú) acompanyada del raonament ja és suficient."
+      }
+    }
+  ]
+}

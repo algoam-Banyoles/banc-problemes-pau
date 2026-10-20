@@ -1,0 +1,566 @@
+{
+  "examen": {
+    "id": "mates-2020-S",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2020,
+    "convocatoria": "setembre",
+    "serie": "4",
+    "pdf_examen": "pdfs/mates/2020-S-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2020-S-solucio.pdf",
+    "estructura": "Cal respondre QUATRE de les sis qüestions. Cada qüestió val 2,5 punts (dos apartats d'1,25 punts). Es pot usar calculadora (no programable ni amb capacitat d'emmagatzemar o transmetre dades)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2020-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Punts de tall i àrea entre y = x³ i y = a·x² en funció d'un paràmetre",
+      "tema": "integrals",
+      "temes_secundaris": [
+        "funcions"
+      ],
+      "conceptes": [
+        "àrea entre corbes",
+        "integral definida",
+        "punts de tall",
+        "paràmetre",
+        "regla de Barrow"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2,
+        3
+      ],
+      "enunciat": "Siguin les funcions $f(x) = x^3$ i $g(x) = a\\cdot x^2$, en què $a$ és un nombre real positiu.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu, en funció del paràmetre $a$, els punts de tall entre les dues corbes $y = f(x)$ i $y = g(x)$ i feu un esbós de la regió limitada per les dues gràfiques.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el valor de $a$ perquè l'àrea compresa entre $y = f(x)$ i $y = g(x)$ sigui $\\frac{27}{4}\\ \\text{u}^2$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $f(x) = x^3$ (cúbica) i $g(x) = a x^2$ (paràbola amb vèrtex a l'origen), amb $a > 0$.\n- a) Punts de tall i esbós de la regió tancada.\n- b) El valor de $a$ que fa que l'àrea valgui $\\frac{27}{4}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Igualem les dues funcions",
+            "cos": "Els punts on es tallen dues corbes són els que tenen la mateixa $x$ i la mateixa $y$, per tant igualem:\n\n$$x^3 = a x^2 \\;\\Longrightarrow\\; x^3 - a x^2 = 0 \\;\\Longrightarrow\\; x^2(x - a) = 0$$\n\nUn producte és zero quan algun factor ho és: $x = 0$ (doble) o $x = a$.\n\nLes ordenades: $f(0) = 0$ i $f(a) = a^3$. **Punts de tall: $(0,\\,0)$ i $(a,\\,a^3)$.**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Quina corba queda per sobre i esbós",
+            "cos": "Entre $0$ i $a$ prenem un valor de prova, per exemple $x = a/2$:\n\n$$g\\!\\left(\\tfrac a2\\right) - f\\!\\left(\\tfrac a2\\right) = \\frac{a^3}{4} - \\frac{a^3}{8} = \\frac{a^3}{8} > 0$$\n\no, més en general, $g(x) - f(x) = x^2(a - x) > 0$ per a $0 < x < a$. Per tant, a l'interval $[0, a]$ **la paràbola $g$ queda per sobre de la cúbica $f$**. Totes dues passen per l'origen amb tangent horitzontal i es tornen a tallar a $x = a$; per a $x > a$ la cúbica creix més ràpid i passa per sobre.\n\n![Esbós de la regió limitada per les dues corbes (solució oficial)](img/mates/2020-S/e1-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantegem l'àrea amb una integral definida",
+            "cos": "L'àrea entre dues corbes és la integral de (funció de dalt − funció de baix) entre els punts de tall:\n\n$$A = \\int_0^a \\big(g(x) - f(x)\\big)\\,dx = \\int_0^a (a x^2 - x^3)\\,dx$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Primitiva i regla de Barrow",
+            "cos": "Integrem terme a terme ($a$ és una constant):\n\n$$A = \\left[\\frac{a x^3}{3} - \\frac{x^4}{4}\\right]_0^a = \\frac{a\\cdot a^3}{3} - \\frac{a^4}{4} - 0 = \\frac{a^4}{3} - \\frac{a^4}{4} = \\frac{4a^4 - 3a^4}{12} = \\frac{a^4}{12}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Imposem que l'àrea valgui 27/4",
+            "cos": "$$\\frac{a^4}{12} = \\frac{27}{4} \\;\\Longrightarrow\\; a^4 = \\frac{27\\cdot 12}{4} = 81 \\;\\Longrightarrow\\; a = \\pm\\sqrt[4]{81} = \\pm 3$$\n\nL'enunciat diu que $a$ és positiu, per tant descartem $a = -3$: **$a = 3$**.\n\nComprovació: $\\dfrac{3^4}{12} = \\dfrac{81}{12} = \\dfrac{27}{4}$ ✓"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Punts de tall $(0,0)$ i $(a, a^3)$; a $[0,a]$ la paràbola queda per sobre de la cúbica"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A = \\frac{a^4}{12}$; $a = 3$"
+          }
+        ],
+        "nota": "Error típic: posar la integral al revés ($f - g$) i obtenir una àrea negativa. Si passa, és senyal que la corba de dalt és l'altra."
+      }
+    },
+    {
+      "id": "mates-2020-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Trajectòria d'un avió: intersecció recta-pla, distància i pla perpendicular",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "intersecció recta-pla",
+        "distància entre dos punts",
+        "producte vectorial",
+        "pla perpendicular",
+        "equació paramètrica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "Un avió es desplaça des d'un punt $A = (0, 3, 1)$ cap a una plataforma plana d'equació $\\pi\\colon x - 2y + z = 1$ seguint una recta $r$ paral·lela al vector $\\vec v = (1, -1, 0)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu les coordenades del punt de contacte $B$ de l'avió amb el pla i la distància recorreguda.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'equació general del pla perpendicular a la plataforma i que conté la recta $r$ seguida per l'avió des del punt $A$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Punt de sortida $A = (0, 3, 1)$, direcció $\\vec v = (1, -1, 0)$.\n- Pla $\\pi\\colon x - 2y + z = 1$, de vector normal $\\vec n_\\pi = (1, -2, 1)$.\n- a) Punt $B = r \\cap \\pi$ i distància $d(A, B)$.\n- b) Pla que conté $r$ i és perpendicular a $\\pi$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació paramètrica de la recta r",
+            "cos": "Una recta queda determinada per un punt i un vector director:\n\n$$r\\colon (x, y, z) = (0, 3, 1) + \\lambda\\,(1, -1, 0) = (\\lambda,\\ 3 - \\lambda,\\ 1)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Intersecció de la recta amb el pla",
+            "cos": "El punt de contacte és un punt de $r$ que també compleix l'equació de $\\pi$. Substituïm el punt genèric de $r$ al pla:\n\n$$\\lambda - 2(3 - \\lambda) + 1 = 1 \\;\\Longrightarrow\\; \\lambda - 6 + 2\\lambda + 1 = 1 \\;\\Longrightarrow\\; 3\\lambda = 6 \\;\\Longrightarrow\\; \\lambda = 2$$\n\nSubstituint $\\lambda = 2$: **$B = (2,\\ 1,\\ 1)$**. (Comprovació: $2 - 2 + 1 = 1$ ✓)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Distància recorreguda",
+            "cos": "És la distància entre $A$ i $B$, és a dir, el mòdul del vector $\\overrightarrow{AB}$:\n\n$$\\overrightarrow{AB} = (2 - 0,\\ 1 - 3,\\ 1 - 1) = (2, -2, 0)$$\n\n$$d(A, B) = |\\overrightarrow{AB}| = \\sqrt{2^2 + (-2)^2 + 0^2} = \\sqrt 8 = \\mathbf{2\\sqrt 2 \\approx 2{,}83\\ \\text{u}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Vectors directors del pla buscat",
+            "cos": "El pla buscat conté la recta $r$, així que conté el seu vector director $\\vec v = (1, -1, 0)$. A més, si és perpendicular a $\\pi$, conté la direcció normal de $\\pi$, $\\vec n_\\pi = (1, -2, 1)$. Amb un punt ($A$) i dos vectors directors no paral·lels el pla queda determinat."
+          },
+          {
+            "apartat": "b",
+            "titol": "Vector normal amb el producte vectorial",
+            "cos": "El vector normal al pla buscat és perpendicular als dos vectors directors, per tant és el seu producte vectorial:\n\n$$\\vec n_\\pi \\times \\vec v = \\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ 1 & -2 & 1 \\\\ 1 & -1 & 0 \\end{vmatrix} = \\vec i\\,(0 - (-1)) - \\vec j\\,(0 - 1) + \\vec k\\,(-1 - (-2)) = (1, 1, 1)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació general del pla",
+            "cos": "Amb normal $(1, 1, 1)$ el pla és $x + y + z = k$. Com que passa per $A = (0, 3, 1)$:\n\n$$0 + 3 + 1 = k \\;\\Longrightarrow\\; k = 4$$\n\n$$\\boxed{x + y + z = 4}$$\n\nComprovació: $B = (2, 1, 1)$ també hi és ($2 + 1 + 1 = 4$ ✓) i $(1,1,1)\\cdot(1,-2,1) = 0$, per tant els dos plans són perpendiculars ✓"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$B = (2, 1, 1)$; distància $2\\sqrt 2 \\approx 2{,}83$ u"
+          },
+          {
+            "apartat": "b",
+            "valor": "$x + y + z = 4$"
+          }
+        ],
+        "nota": "També es pot fer el b) amb el determinant $\\begin{vmatrix} x & y-3 & z-1 \\\\ 1 & -1 & 0 \\\\ 1 & -2 & 1 \\end{vmatrix} = 0$, que dona el mateix pla."
+      }
+    },
+    {
+      "id": "mates-2020-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Recta tangent i punts singulars de f a partir de la gràfica de f'",
+      "tema": "derivades",
+      "temes_secundaris": [
+        "funcions"
+      ],
+      "conceptes": [
+        "recta tangent",
+        "punts singulars",
+        "monotonia",
+        "màxims i mínims",
+        "punt d'inflexió",
+        "gràfica de la derivada"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "Sigui $f(x)$ una funció derivable la gràfica de la qual passa pel punt $(0, 1)$. La gràfica de la seva derivada, $f'(x)$, és la que es mostra en la figura.",
+      "figures": [
+        {
+          "src": "img/mates/2020-S/e3.png",
+          "peu": "Gràfica de la derivada f′(x)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de la funció $f(x)$ en el punt de la gràfica d'abscissa $x = 0$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu les abscisses dels punts singulars de la funció $f(x)$ i classifiqueu-los.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- No coneixem $f$, només un punt: $f(0) = 1$.\n- Coneixem la **gràfica de $f'$**: el valor de $f'$ és el pendent de $f$, i el signe de $f'$ ens diu si $f$ creix o decreix.\n- a) Recta tangent a $x = 0$. b) Punts singulars ($f'(x) = 0$) i classificació."
+          },
+          {
+            "apartat": "a",
+            "titol": "Fórmula de la recta tangent",
+            "cos": "La recta tangent a $y = f(x)$ en $x = x_0$ és\n\n$$y - f(x_0) = f'(x_0)\\,(x - x_0)$$\n\nNecessitem doncs $f(0)$ (ordenada del punt) i $f'(0)$ (pendent)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Llegim les dades i substituïm",
+            "cos": "- $f(0) = 1$, perquè la gràfica de $f$ passa per $(0, 1)$.\n- A la gràfica de $f'$, a $x = 0$ la corba talla l'eix vertical a $y = -4$: $f'(0) = -4$.\n\n$$y - 1 = -4\\,(x - 0) \\;\\Longrightarrow\\; \\boxed{y = -4x + 1}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Abscisses dels punts singulars",
+            "cos": "Els punts singulars (o crítics) són on la derivada s'anul·la, és a dir, on la gràfica de $f'$ toca l'eix $OX$. A la figura veiem que això passa a\n\n$$x = -2, \\qquad x = -1, \\qquad x = 1$$\n\nA $x = -2$ la gràfica de $f'$ només **toca** l'eix (no el travessa); a $x = -1$ i $x = 1$ el **travessa**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Estudi del signe de f' (monotonia de f)",
+            "cos": "Si $f' > 0$, $f$ creix; si $f' < 0$, $f$ decreix. Llegint la gràfica:\n\n| interval | $(-\\infty,-2)$ | $(-2,-1)$ | $(-1,1)$ | $(1,+\\infty)$ |\n|---|---|---|---|---|\n| signe de $f'$ | $+$ | $+$ | $-$ | $+$ |\n| $f$ | creix | creix | decreix | creix |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Classificació",
+            "cos": "- **$x = -1$: màxim relatiu**, perquè $f$ passa de créixer a decréixer.\n- **$x = 1$: mínim relatiu**, perquè $f$ passa de decréixer a créixer.\n- **$x = -2$: punt d'inflexió amb tangent horitzontal.** $f$ creix abans i després, per tant no és extrem. A més, a $x = -2$ la gràfica de $f'$ té un mínim (la tangent a $f'$ és horitzontal, $f''(-2) = 0$): abans $f'$ decreix ($f'' < 0$, $f$ còncava cap avall) i després creix ($f'' > 0$, $f$ còncava cap amunt). Hi ha canvi de curvatura, per tant és un punt d'inflexió."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y = -4x + 1$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$x = -1$ màxim relatiu; $x = 1$ mínim relatiu; $x = -2$ punt d'inflexió de tangent horitzontal"
+          }
+        ],
+        "nota": "La gràfica és compatible amb $f'(x) = (x+2)^2(x^2-1)$, que dona exactament $f'(0) = -4$, una arrel doble a $x = -2$ i arrels simples a $\\pm 1$. Error típic: llegir la figura com si fos la gràfica de $f$ i buscar-hi màxims i mínims; aquí els extrems de $f$ són on $f'$ talla l'eix, no on $f'$ té màxims o mínims."
+      }
+    },
+    {
+      "id": "mates-2020-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Rang d'una matriu 3×3 amb paràmetre i comprovació que A⁻¹ = A²",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "rang",
+        "determinant",
+        "matriu inversa",
+        "paràmetre",
+        "producte de matrius"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8,
+        9
+      ],
+      "enunciat": "Sigui la matriu $A = \\begin{pmatrix} a & -3 & 0 \\\\ 4 & a-7 & 1 \\\\ 1 & -1 & -1 \\end{pmatrix}$, en què $a$ és un paràmetre real.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Estudieu el rang de la matriu $A$ per als diferents valors del paràmetre $a$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Comproveu que per a $a = 4$ la matriu $A$ és invertible i que es verifica que $A^{-1} = A^2$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Matriu $3\\times 3$ que depèn de $a$.\n- a) Rang segons $a$. b) Per a $a = 4$: veure que és invertible i que $A^{-1} = A^2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Calculem el determinant",
+            "cos": "Com que la matriu és quadrada i depèn d'un paràmetre, estudiem quan el determinant és zero: si $|A| \\ne 0$ el rang és màxim (3). Desenvolupem per la primera fila:\n\n$$|A| = a\\begin{vmatrix} a-7 & 1 \\\\ -1 & -1 \\end{vmatrix} - (-3)\\begin{vmatrix} 4 & 1 \\\\ 1 & -1 \\end{vmatrix} + 0 = a\\,\\big(-(a-7) + 1\\big) + 3\\,(-4 - 1)$$\n\n$$|A| = a(8 - a) - 15 = -a^2 + 8a - 15 = -(a - 3)(a - 5)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valors que anul·len el determinant",
+            "cos": "$$-a^2 + 8a - 15 = 0 \\;\\Longrightarrow\\; a^2 - 8a + 15 = 0 \\;\\Longrightarrow\\; a = \\frac{8 \\pm \\sqrt{64 - 60}}{2} = \\frac{8 \\pm 2}{2} \\;\\Longrightarrow\\; a = 3,\\ a = 5$$\n\n- **Si $a \\ne 3$ i $a \\ne 5$:** $|A| \\ne 0$, per tant **$\\text{rang}(A) = 3$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas a = 3",
+            "cos": "$$A = \\begin{pmatrix} 3 & -3 & 0 \\\\ 4 & -4 & 1 \\\\ 1 & -1 & -1 \\end{pmatrix}, \\qquad |A| = 0 \\Rightarrow \\text{rang}(A) < 3$$\n\nBusquem un menor d'ordre 2 no nul: $\\begin{vmatrix} -3 & 0 \\\\ -4 & 1 \\end{vmatrix} = -3 \\ne 0$. Per tant **$\\text{rang}(A) = 2$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas a = 5",
+            "cos": "$$A = \\begin{pmatrix} 5 & -3 & 0 \\\\ 4 & -2 & 1 \\\\ 1 & -1 & -1 \\end{pmatrix}, \\qquad |A| = 0 \\Rightarrow \\text{rang}(A) < 3$$\n\nMenor d'ordre 2: $\\begin{vmatrix} 5 & -3 \\\\ 4 & -2 \\end{vmatrix} = -10 + 12 = 2 \\ne 0$. Per tant **$\\text{rang}(A) = 2$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "A és invertible per a a = 4",
+            "cos": "Una matriu quadrada és invertible si i només si el seu determinant no és zero. Per a $a = 4$:\n\n$$|A| = -16 + 32 - 15 = 1 \\ne 0$$\n\n(o simplement: $4 \\ne 3$ i $4 \\ne 5$, i per l'apartat a) el rang és 3). **$A$ és invertible.** La matriu és\n\n$$A = \\begin{pmatrix} 4 & -3 & 0 \\\\ 4 & -3 & 1 \\\\ 1 & -1 & -1 \\end{pmatrix}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Estratègia: n'hi ha prou amb veure que A·A² = I",
+            "cos": "La inversa és l'única matriu que multiplicada per $A$ dona la identitat. Per tant, per veure que $A^{-1} = A^2$ no cal calcular la inversa: n'hi ha prou amb comprovar que $A\\cdot A^2 = I$ (és a dir, $A^3 = I$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Calculem A²",
+            "cos": "$$A^2 = \\begin{pmatrix} 4 & -3 & 0 \\\\ 4 & -3 & 1 \\\\ 1 & -1 & -1 \\end{pmatrix}\\begin{pmatrix} 4 & -3 & 0 \\\\ 4 & -3 & 1 \\\\ 1 & -1 & -1 \\end{pmatrix} = \\begin{pmatrix} 16-12+0 & -12+9+0 & 0-3+0 \\\\ 16-12+1 & -12+9-1 & 0-3-1 \\\\ 4-4-1 & -3+3+1 & 0-1+1 \\end{pmatrix} = \\begin{pmatrix} 4 & -3 & -3 \\\\ 5 & -4 & -4 \\\\ -1 & 1 & 0 \\end{pmatrix}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovem A·A² = I",
+            "cos": "$$A\\cdot A^2 = \\begin{pmatrix} 4 & -3 & 0 \\\\ 4 & -3 & 1 \\\\ 1 & -1 & -1 \\end{pmatrix}\\begin{pmatrix} 4 & -3 & -3 \\\\ 5 & -4 & -4 \\\\ -1 & 1 & 0 \\end{pmatrix} = \\begin{pmatrix} 16-15 & -12+12 & -12+12 \\\\ 16-15-1 & -12+12+1 & -12+12 \\\\ 4-5+1 & -3+4-1 & -3+4 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}$$\n\n**Queda comprovat que $A^{-1} = A^2$.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a \\ne 3, 5$: rang 3; $a = 3$: rang 2; $a = 5$: rang 2"
+          },
+          {
+            "apartat": "b",
+            "valor": "$|A| = 1 \\ne 0$; $A^2 = \\begin{pmatrix} 4 & -3 & -3 \\\\ 5 & -4 & -4 \\\\ -1 & 1 & 0 \\end{pmatrix}$ i $A\\cdot A^2 = I$"
+          }
+        ],
+        "nota": "L'oficial justifica el rang 2 dient que dues files no són proporcionals; és equivalent a trobar un menor d'ordre 2 no nul, com fem aquí."
+      }
+    },
+    {
+      "id": "mates-2020-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Pentàgon inscrit en una semicircumferència d'àrea màxima (càpsules de cafè)",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "optimització",
+        "àrea",
+        "teorema de Pitàgores",
+        "derivada",
+        "màxim relatiu"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        10,
+        11
+      ],
+      "enunciat": "Una empresa està treballant en el disseny d'unes càpsules de cafè. L'empresa ha construït la secció transversal de les càpsules inscrivint-la en una semicircumferència de radi 1, traçant a continuació una corda $CD$ paral·lela al diàmetre $AB$ i incorporant el punt $E$ en el punt mitjà de l'arc $CD$. D'aquesta manera queda traçat el pentàgon $ACEDB$, tal com es mostra en la figura.",
+      "figures": [
+        {
+          "src": "img/mates/2020-S/e5.png",
+          "peu": "Pentàgon ACEDB inscrit a la semicircumferència"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Expresseu en funció de $x$ i $h$ l'àrea del pentàgon $ACEDB$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Quina ha de ser la distància (indicada en la figura per $h$) a què s'ha de situar la corda $CD$ de $AB$ per tal que l'àrea del pentàgon $ACEDB$ sigui màxima?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Semicircumferència de radi $1$: $AB = 2$ i el centre $O$ és el punt mitjà de $AB$.\n- $x$ = meitat de la corda $CD$ (per tant $CD = 2x$); $h$ = distància de $CD$ a $AB$, amb $0 < h < 1$.\n- $E$ és el punt més alt de l'arc: està a distància $1$ (el radi) de $O$, per tant l'altura del triangle $CED$ és $1 - h$.\n- a) Àrea $A(x, h)$. b) El valor de $h$ que la fa màxima."
+          },
+          {
+            "apartat": "a",
+            "titol": "Relació entre x i h (Pitàgores)",
+            "cos": "El punt $D$ és a la circumferència, així que $OD = 1$. El triangle format per $O$, el peu de l'altura i $D$ és rectangle, amb catets $h$ i $x$:\n\n$$x^2 + h^2 = 1 \\;\\Longrightarrow\\; x = \\sqrt{1 - h^2}$$\n\n![Construcció auxiliar: radi OD = 1 i altura 1 − h del triangle (solució oficial)](img/mates/2020-S/e5-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Descomposició en trapezi + triangle",
+            "cos": "El pentàgon $ACEDB$ es descompon en el trapezi $ACDB$ (bases $AB = 2$ i $CD = 2x$, altura $h$) i el triangle $CED$ (base $2x$, altura $1 - h$):\n\n$$A_\\text{trapezi} = \\frac{(2 + 2x)\\,h}{2} = (1 + x)\\,h, \\qquad A_\\text{triangle} = \\frac{2x\\,(1 - h)}{2} = x(1 - h)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Àrea total",
+            "cos": "$$A(x, h) = (1 + x)h + x(1 - h) = h + xh + x - xh \\;\\Longrightarrow\\; \\boxed{A(x, h) = x + h}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció d'una sola variable",
+            "cos": "Per optimitzar necessitem una funció d'una sola variable. Substituïm $x = \\sqrt{1 - h^2}$:\n\n$$A(h) = h + \\sqrt{1 - h^2}, \\qquad 0 < h < 1$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivem i igualem a zero",
+            "cos": "Derivem (regla de la cadena a l'arrel):\n\n$$A'(h) = 1 + \\frac{-2h}{2\\sqrt{1 - h^2}} = 1 - \\frac{h}{\\sqrt{1 - h^2}}$$\n\n$$A'(h) = 0 \\;\\Longrightarrow\\; \\sqrt{1 - h^2} = h \\;\\Longrightarrow\\; 1 - h^2 = h^2 \\;\\Longrightarrow\\; h^2 = \\frac12 \\;\\Longrightarrow\\; h = \\frac{\\sqrt 2}{2}$$\n\n(descartem $h = -\\frac{\\sqrt2}{2}$ perquè una distància és positiva)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovem que és un màxim",
+            "cos": "Estudiem el signe de $A'$ a cada costat de $h = \\frac{\\sqrt2}{2} \\approx 0{,}707$:\n\n$$A'(0{,}5) = 1 - \\frac{0{,}5}{\\sqrt{0{,}75}} \\approx 0{,}423 > 0, \\qquad A'(0{,}8) = 1 - \\frac{0{,}8}{0{,}6} \\approx -0{,}333 < 0$$\n\nL'àrea creix abans i decreix després: **és un màxim**. Per tant la corda s'ha de situar a\n\n$$\\boxed{h = \\frac{\\sqrt 2}{2} \\approx 0{,}707}$$\n\nEn aquest cas $x = \\frac{\\sqrt2}{2}$ també, i l'àrea màxima és $A = \\sqrt 2 \\approx 1{,}414\\ \\text{u}^2$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$A(x, h) = (1+x)h + x(1-h) = x + h$, amb $x = \\sqrt{1-h^2}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$h = \\frac{\\sqrt 2}{2} \\approx 0{,}707$ (àrea màxima $\\sqrt 2$)"
+          }
+        ],
+        "nota": "Interpretació geomètrica: $x = h$ vol dir que $D$ és a $45^\\circ$ del diàmetre. Es podria també classificar amb la segona derivada, $A''(h) = -\\frac{1}{(1-h^2)^{3/2}} < 0$."
+      }
+    },
+    {
+      "id": "mates-2020-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Posició relativa i distància entre dues rectes que es creuen",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "posició relativa de rectes",
+        "rectes que es creuen",
+        "distància entre rectes",
+        "producte vectorial",
+        "distància punt-pla"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12,
+        13
+      ],
+      "enunciat": "Siguin les rectes $r$ i $s$, expressades per $\\dfrac{x-3}{2} = y = z - 1$ i $(\\mu, -\\mu, \\mu)$, respectivament.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu la posició relativa de les rectes.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la distància entre la recta $r$ i la recta $s$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $r$ en forma contínua: $\\frac{x-3}{2} = \\frac{y-0}{1} = \\frac{z-1}{1}$ → punt $P_r = (3, 0, 1)$, vector $\\vec v_r = (2, 1, 1)$.\n- $s$ en forma paramètrica: $(\\mu, -\\mu, \\mu) = (0,0,0) + \\mu(1,-1,1)$ → punt $P_s = (0, 0, 0)$, vector $\\vec v_s = (1, -1, 1)$.\n- a) Posició relativa. b) Distància $d(r, s)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Comparem els vectors directors",
+            "cos": "Si els vectors directors fossin proporcionals, les rectes serien paral·leles o coincidents. $\\frac21 \\ne \\frac{1}{-1}$, així que $\\vec v_r$ i $\\vec v_s$ **no són proporcionals**: les rectes es tallen en un punt o es creuen."
+          },
+          {
+            "apartat": "a",
+            "titol": "Busquem un punt comú",
+            "cos": "Substituïm el punt genèric de $s$, $(\\mu, -\\mu, \\mu)$, a les equacions de $r$:\n\n$$\\frac{\\mu - 3}{2} = -\\mu = \\mu - 1$$\n\n- De la primera igualtat: $\\mu - 3 = -2\\mu \\Rightarrow \\mu = 1$.\n- De la segona: $-\\mu = \\mu - 1 \\Rightarrow \\mu = \\frac12$.\n\nObtenim valors diferents de $\\mu$: el sistema és incompatible i no hi ha cap punt comú."
+          },
+          {
+            "apartat": "a",
+            "titol": "Conclusió (i comprovació amb el determinant)",
+            "cos": "No són paral·leles i no es tallen: **les rectes es creuen**.\n\nComprovació alternativa: amb $\\overrightarrow{P_sP_r} = (3, 0, 1)$,\n\n$$\\begin{vmatrix} 3 & 0 & 1 \\\\ 2 & 1 & 1 \\\\ 1 & -1 & 1 \\end{vmatrix} = 3(1+1) - 0 + 1(-2-1) = 3 \\ne 0$$\n\nels tres vectors no són coplanaris, per tant les rectes es creuen ✓"
+          },
+          {
+            "apartat": "b",
+            "titol": "Estratègia",
+            "cos": "Per a dues rectes que es creuen, la distància és la distància d'un punt de $s$ al pla $\\pi$ que conté $r$ i és paral·lel a $s$: $d(r, s) = d(P_s, \\pi)$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Pla que conté r i és paral·lel a s",
+            "cos": "Els vectors directors del pla són $\\vec v_r$ i $\\vec v_s$; el seu producte vectorial és el normal:\n\n$$\\vec n = \\vec v_r \\times \\vec v_s = \\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ 2 & 1 & 1 \\\\ 1 & -1 & 1 \\end{vmatrix} = \\vec i\\,(1 + 1) - \\vec j\\,(2 - 1) + \\vec k\\,(-2 - 1) = (2, -1, -3)$$\n\nAmb el punt $P_r = (3, 0, 1)$:\n\n$$\\pi\\colon 2(x - 3) - (y - 0) - 3(z - 1) = 0 \\;\\Longrightarrow\\; \\pi\\colon 2x - y - 3z - 3 = 0$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Distància d'un punt de s al pla",
+            "cos": "Amb $P_s = (0, 0, 0)$ i la fórmula $d(P, \\pi) = \\dfrac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}}$:\n\n$$d(r, s) = \\frac{|2\\cdot 0 - 0 - 3\\cdot 0 - 3|}{\\sqrt{2^2 + (-1)^2 + (-3)^2}} = \\frac{3}{\\sqrt{14}} = \\frac{3\\sqrt{14}}{14} \\approx \\mathbf{0{,}80\\ \\text{u}}$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Les rectes es creuen"
+          },
+          {
+            "apartat": "b",
+            "valor": "$d(r, s) = \\frac{3}{\\sqrt{14}} = \\frac{3\\sqrt{14}}{14} \\approx 0{,}80$ u"
+          }
+        ],
+        "nota": "Mètode equivalent: $d(r,s) = \\dfrac{|[\\overrightarrow{P_sP_r}, \\vec v_r, \\vec v_s]|}{|\\vec v_r \\times \\vec v_s|} = \\dfrac{3}{\\sqrt{14}}$ (el numerador és el determinant de l'apartat a)."
+      }
+    }
+  ]
+}

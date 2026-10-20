@@ -1,0 +1,875 @@
+{
+  "examen": {
+    "id": "tecno-2021-J",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2021,
+    "convocatoria": "juny",
+    "serie": "2",
+    "pdf_examen": "pdfs/tecno/2021-J-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2021-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels sis exercicis (2,5 punts cadascun); si se'n responen més, només es valoren els quatre primers. L'exercici 1 consta de 5 qüestions de test (0,5 punts cadascuna; cada resposta errònia descompta 0,16 punts i les no contestades no descompten). Els exercicis 2 a 6 són problemes amb apartats."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2021-J-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Longitud final d'una barra d'acer per dilatació tèrmica",
+      "tema": "materials",
+      "temes_secundaris": [
+        "termica"
+      ],
+      "conceptes": [
+        "dilatació tèrmica",
+        "coeficient de dilatació lineal",
+        "longitud final"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Es disposa d'una barra d'acer amb una longitud inicial $L = 800\\ \\text{mm}$ a $20\\ ^\\circ\\text{C}$. El coeficient de dilatació lineal de l'acer és $\\alpha = 13 \\times 10^{-6}\\ ^\\circ\\text{C}^{-1}$. Quina serà la longitud final quan la temperatura hagi incrementat $400\\ ^\\circ\\text{C}$?",
+      "figures": [],
+      "opcions": {
+        "a": "$804{,}16\\ \\text{mm}$",
+        "b": "$803{,}95\\ \\text{mm}$",
+        "c": "$800{,}01\\ \\text{mm}$",
+        "d": "$800{,}30\\ \\text{mm}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $L_0 = 800\\ \\text{mm}$\n- $\\alpha = 13 \\times 10^{-6}\\ ^\\circ\\text{C}^{-1}$\n- Increment de temperatura: $\\Delta T = 400\\ ^\\circ\\text{C}$ (no cal saber la temperatura inicial, només l'increment)\n- Incògnita: longitud final $L_f$"
+          },
+          {
+            "apartat": null,
+            "titol": "Llei de la dilatació lineal",
+            "cos": "Quan un sòlid s'escalfa, el seu allargament és proporcional a la longitud inicial i a l'increment de temperatura:\n\n$$\\Delta L = \\alpha\\, L_0\\, \\Delta T = 13 \\times 10^{-6} \\cdot 800 \\cdot 400 = 4{,}16\\ \\text{mm}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Longitud final",
+            "cos": "$$L_f = L_0 + \\Delta L = L_0\\,(1 + \\alpha\\,\\Delta T) = 800 + 4{,}16 = 804{,}16\\ \\text{mm}$$\n\nResultat: **$L_f = 804{,}16\\ \\text{mm}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **b)** $803{,}95\\ \\text{mm}$ surt d'usar $\\Delta T = 380\\ ^\\circ\\text{C}$ (restar els $20\\ ^\\circ\\text{C}$ inicials): l'enunciat ja dona l'**increment**, $400\\ ^\\circ\\text{C}$.\n- **c)** i **d)** són allargaments massa petits, típics d'errors amb la potència de 10 del coeficient."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$L_f = 804{,}16\\ \\text{mm}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2021-J-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat de rotació d'un cargol a partir del pas i la velocitat d'avanç",
+      "tema": "mecanismes",
+      "temes_secundaris": [],
+      "conceptes": [
+        "cargol-femella",
+        "pas de rosca",
+        "velocitat de gir",
+        "velocitat lineal"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Quina és la velocitat de rotació d'un cargol de pas (avanç per volta) $p = 2\\ \\text{mm}$ que té una velocitat d'avanç de $15\\ \\text{mm/s}$?",
+      "figures": [],
+      "opcions": {
+        "a": "$480\\ \\text{min}^{-1}$",
+        "b": "$7{,}5\\ \\text{min}^{-1}$",
+        "c": "$450\\ \\text{min}^{-1}$",
+        "d": "$8\\ \\text{min}^{-1}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Pas: $p = 2\\ \\text{mm/volta}$\n- Velocitat d'avanç: $v = 15\\ \\text{mm/s}$\n- Incògnita: velocitat de gir $n$ en $\\text{min}^{-1}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Relació entre avanç i gir",
+            "cos": "A cada volta el cargol avança un pas. Per tant la velocitat d'avanç és el pas per les voltes per unitat de temps, $v = p\\, n$:\n\n$$n = \\frac{v}{p} = \\frac{15\\ \\text{mm/s}}{2\\ \\text{mm/volta}} = 7{,}5\\ \\text{voltes/s}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Pas a voltes per minut",
+            "cos": "$$n = 7{,}5\\ \\text{voltes/s} \\cdot 60\\ \\text{s/min} = 450\\ \\text{min}^{-1}$$\n\nResultat: **$n = 450\\ \\text{min}^{-1}$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "L'opció **b)** ($7{,}5\\ \\text{min}^{-1}$) és el valor correcte en voltes per **segon** amb la unitat equivocada: és l'error d'oblidar multiplicar per 60."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$n = 450\\ \\text{min}^{-1}$ → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2021-J-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Petjada de carboni anual d'una línia d'autobús circular",
+      "tema": "energia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "petjada de carboni",
+        "factor d'emissió",
+        "emissions de co2"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un trajecte interurbà circular d'autobús té una longitud de $12\\ \\text{km}$ i un total de 6 parades. La freqüència de pas de l'autobús és de 15 minuts durant 12 hores al dia, 270 dies l'any. L'Oficina Catalana del Canvi Climàtic estima un factor d'emissió $FE = 1\\,155{,}52\\ \\text{g de CO}_2\\text{/km}$ per a aquest tipus d'autobús. Quina petjada de carboni deixa l'autobús al cap de l'any?",
+      "figures": [],
+      "opcions": {
+        "a": "$11{,}23$ tones de $\\text{CO}_2$",
+        "b": "$179{,}71$ tones de $\\text{CO}_2$",
+        "c": "$6{,}739$ tones de $\\text{CO}_2$",
+        "d": "$242{,}94$ tones de $\\text{CO}_2$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud d'una volta: $12\\ \\text{km}$\n- Un pas cada $15\\ \\text{min}$, durant $12\\ \\text{h/dia}$ i $270\\ \\text{dies/any}$\n- $FE = 1\\,155{,}52\\ \\text{g CO}_2\\text{/km}$\n- El nombre de parades (6) no intervé en el càlcul\n- Incògnita: massa de $\\text{CO}_2$ emesa en un any"
+          },
+          {
+            "apartat": null,
+            "titol": "Voltes que fa l'autobús en un any",
+            "cos": "Si passa cada 15 minuts, fa 4 voltes cada hora:\n\n$$N = \\frac{60}{15} \\cdot 12 \\cdot 270 = 4 \\cdot 12 \\cdot 270 = 12\\,960\\ \\text{voltes/any}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Distància anual",
+            "cos": "$$d = N \\cdot 12\\ \\text{km} = 12\\,960 \\cdot 12 = 155\\,520\\ \\text{km/any}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Emissions amb el factor d'emissió",
+            "cos": "El factor d'emissió diu quants grams de CO₂ s'emeten per cada km recorregut:\n\n$$m_{\\text{CO}_2} = d \\cdot FE = 155\\,520 \\cdot 1\\,155{,}52 = 179{,}71 \\cdot 10^6\\ \\text{g} = 179{,}71\\ \\text{t}$$\n\nResultat: **$m_{\\text{CO}_2} \\approx 179{,}71$ tones** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **d)** $242{,}94\\ \\text{t}$ surt de comptar els 365 dies de l'any en lloc dels 270 de servei.\n- **a)** i **c)** són valors massa petits que surten d'oblidar algun factor (les voltes per hora o les hores de servei)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$m_{\\text{CO}_2} \\approx 179{,}71\\ \\text{t}$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2021-J-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Força per sostenir un bloc amb una politja mòbil i una de fixa",
+      "tema": "mecanismes",
+      "temes_secundaris": [
+        "estatica"
+      ],
+      "conceptes": [
+        "politja mòbil",
+        "politja fixa",
+        "equilibri de forces",
+        "tensió de la corda"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Un bloc de massa $m = 3\\ \\text{kg}$ està unit mitjançant un cable al centre d'una politja de radi $R_1 = 300\\ \\text{mm}$. Una corda ideal subjectada al sostre passa per la politja de la qual penja el bloc, i per una altra politja de radi $R_2 = 150\\ \\text{mm}$ articulada al sostre pel seu punt mitjà. Quina força $F$ cal fer per a mantenir el bloc en repòs?",
+      "figures": [
+        {
+          "src": "img/tecno/2021-J/e1-q4.png",
+          "peu": "Bloc penjat d'una politja mòbil (R1) i corda que passa per una politja fixa (R2)"
+        }
+      ],
+      "opcions": {
+        "a": "$14{,}71\\ \\text{N}$",
+        "b": "$29{,}42\\ \\text{N}$",
+        "c": "$7{,}355\\ \\text{N}$",
+        "d": "$3{,}678\\ \\text{N}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 3\\ \\text{kg}$, $g = 9{,}807\\ \\text{m/s}^2$ → pes $mg = 29{,}42\\ \\text{N}$\n- $R_1 = 300\\ \\text{mm}$ (politja mòbil), $R_2 = 150\\ \\text{mm}$ (politja fixa)\n- Incògnita: força $F$"
+          },
+          {
+            "apartat": null,
+            "titol": "Equilibri de la politja mòbil",
+            "cos": "La corda ideal té la **mateixa tensió $T$** a tot arreu. La politja mòbil (la de radi $R_1$) penja de **dos trams** de corda (el que va al sostre i el que va a la politja fixa), i aguanta el pes del bloc:\n\n$$2T = m\\,g \\quad\\Rightarrow\\quad T = \\frac{m\\,g}{2} = \\frac{3 \\cdot 9{,}807}{2} = 14{,}71\\ \\text{N}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "La politja fixa només canvia la direcció",
+            "cos": "La politja fixa (radi $R_2$) no multiplica la força: només redirigeix la corda cap avall. Per tant $F = T$:\n\n$$F = 14{,}71\\ \\text{N}$$\n\nResultat: **$F = 14{,}71\\ \\text{N}$** → resposta **a**. Els radis de les politges no intervenen."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **b)** $29{,}42\\ \\text{N}$ és el pes sencer: oblidar que la politja mòbil reparteix la càrrega entre dos trams.\n- **c)** i **d)** surten de dividir més vegades (per 4 o per 8), per exemple fent servir la relació de radis $R_1/R_2 = 2$, que aquí no té cap efecte."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$F = mg/2 = 14{,}71\\ \\text{N}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2021-J-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Pressió d'una bombona de butà escalfada a volum constant",
+      "tema": "termica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "gas ideal",
+        "procés isocor",
+        "llei de gay-lussac",
+        "temperatura absoluta"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Una bombona de gas butà conté $12{,}5\\ \\text{kg}$ d'aquest gas en estat líquid a una pressió de $303\\ \\text{kPa}$ quan es troba a $20\\ ^\\circ\\text{C}$. Aquestes bombones estan dissenyades perquè, si la pressió arriba a $2\\,634\\ \\text{kPa}$, salti la vàlvula de seguretat i surti el gas de l'interior. La bombona s'escalfa fins a $600\\ ^\\circ\\text{C}$. Considerant el butà un gas ideal, es pot afirmar que",
+      "figures": [],
+      "opcions": {
+        "a": "la bombona explotarà.",
+        "b": "es dispararà la vàlvula de seguretat.",
+        "c": "la pressió augmentarà fins a $902{,}8\\ \\text{kPa}$.",
+        "d": "la pressió a l'interior de la bombona no canviarà."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $p_1 = 303\\ \\text{kPa}$, $T_1 = 20\\ ^\\circ\\text{C} = 293\\ \\text{K}$\n- $T_2 = 600\\ ^\\circ\\text{C} = 873\\ \\text{K}$\n- Pressió de tret de la vàlvula: $2\\,634\\ \\text{kPa}$\n- Incògnita: pressió final $p_2$"
+          },
+          {
+            "apartat": null,
+            "titol": "Gas ideal a volum constant",
+            "cos": "La bombona és rígida: el volum i la massa de gas no canvien. Per a un gas ideal, $pV = nRT$, i amb $V$ i $n$ constants la pressió és proporcional a la **temperatura absoluta** (llei de Gay-Lussac):\n\n$$\\frac{p_1}{T_1} = \\frac{p_2}{T_2}$$\n\nCal posar sempre les temperatures en **kelvin**."
+          },
+          {
+            "apartat": null,
+            "titol": "Pressió final",
+            "cos": "$$p_2 = p_1\\,\\frac{T_2}{T_1} = 303 \\cdot \\frac{873}{293} = 902{,}8\\ \\text{kPa}$$\n\nResultat: **$p_2 \\approx 902{,}8\\ \\text{kPa}$** → resposta **c**. Com que $902{,}8 < 2\\,634\\ \\text{kPa}$, la vàlvula de seguretat **no** salta i la bombona no explota."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** i **b)** surten de fer el càlcul en graus Celsius: $303 \\cdot 600/20 = 9\\,090\\ \\text{kPa}$, que superaria la pressió de la vàlvula. És l'error típic.\n- **d)** a volum constant la pressió sí que augmenta amb la temperatura."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$p_2 = p_1\\,T_2/T_1 \\approx 902{,}8\\ \\text{kPa}$ (< 2 634 kPa) → resposta **c**"
+          }
+        ],
+        "nota": "Amb $T = t + 273{,}15$ surt $902{,}5\\ \\text{kPa}$; l'opció de l'examen ($902{,}8$) correspon a usar $273$. La resposta és la mateixa. En realitat el butà d'una bombona és líquid i no es comporta com un gas ideal; la qüestió el tracta així per simplificar."
+      }
+    },
+    {
+      "id": "tecno-2021-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Seguretat d'una estació de tallat amb polsadors de mà i de peu",
+      "tema": "digital",
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "producte de sumes",
+        "portes lògiques"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "En una línia de producció hi ha una estació de treball on es realitzen operacions de tallat. El sistema de seguretat vol evitar que l'operari es trobi prop de l'eina de tall; amb aquesta finalitat, s'han instal·lat quatre polsadors: dos de situats a mitja altura (que s'accionen amb les mans) i dos de situats al terra (que s'accionen amb els peus). Per a realitzar l'operació de tallat, cal que l'operari premi a la vegada almenys un polsador de mitja altura amb la mà i un del terra amb el peu. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- polsadors a mitja altura (de mà): $m_1$, $m_2$ = 1: activat; 0: no activat\n- polsadors al terra (de peu): $p_1$, $p_2$ = 1: activat; 0: no activat\n- operació de tallat: $t$ = 1: en marxa; 0: aturada",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Traduir l'enunciat a condicions lògiques",
+            "cos": "El tall es posa en marxa ($t = 1$) si es compleixen **alhora** dues condicions:\n\n1. Almenys un polsador de mà premut: $m_1$ **o** $m_2$ → $m_1 + m_2$.\n2. Almenys un polsador de peu premut: $p_1$ **o** $p_2$ → $p_1 + p_2$.\n\nLes dues condicions s'han de complir a la vegada, per tant s'uneixen amb una **I** (AND)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "Amb 4 variables hi ha $2^4 = 16$ combinacions. Posem $t = 1$ a les files on hi ha almenys un 1 entre $m_1, m_2$ **i** almenys un 1 entre $p_1, p_2$:\n\n| $m_1$ | $m_2$ | $p_1$ | $p_2$ | $t$ |\n|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 0 |\n| 0 | 0 | 0 | 1 | 0 |\n| 0 | 0 | 1 | 0 | 0 |\n| 0 | 0 | 1 | 1 | 0 |\n| 0 | 1 | 0 | 0 | 0 |\n| 0 | 1 | 0 | 1 | **1** |\n| 0 | 1 | 1 | 0 | **1** |\n| 0 | 1 | 1 | 1 | **1** |\n| 1 | 0 | 0 | 0 | 0 |\n| 1 | 0 | 0 | 1 | **1** |\n| 1 | 0 | 1 | 0 | **1** |\n| 1 | 0 | 1 | 1 | **1** |\n| 1 | 1 | 0 | 0 | 0 |\n| 1 | 1 | 0 | 1 | **1** |\n| 1 | 1 | 1 | 0 | **1** |\n| 1 | 1 | 1 | 1 | **1** |\n\nHi ha 9 files amb $t = 1$ i 7 amb $t = 0$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica com a producte de sumes",
+            "cos": "Com que hi ha menys zeros que uns, és més curt escriure la funció a partir dels **zeros** (producte de sumes, maxterms). Per a cada fila amb $t = 0$ s'escriu una suma on la variable apareix **negada si val 1**:\n\n$$\\begin{aligned} t = {} & (m_1 + m_2 + p_1 + p_2)(m_1 + m_2 + p_1 + \\bar{p}_2)(m_1 + m_2 + \\bar{p}_1 + p_2) \\\\ & (m_1 + m_2 + \\bar{p}_1 + \\bar{p}_2)(m_1 + \\bar{m}_2 + p_1 + p_2) \\\\ & (\\bar{m}_1 + m_2 + p_1 + p_2)(\\bar{m}_1 + \\bar{m}_2 + p_1 + p_2) \\end{aligned}$$\n\nEls 4 primers factors corresponen a les files amb $m_1 = m_2 = 0$, i els 3 últims a les files amb $p_1 = p_2 = 0$ (i alguna mà premuda)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació",
+            "cos": "- Els 4 primers factors només difereixen en $p_1, p_2$, que prenen tots els valors: el seu producte es redueix a $(m_1 + m_2)$.\n- Els factors amb $p_1 = p_2 = 0$ (incloent-hi el primer, que es pot reaprofitar perquè $x \\cdot x = x$) es redueixen a $(p_1 + p_2)$.\n\nTambé es veu amb un mapa de Karnaugh (files $m_1 m_2$, columnes $p_1 p_2$): els zeros ocupen tota la fila $m_1 m_2 = 00$ i tota la columna $p_1 p_2 = 00$; agrupant-los surten els dos factors.\n\n$$\\boxed{t = (m_1 + m_2)\\,(p_1 + p_2)}$$\n\nCoincideix exactament amb la frase de l'enunciat: «almenys una mà **i** almenys un peu»."
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de portes lògiques",
+            "cos": "Per implementar $t = (m_1 + m_2)(p_1 + p_2)$ calen:\n\n- 1 porta **OR de 2 entrades** amb $m_1$ i $m_2$.\n- 1 porta **OR de 2 entrades** amb $p_1$ i $p_2$.\n- 1 porta **AND de 2 entrades** que uneix les sortides de les dues OR i dona $t$.\n\nEsquema de la solució oficial (simbologia IEC: «≥1» = OR, «&» = AND):\n\n![Esquema de portes lògiques](img/tecno/2021-J/e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "16 combinacions; $t = 1$ en les 9 files amb alguna mà i algun peu premuts"
+          },
+          {
+            "apartat": "b",
+            "valor": "$t = (m_1 + m_2)(p_1 + p_2)$"
+          },
+          {
+            "apartat": "c",
+            "valor": "2 portes OR de 2 entrades i 1 porta AND de 2 entrades"
+          }
+        ],
+        "nota": "La solució oficial escriu la funció canònica com a producte de sumes (7 maxterms). També és vàlid partir de la suma de productes (9 minterms) i simplificar: s'arriba a $t = m_1 p_1 + m_1 p_2 + m_2 p_1 + m_2 p_2$, que és la mateixa funció desenvolupada. Error típic: posar $t = m_1 m_2 p_1 p_2$ (exigir tots quatre polsadors)."
+      }
+    },
+    {
+      "id": "tecno-2021-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Bombo de maceració accionat per motor reductor i corretja",
+      "tema": "mecanismes",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "parell",
+        "relació de transmissió",
+        "rendiment",
+        "transmissió per corretja",
+        "potència mecànica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "Un bombo de maceració serveix per a barrejar la carn amb els productes que la conserven. Per a fer-lo funcionar, es fa girar el bombo (1) al voltant d'un eix horitzontal per mitjà d'una corretja (2) accionada per un motor reductor (3).\n\nEl motor subministra una potència $P_\\text{mot} = 0{,}55\\ \\text{kW}$ i gira a $n_\\text{mot} = 1\\,415\\ \\text{min}^{-1}$. El reductor té un rendiment $\\eta_\\text{red} = 0{,}96$ i una relació de transmissió $\\tau = \\omega_\\text{red}/\\omega_\\text{mot} = 68{,}9 \\times 10^{-3}$. L'eix del reductor fa girar la politja de diàmetre $d = 63\\ \\text{mm}$, la qual, mitjançant una corretja ideal que no llisca, fa girar la segona politja de diàmetre $D = 500\\ \\text{mm}$. L'eix d'aquesta última politja es connecta directament al bombo de maceració. Determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2021-J/e3.png",
+          "peu": "Bombo de maceració (1), corretja (2) i motor reductor (3)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El parell a l'eix del motor $\\Gamma_\\text{mot}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "El parell a l'eix de sortida del reductor $\\Gamma_\\text{red}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La velocitat de gir de la politja petita $n_\\text{d}$ en $\\text{min}^{-1}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "La velocitat de gir del bombo $n_\\text{bombo}$ en $\\text{min}^{-1}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "e",
+          "enunciat": "El parell a l'eix del bombo $\\Gamma_\\text{bombo}$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $P_\\text{mot} = 0{,}55\\ \\text{kW} = 550\\ \\text{W}$\n- $n_\\text{mot} = 1\\,415\\ \\text{min}^{-1}$\n- Reductor: $\\eta_\\text{red} = 0{,}96$, $\\tau = \\omega_\\text{red}/\\omega_\\text{mot} = 0{,}0689$\n- Politges: $d = 63\\ \\text{mm}$ (a l'eix del reductor), $D = 500\\ \\text{mm}$ (a l'eix del bombo); corretja ideal (sense pèrdues ni lliscament)\n- Incògnites: $\\Gamma_\\text{mot}$, $\\Gamma_\\text{red}$, $n_\\text{d}$, $n_\\text{bombo}$, $\\Gamma_\\text{bombo}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat angular del motor en rad/s",
+            "cos": "Per relacionar potència i parell cal la velocitat angular en $\\text{rad/s}$. Una volta són $2\\pi$ rad i un minut són 60 s:\n\n$$\\omega_\\text{mot} = n_\\text{mot}\\,\\frac{2\\pi}{60} = 1\\,415 \\cdot \\frac{2\\pi}{60} = 148{,}18\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Parell del motor",
+            "cos": "En un eix que gira, la potència és parell per velocitat angular, $P = \\Gamma\\,\\omega$:\n\n$$\\Gamma_\\text{mot} = \\frac{P_\\text{mot}}{\\omega_\\text{mot}} = \\frac{550}{148{,}18} = 3{,}712\\ \\text{N m}$$\n\nResultat: **$\\Gamma_\\text{mot} \\approx 3{,}712\\ \\text{N m}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència i velocitat a la sortida del reductor",
+            "cos": "El reductor perd un 4 % de la potència i redueix la velocitat segons $\\tau$:\n\n$$P_\\text{red} = \\eta_\\text{red}\\,P_\\text{mot} = 0{,}96 \\cdot 550 = 528\\ \\text{W}$$\n\n$$\\omega_\\text{red} = \\tau\\,\\omega_\\text{mot} = 0{,}0689 \\cdot 148{,}18 = 10{,}21\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Parell a la sortida del reductor",
+            "cos": "$$\\Gamma_\\text{red} = \\frac{P_\\text{red}}{\\omega_\\text{red}} = \\frac{\\eta_\\text{red}\\,\\Gamma_\\text{mot}}{\\tau} = \\frac{0{,}96 \\cdot 3{,}712}{0{,}0689} = 51{,}72\\ \\text{N m}$$\n\nResultat: **$\\Gamma_\\text{red} \\approx 51{,}72\\ \\text{N m}$**. Un reductor baixa la velocitat i, a canvi, multiplica el parell."
+          },
+          {
+            "apartat": "c",
+            "titol": "Velocitat de la politja petita",
+            "cos": "La politja petita està muntada a l'eix de sortida del reductor, per tant gira a la seva velocitat:\n\n$$n_\\text{d} = \\tau\\,n_\\text{mot} = 0{,}0689 \\cdot 1\\,415 = 97{,}49\\ \\text{min}^{-1}$$\n\nResultat: **$n_\\text{d} \\approx 97{,}49\\ \\text{min}^{-1}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Velocitat del bombo (transmissió per corretja)",
+            "cos": "Si la corretja no llisca, la velocitat lineal de la corretja és la mateixa a les dues politges: $n_\\text{d}\\,d = n_\\text{bombo}\\,D$. Per tant:\n\n$$n_\\text{bombo} = n_\\text{d}\\,\\frac{d}{D} = 97{,}49 \\cdot \\frac{63}{500} = 12{,}28\\ \\text{min}^{-1}$$\n\nResultat: **$n_\\text{bombo} \\approx 12{,}28\\ \\text{min}^{-1}$**."
+          },
+          {
+            "apartat": "e",
+            "titol": "Parell a l'eix del bombo",
+            "cos": "La corretja és ideal (sense pèrdues), així que al bombo arriba la mateixa potència que surt del reductor, $P_\\text{bombo} = \\eta_\\text{red}\\,P_\\text{mot} = 528\\ \\text{W}$:\n\n$$\\omega_\\text{bombo} = 12{,}28 \\cdot \\frac{2\\pi}{60} = 1{,}286\\ \\text{rad/s}$$\n\n$$\\Gamma_\\text{bombo} = \\frac{\\eta_\\text{red}\\,P_\\text{mot}}{\\omega_\\text{bombo}} = \\frac{528}{1{,}286} = 410{,}4\\ \\text{N m}$$\n\nComprovació: també $\\Gamma_\\text{bombo} = \\Gamma_\\text{red}\\,\\dfrac{D}{d} = 51{,}72 \\cdot \\dfrac{500}{63} = 410{,}4\\ \\text{N m}$.\n\nResultat: **$\\Gamma_\\text{bombo} \\approx 410{,}4\\ \\text{N m}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\Gamma_\\text{mot} \\approx 3{,}712\\ \\text{N m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\Gamma_\\text{red} \\approx 51{,}72\\ \\text{N m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$n_\\text{d} \\approx 97{,}49\\ \\text{min}^{-1}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$n_\\text{bombo} \\approx 12{,}28\\ \\text{min}^{-1}$"
+          },
+          {
+            "apartat": "e",
+            "valor": "$\\Gamma_\\text{bombo} \\approx 410{,}4\\ \\text{N m}$"
+          }
+        ],
+        "nota": "Errors típics: usar $n$ en $\\text{min}^{-1}$ directament a $P = \\Gamma\\,\\omega$ (cal passar a rad/s) i oblidar el rendiment del reductor als apartats b i e (sortiria $\\Gamma_\\text{red} = 53{,}87\\ \\text{N m}$)."
+      }
+    },
+    {
+      "id": "tecno-2021-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Instal·lació fotovoltaica per a un edifici municipal i emissions de CO2 evitades",
+      "tema": "energia",
+      "temes_secundaris": [
+        "circuits"
+      ],
+      "conceptes": [
+        "energia elèctrica",
+        "plaques fotovoltaiques",
+        "rendiment",
+        "factor d'emissió",
+        "emissions de co2"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8,
+        9
+      ],
+      "enunciat": "L'Ajuntament d'un poble ha aprovat un pla de millora energètica i ambiental que inclou la instal·lació de conjunts de plaques solars fotovoltaiques en un dels edificis municipals amb la finalitat de cobrir un $r = 15\\ \\%$ de la demanda d'electricitat. La potència total instal·lada en aquest edifici és $P_\\text{inst} = 30\\ \\text{kW}$ i s'estima un consum mitjà $c = 75\\ \\%$ durant $t = 12\\ \\text{h/dia}$. El factor d'emissió de la comercialitzadora elèctrica és $FE = 241\\ \\text{g CO}_2\\text{/(kW h)}$. L'Ajuntament ha escollit una placa que té una àrea efectiva $A = 1{,}45\\ \\text{m}^2$ i que, en condicions normals (és a dir, a $20\\ ^\\circ\\text{C}$ i amb una intensitat de radiació solar $I_\\text{rad} = 1\\,000\\ \\text{W/m}^2$) subministra una potència $P_\\text{placa} = 194\\ \\text{W}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'energia total consumida $E_\\text{cons}$ en un any a l'edifici municipal.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "La potència $P_\\text{foto}$ que ha de subministrar la instal·lació fotovoltaica.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El rendiment de la placa $\\eta_\\text{placa}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "El nombre mínim de plaques fotovoltaiques $n_\\text{p}$ necessari suposant condicions normals.",
+          "punts": 0.5
+        },
+        {
+          "id": "e",
+          "enunciat": "Les emissions de gasos amb efecte d'hivernacle ($\\text{CO}_2$) que s'evitaria emetre a l'atmosfera durant un any $\\Delta m$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Fracció a cobrir amb fotovoltaica: $r = 15\\ \\% = 0{,}15$\n- Potència instal·lada: $P_\\text{inst} = 30\\ \\text{kW}$, amb un consum mitjà del $c = 75\\ \\%$ d'aquesta potència\n- Temps d'ús: $t = 12\\ \\text{h/dia}$, 365 dies l'any\n- $FE = 241\\ \\text{g CO}_2\\text{/(kW h)}$\n- Placa: $A = 1{,}45\\ \\text{m}^2$, $I_\\text{rad} = 1\\,000\\ \\text{W/m}^2$, $P_\\text{placa} = 194\\ \\text{W}$\n- Incògnites: $E_\\text{cons}$, $P_\\text{foto}$, $\\eta_\\text{placa}$, $n_\\text{p}$, $\\Delta m$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia consumida en un any",
+            "cos": "La potència mitjana consumida és el 75 % de la instal·lada: $P_\\text{cons} = c\\,P_\\text{inst} = 0{,}75 \\cdot 30 = 22{,}5\\ \\text{kW}$. L'energia és potència per temps, amb les hores de tot l'any:\n\n$$E_\\text{cons} = P_\\text{inst}\\,c\\,t = 30 \\cdot 0{,}75 \\cdot 12 \\cdot 365 = 98\\,550\\ \\text{kW h}$$\n\nEn unitats del SI: $98\\,550\\ \\text{kW h} \\cdot 3{,}6\\ \\text{MJ/(kW h)} = 354\\,780\\ \\text{MJ}$.\n\nResultat: **$E_\\text{cons} = 98\\,550\\ \\text{kW h/any} = 354\\,780\\ \\text{MJ/any}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència que ha de donar la instal·lació fotovoltaica",
+            "cos": "Ha de cobrir el 15 % de la potència consumida:\n\n$$P_\\text{foto} = r\\,P_\\text{cons} = r\\,c\\,P_\\text{inst} = 0{,}15 \\cdot 0{,}75 \\cdot 30 = 3{,}375\\ \\text{kW}$$\n\nResultat: **$P_\\text{foto} = 3{,}375\\ \\text{kW}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Rendiment de la placa",
+            "cos": "El rendiment és la potència elèctrica que dona la placa dividida per la potència solar que hi arriba, $P_\\text{sol} = I_\\text{rad}\\,A = 1\\,000 \\cdot 1{,}45 = 1\\,450\\ \\text{W}$:\n\n$$\\eta_\\text{placa} = \\frac{P_\\text{placa}}{I_\\text{rad}\\,A} = \\frac{194}{1\\,450} = 0{,}1338 = 13{,}38\\ \\%$$\n\nResultat: **$\\eta_\\text{placa} \\approx 13{,}38\\ \\%$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Nombre de plaques",
+            "cos": "$$n_\\text{p} = \\frac{P_\\text{foto}}{P_\\text{placa}} = \\frac{3\\,375}{194} = 17{,}4\\ \\text{plaques}$$\n\nNo es poden posar fraccions de placa i amb 17 no s'arribaria a la potència demanada, així que s'arrodoneix **cap amunt**.\n\nResultat: **$n_\\text{p} = 18$ plaques**."
+          },
+          {
+            "apartat": "e",
+            "titol": "Fracció real coberta amb 18 plaques",
+            "cos": "Amb 18 plaques la instal·lació dona $18 \\cdot 194 = 3\\,492\\ \\text{W}$, una mica més del necessari. La fracció de la demanda que es cobreix realment és:\n\n$$r' = \\frac{n_\\text{p}\\,P_\\text{placa}}{P_\\text{cons}} = \\frac{3\\,492}{22\\,500} = 0{,}1552 = 15{,}52\\ \\%$$"
+          },
+          {
+            "apartat": "e",
+            "titol": "Emissions de CO₂ evitades",
+            "cos": "Cada kW h que produeixen les plaques és un kW h que no es compra a la comercialitzadora, i per tant s'eviten $241\\ \\text{g}$ de $\\text{CO}_2$:\n\n$$\\Delta m = r'\\,E_\\text{cons}\\,FE = 0{,}1552 \\cdot 98\\,550 \\cdot 241 = 3{,}686 \\cdot 10^6\\ \\text{g} = 3{,}686\\ \\text{t}$$\n\nResultat: **$\\Delta m \\approx 3{,}686$ tones de $\\text{CO}_2$ l'any**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E_\\text{cons} = 98\\,550\\ \\text{kW h} = 354\\,780\\ \\text{MJ}$ anuals"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{foto} = 3{,}375\\ \\text{kW}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\eta_\\text{placa} \\approx 13{,}38\\ \\%$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$n_\\text{p} = 17{,}4$ → calen **18 plaques**"
+          },
+          {
+            "apartat": "e",
+            "valor": "$r' = 15{,}52\\ \\%$; $\\Delta m \\approx 3{,}686\\ \\text{t CO}_2$"
+          }
+        ],
+        "nota": "A l'apartat e, la solució oficial usa la fracció real coberta per les 18 plaques ($r' = 15{,}52\\ \\%$). Si es fa servir directament $r = 15\\ \\%$ surt $\\Delta m = 3{,}563\\ \\text{t}$, un plantejament també raonable. Se suposa (com la solució oficial) que les plaques donen la seva potència nominal durant les mateixes 12 h/dia de consum."
+      }
+    },
+    {
+      "id": "tecno-2021-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Estructura de barres per penjar-se a la paret: força a la barra inclinada i reaccions",
+      "tema": "estatica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "diagrama de cos lliure",
+        "equilibri de moments",
+        "reaccions a les articulacions",
+        "barra biarticulada",
+        "compressió"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10,
+        11
+      ],
+      "enunciat": "Una persona de massa $m = 80\\ \\text{kg}$ utilitza l'estructura de barres de la figura per a fer exercicis de gimnàstica a casa. L'estructura té articulacions a la paret pels punts O i S. La barra QS està unida a la barra OP mitjançant una articulació. En la situació d'estudi, la persona es penja del punt P (sense que els peus toquin a terra) i s'hi manté en repòs.",
+      "figures": [
+        {
+          "src": "img/tecno/2021-J/e5.png",
+          "peu": "Estructura de barres OP i QS articulades a la paret (OQ = 4L, QP = 2L, angle de 30°)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de cos lliure de la barra OP.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu: la força $F_\\text{QS}$ a la qual està sotmesa la barra QS. A quin tipus d'esforç està sotmesa aquesta barra?",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Les forces horitzontal $F_\\text{H}$ i vertical $F_\\text{V}$ a l'articulació O.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 80\\ \\text{kg}$, $g = 9{,}807\\ \\text{m/s}^2$ → pes $mg = 784{,}6\\ \\text{N}$, aplicat a P\n- Distàncies sobre la barra OP: $OQ = 4L$, $QP = 2L$ → $OP = 6L$\n- Angle entre la barra QS i la barra OP: $30^\\circ$\n- Es negligeix el pes de les barres\n- Incògnites: $F_\\text{QS}$ (i tipus d'esforç), $F_\\text{H}$, $F_\\text{V}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de cos lliure de la barra OP",
+            "cos": "Aïllem la barra OP i hi dibuixem totes les forces exteriors:\n\n- A **P**: el pes de la persona, $mg$, vertical cap avall.\n- A **Q**: la força de la barra QS. Com que QS és una barra articulada als dos extrems i sense càrregues intermèdies (barra **biarticulada**), només pot fer força **en la seva direcció**, és a dir, inclinada $30^\\circ$ respecte de OP. Ha d'empènyer cap amunt (per aguantar la persona), cap a la dreta i amunt.\n- A **O**: la reacció de l'articulació, amb dues components desconegudes, $F_\\text{H}$ i $F_\\text{V}$.\n\n![Diagrama de cos lliure de la barra OP](img/tecno/2021-J/e5-sol.png)\n\nEls sentits de $F_\\text{H}$ i $F_\\text{V}$ es poden suposar; si en resoldre surt un valor negatiu, el sentit real és l'oposat."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equilibri de moments respecte de O",
+            "cos": "Prenem moments respecte de O perquè així les incògnites $F_\\text{H}$ i $F_\\text{V}$ no hi intervenen (passen per O). De $F_\\text{QS}$ només fa moment la component perpendicular a la barra, $F_\\text{QS}\\sin 30^\\circ$, a distància $4L$; el pes fa moment a distància $6L$:\n\n$$\\sum M_\\text{O} = 0: \\quad F_\\text{QS}\\,\\sin 30^\\circ \\cdot 4L = m\\,g \\cdot 6L$$\n\nLa $L$ se simplifica:\n\n$$F_\\text{QS} = \\frac{6\\,m\\,g}{4 \\sin 30^\\circ} = \\frac{6\\,m\\,g}{4 \\cdot 0{,}5} = 3\\,m\\,g = 3 \\cdot 80 \\cdot 9{,}807 = 2\\,354\\ \\text{N}$$\n\nResultat: **$F_\\text{QS} \\approx 2\\,354\\ \\text{N}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Tipus d'esforç de la barra QS",
+            "cos": "La barra QS **empeny** la barra OP (la força a Q va de S cap a Q). Per acció i reacció, la barra OP empeny la barra QS cap a S: la barra QS està premsada entre els seus dos extrems.\n\nResultat: la barra QS treballa a **compressió**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de forces horitzontals",
+            "cos": "La component horitzontal de $F_\\text{QS}$ (cap a la dreta) l'ha de compensar la reacció horitzontal a O (cap a l'esquerra):\n\n$$\\sum F_x = 0: \\quad F_\\text{H} = F_\\text{QS}\\cos 30^\\circ = 3\\,m\\,g\\,\\frac{\\sqrt{3}}{2} = 2\\,354 \\cdot 0{,}866 = 2\\,038\\ \\text{N}$$\n\nResultat: **$F_\\text{H} \\approx 2\\,038\\ \\text{N}$**, cap a l'esquerra (la paret estira la barra OP)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de forces verticals",
+            "cos": "Cap amunt només actua la component vertical de $F_\\text{QS}$; cap avall, el pes i $F_\\text{V}$ (amb el sentit suposat al diagrama):\n\n$$\\sum F_y = 0: \\quad F_\\text{V} + m\\,g = F_\\text{QS}\\sin 30^\\circ$$\n\n$$F_\\text{V} = 2\\,354 \\cdot 0{,}5 - 784{,}6 = 1\\,177 - 784{,}6 = 392{,}3\\ \\text{N}$$\n\nResultat: **$F_\\text{V} \\approx 392{,}3\\ \\text{N}$**, cap avall (surt positiu, per tant el sentit suposat és correcte)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Forces a OP: $mg$ a P (avall), $F_\\text{QS}$ a Q (a $30^\\circ$, cap amunt i a la dreta), $F_\\text{H}$ i $F_\\text{V}$ a O"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F_\\text{QS} = 3\\,mg \\approx 2\\,354\\ \\text{N}$; la barra QS treballa a **compressió**"
+          },
+          {
+            "apartat": "c",
+            "valor": "$F_\\text{H} \\approx 2\\,038\\ \\text{N}$ (cap a l'esquerra); $F_\\text{V} \\approx 392{,}3\\ \\text{N}$ (cap avall)"
+          }
+        ],
+        "nota": "Error típic: prendre el braç de $F_\\text{QS}$ com $4L$ sense descompondre la força (sortiria $F_\\text{QS} = 1\\,177\\ \\text{N}$). També cal adonar-se que la reacció vertical a O va **cap avall**: la barra OP fa de palanca al voltant de Q i l'extrem O tendeix a aixecar-se."
+      }
+    },
+    {
+      "id": "tecno-2021-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Grup electrogen dièsel: rendiments, consum de gasoil i potència dissipada",
+      "tema": "termica",
+      "temes_secundaris": [
+        "maquines-electriques",
+        "energia"
+      ],
+      "conceptes": [
+        "rendiment",
+        "poder calorífic",
+        "consum de combustible",
+        "alternador",
+        "potència dissipada"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12,
+        13
+      ],
+      "enunciat": "S'utilitza un petit generador elèctric dièsel per a subministrar electricitat a llocs on no arriba el corrent elèctric. El sistema es compon d'un motor dièsel (amb una velocitat de gir del motor $n = 3\\,000\\ \\text{min}^{-1}$) i un alternador monofàsic units directament per un eix comú. El gasoil utilitzat té un poder calorífic $p_\\text{c} = 44{,}8\\ \\text{MJ/kg}$ i una densitat $\\rho_\\text{gasoil} = 0{,}85\\ \\text{kg/L}$. La potència subministrada pel motor dièsel és $P_\\text{mot} = 7{,}457\\ \\text{kW}$, i la subministrada per l'alternador $P_\\text{elèctr} = 5{,}5\\ \\text{kW}$. El sistema disposa d'un dipòsit de combustible de volum $V = 14\\ \\text{L}$ que garanteix $t = 13\\ \\text{h}$ d'autonomia en les condicions descrites. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El rendiment de l'alternador $\\eta_\\text{alt}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "El consum del motor dièsel $c_\\text{gasoil}$ en g/h.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El rendiment del motor $\\eta_\\text{mot}$.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "La potència total dissipada $P_\\text{diss}$ pel conjunt.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Motor dièsel: $P_\\text{mot} = 7{,}457\\ \\text{kW}$ (potència mecànica a l'eix), $n = 3\\,000\\ \\text{min}^{-1}$ (no cal per als càlculs)\n- Alternador: $P_\\text{elèctr} = 5{,}5\\ \\text{kW}$\n- Gasoil: $p_\\text{c} = 44{,}8\\ \\text{MJ/kg}$, $\\rho = 0{,}85\\ \\text{kg/L}$\n- Dipòsit: $V = 14\\ \\text{L}$ per a $t = 13\\ \\text{h}$\n- Incògnites: $\\eta_\\text{alt}$, $c_\\text{gasoil}$, $\\eta_\\text{mot}$, $P_\\text{diss}$\n\nCadena energètica: gasoil (energia química) → **motor** → potència mecànica $P_\\text{mot}$ → **alternador** → potència elèctrica $P_\\text{elèctr}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Rendiment de l'alternador",
+            "cos": "L'alternador rep la potència mecànica del motor (eix comú) i en dona la potència elèctrica:\n\n$$\\eta_\\text{alt} = \\frac{P_\\text{elèctr}}{P_\\text{mot}} = \\frac{5{,}5}{7{,}457} = 0{,}7376 = 73{,}76\\ \\%$$\n\nResultat: **$\\eta_\\text{alt} \\approx 73{,}76\\ \\%$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Consum horari de gasoil",
+            "cos": "Amb el dipòsit ple ($14\\ \\text{L}$) funciona $13\\ \\text{h}$. Primer passem el volum a massa amb la densitat, $m = \\rho V = 0{,}85 \\cdot 14 = 11{,}9\\ \\text{kg}$, i dividim pel temps:\n\n$$c_\\text{gasoil} = \\frac{\\rho\\,V}{t} = \\frac{11\\,900\\ \\text{g}}{13\\ \\text{h}} = 915{,}4\\ \\text{g/h}$$\n\nResultat: **$c_\\text{gasoil} \\approx 915{,}4\\ \\text{g/h}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència consumida en forma de combustible",
+            "cos": "La potència química que entra al motor és la massa de gasoil cremada per segon pel poder calorífic. Passem el consum a kg/s: $c = 0{,}9154\\ \\text{kg/h} / 3\\,600\\ \\text{s/h}$:\n\n$$P_\\text{cons} = c_\\text{gasoil}\\,p_\\text{c} = \\frac{0{,}9154\\ \\text{kg/h}}{3\\,600\\ \\text{s/h}} \\cdot 44{,}8 \\cdot 10^6\\ \\text{J/kg} = 11\\,391\\ \\text{W} = 11{,}39\\ \\text{kW}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Rendiment del motor",
+            "cos": "$$\\eta_\\text{mot} = \\frac{P_\\text{mot}}{P_\\text{cons}} = \\frac{7{,}457}{11{,}39} = 0{,}6546 = 65{,}46\\ \\%$$\n\nResultat: **$\\eta_\\text{mot} \\approx 65{,}46\\ \\%$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Potència dissipada pel conjunt",
+            "cos": "Tot el que entra en forma de combustible i no surt com a electricitat es perd (calor als gasos d'escapament, fregaments, pèrdues de l'alternador):\n\n$$P_\\text{diss} = P_\\text{cons} - P_\\text{elèctr} = 11{,}39 - 5{,}5 = 5{,}891\\ \\text{kW}$$\n\nEs pot comprovar sumant pèrdues: al motor $11{,}39 - 7{,}457 = 3{,}934\\ \\text{kW}$ i a l'alternador $7{,}457 - 5{,}5 = 1{,}957\\ \\text{kW}$; en total $5{,}891\\ \\text{kW}$.\n\nResultat: **$P_\\text{diss} \\approx 5{,}891\\ \\text{kW}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\eta_\\text{alt} \\approx 73{,}76\\ \\%$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$c_\\text{gasoil} \\approx 915{,}4\\ \\text{g/h}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{cons} \\approx 11{,}39\\ \\text{kW}$; $\\eta_\\text{mot} \\approx 65{,}46\\ \\%$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$P_\\text{diss} \\approx 5{,}891\\ \\text{kW}$"
+          }
+        ],
+        "nota": "Error típic a l'apartat d: calcular només les pèrdues de l'alternador ($1{,}957\\ \\text{kW}$) o només les del motor; el «conjunt» inclou les dues màquines. Un rendiment del 65 % és molt alt per a un motor dièsel real (habitualment 35-45 %), però és el que resulta de les dades de l'enunciat."
+      }
+    }
+  ]
+}

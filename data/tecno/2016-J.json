@@ -1,0 +1,1571 @@
+{
+  "examen": {
+    "id": "tecno-2016-J",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2016,
+    "convocatoria": "juny",
+    "serie": "3 i 5",
+    "pdf_examen": "pdfs/tecno/2016-J-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2016-J-solucio.pdf",
+    "estructura": "El PDF conté dues sèries (3 i 5) amb la mateixa estructura. Cada prova consta de dues parts de dos exercicis de 2,5 punts. Primera part (comuna): l'exercici 1 té 5 qüestions de test (0,5 punts cadascuna; resposta errònia −0,16 punts, no contestada 0 punts) i l'exercici 2 és un problema de lògica digital. Segona part: cal escollir UNA de les dues opcions (A o B) i fer-ne els exercicis 3 i 4."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2016-J-s3-e1-q1",
+      "serie": "3",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Secció mínima d'un fil de niló a partir de la tensió de ruptura",
+      "tema": "resistencia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "tensió de ruptura",
+        "tensió normal",
+        "secció mínima"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "La tensió de ruptura d'un fil de niló és $\\sigma = 67\\ \\text{MPa}$. Si s'utilitza per a penjar sòlids amb una massa de $45\\ \\text{kg}$, quina és la secció mínima que ha de tenir perquè no es trenqui? (Preneu $g = 10\\ \\text{m/s}^2$.)",
+      "figures": [],
+      "opcions": {
+        "a": "$1{,}489\\ \\text{mm}^2$",
+        "b": "$6{,}716\\ \\text{mm}^2$",
+        "c": "$67{,}16\\ \\text{mm}^2$",
+        "d": "$14{,}89\\ \\text{mm}^2$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Tensió de ruptura: $\\sigma_\\text{r} = 67\\ \\text{MPa} = 67\\ \\text{N/mm}^2$\n- Massa penjada: $m = 45\\ \\text{kg}$, amb $g = 10\\ \\text{m/s}^2$\n- Incògnita: secció mínima $S_\\text{mín}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Força que suporta el fil",
+            "cos": "El pes del sòlid és la força de tracció que fa el fil:\n\n$$F = m\\,g = 45 \\cdot 10 = 450\\ \\text{N}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Secció mínima",
+            "cos": "La tensió normal és $\\sigma = F/S$. Perquè el fil no es trenqui, la tensió no pot superar la de ruptura, per tant:\n\n$$S_\\text{mín} = \\frac{F}{\\sigma_\\text{r}} = \\frac{450\\ \\text{N}}{67\\ \\text{N/mm}^2} = 6{,}716\\ \\text{mm}^2$$\n\nResultat: **$S_\\text{mín} = 6{,}716\\ \\text{mm}^2$** → resposta **b**. Truc: $1\\ \\text{MPa} = 1\\ \\text{N/mm}^2$, així el resultat surt directament en mm²."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $1{,}489$ surt de dividir al revés ($67/45$).\n- **c)** i **d)** són errors d'unitats (factor 10 en passar de m² a mm²)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$S_\\text{mín} = 6{,}716\\ \\text{mm}^2$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-J-s3-e1-q2",
+      "serie": "3",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Capacitat màxima d'usuaris per hora d'una atracció d'autos de xoc",
+      "tema": "economia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "capacitat de producció",
+        "temps de cicle",
+        "productivitat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Una atracció d'autos de xoc disposa de 20 vehicles de dues places cadascun. La durada de cada viatge és de $4\\ \\text{min}$ i l'interval entre l'acabament d'un viatge i el començament del viatge següent és de $15\\ \\text{s}$. Quin és el nombre màxim d'usuaris que poden fer un viatge complet en una hora?",
+      "figures": [],
+      "opcions": {
+        "a": "600 usuaris.",
+        "b": "300 usuaris.",
+        "c": "560 usuaris.",
+        "d": "280 usuaris."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Places per viatge: $20 \\cdot 2 = 40$ usuaris\n- Durada d'un viatge: $4\\ \\text{min} = 240\\ \\text{s}$\n- Pausa entre viatges: $15\\ \\text{s}$\n- Incògnita: usuaris que fan un viatge **complet** en $1\\ \\text{h} = 3\\,600\\ \\text{s}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Temps de cicle",
+            "cos": "Cada viatge ocupa el seu temps més la pausa fins al següent:\n\n$$t_\\text{cicle} = 240 + 15 = 255\\ \\text{s}$$\n\n$$\\frac{3\\,600}{255} = 14{,}1 \\;\\Rightarrow\\; 14\\ \\text{viatges complets}$$\n\n(Comprovació: 14 viatges i 13 pauses ocupen $14\\cdot 240 + 13 \\cdot 15 = 3\\,555\\ \\text{s} < 3\\,600\\ \\text{s}$; el 15è viatge ja no cabria sencer.)"
+          },
+          {
+            "apartat": null,
+            "titol": "Usuaris per hora",
+            "cos": "$$N = 14 \\cdot 40 = 560\\ \\text{usuaris}$$\n\nResultat: **560 usuaris** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **a)** 600 surt d'ignorar la pausa ($3\\,600/240 = 15$ viatges).\n- **b)** i **d)** surten de comptar una sola persona per vehicle (300 i 280)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$N = 560$ usuaris → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-J-s3-e1-q3",
+      "serie": "3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Interval de la massa d'una mescla segons la precisió de la bàscula",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "precisió",
+        "error de mesura",
+        "metrologia"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Es prepara una mescla de dos materials pesant-los en una bàscula que té una precisió de $\\pm 1{,}6\\ \\%$. Per fer-ho, s'agafen $105\\ \\text{g}$ del primer material i $84\\ \\text{g}$ del segon. Quina serà la quantitat de mescla obtinguda?",
+      "figures": [],
+      "opcions": {
+        "a": "Entre $186{,}0\\ \\text{g}$ i $192{,}0\\ \\text{g}$.",
+        "b": "Entre $185{,}8\\ \\text{g}$ i $192{,}2\\ \\text{g}$.",
+        "c": "Entre $187{,}4\\ \\text{g}$ i $190{,}6\\ \\text{g}$.",
+        "d": "Entre $188{,}4\\ \\text{g}$ i $189{,}6\\ \\text{g}$."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Error de cada pesada",
+            "cos": "Una precisió de $\\pm 1{,}6\\ \\%$ vol dir que cada lectura pot diferir del valor real en un $1{,}6\\ \\%$ del que es llegeix:\n\n- Primer material: $105 \\pm 0{,}016\\cdot 105 = 105 \\pm 1{,}68\\ \\text{g}$\n- Segon material: $84 \\pm 0{,}016 \\cdot 84 = 84 \\pm 1{,}344\\ \\text{g}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Massa de la mescla",
+            "cos": "En el pitjor cas els errors se sumen:\n\n$$m = (105 + 84) \\pm (1{,}68 + 1{,}344) = 189 \\pm 3{,}024\\ \\text{g}$$\n\n$$185{,}98\\ \\text{g} \\le m \\le 192{,}02\\ \\text{g}$$\n\nÉs el mateix que aplicar el $1{,}6\\ \\%$ a la suma: $0{,}016 \\cdot 189 = 3{,}024\\ \\text{g}$. Arrodonint: **entre 186,0 g i 192,0 g** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **c)** i **d)** tenen un interval massa estret (errors de $\\pm 1{,}6\\ \\text{g}$ i $\\pm 0{,}6\\ \\text{g}$): no apliquen bé el percentatge.\n- **b)** sumaria un error de $\\pm 3{,}2\\ \\text{g}$, més gran del que toca."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$m = 189 \\pm 3{,}0\\ \\text{g}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-J-s3-e1-q4",
+      "serie": "3",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Cursa dels cilindres d'un motor V8 a partir de la cilindrada",
+      "tema": "termica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "cilindrada",
+        "cursa",
+        "diàmetre del cilindre",
+        "motor de combustió"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un cotxe té un motor V8 amb vuit cilindres. La cilindrada és de $3\\,999\\ \\text{cm}^3$ i el diàmetre dels cilindres és de $92\\ \\text{mm}$. Quina és la cursa dels cilindres?",
+      "figures": [],
+      "opcions": {
+        "a": "$73{,}60\\ \\text{mm}$",
+        "b": "$43{,}47\\ \\text{mm}$",
+        "c": "$59{,}06\\ \\text{mm}$",
+        "d": "$75{,}20\\ \\text{mm}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Cilindrada total: $V_\\text{T} = 3\\,999\\ \\text{cm}^3$\n- Nombre de cilindres: $z = 8$\n- Diàmetre (alesatge): $D = 92\\ \\text{mm} = 9{,}2\\ \\text{cm}$\n- Incògnita: cursa $s$"
+          },
+          {
+            "apartat": null,
+            "titol": "Cilindrada unitària",
+            "cos": "La cilindrada total és la suma de la de tots els cilindres:\n\n$$V_1 = \\frac{V_\\text{T}}{z} = \\frac{3\\,999}{8} = 499{,}9\\ \\text{cm}^3$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Cursa",
+            "cos": "El volum que escombra el pistó és un cilindre de diàmetre $D$ i alçada $s$: $V_1 = \\dfrac{\\pi D^2}{4}\\, s$. Aïllant:\n\n$$s = \\frac{4 V_1}{\\pi D^2} = \\frac{4 \\cdot 499{,}9}{\\pi \\cdot 9{,}2^2} = 7{,}520\\ \\text{cm} = 75{,}20\\ \\text{mm}$$\n\nResultat: **$s = 75{,}20\\ \\text{mm}$** → resposta **d**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$s = 75{,}20\\ \\text{mm}$ → resposta **d**"
+          }
+        ],
+        "nota": "Error típic: oblidar dividir la cilindrada entre els 8 cilindres (surt una cursa 8 vegades més gran, absurda)."
+      }
+    },
+    {
+      "id": "tecno-2016-J-s3-e1-q5",
+      "serie": "3",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Joc i serratge màxims en l'ajust indeterminat 45 H7/j6",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ajust",
+        "tolerància",
+        "joc màxim",
+        "serratge màxim"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "En l'ajust indeterminat 45 H7/j6, la tolerància H7 del forat és $\\left(\\begin{smallmatrix}+25\\\\ 0\\end{smallmatrix}\\right)\\ \\mu\\text{m}$ i la tolerància j6 de l'eix és $\\left(\\begin{smallmatrix}+11\\\\ -5\\end{smallmatrix}\\right)\\ \\mu\\text{m}$. Quins són el joc i el serratge màxims?",
+      "figures": [],
+      "opcions": {
+        "a": "El joc màxim és $5\\ \\mu\\text{m}$ i el serratge màxim és $36\\ \\mu\\text{m}$.",
+        "b": "El joc màxim és $16\\ \\mu\\text{m}$ i el serratge màxim és $25\\ \\mu\\text{m}$.",
+        "c": "El joc màxim és $20\\ \\mu\\text{m}$ i el serratge màxim és $11\\ \\mu\\text{m}$.",
+        "d": "El joc màxim és $30\\ \\mu\\text{m}$ i el serratge màxim és $11\\ \\mu\\text{m}$."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Desviacions del forat i de l'eix",
+            "cos": "- Forat H7: diferència superior $D_s = +25\\ \\mu\\text{m}$, inferior $D_i = 0$.\n- Eix j6: diferència superior $d_s = +11\\ \\mu\\text{m}$, inferior $d_i = -5\\ \\mu\\text{m}$.\n\nCom que les zones de tolerància es solapen, l'ajust és **indeterminat**: segons les peces hi pot haver joc o serratge."
+          },
+          {
+            "apartat": null,
+            "titol": "Joc màxim",
+            "cos": "El joc màxim es dona amb el forat **més gran** i l'eix **més petit**:\n\n$$J_\\text{màx} = D_s - d_i = 25 - (-5) = 30\\ \\mu\\text{m}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Serratge màxim",
+            "cos": "El serratge màxim es dona amb el forat **més petit** i l'eix **més gran**:\n\n$$S_\\text{màx} = d_s - D_i = 11 - 0 = 11\\ \\mu\\text{m}$$\n\nResultat: **joc màxim 30 µm i serratge màxim 11 µm** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Error típic",
+            "cos": "- **c)** surt d'oblidar el signe negatiu de $d_i$ ($25 - 5 = 20$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$J_\\text{màx} = 30\\ \\mu\\text{m}$, $S_\\text{màx} = 11\\ \\mu\\text{m}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-J-s3-e2",
+      "serie": "3",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Avís de megafonia per aforament amb tres sensors (funció majoria)",
+      "tema": "digital",
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "simplificació",
+        "esquema de contactes"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un sistema automàtic de control de l'aforament d'un recinte està constituït per tres sensors de comptatge de persones situats estratègicament. El sistema emet un avís per megafonia quan almenys dos d'aquests sensors superen el valor de referència prefixat $p_\\text{màx}$. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- sensor $i$ ($i = 1, 2, 3$): $s_i$ = 1: persones $> p_\\text{màx}$; 0: persones $\\le p_\\text{màx}$\n- avís de megafonia: $m$ = 1: s'emet l'avís; 0: no s'emet l'avís",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "L'avís s'activa ($m = 1$) quan **almenys dos** dels tres sensors valen 1. Amb 3 variables hi ha $2^3 = 8$ combinacions:\n\n| $s_1$ | $s_2$ | $s_3$ | $m$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | **1** |\n| 1 | 0 | 0 | 0 |\n| 1 | 0 | 1 | **1** |\n| 1 | 1 | 0 | **1** |\n| 1 | 1 | 1 | **1** |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica (suma de productes)",
+            "cos": "Un terme per a cada fila amb $m = 1$:\n\n$$m = \\bar{s}_1\\, s_2\\, s_3 + s_1\\, \\bar{s}_2\\, s_3 + s_1\\, s_2\\, \\bar{s}_3 + s_1\\, s_2\\, s_3$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació per Karnaugh",
+            "cos": "Mapa amb files $s_1$ i columnes $s_2 s_3$ (ordre de Gray):\n\n| $s_1 \\backslash s_2 s_3$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **0** | 0 | 0 | 1 | 0 |\n| **1** | 0 | 1 | 1 | 1 |\n\nFem tres grups de 2, tots ells amb la casella $s_1 s_2 s_3 = 111$:\n\n- Columna 11 (vertical): $s_2\\, s_3$\n- Fila 1, columnes 01 i 11: $s_1\\, s_3$\n- Fila 1, columnes 11 i 10: $s_1\\, s_2$\n\n$$\\boxed{m = s_1\\, s_2 + s_1\\, s_3 + s_2\\, s_3}$$\n\nTé tot el sentit: hi ha avís si qualsevol **parella** de sensors està activada (és la funció «majoria»)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de contactes",
+            "cos": "En un esquema de contactes, un producte (AND) són contactes **en sèrie** i una suma (OR) són branques **en paraŀlel**. Per a $m = s_1 s_2 + s_1 s_3 + s_2 s_3$ calen tres branques en paraŀlel, cadascuna amb dos contactes normalment oberts en sèrie: ($s_1$, $s_2$), ($s_1$, $s_3$) i ($s_2$, $s_3$), que alimenten l'avisador $m$.\n\nEsquema de la solució oficial (els contactes del mateix sensor estan units per una línia perquè s'accionen alhora):\n\n![Esquema de contactes](img/tecno/2016-J/s3-e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$m = 1$ a les files 011, 101, 110 i 111"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m = s_1 s_2 + s_1 s_3 + s_2 s_3$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Tres branques en paraŀlel amb dos contactes NO en sèrie cadascuna"
+          }
+        ],
+        "nota": "També es pot escriure $m = s_1(s_2 + s_3) + s_2 s_3$, que estalvia un contacte. Qualsevol esquema equivalent és vàlid."
+      }
+    },
+    {
+      "id": "tecno-2016-J-s3-e3-a",
+      "serie": "3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cafetera elèctrica: energia d'escalfament i valor de les resistències",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "termica"
+      ],
+      "conceptes": [
+        "calor específica",
+        "energia",
+        "potència elèctrica",
+        "resistències en sèrie"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Una cafetera elèctrica disposa de dues resistències: una resistència d'escalfament $R_\\text{e}$ i una de manteniment $R_\\text{m}$. En la primera fase d'elaboració del cafè, funciona només la resistència d'escalfament, que proporciona una potència $P_1 = 700\\ \\text{W}$ i escalfa l'aigua fins a $T_1 = 120\\ ^\\circ\\text{C}$ sense que es produeixi un canvi d'estat. Quan l'aigua arriba a la temperatura $T_1$, es connecten les dues resistències en sèrie i proporcionen una potència $P_2 = 260\\ \\text{W}$. La temperatura inicial de l'aigua és $T_0 = 20\\ ^\\circ\\text{C}$, el volum d'aigua escalfat és $V = 0{,}5\\ \\text{L}$ i la cafetera està connectada a la xarxa elèctrica de tensió $U = 230\\ \\text{V}$. Sabent que la calor específica de l'aigua és $c_\\text{e} = 4{,}18\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'energia $E_1$ necessària per a escalfar l'aigua en la primera fase.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El temps $t_1$ de durada de la primera fase.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El valor de les resistències $R_\\text{e}$ i $R_\\text{m}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $P_1 = 700\\ \\text{W}$ (només $R_\\text{e}$); $P_2 = 260\\ \\text{W}$ ($R_\\text{e}$ i $R_\\text{m}$ en sèrie)\n- $T_0 = 20\\ ^\\circ\\text{C}$, $T_1 = 120\\ ^\\circ\\text{C}$ → $\\Delta T = 100\\ ^\\circ\\text{C}$\n- $V = 0{,}5\\ \\text{L}$ d'aigua → $m = \\rho V = 1\\ \\text{kg/L} \\cdot 0{,}5\\ \\text{L} = 0{,}5\\ \\text{kg}$\n- $c_\\text{e} = 4{,}18\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)} = 4\\,180\\ \\text{J/(kg}\\ ^\\circ\\text{C)}$\n- $U = 230\\ \\text{V}$\n- Incògnites: $E_1$, $t_1$, $R_\\text{e}$, $R_\\text{m}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Calor necessària per escalfar l'aigua",
+            "cos": "Com que no hi ha canvi d'estat, tota l'energia serveix per augmentar la temperatura (calor sensible):\n\n$$E_1 = m\\, c_\\text{e}\\, (T_1 - T_0) = 0{,}5 \\cdot 4\\,180 \\cdot (120 - 20) = 209\\,000\\ \\text{J}$$\n\n$$\\mathbf{E_1 = 209{,}0\\ \\text{kJ} = 58{,}06\\ \\text{W h}}$$\n\n(Per passar a W h: $209\\,000\\ \\text{J} / 3\\,600\\ \\text{s/h} = 58{,}06\\ \\text{W h}$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Temps de la primera fase",
+            "cos": "L'energia és potència per temps, $E_1 = P_1\\, t_1$:\n\n$$t_1 = \\frac{E_1}{P_1} = \\frac{209\\,000\\ \\text{J}}{700\\ \\text{W}} = 298{,}6\\ \\text{s}$$\n\nResultat: **$t_1 = 298{,}6\\ \\text{s}$** (uns 5 minuts)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Resistència d'escalfament",
+            "cos": "Amb tensió constant, la potència d'una resistència és $P = U^2/R$. En la primera fase només hi ha $R_\\text{e}$:\n\n$$R_\\text{e} = \\frac{U^2}{P_1} = \\frac{230^2}{700} = 75{,}57\\ \\Omega$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Resistència de manteniment",
+            "cos": "En la segona fase les dues resistències estan **en sèrie**, i la resistència equivalent és la suma:\n\n$$R_\\text{e} + R_\\text{m} = \\frac{U^2}{P_2} = \\frac{230^2}{260} = 203{,}5\\ \\Omega$$\n\n$$R_\\text{m} = 203{,}5 - 75{,}57 = 127{,}9\\ \\Omega$$\n\nResultats: **$R_\\text{e} = 75{,}57\\ \\Omega$**, **$R_\\text{m} = 127{,}9\\ \\Omega$**. Té sentit que en sèrie la potència baixi: la resistència total augmenta i el corrent disminueix."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E_1 = 209{,}0\\ \\text{kJ} = 58{,}06\\ \\text{W h}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$t_1 = 298{,}6\\ \\text{s}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$R_\\text{e} = 75{,}57\\ \\Omega$; $R_\\text{m} = 127{,}9\\ \\Omega$"
+          }
+        ],
+        "nota": "Cal suposar la densitat de l'aigua $\\rho = 1\\ \\text{kg/L}$. L'aigua pot arribar a 120 °C sense bullir perquè està a pressió dins la cafetera. Error típic: sumar les potències en lloc de les resistències en la connexió en sèrie."
+      }
+    },
+    {
+      "id": "tecno-2016-J-s3-e4-a",
+      "serie": "3",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Ciclista pujant un pendent: velocitats de gir, potència i parell als pedals",
+      "tema": "mecanismes",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "relació de transmissió",
+        "velocitat angular",
+        "potència",
+        "rendiment",
+        "parell"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Un ciclista puja un pendent a una velocitat constant $v = 18\\ \\text{km/h}$. La marxa que té posada fa que la relació de transmissió entre els pedals i la roda sigui $\\tau = \\omega_\\text{roda}/\\omega_\\text{pedals} = 1{,}8$. La roda té un radi $r = 330\\ \\text{mm}$, el perfil de la carretera forma un angle $\\alpha = 12^\\circ$ respecte de l'horitzontal i la massa del ciclista més la bicicleta és $m = 87\\ \\text{kg}$. Si es considera que el rendiment mecànic de la bicicleta és $\\eta = 0{,}95$, determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2016-J/s3-e4-a.png",
+          "peu": "Ciclista pujant un pendent d'angle α = 12° a v = 18 km/h"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Les velocitats de gir de la roda $\\omega_\\text{roda}$ i dels pedals $\\omega_\\text{pedals}$, en rad/s.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "La potència $P_\\text{bicicleta}$ necessària per a pujar el pendent.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "La potència $P_\\text{pedals}$ que ha de desenvolupar el ciclista.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "El parell a l'eix dels pedals $\\Gamma_\\text{pedals}$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $v = 18\\ \\text{km/h} = 18/3{,}6 = 5\\ \\text{m/s}$\n- $\\tau = \\omega_\\text{roda}/\\omega_\\text{pedals} = 1{,}8$\n- $r = 330\\ \\text{mm} = 0{,}330\\ \\text{m}$\n- $\\alpha = 12^\\circ$, $m = 87\\ \\text{kg}$, $g = 9{,}807\\ \\text{m/s}^2$\n- $\\eta = 0{,}95$\n- Incògnites: $\\omega_\\text{roda}$, $\\omega_\\text{pedals}$, $P_\\text{bicicleta}$, $P_\\text{pedals}$, $\\Gamma_\\text{pedals}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat de gir de la roda",
+            "cos": "Si la roda no llisca, la velocitat de la bicicleta és la velocitat lineal de la perifèria de la roda, $v = \\omega\\, r$:\n\n$$\\omega_\\text{roda} = \\frac{v}{r} = \\frac{5}{0{,}330} = 15{,}15\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat de gir dels pedals",
+            "cos": "Per la definició de la relació de transmissió:\n\n$$\\omega_\\text{pedals} = \\frac{\\omega_\\text{roda}}{\\tau} = \\frac{15{,}15}{1{,}8} = 8{,}418\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència per pujar el pendent",
+            "cos": "A velocitat constant, la potència útil és la que cal per guanyar altura. La component del pes paraŀlela al pendent és $m g \\sin\\alpha$, i la potència és força per velocitat:\n\n$$P_\\text{bicicleta} = m\\, g\\, \\sin\\alpha \\cdot v = 87 \\cdot 9{,}807 \\cdot \\sin 12^\\circ \\cdot 5 = 887{,}0\\ \\text{W}$$\n\n(Equivalentment: la velocitat vertical és $v \\sin\\alpha$ i $P = m g\\, v\\sin\\alpha$.) Resultat: **$P_\\text{bicicleta} = 887{,}0\\ \\text{W}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència als pedals amb el rendiment",
+            "cos": "El rendiment relaciona la potència útil (a la roda) amb la que aporta el ciclista: $\\eta = P_\\text{bicicleta}/P_\\text{pedals}$.\n\n$$P_\\text{pedals} = \\frac{P_\\text{bicicleta}}{\\eta} = \\frac{887{,}0}{0{,}95} = 933{,}6\\ \\text{W}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Parell als pedals",
+            "cos": "La potència en un eix que gira és $P = \\Gamma\\, \\omega$:\n\n$$\\Gamma_\\text{pedals} = \\frac{P_\\text{pedals}}{\\omega_\\text{pedals}} = \\frac{933{,}6}{8{,}418} = 110{,}9\\ \\text{N m}$$\n\nResultat: **$\\Gamma_\\text{pedals} = 110{,}9\\ \\text{N m}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\omega_\\text{roda} = 15{,}15\\ \\text{rad/s}$; $\\omega_\\text{pedals} = 8{,}418\\ \\text{rad/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{bicicleta} = 887{,}0\\ \\text{W}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{pedals} = 933{,}6\\ \\text{W}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$\\Gamma_\\text{pedals} = 110{,}9\\ \\text{N m}$"
+          }
+        ],
+        "nota": "La solució oficial usa $g = 9{,}807\\ \\text{m/s}^2$. Error típic: usar $\\cos\\alpha$ en lloc de $\\sin\\alpha$, o oblidar passar els km/h a m/s."
+      }
+    },
+    {
+      "id": "tecno-2016-J-s3-e3-b",
+      "serie": "3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cost d'un prisma de fusta fet amb quadrats o amb rectangles encolats",
+      "tema": "economia",
+      "temes_secundaris": [
+        "disseny"
+      ],
+      "conceptes": [
+        "cost de fabricació",
+        "perímetre",
+        "superfície",
+        "aprofitament de material"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Es vol construir un prisma massís de base quadrada com el de la figura ($b = 0{,}140\\ \\text{m}$, $h = 0{,}300\\ \\text{m}$) a partir d'un tauler de fusta. Es pot escollir entre dos taulers, l'un de gruix $e_1 = 12\\ \\text{mm}$ i l'altre de gruix $e_2 = 14\\ \\text{mm}$. Per a construir el prisma, s'hauran de tallar quadrats o rectangles, segons s'esculli, i encolar-los entre ells fins a obtenir la figura. El gruix de la cola es considera negligible.\n\nLa botiga calcula el cost del prisma segons l'expressió $c = c_\\text{a}\\, p + c_\\text{b}\\, s$, en què $p$ és el perímetre del quadrat o del rectangle tallat i $s$ és la superfície de tauler utilitzada. El primer coeficient de cost és $c_\\text{a} = 0{,}7\\ \\text{€/m}$, i l'altre coeficient de cost és $c_\\text{b1} = 3{,}2\\ \\text{€/m}^2$ si s'utilitza el tauler de gruix $e_1$, o $c_\\text{b2} = 4{,}8\\ \\text{€/m}^2$ si s'utilitza el tauler de gruix $e_2$. Determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2016-J/s3-e3-b.png",
+          "peu": "Prisma massís de base quadrada (b = 0,140 m, h = 0,300 m)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quin tauler s'utilitzarà per a construir el prisma a base de quadrats i quin per a construir-lo a base de rectangles? Per què?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El perímetre total dels quadrats o dels rectangles tallats en cada cas, $p_1$ i $p_2$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La superfície de tauler de fusta utilitzada en cada cas, $s_1$ i $s_2$.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "El cost de cadascuna de les opcions, $c_1$ i $c_2$. Quina és la més econòmica?",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Prisma: base $b \\times b = 0{,}140 \\times 0{,}140\\ \\text{m}$, alçada $h = 0{,}300\\ \\text{m}$\n- Taulers: $e_1 = 12\\ \\text{mm}$ ($c_\\text{b1} = 3{,}2\\ \\text{€/m}^2$) i $e_2 = 14\\ \\text{mm}$ ($c_\\text{b2} = 4{,}8\\ \\text{€/m}^2$)\n- $c_\\text{a} = 0{,}7\\ \\text{€/m}$ (cost per metre de tall)\n- Incògnites: tauler de cada opció, $p_1$, $p_2$, $s_1$, $s_2$, $c_1$, $c_2$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Opció amb quadrats",
+            "cos": "Si apilem quadrats de $b \\times b$, la pila ha d'arribar a l'alçada $h = 300\\ \\text{mm}$. Cal un nombre **enter** de peces, per tant el gruix ha de dividir exactament 300 mm:\n\n- $300/12 = 25$ ✔ (enter)\n- $300/14 = 21{,}4$ ✘\n\nPer tant, per a quadrats s'usa el **tauler de 12 mm**, amb $n_1 = h/e_1 = 25$ quadrats."
+          },
+          {
+            "apartat": "a",
+            "titol": "Opció amb rectangles",
+            "cos": "Si encolem rectangles de $b \\times h$ un al costat de l'altre, la pila ha de fer l'amplada $b = 140\\ \\text{mm}$:\n\n- $140/12 = 11{,}7$ ✘\n- $140/14 = 10$ ✔ (enter)\n\nPer tant, per a rectangles s'usa el **tauler de 14 mm**, amb $n_2 = b/e_2 = 10$ rectangles."
+          },
+          {
+            "apartat": "b",
+            "titol": "Perímetre total tallat",
+            "cos": "Cada peça té el perímetre del seu contorn, i el multipliquem pel nombre de peces:\n\n$$p_1 = 4\\, b\\, n_1 = 4 \\cdot 0{,}140 \\cdot 25 = 14\\ \\text{m}$$\n\n$$p_2 = 2\\,(b + h)\\, n_2 = 2 \\cdot (0{,}140 + 0{,}300) \\cdot 10 = 8{,}8\\ \\text{m}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Superfície de tauler utilitzada",
+            "cos": "$$s_1 = b^2\\, n_1 = 0{,}140^2 \\cdot 25 = 0{,}49\\ \\text{m}^2$$\n\n$$s_2 = b\\, h\\, n_2 = 0{,}140 \\cdot 0{,}300 \\cdot 10 = 0{,}42\\ \\text{m}^2$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Cost de cada opció",
+            "cos": "Apliquem $c = c_\\text{a}\\, p + c_\\text{b}\\, s$ amb el coeficient del tauler corresponent:\n\n$$c_1 = 0{,}7 \\cdot 14 + 3{,}2 \\cdot 0{,}49 = 9{,}80 + 1{,}57 = 11{,}37\\ \\text{€}$$\n\n$$c_2 = 0{,}7 \\cdot 8{,}8 + 4{,}8 \\cdot 0{,}42 = 6{,}16 + 2{,}02 = 8{,}18\\ \\text{€}$$\n\nÉs **més econòmic construir-lo a base de rectangles** ($8{,}18\\ \\text{€}$): tot i que el tauler gruixut és més car per m², cal tallar molt menys perímetre."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Quadrats: tauler de 12 mm (25 peces); rectangles: tauler de 14 mm (10 peces)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$p_1 = 14\\ \\text{m}$; $p_2 = 8{,}8\\ \\text{m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$s_1 = 0{,}49\\ \\text{m}^2$; $s_2 = 0{,}42\\ \\text{m}^2$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$c_1 = 11{,}37\\ \\text{€}$; $c_2 = 8{,}18\\ \\text{€}$ → més econòmic amb rectangles"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-J-s3-e4-b",
+      "serie": "3",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Elevador hidràulic de cotxes: massa màxima, tensió a la tija i potència de la bomba",
+      "tema": "pneumatica",
+      "temes_secundaris": [
+        "resistencia"
+      ],
+      "conceptes": [
+        "cilindre hidràulic",
+        "pressió",
+        "tensió normal",
+        "potència hidràulica",
+        "rendiment"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Un elevador de cotxes d'un taller de reparacions funciona mitjançant dos cilindres hidràulics connectats directament a la base que suporta el cotxe. Els cilindres tenen un diàmetre interior $d_\\text{int} = 100\\ \\text{mm}$ i el diàmetre de la tija és $d_\\text{tija} = 56\\ \\text{mm}$. Si la pressió relativa a l'interior dels cilindres és $p_\\text{int} = 2{,}5\\ \\text{MPa}$, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La massa màxima $m_\\text{màx}$ que pot aguantar l'elevador.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La tensió normal a compressió de la tija $\\sigma_\\text{tija}$ quan s'eleva la massa màxima.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El rendiment dels cilindres és $\\eta = 0{,}88$. Quan l'elevador puja la càrrega màxima a una velocitat $v = 0{,}038\\ \\text{m/s}$, la bomba subministra un cabal d'oli $q = 0{,}2985\\ \\text{L/s}$ a cadascun dels cilindres. Determineu la potència $P_\\text{h}$ proporcionada per la bomba a cadascun dels cilindres.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "La pressió $p$ proporcionada per la bomba.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- 2 cilindres; $d_\\text{int} = 100\\ \\text{mm} = 0{,}100\\ \\text{m}$; $d_\\text{tija} = 56\\ \\text{mm} = 0{,}056\\ \\text{m}$\n- $p_\\text{int} = 2{,}5\\ \\text{MPa} = 2{,}5 \\cdot 10^6\\ \\text{Pa}$\n- $\\eta = 0{,}88$; $v = 0{,}038\\ \\text{m/s}$; $q = 0{,}2985\\ \\text{L/s} = 2{,}985 \\cdot 10^{-4}\\ \\text{m}^3\\text{/s}$ per cilindre\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnites: $m_\\text{màx}$, $\\sigma_\\text{tija}$, $P_\\text{h}$, $p$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Força que fa cada cilindre",
+            "cos": "L'oli empeny el pistó per tota la secció interior (en la cambra sense tija):\n\n$$S_\\text{int} = \\frac{\\pi\\, d_\\text{int}^2}{4} = \\frac{\\pi \\cdot 0{,}100^2}{4} = 7{,}854 \\cdot 10^{-3}\\ \\text{m}^2$$\n\n$$F_\\text{ch} = p_\\text{int}\\, S_\\text{int} = 2{,}5 \\cdot 10^6 \\cdot 7{,}854 \\cdot 10^{-3} = 19\\,635\\ \\text{N}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Massa màxima",
+            "cos": "En equilibri, els dos cilindres aguanten el pes: $\\sum F_\\text{verticals} = 0 \\Rightarrow 2 F_\\text{ch} = m\\, g$.\n\n$$m_\\text{màx} = \\frac{2\\, F_\\text{ch}}{g} = \\frac{2 \\cdot 19\\,635}{9{,}807} = 4\\,004\\ \\text{kg}$$\n\nResultat: **$m_\\text{màx} = 4\\,004\\ \\text{kg}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Tensió de compressió a la tija",
+            "cos": "La tija transmet tota la força del cilindre i la seva secció és més petita:\n\n$$S_\\text{tija} = \\frac{\\pi \\cdot 0{,}056^2}{4} = 2{,}463 \\cdot 10^{-3}\\ \\text{m}^2$$\n\n$$\\sigma_\\text{tija} = \\frac{F_\\text{ch}}{S_\\text{tija}} = \\frac{19\\,635}{2{,}463 \\cdot 10^{-3}} = 7{,}972 \\cdot 10^6\\ \\text{Pa} = 7{,}972\\ \\text{MPa}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència hidràulica de cada cilindre",
+            "cos": "La potència mecànica útil d'un cilindre és $F_\\text{ch}\\, v$, i el rendiment la relaciona amb la hidràulica que rep: $\\eta = F_\\text{ch}\\, v / P_\\text{h}$.\n\n$$P_\\text{h} = \\frac{F_\\text{ch}\\, v}{\\eta} = \\frac{19\\,635 \\cdot 0{,}038}{0{,}88} = 847{,}9\\ \\text{W}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Pressió de la bomba",
+            "cos": "La potència hidràulica és pressió per cabal, $P_\\text{h} = p\\, q$:\n\n$$p = \\frac{P_\\text{h}}{q} = \\frac{847{,}9}{2{,}985 \\cdot 10^{-4}} = 2{,}840 \\cdot 10^6\\ \\text{Pa} = 2{,}840\\ \\text{MPa}$$\n\nÉs més gran que $p_\\text{int} = 2{,}5\\ \\text{MPa}$ perquè la bomba ha de compensar les pèrdues del cilindre ($2{,}5/2{,}840 = 0{,}88 = \\eta$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$m_\\text{màx} = 4\\,004\\ \\text{kg}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\sigma_\\text{tija} = 7{,}972\\ \\text{MPa}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{h} = 847{,}9\\ \\text{W}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$p = 2{,}840\\ \\text{MPa}$"
+          }
+        ],
+        "nota": "La solució oficial usa $g = 9{,}807\\ \\text{m/s}^2$. Comprovació: $q = S_\\text{int}\\, v = 7{,}854\\cdot 10^{-3} \\cdot 0{,}038 = 0{,}2985\\ \\text{L/s}$, coherent amb l'enunciat. Error típic: usar la secció anular (restant la tija) per a la força d'elevació; la tija només redueix l'àrea a la cambra de retorn."
+      }
+    },
+    {
+      "id": "tecno-2016-J-s5-e1-q1",
+      "serie": "5",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Massa de nitrogen en un volum de gas natural",
+      "tema": "energia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "gas natural",
+        "composició en volum",
+        "densitat"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        5
+      ],
+      "enunciat": "La composició en volum d'un gas natural és la següent: $86{,}15\\ \\%$ de metà, $12{,}68\\ \\%$ d'età, $0{,}4\\ \\%$ de propà, $0{,}09\\ \\%$ de butà i la resta és nitrogen. Si el nitrogen té una densitat d'$1{,}251\\ \\text{g/L}$, quants kilograms de nitrogen hi ha en $4\\,500\\ \\text{L}$ d'aquest gas?",
+      "figures": [],
+      "opcions": {
+        "a": "$0{,}03828\\ \\text{kg}$",
+        "b": "$30{,}6\\ \\text{kg}$",
+        "c": "$0{,}0306\\ \\text{kg}$",
+        "d": "$3{,}828\\ \\text{kg}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Percentatge de nitrogen",
+            "cos": "El nitrogen és «la resta» fins al 100 %:\n\n$$x_{\\text{N}_2} = 100 - 86{,}15 - 12{,}68 - 0{,}4 - 0{,}09 = 0{,}68\\ \\%$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Volum i massa de nitrogen",
+            "cos": "$$V_{\\text{N}_2} = 0{,}0068 \\cdot 4\\,500 = 30{,}6\\ \\text{L}$$\n\n$$m_{\\text{N}_2} = \\rho\\, V = 1{,}251\\ \\text{g/L} \\cdot 30{,}6\\ \\text{L} = 38{,}28\\ \\text{g} = 0{,}03828\\ \\text{kg}$$\n\nResultat: **$0{,}03828\\ \\text{kg}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **b)** i **c)** confonen el volum de nitrogen (30,6 L) amb la massa.\n- **d)** és un error d'un factor 100 en el percentatge."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$m_{\\text{N}_2} = 0{,}03828\\ \\text{kg}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-J-s5-e1-q2",
+      "serie": "5",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Preu de venda per recuperar la inversió i obtenir benefici",
+      "tema": "economia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "preu de venda",
+        "cost unitari",
+        "amortització",
+        "benefici"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        5
+      ],
+      "enunciat": "Una empresa comercialitza un model de pantalons nou. El cost de producció unitària és de $10\\ \\text{€}$. Durant el primer any, l'empresa vol recuperar $250\\,000\\ \\text{€}$ de la inversió inicial, obtenir un benefici mínim de $15\\,000\\ \\text{€}$ i pagar les despeses de fabricació de totes les unitats venudes. Si la venda prevista està entre $5\\,500$ i $9\\,500$ unitats, quin ha de ser el preu de venda dels pantalons?",
+      "figures": [],
+      "opcions": {
+        "a": "$55{,}45\\ \\text{€}$",
+        "b": "$36{,}32\\ \\text{€}$",
+        "c": "$60\\ \\text{€}$",
+        "d": "$58{,}18\\ \\text{€}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Plantejament",
+            "cos": "Els ingressos de vendre $N$ unitats a preu $p_\\text{v}$ han de cobrir la inversió, el benefici i el cost de fabricar-les:\n\n$$N\\, p_\\text{v} \\ge 250\\,000 + 15\\,000 + 10\\, N$$\n\nCom que no sabem quantes se'n vendran, ens hem de posar en el **pitjor cas**, el de menys vendes: $N = 5\\,500$ unitats. Si es compleix amb poques vendes, amb més vendes encara es guanya més."
+          },
+          {
+            "apartat": null,
+            "titol": "Preu mínim",
+            "cos": "$$p_\\text{v} = 10 + \\frac{265\\,000}{5\\,500} = 10 + 48{,}18 = 58{,}18\\ \\text{€}$$\n\nResultat: **$p_\\text{v} = 58{,}18\\ \\text{€}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **a)** $55{,}45\\ \\text{€}$ oblida el benefici de $15\\,000\\ \\text{€}$.\n- **b)** $36{,}32\\ \\text{€}$ oblida el benefici i usa les vendes màximes (9 500), que no garanteix recuperar la inversió."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$p_\\text{v} = 58{,}18\\ \\text{€}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-J-s5-e1-q3",
+      "serie": "5",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Resistència a la tracció d'una barra de secció quadrada",
+      "tema": "resistencia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "resistència a la tracció",
+        "tensió normal",
+        "secció"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Una barra massissa de secció quadrada de $5\\ \\text{mm}$ de costat pot aguantar una força de tracció de fins a $5{,}9\\ \\text{kN}$. Quina és la resistència a la tracció del material de la barra?",
+      "figures": [],
+      "opcions": {
+        "a": "$300{,}5\\ \\text{MPa}$",
+        "b": "$472\\ \\text{MPa}$",
+        "c": "$1\\,180\\ \\text{MPa}$",
+        "d": "$236\\ \\text{MPa}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Secció de la barra",
+            "cos": "$$S = a^2 = 5^2 = 25\\ \\text{mm}^2$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Resistència a la tracció",
+            "cos": "És la tensió màxima que suporta: força màxima entre secció.\n\n$$\\sigma_\\text{R} = \\frac{F_\\text{màx}}{S} = \\frac{5\\,900\\ \\text{N}}{25\\ \\text{mm}^2} = 236\\ \\text{N/mm}^2 = 236\\ \\text{MPa}$$\n\nResultat: **$236\\ \\text{MPa}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **a)** $300{,}5\\ \\text{MPa}$ surt de prendre una secció circular de 5 mm de diàmetre ($S = 19{,}63\\ \\text{mm}^2$).\n- **c)** $1\\,180\\ \\text{MPa}$ surt de dividir només pel costat (5) en lloc de per l'àrea."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\sigma_\\text{R} = 236\\ \\text{MPa}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-J-s5-e1-q4",
+      "serie": "5",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat de gir d'un motor asíncron amb lliscament",
+      "tema": "maquines-electriques",
+      "temes_secundaris": [],
+      "conceptes": [
+        "motor asíncron",
+        "velocitat de sincronisme",
+        "lliscament",
+        "parells de pols"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Un motor de corrent altern asíncron de dos parells de pols té un lliscament relatiu de $0{,}05$. Si està connectat a la xarxa de tensió $U = 220\\ \\text{V}$ i freqüència $f = 50\\ \\text{Hz}$, a quina velocitat està girant?",
+      "figures": [],
+      "opcions": {
+        "a": "$1\\,425\\ \\text{min}^{-1}$",
+        "b": "$1\\,710\\ \\text{min}^{-1}$",
+        "c": "$2\\,850\\ \\text{min}^{-1}$",
+        "d": "$1\\,500\\ \\text{min}^{-1}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Velocitat de sincronisme",
+            "cos": "La velocitat del camp giratori depèn de la freqüència i del nombre de parells de pols $p$ (la tensió no hi influeix):\n\n$$n_\\text{s} = \\frac{60\\, f}{p} = \\frac{60 \\cdot 50}{2} = 1\\,500\\ \\text{min}^{-1}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Velocitat real amb el lliscament",
+            "cos": "El lliscament relatiu és $s = (n_\\text{s} - n)/n_\\text{s}$, per tant:\n\n$$n = n_\\text{s}\\,(1 - s) = 1\\,500 \\cdot (1 - 0{,}05) = 1\\,425\\ \\text{min}^{-1}$$\n\nResultat: **$1\\,425\\ \\text{min}^{-1}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **d)** $1\\,500\\ \\text{min}^{-1}$ és la de sincronisme: un motor asíncron sempre gira una mica més lent.\n- **c)** $2\\,850\\ \\text{min}^{-1}$ correspondria a un sol parell de pols."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$n = 1\\,425\\ \\text{min}^{-1}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-J-s5-e1-q5",
+      "serie": "5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Potència de càrrega de la bateria d'un vehicle elèctric",
+      "tema": "circuits",
+      "temes_secundaris": [],
+      "conceptes": [
+        "bateria",
+        "capacitat",
+        "potència elèctrica",
+        "energia"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Les característiques tècniques de la bateria d'un vehicle elèctric indiquen que té una capacitat de $100\\ \\text{A h}$, que el temps de càrrega és de $5\\ \\text{h}$, que funciona a una tensió de $220\\ \\text{V}$ i que permet $1\\,800$ cicles de càrrega/descàrrega. Tenint en compte aquestes característiques, quina és la potència necessària en el procés de càrrega de la bateria?",
+      "figures": [],
+      "opcions": {
+        "a": "$4{,}4\\ \\text{kW}$",
+        "b": "$3{,}6\\ \\text{kW}$",
+        "c": "$3{,}96\\ \\text{kW}$",
+        "d": "$8{,}8\\ \\text{kW}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Energia emmagatzemada",
+            "cos": "L'energia d'una bateria és tensió per capacitat (càrrega):\n\n$$E = U\\, Q = 220\\ \\text{V} \\cdot 100\\ \\text{A h} = 22\\,000\\ \\text{W h} = 22\\ \\text{kW h}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Potència de càrrega",
+            "cos": "Aquesta energia s'ha d'aportar en 5 h:\n\n$$P = \\frac{E}{t} = \\frac{22\\ \\text{kW h}}{5\\ \\text{h}} = 4{,}4\\ \\text{kW}$$\n\n(Equivalentment: corrent de càrrega $I = 100/5 = 20\\ \\text{A}$ i $P = U I = 220 \\cdot 20 = 4\\,400\\ \\text{W}$.) Resultat: **$4{,}4\\ \\text{kW}$** → resposta **a**. El nombre de cicles (1 800) és una dada sobrera: informa de la vida útil."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$P = 4{,}4\\ \\text{kW}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2016-J-s5-e2",
+      "serie": "5",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Semàfors amb prioritat per al tramvia en un encreuament",
+      "tema": "digital",
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "simplificació",
+        "portes lògiques"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        6
+      ],
+      "enunciat": "En l'encreuament entre un carril de tramvia i un carril de cotxes es dóna prioritat al tramvia. Per fer-ho, es controla la presència de tramvies en el tram d'$1{,}5\\ \\text{km}$ abans d'arribar a l'encreuament. Quan el semàfor dels cotxes es posa verd, es manté verd durant $15\\ \\text{s}$ com a mínim, i no passa a vermell fins que es detecta la presència d'un tramvia. El semàfor del tramvia passa a vermell quan no es detecta la presència de cap tramvia. Evidentment, quan el semàfor dels cotxes és verd, el del tramvia és vermell, i viceversa. Es defineix la variable $tc$ com el temps transcorregut des del darrer canvi d'estat dels semàfors. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- $sc$ = 1: semàfor de cotxes verd; 0: semàfor de cotxes vermell\n- control de presència: $cp$ = 1: tramvies presents; 0: tramvies no presents\n- control de temps: $ct$ = 1: $tc > 15\\ \\text{s}$; 0: $tc \\le 15\\ \\text{s}$\n- semàfors: $c$ = 1: canvien d'estat; 0: no canvien d'estat",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu el diagrama de portes lògiques equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Traduir l'enunciat a condicions",
+            "cos": "Els semàfors canvien ($c = 1$) en dos casos:\n\n1. **Cotxes en vermell** ($sc = 0$, el tramvia té verd) i **no hi ha tramvies** ($cp = 0$): el tramvia passa a vermell i els cotxes a verd. El temps no hi importa.\n2. **Cotxes en verd** ($sc = 1$), **hi ha un tramvia** ($cp = 1$) i ja han passat **més de 15 s** ($ct = 1$): els cotxes passen a vermell.\n\nEn qualsevol altre cas els semàfors es mantenen ($c = 0$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "| $sc$ | $cp$ | $ct$ | $c$ |\n|---|---|---|---|\n| 0 | 0 | 0 | **1** |\n| 0 | 0 | 1 | **1** |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | 0 |\n| 1 | 0 | 0 | 0 |\n| 1 | 0 | 1 | 0 |\n| 1 | 1 | 0 | 0 |\n| 1 | 1 | 1 | **1** |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica",
+            "cos": "Un terme per a cada fila amb $c = 1$:\n\n$$c = \\overline{sc}\\cdot\\overline{cp}\\cdot\\overline{ct} + \\overline{sc}\\cdot\\overline{cp}\\cdot ct + sc\\cdot cp\\cdot ct$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació",
+            "cos": "Els dos primers termes només es diferencien en $ct$, que es pot treure factor comú ($\\overline{ct} + ct = 1$):\n\n$$\\overline{sc}\\cdot\\overline{cp}\\,(\\overline{ct} + ct) = \\overline{sc}\\cdot\\overline{cp}$$\n\n$$\\boxed{c = \\overline{sc}\\cdot\\overline{cp} + sc\\cdot cp\\cdot ct}$$\n\nAl mapa de Karnaugh (files $sc$, columnes $cp\\,ct$) es veu igual: el grup de dues caselles de la fila 0, columnes 00 i 01, i la casella aïllada 111."
+          },
+          {
+            "apartat": "c",
+            "titol": "Diagrama de portes lògiques",
+            "cos": "Per implementar $c = \\overline{sc}\\cdot\\overline{cp} + sc\\cdot cp\\cdot ct$ calen:\n\n- Una porta **AND de 2 entrades** amb les entrades $sc$ i $cp$ negades (o bé 2 NOT abans de l'AND).\n- Una porta **AND de 3 entrades**: $sc$, $cp$, $ct$.\n- Una porta **OR de 2 entrades** que dona $c$.\n\nEsquema de la solució oficial (simbologia IEC: «&» = AND, «≥1» = OR; el cercle a l'entrada indica negació):\n\n![Diagrama de portes lògiques](img/tecno/2016-J/s5-e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$c = 1$ a les files 000, 001 i 111"
+          },
+          {
+            "apartat": "b",
+            "valor": "$c = \\overline{sc}\\cdot\\overline{cp} + sc\\cdot cp\\cdot ct$"
+          },
+          {
+            "apartat": "c",
+            "valor": "AND amb entrades negades ($sc$, $cp$) + AND de 3 entrades + OR de 2 entrades"
+          }
+        ],
+        "nota": "La part més difícil és interpretar l'enunciat. Error típic: posar la condició de temps també quan els cotxes són en vermell; l'enunciat només imposa els 15 s mínims al verd dels cotxes."
+      }
+    },
+    {
+      "id": "tecno-2016-J-s5-e3-a",
+      "serie": "5",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Resistència de fil de constantà per a una planxa elèctrica: longitud, diàmetre i cost",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "economia",
+        "materials"
+      ],
+      "conceptes": [
+        "resistivitat",
+        "potència elèctrica",
+        "llei d'Ohm",
+        "secció del conductor",
+        "cost"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        7
+      ],
+      "enunciat": "En el disseny d'una planxa de cuina elèctrica s'utilitza fil de constantà per a la resistència. El distribuïdor comercialitza el fil de constantà amb els diàmetres i els preus següents:\n\n| Diàmetre (mm) | 0,125 | 0,25 | 0,5 |\n|---|---|---|---|\n| Preu (€/m) | 0,59 | 1,29 | 2,40 |\n\nEs vol que la planxa tingui una potència $P = 2{,}2\\ \\text{kW}$ alimentada amb una tensió $U = 230\\ \\text{V}$ i unes dimensions de $300 \\times 400\\ \\text{mm}^2$. La resistivitat del constantà és $\\rho = 4{,}9 \\cdot 10^{-7}\\ \\Omega\\ \\text{m}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu el corrent $I$ que circularà per la resistència, per a cadascun dels diàmetres disponibles.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu les longituds de fil de constantà necessàries per a cada diàmetre.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Si es calcula que el fil manté calenta una superfície d'una amplària que és 200 vegades el diàmetre del fil, quin és el diàmetre adequat per a escalfar la planxa i quin cost tindrà el fil de constantà necessari?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $P = 2{,}2\\ \\text{kW} = 2\\,200\\ \\text{W}$, $U = 230\\ \\text{V}$\n- Planxa: $0{,}3 \\times 0{,}4\\ \\text{m} = 0{,}12\\ \\text{m}^2$\n- $\\rho = 4{,}9 \\cdot 10^{-7}\\ \\Omega\\ \\text{m}$\n- Diàmetres: $0{,}125$, $0{,}25$ i $0{,}5\\ \\text{mm}$\n- Incògnites: $I$, longituds $L$, diàmetre adequat i cost"
+          },
+          {
+            "apartat": "a",
+            "titol": "Corrent",
+            "cos": "El corrent només depèn de la potència i la tensió, $P = U\\, I$, i per tant **és el mateix per als tres diàmetres**:\n\n$$I = \\frac{P}{U} = \\frac{2\\,200}{230} = 9{,}565\\ \\text{A}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resistència necessària",
+            "cos": "$$R = \\frac{U^2}{P} = \\frac{230^2}{2\\,200} = 24{,}05\\ \\Omega$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud per a cada diàmetre",
+            "cos": "La resistència d'un fil és $R = \\rho\\, L / S$ amb $S = \\pi d^2/4$. Aïllant la longitud:\n\n$$L = \\frac{R\\, S}{\\rho} = \\frac{U^2\\, \\pi\\, d^2}{4\\, P\\, \\rho}$$\n\n| $d$ (mm) | $S$ (m²) | $L$ (m) |\n|---|---|---|\n| 0,125 | $1{,}227 \\cdot 10^{-8}$ | **0,6022** |\n| 0,25 | $4{,}909 \\cdot 10^{-8}$ | **2,409** |\n| 0,5 | $1{,}963 \\cdot 10^{-7}$ | **9,635** |\n\nPer exemple, per a $d = 0{,}25\\ \\text{mm}$: $L = 24{,}05 \\cdot 4{,}909\\cdot 10^{-8} / 4{,}9 \\cdot 10^{-7} = 2{,}409\\ \\text{m}$. Com que $L \\propto d^2$, si el diàmetre es duplica la longitud es multiplica per 4."
+          },
+          {
+            "apartat": "c",
+            "titol": "Superfície escalfada per cada fil",
+            "cos": "El fil escalfa una franja d'amplada $200\\, d$ al llarg de tota la seva longitud, és a dir, una superfície $S_\\text{c} = L \\cdot 200\\, d$:\n\n- $d = 0{,}125\\ \\text{mm}$: $S_\\text{c} = 0{,}6022 \\cdot 200 \\cdot 0{,}125\\cdot 10^{-3} = 0{,}01506\\ \\text{m}^2$\n- $d = 0{,}25\\ \\text{mm}$: $S_\\text{c} = 2{,}409 \\cdot 200 \\cdot 0{,}25 \\cdot 10^{-3} = 0{,}1204\\ \\text{m}^2$\n- $d = 0{,}5\\ \\text{mm}$: $S_\\text{c} = 9{,}635 \\cdot 200 \\cdot 0{,}5\\cdot 10^{-3} = 0{,}9635\\ \\text{m}^2$\n\nLa planxa fa $0{,}3 \\cdot 0{,}4 = 0{,}12\\ \\text{m}^2$. El fil que la cobreix just és el de **$d = 0{,}25\\ \\text{mm}$** ($0{,}1204 \\approx 0{,}12\\ \\text{m}^2$). El de 0,125 mm només n'escalfaria una petita part i el de 0,5 mm no hi cabria (8 vegades massa)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Cost del fil",
+            "cos": "$$\\text{cost} = L_{0{,}25} \\cdot 1{,}29\\ \\text{€/m} = 2{,}409 \\cdot 1{,}29 = 3{,}107\\ \\text{€}$$\n\nResultat: **diàmetre 0,25 mm, cost 3,11 €**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$I = 9{,}565\\ \\text{A}$ (igual per als tres diàmetres)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$L_{0{,}125} = 0{,}6022\\ \\text{m}$; $L_{0{,}25} = 2{,}409\\ \\text{m}$; $L_{0{,}5} = 9{,}635\\ \\text{m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$d = 0{,}25\\ \\text{mm}$; cost $= 3{,}107\\ \\text{€}$"
+          }
+        ],
+        "nota": "Error típic: pensar que el corrent depèn del diàmetre. La potència i la tensió fixen R i I; el diàmetre només canvia la longitud de fil necessària per aconseguir aquesta R."
+      }
+    },
+    {
+      "id": "tecno-2016-J-s5-e4-a",
+      "serie": "5",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Panell solar fotovoltaic: corrent de curtcircuit, tensió de circuit obert i potència màxima",
+      "tema": "electronica",
+      "temes_secundaris": [
+        "energia",
+        "circuits"
+      ],
+      "conceptes": [
+        "cèl·lula fotovoltaica",
+        "corba característica",
+        "potència màxima",
+        "associació sèrie-paraŀlel"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        7
+      ],
+      "enunciat": "Un panell solar fotovoltaic consisteix en dos grups en paraŀlel de 36 ceŀles solars en sèrie. La intensitat de corrent que produeix tot el panell en funció de la tensió es pot calcular aproximadament amb l'expressió:\n\n$$I = 6{,}54\\left(1 - \\exp\\left(\\frac{U - 21{,}6}{1{,}556}\\right)\\right)\\ \\text{A, amb } U \\text{ en V}$$\n\nPer a tot el panell, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El corrent de curtcircuit $I_\\text{cs}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "La tensió de circuit obert $U_\\text{co}$ (tensió en els borns quan no hi circula corrent).",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El panell subministra la potència màxima quan la tensió entre els borns és $U_\\text{màx} = 17{,}4\\ \\text{V}$. En aquesta configuració, determineu la potència màxima $P_\\text{màx}$ que subministra el panell.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "La tensió i la intensitat que subministren cadascuna de les ceŀles.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Panell: 2 branques en paraŀlel, cadascuna de 36 ceŀles en sèrie\n- Característica: $I(U) = 6{,}54\\left(1 - e^{(U - 21{,}6)/1{,}556}\\right)$\n- $U_\\text{màx} = 17{,}4\\ \\text{V}$\n- Incògnites: $I_\\text{cs}$, $U_\\text{co}$, $P_\\text{màx}$, $U_\\text{ceŀla}$, $I_\\text{ceŀla}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Corrent de curtcircuit",
+            "cos": "En curtcircuit els borns estan units i la tensió és zero, $U = 0$:\n\n$$I_\\text{cs} = 6{,}54\\left(1 - e^{-21{,}6/1{,}556}\\right) = 6{,}54\\,(1 - 9{,}4\\cdot 10^{-7}) = 6{,}540\\ \\text{A}$$\n\nEl terme exponencial és pràcticament zero: **$I_\\text{cs} = 6{,}540\\ \\text{A}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Tensió de circuit obert",
+            "cos": "En circuit obert no circula corrent, $I = 0$:\n\n$$0 = 6{,}54\\left(1 - e^{(U_\\text{co} - 21{,}6)/1{,}556}\\right) \\Rightarrow e^{(U_\\text{co} - 21{,}6)/1{,}556} = 1$$\n\nCom que $e^x = 1$ només si $x = 0$ (és a dir, $\\ln 1 = 0$):\n\n$$U_\\text{co} - 21{,}6 = 0 \\Rightarrow \\mathbf{U_\\text{co} = 21{,}6\\ \\text{V}}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència màxima",
+            "cos": "Calculem el corrent a $U_\\text{màx} = 17{,}4\\ \\text{V}$:\n\n$$I_\\text{màx} = 6{,}54\\left(1 - e^{(17{,}4 - 21{,}6)/1{,}556}\\right) = 6{,}54\\,(1 - e^{-2{,}699}) = 6{,}54\\,(1 - 0{,}06726) = 6{,}100\\ \\text{A}$$\n\n$$P_\\text{màx} = U_\\text{màx}\\, I_\\text{màx} = 17{,}4 \\cdot 6{,}100 = 106{,}1\\ \\text{W}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Corrent i tensió de cada ceŀla",
+            "cos": "- Les **2 branques en paraŀlel** es reparteixen el corrent a parts iguals:\n\n$$I_\\text{ceŀla} = \\frac{I_\\text{màx}}{2} = \\frac{6{,}100}{2} = 3{,}05\\ \\text{A}$$\n\n- En cada branca, les **36 ceŀles en sèrie** es reparteixen la tensió:\n\n$$U_\\text{ceŀla} = \\frac{U_\\text{màx}}{36} = \\frac{17{,}4}{36} = 0{,}4833\\ \\text{V}$$\n\nComprovació: $72 \\text{ ceŀles} \\cdot 0{,}4833 \\cdot 3{,}05 = 106{,}1\\ \\text{W}$ ✔."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$I_\\text{cs} = 6{,}540\\ \\text{A}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$U_\\text{co} = 21{,}6\\ \\text{V}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$I_\\text{màx} = 6{,}100\\ \\text{A}$; $P_\\text{màx} = 106{,}1\\ \\text{W}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$U_\\text{ceŀla} = 0{,}4833\\ \\text{V}$; $I_\\text{ceŀla} = 3{,}05\\ \\text{A}$"
+          }
+        ],
+        "nota": "Error típic: dividir el corrent entre 36 o la tensió entre 2; recorda que en sèrie es reparteix la tensió i en paraŀlel el corrent."
+      }
+    },
+    {
+      "id": "tecno-2016-J-s5-e3-b",
+      "serie": "5",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Pala d'obres amb cilindres hidràulics: relació de velocitats, força i pressió",
+      "tema": "pneumatica",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "cilindre hidràulic",
+        "conservació de la potència",
+        "pressió",
+        "relació de velocitats"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        8
+      ],
+      "enunciat": "La pala d'obres públiques de la figura s'utilitza per a elevar una massa $m = 1\\,800\\ \\text{kg}$ de material mitjançant l'acció de dos cilindres hidràulics que actuen en paraŀlel. Els cilindres tenen un diàmetre interior $d_\\text{int} = 110\\ \\text{mm}$ i el diàmetre de la tija és $d_\\text{tija} = 70\\ \\text{mm}$. Per a una altura d'elevació de la pala $0\\ \\text{mm} < h < 1\\,500\\ \\text{mm}$, la relació entre la velocitat d'allargament del cilindre $v_\\text{cil}$ i la velocitat d'elevació del centre d'inèrcia de la pala $v_\\text{p}$ és, aproximadament:\n\n$$v_\\text{cil} = \\frac{10\\,155 - h}{50\\,000}\\, v_\\text{p}, \\quad \\text{amb } h \\text{ en mm.}$$",
+      "figures": [
+        {
+          "src": "img/tecno/2016-J/s5-e3-b.png",
+          "peu": "Pala d'obres públiques elevant la càrrega fins a una altura h"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu, d'una manera aproximada i indicant les escales, la relació $v_\\text{cil}/v_\\text{p}$ en funció de $h$, per a $0\\ \\text{mm} < h < 1\\,500\\ \\text{mm}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si les resistències passives es consideren negligibles i la pala puja a velocitat constant, quan $h = 1\\,100\\ \\text{mm}$: determineu la força $F_\\text{cil}$ que fa cadascun dels dos cilindres.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Calculeu la pressió $p_\\text{int}$ relativa a l'interior dels cilindres.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 1\\,800\\ \\text{kg}$, $g = 9{,}807\\ \\text{m/s}^2$\n- 2 cilindres en paraŀlel; $d_\\text{int} = 110\\ \\text{mm}$, $d_\\text{tija} = 70\\ \\text{mm}$\n- $v_\\text{cil}/v_\\text{p} = (10\\,155 - h)/50\\,000$ ($h$ en mm)\n- Incògnites: gràfica de $v_\\text{cil}/v_\\text{p}$, $F_\\text{cil}$ i $p_\\text{int}$ a $h = 1\\,100\\ \\text{mm}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valors als extrems",
+            "cos": "La relació $v_\\text{cil}/v_\\text{p} = (10\\,155 - h)/50\\,000$ és una **recta decreixent** en $h$ (pendent $-1/50\\,000$ per mm). N'hi ha prou amb els extrems:\n\n- $h = 0$: $v_\\text{cil}/v_\\text{p} = 10\\,155/50\\,000 = 0{,}2031$\n- $h = 1\\,500\\ \\text{mm}$: $v_\\text{cil}/v_\\text{p} = 8\\,655/50\\,000 = 0{,}1731$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Gràfica",
+            "cos": "Recta entre els punts $(0;\\ 0{,}2031)$ i $(1\\,500;\\ 0{,}1731)$, amb $h$ en mm a l'eix horitzontal. Gràfica de la solució oficial:\n\n![Gràfica de v_cil/v_p en funció de h](img/tecno/2016-J/s5-e3-b-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Balanç de potències",
+            "cos": "Sense pèrdues i a velocitat constant, la potència que fan els dos cilindres és igual a la potència per elevar la càrrega:\n\n$$2\\, F_\\text{cil}\\, v_\\text{cil} = m\\, g\\, v_\\text{p} \\Rightarrow F_\\text{cil} = \\frac{m g}{2}\\cdot\\frac{v_\\text{p}}{v_\\text{cil}} = \\frac{m g}{2}\\cdot\\frac{50\\,000}{10\\,155 - h}$$\n\nCom que el cilindre s'allarga molt menys que el que puja la pala ($v_\\text{cil} \\approx 0{,}18\\, v_\\text{p}$), ha de fer una força molt més gran que el pes: és un mecanisme que «multiplica» el desplaçament a costa de la força."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força a h = 1 100 mm",
+            "cos": "$$\\frac{v_\\text{cil}}{v_\\text{p}} = \\frac{10\\,155 - 1\\,100}{50\\,000} = 0{,}1811$$\n\n$$F_\\text{cil} = \\frac{1\\,800 \\cdot 9{,}807}{2}\\cdot\\frac{50\\,000}{9\\,055} = 8\\,826 \\cdot 5{,}522 = 48\\,740\\ \\text{N}$$\n\nResultat: **$F_\\text{cil} = 48{,}74\\ \\text{kN}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Pressió a l'interior",
+            "cos": "El cilindre s'allarga, per tant l'oli empeny per la cambra sense tija, de secció completa:\n\n$$S_\\text{int} = \\frac{\\pi\\, d_\\text{int}^2}{4} = \\frac{\\pi\\cdot 0{,}110^2}{4} = 9{,}503\\cdot 10^{-3}\\ \\text{m}^2$$\n\n$$p_\\text{int} = \\frac{F_\\text{cil}}{S_\\text{int}} = \\frac{48\\,740}{9{,}503\\cdot 10^{-3}} = 5{,}128\\cdot 10^6\\ \\text{Pa} = 5{,}128\\ \\text{MPa}$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Recta de $0{,}2031$ ($h = 0$) a $0{,}1731$ ($h = 1\\,500\\ \\text{mm}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F_\\text{cil} = 48{,}74\\ \\text{kN}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$p_\\text{int} = 5{,}128\\ \\text{MPa}$"
+          }
+        ],
+        "nota": "La solució oficial usa $g = 9{,}807\\ \\text{m/s}^2$ i a la gràfica anomena $v_h$ la velocitat de la pala ($v_\\text{p}$ a l'enunciat). El diàmetre de la tija no cal: en l'allargament, la pressió actua sobre tota la secció del pistó."
+      }
+    },
+    {
+      "id": "tecno-2016-J-s5-e4-b",
+      "serie": "5",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Captadors solars tèrmics per a aigua calenta sanitària amb suport elèctric",
+      "tema": "energia",
+      "temes_secundaris": [
+        "termica"
+      ],
+      "conceptes": [
+        "energia solar tèrmica",
+        "irradiació",
+        "calor específica",
+        "consum elèctric"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "En un habitatge unifamiliar s'utilitzen captadors solars de superfície $S = 2{,}2\\ \\text{m}^2$ per a produir aigua calenta, que es complementen amb un escalfador elèctric de potència $P = 1\\,800\\ \\text{W}$ els dies en què la radiació solar no és suficient. L'aigua que entra en el sistema té una temperatura de $10\\ ^\\circ\\text{C}$ i es vol que surti a $45\\ ^\\circ\\text{C}$. Es calcula que el consum diari d'aigua és $c = 240\\ \\text{L}$. Sabent que la calor específica de l'aigua és $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La irradiació solar diària mínima $I_\\text{dia}$, en $\\text{MJ/m}^2$, necessària per a produir tota l'energia amb un únic captador solar.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si la radiació solar diària és una tercera part de la radiació mínima necessària i es vol cobrir, com a mínim, el $60\\ \\%$ de la demanda amb energia solar, determineu el nombre de captadors que cal instaŀlar.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "L'energia elèctrica diària consumida $E_\\text{elèctr}$, en kW h, si s'instaŀla el nombre de captadors determinat en l'apartat b.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Superfície d'un captador: $S = 2{,}2\\ \\text{m}^2$\n- Escalfador elèctric: $P = 1\\,800\\ \\text{W}$\n- $\\Delta T = 45 - 10 = 35\\ ^\\circ\\text{C}$\n- Consum: $240\\ \\text{L/dia}$ → $m = 240\\ \\text{kg} = 240\\,000\\ \\text{g}$ (densitat $1\\ \\text{kg/L}$)\n- $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$\n- Incògnites: $I_\\text{dia}$, nombre de captadors, $E_\\text{elèctr}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia diària per escalfar l'aigua",
+            "cos": "$$E_\\text{dia} = m\\, c_\\text{e}\\, \\Delta T = 240\\,000 \\cdot 4{,}18 \\cdot 35 = 35{,}11 \\cdot 10^6\\ \\text{J} = 35{,}11\\ \\text{MJ}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Irradiació mínima amb un captador",
+            "cos": "La irradiació és energia per unitat de superfície. Si un sol captador (suposant que aprofita tota la radiació) ha de donar tota l'energia:\n\n$$I_\\text{dia} = \\frac{E_\\text{dia}}{S} = \\frac{35{,}11\\ \\text{MJ}}{2{,}2\\ \\text{m}^2} = 15{,}96\\ \\text{MJ/m}^2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Superfície de captació necessària",
+            "cos": "Ara la irradiació és un terç de la mínima:\n\n$$I = \\frac{I_\\text{dia}}{3} = \\frac{15{,}96}{3} = 5{,}32\\ \\text{MJ/m}^2$$\n\nPer cobrir el 60 % de la demanda:\n\n$$S_\\text{nec} = \\frac{0{,}60\\, E_\\text{dia}}{I} = \\frac{0{,}60 \\cdot 35{,}11}{5{,}32} = 3{,}96\\ \\text{m}^2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Nombre de captadors",
+            "cos": "$$\\frac{S_\\text{nec}}{S} = \\frac{3{,}96}{2{,}2} = 1{,}8$$\n\nCom que el nombre de captadors ha de ser enter i cal cobrir **com a mínim** el 60 %, arrodonim cap amunt: **calen 2 captadors**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Energia elèctrica consumida",
+            "cos": "Energia que aporten els 2 captadors:\n\n$$E_\\text{solar} = 2\\, S\\, I = 2 \\cdot 2{,}2 \\cdot 5{,}32 = 23{,}41\\ \\text{MJ}$$\n\nLa resta l'ha de donar l'escalfador elèctric:\n\n$$E_\\text{elèctr} = E_\\text{dia} - E_\\text{solar} = 35{,}11 - 23{,}41 = 11{,}70\\ \\text{MJ}$$\n\n$$E_\\text{elèctr} = \\frac{11{,}70 \\cdot 10^6\\ \\text{J}}{3{,}6 \\cdot 10^6\\ \\text{J/(kW h)}} = 3{,}25\\ \\text{kW h}$$\n\n(L'escalfador de 1 800 W hauria de funcionar unes $3{,}25/1{,}8 = 1{,}8\\ \\text{h}$ al dia.)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E_\\text{dia} = 35{,}11\\ \\text{MJ}$; $I_\\text{dia} = 15{,}96\\ \\text{MJ/m}^2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$S_\\text{nec} = 3{,}96\\ \\text{m}^2$ → 2 captadors"
+          },
+          {
+            "apartat": "c",
+            "valor": "$E_\\text{elèctr} = 11{,}70\\ \\text{MJ} = 3{,}25\\ \\text{kW h}$"
+          }
+        ],
+        "nota": "Es considera que els captadors aprofiten tota la radiació (rendiment 100 %), com fa la solució oficial. Amb 2 captadors es cobreix el $2/3 \\approx 66{,}7\\ \\%$ de la demanda, per sobre del 60 % exigit."
+      }
+    }
+  ]
+}

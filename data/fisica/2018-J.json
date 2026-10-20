@@ -1,0 +1,650 @@
+{
+  "examen": {
+    "id": "fisica-2018-J",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2018,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/fisica/2018-J-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2018-J-solucio.pdf",
+    "estructura": "Part comuna obligatòria (P1 i P2) i part optativa: cal escollir UNA de les dues opcions (A o B) i fer-ne els problemes P3, P4 i P5. Cada problema val 2 punts (dos apartats d'1 punt)."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2018-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Àtom d'hidrogen de Bohr: força i acceleració de l'electró, potencial i energia potencial",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "quantica"
+      ],
+      "conceptes": [
+        "llei de coulomb",
+        "força elèctrica",
+        "potencial elèctric",
+        "energia potencial elèctrica",
+        "model de bohr",
+        "electronvolt"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Segons el model atòmic de Bohr, en l'àtom d'hidrogen en estat fonamental l'electró està separat del protó per una distància mitjana $r = 5{,}30 \\times 10^{-11}\\ \\text{m}$.\n\n**Dades:** Massa de l'electró, $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$. Càrrega elemental, $e = 1{,}60 \\times 10^{-19}\\ \\text{C}$. $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$. $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2018-J/e1.png",
+          "peu": "Electró (càrrega −e) girant al voltant del protó (+e) a una distància r"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quin és el mòdul de la força elèctrica del protó sobre l'electró? Quina acceleració li provoca?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el potencial elèctric (en V) a la distància $r$ del protó i l'energia potencial (en eV) de la distribució de càrregues.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Distància protó–electró: $r = 5{,}30 \\times 10^{-11}\\ \\text{m}$\n- Càrrega del protó: $q_p = +e = +1{,}60 \\times 10^{-19}\\ \\text{C}$; càrrega de l'electró: $q_e = -e$\n- $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$, $k = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$\n- Incògnites: a) $F$ i $a$; b) $V(r)$ en volts i $U$ en eV."
+          },
+          {
+            "apartat": "a",
+            "titol": "Força elèctrica (llei de Coulomb)",
+            "cos": "El protó i l'electró tenen càrregues de signe contrari, per tant s'atrauen. El mòdul de la força ve donat per la llei de Coulomb:$$F = k\\,\\frac{|q_p\\,q_e|}{r^2} = 8{,}99 \\times 10^{9}\\cdot\\frac{(1{,}60 \\times 10^{-19})^2}{(5{,}30 \\times 10^{-11})^2}$$$$\\boxed{F = 8{,}19 \\times 10^{-8}\\ \\text{N}}$$\n\nLa força és atractiva: va dirigida des de l'electró cap al protó (cap al centre de l'òrbita), tal com indica la figura."
+          },
+          {
+            "apartat": "a",
+            "titol": "Acceleració de l'electró (segona llei de Newton)",
+            "cos": "L'única força rellevant sobre l'electró és l'elèctrica (la gravitatòria és menyspreable). Per la segona llei de Newton, $F = m_e\\,a$:$$a = \\frac{F}{m_e} = \\frac{8{,}19 \\times 10^{-8}\\ \\text{N}}{9{,}11 \\times 10^{-31}\\ \\text{kg}} = \\mathbf{9{,}00 \\times 10^{22}\\ \\text{m/s}^2}$$\n\nÉs una acceleració centrípeta: la força elèctrica fa de força centrípeta i manté l'electró en òrbita circular."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potencial elèctric creat pel protó a la distància r",
+            "cos": "El potencial creat per una càrrega puntual és un escalar que porta el signe de la càrrega que el crea (aquí, el protó, positiu):$$V = k\\,\\frac{q_p}{r} = 8{,}99 \\times 10^{9}\\cdot\\frac{1{,}60 \\times 10^{-19}}{5{,}30 \\times 10^{-11}} = \\mathbf{27{,}1\\ \\text{V}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia potencial del sistema protó–electró",
+            "cos": "L'energia potencial de l'electró situat en aquest punt és el producte de la seva càrrega pel potencial:$$U = q_e\\,V = (-1{,}60 \\times 10^{-19}\\ \\text{C})\\cdot 27{,}1\\ \\text{V} = -4{,}34 \\times 10^{-18}\\ \\text{J}$$Passem a electronvolts dividint per $1{,}60 \\times 10^{-19}\\ \\text{J/eV}$:$$U = \\frac{-4{,}34 \\times 10^{-18}}{1{,}60 \\times 10^{-19}}\\ \\text{eV} = \\mathbf{-27{,}1\\ \\text{eV}}$$\n\nEl signe negatiu indica que el sistema està lligat: caldria aportar energia per separar les càrregues. Fixa't que, numèricament, una càrrega $-e$ en un potencial de $27{,}1\\ \\text{V}$ té una energia de $-27{,}1\\ \\text{eV}$ (és la definició d'electronvolt)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$F = 8{,}19 \\times 10^{-8}\\ \\text{N}$ (atractiva); $a = 9{,}00 \\times 10^{22}\\ \\text{m/s}^2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$V = 27{,}1\\ \\text{V}$; $U = -4{,}34 \\times 10^{-18}\\ \\text{J} = -27{,}1\\ \\text{eV}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2018-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Estel fosc de Michell: massa, velocitat d'escapament i camp gravitatori en superfície",
+      "tema": "gravitacio",
+      "temes_secundaris": [
+        "relativitat"
+      ],
+      "conceptes": [
+        "velocitat d'escapament",
+        "densitat",
+        "intensitat del camp gravitatori",
+        "força gravitatòria",
+        "forat negre"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "*Una vegada més, Einstein tenia raó.* Cent anys després d'haver predit l'existència d'ones gravitatòries en la seva teoria general de la relativitat, han estat detectades, i aquesta detecció ha comportat la concessió del Premi Nobel de Física de l'any 2017. Les ones gravitatòries detectades van ser originades per la col·lisió de dos forats negres.\n\nIgual que les ones gravitatòries, els forats negres també van ser descrits per la teoria general de la relativitat. Les idees bàsiques relatives als forats negres es poden entendre amb les lleis de Newton.\n\n**Dades:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$. Massa del Sol, $M_S = 1{,}99 \\times 10^{30}\\ \\text{kg}$. Radi del Sol, $R_S = 6{,}96 \\times 10^{8}\\ \\text{m}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2018-J/e2.png",
+          "peu": "Il·lustració de dos forats negres en òrbita emetent ones gravitatòries"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'any 1783, noranta-sis anys abans del naixement d'Einstein, l'astrònom John Michell (1724-1793) va publicar que un cos esfèric que tingués la mateixa densitat que el Sol i 500 vegades el radi d'aquest tindria una velocitat d'escapament, des de la seva superfície, superior a la velocitat de la llum. Calculeu la massa del cos i aquesta velocitat d'escapament.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el mòdul de la intensitat del camp gravitatori que el cos de l'apartat anterior crea a la seva pròpia superfície. Quina força (mòdul, direcció i sentit) fa el cos sobre $1\\ \\mu\\text{g}$ situat a la seva superfície?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $M_S = 1{,}99 \\times 10^{30}\\ \\text{kg}$, $R_S = 6{,}96 \\times 10^{8}\\ \\text{m}$, $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$\n- Cos de Michell: $\\rho_\\text{cos} = \\rho_S$ i $R_\\text{cos} = 500\\,R_S = 3{,}48 \\times 10^{11}\\ \\text{m}$\n- Massa de prova: $m = 1\\ \\mu\\text{g} = 1{,}00 \\times 10^{-9}\\ \\text{kg}$\n- Incògnites: a) $M_\\text{cos}$ i $v_\\text{esc}$; b) $g$ a la superfície i la força sobre $m$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Massa del cos a partir de la igualtat de densitats",
+            "cos": "La densitat és massa dividida pel volum d'una esfera, $\\rho = \\dfrac{M}{\\frac{4}{3}\\pi R^3}$. Si les densitats són iguals:$$\\frac{M_\\text{cos}}{\\frac{4}{3}\\pi R_\\text{cos}^3} = \\frac{M_S}{\\frac{4}{3}\\pi R_S^3} \\;\\Rightarrow\\; M_\\text{cos} = M_S\\left(\\frac{R_\\text{cos}}{R_S}\\right)^3 = 500^3\\,M_S$$$$M_\\text{cos} = 1{,}25 \\times 10^{8}\\cdot 1{,}99 \\times 10^{30} = \\mathbf{2{,}49 \\times 10^{38}\\ \\text{kg}}$$\n\nCom que la massa creix amb el cub del radi, multiplicar el radi per 500 multiplica la massa per 125 milions."
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat d'escapament",
+            "cos": "La velocitat d'escapament és la mínima que permet arribar a l'infinit amb velocitat nul·la; per tant, l'energia mecànica a la superfície ha de ser zero:$$E_m = \\tfrac{1}{2}m v_\\text{esc}^2 - G\\frac{m M_\\text{cos}}{R_\\text{cos}} = 0 \\;\\Rightarrow\\; v_\\text{esc} = \\sqrt{\\frac{2GM_\\text{cos}}{R_\\text{cos}}}$$$$v_\\text{esc} = \\sqrt{\\frac{2\\cdot 6{,}67 \\times 10^{-11}\\cdot 2{,}49 \\times 10^{38}}{3{,}48 \\times 10^{11}}} = \\mathbf{3{,}09 \\times 10^{8}\\ \\text{m/s}}$$\n\nEfectivament, és més gran que la velocitat de la llum ($3{,}00 \\times 10^{8}\\ \\text{m/s}$): ni la llum en podria escapar, segons la física newtoniana. És la idea d'\\\"estel fosc\\\" precursora dels forats negres."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat del camp gravitatori a la superfície",
+            "cos": "El camp gravitatori creat per una esfera a la seva superfície és:$$g = G\\frac{M_\\text{cos}}{R_\\text{cos}^2} = 6{,}67 \\times 10^{-11}\\cdot\\frac{2{,}49 \\times 10^{38}}{(3{,}48 \\times 10^{11})^2} = \\mathbf{1{,}37 \\times 10^{5}\\ \\text{m/s}^2}$$\n\n(unes 14 000 vegades la gravetat a la superfície terrestre)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força sobre una massa d'1 µg",
+            "cos": "La força gravitatòria sobre una massa $m$ és el seu pes en aquest camp, $F = m\\,g$:$$F = 1{,}00 \\times 10^{-9}\\ \\text{kg}\\cdot 1{,}37 \\times 10^{5}\\ \\text{m/s}^2 = \\mathbf{1{,}37 \\times 10^{-4}\\ \\text{N}}$$\n\n**Direcció:** radial (la recta que uneix la massa amb el centre del cos). **Sentit:** cap al centre del cos (la força gravitatòria sempre és atractiva)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$M_\\text{cos} = 2{,}49 \\times 10^{38}\\ \\text{kg}$; $v_\\text{esc} = 3{,}09 \\times 10^{8}\\ \\text{m/s}$ ($> c$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$g = 1{,}37 \\times 10^{5}\\ \\text{m/s}^2$; $F = 1{,}37 \\times 10^{-4}\\ \\text{N}$, radial i cap al centre del cos"
+          }
+        ],
+        "nota": "Error típic: no passar 1 µg a quilograms ($1\\ \\mu\\text{g} = 10^{-6}\\ \\text{g} = 10^{-9}\\ \\text{kg}$)."
+      }
+    },
+    {
+      "id": "fisica-2018-J-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Protó i electró en un espectròmetre de masses: força de Lorentz i camp per a la mateixa trajectòria",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [],
+      "conceptes": [
+        "força de lorentz",
+        "producte vectorial",
+        "espectròmetre de masses",
+        "radi de la trajectòria",
+        "moviment circular uniforme"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un protó en repòs és accelerat en el sentit positiu de l'eix $x$ fins a assolir una velocitat d'$1{,}00 \\times 10^{5}\\ \\text{m s}^{-1}$. Aleshores, penetra en un espectròmetre de masses on hi ha un camp magnètic $\\vec B = 1{,}00 \\times 10^{-2}\\ \\text{T}\\ \\vec k$.\n\n**Dades:** Càrrega elemental, $e = 1{,}60 \\times 10^{-19}\\ \\text{C}$. Massa del protó, $m_p = 1{,}67 \\times 10^{-27}\\ \\text{kg}$. Massa de l'electró, $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$. $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la força (mòdul, direcció i sentit) que actua sobre el protó.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el camp magnètic (mòdul, direcció i sentit) tal que, si entra un electró amb la mateixa velocitat en l'espectròmetre, segueixi la mateixa trajectòria que el protó.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Velocitat del protó: $\\vec v = 1{,}00 \\times 10^{5}\\ \\vec i\\ \\text{m/s}$\n- Camp magnètic: $\\vec B_p = 1{,}00 \\times 10^{-2}\\ \\vec k\\ \\text{T}$\n- $q_p = +1{,}60 \\times 10^{-19}\\ \\text{C}$, $q_e = -1{,}60 \\times 10^{-19}\\ \\text{C}$\n- $m_p = 1{,}67 \\times 10^{-27}\\ \\text{kg}$, $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$\n- Incògnites: a) $\\vec F$ sobre el protó; b) $\\vec B_e$ per a l'electró.\n\n(La constant $k$ de Coulomb no cal en aquest problema.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Força de Lorentz sobre el protó",
+            "cos": "Una càrrega que es mou dins d'un camp magnètic rep la força de Lorentz $\\vec F = q\\,\\vec v \\times \\vec B$. Com que $\\vec i \\times \\vec k = -\\vec j$:$$\\vec F = 1{,}60 \\times 10^{-19}\\left(1{,}00 \\times 10^{5}\\ \\vec i \\times 1{,}00 \\times 10^{-2}\\ \\vec k\\right) = -1{,}60 \\times 10^{-16}\\ \\vec j\\ \\text{N}$$**Mòdul:** $F = 1{,}60 \\times 10^{-16}\\ \\text{N}$. **Direcció:** eix $y$. **Sentit:** negatiu ($-\\vec j$).\n\nLa força és perpendicular a la velocitat, per tant no en canvia el mòdul: el protó descriu un moviment circular uniforme en el pla $xy$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Condició perquè el radi sigui el mateix",
+            "cos": "La força magnètica fa de força centrípeta: $|q|vB = m\\dfrac{v^2}{r}$, d'on $r = \\dfrac{mv}{|q|B}$. Volem $r_e = r_p$ amb la mateixa velocitat i càrregues del mateix valor absolut:$$\\frac{m_p v}{e B_p} = \\frac{m_e v}{e B_e} \\;\\Rightarrow\\; B_e = \\frac{m_e}{m_p}\\,B_p$$$$B_e = \\frac{9{,}11 \\times 10^{-31}}{1{,}67 \\times 10^{-27}}\\cdot 1{,}00 \\times 10^{-2} = \\mathbf{5{,}45 \\times 10^{-6}\\ \\text{T}}$$\n\n(Comprovació: $r_p = \\dfrac{1{,}67 \\times 10^{-27}\\cdot 10^{5}}{1{,}60 \\times 10^{-19}\\cdot 10^{-2}} \\approx 0{,}104\\ \\text{m}$, i amb $B_e$ s'obté el mateix radi per a l'electró.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Direcció i sentit del camp per a l'electró",
+            "cos": "Per seguir la *mateixa* trajectòria, l'electró ha de rebre la força en el mateix sentit, $-\\vec j$. Com que la seva càrrega és negativa, $\\vec F = -e\\,\\vec v \\times \\vec B_e$; per obtenir $-\\vec j$ cal que $\\vec v \\times \\vec B_e$ tingui el sentit $+\\vec j$, i això passa si $\\vec B_e$ apunta cap a $-\\vec k$ ($\\vec i \\times (-\\vec k) = +\\vec j$):$$\\boxed{\\vec B_e = -5{,}45 \\times 10^{-6}\\ \\vec k\\ \\text{T}}$$\n\nMateixa direcció (eix $z$) que el camp original, però sentit contrari, perquè l'electró té càrrega de signe contrari al protó."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\vec F = -1{,}60 \\times 10^{-16}\\ \\vec j\\ \\text{N}$ (mòdul $1{,}60 \\times 10^{-16}\\ \\text{N}$, eix $y$, sentit negatiu)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\vec B_e = -5{,}45 \\times 10^{-6}\\ \\vec k\\ \\text{T}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2018-J-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Vaixell mogut per les ones: equació del MHS, velocitat i acceleració inicials",
+      "tema": "oscillacions",
+      "temes_secundaris": [
+        "ones"
+      ],
+      "conceptes": [
+        "moviment harmònic simple",
+        "amplitud",
+        "període",
+        "freqüència angular",
+        "equació del moviment",
+        "acceleració"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Les ones del mar fan navegar un vaixell a la deriva, de manera que es mou $2{,}00\\ \\text{m}$ en vertical des del punt més alt al punt més baix cada $6{,}28\\ \\text{s}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu l'equació del moviment del vaixell suposant que a l'instant inicial es troba en el punt més alt. Indiqueu les unitats de totes les magnituds.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la velocitat i l'acceleració inicials del vaixell.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Distància entre el punt més alt i el més baix: $2{,}00\\ \\text{m}$ (és el doble de l'amplitud)\n- Temps per anar del punt més alt al més baix: $6{,}28\\ \\text{s}$ (és mig període)\n- Condició inicial: $y(0) = +A$ (punt més alt)\n- Incògnites: a) $y(t)$; b) $v(0)$ i $a(0)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Amplitud i període",
+            "cos": "El vaixell fa un moviment harmònic simple vertical. L'amplitud és la meitat del recorregut entre els extrems, i anar d'un extrem a l'altre dura mig període:$$A = \\frac{2{,}00\\ \\text{m}}{2} = 1{,}00\\ \\text{m} \\qquad \\frac{T}{2} = 6{,}28\\ \\text{s} \\Rightarrow T = 12{,}56\\ \\text{s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüència angular",
+            "cos": "$$\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{12{,}56\\ \\text{s}} = 0{,}500\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Fase inicial i equació del moviment",
+            "cos": "Prenem l'equació $y(t) = A\\cos(\\omega t + \\varphi_0)$. A $t = 0$ el vaixell és al punt més alt, $y(0) = A$, per tant $\\cos\\varphi_0 = 1 \\Rightarrow \\varphi_0 = 0$:$$\\boxed{y(t) = 1{,}00\\cos(0{,}500\\,t)}\\quad (y \\text{ en m},\\ t \\text{ en s},\\ \\omega \\text{ en rad/s})$$De manera equivalent, amb el sinus: $y(t) = 1{,}00\\sin\\left(0{,}500\\,t + \\dfrac{\\pi}{2}\\right)$ m."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat inicial",
+            "cos": "Derivem la posició respecte del temps:$$v(t) = \\frac{dy}{dt} = -A\\omega\\sin(\\omega t) = -0{,}500\\sin(0{,}500\\,t)\\ \\text{m/s}$$$$v(0) = -0{,}500\\sin 0 = \\mathbf{0\\ \\text{m/s}}$$\n\nTé sentit: en un extrem del MHS el cos s'atura momentàniament per canviar de sentit."
+          },
+          {
+            "apartat": "b",
+            "titol": "Acceleració inicial",
+            "cos": "Derivem un altre cop (o fem servir $a = -\\omega^2 y$):$$a(t) = -A\\omega^2\\cos(\\omega t) \\;\\Rightarrow\\; a(0) = -A\\omega^2 = -1{,}00\\cdot 0{,}500^2 = \\mathbf{-0{,}250\\ \\text{m/s}^2}$$\n\nÉs màxima en mòdul (som a l'extrem) i negativa: apunta cap avall, cap a la posició d'equilibri."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y(t) = 1{,}00\\cos(0{,}500\\,t)$ (m, s); $A = 1{,}00\\ \\text{m}$, $T = 12{,}56\\ \\text{s}$, $\\omega = 0{,}500\\ \\text{rad/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v(0) = 0$; $a(0) = -0{,}250\\ \\text{m/s}^2$"
+          }
+        ],
+        "nota": "Els criteris oficials reconeixen que l'enunciat admet una doble lectura i també donen per bo interpretar que el període és $T = 6{,}28\\ \\text{s}$. En aquest cas $\\omega = 1{,}00\\ \\text{rad/s}$, $y(t) = 1{,}00\\cos(1{,}00\\,t)$ m, $v(0) = 0$ i $a(0) = -1{,}00\\ \\text{m/s}^2$."
+      }
+    },
+    {
+      "id": "fisica-2018-J-e5-a",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Desintegració alfa del poloni-210 i massa restant després de mig període",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "desintegració alfa",
+        "conservació del nombre màssic i atòmic",
+        "període de semidesintegració",
+        "constant de desintegració",
+        "llei de desintegració radioactiva"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        3
+      ],
+      "enunciat": "El poloni, ${}^{210}\\text{Po}$, és un emissor natural de partícules $\\alpha$.\n\n**Dades:** Nombre atòmic del poloni, $Z(\\text{Po}) = 84$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu la reacció de desintegració del ${}^{210}\\text{Po}$ sabent que quan es desintegra genera un isòtop del plom (Pb).",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Sabent que el període de semidesintegració del ${}^{210}\\text{Po}$ és de 138 dies, quina quantitat de ${}^{210}\\text{Po}$ queda en una mostra de $10{,}0\\ \\text{g}$ després de 69 dies des de l'inici de l'activitat?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Poloni: $A = 210$, $Z = 84$; emet partícules $\\alpha = {}^{4}_{2}\\text{He}$\n- $T_{1/2} = 138\\ \\text{dies}$, $m_0 = 10{,}0\\ \\text{g}$, $t = 69\\ \\text{dies}$\n- Incògnites: a) la reacció; b) $m(69\\ \\text{dies})$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Reacció de desintegració alfa",
+            "cos": "En una desintegració $\\alpha$ el nucli perd 2 protons i 2 neutrons. S'han de conservar el nombre màssic (a dalt) i el nombre atòmic (a baix):$$A:\\ 210 = A' + 4 \\Rightarrow A' = 206 \\qquad Z:\\ 84 = Z' + 2 \\Rightarrow Z' = 82$$$$\\boxed{{}^{210}_{\\ 84}\\text{Po} \\longrightarrow {}^{206}_{\\ 82}\\text{Pb} + {}^{4}_{2}\\alpha}$$Efectivament, $Z = 82$ correspon al plom."
+          },
+          {
+            "apartat": "b",
+            "titol": "Constant de desintegració",
+            "cos": "La llei de desintegració és $m(t) = m_0\\,e^{-\\lambda t}$, amb $\\lambda = \\dfrac{\\ln 2}{T_{1/2}}$:$$\\lambda = \\frac{\\ln 2}{138\\ \\text{dies}} = 5{,}02 \\times 10^{-3}\\ \\text{dies}^{-1}$$\n\nNo cal passar a segons: si $\\lambda$ i $t$ estan en dies, el producte $\\lambda t$ és adimensional."
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa que queda als 69 dies",
+            "cos": "$$m(69) = 10{,}0\\ \\text{g}\\cdot e^{-5{,}02 \\times 10^{-3}\\cdot 69} = \\mathbf{7{,}07\\ \\text{g}}$$\n\nComprovació: 69 dies és exactament mig període, per tant $m = m_0\\,(1/2)^{1/2} = 10{,}0/\\sqrt{2} = 7{,}07\\ \\text{g}$. Fixa't que en mig període **no** es desintegra la quarta part de la mostra (no és lineal)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "${}^{210}_{\\ 84}\\text{Po} \\to {}^{206}_{\\ 82}\\text{Pb} + {}^{4}_{2}\\alpha$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m = 7{,}07\\ \\text{g}$"
+          }
+        ],
+        "nota": "Error típic: pensar que en mig període queda $7{,}5\\ \\text{g}$ (suposant decaïment lineal)."
+      }
+    },
+    {
+      "id": "fisica-2018-J-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Camp magnètic d'una línia submarina i força entre dos fils paral·lels",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp magnètic d'un fil infinit",
+        "força entre corrents paral·lels",
+        "regla de la mà dreta",
+        "força sobre un conductor"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "**Nota:** El mòdul del camp magnètic a una distància $r$ d'un fil infinit pel qual circula una intensitat $I$ és $B = \\dfrac{\\mu_0 I}{2\\pi r}$, en què $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T m A}^{-1}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2018-J/e3-b.png",
+          "peu": "Bacteri Aquaspirillum magnetotacticum amb els magnetosomes"
+        },
+        {
+          "src": "img/fisica/2018-J/e3-b-2.png",
+          "peu": "Fils conductors als punts 1 i 2, amb el corrent cap endins del paper"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El bacteri *Aquaspirillum magnetotacticum* conté partícules molt petites, els magnetosomes, que són sensibles als camps magnètics. Fan servir el camp magnètic terrestre per a orientar-se en els oceans i nedar cap al pol Nord geogràfic. S'ha quantificat que una intensitat de camp magnètic inferior al 5 % del camp magnètic terrestre no té efectes sobre aquests bacteris. El camp magnètic terrestre és de $5{,}00 \\times 10^{-5}\\ \\text{T}$. Si circula un corrent elèctric de $100\\ \\text{A}$ per una línia submarina, a partir de quina distància d'aquesta línia el camp magnètic deixarà de tenir efecte sobre els bacteris? Considereu la línia submarina com un fil infinit i ignoreu els efectes de l'aigua del mar.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "En la figura es mostren dos fils conductors rectilinis i infinitament llargs, que es troben situats als punts 1 i 2. Estan separats per $10{,}0\\ \\text{m}$, són perpendiculars al pla del paper i per tots dos hi circula una mateixa intensitat de corrent de $100\\ \\text{A}$ en el sentit que va cap endins del paper. Representeu en un esquema el camp magnètic a la posició 1 generat pel conductor que passa per 2. Representeu també la força sobre el conductor que passa per 1 causada pel conductor que passa per 2, i calculeu el mòdul de la força que suporten $2{,}00\\ \\text{m}$ del conductor que passa per 1.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Camp terrestre: $B_T = 5{,}00 \\times 10^{-5}\\ \\text{T}$; llindar d'efecte: 5 % de $B_T$\n- Corrent: $I = 100\\ \\text{A}$ (a la línia submarina i a cada fil)\n- Separació entre fils: $d = 10{,}0\\ \\text{m}$; tram de fil: $l = 2{,}00\\ \\text{m}$\n- $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T m A}^{-1}$\n- Incògnites: a) distància $r$ a partir de la qual $B < 5\\,\\%\\,B_T$; b) esquema de $\\vec B$ i $\\vec F$, i mòdul de $F$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp mínim que afecta els bacteris",
+            "cos": "$$B_\\text{mín} = \\frac{5}{100}\\cdot 5{,}00 \\times 10^{-5}\\ \\text{T} = 2{,}50 \\times 10^{-6}\\ \\text{T}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Distància a la línia",
+            "cos": "El camp d'un fil infinit disminueix amb la distància ($B \\propto 1/r$). Aïllem la distància a la qual el camp val exactament $B_\\text{mín}$; més enllà, el camp és més petit i ja no té efecte:$$r = \\frac{\\mu_0 I}{2\\pi B_\\text{mín}} = \\frac{4\\pi \\times 10^{-7}\\cdot 100}{2\\pi\\cdot 2{,}50 \\times 10^{-6}} = \\mathbf{8{,}0\\ \\text{m}}$$\n\nA partir de 8 m de la línia, el camp magnètic deixa de tenir efecte sobre els bacteris."
+          },
+          {
+            "apartat": "b",
+            "titol": "Esquema del camp i de la força",
+            "cos": "Les línies de camp d'un fil són circumferències centrades en el fil. Amb la regla de la mà dreta (polze en el sentit del corrent, cap endins del paper), el camp gira en sentit horari. Al punt 1, que està a l'esquerra del fil 2, el camp creat pel fil 2 apunta **cap amunt**.\n\nLa força sobre el fil 1 és $\\vec F = I\\,\\vec l \\times \\vec B$: amb $\\vec l$ cap endins del paper i $\\vec B$ cap amunt, la força va **cap a la dreta, cap al fil 2**. És el resultat general: dos corrents paral·lels del mateix sentit s'atrauen.\n\n![Esquema oficial: camp del conductor 2 a la posició 1 (cap amunt) i força del conductor 2 sobre l'1 (cap al conductor 2)](img/fisica/2018-J/e3-b-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Camp creat pel fil 2 a la posició 1",
+            "cos": "$$B_2 = \\frac{\\mu_0 I}{2\\pi d} = \\frac{4\\pi \\times 10^{-7}\\cdot 100}{2\\pi\\cdot 10{,}0} = 2{,}00 \\times 10^{-6}\\ \\text{T}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Força sobre 2,00 m del fil 1",
+            "cos": "El fil 1 és perpendicular al camp ($\\sin 90^\\circ = 1$), per tant:$$F = I\\,l\\,B_2\\sin 90^\\circ = 100\\cdot 2{,}00\\cdot 2{,}00 \\times 10^{-6} = \\mathbf{4{,}00 \\times 10^{-4}\\ \\text{N}}$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$r = 8{,}0\\ \\text{m}$ (a partir d'aquesta distància, $B < 2{,}50 \\times 10^{-6}\\ \\text{T}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\vec B_2$ al punt 1: cap amunt, $2{,}00 \\times 10^{-6}\\ \\text{T}$; força atractiva (cap al fil 2), $F = 4{,}00 \\times 10^{-4}\\ \\text{N}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2018-J-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Nivell d'intensitat sonora del bordar d'un i de dos gossos",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "intensitat sonora",
+        "nivell d'intensitat sonora",
+        "decibels",
+        "ona esfèrica",
+        "potència sonora"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Un gos borda amb una potència de $2{,}00\\ \\text{mW}$.\n\n**Dada:** Intensitat del llindar d'audició (0 dB), $I_0 = 1{,}00 \\times 10^{-12}\\ \\text{W m}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Si aquest so es distribueix uniformement per l'espai, quin és el nivell d'intensitat sonora (en dB) a una distància de $5{,}00\\ \\text{m}$?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si en comptes d'un gos, fossin dos gossos bordant alhora, quin seria el nivell d'intensitat sonora?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Potència d'un gos: $P = 2{,}00\\ \\text{mW} = 2{,}00 \\times 10^{-3}\\ \\text{W}$\n- Distància: $r = 5{,}00\\ \\text{m}$\n- $I_0 = 1{,}00 \\times 10^{-12}\\ \\text{W/m}^2$\n- Incògnites: a) $L_1$; b) $L_2$ amb dos gossos."
+          },
+          {
+            "apartat": "a",
+            "titol": "Intensitat a 5,00 m",
+            "cos": "Si el so es distribueix uniformement, la potència es reparteix sobre una superfície esfèrica d'àrea $4\\pi r^2$:$$I_1 = \\frac{P}{4\\pi r^2} = \\frac{2{,}00 \\times 10^{-3}}{4\\pi\\,(5{,}00)^2} = 6{,}37 \\times 10^{-6}\\ \\text{W/m}^2$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Nivell d'intensitat sonora",
+            "cos": "$$L_1 = 10\\log\\frac{I_1}{I_0} = 10\\log\\frac{6{,}37 \\times 10^{-6}}{1{,}00 \\times 10^{-12}} = \\mathbf{68{,}0\\ \\text{dB}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Dos gossos: les intensitats se sumen",
+            "cos": "Les intensitats (energia per unitat de temps i d'àrea) de fonts independents se sumen; els decibels **no**. Amb dos gossos iguals, $I_2 = 2I_1$:$$L_2 = 10\\log\\frac{2I_1}{I_0} = 10\\log 2 + 10\\log\\frac{I_1}{I_0} = 3{,}01 + 68{,}0 = \\mathbf{71{,}0\\ \\text{dB}}$$\n\nAlternativament: $P = 4{,}00\\ \\text{mW} \\Rightarrow I_2 = 1{,}27 \\times 10^{-5}\\ \\text{W/m}^2 \\Rightarrow L_2 = 71{,}0\\ \\text{dB}$.\n\nDoblar la intensitat només augmenta el nivell uns 3 dB, no el duplica (error típic: respondre 136 dB)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$I_1 = 6{,}37 \\times 10^{-6}\\ \\text{W/m}^2$; $L_1 = 68{,}0\\ \\text{dB}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$L_2 = 71{,}0\\ \\text{dB}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2018-J-e5-b",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Efecte fotoelèctric: energia del fotó i treball d'extracció d'un metall alcalí",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "energia del fotó",
+        "treball d'extracció",
+        "energia cinètica màxima",
+        "electronvolt"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Sobre un metall alcalí incideix llum de longitud d'ona $\\lambda = 3{,}00 \\times 10^{2}\\ \\text{nm}$. Si els fotoelectrons emesos tenen una energia cinètica màxima de $2{,}00\\ \\text{eV}$, calculeu:\n\n**Dades:** $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$. Constant de Planck, $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$. Velocitat de la llum, $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'energia (en eV) d'un fotó de la llum incident.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El treball d'extracció (en eV) corresponent a aquest metall.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $\\lambda = 3{,}00 \\times 10^{2}\\ \\text{nm} = 3{,}00 \\times 10^{-7}\\ \\text{m}$\n- $E_{c,\\text{màx}} = 2{,}00\\ \\text{eV} = 3{,}20 \\times 10^{-19}\\ \\text{J}$\n- $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$\n- Incògnites: a) $E_\\text{fotó}$ en eV; b) $W_e$ en eV."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia d'un fotó",
+            "cos": "Segons Planck i Einstein, la llum està formada per fotons d'energia $E = h\\nu = h\\dfrac{c}{\\lambda}$:$$E = 6{,}63 \\times 10^{-34}\\cdot\\frac{3{,}00 \\times 10^{8}}{3{,}00 \\times 10^{-7}} = 6{,}63 \\times 10^{-19}\\ \\text{J}$$$$E = \\frac{6{,}63 \\times 10^{-19}\\ \\text{J}}{1{,}60 \\times 10^{-19}\\ \\text{J/eV}} = \\mathbf{4{,}14\\ \\text{eV}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Balanç d'energia de l'efecte fotoelèctric",
+            "cos": "L'energia del fotó s'inverteix a arrencar l'electró (treball d'extracció $W_e$) i la resta queda com a energia cinètica màxima de l'electró:$$h\\nu = W_e + E_{c,\\text{màx}} \\;\\Rightarrow\\; W_e = h\\nu - E_{c,\\text{màx}}$$$$W_e = 6{,}63 \\times 10^{-19} - 2{,}00\\cdot 1{,}60 \\times 10^{-19} = 3{,}43 \\times 10^{-19}\\ \\text{J} = \\mathbf{2{,}14\\ \\text{eV}}$$\n\n(Directament en eV: $4{,}14 - 2{,}00 = 2{,}14$ eV.) És un valor típic dels metalls alcalins, que tenen treballs d'extracció baixos."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E_\\text{fotó} = 6{,}63 \\times 10^{-19}\\ \\text{J} = 4{,}14\\ \\text{eV}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$W_e = 3{,}43 \\times 10^{-19}\\ \\text{J} = 2{,}14\\ \\text{eV}$"
+          }
+        ],
+        "nota": ""
+      }
+    }
+  ]
+}

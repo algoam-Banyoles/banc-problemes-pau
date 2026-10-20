@@ -1,0 +1,678 @@
+{
+  "examen": {
+    "id": "fisica-2020-J",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2020,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/fisica/2020-J-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2020-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels vuit problemes (P1-P8). Si se'n responen més, només es valoren els quatre primers. Cada problema val 2,5 punts (dos apartats d'1,25 punts)."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2020-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Longituds d'ona de la veu de Freddie Mercury i nivell d'intensitat sonora d'un concert",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "longitud d'ona",
+        "velocitat del so",
+        "intensitat sonora",
+        "nivell d'intensitat sonora",
+        "decibels",
+        "font puntual"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Freddie Mercury ha passat a la història com una de les millors veus del rock. La seva màgica veu ha estat objecte de discussió i estudi, també per a la ciència. El biofísic austríac Christian Herbst va estudiar la veu del cantant de Queen i va determinar que Mercury era un baríton amb un registre vocal que anava del fa 2 (al voltant de $92{,}2\\ \\text{Hz}$) al sol 5 (al voltant de $784\\ \\text{Hz}$).\n\n**Dades:** $I_0 = 10^{-12}\\ \\text{W m}^{-2}$. La velocitat del so en l'aire és de $340\\ \\text{m s}^{-1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu les longituds d'ona dels sons més greus i més aguts que Mercury podia emetre.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "L'any 1985, Queen va actuar al festival Rock in Rio, en un concert que va aplegar unes $350\\,000$ persones. En un moment de molta emoció, els assistents van començar a cantar *a cappella* la famosa cançó *Love of my life*. Si cada assistent al concert cantava amb una potència de $10^{-7}\\ \\text{W}$, quin nivell d'intensitat sonora (en decibels) es podia percebre a $1\\ \\text{km}$ del concert? (A aquesta distància, podeu considerar que el concert és una font puntual de so.)",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Freqüència més greu: $f_\\text{min} = 92{,}2\\ \\text{Hz}$; més aguda: $f_\\text{màx} = 784\\ \\text{Hz}$\n- Velocitat del so: $v = 340\\ \\text{m/s}$\n- Nombre de persones: $N = 350\\,000$; potència per persona: $P_1 = 10^{-7}\\ \\text{W}$\n- Distància: $r = 1\\ \\text{km} = 1\\,000\\ \\text{m}$; $I_0 = 10^{-12}\\ \\text{W/m}^2$\n- Incògnites: a) $\\lambda$ del so més greu i del més agut; b) nivell d'intensitat sonora $\\beta$ a 1 km."
+          },
+          {
+            "apartat": "a",
+            "titol": "Relació entre velocitat, freqüència i longitud d'ona",
+            "cos": "En una ona, la velocitat de propagació és $v = \\lambda f$. La velocitat del so depèn del medi (l'aire), no de la freqüència, de manera que **com més greu és el so (menys freqüència), més gran és la longitud d'ona**:\n\n$$\\lambda = \\frac{v}{f}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul de les dues longituds d'ona",
+            "cos": "So més agut ($f = 784\\ \\text{Hz}$):\n\n$$\\lambda_\\text{min} = \\frac{340}{784} = 0{,}434\\ \\text{m}$$\n\nSo més greu ($f = 92{,}2\\ \\text{Hz}$):\n\n$$\\lambda_\\text{màx} = \\frac{340}{92{,}2} = 3{,}69\\ \\text{m}$$\n\nResultat: **$\\lambda_\\text{agut} = 0{,}43\\ \\text{m}$** i **$\\lambda_\\text{greu} = 3{,}69\\ \\text{m}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència total de la font",
+            "cos": "Les potències sonores de fonts independents se sumen (el que se suma són energies, no nivells en decibels):\n\n$$P = N\\,P_1 = 350\\,000 \\cdot 10^{-7} = 3{,}5 \\times 10^{-2}\\ \\text{W}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat a 1 km d'una font puntual",
+            "cos": "Una font puntual emet en totes direccions: a una distància $r$ l'energia es reparteix sobre una esfera de superfície $A = 4\\pi r^2$.\n\n$$A = 4\\pi (1\\,000)^2 = 1{,}26 \\times 10^{7}\\ \\text{m}^2$$\n\n$$I = \\frac{P}{4\\pi r^2} = \\frac{3{,}5 \\times 10^{-2}}{1{,}26 \\times 10^{7}} = 2{,}79 \\times 10^{-9}\\ \\text{W/m}^2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Nivell d'intensitat sonora",
+            "cos": "El nivell d'intensitat sonora compara la intensitat amb el llindar d'audició $I_0$ en escala logarítmica:\n\n$$\\beta = 10 \\log\\frac{I}{I_0} = 10 \\log\\frac{2{,}79 \\times 10^{-9}}{10^{-12}} = 10\\log(2\\,785) = 34{,}4\\ \\text{dB}$$\n\nResultat: **$\\beta \\approx 34{,}4\\ \\text{dB}$** (com una conversa en veu baixa)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\lambda_\\text{agut} = 0{,}43\\ \\text{m}$; $\\lambda_\\text{greu} = 3{,}69\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I = 2{,}79 \\times 10^{-9}\\ \\text{W/m}^2$; $\\beta \\approx 34{,}4\\ \\text{dB}$ (l'oficial dona $34{,}45\\ \\text{dB}$)"
+          }
+        ],
+        "nota": "Error típic: calcular el nivell d'una sola persona i multiplicar els decibels per $N$. Els decibels no se sumen: se sumen les potències (o intensitats) i després es calcula el nivell. A la solució oficial, la intensitat surt amb unitats \"m\" per errada tipogràfica; les unitats correctes són $\\text{W/m}^2$. L'oficial dona $\\beta = 34{,}45\\ \\text{dB}$ (34,4486…, arrodonit a 34,4 dB)."
+      }
+    },
+    {
+      "id": "fisica-2020-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Càrrega transportada per un llamp i camp magnètic que crea",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [
+        "camp-electric"
+      ],
+      "conceptes": [
+        "intensitat de corrent",
+        "càrrega elèctrica",
+        "camp magnètic d'un corrent rectilini",
+        "força de lorentz"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Durant una tempesta cau un llamp pel qual circula un corrent elèctric de $400\\ \\text{kA}$. Suposeu que la intensitat del corrent del llamp és constant durant els $50\\ \\mu\\text{s}$ que dura.\n\n**Dades:** $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T m A}^{-1}$; $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$. La intensitat del camp magnètic creat per un corrent rectilini és $B = \\dfrac{\\mu_0 I}{2\\pi r}$, en què $r$ és la distància al corrent.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina és la càrrega elèctrica total que ha transportat aquest llamp? Quin és el camp magnètic que crea aquest corrent a una distància de $100\\ \\text{m}$?",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Quina força magnètica actua sobre una partícula carregada que es troba en repòs a aquesta mateixa distància? Justifiqueu la resposta.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Intensitat: $I = 400\\ \\text{kA} = 4 \\times 10^{5}\\ \\text{A}$\n- Durada: $t = 50\\ \\mu\\text{s} = 5 \\times 10^{-5}\\ \\text{s}$\n- Distància: $r = 100\\ \\text{m}$; $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{T m/A}$\n- Incògnites: a) càrrega $Q$ i camp $B$ a 100 m; b) força magnètica sobre una càrrega en repòs."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càrrega transportada",
+            "cos": "La intensitat de corrent és la càrrega que passa per unitat de temps. Si és constant:\n\n$$I = \\frac{Q}{t} \\quad\\Rightarrow\\quad Q = I\\,t = 4 \\times 10^{5} \\cdot 5 \\times 10^{-5} = 20\\ \\text{C}$$\n\nResultat: **$Q = 20\\ \\text{C}$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp magnètic a 100 m",
+            "cos": "Tractem el llamp com un corrent rectilini i llarg. El camp magnètic té línies circulars al voltant del llamp i el seu mòdul és:\n\n$$B = \\frac{\\mu_0 I}{2\\pi r} = \\frac{4\\pi \\times 10^{-7} \\cdot 4 \\times 10^{5}}{2\\pi \\cdot 100} = 8 \\times 10^{-4}\\ \\text{T}$$\n\nResultat: **$B = 8 \\times 10^{-4}\\ \\text{T}$** (unes 16 vegades el camp magnètic terrestre)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força de Lorentz sobre una càrrega en repòs",
+            "cos": "La força magnètica sobre una càrrega puntual és la **força de Lorentz**:\n\n$$\\vec F = q\\,(\\vec v \\times \\vec B), \\qquad |\\vec F| = |q|\\,v\\,B\\,\\sin\\alpha$$\n\nSi la partícula està en repòs, $\\vec v = 0$ i, per tant, $\\vec F = 0$, sigui quin sigui el valor de $q$ i de $B$. **El camp magnètic només actua sobre càrregues en moviment.**\n\nResultat: **$F = 0$**. (La dada $|e|$ no cal: és un parany.)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$Q = 20\\ \\text{C}$; $B = 8 \\times 10^{-4}\\ \\text{T}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F = 0$, perquè la partícula no es mou ($\\vec v = 0$)"
+          }
+        ],
+        "nota": "Fixa't que la força és nul·la per a qualsevol càrrega en repòs; per això la dada de la càrrega de l'electró no s'ha de fer servir."
+      }
+    },
+    {
+      "id": "fisica-2020-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Òrbita de la sonda solar Parker: voltes, eix major i velocitat màxima",
+      "tema": "gravitacio",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "òrbita el·líptica",
+        "lleis de kepler",
+        "periheli i afeli",
+        "conservació de l'energia mecànica",
+        "segona llei de kepler"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "La sonda solar *Parker* (en anglès, *Parker Solar Probe*) és una nau espacial en òrbita al voltant del Sol que té com a objectiu acostar-se molt a la superfície solar. La gràfica següent mostra com varia la distància de la nau respecte al Sol al llarg dels primers $1\\,000$ dies de missió i indica els instants A, B i C. Les unitats emprades per a mesurar la distància a la superfície del Sol són radis solars, $R_\\text{S}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2020-J/e3.png",
+          "peu": "Distància de la sonda Parker a la superfície del Sol en funció del temps"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Observeu a la gràfica els moments de màxim acostament al Sol de cada òrbita i determineu quantes voltes completes ha fet la nau al voltant del Sol en aquests $1\\,000$ dies. Quant mesura l'eix major de l'òrbita entre els moments A i C? (Doneu el resultat en radis solars.)",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Representeu esquemàticament el Sol i l'òrbita de la nau entre els moments A i C. Indiqueu sobre el dibuix les posicions corresponents a A, B i C. Situeu la nau en la posició B i dibuixeu en aquest instant els vectors velocitat i acceleració de la nau (no cal calcular-ne els mòduls). En quina posició la velocitat de la nau és màxima? Justifiqueu la resposta i indiqueu el principi físic en què us baseu.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Què ens diu la gràfica",
+            "cos": "La gràfica dona la distància de la nau a la **superfície** del Sol (no al centre) en funció del temps. Cada mínim és un **periheli** (màxim acostament) i cada màxim un **afeli** (màxim allunyament).\n\n- Punt A: periheli, a uns $35\\ R_\\text{S}$ de la superfície.\n- Punt C: afeli, a uns $200\\ R_\\text{S}$ de la superfície.\n- Punt B: un punt intermedi, quan la nau s'allunya del Sol després de passar per A."
+          },
+          {
+            "apartat": "a",
+            "titol": "Nombre de voltes completes",
+            "cos": "Entre dos perihelis consecutius la nau fa una volta completa. A la gràfica es compten 8 mínims (el primer és A, cap al dia 85, i l'últim és just al dia 1 000). Entre 8 mínims hi ha 7 intervals:\n\nResultat: **7 voltes completes**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Eix major de l'òrbita entre A i C",
+            "cos": "A i C són els extrems de l'eix major de l'el·lipse, i el Sol (el seu centre) és entre tots dos. Com que les distàncies de la gràfica es mesuren des de la **superfície**, cal afegir-hi el diàmetre del Sol ($2R_\\text{S}$):\n\n$$2a = d_A + 2R_\\text{S} + d_C = 35R_\\text{S} + 2R_\\text{S} + 200R_\\text{S} = 237\\,R_\\text{S}$$\n\nResultat: **eix major $\\approx 237\\,R_\\text{S}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Esquema de l'òrbita i vectors a B",
+            "cos": "Segons la **primera llei de Kepler**, l'òrbita és una el·lipse amb el Sol en un dels focus. A (periheli) és l'extrem de l'eix major més proper al Sol i C (afeli) el més allunyat. B és entre A i C.\n\n- **Velocitat** $\\vec v$: sempre **tangent** a la trajectòria, en el sentit del moviment.\n- **Acceleració** $\\vec a$: l'única força és l'atracció gravitatòria del Sol, que és **central**, de manera que $\\vec a$ apunta **cap al centre del Sol** (no cap al centre de l'el·lipse).\n\n![Esquema de l'òrbita de la sonda amb els vectors a B (solució oficial)](img/fisica/2020-J/e3-sol.png)\n\nFixa't que a B els vectors $\\vec v$ i $\\vec a$ no són perpendiculars: l'angle és més gran de 90° perquè la nau s'allunya del Sol i s'està frenant."
+          },
+          {
+            "apartat": "b",
+            "titol": "On és màxima la velocitat: conservació de l'energia",
+            "cos": "La força gravitatòria és conservativa, de manera que es **conserva l'energia mecànica**:\n\n$$E_m = \\frac{1}{2}mv^2 - G\\frac{m M_\\text{S}}{r} = \\text{constant} \\quad\\Rightarrow\\quad \\frac{1}{2}mv^2 = E_m + G\\frac{m M_\\text{S}}{r}$$\n\nL'energia cinètica és màxima quan $r$ és mínima (l'energia potencial és la més negativa). Això passa al periheli.\n\nResultat: **la velocitat és màxima a A** (el punt més proper al Sol)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Alternativa: segona llei de Kepler",
+            "cos": "També es pot justificar amb la **segona llei de Kepler** (conservació del moment angular): el segment que uneix la nau amb el Sol escombra àrees iguals en temps iguals. Com que a A aquest segment és el més curt, per escombrar la mateixa àrea la nau ha de recórrer més arc en el mateix temps: la velocitat hi és màxima."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "7 voltes completes; eix major $= 237\\,R_\\text{S}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "El·lipse amb el Sol en un focus; a B, $\\vec v$ tangent i $\\vec a$ cap al Sol; velocitat màxima a A (conservació de l'energia mecànica o 2a llei de Kepler)"
+          }
+        ],
+        "nota": "Error típic: donar $235\\,R_\\text{S}$ oblidant que les distàncies són a la superfície del Sol i no al centre (els criteris oficials hi resten puntuació). Un altre error freqüent és dibuixar l'acceleració cap al centre de l'el·lipse: ha d'anar cap al Sol."
+      }
+    },
+    {
+      "id": "fisica-2020-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Pèndols amb esferes carregades: força elèctrica, càrrega i camp equivalent",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "llei de coulomb",
+        "equilibri de forces",
+        "camp elèctric",
+        "pèndol elèctric",
+        "tensió del fil"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Dues esferes iguals de $20\\ \\text{g}$ de massa pengen cadascuna d'un fil de $50\\ \\text{cm}$ de llarg, tal com mostra la figura. Totes dues esferes tenen càrregues elèctriques iguals, però de signe contrari. A causa de l'atracció elèctrica que hi ha entre les esferes, els fils formen un angle de $15°$ amb la vertical. En aquesta configuració, la distància entre les esferes és de $10\\ \\text{cm}$.\n\n**Dada:** $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$.\n\n**Nota:** Suposeu que les dues càrregues són puntuals.",
+      "figures": [
+        {
+          "src": "img/fisica/2020-J/e4.png",
+          "peu": "Les dues esferes carregades penjant dels fils"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el mòdul de la força elèctrica entre les esferes i el valor de les seves càrregues elèctriques.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Si retiréssim la càrrega positiva, quin camp hauríem de crear al voltant de la càrrega negativa perquè aquesta última no canviés de posició? Indiqueu-ne el mòdul i representeu esquemàticament la direcció i el sentit que tindria. Com hauria de ser aquest camp si, en lloc de retirar la càrrega positiva, retiréssim la càrrega negativa?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa de cada esfera: $m = 20\\ \\text{g} = 0{,}020\\ \\text{kg}$\n- Angle dels fils amb la vertical: $\\theta = 15°$\n- Distància entre esferes: $d = 10\\ \\text{cm} = 0{,}10\\ \\text{m}$\n- $k = 8{,}99 \\times 10^{9}\\ \\text{N m}^2/\\text{C}^2$; prenem $g = 9{,}81\\ \\text{m/s}^2$ (com la solució oficial)\n- Incògnites: a) $F_e$ i $|q|$; b) camp $\\vec E$ que substitueixi l'altra càrrega.\n\nLa longitud del fil (50 cm) no cal per als càlculs, perquè ja ens donen la distància entre les esferes."
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de forces sobre una esfera",
+            "cos": "Sobre cada esfera actuen tres forces: el pes $m\\vec g$ (vertical cap avall), la tensió del fil $\\vec T$ (al llarg del fil) i la força elèctrica $\\vec F_e$ (horitzontal, cap a l'altra esfera, perquè s'atreuen).\n\n![Forces sobre l'esfera positiva (solució oficial)](img/fisica/2020-J/e4-sol.png)\n\nCom que l'esfera està en equilibri, la suma de forces és zero. Descomponent la tensió:\n\n$$T\\sin 15° = F_e \\qquad T\\cos 15° = mg$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Mòdul de la força elèctrica",
+            "cos": "Dividint les dues equacions s'elimina la tensió:\n\n$$\\tan 15° = \\frac{F_e}{mg} \\quad\\Rightarrow\\quad F_e = mg\\tan 15°$$\n\n$$F_e = 0{,}020 \\cdot 9{,}81 \\cdot \\tan 15° = 0{,}020 \\cdot 9{,}81 \\cdot 0{,}268 = 5{,}26 \\times 10^{-2}\\ \\text{N}$$\n\nResultat: **$F_e = 5{,}26 \\times 10^{-2}\\ \\text{N}$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valor de les càrregues (llei de Coulomb)",
+            "cos": "La força elèctrica entre dues càrregues puntuals de mòdul $q$ separades $d$ és:\n\n$$F_e = k\\frac{q^2}{d^2} \\quad\\Rightarrow\\quad q = d\\sqrt{\\frac{F_e}{k}}$$\n\n$$q = 0{,}10\\sqrt{\\frac{5{,}26 \\times 10^{-2}}{8{,}99 \\times 10^{9}}} = 2{,}42 \\times 10^{-7}\\ \\text{C}$$\n\nResultat: **$q_+ = +2{,}42 \\times 10^{-7}\\ \\text{C}$** i **$q_- = -2{,}42 \\times 10^{-7}\\ \\text{C}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Quin camp substitueix la càrrega positiva",
+            "cos": "Perquè la càrrega negativa (la de la dreta) no es mogui, ha de continuar rebent exactament la mateixa força elèctrica: $5{,}26 \\times 10^{-2}\\ \\text{N}$ cap a l'esquerra. Això s'aconsegueix amb el **mateix camp que creava la càrrega positiva** en aquell punt:\n\n$$E = k\\frac{q}{d^2} = 8{,}99 \\times 10^{9}\\cdot\\frac{2{,}42 \\times 10^{-7}}{(0{,}10)^2} = 2{,}17 \\times 10^{5}\\ \\text{N/C}$$\n\n(També: $E = F_e/q = 5{,}26 \\times 10^{-2} / 2{,}42 \\times 10^{-7} = 2{,}17 \\times 10^{5}\\ \\text{N/C}$.)\n\nResultat: **$E = 2{,}17 \\times 10^{5}\\ \\text{N/C}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Direcció i sentit del camp sobre la càrrega negativa",
+            "cos": "Sobre una càrrega negativa, la força té **sentit contrari al camp** ($\\vec F = q\\vec E$ amb $q<0$). Com que la força ha d'apuntar cap a l'esquerra, el camp ha de ser **horitzontal i cap a la dreta** (allunyant-se de la posició on era la càrrega positiva, com el camp d'una càrrega positiva).\n\n![Camp i força sobre la càrrega negativa (solució oficial)](img/fisica/2020-J/e4-sol-2.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Si retirem la càrrega negativa",
+            "cos": "Ara cal mantenir la càrrega positiva (l'esquerra), que rebia una força de $5{,}26 \\times 10^{-2}\\ \\text{N}$ cap a la **dreta**. Com que el valor absolut de la càrrega i la distància són els mateixos, el mòdul del camp és el mateix, $2{,}17 \\times 10^{5}\\ \\text{N/C}$. Per a una càrrega positiva, força i camp tenen el mateix sentit, de manera que el camp ha de ser **horitzontal i cap a la dreta**: és a dir, **el mateix camp que en el cas anterior** (és el camp que creava la càrrega negativa, que apunta cap a ella).\n\n![Camp i força sobre la càrrega positiva (solució oficial)](img/fisica/2020-J/e4-sol-3.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$F_e = 5{,}26 \\times 10^{-2}\\ \\text{N}$; $|q| = 2{,}42 \\times 10^{-7}\\ \\text{C}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E = 2{,}17 \\times 10^{5}\\ \\text{N/C}$, horitzontal cap a la dreta (de la càrrega positiva cap a la negativa) en tots dos casos"
+          }
+        ],
+        "nota": "**Discrepància amb la solució oficial:** l'oficial dona $E = 2{,}17 \\times 10^{4}\\ \\text{N/C}$, però substituint els seus mateixos números, $8{,}99 \\times 10^{9}\\cdot 2{,}42 \\times 10^{-7}/(0{,}1)^2 = 2{,}17 \\times 10^{5}\\ \\text{N/C}$. Es comprova fàcilment amb $E = F_e/q$. Hi ha un error d'una potència de 10 a l'oficial; el valor correcte és $2{,}17 \\times 10^{5}\\ \\text{N/C}$.\n\nL'examen no dona $g$; la solució oficial fa servir $g = 9{,}81\\ \\text{m/s}^2$."
+      }
+    },
+    {
+      "id": "fisica-2020-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Datació amb carboni 14: desintegració beta i antiguitat d'un sarcòfag",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "desintegració beta",
+        "carboni 14",
+        "període de semidesintegració",
+        "constant de desintegració",
+        "llei de desintegració radioactiva",
+        "datació"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "El $^{14}_{\\ 6}\\text{C}$ es produeix a l'atmosfera per l'acció dels raigs còsmics. Aquest isòtop és inestable i va decaient a $^{14}_{\\ 7}\\text{N}$ mitjançant un procés de desintegració $\\beta$, amb un període de semidesintegració de $5\\,730$ anys. La proporció de $^{14}\\text{C}$ respecte al $^{12}\\text{C}$ que hi ha a l'atmosfera és constant al llarg del temps. Els éssers vius assimilen el $\\text{CO}_2$ de l'atmosfera sense distingir si es tracta de $^{12}\\text{C}$ o de $^{14}\\text{C}$, i ho fan en la proporció en què aquests isòtops es troben de manera natural a l'atmosfera. Quan moren, els éssers deixen d'assimilar $\\text{CO}_2$ i, a partir d'aquest moment, la quantitat de $^{14}\\text{C}$ va decaient.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu la reacció que correspon al decaïment del $^{14}\\text{C}$ a $^{14}\\text{N}$. Incloeu-hi, si escau, els antineutrins.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Si una mostra d'una fusta utilitzada en un sarcòfag presenta una proporció de $^{14}_{\\ 6}\\text{C}$ de només el 58 % respecte a la proporció que hi ha a l'atmosfera, trobeu quina és l'antiguitat del sarcòfag.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Període de semidesintegració del $^{14}\\text{C}$: $T_{1/2} = 5\\,730$ anys\n- Fracció de $^{14}\\text{C}$ que queda: $N/N_0 = 0{,}58$\n- Incògnites: a) reacció de desintegració; b) temps transcorregut des de la mort de l'arbre."
+          },
+          {
+            "apartat": "a",
+            "titol": "Desintegració beta menys",
+            "cos": "El nombre atòmic passa de 6 a 7 i el nombre màssic no canvia: és una **desintegració $\\beta^-$**. Dins del nucli, un neutró es transforma en un protó, un electró (que és la partícula $\\beta$) i un antineutrí electrònic:\n\n$$n \\rightarrow p + e^- + \\bar\\nu_e$$\n\nLa reacció és:\n\n$$^{14}_{\\ 6}\\text{C} \\rightarrow\\ ^{14}_{\\ 7}\\text{N} +\\ ^{\\ \\,0}_{-1}e +\\ ^{0}_{0}\\bar\\nu_e$$\n\nComprovació de les conservacions: nombre màssic $14 = 14 + 0 + 0$; càrrega $6 = 7 + (-1) + 0$. ✓"
+          },
+          {
+            "apartat": "b",
+            "titol": "Constant de desintegració",
+            "cos": "La llei de desintegració radioactiva és $N(t) = N_0\\,e^{-\\lambda t}$. Quan $t = T_{1/2}$ queda la meitat:\n\n$$\\frac{1}{2} = e^{-\\lambda T_{1/2}} \\quad\\Rightarrow\\quad \\lambda = \\frac{\\ln 2}{T_{1/2}} = \\frac{0{,}693}{5\\,730} = 1{,}21 \\times 10^{-4}\\ \\text{anys}^{-1}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Antiguitat del sarcòfag",
+            "cos": "Com que en morir l'arbre tenia la proporció atmosfèrica, el 58 % vol dir $N/N_0 = 0{,}58$:\n\n$$0{,}58 = e^{-\\lambda t} \\quad\\Rightarrow\\quad t = -\\frac{\\ln 0{,}58}{\\lambda} = \\frac{0{,}545}{1{,}21 \\times 10^{-4}} \\approx 4\\,500\\ \\text{anys}$$\n\nEquivalentment, sense calcular $\\lambda$: $t = T_{1/2}\\,\\dfrac{\\ln 0{,}58}{\\ln 0{,}5} = 5\\,730 \\cdot 0{,}786 = 4\\,503$ anys.\n\nResultat: **$t \\approx 4\\,500$ anys**. Té sentit: queda més de la meitat, per tant ha passat menys d'un període de semidesintegració."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$^{14}_{\\ 6}\\text{C} \\rightarrow\\ ^{14}_{\\ 7}\\text{N} +\\ ^{\\ \\,0}_{-1}e + \\bar\\nu_e$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\lambda = 1{,}21 \\times 10^{-4}\\ \\text{anys}^{-1}$; $t \\approx 4\\,500$ anys"
+          }
+        ],
+        "nota": "Els criteris oficials penalitzen ometre l'antineutrí. Es pot escriure $^{\\ \\,0}_{-1}\\beta$ en lloc de $^{\\ \\,0}_{-1}e$."
+      }
+    },
+    {
+      "id": "fisica-2020-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Experiment de David Scott a la Lluna: gravetat lunar, massa de la Lluna i període orbital",
+      "tema": "gravitacio",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "caiguda lliure",
+        "intensitat del camp gravitatori",
+        "massa d'un planeta",
+        "període orbital",
+        "força centrípeta"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "El 1971 l'astronauta David Scott, de la missió *Apollo 15*, va fer l'experiment següent a la superfície de la Lluna: en una mà hi tenia una ploma de falcó de $30\\ \\text{g}$ de massa i a l'altra mà hi tenia un martell d'alumini d'$1{,}32\\ \\text{kg}$. Els va deixar anar alhora des de la mateixa altura i va comprovar la predicció de Galileu segons la qual en caiguda lliure els dos objectes havien d'arribar simultàniament a terra. Concretament, tots dos objectes van trigar $1{,}1\\ \\text{s}$ a recórrer els $100\\ \\text{cm}$ que els separaven del terra.\n\n**Dades:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$; $M_\\text{Terra} = 5{,}98 \\times 10^{24}\\ \\text{kg}$; distància Terra-Lluna $= 3{,}84 \\times 10^{8}\\ \\text{m}$; $R_\\text{Lluna} = 1{,}74 \\times 10^{6}\\ \\text{m}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "A partir de l'experiment de David Scott, calculeu la intensitat del camp gravitatori a la superfície de la Lluna i la massa de la Lluna.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el període orbital de la Lluna al voltant de la Terra.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Altura de caiguda: $h = 100\\ \\text{cm} = 1{,}00\\ \\text{m}$; temps: $t = 1{,}1\\ \\text{s}$\n- $R_L = 1{,}74 \\times 10^{6}\\ \\text{m}$; $M_T = 5{,}98 \\times 10^{24}\\ \\text{kg}$; $r = 3{,}84 \\times 10^{8}\\ \\text{m}$\n- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2/\\text{kg}^2$\n- Incògnites: a) $g_L$ i $M_L$; b) període orbital $T$ de la Lluna.\n\nLes masses de la ploma i del martell no calen: a la Lluna no hi ha aire i tots dos cauen amb la mateixa acceleració."
+          },
+          {
+            "apartat": "a",
+            "titol": "Intensitat del camp gravitatori (caiguda lliure)",
+            "cos": "Sense aire, la caiguda és un **MRUA** que parteix del repòs amb acceleració $g_L$:\n\n$$h = \\frac{1}{2}g_L t^2 \\quad\\Rightarrow\\quad g_L = \\frac{2h}{t^2} = \\frac{2 \\cdot 1{,}00}{(1{,}1)^2} = 1{,}65\\ \\text{m/s}^2$$\n\nResultat: **$g_L = 1{,}65\\ \\text{m/s}^2$** (aproximadament una sisena part de la terrestre)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Massa de la Lluna",
+            "cos": "A la superfície, el pes d'un objecte és la força gravitatòria que hi fa la Lluna:\n\n$$m\\,g_L = G\\frac{m M_L}{R_L^2} \\quad\\Rightarrow\\quad M_L = \\frac{g_L R_L^2}{G}$$\n\n$$M_L = \\frac{1{,}65 \\cdot (1{,}74 \\times 10^{6})^2}{6{,}67 \\times 10^{-11}} = 7{,}50 \\times 10^{22}\\ \\text{kg}$$\n\nResultat: **$M_L = 7{,}50 \\times 10^{22}\\ \\text{kg}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "La força gravitatòria fa de força centrípeta",
+            "cos": "Considerem que la Lluna descriu una òrbita circular de radi $r$ al voltant de la Terra. L'atracció gravitatòria terrestre és la força centrípeta:\n\n$$G\\frac{M_T M_L}{r^2} = M_L\\,\\omega^2 r, \\qquad \\omega = \\frac{2\\pi}{T}$$\n\nLa massa de la Lluna se simplifica i aïllant el període:\n\n$$T = 2\\pi\\sqrt{\\frac{r^3}{G M_T}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Càlcul del període",
+            "cos": "$$T = 2\\pi\\sqrt{\\frac{(3{,}84 \\times 10^{8})^3}{6{,}67 \\times 10^{-11}\\cdot 5{,}98 \\times 10^{24}}} = 2{,}37 \\times 10^{6}\\ \\text{s}$$\n\nPassant-ho a dies: $T = \\dfrac{2{,}37 \\times 10^{6}}{86\\,400} = 27{,}4$ dies.\n\nResultat: **$T = 2{,}37 \\times 10^{6}\\ \\text{s} \\approx 27{,}4$ dies** (el mes sideri real és de 27,3 dies)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$g_L = 1{,}65\\ \\text{m/s}^2$; $M_L = 7{,}50 \\times 10^{22}\\ \\text{kg}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$T = 2{,}37 \\times 10^{6}\\ \\text{s} \\approx 27{,}4$ dies"
+          }
+        ],
+        "nota": "Error típic a b): fer servir la massa de la Lluna en lloc de la de la Terra. El període d'un satèl·lit depèn de la massa del cos central (la Terra), no de la del satèl·lit."
+      }
+    },
+    {
+      "id": "fisica-2020-J-e7",
+      "exercici": 7,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Camp elèctric entre dues càrregues de signe contrari i punt de potencial nul",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp elèctric",
+        "principi de superposició",
+        "potencial elèctric",
+        "càrregues puntuals",
+        "llei de coulomb"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Dues càrregues elèctriques puntuals de $-5{,}0\\ \\mu\\text{C}$ i $7{,}0\\ \\mu\\text{C}$ estan separades $10\\ \\text{cm}$ l'una de l'altra.\n\n**Dada:** $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el camp elèctric (mòdul, direcció i sentit) en un punt a $3{,}0\\ \\text{cm}$ de la càrrega negativa i a $7{,}0\\ \\text{cm}$ de la càrrega positiva. Aquest punt pertany a la línia que uneix les dues càrregues.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu en quin punt de la línia que uneix les càrregues el potencial elèctric és nul.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $q_1 = -5{,}0\\ \\mu\\text{C} = -5{,}0 \\times 10^{-6}\\ \\text{C}$; $q_2 = +7{,}0\\ \\mu\\text{C} = 7{,}0 \\times 10^{-6}\\ \\text{C}$\n- Separació: $D = 10\\ \\text{cm} = 0{,}10\\ \\text{m}$\n- Punt P: $d_1 = 0{,}03\\ \\text{m}$ de $q_1$ i $d_2 = 0{,}07\\ \\text{m}$ de $q_2$ (és entre les dues càrregues)\n- Incògnites: a) $\\vec E$ a P; b) punt on $V = 0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Direcció i sentit de cada camp",
+            "cos": "El camp d'una càrrega positiva surt de la càrrega i el d'una negativa hi entra. Posem $q_1$ a l'esquerra i $q_2$ a la dreta:\n\n- $\\vec E_1$ (de $q_1$, negativa): apunta **cap a $q_1$**, és a dir, cap a l'esquerra.\n- $\\vec E_2$ (de $q_2$, positiva): s'allunya de $q_2$, és a dir, també **cap a l'esquerra**.\n\n![Camps creats per cada càrrega al punt P (solució oficial)](img/fisica/2020-J/e7-sol.png)\n\nCom que P és entre dues càrregues de signe contrari, els dos camps tenen el mateix sentit i els mòduls se sumen."
+          },
+          {
+            "apartat": "a",
+            "titol": "Mòdul de cada camp",
+            "cos": "$$E = k\\frac{|q|}{d^2}$$\n\n$$E_1 = 8{,}99 \\times 10^{9}\\cdot\\frac{5{,}0 \\times 10^{-6}}{(0{,}03)^2} = 4{,}99 \\times 10^{7}\\ \\text{N/C}$$\n\n$$E_2 = 8{,}99 \\times 10^{9}\\cdot\\frac{7{,}0 \\times 10^{-6}}{(0{,}07)^2} = 1{,}28 \\times 10^{7}\\ \\text{N/C}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp total (superposició)",
+            "cos": "$$E = E_1 + E_2 = 4{,}99 \\times 10^{7} + 1{,}28 \\times 10^{7} = 6{,}28 \\times 10^{7}\\ \\text{N/C}$$\n\nResultat: **$E = 6{,}28 \\times 10^{7}\\ \\text{N/C}$**, direcció de la recta que uneix les càrregues i sentit **de la càrrega positiva cap a la negativa**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Condició de potencial nul",
+            "cos": "El potencial és un escalar i se suma amb el seu signe: $V = k\\dfrac{q_1}{r_1} + k\\dfrac{q_2}{r_2}$. Perquè sigui zero, el punt ha d'estar més a prop de la càrrega de menys valor absolut ($q_1$).\n\n**Punt entre les càrregues**, a una distància $d$ de $q_1$ (i $0{,}1 - d$ de $q_2$):\n\n$$0 = -k\\frac{5 \\times 10^{-6}}{d} + k\\frac{7 \\times 10^{-6}}{0{,}1 - d} \\quad\\Rightarrow\\quad 5\\,(0{,}1 - d) = 7d \\quad\\Rightarrow\\quad 12d = 0{,}5$$\n\n$$d = 0{,}0417\\ \\text{m} = 4{,}17\\ \\text{cm}$$\n\nResultat: **a $4{,}17\\ \\text{cm}$ de la càrrega negativa** (i $5{,}83\\ \\text{cm}$ de la positiva)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Segon punt, fora del segment",
+            "cos": "Si considerem tota la recta que passa per les càrregues, hi ha un altre punt amb $V = 0$, a l'exterior, al costat de la càrrega negativa, a una distància $x$ d'ella (i $x + 0{,}1$ de la positiva):\n\n$$\\frac{5}{x} = \\frac{7}{x + 0{,}1} \\quad\\Rightarrow\\quad 5x + 0{,}5 = 7x \\quad\\Rightarrow\\quad x = 0{,}25\\ \\text{m}$$\n\nÉs a dir, a $25\\ \\text{cm}$ de la càrrega negativa, en el costat oposat a la positiva."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 6{,}28 \\times 10^{7}\\ \\text{N/C}$, al llarg de la recta, de la càrrega positiva cap a la negativa"
+          },
+          {
+            "apartat": "b",
+            "valor": "Entre les càrregues: a $4{,}17\\ \\text{cm}$ de la negativa; a més, a la recta exterior, a $25\\ \\text{cm}$ de la negativa (pel costat oposat a la positiva)"
+          }
+        ],
+        "nota": "La solució oficial només dona el punt entre les càrregues ($d = 0{,}0417\\ \\text{m}$). Si s'interpreta \"la línia que uneix les càrregues\" com tota la recta, també hi ha el punt exterior a $0{,}25\\ \\text{m}$ de la càrrega negativa. Error típic: sumar els mòduls dels camps per trobar on el potencial és zero, o confondre el punt de camp nul amb el de potencial nul."
+      }
+    },
+    {
+      "id": "fisica-2020-J-e8",
+      "exercici": 8,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cèl·lula fotoelèctrica d'una porta de garatge: energia dels fotons i energia cinètica dels electrons",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "funció de treball",
+        "energia d'un fotó",
+        "freqüència llindar",
+        "energia cinètica màxima"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Per a obrir i tancar la porta del garatge, disposem d'una cèl·lula fotoelèctrica d'un material alcalí que presenta una funció de treball d'$1{,}20\\ \\text{eV}$. Sobre la superfície d'aquest material hi fem incidir llum de diverses longituds d'ona: $\\lambda_1 = 1{,}04\\ \\mu\\text{m}$; $\\lambda_2 = 0{,}6\\ \\mu\\text{m}$; $\\lambda_3 = 0{,}5\\ \\mu\\text{m}$.\n\n**Dades:** $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$; $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina freqüència i quina energia (en eV) tenen els fotons incidents en cada cas?",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Representeu en una gràfica l'energia cinètica màxima dels electrons arrencats del fotocàtode en funció de l'energia dels fotons incidents (en eV). Hi ha electrons arrencats en tots els casos? Justifiqueu la resposta.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Funció de treball: $W_e = 1{,}20\\ \\text{eV} = 1{,}92 \\times 10^{-19}\\ \\text{J}$\n- $\\lambda_1 = 1{,}04 \\times 10^{-6}\\ \\text{m}$; $\\lambda_2 = 0{,}6 \\times 10^{-6}\\ \\text{m}$; $\\lambda_3 = 0{,}5 \\times 10^{-6}\\ \\text{m}$\n- $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$; $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$\n- Incògnites: a) $f$ i $E$ de cada fotó; b) gràfica $E_{c,\\text{màx}}$–$E_\\text{fotó}$ i si hi ha emissió."
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüència i energia d'un fotó",
+            "cos": "La llum es propaga a velocitat $c$, de manera que $f = c/\\lambda$. Segons Planck-Einstein, cada fotó transporta una energia:\n\n$$E = h f = \\frac{hc}{\\lambda}$$\n\ni per passar-la a eV dividim per $1{,}602 \\times 10^{-19}\\ \\text{J/eV}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul per a les tres longituds d'ona",
+            "cos": "Exemple per a $\\lambda_1$:\n\n$$f_1 = \\frac{3{,}00 \\times 10^{8}}{1{,}04 \\times 10^{-6}} = 2{,}88 \\times 10^{14}\\ \\text{Hz}, \\qquad E_1 = 6{,}63 \\times 10^{-34}\\cdot 2{,}88 \\times 10^{14} = 1{,}91 \\times 10^{-19}\\ \\text{J} = 1{,}19\\ \\text{eV}$$\n\n| $\\lambda$ (μm) | $f$ (Hz) | $E$ (J) | $E$ (eV) |\n|---|---|---|---|\n| 1,04 | $2{,}88 \\times 10^{14}$ | $1{,}91 \\times 10^{-19}$ | 1,19 |\n| 0,6 | $5{,}00 \\times 10^{14}$ | $3{,}32 \\times 10^{-19}$ | 2,07 |\n| 0,5 | $6{,}00 \\times 10^{14}$ | $3{,}98 \\times 10^{-19}$ | 2,48 |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació d'Einstein de l'efecte fotoelèctric",
+            "cos": "Un fotó cedeix tota la seva energia a un electró. Una part, com a mínim $W_e$, serveix per arrencar-lo del metall i la resta és energia cinètica:\n\n$$E_{c,\\text{màx}} = E_\\text{fotó} - W_e$$\n\nSi $E_\\text{fotó} < W_e$, **no s'arrenca cap electró**, per intensa que sigui la llum.\n\n| $\\lambda$ (μm) | $E_\\text{fotó}$ (eV) | $E_{c,\\text{màx}}$ (eV) |\n|---|---|---|\n| 1,04 | 1,19 | — (no hi ha emissió) |\n| 0,6 | 2,07 | $2{,}07 - 1{,}20 = 0{,}87$ |\n| 0,5 | 2,48 | $2{,}48 - 1{,}20 = 1{,}28$ |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Freqüència llindar",
+            "cos": "La freqüència mínima per arrencar electrons correspon a fotons d'energia igual a la funció de treball:\n\n$$f_0 = \\frac{W_e}{h} = \\frac{1{,}20 \\cdot 1{,}602 \\times 10^{-19}}{6{,}63 \\times 10^{-34}} = 2{,}90 \\times 10^{14}\\ \\text{Hz}$$\n\nCom que $f_1 = 2{,}88 \\times 10^{14}\\ \\text{Hz} < f_0$ (o bé $1{,}19\\ \\text{eV} < 1{,}20\\ \\text{eV}$), **amb $\\lambda_1$ no s'arrenquen electrons**. Amb $\\lambda_2$ i $\\lambda_3$ sí."
+          },
+          {
+            "apartat": "b",
+            "titol": "Gràfica",
+            "cos": "La gràfica $E_{c,\\text{màx}}$ en funció de $E_\\text{fotó}$ és zero fins a $E_\\text{fotó} = W_e = 1{,}20\\ \\text{eV}$ i, a partir d'aquí, una recta de pendent 1 que passa pels punts $(2{,}07;\\ 0{,}87)$ i $(2{,}48;\\ 1{,}28)$. Cal indicar als eixos les magnituds i les unitats (eV).\n\n![Energia cinètica màxima dels electrons en funció de l'energia dels fotons (solució oficial)](img/fisica/2020-J/e8-sol.png)\n\nNo s'ha de prolongar la recta per sota de zero: l'energia cinètica no pot ser negativa (els criteris oficials ho penalitzen)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$f_1 = 2{,}88 \\times 10^{14}\\ \\text{Hz}$, $1{,}19\\ \\text{eV}$; $f_2 = 5{,}00 \\times 10^{14}\\ \\text{Hz}$, $2{,}07\\ \\text{eV}$; $f_3 = 6{,}00 \\times 10^{14}\\ \\text{Hz}$, $2{,}48\\ \\text{eV}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_{c,\\text{màx}} = 0$ (no hi ha emissió) per a $\\lambda_1$; $0{,}87\\ \\text{eV}$ per a $\\lambda_2$; $1{,}28\\ \\text{eV}$ per a $\\lambda_3$. Llindar: $f_0 = 2{,}90 \\times 10^{14}\\ \\text{Hz}$"
+          }
+        ],
+        "nota": "El cas de $\\lambda_1$ és molt ajustat ($1{,}19\\ \\text{eV}$ davant de $1{,}20\\ \\text{eV}$): convé comparar amb prou xifres significatives o fer servir la freqüència llindar."
+      }
+    }
+  ]
+}

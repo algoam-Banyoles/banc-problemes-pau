@@ -1,0 +1,565 @@
+{
+  "examen": {
+    "id": "mates-2022-S",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2022,
+    "convocatoria": "setembre",
+    "serie": "3",
+    "pdf_examen": "pdfs/mates/2022-S-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2022-S-solucio.pdf",
+    "estructura": "Cal respondre QUATRE de les sis qüestions. Cada qüestió val 2,5 punts. Es pot fer servir calculadora (no programable ni amb capacitat d'emmagatzemar o transmetre dades)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2022-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Pal d'una carpa perpendicular a un pla: recta, peu de la perpendicular i longitud",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "vector normal",
+        "equació paramètrica de la recta",
+        "intersecció recta-pla",
+        "distància punt-pla"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2,
+        3
+      ],
+      "enunciat": "El pal central que sosté la lona de la carpa d'un circ se situa perpendicularment sobre el pla d'un terra l'equació del qual és $\\pi: x - z = 6$. Sabem que la cúpula de la carpa (el punt més alt per on passa el pal) és al punt de coordenades $P = (30, 1, 0)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació paramètrica de la recta que conté el pal.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu les coordenades del punt de contacte del pal amb el terra, i la longitud del pal.",
+          "punts": 1.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Pla del terra: $\\pi: x - z = 6$\n- Punt més alt del pal: $P = (30, 1, 0)$\n- El pal és **perpendicular** al terra.\n- Incògnites: a) recta $r$ que conté el pal; b) punt de contacte $Q = r \\cap \\pi$ i longitud $d(P, Q)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vector director: el vector normal del pla",
+            "cos": "Una recta perpendicular a un pla té com a vector director el **vector normal** del pla. En un pla $Ax + By + Cz = D$, el vector normal és $\\vec n = (A, B, C)$. Aquí $\\pi: 1\\cdot x + 0\\cdot y - 1\\cdot z = 6$, per tant:\n\n$$\\vec n = (1, 0, -1)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació paramètrica de la recta",
+            "cos": "La recta passa per $P = (30, 1, 0)$ i té direcció $\\vec v = \\vec n = (1, 0, -1)$. L'equació paramètrica és $(x, y, z) = P + k\\,\\vec v$:\n\n$$r: \\begin{cases} x = 30 + k \\\\ y = 1 \\\\ z = -k \\end{cases}, \\quad k \\in \\mathbb{R}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punt de contacte: intersecció de la recta amb el pla",
+            "cos": "El peu del pal és el punt de la recta que també és del pla. Substituïm les coordenades paramètriques de $r$ a l'equació de $\\pi$:\n\n$$(30 + k) - (-k) = 6 \\;\\Rightarrow\\; 30 + 2k = 6 \\;\\Rightarrow\\; k = -12$$\n\nAmb $k = -12$: $x = 30 - 12 = 18$, $y = 1$, $z = 12$.\n\n$$\\boxed{Q = (18, 1, 12)}$$\n\nComprovació: $18 - 12 = 6$ ✓, és del pla."
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud del pal",
+            "cos": "La longitud és la distància entre $P$ i $Q$, és a dir, el mòdul del vector $\\overrightarrow{PQ}$:\n\n$$\\overrightarrow{PQ} = Q - P = (18 - 30,\\ 1 - 1,\\ 12 - 0) = (-12, 0, 12)$$\n\n$$d(P, Q) = \\sqrt{(-12)^2 + 0^2 + 12^2} = \\sqrt{288} = 12\\sqrt{2} \\approx 16{,}97$$\n\nResultat: **la longitud del pal és $12\\sqrt{2}$ unitats de longitud**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovació amb la distància punt-pla",
+            "cos": "Com que el pal és perpendicular al terra, la seva longitud és la distància del punt $P$ al pla $\\pi$:\n\n$$d(P, \\pi) = \\frac{|A x_0 + B y_0 + C z_0 - D|}{\\sqrt{A^2 + B^2 + C^2}} = \\frac{|30 - 0 - 6|}{\\sqrt{1 + 0 + 1}} = \\frac{24}{\\sqrt{2}} = 12\\sqrt{2}\\ \\checkmark$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$r: (x, y, z) = (30 + k,\\ 1,\\ -k),\\ k \\in \\mathbb{R}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$Q = (18, 1, 12)$; longitud $= 12\\sqrt{2} \\approx 16{,}97$ u"
+          }
+        ],
+        "nota": "Error típic: agafar com a vector director un vector qualsevol del pla en lloc del vector normal. La solució oficial també indica que la longitud es pot obtenir directament com la distància del punt P al pla."
+      }
+    },
+    {
+      "id": "mates-2022-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Estudi d'una funció racional 9/(x²+x−2) i recta tangent a x = 4",
+      "tema": "funcions",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "domini",
+        "asímptotes",
+        "extrems relatius",
+        "monotonia",
+        "recta tangent",
+        "representació gràfica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "Considereu la funció $f(x) = \\dfrac{9}{x^2 + x - 2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu el domini, les possibles asímptotes, els extrems relatius i els intervals de creixement i decreixement de la funció.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'equació general de la recta tangent a la funció $f(x)$ en el punt d'abscissa $x = 4$. Representeu en un mateix gràfic la funció $f(x)$ i la recta tangent.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Domini",
+            "cos": "És un quocient de polinomis: existeix sempre que el denominador no sigui zero.\n\n$$x^2 + x - 2 = 0 \\;\\Rightarrow\\; x = \\frac{-1 \\pm \\sqrt{1 + 8}}{2} = \\frac{-1 \\pm 3}{2} \\;\\Rightarrow\\; x = 1,\\ x = -2$$\n\nPer tant $x^2 + x - 2 = (x + 2)(x - 1)$ i\n\n$$\\text{Dom}(f) = \\mathbb{R} \\setminus \\{-2, 1\\} = (-\\infty, -2) \\cup (-2, 1) \\cup (1, +\\infty)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Asímptotes verticals",
+            "cos": "Als punts que anul·len el denominador, el numerador val $9 \\neq 0$, de manera que el límit és del tipus $\\frac{9}{0}$, és a dir, infinit:\n\n$$\\lim_{x \\to -2} f(x) = \\frac{9}{0} = \\infty, \\qquad \\lim_{x \\to 1} f(x) = \\frac{9}{0} = \\infty$$\n\nHi ha **asímptotes verticals** a $x = -2$ i a $x = 1$.\n\n(Estudiant el signe: $f > 0$ a $(-\\infty,-2)\\cup(1,+\\infty)$ i $f < 0$ a $(-2,1)$; per tant, per l'esquerra de $-2$ tendeix a $+\\infty$, per la dreta de $-2$ a $-\\infty$, per l'esquerra d'$1$ a $-\\infty$ i per la dreta d'$1$ a $+\\infty$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Asímptotes horitzontals i obliqües",
+            "cos": "El numerador és de grau 0 i el denominador de grau 2, així que quan $x \\to \\pm\\infty$ el quocient tendeix a zero:\n\n$$\\lim_{x \\to \\pm\\infty} \\frac{9}{x^2 + x - 2} = \\frac{9}{+\\infty} = 0$$\n\nHi ha **asímptota horitzontal $y = 0$** (a $+\\infty$ i a $-\\infty$). Com que n'hi ha d'horitzontal pels dos costats, **no hi ha asímptotes obliqües**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Derivada i punts singulars",
+            "cos": "Derivem amb la regla del quocient:\n\n$$f'(x) = \\frac{0\\cdot(x^2+x-2) - 9\\,(2x + 1)}{(x^2 + x - 2)^2} = \\frac{-9(2x + 1)}{(x^2 + x - 2)^2}$$\n\nEls extrems relatius són on $f'(x) = 0$:\n\n$$-9(2x + 1) = 0 \\;\\Rightarrow\\; x = -\\frac{1}{2}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Signe de la derivada: monotonia i classificació de l'extrem",
+            "cos": "El denominador de $f'$ és un quadrat, sempre positiu al domini; per tant el signe de $f'$ és el de $-9(2x+1)$: positiu si $x < -\\frac12$ i negatiu si $x > -\\frac12$. Separem també els punts que no són del domini:\n\n| Interval | $(-\\infty, -2)$ | $(-2, -\\frac12)$ | $(-\\frac12, 1)$ | $(1, +\\infty)$ |\n|---|---|---|---|---|\n| signe de $f'$ | $+$ | $+$ | $-$ | $-$ |\n| $f$ | creixent | creixent | decreixent | decreixent |\n\n- **Creixent** a $(-\\infty, -2) \\cup (-2, -\\frac12)$.\n- **Decreixent** a $(-\\frac12, 1) \\cup (1, +\\infty)$.\n- A $x = -\\frac12$ la funció passa de créixer a decréixer: **màxim relatiu**. El valor és\n$$f\\left(-\\tfrac12\\right) = \\frac{9}{\\frac14 - \\frac12 - 2} = \\frac{9}{-\\frac94} = -4 \\;\\Rightarrow\\; \\text{màxim relatiu a } \\left(-\\tfrac12, -4\\right)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Fórmula de la recta tangent",
+            "cos": "La recta tangent a $f$ en $x = a$ és\n\n$$y = f(a) + f'(a)\\,(x - a)$$\n\nCalculem els dos valors per a $a = 4$:\n\n$$f(4) = \\frac{9}{16 + 4 - 2} = \\frac{9}{18} = \\frac12, \\qquad f'(4) = \\frac{-9\\,(8 + 1)}{18^2} = \\frac{-81}{324} = -\\frac14$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació de la recta tangent",
+            "cos": "$$y = \\frac12 - \\frac14\\,(x - 4) = -\\frac14 x + 1 + \\frac12 = -\\frac14 x + \\frac32$$\n\nMultiplicant per 4 i passant-ho tot a un costat obtenim l'**equació general**:\n\n$$\\boxed{x + 4y - 6 = 0}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Representació gràfica",
+            "cos": "Fem servir tot el que sabem de l'apartat a): asímptotes verticals $x = -2$ i $x = 1$, asímptota horitzontal $y = 0$, màxim relatiu $(-\\frac12, -4)$ i el signe de $f$. Una petita taula de valors ajuda:\n\n| $x$ | $-3$ | $-1$ | $-\\frac12$ | $0$ | $2$ | $4$ |\n|---|---|---|---|---|---|---|\n| $f(x)$ | $\\frac94$ | $-\\frac92$ | $-4$ | $-\\frac92$ | $\\frac94$ | $\\frac12$ |\n\n- A $(-\\infty, -2)$: la gràfica surt de $y = 0$ per sobre i puja cap a $+\\infty$ en acostar-se a $x = -2$.\n- A $(-2, 1)$: forma de «U» invertida per sota de l'eix, que baixa a $-\\infty$ a les dues asímptotes verticals, amb el màxim a $(-\\frac12, -4)$.\n- A $(1, +\\infty)$: baixa des de $+\\infty$ i s'acosta a $y = 0$ per sobre.\n\nLa recta $y = -\\frac14 x + \\frac32$ passa per $(0, \\frac32)$ i $(6, 0)$ i toca la corba a $(4, \\frac12)$. (Curiositat: torna a tallar la corba a $x = -3$, on totes dues valen $\\frac94$.)\n\n![Gràfica de la funció i de la recta tangent (solució oficial; dibuix aproximat)](img/mates/2022-S/e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\text{Dom} f = \\mathbb{R}\\setminus\\{-2,1\\}$; AV: $x=-2$, $x=1$; AH: $y=0$; sense obliqües; màxim relatiu a $(-\\frac12,-4)$; creixent a $(-\\infty,-2)\\cup(-2,-\\frac12)$, decreixent a $(-\\frac12,1)\\cup(1,+\\infty)$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Recta tangent: $y = -\\frac14 x + \\frac32$, és a dir, $x + 4y - 6 = 0$"
+          }
+        ],
+        "nota": "La solució oficial escriu per errada «asímptota horitzontal a x = 0»: l'asímptota horitzontal és la recta y = 0. L'oficial dona la recta tangent en forma explícita; l'equació general demanada és x + 4y − 6 = 0. La gràfica oficial és orientativa (les asímptotes verticals hi queden lleugerament desplaçades)."
+      }
+    },
+    {
+      "id": "mates-2022-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Rang d'una matriu 3×3 amb paràmetre i sistema homogeni compatible indeterminat",
+      "tema": "matrius",
+      "temes_secundaris": [
+        "sistemes"
+      ],
+      "conceptes": [
+        "rang",
+        "determinant",
+        "discussió amb paràmetre",
+        "sistema homogeni",
+        "teorema de Rouché-Frobenius",
+        "regla de Cramer"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "Considereu la matriu $A = \\begin{pmatrix} 1 & a & 3 \\\\ 2a & 5 & 3a \\\\ 7 & 4a & 9 \\end{pmatrix}$, que depèn del paràmetre $a$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el rang de la matriu $A$ per als diferents valors del paràmetre $a$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Si $X = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$, resoleu l'equació matricial següent: $\\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\end{pmatrix} \\cdot X = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Estratègia: on s'anul·la el determinant",
+            "cos": "Una matriu $3\\times 3$ té rang 3 si i només si el seu determinant és diferent de zero. Com que $A$ depèn de $a$, calculem $|A|$ i busquem els valors de $a$ que l'anul·len; només en aquests caldrà estudiar si el rang és 2 o 1."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul del determinant (regla de Sarrus)",
+            "cos": "$$|A| = \\begin{vmatrix} 1 & a & 3 \\\\ 2a & 5 & 3a \\\\ 7 & 4a & 9 \\end{vmatrix} = 1\\cdot5\\cdot9 + a\\cdot3a\\cdot7 + 3\\cdot2a\\cdot4a - 3\\cdot5\\cdot7 - 1\\cdot3a\\cdot4a - a\\cdot2a\\cdot9$$\n\n$$= 45 + 21a^2 + 24a^2 - 105 - 12a^2 - 18a^2 = 15a^2 - 60$$\n\n$$15a^2 - 60 = 0 \\iff a^2 = 4 \\iff a = \\pm 2$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Discussió dels casos",
+            "cos": "- **Si $a \\neq \\pm 2$**: $|A| \\neq 0$, per tant $\\text{rang}\\,A = 3$.\n- **Si $a = 2$**: $|A| = 0$, així que el rang és menor que 3. Busquem un menor d'ordre 2 no nul: $\\begin{vmatrix} 1 & 2 \\\\ 4 & 5 \\end{vmatrix} = 5 - 8 = -3 \\neq 0$. Per tant $\\text{rang}\\,A = 2$.\n- **Si $a = -2$**: $|A| = 0$ i $\\begin{vmatrix} 1 & -2 \\\\ -4 & 5 \\end{vmatrix} = 5 - 8 = -3 \\neq 0$. Per tant $\\text{rang}\\,A = 2$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantejament: és un sistema homogeni",
+            "cos": "Fent el producte, l'equació matricial és el sistema lineal\n\n$$\\begin{cases} x + 2y + 3z = 0 \\\\ 4x + 5y + 6z = 0 \\\\ 7x + 8y + 9z = 0 \\end{cases}$$\n\nÉs **homogeni** (termes independents nuls), de manera que sempre té almenys la solució $(0, 0, 0)$. La pregunta és si en té més."
+          },
+          {
+            "apartat": "b",
+            "titol": "Rang i teorema de Rouché-Frobenius",
+            "cos": "La matriu de coeficients és justament la matriu $A$ de l'apartat a) amb $a = 2$. Ho comprovem directament:\n\n$$\\begin{vmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\end{vmatrix} = 45 + 84 + 96 - 105 - 48 - 72 = 0, \\qquad \\begin{vmatrix} 1 & 2 \\\\ 4 & 5 \\end{vmatrix} = -3 \\neq 0$$\n\nAixí, $\\text{rang}(A) = 2$. La matriu ampliada només afegeix una columna de zeros, que no pot augmentar el rang: $\\text{rang}(A|0) = 2$. Com que el rang és $2 <$ nombre d'incògnites $= 3$, el sistema és **compatible indeterminat** amb $3 - 2 = 1$ grau de llibertat."
+          },
+          {
+            "apartat": "b",
+            "titol": "Resolució per Cramer amb z com a paràmetre",
+            "cos": "El menor no nul $\\begin{vmatrix} 1 & 2 \\\\ 4 & 5 \\end{vmatrix}$ ens diu que ens quedem amb les dues primeres equacions i amb $x, y$ com a incògnites principals; passem $z$ a la dreta:\n\n$$\\begin{cases} x + 2y = -3z \\\\ 4x + 5y = -6z \\end{cases}$$\n\n$$x = \\frac{\\begin{vmatrix} -3z & 2 \\\\ -6z & 5 \\end{vmatrix}}{-3} = \\frac{-15z + 12z}{-3} = \\frac{-3z}{-3} = z, \\qquad y = \\frac{\\begin{vmatrix} 1 & -3z \\\\ 4 & -6z \\end{vmatrix}}{-3} = \\frac{-6z + 12z}{-3} = -2z$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Solució",
+            "cos": "$$X = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} z \\\\ -2z \\\\ z \\end{pmatrix} = z\\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}, \\quad z \\in \\mathbb{R}$$\n\nComprovació amb la tercera equació: $7z + 8(-2z) + 9z = 7z - 16z + 9z = 0$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a \\neq \\pm2$: rang 3; $a = 2$ o $a = -2$: rang 2"
+          },
+          {
+            "apartat": "b",
+            "valor": "$X = (z, -2z, z)^T$, $z \\in \\mathbb{R}$ (sistema compatible indeterminat)"
+          }
+        ],
+        "nota": "Truc per a l'apartat b): la tercera fila és 2·(2a fila) − (1a fila), per això el determinant és zero i el rang és 2."
+      }
+    },
+    {
+      "id": "mates-2022-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Funció a trossos amb logaritme contínua i derivable; primitiva que passa per un punt",
+      "tema": "derivades",
+      "temes_secundaris": [
+        "integrals",
+        "funcions"
+      ],
+      "conceptes": [
+        "continuïtat",
+        "derivabilitat",
+        "funció a trossos",
+        "primitiva",
+        "integral quasi immediata",
+        "constant d'integració"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8,
+        9
+      ],
+      "enunciat": "(Aquesta qüestió té dos apartats independents, sense enunciat comú.)",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Considereu la funció $f(x) = \\begin{cases} \\ln(x), & \\text{si } x \\in (0, e) \\\\ ax + b, & \\text{si } x \\in [e, 4) \\end{cases}$, on $a$ i $b$ són nombres reals. Trobeu el valor de $a$ i de $b$ per tal que la funció sigui contínua i derivable a l'interval $(0, 4)$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la funció $g(x)$ que satisfà $g'(x) = \\dfrac{x^3}{9x^4 + 1}$ i que passa pel punt $(0, -1)$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "On pot fallar la continuïtat i la derivabilitat",
+            "cos": "El logaritme $\\ln x$ és continu i derivable a $(0, e)$, i la funció lineal $ax + b$ ho és a $(e, 4)$. Per tant, l'únic punt problemàtic és on canvia l'expressió, $x = e$. Hi imposem continuïtat i derivabilitat."
+          },
+          {
+            "apartat": "a",
+            "titol": "Condició de continuïtat a x = e",
+            "cos": "Cal que els límits laterals coincideixin amb $f(e) = ae + b$:\n\n$$\\lim_{x \\to e^-} \\ln x = \\ln e = 1, \\qquad \\lim_{x \\to e^+} (ax + b) = ae + b$$\n\n$$\\Rightarrow\\; ae + b = 1$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Condició de derivabilitat a x = e",
+            "cos": "Derivem cada tros: $f'(x) = \\dfrac1x$ si $x \\in (0, e)$ i $f'(x) = a$ si $x \\in (e, 4)$. Les derivades laterals a $x = e$ han de ser iguals:\n\n$$f'(e^-) = \\frac1e, \\qquad f'(e^+) = a \\;\\Rightarrow\\; a = \\frac1e$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valors de a i b",
+            "cos": "Substituïm a la condició de continuïtat:\n\n$$\\frac1e \\cdot e + b = 1 \\;\\Rightarrow\\; 1 + b = 1 \\;\\Rightarrow\\; b = 0$$\n\nResultat: **$a = \\dfrac1e$, $b = 0$**. Interpretació: el tros lineal $y = \\frac{x}{e}$ és exactament la recta tangent a $y = \\ln x$ en $x = e$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Idea: g és una primitiva de g'",
+            "cos": "Busquem $g(x) = \\displaystyle\\int \\frac{x^3}{9x^4 + 1}\\,dx$. La derivada del denominador és $(9x^4 + 1)' = 36x^3$, que és proporcional al numerador. És una integral **quasi immediata de tipus logarítmic**, $\\int \\frac{u'}{u}\\,dx = \\ln|u| + k$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Càlcul de la primitiva",
+            "cos": "Multipliquem i dividim per 36 per tenir exactament la derivada del denominador al numerador:\n\n$$\\int \\frac{x^3}{9x^4 + 1}\\,dx = \\frac{1}{36}\\int \\frac{36x^3}{9x^4 + 1}\\,dx = \\frac{1}{36}\\ln(9x^4 + 1) + k$$\n\n(No cal valor absolut perquè $9x^4 + 1 > 0$ sempre.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Constant d'integració amb el punt (0, −1)",
+            "cos": "Imposem $g(0) = -1$:\n\n$$g(0) = \\frac{1}{36}\\ln(9\\cdot0^4 + 1) + k = \\frac{1}{36}\\ln 1 + k = 0 + k = k \\;\\Rightarrow\\; k = -1$$\n\n$$\\boxed{g(x) = \\frac{1}{36}\\ln(9x^4 + 1) - 1}$$\n\nComprovació: $g'(x) = \\frac{1}{36}\\cdot\\frac{36x^3}{9x^4+1} = \\frac{x^3}{9x^4+1}$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a = \\dfrac1e$, $b = 0$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$g(x) = \\dfrac{1}{36}\\ln(9x^4 + 1) - 1$"
+          }
+        ],
+        "nota": "Error típic a b): oblidar el factor 1/36 o intentar resoldre-la amb arctangent (això funcionaria si el numerador fos x, no x³)."
+      }
+    },
+    {
+      "id": "mates-2022-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Matriu invertible segons un paràmetre i equació matricial A·X = B − 3I",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "determinant",
+        "matriu inversa",
+        "matriu adjunta",
+        "equació matricial",
+        "regla de Sarrus"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10,
+        11
+      ],
+      "enunciat": "Sigui la matriu $A = \\begin{pmatrix} a & a & 0 \\\\ 2 & a+1 & a-1 \\\\ 2a+1 & 0 & -a-3 \\end{pmatrix}$, en què $a$ és un paràmetre real.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu els valors del paràmetre $a$ per als quals la matriu $A$ és invertible.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Per al cas $a = 3$, resoleu l'equació $A \\cdot X = B - 3I$, en què $B = \\begin{pmatrix} 4 & 0 & 0 \\\\ 0 & 4 & 0 \\\\ 0 & 0 & 4 \\end{pmatrix}$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Condició d'invertibilitat",
+            "cos": "Una matriu quadrada és invertible si i només si el seu determinant és diferent de zero. Calculem $|A|$ en funció de $a$ i busquem quan s'anul·la."
+          },
+          {
+            "apartat": "a",
+            "titol": "Determinant per Sarrus",
+            "cos": "$$|A| = a(a+1)(-a-3) + a(a-1)(2a+1) + 0 - 0 - a(a-1)\\cdot 0 - a\\cdot2\\cdot(-a-3)$$\n\n$$= a(a+1)(-a-3) + a(a-1)(2a+1) + 2a(a+3)$$\n\nTraiem factor comú $a$ i desenvolupem cada producte: $(a+1)(-a-3) = -a^2 - 4a - 3$ i $(a-1)(2a+1) = 2a^2 - a - 1$:\n\n$$|A| = a\\left(-a^2 - 4a - 3 + 2a^2 - a - 1 + 2a + 6\\right) = a\\,(a^2 - 3a + 2)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valors que anul·len el determinant",
+            "cos": "$$a(a^2 - 3a + 2) = 0 \\;\\Rightarrow\\; a = 0 \\quad\\text{o}\\quad a = \\frac{3 \\pm \\sqrt{9 - 8}}{2} = \\frac{3 \\pm 1}{2} \\Rightarrow a = 1,\\ a = 2$$\n\nÉs a dir, $|A| = a(a-1)(a-2)$. **La matriu $A$ és invertible si i només si $a \\neq 0,\\ 1,\\ 2$.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Matriu per a a = 3 i aïllament de X",
+            "cos": "$$A = \\begin{pmatrix} 3 & 3 & 0 \\\\ 2 & 4 & 2 \\\\ 7 & 0 & -6 \\end{pmatrix}, \\qquad |A| = 3\\cdot2\\cdot1 = 6 \\neq 0$$\n\n(També directament per Sarrus: $|A| = -72 + 42 + 36 = 6$.) Com que és invertible, multipliquem per $A^{-1}$ **per l'esquerra** (el producte de matrius no és commutatiu):\n\n$$A X = B - 3I \\;\\Rightarrow\\; A^{-1}A X = A^{-1}(B - 3I) \\;\\Rightarrow\\; X = A^{-1}(B - 3I)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Càlcul de B − 3I",
+            "cos": "$$B - 3I = \\begin{pmatrix} 4 & 0 & 0 \\\\ 0 & 4 & 0 \\\\ 0 & 0 & 4 \\end{pmatrix} - \\begin{pmatrix} 3 & 0 & 0 \\\\ 0 & 3 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} = I$$\n\nPer tant $X = A^{-1} I = A^{-1}$: l'equació es redueix a calcular la inversa."
+          },
+          {
+            "apartat": "b",
+            "titol": "Inversa per adjunts",
+            "cos": "$A^{-1} = \\dfrac{1}{|A|}\\,(\\text{Adj}\\,A)^T$. Els adjunts (cofactors) $A_{ij} = (-1)^{i+j}M_{ij}$:\n\n- $A_{11} = \\begin{vmatrix} 4 & 2 \\\\ 0 & -6 \\end{vmatrix} = -24$, $A_{12} = -\\begin{vmatrix} 2 & 2 \\\\ 7 & -6 \\end{vmatrix} = 26$, $A_{13} = \\begin{vmatrix} 2 & 4 \\\\ 7 & 0 \\end{vmatrix} = -28$\n- $A_{21} = -\\begin{vmatrix} 3 & 0 \\\\ 0 & -6 \\end{vmatrix} = 18$, $A_{22} = \\begin{vmatrix} 3 & 0 \\\\ 7 & -6 \\end{vmatrix} = -18$, $A_{23} = -\\begin{vmatrix} 3 & 3 \\\\ 7 & 0 \\end{vmatrix} = 21$\n- $A_{31} = \\begin{vmatrix} 3 & 0 \\\\ 4 & 2 \\end{vmatrix} = 6$, $A_{32} = -\\begin{vmatrix} 3 & 0 \\\\ 2 & 2 \\end{vmatrix} = -6$, $A_{33} = \\begin{vmatrix} 3 & 3 \\\\ 2 & 4 \\end{vmatrix} = 6$\n\nTransposant i dividint per $|A| = 6$:\n\n$$A^{-1} = \\frac16\\begin{pmatrix} -24 & 18 & 6 \\\\ 26 & -18 & -6 \\\\ -28 & 21 & 6 \\end{pmatrix}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resultat",
+            "cos": "$$X = A^{-1} = \\begin{pmatrix} -4 & 3 & 1 \\\\ \\frac{13}{3} & -3 & -1 \\\\ -\\frac{14}{3} & \\frac72 & 1 \\end{pmatrix}$$\n\nComprovació (primera fila de $A$ per primera columna de $X$): $3(-4) + 3\\cdot\\frac{13}{3} + 0 = -12 + 13 = 1$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$A$ invertible $\\iff a \\neq 0, 1, 2$ (perquè $|A| = a(a-1)(a-2)$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$X = A^{-1} = \\begin{pmatrix} -4 & 3 & 1 \\\\ \\frac{13}{3} & -3 & -1 \\\\ -\\frac{14}{3} & \\frac72 & 1 \\end{pmatrix}$"
+          }
+        ],
+        "nota": "Error típic: escriure X = (B − 3I)·A⁻¹ (multiplicar per la dreta). Aquí no canvia el resultat perquè B − 3I = I, però en general sí."
+      }
+    },
+    {
+      "id": "mates-2022-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Longitud mínima d'un cable entre dues parets que passa per la cantonada",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "geometria",
+        "derivades"
+      ],
+      "conceptes": [
+        "distància entre dos punts",
+        "funció a optimitzar",
+        "derivada",
+        "mínim absolut"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        12,
+        13
+      ],
+      "enunciat": "La imatge següent mostra dues parets perpendiculars d'una sala representades en uns eixos de coordenades, de manera que una paret és al pla $y = 0$ i l'altra és al pla $x = 0$.\n\nEn el punt $A = (2, 0, 2)$ hi volem penjar un altaveu que ha d'estar connectat a un equip de so, el qual està situat a l'altra paret, en el punt $B = (0, 2, 1)$. La connexió entre $A$ i $B$ la farem mitjançant un cable que passi pel punt $C = (0, 0, h)$, situat a la recta vertical d'intersecció de les dues parets. Com que la qualitat del so depèn, entre altres factors, de la longitud del cable que uneix els dos aparells, volem fer una instal·lació amb el mínim de cable possible.",
+      "figures": [
+        {
+          "src": "img/mates/2022-S/e6.png",
+          "peu": "Les dues parets (plans y = 0 i x = 0), els punts A i B i el punt C de l'eix OZ per on passa el cable"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Comproveu que la longitud total del cable necessari, en funció de l'altura $h$ per on ha de passar el cable a l'eix vertical $OZ$, ve donada per l'expressió $L(h) = \\sqrt{h^2 - 4h + 8} + \\sqrt{h^2 - 2h + 5}$.",
+          "punts": 0.75
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu les coordenades del punt $C$ per on ha de passar el cable per tal que la longitud del cable sigui mínima. Calculeu aquesta longitud mínima del cable.",
+          "punts": 1.75
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $A = (2, 0, 2)$ (paret $y = 0$), $B = (0, 2, 1)$ (paret $x = 0$), $C = (0, 0, h)$ (cantonada, eix $OZ$).\n- El cable va en línia recta de $A$ a $C$ i de $C$ a $B$: $L = d(A, C) + d(C, B)$.\n- Incògnites: a) l'expressió de $L(h)$; b) el valor de $h$ que fa mínima $L$ i la longitud mínima."
+          },
+          {
+            "apartat": "a",
+            "titol": "Distàncies A–C i C–B",
+            "cos": "Fem servir $d(P, Q) = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$:\n\n$$d(A, C) = \\sqrt{(0-2)^2 + 0^2 + (h-2)^2} = \\sqrt{4 + 4 - 4h + h^2} = \\sqrt{h^2 - 4h + 8}$$\n\n$$d(C, B) = \\sqrt{0^2 + 2^2 + (1-h)^2} = \\sqrt{4 + 1 - 2h + h^2} = \\sqrt{h^2 - 2h + 5}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud total",
+            "cos": "$$L(h) = d(A, C) + d(C, B) = \\sqrt{h^2 - 4h + 8} + \\sqrt{h^2 - 2h + 5}$$\n\ntal com volíem comprovar. (Els dos radicands són sempre positius perquè tenen discriminant negatiu, $16 - 32 < 0$ i $4 - 20 < 0$; per tant $L$ està definida per a tot $h$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivada de L(h)",
+            "cos": "Per trobar el mínim derivem. Recordem que $(\\sqrt{u})' = \\dfrac{u'}{2\\sqrt{u}}$:\n\n$$L'(h) = \\frac{2h - 4}{2\\sqrt{h^2 - 4h + 8}} + \\frac{2h - 2}{2\\sqrt{h^2 - 2h + 5}} = \\frac{h - 2}{\\sqrt{h^2 - 4h + 8}} + \\frac{h - 1}{\\sqrt{h^2 - 2h + 5}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punts singulars: L'(h) = 0",
+            "cos": "$$\\frac{h - 2}{\\sqrt{h^2 - 4h + 8}} = -\\frac{h - 1}{\\sqrt{h^2 - 2h + 5}} \\;\\Rightarrow\\; (h - 2)\\sqrt{h^2 - 2h + 5} = -(h - 1)\\sqrt{h^2 - 4h + 8}$$\n\nElevem al quadrat els dos costats:\n\n$$(h - 2)^2(h^2 - 2h + 5) = (h - 1)^2(h^2 - 4h + 8)$$\n\n$$(h^2 - 4h + 4)(h^2 - 2h + 5) = (h^2 - 2h + 1)(h^2 - 4h + 8)$$\n\n$$h^4 - 6h^3 + 17h^2 - 28h + 20 = h^4 - 6h^3 + 17h^2 - 20h + 8$$\n\nEls termes de grau 4, 3 i 2 se simplifiquen:\n\n$$-28h + 20 = -20h + 8 \\;\\Rightarrow\\; 8h = 12 \\;\\Rightarrow\\; h = \\frac32$$\n\nCom que hem elevat al quadrat, comprovem-ho a l'equació original: amb $h = \\frac32$, $h - 2 = -\\frac12$ i $h - 1 = \\frac12$, i els dos radicands valen $\\frac{17}{4}$; per tant $L'(\\frac32) = -\\frac{1/2}{\\sqrt{17}/2} + \\frac{1/2}{\\sqrt{17}/2} = 0$ ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "És un mínim?",
+            "cos": "Estudiem el signe de $L'$ a banda i banda de $h = \\frac32$:\n\n$$L'(1) = \\frac{-1}{\\sqrt5} + 0 = -\\frac{1}{\\sqrt5} < 0, \\qquad L'(2) = 0 + \\frac{1}{\\sqrt5} = \\frac{1}{\\sqrt5} > 0$$\n\n$L$ decreix abans i creix després: a $h = \\frac32$ hi ha un **mínim** (i com que és l'únic punt singular, és el mínim absolut). El punt és\n\n$$\\boxed{C = \\left(0,\\ 0,\\ \\tfrac32\\right)}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud mínima",
+            "cos": "$$L\\left(\\tfrac32\\right) = \\sqrt{\\tfrac94 - 6 + 8} + \\sqrt{\\tfrac94 - 3 + 5} = \\sqrt{\\tfrac{17}{4}} + \\sqrt{\\tfrac{17}{4}} = 2\\cdot\\frac{\\sqrt{17}}{2} = \\sqrt{17} \\approx 4{,}12$$\n\nResultat: **la longitud mínima del cable és $\\sqrt{17}$ unitats de longitud**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$L(h) = \\sqrt{h^2 - 4h + 8} + \\sqrt{h^2 - 2h + 5}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$C = (0, 0, \\frac32)$; $L_\\text{mín} = \\sqrt{17} \\approx 4{,}12$ u"
+          }
+        ],
+        "nota": "Comprovació geomètrica: si «despleguem» les dues parets sobre un mateix pla, A queda a 2 unitats a l'esquerra de la cantonada a altura 2 i B a 2 unitats a la dreta a altura 1. El camí més curt és el segment recte, de longitud √(4² + 1²) = √17, i talla la cantonada a l'altura mitjana (2 + 1)/2 = 3/2. Coincideix amb la solució oficial."
+      }
+    }
+  ]
+}

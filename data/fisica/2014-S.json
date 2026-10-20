@@ -1,0 +1,715 @@
+{
+  "examen": {
+    "id": "fisica-2014-S",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2014,
+    "convocatoria": "setembre",
+    "serie": "5",
+    "pdf_examen": "pdfs/fisica/2014-S-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2014-S-solucio.pdf",
+    "estructura": "Part comuna obligatòria (P1 i P2) i part optativa: cal escollir UNA de les dues opcions (A o B) i fer-ne els problemes P3, P4 i P5. Cada problema val 2 punts i té dos apartats d'1 punt."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2014-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Satèl·lit en òrbita circular que passa a una òrbita el·líptica: període i energies a perigeu i apogeu",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "òrbita circular",
+        "velocitat orbital",
+        "període orbital",
+        "energia potencial gravitatòria",
+        "energia mecànica",
+        "òrbita el·líptica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Un satèl·lit de $2\\,000\\ \\text{kg}$ de massa gira en una òrbita circular a una altura de $3\\,630\\ \\text{km}$ sobre la superfície de la Terra.\n\n**Dades:** $M_\\text{Terra} = 5{,}97 \\times 10^{24}\\ \\text{kg}$; $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$; $R_\\text{Terra} = 6\\,370\\ \\text{km}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2014-S/e1.png",
+          "peu": "Òrbita circular inicial i òrbita el·líptica amb perigeu P i apogeu A"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el període d'aquesta òrbita circular i la velocitat del satèl·lit.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "En passar pel punt P, el satèl·lit augmenta la velocitat fins a $7{,}00 \\times 10^{3}\\ \\text{m s}^{-1}$ i passa a descriure una òrbita el·líptica amb una altura màxima (apogeu) en el punt A de $9\\,530\\ \\text{km}$. Calculeu l'energia cinètica, l'energia potencial gravitatòria i l'energia mecànica total en els punts P i A en la nova òrbita el·líptica.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa del satèl·lit: $m = 2\\,000\\ \\text{kg}$\n- Radi de l'òrbita circular (distància al **centre** de la Terra): $r_P = R_T + h = 6\\,370 + 3\\,630 = 10\\,000\\ \\text{km} = 1{,}00\\times10^{7}\\ \\text{m}$\n- Distància de l'apogeu al centre: $r_A = R_T + h_A = 6\\,370 + 9\\,530 = 15\\,900\\ \\text{km} = 1{,}59\\times10^{7}\\ \\text{m}$\n- Velocitat al perigeu de l'el·lipse: $v_P = 7{,}00\\times10^{3}\\ \\text{m/s}$\n- $G = 6{,}67\\times10^{-11}\\ \\text{N m}^2/\\text{kg}^2$, $M_T = 5{,}97\\times10^{24}\\ \\text{kg}$\n- Incògnites: a) $v$ i $T$ de l'òrbita circular; b) $E_c$, $E_p$ i $E_m$ a P i a A."
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat orbital: la força gravitatòria fa de força centrípeta",
+            "cos": "En una òrbita circular, l'única força sobre el satèl·lit és l'atracció gravitatòria, que és la que el fa girar (força centrípeta):\n\n$$G\\frac{M_T m}{r^2} = m\\frac{v^2}{r} \\quad\\Rightarrow\\quad v = \\sqrt{\\frac{G M_T}{r}}$$\n\n$$v = \\sqrt{\\frac{6{,}67\\times10^{-11}\\cdot 5{,}97\\times10^{24}}{1{,}00\\times10^{7}}} = 6{,}31\\times10^{3}\\ \\text{m/s}$$\n\nResultat: **$v = 6{,}31\\times10^{3}\\ \\text{m/s}$**. Fixeu-vos que la massa del satèl·lit no hi intervé."
+          },
+          {
+            "apartat": "a",
+            "titol": "Període de l'òrbita",
+            "cos": "En un moviment circular uniforme, en un període el satèl·lit recorre una circumferència sencera, $2\\pi r$:\n\n$$T = \\frac{2\\pi r}{v} = \\frac{2\\pi\\cdot 1{,}00\\times10^{7}}{6{,}31\\times10^{3}} = 9{,}96\\times10^{3}\\ \\text{s}$$\n\nResultat: **$T \\approx 9{,}96\\times10^{3}\\ \\text{s}$** (unes $2{,}77$ hores)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energies al perigeu P",
+            "cos": "Just després d'accelerar, el satèl·lit és a P amb $v_P = 7{,}00\\times10^{3}\\ \\text{m/s}$ i a la distància $r_P = 1{,}00\\times10^{7}\\ \\text{m}$ del centre de la Terra.\n\n$$E_{c,P} = \\frac{1}{2}m v_P^2 = \\frac{1}{2}\\cdot 2\\,000\\cdot(7{,}00\\times10^{3})^2 = 4{,}90\\times10^{10}\\ \\text{J}$$\n\nL'energia potencial gravitatòria (amb origen a l'infinit) és negativa:\n\n$$E_{p,P} = -G\\frac{M_T m}{r_P} = -\\frac{6{,}67\\times10^{-11}\\cdot 5{,}97\\times10^{24}\\cdot 2\\,000}{1{,}00\\times10^{7}} = -7{,}96\\times10^{10}\\ \\text{J}$$\n\n$$E_{m} = E_{c,P} + E_{p,P} = 4{,}90\\times10^{10} - 7{,}96\\times10^{10} = -3{,}06\\times10^{10}\\ \\text{J}$$\n\nL'energia mecànica és negativa: el satèl·lit continua lligat a la Terra (òrbita tancada, el·líptica)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energies a l'apogeu A: conservació de l'energia mecànica",
+            "cos": "Al llarg de l'òrbita el·líptica només actua la força gravitatòria, que és conservativa: l'energia mecànica es conserva i a A val el mateix que a P, $E_m = -3{,}06\\times10^{10}\\ \\text{J}$.\n\n$$E_{p,A} = -G\\frac{M_T m}{r_A} = -\\frac{6{,}67\\times10^{-11}\\cdot 5{,}97\\times10^{24}\\cdot 2\\,000}{1{,}59\\times10^{7}} = -5{,}01\\times10^{10}\\ \\text{J}$$\n\n$$E_{c,A} = E_m - E_{p,A} = -3{,}06\\times10^{10} - (-5{,}01\\times10^{10}) = 1{,}95\\times10^{10}\\ \\text{J}$$\n\nCom era d'esperar, a l'apogeu (més lluny) el satèl·lit va més lent ($E_c$ menor) i té més energia potencial (menys negativa) que al perigeu."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v = 6{,}31\\times10^{3}\\ \\text{m/s}$; $T = 9{,}96\\times10^{3}\\ \\text{s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "P: $E_c = 4{,}90\\times10^{10}\\ \\text{J}$, $E_p = -7{,}96\\times10^{10}\\ \\text{J}$; A: $E_c = 1{,}95\\times10^{10}\\ \\text{J}$, $E_p = -5{,}01\\times10^{10}\\ \\text{J}$; $E_m = -3{,}06\\times10^{10}\\ \\text{J}$ a tots dos punts"
+          }
+        ],
+        "nota": "Error típic: usar l'altura $h$ en lloc de la distància al centre de la Terra $R_T + h$. Les dades de l'enunciat no són del tot coherents entre si: si es calcula $v_A$ per conservació del moment angular ($v_A = v_P r_P/r_A = 4{,}40\\times10^{3}\\ \\text{m/s}$) surt $E_{c,A} = 1{,}94\\times10^{10}\\ \\text{J}$, pràcticament igual al valor oficial ($1{,}95\\times10^{10}\\ \\text{J}$, obtingut per conservació de l'energia). La solució oficial no comenta aquesta petita diferència."
+      }
+    },
+    {
+      "id": "fisica-2014-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Model de Bohr de l'àtom d'hidrogen: força elèctrica, freqüència de gir i energia mecànica de l'electró",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "quantica"
+      ],
+      "conceptes": [
+        "llei de coulomb",
+        "model de bohr",
+        "moviment circular uniforme",
+        "força centrípeta",
+        "energia potencial elèctrica",
+        "energia mecànica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "L'any 2013 es va celebrar el centenari del model atòmic proposat per Niels Bohr. Segons aquest model, l'àtom de ${}^{1}\\text{H}$ té un protó en el nucli i un electró que descriu una òrbita circular estable al seu voltant. El radi mínim que pot tenir aquesta òrbita, segons el model de Bohr, és de $5{,}29\\times10^{-11}\\ \\text{m}$. Per a aquesta òrbita calculeu:\n\n**Dades:** $k = 8{,}99\\times10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$; $Q_\\text{electró} = -1{,}60\\times10^{-19}\\ \\text{C}$; $m_\\text{electró} = 9{,}11\\times10^{-31}\\ \\text{kg}$; $Q_\\text{protó} = -Q_\\text{electró}$; $m_\\text{protó} = 1{,}67\\times10^{-27}\\ \\text{kg}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La força elèctrica que actua sobre l'electró i la freqüència de gir que té.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "L'energia mecànica de l'electró en l'òrbita que descriu al voltant del protó. Considereu negligible l'energia potencial gravitatòria.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Radi de l'òrbita: $r = 5{,}29\\times10^{-11}\\ \\text{m}$\n- Càrregues: $|q_e| = q_p = 1{,}60\\times10^{-19}\\ \\text{C}$\n- Massa de l'electró: $m_e = 9{,}11\\times10^{-31}\\ \\text{kg}$ (la del protó no cal: el protó, molt més massiu, es considera en repòs)\n- $k = 8{,}99\\times10^{9}\\ \\text{N m}^2/\\text{C}^2$\n- Incògnites: a) força elèctrica $F$ i freqüència $\\nu$; b) energia mecànica $E_m$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Força elèctrica (llei de Coulomb)",
+            "cos": "Protó i electró tenen càrregues de signe contrari: la força és **atractiva**, dirigida de l'electró cap al protó (cap al centre de l'òrbita). El mòdul és:\n\n$$F = k\\frac{|q_e|\\,q_p}{r^2} = 8{,}99\\times10^{9}\\cdot\\frac{(1{,}60\\times10^{-19})^2}{(5{,}29\\times10^{-11})^2} = 8{,}22\\times10^{-8}\\ \\text{N}$$\n\nResultat: **$F = 8{,}22\\times10^{-8}\\ \\text{N}$**, atractiva cap al nucli."
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüència de gir: la força elèctrica fa de força centrípeta",
+            "cos": "L'electró fa un moviment circular uniforme; la força elèctrica és la que li proporciona l'acceleració centrípeta $a_n = \\omega^2 r = 4\\pi^2\\nu^2 r$:\n\n$$F = m_e\\,4\\pi^2\\nu^2 r \\quad\\Rightarrow\\quad \\nu = \\sqrt{\\frac{F}{4\\pi^2 m_e r}}$$\n\n$$\\nu = \\sqrt{\\frac{8{,}22\\times10^{-8}}{4\\pi^2\\cdot 9{,}11\\times10^{-31}\\cdot 5{,}29\\times10^{-11}}} = 6{,}57\\times10^{15}\\ \\text{Hz}$$\n\nResultat: **$\\nu = 6{,}57\\times10^{15}\\ \\text{Hz}$** (l'electró fa més de sis mil bilions de voltes per segon)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica a partir de la condició d'òrbita",
+            "cos": "De la condició de força centrípeta, $k\\dfrac{q^2}{r^2} = m_e\\dfrac{v^2}{r}$, obtenim $m_e v^2 = k\\dfrac{q^2}{r}$, i per tant:\n\n$$E_c = \\frac{1}{2}m_e v^2 = \\frac{1}{2}k\\frac{q^2}{r}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia mecànica",
+            "cos": "L'energia potencial elèctrica del sistema protó–electró (càrregues de signe contrari) és negativa: $E_p = -k\\dfrac{q^2}{r}$. Sumant:\n\n$$E_m = E_c + E_p = \\frac{1}{2}k\\frac{q^2}{r} - k\\frac{q^2}{r} = -\\frac{1}{2}k\\frac{q^2}{r}$$\n\n$$E_m = -\\frac{1}{2}\\cdot 8{,}99\\times10^{9}\\cdot\\frac{(1{,}60\\times10^{-19})^2}{5{,}29\\times10^{-11}} = -2{,}18\\times10^{-18}\\ \\text{J}$$\n\nResultat: **$E_m = -2{,}18\\times10^{-18}\\ \\text{J}$** $\\approx -13{,}6\\ \\text{eV}$, que és la coneguda energia de l'estat fonamental de l'hidrogen. El signe negatiu indica que l'electró està lligat al protó."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$F = 8{,}22\\times10^{-8}\\ \\text{N}$ (atractiva); $\\nu = 6{,}57\\times10^{15}\\ \\text{Hz}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_m = -\\frac{1}{2}k q^2/r = -2{,}18\\times10^{-18}\\ \\text{J}$ ($\\approx -13{,}6\\ \\text{eV}$)"
+          }
+        ],
+        "nota": "Coincideix amb la solució oficial. Error típic: oblidar que l'energia potencial és negativa (càrregues de signe contrari) i obtenir una energia mecànica positiva."
+      }
+    },
+    {
+      "id": "fisica-2014-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Efecte fotoelèctric en el coure: freqüència llindar i constant de Planck a partir de la gràfica Ec–f",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "freqüència llindar",
+        "constant de planck",
+        "treball d'extracció",
+        "energia cinètica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Il·luminem una superfície de coure amb llum de diverses freqüències i quan s'alliberen electrons del metall, en mesurem l'energia cinètica. Amb les dades obtingudes de l'experiment dibuixem la gràfica següent:\n\n**Dades:** $c = 3{,}00\\times10^{8}\\ \\text{m s}^{-1}$; $m_\\text{electró} = 9{,}11\\times10^{-31}\\ \\text{kg}$; $1\\ \\text{eV} = 1{,}60\\times10^{-19}\\ \\text{J}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2014-S/e3-a.png",
+          "peu": "Energia cinètica dels electrons $E_c$ (eV) en funció de la freqüència $f$ ($10^{15}$ Hz): punts $(2;\\ 3{,}72)$ i $(3;\\ 7{,}86)$"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Expliqueu breument què és el *llindar de freqüència* de l'efecte fotoelèctric i calculeu quin valor té en aquest cas.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el valor de la constant de Planck i la velocitat que assoleixen els electrons emesos quan la longitud d'ona de la llum incident és $1{,}2\\times10^{-7}\\ \\text{m}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- De la gràfica: $E_c = 3{,}72\\ \\text{eV}$ per a $f = 2\\times10^{15}\\ \\text{Hz}$ i $E_c = 7{,}86\\ \\text{eV}$ per a $f = 3\\times10^{15}\\ \\text{Hz}$\n- $\\lambda = 1{,}2\\times10^{-7}\\ \\text{m}$, $c = 3{,}00\\times10^{8}\\ \\text{m/s}$, $m_e = 9{,}11\\times10^{-31}\\ \\text{kg}$, $1\\ \\text{eV} = 1{,}60\\times10^{-19}\\ \\text{J}$\n- Incògnites: a) freqüència llindar $f_0$; b) constant de Planck $h$ i velocitat $v$ dels electrons."
+          },
+          {
+            "apartat": "a",
+            "titol": "Què és la freqüència llindar",
+            "cos": "Segons Einstein, la llum està formada per fotons d'energia $E = hf$. Un fotó pot arrencar un electró del metall només si la seva energia supera el treball d'extracció $W_0$. La **freqüència llindar** $f_0$ és la freqüència **mínima** que ha de tenir la radiació perquè els seus fotons puguin arrencar electrons del metall: per sota de $f_0$ no hi ha emissió, per intensa que sigui la llum. L'equació de l'efecte fotoelèctric és:\n\n$$E_c = hf - W_0 = h\\,(f - f_0)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de la recta de la gràfica",
+            "cos": "La gràfica és una recta. El pendent, llegit dels dos punts marcats, és:\n\n$$\\text{pendent} = \\frac{7{,}86 - 3{,}72}{(3 - 2)\\times10^{15}} = 4{,}14\\times10^{-15}\\ \\text{eV/Hz}$$\n\ni la recta que passa pel punt $(2\\times10^{15};\\ 3{,}72)$ és:\n\n$$E_c\\,(\\text{eV}) = 3{,}72 + 4{,}14\\left(\\frac{f}{10^{15}} - 2\\right)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüència llindar: on la recta talla l'eix de freqüències",
+            "cos": "A la freqüència llindar els electrons surten amb energia cinètica nul·la, $E_c = 0$:\n\n$$0 = 3{,}72 + 4{,}14\\left(\\frac{f_0}{10^{15}} - 2\\right) \\quad\\Rightarrow\\quad f_0 = \\left(2 - \\frac{3{,}72}{4{,}14}\\right)\\cdot10^{15} = 1{,}10\\times10^{15}\\ \\text{Hz}$$\n\nResultat: **$f_0 = 1{,}10\\times10^{15}\\ \\text{Hz}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Constant de Planck: el pendent de la recta",
+            "cos": "Com que $E_c = hf - W_0$, el pendent de la recta $E_c$–$f$ és precisament $h$. Passant els eV a joules:\n\n$$h = \\frac{(7{,}86 - 3{,}72)\\ \\text{eV}}{(3-2)\\times10^{15}\\ \\text{s}^{-1}}\\cdot\\frac{1{,}60\\times10^{-19}\\ \\text{J}}{1\\ \\text{eV}} = 6{,}62\\times10^{-34}\\ \\text{J s}$$\n\nResultat: **$h = 6{,}62\\times10^{-34}\\ \\text{J s}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball d'extracció i energia cinètica per a λ = 1,2·10⁻⁷ m",
+            "cos": "El treball d'extracció és $W_0 = hf_0 = 6{,}62\\times10^{-34}\\cdot 1{,}10\\times10^{15} = 7{,}30\\times10^{-19}\\ \\text{J}$ ($4{,}56\\ \\text{eV}$). L'energia del fotó incident és:\n\n$$E_\\text{fotó} = \\frac{hc}{\\lambda} = \\frac{6{,}62\\times10^{-34}\\cdot 3{,}00\\times10^{8}}{1{,}2\\times10^{-7}} = 1{,}66\\times10^{-18}\\ \\text{J}$$\n\n$$E_c = \\frac{hc}{\\lambda} - hf_0 = 1{,}66\\times10^{-18} - 7{,}30\\times10^{-19} = 9{,}26\\times10^{-19}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat dels electrons",
+            "cos": "De $E_c = \\frac{1}{2}m_e v^2$:\n\n$$v = \\sqrt{\\frac{2E_c}{m_e}} = \\sqrt{\\frac{2\\cdot 9{,}26\\times10^{-19}}{9{,}11\\times10^{-31}}} = 1{,}43\\times10^{6}\\ \\text{m/s}$$\n\nResultat: **$v = 1{,}43\\times10^{6}\\ \\text{m/s}$** (molt menor que $c$, així que la mecànica clàssica és vàlida)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$f_0 = 1{,}10\\times10^{15}\\ \\text{Hz}$ (freqüència mínima per arrencar electrons)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$h = 6{,}62\\times10^{-34}\\ \\text{J s}$; $v = 1{,}43\\times10^{6}\\ \\text{m/s}$"
+          }
+        ],
+        "nota": "Coincideix amb la solució oficial. Truc útil: en una gràfica $E_c$–$f$, el pendent és $h$, el tall amb l'eix de freqüències és $f_0$ i el tall (prolongat) amb l'eix d'energies és $-W_0$."
+      }
+    },
+    {
+      "id": "fisica-2014-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Fil conductor suspès per un camp magnètic i FEM induïda en una espira paral·lela al camp",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [
+        "induccio"
+      ],
+      "conceptes": [
+        "força sobre un corrent",
+        "producte vectorial",
+        "flux magnètic",
+        "llei de faraday",
+        "força electromotriu induïda"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un fil conductor rectilini de longitud $l = 5\\ \\text{m}$ i massa $m = 100\\ \\text{g}$ es troba situat paral·lelament al terra (pla $xy$), sobre l'eix $x$, i sota l'acció d'un camp magnètic uniforme.\n\n**Dada:** l'acceleració de la gravetat és $9{,}8\\ \\text{m s}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu el mòdul, la direcció i el sentit del camp magnètic que fa que es mantingui suspès en l'aire quan un corrent $I = 0{,}3\\ \\text{A}$ circula pel fil des de les $x$ negatives cap a les $x$ positives.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si ara enrotllem el fil per a crear una espira circular i la situem de manera que el seu pla sigui paral·lel al pla $xy$, calculeu la FEM que indueix sobre l'espira un camp magnètic variable $\\vec B = 0{,}1\\,[\\cos(10\\pi t)\\,\\vec i + \\cos(10\\pi t)\\,\\vec j\\,]$. Justifiqueu la resposta.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud del fil: $l = 5\\ \\text{m}$; massa: $m = 100\\ \\text{g} = 0{,}100\\ \\text{kg}$\n- Corrent: $I = 0{,}3\\ \\text{A}$ en el sentit $+x$, és a dir $\\vec l = 5\\,\\vec i\\ \\text{m}$\n- $g = 9{,}8\\ \\text{m/s}^2$ (el pes apunta cap a $-z$)\n- Incògnites: a) $\\vec B$ (mòdul, direcció i sentit); b) FEM induïda $\\varepsilon$ a l'espira."
+          },
+          {
+            "apartat": "a",
+            "titol": "Direcció i sentit del camp",
+            "cos": "Perquè el fil quedi suspès, la força magnètica ha de compensar el pes: ha d'apuntar **cap amunt**, en el sentit $+z$. La força sobre un fil amb corrent és:\n\n$$\\vec F = I\\,\\vec l\\times\\vec B$$\n\nAmb $\\vec l$ en el sentit $+x$, per obtenir una força en $+z$ cal que $\\vec B$ apunti en el sentit $+y$, ja que $\\vec i\\times\\vec j = \\vec k$. (Qualsevol component de $\\vec B$ paral·lela al fil no fa força; el camp mínim és perpendicular al fil.)\n\nResultat: **$\\vec B$ en la direcció de l'eix $y$, sentit positiu**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Mòdul del camp: força magnètica = pes",
+            "cos": "Amb $\\vec B \\perp \\vec l$, el mòdul de la força és $F = IlB$. Igualant-lo al pes:\n\n$$IlB = mg \\quad\\Rightarrow\\quad B = \\frac{mg}{Il} = \\frac{0{,}100\\cdot 9{,}8}{0{,}3\\cdot 5} = 0{,}65\\ \\text{T}$$\n\nResultat: **$\\vec B = 0{,}65\\,\\vec j\\ \\text{T}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Flux magnètic a través de l'espira",
+            "cos": "Segons la llei de Faraday, només hi ha FEM induïda si varia el **flux** magnètic a través de l'espira, $\\Phi = \\vec B\\cdot\\vec S$. L'espira és paral·lela al pla $xy$, de manera que el seu vector superfície $\\vec S$ és perpendicular al pla, en la direcció de l'eix $z$.\n\nEl camp $\\vec B = 0{,}1\\,[\\cos(10\\pi t)\\,\\vec i + \\cos(10\\pi t)\\,\\vec j\\,]$ només té components $x$ i $y$: en tot instant és paral·lel al pla de l'espira i perpendicular a $\\vec S$. Per tant:\n\n$$\\Phi(t) = \\vec B\\cdot\\vec S = B_x S_x + B_y S_y + B_z S_z = 0 \\quad \\text{per a tot } t$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "FEM induïda (llei de Faraday)",
+            "cos": "$$\\varepsilon = -\\frac{d\\Phi}{dt} = 0$$\n\nResultat: **$\\varepsilon = 0\\ \\text{V}$**. Encara que el camp varia amb el temps, les línies de camp no travessen mai l'espira, i el flux es manté constantment nul."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\vec B = 0{,}65\\,\\vec j\\ \\text{T}$ (direcció $y$, sentit positiu)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\Phi = 0$ en tot instant $\\Rightarrow$ $\\varepsilon = 0$"
+          }
+        ],
+        "nota": "Coincideix amb la solució oficial. Error típic a l'apartat b): calcular la derivada del camp i deduir que hi ha FEM; el que compta és la variació del flux, i aquí el camp és sempre paral·lel al pla de l'espira."
+      }
+    },
+    {
+      "id": "fisica-2014-S-e5-a",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Constant elàstica d'una molla a partir de la gràfica m–T², acceleració màxima i treball del fregament",
+      "tema": "oscillacions",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "moviment harmònic simple",
+        "constant elàstica",
+        "període",
+        "energia mecànica",
+        "acceleració màxima",
+        "treball de fregament"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Una manera d'obtenir la constant elàstica d'una molla és penjar-hi una massa i mesurar-ne el període de les petites oscil·lacions al voltant de la posició d'equilibri. En la gràfica següent hi ha representada la relació entre la massa penjada de la molla i el quadrat del període de les oscil·lacions:",
+      "figures": [
+        {
+          "src": "img/fisica/2014-S/e5-a.png",
+          "peu": "Massa penjada $m$ (kg) en funció del quadrat del període $T^2$ (s²)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "A partir de la gràfica, calculeu la constant elàstica de la molla. Si l'amplitud de les oscil·lacions fos de $0{,}10\\ \\text{m}$, quina seria l'energia cinètica màxima assolida per la massa en l'oscil·lació?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Suposem que la constant elàstica de la molla és de $150\\ \\text{N m}^{-1}$, hi pengem una massa d'$1{,}5\\ \\text{kg}$ i la fem oscil·lar amb una amplitud de $0{,}20\\ \\text{m}$. Quina és l'acceleració màxima que assoleix? Si submergim tot el conjunt en un recipient ple d'aigua de manera que la massa oscil·la fins a aturar-se a causa del fregament, quin és el treball fet per la força de fregament que ha aturat l'oscil·lació?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- De la gràfica: recta per l'origen; per exemple, $m = 1{,}9\\ \\text{kg}$ per a $T^2 = 0{,}5\\ \\text{s}^2$ (o $m \\approx 3{,}8\\ \\text{kg}$ per a $T^2 = 1\\ \\text{s}^2$)\n- a) Amplitud $A = 0{,}10\\ \\text{m}$\n- b) $k = 150\\ \\text{N/m}$, $m = 1{,}5\\ \\text{kg}$, $A = 0{,}20\\ \\text{m}$\n- Incògnites: a) $k$ i $E_{c,\\text{màx}}$; b) $a_\\text{màx}$ i treball del fregament $W_\\text{freg}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Relació entre m i T²",
+            "cos": "El període d'un oscil·lador massa–molla és:\n\n$$T = 2\\pi\\sqrt{\\frac{m}{k}} \\quad\\Rightarrow\\quad T^2 = \\frac{4\\pi^2}{k}\\,m \\quad\\Rightarrow\\quad m = \\frac{k}{4\\pi^2}\\,T^2$$\n\nPer això la gràfica $m$–$T^2$ és una recta per l'origen, de pendent $\\dfrac{k}{4\\pi^2}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Constant elàstica a partir d'un punt de la recta",
+            "cos": "Llegim un punt de la recta, per exemple $T^2 = 0{,}5\\ \\text{s}^2 \\Rightarrow m = 1{,}9\\ \\text{kg}$:\n\n$$k = \\frac{4\\pi^2 m}{T^2} = \\frac{4\\pi^2\\cdot 1{,}9}{0{,}5} = 150\\ \\text{N/m}$$\n\nResultat: **$k = 150\\ \\text{N/m}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia cinètica màxima",
+            "cos": "L'energia mecànica d'un oscil·lador harmònic és constant i val $E = \\frac{1}{2}kA^2$. Quan la massa passa per la posició d'equilibri, l'energia potencial elàstica (mesurada respecte de l'equilibri) és nul·la i tota l'energia és cinètica:\n\n$$E_{c,\\text{màx}} = \\frac{1}{2}kA^2 = \\frac{1}{2}\\cdot 150\\cdot(0{,}10)^2 = 0{,}75\\ \\text{J}$$\n\nResultat: **$E_{c,\\text{màx}} = 0{,}75\\ \\text{J}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Acceleració màxima",
+            "cos": "En un MHS, $a = -\\omega^2 x$; l'acceleració és màxima als extrems ($x = \\pm A$). La pulsació és:\n\n$$\\omega = \\sqrt{\\frac{k}{m}} = \\sqrt{\\frac{150}{1{,}5}} = 10\\ \\text{rad/s}$$\n\n$$a_\\text{màx} = \\omega^2 A = 10^2\\cdot 0{,}20 = 20\\ \\text{m/s}^2$$\n\nResultat: **$a_\\text{màx} = 20\\ \\text{m/s}^2$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball de la força de fregament",
+            "cos": "L'energia mecànica inicial de l'oscil·lació és:\n\n$$E = \\frac{1}{2}kA^2 = \\frac{1}{2}\\cdot 150\\cdot(0{,}20)^2 = 3\\ \\text{J}$$\n\nQuan la massa s'atura a la posició d'equilibri, l'energia d'oscil·lació és zero. Pel teorema treball–energia, el treball de la força no conservativa (fregament) és igual a la variació de l'energia mecànica:\n\n$$W_\\text{freg} = \\Delta E = 0 - 3 = -3\\ \\text{J}$$\n\nResultat: el fregament fa un treball de **$-3\\ \\text{J}$** (en valor absolut, $3\\ \\text{J}$, que es dissipen en forma de calor a l'aigua)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$k = 150\\ \\text{N/m}$; $E_{c,\\text{màx}} = 0{,}75\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\omega = 10\\ \\text{rad/s}$, $a_\\text{màx} = 20\\ \\text{m/s}^2$; $W_\\text{freg} = -3\\ \\text{J}$ (dissipa $3\\ \\text{J}$)"
+          }
+        ],
+        "nota": "La solució oficial dona $W_\\text{fregament} = 3\\ \\text{J}$ (en valor absolut). Estrictament, el treball de la força de fregament és negatiu, $-3\\ \\text{J}$, perquè s'oposa al moviment i fa disminuir l'energia mecànica; s'accepten tots dos si s'explica. Es considera que l'energia d'oscil·lació és $\\frac{1}{2}kA^2$ mesurada respecte de la posició d'equilibri (es negligeix l'efecte de l'empenyiment de l'aigua sobre l'equilibri)."
+      }
+    },
+    {
+      "id": "fisica-2014-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Tub de buit amb ànode de coure: freqüència del fotó, camp elèctric i treball d'extracció",
+      "tema": "quantica",
+      "temes_secundaris": [
+        "camp-electric"
+      ],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "treball d'extracció",
+        "camp elèctric uniforme",
+        "diferència de potencial",
+        "conservació de l'energia",
+        "electronvolt"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Un tub de buit com el de la figura adjunta té l'ànode A fet de coure i la distància entre els elèctrodes és $d = 30\\ \\text{cm}$. Establim un camp elèctric uniforme de A a B que genera una diferència de potencial de $3\\ \\text{V}$ i il·luminem l'ànode amb radiacions que tenen fotons incidents amb una energia de $10\\ \\text{eV}$. Observem que al càtode B arriben electrons amb una energia cinètica de $2{,}3\\ \\text{eV}$.\n\n**Dades:** $h = 6{,}626\\times10^{-34}\\ \\text{J s}$; $Q_\\text{electró} = -1{,}602\\times10^{-19}\\ \\text{C}$; $c = 3\\times10^{8}\\ \\text{m s}^{-1}$; $1\\ \\text{eV} = 1{,}602\\times10^{-19}\\ \\text{J}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2014-S/e3-b.png",
+          "peu": "Tub de buit: ànode A de coure il·luminat, càtode B, camp elèctric $E$ de A cap a B i distància $d$ entre elèctrodes"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina és la freqüència i la longitud d'ona de la radiació incident (expressada en nm)? Quin és el valor del camp elèctric $E$?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Amb quina energia cinètica surten emesos els electrons arrencats de l'ànode A? Quin és el treball d'extracció del coure en eV?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Energia dels fotons: $E_\\text{fotó} = 10\\ \\text{eV} = 10\\cdot 1{,}602\\times10^{-19} = 1{,}602\\times10^{-18}\\ \\text{J}$\n- Distància entre elèctrodes: $d = 30\\ \\text{cm} = 0{,}30\\ \\text{m}$; diferència de potencial $V_A - V_B = 3\\ \\text{V}$ (el camp va de A a B, és a dir, de més a menys potencial)\n- Energia cinètica dels electrons en arribar a B: $E_{c,B} = 2{,}3\\ \\text{eV}$\n- Incògnites: a) $f$, $\\lambda$ i $E$; b) $E_{c,A}$ i treball d'extracció $W_0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüència de la radiació",
+            "cos": "L'energia d'un fotó és $E = hf$ (Planck–Einstein):\n\n$$f = \\frac{E_\\text{fotó}}{h} = \\frac{1{,}602\\times10^{-18}\\ \\text{J}}{6{,}626\\times10^{-34}\\ \\text{J s}} = 2{,}418\\times10^{15}\\ \\text{Hz}$$\n\nResultat: **$f = 2{,}42\\times10^{15}\\ \\text{Hz}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud d'ona",
+            "cos": "$$\\lambda = \\frac{c}{f} = \\frac{3\\times10^{8}}{2{,}418\\times10^{15}} = 1{,}241\\times10^{-7}\\ \\text{m} = 124{,}1\\ \\text{nm}$$\n\nResultat: **$\\lambda = 124\\ \\text{nm}$** (radiació ultraviolada)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp elèctric uniforme",
+            "cos": "En un camp uniforme, la diferència de potencial i el camp estan relacionats per $\\Delta V = E\\,d$:\n\n$$E = \\frac{\\Delta V}{d} = \\frac{3\\ \\text{V}}{0{,}30\\ \\text{m}} = 10\\ \\text{V/m}$$\n\nResultat: **$E = 10\\ \\text{V/m} = 10\\ \\text{N/C}$**, dirigit de A cap a B."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica a la sortida de l'ànode (conservació de l'energia)",
+            "cos": "El camp va de A a B, de manera que sobre l'electró (càrrega negativa) fa una força de B cap a A: **frena** els electrons. Per arribar a B, l'electró passa de potencial $V_A$ a un potencial 3 V més baix, i la seva energia potencial $E_p = qV$ augmenta en $|q|\\cdot 3\\ \\text{V} = 3\\ \\text{eV}$. Per conservació de l'energia:\n\n$$E_{c,A} + qV_A = E_{c,B} + qV_B \\quad\\Rightarrow\\quad E_{c,A} = E_{c,B} + q\\,(V_B - V_A)$$\n\n$$E_{c,A} = 2{,}3\\ \\text{eV} + (-e)(-3\\ \\text{V}) = 2{,}3 + 3 = 5{,}3\\ \\text{eV}$$\n\nResultat: els electrons surten de l'ànode amb **$E_{c,A} = 5{,}3\\ \\text{eV}$** i en perden 3 eV pel camí."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball d'extracció del coure",
+            "cos": "Equació de l'efecte fotoelèctric: l'energia del fotó es reparteix entre arrencar l'electró ($W_0$) i donar-li energia cinètica:\n\n$$hf = W_0 + E_{c,A} \\quad\\Rightarrow\\quad W_0 = hf - E_{c,A} = 10 - 5{,}3 = 4{,}7\\ \\text{eV}$$\n\nResultat: **$W_0 = 4{,}7\\ \\text{eV}$** (valor raonable per al coure)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$f = 2{,}42\\times10^{15}\\ \\text{Hz}$; $\\lambda = 124\\ \\text{nm}$; $E = 10\\ \\text{V/m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_{c,A} = 5{,}3\\ \\text{eV}$; $W_0 = 4{,}7\\ \\text{eV}$"
+          }
+        ],
+        "nota": "Coincideix amb la solució oficial. Error típic: restar els 3 eV en lloc de sumar-los. Com que el camp va de A a B, frena els electrons (negatius) que van de A cap a B, i per tant a la sortida de A tenien més energia cinètica que en arribar a B."
+      }
+    },
+    {
+      "id": "fisica-2014-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Selector de velocitats per a electrons i moviment circular en el camp magnètic",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [
+        "camp-electric"
+      ],
+      "conceptes": [
+        "selector de velocitats",
+        "força de lorentz",
+        "moviment circular uniforme",
+        "radi de gir",
+        "freqüència de ciclotró",
+        "producte vectorial"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Uns electrons que es mouen horitzontalment travessen un selector de velocitats format per un camp magnètic de $0{,}040\\ \\text{T}$ dirigit cap avall i un camp elèctric de $250\\ \\text{V/m}$ perpendicular al camp magnètic i a la direcció de moviment dels electrons.\n\n**Dades:** $Q_\\text{electró} = -1{,}60\\times10^{-19}\\ \\text{C}$; $m_\\text{electró} = 9{,}11\\times10^{-31}\\ \\text{kg}$.\n\n**Nota:** considereu negligible l'efecte de la força gravitatòria.",
+      "figures": [
+        {
+          "src": "img/fisica/2014-S/e4-b.png",
+          "peu": "Selector de velocitats: l'electró es mou segons $+x$, el camp $\\vec B$ apunta cap avall ($-z$) i les plaques (la negativa davant, la positiva al darrere) creen el camp elèctric"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu i anomeneu les forces que actuen damunt l'electró quan és dins del selector de velocitats. Calculeu la velocitat dels electrons que travessaran el selector sense desviar-se.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Dins del selector un electró té una velocitat $\\vec v = 1{,}25\\times10^{4}\\,\\vec i\\ \\text{m s}^{-1}$ en el moment en què es desactiva el camp elèctric sense modificar el camp magnètic. Indiqueu la freqüència de rotació, el radi, el pla de gir i el sentit de gir del moviment circular uniforme d'aquest electró.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Camp magnètic: $\\vec B = -0{,}040\\,\\vec k\\ \\text{T}$ (cap avall)\n- Camp elèctric: $E = 250\\ \\text{V/m}$, en la direcció de l'eix $y$ (perpendicular a $\\vec B$ i a $\\vec v$). La placa del davant ($-y$) és negativa i la del darrere ($+y$) positiva, així que $\\vec E$ va de $+$ a $-$: $\\vec E = -250\\,\\vec j\\ \\text{V/m}$\n- Electró: $q = -e = -1{,}60\\times10^{-19}\\ \\text{C}$, $m_e = 9{,}11\\times10^{-31}\\ \\text{kg}$; velocitat en el sentit $+x$\n- Incògnites: a) forces i velocitat no desviada; b) $\\nu$, $r$, pla i sentit de gir per a $v = 1{,}25\\times10^{4}\\ \\text{m/s}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Forces sobre l'electró",
+            "cos": "Sobre l'electró actuen dues forces (el pes és negligible):\n\n- **Força magnètica** $\\vec F_B = q\\,\\vec v\\times\\vec B$. Amb $\\vec v = v\\,\\vec i$ i $\\vec B = -B\\,\\vec k$: $\\vec v\\times\\vec B = -vB\\,(\\vec i\\times\\vec k) = vB\\,\\vec j$; com que $q<0$, $\\vec F_B = -evB\\,\\vec j$, cap a $-y$.\n- **Força elèctrica** $\\vec F_E = q\\vec E = (-e)(-E\\,\\vec j) = eE\\,\\vec j$, cap a $+y$ (l'electró és atret per la placa positiva).\n\nLes dues forces tenen la mateixa direcció (eix $y$) i sentits oposats:\n\n![Diagrama de forces de la solució oficial: la força elèctrica apunta cap a +y i la magnètica cap a -y](img/fisica/2014-S/e4-b-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat seleccionada",
+            "cos": "L'electró no es desvia si la força total és nul·la, és a dir, si les dues forces tenen el mateix mòdul:\n\n$$|q|E = |q|vB \\quad\\Rightarrow\\quad v = \\frac{E}{B} = \\frac{250}{0{,}040} = 6{,}25\\times10^{3}\\ \\text{m/s}$$\n\nResultat: **$v = 6{,}25\\times10^{3}\\ \\text{m/s}$**. Aquest valor no depèn de la càrrega ni de la massa de la partícula."
+          },
+          {
+            "apartat": "b",
+            "titol": "Pla i sentit de gir",
+            "cos": "Sense camp elèctric, només actua la força magnètica, que és sempre perpendicular a $\\vec v$ i a $\\vec B$. Com que $\\vec B$ té la direcció $z$, la força i la velocitat estan sempre en el pla $xy$: l'electró fa un **moviment circular uniforme en un pla paral·lel al pla $xy$** (horitzontal).\n\nSentit: a l'instant inicial $\\vec v$ va cap a $+x$ i, com hem vist, la força magnètica va cap a $-y$. Mirant des de dalt ($+z$), l'electró avança cap a $+x$ i gira cap a $-y$: gira en **sentit horari** (vist des de dalt)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Radi de la trajectòria",
+            "cos": "La força magnètica fa de força centrípeta:\n\n$$|q|vB = m_e\\frac{v^2}{r} \\quad\\Rightarrow\\quad r = \\frac{m_e v}{|q|B} = \\frac{9{,}11\\times10^{-31}\\cdot 1{,}25\\times10^{4}}{1{,}60\\times10^{-19}\\cdot 0{,}040} = 1{,}78\\times10^{-6}\\ \\text{m}$$\n\nResultat: **$r = 1{,}78\\times10^{-6}\\ \\text{m}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Freqüència de rotació",
+            "cos": "La velocitat angular és $\\omega = v/r = |q|B/m_e$ (no depèn de la velocitat):\n\n$$\\nu = \\frac{\\omega}{2\\pi} = \\frac{|q|B}{2\\pi m_e} = \\frac{1{,}60\\times10^{-19}\\cdot 0{,}040}{2\\pi\\cdot 9{,}11\\times10^{-31}} = 1{,}12\\times10^{9}\\ \\text{Hz}$$\n\nResultat: **$\\nu = 1{,}12\\times10^{9}\\ \\text{Hz}$** ($\\omega = 7{,}03\\times10^{9}\\ \\text{rad/s}$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\vec F_E$ cap a $+y$ i $\\vec F_B$ cap a $-y$; $v = E/B = 6{,}25\\times10^{3}\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "MCU en un pla paral·lel a $xy$, sentit horari vist des de dalt; $r = 1{,}78\\times10^{-6}\\ \\text{m}$; $\\nu = 1{,}12\\times10^{9}\\ \\text{Hz}$"
+          }
+        ],
+        "nota": "Coincideix amb la solució oficial. Error típic: oblidar que l'electró té càrrega negativa, cosa que inverteix el sentit de les dues forces (i el sentit de gir). Observeu que a l'apartat b) la velocitat ($1{,}25\\times10^{4}\\ \\text{m/s}$) no és la seleccionada a l'apartat a); això no afecta el càlcul."
+      }
+    },
+    {
+      "id": "fisica-2014-S-e5-b",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Tub de ressonància amb diapasó: ones estacionàries, velocitat del so i nivell d'intensitat sonora",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ones estacionàries",
+        "tub tancat",
+        "ressonància",
+        "velocitat del so",
+        "intensitat sonora",
+        "nivell d'intensitat sonora"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Per a mesurar la velocitat del so en l'aire podem fer servir un tub de ressonància. Regulant el nivell de l'aigua, es poden produir situacions de ressonància quan l'ona estacionària té un ventre a l'extrem obert del tub. Quan el diapasó vibra amb una freqüència de $440\\ \\text{Hz}$, fem baixar el nivell de l'aigua fins que observem la primera situació de ressonància per a $h = 19\\ \\text{cm}$, que es reconeix perquè es produeix una intensificació nítida del so, i també observem una segona situació de ressonància per a $h = 57\\ \\text{cm}$.\n\n**Dada:** intensitat del llindar d'audició: $I_0 = 10^{-12}\\ \\text{W m}^{-2}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2014-S/e5-b.png",
+          "peu": "Tub de ressonància: el diapasó vibra sobre l'extrem obert i $h$ és la longitud de la columna d'aire fins a l'aigua"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu l'esquema de l'ona estacionària per a cadascuna de les situacions de ressonància descrites i determineu la velocitat del so en l'aire.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si el diapasó emet ones sonores amb una potència de $0{,}01\\ \\text{W}$, calculeu els decibels que percebrà una persona situada a $3\\ \\text{m}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Freqüència: $f = 440\\ \\text{Hz}$\n- Longituds de ressonància: $h_1 = 19\\ \\text{cm} = 0{,}19\\ \\text{m}$, $h_2 = 57\\ \\text{cm} = 0{,}57\\ \\text{m}$\n- Potència: $P = 0{,}01\\ \\text{W}$; distància $d = 3\\ \\text{m}$; $I_0 = 10^{-12}\\ \\text{W/m}^2$\n- Incògnites: a) esquemes i velocitat del so $v$; b) nivell d'intensitat $\\beta$ en dB."
+          },
+          {
+            "apartat": "a",
+            "titol": "Esquema de les ones estacionàries",
+            "cos": "La columna d'aire es comporta com un tub **tancat per un extrem** (la superfície de l'aigua, on l'aire no es pot moure: **node**) i obert per l'altre (on hi ha un **ventre**). Les ressonàncies es donen quan hi cap un nombre senar de quarts de longitud d'ona:\n\n- 1a ressonància ($h_1$): $h_1 = \\dfrac{\\lambda}{4}$ (un ventre a dalt i un node a l'aigua).\n- 2a ressonància ($h_2$): $h_2 = \\dfrac{3\\lambda}{4}$ (ventre–node–ventre–node).\n\n![Esquema de les dues ressonàncies (solució oficial): a l'esquerra λ/4, a la dreta 3λ/4; el ventre és a l'extrem obert](img/fisica/2014-S/e5-b-sol.png)\n\nEn general, $L_n = \\dfrac{\\lambda}{4}(2n+1)$, amb $n = 0, 1, 2, \\dots$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud d'ona",
+            "cos": "Entre dues ressonàncies consecutives la longitud augmenta mitja longitud d'ona:\n\n$$h_2 - h_1 = \\frac{3\\lambda}{4} - \\frac{\\lambda}{4} = \\frac{\\lambda}{2} \\quad\\Rightarrow\\quad \\lambda = 2\\,(0{,}57 - 0{,}19) = 0{,}76\\ \\text{m}$$\n\n(Comprovació amb la primera: $\\lambda = 4h_1 = 4\\cdot 0{,}19 = 0{,}76\\ \\text{m}$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat del so",
+            "cos": "$$v = \\lambda f = 0{,}76\\cdot 440 = 334\\ \\text{m/s}$$\n\nResultat: **$v \\approx 334\\ \\text{m/s}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat a 3 m",
+            "cos": "El diapasó emet en totes direccions: la potència es reparteix uniformement sobre una esfera de radi $d$ ($S = 4\\pi d^2$):\n\n$$I = \\frac{P}{4\\pi d^2} = \\frac{0{,}01}{4\\pi\\cdot 3^2} = 8{,}84\\times10^{-5}\\ \\text{W/m}^2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Nivell d'intensitat sonora",
+            "cos": "$$\\beta = 10\\log\\frac{I}{I_0} = 10\\log\\frac{8{,}84\\times10^{-5}}{10^{-12}} = 10\\log(8{,}84\\times10^{7}) = 79{,}5\\ \\text{dB}$$\n\nResultat: **$\\beta \\approx 79\\text{–}80\\ \\text{dB}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$h_1 = \\lambda/4$, $h_2 = 3\\lambda/4$; $\\lambda = 0{,}76\\ \\text{m}$; $v = 334\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I = 8{,}84\\times10^{-5}\\ \\text{W/m}^2$; $\\beta \\approx 79{,}5\\ \\text{dB}$"
+          }
+        ],
+        "nota": "La solució oficial dona $\\beta = 79\\ \\text{dB}$; el valor exacte és $79{,}47\\ \\text{dB}$, que arrodonit a l'enter és $79\\ \\text{dB}$ (amb una xifra decimal, $79{,}5\\ \\text{dB}$). Error típic: pensar que el tub és obert pels dos extrems ($L = n\\lambda/2$); la superfície de l'aigua tanca el tub i hi fa un node."
+      }
+    }
+  ]
+}

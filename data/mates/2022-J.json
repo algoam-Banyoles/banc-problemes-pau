@@ -1,0 +1,560 @@
+{
+  "examen": {
+    "id": "mates-2022-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2022,
+    "convocatoria": "juny",
+    "serie": "2",
+    "pdf_examen": "pdfs/mates/2022-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2022-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE de les sis qüestions. Cada qüestió val 2,5 punts. Es pot utilitzar calculadora (no programable ni amb capacitat d'emmagatzemar o transmetre dades)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2022-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Funció a partir de la derivada: inflexió, concavitat i àrea sota f''",
+      "tema": "derivades",
+      "temes_secundaris": [
+        "integrals"
+      ],
+      "conceptes": [
+        "primitiva",
+        "punt d'inflexió",
+        "concavitat",
+        "àrea entre corba i eix",
+        "regla de Barrow"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2,
+        3
+      ],
+      "enunciat": "Sigui $f'(x) = 3x^2 - 12x$ la derivada d'una funció $f(x)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Si sabem que $f(x)$ talla l'eix de les abscisses en $x = 1$, calculeu l'expressió de la funció $f(x)$.",
+          "punts": 0.75
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'abscissa del punt d'inflexió de $f(x)$ i estudieu la concavitat de la funció.",
+          "punts": 0.75
+        },
+        {
+          "id": "c",
+          "enunciat": "Sabem que l'àrea del recinte limitat per la corba $y = f''(x)$, l'eix de les abscisses i les rectes $x = 0$ i $x = a$, amb $a > 2$, és $15\\ u^2$. Calculeu el valor de $a$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Coneixem la derivada: $f'(x) = 3x^2 - 12x$.\n- Sabem que $f(1) = 0$ (la gràfica talla l'eix $OX$ a $x=1$).\n- Busquem: $f(x)$, el punt d'inflexió i la concavitat, i el valor de $a$ que fa que l'àrea sota $f''$ sigui $15\\ u^2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Integrem la derivada",
+            "cos": "Si coneixem $f'(x)$, la funció $f(x)$ és una **primitiva** seva. Integrem terme a terme amb $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1}$:\n\n$$f(x) = \\int (3x^2 - 12x)\\,dx = 3\\cdot\\frac{x^3}{3} - 12\\cdot\\frac{x^2}{2} + C = x^3 - 6x^2 + C$$\n\nLa constant $C$ encara no la sabem: totes les funcions $x^3-6x^2+C$ tenen la mateixa derivada."
+          },
+          {
+            "apartat": "a",
+            "titol": "Determinem la constant amb la condició f(1) = 0",
+            "cos": "Que la funció talli l'eix de les abscisses en $x=1$ vol dir que $f(1)=0$:\n\n$$f(1) = 1^3 - 6\\cdot 1^2 + C = 1 - 6 + C = 0 \\;\\Rightarrow\\; C = 5$$\n\nResultat: **$f(x) = x^3 - 6x^2 + 5$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivada segona i candidat a punt d'inflexió",
+            "cos": "Els punts d'inflexió són on canvia la concavitat; allà la derivada segona s'anul·la. Derivem $f'(x)$:\n\n$$f''(x) = 6x - 12 = 0 \\;\\Rightarrow\\; x = 2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Signe de f'' i concavitat",
+            "cos": "Estudiem el signe de $f''(x) = 6x-12$ a cada costat de $x=2$ (per exemple amb $x=0$ i $x=3$):\n\n| | $(-\\infty,\\,2)$ | $x=2$ | $(2,\\,+\\infty)$ |\n|---|---|---|---|\n| $f''(x)$ | $f''(0) = -12 < 0$ | $0$ | $f''(3) = 6 > 0$ |\n| $f(x)$ | còncava cap avall ($\\cap$) | inflexió | còncava cap amunt ($\\cup$) |\n\nCom que $f''$ canvia de signe a $x=2$, hi ha un **punt d'inflexió a $x = 2$** (el punt és $(2, f(2)) = (2,\\,-11)$).\n\n- **Còncava cap avall** (concavitat negativa) a $(-\\infty,\\,2)$.\n- **Còncava cap amunt** (concavitat positiva) a $(2,\\,+\\infty)$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Plantejament: la recta f'' canvia de signe a x = 2",
+            "cos": "Ara la corba és la recta $y = f''(x) = 6x-12$, que talla l'eix $OX$ a $x=2$. Com que $a > 2$, entre $x=0$ i $x=a$ la recta queda **per sota** de l'eix a $[0,2]$ i **per sobre** a $[2,a]$. L'àrea sempre és positiva, de manera que cal partir la integral a $x=2$ i canviar el signe de la part negativa:\n\n![Recinte limitat per y = f''(x), l'eix OX i les rectes x = 0 i x = a](img/mates/2022-J/e1-sol.png)\n\n$$15 = \\int_0^2 (12 - 6x)\\,dx + \\int_2^a (6x - 12)\\,dx$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Primitives i regla de Barrow",
+            "cos": "$$\\int_0^2 (12-6x)\\,dx = \\Big[12x - 3x^2\\Big]_0^2 = (24 - 12) - 0 = 12$$\n\n$$\\int_2^a (6x-12)\\,dx = \\Big[3x^2 - 12x\\Big]_2^a = (3a^2 - 12a) - (12 - 24) = 3a^2 - 12a + 12$$\n\nSumant i igualant a 15:\n\n$$12 + 3a^2 - 12a + 12 = 15 \\;\\Rightarrow\\; 3a^2 - 12a + 9 = 0 \\;\\Rightarrow\\; a^2 - 4a + 3 = 0$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Resolem l'equació i triem la solució vàlida",
+            "cos": "$$a = \\frac{4 \\pm \\sqrt{16 - 12}}{2} = \\frac{4 \\pm 2}{2} \\;\\Rightarrow\\; a = 3 \\text{ o } a = 1$$\n\nCom que l'enunciat exigeix $a > 2$, descartem $a=1$. Resultat: **$a = 3$**.\n\nComprovació geomètrica: el recinte són dos triangles. El de l'esquerra té base 2 i altura $|f''(0)| = 12$ → àrea $12$. El de la dreta, amb $a=3$, té base 1 i altura $f''(3) = 6$ → àrea $3$. Total $12 + 3 = 15$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$f(x) = x^3 - 6x^2 + 5$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Punt d'inflexió a $x = 2$; còncava cap avall a $(-\\infty,2)$ i cap amunt a $(2,+\\infty)$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$a = 3$"
+          }
+        ],
+        "nota": "L'apartat c) també es pot fer sense integrals, sumant les àrees dels dos triangles (com fem a la comprovació); els criteris oficials ho accepten. Error típic: fer $\\int_0^a (6x-12)\\,dx = 15$ sense partir a $x=2$, cosa que resta l'àrea de sota l'eix en lloc de sumar-la."
+      }
+    },
+    {
+      "id": "mates-2022-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Discussió i resolució d'un sistema 3x3 amb un paràmetre",
+      "tema": "sistemes",
+      "temes_secundaris": [
+        "matrius"
+      ],
+      "conceptes": [
+        "discussió de sistemes",
+        "teorema de Rouché-Fröbenius",
+        "rang",
+        "determinant",
+        "sistema compatible indeterminat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "Considereu el sistema d'equacions lineals següent, que depèn del paràmetre real $a$:\n\n$$\\begin{cases} ax + 2y + 3z = 2 \\\\ 2x + ay + z = a \\\\ x + y + 4z = 1 \\end{cases}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $a$.",
+          "punts": 1.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Resoleu, si és possible, el sistema per al cas $a = 2$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Matriu de coeficients i matriu ampliada",
+            "cos": "Fem servir el **teorema de Rouché-Fröbenius**: el sistema és compatible si $\\text{rang}(A) = \\text{rang}(A')$, i és determinat si a més aquest rang és igual al nombre d'incògnites (3).\n\n$$A = \\begin{pmatrix} a & 2 & 3 \\\\ 2 & a & 1 \\\\ 1 & 1 & 4 \\end{pmatrix}, \\qquad A' = \\left(\\begin{array}{ccc|c} a & 2 & 3 & 2 \\\\ 2 & a & 1 & a \\\\ 1 & 1 & 4 & 1 \\end{array}\\right)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Determinant de A i valors crítics",
+            "cos": "Com que $A$ depèn del paràmetre, mirem quan el determinant s'anul·la (llavors el rang ja no és 3). Per Sarrus:\n\n$$|A| = 4a^2 + 2 + 6 - 3a - a - 16 = 4a^2 - 4a - 8$$\n\n$$4a^2 - 4a - 8 = 0 \\;\\Rightarrow\\; a^2 - a - 2 = 0 \\;\\Rightarrow\\; a = \\frac{1 \\pm 3}{2} \\;\\Rightarrow\\; a = 2,\\; a = -1$$\n\nCal estudiar tres casos: $a \\ne -1,2$; $a = -1$; $a = 2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas a ≠ −1 i a ≠ 2",
+            "cos": "$|A| \\ne 0 \\Rightarrow \\text{rang}(A) = 3$. Com que $A'$ només té 3 files, també $\\text{rang}(A') = 3$.\n\n$$\\text{rang}(A) = \\text{rang}(A') = 3 = \\text{nre. d'incògnites}$$\n\n**Sistema compatible determinat (SCD)**: solució única."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas a = −1",
+            "cos": "El sistema és\n\n$$\\begin{cases} -x + 2y + 3z = 2 \\\\ 2x - y + z = -1 \\\\ x + y + 4z = 1 \\end{cases}$$\n\n$|A| = 0$ i el menor $\\begin{vmatrix} -1 & 2 \\\\ 2 & -1 \\end{vmatrix} = 1 - 4 = -3 \\ne 0$, per tant $\\text{rang}(A) = 2$.\n\nA més, sumant la 1a i la 2a equació s'obté exactament la 3a: $(-1+2)x + (2-1)y + (3+1)z = 2 - 1$, és a dir, $x + y + 4z = 1$. Per tant la tercera fila de $A'$ és combinació de les altres dues i $\\text{rang}(A') = 2$.\n\n$$\\text{rang}(A) = \\text{rang}(A') = 2 < 3$$\n\n**Sistema compatible indeterminat (SCI)** amb $3-2 = 1$ grau de llibertat."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas a = 2",
+            "cos": "El sistema és\n\n$$\\begin{cases} 2x + 2y + 3z = 2 \\\\ 2x + 2y + z = 2 \\\\ x + y + 4z = 1 \\end{cases}$$\n\n$|A| = 0$ i el menor $\\begin{vmatrix} 2 & 3 \\\\ 2 & 1 \\end{vmatrix} = 2 - 6 = -4 \\ne 0$, per tant $\\text{rang}(A) = 2$.\n\nFixeu-vos que la columna de termes independents $(2,2,1)$ és **igual** a la 1a columna (i a la 2a). Qualsevol menor d'ordre 3 de $A'$ tindrà dues columnes iguals o serà $|A|$, i per tant serà 0: $\\text{rang}(A') = 2$.\n\n$$\\text{rang}(A) = \\text{rang}(A') = 2 < 3$$\n\n**Sistema compatible indeterminat (SCI)** amb 1 grau de llibertat."
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplifiquem el sistema per a a = 2",
+            "cos": "Per l'apartat a) ja sabem que és **SCI**: tindrà infinites solucions dependents d'un paràmetre. Restem la 2a equació de la 1a:\n\n$$(2x+2y+3z) - (2x+2y+z) = 2 - 2 \\;\\Rightarrow\\; 2z = 0 \\;\\Rightarrow\\; z = 0$$\n\nSubstituint $z=0$, les tres equacions queden $2x+2y=2$, $2x+2y=2$ i $x+y=1$: totes equivalents a $x + y = 1$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Solució general",
+            "cos": "Prenem $y = \\lambda$ com a paràmetre lliure: $x = 1 - \\lambda$, $z = 0$.\n\n$$(x,\\,y,\\,z) = (1 - \\lambda,\\; \\lambda,\\; 0), \\quad \\lambda \\in \\mathbb{R}$$\n\nComprovació amb $\\lambda = 0$: $(1,0,0)$ → $2 = 2$ ✓, $2 = 2$ ✓, $1 = 1$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a \\ne -1,2$: SCD. $a = -1$: SCI (1 grau de llibertat). $a = 2$: SCI (1 grau de llibertat). Mai és incompatible."
+          },
+          {
+            "apartat": "b",
+            "valor": "$(x,y,z) = (1-\\lambda,\\ \\lambda,\\ 0)$, $\\lambda \\in \\mathbb{R}$"
+          }
+        ],
+        "nota": "Tot i que $|A|=0$ en dos valors, en cap cas el sistema és incompatible: cal comprovar sempre el rang de l'ampliada, no suposar-lo. També es pot discutir amb el mètode de Gauss."
+      }
+    },
+    {
+      "id": "mates-2022-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Posició relativa recta-pla i recta perpendicular al pla",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "posició relativa recta i pla",
+        "vector director",
+        "vector normal",
+        "punt d'intersecció",
+        "recta perpendicular a un pla"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "Sigui la recta $r$ definida per l'expressió següent:\n\n$$r: \\begin{cases} x = 2 + \\lambda \\\\ y = -1 + 3\\lambda \\\\ z = 3 + \\lambda \\end{cases}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu la posició relativa de la recta $r$ respecte al pla $\\pi: x - 2y + 4z - 4 = 0$. Si és paral·lela, calculeu la distància de $r$ a $\\pi$, i si és secant, calculeu el punt de tall.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'equació de la recta $s$ perpendicular al pla $\\pi$ i que talla la recta $r$ en un punt $P$, la primera coordenada del qual és 5 vegades més gran que la segona.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades",
+            "cos": "- Recta $r$: punt $P_r = (2,-1,3)$ i vector director $\\vec v_r = (1,3,1)$.\n- Pla $\\pi: x - 2y + 4z - 4 = 0$, amb vector normal $\\vec n = (1,-2,4)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "La recta és paral·lela al pla?",
+            "cos": "Una recta és paral·lela al pla (o hi està continguda) quan el seu vector director és **perpendicular** al vector normal del pla, és a dir, quan el producte escalar és 0:\n\n$$\\vec v_r \\cdot \\vec n = (1,3,1)\\cdot(1,-2,4) = 1 - 6 + 4 = -1 \\ne 0$$\n\nNo és zero, per tant la recta **no** és paral·lela ni continguda: **$r$ és secant a $\\pi$**. (De fet, $P_r$ no és del pla: $2 - 2(-1) + 4\\cdot 3 - 4 = 12 \\ne 0$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Punt de tall",
+            "cos": "Substituïm les coordenades genèriques de la recta a l'equació del pla:\n\n$$(2+\\lambda) - 2(-1+3\\lambda) + 4(3+\\lambda) - 4 = 0$$\n\n$$2 + \\lambda + 2 - 6\\lambda + 12 + 4\\lambda - 4 = 0 \\;\\Rightarrow\\; 12 - \\lambda = 0 \\;\\Rightarrow\\; \\lambda = 12$$\n\nPunt: $(2+12,\\; -1+36,\\; 3+12)$. Resultat: **$Q = (14,\\,35,\\,15)$**.\n\nComprovació: $14 - 70 + 60 - 4 = 0$ ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "Vector director de s",
+            "cos": "Una recta perpendicular a un pla té la direcció del **vector normal** del pla:\n\n$$\\vec v_s = \\vec n = (1,-2,4)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punt P de r amb x = 5y",
+            "cos": "El punt $P$ és de $r$, així que és $P = (2+\\lambda,\\,-1+3\\lambda,\\,3+\\lambda)$ per a algun $\\lambda$. Imposem que la primera coordenada sigui 5 vegades la segona:\n\n$$2 + \\lambda = 5(-1 + 3\\lambda) \\;\\Rightarrow\\; 2 + \\lambda = -5 + 15\\lambda \\;\\Rightarrow\\; 7 = 14\\lambda \\;\\Rightarrow\\; \\lambda = \\tfrac{1}{2}$$\n\n$$P = \\left(2 + \\tfrac12,\\; -1 + \\tfrac32,\\; 3 + \\tfrac12\\right) = \\left(\\tfrac52,\\; \\tfrac12,\\; \\tfrac72\\right)$$\n\nComprovació: $\\frac52 = 5 \\cdot \\frac12$ ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació de la recta s",
+            "cos": "$$s: (x,y,z) = \\left(\\tfrac52,\\,\\tfrac12,\\,\\tfrac72\\right) + \\mu\\,(1,-2,4), \\quad \\mu \\in \\mathbb{R}$$\n\nEn forma contínua: $\\dfrac{x - 5/2}{1} = \\dfrac{y - 1/2}{-2} = \\dfrac{z - 7/2}{4}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Secant; punt de tall $(14,\\,35,\\,15)$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$s: (x,y,z) = \\left(\\frac52,\\frac12,\\frac72\\right) + \\mu(1,-2,4)$"
+          }
+        ],
+        "nota": "La solució oficial comprova primer que el punt de $r$ no és del pla i després el producte escalar; per decidir que és secant n'hi ha prou amb el producte escalar no nul. S'accepta qualsevol forma correcta de l'equació de $s$."
+      }
+    },
+    {
+      "id": "mates-2022-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Polinomi de grau 3 amb condicions i àrea d'una cúbica amb l'eix",
+      "tema": "integrals",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "primitiva",
+        "recta tangent horitzontal",
+        "monotonia",
+        "àrea entre corba i eix",
+        "regla de Barrow"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8,
+        9
+      ],
+      "enunciat": "Aquesta qüestió té dos apartats independents (l'enunciat no té part comuna).",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu una funció polinòmica $y = g(x)$ de grau 3 tal que talli l'eix de les ordenades en el punt $(0, 5)$, que la recta tangent a $y = g(x)$ en el punt d'abscissa $x = 1$ sigui horitzontal i que $g''(x) = 2x + 1$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Comproveu que la funció $f(x) = -x^3 + 6x^2 - 16$ té una arrel a $x = 2$ i que és estrictament creixent a l'interval $(0, 4)$. Utilitzeu aquesta informació per a calcular l'àrea determinada per la funció $f(x)$, l'eix de les abscisses i les rectes $x = 0$ i $x = 4$.",
+          "punts": 1.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Traduïm les condicions",
+            "cos": "- Talla l'eix $OY$ a $(0,5)$ → $g(0) = 5$.\n- Tangent horitzontal a $x=1$ → pendent zero: $g'(1) = 0$.\n- $g''(x) = 2x + 1$.\n\nAnirem integrant des de $g''$ fins a $g$, i fixarem cada constant amb una condició."
+          },
+          {
+            "apartat": "a",
+            "titol": "De g'' a g'",
+            "cos": "$$g'(x) = \\int (2x + 1)\\,dx = x^2 + x + m$$\n\nAmb $g'(1) = 0$: $1 + 1 + m = 0 \\Rightarrow m = -2$. Per tant $g'(x) = x^2 + x - 2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "De g' a g",
+            "cos": "$$g(x) = \\int (x^2 + x - 2)\\,dx = \\frac{x^3}{3} + \\frac{x^2}{2} - 2x + n$$\n\nAmb $g(0) = 5$: $n = 5$.\n\nResultat: **$g(x) = \\dfrac{x^3}{3} + \\dfrac{x^2}{2} - 2x + 5$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Arrel a x = 2",
+            "cos": "$$f(2) = -8 + 6\\cdot 4 - 16 = -8 + 24 - 16 = 0$$\n\nPer tant **$x = 2$ és una arrel** de $f$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Creixement estricte a (0, 4)",
+            "cos": "$f$ és polinòmica (contínua i derivable a tot $\\mathbb{R}$). Estudiem el signe de la derivada:\n\n$$f'(x) = -3x^2 + 12x = -3x(x - 4)$$\n\nS'anul·la a $x=0$ i $x=4$. És una paràbola amb coeficient principal negatiu (oberta cap avall), de manera que és **positiva entre les arrels**: per exemple $f'(2) = 12 > 0$. Així $f'(x) > 0$ a $(0,4)$ i **$f$ és estrictament creixent a $(0,4)$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Conseqüència: signe de f a [0, 4]",
+            "cos": "Si $f$ és estrictament creixent a $(0,4)$, només pot tallar l'eix **una vegada** en aquest interval: a $x=2$. Per tant $f < 0$ a $(0,2)$ i $f > 0$ a $(2,4)$ (per exemple $f(0) = -16$, $f(4) = -64 + 96 - 16 = 16$). Cal partir l'àrea a $x=2$:\n\n$$A = \\left|\\int_0^2 f(x)\\,dx\\right| + \\left|\\int_2^4 f(x)\\,dx\\right|$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Primitiva i regla de Barrow",
+            "cos": "$$F(x) = \\int(-x^3 + 6x^2 - 16)\\,dx = -\\frac{x^4}{4} + 2x^3 - 16x$$\n\n$F(0) = 0$, $\\quad F(2) = -4 + 16 - 32 = -20$, $\\quad F(4) = -64 + 128 - 64 = 0$.\n\n$$\\int_0^2 f = F(2) - F(0) = -20, \\qquad \\int_2^4 f = F(4) - F(2) = 0 - (-20) = 20$$\n\n$$A = |-20| + |20| = 40$$\n\nResultat: **$A = 40\\ u^2$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$g(x) = \\frac{x^3}{3} + \\frac{x^2}{2} - 2x + 5$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$f(2)=0$; $f'(x) = -3x^2+12x > 0$ a $(0,4)$; àrea $= 40\\ u^2$"
+          }
+        ],
+        "nota": "A l'apartat a) també es pot partir de $g(x) = d x^3 + c x^2 + b x + e$ i imposar les condicions. Error típic a b): calcular directament $\\int_0^4 f(x)\\,dx = 0$ (les dues parts es compensen) i donar àrea 0."
+      }
+    },
+    {
+      "id": "mates-2022-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Matriu triangular amb paràmetres: arrel quadrada i inversa donada",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "producte de matrius",
+        "igualtat de matrius",
+        "matriu inversa",
+        "matriu identitat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10,
+        11
+      ],
+      "enunciat": "Sigui la matriu $X = \\begin{pmatrix} a & 1 & 0 \\\\ 0 & b & 1 \\\\ 0 & 0 & c \\end{pmatrix}$, que depèn dels paràmetres $a$, $b$ i $c$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu les matrius $X$ tals que $X^2 = \\begin{pmatrix} 1 & 0 & 1 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}$.",
+          "punts": 1.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu els valors de $a$, $b$ i $c$ perquè la matriu inversa de $X$ sigui $X^{-1} = \\begin{pmatrix} \\frac12 & -\\frac12 & -\\frac12 \\\\ 0 & 1 & 1 \\\\ 0 & 0 & -1 \\end{pmatrix}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Calculem X²",
+            "cos": "Multipliquem files per columnes:\n\n$$X^2 = \\begin{pmatrix} a & 1 & 0 \\\\ 0 & b & 1 \\\\ 0 & 0 & c \\end{pmatrix}\\begin{pmatrix} a & 1 & 0 \\\\ 0 & b & 1 \\\\ 0 & 0 & c \\end{pmatrix} = \\begin{pmatrix} a^2 & a + b & 1 \\\\ 0 & b^2 & b + c \\\\ 0 & 0 & c^2 \\end{pmatrix}$$\n\n(Per exemple, l'element (1,2) és $a\\cdot 1 + 1\\cdot b + 0\\cdot 0 = a+b$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Igualem terme a terme",
+            "cos": "Dues matrius són iguals si ho són tots els seus elements:\n\n$$\\begin{pmatrix} a^2 & a + b & 1 \\\\ 0 & b^2 & b + c \\\\ 0 & 0 & c^2 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 1 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}$$\n\n- $a^2 = 1 \\Rightarrow a = \\pm 1$\n- $b^2 = 1 \\Rightarrow b = \\pm 1$\n- $c^2 = 1 \\Rightarrow c = \\pm 1$\n- $a + b = 0 \\Rightarrow b = -a$\n- $b + c = 0 \\Rightarrow c = -b = a$\n\n(L'element (1,3) dona $1 = 1$, sempre cert.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Solucions",
+            "cos": "Si $a = 1$: $b = -1$, $c = 1$. Si $a = -1$: $b = 1$, $c = -1$. Hi ha **dues matrius**:\n\n$$X_1 = \\begin{pmatrix} 1 & 1 & 0 \\\\ 0 & -1 & 1 \\\\ 0 & 0 & 1 \\end{pmatrix}, \\qquad X_2 = \\begin{pmatrix} -1 & 1 & 0 \\\\ 0 & 1 & 1 \\\\ 0 & 0 & -1 \\end{pmatrix}$$\n\n(Observeu que $X_2 = -X_1$, i $(-X_1)^2 = X_1^2$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantegem X · X⁻¹ = I",
+            "cos": "La inversa compleix $X \\cdot X^{-1} = I$. Així no cal calcular cap inversa: només multiplicar i igualar a la identitat.\n\n$$\\begin{pmatrix} a & 1 & 0 \\\\ 0 & b & 1 \\\\ 0 & 0 & c \\end{pmatrix}\\begin{pmatrix} \\frac12 & -\\frac12 & -\\frac12 \\\\ 0 & 1 & 1 \\\\ 0 & 0 & -1 \\end{pmatrix} = \\begin{pmatrix} \\frac{a}{2} & 1 - \\frac{a}{2} & 1 - \\frac{a}{2} \\\\ 0 & b & b - 1 \\\\ 0 & 0 & -c \\end{pmatrix}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Igualem a la identitat",
+            "cos": "$$\\begin{pmatrix} \\frac{a}{2} & 1 - \\frac{a}{2} & 1 - \\frac{a}{2} \\\\ 0 & b & b - 1 \\\\ 0 & 0 & -c \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}$$\n\n- Diagonal: $\\frac{a}{2} = 1 \\Rightarrow a = 2$; $\\;b = 1$; $\\;-c = 1 \\Rightarrow c = -1$.\n- Fora de la diagonal: $1 - \\frac{2}{2} = 0$ ✓ i $b - 1 = 0$ ✓. Totes les equacions es compleixen.\n\nResultat: **$a = 2$, $b = 1$, $c = -1$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$X = \\begin{pmatrix} 1 & 1 & 0 \\\\ 0 & -1 & 1 \\\\ 0 & 0 & 1 \\end{pmatrix}$ o $X = \\begin{pmatrix} -1 & 1 & 0 \\\\ 0 & 1 & 1 \\\\ 0 & 0 & -1 \\end{pmatrix}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$a = 2$, $b = 1$, $c = -1$"
+          }
+        ],
+        "nota": "Mètode alternatiu per a b) (també a l'oficial): calcular la inversa general, $X^{-1} = \\begin{pmatrix} 1/a & -1/(ab) & 1/(abc) \\\\ 0 & 1/b & -1/(bc) \\\\ 0 & 0 & 1/c \\end{pmatrix}$, i igualar-la a la donada. Fent $X \\cdot X^{-1} = I$ és més ràpid."
+      }
+    },
+    {
+      "id": "mates-2022-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Trapezi rectangular d'àrea fixa amb el costat oblic mínim",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "optimització",
+        "àrea del trapezi",
+        "teorema de Pitàgores",
+        "derivada",
+        "mínim"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12,
+        13
+      ],
+      "enunciat": "Al pati d'una escola es vol crear una àrea de joc de $30\\ \\text{m}^2$ per als més petits en forma de trapezi rectangular, de manera que la base més gran mesuri el doble que la base més petita, tal com mostra la figura, i que el costat oblic respecte a les bases ($D$) sigui tan curt com sigui possible.",
+      "figures": [
+        {
+          "src": "img/mates/2022-J/e6.png",
+          "peu": "Trapezi rectangular de bases x i 2x, altura h i costat oblic D"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Justifiqueu que se satisfan les relacions següents: $h = \\dfrac{20}{x}$ i $D(x) = \\sqrt{\\dfrac{400}{x^2} + x^2}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu les dimensions del trapezi per a les quals la longitud del costat $D$ és mínima.",
+          "punts": 1.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Base petita $x$, base gran $2x$, altura $h$, costat oblic $D$ (tot en metres, $x > 0$).\n- Àrea: $30\\ \\text{m}^2$.\n- Busquem $x$ (i $h$, $D$) que fan $D$ mínim."
+          },
+          {
+            "apartat": "a",
+            "titol": "Altura a partir de l'àrea",
+            "cos": "L'àrea d'un trapezi és la semisuma de les bases per l'altura:\n\n$$A = \\frac{x + 2x}{2}\\cdot h = \\frac{3x}{2}\\,h = 30 \\;\\Rightarrow\\; h = \\frac{60}{3x} = \\frac{20}{x}$$\n\nAixí queda justificat que **$h = \\dfrac{20}{x}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Costat oblic amb Pitàgores",
+            "cos": "Si tallem el trapezi per la vertical que baixa de l'extrem de la base petita, obtenim un rectangle $x \\times h$ i un **triangle rectangle** amb catets $h$ (vertical) i $2x - x = x$ (horitzontal), i hipotenusa $D$. Per Pitàgores:\n\n$$D^2 = x^2 + h^2 = x^2 + \\left(\\frac{20}{x}\\right)^2 = \\frac{400}{x^2} + x^2$$\n\n$$D(x) = \\sqrt{\\frac{400}{x^2} + x^2}, \\quad x > 0$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivada de D(x)",
+            "cos": "Per trobar el mínim derivem (regla de la cadena: $(\\sqrt{u})' = \\frac{u'}{2\\sqrt u}$, amb $u = 400x^{-2} + x^2$, $u' = -800x^{-3} + 2x$):\n\n$$D'(x) = \\frac{-\\frac{800}{x^3} + 2x}{2\\sqrt{\\frac{400}{x^2} + x^2}} = \\frac{-\\frac{400}{x^3} + x}{\\sqrt{\\frac{400}{x^2} + x^2}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punt crític",
+            "cos": "El denominador és sempre positiu, així que $D'(x) = 0$ quan s'anul·la el numerador:\n\n$$-\\frac{400}{x^3} + x = 0 \\;\\Rightarrow\\; x^4 = 400 \\;\\Rightarrow\\; x^2 = 20 \\;\\Rightarrow\\; x = \\sqrt{20} = 2\\sqrt5 \\approx 4{,}47$$\n\n(Només la solució positiva té sentit, perquè $x$ és una longitud.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "És un mínim?",
+            "cos": "El signe de $D'$ és el de $x - \\frac{400}{x^3} = \\frac{x^4 - 400}{x^3}$:\n\n| | $(0,\\,2\\sqrt5)$ | $2\\sqrt5$ | $(2\\sqrt5,\\,+\\infty)$ |\n|---|---|---|---|\n| $D'(x)$ | $-$ (p. ex. $x=1$: $1-400<0$) | $0$ | $+$ (p. ex. $x=5$: $625-400>0$) |\n| $D(x)$ | decreixent | **mínim** | creixent |\n\nPer tant, a $x = 2\\sqrt5$ hi ha el **mínim absolut** de $D$ en $(0,+\\infty)$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Dimensions del trapezi",
+            "cos": "$$x = 2\\sqrt5 \\approx 4{,}47\\ \\text{m}, \\qquad 2x = 4\\sqrt5 \\approx 8{,}94\\ \\text{m}$$\n\n$$h = \\frac{20}{2\\sqrt5} = \\frac{10}{\\sqrt5} = 2\\sqrt5 \\approx 4{,}47\\ \\text{m}$$\n\n$$D = \\sqrt{20 + 20} = \\sqrt{40} = 2\\sqrt{10} \\approx 6{,}32\\ \\text{m}$$\n\nComprovació de l'àrea: $\\frac{3\\cdot 2\\sqrt5}{2}\\cdot 2\\sqrt5 = 3\\cdot 5\\cdot 2 = 30\\ \\text{m}^2$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$h = \\frac{20}{x}$ (de l'àrea) i $D = \\sqrt{x^2 + h^2} = \\sqrt{\\frac{400}{x^2} + x^2}$ (Pitàgores)"
+          },
+          {
+            "apartat": "b",
+            "valor": "Base petita $x = 2\\sqrt5 \\approx 4{,}47$ m, base gran $4\\sqrt5 \\approx 8{,}94$ m, altura $h = 2\\sqrt5 \\approx 4{,}47$ m, $D = 2\\sqrt{10} \\approx 6{,}32$ m"
+          }
+        ],
+        "nota": "Truc: com que $D > 0$, $D$ i $D^2 = \\frac{400}{x^2} + x^2$ tenen el mínim al mateix punt; derivar $D^2$ (sense arrel) és més senzill: $(D^2)' = -\\frac{800}{x^3} + 2x = 0 \\Rightarrow x^4 = 400$. L'oficial també ho accepta si es justifica."
+      }
+    }
+  ]
+}

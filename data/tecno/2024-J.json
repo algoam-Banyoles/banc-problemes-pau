@@ -1,0 +1,824 @@
+{
+  "examen": {
+    "id": "tecno-2024-J",
+    "assignatura": "tecno",
+    "materia": "Tecnologia i Enginyeria",
+    "any": 2024,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/tecno/2024-J-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2024-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels sis exercicis (2,5 punts cadascun); si se'n responen més, només es valoren els quatre primers. L'exercici 1 consta de 5 qüestions de test (0,5 punts cadascuna; cada resposta errònia descompta 0,16 punts i les no contestades no descompten). Els exercicis 2 a 6 són problemes amb apartats."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2024-J-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Massa de benzina consumida per cicle en un motor de quatre temps",
+      "tema": "termica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "motor de quatre temps",
+        "cicle termodinàmic",
+        "consum horari",
+        "densitat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un motor de benzina de quatre temps consumeix $10{,}2\\ \\text{L/h}$ quan gira a $4\\,000\\ \\text{min}^{-1}$. El poder calorífic de la benzina és $42\\,000\\ \\text{kJ/kg}$ i la seva densitat, $0{,}8\\ \\text{kg/L}$. Quina és la massa de combustible consumida en un cicle del motor?",
+      "figures": [],
+      "opcions": {
+        "a": "$30\\ \\text{mg}$",
+        "b": "$34\\ \\text{mg}$",
+        "c": "$68\\ \\text{mg}$",
+        "d": "$136\\ \\text{mg}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Consum volumètric: $c_V = 10{,}2\\ \\text{L/h}$\n- Densitat: $\\rho = 0{,}8\\ \\text{kg/L}$\n- Velocitat de gir: $n = 4\\,000\\ \\text{min}^{-1}$\n- Motor de 4 temps\n- El poder calorífic **no cal** per a aquesta pregunta (és una dada sobrera).\n- Incògnita: massa per cicle, $m_\\text{cicle}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Consum màsic horari",
+            "cos": "Passem el volum consumit a massa amb la densitat:\n\n$$c_m = \\rho \\cdot c_V = 0{,}8\\ \\text{kg/L} \\cdot 10{,}2\\ \\text{L/h} = 8{,}16\\ \\text{kg/h} = 8\\,160\\ \\text{g/h}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Cicles per hora",
+            "cos": "En un motor de **quatre temps** cada cicle necessita **dues voltes** del cigonyal:\n\n$$n_\\text{cicles} = \\frac{4\\,000}{2} = 2\\,000\\ \\text{cicles/min} = 2\\,000 \\cdot 60 = 120\\,000\\ \\text{cicles/h}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Massa per cicle",
+            "cos": "$$m_\\text{cicle} = \\frac{c_m}{n_\\text{cicles}} = \\frac{8\\,160\\ \\text{g/h}}{120\\,000\\ \\text{cicles/h}} = 0{,}068\\ \\text{g} = 68\\ \\text{mg}$$\n\nResultat: **$m_\\text{cicle} = 68\\ \\text{mg}$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- Si es compta un cicle per volta (com en un motor de 2 temps) surten $34\\ \\text{mg}$, l'opció **b**.\n- Si es compten 4 voltes per cicle (una per temps) surten $136\\ \\text{mg}$, l'opció **d**.\n- L'opció **a** no surt de cap raonament correcte; el poder calorífic és una dada que fa de distractor."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$m_\\text{cicle} = 68\\ \\text{mg}$ → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2024-J-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Comparació del mòdul d'elasticitat a partir de corbes tensió-deformació",
+      "tema": "resistencia",
+      "temes_secundaris": [
+        "materials"
+      ],
+      "conceptes": [
+        "assaig de tracció",
+        "mòdul de Young",
+        "zona elàstica",
+        "diagrama tensió-deformació"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "La figura mostra les corbes tensió-deformació obtingudes en assajos de tracció utilitzant dos acers diferents. A partir de l'observació d'aquesta figura, es pot afirmar que",
+      "figures": [
+        {
+          "src": "img/tecno/2024-J/e1-q2.png",
+          "peu": "Corbes tensió-deformació dels acers 1 i 2"
+        }
+      ],
+      "opcions": {
+        "a": "el mòdul d'elasticitat dels dos acers no es pot determinar en aquest assaig.",
+        "b": "el mòdul d'elasticitat dels dos acers és el mateix.",
+        "c": "el mòdul d'elasticitat de l'acer 1 és més gran que el de l'acer 2.",
+        "d": "el mòdul d'elasticitat de l'acer 2 és més gran que el de l'acer 1."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Què és el mòdul d'elasticitat",
+            "cos": "A la zona elàstica (el tram recte inicial de la corba), la tensió és proporcional a la deformació (llei de Hooke):\n\n$$\\sigma = E \\cdot \\varepsilon \\quad\\Rightarrow\\quad E = \\frac{\\sigma}{\\varepsilon}$$\n\nPer tant, el mòdul d'elasticitat $E$ és el **pendent del tram recte inicial** del diagrama $\\sigma$–$\\varepsilon$."
+          },
+          {
+            "apartat": null,
+            "titol": "Lectura de la figura",
+            "cos": "Les dues corbes comencen amb **el mateix tram recte** (es superposen fins a uns $300\\ \\text{MPa}$): tenen el mateix pendent i, per tant, **el mateix mòdul d'elasticitat**. On es diferencien és en el límit elàstic i la resistència (l'acer 1 arriba a una tensió més alta), que no tenen res a veure amb $E$.\n\nResposta **b**. (És normal: tots els acers tenen $E \\approx 200\\ \\text{GPa}$.)"
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** Precisament l'assaig de tracció serveix per determinar $E$ (pendent del tram elàstic).\n- **c)** i **d)** confonen el mòdul d'elasticitat amb el límit elàstic o la resistència a la tracció: l'acer 1 és més resistent, però no més rígid."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "Mateix pendent inicial → mateix $E$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2024-J-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Escalfament d'aigua amb una resistència elèctrica",
+      "tema": "termica",
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "calor específica",
+        "calor sensible",
+        "efecte Joule"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Una resistència elèctrica proporciona $3\\,000\\ \\text{J}$ a $50\\ \\text{ml}$ d'aigua que es troben a $5\\ ^\\circ\\text{C}$. Sabent que la calor específica de l'aigua és $c_\\text{e} = 4{,}18\\ \\text{kJ/(kg K)}$, la temperatura final de l'aigua serà",
+      "figures": [],
+      "opcions": {
+        "a": "$1{,}435\\ ^\\circ\\text{C}$.",
+        "b": "$6{,}435\\ ^\\circ\\text{C}$.",
+        "c": "$14{,}35\\ ^\\circ\\text{C}$.",
+        "d": "$19{,}35\\ ^\\circ\\text{C}$."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Calor aportada: $Q = 3\\,000\\ \\text{J}$\n- Volum d'aigua: $50\\ \\text{ml}$ → massa $m = 0{,}05\\ \\text{kg}$ (densitat de l'aigua $1\\ \\text{kg/L}$)\n- $c_\\text{e} = 4{,}18\\ \\text{kJ/(kg K)} = 4\\,180\\ \\text{J/(kg K)}$\n- $T_0 = 5\\ ^\\circ\\text{C}$\n- Incògnita: $T_f$"
+          },
+          {
+            "apartat": null,
+            "titol": "Increment de temperatura",
+            "cos": "La calor sensible que absorbeix l'aigua és $Q = m\\,c_\\text{e}\\,\\Delta T$, d'on:\n\n$$\\Delta T = \\frac{Q}{m\\,c_\\text{e}} = \\frac{3\\,000}{0{,}05 \\cdot 4\\,180} = 14{,}35\\ ^\\circ\\text{C}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Temperatura final",
+            "cos": "$$T_f = T_0 + \\Delta T = 5 + 14{,}35 = 19{,}35\\ ^\\circ\\text{C}$$\n\nResultat: **$T_f = 19{,}35\\ ^\\circ\\text{C}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- L'opció **c** ($14{,}35\\ ^\\circ\\text{C}$) és només l'increment $\\Delta T$: s'ha oblidat sumar la temperatura inicial.\n- Les opcions **a** i **b** surten de prendre la massa malament (p. ex. $0{,}5\\ \\text{kg}$ en lloc de $0{,}05\\ \\text{kg}$): $\\Delta T = 1{,}435\\ ^\\circ\\text{C}$ i $T_f = 6{,}435\\ ^\\circ\\text{C}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$T_f = 19{,}35\\ ^\\circ\\text{C}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2024-J-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Energia mensual produïda per unes plaques solars",
+      "tema": "energia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "energia solar",
+        "irradiació",
+        "rendiment",
+        "kilowatt hora"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Un habitatge disposa de vuit plaques solars. L'àrea total de les plaques és de $4{,}4\\ \\text{m}^2$, i les seves condicions de localització fan que es disposi, el mes de setembre, d'una irradiació diària mitjana de $13\\ \\text{kW h/m}^2$. Si les plaques tenen un rendiment del $0{,}3$, l'energia produïda durant el mes de setembre serà de",
+      "figures": [],
+      "opcions": {
+        "a": "$514{,}8\\ \\text{kW h}$.",
+        "b": "$1\\,853\\ \\text{J}$.",
+        "c": "$58{,}52\\ \\text{J}$.",
+        "d": "$52{,}19\\ \\text{kW h}$."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Àrea **total**: $A = 4{,}4\\ \\text{m}^2$ (el nombre de plaques, 8, no cal: l'àrea ja és la total)\n- Irradiació diària: $H = 13\\ \\text{kW h/(m}^2\\cdot\\text{dia)}$\n- Setembre: $30$ dies\n- Rendiment: $\\eta = 0{,}3$\n- Incògnita: energia elèctrica produïda al mes, $E$"
+          },
+          {
+            "apartat": null,
+            "titol": "Energia solar que rep la superfície",
+            "cos": "$$E_\\text{solar} = H \\cdot A \\cdot n_\\text{dies} = 13 \\cdot 4{,}4 \\cdot 30 = 1\\,716\\ \\text{kW h}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Energia produïda",
+            "cos": "Només se n'aprofita la fracció que indica el rendiment:\n\n$$E = \\eta \\cdot E_\\text{solar} = 0{,}3 \\cdot 1\\,716 = 514{,}8\\ \\text{kW h}$$\n\nResultat: **$E = 514{,}8\\ \\text{kW h}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **b)** i **c)** estan en joules i són valors ridículament petits: $514{,}8\\ \\text{kW h} \\approx 1{,}853 \\cdot 10^9\\ \\text{J}$ (l'opció b té la mantissa correcta però li falta la potència de 10).\n- **d)** no correspon a cap càlcul raonable amb aquestes dades."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$E = 514{,}8\\ \\text{kW h}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2024-J-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Volum de la cambra de combustió a partir de la relació de compressió",
+      "tema": "termica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "cilindrada",
+        "relació de compressió",
+        "cambra de combustió",
+        "motor de quatre temps"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "El motor d'una motocicleta de quatre temps té una cursa de $50{,}6\\ \\text{mm}$ i un diàmetre de cilindre de $56\\ \\text{mm}$. Si la relació de compressió és $7{,}3$, quin és el volum de la cambra de combustió?",
+      "figures": [],
+      "opcions": {
+        "a": "$124{,}6\\ \\text{cm}^3$",
+        "b": "$112{,}6\\ \\text{cm}^3$",
+        "c": "$39{,}56\\ \\text{cm}^3$",
+        "d": "$19{,}78\\ \\text{cm}^3$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Cursa: $L = 50{,}6\\ \\text{mm} = 5{,}06\\ \\text{cm}$\n- Diàmetre: $D = 56\\ \\text{mm} = 5{,}6\\ \\text{cm}$\n- Relació de compressió: $r_c = 7{,}3$\n- Incògnita: volum de la cambra de combustió, $V_c$"
+          },
+          {
+            "apartat": null,
+            "titol": "Cilindrada unitària",
+            "cos": "El volum que escombra el pistó és un cilindre de diàmetre $D$ i altura $L$:\n\n$$V_d = \\frac{\\pi D^2}{4} L = \\frac{\\pi \\cdot 5{,}6^2}{4} \\cdot 5{,}06 = 124{,}6\\ \\text{cm}^3$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Relació de compressió",
+            "cos": "La relació de compressió compara el volum total (pistó a baix) amb el volum de la cambra (pistó a dalt):\n\n$$r_c = \\frac{V_d + V_c}{V_c} \\quad\\Rightarrow\\quad V_c = \\frac{V_d}{r_c - 1} = \\frac{124{,}6}{7{,}3 - 1} = 19{,}78\\ \\text{cm}^3$$\n\nResultat: **$V_c = 19{,}78\\ \\text{cm}^3$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- L'opció **a** és la cilindrada $V_d$, no la cambra.\n- L'opció **c** ($39{,}56 = 2 \\cdot 19{,}78$) surt de dividir malament o de doblar per error per ser de 4 temps (el nombre de temps no afecta els volums).\n- L'opció **b** no surt de cap relació directa amb les dades."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$V_c = 19{,}78\\ \\text{cm}^3$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2024-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Control d'accés a un edifici segons l'horari i tres sistemes de validació",
+      "tema": "digital",
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "mapa de Karnaugh",
+        "portes lògiques",
+        "funció majoria"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "L'accés a un edifici d'oficines està regulat per tres sistemes de control: una clau numèrica, una targeta magnètica i l'empremta dactilar. Es permet l'accés a l'edifici, en horari laboral, validant qualsevol dels tres sistemes de control. Fora de l'horari laboral, cal validar almenys dos dels tres sistemes.\n\nResponeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- horari: $h$ = 1: laboral; 0: no laboral\n- clau: $c$ = 1: vàlida; 0: no vàlida\n- targeta: $t$ = 1: vàlida; 0: no vàlida\n- empremta: $e$ = 1: vàlida; 0: no vàlida\n- accés: $a$ = 1: permès; 0: denegat",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Elaboreu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu el diagrama de portes lògiques equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Traduir l'enunciat a condicions",
+            "cos": "- Si $h = 1$ (horari laboral): n'hi ha prou amb **un** sistema vàlid → $a = 1$ si $c + t + e \\geq 1$.\n- Si $h = 0$ (fora d'horari): calen **almenys dos** sistemes vàlids → $a = 1$ si $c + t + e \\geq 2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "Amb 4 variables hi ha $2^4 = 16$ combinacions. Per a cada fila comptem quants sistemes són vàlids i apliquem la condició segons $h$:\n\n| $h$ | $c$ | $t$ | $e$ | $a$ |\n|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 0 |\n| 0 | 0 | 0 | 1 | 0 |\n| 0 | 0 | 1 | 0 | 0 |\n| 0 | 0 | 1 | 1 | **1** |\n| 0 | 1 | 0 | 0 | 0 |\n| 0 | 1 | 0 | 1 | **1** |\n| 0 | 1 | 1 | 0 | **1** |\n| 0 | 1 | 1 | 1 | **1** |\n| 1 | 0 | 0 | 0 | 0 |\n| 1 | 0 | 0 | 1 | **1** |\n| 1 | 0 | 1 | 0 | **1** |\n| 1 | 0 | 1 | 1 | **1** |\n| 1 | 1 | 0 | 0 | **1** |\n| 1 | 1 | 0 | 1 | **1** |\n| 1 | 1 | 1 | 0 | **1** |\n| 1 | 1 | 1 | 1 | **1** |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica",
+            "cos": "Hi ha només 5 zeros i 11 uns, així que és més curt escriure la funció com a **producte de sumes** (un factor per cada fila amb $a = 0$; cada variable apareix negada si val 1 en aquella fila):\n\n$$a = (h + c + t + e)(h + c + t + \\bar{e})(h + c + \\bar{t} + e)(h + \\bar{c} + t + e)(\\bar{h} + c + t + e)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació per Karnaugh",
+            "cos": "Mapa amb files $h\\,c$ i columnes $t\\,e$ (ordre de Gray 00, 01, 11, 10):\n\n| $hc \\backslash te$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **00** | 0 | 0 | 1 | 0 |\n| **01** | 0 | 1 | 1 | 1 |\n| **11** | 1 | 1 | 1 | 1 |\n| **10** | 0 | 1 | 1 | 1 |\n\nTots els uns es poden cobrir amb **sis grups de 4**:\n\n- columna $te = 11$ → $t\\,e$\n- files 01 i 11, columnes 01 i 11 → $c\\,e$\n- files 01 i 11, columnes 11 i 10 → $c\\,t$\n- files 11 i 10, columnes 01 i 11 → $h\\,e$\n- files 11 i 10, columnes 11 i 10 → $h\\,t$\n- fila $hc = 11$ → $h\\,c$\n\n$$\\boxed{a = t\\,e + c\\,e + c\\,t + h\\,e + h\\,t + h\\,c}$$\n\nInterpretació: els tres primers termes són la funció «majoria» (almenys dos sistemes vàlids, que serveix a qualsevol hora) i els tres últims diuen «horari laboral i un sistema qualsevol».\n\nTraient factor comú es pot escriure amb menys portes: $a = c\\,(e + h + t) + e\\,(h + t) + h\\,t$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Diagrama de portes lògiques",
+            "cos": "Per implementar $a = t\\,e + c\\,e + c\\,t + h\\,e + h\\,t + h\\,c$ calen:\n\n- 6 portes **AND de 2 entrades** (una per cada parella de variables).\n- 1 porta **OR de 6 entrades** que les suma i dona $a$.\n\nNo cal cap porta NOT. Esquema de la solució oficial (simbologia IEC: «&» = AND, «≥1» = OR):\n\n![Esquema de portes lògiques del control d'accés](img/tecno/2024-J/e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a = 1$ en 11 de les 16 combinacions; $a = 0$ per a $hcte$ = 0000, 0001, 0010, 0100 i 1000"
+          },
+          {
+            "apartat": "b",
+            "valor": "$a = t\\,e + c\\,e + c\\,t + h\\,e + h\\,t + h\\,c$ (o $a = c(e + h + t) + e(h + t) + h\\,t$)"
+          },
+          {
+            "apartat": "c",
+            "valor": "6 portes AND de 2 entrades + 1 porta OR de 6 entrades"
+          }
+        ],
+        "nota": "La funció i el circuit no són únics: qualsevol expressió equivalent ben justificada és vàlida. Truc: el sistema equival a «comptar» $h$ com un quart sistema validat: l'accés es permet quan almenys dues de les quatre variables valen 1."
+      }
+    },
+    {
+      "id": "tecno-2024-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Patinet elèctric pujant un pendent: potència, parell del motor i consum de bateria",
+      "tema": "mecanica",
+      "temes_secundaris": [
+        "maquines-electriques",
+        "energia"
+      ],
+      "conceptes": [
+        "potència mecànica",
+        "pla inclinat",
+        "rendiment",
+        "parell motor",
+        "velocitat angular",
+        "energia de la bateria"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "Una persona té un patinet elèctric que utilitza una bateria ideal de tensió $U = 24\\ \\text{V}$ i energia $E_\\text{bat} = 250\\ \\text{W h}$ per a alimentar un motor de rendiment $\\eta_\\text{mot} = 0{,}85$. La roda motriu del patinet, de diàmetre $d_\\text{roda} = 140\\ \\text{mm}$, està connectada directament a l'eix de sortida del motor.\n\nEn les condicions d'estudi, la persona i el patinet tenen una massa conjunta $m = 70\\ \\text{kg}$ i recorren $s = 2\\ \\text{km}$ a velocitat constant $v = 8\\ \\text{km/h}$ per una pujada en què l'angle que forma el perfil del carrer amb l'horitzontal és $\\alpha = 7^\\circ$. A l'inici del trajecte, la bateria està totalment carregada. Si totes les pèrdues diferents a les associades al rendiment del motor es poden negligir, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La potència elèctrica consumida, $P_\\text{elèc}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La velocitat de rotació de l'eix del motor, $\\omega_\\text{mot}$, i el parell que subministra el motor, $\\Gamma$.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "El percentatge d'energia consumida de la bateria, $\\Delta$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $U = 24\\ \\text{V}$, $E_\\text{bat} = 250\\ \\text{W h}$, $\\eta_\\text{mot} = 0{,}85$\n- $d_\\text{roda} = 140\\ \\text{mm}$ → radi $r = 0{,}07\\ \\text{m}$\n- $m = 70\\ \\text{kg}$, $g = 9{,}807\\ \\text{m/s}^2$\n- $s = 2\\ \\text{km} = 2\\,000\\ \\text{m}$\n- $v = 8\\ \\text{km/h} = \\dfrac{8}{3{,}6} = 2{,}222\\ \\text{m/s}$\n- $\\alpha = 7^\\circ$\n- Incògnites: $P_\\text{elèc}$, $\\omega_\\text{mot}$, $\\Gamma$, $\\Delta$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència mecànica per pujar a velocitat constant",
+            "cos": "A velocitat constant i sense fregaments, el motor només ha de vèncer la component del pes paral·lela al pendent, $F = m\\,g\\sin\\alpha$. La potència és força per velocitat:\n\n$$P_\\text{mec} = m\\,g\\,v\\sin\\alpha = 70 \\cdot 9{,}807 \\cdot 2{,}222 \\cdot \\sin 7^\\circ = 185{,}9\\ \\text{W}$$\n\n(Equival a pujar altura a un ritme de $v\\sin\\alpha = 0{,}271\\ \\text{m/s}$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència elèctrica consumida",
+            "cos": "El motor té pèrdues: per donar $P_\\text{mec}$ a l'eix ha de consumir més potència elèctrica:\n\n$$P_\\text{elèc} = \\frac{P_\\text{mec}}{\\eta_\\text{mot}} = \\frac{185{,}9}{0{,}85} = 218{,}7\\ \\text{W}$$\n\nResultat: **$P_\\text{elèc} = 218{,}7\\ \\text{W}$** (la bateria dona un corrent $I = P/U = 9{,}11\\ \\text{A}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat angular del motor",
+            "cos": "La roda va directament a l'eix del motor i roda sense lliscar, així que la velocitat del patinet és la velocitat perifèrica de la roda, $v = \\omega\\,r$:\n\n$$\\omega_\\text{mot} = \\frac{v}{d/2} = \\frac{2{,}222}{0{,}07} = 31{,}75\\ \\text{rad/s}$$\n\nResultat: **$\\omega_\\text{mot} = 31{,}75\\ \\text{rad/s}$** ($\\approx 303{,}2\\ \\text{min}^{-1}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Parell del motor",
+            "cos": "El parell a l'eix surt de la potència mecànica de sortida ($P = \\Gamma\\,\\omega$), no de l'elèctrica:\n\n$$\\Gamma = \\frac{P_\\text{mec}}{\\omega_\\text{mot}} = \\frac{185{,}9}{31{,}75} = 5{,}856\\ \\text{N m}$$\n\nResultat: **$\\Gamma = 5{,}856\\ \\text{N m}$**. (Comprovació: $\\Gamma = m\\,g\\sin\\alpha \\cdot r = 83{,}66 \\cdot 0{,}07 = 5{,}856\\ \\text{N m}$.)"
+          },
+          {
+            "apartat": "c",
+            "titol": "Temps del trajecte i energia consumida",
+            "cos": "$$t = \\frac{s}{v} = \\frac{2\\,000}{2{,}222} = 900\\ \\text{s} = 0{,}25\\ \\text{h}$$\n\n$$E_\\text{cons} = P_\\text{elèc}\\,t = 218{,}7 \\cdot 0{,}25 = 54{,}68\\ \\text{W h}\\quad(=196{,}9\\ \\text{kJ})$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Percentatge de bateria consumit",
+            "cos": "$$\\Delta = \\frac{E_\\text{cons}}{E_\\text{bat}} = \\frac{54{,}68}{250} = 0{,}2187 = 21{,}87\\ \\%$$\n\nResultat: **$\\Delta = 21{,}87\\ \\%$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P_\\text{elèc} = 218{,}7\\ \\text{W}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\omega_\\text{mot} = 31{,}75\\ \\text{rad/s}$; $\\Gamma = 5{,}856\\ \\text{N m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\Delta = 21{,}87\\ \\%$"
+          }
+        ],
+        "nota": "Error típic: calcular el parell amb la potència elèctrica ($218{,}7/31{,}75 = 6{,}89\\ \\text{N m}$); el parell a l'eix correspon a la potència mecànica de sortida. Compte també a passar $8\\ \\text{km/h}$ a m/s i el diàmetre a radi."
+      }
+    },
+    {
+      "id": "tecno-2024-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Acceleració d'un cotxe: treball, benzina consumida i emissions de CO₂",
+      "tema": "energia",
+      "temes_secundaris": [
+        "mecanica",
+        "termica"
+      ],
+      "conceptes": [
+        "energia cinètica",
+        "rendiment",
+        "poder calorífic",
+        "factor d'emissió",
+        "petjada de carboni"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8,
+        9
+      ],
+      "enunciat": "Un cotxe de massa $m = 1\\,250\\ \\text{kg}$ parteix del repòs i arriba a una velocitat final $v = 50\\ \\text{km/h}$ circulant per un circuit horitzontal. El cotxe és propulsat per un motor de combustió interna de rendiment $\\eta = 0{,}25$.\n\nLa benzina té un poder calorífic $p_\\text{c} = 46\\ \\text{MJ/kg}$ i una densitat $\\rho = 0{,}72\\ \\text{g/cm}^3$. El factor d'emissions de la benzina és $FE = 2{,}157\\ \\text{kg}$ de CO$_2$ per litre de combustible.\n\nSi es poden negligir totes les resistències passives, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El treball mecànic aportat pel motor, $W$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La quantitat de benzina utilitzada, $m_\\text{benz}$.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "La petjada de CO$_2$ emesa a l'atmosfera, $m_{\\text{CO}_2}$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 1\\,250\\ \\text{kg}$; $v_0 = 0$; $v = 50\\ \\text{km/h} = 13{,}89\\ \\text{m/s}$\n- $\\eta = 0{,}25$\n- $p_\\text{c} = 46\\ \\text{MJ/kg} = 46 \\cdot 10^6\\ \\text{J/kg}$\n- $\\rho = 0{,}72\\ \\text{g/cm}^3 = 0{,}72\\ \\text{kg/L}$\n- $FE = 2{,}157\\ \\text{kg CO}_2\\text{/L}$\n- Incògnites: $W$, $m_\\text{benz}$, $m_{\\text{CO}_2}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Treball = variació d'energia cinètica",
+            "cos": "El circuit és horitzontal (no canvia l'energia potencial) i no hi ha resistències passives, així que tot el treball del motor es converteix en energia cinètica (teorema de les forces vives):\n\n$$W = \\Delta E_c = \\frac{1}{2} m v^2 - 0 = \\frac{1}{2} \\cdot 1\\,250 \\cdot 13{,}89^2 = 120\\,563\\ \\text{J}$$\n\nResultat: **$W = 120{,}6\\ \\text{kJ}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia química consumida",
+            "cos": "El motor només converteix en treball un 25 % de l'energia del combustible:\n\n$$E_\\text{cons} = \\frac{W}{\\eta} = \\frac{120\\,563}{0{,}25} = 482\\,253\\ \\text{J} = 482{,}3\\ \\text{kJ}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa de benzina",
+            "cos": "$$m_\\text{benz} = \\frac{E_\\text{cons}}{p_\\text{c}} = \\frac{482\\,253\\ \\text{J}}{46 \\cdot 10^6\\ \\text{J/kg}} = 0{,}01048\\ \\text{kg}$$\n\nResultat: **$m_\\text{benz} = 10{,}48\\ \\text{g}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Volum de benzina i CO₂ emès",
+            "cos": "El factor d'emissions va referit a **litres**, així que primer passem la massa a volum:\n\n$$V_\\text{benz} = \\frac{m_\\text{benz}}{\\rho} = \\frac{10{,}48\\ \\text{g}}{0{,}72\\ \\text{g/cm}^3} = 14{,}56\\ \\text{cm}^3 = 0{,}01456\\ \\text{L}$$\n\n$$m_{\\text{CO}_2} = V_\\text{benz} \\cdot FE = 0{,}01456\\ \\text{L} \\cdot 2{,}157\\ \\text{kg/L} = 0{,}03141\\ \\text{kg}$$\n\nResultat: **$m_{\\text{CO}_2} = 31{,}41\\ \\text{g}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$W = 120{,}6\\ \\text{kJ}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m_\\text{benz} = 10{,}48\\ \\text{g}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$m_{\\text{CO}_2} = 31{,}41\\ \\text{g}$"
+          }
+        ],
+        "nota": "Errors típics: no passar els km/h a m/s (sortiria un treball 13 vegades més gran), oblidar el rendiment (dividir per $\\eta$) o multiplicar la massa de benzina directament pel factor d'emissions, que és per litre."
+      }
+    },
+    {
+      "id": "tecno-2024-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Força del múscul tibial anterior i reacció al turmell (estàtica del peu)",
+      "tema": "estatica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "diagrama de cos lliure",
+        "equilibri de moments",
+        "reaccions en una articulació",
+        "braç de moment"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10,
+        11
+      ],
+      "enunciat": "Es vol estudiar la força necessària que ha de fer el múscul tibial anterior per tal de garantir que la planta del peu es trobi en posició horitzontal quan es manté elevat sense tocar a terra. La figura mostra un esquema del peu en aquesta posició.\n\nEl centre de l'articulació del turmell és el punt O, que es considera fix. El peu, que s'ha representat amb el triangle OPT, té el centre d'inèrcia al punt G i una massa $m = 2{,}2\\ \\text{kg}$. El múscul tibial anterior s'insereix al punt Q i fa una força $F_\\text{m}$. El seu braç de moment respecte a O (distància entre la línia d'acció de la força i el punt O) és $a = 30\\ \\text{mm}$ i la seva línia d'acció forma un angle $\\varphi = 9^\\circ$ respecte a la vertical. Altres dades de la figura: $b = 35\\ \\text{mm}$ (distància horitzontal entre O i G), $c = 40\\ \\text{mm}$.\n\nPer a aquesta posició estàtica:",
+      "figures": [
+        {
+          "src": "img/tecno/2024-J/e5.png",
+          "peu": "Esquema del peu (triangle OPT) amb el múscul tibial anterior i cotes"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de cos lliure del peu.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la força que fa el múscul, $F_\\text{m}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Determineu les forces a l'articulació O.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 2{,}2\\ \\text{kg}$ → pes $mg = 2{,}2 \\cdot 9{,}807 = 21{,}58\\ \\text{N}$\n- Braç de $F_\\text{m}$ respecte a O: $a = 30\\ \\text{mm}$\n- Braç del pes respecte a O: $b = 35\\ \\text{mm}$ (distància horitzontal de O a G)\n- $\\varphi = 9^\\circ$ respecte a la vertical\n- $c = 40\\ \\text{mm}$ no cal per als càlculs\n- Incògnites: $F_\\text{m}$ i les components $O_\\text{H}$, $O_\\text{V}$ de la reacció a O"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de cos lliure",
+            "cos": "Aïllem el peu i hi dibuixem **totes** les forces exteriors:\n\n- **Pes** $mg$, vertical cap avall, aplicat a G.\n- **Força del múscul** $F_\\text{m}$, aplicada a Q, inclinada $\\varphi = 9^\\circ$ respecte a la vertical, cap amunt i cap a l'esquerra (tirant cap a la tíbia).\n- **Reacció de l'articulació** a O: com que no en sabem la direcció, la descomponem en $O_\\text{H}$ (horitzontal) i $O_\\text{V}$ (vertical), amb un sentit suposat.\n\nDiagrama de la solució oficial:\n\n![Diagrama de cos lliure del peu](img/tecno/2024-J/e5-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equilibri de moments respecte a O",
+            "cos": "Prenem moments respecte a O perquè així la reacció de l'articulació no hi intervé (passa per O). $F_\\text{m}$ fa girar el peu en sentit antihorari amb braç $a$, i el pes en sentit horari amb braç $b$:\n\n$$\\sum M_\\text{O} = 0 \\;\\Rightarrow\\; F_\\text{m}\\,a - m g\\,b = 0$$\n\n$$F_\\text{m} = \\frac{m g\\,b}{a} = \\frac{21{,}58 \\cdot 35}{30} = 25{,}17\\ \\text{N}$$\n\nResultat: **$F_\\text{m} = 25{,}17\\ \\text{N}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de forces horitzontals",
+            "cos": "La component horitzontal de $F_\\text{m}$ és $F_\\text{m}\\sin\\varphi$ (cap a l'esquerra), i l'ha de compensar $O_\\text{H}$:\n\n$$\\sum F_\\text{H} = 0 \\;\\Rightarrow\\; O_\\text{H} = F_\\text{m}\\sin\\varphi = 25{,}17 \\cdot \\sin 9^\\circ = 3{,}938\\ \\text{N}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de forces verticals",
+            "cos": "$$\\sum F_\\text{V} = 0 \\;\\Rightarrow\\; O_\\text{V} + F_\\text{m}\\cos\\varphi - m g = 0$$\n\n$$O_\\text{V} = m g - F_\\text{m}\\cos\\varphi = 21{,}58 - 25{,}17 \\cdot \\cos 9^\\circ = 21{,}58 - 24{,}86 = -3{,}286\\ \\text{N}$$\n\nEl signe negatiu vol dir que $O_\\text{V}$ té **sentit contrari** al suposat al diagrama: l'articulació empeny el peu **cap avall** amb $3{,}286\\ \\text{N}$ (el múscul tira més amunt del que cal per aguantar el pes).\n\nResultat: **$O_\\text{H} = 3{,}938\\ \\text{N}$** i **$O_\\text{V} = -3{,}286\\ \\text{N}$** (mòdul total $|O| = \\sqrt{3{,}938^2 + 3{,}286^2} = 5{,}13\\ \\text{N}$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Forces: $mg$ a G (vertical avall), $F_\\text{m}$ a Q (9° respecte a la vertical) i reacció $O_\\text{H}$, $O_\\text{V}$ a O"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F_\\text{m} = 25{,}17\\ \\text{N}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$O_\\text{H} = 3{,}938\\ \\text{N}$; $O_\\text{V} = -3{,}286\\ \\text{N}$ (cap avall)"
+          }
+        ],
+        "nota": "Error típic: usar la distància OQ o la cota $c$ com a braç de $F_\\text{m}$; l'enunciat ja dona directament el braç de moment $a$ (distància perpendicular de O a la línia d'acció)."
+      }
+    },
+    {
+      "id": "tecno-2024-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Circuit RL en corrent altern amb wattímetre i amperímetre",
+      "tema": "circuits",
+      "temes_secundaris": [],
+      "conceptes": [
+        "corrent altern",
+        "reactància inductiva",
+        "impedància",
+        "factor de potència",
+        "potència activa"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12,
+        13
+      ],
+      "enunciat": "El circuit de la figura mostra una font de tensió alterna sinusoidal de freqüència $f = 50\\ \\text{Hz}$ que alimenta una càrrega formada per una resistència $R_1 = 5\\ \\Omega$ en sèrie amb una inductància $L_1 = 7\\ \\text{mH}$. El wattímetre està connectat de manera que mesura la potència activa total consumida per la càrrega $W_1 = 950\\ \\text{W}$. Determineu:",
+      "figures": [
+        {
+          "src": "img/tecno/2024-J/e6.png",
+          "peu": "Circuit RL amb wattímetre W1 i amperímetre A1"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El valor òhmic de la reactància inductiva, $X_{L_1}$, que presenta la inductància $L_1$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "El factor de potència, $\\cos\\varphi$, de la càrrega.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El valor de la impedància equivalent de tot el circuit, $Z$.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "El valor de la mesura de l'amperímetre, $A_1$.",
+          "punts": 0.5
+        },
+        {
+          "id": "e",
+          "enunciat": "El valor eficaç de la tensió d'alimentació, $U_1$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $f = 50\\ \\text{Hz}$\n- $R_1 = 5\\ \\Omega$\n- $L_1 = 7\\ \\text{mH} = 0{,}007\\ \\text{H}$\n- Potència activa: $W_1 = P = 950\\ \\text{W}$\n- Incògnites: $X_{L_1}$, $\\cos\\varphi$, $Z$, $I$ (lectura de $A_1$), $U_1$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Reactància inductiva",
+            "cos": "Una bobina s'oposa al corrent altern amb una reactància proporcional a la freqüència:\n\n$$X_{L_1} = \\omega L_1 = 2\\pi f L_1 = 2\\pi \\cdot 50 \\cdot 0{,}007 = 2{,}199\\ \\Omega$$\n\nResultat: **$X_{L_1} = 2{,}199\\ \\Omega$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Factor de potència a partir del triangle d'impedàncies",
+            "cos": "En un circuit RL sèrie, l'angle de desfasament $\\varphi$ compleix $\\tan\\varphi = X_L / R$:\n\n$$\\tan\\varphi = \\frac{X_{L_1}}{R_1} = \\frac{2{,}199}{5} = 0{,}4398 \\;\\Rightarrow\\; \\varphi = 23{,}74^\\circ$$\n\n$$\\cos\\varphi = \\cos 23{,}74^\\circ = 0{,}9154$$\n\nResultat: **$\\cos\\varphi = 0{,}9154$** (inductiu). També es pot fer $\\cos\\varphi = R_1/Z = 5/5{,}462$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Impedància equivalent",
+            "cos": "La resistència i la reactància estan en sèrie i desfasades 90°, per això se sumen com els catets d'un triangle rectangle:\n\n$$Z = \\sqrt{R_1^2 + X_{L_1}^2} = \\sqrt{5^2 + 2{,}199^2} = 5{,}462\\ \\Omega$$\n\nResultat: **$Z = 5{,}462\\ \\Omega$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Corrent (lectura de l'amperímetre)",
+            "cos": "Tota la potència activa es dissipa a la resistència (la bobina ideal no consumeix potència activa), per tant $P = R_1 I^2$:\n\n$$I = \\sqrt{\\frac{W_1}{R_1}} = \\sqrt{\\frac{950}{5}} = \\sqrt{190} = 13{,}78\\ \\text{A}$$\n\nResultat: **$A_1 = 13{,}78\\ \\text{A}$**."
+          },
+          {
+            "apartat": "e",
+            "titol": "Tensió d'alimentació",
+            "cos": "Llei d'Ohm en corrent altern (valors eficaços):\n\n$$U_1 = Z \\cdot I = 5{,}462 \\cdot 13{,}78 = 75{,}29\\ \\text{V}$$\n\nResultat: **$U_1 = 75{,}29\\ \\text{V}$**. Comprovació: $\\cos\\varphi = \\dfrac{P}{U_1 I} = \\dfrac{950}{75{,}29 \\cdot 13{,}78} = 0{,}9154$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$X_{L_1} = 2{,}199\\ \\Omega$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\cos\\varphi = 0{,}9154$ ($\\varphi = 23{,}74^\\circ$)"
+          },
+          {
+            "apartat": "c",
+            "valor": "$Z = 5{,}462\\ \\Omega$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$A_1 = 13{,}78\\ \\text{A}$"
+          },
+          {
+            "apartat": "e",
+            "valor": "$U_1 = 75{,}29\\ \\text{V}$"
+          }
+        ],
+        "nota": "La solució oficial dona $\\varphi = 23{,}75^\\circ$ perquè arrodoneix abans $\\tan\\varphi = 0{,}44$; amb el valor exacte surt $23{,}74^\\circ$. El factor de potència ($0{,}9154$) coincideix. Error típic: fer $P = Z I^2$ (això seria la potència aparent $S$)."
+      }
+    }
+  ]
+}

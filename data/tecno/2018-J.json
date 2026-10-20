@@ -1,0 +1,377 @@
+{
+  "examen": {
+    "id": "tecno-2018-J",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2018,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/tecno/2018-J-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2018-J-solucio.pdf",
+    "estructura": "La prova consta de dues parts, amb dos exercicis cadascuna. La primera part és comuna: l'exercici 1 té 5 qüestions de test (0,5 punts cadascuna; cada resposta errònia descompta 0,16 punts i les no contestades no descompten) i l'exercici 2 és un problema de 2,5 punts. A la segona part cal escollir UNA de les dues opcions (A o B) i fer-ne els dos exercicis (3 i 4), de 2,5 punts cadascun."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2018-J-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Passatgers anuals i ocupació mitjana global d'una ruta aèria",
+      "tema": "economia",
+      "temes_secundaris": [],
+      "conceptes": ["mitjana ponderada", "ocupació", "càlcul anual"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "Una companyia aèria té programats quatre vols diaris entre dues ciutats: dos al matí, un a la tarda i un altre a la nit. Els vols del matí registren una ocupació mitjana del $84{,}3\\ \\%$, el vol de la tarda del $77{,}3\\ \\%$ i el de la nit del $82{,}3\\ \\%$. Si la capacitat de l'avió que s'utilitza en aquests vols és de 200 persones, quants passatgers s'han transportat en un any i quina ha estat l'ocupació mitjana global?",
+      "figures": [],
+      "opcions": {
+        "a": "$292\\,000$ passatgers, amb una ocupació mitjana del $82{,}05\\ \\%$.",
+        "b": "$239\\,586$ passatgers, amb una ocupació mitjana del $82{,}05\\ \\%$.",
+        "c": "$239\\,586$ passatgers, amb una ocupació mitjana del $81{,}3\\ \\%$.",
+        "d": "$292\\,000$ passatgers, amb una ocupació mitjana del $81{,}3\\ \\%$."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- 4 vols diaris: 2 al matí ($84{,}3\\ \\%$), 1 a la tarda ($77{,}3\\ \\%$), 1 a la nit ($82{,}3\\ \\%$)\n- Capacitat de l'avió: $200$ places\n- Un any: $365$ dies\n- Incògnites: ocupació mitjana global i passatgers transportats en un any"},
+          {"apartat": null, "titol": "Ocupació mitjana global (mitjana ponderada)", "cos": "Hi ha **dos** vols al matí, per tant l'ocupació del matí compta dues vegades. La mitjana global és la mitjana dels 4 vols, no dels 3 franges horàries:\n\n$$\\bar{o} = \\frac{2 \\cdot 84{,}3 + 77{,}3 + 82{,}3}{4} = \\frac{328{,}2}{4} = 82{,}05\\ \\%$$"},
+          {"apartat": null, "titol": "Passatgers en un any", "cos": "Places ofertes en un any: $4\\ \\text{vols/dia} \\cdot 200\\ \\text{places} \\cdot 365\\ \\text{dies} = 292\\,000$ places. Només n'estan ocupades el $82{,}05\\ \\%$:\n\n$$N = 292\\,000 \\cdot 0{,}8205 = 239\\,586\\ \\text{passatgers}$$\n\nResultat: **$239\\,586$ passatgers i ocupació mitjana del $82{,}05\\ \\%$** → resposta **b**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **c)** i **d)**: $81{,}3\\ \\% = (84{,}3 + 77{,}3 + 82{,}3)/3$ és la mitjana de les tres franges sense tenir en compte que al matí hi ha dos vols.\n- **a)** i **d)**: $292\\,000$ és la capacitat total (avions plens), no els passatgers reals."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$N = 239\\,586$ passatgers, $\\bar{o} = 82{,}05\\ \\%$ → resposta **b**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2018-J-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Força de tracció màxima abans de trencar una barra cilíndrica",
+      "tema": "resistencia",
+      "temes_secundaris": [],
+      "conceptes": ["tensió de ruptura", "límit elàstic", "tensió normal", "secció circular"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "Una barra cilíndrica té un diàmetre de $3\\ \\text{mm}$, una tensió de ruptura $\\sigma_\\text{r} = 800\\ \\text{MPa}$ i un límit elàstic $\\sigma_\\text{e} = 640\\ \\text{MPa}$. Quina és la força de tracció màxima a la qual es pot sotmetre la barra sense que es trenqui?",
+      "figures": [],
+      "opcions": {"a": "$800\\ \\text{N}$", "b": "$22\\,619\\ \\text{N}$", "c": "$5\\,655\\ \\text{N}$", "d": "$4\\,524\\ \\text{N}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Diàmetre: $d = 3\\ \\text{mm}$\n- Tensió de ruptura: $\\sigma_\\text{r} = 800\\ \\text{MPa} = 800\\ \\text{N/mm}^2$\n- Límit elàstic: $\\sigma_\\text{e} = 640\\ \\text{MPa}$\n- Incògnita: força màxima sense trencar-se, $F_\\text{màx}$"},
+          {"apartat": null, "titol": "Quina tensió limita: ruptura, no límit elàstic", "cos": "La pregunta és la força màxima **sense que es trenqui**. La barra es trenca quan la tensió arriba a la tensió de ruptura $\\sigma_\\text{r}$. (El límit elàstic marcaria la força màxima sense deformació permanent, que és una altra pregunta.)"},
+          {"apartat": null, "titol": "Secció i força màxima", "cos": "$$S = \\frac{\\pi d^2}{4} = \\frac{\\pi \\cdot 3^2}{4} = 7{,}069\\ \\text{mm}^2$$\n\n$$F_\\text{màx} = \\sigma_\\text{r}\\, S = 800\\ \\text{N/mm}^2 \\cdot 7{,}069\\ \\text{mm}^2 = 5\\,655\\ \\text{N}$$\n\nResultat: **$F_\\text{màx} \\approx 5\\,655\\ \\text{N}$** → resposta **c**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **d)** $4\\,524\\ \\text{N} = 640 \\cdot 7{,}069$: usa el límit elàstic (força màxima sense deformació plàstica, no sense trencament).\n- **b)** $22\\,619\\ \\text{N} = 800 \\cdot \\pi \\cdot 3^2$: confon el diàmetre amb el radi.\n- **a)** $800\\ \\text{N}$: confon la tensió (MPa) amb una força."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$F_\\text{màx} \\approx 5\\,655\\ \\text{N}$ → resposta **c**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2018-J-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Diàmetre del fil d'una resistència de constantà",
+      "tema": "circuits",
+      "temes_secundaris": ["materials"],
+      "conceptes": ["resistivitat", "resistència d'un conductor", "secció circular"],
+      "dificultat": 1,
+      "pagines": [2],
+      "enunciat": "Una resistència de $5\\ \\Omega$ està feta amb fil de constantà de $4{,}508\\ \\text{m}$ de longitud i una resistivitat de $0{,}49\\ \\mu\\Omega\\ \\text{m}$. Quin és el diàmetre del fil utilitzat?",
+      "figures": [],
+      "opcions": {"a": "$0{,}75\\ \\text{mm}$", "b": "$0{,}375\\ \\text{mm}$", "c": "$0{,}4418\\ \\text{mm}$", "d": "$0{,}8319\\ \\text{mm}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $R = 5\\ \\Omega$\n- $L = 4{,}508\\ \\text{m}$\n- $\\rho = 0{,}49\\ \\mu\\Omega\\ \\text{m} = 0{,}49 \\cdot 10^{-6}\\ \\Omega\\ \\text{m}$\n- Incògnita: diàmetre del fil, $d$"},
+          {"apartat": null, "titol": "Secció del fil a partir de la resistència", "cos": "La resistència d'un fil augmenta amb la longitud i disminueix amb la secció: $R = \\rho \\dfrac{L}{S}$. Aïllant la secció:\n\n$$S = \\frac{\\rho\\, L}{R} = \\frac{0{,}49 \\cdot 10^{-6} \\cdot 4{,}508}{5} = 4{,}418 \\cdot 10^{-7}\\ \\text{m}^2 = 0{,}4418\\ \\text{mm}^2$$"},
+          {"apartat": null, "titol": "Diàmetre a partir de la secció", "cos": "$$S = \\frac{\\pi d^2}{4} \\;\\Rightarrow\\; d = \\sqrt{\\frac{4S}{\\pi}} = \\sqrt{\\frac{4 \\cdot 0{,}4418}{\\pi}} = 0{,}75\\ \\text{mm}$$\n\nResultat: **$d = 0{,}75\\ \\text{mm}$** → resposta **a**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **b)** $0{,}375\\ \\text{mm}$ és el **radi**, no el diàmetre.\n- **c)** $0{,}4418$ és la **secció** en $\\text{mm}^2$, no un diàmetre."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$S = 0{,}4418\\ \\text{mm}^2$, $d = 0{,}75\\ \\text{mm}$ → resposta **a**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2018-J-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Rendiment i pèrdues del generador d'un aerogenerador",
+      "tema": "energia",
+      "temes_secundaris": ["maquines-electriques"],
+      "conceptes": ["rendiment", "rendiment en cadena", "potència dissipada", "aerogenerador"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Un aerogenerador està format per un rotor amb tres pales, un multiplicador d'engranatges i un generador elèctric. En unes condicions determinades, la potència elèctrica generada és $P_\\text{elèctr} = 1{,}2\\ \\text{MW}$. Si el rendiment del multiplicador és $\\eta_\\text{mult} = 0{,}70$ i la potència mecànica a l'eix d'entrada del multiplicador és $P_\\text{entrada} = 1{,}966\\ \\text{MW}$, quin és el rendiment $\\eta_\\text{gen}$ del generador i la potència $P_\\text{diss}$ que s'hi dissipa?",
+      "figures": [],
+      "opcions": {
+        "a": "$\\eta_\\text{gen} = 0{,}8550$ i $P_\\text{diss} = 203{,}5\\ \\text{kW}$",
+        "b": "$\\eta_\\text{gen} = 0{,}8720$ i $P_\\text{diss} = 766\\ \\text{kW}$",
+        "c": "$\\eta_\\text{gen} = 0{,}8720$ i $P_\\text{diss} = 176{,}2\\ \\text{kW}$",
+        "d": "$\\eta_\\text{gen} = 0{,}6104$ i $P_\\text{diss} = 766\\ \\text{kW}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Potència a l'entrada del multiplicador: $P_\\text{entrada} = 1{,}966\\ \\text{MW}$\n- Rendiment del multiplicador: $\\eta_\\text{mult} = 0{,}70$\n- Potència elèctrica generada: $P_\\text{elèctr} = 1{,}2\\ \\text{MW}$\n- Incògnites: $\\eta_\\text{gen}$ i la potència dissipada **al generador**, $P_\\text{diss}$"},
+          {"apartat": null, "titol": "Potència que arriba al generador", "cos": "La potència passa en cadena: rotor → multiplicador → generador. La sortida del multiplicador és l'entrada del generador:\n\n$$P_\\text{gen,ent} = \\eta_\\text{mult}\\, P_\\text{entrada} = 0{,}70 \\cdot 1{,}966 = 1{,}3762\\ \\text{MW}$$"},
+          {"apartat": null, "titol": "Rendiment del generador", "cos": "$$\\eta_\\text{gen} = \\frac{P_\\text{elèctr}}{P_\\text{gen,ent}} = \\frac{1{,}2}{1{,}3762} = 0{,}8720$$"},
+          {"apartat": null, "titol": "Potència dissipada al generador", "cos": "És la diferència entre el que entra al generador i el que en surt:\n\n$$P_\\text{diss} = P_\\text{gen,ent} - P_\\text{elèctr} = 1{,}3762 - 1{,}2 = 0{,}1762\\ \\text{MW} = 176{,}2\\ \\text{kW}$$\n\nResultat: **$\\eta_\\text{gen} = 0{,}8720$ i $P_\\text{diss} = 176{,}2\\ \\text{kW}$** → resposta **c**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **b)** i **d)**: $766\\ \\text{kW} = 1{,}966 - 1{,}2$ són les pèrdues **totals** (multiplicador + generador), no només les del generador.\n- **d)**: $0{,}6104 = 1{,}2/1{,}966$ és el rendiment **global** del conjunt, no el del generador."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$\\eta_\\text{gen} = 0{,}8720$, $P_\\text{diss} = 176{,}2\\ \\text{kW}$ → resposta **c**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2018-J-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Freqüència d'alimentació d'un motor asíncron per canviar la velocitat de sincronisme",
+      "tema": "maquines-electriques",
+      "temes_secundaris": [],
+      "conceptes": ["motor asíncron", "velocitat de sincronisme", "parells de pols", "freqüència"],
+      "dificultat": 1,
+      "pagines": [2],
+      "enunciat": "La velocitat de sincronisme d'un motor asíncron que està connectat a la xarxa de tensió $U = 230\\ \\text{V}$ i freqüència $f = 50\\ \\text{Hz}$ és de $1\\,000\\ \\text{min}^{-1}$. A quina freqüència està connectat aquest motor si passa a tenir una velocitat de sincronisme de $1\\,200\\ \\text{min}^{-1}$?",
+      "figures": [],
+      "opcions": {"a": "$120\\ \\text{Hz}$.", "b": "No ho podem saber, perquè depèn de la tensió de la xarxa.", "c": "$75\\ \\text{Hz}$.", "d": "$60\\ \\text{Hz}$."},
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {"apartat": null, "titol": "Velocitat de sincronisme", "cos": "La velocitat de sincronisme (la del camp magnètic giratori) depèn només de la freqüència de la xarxa i del nombre de parells de pols $p$ del motor:\n\n$$n_\\text{s} = \\frac{60\\, f}{p}\\ \\ (\\text{min}^{-1})$$\n\nNo depèn de la tensió."},
+          {"apartat": null, "titol": "Parells de pols del motor", "cos": "Amb les dades inicials:\n\n$$p = \\frac{60\\, f}{n_\\text{s}} = \\frac{60 \\cdot 50}{1\\,000} = 3\\ \\text{parells de pols}$$"},
+          {"apartat": null, "titol": "Nova freqüència", "cos": "El motor és el mateix ($p = 3$), així que:\n\n$$f' = \\frac{p\\, n_\\text{s}'}{60} = \\frac{3 \\cdot 1\\,200}{60} = 60\\ \\text{Hz}$$\n\nEquivalentment, $n_\\text{s}$ és proporcional a $f$: $f' = 50 \\cdot \\dfrac{1\\,200}{1\\,000} = 60\\ \\text{Hz}$.\n\nResultat: **$f' = 60\\ \\text{Hz}$** → resposta **d**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **b)** la tensió no intervé en la velocitat de sincronisme.\n- **a)** i **c)** no respecten la proporcionalitat entre $n_\\text{s}$ i $f$ (augmentar la velocitat un 20 % requereix augmentar la freqüència un 20 %)."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$p = 3$, $f' = 60\\ \\text{Hz}$ → resposta **d**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2018-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Control lògic d'avanç d'una cadira de rodes elèctrica (joystick o inclinació del tronc)",
+      "tema": "digital",
+      "temes_secundaris": ["control"],
+      "conceptes": ["taula de veritat", "funció lògica", "mapa de Karnaugh", "esquema de contactes"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Una cadira de rodes elèctrica disposa de dos sistemes per a controlar la marxa endavant. El primer sistema és una palanca de control (o *joystick*). Si es fa servir aquest sistema, la cadira es desplaça endavant quan l'usuari mou la palanca en la direcció corresponent. El segon sistema permet a l'usuari controlar el moviment de la cadira inclinant el tronc cap endavant. Si es fa servir aquest sistema, la cadira avança quan un sensor detecta que l'usuari s'inclina cap endavant. La cadira disposa d'un botó que permet seleccionar un d'aquests dos sistemes de control. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- botó: $b$ = 1: control per *joystick*; 0: control per inclinació del tronc\n- *joystick*: $j$ = 1: es mou endavant; 0: no es mou\n- sensor d'inclinació: $i$ = 1: tronc inclinat; 0: tronc no inclinat\n- avanç de la cadira: $a$ = 1: avança; 0: no avança",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Elaboreu la taula de veritat del sistema.", "punts": 1},
+        {"id": "b", "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.", "punts": 1},
+        {"id": "c", "enunciat": "Dibuixeu l'esquema de contactes equivalent.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Traduir l'enunciat a condicions lògiques", "cos": "El botó $b$ decideix quin sensor mana:\n\n- Si $b = 1$ (mode *joystick*), la cadira avança quan $j = 1$; el sensor d'inclinació $i$ no importa.\n- Si $b = 0$ (mode inclinació), la cadira avança quan $i = 1$; el *joystick* $j$ no importa.\n\nÉs a dir, el botó funciona com un selector (multiplexor) entre $j$ i $i$."},
+          {"apartat": "a", "titol": "Taula de veritat", "cos": "Amb 3 variables hi ha $2^3 = 8$ combinacions:\n\n| $b$ | $j$ | $i$ | $a$ |\n|---|---|---|---|\n| 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | **1** |\n| 0 | 1 | 0 | 0 |\n| 0 | 1 | 1 | **1** |\n| 1 | 0 | 0 | 0 |\n| 1 | 0 | 1 | 0 |\n| 1 | 1 | 0 | **1** |\n| 1 | 1 | 1 | **1** |\n\nA les files amb $b = 0$, la sortida copia $i$; a les files amb $b = 1$, copia $j$."},
+          {"apartat": "b", "titol": "Funció canònica (suma de productes)", "cos": "Un terme per cada fila amb $a = 1$ (variable negada si val 0):\n\n$$a = \\bar{b}\\,\\bar{j}\\,i + \\bar{b}\\,j\\,i + b\\,j\\,\\bar{i} + b\\,j\\,i$$"},
+          {"apartat": "b", "titol": "Simplificació", "cos": "Agrupem de dos en dos els termes que només difereixen en una variable:\n\n$$\\bar{b}\\,\\bar{j}\\,i + \\bar{b}\\,j\\,i = \\bar{b}\\,i\\,(\\bar{j} + j) = \\bar{b}\\,i$$\n\n$$b\\,j\\,\\bar{i} + b\\,j\\,i = b\\,j\\,(\\bar{i} + i) = b\\,j$$\n\nAl mapa de Karnaugh (files $b$, columnes $j\\,i$ en ordre 00, 01, 11, 10):\n\n| $b \\backslash ji$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **0** | 0 | 1 | 1 | 0 |\n| **1** | 0 | 0 | 1 | 1 |\n\n- Grup de 2 a la fila $b = 0$ (columnes 01 i 11) → $\\bar{b}\\,i$.\n- Grup de 2 a la fila $b = 1$ (columnes 11 i 10) → $b\\,j$.\n\n$$\\boxed{a = \\bar{b}\\,i + b\\,j}$$\n\nCoincideix amb la idea del selector: «si no es prem el botó, mana $i$; si es prem, mana $j$»."},
+          {"apartat": "c", "titol": "Esquema de contactes", "cos": "En un esquema de contactes, un producte (AND) són contactes **en sèrie** i una suma (OR) són branques **en paral·lel**. Una variable negada és un contacte **normalment tancat**.\n\nPer a $a = \\bar{b}\\,i + b\\,j$, entre l'alimentació i el llum (o motor) $a$ hi ha dues branques en paral·lel:\n\n- **Branca 1**: contacte normalment tancat de $b$ ($\\bar{b}$) en sèrie amb un contacte normalment obert de $i$.\n- **Branca 2**: contacte normalment obert de $b$ en sèrie amb un contacte normalment obert de $j$.\n\nAixí, el botó $b$ obre una branca i tanca l'altra, i només pot conduir la branca del sensor seleccionat."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$a = 1$ a les files $(b,j,i) = 001, 011, 110, 111$"},
+          {"apartat": "b", "valor": "$a = \\bar{b}\\,i + b\\,j$"},
+          {"apartat": "c", "valor": "Dues branques en paral·lel: $\\bar{b}$ (NT) en sèrie amb $i$; $b$ (NO) en sèrie amb $j$"}
+        ],
+        "nota": "L'esquema de contactes de la solució oficial té les etiquetes desplaçades (posa $j$ sobre la branca superior i no etiqueta la inferior), per això aquí es descriu en text; el circuit correcte és el de la funció $a = \\bar{b}\\,i + b\\,j$. Error típic: oblidar que, en cada mode, el sensor de l'altre mode no ha d'influir (per exemple, escriure $a = j + i$)."
+      }
+    },
+    {
+      "id": "tecno-2018-J-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Captadors solars tèrmics per a aigua calenta sanitària amb suport elèctric",
+      "tema": "energia",
+      "temes_secundaris": ["termica"],
+      "conceptes": ["captador solar", "rendiment", "calor sensible", "radiació solar", "energia elèctrica"],
+      "dificultat": 3,
+      "pagines": [3],
+      "enunciat": "Volem utilitzar captadors solars de superfície $S = 2{,}1\\ \\text{m}^2$ per a produir aigua calenta en un habitatge familiar. Els captadors es complementen amb un escalfador elèctric per als dies en què no hi ha prou radiació solar. El rendiment energètic d'un captador solar s'obté mitjançant l'equació\n\n$$\\eta = \\eta_0 - k_1\\,\\frac{T_\\text{m} - T_\\text{a}}{I}$$\n\nen què $\\eta_0$ és el rendiment òptic, $k_1$ és el coeficient de pèrdues, $T_\\text{m}$ és la temperatura de treball del captador, $T_\\text{a}$ és la temperatura ambient i $I$ és la radiació solar en $\\text{W/m}^2$. Disposem de dos models de captador solar amb les característiques següents:\n\n| | Rendiment òptic ($\\eta_0$) | Coeficient de pèrdues ($k_1$) |\n|---|---|---|\n| Captador A | $0{,}80$ | $8{,}9\\ \\text{W/(m}^2\\ ^\\circ\\text{C)}$ |\n| Captador B | $0{,}66$ | $3{,}2\\ \\text{W/(m}^2\\ ^\\circ\\text{C)}$ |\n\nSi les condicions de treball del captador són $T_\\text{m} = 50\\ ^\\circ\\text{C}$, $T_\\text{a} = 18\\ ^\\circ\\text{C}$ i $I = 800\\ \\text{W/m}^2$, determineu l'apartat a.\n\nEscollim el model de captador més eficient de l'apartat anterior i l'utilitzem durant un temps $t = 8\\ \\text{h}$ al dia. Sabent que el consum diari d'aigua és $c = 390\\ \\text{L}$, que s'escalfa $\\Delta T = 35\\ ^\\circ\\text{C}$ i que la calor específica de l'aigua és $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$, determineu els apartats b i c.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "El rendiment $\\eta_\\text{A}$ i $\\eta_\\text{B}$ dels captadors A i B en aquestes condicions de treball. Quina és l'opció més eficient?", "punts": 0.5},
+        {"id": "b", "enunciat": "El nombre de captadors $n$ que caldria instal·lar per a escalfar tota l'aigua consumida mitjançant energia solar.", "punts": 1},
+        {"id": "c", "enunciat": "L'energia elèctrica consumida $E_\\text{elèctr}$, en $\\text{kW h}$, en un dia en el qual la radiació solar disminueix a la meitat, tenint en compte que el nombre de captadors és l'obtingut en l'apartat anterior.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Superfície d'un captador: $S = 2{,}1\\ \\text{m}^2$\n- Captador A: $\\eta_0 = 0{,}80$, $k_1 = 8{,}9\\ \\text{W/(m}^2\\ ^\\circ\\text{C)}$; captador B: $\\eta_0 = 0{,}66$, $k_1 = 3{,}2\\ \\text{W/(m}^2\\ ^\\circ\\text{C)}$\n- $T_\\text{m} = 50\\ ^\\circ\\text{C}$, $T_\\text{a} = 18\\ ^\\circ\\text{C}$ → $T_\\text{m} - T_\\text{a} = 32\\ ^\\circ\\text{C}$\n- $I = 800\\ \\text{W/m}^2$\n- Temps de funcionament: $t = 8\\ \\text{h} = 28\\,800\\ \\text{s}$\n- Aigua: $c = 390\\ \\text{L}$ → $m = 390\\ \\text{kg} = 390\\,000\\ \\text{g}$ (densitat $1\\ \\text{kg/L}$), $\\Delta T = 35\\ ^\\circ\\text{C}$, $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$\n- Incògnites: $\\eta_\\text{A}$, $\\eta_\\text{B}$, $n$, $E_\\text{elèctr}$"},
+          {"apartat": "a", "titol": "Rendiment de cada captador", "cos": "Substituïm a la fórmula del rendiment. El terme $k_1 (T_\\text{m} - T_\\text{a})/I$ representa les pèrdues tèrmiques del captador cap a l'ambient:\n\n$$\\eta_\\text{A} = 0{,}80 - 8{,}9 \\cdot \\frac{50 - 18}{800} = 0{,}80 - 0{,}356 = 0{,}444$$\n\n$$\\eta_\\text{B} = 0{,}66 - 3{,}2 \\cdot \\frac{50 - 18}{800} = 0{,}66 - 0{,}128 = 0{,}532$$\n\nResultat: **$\\eta_\\text{A} = 0{,}444$, $\\eta_\\text{B} = 0{,}532$**. El més eficient és el **captador B**: tot i tenir menys rendiment òptic, té moltes menys pèrdues."},
+          {"apartat": "b", "titol": "Energia diària necessària per escalfar l'aigua", "cos": "L'aigua s'escalfa sense canviar d'estat, per tant absorbeix calor sensible:\n\n$$E_\\text{dia} = m\\, c_\\text{e}\\, \\Delta T = 390\\,000\\ \\text{g} \\cdot 4{,}18\\ \\tfrac{\\text{J}}{\\text{g}\\ ^\\circ\\text{C}} \\cdot 35\\ ^\\circ\\text{C} = 57{,}06 \\cdot 10^6\\ \\text{J} = 57{,}06\\ \\text{MJ}$$\n\nEn kW h: $57{,}06 \\cdot 10^6 / 3{,}6 \\cdot 10^6 = 15{,}85\\ \\text{kW h}$."},
+          {"apartat": "b", "titol": "Energia solar que ha d'arribar als captadors", "cos": "El captador B només aprofita el $53{,}2\\ \\%$ de la radiació que rep. L'energia solar incident necessària és:\n\n$$E_\\text{solar} = \\frac{E_\\text{dia}}{\\eta_\\text{B}} = \\frac{57{,}06\\ \\text{MJ}}{0{,}532} = 107{,}3\\ \\text{MJ} = 29{,}79\\ \\text{kW h}$$"},
+          {"apartat": "b", "titol": "Superfície necessària i nombre de captadors", "cos": "La radiació $I$ és potència per unitat de superfície. Dividint l'energia pel temps obtenim la potència solar necessària, i dividint per $I$, la superfície:\n\n$$S_\\text{necessària} = \\frac{E_\\text{solar}/t}{I} = \\frac{107{,}3 \\cdot 10^6\\ \\text{J} / 28\\,800\\ \\text{s}}{800\\ \\text{W/m}^2} = \\frac{3\\,724\\ \\text{W}}{800\\ \\text{W/m}^2} = 4{,}655\\ \\text{m}^2$$\n\n$$\\frac{S_\\text{necessària}}{S} = \\frac{4{,}655}{2{,}1} = 2{,}217$$\n\nCom que no es poden instal·lar fraccions de captador, cal arrodonir **cap amunt**: amb 2 no n'hi hauria prou.\n\nResultat: **$n = 3$ captadors**."},
+          {"apartat": "c", "titol": "Nou rendiment amb la meitat de radiació", "cos": "Si la radiació baixa a $I' = 400\\ \\text{W/m}^2$, el rendiment del captador **també canvia**, perquè les pèrdues pesen més quan entra menys energia:\n\n$$\\eta_\\text{B}' = 0{,}66 - 3{,}2 \\cdot \\frac{50 - 18}{400} = 0{,}66 - 0{,}256 = 0{,}404$$"},
+          {"apartat": "c", "titol": "Energia solar rebuda i energia tèrmica aprofitada", "cos": "Energia solar que arriba als 3 captadors en 8 hores:\n\n$$E_\\text{solar}' = n\\, S\\, I'\\, t = 3 \\cdot 2{,}1\\ \\text{m}^2 \\cdot 400\\ \\text{W/m}^2 \\cdot 8\\ \\text{h} = 20\\,160\\ \\text{W h} = 20{,}16\\ \\text{kW h}$$\n\nEnergia tèrmica que passa a l'aigua:\n\n$$E_\\text{tèrmica} = \\eta_\\text{B}'\\, E_\\text{solar}' = 0{,}404 \\cdot 20{,}16 = 8{,}145\\ \\text{kW h}$$"},
+          {"apartat": "c", "titol": "Energia elèctrica de suport", "cos": "L'escalfador elèctric ha d'aportar el que falta fins a l'energia diària necessària (suposant que l'escalfador converteix tota l'energia elèctrica en calor):\n\n$$E_\\text{elèctr} = E_\\text{dia} - E_\\text{tèrmica} = 15{,}85 - 8{,}145 = 7{,}705\\ \\text{kW h}$$\n\nResultat: **$E_\\text{elèctr} \\approx 7{,}705\\ \\text{kW h}$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$\\eta_\\text{A} = 0{,}444$, $\\eta_\\text{B} = 0{,}532$ → el més eficient és el B"},
+          {"apartat": "b", "valor": "$E_\\text{dia} = 57{,}06\\ \\text{MJ} = 15{,}85\\ \\text{kW h}$; $S_\\text{necessària} = 4{,}655\\ \\text{m}^2$ → $n = 3$ captadors"},
+          {"apartat": "c", "valor": "$\\eta_\\text{B}' = 0{,}404$; $E_\\text{tèrmica} = 8{,}145\\ \\text{kW h}$; $E_\\text{elèctr} \\approx 7{,}705\\ \\text{kW h}$"}
+        ],
+        "nota": "Error típic a l'apartat c: mantenir el rendiment $\\eta_\\text{B} = 0{,}532$ en lloc de recalcular-lo amb $I = 400\\ \\text{W/m}^2$. També cal recordar que a l'apartat c s'usen els 3 captadors instal·lats (no 2,217). Se suposa densitat de l'aigua $1\\ \\text{kg/L}$ i escalfador elèctric de rendiment 1, com fa la solució oficial."
+      }
+    },
+    {
+      "id": "tecno-2018-J-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Moto pujant un pendent: velocitats de gir, potències, angle i parell a la roda",
+      "tema": "mecanismes",
+      "temes_secundaris": ["mecanica"],
+      "conceptes": ["relació de transmissió", "velocitat angular", "potència mecànica", "rendiment", "parell", "pla inclinat"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "Una motorista puja un pendent a una velocitat constant $v = 50\\ \\text{km/h}$ sense fer lliscar la roda del darrere. La marxa que té posada fa que la relació de transmissió entre l'eix de sortida del motor i l'eix de la roda del darrere sigui $\\tau = \\omega_\\text{roda}/\\omega_\\text{motor} = 0{,}044$. Aquesta reducció de velocitat s'aconsegueix mitjançant una transmissió d'engranatges de rendiment $\\eta_\\text{eng} = 0{,}90$ i una transmissió per cadena de rendiment $\\eta_\\text{cad} = 0{,}85$. La roda té un diàmetre $d = 620\\ \\text{mm}$ i la massa total de la motorista més la moto és $m = 150\\ \\text{kg}$. Si el parell a l'eix de sortida del motor és $\\Gamma_\\text{motor} = 6\\ \\text{N m}$ i la fricció amb l'aire es considera negligible, determineu:",
+      "figures": [{"src": "img/tecno/2018-J/e4-a.png", "peu": "Moto pujant un pendent d'angle α, amb les dades del problema"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Les velocitats de gir de la roda $\\omega_\\text{roda}$ i de l'eix del motor $\\omega_\\text{motor}$, en rad/s.", "punts": 0.5},
+        {"id": "b", "enunciat": "La potència $P_\\text{motor}$ a l'eix de sortida del motor.", "punts": 0.5},
+        {"id": "c", "enunciat": "La potència mecànica $P_\\text{roda}$ a l'eix de la roda i l'angle $\\alpha$ que forma el perfil de la carretera amb l'horitzontal.", "punts": 1},
+        {"id": "d", "enunciat": "El parell $\\Gamma_\\text{roda}$ a l'eix de la roda.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Velocitat: $v = 50\\ \\text{km/h} = \\dfrac{50}{3{,}6} = 13{,}89\\ \\text{m/s}$\n- Relació de transmissió: $\\tau = \\omega_\\text{roda}/\\omega_\\text{motor} = 0{,}044$\n- Rendiments: $\\eta_\\text{eng} = 0{,}90$, $\\eta_\\text{cad} = 0{,}85$\n- Diàmetre de la roda: $d = 620\\ \\text{mm}$ → radi $r = 0{,}31\\ \\text{m}$\n- Massa total: $m = 150\\ \\text{kg}$; $g = 9{,}807\\ \\text{m/s}^2$\n- Parell del motor: $\\Gamma_\\text{motor} = 6\\ \\text{N m}$\n- Incògnites: $\\omega_\\text{roda}$, $\\omega_\\text{motor}$, $P_\\text{motor}$, $P_\\text{roda}$, $\\alpha$, $\\Gamma_\\text{roda}$"},
+          {"apartat": "a", "titol": "Velocitat de gir de la roda", "cos": "Si la roda no llisca, la velocitat de la moto és la velocitat lineal del punt de contacte de la roda: $v = \\omega_\\text{roda}\\, r$. Per tant:\n\n$$\\omega_\\text{roda} = \\frac{v}{d/2} = \\frac{13{,}89\\ \\text{m/s}}{0{,}31\\ \\text{m}} = 44{,}80\\ \\text{rad/s}$$"},
+          {"apartat": "a", "titol": "Velocitat de gir del motor", "cos": "A partir de la definició de la relació de transmissió:\n\n$$\\omega_\\text{motor} = \\frac{\\omega_\\text{roda}}{\\tau} = \\frac{44{,}80}{0{,}044} = 1\\,018\\ \\text{rad/s}$$\n\n(unes $9\\,724\\ \\text{min}^{-1}$). Resultat: **$\\omega_\\text{roda} = 44{,}80\\ \\text{rad/s}$, $\\omega_\\text{motor} = 1\\,018\\ \\text{rad/s}$**."},
+          {"apartat": "b", "titol": "Potència a l'eix del motor", "cos": "La potència d'un eix que gira és el parell per la velocitat angular (en rad/s):\n\n$$P_\\text{motor} = \\Gamma_\\text{motor}\\, \\omega_\\text{motor} = 6\\ \\text{N m} \\cdot 1\\,018\\ \\text{rad/s} = 6\\,109\\ \\text{W}$$\n\nResultat: **$P_\\text{motor} \\approx 6{,}109\\ \\text{kW}$**."},
+          {"apartat": "c", "titol": "Potència a la roda amb els rendiments en sèrie", "cos": "La potència passa primer per l'engranatge i després per la cadena; el rendiment total és el producte dels rendiments:\n\n$$\\eta_\\text{total} = \\eta_\\text{eng}\\, \\eta_\\text{cad} = 0{,}90 \\cdot 0{,}85 = 0{,}765$$\n\n$$P_\\text{roda} = \\eta_\\text{total}\\, P_\\text{motor} = 0{,}765 \\cdot 6\\,109 = 4\\,674\\ \\text{W}$$"},
+          {"apartat": "c", "titol": "Angle del pendent", "cos": "Com que la velocitat és constant i no hi ha fricció amb l'aire, tota la potència de la roda serveix per pujar la moto (augmentar-ne l'energia potencial). La component vertical de la velocitat és $v \\sin\\alpha$, així que:\n\n$$P_\\text{roda} = m\\, g\\, v \\sin\\alpha \\;\\Rightarrow\\; \\sin\\alpha = \\frac{P_\\text{roda}}{m\\, g\\, v} = \\frac{4\\,674}{150 \\cdot 9{,}807 \\cdot 13{,}89} = 0{,}2287$$\n\n$$\\alpha = \\arcsin(0{,}2287) = 13{,}22^\\circ$$\n\nResultat: **$P_\\text{roda} \\approx 4{,}674\\ \\text{kW}$, $\\alpha \\approx 13{,}22^\\circ$**."},
+          {"apartat": "d", "titol": "Parell a l'eix de la roda", "cos": "Apliquem $P = \\Gamma\\, \\omega$ a l'eix de la roda:\n\n$$\\Gamma_\\text{roda} = \\frac{P_\\text{roda}}{\\omega_\\text{roda}} = \\frac{4\\,674\\ \\text{W}}{44{,}80\\ \\text{rad/s}} = 104{,}3\\ \\text{N m}$$\n\nComprovació: $\\Gamma_\\text{roda} = \\Gamma_\\text{motor}\\, \\dfrac{\\eta_\\text{total}}{\\tau} = 6 \\cdot \\dfrac{0{,}765}{0{,}044} = 104{,}3\\ \\text{N m}$. El reductor disminueix la velocitat i multiplica el parell.\n\nResultat: **$\\Gamma_\\text{roda} \\approx 104{,}3\\ \\text{N m}$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$\\omega_\\text{roda} = 44{,}80\\ \\text{rad/s}$; $\\omega_\\text{motor} = 1\\,018\\ \\text{rad/s}$"},
+          {"apartat": "b", "valor": "$P_\\text{motor} \\approx 6{,}109\\ \\text{kW}$"},
+          {"apartat": "c", "valor": "$P_\\text{roda} \\approx 4{,}674\\ \\text{kW}$; $\\alpha \\approx 13{,}22^\\circ$"},
+          {"apartat": "d", "valor": "$\\Gamma_\\text{roda} \\approx 104{,}3\\ \\text{N m}$"}
+        ],
+        "nota": "Errors típics: usar el diàmetre en lloc del radi a $v = \\omega r$ (surt la meitat de $\\omega_\\text{roda}$), no passar els km/h a m/s, o multiplicar per $\\tau$ en lloc de dividir per obtenir $\\omega_\\text{motor}$ (el motor sempre gira més de pressa que la roda). Amb $g = 9{,}81\\ \\text{m/s}^2$ l'angle també surt $13{,}22^\\circ$."
+      }
+    },
+    {
+      "id": "tecno-2018-J-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Llums d'encreuament d'un cotxe: caiguda de tensió i longitud màxima del cable",
+      "tema": "circuits",
+      "temes_secundaris": [],
+      "conceptes": ["resistència equivalent", "resistivitat", "caiguda de tensió", "potència elèctrica", "associació en paral·lel"],
+      "dificultat": 2,
+      "pagines": [4],
+      "enunciat": "Els dos llums d'encreuament d'un vehicle es connecten en paral·lel a una bateria de tensió $U = 12\\ \\text{V}$. La bateria i els llums es connecten mitjançant un cable bipolar de coure de diàmetre $d = 2{,}5\\ \\text{mm}$. El coure té una resistivitat $\\rho = 1{,}7 \\cdot 10^{-8}\\ \\Omega\\ \\text{m}$. La resistència $R_\\text{cable}$ de l'esquema de la figura correspon als dos conductors del cable bipolar. Si cada llum té una potència nominal $P_\\text{llum} = 55\\ \\text{W}$ quan s'alimenta directament amb una tensió $U = 12\\ \\text{V}$, determineu els apartats a i b.\n\nSi s'utilitza un cable amb una longitud $L = 4\\ \\text{m}$, determineu els apartats c i d.",
+      "figures": [{"src": "img/tecno/2018-J/e3-b.png", "peu": "Esquema: bateria de 12 V, resistència del cable i dos llums en paral·lel"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La resistència equivalent $R_\\text{eq}$ dels dos llums connectats en paral·lel.", "punts": 0.5},
+        {"id": "b", "enunciat": "La longitud màxima $L_\\text{màx}$ que pot tenir el cable si es vol que la caiguda de tensió del cable no sigui superior al $5\\ \\%$.", "punts": 1},
+        {"id": "c", "enunciat": "La resistència del cable $R_\\text{cable}$ (amb $L = 4\\ \\text{m}$).", "punts": 0.5},
+        {"id": "d", "enunciat": "La potència total $P_\\text{total}$ consumida conjuntament pel cable i els dos llums (amb $L = 4\\ \\text{m}$).", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Tensió de la bateria: $U = 12\\ \\text{V}$\n- Potència nominal de cada llum: $P_\\text{llum} = 55\\ \\text{W}$ (a $12\\ \\text{V}$)\n- Cable bipolar de coure: $d = 2{,}5\\ \\text{mm} = 2{,}5 \\cdot 10^{-3}\\ \\text{m}$, $\\rho = 1{,}7 \\cdot 10^{-8}\\ \\Omega\\ \\text{m}$\n- Caiguda de tensió màxima al cable: $5\\ \\%$ de $U$\n- Longitud del cable (c, d): $L = 4\\ \\text{m}$\n- Incògnites: $R_\\text{eq}$, $L_\\text{màx}$, $R_\\text{cable}$, $P_\\text{total}$"},
+          {"apartat": "a", "titol": "Resistència d'un llum", "cos": "Coneixem la potència nominal a la tensió nominal. Com que $P = U I$ i $I = U/R$, tenim $P = U^2/R$:\n\n$$R = \\frac{U^2}{P_\\text{llum}} = \\frac{12^2}{55} = 2{,}618\\ \\Omega$$\n\n(Se suposa que la resistència del llum és constant.)"},
+          {"apartat": "a", "titol": "Resistència equivalent en paral·lel", "cos": "Dues resistències iguals en paral·lel equivalen a la meitat d'una:\n\n$$R_\\text{eq} = \\frac{R \\cdot R}{R + R} = \\frac{R}{2} = \\frac{2{,}618}{2} = 1{,}309\\ \\Omega$$\n\nResultat: **$R_\\text{eq} \\approx 1{,}309\\ \\Omega$**."},
+          {"apartat": "b", "titol": "Corrent quan el cable fa caure el 5 %", "cos": "El cable i els llums estan en sèrie. Si al cable hi cau com a màxim el $5\\ \\%$ de la tensió, als llums n'hi arriba el $95\\ \\%$:\n\n$$I\\, R_\\text{eq} = 0{,}95\\, U \\;\\Rightarrow\\; I = \\frac{0{,}95 \\cdot 12}{1{,}309} = 8{,}708\\ \\text{A}$$"},
+          {"apartat": "b", "titol": "Resistència màxima del cable", "cos": "El mateix corrent passa pel cable, on cau el $5\\ \\%$ de la tensió:\n\n$$I\\, R_\\text{cable} = 0{,}05\\, U \\;\\Rightarrow\\; R_\\text{cable} = \\frac{0{,}05 \\cdot 12}{8{,}708} = 0{,}06890\\ \\Omega$$"},
+          {"apartat": "b", "titol": "Longitud màxima del cable bipolar", "cos": "El cable bipolar té **dos conductors** (anada i tornada), per tant la longitud de coure és $2L$. La secció de cada conductor és $S = \\pi d^2/4$:\n\n$$S = \\frac{\\pi \\cdot (2{,}5 \\cdot 10^{-3})^2}{4} = 4{,}909 \\cdot 10^{-6}\\ \\text{m}^2$$\n\n$$R_\\text{cable} = \\rho\\, \\frac{2 L_\\text{màx}}{S} \\;\\Rightarrow\\; L_\\text{màx} = \\frac{R_\\text{cable}\\, S}{2 \\rho} = \\frac{0{,}06890 \\cdot 4{,}909 \\cdot 10^{-6}}{2 \\cdot 1{,}7 \\cdot 10^{-8}} = 9{,}947\\ \\text{m}$$\n\nResultat: **$L_\\text{màx} \\approx 9{,}947\\ \\text{m}$**."},
+          {"apartat": "c", "titol": "Resistència del cable de 4 m", "cos": "$$R_\\text{cable} = \\rho\\, \\frac{2L}{S} = 1{,}7 \\cdot 10^{-8} \\cdot \\frac{2 \\cdot 4}{4{,}909 \\cdot 10^{-6}} = 0{,}02771\\ \\Omega$$\n\nResultat: **$R_\\text{cable} \\approx 0{,}02771\\ \\Omega$** (menys que el màxim de l'apartat b, com era d'esperar perquè $4\\ \\text{m} < 9{,}947\\ \\text{m}$)."},
+          {"apartat": "d", "titol": "Potència total consumida", "cos": "Cable i llums formen un circuit sèrie de resistència total $R_\\text{cable} + R_\\text{eq}$ connectat a la bateria:\n\n$$P_\\text{total} = \\frac{U^2}{R_\\text{cable} + R_\\text{eq}} = \\frac{12^2}{0{,}02771 + 1{,}309} = 107{,}7\\ \\text{W}$$\n\nResultat: **$P_\\text{total} \\approx 107{,}7\\ \\text{W}$** (una mica menys que els $110\\ \\text{W}$ nominals dels dos llums, perquè la resistència del cable redueix el corrent)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$R = 2{,}618\\ \\Omega$ per llum; $R_\\text{eq} \\approx 1{,}309\\ \\Omega$"},
+          {"apartat": "b", "valor": "$I = 8{,}708\\ \\text{A}$; $R_\\text{cable} = 0{,}06890\\ \\Omega$; $L_\\text{màx} \\approx 9{,}947\\ \\text{m}$"},
+          {"apartat": "c", "valor": "$R_\\text{cable} \\approx 0{,}02771\\ \\Omega$"},
+          {"apartat": "d", "valor": "$P_\\text{total} \\approx 107{,}7\\ \\text{W}$"}
+        ],
+        "nota": "Error típic: oblidar que el cable bipolar té dos conductors i usar només $L$ en lloc de $2L$ (la longitud màxima sortiria el doble, $19{,}9\\ \\text{m}$). També és un error sumar simplement $2 \\cdot 55 = 110\\ \\text{W}$ a l'apartat d: amb el cable, els llums ja no treballen exactament a 12 V."
+      }
+    },
+    {
+      "id": "tecno-2018-J-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Central de cicle combinat: consum de gas natural liquat i rendiment del cicle de vapor",
+      "tema": "energia",
+      "temes_secundaris": ["termica"],
+      "conceptes": ["central de cicle combinat", "rendiment", "poder calorífic", "potència dissipada", "consum de combustible"],
+      "dificultat": 3,
+      "pagines": [4],
+      "enunciat": "Una central elèctrica de cicle combinat produeix electricitat mitjançant dos cicles termodinàmics: un primer cicle de combustió de gas natural, de poder calorífic $p = 32{,}5\\ \\text{MJ/kg}$, i un segon cicle en què s'aprofita la calor residual del primer per a moure una turbina de vapor. El gas natural es distribueix liquat, amb una densitat $\\rho = 0{,}423\\ \\text{kg/L}$. La potència elèctrica que proporciona la central és $P_\\text{elèctr} = 500\\ \\text{MW}$ i el rendiment total és $\\eta = 0{,}575$. El rendiment del cicle de gas és $\\eta_\\text{g} = 0{,}32$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La potència consumida $P_\\text{cons}$ per la central.", "punts": 0.5},
+        {"id": "b", "enunciat": "El volum $V$ de gas natural liquat que es crema a la central durant 24 hores de funcionament.", "punts": 0.5},
+        {"id": "c", "enunciat": "La potència dissipada en el cicle de gas $P_\\text{diss,cg}$.", "punts": 0.5},
+        {"id": "d", "enunciat": "El rendiment del cicle de vapor $\\eta_\\text{v}$.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Poder calorífic del gas: $p = 32{,}5\\ \\text{MJ/kg} = 32{,}5 \\cdot 10^6\\ \\text{J/kg}$\n- Densitat del gas liquat: $\\rho = 0{,}423\\ \\text{kg/L} = 423\\ \\text{kg/m}^3$\n- Potència elèctrica: $P_\\text{elèctr} = 500\\ \\text{MW}$\n- Rendiment total: $\\eta = 0{,}575$; rendiment del cicle de gas: $\\eta_\\text{g} = 0{,}32$\n- Temps: $t = 24\\ \\text{h} = 86\\,400\\ \\text{s}$\n- Incògnites: $P_\\text{cons}$, $V$, $P_\\text{diss,cg}$, $\\eta_\\text{v}$"},
+          {"apartat": "a", "titol": "Potència consumida a partir del rendiment total", "cos": "El rendiment total compara la potència elèctrica obtinguda amb la potència química del combustible cremat:\n\n$$\\eta = \\frac{P_\\text{elèctr}}{P_\\text{cons}} \\;\\Rightarrow\\; P_\\text{cons} = \\frac{P_\\text{elèctr}}{\\eta} = \\frac{500}{0{,}575} = 869{,}6\\ \\text{MW}$$\n\nResultat: **$P_\\text{cons} \\approx 869{,}6\\ \\text{MW}$**."},
+          {"apartat": "b", "titol": "Massa de gas cremada en 24 h", "cos": "L'energia consumida en un dia és $E = P_\\text{cons}\\, t$, i cada kg de gas aporta $p$ joules:\n\n$$m = \\frac{P_\\text{cons}\\, t}{p} = \\frac{869{,}6 \\cdot 10^6\\ \\text{W} \\cdot 86\\,400\\ \\text{s}}{32{,}5 \\cdot 10^6\\ \\text{J/kg}} = 2{,}312 \\cdot 10^6\\ \\text{kg}$$"},
+          {"apartat": "b", "titol": "Volum de gas liquat", "cos": "Amb la densitat del gas liquat passem de massa a volum:\n\n$$V = \\frac{m}{\\rho} = \\frac{2{,}312 \\cdot 10^6\\ \\text{kg}}{423\\ \\text{kg/m}^3} = 5\\,465\\ \\text{m}^3$$\n\nEn una sola expressió: $V = \\dfrac{P_\\text{cons}\\, t}{p\\, \\rho}$. Resultat: **$V \\approx 5\\,465\\ \\text{m}^3$** (uns 5,465 milions de litres)."},
+          {"apartat": "c", "titol": "Potència dissipada pel cicle de gas", "cos": "El cicle de gas rep tota la potència del combustible i en converteix en electricitat el $32\\ \\%$:\n\n$$P_\\text{cg} = \\eta_\\text{g}\\, P_\\text{cons} = 0{,}32 \\cdot 869{,}6 = 278{,}3\\ \\text{MW}$$\n\nLa resta és calor residual que surt del cicle de gas:\n\n$$P_\\text{diss,cg} = P_\\text{cons}\\,(1 - \\eta_\\text{g}) = 869{,}6 \\cdot 0{,}68 = 591{,}3\\ \\text{MW}$$\n\nResultat: **$P_\\text{diss,cg} \\approx 591{,}3\\ \\text{MW}$**."},
+          {"apartat": "d", "titol": "Potència elèctrica del cicle de vapor", "cos": "El cicle de vapor aprofita la calor residual del cicle de gas. La seva producció elèctrica és la part de la total que no fa el cicle de gas:\n\n$$P_\\text{cv} = P_\\text{elèctr} - P_\\text{cg} = 500 - 278{,}3 = 221{,}7\\ \\text{MW}$$"},
+          {"apartat": "d", "titol": "Rendiment del cicle de vapor", "cos": "L'entrada del cicle de vapor és la potència dissipada pel cicle de gas:\n\n$$\\eta_\\text{v} = \\frac{P_\\text{cv}}{P_\\text{diss,cg}} = \\frac{P_\\text{elèctr} - P_\\text{cons}\\, \\eta_\\text{g}}{P_\\text{diss,cg}} = \\frac{221{,}7}{591{,}3} = 0{,}3750$$\n\nComprovació: el rendiment total d'un cicle combinat és $\\eta = \\eta_\\text{g} + (1 - \\eta_\\text{g})\\, \\eta_\\text{v} = 0{,}32 + 0{,}68 \\cdot 0{,}375 = 0{,}575$ ✓.\n\nResultat: **$\\eta_\\text{v} = 0{,}3750$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$P_\\text{cons} \\approx 869{,}6\\ \\text{MW}$"},
+          {"apartat": "b", "valor": "$V \\approx 5\\,465\\ \\text{m}^3$"},
+          {"apartat": "c", "valor": "$P_\\text{diss,cg} \\approx 591{,}3\\ \\text{MW}$"},
+          {"apartat": "d", "valor": "$\\eta_\\text{v} = 0{,}3750$"}
+        ],
+        "nota": "Error típic a l'apartat d: pensar que el rendiment total és el producte $\\eta_\\text{g}\\, \\eta_\\text{v}$ (els cicles no estan en sèrie en el sentit habitual: tots dos produeixen electricitat) o dividir $P_\\text{cv}$ per $P_\\text{cons}$ en lloc de per la calor residual que rep el cicle de vapor."
+      }
+    }
+  ]
+}

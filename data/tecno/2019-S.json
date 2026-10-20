@@ -1,0 +1,829 @@
+{
+  "examen": {
+    "id": "tecno-2019-S",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2019,
+    "convocatoria": "setembre",
+    "serie": "5",
+    "pdf_examen": "pdfs/tecno/2019-S-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2019-S-solucio.pdf",
+    "estructura": "Dues parts de dos exercicis cadascuna (2,5 punts per exercici). Primera part comuna: l'exercici 1 té 5 qüestions de test (0,5 punts cadascuna; cada resposta errònia descompta 0,16 punts i les no contestades no descompten) i l'exercici 2 és un problema. Segona part: cal escollir UNA de les dues opcions (A o B) i fer-ne els exercicis 3 i 4."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2019-S-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat angular d'un cargol a partir del pas i la velocitat d'avanç",
+      "tema": "mecanismes",
+      "temes_secundaris": [],
+      "conceptes": [
+        "cargol-femella",
+        "pas de rosca",
+        "velocitat angular"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Un cargol de pas $p = 1{,}25\\ \\text{mm}$ avança a una velocitat $v = 5\\ \\text{mm/s}$ quan es cargola a una femella fixa. Quina és la velocitat angular de gir del cargol?",
+      "figures": [],
+      "opcions": {
+        "a": "$20{,}94\\ \\text{rad/s}$",
+        "b": "$25{,}13\\ \\text{rad/s}$",
+        "c": "$157{,}9\\ \\text{rad/s}$",
+        "d": "$125{,}7\\ \\text{rad/s}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Pas de rosca: $p = 1{,}25\\ \\text{mm/volta}$\n- Velocitat d'avanç: $v = 5\\ \\text{mm/s}$\n- Incògnita: velocitat angular $\\omega$ en rad/s"
+          },
+          {
+            "apartat": null,
+            "titol": "Voltes per segon",
+            "cos": "En un sistema cargol-femella, a cada volta completa el cargol avança una distància igual al pas. Per tant, les voltes per segon són la velocitat d'avanç dividida pel pas:\n\n$$n = \\frac{v}{p} = \\frac{5\\ \\text{mm/s}}{1{,}25\\ \\text{mm/volta}} = 4\\ \\text{voltes/s}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Pas a rad/s",
+            "cos": "Cada volta són $2\\pi$ radians:\n\n$$\\omega = 2\\pi\\, n = 2\\pi \\cdot 4 = 25{,}13\\ \\text{rad/s}$$\n\nResultat: **$\\omega \\approx 25{,}13\\ \\text{rad/s}$** → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "Si s'oblida el factor $2\\pi$ queda $4\\ \\text{rad/s}$, que no és cap opció. Cal recordar que $v/p$ dona **voltes** per segon, no radians per segon."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\omega = 2\\pi v/p \\approx 25{,}13\\ \\text{rad/s}$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2019-S-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Unitats mínimes a vendre per recuperar la inversió i obtenir benefici",
+      "tema": "economia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "cost unitari",
+        "preu de venda",
+        "benefici",
+        "punt d'equilibri"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Una empresa comercialitza un model nou d'impressora 3D. El cost unitari de producció és de $500$ €. Durant el primer any, l'empresa vol recuperar $250\\,000$ € de la inversió inicial, obtenir un benefici mínim de $50\\,000$ € i pagar les despeses de fabricació de totes les unitats venudes. Si s'ha fixat un preu de venda unitari de $950$ €, quin ha de ser el nombre mínim d'unitats venudes?",
+      "figures": [],
+      "opcions": {
+        "a": "600",
+        "b": "316",
+        "c": "207",
+        "d": "667"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Cost unitari de producció: $c_\\text{u} = 500$ €\n- Preu de venda unitari: $p_\\text{v} = 950$ €\n- Inversió a recuperar: $250\\,000$ €; benefici mínim: $50\\,000$ €\n- Incògnita: nombre mínim d'unitats $N$"
+          },
+          {
+            "apartat": null,
+            "titol": "Plantejament: ingressos ≥ costos + objectius",
+            "cos": "Els ingressos per vendes ($N\\, p_\\text{v}$) han de pagar la fabricació de les $N$ unitats ($N\\, c_\\text{u}$) i, a més, cobrir la inversió i el benefici. Dit d'una altra manera, el **marge** de cada unitat ($p_\\text{v} - c_\\text{u}$) multiplicat per $N$ ha de cobrir els $300\\,000$ €:\n\n$$N\\,(p_\\text{v} - c_\\text{u}) \\ge 250\\,000 + 50\\,000$$\n\n$$N \\ge \\frac{300\\,000}{950 - 500} = \\frac{300\\,000}{450} = 666{,}7$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Arrodonir cap amunt",
+            "cos": "Les unitats han de ser un nombre enter i amb 666 no s'arriba al benefici mínim, per tant cal arrodonir **cap amunt**:\n\nResultat: **$N = 667$ unitats** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $600 = 300\\,000/500$: es divideix pel cost unitari en lloc del marge.\n- **b)** $316 \\approx 300\\,000/950$: es divideix pel preu de venda i s'oblida que cada unitat també s'ha de fabricar."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$N = 300\\,000/450 = 666{,}7 \\Rightarrow 667$ unitats → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2019-S-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Resistència a la ruptura d'una barra circular a tracció",
+      "tema": "resistencia",
+      "temes_secundaris": [],
+      "conceptes": [
+        "tensió",
+        "resistència a la ruptura",
+        "secció circular",
+        "tracció"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Una barra massissa de secció circular de $5\\ \\text{mm}$ de radi pot aguantar una força de tracció de fins a $8{,}1\\ \\text{kN}$ sense trencar-se. Quina és la resistència a la ruptura del material de la barra?",
+      "figures": [],
+      "opcions": {
+        "a": "$103{,}1\\ \\text{MPa}$",
+        "b": "$200\\ \\text{MPa}$",
+        "c": "$324\\ \\text{MPa}$",
+        "d": "$412{,}5\\ \\text{MPa}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Radi: $r = 5\\ \\text{mm}$\n- Força màxima de tracció: $F = 8{,}1\\ \\text{kN} = 8\\,100\\ \\text{N}$\n- Incògnita: resistència a la ruptura $\\sigma_\\text{R}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Àrea de la secció",
+            "cos": "La secció és un cercle de radi $5\\ \\text{mm}$:\n\n$$S = \\pi r^2 = \\pi \\cdot 5^2 = 78{,}54\\ \\text{mm}^2$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Tensió de ruptura",
+            "cos": "La resistència a la ruptura és la tensió (força per unitat de superfície) que fa trencar el material. Recordeu que $1\\ \\text{N/mm}^2 = 1\\ \\text{MPa}$:\n\n$$\\sigma_\\text{R} = \\frac{F}{S} = \\frac{8\\,100\\ \\text{N}}{78{,}54\\ \\text{mm}^2} = 103{,}1\\ \\text{MPa}$$\n\nResultat: **$\\sigma_\\text{R} \\approx 103{,}1\\ \\text{MPa}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **d)** $412{,}5\\ \\text{MPa}$ surt de prendre els $5\\ \\text{mm}$ com a diàmetre ($r = 2{,}5\\ \\text{mm}$).\n- **c)** $324\\ \\text{MPa} = 8\\,100/25$: s'oblida el factor $\\pi$ de l'àrea."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\sigma_\\text{R} = F/(\\pi r^2) \\approx 103{,}1\\ \\text{MPa}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2019-S-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat de gir d'un motor asíncron amb lliscament",
+      "tema": "maquines-electriques",
+      "temes_secundaris": [],
+      "conceptes": [
+        "motor asíncron",
+        "velocitat de sincronisme",
+        "lliscament",
+        "parells de pols"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un motor asíncron de corrent altern de $p = 4$ parells de pols té un lliscament relatiu $s = 0{,}07$. Si està connectat a la xarxa de tensió $U = 230\\ \\text{V}$ i freqüència $f = 50\\ \\text{Hz}$, a quina velocitat $n$ gira?",
+      "figures": [],
+      "opcions": {
+        "a": "$2\\,790\\ \\text{min}^{-1}$",
+        "b": "$750\\ \\text{min}^{-1}$",
+        "c": "$1\\,395\\ \\text{min}^{-1}$",
+        "d": "$697{,}5\\ \\text{min}^{-1}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Parells de pols: $p = 4$\n- Lliscament: $s = 0{,}07$\n- Freqüència: $f = 50\\ \\text{Hz}$ (la tensió $U = 230\\ \\text{V}$ no intervé en el càlcul)\n- Incògnita: velocitat del rotor $n$ en $\\text{min}^{-1}$"
+          },
+          {
+            "apartat": null,
+            "titol": "Velocitat de sincronisme",
+            "cos": "El camp magnètic giratori de l'estator gira a la velocitat de sincronisme, que depèn de la freqüència i dels parells de pols:\n\n$$n_\\text{s} = \\frac{60\\, f}{p} = \\frac{60 \\cdot 50}{4} = 750\\ \\text{min}^{-1}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Velocitat real amb el lliscament",
+            "cos": "En un motor asíncron el rotor gira una mica més lent que el camp. El lliscament relatiu és $s = \\dfrac{n_\\text{s} - n}{n_\\text{s}}$, per tant:\n\n$$n = n_\\text{s}\\,(1 - s) = 750 \\cdot (1 - 0{,}07) = 697{,}5\\ \\text{min}^{-1}$$\n\nResultat: **$n = 697{,}5\\ \\text{min}^{-1}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **b)** $750\\ \\text{min}^{-1}$ és la velocitat de sincronisme (sense lliscament).\n- **c)** $1\\,395\\ \\text{min}^{-1}$ surt de confondre 4 parells de pols amb 4 pols ($p = 2$).\n- **a)** $2\\,790\\ \\text{min}^{-1}$ correspon a $p = 1$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$n = \\dfrac{60 f}{p}(1-s) = 697{,}5\\ \\text{min}^{-1}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2019-S-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Pressió necessària en un cilindre hidràulic en la cursa d'avanç",
+      "tema": "pneumatica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "cilindre de doble efecte",
+        "pressió",
+        "força del cilindre",
+        "secció del pistó"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un cilindre hidràulic d'una sola tija ha de poder efectuar una força de $25\\ \\text{kN}$ en la cursa d'avanç. Si el diàmetre del cilindre és de $40\\ \\text{mm}$ i el de la tija és de $25\\ \\text{mm}$, quina pressió ha de proporcionar el grup hidràulic?",
+      "figures": [],
+      "opcions": {
+        "a": "$25{,}13\\ \\text{MPa}$",
+        "b": "$32{,}65\\ \\text{MPa}$",
+        "c": "$19{,}89\\ \\text{MPa}$",
+        "d": "$4{,}974\\ \\text{MPa}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Força d'avanç: $F = 25\\ \\text{kN} = 25\\,000\\ \\text{N}$\n- Diàmetre del cilindre (èmbol): $D = 40\\ \\text{mm}$\n- Diàmetre de la tija: $d = 25\\ \\text{mm}$\n- Incògnita: pressió $p$"
+          },
+          {
+            "apartat": null,
+            "titol": "Quina superfície treballa en l'avanç",
+            "cos": "En la cursa d'**avanç** el fluid empeny la cara de l'èmbol que no té tija, per tant la superfície útil és el cercle sencer de diàmetre $D$. La tija només resta àrea en el **retrocés**.\n\n$$S = \\frac{\\pi D^2}{4} = \\frac{\\pi \\cdot 40^2}{4} = 1\\,256{,}6\\ \\text{mm}^2$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Pressió",
+            "cos": "$$p = \\frac{F}{S} = \\frac{25\\,000\\ \\text{N}}{1\\,256{,}6\\ \\text{mm}^2} = 19{,}89\\ \\text{N/mm}^2 = 19{,}89\\ \\text{MPa}$$\n\nResultat: **$p \\approx 19{,}89\\ \\text{MPa}$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **b)** $32{,}65\\ \\text{MPa}$ surt d'usar la superfície anular $\\frac{\\pi}{4}(D^2 - d^2)$, que és la del retrocés.\n- **d)** $4{,}974\\ \\text{MPa}$ surt de prendre $40\\ \\text{mm}$ com a radi en lloc de diàmetre."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$p = F/(\\pi D^2/4) \\approx 19{,}89\\ \\text{MPa}$ → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2019-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Sistema de reg intel·ligent amb tres sensors (majoria de condicions favorables)",
+      "tema": "digital",
+      "temes_secundaris": [
+        "control"
+      ],
+      "conceptes": [
+        "taula de veritat",
+        "funció lògica",
+        "mapa de Karnaugh",
+        "portes lògiques",
+        "funció majoria"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un sistema de reg intel·ligent utilitza tres sensors per a determinar si cal regar un parc d'una ciutat al final del dia. Els sensors mesuren la radiació solar ($S$), la humitat del terra ($H$) i la temperatura ($T$). Les condicions ambientals favorables al reg són: una radiació solar per sobre d'un llindar $S_\\text{lim}$, una humitat del terra per sota de $H_\\text{lim}$ i una temperatura per sobre de $T_\\text{lim}$. El sistema determina que cal regar si almenys dues de les tres condicions ambientals són favorables al reg. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- radiació solar: $s$ = 1: $S \\ge S_\\text{lim}$; 0: $S < S_\\text{lim}$\n- humitat: $h$ = 1: $H \\ge H_\\text{lim}$; 0: $H < H_\\text{lim}$\n- temperatura: $t$ = 1: $T \\ge T_\\text{lim}$; 0: $T < T_\\text{lim}$\n- reg nocturn: $r$ = 1: es rega; 0: no es rega",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Elaboreu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu el diagrama de portes lògiques equivalent.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Traduir les condicions favorables a variables",
+            "cos": "Cal anar amb compte: no totes les condicions favorables corresponen a una variable que val 1.\n\n- Radiació solar favorable: $S \\ge S_\\text{lim}$ → $s = 1$.\n- Humitat favorable: $H < H_\\text{lim}$ → $h = 0$, és a dir, $\\bar{h} = 1$.\n- Temperatura favorable: $T \\ge T_\\text{lim}$ → $t = 1$.\n\nEs rega ($r = 1$) si almenys dues de les tres «condicions favorables» $s$, $\\bar{h}$, $t$ valen 1."
+          },
+          {
+            "apartat": "a",
+            "titol": "Taula de veritat",
+            "cos": "Per a cada combinació comptem quantes condicions favorables es compleixen (columna auxiliar «favorables» $= s + \\bar{h} + t$):\n\n| $s$ | $h$ | $t$ | favorables | $r$ |\n|---|---|---|---|---|\n| 0 | 0 | 0 | 1 ($\\bar{h}$) | 0 |\n| 0 | 0 | 1 | 2 ($\\bar{h}$, $t$) | **1** |\n| 0 | 1 | 0 | 0 | 0 |\n| 0 | 1 | 1 | 1 ($t$) | 0 |\n| 1 | 0 | 0 | 2 ($s$, $\\bar{h}$) | **1** |\n| 1 | 0 | 1 | 3 | **1** |\n| 1 | 1 | 0 | 1 ($s$) | 0 |\n| 1 | 1 | 1 | 2 ($s$, $t$) | **1** |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Funció canònica (suma de productes)",
+            "cos": "Escrivim un terme producte per a cada fila amb $r = 1$ (variable negada si val 0):\n\n$$r = \\bar{s}\\,\\bar{h}\\,t + s\\,\\bar{h}\\,\\bar{t} + s\\,\\bar{h}\\,t + s\\,h\\,t$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Simplificació per Karnaugh",
+            "cos": "Mapa amb files $s$ i columnes $h\\,t$ (ordre de Gray 00, 01, 11, 10):\n\n| $s \\backslash ht$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **0** | 0 | 1 | 0 | 0 |\n| **1** | 1 | 1 | 1 | 0 |\n\n- Grup vertical a la columna $ht = 01$ ($s$ canvia): → $\\bar{h}\\,t$.\n- Grup horitzontal a la fila $s = 1$, columnes 00 i 01 ($t$ canvia): → $s\\,\\bar{h}$.\n- Grup horitzontal a la fila $s = 1$, columnes 01 i 11 ($h$ canvia): → $s\\,t$.\n\n$$\\boxed{r = s\\,\\bar{h} + s\\,t + \\bar{h}\\,t}$$\n\nÉs la funció **majoria** de $s$, $\\bar{h}$ i $t$: cada terme és una parella de condicions favorables que es compleixen alhora."
+          },
+          {
+            "apartat": "c",
+            "titol": "Diagrama de portes lògiques",
+            "cos": "Per implementar $r = s\\,\\bar{h} + s\\,t + \\bar{h}\\,t$ calen:\n\n- 1 porta **NOT** per obtenir $\\bar{h}$ (a l'esquema oficial està representada com un cercle de negació a l'entrada de les portes AND).\n- 3 portes **AND de 2 entrades**: $s\\cdot\\bar{h}$, $s\\cdot t$ i $\\bar{h}\\cdot t$.\n- 1 porta **OR de 3 entrades** que suma les tres sortides i dona $r$.\n\nEsquema de la solució oficial (simbologia IEC: «&» = AND, «≥1» = OR, el cercle petit a l'entrada indica negació):\n\n![Esquema de portes lògiques del sistema de reg](img/tecno/2019-S/e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$r = 1$ per a les combinacions $(s,h,t)$ = 001, 100, 101, 111"
+          },
+          {
+            "apartat": "b",
+            "valor": "$r = \\bar{s}\\,\\bar{h}\\,t + s\\,\\bar{h}\\,\\bar{t} + s\\,\\bar{h}\\,t + s\\,h\\,t = s\\,\\bar{h} + s\\,t + \\bar{h}\\,t$"
+          },
+          {
+            "apartat": "c",
+            "valor": "1 NOT (per a $h$), 3 AND de 2 entrades i 1 OR de 3 entrades"
+          }
+        ],
+        "nota": "Error típic: considerar que la humitat favorable és $h = 1$. L'enunciat diu que és favorable una humitat **per sota** de $H_\\text{lim}$, que correspon a $h = 0$. Qualsevol circuit equivalent és vàlid si està ben justificat."
+      }
+    },
+    {
+      "id": "tecno-2019-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Equilibri d'una tapa sostinguda per dues barres articulades",
+      "tema": "estatica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "diagrama de cos lliure",
+        "equilibri",
+        "moments",
+        "barres biarticulades"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        3
+      ],
+      "enunciat": "La tapa de la figura té una massa $m = 30\\ \\text{kg}$ i el centre de masses en el punt G. S'obre estirant-la per la nansa A amb una força $F$ perpendicular a la tapa, i s'uneix a terra per mitjà de dues barres idèntiques que tenen un extrem articulat a la tapa i l'altre extrem articulat a terra. La massa de les barres es considera negligible. L'angle de les barres varia entre $10^\\circ \\le \\varphi \\le 120^\\circ$. Les dades de la figura són $L = 500\\ \\text{mm}$ i $m = 30\\ \\text{kg}$ (CB $= L/2$, CG $= L$, CA $= 2L$).\n\nConsiderant que la tapa està en repòs, determineu (apartats b, c i d):",
+      "figures": [
+        {
+          "src": "img/tecno/2019-S/e3-a.png",
+          "peu": "Tapa articulada a terra per dues barres (C i B), amb la força F a la nansa A"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de cos lliure de la tapa per a un angle $\\varphi$ qualsevol.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "El valor de la força $F$ aplicada a la nansa quan $\\varphi = 60^\\circ$.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "El valor de les forces $F_\\text{B}$ i $F_\\text{C}$ que fan les barres sobre la tapa quan $\\varphi = 60^\\circ$.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "L'angle $\\varphi$ per al qual la força que fa la barra en el punt C en valor absolut $|F_\\text{C}|$ és mínima, i el valor d'aquesta força.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa de la tapa: $m = 30\\ \\text{kg}$; $g = 9{,}807\\ \\text{m/s}^2$ → pes $mg = 294{,}2\\ \\text{N}$\n- Distàncies des de C: B a $L/2$, G a $L$, A a $2L$ ($L = 0{,}5\\ \\text{m}$)\n- Les barres formen un angle $\\varphi$ amb l'horitzontal\n- Incògnites: $F$, $F_\\text{B}$, $F_\\text{C}$ i l'angle que fa mínima $|F_\\text{C}|$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de cos lliure",
+            "cos": "Aïllem la tapa i hi dibuixem totes les forces exteriors:\n\n- El **pes** $mg$, vertical cap avall, aplicat a G.\n- La força $F$ a la nansa A, perpendicular a la tapa (vertical cap amunt, ja que la tapa és horitzontal).\n- Les forces de les barres $F_\\text{C}$ i $F_\\text{B}$. Com que cada barra té massa negligible i està articulada als dos extrems (barra biarticulada), només pot fer força **en la direcció de la mateixa barra**, és a dir, formant un angle $\\varphi$ amb l'horitzontal. Les dibuixem amb un sentit suposat (cap amunt i cap a la dreta); si al final surten negatives, el sentit real és el contrari.\n\n![Diagrama de cos lliure de la tapa](img/tecno/2019-S/e3-a-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equilibri de forces horitzontals",
+            "cos": "Les úniques forces amb component horitzontal són les de les barres:\n\n$$\\sum F_x = 0:\\quad F_\\text{C}\\cos\\varphi + F_\\text{B}\\cos\\varphi = 0 \\;\\Rightarrow\\; F_\\text{C} = -F_\\text{B}$$\n\nLes dues barres fan forces iguals i de sentit contrari: una empeny i l'altra estira."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equilibri de forces verticals",
+            "cos": "$$\\sum F_y = 0:\\quad (F_\\text{C} + F_\\text{B})\\sin\\varphi + F - mg = 0$$\n\nCom que $F_\\text{C} + F_\\text{B} = 0$, el primer terme s'anul·la i queda:\n\n$$F = mg = 30 \\cdot 9{,}807 = 294{,}2\\ \\text{N}$$\n\nResultat: **$F = 294{,}2\\ \\text{N}$**. Fixeu-vos que no depèn de l'angle: val el mateix per a $\\varphi = 60^\\circ$ que per a qualsevol altre."
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de moments respecte de C",
+            "cos": "Prenem moments respecte del punt C (així $F_\\text{C}$ no hi apareix). Sentit antihorari positiu. Només la component vertical $F_\\text{B}\\sin\\varphi$ fa moment respecte de C (la component horitzontal passa per la línia de la tapa):\n\n$$\\sum M_\\text{C} = 0:\\quad F \\cdot 2L - mg \\cdot L + F_\\text{B}\\sin\\varphi \\cdot \\frac{L}{2} = 0$$\n\nAïllant i substituint $F = mg$:\n\n$$F_\\text{B} = \\frac{2\\,(mg - 2F)}{\\sin\\varphi} = \\frac{-2\\,mg}{\\sin\\varphi} = \\frac{-2 \\cdot 294{,}2}{\\sin 60^\\circ} = -679{,}4\\ \\text{N}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Força de la barra C i interpretació dels signes",
+            "cos": "$$F_\\text{C} = -F_\\text{B} = \\frac{2\\,mg}{\\sin\\varphi} = +679{,}4\\ \\text{N}$$\n\nResultat: **$F_\\text{B} = -679{,}4\\ \\text{N}$** i **$F_\\text{C} = +679{,}4\\ \\text{N}$**.\n\nEl signe negatiu de $F_\\text{B}$ vol dir que el sentit real és el contrari del dibuixat: la barra B **estira** la tapa cap avall (treballa a tracció), mentre que la barra C l'**empeny** cap amunt (treballa a compressió)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Angle que fa mínima |F_C|",
+            "cos": "Hem vist que, per a qualsevol angle,\n\n$$|F_\\text{C}| = \\frac{2\\,mg}{\\sin\\varphi}$$\n\nEl numerador és constant, de manera que $|F_\\text{C}|$ és mínima quan el denominador $\\sin\\varphi$ és màxim. Dins l'interval $10^\\circ \\le \\varphi \\le 120^\\circ$, el sinus és màxim ($\\sin\\varphi = 1$) per a $\\varphi = 90^\\circ$ (barres verticals):\n\n$$|F_\\text{C}|_\\text{mín} = \\frac{2 \\cdot 294{,}2}{1} = 588{,}4\\ \\text{N}$$\n\nResultat: **$\\varphi = 90^\\circ$** i **$|F_\\text{C}|_\\text{mín} = 588{,}4\\ \\text{N}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Forces: $mg$ a G (avall), $F$ a A (amunt), $F_\\text{B}$ i $F_\\text{C}$ en la direcció de les barres (angle $\\varphi$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F = mg = 294{,}2\\ \\text{N}$ (independent de $\\varphi$)"
+          },
+          {
+            "apartat": "c",
+            "valor": "$F_\\text{B} = -679{,}4\\ \\text{N}$ (tracció); $F_\\text{C} = +679{,}4\\ \\text{N}$ (compressió)"
+          },
+          {
+            "apartat": "d",
+            "valor": "$\\varphi = 90^\\circ$; $|F_\\text{C}|_\\text{mín} = 588{,}4\\ \\text{N}$"
+          }
+        ],
+        "nota": "La solució oficial usa $g = 9{,}807\\ \\text{m/s}^2$. Error típic: posar les forces de les barres en una direcció qualsevol; en barres biarticulades sense massa la força sempre va al llarg de la barra. També és habitual oblidar que només la component vertical de $F_\\text{B}$ fa moment respecte de C."
+      }
+    },
+    {
+      "id": "tecno-2019-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Escalfador elèctric d'aigua: energia, cost, rendiment i resistivitat",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "termica",
+        "energia"
+      ],
+      "conceptes": [
+        "calor sensible",
+        "energia elèctrica",
+        "rendiment",
+        "resistivitat",
+        "cost de l'energia"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Un escalfador elèctric d'aigua s'alimenta amb una tensió $U = 230\\ \\text{V}$ i consumeix una potència elèctrica $P_\\text{elèctr} = 1{,}5\\ \\text{kW}$. L'escalfador tarda $2\\ \\text{h}$ i $5\\ \\text{min}$ a escalfar un volum $V = 50\\ \\text{L}$ d'aigua des de $T_1 = 15\\ ^\\circ\\text{C}$ fins a $T_2 = 65\\ ^\\circ\\text{C}$ per mitjà d'una resistència elèctrica. La calor específica de l'aigua és $c_\\text{e} = 4{,}18\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$ i el cost de l'energia elèctrica és $c = 0{,}125$ €/(kW h). Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'energia $E$ necessària per a escalfar el volum $V$ d'aigua des de $T_1$ fins a $T_2$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "L'energia elèctrica $E_\\text{elèctr}$, en kW h, consumida per a escalfar el volum $V$ d'aigua des de $T_1$ fins a $T_2$, i el cost $c_\\text{elèctr}$ de l'energia elèctrica necessària per a dur a terme aquest procés.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "El rendiment $\\eta$ de l'escalfador elèctric d'aigua.",
+          "punts": 0.5
+        },
+        {
+          "id": "d",
+          "enunciat": "La resistivitat $\\rho$ del material de la resistència, si aquesta està formada per un fil conductor de diàmetre $d = 0{,}25\\ \\text{mm}$ i longitud $L = 1\\,500\\ \\text{mm}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Tensió: $U = 230\\ \\text{V}$; potència elèctrica: $P_\\text{elèctr} = 1{,}5\\ \\text{kW}$\n- Temps: $t = 2\\ \\text{h}\\ 5\\ \\text{min} = 2 + \\frac{5}{60} = 2{,}0833\\ \\text{h} = 7\\,500\\ \\text{s}$\n- Aigua: $V = 50\\ \\text{L}$ → $m = \\rho_\\text{aigua} V = 1\\ \\text{kg/L} \\cdot 50\\ \\text{L} = 50\\ \\text{kg}$\n- $\\Delta T = 65 - 15 = 50\\ ^\\circ\\text{C}$; $c_\\text{e} = 4{,}18\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$\n- Preu de l'energia: $c = 0{,}125$ €/(kW h)\n- Fil: $d = 0{,}25\\ \\text{mm} = 0{,}25 \\cdot 10^{-3}\\ \\text{m}$; $L = 1\\,500\\ \\text{mm} = 1{,}5\\ \\text{m}$\n- Incògnites: $E$, $E_\\text{elèctr}$, $c_\\text{elèctr}$, $\\eta$, $\\rho$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Calor sensible per escalfar l'aigua",
+            "cos": "L'aigua s'escalfa sense canviar d'estat, per tant l'energia útil és la calor sensible:\n\n$$E = m\\, c_\\text{e}\\, \\Delta T = 50 \\cdot 4{,}18 \\cdot 50 = 10\\,450\\ \\text{kJ}$$\n\nResultat: **$E = 10\\,450\\ \\text{kJ}$** ($\\approx 2{,}903\\ \\text{kW h}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia elèctrica consumida",
+            "cos": "L'energia elèctrica és la potència pel temps de funcionament. Si posem la potència en kW i el temps en hores, surt directament en kW h:\n\n$$E_\\text{elèctr} = P_\\text{elèctr}\\, t = 1{,}5\\ \\text{kW} \\cdot 2{,}0833\\ \\text{h} = 3{,}125\\ \\text{kW h}$$\n\nEn kJ: $3{,}125\\ \\text{kW h} \\cdot 3\\,600\\ \\text{kJ/(kW h)} = 11\\,250\\ \\text{kJ}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Cost de l'energia",
+            "cos": "$$c_\\text{elèctr} = c\\, E_\\text{elèctr} = 0{,}125\\ \\text{euros/(kW h)} \\cdot 3{,}125\\ \\text{kW h} = 0{,}3906\\ \\text{euros}$$\n\nResultat: **$E_\\text{elèctr} = 3{,}125\\ \\text{kW h}$** i **$c_\\text{elèctr} \\approx 0{,}3906$ €** (uns 39 cèntims)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Rendiment de l'escalfador",
+            "cos": "El rendiment és la fracció de l'energia elèctrica consumida que acaba escalfant l'aigua (la resta són pèrdues de calor a l'ambient). Cal que les dues energies tinguin les mateixes unitats:\n\n$$\\eta = \\frac{E}{E_\\text{elèctr}} = \\frac{10\\,450\\ \\text{kJ}}{11\\,250\\ \\text{kJ}} = 0{,}9289$$\n\nResultat: **$\\eta \\approx 0{,}9289$** (un 92,89 %)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Resistència elèctrica a partir de la potència",
+            "cos": "La resistència dissipa $P = U^2/R$ quan està connectada a la tensió $U$. Aïllant $R$:\n\n$$R = \\frac{U^2}{P_\\text{elèctr}} = \\frac{230^2}{1\\,500} = 35{,}27\\ \\Omega$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Resistivitat del fil",
+            "cos": "La resistència d'un fil és $R = \\rho \\dfrac{L}{S}$, amb $S = \\pi \\left(\\dfrac{d}{2}\\right)^2$ la secció del fil. Primer la secció en m²:\n\n$$S = \\pi \\left(\\frac{0{,}25 \\cdot 10^{-3}}{2}\\right)^2 = 4{,}909 \\cdot 10^{-8}\\ \\text{m}^2$$\n\nAïllant la resistivitat:\n\n$$\\rho = \\frac{R\\, S}{L} = \\frac{35{,}27 \\cdot 4{,}909 \\cdot 10^{-8}}{1{,}5} = 1{,}154 \\cdot 10^{-6}\\ \\Omega\\,\\text{m}$$\n\nResultat: **$\\rho \\approx 1{,}154 \\cdot 10^{-6}\\ \\Omega\\,\\text{m}$** (un valor típic d'aliatges per a resistències, com el nicrom)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 10\\,450\\ \\text{kJ}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_\\text{elèctr} = 3{,}125\\ \\text{kW h}$ ($11\\,250\\ \\text{kJ}$); $c_\\text{elèctr} \\approx 0{,}3906$ €"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\eta \\approx 0{,}9289$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$R \\approx 35{,}27\\ \\Omega$; $\\rho \\approx 1{,}154 \\cdot 10^{-6}\\ \\Omega\\,\\text{m}$"
+          }
+        ],
+        "nota": "Se suposa densitat de l'aigua $1\\ \\text{kg/L}$. Errors típics: posar el temps com a $2{,}05\\ \\text{h}$ (5 min no són 0,05 h, sinó $5/60 = 0{,}0833\\ \\text{h}$), i oblidar passar el diàmetre del fil a metres o usar el diàmetre en lloc del radi a la fórmula de la secció."
+      }
+    },
+    {
+      "id": "tecno-2019-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Escala mecànica: potència per pujar passatgers i consum elèctric diari",
+      "tema": "mecanica",
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "energia potencial",
+        "potència mecànica",
+        "rendiment",
+        "energia elèctrica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Una escala mecànica transporta passatgers que pugen una altura $\\Delta h = 6\\ \\text{m}$ en un temps $t_\\text{p} = 45\\ \\text{s}$. La massa mitjana d'un passatger s'estima en $m_\\text{p} = 70{,}8\\ \\text{kg}$. L'escala transporta de mitjana $n_\\text{p} = 20$ passatgers de manera simultània i funciona durant $t_\\text{t} = 10\\ \\text{h}$ al dia.\n\nQuan l'escala treballa en buit (sense passatgers) consumeix una potència elèctrica $P_\\text{buit} = 3{,}2\\ \\text{kW}$. El grup motor (motor, reductor i transmissió) que acciona l'escala té un rendiment electromecànic $\\eta = 0{,}58$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La potència mecànica mitjana $P_\\text{p}$ addicional que cal per a pujar de manera simultània $n_\\text{p} = 20$ passatgers.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El nombre total $n_\\text{t}$ de passatgers que l'escala transporta en un dia.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "L'energia elèctrica total $E_\\text{t}$ que consumeix l'escala en un dia, considerant el consum elèctric en buit i el consum associat a pujar els passatgers.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Desnivell: $\\Delta h = 6\\ \\text{m}$; temps de pujada: $t_\\text{p} = 45\\ \\text{s}$\n- Massa per passatger: $m_\\text{p} = 70{,}8\\ \\text{kg}$; passatgers simultanis: $n_\\text{p} = 20$\n- Funcionament: $t_\\text{t} = 10\\ \\text{h} = 36\\,000\\ \\text{s}$ al dia\n- Potència en buit: $P_\\text{buit} = 3{,}2\\ \\text{kW}$; rendiment: $\\eta = 0{,}58$\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnites: $P_\\text{p}$, $n_\\text{t}$, $E_\\text{t}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència mecànica per elevar els passatgers",
+            "cos": "Pujar els passatgers a velocitat constant vol dir augmentar-ne l'energia potencial. Cada passatger guanya $m_\\text{p}\\, g\\, \\Delta h$ en un temps $t_\\text{p}$, i n'hi ha 20 alhora:\n\n$$P_\\text{p} = n_\\text{p}\\, \\frac{m_\\text{p}\\, g\\, \\Delta h}{t_\\text{p}} = 20 \\cdot \\frac{70{,}8 \\cdot 9{,}807 \\cdot 6}{45} = 1\\,852\\ \\text{W}$$\n\nResultat: **$P_\\text{p} \\approx 1{,}852\\ \\text{kW}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Passatgers transportats en un dia",
+            "cos": "Cada $45\\ \\text{s}$ l'escala «renova» un grup de 20 passatgers. El nombre de grups en un dia és $t_\\text{t}/t_\\text{p}$:\n\n$$n_\\text{t} = n_\\text{p}\\, \\frac{t_\\text{t}}{t_\\text{p}} = 20 \\cdot \\frac{36\\,000\\ \\text{s}}{45\\ \\text{s}} = 20 \\cdot 800 = 16\\,000\\ \\text{passatgers}$$\n\nResultat: **$n_\\text{t} = 16\\,000$ passatgers/dia**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència elèctrica addicional per als passatgers",
+            "cos": "El grup motor només converteix en treball útil el 58 % de l'energia elèctrica. Per donar $P_\\text{p}$ de potència mecànica, la potència elèctrica addicional és:\n\n$$P_\\text{elèctr} = \\frac{P_\\text{p}}{\\eta} = \\frac{1\\,852}{0{,}58} = 3\\,192\\ \\text{W} = 3{,}192\\ \\text{kW}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Energia elèctrica total en un dia",
+            "cos": "L'escala consumeix sempre la potència en buit i, a sobre, la necessària per als passatgers, durant $10\\ \\text{h}$:\n\n$$E_\\text{t} = (P_\\text{buit} + P_\\text{elèctr})\\, t_\\text{t} = (3{,}2 + 3{,}192)\\ \\text{kW} \\cdot 10\\ \\text{h} = 63{,}92\\ \\text{kW h}$$\n\nEn unitats SI: $63{,}92\\ \\text{kW h} \\cdot 3{,}6\\ \\text{MJ/(kW h)} = 230{,}1\\ \\text{MJ}$.\n\nResultat: **$E_\\text{t} \\approx 63{,}92\\ \\text{kW h} = 230{,}1\\ \\text{MJ}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P_\\text{p} \\approx 1{,}852\\ \\text{kW}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$n_\\text{t} = 16\\,000$ passatgers"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{elèctr} \\approx 3{,}192\\ \\text{kW}$; $E_\\text{t} \\approx 63{,}92\\ \\text{kW h} = 230{,}1\\ \\text{MJ}$"
+          }
+        ],
+        "nota": "Error típic a l'apartat c: aplicar el rendiment també a $P_\\text{buit}$. La potència en buit ja és una potència **elèctrica** consumida, així que es suma directament; el rendiment només s'aplica a la potència mecànica dels passatgers."
+      }
+    },
+    {
+      "id": "tecno-2019-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Vehicle a 120 km/h: autonomia, potència tèrmica, parell a les rodes i pèrdues",
+      "tema": "termica",
+      "temes_secundaris": [
+        "mecanica",
+        "energia"
+      ],
+      "conceptes": [
+        "consum de combustible",
+        "poder calorífic",
+        "rendiment",
+        "parell motor",
+        "potència dissipada"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Un vehicle consumeix una mitjana de $6{,}3\\ \\text{L}$ cada $100\\ \\text{km}$ quan circula a una velocitat $v = 120\\ \\text{km/h}$. El dipòsit de combustible del vehicle té una capacitat $V = 60\\ \\text{L}$. El vehicle té la tracció a l'eix davanter i, per a la velocitat $v$ anterior, les rodes giren a una velocitat angular $n_\\text{rodes} = 1\\,004\\ \\text{min}^{-1}$ (considerant que el vehicle avança en línia recta). Entre el motor tèrmic i les rodes hi ha una transmissió mecànica de rendiment $\\eta_\\text{trans} = 0{,}92$, i el rendiment tèrmic del motor és $\\eta_\\text{mot} = 0{,}30$. El combustible utilitzat té una densitat $\\rho = 0{,}75\\ \\text{kg/L}$ i un poder calorífic $p_\\text{c} = 43{,}5\\ \\text{MJ/kg}$. Si el vehicle circula a una velocitat $v = 120\\ \\text{km/h}$, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La distància estimada $d$ que pot recórrer el vehicle si el dipòsit conté combustible fins al $80\\ \\%$ de la seva capacitat.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "La potència tèrmica mitjana consumida $P_\\text{tèrm}$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La potència mecànica que arriba a les rodes $P_\\text{rodes}$ i el parell total $\\Gamma_\\text{rodes}$.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "La potència total que es dissipa en el motor i en la transmissió $P_\\text{diss}$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Consum: $6{,}3\\ \\text{L}/100\\ \\text{km} = 0{,}063\\ \\text{L/km}$\n- Velocitat: $v = 120\\ \\text{km/h}$; dipòsit: $V = 60\\ \\text{L}$ (ple al 80 %)\n- Rodes: $n_\\text{rodes} = 1\\,004\\ \\text{min}^{-1}$\n- Rendiments: $\\eta_\\text{trans} = 0{,}92$, $\\eta_\\text{mot} = 0{,}30$\n- Combustible: $\\rho = 0{,}75\\ \\text{kg/L}$, $p_\\text{c} = 43{,}5\\ \\text{MJ/kg}$\n- Incògnites: $d$, $P_\\text{tèrm}$, $P_\\text{rodes}$, $\\Gamma_\\text{rodes}$, $P_\\text{diss}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Autonomia amb el 80 % del dipòsit",
+            "cos": "El combustible disponible és el 80 % de $60\\ \\text{L}$, és a dir, $48\\ \\text{L}$. Amb el consum de $6{,}3\\ \\text{L}$ cada $100\\ \\text{km}$:\n\n$$d = 0{,}8\\, V \\cdot \\frac{100\\ \\text{km}}{6{,}3\\ \\text{L}} = 48\\ \\text{L} \\cdot \\frac{100\\ \\text{km}}{6{,}3\\ \\text{L}} = 761{,}9\\ \\text{km}$$\n\nResultat: **$d \\approx 761{,}9\\ \\text{km}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Consum de combustible per unitat de temps",
+            "cos": "Primer calculem quants litres per hora gasta el cotxe: consum per km multiplicat pels km que fa cada hora.\n\n$$\\dot{V} = 0{,}063\\ \\text{L/km} \\cdot 120\\ \\text{km/h} = 7{,}56\\ \\text{L/h}$$\n\nEn massa: $\\dot{m} = \\rho\\, \\dot{V} = 0{,}75 \\cdot 7{,}56 = 5{,}67\\ \\text{kg/h}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència tèrmica amb el poder calorífic",
+            "cos": "Cada kg de combustible allibera $43{,}5\\ \\text{MJ}$. La potència tèrmica és l'energia alliberada per unitat de temps (passem les hores a segons):\n\n$$P_\\text{tèrm} = \\dot{m}\\, p_\\text{c} = \\frac{5{,}67\\ \\text{kg/h} \\cdot 43{,}5 \\cdot 10^6\\ \\text{J/kg}}{3\\,600\\ \\text{s/h}} = 68\\,513\\ \\text{W}$$\n\nResultat: **$P_\\text{tèrm} \\approx 68{,}51\\ \\text{kW}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència a les rodes amb els rendiments en sèrie",
+            "cos": "L'energia passa primer pel motor (que en converteix el 30 % en treball) i després per la transmissió (que en deixa passar el 92 %). Quan els rendiments estan en sèrie, es multipliquen:\n\n$$\\eta_\\text{total} = \\eta_\\text{mot}\\, \\eta_\\text{trans} = 0{,}30 \\cdot 0{,}92 = 0{,}276$$\n\n$$P_\\text{rodes} = \\eta_\\text{total}\\, P_\\text{tèrm} = 0{,}276 \\cdot 68{,}51 = 18{,}91\\ \\text{kW}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Parell total a les rodes",
+            "cos": "La potència en un eix que gira és $P = \\Gamma\\, \\omega$. Passem la velocitat de gir a rad/s:\n\n$$\\omega_\\text{rodes} = n_\\text{rodes}\\, \\frac{2\\pi}{60} = 1\\,004 \\cdot \\frac{2\\pi}{60} = 105{,}1\\ \\text{rad/s}$$\n\n$$\\Gamma_\\text{rodes} = \\frac{P_\\text{rodes}}{\\omega_\\text{rodes}} = \\frac{18\\,909\\ \\text{W}}{105{,}1\\ \\text{rad/s}} = 179{,}9\\ \\text{N m}$$\n\nResultat: **$P_\\text{rodes} \\approx 18{,}91\\ \\text{kW}$** i **$\\Gamma_\\text{rodes} \\approx 179{,}9\\ \\text{N m}$** (parell total, repartit entre les dues rodes motrius)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Potència dissipada",
+            "cos": "Tot el que entra com a potència tèrmica i no arriba a les rodes es perd (calor dels gasos d'escapament, refrigeració, fregaments de la transmissió…):\n\n$$P_\\text{diss} = P_\\text{tèrm} - P_\\text{rodes} = 68{,}51 - 18{,}91 = 49{,}60\\ \\text{kW}$$\n\nResultat: **$P_\\text{diss} \\approx 49{,}60\\ \\text{kW}$** (d'aquests, uns $47{,}96\\ \\text{kW}$ es perden al motor i uns $1{,}64\\ \\text{kW}$ a la transmissió)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$d \\approx 761{,}9\\ \\text{km}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{tèrm} \\approx 68{,}51\\ \\text{kW}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{rodes} \\approx 18{,}91\\ \\text{kW}$; $\\Gamma_\\text{rodes} \\approx 179{,}9\\ \\text{N m}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$P_\\text{diss} \\approx 49{,}60\\ \\text{kW}$"
+          }
+        ],
+        "nota": "Error típic a l'apartat b: oblidar la densitat (el poder calorífic és per kg, no per litre) o deixar el temps en hores i obtenir MJ/h en lloc de W. A l'apartat c cal passar $n_\\text{rodes}$ de $\\text{min}^{-1}$ a rad/s abans de dividir."
+      }
+    }
+  ]
+}

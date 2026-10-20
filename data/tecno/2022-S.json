@@ -1,0 +1,816 @@
+{
+  "examen": {
+    "id": "tecno-2022-S",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2022,
+    "convocatoria": "setembre",
+    "serie": "3",
+    "pdf_examen": "pdfs/tecno/2022-S-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2022-S-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels sis exercicis (2,5 punts cadascun); si se'n responen més, només es valoren els quatre primers. L'exercici 1 consta de 5 qüestions de test (0,5 punts cadascuna; cada resposta errònia descompta 0,16 punts i les no contestades no descompten). Els exercicis 2 a 6 són problemes amb apartats."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2022-S-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Proveta que menys es deforma segons el mòdul d'elasticitat",
+      "tema": "resistencia",
+      "temes_secundaris": [
+        "materials"
+      ],
+      "conceptes": [
+        "mòdul de Young",
+        "deformació unitària",
+        "llei de Hooke",
+        "assaig de tracció"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "La taula següent mostra les característiques dels materials de quatre provetes normalitzades que s'utilitzen en un assaig de tracció. (Totes les provetes tenen les mateixes dimensions.)\n\n| Material | Densitat ($\\text{kg/m}^3$) | Mòdul d'elasticitat ($\\text{GPa}$) | Límit elàstic ($\\text{MPa}$) | Tensió de ruptura ($\\text{MPa}$) |\n|---|---|---|---|---|\n| Alumini pur | 2 710 | 69 | 85 | 100 |\n| Molibdè pur | 10 220 | 324 | 565 | 655 |\n| Níquel | 8 900 | 207 | 138 | 483 |\n| Plata | 10 490 | 76 | 55 | 125 |\n\nEs pot afirmar que, per a un mateix esforç de tracció, la proveta que menys es deformarà és la que està feta",
+      "figures": [],
+      "opcions": {
+        "a": "d'alumini pur.",
+        "b": "de molibdè pur.",
+        "c": "de níquel.",
+        "d": "de plata."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Quina propietat controla la deformació",
+            "cos": "En la zona elàstica es compleix la **llei de Hooke**: la tensió és proporcional a la deformació unitària, i la constant de proporcionalitat és el mòdul d'elasticitat (mòdul de Young) $E$:\n\n$$\\sigma = E\\,\\varepsilon \\quad\\Rightarrow\\quad \\varepsilon = \\frac{\\sigma}{E} = \\frac{F}{S\\,E}$$\n\nTotes les provetes tenen la mateixa secció $S$ i reben la mateixa força $F$, per tant tenen la mateixa tensió $\\sigma$. La deformació és inversament proporcional a $E$: **com més gran és $E$, menys es deforma** (material més rígid)."
+          },
+          {
+            "apartat": null,
+            "titol": "Comparació",
+            "cos": "El mòdul d'elasticitat més gran és el del **molibdè pur**, $E = 324\\ \\text{GPa}$ (gairebé 5 vegades el de l'alumini). Per tant és la proveta que menys es deforma → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** L'alumini ($69\\ \\text{GPa}$) té el mòdul més petit: és el que **més** es deforma.\n- **c)** i **d)** tenen mòduls intermedis o baixos.\n- La densitat, el límit elàstic i la tensió de ruptura no determinen quant es deforma la proveta en zona elàstica: són dades que serveixen per distreure."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$E_\\text{Mo} = 324\\ \\text{GPa}$ (el més gran) → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2022-S-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Unitats de l'energia elèctrica consumida en una llar",
+      "tema": "energia",
+      "temes_secundaris": [
+        "circuits"
+      ],
+      "conceptes": [
+        "energia elèctrica",
+        "quilowatt hora",
+        "potència",
+        "unitats"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Amb quines unitats es pot expressar l'energia elèctrica consumida en una llar?",
+      "figures": [],
+      "opcions": {
+        "a": "$\\text{kW/h}$",
+        "b": "$\\text{kW} \\cdot \\text{h}$",
+        "c": "$\\text{J/s}$",
+        "d": "$\\text{J/h}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Relació entre energia i potència",
+            "cos": "L'energia és la potència multiplicada pel temps durant el qual s'està consumint:\n\n$$E = P \\cdot t$$\n\nPer tant una unitat d'energia ha de ser **potència × temps** (o directament joules)."
+          },
+          {
+            "apartat": null,
+            "titol": "La unitat de la factura elèctrica",
+            "cos": "Si la potència es mesura en kW i el temps en hores, l'energia surt en $\\text{kW} \\cdot \\text{h}$ (quilowatt hora), que és la unitat de les factures elèctriques: $1\\ \\text{kW h} = 1\\,000\\ \\text{W} \\cdot 3\\,600\\ \\text{s} = 3{,}6 \\cdot 10^6\\ \\text{J}$. Resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $\\text{kW/h}$ és potència dividida per temps: no és energia (és un error molt habitual d'escriptura).\n- **c)** $\\text{J/s}$ és el watt, una unitat de **potència**.\n- **d)** $\\text{J/h}$ també és energia per unitat de temps, és a dir, potència."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$E = P\\,t$ → $\\text{kW} \\cdot \\text{h}$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2022-S-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Resistència equivalent màxima i mínima de dues resistències en sèrie amb tolerància",
+      "tema": "circuits",
+      "temes_secundaris": [
+        "fabricacio"
+      ],
+      "conceptes": [
+        "resistències en sèrie",
+        "tolerància",
+        "resistència equivalent"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        2
+      ],
+      "enunciat": "En un circuit elèctric, es connecten en sèrie dues resistències de valors nominals $110\\ \\Omega$ i $330\\ \\Omega$ i tolerància $\\pm 5\\ \\%$. Es pot afirmar que",
+      "figures": [],
+      "opcions": {
+        "a": "la resistència màxima equivalent és de $462\\ \\Omega$.",
+        "b": "la resistència màxima equivalent és de $484\\ \\Omega$.",
+        "c": "la resistència mínima equivalent és de $440\\ \\Omega$.",
+        "d": "la resistència mínima equivalent és de $396\\ \\Omega$."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Resistència equivalent nominal",
+            "cos": "En sèrie, les resistències se sumen:\n\n$$R_\\text{eq,nom} = R_1 + R_2 = 110 + 330 = 440\\ \\Omega$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Valors màxim i mínim",
+            "cos": "Si les dues resistències estan al límit superior (+5 %), la suma també és un 5 % més gran (i igual pel límit inferior), perquè totes dues tenen la mateixa tolerància:\n\n$$R_\\text{eq,màx} = 110 \\cdot 1{,}05 + 330 \\cdot 1{,}05 = 440 \\cdot 1{,}05 = 462\\ \\Omega$$\n\n$$R_\\text{eq,mín} = 440 \\cdot 0{,}95 = 418\\ \\Omega$$\n\nResultat: **$R_\\text{eq,màx} = 462\\ \\Omega$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **b)** $484 = 440 \\cdot 1{,}10$ i **d)** $396 = 440 \\cdot 0{,}90$: surten de sumar les toleràncies ($5\\ \\% + 5\\ \\% = 10\\ \\%$), però en percentatge la tolerància del conjunt continua sent del 5 %.\n- **c)** $440\\ \\Omega$ és el valor **nominal**, no el mínim."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$R_\\text{eq} = 440\\ \\Omega \\pm 5\\ \\%$: màx. $462\\ \\Omega$, mín. $418\\ \\Omega$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2022-S-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Potència d'una cafetera per escalfar aigua",
+      "tema": "termica",
+      "temes_secundaris": [
+        "energia"
+      ],
+      "conceptes": [
+        "calor sensible",
+        "calor específica",
+        "potència"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Quina potència necessita una cafetera per a escalfar $75\\ \\text{mL}$ d'aigua que es troba a temperatura ambient ($T_\\text{a} = 21\\ ^\\circ\\text{C}$) fins a $88\\ ^\\circ\\text{C}$ en $20\\ \\text{s}$? La calor específica de l'aigua és $c_\\text{e} = 4{,}187\\ \\text{J/(g} \\cdot \\text{K)}$.",
+      "figures": [],
+      "opcions": {
+        "a": "$420{,}7\\ \\text{W}$",
+        "b": "$4{,}207\\ \\text{kW}$",
+        "c": "$1\\,052\\ \\text{W}$",
+        "d": "$10{,}52\\ \\text{kW}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Volum d'aigua: $V = 75\\ \\text{mL}$ → $m = 75\\ \\text{g}$ (densitat de l'aigua $1\\ \\text{g/mL}$)\n- $T_1 = 21\\ ^\\circ\\text{C}$, $T_2 = 88\\ ^\\circ\\text{C}$ → $\\Delta T = 67\\ ^\\circ\\text{C} = 67\\ \\text{K}$ (una diferència de temperatura és igual en °C i en K)\n- $c_\\text{e} = 4{,}187\\ \\text{J/(g K)}$\n- $t = 20\\ \\text{s}$\n- Incògnita: potència $P$"
+          },
+          {
+            "apartat": null,
+            "titol": "Calor necessària",
+            "cos": "Escalfar l'aigua sense canvi d'estat requereix calor sensible:\n\n$$Q = m\\, c_\\text{e}\\, \\Delta T = 75 \\cdot 4{,}187 \\cdot 67 = 21\\,040\\ \\text{J}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Potència",
+            "cos": "La potència és l'energia per unitat de temps:\n\n$$P = \\frac{Q}{t} = \\frac{21\\,040\\ \\text{J}}{20\\ \\text{s}} = 1\\,052\\ \\text{W}$$\n\nResultat: **$P \\approx 1\\,052\\ \\text{W}$** → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Errors típics",
+            "cos": "- **d)** $10{,}52\\ \\text{kW}$ és 10 vegades el resultat correcte: un error d'unitats (mL, g o s).\n- **a)** i **b)** surten d'errors similars amb la diferència de temperatura o el temps."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$Q = 21{,}04\\ \\text{kJ}$; $P \\approx 1\\,052\\ \\text{W}$ → resposta **c**"
+          }
+        ],
+        "nota": "Se suposa que tota la calor va a l'aigua (rendiment del 100 %) i densitat de l'aigua $1\\ \\text{g/mL}$."
+      }
+    },
+    {
+      "id": "tecno-2022-S-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Petjada de carboni diària d'estufes de gas butà",
+      "tema": "energia",
+      "temes_secundaris": [
+        "termica"
+      ],
+      "conceptes": [
+        "petjada de carboni",
+        "factor d'emissió",
+        "consum de combustible",
+        "emissions de CO2"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Una terrassa d'un bar té instal·lades 5 estufes de gas butà que funcionen durant $9\\ \\text{h}$ al dia i cadascuna d'elles consumeix $800\\ \\text{g/h}$ de butà. L'Oficina Catalana del Canvi Climàtic estima un factor d'emissió $FE = 2{,}96\\ \\text{kg}$ de $\\text{CO}_2$ per cada kilogram de gas butà. Quina és la petjada de carboni que deixen les 5 estufes al cap d'un dia de funcionament?",
+      "figures": [],
+      "opcions": {
+        "a": "$21{,}31\\ \\text{kg}$ de $\\text{CO}_2$",
+        "b": "$11{,}84\\ \\text{kg}$ de $\\text{CO}_2$",
+        "c": "$36\\ \\text{kg}$ de $\\text{CO}_2$",
+        "d": "$106{,}56\\ \\text{kg}$ de $\\text{CO}_2$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Nombre d'estufes: $n = 5$\n- Temps de funcionament: $t = 9\\ \\text{h/dia}$\n- Consum de cada estufa: $c = 800\\ \\text{g/h} = 0{,}8\\ \\text{kg/h}$\n- Factor d'emissió: $FE = 2{,}96\\ \\text{kg CO}_2\\text{/kg butà}$\n- Incògnita: massa de $\\text{CO}_2$ emesa en un dia"
+          },
+          {
+            "apartat": null,
+            "titol": "Butà cremat en un dia",
+            "cos": "$$m_\\text{butà} = n\\, c\\, t = 5 \\cdot 0{,}8\\ \\text{kg/h} \\cdot 9\\ \\text{h} = 36\\ \\text{kg}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Emissions de CO₂",
+            "cos": "El factor d'emissió diu quants kg de $\\text{CO}_2$ es generen per cada kg de butà cremat:\n\n$$m_{\\text{CO}_2} = m_\\text{butà} \\cdot FE = 36 \\cdot 2{,}96 = 106{,}56\\ \\text{kg CO}_2$$\n\nResultat: **$106{,}56\\ \\text{kg}$ de $\\text{CO}_2$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **c)** $36\\ \\text{kg}$ és la massa de **butà**, no de $\\text{CO}_2$ (falta multiplicar pel factor d'emissió).\n- **a)** $21{,}31\\ \\text{kg} = 0{,}8 \\cdot 9 \\cdot 2{,}96$ correspon a **una sola** estufa.\n- **b)** $11{,}84\\ \\text{kg} = 5 \\cdot 0{,}8 \\cdot 2{,}96$ correspon a **una sola hora** de funcionament."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$m_\\text{butà} = 36\\ \\text{kg}$; $m_{\\text{CO}_2} = 106{,}56\\ \\text{kg}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2022-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Funció lògica, taula de veritat i esquema de contactes a partir d'un circuit de portes",
+      "tema": "digital",
+      "temes_secundaris": [],
+      "conceptes": [
+        "portes lògiques",
+        "funció lògica",
+        "àlgebra de Boole",
+        "taula de veritat",
+        "esquema de contactes"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "Un sistema digital té l'esquema de portes lògiques següent:",
+      "figures": [
+        {
+          "src": "img/tecno/2022-S/e2.png",
+          "peu": "Esquema de portes lògiques amb entrades a, b, c, d i sortida S"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu la funció lògica entre les variables $a$, $b$, $c$, $d$ i $S$ i, si escau, simplifiqueu-la.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Elaboreu la taula de veritat del sistema.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Dibuixeu l'esquema de contactes de la funció simplificada.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Com es llegeix l'esquema",
+            "cos": "Simbologia IEC: el requadre «1» amb un cercle a la sortida és una porta **NOT**; «≥1» és una porta **OR**; «&» és una porta **AND**, i si té un cercle a la sortida és una **NAND** (AND negada). Els punts negres indiquen on es connecta una entrada a una línia vertical; els ponts (semicercles) són creuaments sense connexió."
+          },
+          {
+            "apartat": "a",
+            "titol": "Sortida de cada porta",
+            "cos": "Seguim el circuit d'esquerra a dreta:\n\n- NOT: entra $a$ → surt $\\bar{a}$.\n- Primera OR: entren $\\bar{a}$ i $b$ → $\\bar{a} + b$.\n- Segona OR: entren $a$ i $b$ → $a + b$.\n- Primera NAND: entren les dues OR → $\\overline{(\\bar{a} + b)(a + b)}$.\n- Segona NAND: entren $c$ i $d$ → $\\overline{c\\,d}$.\n- OR final: suma les dues NAND.\n\n$$S = \\overline{(\\bar{a} + b)(a + b)} + \\overline{c\\,d}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Simplificació algebraica",
+            "cos": "Primer desenvolupem el producte de dins de la primera negació:\n\n$$(\\bar{a} + b)(a + b) = \\bar{a}a + \\bar{a}b + ab + bb = 0 + \\bar{a}b + ab + b = b(\\bar{a} + a + 1) = b$$\n\n(hem usat $\\bar{a}a = 0$, $bb = b$ i $\\bar{a} + a = 1$). Per tant el primer bloc val simplement $\\bar{b}$ i la variable $a$ desapareix.\n\nEl segon bloc, per De Morgan: $\\overline{c\\,d} = \\bar{c} + \\bar{d}$.\n\n$$\\boxed{S = \\bar{b} + \\bar{c} + \\bar{d}} \\quad \\left(= \\overline{b\\,c\\,d}\\right)$$\n\nÉs a dir, $S = 1$ sempre que alguna de les variables $b$, $c$ o $d$ valgui 0, i $S = 0$ només si $b = c = d = 1$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Taula de veritat",
+            "cos": "Amb 4 variables hi ha $2^4 = 16$ combinacions. Segons la funció simplificada, $S = 0$ només a les files amb $b = c = d = 1$ (independentment de $a$):\n\n| $a$ | $b$ | $c$ | $d$ | $S$ |\n|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 1 |\n| 0 | 0 | 0 | 1 | 1 |\n| 0 | 0 | 1 | 0 | 1 |\n| 0 | 0 | 1 | 1 | 1 |\n| 0 | 1 | 0 | 0 | 1 |\n| 0 | 1 | 0 | 1 | 1 |\n| 0 | 1 | 1 | 0 | 1 |\n| 0 | 1 | 1 | 1 | **0** |\n| 1 | 0 | 0 | 0 | 1 |\n| 1 | 0 | 0 | 1 | 1 |\n| 1 | 0 | 1 | 0 | 1 |\n| 1 | 0 | 1 | 1 | 1 |\n| 1 | 1 | 0 | 0 | 1 |\n| 1 | 1 | 0 | 1 | 1 |\n| 1 | 1 | 1 | 0 | 1 |\n| 1 | 1 | 1 | 1 | **0** |\n\nEs pot comprovar fila a fila amb la funció sense simplificar: dona exactament el mateix."
+          },
+          {
+            "apartat": "c",
+            "titol": "Esquema de contactes",
+            "cos": "En un esquema de contactes, una **suma** (OR) són contactes en **paral·lel** i una variable **negada** és un contacte **normalment tancat** (deixa passar corrent quan la variable val 0).\n\nPer a $S = \\bar{b} + \\bar{c} + \\bar{d}$ calen tres contactes normalment tancats, $\\bar{b}$, $\\bar{c}$ i $\\bar{d}$, connectats en paral·lel en sèrie amb la làmpada $S$. La làmpada només s'apaga quan s'obren els tres alhora ($b = c = d = 1$).\n\nEsquema de la solució oficial:\n\n![Esquema de contactes: tres contactes normalment tancats b, c, d en paral·lel](img/tecno/2022-S/e2-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$S = \\overline{(\\bar{a} + b)(a + b)} + \\overline{c\\,d} = \\bar{b} + \\bar{c} + \\bar{d}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$S = 0$ només per a $abcd = 0111$ i $1111$; la resta, $S = 1$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Tres contactes normalment tancats ($\\bar{b}$, $\\bar{c}$, $\\bar{d}$) en paral·lel"
+          }
+        ],
+        "nota": "Error típic: no adonar-se que $(\\bar{a} + b)(a + b) = b$ i deixar la variable $a$ a la funció. La taula de veritat confirma que $a$ no influeix en la sortida."
+      }
+    },
+    {
+      "id": "tecno-2022-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Muntacàrregues amb motor reductor monofàsic: velocitat, treball, potència i corrent",
+      "tema": "maquines-electriques",
+      "temes_secundaris": [
+        "mecanica",
+        "mecanismes",
+        "circuits"
+      ],
+      "conceptes": [
+        "relació de transmissió",
+        "treball",
+        "potència elèctrica",
+        "rendiment",
+        "factor de potència"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "Un muntacàrregues és accionat per un motor reductor de rendiment $\\eta = 0{,}6$. El motor d'inducció monofàsic es connecta a una tensió $U = 230\\ \\text{V}$ i funciona amb un factor de potència $\\cos\\varphi = 0{,}85$. La relació de transmissió del reductor és $\\tau = \\omega_\\text{red}/\\omega_\\text{mot} = 0{,}009$. El motor gira a $n_\\text{mot} = 1\\,470\\ \\text{min}^{-1}$ i l'aparell eleva $h = 8\\ \\text{m}$ una càrrega de massa $m = 2\\,000\\ \\text{kg}$ en $t = 1{,}5\\ \\text{min}$ a una velocitat constant. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La velocitat de rotació de l'eix de sortida del reductor $\\omega_\\text{red}$ en rad/s.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "El treball necessari que ha de realitzar el muntacàrregues $W$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La potència elèctrica consumida pel conjunt $P_\\text{elèc}$.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "La intensitat de corrent $I$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Rendiment del conjunt motor reductor: $\\eta = 0{,}6$\n- Tensió: $U = 230\\ \\text{V}$; factor de potència: $\\cos\\varphi = 0{,}85$\n- Relació de transmissió: $\\tau = \\omega_\\text{red}/\\omega_\\text{mot} = 0{,}009$\n- Velocitat del motor: $n_\\text{mot} = 1\\,470\\ \\text{min}^{-1}$\n- Alçada: $h = 8\\ \\text{m}$; massa: $m = 2\\,000\\ \\text{kg}$\n- Temps: $t = 1{,}5\\ \\text{min} = 90\\ \\text{s}$\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnites: $\\omega_\\text{red}$, $W$, $P_\\text{elèc}$, $I$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat del motor en rad/s",
+            "cos": "Per passar de voltes per minut a rad/s, cada volta són $2\\pi$ radiants i cada minut 60 segons:\n\n$$\\omega_\\text{mot} = n_\\text{mot}\\, \\frac{2\\pi}{60} = 1\\,470 \\cdot \\frac{2\\pi}{60} = 153{,}9\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat de sortida del reductor",
+            "cos": "La relació de transmissió ens diu quina fracció de la velocitat del motor arriba a la sortida del reductor:\n\n$$\\omega_\\text{red} = \\tau\\, \\omega_\\text{mot} = 0{,}009 \\cdot 153{,}9 = 1{,}385\\ \\text{rad/s}$$\n\nResultat: **$\\omega_\\text{red} \\approx 1{,}385\\ \\text{rad/s}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball per elevar la càrrega",
+            "cos": "Com que la càrrega puja a velocitat constant, el treball útil és igual a l'augment d'energia potencial:\n\n$$W = m\\, g\\, h = 2\\,000 \\cdot 9{,}807 \\cdot 8 = 156\\,912\\ \\text{J}$$\n\nResultat: **$W \\approx 156{,}9\\ \\text{kJ}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència útil",
+            "cos": "La potència útil (mecànica a la càrrega) és el treball dividit pel temps:\n\n$$P_\\text{útil} = \\frac{W}{t} = \\frac{156\\,912\\ \\text{J}}{90\\ \\text{s}} = 1\\,743\\ \\text{W}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència elèctrica consumida amb el rendiment",
+            "cos": "El rendiment del conjunt relaciona la potència útil amb la consumida: $\\eta = P_\\text{útil}/P_\\text{elèc}$. Aïllant:\n\n$$P_\\text{elèc} = \\frac{P_\\text{útil}}{\\eta} = \\frac{W}{\\eta\\, t} = \\frac{1\\,743}{0{,}6} = 2\\,906\\ \\text{W}$$\n\nResultat: **$P_\\text{elèc} \\approx 2{,}906\\ \\text{kW}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Intensitat en un motor monofàsic de corrent altern",
+            "cos": "En corrent altern monofàsic, la potència activa (la que es converteix en treball i calor) és $P = U\\, I\\, \\cos\\varphi$. El factor de potència té en compte el desfasament entre tensió i corrent. Aïllant $I$:\n\n$$I = \\frac{P_\\text{elèc}}{U\\, \\cos\\varphi} = \\frac{2\\,906}{230 \\cdot 0{,}85} = 14{,}86\\ \\text{A}$$\n\nResultat: **$I \\approx 14{,}86\\ \\text{A}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\omega_\\text{red} \\approx 1{,}385\\ \\text{rad/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$W \\approx 156{,}9\\ \\text{kJ}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{útil} \\approx 1\\,743\\ \\text{W}$; $P_\\text{elèc} \\approx 2{,}906\\ \\text{kW}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$I \\approx 14{,}86\\ \\text{A}$"
+          }
+        ],
+        "nota": "Errors típics: oblidar passar $t$ a segons ($1{,}5\\ \\text{min} = 90\\ \\text{s}$), multiplicar pel rendiment en lloc de dividir-hi, o oblidar el $\\cos\\varphi$ a l'apartat d (sortirien $12{,}63\\ \\text{A}$). La solució oficial usa $g = 9{,}807\\ \\text{m/s}^2$."
+      }
+    },
+    {
+      "id": "tecno-2022-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Motor de sis cilindres d'un automòbil: cilindrada, parell, potència tèrmica i rendiment",
+      "tema": "termica",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "cilindrada",
+        "parell motor",
+        "poder calorífic",
+        "potència tèrmica",
+        "rendiment"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8,
+        9
+      ],
+      "enunciat": "Un automòbil està equipat amb un motor de $n_\\text{c} = 6$ cilindres de cursa $s = 91\\ \\text{mm}$ i diàmetre $d = 83\\ \\text{mm}$. La relació de compressió és $r_\\text{c} = 12$. Quan l'automòbil es desplaça per un terreny horitzontal a una velocitat constant, el motor desenvolupa una potència $P_\\text{mec} = 20\\ \\text{kW}$, gira a $n = 3\\,000\\ \\text{min}^{-1}$ i consumeix $c = 6{,}5\\ \\text{L/h}$ de benzina de poder calorífic $p_\\text{c} = 42\\,000\\ \\text{kJ/kg}$ i densitat $\\rho = 0{,}8\\ \\text{kg/L}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La cilindrada total $V$ en $\\text{cm}^3$.",
+          "punts": 0.5
+        },
+        {
+          "id": "b",
+          "enunciat": "El parell $\\Gamma$ que subministra el motor.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La potència tèrmica consumida $P_\\text{tèrm}$ expressada en kW.",
+          "punts": 1
+        },
+        {
+          "id": "d",
+          "enunciat": "El rendiment del motor $\\eta$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Nombre de cilindres: $n_\\text{c} = 6$\n- Cursa: $s = 91\\ \\text{mm} = 9{,}1\\ \\text{cm}$; diàmetre: $d = 83\\ \\text{mm} = 8{,}3\\ \\text{cm}$\n- Relació de compressió: $r_\\text{c} = 12$ (no cal per a cap apartat)\n- Potència mecànica: $P_\\text{mec} = 20\\ \\text{kW}$\n- Velocitat de gir: $n = 3\\,000\\ \\text{min}^{-1}$\n- Consum: $c = 6{,}5\\ \\text{L/h}$; densitat: $\\rho = 0{,}8\\ \\text{kg/L}$\n- Poder calorífic: $p_\\text{c} = 42\\,000\\ \\text{kJ/kg}$\n- Incògnites: $V$, $\\Gamma$, $P_\\text{tèrm}$, $\\eta$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Cilindrada total",
+            "cos": "La cilindrada d'un cilindre és el volum que escombra el pistó: l'àrea del pistó per la cursa. La total és la d'un cilindre multiplicada pel nombre de cilindres. Treballant en cm surt directament en $\\text{cm}^3$:\n\n$$V = n_\\text{c}\\, \\frac{\\pi d^2}{4}\\, s = 6 \\cdot \\frac{\\pi \\cdot 8{,}3^2}{4} \\cdot 9{,}1 = 6 \\cdot 492{,}4 = 2\\,954\\ \\text{cm}^3$$\n\nResultat: **$V \\approx 2\\,954\\ \\text{cm}^3$** (uns 2,95 L)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat angular del motor",
+            "cos": "$$\\omega = n\\, \\frac{2\\pi}{60} = 3\\,000 \\cdot \\frac{2\\pi}{60} = 314{,}2\\ \\text{rad/s}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Parell motor",
+            "cos": "En un eix que gira, la potència és el parell per la velocitat angular, $P = \\Gamma\\, \\omega$. Aïllant el parell:\n\n$$\\Gamma = \\frac{P_\\text{mec}}{\\omega} = \\frac{20\\,000\\ \\text{W}}{314{,}2\\ \\text{rad/s}} = 63{,}66\\ \\text{N m}$$\n\nResultat: **$\\Gamma \\approx 63{,}66\\ \\text{N m}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Massa de benzina consumida per segon",
+            "cos": "Passem el consum en volum a consum en massa amb la densitat, i les hores a segons:\n\n$$\\dot m = c\\, \\rho = 6{,}5\\ \\text{L/h} \\cdot 0{,}8\\ \\text{kg/L} = 5{,}2\\ \\text{kg/h} = \\frac{5{,}2}{3\\,600}\\ \\text{kg/s} = 1{,}444 \\cdot 10^{-3}\\ \\text{kg/s}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència tèrmica",
+            "cos": "Cada kg de benzina allibera $p_\\text{c}$ kJ en cremar-se; la potència tèrmica és l'energia alliberada per segon:\n\n$$P_\\text{tèrm} = \\dot m\\, p_\\text{c} = 1{,}444 \\cdot 10^{-3}\\ \\text{kg/s} \\cdot 42\\,000\\ \\text{kJ/kg} = 60{,}67\\ \\text{kW}$$\n\nResultat: **$P_\\text{tèrm} \\approx 60{,}67\\ \\text{kW}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Rendiment del motor",
+            "cos": "El rendiment és la fracció de la potència tèrmica del combustible que el motor converteix en potència mecànica:\n\n$$\\eta = \\frac{P_\\text{mec}}{P_\\text{tèrm}} = \\frac{20}{60{,}67} = 0{,}3297$$\n\nResultat: **$\\eta \\approx 0{,}33$ (33 %)**. La resta de l'energia es perd en forma de calor (gasos d'escapament, refrigeració, fregaments)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$V \\approx 2\\,954\\ \\text{cm}^3$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\Gamma \\approx 63{,}66\\ \\text{N m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_\\text{tèrm} \\approx 60{,}67\\ \\text{kW}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$\\eta \\approx 0{,}3297$"
+          }
+        ],
+        "nota": "La relació de compressió $r_\\text{c} = 12$ és una dada que no s'utilitza en cap apartat. Error típic: oblidar la densitat (el poder calorífic és per kg, no per L) o no dividir per 3 600 per passar de per hora a per segon."
+      }
+    },
+    {
+      "id": "tecno-2022-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Equilibri del taulell elevable d'una taula de centre amb dues barres articulades",
+      "tema": "estatica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "diagrama de cos lliure",
+        "equilibri",
+        "moments",
+        "barres biarticulades",
+        "tracció i compressió"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        10,
+        11
+      ],
+      "enunciat": "La figura representa el sistema que permet elevar el taulell d'una taula de centre. El taulell és homogeni i de gruix negligible. Té una longitud $3L$ i una massa $m = 4\\ \\text{kg}$. Les barres AB i CD, de massa negligible, tenen els extrems articulats al taulell i a l'estructura de la taula, que està fixada al terra. S'aplica una força $F$ vertical al punt O. ($L = 150\\ \\text{mm}$.)",
+      "figures": [
+        {
+          "src": "img/tecno/2022-S/e5.png",
+          "peu": "Taulell OAC amb les barres AB i CD articulades a l'estructura (φ és l'angle de CD amb l'horitzontal)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de cos lliure del taulell.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Sabent que el sistema està en equilibri i que $\\varphi = 60^\\circ$, determineu el valor de la força $F$ aplicada.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "Sabent que el sistema està en equilibri i que $\\varphi = 60^\\circ$, determineu el valor de les forces $F_\\text{AB}$ i $F_\\text{CD}$ que fan les barres sobre el taulell. Treballen a compressió o a tracció?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa del taulell: $m = 4\\ \\text{kg}$ → pes $mg = 4 \\cdot 9{,}807 = 39{,}23\\ \\text{N}$\n- Longitud del taulell: $3L$, amb $L = 150\\ \\text{mm}$\n- Posicions sobre el taulell (des d'O): A a $L$, centre de masses a $1{,}5L$, C a $2L$\n- Angle de les barres amb l'horitzontal: $\\varphi = 60^\\circ$ (AB i CD són paral·leles)\n- Incògnites: $F$, $F_\\text{AB}$, $F_\\text{CD}$ i si treballen a tracció o compressió"
+          },
+          {
+            "apartat": "a",
+            "titol": "Barres biarticulades: la força va segons la barra",
+            "cos": "Les barres AB i CD no tenen massa i només estan articulades als extrems (sense cap força al mig). Una barra així només pot fer força **en la direcció de la mateixa barra** (tibant o empenyent). Per tant, sobre el taulell hi actuen:\n\n- $F$, vertical cap amunt, al punt O.\n- El pes $mg$, vertical cap avall, al centre del taulell ($1{,}5L$ d'O).\n- $F_\\text{AB}$ al punt A, en la direcció de la barra AB (inclinada $\\varphi$ respecte de l'horitzontal).\n- $F_\\text{CD}$ al punt C, en la direcció de la barra CD.\n\nEl sentit real de $F_\\text{AB}$ i $F_\\text{CD}$ el confirmarem amb els càlculs. Diagrama de la solució oficial:\n\n![Diagrama de cos lliure del taulell](img/tecno/2022-S/e5-sol.png)\n\nAl punt A, la barra AB estira el taulell cap a B (cap avall i a la dreta) i a C la barra CD l'empeny cap amunt i a l'esquerra."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equilibri de forces horitzontals",
+            "cos": "Prenem $F_\\text{AB}$ cap avall-dreta (cap a B) i $F_\\text{CD}$ cap amunt-esquerra (des de D), com al diagrama. Les úniques forces amb component horitzontal són les de les barres:\n\n$$\\sum F_x = 0: \\quad F_\\text{AB} \\cos\\varphi - F_\\text{CD} \\cos\\varphi = 0 \\quad\\Rightarrow\\quad F_\\text{AB} = F_\\text{CD}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equilibri de forces verticals",
+            "cos": "$$\\sum F_y = 0: \\quad F - F_\\text{AB} \\sin\\varphi + F_\\text{CD} \\sin\\varphi - mg = 0$$\n\nCom que $F_\\text{AB} = F_\\text{CD}$, les components verticals de les barres s'anul·len entre elles i queda:\n\n$$F = mg = 4 \\cdot 9{,}807 = 39{,}23\\ \\text{N}$$\n\nResultat: **$F \\approx 39{,}23\\ \\text{N}$**. Curiosament, la força necessària és igual al pes del taulell, independentment de l'angle."
+          },
+          {
+            "apartat": "c",
+            "titol": "Equilibri de moments respecte d'A",
+            "cos": "Prenem moments respecte del punt A perquè així $F_\\text{AB}$ no hi apareix (passa per A). Agafem positiu el sentit horari:\n\n- $F$ (amunt, a distància $L$ a l'esquerra d'A): moment horari $F\\,L$.\n- $mg$ (avall, a $L/2$ a la dreta d'A): moment horari $mg\\,L/2$.\n- $F_\\text{CD}$ a C (a $L$ a la dreta d'A): només fa moment la component vertical, $F_\\text{CD}\\sin\\varphi$, cap amunt → antihorari.\n\n$$\\sum M_\\text{A} = 0: \\quad F\\,L + mg\\,\\frac{L}{2} - F_\\text{CD}\\, L \\sin\\varphi = 0$$\n\nLa $L$ se simplifica (per això no cal el seu valor):\n\n$$F_\\text{CD} = \\frac{F + \\dfrac{mg}{2}}{\\sin 60^\\circ} = \\frac{39{,}23 + 19{,}61}{0{,}8660} = 67{,}94\\ \\text{N}$$\n\nI de l'equilibri horitzontal, $F_\\text{AB} = F_\\text{CD} = 67{,}94\\ \\text{N}$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Tracció o compressió",
+            "cos": "Els dos resultats han sortit positius, per tant els sentits suposats al diagrama són els correctes:\n\n- Al punt A, la barra AB **estira** el taulell cap a B: la barra **treballa a tracció**.\n- Al punt C, la barra CD **empeny** el taulell (força dirigida de D cap a C): la barra **treballa a compressió**.\n\nResultat: **$F_\\text{AB} = F_\\text{CD} \\approx 67{,}94\\ \\text{N}$; AB a tracció, CD a compressió**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "4 forces sobre el taulell: $F$ (vertical a O), $mg$ (al centre), $F_\\text{AB}$ i $F_\\text{CD}$ (segons la direcció de les barres)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F = mg \\approx 39{,}23\\ \\text{N}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$F_\\text{AB} = F_\\text{CD} \\approx 67{,}94\\ \\text{N}$; AB a tracció, CD a compressió"
+          }
+        ],
+        "nota": "Error típic: dibuixar a les articulacions A i C reaccions amb dues components (horitzontal i vertical) independents: com que les barres són biarticulades i sense massa, la força ha d'anar en la direcció de la barra. Si al diagrama es posa un sentit equivocat, simplement surt un resultat negatiu. La solució oficial escriu a l'equació vertical $F_\\text{AB}\\sin\\varphi$ en lloc de $F_\\text{CD}\\sin\\varphi$ al tercer terme (errada tipogràfica), però el resultat és el mateix."
+      }
+    },
+    {
+      "id": "tecno-2022-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Estufes elèctriques en paral·lel: corrents, resistència i potència a una altra tensió",
+      "tema": "circuits",
+      "temes_secundaris": [],
+      "conceptes": [
+        "potència elèctrica",
+        "llei d'Ohm",
+        "connexió en paral·lel",
+        "resistència"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        12,
+        13
+      ],
+      "enunciat": "S'instal·len $n = 7$ estufes elèctriques de potència $P_1 = 900\\ \\text{W}$ a la terrassa d'un bar i s'alimenten a una tensió $U_1 = 230\\ \\text{V}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El corrent $I_\\text{i}$ que circula per cada estufa i el corrent total $I$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El valor de la resistència elèctrica de cada estufa $R$.",
+          "punts": 0.5
+        },
+        {
+          "id": "c",
+          "enunciat": "La potència $P_2$ que consumiria cada estufa si s'alimentés a una tensió $U_2 = 125\\ \\text{V}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Nombre d'estufes: $n = 7$ (connectades en paral·lel, totes a la mateixa tensió)\n- Potència de cada estufa: $P_1 = 900\\ \\text{W}$ a $U_1 = 230\\ \\text{V}$\n- Nova tensió: $U_2 = 125\\ \\text{V}$\n- Incògnites: $I_\\text{i}$, $I$, $R$, $P_2$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Corrent per cada estufa",
+            "cos": "Una estufa elèctrica és una resistència pura (factor de potència 1), així que $P = U\\, I$:\n\n$$I_\\text{i} = \\frac{P_1}{U_1} = \\frac{900}{230} = 3{,}913\\ \\text{A}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Corrent total",
+            "cos": "Les estufes estan connectades en **paral·lel** a la xarxa (totes reben 230 V), per tant el corrent total és la suma dels corrents de cada una:\n\n$$I = n\\, I_\\text{i} = 7 \\cdot 3{,}913 = 27{,}39\\ \\text{A}$$\n\nResultat: **$I_\\text{i} \\approx 3{,}913\\ \\text{A}$; $I \\approx 27{,}39\\ \\text{A}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Resistència de cada estufa",
+            "cos": "Combinant $P = U I$ i la llei d'Ohm $I = U/R$ s'obté $P = U^2/R$:\n\n$$R = \\frac{U_1^2}{P_1} = \\frac{230^2}{900} = 58{,}78\\ \\Omega$$\n\n(També: $R = U_1/I_\\text{i} = 230/3{,}913 = 58{,}78\\ \\Omega$.) Resultat: **$R \\approx 58{,}78\\ \\Omega$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència a una tensió més baixa",
+            "cos": "La resistència de l'estufa no canvia amb la tensió; el que canvia és la potència. Amb $P = U^2/R$:\n\n$$P_2 = \\frac{U_2^2}{R} = \\frac{125^2}{58{,}78} = 265{,}8\\ \\text{W}$$\n\nEquivalentment, $P_2 = P_1 \\left(\\dfrac{U_2}{U_1}\\right)^2 = 900 \\cdot \\left(\\dfrac{125}{230}\\right)^2 = 265{,}8\\ \\text{W}$.\n\nResultat: **$P_2 \\approx 265{,}8\\ \\text{W}$**. En reduir la tensió gairebé a la meitat, la potència baixa a menys d'un terç, perquè depèn del **quadrat** de la tensió."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$I_\\text{i} \\approx 3{,}913\\ \\text{A}$; $I \\approx 27{,}39\\ \\text{A}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$R \\approx 58{,}78\\ \\Omega$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$P_2 \\approx 265{,}8\\ \\text{W}$"
+          }
+        ],
+        "nota": "Error típic a l'apartat c: suposar que el corrent es manté ($P_2 = U_2 I_\\text{i} = 489\\ \\text{W}$) o que la potència és proporcional a la tensió. El que es manté constant és la resistència."
+      }
+    }
+  ]
+}

@@ -1,0 +1,604 @@
+{
+  "examen": {
+    "id": "mates-2024-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2024,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/mates/2024-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2024-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE de les sis qüestions. Cada qüestió val 2,5 punts. Es pot utilitzar calculadora (no programable ni amb connexió)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2024-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Estudi de la funció f(x) = 2 ln x / x: extrems, asímptotes i recta tangent",
+      "tema": "derivades",
+      "temes_secundaris": [
+        "funcions"
+      ],
+      "conceptes": [
+        "monotonia",
+        "extrems relatius",
+        "asímptotes",
+        "regla de l'Hôpital",
+        "recta tangent",
+        "funció logarítmica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2,
+        3
+      ],
+      "enunciat": "Considereu la funció $f(x) = 2\\,\\dfrac{\\ln x}{x}$, definida per a $x > 0$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Estudieu-ne els màxims i els mínims, i les zones de creixement i de decreixement.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Aquesta funció té asímptotes? Feu un esbós de la seva gràfica.",
+          "punts": 1
+        },
+        {
+          "id": "c",
+          "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de $y = f(x)$ en el punt d'abscissa $x = 1$.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Funció: $f(x) = \\dfrac{2\\ln x}{x}$, amb domini $(0, +\\infty)$.\n- Busquem: extrems i monotonia (a), asímptotes i esbós (b), recta tangent a $x=1$ (c)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Derivada de f (regla del quocient)",
+            "cos": "Per trobar màxims, mínims i creixement estudiem el signe de la derivada. Fem servir la regla del quocient $\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$ amb $u = 2\\ln x$, $u' = \\frac{2}{x}$, $v = x$, $v' = 1$:\n\n$$f'(x) = \\frac{\\frac{2}{x}\\cdot x - 2\\ln x \\cdot 1}{x^2} = \\frac{2(1-\\ln x)}{x^2}.$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Punts crítics",
+            "cos": "Igualem la derivada a zero. El denominador $x^2$ és sempre positiu, així que només s'anul·la el numerador:\n\n$$1 - \\ln x = 0 \\iff \\ln x = 1 \\iff x = e.$$\n\nHi ha un únic punt crític, **$x = e \\approx 2{,}718$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Signe de f' i classificació",
+            "cos": "El signe de $f'$ és el de $1 - \\ln x$ (el denominador és positiu):\n\n| interval | $(0, e)$ | $x=e$ | $(e, +\\infty)$ |\n|---|---|---|---|\n| $\\ln x$ | $< 1$ | $=1$ | $> 1$ |\n| signe de $f'$ | $+$ | $0$ | $-$ |\n| $f$ | creixent | màxim | decreixent |\n\nTambé ho podem confirmar amb la derivada segona: $f''(x) = \\dfrac{2(2\\ln x - 3)}{x^3}$, i $f''(e) = \\dfrac{2(2-3)}{e^3} = -2e^{-3} < 0$, per tant és un màxim.\n\nEl valor del màxim és $f(e) = \\dfrac{2\\ln e}{e} = \\dfrac{2}{e} \\approx 0{,}736$.\n\n**Màxim relatiu (i absolut) a $\\left(e, \\tfrac{2}{e}\\right)$; no hi ha mínims. $f$ és creixent a $(0, e)$ i decreixent a $(e, +\\infty)$.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Asímptota vertical a x = 0",
+            "cos": "Les asímptotes verticals poden aparèixer on la funció no està definida; aquí, a la vora del domini, $x \\to 0^+$. Quan $x \\to 0^+$, $\\ln x \\to -\\infty$ i el denominador $x \\to 0^+$:\n\n$$\\lim_{x\\to 0^+} \\frac{2\\ln x}{x} = \\frac{-\\infty}{0^+} = -\\infty.$$\n\n(No és una indeterminació.) Per tant, **$x = 0$ és una asímptota vertical**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Asímptota horitzontal a +∞",
+            "cos": "Calculem el límit a $+\\infty$. És una indeterminació $\\frac{\\infty}{\\infty}$, que resolem amb la regla de l'Hôpital (derivem numerador i denominador):\n\n$$\\lim_{x\\to+\\infty}\\frac{2\\ln x}{x} = \\lim_{x\\to+\\infty}\\frac{\\frac{2}{x}}{1} = \\lim_{x\\to+\\infty}\\frac{2}{x} = 0^+.$$\n\nPer tant, **$y = 0$ és una asímptota horitzontal** a $+\\infty$, i la funció s'hi acosta per sobre (per a $x > 1$, $\\ln x > 0$ i $f(x) > 0$). Com que hi ha asímptota horitzontal, no n'hi ha d'obliqua."
+          },
+          {
+            "apartat": "b",
+            "titol": "Esbós de la gràfica",
+            "cos": "Resumim la informació: la funció ve de $-\\infty$ a prop de $x=0$, talla l'eix d'abscisses només a $x = 1$ (on $\\ln x = 0$), creix fins al màxim $\\left(e, \\frac{2}{e}\\right) \\approx (2{,}72;\\ 0{,}74)$ i després decreix cap a $0$ sense tallar mai més l'eix.\n\n![Esbós de la gràfica de f (solució oficial)](img/mates/2024-J/e1-sol.png)"
+          },
+          {
+            "apartat": "c",
+            "titol": "Recta tangent a x = 1",
+            "cos": "La recta tangent en $x = a$ és $y - f(a) = f'(a)(x - a)$. Calculem el punt i el pendent:\n\n$$f(1) = \\frac{2\\ln 1}{1} = 0, \\qquad f'(1) = \\frac{2(1-\\ln 1)}{1^2} = 2.$$\n\n$$y - 0 = 2(x - 1) \\;\\Rightarrow\\; \\mathbf{y = 2x - 2}.$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Màxim a $x = e$, $f(e) = 2/e$; creixent a $(0, e)$, decreixent a $(e, +\\infty)$; no hi ha mínims."
+          },
+          {
+            "apartat": "b",
+            "valor": "Asímptota vertical $x = 0$ (amb $f \\to -\\infty$) i asímptota horitzontal $y = 0$ a $+\\infty$."
+          },
+          {
+            "apartat": "c",
+            "valor": "$y = 2x - 2$"
+          }
+        ],
+        "nota": "Segons els criteris oficials, per justificar l'asímptota horitzontal també és vàlid argumentar que per a $x > e$ la funció és decreixent i no talla mai l'eix d'abscisses (no cal calcular-ne el valor). Error típic: oblidar que el domini és $x>0$ i buscar asímptotes o extrems a $x<0$."
+      }
+    },
+    {
+      "id": "mates-2024-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Discussió d'un sistema 3×3 amb paràmetre k i resolució per a k = 0 i k = −1",
+      "tema": "sistemes",
+      "temes_secundaris": [
+        "matrius"
+      ],
+      "conceptes": [
+        "discussió de sistemes",
+        "teorema de Rouché-Frobenius",
+        "regla de Cramer",
+        "rang",
+        "sistema compatible indeterminat",
+        "sistema incompatible"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "Considereu el sistema d'equacions següent:\n\n$$\\left.\\begin{aligned} 4x + 2y - z &= 4 \\\\ x - y + kz &= 3 \\\\ 3x + 3y &= 1 \\end{aligned}\\right\\}$$\n\non $k$ és un paràmetre real.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $k$, i resoleu-lo per a $k = 0$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Resoleu el sistema per a $k = -1$.",
+          "punts": 0.75
+        },
+        {
+          "id": "c",
+          "enunciat": "Per a $k = -1$, modifiqueu la tercera equació de manera que el sistema esdevingui incompatible. Justifiqueu la resposta.",
+          "punts": 0.75
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "Matriu de coeficients $M$ i matriu ampliada $\\overline{M}$:\n\n$$M = \\begin{pmatrix} 4 & 2 & -1 \\\\ 1 & -1 & k \\\\ 3 & 3 & 0 \\end{pmatrix}, \\qquad \\overline{M} = \\left(\\begin{array}{ccc|c} 4 & 2 & -1 & 4 \\\\ 1 & -1 & k & 3 \\\\ 3 & 3 & 0 & 1 \\end{array}\\right)$$\n\nIncògnites: $x, y, z$ (3 incògnites). Busquem per a quins $k$ el sistema té solució única, infinites o cap."
+          },
+          {
+            "apartat": "a",
+            "titol": "Determinant de la matriu de coeficients",
+            "cos": "Com que la matriu depèn del paràmetre $k$, estudiem quan el determinant és zero (aleshores el rang baixa de 3). Per Sarrus:\n\n$$|M| = 4\\cdot(-1)\\cdot 0 + 2\\cdot k\\cdot 3 + (-1)\\cdot 1\\cdot 3 - \\big[(-1)(-1)\\cdot 3 + 4\\cdot k\\cdot 3 + 2\\cdot 1\\cdot 0\\big]$$\n\n$$|M| = 0 + 6k - 3 - 3 - 12k = -6k - 6.$$\n\n$$|M| = 0 \\iff -6k - 6 = 0 \\iff k = -1.$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas k ≠ −1: sistema compatible determinat",
+            "cos": "Si $k \\neq -1$, $|M| \\neq 0$, i per tant $\\text{rang}(M) = \\text{rang}(\\overline{M}) = 3 =$ nombre d'incògnites. Pel teorema de Rouché-Frobenius, el sistema és **compatible determinat** (solució única)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas k = −1: sistema compatible indeterminat",
+            "cos": "Per a $k = -1$ el sistema és\n\n$$\\left.\\begin{aligned} 4x + 2y - z &= 4 \\\\ x - y - z &= 3 \\\\ 3x + 3y &= 1 \\end{aligned}\\right\\}$$\n\nObservem que la tercera equació és exactament la **primera menys la segona**: $(4x+2y-z)-(x-y-z) = 3x+3y$ i $4-3=1$. Per tant és redundant i el sistema equival a dues equacions. Com que el menor $\\begin{vmatrix} 4 & 2 \\\\ 1 & -1 \\end{vmatrix} = -4 - 2 = -6 \\neq 0$, tenim $\\text{rang}(M) = \\text{rang}(\\overline{M}) = 2 < 3$.\n\nEl sistema és **compatible indeterminat** amb $3 - 2 = 1$ grau de llibertat."
+          },
+          {
+            "apartat": "a",
+            "titol": "Resolució per a k = 0 (regla de Cramer)",
+            "cos": "Per a $k = 0$ el sistema és compatible determinat i $|M| = -6$. Apliquem Cramer, substituint cada columna pel vector de termes independents $(4, 3, 1)$:\n\n$$x = \\frac{\\begin{vmatrix} 4 & 2 & -1 \\\\ 3 & -1 & 0 \\\\ 1 & 3 & 0 \\end{vmatrix}}{-6} = \\frac{-1\\cdot(3\\cdot 3 - (-1)\\cdot 1)}{-6} = \\frac{-10}{-6} = \\frac{5}{3}$$\n\n$$y = \\frac{\\begin{vmatrix} 4 & 4 & -1 \\\\ 1 & 3 & 0 \\\\ 3 & 1 & 0 \\end{vmatrix}}{-6} = \\frac{-1\\cdot(1\\cdot 1 - 3\\cdot 3)}{-6} = \\frac{8}{-6} = -\\frac{4}{3}$$\n\n(en tots dos determinants hem desenvolupat per la tercera columna, que només té un element no nul).\n\n$$z = \\frac{\\begin{vmatrix} 4 & 2 & 4 \\\\ 1 & -1 & 3 \\\\ 3 & 3 & 1 \\end{vmatrix}}{-6} = \\frac{-4 + 18 + 12 + 12 - 36 - 2}{-6} = \\frac{0}{-6} = 0$$\n\n**Solució per a $k=0$: $(x, y, z) = \\left(\\frac{5}{3}, -\\frac{4}{3}, 0\\right)$.**\n\nComprovació: $4\\cdot\\frac53 + 2\\cdot\\left(-\\frac43\\right) - 0 = \\frac{20-8}{3} = 4$ ✓; $\\frac53 + \\frac43 = 3$ ✓; $5 - 4 = 1$ ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "Resolució per a k = −1",
+            "cos": "Hem vist que la tercera equació és redundant. Ens quedem amb les dues primeres:\n\n$$\\left.\\begin{aligned} 4x + 2y - z &= 4 \\\\ x - y - z &= 3 \\end{aligned}\\right\\}$$\n\nRestant-les eliminem $z$: $3x + 3y = 1$. Com que hi ha un grau de llibertat, prenem $x = \\lambda$ com a paràmetre:\n\n$$y = \\frac{1}{3} - \\lambda, \\qquad z = x - y - 3 = \\lambda - \\frac13 + \\lambda - 3 = 2\\lambda - \\frac{10}{3}.$$\n\n**Solució: $(x, y, z) = \\left(\\lambda,\\ \\frac13 - \\lambda,\\ 2\\lambda - \\frac{10}{3}\\right)$, $\\lambda \\in \\mathbb{R}$.**\n\nComprovació amb $\\lambda = 0$: $(0, \\frac13, -\\frac{10}{3})$ → $\\frac23 + \\frac{10}{3} = 4$ ✓, $-\\frac13 + \\frac{10}{3} = 3$ ✓, $3\\cdot\\frac13 = 1$ ✓."
+          },
+          {
+            "apartat": "c",
+            "titol": "Modificar la tercera equació",
+            "cos": "La tercera equació era redundant perquè era la primera menys la segona: els seus coeficients $(3, 3, 0)$ **i** el seu terme independent $1$ coincideixen amb la resta. Si mantenim els coeficients però canviem el terme independent, la combinació deixa de ser coherent. Per exemple:\n\n$$3x + 3y = 2.$$\n\nRestant les dues primeres equacions obtenim $3x + 3y = 1$, i la tercera diu $3x + 3y = 2$: arribem a la contradicció $1 = 2$. **El sistema és incompatible.**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Justificació amb rangs",
+            "cos": "La matriu de coeficients no ha canviat, per tant $\\text{rang}(M) = 2$. En canvi, a la matriu ampliada el menor format per les columnes de $y$, $z$ i termes independents és\n\n$$\\begin{vmatrix} 2 & -1 & 4 \\\\ -1 & -1 & 3 \\\\ 3 & 0 & 2 \\end{vmatrix} = -4 - 9 + 0 - (-12) - 0 - 2 = -3 \\neq 0,$$\n\ni per tant $\\text{rang}(\\overline{M}) = 3 \\neq \\text{rang}(M) = 2$. Per Rouché-Frobenius, el sistema és **incompatible**. (Qualsevol terme independent diferent d'1 funcionaria.)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$k \\neq -1$: SCD; $k = -1$: SCI (1 grau de llibertat). Per a $k = 0$: $(x,y,z) = \\left(\\frac53, -\\frac43, 0\\right)$."
+          },
+          {
+            "apartat": "b",
+            "valor": "$(x,y,z) = \\left(\\lambda,\\ \\frac13 - \\lambda,\\ 2\\lambda - \\frac{10}{3}\\right)$, $\\lambda \\in \\mathbb{R}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Per exemple $3x + 3y = 2$ (qualsevol $3x+3y = c$ amb $c \\neq 1$): $\\text{rang}(M) = 2 \\neq \\text{rang}(\\overline{M}) = 3$ → incompatible."
+          }
+        ],
+        "nota": "La solució per a $k=0$ també es pot trobar per substitució: de la 3a, $y = \\frac13 - x$; substituint a la 2a ($x - y = 3$) surt $x = \\frac53$, i de la 1a, $z = 0$. Al càlcul del menor de l'apartat c, la solució oficial escriu els termes intermedis $-4-9+12-2$; el resultat ($-3$) és el mateix."
+      }
+    },
+    {
+      "id": "mates-2024-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Àrea d'un terreny limitat per una cúbica i una recta",
+      "tema": "integrals",
+      "temes_secundaris": [
+        "funcions"
+      ],
+      "conceptes": [
+        "integral definida",
+        "àrea entre corbes",
+        "regla de Barrow",
+        "equació de la recta",
+        "punts de tall"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "En Joan troba entre els papers del seu avi un esbós com el de la figura adjunta, on es descriu un terreny de regadiu que ha deixat en herència al seu pare.\n\nLa corba de la gràfica és $y = f(x)$, amb $f(x) = -x^3 + 7x^2 - 6x + 5$.",
+      "figures": [
+        {
+          "src": "img/mates/2024-J/e3.png",
+          "peu": "Esbós del terreny: la corba y = f(x), la recta y = 5 que passa pels punts (0, 5), P i Q, i el terreny ombrejat limitat per la corba, el segment QR i el segment PR"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "A partir de l'expressió de $f(x)$, calculeu les coordenades dels punts $P$, $Q$ i $R$ indicats a la figura. Calculeu també l'equació de la recta $PR$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la superfície del terreny.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Corba: $f(x) = -x^3 + 7x^2 - 6x + 5$, que talla l'eix $OY$ a $(0, 5)$.\n- A la figura, la recta horitzontal $y = 5$ talla la corba a $(0,5)$, $P$ i $Q$; $R$ és a l'eix $OX$ just a sota de $Q$.\n- Busquem: $P$, $Q$, $R$, la recta $PR$ (a) i l'àrea ombrejada (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punts P i Q: tall de la corba amb y = 5",
+            "cos": "Les abscisses de $(0,5)$, $P$ i $Q$ són les solucions de $f(x) = 5$:\n\n$$-x^3 + 7x^2 - 6x + 5 = 5 \\iff -x^3 + 7x^2 - 6x = 0 \\iff x(-x^2 + 7x - 6) = 0.$$\n\nUna solució és $x = 0$ (el punt $(0,5)$). Les altres surten de l'equació de segon grau:\n\n$$x = \\frac{-7 \\pm \\sqrt{49 - 24}}{-2} = \\frac{-7 \\pm 5}{-2} \\;\\Rightarrow\\; x = 1,\\ x = 6.$$\n\nSegons la figura, $P$ és el de l'esquerra i $Q$ el de la dreta: **$P = (1, 5)$, $Q = (6, 5)$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punt R",
+            "cos": "$R$ és a l'eix d'abscisses ($y = 0$) i té la mateixa abscissa que $Q$ (el segment $QR$ és vertical): **$R = (6, 0)$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Recta PR",
+            "cos": "Pendent de la recta que passa per $P = (1,5)$ i $R = (6,0)$:\n\n$$m = \\frac{0 - 5}{6 - 1} = -1.$$\n\nEquació punt-pendent amb $R$: $y - 0 = -1\\cdot(x - 6)$, és a dir, **$y = -x + 6$**. (Comprovació amb $P$: $-1 + 6 = 5$ ✓.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantejament de la integral",
+            "cos": "El terreny és la regió entre $x = 1$ i $x = 6$ limitada per sobre per la corba $f(x)$ i per sota per la recta $r(x) = -x + 6$ (a la figura la corba sempre és per sobre de la recta en aquest interval). L'àrea entre dues corbes és la integral de (funció de dalt − funció de baix):\n\n$$A = \\int_1^6 \\big(f(x) - r(x)\\big)\\,dx = \\int_1^6 \\big((-x^3 + 7x^2 - 6x + 5) - (-x + 6)\\big)\\,dx = \\int_1^6 (-x^3 + 7x^2 - 5x - 1)\\,dx.$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Primitiva i regla de Barrow",
+            "cos": "Una primitiva és $G(x) = -\\dfrac{x^4}{4} + \\dfrac{7}{3}x^3 - \\dfrac{5}{2}x^2 - x$. Avaluem:\n\n$$G(6) = -\\frac{1296}{4} + \\frac{7\\cdot 216}{3} - \\frac{5\\cdot 36}{2} - 6 = -324 + 504 - 90 - 6 = 84$$\n\n$$G(1) = -\\frac14 + \\frac73 - \\frac52 - 1 = \\frac{-3 + 28 - 30 - 12}{12} = -\\frac{17}{12}$$\n\n$$A = G(6) - G(1) = 84 + \\frac{17}{12} = \\frac{1025}{12} \\approx 85{,}42\\ \\text{u}^2.$$\n\n**La superfície del terreny és $\\frac{1025}{12} \\approx 85{,}42$ unitats quadrades.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P = (1, 5)$, $Q = (6, 5)$, $R = (6, 0)$; recta $PR$: $y = -x + 6$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A = \\frac{1025}{12} \\approx 85{,}42\\ \\text{u}^2$"
+          }
+        ],
+        "nota": "Mètode alternatiu de l'oficial: integrar només $f(x)$ entre 1 i 6 (àrea sota la corba, $\\frac{1175}{12}$) i restar-hi el triangle $P$–$R$–$(1,0)$ que queda per sota de la recta, d'àrea $\\frac{5\\cdot 5}{2} = \\frac{25}{2}$: $\\frac{1175}{12} - \\frac{150}{12} = \\frac{1025}{12}$. Error típic: oblidar el signe negatiu en restar $r(x)$ ($-(-x+6) = x - 6$)."
+      }
+    },
+    {
+      "id": "mates-2024-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Extracció de boles amb lletres amb i sense reemplaçament (BAYES FANS)",
+      "tema": "probabilitat",
+      "temes_secundaris": [
+        "estadistica"
+      ],
+      "conceptes": [
+        "regla de Laplace",
+        "probabilitat condicionada",
+        "esdeveniment complementari",
+        "sense reemplaçament",
+        "distribució binomial"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8,
+        9
+      ],
+      "enunciat": "L'Andreu posa les nou boles que es mostren a continuació dins d'una bossa: **B, A, Y, E, S, F, A, N, S**.",
+      "figures": [
+        {
+          "src": "img/mates/2024-J/e4.png",
+          "peu": "Les nou boles: B, A, Y, E, S, F, A, N, S"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "A continuació, treu de la bossa dues boles a l'atzar, una darrere l'altra i sense reemplaçament (és a dir, no retorna a la bossa la primera bola abans de treure la segona).\n\n- Calculeu la probabilitat que la primera bola sigui una A o una E. [0,5 punts]\n- Calculeu la probabilitat que les dues boles siguin diferents. [0,75 punts]",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "L'Andreu torna a posar totes les boles a la bossa i en treu cinc a l'atzar, una darrere l'altra, però ara amb reemplaçament (és a dir, ara sí que retorna a la bossa cada bola extreta abans d'agafar la següent).\n\n- Calculeu la probabilitat que no hagi tret cap A. [0,5 punts]\n- Calculeu la probabilitat que hagi tret almenys dues A. [0,75 punts]",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "Hi ha 9 boles: **2 A**, **2 S** i una de cada de B, Y, E, F, N (5 boles amb lletra única).\n\n- a) Dues extraccions sense reemplaçament: $P(\\text{1a és A o E})$ i $P(\\text{dues diferents})$.\n- b) Cinc extraccions amb reemplaçament: $P(\\text{cap A})$ i $P(\\text{almenys dues A})$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Primera bola A o E (regla de Laplace)",
+            "cos": "A la primera extracció totes les boles són igual de probables. Casos favorables: les 2 A i la E, és a dir 3 de 9:\n\n$$P(\\text{A o E}) = \\frac{3}{9} = \\frac{1}{3} \\approx 0{,}333.$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Dues boles diferents: passem al complementari",
+            "cos": "És més fàcil calcular quan les dues boles són **iguals**. Això només pot passar si són les dues A o les dues S (les altres lletres només hi són una vegada). Sense reemplaçament, a la segona extracció queden 8 boles:\n\n$$P(\\text{dues A}) = \\frac{2}{9}\\cdot\\frac{1}{8} = \\frac{1}{36}, \\qquad P(\\text{dues S}) = \\frac{2}{9}\\cdot\\frac{1}{8} = \\frac{1}{36}.$$\n\n$$P(\\text{diferents}) = 1 - P(\\text{iguals}) = 1 - 2\\cdot\\frac{1}{36} = \\frac{17}{18} \\approx 0{,}944.$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Comprovació per un altre camí",
+            "cos": "Si la primera no és ni A ni S (probabilitat $\\frac59$), segur que les dues són diferents. Si la primera és A, la segona ha de ser qualsevol de les 7 que no són l'altra A; igual per a S:\n\n$$P = \\frac59 + \\frac29\\cdot\\frac78 + \\frac29\\cdot\\frac78 = \\frac{40}{72} + \\frac{14}{72} + \\frac{14}{72} = \\frac{68}{72} = \\frac{17}{18}.$$ ✓"
+          },
+          {
+            "apartat": "b",
+            "titol": "Model binomial",
+            "cos": "Amb reemplaçament, cada extracció és independent i la probabilitat de treure una A és sempre $p = \\frac29$. El nombre $X$ d'A en 5 extraccions segueix una **distribució binomial** $X \\sim B\\left(5, \\frac29\\right)$:\n\n$$P(X = k) = \\binom{5}{k} p^k (1-p)^{5-k}.$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Cap A",
+            "cos": "$$P(X = 0) = \\left(\\frac79\\right)^5 = \\frac{16\\,807}{59\\,049} \\approx 0{,}2846.$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Almenys dues A (complementari)",
+            "cos": "\\\"Almenys dues\\\" són els casos $X = 2, 3, 4, 5$. És més curt restar de 1 els casos $X = 0$ i $X = 1$:\n\n$$P(X = 1) = \\binom51\\cdot\\frac29\\cdot\\left(\\frac79\\right)^4 = 5\\cdot\\frac29\\cdot\\frac{2\\,401}{6\\,561} = \\frac{24\\,010}{59\\,049} \\approx 0{,}4066$$\n\n$$P(X \\ge 2) = 1 - P(X=0) - P(X=1) = 1 - \\frac{16\\,807 + 24\\,010}{59\\,049} = \\frac{18\\,232}{59\\,049} \\approx 0{,}3088.$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P(\\text{1a A o E}) = \\frac13$; $P(\\text{dues diferents}) = \\frac{17}{18} \\approx 0{,}944$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P(\\text{cap A}) = \\left(\\frac79\\right)^5 \\approx 0{,}285$; $P(\\text{almenys dues A}) \\approx 0{,}309$"
+          }
+        ],
+        "nota": "La solució oficial dona els resultats truncats ($0{,}284\\ldots$ i $0{,}308\\ldots$); els valors exactes són $0{,}28463$ i $0{,}30876$. L'apartat b-ii també es pot fer sumant $P(X=2)+P(X=3)+P(X=4)+P(X=5)$, però és més llarg. Error típic a l'apartat a: oblidar que sense reemplaçament a la segona extracció només queden 8 boles."
+      }
+    },
+    {
+      "id": "mates-2024-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cost mínim d'un cobert de llenya adossat a una paret",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "optimització",
+        "funció cost",
+        "volum del prisma",
+        "derivada segona",
+        "mínim absolut"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10,
+        11
+      ],
+      "enunciat": "Volem construir un petit cobert de fusta de $6\\ \\text{m}^3$ de volum, en forma de prisma rectangular, adossat a la paret lateral d'una casa, per a guardar-hi llenya. Només cal construir, per tant, el sostre i tres parets (la paret del fons del cobert és la de la casa a la qual està adossat). A més, volem que el cobert mesuri el triple d'amplària que de fondària. Cada metre quadrat de paret té un cost de construcció de 30 € i el sostre costa 50 € per metre quadrat. Un cop construït el cobert, afegir-hi una porta té un cost fix de 35 €.",
+      "figures": [
+        {
+          "src": "img/mates/2024-J/e5.png",
+          "peu": "Cobert adossat a la paret de la casa, amb la porta a la paret frontal"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Comproveu que el cost de construcció del cobert ve donat per la funció $C(x) = \\dfrac{300}{x} + 150x^2 + 35$, on $x$ és la fondària del cobert en metres.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu quines han de ser les dimensions del cobert per tal que el cost de construcció sigui mínim i justifiqueu la resposta. Quin és aquest cost?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Fondària: $x$ (m); amplària: $3x$ (el triple); alçària: $h$ (m).\n- Volum: $V = 3x\\cdot x\\cdot h = 6\\ \\text{m}^3$.\n- Paret: 30 €/m²; sostre: 50 €/m²; porta: 35 € fixos.\n- Busquem: la funció cost $C(x)$ (a) i les dimensions de cost mínim (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Superfícies a construir",
+            "cos": "La paret del fons és la de la casa, així que només construïm:\n\n- la paret frontal, d'amplària $3x$ i alçària $h$: àrea $3xh$;\n- les dues parets laterals, de fondària $x$ i alçària $h$: àrea $xh$ cadascuna;\n- el sostre, d'amplària $3x$ i fondària $x$: àrea $3x^2$.\n\n$$C = 30\\,(3xh + xh + xh) + 50\\cdot 3x^2 + 35 = 150xh + 150x^2 + 35.$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Lligadura del volum i funció d'una variable",
+            "cos": "Per expressar el cost només en funció de $x$, aïllem $h$ de la condició de volum:\n\n$$3x^2 h = 6 \\;\\Rightarrow\\; h = \\frac{2}{x^2}.$$\n\nSubstituint:\n\n$$C(x) = 150x\\cdot\\frac{2}{x^2} + 150x^2 + 35 = \\frac{300}{x} + 150x^2 + 35, \\quad x > 0.$$ ✓"
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivada i punt crític",
+            "cos": "Per trobar el mínim, derivem i igualem a zero:\n\n$$C'(x) = -\\frac{300}{x^2} + 300x = 0 \\iff 300x = \\frac{300}{x^2} \\iff x^3 = 1 \\iff x = 1.$$\n\nÉs l'única solució real (i és positiva, dins del domini)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Justificació del mínim",
+            "cos": "Derivada segona:\n\n$$C''(x) = \\frac{600}{x^3} + 300, \\qquad C''(1) = 900 > 0,$$\n\nper tant és un **mínim**. A més, $C''(x) > 0$ per a tot $x > 0$ (també $C' < 0$ per a $x<1$ i $C'>0$ per a $x>1$), així que és el mínim absolut."
+          },
+          {
+            "apartat": "b",
+            "titol": "Dimensions i cost mínim",
+            "cos": "- Fondària: $x = 1\\ \\text{m}$\n- Amplària: $3x = 3\\ \\text{m}$\n- Alçària: $h = \\dfrac{2}{1^2} = 2\\ \\text{m}$ (comprovació: $3\\cdot1\\cdot2 = 6\\ \\text{m}^3$ ✓)\n\n$$C(1) = \\frac{300}{1} + 150\\cdot 1^2 + 35 = 485.$$\n\n**Dimensions: 1 m de fondària, 3 m d'amplària i 2 m d'alçària; cost mínim: 485 €.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$C(x) = 30(5xh) + 150x^2 + 35$ amb $h = \\frac{2}{x^2}$ → $C(x) = \\frac{300}{x} + 150x^2 + 35$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Fondària $1\\ \\text{m}$, amplària $3\\ \\text{m}$, alçària $2\\ \\text{m}$; cost mínim 485 €"
+          }
+        ],
+        "nota": "Segons els criteris oficials, el mínim també es pot justificar estudiant el signe de $C'(x)$, i és vàlid plantejar amplària $x$ i fondària $x/3$ (els càlculs canvien però el resultat físic és el mateix). Error típic: comptar quatre parets o oblidar que el sostre té un preu diferent."
+      }
+    },
+    {
+      "id": "mates-2024-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Pla mediador d'un segment, distàncies punt-pla i àrea d'un triangle isòsceles",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "pla mediador",
+        "vector normal",
+        "distància punt-pla",
+        "triangle isòsceles",
+        "àrea d'un triangle",
+        "producte vectorial"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12,
+        13
+      ],
+      "enunciat": "Considereu els punts $A = (1, 2, 3)$ i $B = (-3, -2, 3)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació del pla $\\pi$ que és perpendicular a la recta $AB$ i que passa pel punt mitjà entre $A$ i $B$. Justifiqueu que aquest pla està format, precisament, pels punts $P = (x, y, z)$ que estan a igual distància de $A$ que de $B$, és a dir, $d(P, A) = d(P, B)$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu les distàncies de $A$ i de $B$ al pla $\\pi$ i comproveu que són iguals. És casualitat? Raoneu la resposta.",
+          "punts": 0.75
+        },
+        {
+          "id": "c",
+          "enunciat": "Sigui $C = (-7, 6, 3)$. El triangle $ABC$ és isòsceles? Calculeu la seva àrea.",
+          "punts": 0.75
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $A = (1, 2, 3)$, $B = (-3, -2, 3)$, $C = (-7, 6, 3)$.\n- Busquem: el pla $\\pi$ (pla mediador de $AB$), les distàncies $d(A,\\pi)$ i $d(B,\\pi)$, i si $ABC$ és isòsceles i la seva àrea."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vector normal i punt mitjà",
+            "cos": "Si el pla és perpendicular a la recta $AB$, el vector director de la recta és un **vector normal** del pla:\n\n$$\\vec{AB} = B - A = (-4, -4, 0) \\parallel (1, 1, 0).$$\n\nPer tant el pla és de la forma $x + y + 0z + D = 0$. El punt mitjà és\n\n$$M = \\frac{A + B}{2} = \\left(\\frac{1-3}{2}, \\frac{2-2}{2}, \\frac{3+3}{2}\\right) = (-1, 0, 3).$$\n\nImposant que $M \\in \\pi$: $-1 + 0 + D = 0 \\Rightarrow D = 1$. **$\\pi:\\ x + y + 1 = 0$.**"
+          },
+          {
+            "apartat": "a",
+            "titol": "π és el lloc dels punts equidistants de A i B",
+            "cos": "Un punt $P = (x, y, z)$ compleix $d(P,A) = d(P,B)$ si i només si\n\n$$\\sqrt{(x-1)^2 + (y-2)^2 + (z-3)^2} = \\sqrt{(x+3)^2 + (y+2)^2 + (z-3)^2}.$$\n\nElevem al quadrat (les dues bandes són positives) i desenvolupem:\n\n$$x^2 - 2x + 1 + y^2 - 4y + 4 + (z-3)^2 = x^2 + 6x + 9 + y^2 + 4y + 4 + (z-3)^2.$$\n\nEls termes $x^2$, $y^2$ i $(z-3)^2$ se simplifiquen:\n\n$$-2x + 1 - 4y = 6x + 9 + 4y \\iff -8x - 8y - 8 = 0 \\iff x + y + 1 = 0.$$\n\nÉs exactament l'equació de $\\pi$: **el pla $\\pi$ és el pla mediador del segment $AB$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Distàncies de A i B al pla",
+            "cos": "Fórmula de la distància d'un punt $(x_0,y_0,z_0)$ al pla $ax+by+cz+d=0$: $d = \\dfrac{|ax_0+by_0+cz_0+d|}{\\sqrt{a^2+b^2+c^2}}$.\n\n$$d(A, \\pi) = \\frac{|1 + 2 + 1|}{\\sqrt{1^2+1^2+0^2}} = \\frac{4}{\\sqrt2} = 2\\sqrt2, \\qquad d(B, \\pi) = \\frac{|-3 - 2 + 1|}{\\sqrt2} = \\frac{4}{\\sqrt2} = 2\\sqrt2.$$\n\n**Totes dues valen $2\\sqrt2 \\approx 2{,}83$ u.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "No és casualitat",
+            "cos": "No és casualitat: com que $\\pi$ és perpendicular a $AB$, la projecció ortogonal de $A$ i de $B$ sobre $\\pi$ és el mateix punt, el punt mitjà $M = (-1, 0, 3)$. Per tant $d(A,\\pi) = d(A, M) = d(B, M) = d(B,\\pi)$, que són la meitat de $d(A,B)$. (Dit d'una altra manera: $A$ i $B$ són simètrics respecte de $\\pi$.)"
+          },
+          {
+            "apartat": "c",
+            "titol": "El triangle és isòsceles",
+            "cos": "Comprovem si $C$ és al pla $\\pi$: $-7 + 6 + 1 = 0$ ✓. Per l'apartat a, això vol dir que $d(C, A) = d(C, B)$, i el triangle té dos costats iguals: **és isòsceles**.\n\nComprovació directa: $|\\vec{CA}| = |(8, -4, 0)| = \\sqrt{80} = 4\\sqrt5$ i $|\\vec{CB}| = |(4, -8, 0)| = \\sqrt{80} = 4\\sqrt5$, mentre que $|\\vec{AB}| = 4\\sqrt2$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Àrea: base per alçada",
+            "cos": "En un triangle isòsceles, l'altura sobre el costat desigual va del vèrtex $C$ al punt mitjà $M$ de la base $AB$.\n\n- Base: $d(A,B) = |(-4,-4,0)| = \\sqrt{32} = 4\\sqrt2$.\n- Altura: $h = d(C, M) = |(-1,0,3) - (-7,6,3)| = |(6, -6, 0)| = \\sqrt{72} = 6\\sqrt2$.\n\n$$\\text{Àrea} = \\frac{\\text{base}\\cdot h}{2} = \\frac{4\\sqrt2\\cdot 6\\sqrt2}{2} = \\frac{48}{2} = 24\\ \\text{u}^2.$$\n\nComprovació amb el producte vectorial: $\\vec{AB}\\times\\vec{AC} = (-4,-4,0)\\times(-8,4,0) = (0, 0, -48)$, i $\\text{Àrea} = \\frac12\\cdot 48 = 24\\ \\text{u}^2$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\pi:\\ x + y + 1 = 0$ (pla mediador de $AB$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$d(A,\\pi) = d(B,\\pi) = \\frac{4}{\\sqrt2} = 2\\sqrt2$; no és casualitat, $A$ i $B$ són simètrics respecte de $\\pi$"
+          },
+          {
+            "apartat": "c",
+            "valor": "Sí, és isòsceles ($CA = CB = 4\\sqrt5$); àrea $= 24\\ \\text{u}^2$"
+          }
+        ],
+        "nota": "Els criteris oficials també accepten justificar que el triangle és isòsceles calculant directament la longitud dels tres costats."
+      }
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "examen": {
+    "id": "dibuix-2025-J",
+    "assignatura": "dibuix",
+    "materia": "Dibuix tècnic",
+    "any": 2025,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/dibuix/2025-J-examen.pdf",
+    "pdf_solucio": "pdfs/dibuix/2025-J-solucio.pdf",
+    "estructura": "Cal fer TRES dibuixos i, de cadascun, triar una de les dues opcions (A o B): dibuix 1, geometria plana (3 punts); dibuix 2, dièdric (3 punts); dibuix 3, axonometria (4 punts). Es resolen a la mateixa pàgina de l'enunciat. El 80 % de la nota de cada dibuix és per al procés i la solució correcta, i el 20 % per a la qualitat gràfica. Les mesures sense escala indicada s'entenen a escala 1:1."
+  },
+  "problemes": [
+    {
+      "id": "dibuix-2025-J-e1-a",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 3,
+      "titol": "Enllaç d'arcs tangents per completar la silueta d'un violí",
+      "tema": "geometria-plana",
+      "temes_secundaris": [],
+      "conceptes": [
+        "tangències",
+        "enllaç d'arcs",
+        "punt de tangència",
+        "circumferències tangents"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        5
+      ],
+      "enunciat": "Dibuixeu els arcs de circumferència que falten en el dibuix donat per completar la silueta d'un violí. Deixeu constància del procés gràfic seguit i indiqueu els punts de tangència que falten. Per fer-ho:",
+      "figures": [
+        {
+          "src": "img/dibuix/2025-J/1A.png",
+          "peu": "Silueta incompleta del violí amb els centres A, B i C, els arcs donats i els punts de tangència (tg)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "A la part inferior, dibuixeu l'arc de circumferència tangent a l'arc amb centre al punt *A* i a l'arc de centre *C* en els respectius punts de tangència donats.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "A la part superior, dibuixeu el fragment que està format per dos arcs de circumferència tangents entre ells, de manera que un sigui un fragment de l'arc de circumferència de centre *B* i radi 10 mm, i l'altre sigui tangent a l'arc anterior i a l'arc de centre *A* en el punt de tangència indicat.",
+          "punts": 2
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Idea clau: on és el centre d'un arc tangent",
+            "cos": "Dues circumferències tangents tenen el **punt de tangència alineat amb els dos centres**. Per tant, si coneixem el punt de tangència $T$ sobre un arc de centre $A$, el centre de l'arc nou ha d'estar sobre la recta $AT$ (la normal a l'arc en $T$).\n\n- Si els arcs es toquen per dins (tangència interior), la distància entre centres és la **diferència** de radis: $d = R - r$.\n- Si es toquen per fora (tangència exterior), és la **suma**: $d = R + r$.\n\nEl dibuix està a escala 1:1 (la circumferència de centre $B$ té 10 mm de radi)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Centre de l'arc inferior: intersecció de dues normals",
+            "cos": "Aquí tenim **els dos punts de tangència donats**: $T_C$ (sobre l'arc de centre $C$, a l'esquerra) i $T_A$ (sobre l'arc inferior de centre $A$).\n\n1. Traça la recta que uneix $C$ amb $T_C$ i allarga-la cap a dins del violí.\n2. Traça la recta que uneix $A$ amb $T_A$.\n3. El punt on es tallen és el centre $O_1$ de l'arc buscat, perquè és l'únic punt que és alhora sobre totes dues normals.\n\nComprovació: amb el compàs, $O_1T_C$ i $O_1T_A$ han de ser iguals. Surt un radi d'uns **30 mm** ($r_1 \\approx 3{,}0\\ \\text{cm}$). $O_1$ queda entre cada punt de tangència i el centre corresponent, de manera que les dues tangències són interiors: $CO_1 = 4 - 3 \\approx 1\\ \\text{cm}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Traçat de l'arc inferior",
+            "cos": "Amb centre $O_1$ i radi $O_1T_C$, dibuixa l'arc des de $T_C$ fins a $T_A$. La silueta queda contínua i sense punxes, perquè als dos extrems l'arc nou i l'arc donat tenen la mateixa recta tangent. Marca els dos punts de tangència."
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantejament de la part superior",
+            "cos": "Cal un arc de centre desconegut $O_2$ i radi $r_2$ que sigui:\n\n- tangent a l'arc superior de centre $A$ en el punt donat $T_1$ (per tant, $O_2$ és sobre la recta $AT_1$);\n- tangent a la circumferència de centre $B$ i radi $10\\ \\text{mm}$. El violí envolta $B$ per fora, així que la tangència és **exterior**: $O_2B = r_2 + 10\\ \\text{mm}$.\n\nCom que no sabem $r_2$, fem servir un truc per convertir el problema en un de distàncies iguals."
+          },
+          {
+            "apartat": "b",
+            "titol": "Truc: sumar el radi de B sobre la normal",
+            "cos": "Sobre la recta $AT_1$, allarga des de $T_1$ cap a **fora** del violí un segment de **10 mm** (el radi de $B$). Obtens un punt $P$ (a la solució oficial és el segment marcat amb un 1).\n\nAleshores $O_2P = O_2T_1 + T_1P = r_2 + 10$, que és justament la distància $O_2B$. Per tant $O_2$ **equidista de $P$ i de $B$**: és a la **mediatriu del segment $PB$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Centre O₂ i punts de tangència",
+            "cos": "1. Uneix $P$ amb $B$ i traça'n la mediatriu.\n2. La intersecció de la mediatriu amb la recta $AT_1$ és el centre $O_2$. Surt $r_2 = O_2T_1 \\approx 25\\ \\text{mm}$.\n3. Uneix $O_2$ amb $B$: on aquesta recta talla la circumferència de centre $B$ hi ha el punt de tangència $T_B$ entre els dos arcs.\n\nComprovació: $O_2T_B$ ha de ser igual a $O_2T_1$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Traçat dels dos arcs superiors",
+            "cos": "- Amb centre $O_2$, dibuixa l'arc des de $T_1$ fins a $T_B$.\n- Amb centre $B$ i radi 10 mm, dibuixa el petit arc des de $T_B$ fins al punt marcat on comença la corba ja dibuixada (la cintura del violí).\n\nRemarca amb traç gruixut la silueta final i indica els punts de tangència $T_1$ (donat), $T_B$ i els de l'apartat a)."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2025-J/1A-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Arc inferior de centre $O_1$ (intersecció de les normals $CT_C$ i $AT_A$), radi $\\approx 30\\ \\text{mm}$, tangent interiorment a tots dos arcs."
+          },
+          {
+            "apartat": "b",
+            "valor": "Arc de centre $O_2$ (recta $AT_1$ ∩ mediatriu de $PB$), radi $\\approx 25\\ \\text{mm}$, tangent exteriorment a la circumferència de $B$ en $T_B$, sobre la recta $O_2B$; després, arc de $B$ fins a la corba existent."
+          }
+        ],
+        "nota": "Error típic: posar el punt auxiliar $P$ cap a dins (restant el radi de $B$). Això correspondria a una tangència interior amb la circumferència de $B$, i aquí $B$ queda fora de la silueta. Els radis són orientatius: s'han mesurat sobre el dibuix."
+      }
+    },
+    {
+      "id": "dibuix-2025-J-e1-b",
+      "exercici": 1,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 3,
+      "titol": "Reconstrucció d'una parcel·la poligonal a partir d'angles i longituds (arc capaç)",
+      "tema": "geometria-plana",
+      "temes_secundaris": [],
+      "conceptes": [
+        "arc capaç",
+        "construcció de polígons",
+        "transport d'angles",
+        "rectes paral·leles",
+        "perpendicular"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        7
+      ],
+      "enunciat": "Volem reconstruir la forma d'una parcel·la a partir de la següent descripció trigonomètrica (angles i longituds de llindes) que hi ha al Registre de la Propietat:\n\n> El costat *AB* fa 10 cm i se situa sobre el segment discontinu donat al dibuix. El costat *BC* fa 5 cm i el punt *C* es troba per sobre de *B*. Els costats *AB* i *BC* formen un angle recte entre ells. L'angle *BCD* és de 120° i el punt *D* es troba a l'esquerra de *C*. El costat *CD* fa 5 cm. El costat *DE* és paral·lel a *AB*. L'angle *AFB* és de 120°, el punt *F* es troba per sobre de *A* i el costat *AF* fa 4 cm. L'angle *AFE* és de 90°.\n\nUtilitzeu les dades facilitades en el requadre:\n\n| Dada | Valor |\n|---|---|\n| AB | 10 cm |\n| BC | 5 cm |\n| CD | 5 cm |\n| AF | 4 cm |\n| DE | paral·lel a AB |\n| angle AFB | 120° |\n| angle ABC | 90° |\n| angle BCD | 120° |\n| angle AFE | 90° |",
+      "figures": [
+        {
+          "src": "img/dibuix/2025-J/1B.png",
+          "peu": "Punt A i recta discontínua on se situa AB, amb el requadre de dades"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Situeu els punts *B*, *C*, *D* i *E* a partir del punt *A*.",
+          "punts": 2
+        },
+        {
+          "id": "b",
+          "enunciat": "Situeu el punt *F* a partir del segment *AB*.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Ordre de la construcció",
+            "cos": "Els punts $B$, $C$ i $D$ surten directament de longituds i angles. En canvi, $E$ i $F$ depenen l'un de l'altre: $E$ és sobre la paral·lela a $AB$ per $D$, però la seva posició exacta la fixa l'angle recte en $F$. Per tant, l'ordre és: $B \\to C \\to D \\to$ recta de $E$ $\\to F \\to E$. El dibuix és a escala 1:1."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punts B i C",
+            "cos": "- Amb centre $A$ i radi $10\\ \\text{cm}$, talla la recta discontínua: obtens $B$.\n- Per $B$ traça la perpendicular a $AB$ (angle $ABC = 90°$) i, per sobre de $B$, marca $BC = 5\\ \\text{cm}$: obtens $C$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punt D: transport de l'angle de 120°",
+            "cos": "En $C$ cal un angle de $120°$ entre $CB$ (que va cap avall) i $CD$, amb $D$ a l'esquerra. Com que $120° = 90° + 30°$, el costat $CD$ puja cap a l'esquerra formant **30° amb l'horitzontal**. Es pot traçar directament amb el cartabó, o construir els 120° amb el compàs: un angle de 60° es fa amb dos arcs de radi igual, i 120° són dos angles de 60° seguits.\n\nSobre aquesta semirecta, marca $CD = 5\\ \\text{cm}$ i obtens $D$. Respecte de $A$, queda a uns $5{,}67\\ \\text{cm}$ a la dreta i $7{,}5\\ \\text{cm}$ per sobre."
+          },
+          {
+            "apartat": "a",
+            "titol": "Recta que conté E",
+            "cos": "Per $D$ traça la **paral·lela a $AB$** (una horitzontal). El punt $E$ és en aquesta recta, cap a l'esquerra, però encara no en sabem la posició: la fixarem després de trobar $F$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Lloc geomètric de F: l'arc capaç de 120° sobre AB",
+            "cos": "Els punts des dels quals el segment $AB$ es veu sota un angle de $120°$ formen l'**arc capaç** de $120°$. Per construir-lo:\n\n1. Traça la **mediatriu** de $AB$.\n2. Per $A$ traça una recta que formi $120° - 90° = 30°$ amb $AB$, **per sota** de $AB$. És la perpendicular a la tangent a l'arc en $A$.\n3. On aquesta recta talla la mediatriu hi ha el centre $O$ de l'arc. Queda per sota de $AB$, a $\\frac{5}{\\sqrt 3} \\approx 2{,}89\\ \\text{cm}$, i el radi és $OA = \\frac{10}{\\sqrt 3} \\approx 5{,}77\\ \\text{cm}$.\n4. Dibuixa l'arc de centre $O$ que queda **per sobre** de $AB$. Des de qualsevol punt d'aquest arc, $AB$ es veu a $120°$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Punt F",
+            "cos": "Amb centre $A$ i radi $AF = 4\\ \\text{cm}$, talla l'arc capaç: el punt de tall per sobre de $A$ és $F$ (a uns $3{,}08\\ \\text{cm}$ a la dreta i $2{,}56\\ \\text{cm}$ per sobre de $A$).\n\nComprovació: amb el transportador, l'angle $AFB$ ha de fer $120°$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punt E i tancament del polígon",
+            "cos": "L'angle $AFE = 90°$, de manera que $E$ és sobre la **perpendicular a $AF$ per $F$**. Traça-la cap amunt i a l'esquerra: on talla la paral·lela per $D$ hi ha $E$. Queda uns $1{,}03\\ \\text{cm}$ a l'esquerra de $A$, i surt $FE \\approx 6{,}43\\ \\text{cm}$ i $DE \\approx 6{,}70\\ \\text{cm}$.\n\nUneix $A\\,B\\,C\\,D\\,E\\,F$ amb traç gruixut. És un hexàgon no convex, amb un angle entrant en $F$."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2025-J/1B-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$B$ a 10 cm de $A$; $C$ 5 cm per sobre de $B$; $D$ a 5 cm de $C$, en direcció 30° per sobre de l'horitzontal cap a l'esquerra; $E$ sobre l'horitzontal de $D$, al peu de la perpendicular a $AF$ per $F$ ($DE \\approx 6{,}7$ cm)."
+          },
+          {
+            "apartat": "b",
+            "valor": "$F$ = intersecció de l'arc capaç de 120° sobre $AB$ (centre a 2,89 cm per sota del punt mitjà de $AB$, radi 5,77 cm) amb la circumferència de centre $A$ i radi 4 cm."
+          }
+        ],
+        "nota": "Error típic: dibuixar l'arc capaç amb el centre per sobre de $AB$. Per a angles obtusos (més de 90°), el centre queda al costat **contrari** de l'arc útil. Les longituds de $DE$ i $FE$ no són dades: s'han calculat per comprovar el dibuix."
+      }
+    },
+    {
+      "id": "dibuix-2025-J-e2-a",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 3,
+      "titol": "Nou alçat oblic d'un edifici per canvi de pla vertical",
+      "tema": "diedric",
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "canvi de pla",
+        "nou alçat",
+        "cotes",
+        "visibilitat",
+        "plans inclinats"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        9
+      ],
+      "enunciat": "El dibuix donat correspon a la planta i a dos alçats d'un edifici.",
+      "figures": [
+        {
+          "src": "img/dibuix/2025-J/2A.png",
+          "peu": "Planta (a), alçat (a′), alçat lateral (a″) i nova línia de terra amb el punt a‴"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu un nou alçat oblic segons la línia de terra proposada. Concreteu el volum només amb les línies vistes.",
+          "punts": 2
+        },
+        {
+          "id": "b",
+          "enunciat": "En el nou alçat, ompliu amb una trama els plans vistos que no són verticals i que són inclinats respecte del pla horitzontal.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Identificar les vistes",
+            "cos": "Fixa't en les referències del punt $a$:\n\n- La vista de **baix a la dreta** és la **planta** ($a$).\n- La de **dalt a la dreta** és l'**alçat** ($a'$). Està alineada verticalment amb la planta, i les seves distàncies verticals mesurades des de la vora inferior (la de $a'$) són les **cotes** (altures).\n- La de **baix a l'esquerra** és l'**alçat lateral** ($a''$), abatut al costat de la planta: les altures s'hi mesuren en horitzontal cap a l'esquerra des de $a''$, i l'amplada coincideix amb la profunditat de la planta.\n\nL'edifici fa $5{,}6\\ \\text{cm}$ d'alçada total. Les altures que apareixen són $0;\\ 1;\\ 2;\\ 2{,}3;\\ 2{,}6;\\ 3{,}6;\\ 4{,}6;\\ 5{,}1$ i $5{,}6\\ \\text{cm}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Principi del canvi de pla vertical",
+            "cos": "Un nou alçat és la projecció sobre un **nou pla vertical**, la traça del qual és la nova LT. En aquest canvi:\n\n- la **planta no canvia**;\n- les **cotes (altures) es conserven**: cada punt queda a la mateixa altura sobre la nova LT que sobre la LT original.\n\nPer tant, cada punt del nou alçat s'obté així: des de la seva planta, una línia de referència **perpendicular a la nova LT**; i sobre aquesta línia, a partir de la nova LT, la seva cota presa de l'alçat."
+          },
+          {
+            "apartat": "a",
+            "titol": "Referència a‴ i línies de referència",
+            "cos": "Comprova-ho amb el punt donat: $a$ té cota 0, i per això $a'''$ és sobre la nova LT, al peu de la perpendicular traçada des de $a$.\n\nTraça des de cada vèrtex de la planta (cantonades de les façanes, extrems de les arestes de coberta i del cos sortint inferior) una perpendicular a la nova LT que la travessi. Amb l'escaire i el cartabó lliscant, totes són paral·leles."
+          },
+          {
+            "apartat": "a",
+            "titol": "Portar les cotes",
+            "cos": "Per a cada vèrtex, busca'n la cota a l'alçat (o a l'alçat lateral) i porta-la amb el compàs o el regle sobre la seva línia de referència, a partir de la nova LT i cap a fora de la planta. Per exemple:\n\n- els peus de les façanes, a cota 0, cauen sobre la nova LT;\n- el cos sortint té la base a cota 1 i la coberta inclinada entre les cotes 2 i 2,3;\n- els carenats i els vèrtexs alts de la coberta, a 5,1 i 5,6.\n\nLes arestes verticals de l'edifici queden **perpendiculars a la nova LT**, i les horitzontals paral·leles a la seva planta projectada."
+          },
+          {
+            "apartat": "a",
+            "titol": "Unir els punts i visibilitat",
+            "cos": "Uneix els punts seguint les arestes de l'edifici (cada aresta de la planta té els seus dos extrems a les cotes corresponents).\n\nPer la visibilitat: l'observador mira perpendicularment a la nova LT des del costat de la planta. Els elements de la planta **més allunyats de la nova LT** són els més propers a l'observador i tapen els que hi ha darrere. Dibuixa només les línies vistes, amb traç gruixut."
+          },
+          {
+            "apartat": "b",
+            "titol": "Quins plans s'han de tramar",
+            "cos": "En un alçat (qualsevol direcció de visió horitzontal):\n\n- els **plans horitzontals** es veuen de cantell, com a línies paral·leles a la LT, i no tenen superfície que tramar;\n- els **plans verticals** (façanes) es veuen com a superfícies, però l'enunciat els exclou;\n- els **plans inclinats** (els faldons de coberta) es veuen com a superfícies i **s'han de tramar** si són vistos.\n\nPer reconèixer-los, mira les vistes donades: un pla inclinat apareix de cantell com una **recta obliqua** a l'alçat o a l'alçat lateral. És el cas dels faldons a 45° de la coberta superior i de la coberta inclinada del cos sortint."
+          },
+          {
+            "apartat": "b",
+            "titol": "Tramar els faldons vistos",
+            "cos": "Al nou alçat, localitza els polígons que corresponen a aquests faldons inclinats i que són visibles. Omple'ls amb una trama uniforme (ratllat o gris), sense tramar les façanes verticals."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2025-J/2A-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Nou alçat obtingut amb línies de referència perpendiculars a la nova LT des de la planta i cotes preses de l'alçat (alçada total 5,6 cm); les arestes verticals queden perpendiculars a la nova LT i es dibuixen només les línies vistes."
+          },
+          {
+            "apartat": "b",
+            "valor": "Es tramen els faldons inclinats de coberta que són vistos al nou alçat (les cobertes superiors i la del cos sortint); ni les façanes verticals ni els plans horitzontals."
+          }
+        ],
+        "nota": "Compte amb la disposició de les vistes: aquí l'alçat és **damunt** de la planta i l'alçat lateral està abatut al costat de la planta (no al costat de l'alçat). Les línies de referència del nou alçat surten de la **planta**; si es projecta des de l'alçat, s'obté una vista auxiliar diferent."
+      }
+    },
+    {
+      "id": "dibuix-2025-J-e2-b",
+      "exercici": 2,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 3,
+      "titol": "Octaedre regular recolzat sobre una cara (dau de vuit cares)",
+      "tema": "cossos",
+      "temes_secundaris": [
+        "diedric"
+      ],
+      "conceptes": [
+        "octaedre",
+        "poliedres regulars",
+        "canvi de pla",
+        "visibilitat",
+        "escala"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        11
+      ],
+      "enunciat": "Els daus en forma d'octaedre regular són una variant dels daus habituals, en forma de cub, amb vuit cares numerades de l'1 al 8.",
+      "figures": [
+        {
+          "src": "img/dibuix/2025-J/2B.png",
+          "peu": "Projeccions a-a′ i b-b′ dels extrems d'una aresta i casella per a la mida de l'aresta"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Sabent que els vèrtexs *a-a′* i *b-b′* són els extrems d'una de les arestes, dibuixeu l'octaedre regular, diferenciant les arestes vistes de les ocultes, tenint en compte que el tercer vèrtex de la cara, *c-c′*, també es troba a terra a la dreta de *a-a′* i *b-b′*, i que els altres vèrtexs es troben per damunt del pla *abc-a′b′c′*.",
+          "punts": 2.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Escriviu a la casella de la part inferior de la pàgina quina és la mida de l'aresta del dau en centímetres, tenint en compte que el dibuix està fet a escala 2:1.",
+          "punts": 0.5
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Interpretar les dades",
+            "cos": "$a'$ i $b'$ tenen la mateixa altura i són a terra: la recta $a'b'$ fa de LT. Per tant, la cara $abc$ és **horitzontal, recolzada al pla horitzontal**, i $ab$ es veu en vertadera magnitud a la planta. Mesurant-la, $ab = 6{,}0\\ \\text{cm}$ al dibuix.\n\nUn octaedre recolzat sobre una cara té la **cara oposada paral·lela**, igual i girada 180°. En planta es veu un **hexàgon regular**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cara de la base abc",
+            "cos": "Amb centre $a$ i amb centre $b$, i radi $ab$, traça dos arcs. El punt de tall de la dreta és $c$ (triangle equilàter $abc$). La seva elevació $c'$ és sobre la LT, alineada verticalment amb $c$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Planta: hexàgon i cara superior def",
+            "cos": "Troba el centre $O$ del triangle $abc$ (intersecció de dues mitjanes) i traça la circumferència circumscrita, de radi $\\frac{ab}{\\sqrt 3} \\approx 3{,}46\\ \\text{cm}$.\n\nEls vèrtexs superiors són els **simètrics de $a$, $b$ i $c$ respecte de $O$** (els punts diametralment oposats):\n\n- $d$, oposat a $a$;\n- $e$, oposat a $b$;\n- $f$, oposat a $c$.\n\nLa planta és l'hexàgon $a\\,f\\,b\\,d\\,c\\,e$. Cada vèrtex inferior s'uneix amb els dos vèrtexs superiors que **no** li són oposats: $a$ amb $e$ i $f$; $b$ amb $d$ i $f$; $c$ amb $d$ i $e$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Altura de l'octaedre amb un canvi de pla",
+            "cos": "Cal saber a quina altura és la cara $def$. Fes un canvi de pla amb una nova LT **perpendicular a l'aresta $ac$**. En aquesta vista, $ac$ es veu com un punt $a''\\equiv c''$, i $b''$ cau sobre la nova LT, a una distància de $a''c''$ igual a l'altura del triangle $abc$.\n\nL'aresta $df$ és **oposada i paral·lela** a $ac$, i per tant també es veu com un sol punt $d''\\equiv f''$. En un octaedre regular, la distància entre dues arestes oposades és igual a l'aresta $L$.\n\n1. Amb centre $a''c''$ i radi $L = ab$, traça un arc (és el que es veu a la solució oficial).\n2. Per $d$ (o per $f$), traça la perpendicular a la nova LT.\n3. El tall de tots dos és $d''f''$, i la seva distància a la nova LT és l'altura $h$.\n\nComprovació: el vèrtex $e$ (adjacent a $a$ i a $c$) cau a la distància $\\frac{\\sqrt3}{2}L$ de $a''c''$ (la cara $ace$ es veu de cantell) i a la mateixa altura $h$. El perfil de l'octaedre en aquesta vista és el rombe $a''c''\\,b''\\,d''f''\\,e''$.\n\n$$h = ab\\sqrt{\\tfrac{2}{3}} = 6 \\cdot 0{,}816 \\approx 4{,}9\\ \\text{cm (al dibuix)}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Alçat",
+            "cos": "$a'$, $b'$ i $c'$ són sobre la LT. $d'$, $e'$ i $f'$ són sobre una paral·lela a la LT a l'altura $h \\approx 4{,}9\\ \\text{cm}$, cadascun alineat verticalment amb la seva planta. Uneix les mateixes arestes que a la planta."
+          },
+          {
+            "apartat": "a",
+            "titol": "Visibilitat",
+            "cos": "- **Planta** (es mira des de dalt): la cara superior $def$ i el contorn hexagonal són vistos. Les arestes de la base, $ab$, $bc$ i $ca$, queden amagades pel cos i es dibuixen **discontínues**.\n- **Alçat** (es mira des del davant, és a dir, des del costat de la planta més allunyat de la LT): el vèrtex més proper a l'observador és $b$, de manera que $b'f'$ i $b'd'$ són vistes. El més allunyat és $e$, i per això $a'e'$ i $c'e'$ són **ocultes**. El contorn ($a'f'$, $f'd'$, $d'c'$ i la base) és vist."
+          },
+          {
+            "apartat": "b",
+            "titol": "Mida real de l'aresta",
+            "cos": "A escala 2:1, el dibuix és el doble de gran que la realitat:\n\n$$L_\\text{real} = \\frac{L_\\text{dibuix}}{2} = \\frac{6\\ \\text{cm}}{2} = 3\\ \\text{cm}$$\n\nA la casella s'escriu **3 cm**."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2025-J/2B-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Planta: hexàgon regular $afbdce$ amb la cara superior $def$ vista i la base $abc$ oculta; alçat: $a'b'c'$ a terra i $d'e'f'$ a $h \\approx 4{,}9$ cm (dibuix), amb $a'e'$ i $c'e'$ ocultes."
+          },
+          {
+            "apartat": "b",
+            "valor": "Aresta del dau: **3 cm** (6 cm al dibuix a escala 2:1)."
+          }
+        ],
+        "nota": "L'altura $h$ també es pot calcular ($h = L\\sqrt{2/3}$), però a l'examen cal obtenir-la gràficament (canvi de pla o abatiment) i deixar-ne constància."
+      }
+    },
+    {
+      "id": "dibuix-2025-J-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Axonometria dimètrica DIN 5 d'un sòlid amb un calaix obert al pis superior",
+      "tema": "axonometria",
+      "temes_secundaris": [
+        "normalitzacio"
+      ],
+      "conceptes": [
+        "axonometria dimètrica",
+        "coeficients de reducció",
+        "escala",
+        "interpretació de vistes",
+        "visibilitat"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        13
+      ],
+      "enunciat": "Interpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt *p-p′-p″* en la posició *P* del paper, dibuixeu-ne l'axonometria amb la terna proposada (ortogonal dimètrica normalitzada DIN 5) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [1,5 punts per la base i 2,5 punts pel volum del pis superior]",
+      "figures": [
+        {
+          "src": "img/dibuix/2025-J/3A.png",
+          "peu": "Terna dimètrica DIN 5 (X i Z coeficient 1, Y coeficient 1/2), punt P i vistes del sòlid"
+        }
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Interpretar les vistes i els eixos",
+            "cos": "- **Alçat** ($p'$): la vista de dalt.\n- **Planta** ($p$): la de sota.\n- **Perfil** ($p''$): a l'esquerra de la planta, abatut. Les altures s'hi mesuren cap a l'esquerra des de $p''$.\n\nEls eixos marcats al costat de la planta indiquen que **Y** és la direcció horitzontal de la planta (llargada, cap a la dreta), **X** la vertical de la planta (profunditat, cap al davant) i **Z** l'altura. El punt $p$ és el vèrtex inferior posterior de la base: és l'origen de coordenades."
+          },
+          {
+            "apartat": null,
+            "titol": "Forma del sòlid",
+            "cos": "Mesurant les vistes (en cm):\n\n- **Base**: prisma de $2{,}5$ (Y, a l'esquerra de $p$) × $2$ (X) × $1{,}5$ (Z).\n- **Pis superior**: prisma de $5$ (Y, de $-2{,}5$ a $+2{,}5$) × $2{,}5$ (X) × $1{,}5$ (Z, de $1{,}5$ a $3$). Volada respecte de la base: cap a la dreta i cap al davant.\n- **Calaix**: el pis superior té un buidat obert per dalt i per l'extrem dret, des de $Y = 1$ fins al final. La paret del davant fa $0{,}2$ de gruix. La del darrere té la cara interior obliqua: fa $0{,}7$ de gruix a $Y = 1$ i $0{,}2$ a l'extrem. El fons és un pla inclinat, a $0{,}4$ per sobre de la base del pis a $Y = 1$ i a $0{,}2$ a l'extrem obert. Les línies discontínues de l'alçat i les línies interiors del perfil en donen fe."
+          },
+          {
+            "apartat": null,
+            "titol": "Coeficients i escala doble",
+            "cos": "En la dimètrica DIN 5, els eixos X i Z tenen coeficient de reducció $1$ i l'eix Y, $\\tfrac12$. A escala doble, cada mesura es multiplica per 2 i pel coeficient:\n\n$$X_\\text{dib} = 2 \\cdot 1 \\cdot X, \\qquad Y_\\text{dib} = 2 \\cdot \\tfrac12 \\cdot Y = Y, \\qquad Z_\\text{dib} = 2 \\cdot 1 \\cdot Z$$\n\nÉs a dir, les mesures en Y es copien directament de la planta, i les de X i Z es dupliquen. Per exemple, el pis superior fa $5 \\times 5 \\times 3\\ \\text{cm}$ al dibuix."
+          },
+          {
+            "apartat": null,
+            "titol": "Base",
+            "cos": "Des de $P$, traça paral·leles als tres eixos. Construeix la base com una caixa:\n\n- $4\\ \\text{cm}$ en la direcció X (cap al davant);\n- $2{,}5\\ \\text{cm}$ en la direcció $-Y$;\n- $3\\ \\text{cm}$ en la direcció Z.\n\nÉs un bon moment per comprovar que les arestes paral·leles de l'espai queden paral·leles al dibuix."
+          },
+          {
+            "apartat": null,
+            "titol": "Caixa del pis superior",
+            "cos": "A partir de l'aresta superior de la base ($Z = 3\\ \\text{cm}$ al dibuix), dibuixa el prisma envolvent del pis superior: $5\\ \\text{cm}$ en Y (de $-2{,}5$ a $+2{,}5$ des de la vertical de $P$), $5\\ \\text{cm}$ en X i $3\\ \\text{cm}$ en Z. La part que sobresurt per la dreta tapa una porció de la cara lateral de la base: per això, a la solució, l'aresta vertical que puja des de $P$ es veu molt curta."
+          },
+          {
+            "apartat": null,
+            "titol": "Buidat del calaix",
+            "cos": "Situa cada vèrtex del buidat **per coordenades** (Y, X, Z) des de $P$, amb els factors anteriors:\n\n- **Vora superior**: a $Y = 1$, la paret interior del darrere és a $X = 0{,}7$ ($1{,}4\\ \\text{cm}$ al dibuix); a l'extrem, a $X = 0{,}2$. La paret del davant és a $X = 2{,}3$.\n- **Fons inclinat**: a l'extrem obert, a $Z = 1{,}7$ ($3{,}4\\ \\text{cm}$); a $Y = 1$, a $Z = 1{,}9$ ($3{,}8\\ \\text{cm}$).\n\nUneix els punts. Les arestes del fons no són paral·leles als eixos: per això cal situar-ne els extrems un a un."
+          },
+          {
+            "apartat": null,
+            "titol": "Visibilitat i acabat",
+            "cos": "La terna DIN 5 mira el sòlid des de dalt, des del davant (+X) i des de la dreta (+Y). Són vistes:\n\n- la cara superior i les cares del davant i de la dreta del pis superior;\n- a través del buidat, el fons inclinat i les cares interiors de les parets;\n- la part visible de les cares de la base.\n\nEsborra o deixa fines les auxiliars i remarca **només les línies vistes**."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2025-J/3A-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "Axonometria DIN 5 a escala doble: base de $2{,}5 \\times 4 \\times 3$ cm i pis superior de $5 \\times 5 \\times 3$ cm al dibuix (Y × X × Z), amb el calaix obert per dalt i per l'extrem dret i el fons inclinat; només línies vistes."
+          }
+        ],
+        "nota": "La terna inclou un petit esquema auxiliar (1a, 1a, 1,5a) que ajuda a traçar les direccions dels eixos. L'error més freqüent és oblidar el coeficient $\\tfrac12$ de l'eix Y o aplicar-lo a l'eix equivocat. Les mides del calaix s'han llegit del dibuix i són aproximades."
+      }
+    },
+    {
+      "id": "dibuix-2025-J-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 4,
+      "titol": "Perspectiva militar d'una peça amb suport i braç en forma d'anella",
+      "tema": "axonometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "perspectiva militar",
+        "axonometria obliqua",
+        "circumferències en perspectiva",
+        "interpretació de vistes",
+        "escala"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        15
+      ],
+      "enunciat": "Interpreteu el sòlid representat en planta, alçat i perfil, i, situant el punt *p-p′-p″* en la posició *P* del paper, dibuixeu-ne l'axonometria amb la terna proposada (obliqua militar sense reducció) a escala doble (mesurant en les direccions dels eixos axonomètrics). Concreteu el sòlid únicament amb les línies vistes. [1,5 punts pel volum de suport i 2,5 punts per la part corba dels braços de la figura]",
+      "figures": [
+        {
+          "src": "img/dibuix/2025-J/3B.png",
+          "peu": "Alçat, planta i perfil de la peça, punt P i terna militar (X i Y a 45° de l'horitzontal i a 90° entre ells, coeficients 1)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Interpretar les vistes",
+            "cos": "- **Planta** ($p$): a baix a l'esquerra. Els eixos X (horitzontal) i Y (vertical, cap avall) surten de la seva cantonada.\n- **Alçat** ($p'$): a sobre de la planta.\n- **Perfil** ($p''$): a la dreta, abatut.\n\nLa peça té dues parts:\n\n- **Suport**: prisma recte de 2 cm d'alçada, amb la planta en forma de trapezi (2 cm d'amplada al costat de $p$, i s'estreny cap a l'anella).\n- **Braç corbat**: anella que recorre $225°$ al voltant d'un centre $O$. Comença a l'esquerra, sobre el diàmetre horitzontal, i acaba a la dreta, 45° per sota de l'horitzontal. La secció és un **quadrat girat 45°** (un rombe) amb les diagonals d'1 cm, horitzontal i vertical. Les arestes estan a radis de $1{,}5$ (interior), $2$ (arestes superior i inferior) i $2{,}5\\ \\text{cm}$ (exterior), i a altures de $1{,}5$ (aresta inferior), $2$ (arestes interior i exterior) i $2{,}5\\ \\text{cm}$ (aresta superior)."
+          },
+          {
+            "apartat": null,
+            "titol": "Propietat clau de la perspectiva militar",
+            "cos": "En la perspectiva militar, el pla horitzontal (eixos X i Y, a 90° entre ells) es dibuixa **en vertadera forma**: només està girat, i les altures (Z) es dibuixen verticals i sense reducció. Conseqüències:\n\n- **qualsevol figura horitzontal es dibuixa igual que a la planta**, girada. Les circumferències horitzontals continuen sent **circumferències**, no el·lipses;\n- per dibuixar una figura situada a altura $z$, n'hi ha prou de desplaçar-la verticalment $z$ (multiplicat per l'escala).\n\nA escala doble, totes les mesures es multipliquen per 2."
+          },
+          {
+            "apartat": null,
+            "titol": "Planta girada a terra",
+            "cos": "Situa $P$ i dibuixa-hi la planta a escala doble, orientant X i Y segons la terna (totes dues a 45° de l'horitzontal). En particular, situa el centre $O$ de l'anella per coordenades des de $P$."
+          },
+          {
+            "apartat": null,
+            "titol": "Volum de suport",
+            "cos": "Dibuixa el trapezi del suport sobre aquesta planta girada. Des de cada vèrtex, aixeca verticals de $2 \\cdot 2 = 4\\ \\text{cm}$ i uneix-ne els extrems superiors: obtens la cara superior, igual a la de baix i desplaçada 4 cm amunt. Les cares laterals inclinades del trapezi són plans verticals i es veuen com a paral·lelograms."
+          },
+          {
+            "apartat": null,
+            "titol": "Arcs de l'anella: centres desplaçats",
+            "cos": "Cada aresta circular de l'anella és una circumferència horitzontal. Per tant, només cal **pujar el centre $O$** a l'altura corresponent i traçar l'arc amb el radi doble:\n\n| Aresta | Altura real | Desplaçament de $O$ | Radi al dibuix |\n|---|---|---|---|\n| Interior | 2 cm | 4 cm | 3 cm |\n| Exterior | 2 cm | 4 cm | 5 cm |\n| Superior | 2,5 cm | 5 cm | 4 cm |\n| Inferior | 1,5 cm | 3 cm | 4 cm |\n\nA la solució oficial es veuen els tres centres marcats sobre una mateixa vertical.\n\nEls extrems dels arcs es troben girant els radis de la planta: un extrem és sobre el diàmetre corresponent a la direcció horitzontal de la planta i l'altre a 45° per sota, mesurats com a la planta, perquè els angles horitzontals es conserven."
+          },
+          {
+            "apartat": null,
+            "titol": "Seccions extremes i unió amb el suport",
+            "cos": "Als dos extrems del braç, la secció és un quadrat girat 45°, en un pla vertical radial. Dibuixa-la unint els quatre vèrtexs: les arestes interior i exterior a l'altura de $4\\ \\text{cm}$ i les arestes superior i inferior a $5$ i $3\\ \\text{cm}$, sobre el radi de l'extrem.\n\nA la part on l'anella es troba amb el suport, les cares del suport queden interrompudes per l'anella."
+          },
+          {
+            "apartat": null,
+            "titol": "Visibilitat i acabat",
+            "cos": "La terna militar mira des de dalt. Del braç es veuen:\n\n- les dues cares superiors de la secció (entre l'aresta superior i les arestes interior i exterior);\n- la cara exterior inferior allà on queda cap al costat de l'observador.\n\nTria per a cada arc només els trams vistos (el contorn i les arestes que no queden tapades per l'anella mateixa o pel suport) i remarca'ls. La resta de traçats (centres desplaçats, planta girada) es deixen fins."
+          },
+          {
+            "apartat": null,
+            "titol": "Resultat final",
+            "cos": "![Solució oficial](img/dibuix/2025-J/3B-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "Perspectiva militar a escala doble: suport prismàtic de 4 cm d'alçada sobre la planta en vertadera forma i braç en anella format per arcs de circumferència de radis 3, 4 i 5 cm, amb els centres desplaçats verticalment 4 i 5 cm; només línies vistes."
+          }
+        ],
+        "nota": "Error típic: dibuixar els arcs com a el·lipses. En la perspectiva militar, les circumferències horitzontals es veuen en vertadera forma. En canvi, una circumferència en un pla vertical sí que es deformaria. Les mides s'han llegit del dibuix donat."
+      }
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "examen": {
+    "id": "tecno-2014-S",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2014,
+    "convocatoria": "setembre",
+    "serie": "5",
+    "pdf_examen": "pdfs/tecno/2014-S-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2014-S-solucio.pdf",
+    "estructura": "Dues parts de dos exercicis cadascuna (2,5 punts per exercici). La primera part (exercicis 1 i 2) és comuna i obligatòria: l'exercici 1 té 5 qüestions de test (0,5 punts cadascuna; cada resposta errònia descompta 0,16 punts i les no contestades no descompten). A la segona part cal escollir UNA de les dues opcions (A o B) i fer-ne els exercicis 3 i 4."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2014-S-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Nombre mínim d'unitats venudes per obtenir beneficis",
+      "tema": "economia",
+      "temes_secundaris": [],
+      "conceptes": ["cost fix", "cost variable", "llindar de rendibilitat", "benefici"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "El cost de producció de $n$ unitats d'un producte és $c = (50\\,000 + 20n)$ €. Si el producte es ven a 90 € la unitat, a partir de quin nombre d'unitats venudes la producció dóna beneficis?",
+      "figures": [],
+      "opcions": {"a": "715", "b": "555", "c": "714", "d": "556"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Cost fix: $50\\,000$ € (no depèn de quantes unitats es fabriquen)\n- Cost variable: $20$ € per unitat\n- Preu de venda: $90$ € per unitat\n- Incògnita: el nombre mínim d'unitats $n$ perquè hi hagi benefici"},
+          {"apartat": null, "titol": "Condició de benefici", "cos": "Hi ha benefici quan els ingressos superen els costos:\n\n$$90\\,n > 50\\,000 + 20\\,n \\quad\\Rightarrow\\quad 70\\,n > 50\\,000 \\quad\\Rightarrow\\quad n > \\frac{50\\,000}{70} = 714{,}29$$\n\nCada unitat venuda deixa un marge de $90 - 20 = 70$ € per anar pagant el cost fix."},
+          {"apartat": null, "titol": "Arrodonir a un nombre enter d'unitats", "cos": "No es poden vendre fraccions d'unitat, i $n$ ha de ser **més gran** que 714,29. El primer enter que ho compleix és $n = 715$.\n\nComprovació: amb 714 unitats, benefici $= 70 \\cdot 714 - 50\\,000 = -20$ € (pèrdues); amb 715, benefici $= 70 \\cdot 715 - 50\\,000 = 50$ €.\n\nResultat: **$n = 715$ unitats** → resposta **a**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **c)** 714 és el resultat arrodonit cap avall: encara dona pèrdues.\n- **b)** i **d)** surten de fer $50\\,000/90 = 555{,}6$, és a dir, d'oblidar el cost variable de 20 € per unitat."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$n > 714{,}29$ → $n = 715$ unitats → resposta **a**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-S-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat d'un motor asíncron de dos parells de pols amb lliscament",
+      "tema": "maquines-electriques",
+      "temes_secundaris": [],
+      "conceptes": ["motor asíncron", "velocitat de sincronisme", "parells de pols", "lliscament"],
+      "dificultat": 1,
+      "pagines": [1],
+      "enunciat": "Un motor de corrent altern asíncron de dos parells de pols, que està connectat a una xarxa amb una tensió $U = 230\\ \\text{V}$ i una freqüència $f = 50\\ \\text{Hz}$, té un lliscament relatiu de $0{,}10$. Quina és la velocitat nominal del motor?",
+      "figures": [],
+      "opcions": {"a": "$2\\,700\\ \\text{min}^{-1}$", "b": "$675\\ \\text{min}^{-1}$", "c": "$1\\,350\\ \\text{min}^{-1}$", "d": "$750\\ \\text{min}^{-1}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Parells de pols: $p = 2$\n- Freqüència de la xarxa: $f = 50\\ \\text{Hz}$\n- Lliscament relatiu: $s = 0{,}10$\n- La tensió $U = 230\\ \\text{V}$ no intervé en la velocitat.\n- Incògnita: velocitat del rotor, $n$"},
+          {"apartat": null, "titol": "Velocitat de sincronisme", "cos": "El camp magnètic giratori de l'estator gira a la velocitat de sincronisme, que depèn de la freqüència i del nombre de parells de pols:\n\n$$n_\\text{s} = \\frac{60\\, f}{p} = \\frac{60 \\cdot 50}{2} = 1\\,500\\ \\text{min}^{-1}$$"},
+          {"apartat": null, "titol": "Velocitat del rotor amb el lliscament", "cos": "En un motor **asíncron** el rotor sempre gira una mica més lent que el camp. El lliscament relatiu és $s = \\dfrac{n_\\text{s} - n}{n_\\text{s}}$, d'on:\n\n$$n = n_\\text{s}\\,(1 - s) = 1\\,500 \\cdot (1 - 0{,}10) = 1\\,350\\ \\text{min}^{-1}$$\n\nResultat: **$n = 1\\,350\\ \\text{min}^{-1}$** → resposta **c**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **a)** $2\\,700\\ \\text{min}^{-1}$: prendre un sol parell de pols ($n_\\text{s} = 3\\,000\\ \\text{min}^{-1}$).\n- **b)** $675\\ \\text{min}^{-1}$: confondre parells de pols amb pols i fer $p = 4$ ($n_\\text{s} = 750\\ \\text{min}^{-1}$).\n- **d)** $750\\ \\text{min}^{-1}$: el mateix error i, a més, oblidar el lliscament."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$n_\\text{s} = 1\\,500\\ \\text{min}^{-1}$; $n = 1\\,350\\ \\text{min}^{-1}$ → resposta **c**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-S-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Impedància equivalent de tres altaveus en paral·lel",
+      "tema": "circuits",
+      "temes_secundaris": [],
+      "conceptes": ["associació en paral·lel", "resistència equivalent", "impedància"],
+      "dificultat": 1,
+      "pagines": [2],
+      "enunciat": "En una instal·lació d'àudio, es connecten en paral·lel tres altaveus de $16\\ \\Omega$, $16\\ \\Omega$ i $8\\ \\Omega$ a un amplificador. Quina és la impedància del conjunt d'altaveus en aquesta configuració?",
+      "figures": [],
+      "opcions": {"a": "$16\\ \\Omega$", "b": "$4\\ \\Omega$", "c": "$40\\ \\Omega$", "d": "$34{,}67\\ \\Omega$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {"apartat": null, "titol": "Associació en paral·lel", "cos": "En paral·lel, totes les càrregues tenen la mateixa tensió i els corrents se sumen. Per això se sumen les **inverses** de les impedàncies:\n\n$$\\frac{1}{Z_\\text{eq}} = \\frac{1}{Z_1} + \\frac{1}{Z_2} + \\frac{1}{Z_3} = \\frac{1}{16} + \\frac{1}{16} + \\frac{1}{8} = \\frac{1 + 1 + 2}{16} = \\frac{4}{16}$$"},
+          {"apartat": null, "titol": "Impedància equivalent", "cos": "$$Z_\\text{eq} = \\frac{16}{4} = 4\\ \\Omega$$\n\nTruc ràpid: els dos de $16\\ \\Omega$ en paral·lel fan $8\\ \\Omega$, i $8\\ \\Omega$ en paral·lel amb $8\\ \\Omega$ fan $4\\ \\Omega$.\n\nResultat: **$Z_\\text{eq} = 4\\ \\Omega$** → resposta **b**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **c)** $40\\ \\Omega = 16 + 16 + 8$ seria la connexió en **sèrie**.\n- En paral·lel la impedància equivalent sempre és **més petita** que la més petita de les branques ($8\\ \\Omega$), així que **a)** i **d)** són impossibles."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$Z_\\text{eq} = 4\\ \\Omega$ → resposta **b**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-S-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Emissions de CO2 d'un cotxe de gasolina i un de dièsel en 40 km",
+      "tema": "energia",
+      "temes_secundaris": [],
+      "conceptes": ["emissions de co2", "consum de combustible", "impacte ambiental"],
+      "dificultat": 1,
+      "pagines": [2],
+      "enunciat": "Un model de cotxe està disponible en dues versions, l'una amb motor de gasolina i l'altra amb motor dièsel. El motor de gasolina emet $2{,}32\\ \\text{kg}$ de $\\text{CO}_2$ i recorre $13\\ \\text{km}$ per cada litre de gasolina consumit. El motor dièsel emet $2{,}6\\ \\text{kg}$ de $\\text{CO}_2$ i recorre $16\\ \\text{km}$ per cada litre de gasoil consumit. En un recorregut de $40\\ \\text{km}$, quants kilograms de $\\text{CO}_2$ emet cada versió?",
+      "figures": [],
+      "opcions": {
+        "a": "$8{,}923\\ \\text{kg}$ de $\\text{CO}_2$ el de gasolina i $8{,}125\\ \\text{kg}$ de $\\text{CO}_2$ el dièsel.",
+        "b": "$6{,}032\\ \\text{kg}$ de $\\text{CO}_2$ el de gasolina i $8{,}32\\ \\text{kg}$ de $\\text{CO}_2$ el dièsel.",
+        "c": "$116\\ \\text{kg}$ de $\\text{CO}_2$ el de gasolina i $130\\ \\text{kg}$ de $\\text{CO}_2$ el dièsel.",
+        "d": "$7{,}138\\ \\text{kg}$ de $\\text{CO}_2$ el de gasolina i $6{,}5\\ \\text{kg}$ de $\\text{CO}_2$ el dièsel."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Gasolina: $2{,}32\\ \\text{kg CO}_2$ per litre; $13\\ \\text{km}$ per litre\n- Dièsel: $2{,}6\\ \\text{kg CO}_2$ per litre; $16\\ \\text{km}$ per litre\n- Recorregut: $d = 40\\ \\text{km}$\n- Incògnita: massa de $\\text{CO}_2$ emesa per cada versió"},
+          {"apartat": null, "titol": "Litres consumits en 40 km", "cos": "Primer calculem quants litres gasta cada cotxe dividint la distància pel rendiment (km per litre):\n\n$$V_\\text{gasolina} = \\frac{40}{13} = 3{,}077\\ \\text{L} \\qquad V_\\text{dièsel} = \\frac{40}{16} = 2{,}5\\ \\text{L}$$"},
+          {"apartat": null, "titol": "Massa de CO2 emesa", "cos": "Multipliquem els litres per les emissions de cada litre:\n\n$$m_\\text{gasolina} = 3{,}077 \\cdot 2{,}32 = 7{,}138\\ \\text{kg CO}_2$$\n\n$$m_\\text{dièsel} = 2{,}5 \\cdot 2{,}6 = 6{,}5\\ \\text{kg CO}_2$$\n\nResultat: **$7{,}138\\ \\text{kg}$ (gasolina) i $6{,}5\\ \\text{kg}$ (dièsel)** → resposta **d**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "Les opcions **a**, **b** i **c** no surten de combinar correctament distància, km/L i kg/L (per exemple, la **c** dona valors de l'ordre de 100 kg, absurdament grans per a 40 km). Fixeu-vos que el dièsel emet més $\\text{CO}_2$ per litre però, com que gasta menys litres, en total emet menys."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$m_\\text{gasolina} = 7{,}138\\ \\text{kg}$; $m_\\text{dièsel} = 6{,}5\\ \\text{kg}$ → resposta **d**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-S-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Massa de plata en un aliatge per a soldadura",
+      "tema": "materials",
+      "temes_secundaris": [],
+      "conceptes": ["aliatge", "composició en percentatge", "metalls no fèrrics"],
+      "dificultat": 1,
+      "pagines": [2],
+      "enunciat": "Un aliatge de plata per a soldadures d'alta resistència conté un $0{,}5\\ \\%$ de cadmi (Cd), un $28\\ \\%$ de coure (Cu) i un $11{,}5\\ \\%$ de zinc (Zn), a més de plata (Ag). Quina quantitat de plata pura cal per a obtenir $300\\ \\text{kg}$ d'aliatge?",
+      "figures": [],
+      "opcions": {"a": "$108\\ \\text{kg}$", "b": "$120\\ \\text{kg}$", "c": "$102\\ \\text{kg}$", "d": "$180\\ \\text{kg}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {"apartat": null, "titol": "Percentatge de plata", "cos": "Els percentatges de tots els components han de sumar el $100\\ \\%$. La plata és la resta:\n\n$$\\%\\text{Ag} = 100 - (0{,}5 + 28 + 11{,}5) = 100 - 40 = 60\\ \\%$$"},
+          {"apartat": null, "titol": "Massa de plata", "cos": "$$m_\\text{Ag} = 0{,}60 \\cdot 300\\ \\text{kg} = 180\\ \\text{kg}$$\n\nResultat: **$m_\\text{Ag} = 180\\ \\text{kg}$** → resposta **d**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **b)** $120\\ \\text{kg}$ és el $40\\ \\%$: la massa de la resta de metalls (Cd + Cu + Zn), no la de la plata.\n- **a)** i **c)** corresponen a un 36 % i a un 34 % de l'aliatge, percentatges que no surten de la composició donada."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$\\%\\text{Ag} = 60\\ \\%$; $m_\\text{Ag} = 180\\ \\text{kg}$ → resposta **d**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2014-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Circuit lògic per detectar anys de traspàs (divisibles per 4, 100 i 400)",
+      "tema": "digital",
+      "temes_secundaris": [],
+      "conceptes": ["taula de veritat", "casos impossibles", "funció lògica", "mapa de Karnaugh", "portes lògiques"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Un any és de traspàs si és divisible per 4, excepte els que són divisibles per 100. Entre els divisibles per 100, només són de traspàs els que també són divisibles per 400. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- divisible per 4: $d_4$ = 1: sí; 0: no\n- divisible per 100: $d_{100}$ = 1: sí; 0: no\n- divisible per 400: $d_{400}$ = 1: sí; 0: no\n- any de traspàs: $at$ = 1: sí; 0: no",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Escriviu la taula de veritat del sistema i indiqueu els casos que no són possibles.", "punts": 1},
+        {"id": "b", "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.", "punts": 1},
+        {"id": "c", "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Quines combinacions són impossibles", "cos": "Les tres condicions no són independents:\n\n- Si un nombre és divisible per 400, també ho és per 100 (perquè $400 = 4 \\cdot 100$) i per 4.\n- Si és divisible per 100, també ho és per 4 (perquè $100 = 25 \\cdot 4$).\n\nPer tant són **impossibles** totes les combinacions amb $d_{400} = 1$ i $d_{100} = 0$, o amb $d_{100} = 1$ i $d_4 = 0$. Les marquem amb X (indiferents)."},
+          {"apartat": "a", "titol": "Taula de veritat", "cos": "Només queden 4 casos possibles: no divisible per 4 (no és de traspàs), divisible per 4 però no per 100 (sí), divisible per 100 però no per 400 (no), divisible per 400 (sí).\n\n| $d_4$ | $d_{100}$ | $d_{400}$ | $at$ | |\n|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | p. ex. 2013 |\n| 0 | 0 | 1 | X | no és possible |\n| 0 | 1 | 0 | X | no és possible |\n| 0 | 1 | 1 | X | no és possible |\n| 1 | 0 | 0 | **1** | p. ex. 2012 |\n| 1 | 0 | 1 | X | no és possible |\n| 1 | 1 | 0 | 0 | p. ex. 1900 |\n| 1 | 1 | 1 | **1** | p. ex. 2000 |"},
+          {"apartat": "b", "titol": "Funció canònica (prenent X = 0)", "cos": "Si donem valor 0 als casos impossibles (com fa la solució oficial), la funció té dos uns:\n\n$$at = d_4\\,\\bar{d}_{100}\\,\\bar{d}_{400} + d_4\\,d_{100}\\,d_{400}$$\n\nTraient factor comú $d_4$:\n\n$$\\boxed{at = d_4\\left(\\bar{d}_{100}\\,\\bar{d}_{400} + d_{100}\\,d_{400}\\right)}$$\n\nEl parèntesi val 1 quan $d_{100}$ i $d_{400}$ són iguals (és una funció XNOR)."},
+          {"apartat": "b", "titol": "Simplificació aprofitant els casos indiferents", "cos": "Com que els casos X no es poden donar mai, podem triar-ne el valor (0 o 1) per fer grups més grans al mapa de Karnaugh. Mapa amb files $d_4$ i columnes $d_{100}\\,d_{400}$ (ordre de Gray):\n\n| $d_4 \\backslash d_{100}d_{400}$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **0** | 0 | X | X | X |\n| **1** | 1 | X | 1 | 0 |\n\n- **Grup de 4** (columnes 01 i 11, les dues files): totes tenen $d_{400} = 1$ → $d_{400}$.\n- **Grup de 2** (fila $d_4 = 1$, columnes 00 i 01): $d_4 = 1$, $d_{100} = 0$ → $d_4\\,\\bar{d}_{100}$.\n\n$$at = d_4\\,\\bar{d}_{100} + d_{400}$$\n\nQue es llegeix tal com l'enunciat: és de traspàs si és divisible per 4 i no per 100, o bé si és divisible per 400. Comprovació amb els 4 casos possibles: $000 \\to 0$, $100 \\to 1$, $110 \\to 0$, $111 \\to 1$. ✓"},
+          {"apartat": "c", "titol": "Esquema de portes lògiques", "cos": "Per a la funció de la solució oficial, $at = d_4\\left(\\bar{d}_{100}\\,\\bar{d}_{400} + d_{100}\\,d_{400}\\right)$, calen:\n\n- 1 porta **AND de 2 entrades** amb les dues entrades negades: $\\bar{d}_{100}\\,\\bar{d}_{400}$.\n- 1 porta **AND de 2 entrades**: $d_{100}\\,d_{400}$.\n- 1 porta **OR de 2 entrades** que suma les dues anteriors.\n- 1 porta **AND de 2 entrades** final amb $d_4$, que dona $at$.\n\nEsquema de la solució oficial (simbologia IEC: «&» = AND, «≥1» = OR; el cercle petit a l'entrada indica negació):\n\n![Esquema de portes lògiques de la solució oficial](img/tecno/2014-S/e2-sol.png)\n\nAmb la versió simplificada $at = d_4\\,\\bar{d}_{100} + d_{400}$ n'hi ha prou amb 1 NOT (per a $d_{100}$), 1 AND de 2 entrades i 1 OR de 2 entrades."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Casos possibles: 000 → 0, 100 → 1, 110 → 0, 111 → 1; impossibles: 001, 010, 011, 101"},
+          {"apartat": "b", "valor": "$at = d_4\\left(\\bar{d}_{100}\\,\\bar{d}_{400} + d_{100}\\,d_{400}\\right)$ (amb X = 0); o bé $at = d_4\\,\\bar{d}_{100} + d_{400}$ aprofitant els indiferents"},
+          {"apartat": "c", "valor": "3 AND de 2 entrades (una amb entrades negades) + 1 OR de 2 entrades"}
+        ],
+        "nota": "La solució oficial dona als casos impossibles el valor X = 0 i obté $at = d_4(\\bar{d}_{100}\\bar{d}_{400} + d_{100}d_{400})$. És correcta, però si es fan servir els casos indiferents la funció es pot simplificar més, fins a $at = d_4\\,\\bar{d}_{100} + d_{400}$ (equivalent en tots els casos possibles). Qualsevol de les dues és vàlida si es justifica."
+      }
+    },
+    {
+      "id": "tecno-2014-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Llum penjat de dos cables: angle, força, tensió normal i deformació unitària",
+      "tema": "resistencia",
+      "temes_secundaris": ["estatica"],
+      "conceptes": ["equilibri de forces", "tensió normal", "mòdul de Young", "deformació unitària", "llei de Hooke"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "Aquesta figura esquematitza un llum ornamental penjat del sostre mitjançant dos cables fixats en els punts A i B. Els cables, que tenen una longitud $L_1 = 5\\ \\text{m}$ i un diàmetre $d = 8\\ \\text{mm}$, són fets d'un material que té un mòdul d'elasticitat $E = 50\\ \\text{GPa}$. (Dades de la figura: $L_1 = 5\\ \\text{m}$, $L_2 = 6\\ \\text{m}$, $d = 8\\ \\text{mm}$, $E = 50\\ \\text{GPa}$, $m = 450\\ \\text{kg}$.)",
+      "figures": [{"src": "img/tecno/2014-S/e3-a.png", "peu": "Llum penjat de dos cables de longitud L1 fixats a A i B, separats L2"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Determineu l'angle, $\\alpha$, que formen els cables amb l'horitzontal.", "punts": 0.5},
+        {"id": "b", "enunciat": "Determineu la força, $F$, que fa cadascun dels cables en funció de la massa, $m$, del llum.", "punts": 0.5},
+        {"id": "c", "enunciat": "Representeu, de manera aproximada i indicant les escales, la tensió normal, $\\sigma$, dels cables deguda a la força que exerceixen, en funció de la massa, $m$, del llum per a $200\\ \\text{kg} \\le m \\le 600\\ \\text{kg}$.", "punts": 1},
+        {"id": "d", "enunciat": "Si es decideix penjar un llum de massa $m = 450\\ \\text{kg}$, quina és la deformació unitària, $\\varepsilon$, dels cables a causa de la tensió que hauran de suportar?", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Longitud de cada cable: $L_1 = 5\\ \\text{m}$\n- Distància entre A i B: $L_2 = 6\\ \\text{m}$\n- Diàmetre del cable: $d = 8\\ \\text{mm} = 0{,}008\\ \\text{m}$\n- Mòdul d'elasticitat: $E = 50\\ \\text{GPa} = 50 \\cdot 10^9\\ \\text{Pa}$\n- $g = 9{,}807\\ \\text{m/s}^2$ (el que fa servir la solució oficial)\n- Incògnites: $\\alpha$, $F(m)$, $\\sigma(m)$ i $\\varepsilon$ per a $m = 450\\ \\text{kg}$"},
+          {"apartat": "a", "titol": "Angle a partir de la geometria", "cos": "Els dos cables i el sostre formen un triangle isòsceles. Si projectem cada cable sobre l'horitzontal, la suma de les dues projeccions és la distància $L_2$:\n\n$$L_2 = 2\\,L_1 \\cos\\alpha \\quad\\Rightarrow\\quad \\cos\\alpha = \\frac{L_2}{2\\,L_1} = \\frac{6}{2 \\cdot 5} = 0{,}6$$\n\n$$\\alpha = \\arccos 0{,}6 = 53{,}13^\\circ$$\n\nResultat: **$\\alpha = 53{,}13^\\circ$** (i $\\sin\\alpha = 0{,}8$)."},
+          {"apartat": "b", "titol": "Equilibri de forces al punt de penjada", "cos": "El llum està en repòs, per tant la suma de forces sobre el punt on s'uneixen els cables és zero. Per simetria els dos cables fan la mateixa força $F$. Les components horitzontals ($F\\cos\\alpha$) s'anul·len entre elles, i les verticals ($F\\sin\\alpha$ cadascuna) han d'aguantar el pes:\n\n$$\\sum F_y = 0 \\quad\\Rightarrow\\quad 2\\,F \\sin\\alpha - m\\,g = 0$$\n\n$$F = \\frac{g}{2\\sin\\alpha}\\, m = \\frac{9{,}807}{2 \\cdot 0{,}8}\\, m = 6{,}129\\, m$$\n\nResultat: **$F = 6{,}129\\, m$** ($F$ en N, $m$ en kg). Per exemple, amb $m = 450\\ \\text{kg}$, $F = 2\\,758\\ \\text{N}$."},
+          {"apartat": "c", "titol": "Tensió normal en funció de la massa", "cos": "La tensió normal és la força repartida sobre la secció del cable, que és un cercle de diàmetre $d$:\n\n$$S = \\pi \\left(\\frac{d}{2}\\right)^2 = \\pi \\cdot 0{,}004^2 = 5{,}027 \\cdot 10^{-5}\\ \\text{m}^2$$\n\n$$\\sigma = \\frac{F}{S} = \\frac{6{,}129\\, m}{5{,}027 \\cdot 10^{-5}} = 121{,}9 \\cdot 10^3\\, m\\ \\text{Pa}$$\n\n($m$ en kg). És una funció **lineal** de $m$ (una recta que passa per l'origen)."},
+          {"apartat": "c", "titol": "Gràfica entre 200 kg i 600 kg", "cos": "N'hi ha prou de calcular els dos extrems i unir-los amb una recta:\n\n- $m = 200\\ \\text{kg}$: $\\sigma = 121{,}9 \\cdot 10^3 \\cdot 200 = 24{,}39 \\cdot 10^6\\ \\text{Pa} = 24{,}39\\ \\text{MPa}$\n- $m = 600\\ \\text{kg}$: $\\sigma = 121{,}9 \\cdot 10^3 \\cdot 600 = 73{,}16 \\cdot 10^6\\ \\text{Pa} = 73{,}16\\ \\text{MPa}$\n\nEix horitzontal: $m$ en kg (de 200 a 600); eix vertical: $\\sigma$ en MPa.\n\n![Gràfica de la tensió normal en funció de la massa (solució oficial)](img/tecno/2014-S/e3-a-sol.png)"},
+          {"apartat": "d", "titol": "Deformació unitària amb la llei de Hooke", "cos": "Mentre el material treballa en zona elàstica, tensió i deformació són proporcionals: $\\sigma = E\\,\\varepsilon$. Amb $m = 450\\ \\text{kg}$:\n\n$$\\sigma = 121{,}9 \\cdot 10^3 \\cdot 450 = 54{,}87\\ \\text{MPa}$$\n\n$$\\varepsilon = \\frac{\\sigma}{E} = \\frac{121{,}9 \\cdot 10^3 \\cdot 450}{50 \\cdot 10^9} = 1{,}097 \\cdot 10^{-3}$$\n\nResultat: **$\\varepsilon = 1{,}097 \\cdot 10^{-3}$** (adimensional; cada cable s'allarga aproximadament $\\Delta L = \\varepsilon\\, L_1 = 5{,}5\\ \\text{mm}$)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$\\alpha = 53{,}13^\\circ$"},
+          {"apartat": "b", "valor": "$F = 6{,}129\\, m$ (N, amb $m$ en kg)"},
+          {"apartat": "c", "valor": "$\\sigma = 121{,}9 \\cdot 10^3\\, m$ Pa: recta de $24{,}39\\ \\text{MPa}$ (200 kg) a $73{,}16\\ \\text{MPa}$ (600 kg)"},
+          {"apartat": "d", "valor": "$\\varepsilon = 1{,}097 \\cdot 10^{-3}$"}
+        ],
+        "nota": "Error típic a l'apartat b: oblidar que hi ha dos cables (dividir per 2) o fer servir $\\cos\\alpha$ en lloc de $\\sin\\alpha$ (l'angle es mesura des de l'horitzontal, i el pes és vertical). També cal usar el radi ($d/2$), no el diàmetre, per calcular la secció."
+      }
+    },
+    {
+      "id": "tecno-2014-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Caldera de biomassa per escalfar l'aigua d'una piscina climatitzada",
+      "tema": "termica",
+      "temes_secundaris": ["energia"],
+      "conceptes": ["calor sensible", "poder calorífic", "rendiment", "energia dissipada", "cabal"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "Una piscina climatitzada necessita, durant les $16\\ \\text{h}$ que funciona diàriament, un volum $V = 530\\ \\text{m}^3$ d'aigua calenta a una temperatura $t_\\text{f} = 28\\ ^\\circ\\text{C}$. Per a escalfar l'aigua, que inicialment arriba a una temperatura $t_\\text{i} = 20\\ ^\\circ\\text{C}$, s'empra una caldera de biomassa que té un rendiment $\\eta = 78\\ \\%$.\n\nTenint en compte que el poder calorífic de la biomassa és $p_\\text{b} = 12{,}54\\ \\text{MJ/kg}$ i la calor específica de l'aigua és $c_\\text{e} = 4{,}187\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)}$, determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La massa d'aigua, $m_\\text{a}$, diària escalfada i l'energia, $E_\\text{dia}$, necessària per a escalfar-la, en kW h.", "punts": 1},
+        {"id": "b", "enunciat": "La massa de biomassa, $m_\\text{b}$, diària necessària i l'energia dissipada, $E_\\text{diss}$, en la combustió, en kW h.", "punts": 1},
+        {"id": "c", "enunciat": "El cabal mitjà, $q$, en L/s, d'aigua calenta que necessita la piscina.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Volum diari d'aigua: $V = 530\\ \\text{m}^3$ (densitat de l'aigua $\\rho = 1\\ \\text{kg/L} = 1\\,000\\ \\text{kg/m}^3$)\n- Temps de funcionament: $t = 16\\ \\text{h} = 16 \\cdot 3\\,600 = 57\\,600\\ \\text{s}$\n- Temperatures: $t_\\text{i} = 20\\ ^\\circ\\text{C}$, $t_\\text{f} = 28\\ ^\\circ\\text{C}$ → $\\Delta T = 8\\ ^\\circ\\text{C}$\n- Rendiment de la caldera: $\\eta = 0{,}78$\n- Poder calorífic: $p_\\text{b} = 12{,}54\\ \\text{MJ/kg} = 12{,}54 \\cdot 10^6\\ \\text{J/kg}$\n- $c_\\text{e} = 4{,}187\\ \\text{kJ/(kg}\\ ^\\circ\\text{C)} = 4\\,187\\ \\text{J/(kg}\\ ^\\circ\\text{C)}$\n- Recordeu: $1\\ \\text{kW h} = 3{,}6 \\cdot 10^6\\ \\text{J}$\n- Incògnites: $m_\\text{a}$, $E_\\text{dia}$, $m_\\text{b}$, $E_\\text{diss}$, $q$"},
+          {"apartat": "a", "titol": "Massa d'aigua diària", "cos": "La massa s'obté del volum i la densitat ($1\\ \\text{m}^3$ d'aigua són $1\\,000\\ \\text{kg}$):\n\n$$m_\\text{a} = \\rho\\, V = 1\\,000\\ \\text{kg/m}^3 \\cdot 530\\ \\text{m}^3 = 530 \\cdot 10^3\\ \\text{kg}$$"},
+          {"apartat": "a", "titol": "Energia per escalfar l'aigua (calor sensible)", "cos": "L'aigua s'escalfa sense canviar d'estat:\n\n$$E_\\text{dia} = m_\\text{a}\\, c_\\text{e}\\, \\Delta T = 530 \\cdot 10^3 \\cdot 4{,}187 \\cdot 10^3 \\cdot (28 - 20) = 17{,}75 \\cdot 10^9\\ \\text{J} = 17{,}75\\ \\text{GJ}$$\n\nPassem a kW h dividint per $3{,}6 \\cdot 10^6\\ \\text{J/(kW h)}$:\n\n$$E_\\text{dia} = \\frac{17{,}75 \\cdot 10^9}{3{,}6 \\cdot 10^6} = 4\\,931\\ \\text{kW h}$$\n\nResultat: **$m_\\text{a} = 530 \\cdot 10^3\\ \\text{kg}$; $E_\\text{dia} = 4\\,931\\ \\text{kW h}$**."},
+          {"apartat": "b", "titol": "Massa de biomassa (amb el rendiment)", "cos": "La caldera només transmet a l'aigua el 78 % de l'energia que allibera la biomassa. Per tant l'energia de la combustió ha de ser $E_\\text{dia}/\\eta$, i amb el poder calorífic ($E = m\\,p_\\text{b}$):\n\n$$m_\\text{b} = \\frac{E_\\text{dia}}{\\eta\\, p_\\text{b}} = \\frac{17{,}75 \\cdot 10^9}{0{,}78 \\cdot 12{,}54 \\cdot 10^6} = 1\\,815\\ \\text{kg}$$"},
+          {"apartat": "b", "titol": "Energia dissipada a la combustió", "cos": "L'energia que no arriba a l'aigua (el $1 - \\eta = 22\\ \\%$ de l'energia de la biomassa) es perd (fums, parets de la caldera…):\n\n$$E_\\text{diss} = m_\\text{b}\\, p_\\text{b}\\,(1 - \\eta) = 1\\,815 \\cdot 12{,}54 \\cdot 10^6 \\cdot (1 - 0{,}78) = 5{,}007 \\cdot 10^9\\ \\text{J}$$\n\n$$E_\\text{diss} = \\frac{5{,}007 \\cdot 10^9}{3{,}6 \\cdot 10^6} = 1\\,391\\ \\text{kW h}$$\n\nResultat: **$m_\\text{b} = 1\\,815\\ \\text{kg}$; $E_\\text{diss} = 1\\,391\\ \\text{kW h}$**.\n\nComprovació: energia total de la biomassa $= 4\\,931 + 1\\,391 = 6\\,322\\ \\text{kW h}$, i $4\\,931 / 6\\,322 = 0{,}78$. ✓"},
+          {"apartat": "c", "titol": "Cabal mitjà d'aigua calenta", "cos": "El cabal és el volum dividit pel temps. Passem el volum a litres ($1\\ \\text{m}^3 = 1\\,000\\ \\text{L}$) i el temps a segons:\n\n$$q = \\frac{V}{t} = \\frac{530 \\cdot 10^3\\ \\text{L}}{16 \\cdot 3\\,600\\ \\text{s}} = 9{,}201\\ \\text{L/s}$$\n\nResultat: **$q = 9{,}201\\ \\text{L/s}$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$m_\\text{a} = 530 \\cdot 10^3\\ \\text{kg}$; $E_\\text{dia} = 17{,}75\\ \\text{GJ} = 4\\,931\\ \\text{kW h}$"},
+          {"apartat": "b", "valor": "$m_\\text{b} = 1\\,815\\ \\text{kg}$; $E_\\text{diss} = 5{,}007\\ \\text{GJ} = 1\\,391\\ \\text{kW h}$"},
+          {"apartat": "c", "valor": "$q = 9{,}201\\ \\text{L/s}$"}
+        ],
+        "nota": "Error típic a l'apartat b: multiplicar per $\\eta$ en lloc de dividir (la caldera ha de cremar **més** energia de la que arriba a l'aigua). Vigileu també de no barrejar kJ i J: $c_\\text{e}$ està en kJ i $p_\\text{b}$ en MJ."
+      }
+    },
+    {
+      "id": "tecno-2014-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Estoreta elèctrica amb commutador de quatre potències (resistències en sèrie i paral·lel)",
+      "tema": "circuits",
+      "temes_secundaris": [],
+      "conceptes": ["associació de resistències", "llei d'Ohm", "potència elèctrica", "energia elèctrica"],
+      "dificultat": 2,
+      "pagines": [4],
+      "enunciat": "En la figura es mostra el circuit d'una estoreta elèctrica que té un commutador per a seleccionar la potència que subministra. El comandament només permet les combinacions d'interruptors tancats: 1-3-4, 1-3, 1-4 i 2-4. Les dues resistències tenen els valors $R_3 = 1{,}4\\ \\text{k}\\Omega$ i $R_4 = 1{,}8\\ \\text{k}\\Omega$, i el circuit s'alimenta amb una tensió $U = 230\\ \\text{V}$. Determineu:",
+      "figures": [{"src": "img/tecno/2014-S/e3-b.png", "peu": "Circuit de l'estoreta amb els interruptors 1, 2, 3 i 4 i les resistències R3 i R4"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La resistència mínima, $R_\\text{mín}$, del circuit.", "punts": 0.5},
+        {"id": "b", "enunciat": "El corrent, $I$, consumit quan la resistència és la mínima.", "punts": 0.5},
+        {"id": "c", "enunciat": "El valor de les quatre potències, $P_1$, $P_2$, $P_3$ i $P_4$, que proporciona l'estoreta quan es connecten els interruptors amb les combinacions 1-3-4, 1-3, 1-4 i 2-4.", "punts": 1},
+        {"id": "d", "enunciat": "L'energia elèctrica consumida, $E_\\text{elèctr}$, en W h, si l'estoreta es manté encesa durant un temps $t = 2\\ \\text{h}$ a la màxima potència.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- $R_3 = 1{,}4\\ \\text{k}\\Omega = 1\\,400\\ \\Omega$\n- $R_4 = 1{,}8\\ \\text{k}\\Omega = 1\\,800\\ \\Omega$\n- $U = 230\\ \\text{V}$\n- $t = 2\\ \\text{h}$\n- Incògnites: $R_\\text{mín}$, $I$, $P_1$, $P_2$, $P_3$, $P_4$, $E_\\text{elèctr}$"},
+          {"apartat": null, "titol": "Què fa cada combinació d'interruptors", "cos": "Mirant el circuit: l'interruptor 1 connecta el borne superior de la font amb el nus esquerre comú de $R_3$ i $R_4$; el 2 el connecta amb el punt entre $R_3$ i l'interruptor 3; els interruptors 3 i 4 tanquen $R_3$ i $R_4$ cap al borne inferior.\n\n| Combinació | Camí del corrent | Resistència |\n|---|---|---|\n| 1-3-4 | $R_3$ i $R_4$ entre els mateixos dos nusos | $R_3 \\parallel R_4$ |\n| 1-3 | només per $R_3$ | $R_3$ |\n| 1-4 | només per $R_4$ | $R_4$ |\n| 2-4 | entra pel 2, travessa $R_3$ (cap a l'esquerra) i després $R_4$ | $R_3 + R_4$ (sèrie) |"},
+          {"apartat": "a", "titol": "Resistència mínima: R3 i R4 en paral·lel", "cos": "La resistència equivalent més petita s'obté posant les dues resistències en paral·lel (combinació 1-3-4), perquè en paral·lel la resistència equivalent és més petita que qualsevol de les branques:\n\n$$R_\\text{mín} = \\left(\\frac{1}{R_3} + \\frac{1}{R_4}\\right)^{-1} = \\frac{R_3\\, R_4}{R_3 + R_4} = \\frac{1\\,400 \\cdot 1\\,800}{1\\,400 + 1\\,800} = 787{,}5\\ \\Omega$$\n\nResultat: **$R_\\text{mín} = 787{,}5\\ \\Omega$**."},
+          {"apartat": "b", "titol": "Corrent amb la resistència mínima (llei d'Ohm)", "cos": "$$I = \\frac{U}{R_\\text{mín}} = \\frac{230}{787{,}5} = 0{,}2921\\ \\text{A} = 292{,}1\\ \\text{mA}$$\n\nResultat: **$I = 292{,}1\\ \\text{mA}$**."},
+          {"apartat": "c", "titol": "Potència de cada combinació", "cos": "Amb la tensió fixa, la potència dissipada en una resistència és $P = U^2/R$: com més petita és la resistència, més potència.\n\n$$P_1 = \\frac{U^2}{R_\\text{mín}} = \\frac{230^2}{787{,}5} = 67{,}17\\ \\text{W} \\quad (1\\text{-}3\\text{-}4)$$\n\n$$P_2 = \\frac{U^2}{R_3} = \\frac{230^2}{1\\,400} = 37{,}79\\ \\text{W} \\quad (1\\text{-}3)$$\n\n$$P_3 = \\frac{U^2}{R_4} = \\frac{230^2}{1\\,800} = 29{,}39\\ \\text{W} \\quad (1\\text{-}4)$$\n\n$$P_4 = \\frac{U^2}{R_3 + R_4} = \\frac{230^2}{3\\,200} = 16{,}53\\ \\text{W} \\quad (2\\text{-}4)$$\n\nComprovació: $P_1 = P_2 + P_3$, com ha de ser en paral·lel. ✓"},
+          {"apartat": "d", "titol": "Energia consumida en 2 h a potència màxima", "cos": "La potència màxima és $P_1$ (resistència mínima). L'energia és la potència pel temps; amb la potència en W i el temps en h, surt directament en W h:\n\n$$E_\\text{elèctr} = P_1\\, t = 67{,}17\\ \\text{W} \\cdot 2\\ \\text{h} = 134{,}3\\ \\text{W h}$$\n\nResultat: **$E_\\text{elèctr} = 134{,}3\\ \\text{W h}$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$R_\\text{mín} = 787{,}5\\ \\Omega$"},
+          {"apartat": "b", "valor": "$I = 292{,}1\\ \\text{mA}$"},
+          {"apartat": "c", "valor": "$P_1 = 67{,}17\\ \\text{W}$; $P_2 = 37{,}79\\ \\text{W}$; $P_3 = 29{,}39\\ \\text{W}$; $P_4 = 16{,}53\\ \\text{W}$"},
+          {"apartat": "d", "valor": "$E_\\text{elèctr} = 134{,}3\\ \\text{W h}$"}
+        ],
+        "nota": "La solució oficial escriu $P_3 = 29{,}3\\overline{8}\\ \\text{W}$ (8 periòdic), que és el mateix que $29{,}39\\ \\text{W}$ arrodonit. La clau del problema és veure que la combinació 2-4 posa $R_3$ i $R_4$ en sèrie (la potència més baixa) i la 1-3-4, en paral·lel (la més alta)."
+      }
+    },
+    {
+      "id": "tecno-2014-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Motor dièsel d'una embarcació: parell, consum específic i rendiment",
+      "tema": "termica",
+      "temes_secundaris": ["mecanica"],
+      "conceptes": ["parell motor", "consum específic", "poder calorífic", "rendiment", "autonomia"],
+      "dificultat": 2,
+      "pagines": [4],
+      "enunciat": "Una embarcació té un dipòsit de capacitat $V = 600\\ \\text{L}$ i un motor que, en règim de funcionament nominal, proporciona una potència $P_\\text{s} = 150\\ \\text{kW}$ quan gira a $n = 3\\,800\\ \\text{min}^{-1}$. El combustible que utilitza és el gasoil, de poder calorífic $p_\\text{c} = 41{,}7\\ \\text{MJ/L}$ i densitat $\\rho = 0{,}85\\ \\text{kg/L}$. Amb el dipòsit ple i funcionant en règim nominal, l'embarcació té una autonomia d'un temps $t = 19{,}5\\ \\text{h}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "El parell a l'eix de sortida, $\\Gamma_\\text{s}$.", "punts": 0.5},
+        {"id": "b", "enunciat": "El consum específic, $c$, en kg/(kW h).", "punts": 1},
+        {"id": "c", "enunciat": "El rendiment, $\\eta$, del motor.", "punts": 1}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Dipòsit: $V = 600\\ \\text{L}$\n- Potència de sortida: $P_\\text{s} = 150\\ \\text{kW} = 150 \\cdot 10^3\\ \\text{W}$\n- Velocitat de gir: $n = 3\\,800\\ \\text{min}^{-1}$\n- Poder calorífic (per litre!): $p_\\text{c} = 41{,}7\\ \\text{MJ/L} = 41\\,700\\ \\text{kJ/L}$\n- Densitat: $\\rho = 0{,}85\\ \\text{kg/L}$\n- Autonomia: $t = 19{,}5\\ \\text{h}$\n- Incògnites: $\\Gamma_\\text{s}$, $c$, $\\eta$"},
+          {"apartat": "a", "titol": "Velocitat angular en rad/s", "cos": "Per fer servir $P = \\Gamma\\,\\omega$ cal la velocitat angular en rad/s. Una volta són $2\\pi$ rad i un minut són 60 s:\n\n$$\\omega = n\\,\\frac{2\\pi}{60} = 3\\,800 \\cdot \\frac{2\\pi}{60} = 397{,}9\\ \\text{rad/s}$$"},
+          {"apartat": "a", "titol": "Parell a l'eix de sortida", "cos": "$$\\Gamma_\\text{s} = \\frac{P_\\text{s}}{\\omega} = \\frac{150 \\cdot 10^3\\ \\text{W}}{397{,}9\\ \\text{rad/s}} = 376{,}9\\ \\text{N m}$$\n\nResultat: **$\\Gamma_\\text{s} = 376{,}9\\ \\text{N m}$**."},
+          {"apartat": "b", "titol": "Massa de combustible i energia útil", "cos": "El consum específic és la massa de combustible que es gasta per cada kW h d'energia mecànica obtinguda. En 19,5 h el motor gasta tot el dipòsit:\n\n$$m_\\text{comb} = \\rho\\, V = 0{,}85\\ \\text{kg/L} \\cdot 600\\ \\text{L} = 510\\ \\text{kg}$$\n\nI l'energia útil que dona en aquest temps és:\n\n$$E_\\text{s} = P_\\text{s}\\, t = 150\\ \\text{kW} \\cdot 19{,}5\\ \\text{h} = 2\\,925\\ \\text{kW h}$$"},
+          {"apartat": "b", "titol": "Consum específic", "cos": "$$c = \\frac{m_\\text{comb}}{E_\\text{s}} = \\frac{\\rho\\, V}{P_\\text{s}\\, t} = \\frac{600 \\cdot 0{,}85}{150 \\cdot 19{,}5} = 0{,}1744\\ \\frac{\\text{kg}}{\\text{kW h}}$$\n\nResultat: **$c = 0{,}1744\\ \\text{kg/(kW h)}$**."},
+          {"apartat": "c", "titol": "Potència aportada pel combustible", "cos": "El rendiment compara la potència útil amb la potència que aporta el combustible en cremar-se. Com que el poder calorífic està donat **per litre**, l'energia del dipòsit és $V\\,p_\\text{c}$:\n\n$$P_\\text{e} = \\frac{V\\, p_\\text{c}}{t} = \\frac{600\\ \\text{L} \\cdot 41\\,700\\ \\text{kJ/L}}{19{,}5 \\cdot 3\\,600\\ \\text{s}} = 356{,}4\\ \\text{kW}$$"},
+          {"apartat": "c", "titol": "Rendiment del motor", "cos": "$$\\eta = \\frac{P_\\text{s}}{P_\\text{e}} = \\frac{150}{356{,}4} = 0{,}4209$$\n\nLa solució oficial ho escriu en funció del consum específic, que dona el mateix:\n\n$$\\eta = \\frac{\\rho}{p_\\text{c}\\, c} = \\frac{0{,}85}{41\\,700 \\cdot 0{,}1744 \\cdot \\frac{1}{3\\,600}} = 0{,}4209$$\n\n(el factor $1/3\\,600$ passa els kW h a kJ: $1\\ \\text{kW h} = 3\\,600\\ \\text{kJ}$).\n\nResultat: **$\\eta = 0{,}4209 \\approx 42{,}1\\ \\%$**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$\\omega = 397{,}9\\ \\text{rad/s}$; $\\Gamma_\\text{s} = 376{,}9\\ \\text{N m}$"},
+          {"apartat": "b", "valor": "$c = 0{,}1744\\ \\text{kg/(kW h)}$"},
+          {"apartat": "c", "valor": "$P_\\text{e} = 356{,}4\\ \\text{kW}$; $\\eta = 0{,}4209$ ($42{,}1\\ \\%$)"}
+        ],
+        "nota": "Compte: el poder calorífic del gasoil es dona en MJ/L (per volum), no en MJ/kg. Si es multiplica per la massa (510 kg) en lloc del volum (600 L) surt un rendiment erroni. A l'apartat a, l'error típic és dividir la potència per les rpm sense passar-les a rad/s."
+      }
+    }
+  ]
+}

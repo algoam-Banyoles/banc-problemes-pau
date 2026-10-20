@@ -1,0 +1,1355 @@
+{
+  "examen": {
+    "id": "fisica-2017-J",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2017,
+    "convocatoria": "juny",
+    "serie": "1 i 5",
+    "pdf_examen": "pdfs/fisica/2017-J-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2017-J-solucio.pdf",
+    "estructura": "El PDF conté dues sèries (1 i 5) amb la mateixa estructura. Cada prova consta d'una part comuna obligatòria (P1 i P2) i d'una part optativa: cal escollir UNA de les dues opcions (A o B) i fer-ne els problemes P3, P4 i P5. Cada problema val 2 punts (dos apartats d'1 punt)."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2017-J-s1-e1",
+      "serie": "1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "ExoMars: període del satèl·lit en òrbita de Mart i caiguda lliure de l'Schiaparelli",
+      "tema": "gravitacio",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "òrbita circular",
+        "període orbital",
+        "gravetat superficial",
+        "caiguda lliure",
+        "tercera llei de kepler"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "El projecte ExoMars és una missió espacial amb la finalitat de buscar vida al planeta Mart. En una primera fase, el 2016, constava d'un satèl·lit, l'*ExoMars Trace Gas Orbiter*, en òrbita circular al voltant de Mart a $400\\ \\text{km}$ d'altura, i d'un mòdul de descens, l'*Schiaparelli*, que havia d'aterrar a Mart.\n\nPerò quan el mòdul de descens estava a $3{,}7\\ \\text{km}$ d'altura sobre Mart, pràcticament aturat, els sistemes automàtics van interpretar erròniament que ja havia arribat a la superfície. Van aturar els retrocoets i el mòdul es va desprendre del paracaigudes. Com a resultat, l'*Schiaparelli* es va precipitar en caiguda lliure.\n\n**Dades:** Massa de Mart $= 6{,}42 \\times 10^{23}\\ \\text{kg}$; radi de Mart $= 3{,}38 \\times 10^{6}\\ \\text{m}$; $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el període de l'*ExoMars Trace Gas Orbiter*.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu el valor de l'acceleració de la gravetat a la superfície de Mart i la velocitat a la qual la nau va impactar a la superfície. (Considereu que la gravetat és constant durant la caiguda i la fricció amb l'atmosfera de Mart és negligible.)",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa de Mart: $M = 6{,}42 \\times 10^{23}\\ \\text{kg}$; radi: $R_M = 3{,}38 \\times 10^{6}\\ \\text{m}$\n- Altura de l'òrbita: $h_\\text{orb} = 400\\ \\text{km} = 4{,}00 \\times 10^{5}\\ \\text{m}$\n- Altura d'on cau el mòdul: $h = 3{,}7\\ \\text{km} = 3700\\ \\text{m}$, amb $v_0 \\approx 0$\n- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$\n- Incògnites: a) període $T$; b) $g$ a la superfície i velocitat d'impacte $v$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Radi de l'òrbita",
+            "cos": "El radi de l'òrbita es compta des del **centre** de Mart, no des de la superfície:\n\n$$r = R_M + h_\\text{orb} = 3{,}38 \\times 10^{6} + 4{,}00 \\times 10^{5} = 3{,}78 \\times 10^{6}\\ \\text{m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "La força gravitatòria fa de força centrípeta",
+            "cos": "En una òrbita circular, l'única força sobre el satèl·lit és l'atracció gravitatòria de Mart, que és la que el fa girar (força centrípeta). Aplicant $F = ma$ amb $a = \\omega^2 r = \\frac{4\\pi^2}{T^2} r$:\n\n$$G\\frac{Mm}{r^2} = m\\frac{4\\pi^2}{T^2}\\,r \\quad\\Rightarrow\\quad T = \\sqrt{\\frac{4\\pi^2 r^3}{GM}}$$\n\n(És la tercera llei de Kepler: la massa del satèl·lit no hi intervé.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul del període",
+            "cos": "$$T = \\sqrt{\\frac{4\\pi^2 \\cdot (3{,}78 \\times 10^{6})^3}{6{,}67 \\times 10^{-11} \\cdot 6{,}42 \\times 10^{23}}} = 7{,}06 \\times 10^{3}\\ \\text{s}$$\n\nResultat: **$T \\approx 7{,}06 \\times 10^{3}\\ \\text{s}$** (unes 1,96 hores)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Gravetat a la superfície de Mart",
+            "cos": "A la superfície, el pes d'un cos és la força gravitatòria que Mart exerceix sobre ell: $mg = G\\frac{Mm}{R_M^2}$, d'on\n\n$$g = \\frac{GM}{R_M^2} = \\frac{6{,}67 \\times 10^{-11} \\cdot 6{,}42 \\times 10^{23}}{(3{,}38 \\times 10^{6})^2} = 3{,}75\\ \\text{m/s}^2$$\n\nResultat: **$g = 3{,}75\\ \\text{m/s}^2$** (unes 2,6 vegades menys que a la Terra)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat d'impacte (caiguda lliure, MRUA)",
+            "cos": "Com que $h = 3{,}7\\ \\text{km} \\ll R_M$, podem suposar $g$ constant durant la caiguda i sense fregament: és un moviment rectilini uniformement accelerat que parteix del repòs. L'equació que relaciona velocitat i desplaçament (o, equivalentment, la conservació de l'energia $mgh = \\frac12 mv^2$) dona:\n\n$$v^2 = v_0^2 + 2gh \\quad\\Rightarrow\\quad v = \\sqrt{0 + 2 \\cdot 3{,}75 \\cdot 3700} = 167\\ \\text{m/s}$$\n\nResultat: **$v \\approx 1{,}67 \\times 10^{2}\\ \\text{m/s}$** (unes 600 km/h)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$T \\approx 7{,}06 \\times 10^{3}\\ \\text{s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$g = 3{,}75\\ \\text{m/s}^2$; $v \\approx 167\\ \\text{m/s}$"
+          }
+        ],
+        "nota": "La solució oficial dona $T = 7{,}062 \\times 10^{3}\\ \\text{s}$; amb les dades de l'enunciat el càlcul exacte dona $7{,}056 \\times 10^{3}\\ \\text{s}$. La diferència (0,1 %) és d'arrodoniment i no afecta la puntuació. Error típic: fer servir l'altura (400 km) com a radi de l'òrbita."
+      }
+    },
+    {
+      "id": "fisica-2017-J-s1-e2",
+      "serie": "1",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Relé electromagnètic: sentit del corrent a la bobina, línies de camp i efecte de diverses modificacions",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [
+        "induccio"
+      ],
+      "conceptes": [
+        "bobina",
+        "electroimant",
+        "línies de camp magnètic",
+        "pols magnètics",
+        "material ferromagnètic",
+        "corrent altern"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "La figura mostra l'esquema d'un relé. Quan circula un corrent elèctric per la bobina, l'extrem inferior de l'imant (nord) és atret per la bobina i el moviment es transmet per un pivot, de manera que es tanca el circuit B.",
+      "figures": [
+        {
+          "src": "img/fisica/2017-J/s1-e2.png",
+          "peu": "Esquema del relé: bobina, imant (pol N a baix), mecanisme amb pivot i contacte del circuit B"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Especifiqueu clarament quin ha de ser el sentit del corrent elèctric a la bobina perquè s'activi el relé (i es tanqui el circuit B) i dibuixeu les línies del camp magnètic generat per la bobina en aquesta situació.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "En unes proves observem que el mecanisme no fa prou força per a tancar el contacte. Indiqueu quin efecte tindria sobre el dispositiu cadascuna de les modificacions següents:\n\n1) Augmentar la intensitat del corrent que circula per la bobina.\n\n2) Situar un material ferromagnètic al nucli de la bobina.\n\n3) Fer passar per la bobina un corrent altern en comptes d'un corrent continu.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Quin pol ha de tenir la bobina a dalt",
+            "cos": "Una bobina amb corrent es comporta com un imant (electroimant). Pols de nom contrari s'atrauen; com que l'extrem inferior de l'imant és un pol **nord**, la cara **superior** de la bobina ha de ser un pol **sud**. Així el pol nord de la bobina queda a la cara inferior, i el camp magnètic dins de la bobina va **cap avall** (les línies surten del pol N i entren pel pol S; dins de l'imant/bobina van de S a N)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Sentit del corrent (regla de la mà dreta)",
+            "cos": "Amb la regla de la mà dreta: si els dits segueixen el corrent per les espires, el polze indica el sentit del camp a l'interior. Per tenir el camp cap avall, el corrent ha de girar en **sentit horari vist des de dalt** (antihorari vist des de sota).\n\n![Sentit horari del corrent vist des de dalt (solució oficial)](img/fisica/2017-J/s1-e2-sol.png)\n\nDibuixat sobre la bobina de l'enunciat, això vol dir que per la cara visible de les espires el corrent va de dreta a esquerra:\n\n![Corrent a la bobina tal com es veu a l'enunciat (solució oficial)](img/fisica/2017-J/s1-e2-sol-3.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Línies del camp magnètic de la bobina",
+            "cos": "Les línies són com les d'un imant de barra: dins de la bobina són gairebé paral·leles i dirigides cap avall; surten per la cara inferior (pol N), s'obren per fora i tornen a entrar per la cara superior (pol S), on hi ha l'imant.\n\n![Línies del camp magnètic generat per la bobina (solució oficial)](img/fisica/2017-J/s1-e2-sol-2.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "1) Augmentar la intensitat del corrent",
+            "cos": "El camp magnètic d'una bobina és proporcional a la intensitat ($B = \\mu \\frac{N I}{L}$). Més corrent → camp més intens → l'imant és atret amb **més força**, i el relé tanca millor el contacte."
+          },
+          {
+            "apartat": "b",
+            "titol": "2) Nucli ferromagnètic",
+            "cos": "Un material ferromagnètic (ferro dolç) té una permeabilitat magnètica $\\mu$ molt més gran que la de l'aire: s'imanta i reforça molt el camp de la bobina. Per tant, el camp augmenta i l'imant és atret amb **més força**."
+          },
+          {
+            "apartat": "b",
+            "titol": "3) Corrent altern",
+            "cos": "Amb corrent altern, el sentit del corrent (i per tant la polaritat de la bobina) s'inverteix contínuament (50 vegades per segon a la xarxa). La cara superior seria alternativament pol sud i pol nord: l'imant seria **atret i repel·lit successivament**, de manera que el relé no quedaria tancat de manera estable i probablement **vibraria** amb la freqüència del corrent. No és una bona solució."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Cara superior de la bobina = pol sud; corrent en sentit horari vist des de dalt; camp cap avall dins la bobina."
+          },
+          {
+            "apartat": "b",
+            "valor": "1) Més força d'atracció; 2) més força (més permeabilitat); 3) l'imant és atret i repel·lit alternativament: vibració, el relé no funciona bé."
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2017-J-s1-e3-a",
+      "serie": "1",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Ona en una corda a partir del gràfic elongació-temps: període, freqüència, velocitat i equació d'ona",
+      "tema": "ones",
+      "temes_secundaris": [
+        "oscillacions"
+      ],
+      "conceptes": [
+        "equació d'ona",
+        "període",
+        "longitud d'ona",
+        "velocitat de propagació",
+        "velocitat d'oscil·lació"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un sistema vibrador situat al punt $x = 0$ oscil·la tal com s'indica en aquest gràfic elongació-temps i transmet el moviment a una corda, de manera que es genera una ona transversal amb una longitud d'ona de $20{,}0\\ \\text{cm}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2017-J/s1-e3-a.png",
+          "peu": "Gràfic elongació (cm) - temps (ms) del vibrador situat a x = 0"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu el període, l'amplitud i la freqüència de la vibració i la velocitat de propagació de l'ona per la corda. Escriviu l'equació de l'ona plana (no oblideu indicar totes les unitats de les magnituds que hi apareixen).",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Demostreu, a partir de l'equació d'ona, que la velocitat màxima a la qual es mouen els punts de la corda en les seves oscil·lacions es pot calcular amb l'expressió $v_\\text{max} = A\\omega$ (en què $A$ és l'amplitud i $\\omega$ és la pulsació).",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud d'ona: $\\lambda = 20{,}0\\ \\text{cm} = 0{,}200\\ \\text{m}$\n- Del gràfic: elongació màxima i temps entre màxims\n- Incògnites: a) $T$, $A$, $f$, $v$ i $y(x,t)$; b) demostrar $v_\\text{max} = A\\omega$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Lectura del gràfic: amplitud i període",
+            "cos": "L'amplitud és l'elongació màxima: **$A = 1{,}5\\ \\text{cm}$**. El període és el temps entre dos màxims consecutius: hi ha màxims a $t = 0$, $1{,}25$, $2{,}5$ i $3{,}75\\ \\text{ms}$, per tant **$T = 1{,}25\\ \\text{ms} = 1{,}25 \\times 10^{-3}\\ \\text{s}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüència i velocitat de propagació",
+            "cos": "$$f = \\frac{1}{T} = \\frac{1}{1{,}25 \\times 10^{-3}\\ \\text{s}} = 800\\ \\text{Hz}$$\n\nUna ona avança una longitud d'ona en cada període:\n\n$$v = \\lambda f = 0{,}200\\ \\text{m} \\cdot 800\\ \\text{s}^{-1} = 160\\ \\text{m/s}$$\n\nResultats: **$f = 800\\ \\text{Hz}$**, **$v = 160\\ \\text{m/s}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Pulsació i nombre d'ona",
+            "cos": "$$\\omega = 2\\pi f = 1600\\pi\\ \\text{rad/s} \\approx 5027\\ \\text{rad/s}, \\qquad k = \\frac{2\\pi}{\\lambda} = \\frac{2\\pi}{0{,}200} = 10\\pi\\ \\text{rad/m} \\approx 31{,}4\\ \\text{rad/m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de l'ona",
+            "cos": "Suposem que l'ona viatja cap a les $x$ positives (s'allunya del vibrador): $y(x,t) = A\\cos(\\omega t - kx + \\varphi_0)$. A $x = 0$ i $t = 0$ el gràfic mostra l'elongació màxima, $y(0,0) = A$, així que amb la funció cosinus $\\varphi_0 = 0$:\n\n$$y(x,t) = 1{,}5\\ \\text{cm} \\cdot \\cos\\left(1600\\pi\\ \\tfrac{\\text{rad}}{\\text{s}}\\, t - 10\\pi\\ \\tfrac{\\text{rad}}{\\text{m}}\\, x\\right)$$\n\nSi s'usa el sinus, cal $\\varphi_0 = \\pi/2\\ \\text{rad}$: $y = 0{,}015\\ \\text{m} \\cdot \\sin(1600\\pi t - 10\\pi x + \\pi/2)$, amb $t$ en s i $x$ en m."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat d'oscil·lació d'un punt de la corda",
+            "cos": "La velocitat amb què es mou (transversalment) un punt de la corda és la derivada de l'elongació respecte del temps, mantenint $x$ fix:\n\n$$v_y(x,t) = \\frac{\\partial y}{\\partial t} = -A\\omega\\,\\sin(\\omega t - kx + \\varphi_0)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Valor màxim",
+            "cos": "A mesura que avança el temps, la fase $(\\omega t - kx + \\varphi_0)$ pren tots els valors possibles i el sinus varia entre $-1$ i $+1$. Per tant, el mòdul de la velocitat és màxim quan $|\\sin| = 1$:\n\n$$|v_y|_\\text{max} = A\\omega$$\n\nAmb les nostres dades: $v_\\text{max} = 0{,}015 \\cdot 1600\\pi \\approx 75{,}4\\ \\text{m/s}$. Compte: aquesta velocitat d'oscil·lació **no** és la velocitat de propagació de l'ona ($160\\ \\text{m/s}$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$T = 1{,}25\\ \\text{ms}$, $A = 1{,}5\\ \\text{cm}$, $f = 800\\ \\text{Hz}$, $v = 160\\ \\text{m/s}$; $y = 1{,}5\\ \\text{cm}\\cdot\\cos(1600\\pi t - 10\\pi x)$ ($t$ en s, $x$ en m)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_y = -A\\omega\\sin(\\omega t - kx)$ → $v_\\text{max} = A\\omega$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2017-J-s1-e4-a",
+      "serie": "1",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Enllaç iònic del NaCl: distància entre ions i treball per separar-los dins d'un camp elèctric",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "energia potencial elèctrica",
+        "llei de coulomb",
+        "treball elèctric",
+        "camp elèctric uniforme"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        3
+      ],
+      "enunciat": "L'enllaç iònic de la sal comuna (NaCl) es produeix per l'atracció electrostàtica entre el catió $\\text{Na}^+$ i l'anió $\\text{Cl}^-$.\n\n**Dades:** $k = \\frac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$; càrrega elemental $= 1{,}60 \\times 10^{-19}\\ \\text{C}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la separació entre aquests dos ions, sabent que l'energia potencial elèctrica del sistema és de $-9{,}76 \\times 10^{-19}\\ \\text{J}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si apliquem un camp elèctric uniforme de $50{,}0\\ \\text{N C}^{-1}$ a l'ió $\\text{Na}^+$, calculeu el treball necessari per a separar els ions fins a una distància de $2\\ \\text{cm}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $q_+ = +1{,}60 \\times 10^{-19}\\ \\text{C}$ (Na⁺), $q_- = -1{,}60 \\times 10^{-19}\\ \\text{C}$ (Cl⁻)\n- $U = -9{,}76 \\times 10^{-19}\\ \\text{J}$; $k = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$\n- Camp aplicat: $E = 50{,}0\\ \\text{N/C}$; separació final $d = 2\\ \\text{cm} = 0{,}02\\ \\text{m}$\n- Incògnites: a) distància $r$; b) treball extern $W_\\text{ext}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia potencial de dues càrregues puntuals",
+            "cos": "L'energia potencial elèctrica d'un parell de càrregues és $U = k\\frac{q_+ q_-}{r}$. És negativa perquè les càrregues són de signe contrari (s'atrauen). Aïllem $r$:\n\n$$r = k\\frac{q_+ q_-}{U} = 8{,}99 \\times 10^{9} \\cdot \\frac{(1{,}60 \\times 10^{-19})(-1{,}60 \\times 10^{-19})}{-9{,}76 \\times 10^{-19}} = 2{,}36 \\times 10^{-10}\\ \\text{m}$$\n\nResultat: **$r = 2{,}36 \\times 10^{-10}\\ \\text{m} = 0{,}236\\ \\text{nm}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball per vèncer l'atracció entre els ions",
+            "cos": "Per separar els ions des de $r$ fins a $0{,}02\\ \\text{m}$ (pràcticament l'infinit, a escala atòmica: l'energia final és $k q_+q_-/0{,}02 \\approx -1{,}2 \\times 10^{-26}\\ \\text{J}$, negligible), una força externa ha de fer un treball igual a l'augment d'energia potencial:\n\n$$W_1 = U_f - U_i \\approx 0 - (-9{,}76 \\times 10^{-19}) = 9{,}76 \\times 10^{-19}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball relacionat amb el camp aplicat",
+            "cos": "El camp uniforme fa una força $F = qE$ sobre el Na⁺. Si desplacem el Na⁺ $d = 0{,}02\\ \\text{m}$ en la direcció del camp, el treball del camp és $qEd$:\n\n$$|W_2| = qEd = 1{,}60 \\times 10^{-19} \\cdot 50{,}0 \\cdot 0{,}02 = 1{,}6 \\times 10^{-19}\\ \\text{J}$$\n\nL'enunciat no diu si el Na⁺ es mou en el sentit del camp o en sentit contrari, i hi ha dues possibilitats vàlides:\n\n- **Desplaçament en el sentit del camp**: el camp ajuda, i el treball extern associat és $-1{,}6 \\times 10^{-19}\\ \\text{J}$.\n- **Desplaçament en sentit contrari al camp**: cal vèncer també la força del camp, $+1{,}6 \\times 10^{-19}\\ \\text{J}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball extern total",
+            "cos": "$$W_\\text{ext} = 9{,}76 \\times 10^{-19} - 1{,}6 \\times 10^{-19} = 8{,}16 \\times 10^{-19}\\ \\text{J}\\quad\\text{(a favor del camp)}$$\n\n$$W_\\text{ext} = 9{,}76 \\times 10^{-19} + 1{,}6 \\times 10^{-19} = 1{,}14 \\times 10^{-18}\\ \\text{J}\\quad\\text{(en contra del camp)}$$\n\nResultat: **$W_\\text{ext} = 8{,}16 \\times 10^{-19}\\ \\text{J}$** o **$1{,}14 \\times 10^{-18}\\ \\text{J}$** segons el sentit (les dues respostes es consideren correctes)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$r = 2{,}36 \\times 10^{-10}\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$W_\\text{ext} = 8{,}16 \\times 10^{-19}\\ \\text{J}$ (en el sentit del camp) o $1{,}14 \\times 10^{-18}\\ \\text{J}$ (en sentit contrari)"
+          }
+        ],
+        "nota": "La solució oficial accepta les dues interpretacions de l'apartat b). L'oficial escriu \\\"$9{,}76 \\times 19^{-19}$\\\", que és una errada tipogràfica per $9{,}76 \\times 10^{-19}$."
+      }
+    },
+    {
+      "id": "fisica-2017-J-s1-e5-a",
+      "serie": "1",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Ferro 60 i supernoves: percentatge que queda i desintegracions beta fins al níquel",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "període de semidesintegració",
+        "llei de desintegració radioactiva",
+        "desintegració beta",
+        "antineutrí",
+        "equacions nuclears"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "La presència de l'isòtop ferro 60 ($^{60}\\text{Fe}$) en algunes roques lunars i en alguns sediments oceànics indica, segons alguns astrofísics, que una supernova va esclatar a les proximitats del Sistema Solar en una època relativament recent (a escala còsmica) i va fer arribar aquest isòtop fins a la Terra. El $^{60}\\text{Fe}$ té un període de semidesintegració de $2{,}6$ milions d'anys.\n\n**Dada:** Nombre atòmic del ferro (Fe): 26.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Si hi hagués hagut $^{60}\\text{Fe}$ quan la Terra es va formar, fa $4\\,400$ milions d'anys, quin percentatge d'aquest $^{60}\\text{Fe}$ primordial quedaria ara? Si el $^{60}\\text{Fe}$ es va originar en l'explosió d'una supernova fa $13$ milions d'anys, quin percentatge d'aquest $^{60}\\text{Fe}$ hauria de quedar encara?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "El $^{60}\\text{Fe}$ es transforma, mitjançant una desintegració $\\beta^-$, en un isòtop de cobalt (Co) de vida breu, el qual torna a patir una nova desintegració $\\beta^-$ i produeix un isòtop estable de níquel (Ni). Escriviu les equacions nuclears de les dues desintegracions, incloent-hi els antineutrins.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $T_{1/2} = 2{,}6 \\times 10^{6}$ anys; $Z(\\text{Fe}) = 26$\n- Temps: $t_1 = 4400 \\times 10^{6}$ anys; $t_2 = 13 \\times 10^{6}$ anys\n- Incògnites: a) fracció $N/N_0$ en cada cas; b) equacions de les dues desintegracions $\\beta^-$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Llei de desintegració en funció del període",
+            "cos": "Cada període de semidesintegració el nombre de nuclis es redueix a la meitat. Després d'un temps $t$ han passat $n = t/T_{1/2}$ períodes, i\n\n$$\\frac{N}{N_0} = 2^{-t/T_{1/2}}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Ferro 60 primordial (fa 4 400 milions d'anys)",
+            "cos": "$$n = \\frac{4400}{2{,}6} \\approx 1692\\ \\text{períodes} \\quad\\Rightarrow\\quad \\frac{N}{N_0} = 2^{-1692} \\approx 10^{-509} \\approx 0$$\n\nResultat: **no en quedaria pràcticament gens (0 %)**. Per això, si se'n troba avui, no pot ser primordial."
+          },
+          {
+            "apartat": "a",
+            "titol": "Ferro 60 de la supernova (fa 13 milions d'anys)",
+            "cos": "$$n = \\frac{13}{2{,}6} = 5\\ \\text{períodes} \\quad\\Rightarrow\\quad \\frac{N}{N_0} = 2^{-5} = \\frac{1}{32} = 0{,}03125$$\n\nResultat: **en quedaria un 3,1 %**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Què passa en una desintegració β⁻",
+            "cos": "En una desintegració $\\beta^-$ un neutró del nucli es transforma en un protó, i s'emeten un electró i un antineutrí electrònic: $n \\to p + e^- + \\bar\\nu_e$. El nombre màssic $A$ no canvia i el nombre atòmic $Z$ augmenta en 1. Es conserven la càrrega i el nombre de nucleons."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equacions nuclears",
+            "cos": "$${}^{60}_{26}\\text{Fe} \\;\\to\\; {}^{60}_{27}\\text{Co} + {}^{\\ 0}_{-1}e + {}^{0}_{0}\\bar\\nu_e$$\n\n$${}^{60}_{27}\\text{Co} \\;\\to\\; {}^{60}_{28}\\text{Ni} + {}^{\\ 0}_{-1}e + {}^{0}_{0}\\bar\\nu_e$$\n\nComprovació: $A$: $60 = 60 + 0 + 0$; $Z$: $26 = 27 - 1 + 0$ i $27 = 28 - 1 + 0$. L'electró també es pot escriure com a $\\beta^-$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Primordial: $\\approx 0\\ \\%$ ($2^{-1692}$); supernova: $2^{-5} = 3{,}1\\ \\%$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$^{60}_{26}\\text{Fe} \\to {}^{60}_{27}\\text{Co} + e^- + \\bar\\nu_e$; $^{60}_{27}\\text{Co} \\to {}^{60}_{28}\\text{Ni} + e^- + \\bar\\nu_e$"
+          }
+        ],
+        "nota": "Als criteris oficials es resten 0,2 punts si no s'escriuen els antineutrins."
+      }
+    },
+    {
+      "id": "fisica-2017-J-s1-e3-b",
+      "serie": "1",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Agulla d'una màquina de cosir en MHS: equació, gràfica i velocitat i acceleració màximes",
+      "tema": "oscillacions",
+      "temes_secundaris": [],
+      "conceptes": [
+        "moviment harmònic simple",
+        "equació del moviment",
+        "fase inicial",
+        "velocitat màxima",
+        "acceleració màxima"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "L'agulla d'una màquina de cosir oscil·la amb un desplaçament vertical de $15\\ \\text{mm}$ d'un extrem a l'altre. En les especificacions del fabricant, s'indica que l'agulla fa $1\\,200$ puntades per minut. Suposeu que l'agulla descriu un moviment harmònic simple.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu l'equació del moviment i representeu la gràfica posició-temps durant dos períodes, suposant que a l'instant inicial l'agulla es troba en la posició més alta.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la velocitat i l'acceleració màximes de l'agulla.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Distància entre extrems: $2A = 15\\ \\text{mm}$ → $A = 7{,}5\\ \\text{mm} = 7{,}5 \\times 10^{-3}\\ \\text{m}$\n- Freqüència: $1200$ puntades/min $= \\frac{1200}{60} = 20\\ \\text{Hz}$\n- Condició inicial: $y(0) = +A$ (posició més alta)\n- Incògnites: a) $y(t)$ i gràfica; b) $v_\\text{max}$ i $a_\\text{max}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Amplitud, pulsació i període",
+            "cos": "L'amplitud és la meitat del recorregut total, $A = 7{,}5 \\times 10^{-3}\\ \\text{m}$. Cada puntada és una oscil·lació completa:\n\n$$\\omega = 2\\pi f = 2\\pi\\cdot\\frac{1200}{60} = 40\\pi\\ \\text{rad/s} \\approx 126\\ \\text{rad/s}, \\qquad T = \\frac{2\\pi}{\\omega} = \\frac{1}{20} = 0{,}05\\ \\text{s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Fase inicial i equació del moviment",
+            "cos": "Escrivim $y(t) = A\\sin(\\omega t + \\varphi_0)$. A $t = 0$ l'agulla és a dalt de tot: $y(0) = A\\sin\\varphi_0 = A \\Rightarrow \\sin\\varphi_0 = 1 \\Rightarrow \\varphi_0 = \\frac{\\pi}{2}\\ \\text{rad}$.\n\n$$y(t) = 7{,}5 \\times 10^{-3}\\ \\text{m}\\cdot\\sin\\left(40\\pi\\ \\tfrac{\\text{rad}}{\\text{s}}\\,t + \\frac{\\pi}{2}\\right)$$\n\nEquivalentment, amb cosinus i $\\varphi_0 = 0$: $y(t) = 7{,}5 \\times 10^{-3}\\cos(40\\pi t)$ (SI)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Gràfica posició-temps",
+            "cos": "És una cosinusoide que comença al màxim ($y = A$ a $t = 0$), passa per zero a $t = T/4 = 0{,}0125\\ \\text{s}$, arriba al mínim ($-A$) a $T/2 = 0{,}025\\ \\text{s}$ i torna al màxim a $T = 0{,}05\\ \\text{s}$. Dos períodes són $0{,}1\\ \\text{s}$.\n\n![Gràfica posició-temps de l'agulla (solució oficial)](img/fisica/2017-J/s1-e3-b-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat i acceleració en funció del temps",
+            "cos": "Derivem la posició:\n\n$$v(t) = \\frac{dy}{dt} = A\\omega\\cos\\left(\\omega t + \\frac{\\pi}{2}\\right), \\qquad a(t) = \\frac{dv}{dt} = -A\\omega^2\\sin\\left(\\omega t + \\frac{\\pi}{2}\\right) = -\\omega^2 y$$\n\nEls valors màxims s'obtenen quan el cosinus (o el sinus) val $\\pm 1$: la velocitat és màxima al centre de l'oscil·lació i l'acceleració als extrems."
+          },
+          {
+            "apartat": "b",
+            "titol": "Valors màxims",
+            "cos": "$$v_\\text{max} = A\\omega = 7{,}5 \\times 10^{-3} \\cdot 40\\pi = 0{,}94\\ \\text{m/s}$$\n\n$$a_\\text{max} = A\\omega^2 = 7{,}5 \\times 10^{-3} \\cdot (40\\pi)^2 = 118\\ \\text{m/s}^2$$\n\nResultats: **$v_\\text{max} = 0{,}94\\ \\text{m/s}$**, **$a_\\text{max} = 118\\ \\text{m/s}^2$** (unes 12 vegades $g$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y(t) = 7{,}5 \\times 10^{-3}\\sin(40\\pi t + \\pi/2)$ m $= 7{,}5 \\times 10^{-3}\\cos(40\\pi t)$ m; $T = 0{,}05\\ \\text{s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_\\text{max} = 0{,}94\\ \\text{m/s}$; $a_\\text{max} = 118\\ \\text{m/s}^2$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2017-J-s1-e4-b",
+      "serie": "1",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Plaques paral·leles en una càpsula de Petri: camp elèctric, superfícies equipotencials i treball",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp elèctric uniforme",
+        "superfícies equipotencials",
+        "diferència de potencial",
+        "treball elèctric"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "En una càpsula de Petri plena d'aigua destil·lada hem submergit dues plaques metàl·liques paral·leles connectades a una diferència de potencial de $12{,}0\\ \\text{V}$, tal com mostra la figura. Les dues plaques estan separades per una distància de $6{,}00\\ \\text{cm}$. Amb un voltímetre, explorem la diferència de potencial entre la placa negativa i diferents punts de la regió intermèdia.",
+      "figures": [
+        {
+          "src": "img/fisica/2017-J/s1-e4-b.png",
+          "peu": "Càpsula de Petri amb dues plaques paral·leles (0 V i 12 V) i la sonda del voltímetre"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el camp elèctric (suposant que és uniforme) entre les dues plaques, i indiqueu-ne també la direcció i el sentit. Feu un dibuix en què representeu, de manera aproximada, les superfícies equipotencials que espereu trobar a la regió compresa entre les dues plaques i indiqueu el valor del potencial en cadascuna de les superfícies representades.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Amb la sonda, tal com veiem a la figura, el voltímetre indica $7{,}0\\ \\text{V}$. Calculeu el treball que hauria de fer una força externa per a desplaçar una càrrega positiva de $0{,}1\\ \\mu\\text{C}$ des d'aquest punt fins a la placa positiva.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $\\Delta V = 12{,}0\\ \\text{V}$ (placa esquerra a 0 V, placa dreta a 12 V)\n- $d = 6{,}00\\ \\text{cm} = 0{,}0600\\ \\text{m}$\n- Potencial a la sonda: $V_s = 7{,}0\\ \\text{V}$; $q = 0{,}1\\ \\mu\\text{C} = 1 \\times 10^{-7}\\ \\text{C}$\n- Incògnites: a) $E$ (mòdul, direcció i sentit) i equipotencials; b) $W_\\text{ext}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Mòdul del camp elèctric uniforme",
+            "cos": "Entre dues plaques paral·leles el camp és (aproximadament) uniforme i es relaciona amb la diferència de potencial per $\\Delta V = E\\,d$:\n\n$$E = \\frac{\\Delta V}{d} = \\frac{12{,}0\\ \\text{V}}{0{,}0600\\ \\text{m}} = 200\\ \\text{V/m}$$\n\nResultat: **$E = 200\\ \\text{V/m} = 200\\ \\text{N/C}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Direcció i sentit",
+            "cos": "El camp és perpendicular a les plaques i apunta cap als potencials decreixents, és a dir, **de la placa positiva (12 V, dreta) cap a la negativa (0 V, esquerra)**: dirigit **cap a l'esquerra**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Superfícies equipotencials",
+            "cos": "Les superfícies equipotencials són sempre perpendiculars a les línies de camp. En un camp uniforme són **plans paral·lels a les plaques**, i com que $V$ creix linealment amb la distància a la placa negativa ($V = E\\,x$), plans equiespaiats corresponen a salts iguals de potencial. Per exemple, cada $2\\ \\text{cm}$ hi ha un pla: $0\\ \\text{V}$ (placa −), $4\\ \\text{V}$, $8\\ \\text{V}$, $12\\ \\text{V}$ (placa +); o cada $1{,}5\\ \\text{cm}$: $3$, $6$ i $9\\ \\text{V}$, com a la figura oficial (en vermell, les línies de camp cap a l'esquerra).\n\n![Superfícies equipotencials de 3 V, 6 V i 9 V i línies de camp (solució oficial)](img/fisica/2017-J/s1-e4-b-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball extern i diferència de potencial",
+            "cos": "Si la càrrega es desplaça lentament (sense guanyar energia cinètica), el treball de la força externa és igual a l'increment d'energia potencial elèctrica:\n\n$$W_\\text{ext} = \\Delta U = q\\,(V_f - V_i) = q\\,(12{,}0 - 7{,}0) = q \\cdot 5{,}0\\ \\text{V}$$\n\nTé sentit que sigui positiu: portem una càrrega positiva cap a potencials més alts, contra la força del camp (que l'empeny cap a l'esquerra)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Càlcul",
+            "cos": "$$W_\\text{ext} = 1 \\times 10^{-7}\\ \\text{C} \\cdot 5{,}0\\ \\text{V} = 5 \\times 10^{-7}\\ \\text{J}$$\n\nResultat: **$W_\\text{ext} = 5 \\times 10^{-7}\\ \\text{J}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 200\\ \\text{V/m}$, perpendicular a les plaques, de la placa + a la − (cap a l'esquerra); equipotencials: plans paral·lels equiespaiats (p. ex. 3, 6, 9 V)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$W_\\text{ext} = 5 \\times 10^{-7}\\ \\text{J}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2017-J-s1-e5-b",
+      "serie": "1",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Mostra radioactiva amb període de 600 s: constant de desintegració, nuclis restants i activitat",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "constant de desintegració",
+        "període de semidesintegració",
+        "llei de desintegració radioactiva",
+        "activitat"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        4
+      ],
+      "enunciat": "El període de semidesintegració d'un nucli radioactiu és de $600\\ \\text{s}$. Disposem d'una mostra que inicialment té $10^{10}$ d'aquests nuclis.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la constant de desintegració i el nombre de nuclis que queden després d'una hora.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'activitat de la mostra dues hores després de l'instant inicial.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $T_{1/2} = 600\\ \\text{s}$; $N_0 = 10^{10}$ nuclis\n- $t_1 = 1\\ \\text{h} = 3600\\ \\text{s}$; $t_2 = 2\\ \\text{h} = 7200\\ \\text{s}$\n- Incògnites: a) $\\lambda$ i $N(3600\\ \\text{s})$; b) $A(7200\\ \\text{s})$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Constant de desintegració",
+            "cos": "De la llei $N = N_0 e^{-\\lambda t}$, quan $t = T_{1/2}$ queda la meitat: $\\frac12 = e^{-\\lambda T_{1/2}}$, d'on\n\n$$\\lambda = \\frac{\\ln 2}{T_{1/2}} = \\frac{0{,}693}{600\\ \\text{s}} = 1{,}155 \\times 10^{-3}\\ \\text{s}^{-1}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Nuclis que queden al cap d'una hora",
+            "cos": "$$N(3600) = N_0 e^{-\\lambda t} = 10^{10} \\cdot e^{-1{,}155 \\times 10^{-3} \\cdot 3600} = 1{,}56 \\times 10^{8}\\ \\text{nuclis}$$\n\nComprovació: una hora són $3600/600 = 6$ períodes, i $10^{10}/2^6 = 10^{10}/64 = 1{,}56 \\times 10^{8}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Activitat al cap de dues hores",
+            "cos": "L'activitat és el nombre de desintegracions per segon, $A = \\lambda N$. Al cap de $7200\\ \\text{s}$ (12 períodes):\n\n$$N(7200) = 10^{10} e^{-1{,}155 \\times 10^{-3} \\cdot 7200} = \\frac{10^{10}}{2^{12}} = 2{,}44 \\times 10^{6}\\ \\text{nuclis}$$\n\n$$A = \\lambda N = 1{,}155 \\times 10^{-3}\\ \\text{s}^{-1} \\cdot 2{,}44 \\times 10^{6} = 2{,}82 \\times 10^{3}\\ \\text{Bq}$$\n\nResultat: **$A = 2{,}82 \\times 10^{3}\\ \\text{Bq}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\lambda = 1{,}155 \\times 10^{-3}\\ \\text{s}^{-1}$; $N = 1{,}56 \\times 10^{8}$ nuclis"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A = 2{,}82 \\times 10^{3}\\ \\text{Bq}$"
+          }
+        ],
+        "nota": "A la solució oficial s'indica $N(7200) = 2{,}36 \\times 10^{6}$ sota la claudàtor, però el valor correcte és $2{,}44 \\times 10^{6}$ ($10^{10}/4096$); el resultat final oficial ($2{,}82 \\times 10^{3}\\ \\text{Bq}$) sí que és correcte."
+      }
+    },
+    {
+      "id": "fisica-2017-J-s5-e1",
+      "serie": "5",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Estrella de neutrons: camp gravitatori a la superfície i velocitat d'escapament",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "intensitat del camp gravitatori",
+        "velocitat d'escapament",
+        "conservació de l'energia mecànica",
+        "energia potencial gravitatòria"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        5
+      ],
+      "enunciat": "A finals de l'any 1933, a la Universitat de Stanford (EUA), Fritz Zwicky i Walter Baade van proposar per primera vegada l'existència de les estrelles de neutrons. Aquestes estrelles, formades només per neutrons, es poden originar després de l'explosió d'una supernova. Els neutrons que les formen són el resultat de la fusió de protons i electrons, provocada per la compressió que exerceix el camp gravitatori d'aquestes estrelles. Per a una estrella de neutrons determinada que té una massa de $2{,}9 \\times 10^{30}\\ \\text{kg}$ i un radi de $10\\ \\text{km}$, calculeu:\n\n**Dada:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El mòdul de la intensitat de camp gravitatori que l'estrella de neutrons crea a la seva pròpia superfície.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "La velocitat mínima que hem de donar a un coet en el moment del llançament des de la superfície de l'estrella perquè es pugui escapar de l'atracció d'aquesta (ignoreu els possibles efectes relativistes). Demostreu l'expressió utilitzada per a fer el càlcul i feu esment del principi de conservació en què us baseu.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $M = 2{,}9 \\times 10^{30}\\ \\text{kg}$; $R = 10\\ \\text{km} = 1{,}0 \\times 10^{4}\\ \\text{m}$\n- $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\,\\text{kg}^{-2}$\n- Incògnites: a) $g$ a la superfície; b) velocitat d'escapament $v_e$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Intensitat del camp gravitatori",
+            "cos": "La intensitat del camp és la força per unitat de massa: $g = \\frac{F}{m} = \\frac{G\\frac{Mm}{R^2}}{m} = \\frac{GM}{R^2}$.\n\n$$g = \\frac{6{,}67 \\times 10^{-11} \\cdot 2{,}9 \\times 10^{30}}{(1{,}0 \\times 10^{4})^2} = 1{,}93 \\times 10^{12}\\ \\text{N/kg}$$\n\nResultat: **$g = 1{,}93 \\times 10^{12}\\ \\text{N/kg}$ (o m/s²)**, unes $2 \\times 10^{11}$ vegades la gravetat terrestre."
+          },
+          {
+            "apartat": "b",
+            "titol": "Principi de conservació de l'energia mecànica",
+            "cos": "Un cop llançat, sobre el coet només actua la força gravitatòria, que és conservativa: l'**energia mecànica es conserva**, $E = E_c + E_p = \\frac12 mv^2 - G\\frac{Mm}{r} = \\text{constant}$.\n\nLa velocitat **mínima** per escapar és aquella amb què el coet arriba a l'infinit ($E_p = 0$) amb velocitat nul·la ($E_c = 0$). Per tant, l'energia mecànica total ha de ser zero:"
+          },
+          {
+            "apartat": "b",
+            "titol": "Deducció de la velocitat d'escapament",
+            "cos": "$$E(\\text{superfície}) = E(\\infty) = 0 \\quad\\Rightarrow\\quad \\frac12 m v_e^2 - G\\frac{Mm}{R} = 0 \\quad\\Rightarrow\\quad v_e = \\sqrt{\\frac{2GM}{R}}$$\n\nObserveu que no depèn de la massa del coet."
+          },
+          {
+            "apartat": "b",
+            "titol": "Càlcul",
+            "cos": "$$v_e = \\sqrt{\\frac{2 \\cdot 6{,}67 \\times 10^{-11} \\cdot 2{,}9 \\times 10^{30}}{1{,}0 \\times 10^{4}}} = 1{,}97 \\times 10^{8}\\ \\text{m/s}$$\n\nResultat: **$v_e = 1{,}97 \\times 10^{8}\\ \\text{m/s}$**. És un 66 % de la velocitat de la llum: per això l'enunciat diu que ignorem els efectes relativistes (en realitat no serien negligibles)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$g = 1{,}93 \\times 10^{12}\\ \\text{N/kg}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_e = \\sqrt{2GM/R} = 1{,}97 \\times 10^{8}\\ \\text{m/s}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2017-J-s5-e2",
+      "serie": "5",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Ones a l'aigua vistes des d'una barca: velocitat, equació d'ona i diferència de fase",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "equació d'ona",
+        "velocitat de propagació",
+        "longitud d'ona",
+        "diferència de fase"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        5
+      ],
+      "enunciat": "Un remer assegut a la seva barca, de comportament estacionari respecte a l'aigua, observa que les crestes de les ones passen per la proa cada $4{,}00\\ \\text{s}$, que l'amplitud de les crestes és de $0{,}30\\ \\text{m}$ i que la distància entre dues crestes és de $9{,}00\\ \\text{m}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la velocitat de propagació de les ones. Determineu l'equació de l'ona suposant que la fase inicial és zero.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "En un instant donat, calculeu la diferència de fase entre dos punts que disten $4{,}00\\ \\text{m}$ l'un de l'altre.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Període (temps entre crestes): $T = 4{,}00\\ \\text{s}$\n- Amplitud: $A = 0{,}30\\ \\text{m}$\n- Longitud d'ona (distància entre crestes): $\\lambda = 9{,}00\\ \\text{m}$\n- Incògnites: a) $v$ i $y(x,t)$; b) $\\Delta\\varphi$ entre punts separats $\\Delta x = 4{,}00\\ \\text{m}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat de propagació",
+            "cos": "En un període l'ona avança una longitud d'ona:\n\n$$v = \\frac{\\lambda}{T} = \\frac{9{,}00\\ \\text{m}}{4{,}00\\ \\text{s}} = 2{,}25\\ \\text{m/s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Pulsació i nombre d'ona",
+            "cos": "$$\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{4{,}00} = \\frac{\\pi}{2}\\ \\text{rad/s}, \\qquad k = \\frac{2\\pi}{\\lambda} = \\frac{2\\pi}{9{,}00}\\ \\text{rad/m} \\approx 0{,}698\\ \\text{rad/m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de l'ona",
+            "cos": "Per a una ona que es propaga en el sentit positiu de l'eix $x$, $y(x,t) = A\\sin(\\omega t - kx + \\varphi_0)$, amb $\\varphi_0 = 0$:\n\n$$y(x,t) = 0{,}30\\ \\text{m} \\cdot \\sin\\left(\\frac{\\pi}{2}\\ \\tfrac{\\text{rad}}{\\text{s}}\\, t - \\frac{2\\pi}{9}\\ \\tfrac{\\text{rad}}{\\text{m}}\\, x\\right)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Diferència de fase entre dos punts",
+            "cos": "En un mateix instant $t$, la fase de cada punt és $\\varphi = \\omega t - kx$. Restant les fases de dos punts, el terme $\\omega t$ s'anul·la:\n\n$$\\Delta\\varphi = k\\,|x_2 - x_1| = \\frac{2\\pi}{9{,}00\\ \\text{m}} \\cdot 4{,}00\\ \\text{m} = \\frac{8\\pi}{9}\\ \\text{rad} \\approx 2{,}79\\ \\text{rad}$$\n\nResultat: **$\\Delta\\varphi = 8\\pi/9\\ \\text{rad}$** (equivalent a $160^\\circ$; com que $4/9$ de $\\lambda$ és gairebé mitja longitud d'ona, els punts oscil·len quasi en oposició de fase)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v = 2{,}25\\ \\text{m/s}$; $y = 0{,}30\\sin(\\frac{\\pi}{2}t - \\frac{2\\pi}{9}x)$ (SI)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\Delta\\varphi = 8\\pi/9\\ \\text{rad} \\approx 2{,}79\\ \\text{rad}$"
+          }
+        ],
+        "nota": "La solució oficial escriu la velocitat com «2,25 m», sense el /s: és una errada tipogràfica."
+      }
+    },
+    {
+      "id": "fisica-2017-J-s5-e3-a",
+      "serie": "5",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Microscopi òptic i electrònic: energia i quantitat de moviment del fotó i poder de resolució",
+      "tema": "quantica",
+      "temes_secundaris": [
+        "optica"
+      ],
+      "conceptes": [
+        "fotó",
+        "energia del fotó",
+        "quantitat de moviment",
+        "longitud d'ona de de broglie",
+        "dualitat ona-partícula"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Per a fer observacions, els microscopis òptics fan servir fotons i els microscopis electrònics utilitzen electrons. El poder de resolució d'un microscopi és la capacitat que té per a diferenciar com a punts separats dos punts molt propers i està determinat (en part) per la longitud d'ona de la radiació emprada, de tal manera que com més petita és la longitud d'ona de la radiació, més gran és la resolució del microscopi.\n\n**Dades:** Velocitat de la llum, $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; constant de Planck, $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'energia dels fotons utilitzats en un microscopi òptic de llum visible de $400\\ \\text{nm}$ de longitud d'ona. Quina és la quantitat de moviment d'aquests fotons?",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Fem servir un microscopi electrònic en què els electrons que ens permeten fer l'observació són accelerats per una diferència de potencial, de manera que assoleixen una quantitat de moviment de $3{,}31 \\times 10^{-25}\\ \\text{kg m s}^{-1}$. Calculeu la relació que hi ha entre el poder de resolució d'aquest microscopi electrònic i el del microscopi òptic de l'apartat anterior. Quin dels dos microscopis té més poder de resolució?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Fotons: $\\lambda_\\text{f} = 400\\ \\text{nm} = 4{,}00 \\times 10^{-7}\\ \\text{m}$\n- Electrons: $p_e = 3{,}31 \\times 10^{-25}\\ \\text{kg m/s}$\n- $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$; $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$\n- Incògnites: a) $E$ i $p$ del fotó; b) $\\lambda_e$ i relació de resolucions."
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüència i energia del fotó",
+            "cos": "Segons Planck-Einstein, l'energia d'un fotó és $E = hf$, amb $f = c/\\lambda$:\n\n$$f = \\frac{c}{\\lambda} = \\frac{3{,}00 \\times 10^{8}}{4{,}00 \\times 10^{-7}} = 7{,}50 \\times 10^{14}\\ \\text{Hz}$$\n\n$$E = hf = 6{,}63 \\times 10^{-34} \\cdot 7{,}50 \\times 10^{14} = 4{,}97 \\times 10^{-19}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Quantitat de moviment del fotó",
+            "cos": "Un fotó no té massa, però sí quantitat de moviment: $p = \\frac{E}{c} = \\frac{h}{\\lambda}$.\n\n$$p = \\frac{4{,}97 \\times 10^{-19}}{3{,}00 \\times 10^{8}} = 1{,}66 \\times 10^{-27}\\ \\text{kg m/s}$$\n\nResultats: **$E = 4{,}97 \\times 10^{-19}\\ \\text{J}$**, **$p = 1{,}66 \\times 10^{-27}\\ \\text{kg m/s}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud d'ona associada als electrons (de Broglie)",
+            "cos": "Segons la hipòtesi de de Broglie, tota partícula amb quantitat de moviment $p$ té associada una ona de longitud $\\lambda = h/p$ (la mateixa relació que per al fotó):\n\n$$\\lambda_e = \\frac{h}{p_e} = \\frac{6{,}63 \\times 10^{-34}}{3{,}31 \\times 10^{-25}} = 2{,}00 \\times 10^{-9}\\ \\text{m} = 2{,}00\\ \\text{nm}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Comparació del poder de resolució",
+            "cos": "La resolució millora com més petita és la longitud d'ona. La relació entre longituds d'ona és\n\n$$\\frac{\\lambda_e}{\\lambda_\\text{f}} = \\frac{2{,}00\\ \\text{nm}}{400\\ \\text{nm}} = 5 \\times 10^{-3} = \\frac{1}{200}$$\n\nLa longitud d'ona dels electrons és 200 vegades més petita, de manera que **el microscopi electrònic té un poder de resolució unes 200 vegades més gran** que l'òptic."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 4{,}97 \\times 10^{-19}\\ \\text{J}$; $p = 1{,}66 \\times 10^{-27}\\ \\text{kg m/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\lambda_e = 2{,}00\\ \\text{nm}$; $\\lambda_e/\\lambda_\\text{f} = 1/200$ → l'electrònic resol 200 vegades més"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2017-J-s5-e4-a",
+      "serie": "5",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Selector de velocitats per a ions He⁺: sentit del camp elèctric, camp magnètic i radi de l'òrbita",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [
+        "camp-electric"
+      ],
+      "conceptes": [
+        "selector de velocitats",
+        "força de lorentz",
+        "força magnètica",
+        "moviment circular",
+        "radi de l'òrbita"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "En un selector de velocitats, un camp elèctric i un camp magnètic formen un angle de $90^\\circ$ entre si. El selector deixa passar ions de He⁺ amb una velocitat de $3{,}20 \\times 10^{5}\\ \\text{m s}^{-1}$, que no es desvien de la trajectòria rectilínia inicial. El camp elèctric té un mòdul de $2{,}00 \\times 10^{5}\\ \\text{N C}^{-1}$. La disposició del camp magnètic i la velocitat són els que es veuen en la figura.",
+      "figures": [
+        {
+          "src": "img/fisica/2017-J/s5-e4-a.png",
+          "peu": "Camp magnètic entrant al paper i velocitat de l'ió cap a la dreta"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Indiqueu, d'una manera justificada, la direcció i el sentit del camp elèctric i de la força magnètica que actua sobre un ió He⁺ amb una càrrega d'$1{,}60 \\times 10^{-19}\\ \\text{C}$. Calculeu també el mòdul del camp magnètic en aquest dispositiu.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el radi de l'òrbita que descriu un ió He⁺ si només hi actua el camp magnètic. La massa d'aquests ions és de $6{,}68 \\times 10^{-27}\\ \\text{kg}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $v = 3{,}20 \\times 10^{5}\\ \\text{m/s}$ (cap a la dreta, $+\\hat\\imath$); $\\vec B$ entrant al paper ($-\\hat k$)\n- $E = 2{,}00 \\times 10^{5}\\ \\text{N/C}$; $q = +1{,}60 \\times 10^{-19}\\ \\text{C}$; $m = 6{,}68 \\times 10^{-27}\\ \\text{kg}$\n- Incògnites: a) sentit de $\\vec F_m$ i $\\vec E$, mòdul de $B$; b) radi $R$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Força magnètica sobre l'ió",
+            "cos": "La força magnètica és $\\vec F_m = q\\,\\vec v \\times \\vec B$. Amb $\\vec v$ cap a la dreta ($+\\hat\\imath$), $\\vec B$ entrant ($-\\hat k$) i $q > 0$:\n\n$$\\vec F_m = q\\,v B\\,(\\hat\\imath \\times (-\\hat k)) = q v B\\,\\hat\\jmath$$\n\nLa força magnètica és **vertical i cap amunt** (regla de la mà dreta: dits cap a $\\vec v$, es dobleguen cap a $\\vec B$, el polze indica $\\vec F$ per a una càrrega positiva)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp elèctric: les forces s'han d'equilibrar",
+            "cos": "Si l'ió no es desvia, la força total és nul·la: la força elèctrica ha de tenir el mateix mòdul que la magnètica i **sentit oposat**, és a dir, **cap avall**. Com que l'ió és positiu, $\\vec F_e = q\\vec E$ té el mateix sentit que $\\vec E$: el camp elèctric és **vertical i cap avall**:\n\n$$\\vec E = -2{,}00 \\times 10^{5}\\,\\hat\\jmath\\ \\text{N/C}$$\n\n![Forces elèctrica i magnètica sobre l'ió i sentit del camp elèctric (solució oficial)](img/fisica/2017-J/s5-e4-a-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Mòdul del camp magnètic",
+            "cos": "$$F_m = F_e \\;\\Rightarrow\\; qvB = qE \\;\\Rightarrow\\; B = \\frac{E}{v} = \\frac{2{,}00 \\times 10^{5}}{3{,}20 \\times 10^{5}} = 0{,}625\\ \\text{T}$$\n\nResultat: **$B = 0{,}625\\ \\text{T}$**. (Només passen sense desviar-se els ions amb $v = E/B$: d'aquí el nom de *selector de velocitats*.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Moviment circular dins del camp magnètic",
+            "cos": "Si només hi ha camp magnètic, la força és sempre perpendicular a la velocitat: no canvia el mòdul de la velocitat, sinó la direcció, i l'ió descriu una circumferència. La força magnètica fa de força centrípeta:\n\n$$qvB = m\\frac{v^2}{R} \\quad\\Rightarrow\\quad R = \\frac{mv}{qB}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Càlcul del radi",
+            "cos": "$$R = \\frac{6{,}68 \\times 10^{-27} \\cdot 3{,}20 \\times 10^{5}}{1{,}60 \\times 10^{-19} \\cdot 0{,}625} = 2{,}14 \\times 10^{-2}\\ \\text{m}$$\n\nResultat: **$R = 0{,}0214\\ \\text{m} = 2{,}14\\ \\text{cm}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\vec F_m$ cap amunt; $\\vec E$ cap avall ($\\vec E = -2{,}00 \\times 10^{5}\\,\\hat\\jmath$ N/C); $B = 0{,}625\\ \\text{T}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$R = 2{,}14 \\times 10^{-2}\\ \\text{m}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2017-J-s5-e5-a",
+      "serie": "5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Tres càrregues als vèrtexs d'un rectangle: força sobre q1, potencial en el quart vèrtex i energia potencial",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "llei de coulomb",
+        "principi de superposició",
+        "potencial elèctric",
+        "energia potencial elèctrica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        7
+      ],
+      "enunciat": "Tres càrregues elèctriques $q_1 = 1{,}00\\ \\mu\\text{C}$, $q_2 = 3{,}00\\ \\mu\\text{C}$ i $q_3 = 12{,}00\\ \\mu\\text{C}$ estan fixades en tres dels vèrtexs del rectangle, tal com es veu en la figura. La distància $d_1$ és de $2{,}00\\ \\text{m}$ i la distància $d_2$ és de $4{,}00\\ \\text{m}$.\n\n**Dada:** $k = \\frac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2017-J/s5-e5-a.png",
+          "peu": "Rectangle amb q1 (baix esquerra), q2 (dalt esquerra), q3 (baix dreta) i el punt P (dalt dreta)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Representeu en un esquema les forces elèctriques que actuen sobre la càrrega $q_1$ per efecte de les altres dues càrregues. Representeu-hi també la força total i calculeu-ne el mòdul.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el potencial elèctric en el punt $P$ i l'energia potencial de la distribució de les tres càrregues.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $q_1 = 1{,}00 \\times 10^{-6}\\ \\text{C}$, $q_2 = 3{,}00 \\times 10^{-6}\\ \\text{C}$, $q_3 = 12{,}00 \\times 10^{-6}\\ \\text{C}$ (totes positives)\n- $d_1 = 2{,}00\\ \\text{m}$ (distància $q_1$–$q_2$ i $q_3$–$P$); $d_2 = 4{,}00\\ \\text{m}$ (distància $q_1$–$q_3$ i $q_2$–$P$)\n- Diagonal: $\\sqrt{d_1^2 + d_2^2} = \\sqrt{20} = 4{,}47\\ \\text{m}$ ($q_1$–$P$ i $q_2$–$q_3$)\n- Incògnites: a) $\\vec F_{1,2}$, $\\vec F_{1,3}$ i $|\\vec F_1|$; b) $V_P$ i $U$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Forces sobre q1 (llei de Coulomb)",
+            "cos": "Totes les càrregues són positives, així que les forces sobre $q_1$ són de **repulsió**: $q_2$ (a sobre) l'empeny **cap avall** i $q_3$ (a la dreta) l'empeny **cap a l'esquerra**.\n\n$$F_{1,2} = k\\frac{q_1 q_2}{d_1^2} = 8{,}99 \\times 10^{9}\\cdot\\frac{1{,}00 \\times 10^{-6}\\cdot 3{,}00 \\times 10^{-6}}{(2{,}00)^2} = 6{,}74 \\times 10^{-3}\\ \\text{N}$$\n\n$$F_{1,3} = k\\frac{q_1 q_3}{d_2^2} = 8{,}99 \\times 10^{9}\\cdot\\frac{1{,}00 \\times 10^{-6}\\cdot 12{,}00 \\times 10^{-6}}{(4{,}00)^2} = 6{,}74 \\times 10^{-3}\\ \\text{N}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Força total (superposició)",
+            "cos": "Les dues forces són perpendiculars, per tant el mòdul de la resultant s'obté amb Pitàgores:\n\n$$|\\vec F_1| = \\sqrt{F_{1,2}^2 + F_{1,3}^2} = \\sqrt{(6{,}74 \\times 10^{-3})^2 + (6{,}74 \\times 10^{-3})^2} = 9{,}54 \\times 10^{-3}\\ \\text{N}$$\n\nCom que tenen el mateix mòdul, la resultant forma $45^\\circ$ cap avall i cap a l'esquerra: $\\vec F_1 = (-6{,}74\\,\\hat\\imath - 6{,}74\\,\\hat\\jmath) \\times 10^{-3}\\ \\text{N}$.\n\n![Forces sobre q1 i força total (solució oficial)](img/fisica/2017-J/s5-e5-a-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Potencial en el punt P",
+            "cos": "El potencial és una magnitud escalar: sumem el potencial que crea cada càrrega, $V = k\\frac{q}{r}$. Distàncies a $P$: $q_1$ a $\\sqrt{20}\\ \\text{m}$ (diagonal), $q_2$ a $d_2 = 4{,}00\\ \\text{m}$, $q_3$ a $d_1 = 2{,}00\\ \\text{m}$.\n\n$$V_P = k\\left(\\frac{q_1}{\\sqrt{d_1^2+d_2^2}} + \\frac{q_2}{d_2} + \\frac{q_3}{d_1}\\right) = 8{,}99 \\times 10^{9}\\left(\\frac{1{,}00 \\times 10^{-6}}{\\sqrt{20}} + \\frac{3{,}00 \\times 10^{-6}}{4{,}00} + \\frac{12{,}00 \\times 10^{-6}}{2{,}00}\\right)$$\n\n$$V_P = 6{,}27 \\times 10^{4}\\ \\text{V}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia potencial de la distribució",
+            "cos": "L'energia potencial d'un sistema de càrregues és la suma de les energies de cada parell (el treball necessari per portar-les des de l'infinit fins a aquestes posicions):\n\n$$U = k\\left(\\frac{q_1q_2}{d_1} + \\frac{q_1q_3}{d_2} + \\frac{q_2q_3}{\\sqrt{d_1^2+d_2^2}}\\right)$$\n\n$$U = 8{,}99 \\times 10^{9}\\left(\\frac{3{,}00 \\times 10^{-12}}{2{,}00} + \\frac{12{,}00 \\times 10^{-12}}{4{,}00} + \\frac{36{,}00 \\times 10^{-12}}{\\sqrt{20}}\\right) = 0{,}113\\ \\text{J}$$\n\nResultat: **$U = 0{,}113\\ \\text{J}$** (positiva, perquè totes les càrregues es repel·leixen)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$F_{1,2} = F_{1,3} = 6{,}74 \\times 10^{-3}\\ \\text{N}$; $|\\vec F_1| = 9{,}54 \\times 10^{-3}\\ \\text{N}$ (a 45°, cap avall i a l'esquerra)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$V_P = 6{,}27 \\times 10^{4}\\ \\text{V}$; $U = 0{,}113\\ \\text{J}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2017-J-s5-e3-b",
+      "serie": "5",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Sèrie de desintegració del tori 232 fins al plom 208 i fracció que roman sense desintegrar",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "desintegració alfa",
+        "desintegració beta",
+        "sèrie radioactiva",
+        "període de semidesintegració",
+        "llei de desintegració radioactiva"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        7
+      ],
+      "enunciat": "La desintegració del tori, $^{232}\\text{Th}$, fins a arribar al plom, $^{208}\\text{Pb}$, passa per diferents isòtops i elements: $^{228}_{88}\\text{Ra}$, $^{228}_{89}\\text{Ac}$, $^{228}_{90}\\text{Th}$, $^{224}_{88}\\text{Ra}$, $^{220}_{86}\\text{Rn}$, $^{216}_{84}\\text{Po}$, $^{212}_{82}\\text{Pb}$, $^{212}_{83}\\text{Bi}$, $^{212}_{84}\\text{Po}$ i $^{208}_{82}\\text{Pb}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Completeu les reaccions que permeten arribar al $^{208}\\text{Pb}$ a partir del $^{232}\\text{Th}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Tenint en compte que el període de semidesintegració del $^{232}\\text{Th}$ és d'$1{,}4 \\times 10^{10}$ anys, quin tant per cent de $^{232}\\text{Th}$ roman sense desintegrar-se al cap de $2{,}0 \\times 10^{10}$ anys?",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Sèrie: $^{232}_{90}\\text{Th} \\to \\dots \\to {}^{208}_{82}\\text{Pb}$ ($Z = 90$ per al tori)\n- $T_{1/2} = 1{,}4 \\times 10^{10}$ anys; $t = 2{,}0 \\times 10^{10}$ anys\n- Incògnites: a) les 10 reaccions; b) percentatge $N/N_0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Com identificar cada desintegració",
+            "cos": "Comparem cada nucli amb el següent:\n\n- Si $A$ disminueix en 4 i $Z$ en 2 → s'ha emès una partícula **α** ($^4_2\\text{He}$).\n- Si $A$ no canvia i $Z$ augmenta en 1 → desintegració **β⁻** (s'emeten un electró i un antineutrí).\n\nEn cada reacció s'han de conservar el nombre màssic i el nombre atòmic."
+          },
+          {
+            "apartat": "a",
+            "titol": "Reaccions de la sèrie",
+            "cos": "$$^{232}_{90}\\text{Th} \\to {}^{228}_{88}\\text{Ra} + {}^{4}_{2}\\alpha$$\n$$^{228}_{88}\\text{Ra} \\to {}^{228}_{89}\\text{Ac} + {}^{\\ 0}_{-1}\\beta + {}^{0}_{0}\\bar\\nu_e$$\n$$^{228}_{89}\\text{Ac} \\to {}^{228}_{90}\\text{Th} + {}^{\\ 0}_{-1}\\beta + {}^{0}_{0}\\bar\\nu_e$$\n$$^{228}_{90}\\text{Th} \\to {}^{224}_{88}\\text{Ra} + {}^{4}_{2}\\alpha$$\n$$^{224}_{88}\\text{Ra} \\to {}^{220}_{86}\\text{Rn} + {}^{4}_{2}\\alpha$$\n$$^{220}_{86}\\text{Rn} \\to {}^{216}_{84}\\text{Po} + {}^{4}_{2}\\alpha$$\n$$^{216}_{84}\\text{Po} \\to {}^{212}_{82}\\text{Pb} + {}^{4}_{2}\\alpha$$\n$$^{212}_{82}\\text{Pb} \\to {}^{212}_{83}\\text{Bi} + {}^{\\ 0}_{-1}\\beta + {}^{0}_{0}\\bar\\nu_e$$\n$$^{212}_{83}\\text{Bi} \\to {}^{212}_{84}\\text{Po} + {}^{\\ 0}_{-1}\\beta + {}^{0}_{0}\\bar\\nu_e$$\n$$^{212}_{84}\\text{Po} \\to {}^{208}_{82}\\text{Pb} + {}^{4}_{2}\\alpha$$\n\nBalanç: 6 desintegracions α i 4 β⁻. Comprovació global: $A$: $232 - 6\\cdot 4 = 208$ ✓; $Z$: $90 - 6\\cdot 2 + 4\\cdot 1 = 82$ ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "Constant de desintegració",
+            "cos": "$$\\lambda = \\frac{\\ln 2}{T_{1/2}} = \\frac{0{,}693}{1{,}4 \\times 10^{10}\\ \\text{anys}} = 4{,}95 \\times 10^{-11}\\ \\text{anys}^{-1}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Fracció que queda",
+            "cos": "$$\\frac{N}{N_0} = e^{-\\lambda t} = e^{-4{,}95 \\times 10^{-11} \\cdot 2{,}0 \\times 10^{10}} = e^{-0{,}99} = 0{,}37$$\n\n(Equivalentment, $2^{-t/T_{1/2}} = 2^{-2{,}0/1{,}4} = 0{,}37$.)\n\nResultat: **roman sense desintegrar-se un 37 %** del $^{232}\\text{Th}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "6 desintegracions α i 4 β⁻: Th-232 →α Ra-228 →β Ac-228 →β Th-228 →α Ra-224 →α Rn-220 →α Po-216 →α Pb-212 →β Bi-212 →β Po-212 →α Pb-208"
+          },
+          {
+            "apartat": "b",
+            "valor": "$N/N_0 = 0{,}37$ → 37 %"
+          }
+        ],
+        "nota": "Als criteris oficials es resten 0,1 punts per cada reacció mal plantejada (si hi falta algun terme, com l'antineutrí)."
+      }
+    },
+    {
+      "id": "fisica-2017-J-s5-e4-b",
+      "serie": "5",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Motor de Faraday: camp magnètic en un punt, sentit de gir del fil i força magnètica sobre un tram",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [],
+      "conceptes": [
+        "força magnètica sobre un corrent",
+        "producte vectorial",
+        "línies de camp magnètic",
+        "motor elèctric"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        7
+      ],
+      "enunciat": "De les dues imatges de sota, la figura de l'esquerra mostra un dels dispositius experimentals que Faraday va construir l'any 1821 i que es considera el primer motor elèctric. L'esquema de la dreta representa un circuit equiparable format per una pila, un imant i un conductor que gira al voltant de l'imant. També hi ha representada una línia de camp que té un vector de camp magnètic $\\vec B$ perpendicular al fil en el punt $P$.",
+      "figures": [
+        {
+          "src": "img/fisica/2017-J/s5-e4-b.png",
+          "peu": "Dispositiu experimental de Faraday (esquerra) i esquema del circuit amb l'imant, el fil, el punt P i els eixos x, y, z (dreta)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Representeu el vector de camp magnètic en el punt $P$. Indiqueu i justifiqueu el sentit de gir del fil.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el mòdul de la força magnètica que actua sobre $1\\ \\text{cm}$ del conductor centrat en el punt $P$, suposant que en aquest segment el camp és constant, amb el mòdul igual a $0{,}1\\ \\text{T}$ i la intensitat de corrent igual a $10\\ \\text{A}$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Corrent pel fil a $P$: cap avall ($-\\hat\\jmath$), $I = 10\\ \\text{A}$\n- Camp a $P$: $B = 0{,}1\\ \\text{T}$, perpendicular al fil\n- Longitud del tram: $l = 1\\ \\text{cm} = 0{,}01\\ \\text{m}$\n- Eixos: $x$ cap a la dreta, $y$ cap amunt, $z$ cap a l'observador (surt del paper)\n- Incògnites: a) $\\vec B$ a $P$ i sentit de gir; b) $F$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Vector camp magnètic a P",
+            "cos": "El vector camp magnètic és sempre **tangent a la línia de camp** i té el sentit de la línia. Les línies surten del pol nord de l'imant (a dalt) i s'obren cap als costats; al punt $P$, just a sobre del pol N i a la dreta del fil, la línia va **horitzontalment cap a la dreta**: $\\vec B$ en la direcció $+x$, perpendicular al fil."
+          },
+          {
+            "apartat": "a",
+            "titol": "Força magnètica sobre el fil i sentit de gir",
+            "cos": "El fil gira perquè hi actua la força magnètica $\\vec F = I\\,\\vec l \\times \\vec B$, perpendicular alhora al fil i al camp. Amb $\\vec l$ cap avall ($-\\hat\\jmath$) i $\\vec B$ cap a la dreta ($+\\hat\\imath$):\n\n$$\\vec F = I\\,l\\,B\\,(-\\hat\\jmath \\times \\hat\\imath) = I\\,l\\,B\\,\\hat k$$\n\nLa força **surt del pla del paper** (direcció $+z$, cap a l'observador). Aquesta força empeny el fil sempre en direcció tangent a una circumferència al voltant de l'imant, de manera que el fil **gira al voltant de l'imant**: vist des de dalt, en sentit horari (el fil, a la dreta de l'eix de l'imant, es mou cap a nosaltres).\n\n![Vector B a P (dreta) i força F sobre el fil sortint del paper (solució oficial)](img/fisica/2017-J/s5-e4-b-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Mòdul de la força sobre 1 cm de fil",
+            "cos": "Com que el fil i el camp són perpendiculars ($\\sin 90^\\circ = 1$):\n\n$$F = I\\,l\\,B\\sin 90^\\circ = 10\\ \\text{A} \\cdot 0{,}01\\ \\text{m} \\cdot 0{,}1\\ \\text{T} = 0{,}01\\ \\text{N}$$\n\nResultat: **$F = 1 \\times 10^{-2}\\ \\text{N}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\vec B$ a $P$ tangent a la línia, cap a la dreta ($+x$); $\\vec F = I\\vec l\\times\\vec B$ surt del paper ($+z$): el fil gira al voltant de l'imant (horari vist des de dalt)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F = 0{,}01\\ \\text{N}$"
+          }
+        ],
+        "nota": "La solució oficial només indica que la força surt del pla del paper (direcció z); el sentit de gir «horari vist des de dalt» es dedueix d'aquesta força i de la posició de P a la dreta de l'eix de l'imant."
+      }
+    },
+    {
+      "id": "fisica-2017-J-s5-e5-b",
+      "serie": "5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Model clàssic de l'àtom d'hidrogen: força i camp elèctric sobre l'electró i energia mecànica",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "llei de coulomb",
+        "camp elèctric",
+        "força centrípeta",
+        "energia mecànica",
+        "electronvolt"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        8
+      ],
+      "enunciat": "En el model clàssic de l'àtom d'hidrogen, l'electró gira al voltant del protó en una òrbita circular de radi $r = 53\\ \\text{pm}$.\n\n**Dades:** $k = \\frac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$; càrrega de l'electró, $q_\\text{electró} = -1{,}6 \\times 10^{-19}\\ \\text{C}$; càrrega del protó, $q_\\text{protó} = 1{,}6 \\times 10^{-19}\\ \\text{C}$; massa de l'electró, $m_\\text{electró} = 9{,}11 \\times 10^{-31}\\ \\text{kg}$; $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el mòdul de la força elèctrica que actua sobre l'electró. Representeu aquesta força en dos punts de l'òrbita amb una separació angular de $90^\\circ$. Calculeu el mòdul del camp elèctric que crea el protó en un punt de la trajectòria de l'electró.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'energia mecànica d'aquest sistema, que consta d'un protó i un electró girant al seu voltant. Expresseu el resultat en eV.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $r = 53\\ \\text{pm} = 53 \\times 10^{-12}\\ \\text{m} = 5{,}3 \\times 10^{-11}\\ \\text{m}$\n- $q_p = +1{,}6 \\times 10^{-19}\\ \\text{C}$, $q_e = -1{,}6 \\times 10^{-19}\\ \\text{C}$, $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$\n- $k = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\,\\text{C}^{-2}$; $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$\n- Incògnites: a) $F_e$, dibuix i $E$; b) energia mecànica en eV."
+          },
+          {
+            "apartat": "a",
+            "titol": "Força elèctrica (llei de Coulomb)",
+            "cos": "$$F_e = k\\frac{|q_p q_e|}{r^2} = 8{,}99 \\times 10^{9}\\cdot\\frac{(1{,}6 \\times 10^{-19})^2}{(53 \\times 10^{-12})^2} = 8{,}19 \\times 10^{-8}\\ \\text{N}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Representació de la força",
+            "cos": "Protó i electró tenen càrregues de signe contrari: la força és **atractiva**, i per tant sempre apunta des de l'electró **cap al centre de l'òrbita** (on hi ha el protó). En dos punts separats $90^\\circ$ (per exemple, a dalt i a la dreta), les dues forces són radials cap al centre i perpendiculars entre si, amb el mateix mòdul. Aquesta força és la força centrípeta del moviment circular.\n\n![Força sobre l'electró en dos punts de l'òrbita separats 90° (solució oficial)](img/fisica/2017-J/s5-e5-b-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp elèctric creat pel protó",
+            "cos": "El camp és la força per unitat de càrrega, $E = F/|q|$ (o directament $E = k\\,q_p/r^2$):\n\n$$E = \\frac{F_e}{|q_e|} = \\frac{8{,}19 \\times 10^{-8}}{1{,}6 \\times 10^{-19}} = 5{,}12 \\times 10^{11}\\ \\text{N/C}$$\n\nEl camp del protó (positiu) és radial i dirigit **cap a fora**; sobre l'electró (negatiu) la força té sentit contrari al camp, cap a dins."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica a partir de la força centrípeta",
+            "cos": "L'energia mecànica és $E_m = E_c + U$. Per trobar l'energia cinètica, fem servir que la força elèctrica fa de força centrípeta:\n\n$$F_e = m\\frac{v^2}{r} \\;\\Rightarrow\\; mv^2 = rF_e \\;\\Rightarrow\\; E_c = \\frac12 mv^2 = \\frac12 rF_e$$\n\n$$E_c = \\frac12\\cdot 53 \\times 10^{-12}\\cdot 8{,}19 \\times 10^{-8} = 2{,}17 \\times 10^{-18}\\ \\text{J}$$\n\n(Correspon a $v = \\sqrt{rF_e/m} \\approx 2{,}18 \\times 10^{6}\\ \\text{m/s}$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia potencial elèctrica",
+            "cos": "$$U = k\\frac{q_p q_e}{r} = 8{,}99 \\times 10^{9}\\cdot\\frac{1{,}6 \\times 10^{-19}\\cdot(-1{,}6 \\times 10^{-19})}{53 \\times 10^{-12}} = -4{,}34 \\times 10^{-18}\\ \\text{J}$$\n\nObserveu que $E_c = -U/2$: és un resultat general per a òrbites circulars en camps que van com $1/r^2$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia mecànica en eV",
+            "cos": "$$E_m = E_c + U = 2{,}17 \\times 10^{-18} - 4{,}34 \\times 10^{-18} = -2{,}17 \\times 10^{-18}\\ \\text{J}$$\n\n$$E_m = \\frac{-2{,}17 \\times 10^{-18}\\ \\text{J}}{1{,}60 \\times 10^{-19}\\ \\text{J/eV}} = -13{,}6\\ \\text{eV}$$\n\nResultat: **$E_m \\approx -13{,}6\\ \\text{eV}$**. És negativa perquè l'electró està lligat al protó: caldria donar-li $13{,}6\\ \\text{eV}$ per ionitzar l'àtom (l'energia d'ionització de l'hidrogen)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$F_e = 8{,}19 \\times 10^{-8}\\ \\text{N}$ (radial, cap al protó); $E = 5{,}12 \\times 10^{11}\\ \\text{N/C}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_c = 2{,}17 \\times 10^{-18}\\ \\text{J}$, $U = -4{,}34 \\times 10^{-18}\\ \\text{J}$, $E_m = -2{,}17 \\times 10^{-18}\\ \\text{J} \\approx -13{,}6\\ \\text{eV}$"
+          }
+        ],
+        "nota": ""
+      }
+    }
+  ]
+}

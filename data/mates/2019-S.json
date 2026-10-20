@@ -1,0 +1,564 @@
+{
+  "examen": {
+    "id": "mates-2019-S",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2019,
+    "convocatoria": "setembre",
+    "serie": "5",
+    "pdf_examen": "pdfs/mates/2019-S-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2019-S-solucio.pdf",
+    "estructura": "Cal respondre CINC de les sis qüestions. Cada qüestió val 2 punts (dos apartats d'1 punt). Es pot usar calculadora (no programable ni amb capacitat d'emmagatzemar o transmetre dades)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2019-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Àrea de la regió limitada per les rectes y = x, y = 2x i la paràbola y = x²",
+      "tema": "integrals",
+      "temes_secundaris": [
+        "funcions"
+      ],
+      "conceptes": [
+        "àrea entre corbes",
+        "punts d'intersecció",
+        "integral definida",
+        "regla de Barrow"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Considereu les rectes $y = x$ i $y = 2x$, i la paràbola $y = x^2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu els punts d'intersecció entre les gràfiques de les diferents funcions i feu un esbós de la regió delimitada per les gràfiques.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'àrea de la regió de l'apartat anterior.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Tres corbes: $y = x$ (recta), $y = 2x$ (recta) i $y = x^2$ (paràbola).\n- a) Els punts on es tallen dues a dues i un esbós de la regió que tanquen.\n- b) L'àrea d'aquesta regió."
+          },
+          {
+            "apartat": "a",
+            "titol": "Intersecció de les dues rectes",
+            "cos": "Per trobar on es tallen dues gràfiques, igualem les seves expressions:\n\n$$x = 2x \\;\\Longrightarrow\\; x = 0 \\;\\Longrightarrow\\; y = 0$$\n\n**$P = (0, 0)$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Intersecció de y = x amb la paràbola",
+            "cos": "$$x = x^2 \\;\\Longrightarrow\\; x^2 - x = x(x-1) = 0 \\;\\Longrightarrow\\; x = 0 \\text{ o } x = 1$$\n\nObtenim de nou $P = (0,0)$ i un punt nou: **$Q = (1, 1)$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Intersecció de y = 2x amb la paràbola",
+            "cos": "$$2x = x^2 \\;\\Longrightarrow\\; x^2 - 2x = x(x-2) = 0 \\;\\Longrightarrow\\; x = 0 \\text{ o } x = 2$$\n\nObtenim $P = (0,0)$ i **$R = (2, 4)$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Esbós de la regió",
+            "cos": "La regió és el «triangle corbat» de vèrtexs $P$, $Q$ i $R$:\n\n- Entre $x = 0$ i $x = 1$ la paràbola queda per sota de $y = x$ (per exemple, a $x = 0{,}5$: $0{,}25 < 0{,}5$), de manera que la regió està limitada per dalt per $y = 2x$ i per baix per $y = x$.\n- Entre $x = 1$ i $x = 2$ la recta $y = x$ ja queda per sota de la paràbola, i la regió està limitada per dalt per $y = 2x$ i per baix per $y = x^2$.\n\n![Esbós de la regió (solució oficial)](img/mates/2019-S/e1-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantejament: dividim la regió en dues parts",
+            "cos": "L'àrea entre dues corbes és $\\int (\\text{funció de dalt} - \\text{funció de baix})\\,dx$. Com que la corba de baix canvia a $x = 1$ (punt $Q$), dividim la integral en dos trossos:\n\n$$S = \\int_0^1 (2x - x)\\,dx + \\int_1^2 (2x - x^2)\\,dx$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Primitives i regla de Barrow",
+            "cos": "$$\\int_0^1 x\\,dx = \\left.\\frac{x^2}{2}\\right|_0^1 = \\frac{1}{2} - 0 = \\frac{1}{2}$$\n\n$$\\int_1^2 (2x - x^2)\\,dx = \\left.\\left(x^2 - \\frac{x^3}{3}\\right)\\right|_1^2 = \\left(4 - \\frac{8}{3}\\right) - \\left(1 - \\frac{1}{3}\\right) = \\frac{4}{3} - \\frac{2}{3} = \\frac{2}{3}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Àrea total",
+            "cos": "$$S = \\frac{1}{2} + \\frac{2}{3} = \\frac{3 + 4}{6} = \\boxed{\\frac{7}{6}\\ \\text{u}^2} \\approx 1{,}17\\ \\text{u}^2$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P = (0,0)$, $Q = (1,1)$, $R = (2,4)$; regió entre $y=2x$ (dalt) i $y=x$ / $y=x^2$ (baix)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$S = \\dfrac{7}{6}\\ \\text{u}^2$"
+          }
+        ],
+        "nota": "La solució oficial també accepta altres descomposicions, per exemple $S = \\int_0^2 (2x - x^2)\\,dx - \\int_0^1 (x - x^2)\\,dx = \\frac{4}{3} - \\frac{1}{6} = \\frac{7}{6}$ (a tota la zona entre $2x$ i la paràbola li traiem la llenca entre $y = x$ i la paràbola)."
+      }
+    },
+    {
+      "id": "mates-2019-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Matriu invertible segons un paràmetre i posició relativa de tres plans",
+      "tema": "sistemes",
+      "temes_secundaris": [
+        "matrius",
+        "geometria"
+      ],
+      "conceptes": [
+        "determinant",
+        "matriu inversa",
+        "teorema de Rouché-Frobenius",
+        "posició relativa de plans",
+        "discussió amb paràmetre"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Considereu la matriu $A = \\begin{pmatrix} 1 & 0 & a-1 \\\\ 1 & a & 1 \\\\ 4 & 3a & 1 \\end{pmatrix}$, en què $a$ és un paràmetre real.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu els valors del paràmetre $a$ per als quals la matriu és invertible.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Discutiu la posició relativa dels plans $\\pi_1\\colon x + (a-1)z = 0$, $\\pi_2\\colon x + ay + z = 1$ i $\\pi_3\\colon 4x + 3ay + z = 3$ en funció dels valors del paràmetre $a$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Matriu $A$ que depèn del paràmetre $a$.\n- a) Valors de $a$ amb $A$ invertible.\n- b) Posició relativa de tres plans. Fixa't que la matriu de coeficients del sistema format pels tres plans és precisament $A$: així podrem aprofitar l'apartat a)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Criteri: invertible ⇔ determinant no nul",
+            "cos": "Una matriu quadrada té inversa si i només si el seu determinant és diferent de zero. Com que $A$ depèn de $a$, calculem $\\det(A)$ i mirem quan s'anul·la."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul del determinant (regla de Sarrus)",
+            "cos": "$$\\det(A) = \\begin{vmatrix} 1 & 0 & a-1 \\\\ 1 & a & 1 \\\\ 4 & 3a & 1 \\end{vmatrix} = 1\\cdot a\\cdot 1 + 0\\cdot 1\\cdot 4 + (a-1)\\cdot 1\\cdot 3a - (a-1)\\cdot a\\cdot 4 - 1\\cdot 1\\cdot 3a - 0\\cdot 1\\cdot 1$$\n\n$$= a + 3a(a-1) - 4a(a-1) - 3a = -a(a-1) - 2a = -a^2 - a = -a(a+1)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valors de a",
+            "cos": "$$\\det(A) = 0 \\;\\Longleftrightarrow\\; -a(a+1) = 0 \\;\\Longleftrightarrow\\; a = 0 \\text{ o } a = -1$$\n\n**$A$ és invertible si i només si $a \\neq 0$ i $a \\neq -1$.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantejament: discutim el sistema amb Rouché-Frobenius",
+            "cos": "Els tres plans formen un sistema d'equacions lineals. La seva posició relativa depèn dels rangs de la matriu de coeficients $A$ i de la matriu ampliada $M$:\n\n$$M = \\left(\\begin{array}{ccc|c} 1 & 0 & a-1 & 0 \\\\ 1 & a & 1 & 1 \\\\ 4 & 3a & 1 & 3 \\end{array}\\right)$$\n\nPel teorema de Rouché-Frobenius: si $\\text{rang}(A) = \\text{rang}(M) = 3$ hi ha un únic punt comú; si $\\text{rang}(A) = \\text{rang}(M) = 2$ els plans comparteixen una recta; si $\\text{rang}(A) < \\text{rang}(M)$ no tenen cap punt comú als tres."
+          },
+          {
+            "apartat": "b",
+            "titol": "Cas a ≠ 0 i a ≠ −1",
+            "cos": "Pel que hem vist a l'apartat a), $\\det(A) \\neq 0$, i per tant $\\text{rang}(A) = \\text{rang}(M) = 3$ = nombre d'incògnites.\n\n**Sistema compatible determinat: els tres plans es tallen en un únic punt.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Cas a = 0",
+            "cos": "$$M = \\left(\\begin{array}{ccc|c} 1 & 0 & -1 & 0 \\\\ 1 & 0 & 1 & 1 \\\\ 4 & 0 & 1 & 3 \\end{array}\\right)$$\n\n$\\text{rang}(A) = 2$: el determinant és zero (la columna de la $y$ és nul·la), però les dues primeres files no són proporcionals.\n\nPer a l'ampliada agafem el menor format per les columnes 1, 3 i 4:\n\n$$\\begin{vmatrix} 1 & -1 & 0 \\\\ 1 & 1 & 1 \\\\ 4 & 1 & 3 \\end{vmatrix} = 3 - 4 + 0 - 0 - 1 + 3 = 1 \\neq 0 \\;\\Longrightarrow\\; \\text{rang}(M) = 3$$\n\n$\\text{rang}(A) = 2 \\neq \\text{rang}(M) = 3$: **sistema incompatible**, no hi ha cap punt comú als tres plans. Com que els vectors normals $(1,0,-1)$, $(1,0,1)$ i $(4,0,1)$ no són proporcionals dos a dos, no hi ha plans paral·lels: **els plans es tallen dos a dos en tres rectes paral·leles** (formen una «superfície prismàtica»)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Cas a = −1",
+            "cos": "$$M = \\left(\\begin{array}{ccc|c} 1 & 0 & -2 & 0 \\\\ 1 & -1 & 1 & 1 \\\\ 4 & -3 & 1 & 3 \\end{array}\\right)$$\n\n$\\text{rang}(A) = 2$ (determinant nul, però les dues primeres files no són proporcionals).\n\nOrlem amb la columna dels termes independents (columnes 1, 3 i 4):\n\n$$\\begin{vmatrix} 1 & -2 & 0 \\\\ 1 & 1 & 1 \\\\ 4 & 1 & 3 \\end{vmatrix} = 3 - 8 + 0 - 0 - 1 + 6 = 0$$\n\nDe fet, la tercera fila de $M$ és combinació lineal de les altres dues: $F_3 = F_1 + 3F_2$, ja que $(1,0,-2,0) + 3\\cdot(1,-1,1,1) = (4,-3,1,3)$. Per tant $\\text{rang}(M) = 2$.\n\n$\\text{rang}(A) = \\text{rang}(M) = 2 < 3$: **sistema compatible indeterminat amb 1 grau de llibertat; els tres plans (diferents) es tallen en una recta.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\det(A) = -a(a+1)$; $A$ invertible $\\Leftrightarrow a \\neq 0$ i $a \\neq -1$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$a \\neq 0, -1$: es tallen en un punt. $a = 0$: incompatible, es tallen dos a dos en rectes paral·leles. $a = -1$: es tallen en una recta."
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "mates-2019-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Producte de matrius nul amb matrius no nul·les i determinant zero",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "producte de matrius",
+        "matriu inversa",
+        "determinant",
+        "reducció a l'absurd",
+        "divisors de zero"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Siguin les matrius $A = \\begin{pmatrix} 2 & -1 \\\\ -6 & 3 \\end{pmatrix}$ i $B = \\begin{pmatrix} 1 & 1 \\\\ 2 & 2 \\end{pmatrix}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu $A \\cdot B$ i $B \\cdot A$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Justifiqueu que si el producte de dues matrius quadrades no nul·les té per resultat la matriu nul·la, aleshores el determinant de totes dues matrius ha de ser zero.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $A = \\begin{pmatrix} 2 & -1 \\\\ -6 & 3 \\end{pmatrix}$, $B = \\begin{pmatrix} 1 & 1 \\\\ 2 & 2 \\end{pmatrix}$.\n- a) Els productes $AB$ i $BA$ (l'ordre importa: el producte de matrius no és commutatiu).\n- b) Un raonament general: si $A \\neq 0$, $B \\neq 0$ i $AB = 0$, aleshores $\\det A = \\det B = 0$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Producte A · B (fila per columna)",
+            "cos": "Cada element $(i,j)$ del producte és la fila $i$ de la primera matriu per la columna $j$ de la segona:\n\n$$A\\cdot B = \\begin{pmatrix} 2\\cdot 1 + (-1)\\cdot 2 & 2\\cdot 1 + (-1)\\cdot 2 \\\\ -6\\cdot 1 + 3\\cdot 2 & -6\\cdot 1 + 3\\cdot 2 \\end{pmatrix} = \\boxed{\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}}$$\n\nCuriós: dues matrius no nul·les tenen producte nul! (Amb nombres això no passa mai.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Producte B · A",
+            "cos": "$$B\\cdot A = \\begin{pmatrix} 1\\cdot 2 + 1\\cdot(-6) & 1\\cdot(-1) + 1\\cdot 3 \\\\ 2\\cdot 2 + 2\\cdot(-6) & 2\\cdot(-1) + 2\\cdot 3 \\end{pmatrix} = \\boxed{\\begin{pmatrix} -4 & 2 \\\\ -8 & 4 \\end{pmatrix}}$$\n\nCom que $AB \\neq BA$, es veu clarament que el producte no és commutatiu."
+          },
+          {
+            "apartat": "b",
+            "titol": "Idea: reducció a l'absurd",
+            "cos": "Suposem que $A$ i $B$ són quadrades, no nul·les, amb $A\\cdot B = 0$, i suposem (per arribar a contradicció) que $\\det(A) \\neq 0$. Aleshores $A$ és invertible: existeix $A^{-1}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Multipliquem per la inversa i arribem a contradicció",
+            "cos": "Multipliquem per l'esquerra els dos membres de $AB = 0$ per $A^{-1}$:\n\n$$A^{-1}(AB) = A^{-1}\\cdot 0 \\;\\Longrightarrow\\; (A^{-1}A)B = 0 \\;\\Longrightarrow\\; I\\cdot B = 0 \\;\\Longrightarrow\\; B = 0$$\n\nAixò contradiu que $B$ és no nul·la. Per tant, **$\\det(A) = 0$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "El mateix per a B",
+            "cos": "Si fos $\\det(B) \\neq 0$, existiria $B^{-1}$ i, multiplicant per la **dreta**:\n\n$$(AB)B^{-1} = 0\\cdot B^{-1} \\;\\Longrightarrow\\; A(BB^{-1}) = 0 \\;\\Longrightarrow\\; A = 0,$$\n\ncontradicció. Per tant també **$\\det(B) = 0$**.\n\nComprovació amb les matrius de l'apartat a): $\\det A = 2\\cdot 3 - (-1)(-6) = 6 - 6 = 0$ i $\\det B = 1\\cdot 2 - 1\\cdot 2 = 0$ ✓"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$AB = \\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}$, $BA = \\begin{pmatrix} -4 & 2 \\\\ -8 & 4 \\end{pmatrix}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Si $\\det A \\neq 0$, de $AB = 0$ es dedueix $B = A^{-1}\\cdot 0 = 0$ (absurd); anàlogament per a $B$. Per tant $\\det A = \\det B = 0$."
+          }
+        ],
+        "nota": "Un raonament alternatiu, també vàlid: $\\det(AB) = \\det(A)\\det(B) = \\det(0) = 0$, de manera que almenys un dels dos determinants és zero; però per assegurar que ho són **tots dos** cal l'argument de la inversa (si un fos no nul, l'altra matriu hauria de ser la nul·la)."
+      }
+    },
+    {
+      "id": "mates-2019-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Recta tangent horitzontal i punt de pendent màxim de f(x) = 1/(1+x²)",
+      "tema": "derivades",
+      "temes_secundaris": [],
+      "conceptes": [
+        "recta tangent",
+        "derivada",
+        "derivada segona",
+        "pendent màxim",
+        "punts d'inflexió"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Considereu la funció $f(x) = \\dfrac{1}{1 + x^2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació de la recta tangent a la gràfica en aquells punts en què la recta tangent és horitzontal.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu les coordenades del punt de la gràfica de la funció $f(x)$ en què el pendent de la recta tangent és màxim.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $f(x) = \\dfrac{1}{1+x^2} = (1+x^2)^{-1}$, definida a tot $\\mathbb{R}$.\n- El pendent de la recta tangent en un punt és el valor de la derivada $f'(x)$ en aquell punt.\n- a) Punts amb $f'(x) = 0$ i la recta tangent en ells.\n- b) On és màxima la funció pendent $f'(x)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Derivada de f",
+            "cos": "Derivem $(1+x^2)^{-1}$ amb la regla de la cadena:\n\n$$f'(x) = -1\\cdot(1+x^2)^{-2}\\cdot 2x = \\frac{-2x}{(1+x^2)^2}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Tangent horitzontal ⇔ derivada zero",
+            "cos": "Una recta horitzontal té pendent $0$. El denominador mai no s'anul·la, de manera que\n\n$$f'(x) = 0 \\;\\Longleftrightarrow\\; -2x = 0 \\;\\Longleftrightarrow\\; x = 0$$\n\nPunt de tangència: $f(0) = \\dfrac{1}{1+0} = 1$, és a dir, $(0, 1)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de la recta tangent",
+            "cos": "$$y - f(0) = f'(0)(x - 0) \\;\\Longrightarrow\\; y - 1 = 0\\cdot x \\;\\Longrightarrow\\; \\boxed{y = 1}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Idea: maximitzem la funció pendent",
+            "cos": "El pendent de la tangent en cada punt és $m(x) = f'(x)$. Volem el màxim d'aquesta funció, així que fem el mateix que per trobar extrems de qualsevol funció: **derivem $f'$ (és a dir, calculem $f''$) i la igualem a zero**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivada segona",
+            "cos": "Derivem $f'(x) = \\dfrac{-2x}{(1+x^2)^2}$ amb la regla del quocient:\n\n$$f''(x) = \\frac{-2(1+x^2)^2 - (-2x)\\cdot 2(1+x^2)\\cdot 2x}{(1+x^2)^4}$$\n\nTraiem factor comú $(1+x^2)$ i simplifiquem:\n\n$$f''(x) = \\frac{-2(1+x^2) + 8x^2}{(1+x^2)^3} = \\frac{6x^2 - 2}{(1+x^2)^3}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Candidats: zeros de f''",
+            "cos": "$$6x^2 - 2 = 0 \\;\\Longrightarrow\\; x^2 = \\frac{1}{3} \\;\\Longrightarrow\\; x = \\pm\\frac{1}{\\sqrt{3}} = \\pm\\frac{\\sqrt{3}}{3}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Estudi del signe de f'' (creixement de f')",
+            "cos": "El denominador és sempre positiu; el signe el dona $6x^2 - 2$:\n\n| | $\\left(-\\infty, -\\frac{\\sqrt3}{3}\\right)$ | $\\left(-\\frac{\\sqrt3}{3}, \\frac{\\sqrt3}{3}\\right)$ | $\\left(\\frac{\\sqrt3}{3}, +\\infty\\right)$ |\n|---|---|---|---|\n| signe de $f''$ | $+$ | $-$ | $+$ |\n| $f'$ | creix | decreix | creix |\n\nPer tant $f'$ té un **màxim relatiu a $x = -\\frac{\\sqrt3}{3}$** (i un mínim a $x = \\frac{\\sqrt3}{3}$). A més és el màxim absolut: $f'\\!\\left(-\\frac{\\sqrt3}{3}\\right) = \\frac{3\\sqrt3}{8} > 0$, mentre que $f'(x) \\to 0$ quan $x \\to \\pm\\infty$ i $f'(x) \\le 0$ per a $x \\ge 0$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Coordenades del punt",
+            "cos": "$$f\\!\\left(-\\frac{\\sqrt3}{3}\\right) = \\frac{1}{1 + \\frac{3}{9}} = \\frac{1}{1 + \\frac13} = \\frac{3}{4}$$\n\n**El pendent és màxim al punt $\\left(-\\dfrac{\\sqrt3}{3}, \\dfrac34\\right)$**, on val $m = \\dfrac{3\\sqrt3}{8} \\approx 0{,}65$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Tangent horitzontal només a $(0,1)$: $y = 1$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\left(-\\dfrac{\\sqrt3}{3}, \\dfrac34\\right)$"
+          }
+        ],
+        "nota": "Alternativament, per confirmar el màxim de $f'$ es pot usar el signe de la derivada tercera: $f'''(x) = \\dfrac{24x(1-x^2)}{(1+x^2)^4}$, que és negativa a $x = -\\frac{\\sqrt3}{3}$ (màxim). Error típic: donar també $x = +\\frac{\\sqrt3}{3}$, que és on el pendent és **mínim** (el més negatiu)."
+      }
+    },
+    {
+      "id": "mates-2019-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Triangle format per les interseccions d'un pla amb els eixos: perímetre i àrea",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "intersecció pla-eixos",
+        "mòdul d'un vector",
+        "producte vectorial",
+        "àrea d'un triangle"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Siguin $P$, $Q$ i $R$ els punts d'intersecció del pla d'equació $x + 4y + 2z = 4$ amb els tres eixos de coordenades $OX$, $OY$ i $OZ$, respectivament.\n\n*Nota:* per a calcular l'àrea del triangle definit pels vectors $\\vec v$ i $\\vec w$ podeu fer servir l'expressió $S = \\dfrac12\\left\\|\\vec v \\times \\vec w\\right\\|$, en què $\\vec v \\times \\vec w$ és el producte vectorial dels vectors $\\vec v$ i $\\vec w$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu els punts $P$, $Q$ i $R$, i el perímetre del triangle de vèrtexs $P$, $Q$ i $R$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'àrea del triangle de vèrtexs $P$, $Q$ i $R$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Pla $\\pi\\colon x + 4y + 2z = 4$.\n- a) Punts de tall amb els eixos i perímetre $= |PQ| + |PR| + |QR|$.\n- b) Àrea $S = \\frac12\\|\\overrightarrow{PQ}\\times\\overrightarrow{PR}\\|$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punts de tall amb els eixos",
+            "cos": "Un punt de l'eix $OX$ té $y = z = 0$; de l'eix $OY$, $x = z = 0$; de l'eix $OZ$, $x = y = 0$. Substituïm a l'equació del pla:\n\n- $OX$: $x = 4 \\Rightarrow$ **$P = (4, 0, 0)$**\n- $OY$: $4y = 4 \\Rightarrow y = 1 \\Rightarrow$ **$Q = (0, 1, 0)$**\n- $OZ$: $2z = 4 \\Rightarrow z = 2 \\Rightarrow$ **$R = (0, 0, 2)$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Vectors dels costats",
+            "cos": "$$\\overrightarrow{PQ} = Q - P = (-4, 1, 0),\\quad \\overrightarrow{PR} = R - P = (-4, 0, 2),\\quad \\overrightarrow{QR} = R - Q = (0, -1, 2)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longituds i perímetre",
+            "cos": "La longitud de cada costat és el mòdul del vector corresponent, $\\|(v_1,v_2,v_3)\\| = \\sqrt{v_1^2+v_2^2+v_3^2}$:\n\n$$\\|\\overrightarrow{PQ}\\| = \\sqrt{16 + 1 + 0} = \\sqrt{17},\\quad \\|\\overrightarrow{PR}\\| = \\sqrt{16 + 0 + 4} = \\sqrt{20} = 2\\sqrt5,\\quad \\|\\overrightarrow{QR}\\| = \\sqrt{0 + 1 + 4} = \\sqrt5$$\n\n$$\\text{Perímetre} = \\sqrt{17} + 2\\sqrt5 + \\sqrt5 = \\boxed{\\sqrt{17} + 3\\sqrt5 \\approx 10{,}83\\ \\text{u}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Producte vectorial",
+            "cos": "$$\\overrightarrow{PQ}\\times\\overrightarrow{PR} = \\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ -4 & 1 & 0 \\\\ -4 & 0 & 2 \\end{vmatrix} = (1\\cdot 2 - 0\\cdot 0)\\,\\vec i - \\big((-4)\\cdot 2 - 0\\cdot(-4)\\big)\\,\\vec j + \\big((-4)\\cdot 0 - 1\\cdot(-4)\\big)\\,\\vec k = (2, 8, 4)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Àrea del triangle",
+            "cos": "El mòdul del producte vectorial és l'àrea del paral·lelogram; el triangle n'és la meitat:\n\n$$S = \\frac12\\sqrt{2^2 + 8^2 + 4^2} = \\frac12\\sqrt{84} = \\frac12\\cdot 2\\sqrt{21} = \\boxed{\\sqrt{21} \\approx 4{,}58\\ \\text{u}^2}$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$P = (4,0,0)$, $Q = (0,1,0)$, $R = (0,0,2)$; perímetre $\\sqrt{17} + 3\\sqrt5 \\approx 10{,}83\\ \\text{u}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$S = \\sqrt{21} \\approx 4{,}58\\ \\text{u}^2$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "mates-2019-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Estudi de f(x) = ln(x)/x: domini, talls, monotonia i àrea entre x = 1 i x = e",
+      "tema": "integrals",
+      "temes_secundaris": [
+        "funcions",
+        "derivades"
+      ],
+      "conceptes": [
+        "domini",
+        "punts de tall amb els eixos",
+        "creixement i decreixement",
+        "integral quasi immediata",
+        "àrea sota una corba"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Considereu la funció $f(x) = \\dfrac{\\ln(x)}{x}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el domini de la funció $f$, els punts de tall de la gràfica de $f$ amb els eixos de coordenades, i els intervals de creixement i decreixement de $f$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'àrea de la regió del pla determinada per la gràfica de la funció $f$, les rectes $x = 1$ i $x = e$, i l'eix de les abscisses.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $f(x) = \\dfrac{\\ln x}{x}$.\n- a) Domini, talls amb els eixos i monotonia (signe de $f'$).\n- b) Àrea entre la gràfica, l'eix $OX$ i les rectes $x = 1$, $x = e$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Domini",
+            "cos": "El logaritme només existeix per a $x > 0$, i a més no podem dividir per $x = 0$. Totes dues condicions donen:\n\n$$\\text{Dom}(f) = (0, +\\infty)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Punts de tall amb els eixos",
+            "cos": "- **Eix $OY$** ($x = 0$): $x = 0$ no és del domini, per tant **no talla l'eix $OY$**.\n- **Eix $OX$** ($f(x) = 0$): $\\dfrac{\\ln x}{x} = 0 \\Rightarrow \\ln x = 0 \\Rightarrow x = 1$. Punt **$(1, 0)$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Derivada",
+            "cos": "Regla del quocient, amb $(\\ln x)' = \\frac1x$:\n\n$$f'(x) = \\frac{\\frac1x\\cdot x - \\ln x\\cdot 1}{x^2} = \\frac{1 - \\ln x}{x^2}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Signe de la derivada i monotonia",
+            "cos": "El denominador $x^2$ és positiu, així que el signe és el de $1 - \\ln x$, que s'anul·la a $\\ln x = 1 \\Leftrightarrow x = e$:\n\n| | $(0, e)$ | $(e, +\\infty)$ |\n|---|---|---|\n| signe de $f'$ | $+$ (p. ex. $x=1$: $f'(1)=1$) | $-$ (p. ex. $x=e^2$: $f' = -1/e^4$) |\n| $f$ | creixent | decreixent |\n\n**$f$ és creixent a $(0, e)$ i decreixent a $(e, +\\infty)$** (té un màxim a $x = e$, $f(e) = 1/e$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Signe de f a l'interval [1, e]",
+            "cos": "Per a $1 \\le x \\le e$ tenim $\\ln x \\ge 0$ i $x > 0$, de manera que $f(x) \\ge 0$: la gràfica queda per sobre de l'eix i l'àrea és directament la integral (sense valor absolut):\n\n$$A = \\int_1^e \\frac{\\ln x}{x}\\,dx$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Primitiva (quasi immediata)",
+            "cos": "Observem que $\\frac1x$ és la derivada de $\\ln x$: la integral és del tipus $\\int u\\cdot u'\\,dx = \\frac{u^2}{2}$ amb $u = \\ln x$ (o fent el canvi $t = \\ln x$, $dt = \\frac{dx}{x}$):\n\n$$\\int \\frac{\\ln x}{x}\\,dx = \\frac{\\ln^2 x}{2} + C$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Regla de Barrow",
+            "cos": "$$A = \\left.\\frac{\\ln^2 x}{2}\\right|_1^e = \\frac{\\ln^2 e}{2} - \\frac{\\ln^2 1}{2} = \\frac{1}{2} - 0 = \\boxed{\\frac12\\ \\text{u}^2}$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\text{Dom}(f) = (0,+\\infty)$; talla $OX$ a $(1,0)$, no talla $OY$; creixent a $(0,e)$, decreixent a $(e,+\\infty)$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A = \\dfrac12\\ \\text{u}^2$"
+          }
+        ],
+        "nota": ""
+      }
+    }
+  ]
+}

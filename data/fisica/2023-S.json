@@ -1,0 +1,677 @@
+{
+  "examen": {
+    "id": "fisica-2023-S",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2023,
+    "convocatoria": "setembre",
+    "serie": "2",
+    "pdf_examen": "pdfs/fisica/2023-S-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2023-S-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels set problemes (P1-P7); si se'n responen més, només es valoren els quatre primers. Cada problema val 2,5 punts i té dos apartats d'1,25 punts."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2023-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Missió DART: camp gravitatori de Didymos i velocitat orbital de Dimorphos",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp gravitatori",
+        "llei de gravitació universal",
+        "velocitat orbital",
+        "densitat",
+        "força centrípeta"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "El mes de novembre del 2021, la NASA va llançar la missió DART (*Double Asteroid Redirection Test*). Aquesta missió té per objectiu canviar l'òrbita de Dimorphos, un petit asteroide que orbita al voltant de Didymos, que és un asteroide més gran.\n\n*Esquema de la missió DART. Nota: la imatge no està escalada, les proporcions entre les òrbites i els objectes no es corresponen a les escales reals. Font: NASA.*\n\n**Dada:** $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$.\n\n**Nota:** Considereu que les òrbites són circulars i que els dos asteroides són esfèrics.",
+      "figures": [
+        {
+          "src": "img/fisica/2023-S/e1.png",
+          "peu": "Esquema de la missió DART: òrbita original i nova òrbita de Dimorphos al voltant de Didymos (no està a escala)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "A partir de la llei de la gravitació universal, trobeu l'expressió de la intensitat del camp gravitatori que crea un objecte astronòmic esfèric de massa $M$ i radi $R$ a la seva superfície. El diàmetre de Didymos és de $781\\ \\text{m}$ i la seva densitat és de $2\\,146\\ \\text{kg/m}^3$. Calculeu el valor de la intensitat del camp gravitatori que crea Didymos a la seva superfície. Si Dimorphos té una massa de $4{,}42 \\times 10^{10}\\ \\text{kg}$ i el radi orbital mitjà (distància entre els centres dels dos objectes) és d'$1{,}12\\ \\text{km}$, calculeu el mòdul de la força gravitatòria mitjana entre Didymos i Dimorphos.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "L'objectiu de la missió DART és colpejar Dimorphos, de tal manera que orbiti en una nova òrbita de radi menor, com s'indica en la figura anterior. Deduïu, a partir de principis fonamentals, l'expressió de la velocitat orbital d'un satèl·lit en funció del radi de l'òrbita. Argumenteu si Dimorphos orbitarà a més velocitat a la nova òrbita o a l'òrbita original.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Constant de gravitació: $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$\n- Diàmetre de Didymos: $D = 781\\ \\text{m}$ → radi $R_D = 390{,}5\\ \\text{m}$\n- Densitat de Didymos: $\\rho = 2\\,146\\ \\text{kg/m}^3$\n- Massa de Dimorphos: $m = 4{,}42 \\times 10^{10}\\ \\text{kg}$\n- Radi orbital mitjà: $r = 1{,}12\\ \\text{km} = 1\\,120\\ \\text{m}$\n- Incògnites: a) expressió i valor de $g$ a la superfície de Didymos, força $F$ entre els asteroides; b) expressió de $v_\\text{orb}(r)$ i comparació entre òrbites."
+          },
+          {
+            "apartat": "a",
+            "titol": "Expressió del camp gravitatori a la superfície",
+            "cos": "La intensitat del camp gravitatori és la força per unitat de massa que nota un cos de prova. Un objecte de massa $m$ a la superfície de l'astre (a distància $R$ del centre) nota la força de la llei de gravitació universal, i també la podem escriure com $F = mg$:\n\n$$F = G\\,\\frac{M m}{R^2} = m\\,g \\quad\\Rightarrow\\quad \\boxed{g = G\\,\\frac{M}{R^2}}$$\n\nEl camp no depèn de la massa de prova $m$, només de l'astre que el crea."
+          },
+          {
+            "apartat": "a",
+            "titol": "Massa de Didymos a partir de la densitat",
+            "cos": "No ens donen la massa, però sí la densitat i la mida. Com que és una esfera, $M = \\rho V = \\rho\\,\\frac{4}{3}\\pi R^3$:\n\n$$M_D = \\frac{4}{3}\\pi R_D^3\\,\\rho = \\frac{4}{3}\\pi \\cdot (390{,}5)^3 \\cdot 2\\,146 = 5{,}35 \\times 10^{11}\\ \\text{kg}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valor de g a la superfície de Didymos",
+            "cos": "$$g = G\\,\\frac{M_D}{R_D^2} = 6{,}67 \\times 10^{-11} \\cdot \\frac{5{,}35 \\times 10^{11}}{(390{,}5)^2} = 2{,}34 \\times 10^{-4}\\ \\text{m/s}^2$$\n\nResultat: **$g = 2{,}34 \\times 10^{-4}\\ \\text{m/s}^2$**, unes $40\\,000$ vegades més petit que a la Terra: un asteroide petit té molt poca gravetat."
+          },
+          {
+            "apartat": "a",
+            "titol": "Força gravitatòria entre Didymos i Dimorphos",
+            "cos": "Apliquem la llei de gravitació universal amb la distància entre els **centres**, $r = 1\\,120\\ \\text{m}$ (no el radi de Didymos):\n\n$$F = G\\,\\frac{M_D\\, m}{r^2} = 6{,}67 \\times 10^{-11} \\cdot \\frac{5{,}35 \\times 10^{11} \\cdot 4{,}42 \\times 10^{10}}{(1\\,120)^2} = 1{,}26 \\times 10^{6}\\ \\text{N}$$\n\nResultat: **$F = 1{,}26 \\times 10^{6}\\ \\text{N}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "La força gravitatòria fa de força centrípeta",
+            "cos": "Dimorphos descriu un moviment circular uniforme al voltant de Didymos, i l'única força que hi actua és l'atracció gravitatòria. Per la segona llei de Newton, aquesta força és la que proporciona l'acceleració centrípeta $a_c = v^2/r$:\n\n$$G\\,\\frac{M_D\\, m}{r^2} = m\\,\\frac{v^2}{r} \\quad\\Rightarrow\\quad \\boxed{v = \\sqrt{\\frac{G\\,M_D}{r}}}$$\n\nLa massa del satèl·lit $m$ se simplifica: la velocitat orbital només depèn de la massa de l'astre central i del radi de l'òrbita."
+          },
+          {
+            "apartat": "b",
+            "titol": "Comparació entre l'òrbita original i la nova",
+            "cos": "La velocitat és inversament proporcional a l'arrel quadrada del radi, $v \\propto 1/\\sqrt{r}$. Si el radi de l'òrbita **disminueix**, $1/\\sqrt{r}$ augmenta i, per tant, la velocitat orbital **augmenta**:\n\n$$r_\\text{nova} < r_\\text{original} \\quad\\Rightarrow\\quad v_\\text{nova} > v_\\text{original}$$\n\nResultat: **Dimorphos orbitarà més de pressa a la nova òrbita** (de radi menor).\n\nPer fer-nos una idea, a l'òrbita original: $v = \\sqrt{\\dfrac{6{,}67 \\times 10^{-11} \\cdot 5{,}35 \\times 10^{11}}{1\\,120}} \\approx 0{,}18\\ \\text{m/s}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$g = G\\,M/R^2$; $M_D = 5{,}35 \\times 10^{11}\\ \\text{kg}$; $g = 2{,}34 \\times 10^{-4}\\ \\text{m/s}^2$; $F = 1{,}26 \\times 10^{6}\\ \\text{N}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v = \\sqrt{G M_D / r}$: en disminuir el radi, la velocitat orbital augmenta (més velocitat a la nova òrbita)"
+          }
+        ],
+        "nota": "La solució oficial també accepta justificar l'apartat b amb la tercera llei de Kepler, $\\dfrac{r^3}{T^2} = \\dfrac{G M_D}{4\\pi^2}$, i $T = \\dfrac{2\\pi r}{v}$, que porten a la mateixa expressió. Error típic: usar el radi de Didymos (390,5 m) en lloc de la distància entre centres (1 120 m) per calcular la força."
+      }
+    },
+    {
+      "id": "fisica-2023-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cubeta electrolítica: equipotencials, camp elèctric entre plaques i treball sobre una càrrega",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp elèctric uniforme",
+        "potencial elèctric",
+        "línies equipotencials",
+        "treball elèctric",
+        "força elèctrica"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "En un laboratori s'ha fet l'experiment que es mostra a la figura 1. En una cubeta de plàstic transparent s'ha afegit aproximadament un centímetre d'aigua de l'aixeta, i s'han col·locat a banda i banda dues plaques conductores de coure separades a una distància de $20\\ \\text{cm}$. Les plaques s'han connectat a una font d'alimentació. A sota de la cubeta transparent hi ha un paper quadriculat que permet determinar les posicions (figura 1). A la placa connectada al terminal negatiu de la font d'alimentació s'hi ha connectat el terminal negatiu del voltímetre. El terminal positiu del voltímetre s'ha mogut per diferents punts de la quadrícula per a mesurar el potencial elèctric i el resultat s'indica a la taula de sota.\n\n| $x$ (cm) | $V_\\text{I}$ (V) | $V_\\text{II}$ (V) | $V_\\text{III}$ (V) | $V_\\text{mitjà}$ (V) |\n|---|---|---|---|---|\n| 4,00 | 1,4 | 1,5 | 1,4 | |\n| 8,00 | 2,8 | 2,9 | 2,8 | |\n| 12,00 | 4,2 | 4,3 | 4,4 | |\n| 16,00 | 5,7 | 5,7 | 5,8 | |\n\n(A l'examen hi ha també uns eixos buits —figura 2— amb el potencial en funció de la posició $x$, de 0 a 20 cm, per representar-hi la gràfica.)",
+      "figures": [
+        {
+          "src": "img/fisica/2023-S/e2.png",
+          "peu": "Figura 1. Esquema del muntatge de l'experiment i paper quadriculat de la cubeta (placa negativa a x = 0 cm, placa positiva a x = 20 cm; punt P)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Empleneu la taula de dalt amb la mitjana aritmètica del potencial elèctric a les posicions $x = 4$, $8$, $12$ i $16\\ \\text{cm}$. Dibuixeu les línies equipotencials a $x = 4$, $8$, $12$ i $16\\ \\text{cm}$ i les línies de camp elèctric en el paper quadriculat de la cubeta (figura 1). Representeu en els eixos de coordenades (figura 2) la mitjana aritmètica del potencial elèctric en funció de $x$. Calculeu el mòdul del camp elèctric a partir de la gràfica.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Col·loquem una càrrega positiva de $3{,}00\\ \\text{mC}$ al punt $P$ indicat dins la cubeta en la figura 1. Indiqueu quina trajectòria seguirà. Representeu en el paper quadriculat (figura 1) la direcció i el sentit de la força que aplica el camp elèctric sobre aquesta càrrega. Determineu el mòdul de la força. Calculeu el treball que fa el camp elèctric per moure la càrrega des de $x = 8\\ \\text{cm}$ fins a $x = 0\\ \\text{cm}$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Separació entre plaques: $d = 20\\ \\text{cm} = 0{,}20\\ \\text{m}$; placa negativa a $x = 0$ (potencial de referència $V = 0$), placa positiva a $x = 20\\ \\text{cm}$\n- Mesures de potencial a tres alçades (I, II, III) per a cada $x$ (taula)\n- Càrrega: $q = 3{,}00\\ \\text{mC} = 3{,}00 \\times 10^{-3}\\ \\text{C}$, positiva, al punt $P$\n- Incògnites: a) $V_\\text{mitjà}$, equipotencials, línies de camp, gràfica $V(x)$ i $E$; b) trajectòria, força $F$ i treball $W_{8 \\to 0}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Mitjana aritmètica del potencial",
+            "cos": "Per a cada posició fem $V_\\text{mitjà} = \\dfrac{V_\\text{I} + V_\\text{II} + V_\\text{III}}{3}$. Per exemple, a $x = 4\\ \\text{cm}$: $\\dfrac{1{,}4 + 1{,}5 + 1{,}4}{3} = 1{,}43\\ \\text{V}$.\n\n| $x$ (cm) | $V_\\text{I}$ (V) | $V_\\text{II}$ (V) | $V_\\text{III}$ (V) | $V_\\text{mitjà}$ (V) |\n|---|---|---|---|---|\n| 4,00 | 1,4 | 1,5 | 1,4 | **1,43** |\n| 8,00 | 2,8 | 2,9 | 2,8 | **2,83** |\n| 12,00 | 4,2 | 4,3 | 4,4 | **4,30** |\n| 16,00 | 5,7 | 5,7 | 5,8 | **5,73** |"
+          },
+          {
+            "apartat": "a",
+            "titol": "Línies equipotencials i línies de camp",
+            "cos": "A cada $x$ el potencial és pràcticament el mateix a les tres alçades (I, II, III): per tant, les **línies equipotencials són rectes verticals, paral·leles a les plaques**, a $x = 4$, $8$, $12$ i $16\\ \\text{cm}$.\n\nLes **línies de camp** són sempre perpendiculars a les equipotencials i van del potencial alt al potencial baix: són rectes horitzontals que surten de la placa positiva ($x = 20\\ \\text{cm}$) i van cap a la placa negativa ($x = 0$), és a dir, en el sentit de $-x$.\n\n![Línies equipotencials (blau) i línies de camp (vermell) de la solució oficial](img/fisica/2023-S/e2-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Gràfica V(x)",
+            "cos": "Representem $V_\\text{mitjà}$ en funció de $x$, amb títols i unitats als eixos. Podem afegir un cinquè punt: la placa negativa és a $x = 0$ i hi hem connectat el terminal negatiu del voltímetre, de manera que allà $V = 0$. Els punts queden pràcticament alineats en una recta que passa per l'origen.\n\n![Gràfica del potencial en funció de la posició (solució oficial)](img/fisica/2023-S/e2-sol-2.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp elèctric a partir del pendent",
+            "cos": "El camp elèctric està relacionat amb la variació del potencial: $E_x = -\\dfrac{dV}{dx}$. Com que la gràfica és una recta, el camp és **constant** (uniforme, com el de dues plaques planes paral·leles) i el seu mòdul és el pendent de la recta. Amb l'ajust per mínims quadrats (o la recta que millor s'ajusta):\n\n$$E = \\left|\\frac{\\Delta V}{\\Delta x}\\right| = 0{,}358\\ \\text{V/cm} = 35{,}8\\ \\text{V/m}$$\n\nTambé es pot fer amb dos punts de la taula, per exemple $\\dfrac{5{,}73 - 1{,}43}{16 - 4} = 0{,}358\\ \\text{V/cm}$.\n\nResultat: **$E = 35{,}8\\ \\text{V/m}$**, dirigit cap a la placa negativa (sentit $-x$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Trajectòria i força sobre la càrrega",
+            "cos": "Sobre una càrrega positiva el camp exerceix una força $\\vec{F} = q\\vec{E}$, amb la mateixa direcció i sentit que el camp: **horitzontal i cap a la placa negativa**. Si la deixem en repòs a $P$, es mourà en **línia recta, al llarg de la línia de camp, cap a la placa negativa** ($x = 0$).\n\n![Força sobre la càrrega positiva al punt P (solució oficial)](img/fisica/2023-S/e2-sol-3.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Mòdul de la força",
+            "cos": "$$F = q\\,E = 3{,}00 \\times 10^{-3} \\cdot 35{,}8 = 0{,}107\\ \\text{N}$$\n\nResultat: **$F = 0{,}107\\ \\text{N}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball del camp entre x = 8 cm i x = 0",
+            "cos": "El treball que fa el camp elèctric és igual a menys la variació d'energia potencial: $W = -\\Delta E_p = -q\\,\\Delta V = -q\\,(V_\\text{final} - V_\\text{inicial})$. A $x = 8\\ \\text{cm}$ el potencial és $2{,}83\\ \\text{V}$ i a $x = 0$ és $0\\ \\text{V}$:\n\n$$W = -q\\,(V_0 - V_8) = -3{,}00 \\times 10^{-3} \\cdot (0 - 2{,}83) = 8{,}49 \\times 10^{-3}\\ \\text{J}$$\n\nResultat: **$W = 8{,}49 \\times 10^{-3}\\ \\text{J}$**. És positiu: la càrrega positiva va espontàniament cap al potencial baix i és el camp qui fa el treball."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$V_\\text{mitjà}$ = 1,43; 2,83; 4,30; 5,73 V; equipotencials verticals, línies de camp horitzontals cap a la placa negativa; $E = 0{,}358\\ \\text{V/cm} = 35{,}8\\ \\text{V/m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Moviment rectilini cap a la placa negativa; $F = 0{,}107\\ \\text{N}$; $W_{8\\to 0} = 8{,}49 \\times 10^{-3}\\ \\text{J}$"
+          }
+        ],
+        "nota": "Si es calcula el treball com $W = F\\,\\Delta x = 0{,}107 \\cdot 0{,}08 = 8{,}6 \\times 10^{-3}\\ \\text{J}$ surt un valor lleugerament diferent perquè es fa servir el camp de l'ajust i no el potencial mesurat a $x = 8\\ \\text{cm}$; tots dos procediments són correctes. Als criteris, no posar títol o unitats als eixos de la gràfica resta punts, i no escalar-la bé l'anul·la."
+      }
+    },
+    {
+      "id": "fisica-2023-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Ressonància en un tub semitancat per aigua: harmònics i velocitat del so",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ones estacionàries",
+        "tub obert per un extrem",
+        "harmònics",
+        "ressonància",
+        "velocitat del so"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6
+      ],
+      "enunciat": "Duem a terme una experiència de ressonància en un tub amb aigua que consisteix a submergir un tub obert pels dos extrems en un recipient que conté aigua, tal com es mostra en la figura. Damunt de l'extrem superior del tub fem vibrar un diapasó, que emet un so de freqüència $442\\ \\text{Hz}$. La longitud de la columna d'aire ($L$) s'ajusta elevant el tub fora de l'aigua fins a trobar un punt on es produeix la ressonància (se sent una nota intensa). Comencem l'experiència amb tot el tub submergit i observem la primera ressonància quan $L = 19{,}3\\ \\text{cm}$ i la segona ressonància quan $L = 58{,}0\\ \\text{cm}$.\n\n**Dades:** La velocitat del so a l'aigua és de $1\\,493\\ \\text{m s}^{-1}$. La velocitat del so a la glicerina és de $1\\,904\\ \\text{m s}^{-1}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2023-S/e3.png",
+          "peu": "Tub dins d'un recipient amb aigua i diapasó a sobre; L és la longitud de la columna d'aire"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu la forma de l'ona ressonant per a la primera i segona ressonàncies. Indiqueu en tots dos casos de quin harmònic es tracta i identifiqueu els ventres i els nodes. Justifiqueu per què en tots dos casos la longitud d'ona no varia. Determineu la longitud del tub que ha de quedar per sobre de l'aigua quan ressona el cinquè harmònic.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "A partir dels resultats de l'experiència, determineu la velocitat del so a l'aire. Si substituïm l'aigua per glicerina, variarà aquest resultat? Raoneu la resposta.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Freqüència del diapasó: $f = 442\\ \\text{Hz}$\n- Primera ressonància: $L_1 = 19{,}3\\ \\text{cm} = 0{,}193\\ \\text{m}$\n- Segona ressonància: $L_2 = 58{,}0\\ \\text{cm} = 0{,}580\\ \\text{m}$\n- Incògnites: a) harmònics, nodes i ventres, $\\lambda$, longitud per al 5è harmònic $L_5$; b) velocitat del so a l'aire $c$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Condicions de contorn: un ventre a dalt i un node a baix",
+            "cos": "La columna d'aire es comporta com un **tub obert per un extrem i tancat per l'altre**: a dalt (extrem obert) l'aire pot vibrar lliurement i hi ha un **ventre (V)** de desplaçament; a baix, la superfície de l'aigua impedeix que l'aire es mogui i hi ha un **node (N)**. Entre un ventre i el node següent hi ha $\\lambda/4$, de manera que només ressonen les longituds\n\n$$L = n\\,\\frac{\\lambda}{4}, \\qquad n = 1, 3, 5, \\dots$$\n\n(només harmònics senars)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Primera ressonància: harmònic fonamental",
+            "cos": "La longitud més petita que ressona és $L_1 = \\lambda/4$: un ventre a dalt i un node a la superfície de l'aigua. És el **primer harmònic (fonamental)**:\n\n$$\\lambda_1 = 4L_1 = 4 \\cdot 0{,}193 = 0{,}772\\ \\text{m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Segona ressonància: tercer harmònic",
+            "cos": "La següent longitud que ressona és $L_2 = \\dfrac{\\lambda}{4} + \\dfrac{\\lambda}{2} = \\dfrac{3\\lambda}{4}$: de dalt a baix tenim V–N–V–N. És el **tercer harmònic** (el segon no existeix en un tub tancat per un extrem):\n\n$$\\lambda_3 = \\frac{4}{3}L_2 = \\frac{4}{3} \\cdot 0{,}580 = 0{,}773\\ \\text{m}$$\n\n![Forma de l'ona per a l'harmònic fonamental i el tercer harmònic, amb ventres (V) i nodes (N) (solució oficial)](img/fisica/2023-S/e3-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Per què la longitud d'ona és la mateixa",
+            "cos": "En tots dos casos el que fa vibrar l'aire és el mateix diapasó, de freqüència $f = 442\\ \\text{Hz}$, i el so es propaga pel mateix medi (l'aire), amb la mateixa velocitat $c$. Com que $\\lambda = c/f$ i ni $c$ ni $f$ canvien, **la longitud d'ona no varia**: el que canvia és la longitud de la columna d'aire, que s'ajusta a $\\lambda/4$ o a $3\\lambda/4$. Efectivament, obtenim $0{,}772$ i $0{,}773\\ \\text{m}$, pràcticament iguals. Prenem el valor mitjà:\n\n$$\\lambda = \\frac{0{,}7720 + 0{,}7733}{2} = 0{,}7727\\ \\text{m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud per al cinquè harmònic",
+            "cos": "Per al cinquè harmònic $n = 5$: de dalt a baix V–N–V–N–V–N, és a dir, $L_5 = \\dfrac{\\lambda}{4} + \\lambda = \\dfrac{5\\lambda}{4}$:\n\n$$L_5 = \\frac{5 \\cdot 0{,}7727}{4} = 0{,}966\\ \\text{m}$$\n\nResultat: **cal que quedin $L_5 = 0{,}966\\ \\text{m}$ de tub per sobre de l'aigua**.\n\n![Cinquè harmònic (solució oficial)](img/fisica/2023-S/e3-sol-2.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat del so a l'aire",
+            "cos": "Per a qualsevol ona, $c = \\lambda f$:\n\n$$c = \\lambda\\,f = 0{,}7727 \\cdot 442 = 342\\ \\text{m/s}$$\n\nResultat: **$c \\approx 342\\ \\text{m/s}$** (la solució oficial ho arrodoneix a $340\\ \\text{m/s}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Què passa si canviem l'aigua per glicerina",
+            "cos": "**No varia.** L'ona estacionària que ressona és la de la columna d'**aire**: el líquid només fa de paret que reflecteix el so i hi imposa un node. La velocitat que mesurem és la del so a l'aire, que depèn de l'aire (temperatura…), no del líquid. Per això les velocitats del so a l'aigua ($1\\,493\\ \\text{m/s}$) i a la glicerina ($1\\,904\\ \\text{m/s}$) no intervenen en el resultat: amb glicerina tornaríem a obtenir $c \\approx 340\\ \\text{m/s}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "1a ressonància: harmònic fonamental, $\\lambda_1 = 0{,}772\\ \\text{m}$; 2a: tercer harmònic, $\\lambda_3 = 0{,}773\\ \\text{m}$; $\\lambda$ no varia perquè $f$ i $c$ són iguals; $L_5 = 5\\lambda/4 = 0{,}966\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$c = \\lambda f \\approx 342\\ \\text{m/s}$ (oficial: 340 m/s); amb glicerina no varia"
+          }
+        ],
+        "nota": "Discrepància d'arrodoniment: l'oficial escriu $c = 0{,}7727 \\cdot 442 = 340\\ \\text{m/s}$, però el producte dona $341{,}5 \\approx 342\\ \\text{m/s}$; s'accepten tots dos. També es pot obtenir $\\lambda$ de la diferència entre ressonàncies consecutives, $L_2 - L_1 = \\lambda/2$ → $\\lambda = 0{,}774\\ \\text{m}$, mètode que no depèn de la correcció de l'extrem obert. Els criteris accepten fer servir $\\lambda_1$ o $\\lambda_3$ en lloc de la mitjana."
+      }
+    },
+    {
+      "id": "fisica-2023-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Espectròmetre de masses: selector de velocitats i trajectòria d'ions de neó",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [
+        "camp-electric"
+      ],
+      "conceptes": [
+        "espectròmetre de masses",
+        "selector de velocitats",
+        "força de Lorentz",
+        "moviment circular uniforme",
+        "regla de la mà dreta"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        8
+      ],
+      "enunciat": "Un espectròmetre de masses és un aparell que permet determinar la relació càrrega/massa d'ions. L'espectròmetre de masses conté tres parts diferenciades. La primera part és un filament que ionitza les molècules o àtoms que entren dins l'espectròmetre. A la sortida del filament tots els ions tenen una càrrega negativa. A la segona part de l'aparell els ions passen per un selector de velocitats (figura 1) que està format per dues plaques paral·leles, entre les quals es genera un camp elèctric uniforme. La separació entre aquestes plaques és d'$1{,}50\\ \\text{cm}$. Entre les plaques també es genera un camp magnètic uniforme de $0{,}50\\ \\text{T}$ perpendicular al pla del paper i en sentit sortint, tal com es mostra en la figura 1.\n\n**Dades:** $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$. Massa de l'ió: ${}^{20}\\text{Ne}^- = 3{,}32 \\times 10^{-26}\\ \\text{kg}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2023-S/e4.png",
+          "peu": "Figura 1. Selector de velocitats: plaques separades 1,50 cm, camp magnètic sortint del paper i ions que es mouen cap a la dreta"
+        },
+        {
+          "src": "img/fisica/2023-S/e4-2.png",
+          "peu": "Figura 2. Regió de sortida amb camp magnètic entrant i pantalles laterals"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Volem que el selector de velocitats només deixi passar els ions que es moguin a una velocitat de $2{,}00 \\times 10^5\\ \\text{m s}^{-1}$. Determineu la diferència de potencial que hem d'aplicar entre les plaques perquè els ions que es mouen a aquesta velocitat no es desviïn. Quina placa s'ha de connectar a potencial alt i quina a potencial baix? Justifiqueu les respostes i representeu les forces que actuen sobre un ió. Digueu si el selector de velocitats configurat d'aquesta manera també funciona per a ions positius i justifiqueu la resposta.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "La tercera part de l'espectròmetre es troba a la sortida del selector de velocitats i és una regió on hi ha un altre camp magnètic uniforme de $0{,}20\\ \\text{T}$, perpendicular al pla del paper i en sentit entrant (figura 2). Les pantalles laterals permeten mesurar la posició a què impacten els ions i d'aquesta manera poder determinar-ne la massa. Representeu esquemàticament sobre la figura 2 la trajectòria que descriuen els ions que surten del selector de velocitats indicant la direcció i el sentit de la força que exerceix el camp magnètic en un punt de la trajectòria. Justifiqueu la resposta. Calculeu a quina distància de la sortida del selector de velocitats impactarà l'ió dels isòtops del neó ${}^{20}\\text{Ne}^-$ (l'ió té la mateixa càrrega que un electró).",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Separació entre plaques: $d = 1{,}50\\ \\text{cm} = 0{,}0150\\ \\text{m}$\n- Camp magnètic del selector: $B_1 = 0{,}50\\ \\text{T}$, sortint del paper\n- Velocitat seleccionada: $v = 2{,}00 \\times 10^5\\ \\text{m/s}$, cap a la dreta\n- Camp magnètic de la tercera part: $B_2 = 0{,}20\\ \\text{T}$, entrant al paper\n- Ió ${}^{20}\\text{Ne}^-$: $q = -e = -1{,}602 \\times 10^{-19}\\ \\text{C}$, $m = 3{,}32 \\times 10^{-26}\\ \\text{kg}$\n- Incògnites: a) $\\Delta V$ entre plaques i polaritat; b) trajectòria i distància d'impacte $D$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Força magnètica sobre l'ió negatiu",
+            "cos": "Sobre una càrrega en moviment el camp magnètic fa la força $\\vec{F}_M = q\\,\\vec{v} \\times \\vec{B}$. Amb $\\vec{v}$ cap a la dreta i $\\vec{B}$ sortint del paper, la regla de la mà dreta dona $\\vec{v} \\times \\vec{B}$ **cap avall**. Com que la càrrega és **negativa**, la força té sentit contrari: $\\vec{F}_M$ apunta **cap amunt**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Força elèctrica necessària i sentit del camp",
+            "cos": "Perquè l'ió no es desviï, la força total ha de ser nul·la: $\\vec{F}_E + \\vec{F}_M = \\vec{0}$. Per tant, la força elèctrica $\\vec{F}_E = q\\vec{E}$ ha d'anar **cap avall**. Com que $q < 0$, el camp elèctric ha d'apuntar en sentit contrari a la força: $\\vec{E}$ **cap amunt**.\n\n![Forces sobre un ió negatiu: la força magnètica (amunt) i l'elèctrica (avall) es compensen (solució oficial)](img/fisica/2023-S/e4-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp elèctric i diferència de potencial",
+            "cos": "Igualem els mòduls de les dues forces (el camp és perpendicular a la velocitat, $\\sin 90^\\circ = 1$):\n\n$$|q|\\,E = |q|\\,v\\,B_1 \\quad\\Rightarrow\\quad E = v\\,B_1 = 2{,}00 \\times 10^5 \\cdot 0{,}50 = 1{,}00 \\times 10^5\\ \\text{V/m}$$\n\nEntre dues plaques paral·leles el camp és uniforme i $\\Delta V = E\\,d$:\n\n$$\\Delta V = E\\,d = 1{,}00 \\times 10^5 \\cdot 0{,}0150 = 1\\,500\\ \\text{V}$$\n\nResultat: **$\\Delta V = 1{,}50 \\times 10^3\\ \\text{V}$**. Fixeu-vos que la condició $v = E/B$ no depèn de la càrrega ni de la massa: per això és un selector de *velocitats*."
+          },
+          {
+            "apartat": "a",
+            "titol": "Quina placa a potencial alt",
+            "cos": "El camp elèctric apunta cap on el potencial disminueix. Com que $\\vec{E}$ va cap amunt, la **placa inferior s'ha de connectar al potencial alt** i la **placa superior al potencial baix**.\n\n![Selector de velocitats amb el camp elèctric cap amunt: placa inferior a potencial alt (solució oficial)](img/fisica/2023-S/e4-sol-2.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Funciona també per a ions positius?",
+            "cos": "**Sí.** Si la càrrega és positiva, totes dues forces canvien de sentit alhora ($\\vec{F}_E$ passa a anar cap amunt i $\\vec{F}_M$ cap avall), però continuen tenint el mateix mòdul, $qE = qvB$. La suma continua sent zero i els ions positius de velocitat $2{,}00 \\times 10^5\\ \\text{m/s}$ tampoc es desvien.\n\n![Forces sobre un ió positiu (solució oficial)](img/fisica/2023-S/e4-sol-3.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Trajectòria a la regió del camp magnètic",
+            "cos": "A la tercera part només hi ha camp magnètic. La força magnètica és sempre **perpendicular a la velocitat**, per tant no en canvia el mòdul, només la direcció: actua com a força centrípeta constant i l'ió descriu un **moviment circular uniforme**. Com que entra perpendicularment a les pantalles, fa **mitja circumferència** i torna a impactar a la paret de les pantalles.\n\nSentit: amb $\\vec{v}$ cap a la dreta i $\\vec{B}$ entrant al paper, $\\vec{v} \\times \\vec{B}$ apunta cap amunt; com que l'ió és negatiu, $\\vec{F}_M = -e\\,\\vec{v} \\times \\vec{B}$ apunta **cap avall** a la sortida del selector. L'ió gira cap avall (sentit antihorari) i impacta a la **pantalla inferior**, a una distància igual al diàmetre de la circumferència.\n\n![Trajectòria semicircular de l'ió negatiu (solució oficial; el dibuix està girat 90° respecte a la figura 2: allà la velocitat de sortida apunta cap amunt i la força cap a la dreta)](img/fisica/2023-S/e4-sol-4.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Radi de la trajectòria",
+            "cos": "Apliquem la segona llei de Newton amb la força magnètica com a força centrípeta ($\\vec{v} \\perp \\vec{B}$):\n\n$$e\\,v\\,B_2 = m\\,\\frac{v^2}{r} \\quad\\Rightarrow\\quad r = \\frac{m\\,v}{e\\,B_2} = \\frac{3{,}32 \\times 10^{-26} \\cdot 2{,}00 \\times 10^5}{1{,}602 \\times 10^{-19} \\cdot 0{,}20} = 0{,}207\\ \\text{m}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Distància d'impacte",
+            "cos": "L'ió fa mitja volta, de manera que impacta a una distància igual al diàmetre:\n\n$$D = 2r = 2\\,\\frac{m\\,v}{e\\,B_2} = 2 \\cdot 0{,}207 = 0{,}414\\ \\text{m}$$\n\nResultat: **$D = 0{,}414\\ \\text{m}$** de la sortida del selector, a la pantalla inferior. Com que $D \\propto m$, ions més pesants impacten més lluny: així es mesura la massa."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 1{,}00 \\times 10^5\\ \\text{V/m}$, $\\Delta V = 1\\,500\\ \\text{V}$; placa inferior a potencial alt, superior a potencial baix; també funciona per a ions positius"
+          },
+          {
+            "apartat": "b",
+            "valor": "Semicircumferència (MCU), força inicial cap avall; impacta a la pantalla inferior a $D = 2mv/(eB) = 0{,}414\\ \\text{m}$"
+          }
+        ],
+        "nota": "La figura oficial de l'apartat b està girada respecte a la de l'enunciat (hi dibuixa la velocitat de sortida cap amunt i la pantalla horitzontal), però és equivalent: la força inicial és perpendicular a la velocitat i l'ió acaba a la pantalla del costat cap on apunta aquesta força (la inferior, en l'orientació de la figura 2)."
+      }
+    },
+    {
+      "id": "fisica-2023-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Mesurar una massa amb una molla oscil·lant i equació del MHS",
+      "tema": "oscillacions",
+      "temes_secundaris": [],
+      "conceptes": [
+        "moviment harmònic simple",
+        "període d'oscil·lació",
+        "molla",
+        "fase inicial",
+        "velocitat i acceleració màximes"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10
+      ],
+      "enunciat": "Responeu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Justifiqueu si es podria determinar la massa d'un objecte penjant-lo d'una molla de constant elàstica coneguda ($100\\ \\text{N/m}$) i deixant-lo oscil·lar unes quantes vegades i, en cas afirmatiu, expliqueu com la calcularíeu. Obtindríem el mateix resultat si ho féssim a la Lluna? Negligiu l'efecte de la força de fricció.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Deduïu l'equació de moviment de l'objecte a partir de l'equació del moviment harmònic simple (MHS) tenint en compte que l'amplitud del moviment és de $6{,}00\\ \\text{cm}$, que la freqüència d'oscil·lació és de $10{,}0\\ \\text{Hz}$ i que el moviment s'inicia quan l'acceleració és màxima i positiva. Calculeu la velocitat i l'acceleració màximes del MHS a partir de l'equació de moviment.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Constant elàstica: $k = 100\\ \\text{N/m}$\n- Amplitud: $A = 6{,}00\\ \\text{cm} = 0{,}0600\\ \\text{m}$\n- Freqüència: $f = 10{,}0\\ \\text{Hz}$\n- Condició inicial: a $t = 0$ l'acceleració és màxima i positiva\n- Incògnites: a) mètode per obtenir $m$ i si depèn de $g$; b) $x(t)$, $v_\\text{màx}$, $a_\\text{màx}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "El període d'un oscil·lador massa-molla depèn de la massa",
+            "cos": "Un objecte penjat d'una molla fa un MHS de període\n\n$$T = 2\\pi\\sqrt{\\frac{m}{k}} \\quad\\Rightarrow\\quad \\boxed{m = k\\left(\\frac{T}{2\\pi}\\right)^2}$$\n\nPer tant **sí que es pot**: mesurem el període i, coneguda $k$, calculem $m$. Per ser més precisos, cronometrem el temps $t_N$ de moltes oscil·lacions (per exemple $N = 10$) i fem $T = t_N/N$: així l'error del cronòmetre es reparteix entre totes les oscil·lacions.\n\nExemple: si 10 oscil·lacions duren $5{,}0\\ \\text{s}$, $T = 0{,}50\\ \\text{s}$ i $m = 100 \\cdot \\left(\\dfrac{0{,}50}{2\\pi}\\right)^2 = 0{,}63\\ \\text{kg}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "I a la Lluna?",
+            "cos": "La fórmula del període només conté $m$ i $k$: **no depèn de la intensitat del camp gravitatori** $g$. La gravetat només canvia la posició d'equilibri (quant s'estira la molla), però no la rapidesa de l'oscil·lació. Per tant, a la Lluna **obtindríem el mateix període i la mateixa massa** (fins i tot amb més precisió, perquè no hi ha fregament amb l'aire).\n\nCompte: no ens serviria mesurar quant s'allarga la molla en equilibri ($mg = k\\,\\Delta l$), perquè això sí que depèn de $g$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Pulsació i equació general del MHS",
+            "cos": "La pulsació és $\\omega = 2\\pi f = 2\\pi \\cdot 10{,}0 = 20\\pi\\ \\text{rad/s}$. Escrivim l'equació general del MHS:\n\n$$x(t) = A\\,\\sin(\\omega t + \\varphi_0)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat i acceleració derivant",
+            "cos": "La velocitat és la derivada de la posició i l'acceleració, la derivada de la velocitat:\n\n$$v(t) = \\frac{dx}{dt} = A\\,\\omega\\,\\cos(\\omega t + \\varphi_0)$$\n\n$$a(t) = \\frac{dv}{dt} = -A\\,\\omega^2\\,\\sin(\\omega t + \\varphi_0) = -\\omega^2\\,x(t)$$\n\nEls valors màxims són quan el sinus o el cosinus valen $\\pm 1$:\n\n$$v_\\text{màx} = A\\,\\omega = 0{,}0600 \\cdot 20\\pi = 3{,}77\\ \\text{m/s}$$\n\n$$a_\\text{màx} = A\\,\\omega^2 = 0{,}0600 \\cdot (20\\pi)^2 = 237\\ \\text{m/s}^2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Fase inicial",
+            "cos": "Com que $a = -\\omega^2 x$, l'acceleració és màxima i positiva quan $x$ és mínima: $x(0) = -A$ (l'objecte és a l'extrem negatiu).\n\n$$-A = A\\,\\sin\\varphi_0 \\quad\\Rightarrow\\quad \\sin\\varphi_0 = -1 \\quad\\Rightarrow\\quad \\varphi_0 = -\\frac{\\pi}{2}\\ \\text{rad}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació de moviment",
+            "cos": "$$x(t) = 0{,}0600\\,\\sin\\!\\left(20\\pi\\,t - \\frac{\\pi}{2}\\right)\\quad (x\\ \\text{en m},\\ t\\ \\text{en s})$$\n\nComprovació: $a(0) = -\\omega^2 \\cdot (-A) = +A\\omega^2 = 237\\ \\text{m/s}^2$, màxima i positiva."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Sí: $m = k\\,(T/2\\pi)^2$ mesurant el període (millor amb diverses oscil·lacions); a la Lluna surt el mateix perquè $T$ no depèn de $g$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$x(t) = 0{,}0600 \\sin(20\\pi t - \\pi/2)$ m (equivalent: $0{,}0600\\cos(20\\pi t + \\pi)$ m); $v_\\text{màx} = 3{,}77\\ \\text{m/s}$; $a_\\text{màx} = 237\\ \\text{m/s}^2$"
+          }
+        ],
+        "nota": "La solució oficial dona també l'alternativa amb cosinus: $x(t) = A\\cos(\\omega t + \\varphi_0)$ amb $\\cos\\varphi_0 = -1$ → $\\varphi_0 = \\pi$, és a dir $x(t) = 0{,}06\\cos(20\\pi t + \\pi)$, que és exactament el mateix moviment. Curiositat: amb $k = 100\\ \\text{N/m}$ i $f = 10{,}0\\ \\text{Hz}$ la massa seria $m = k/\\omega^2 \\approx 25\\ \\text{g}$."
+      }
+    },
+    {
+      "id": "fisica-2023-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Energia d'enllaç de l'urani 235 i massa d'urani per il·luminar un estadi",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "defecte de massa",
+        "energia d'enllaç per nucleó",
+        "estabilitat nuclear",
+        "fissió nuclear",
+        "equivalència massa-energia"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12
+      ],
+      "enunciat": "En les centrals nuclears es produeix electricitat a partir de la fissió de nuclis d'urani. Aquesta energia s'utilitza per a generar vapor d'aigua, que fa girar una turbina. L'urani és un element químic metàl·lic de símbol U i nombre atòmic 92. A la natura trobem diferents isòtops de l'urani, però els més comuns són l'urani 238 i l'urani 235.\n\n| Nucli | sofre 34 | ferro 56 | radi 226 | urani 235 |\n|---|---|---|---|---|\n| Energia d'enllaç per nucleó (MeV) | 8,58 | 8,79 | 7,66 | |\n\n**Dades:** $c = 3{,}00 \\times 10^8\\ \\text{m s}^{-1}$. $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$.\n\nMasses nuclears (en kg):\n\n| Protó | Neutró | Nucli d'urani 235 |\n|---|---|---|\n| $1{,}672\\,622 \\times 10^{-27}$ | $1{,}674\\,927 \\times 10^{-27}$ | $3{,}902\\,158 \\times 10^{-25}$ |\n\nNombre atòmic de diversos elements químics:\n\n| Kr | Rb | Sr | Ba | La | U |\n|---|---|---|---|---|---|\n| $Z = 36$ | $Z = 37$ | $Z = 38$ | $Z = 56$ | $Z = 57$ | $Z = 92$ |",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el defecte de massa i l'energia d'enllaç per nucleó per a l'urani 235, i introduïu el valor obtingut a la taula. Expliqueu la relació entre l'energia d'enllaç per nucleó i l'estabilitat del nucli. A partir d'aquí, indiqueu quin dels nuclis de la taula és el més estable.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "En una reacció nuclear de fissió de l'urani 235, un neutró d'alta energia impacta en un nucli d'urani. Com a resultat, es formen dos nuclis més petits i tres neutrons. Si considerem que un dels nuclis que es formen és el bari 141, escriviu-ne la reacció nuclear completa. Per a cada nucli d'urani fissionat, s'alliberen $202{,}5\\ \\text{MeV}$. Calculeu quants grams d'urani 235 són necessaris per a produir l'energia necessària per a il·luminar un estadi esportiu durant un partit en què es consumeixen aproximadament $25\\,000\\ \\text{kW h}$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Urani 235: $Z = 92$ protons, $A = 235$ nucleons → $N = 235 - 92 = 143$ neutrons\n- $m_p = 1{,}672\\,622 \\times 10^{-27}\\ \\text{kg}$, $m_n = 1{,}674\\,927 \\times 10^{-27}\\ \\text{kg}$, $m_U = 3{,}902\\,158 \\times 10^{-25}\\ \\text{kg}$\n- $c = 3{,}00 \\times 10^8\\ \\text{m/s}$; $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$\n- Energia per fissió: $202{,}5\\ \\text{MeV}$; energia consumida: $25\\,000\\ \\text{kW h}$\n- Incògnites: a) $\\Delta m$, $E_e/A$, nucli més estable; b) reacció, massa d'urani"
+          },
+          {
+            "apartat": "a",
+            "titol": "Defecte de massa",
+            "cos": "Un nucli pesa **menys** que la suma dels seus protons i neutrons per separat. Aquesta diferència és el defecte de massa:\n\n$$\\Delta m = Z\\,m_p + N\\,m_n - m_U$$\n\n$$\\Delta m = 92 \\cdot 1{,}672\\,622 \\times 10^{-27} + 143 \\cdot 1{,}674\\,927 \\times 10^{-27} - 3{,}902\\,158 \\times 10^{-25} = 3{,}18 \\times 10^{-27}\\ \\text{kg}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia d'enllaç",
+            "cos": "Segons l'equivalència massa-energia d'Einstein, la massa que «falta» és l'energia que es va alliberar en formar-se el nucli (i que caldria donar-li per separar-ne tots els nucleons):\n\n$$E_e = \\Delta m\\,c^2 = 3{,}18 \\times 10^{-27} \\cdot (3{,}00 \\times 10^8)^2 = 2{,}862 \\times 10^{-10}\\ \\text{J}$$\n\n$$E_e = \\frac{2{,}862 \\times 10^{-10}}{1{,}602 \\times 10^{-19}} = 1{,}79 \\times 10^{9}\\ \\text{eV} = 1\\,787\\ \\text{MeV}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia d'enllaç per nucleó",
+            "cos": "Dividim per $A = 235$ nucleons:\n\n$$\\frac{E_e}{A} = \\frac{2{,}862 \\times 10^{-10}}{235} = 1{,}22 \\times 10^{-12}\\ \\text{J} = 7{,}60 \\times 10^{6}\\ \\text{eV} = 7{,}60\\ \\text{MeV}$$\n\nResultat: **$E_e/A = 7{,}60\\ \\text{MeV/nucleó}$**.\n\n| Nucli | sofre 34 | ferro 56 | radi 226 | urani 235 |\n|---|---|---|---|---|\n| Energia d'enllaç per nucleó (MeV) | 8,58 | **8,79** | 7,66 | **7,60** |"
+          },
+          {
+            "apartat": "a",
+            "titol": "Relació amb l'estabilitat",
+            "cos": "L'energia d'enllaç per nucleó és l'energia mitjana que costa arrencar un nucleó del nucli: **com més gran és, més lligats estan els nucleons i més estable és el nucli**. Dels nuclis de la taula, el més estable és el **ferro 56** ($8{,}79\\ \\text{MeV}$), que és a prop del màxim de la corba d'energia d'enllaç. L'urani 235, amb el valor més petit, és el menys estable: per això, en partir-se en nuclis mitjans (fissió), allibera energia."
+          },
+          {
+            "apartat": "b",
+            "titol": "Reacció de fissió: conservació del nombre màssic i atòmic",
+            "cos": "Escrivim la reacció amb un nucli desconegut ${}^{x}_{y}\\text{Z}$ i imposem que es conservin el nombre de nucleons (a dalt) i la càrrega (a baix):\n\n$${}^{235}_{92}\\text{U} + {}^{1}_{0}\\text{n} \\rightarrow {}^{141}_{56}\\text{Ba} + {}^{x}_{y}\\text{Z} + 3\\,{}^{1}_{0}\\text{n}$$\n\n- Nombre màssic: $235 + 1 = 141 + x + 3 \\Rightarrow x = 92$\n- Nombre atòmic: $92 + 0 = 56 + y + 0 \\Rightarrow y = 36$ → és el **criptó** (Kr)\n\n$$\\boxed{{}^{235}_{92}\\text{U} + {}^{1}_{0}\\text{n} \\rightarrow {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia necessària en MeV",
+            "cos": "Passem els kW h a joules ($1\\ \\text{kW h} = 1\\,000\\ \\text{W} \\cdot 3\\,600\\ \\text{s} = 3{,}6 \\times 10^6\\ \\text{J}$) i després a MeV:\n\n$$E = 25\\,000 \\cdot 1\\,000 \\cdot 3\\,600 = 9{,}00 \\times 10^{10}\\ \\text{J}$$\n\n$$E = \\frac{9{,}00 \\times 10^{10}\\ \\text{J}}{1{,}602 \\times 10^{-19}\\ \\text{J/eV}} \\cdot \\frac{1\\ \\text{MeV}}{10^6\\ \\text{eV}} = 5{,}62 \\times 10^{23}\\ \\text{MeV}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Nombre de nuclis i massa d'urani",
+            "cos": "Cada fissió allibera $202{,}5\\ \\text{MeV}$, de manera que calen\n\n$$n = \\frac{5{,}62 \\times 10^{23}\\ \\text{MeV}}{202{,}5\\ \\text{MeV/nucli}} = 2{,}77 \\times 10^{21}\\ \\text{nuclis}$$\n\ni, multiplicant per la massa d'un nucli d'urani 235:\n\n$$m = n\\,m_U = 2{,}77 \\times 10^{21} \\cdot 3{,}902\\,158 \\times 10^{-25}\\ \\text{kg} = 1{,}08 \\times 10^{-3}\\ \\text{kg}$$\n\nResultat: **$m \\approx 1{,}08\\ \\text{g}$ d'urani 235**: amb poc més d'un gram n'hi ha prou per a tot un partit!"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\Delta m = 3{,}18 \\times 10^{-27}\\ \\text{kg}$; $E_e = 2{,}862 \\times 10^{-10}\\ \\text{J}$; $E_e/A = 7{,}60\\ \\text{MeV}$; el més estable és el ferro 56"
+          },
+          {
+            "apartat": "b",
+            "valor": "${}^{235}_{92}\\text{U} + {}^{1}_{0}\\text{n} \\rightarrow {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}$; $n = 2{,}77 \\times 10^{21}$ nuclis; $m = 1{,}08\\ \\text{g}$"
+          }
+        ],
+        "nota": "La solució oficial dona $1{,}083\\ \\text{g}$ (amb 4 xifres) i escriu l'energia d'enllaç total com $1{,}78 \\times 10^9\\ \\text{eV}$; amb $\\Delta m = 3{,}180 \\times 10^{-27}\\ \\text{kg}$ surt $1{,}786 \\times 10^9 \\approx 1{,}79 \\times 10^9\\ \\text{eV}$ (diferència d'arrodoniment, no afecta el resultat per nucleó). Compte a no oblidar el neutró incident en la conservació del nombre màssic."
+      }
+    },
+    {
+      "id": "fisica-2023-S-e7",
+      "exercici": 7,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Sensor UV per efecte fotoelèctric: longitud d'ona llindar i elecció del material",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "funció de treball",
+        "longitud d'ona llindar",
+        "energia del fotó",
+        "energia cinètica dels electrons"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        14
+      ],
+      "enunciat": "Volem construir un sensor de radiació ultraviolada que sigui sensible a radiacions de longitud d'ona de $300\\ \\text{nm}$. Decidim utilitzar l'efecte fotoelèctric com a principi del sensor. Així doncs, utilitzarem una cèl·lula fotoelèctrica que emeti electrons. Per al bon funcionament d'aquesta cèl·lula, cal que l'energia mínima dels electrons emesos sigui d'$1\\ \\text{eV}$.\n\n| Element | Símbol | Funció de treball (J) | Longitud d'ona llindar (nm) |\n|---|---|---|---|\n| tungstè | W | $8{,}36 \\times 10^{-19}$ | |\n| magnesi | Mg | $5{,}86 \\times 10^{-19}$ | |\n| potassi | K | $3{,}67 \\times 10^{-19}$ | |\n\n**Dades:** $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$. $c = 3{,}00 \\times 10^8\\ \\text{m s}^{-1}$. $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la longitud d'ona llindar del material que hauríem d'utilitzar per a construir la cèl·lula.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Empleneu la taula amb els valors de la longitud d'ona llindar dels tres materials donant el resultat en nanòmetres. Si podem triar un dels tres materials mostrats a la taula per a construir la cèl·lula, quin triaríeu? Justifiqueu la resposta.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud d'ona de la radiació: $\\lambda = 300\\ \\text{nm} = 3{,}00 \\times 10^{-7}\\ \\text{m}$\n- Energia cinètica dels electrons emesos: $E_c = 1\\ \\text{eV}$\n- $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$; $c = 3{,}00 \\times 10^8\\ \\text{m/s}$; $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$\n- Incògnites: a) $\\lambda_0$ del material ideal; b) $\\lambda_0$ de W, Mg i K i elecció del material"
+          },
+          {
+            "apartat": "a",
+            "titol": "Balanç d'energia de l'efecte fotoelèctric",
+            "cos": "Segons Einstein, cada fotó dona tota la seva energia $hf$ a un electró: una part, la funció de treball $W_0$, serveix per arrencar-lo del metall i la resta queda com a energia cinètica:\n\n$$h f = W_0 + E_c \\quad\\Rightarrow\\quad W_0 = h f - E_c$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia dels fotons de 300 nm",
+            "cos": "$$f = \\frac{c}{\\lambda} = \\frac{3{,}00 \\times 10^8}{300 \\times 10^{-9}} = 1{,}00 \\times 10^{15}\\ \\text{Hz}$$\n\n$$h f = 6{,}63 \\times 10^{-34} \\cdot 1{,}00 \\times 10^{15} = 6{,}63 \\times 10^{-19}\\ \\text{J} = \\frac{6{,}63 \\times 10^{-19}}{1{,}602 \\times 10^{-19}} = 4{,}14\\ \\text{eV}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Funció de treball i longitud d'ona llindar",
+            "cos": "$$W_0 = h f - E_c = 4{,}14 - 1 = 3{,}14\\ \\text{eV} = 3{,}14 \\cdot 1{,}602 \\times 10^{-19} = 5{,}03 \\times 10^{-19}\\ \\text{J}$$\n\nLa freqüència llindar és la que té just l'energia per arrencar l'electró, $f_0 = W_0/h$, i la longitud d'ona llindar, $\\lambda_0 = c/f_0$:\n\n$$f_0 = \\frac{W_0}{h} = \\frac{5{,}03 \\times 10^{-19}}{6{,}63 \\times 10^{-34}} = 7{,}58 \\times 10^{14}\\ \\text{Hz}$$\n\n$$\\lambda_0 = \\frac{c}{f_0} = \\frac{3{,}00 \\times 10^8}{7{,}58 \\times 10^{14}} = 3{,}96 \\times 10^{-7}\\ \\text{m} = 396\\ \\text{nm}$$\n\nResultat: **$\\lambda_0 = 396\\ \\text{nm}$**. Un material amb aquesta longitud d'ona llindar emetria electrons d'exactament $1\\ \\text{eV}$ amb llum de $300\\ \\text{nm}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud d'ona llindar de cada material",
+            "cos": "Combinant $f_0 = W_0/h$ i $\\lambda_0 = c/f_0$: $\\lambda_0 = \\dfrac{h\\,c}{W_0}$.\n\n$$\\lambda_{0,\\text{W}} = \\frac{6{,}63 \\times 10^{-34} \\cdot 3{,}00 \\times 10^8}{8{,}36 \\times 10^{-19}} = 2{,}38 \\times 10^{-7}\\ \\text{m} = 238\\ \\text{nm}$$\n\n$$\\lambda_{0,\\text{Mg}} = \\frac{6{,}63 \\times 10^{-34} \\cdot 3{,}00 \\times 10^8}{5{,}86 \\times 10^{-19}} = 3{,}39 \\times 10^{-7}\\ \\text{m} = 339\\ \\text{nm}$$\n\n$$\\lambda_{0,\\text{K}} = \\frac{6{,}63 \\times 10^{-34} \\cdot 3{,}00 \\times 10^8}{3{,}67 \\times 10^{-19}} = 5{,}42 \\times 10^{-7}\\ \\text{m} = 542\\ \\text{nm}$$\n\n| Element | Símbol | Funció de treball (J) | Longitud d'ona llindar (nm) |\n|---|---|---|---|\n| tungstè | W | $8{,}36 \\times 10^{-19}$ | **238** |\n| magnesi | Mg | $5{,}86 \\times 10^{-19}$ | **339** |\n| potassi | K | $3{,}67 \\times 10^{-19}$ | **542** |"
+          },
+          {
+            "apartat": "b",
+            "titol": "Elecció del material",
+            "cos": "Perquè els electrons surtin amb almenys $1\\ \\text{eV}$, la funció de treball ha de ser $W_0 \\le 3{,}14\\ \\text{eV}$, és a dir, la longitud d'ona llindar ha de ser **igual o més gran que $396\\ \\text{nm}$** (com més gran és $\\lambda_0$, més petita és $W_0$).\n\n- **Tungstè** ($238\\ \\text{nm} < 300\\ \\text{nm}$): la llum de $300\\ \\text{nm}$ ni tan sols arrenca electrons.\n- **Magnesi** ($339\\ \\text{nm} < 396\\ \\text{nm}$): sí que n'arrenca, però amb $E_c = 4{,}14 - 3{,}66 = 0{,}48\\ \\text{eV}$, menys d'$1\\ \\text{eV}$.\n- **Potassi** ($542\\ \\text{nm} > 396\\ \\text{nm}$): $E_c = 4{,}14 - 2{,}29 = 1{,}85\\ \\text{eV} \\ge 1\\ \\text{eV}$. Compleix la condició.\n\nResultat: **triaríem el potassi**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$hf = 4{,}14\\ \\text{eV}$; $W_0 = 3{,}14\\ \\text{eV} = 5{,}03 \\times 10^{-19}\\ \\text{J}$; $\\lambda_0 = 396\\ \\text{nm}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\lambda_0$: W 238 nm, Mg 339 nm, K 542 nm; cal $\\lambda_0 \\ge 396\\ \\text{nm}$ → potassi"
+          }
+        ],
+        "nota": "La solució oficial té dues errades tipogràfiques a la justificació final: escriu $\\lambda_{0,\\text{Mg}} = 542\\ \\text{nm}$ (hauria de ser $\\lambda_{0,\\text{K}}$) i diu que «les longituds d'ona llindars del tungstè i del potassi són massa petites» (hauria de dir tungstè i **magnesi**). La conclusió (potassi) és correcta. Comentari: el potassi també emetria electrons amb llum visible (fins a 542 nm), cosa que en un sensor real d'UV caldria evitar amb un filtre, però l'enunciat només demana la condició d'1 eV."
+      }
+    }
+  ]
+}

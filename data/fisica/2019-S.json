@@ -1,0 +1,698 @@
+{
+  "examen": {
+    "id": "fisica-2019-S",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2019,
+    "convocatoria": "setembre",
+    "serie": "5",
+    "pdf_examen": "pdfs/fisica/2019-S-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2019-S-solucio.pdf",
+    "estructura": "Part comuna obligatòria (P1 i P2) i part optativa: cal escollir UNA de les dues opcions (A o B) i fer-ne els problemes P3, P4 i P5. Cada problema val 2 punts i té dos apartats d'1 punt."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2019-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Oscil·lador harmònic a partir de la gràfica Ep–x² i equació de l'ona generada",
+      "tema": "oscillacions",
+      "temes_secundaris": [
+        "ones"
+      ],
+      "conceptes": [
+        "moviment harmònic simple",
+        "energia potencial elàstica",
+        "constant elàstica",
+        "període",
+        "energia cinètica màxima",
+        "equació d'ona"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "La gràfica següent mostra l'energia potencial elàstica d'un oscil·lador harmònic en funció del quadrat de la seva elongació.\n\nL'oscil·lador té una massa de $62{,}5\\ \\text{g}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2019-S/e1.png",
+          "peu": "Energia potencial elàstica $E_\\text{p}$ (J) en funció del quadrat de l'elongació $x^2$ (m²)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el període d'oscil·lació. Si l'oscil·lador descriu un moviment vibratori harmònic amb una amplitud de $60\\ \\text{cm}$, calculeu-ne l'energia cinètica màxima.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "L'oscil·lació genera una ona en una corda que es propaga a una velocitat de $30\\ \\text{m s}^{-1}$. Escriviu l'equació de l'ona que es propaga per la corda.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa: $m = 62{,}5\\ \\text{g} = 0{,}0625\\ \\text{kg}$\n- Amplitud: $A = 60\\ \\text{cm} = 0{,}60\\ \\text{m}$\n- Velocitat de propagació de l'ona: $v = 30\\ \\text{m/s}$\n- De la gràfica: per a $x^2 = 0{,}25\\ \\text{m}^2$, $E_\\text{p} = 200\\ \\text{J}$ (i passa per l'origen).\n- Incògnites: a) període $T$ i energia cinètica màxima $E_{c,\\text{màx}}$; b) equació de l'ona $y(x,t)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Constant elàstica a partir del pendent de la gràfica",
+            "cos": "L'energia potencial elàstica és $E_\\text{p} = \\frac{1}{2}kx^2$. Si representem $E_\\text{p}$ en funció de $x^2$, obtenim una **recta que passa per l'origen** amb pendent $\\frac{1}{2}k$:\n\n$$\\text{pendent} = \\frac{\\Delta E_\\text{p}}{\\Delta (x^2)} = \\frac{200 - 0}{0{,}25 - 0} = 800\\ \\text{J/m}^2$$\n\n$$\\frac{1}{2}k = 800 \\quad\\Rightarrow\\quad k = 2 \\cdot 800 = 1\\,600\\ \\text{N/m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Període d'oscil·lació",
+            "cos": "En un MHS la pulsació és $\\omega = \\sqrt{k/m}$, i per tant el període és:\n\n$$T = 2\\pi\\sqrt{\\frac{m}{k}} = 2\\pi\\sqrt{\\frac{0{,}0625}{1\\,600}} = 0{,}0393\\ \\text{s}$$\n\nResultat: **$T \\approx 0{,}039\\ \\text{s}$** (i $\\omega = \\sqrt{1\\,600/0{,}0625} = 160\\ \\text{rad/s}$)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia cinètica màxima",
+            "cos": "L'energia mecànica d'un oscil·lador harmònic es conserva i val $E = \\frac{1}{2}kA^2$. Als extrems tota és potencial; al centre ($x=0$) tota és cinètica, i per això l'energia cinètica màxima coincideix amb l'energia mecànica:\n\n$$E_{c,\\text{màx}} = \\frac{1}{2}kA^2 = \\frac{1}{2}\\cdot 1\\,600 \\cdot (0{,}60)^2 = 288\\ \\text{J}$$\n\nResultat: **$E_{c,\\text{màx}} = 288\\ \\text{J}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Paràmetres de l'ona",
+            "cos": "L'ona té el mateix període (i freqüència) que l'oscil·lador que la genera, i la mateixa amplitud, $A = 0{,}60\\ \\text{m}$. En un període l'ona avança una longitud d'ona:\n\n$$\\lambda = vT = 30 \\cdot 0{,}0393 = 1{,}18\\ \\text{m}$$\n\nNombre d'ona i pulsació:\n\n$$k_\\text{ona} = \\frac{2\\pi}{\\lambda} = \\frac{2\\pi}{1{,}18} = 5{,}33\\ \\text{m}^{-1}, \\qquad \\omega = \\frac{2\\pi}{T} = \\sqrt{\\frac{k}{m}} = 160\\ \\text{rad/s}$$\n\n(Comprovació: $v = \\omega/k_\\text{ona} = 160/5{,}33 = 30\\ \\text{m/s}$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació de l'ona",
+            "cos": "Per a una ona harmònica que es propaga en el sentit positiu de l'eix $x$, l'equació general és $y(x,t) = A\\sin(\\omega t - k_\\text{ona}x)$. Substituint:\n\n$$y(x,t) = 0{,}60\\,\\sin(160\\,t - 5{,}33\\,x)\\quad (x\\ \\text{en m},\\ t\\ \\text{en s},\\ y\\ \\text{en m})$$\n\nTambé és vàlida l'expressió amb cosinus o amb una fase inicial, i si l'ona es propagués cap a $x$ negatives el signe seria $+$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$k = 1\\,600\\ \\text{N/m}$; $T = 0{,}039\\ \\text{s}$; $E_{c,\\text{màx}} = 288\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\lambda = 1{,}18\\ \\text{m}$, $k_\\text{ona} = 5{,}33\\ \\text{m}^{-1}$, $\\omega = 160\\ \\text{rad/s}$: $y(x,t) = 0{,}60\\sin(160\\,t - 5{,}33\\,x)$ (SI)"
+          }
+        ],
+        "nota": "Error típic: llegir el pendent de la gràfica com si fos $k$ directament. La gràfica representa $E_\\text{p}$ davant de $x^2$, de manera que el pendent és $k/2$. La solució oficial dona $\\lambda = 1{,}1781\\ \\text{m}$ (massa xifres); amb dues o tres xifres significatives, $\\lambda = 1{,}18\\ \\text{m}$."
+      }
+    },
+    {
+      "id": "fisica-2019-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Sonda Juno en òrbita circular al voltant de Júpiter: energia cinètica, període i energia per escapar",
+      "tema": "gravitacio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "òrbita circular",
+        "força centrípeta",
+        "energia cinètica orbital",
+        "període orbital",
+        "energia mecànica orbital",
+        "energia d'escapament"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "La sonda *Juno* descriu una òrbita polar al voltant del planeta Júpiter des del dia 5 de juliol de 2016. La seva missió és estudiar l'atmosfera, l'origen i l'estructura de Júpiter, així com la seva evolució dins del Sistema Solar. Suposeu que l'òrbita és circular i que l'altura de l'òrbita sobre el planeta és de $4\\,300\\ \\text{km}$.\n\n**Dades:** Massa de Júpiter, $M_\\text{J} = 1{,}90 \\times 10^{27}\\ \\text{kg}$. Radi de Júpiter, $R_\\text{J} = 69\\,911\\ \\text{km}$. Massa de la sonda *Juno*, $m_\\text{Juno} = 3\\,625\\ \\text{kg}$. $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2019-S/e2.png",
+          "peu": "La sonda Juno davant de Júpiter (imatge il·lustrativa)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'energia cinètica de *Juno* i el seu període de rotació.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'energia que caldria comunicar-li perquè abandonés el camp gravitatori de Júpiter.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $M_\\text{J} = 1{,}90 \\times 10^{27}\\ \\text{kg}$, $m = 3\\,625\\ \\text{kg}$, $G = 6{,}67 \\times 10^{-11}\\ \\text{N m}^2\\ \\text{kg}^{-2}$\n- $R_\\text{J} = 69\\,911\\ \\text{km}$, altura $h = 4\\,300\\ \\text{km}$\n- Radi de l'òrbita (des del **centre** de Júpiter): $r = R_\\text{J} + h = 74\\,211\\ \\text{km} = 7{,}42 \\times 10^{7}\\ \\text{m}$\n- Incògnites: a) $E_c$ i període $T$; b) energia mínima per escapar."
+          },
+          {
+            "apartat": "a",
+            "titol": "La força gravitatòria fa de força centrípeta",
+            "cos": "En una òrbita circular, l'única força sobre la sonda és l'atracció gravitatòria de Júpiter, i és la que la fa girar (força centrípeta):\n\n$$G\\frac{M_\\text{J}\\,m}{r^2} = m\\frac{v^2}{r} \\quad\\Rightarrow\\quad v^2 = \\frac{GM_\\text{J}}{r}$$\n\nPer tant l'energia cinètica és:\n\n$$E_c = \\frac{1}{2}mv^2 = \\frac{1}{2}\\,G\\frac{M_\\text{J}\\,m}{r}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia cinètica de Juno",
+            "cos": "$$E_c = \\frac{1}{2}\\cdot\\frac{6{,}67 \\times 10^{-11}\\cdot 1{,}90 \\times 10^{27}\\cdot 3\\,625}{7{,}4211 \\times 10^{7}} = 3{,}10 \\times 10^{12}\\ \\text{J}$$\n\nResultat: **$E_c = 3{,}10 \\times 10^{12}\\ \\text{J}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat orbital i període",
+            "cos": "$$v = \\sqrt{\\frac{2E_c}{m}} = \\sqrt{\\frac{GM_\\text{J}}{r}} = \\sqrt{\\frac{6{,}67 \\times 10^{-11}\\cdot 1{,}90 \\times 10^{27}}{7{,}4211 \\times 10^{7}}} = 4{,}13 \\times 10^{4}\\ \\text{m/s}$$\n\nEl període és el temps que tarda a fer una volta completa (longitud $2\\pi r$) a velocitat constant:\n\n$$T = \\frac{2\\pi r}{v} = \\frac{2\\pi \\cdot 7{,}4211 \\times 10^{7}}{4{,}13 \\times 10^{4}} = 1{,}13 \\times 10^{4}\\ \\text{s}$$\n\nResultat: **$T \\approx 11\\,300\\ \\text{s}$** (unes 3,1 hores)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia mecànica de la sonda en òrbita",
+            "cos": "L'energia mecànica és la suma de la cinètica i la potencial gravitatòria ($E_p = -GM_\\text{J}m/r$):\n\n$$E_\\text{òrbita} = \\frac{1}{2}G\\frac{M_\\text{J}m}{r} - G\\frac{M_\\text{J}m}{r} = -\\frac{1}{2}G\\frac{M_\\text{J}m}{r} = -E_c = -3{,}10 \\times 10^{12}\\ \\text{J}$$\n\nÉs negativa perquè la sonda està lligada al planeta."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia per abandonar el camp gravitatori",
+            "cos": "Per escapar del camp de Júpiter, la sonda ha d'arribar a l'infinit (on $E_p = 0$) com a mínim amb velocitat nul·la, és a dir, amb energia mecànica final $0$. L'energia que cal comunicar-li és:\n\n$$E_\\text{òrbita} + E_\\text{a comunicar} = 0 \\quad\\Rightarrow\\quad E_\\text{a comunicar} = G\\frac{M_\\text{J}m}{2r} = 3{,}10 \\times 10^{12}\\ \\text{J}$$\n\nResultat: **$E = 3{,}10 \\times 10^{12}\\ \\text{J}$** (coincideix amb la seva energia cinètica orbital)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E_c = 3{,}10 \\times 10^{12}\\ \\text{J}$; $v = 4{,}13 \\times 10^{4}\\ \\text{m/s}$; $T \\approx 1{,}13 \\times 10^{4}\\ \\text{s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_\\text{a comunicar} = 3{,}10 \\times 10^{12}\\ \\text{J}$"
+          }
+        ],
+        "nota": "La solució oficial escriu a l'apartat b) $3{,}10 \\times 10^{-12}\\ \\text{J}$: és una errada tipogràfica de l'exponent; el valor correcte és $3{,}10 \\times 10^{12}\\ \\text{J}$, igual que l'energia cinètica de l'apartat a). Error típic: usar l'altura $h$ en lloc del radi orbital $r = R_\\text{J} + h$."
+      }
+    },
+    {
+      "id": "fisica-2019-S-e3-a",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Tres càrregues als vèrtexs d'un triangle equilàter: camp al baricentre i energia potencial",
+      "tema": "camp-electric",
+      "temes_secundaris": [],
+      "conceptes": [
+        "camp elèctric",
+        "principi de superposició",
+        "energia potencial electrostàtica",
+        "càrregues puntuals"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Tres càrregues elèctriques puntuals, de valor $q = 1{,}0\\ \\text{nC}$, es troben situades en els vèrtexs d'un triangle equilàter de $10{,}0\\ \\text{cm}$ de costat. Dues d'aquestes càrregues són positives, mentre que la tercera és negativa.\n\n**Dada:** $k = \\dfrac{1}{4\\pi\\varepsilon_0} = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$.\n\n**Nota:** El baricentre d'un triangle és el punt d'intersecció de les mitjanes (línies que uneixen cada vèrtex amb el punt mitjà del costat oposat).",
+      "figures": [
+        {
+          "src": "img/fisica/2019-S/e3-a.png",
+          "peu": "Triangle equilàter amb $-q$ al vèrtex superior i $+q$ als dos vèrtexs inferiors; G és el baricentre"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la intensitat del camp elèctric en el baricentre del triangle (punt G).",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la variació d'energia potencial electroestàtica que experimenta el sistema si les càrregues se separen fins a formar un altre triangle equilàter de $20{,}0\\ \\text{cm}$ de costat. Digueu si l'energia potencial electroestàtica augmenta o disminueix i justifiqueu la resposta.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $|q| = 1{,}0\\ \\text{nC} = 1{,}0 \\times 10^{-9}\\ \\text{C}$ (dues $+q$ a baix i una $-q$ a dalt)\n- Costat inicial $l = 10{,}0\\ \\text{cm} = 0{,}100\\ \\text{m}$; costat final $l' = 0{,}200\\ \\text{m}$\n- $k = 8{,}99 \\times 10^{9}\\ \\text{N m}^2\\ \\text{C}^{-2}$\n- Incògnites: a) $\\vec E$ a G; b) $\\Delta U$ i si augmenta o disminueix."
+          },
+          {
+            "apartat": "a",
+            "titol": "Distància de cada vèrtex al baricentre",
+            "cos": "En un triangle equilàter el baricentre és a la mateixa distància $r$ dels tres vèrtexs. La mitjana talla el costat pel punt mitjà i forma un angle de $30^\\circ$ amb el costat:\n\n$$\\cos 30^\\circ = \\frac{l/2}{r} \\quad\\Rightarrow\\quad r = \\frac{l/2}{\\cos 30^\\circ} = \\frac{0{,}05}{\\sqrt{3}/2} = 0{,}0577\\ \\text{m}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp de cada càrrega i direccions",
+            "cos": "Les tres càrregues tenen el mateix valor absolut i són a la mateixa distància, per tant creen camps del mateix mòdul:\n\n$$E = k\\frac{q}{r^2} = 8{,}99 \\times 10^{9}\\cdot\\frac{1{,}0 \\times 10^{-9}}{(0{,}0577)^2} = 2{,}70 \\times 10^{3}\\ \\text{N/C}$$\n\nDireccions (el camp surt de les càrregues positives i entra a les negatives):\n- La $-q$ de dalt crea a G un camp **cap amunt** (cap a ella).\n- Cada $+q$ de baix crea un camp que s'allunya d'ella, en la direcció de la mitjana: cap amunt i cap a fora, formant $30^\\circ$ amb l'horitzontal.\n\n![Camps a G: les dues components horitzontals s'anul·len i la resultant és vertical cap amunt](img/fisica/2019-S/e3-a-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Camp total al baricentre (superposició)",
+            "cos": "Per simetria, les components horitzontals dels camps de les dues càrregues positives s'anul·len. Les seves components verticals valen $E\\sin 30^\\circ$ cadascuna i s'afegeixen al camp de la negativa:\n\n$$E_\\text{total} = E + 2E\\sin 30^\\circ = E\\left(1 + 2\\cdot\\tfrac{1}{2}\\right) = 2E = 2k\\frac{q}{r^2}$$\n\n$$E_\\text{total} = 2\\cdot 8{,}99 \\times 10^{9}\\cdot\\frac{1{,}0 \\times 10^{-9}}{(0{,}0577)^2} = 5{,}4 \\times 10^{3}\\ \\text{N/C}$$\n\nResultat: **$E_\\text{total} \\approx 5\\,400\\ \\text{N/C}$, vertical i cap amunt** (cap a la càrrega negativa)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia potencial d'un sistema de tres càrregues",
+            "cos": "L'energia potencial electrostàtica del sistema és la suma de les energies de cada parella, $U_{ij} = k\\,q_i q_j / d_{ij}$, amb el seu signe. Hi ha una parella $(+,+)$ i dues parelles $(+,-)$, totes a distància $l$:\n\n$$U = k\\frac{q^2}{l} - k\\frac{q^2}{l} - k\\frac{q^2}{l} = -k\\frac{q^2}{l}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energies inicial i final",
+            "cos": "$$U_\\text{inicial} = -8{,}99 \\times 10^{9}\\cdot\\frac{(1{,}0 \\times 10^{-9})^2}{0{,}100} = -8{,}99 \\times 10^{-8}\\ \\text{J}$$\n\n$$U_\\text{final} = -8{,}99 \\times 10^{9}\\cdot\\frac{(1{,}0 \\times 10^{-9})^2}{0{,}200} = -4{,}50 \\times 10^{-8}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Variació d'energia i interpretació",
+            "cos": "$$\\Delta U = U_\\text{final} - U_\\text{inicial} = -4{,}50 \\times 10^{-8} - (-8{,}99 \\times 10^{-8}) = +4{,}50 \\times 10^{-8}\\ \\text{J}$$\n\nResultat: **$\\Delta U = +4{,}50 \\times 10^{-8}\\ \\text{J}$, l'energia potencial augmenta.**\n\nJustificació: globalment dominen les atraccions (dues parelles que s'atrauen contra una que es repel·leix), i l'energia del sistema és negativa. Per separar càrregues que s'atrauen cal fer un treball extern contra les forces elèctriques, que queda emmagatzemat com a energia potencial: $U$ passa de $-8{,}99 \\times 10^{-8}$ a $-4{,}50 \\times 10^{-8}\\ \\text{J}$, un valor menys negatiu."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$r = 0{,}0577\\ \\text{m}$; $E_\\text{total} = 2kq/r^2 \\approx 5{,}4 \\times 10^{3}\\ \\text{N/C}$, vertical cap amunt (cap a $-q$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$U_\\text{i} = -8{,}99 \\times 10^{-8}\\ \\text{J}$, $U_\\text{f} = -4{,}50 \\times 10^{-8}\\ \\text{J}$; $\\Delta U = +4{,}50 \\times 10^{-8}\\ \\text{J}$: augmenta"
+          }
+        ],
+        "nota": "Error típic: oblidar el signe de les càrregues en sumar les energies de cada parella o sumar els camps com si fossin escalars. Amb $r^2 = l^2/3$ exacte s'obté $E_\\text{total} = 5\\,394\\ \\text{N/C}$, que arrodonit dona els $5\\,400\\ \\text{N/C}$ de la solució oficial."
+      }
+    },
+    {
+      "id": "fisica-2019-S-e4-a",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Espira rectangular que travessa un camp magnètic: corrent induït, sentit (Lenz) i fem",
+      "tema": "induccio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "llei de Faraday",
+        "llei de Lenz",
+        "flux magnètic",
+        "força electromotriu induïda",
+        "intensitat induïda"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Introduïm una espira metàl·lica rectangular de $5\\ \\Omega$ de resistència elèctrica en una regió de l'espai delimitada per un camp magnètic uniforme de $0{,}2\\ \\text{T}$ perpendicular a la superfície de l'espira. Les dimensions de l'espira són $a = 3\\ \\text{cm}$ i $b = 6\\ \\text{cm}$, i es mou a una velocitat de $2\\ \\text{m s}^{-1}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2019-S/e4-a.png",
+          "peu": "L'espira (costat vertical $a$, horitzontal $b$) en tres posicions: entrant al camp $\\vec B$ (entrant al paper, ×), totalment a dins i sortint-ne; es mou cap a la dreta"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Digueu si circula corrent elèctric per l'espira en les tres situacions següents: en entrar al camp, quan hi està totalment immersa i en sortir-ne, i determineu en cada cas el sentit de circulació de la intensitat corresponent. Justifiqueu les respostes.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la força electromotriu i la intensitat del corrent elèctric que es genera en cada cas.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Resistència: $R = 5\\ \\Omega$\n- Camp magnètic: $B = 0{,}2\\ \\text{T}$, perpendicular al pla de l'espira i cap a dins del paper (×)\n- Costat vertical (el que entra i surt del camp): $a = 3\\ \\text{cm} = 0{,}03\\ \\text{m}$; costat horitzontal $b = 0{,}06\\ \\text{m}$\n- Velocitat: $v = 2\\ \\text{m/s}$ cap a la dreta\n- Incògnites: a) si hi ha corrent i el seu sentit en cada fase; b) $\\varepsilon$ i $I$ en cada fase."
+          },
+          {
+            "apartat": "a",
+            "titol": "Quan hi ha corrent induït? (Faraday)",
+            "cos": "Segons la llei de Faraday, només s'indueix una fem (i per tant corrent) si **varia el flux magnètic** $\\Phi = B\\,S$ a través de l'espira:\n\n- **En entrar**: la part de l'espira dins del camp creix, el flux augmenta → **hi ha corrent**.\n- **Totalment immersa**: tota l'espira és dins d'un camp uniforme, el flux és constant ($\\Phi = Bab$) → **no hi ha corrent**.\n- **En sortir**: la part dins del camp disminueix, el flux disminueix → **hi ha corrent**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Sentit del corrent (llei de Lenz)",
+            "cos": "La llei de Lenz diu que el corrent induït crea un camp magnètic que **s'oposa a la variació de flux**:\n\n- **En entrar**: augmenta el flux cap a dins del paper; el corrent induït ha de crear un camp cap a fora del paper dins l'espira → corrent en sentit **antihorari**.\n- **En sortir**: disminueix el flux cap a dins; el corrent induït intenta mantenir-lo creant un camp cap a dins → corrent en sentit **horari**.\n\n(Regla de la mà dreta: si el polze apunta cap a fora del paper, els dits giren en sentit antihorari.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Fem induïda en entrar i en sortir",
+            "cos": "Mentre l'espira entra, la superfície dins del camp és $S = a\\,x$, on $x$ és la longitud de l'espira que ja és a dins, i creix a ritme $dx/dt = v$. Aplicant la llei de Faraday:\n\n$$|\\varepsilon| = \\left|\\frac{d\\Phi}{dt}\\right| = B\\frac{dS}{dt} = B\\,a\\frac{dx}{dt} = B\\,a\\,v$$\n\n$$|\\varepsilon| = 0{,}2 \\cdot 0{,}03 \\cdot 2 = 0{,}012\\ \\text{V}$$\n\nEn sortir passa el mateix però amb el flux disminuint al mateix ritme: mateixa fem en mòdul, $0{,}012\\ \\text{V}$ (signe contrari). Totalment a dins, $\\varepsilon = 0$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat del corrent",
+            "cos": "Per la llei d'Ohm:\n\n$$I = \\frac{\\varepsilon}{R} = \\frac{0{,}012}{5} = 2{,}4 \\times 10^{-3}\\ \\text{A}$$\n\nResultat: **en entrar i en sortir, $\\varepsilon = 0{,}012\\ \\text{V}$ i $I = 2{,}4 \\times 10^{-3}\\ \\text{A} = 2{,}4\\ \\text{mA}$** (antihorari en entrar, horari en sortir); **totalment immersa, $\\varepsilon = 0$ i $I = 0$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Entrant: sí, sentit antihorari. Totalment immersa: no hi ha corrent (flux constant). Sortint: sí, sentit horari."
+          },
+          {
+            "apartat": "b",
+            "valor": "Entrant i sortint: $\\varepsilon = Bav = 0{,}012\\ \\text{V}$, $I = 2{,}4 \\times 10^{-3}\\ \\text{A}$; a dins: $\\varepsilon = 0$, $I = 0$"
+          }
+        ],
+        "nota": "Error típic: fer servir el costat $b$ en lloc del costat $a$. La fem la determina el costat perpendicular a la velocitat, que és el que va entrant (o sortint) del camp: aquí és el costat vertical $a = 3\\ \\text{cm}$."
+      }
+    },
+    {
+      "id": "fisica-2019-S-e5-a",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "A",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Raigs gamma de 10 GeV del telescopi MAGIC: freqüència, longitud d'ona i massa equivalent",
+      "tema": "quantica",
+      "temes_secundaris": [
+        "relativitat"
+      ],
+      "conceptes": [
+        "energia del fotó",
+        "constant de Planck",
+        "longitud d'ona",
+        "electró-volt",
+        "equivalència massa-energia"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        3
+      ],
+      "enunciat": "El telescopi MAGIC (de l'anglès *Major Atmospheric Gamma-ray Imaging Cherenkov Telescope*, és a dir, 'telescopi de raigs gamma per emissió de radiació de Txerenkov a l'atmosfera') és a l'Observatori del Roque de los Muchachos a La Palma, Illes Canàries. L'objectiu del telescopi és estudiar els raigs còsmics de molt alta energia, els quals, en interaccionar amb els gasos atmosfèrics, provoquen una cascada de raigs gamma de $10\\ \\text{GeV}$.\n\n**Dades:** Velocitat de la llum, $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$. $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$. Constant de Planck, $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la freqüència i la longitud d'ona d'aquests raigs.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Trobeu la massa equivalent d'aquests fotons.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Energia de cada fotó: $E = 10\\ \\text{GeV} = 10 \\times 10^{9}\\ \\text{eV}$\n- $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $1\\ \\text{eV} = 1{,}60 \\times 10^{-19}\\ \\text{J}$\n- Incògnites: a) freqüència $f$ i longitud d'ona $\\lambda$; b) massa equivalent $m$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia del fotó en joules",
+            "cos": "Primer passem l'energia al SI ($1\\ \\text{GeV} = 10^{9}\\ \\text{eV}$):\n\n$$E = 10 \\times 10^{9}\\ \\text{eV} \\cdot 1{,}60 \\times 10^{-19}\\ \\frac{\\text{J}}{\\text{eV}} = 1{,}60 \\times 10^{-9}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüència (relació de Planck)",
+            "cos": "L'energia d'un fotó és proporcional a la seva freqüència, $E = hf$:\n\n$$f = \\frac{E}{h} = \\frac{1{,}60 \\times 10^{-9}}{6{,}63 \\times 10^{-34}} = 2{,}41 \\times 10^{24}\\ \\text{Hz}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud d'ona",
+            "cos": "Els fotons es propaguen a la velocitat de la llum, $c = \\lambda f$:\n\n$$\\lambda = \\frac{c}{f} = \\frac{3{,}00 \\times 10^{8}}{2{,}41 \\times 10^{24}} = 1{,}24 \\times 10^{-16}\\ \\text{m}$$\n\nResultat: **$f = 2{,}41 \\times 10^{24}\\ \\text{Hz}$, $\\lambda = 1{,}24 \\times 10^{-16}\\ \\text{m}$**, una longitud d'ona molt més petita que un nucli atòmic, típica dels raigs gamma molt energètics."
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa equivalent (Einstein)",
+            "cos": "El fotó no té massa en repòs, però segons l'equivalència massa-energia d'Einstein, $E = mc^2$, la seva energia equival a una massa:\n\n$$m = \\frac{E}{c^2} = \\frac{1{,}60 \\times 10^{-9}}{(3{,}00 \\times 10^{8})^2} = \\frac{1{,}60 \\times 10^{-9}}{9{,}00 \\times 10^{16}} = 1{,}78 \\times 10^{-26}\\ \\text{kg}$$\n\nResultat: **$m = 1{,}78 \\times 10^{-26}\\ \\text{kg}$** (unes 10 vegades la massa d'un protó)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 1{,}60 \\times 10^{-9}\\ \\text{J}$; $f = 2{,}41 \\times 10^{24}\\ \\text{Hz}$; $\\lambda = 1{,}24 \\times 10^{-16}\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$m = 1{,}78 \\times 10^{-26}\\ \\text{kg}$"
+          }
+        ],
+        "nota": "La solució oficial fa servir $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$ (en lloc del $1{,}60 \\times 10^{-19}$ que dona l'enunciat) i obté $f = 2{,}42 \\times 10^{24}\\ \\text{Hz}$; amb la dada de l'enunciat surt $2{,}41 \\times 10^{24}\\ \\text{Hz}$. La diferència és només d'arrodoniment i les dues respostes són vàlides."
+      }
+    },
+    {
+      "id": "fisica-2019-S-e3-b",
+      "exercici": 3,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Gota d'oli carregada en equilibri entre dues plaques (experiment de Millikan)",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "camp elèctric uniforme",
+        "diferència de potencial",
+        "força elèctrica",
+        "equilibri de forces",
+        "experiment de Millikan"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Unes quantes gotes petites d'oli adquireixen una càrrega negativa mentre cauen a velocitat constant a través del buit entre dues plaques horitzontals separades per una distància de $2{,}00\\ \\text{cm}$. Entre aquestes plaques hi ha un camp elèctric uniforme, de mòdul $5{,}92 \\times 10^{4}\\ \\text{N C}^{-1}$.\n\n**Dada:** $g = 9{,}81\\ \\text{m s}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu un esquema de la situació descrita i representeu-hi les plaques esmentades, especificant el signe de cadascuna, i els camps vectorials (gravitatori i elèctric). Calculeu la diferència de potencial entre les plaques.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Dibuixeu les forces que actuen sobre una gota de massa $2{,}93\\ \\text{pg}$, si la gota té una càrrega tal que fa que estigui suspesa en equilibri dins del camp elèctric esmentat. Calculeu el valor d'aquesta càrrega.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Separació de les plaques: $d = 2{,}00\\ \\text{cm} = 2{,}00 \\times 10^{-2}\\ \\text{m}$\n- Camp elèctric: $E = 5{,}92 \\times 10^{4}\\ \\text{N/C}$\n- Massa de la gota: $m = 2{,}93\\ \\text{pg} = 2{,}93 \\times 10^{-12}\\ \\text{g} = 2{,}93 \\times 10^{-15}\\ \\text{kg}$\n- $g = 9{,}81\\ \\text{m/s}^2$; la càrrega de la gota és negativa.\n- Incògnites: a) esquema i $\\Delta V$; b) esquema de forces i càrrega $q$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Esquema: signe de les plaques i camps",
+            "cos": "Perquè una gota **negativa** pugui quedar en equilibri, la força elèctrica ha de compensar el pes, és a dir, ha d'anar **cap amunt**. Com que en una càrrega negativa la força té sentit contrari al camp ($\\vec F = q\\vec E$ amb $q<0$), el camp elèctric ha d'anar **cap avall**.\n\nEl camp va de la placa positiva a la negativa, per tant:\n- **Placa superior: positiva (+)**; **placa inferior: negativa (−)**.\n- Camp elèctric $\\vec E$: vertical, cap avall, uniforme entre les plaques (línies paral·leles i equidistants).\n- Camp gravitatori $\\vec g$: vertical, cap avall."
+          },
+          {
+            "apartat": "a",
+            "titol": "Diferència de potencial entre les plaques",
+            "cos": "En un camp elèctric uniforme, la diferència de potencial entre dues plaques separades una distància $d$ és:\n\n$$\\Delta V = E\\,d = 5{,}92 \\times 10^{4}\\cdot 2{,}00 \\times 10^{-2} = 1{,}18 \\times 10^{3}\\ \\text{V}$$\n\nResultat: **$\\Delta V \\approx 1\\,180\\ \\text{V}$** (la placa superior té més potencial)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Forces sobre la gota",
+            "cos": "Sobre la gota actuen dues forces verticals:\n- El **pes** $\\vec P = m\\vec g$, cap avall.\n- La **força elèctrica** $\\vec F_e = q\\vec E$, cap amunt (càrrega negativa en un camp cap avall).\n\nSi la gota està suspesa en equilibri, $\\sum \\vec F = m\\vec a = 0$, i per tant els mòduls són iguals:\n\n$$F_e - P = 0 \\quad\\Rightarrow\\quad |q|\\,E = m\\,g$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Càrrega de la gota",
+            "cos": "$$|q| = \\frac{m\\,g}{E} = \\frac{2{,}93 \\times 10^{-15}\\cdot 9{,}81}{5{,}92 \\times 10^{4}} = 4{,}86 \\times 10^{-19}\\ \\text{C}$$\n\nResultat: **$q = -4{,}86 \\times 10^{-19}\\ \\text{C}$** (negativa). Fixa't que és $\\approx 3$ vegades la càrrega de l'electró ($1{,}60 \\times 10^{-19}\\ \\text{C}$): la gota ha captat 3 electrons. Així és com Millikan va demostrar que la càrrega està quantitzada."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Placa superior +, inferior −; $\\vec E$ i $\\vec g$ cap avall; $\\Delta V = 1{,}18 \\times 10^{3}\\ \\text{V}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\vec F_e$ cap amunt i $\\vec P$ cap avall, iguals; $q = -4{,}86 \\times 10^{-19}\\ \\text{C}$ ($\\approx 3e$)"
+          }
+        ],
+        "nota": "La solució oficial calcula la càrrega amb $g = 9{,}80\\ \\text{m/s}^2$ i obté $4{,}85 \\times 10^{-19}\\ \\text{C}$; amb la dada de l'enunciat ($g = 9{,}81\\ \\text{m/s}^2$) surt $4{,}86 \\times 10^{-19}\\ \\text{C}$. Error típic: passar malament els picograms ($1\\ \\text{pg} = 10^{-12}\\ \\text{g} = 10^{-15}\\ \\text{kg}$)."
+      }
+    },
+    {
+      "id": "fisica-2019-S-e4-b",
+      "exercici": 4,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Transformador ideal: deducció de la relació de tensions i intensitat al primari",
+      "tema": "induccio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "transformador",
+        "llei de Faraday",
+        "relació de transformació",
+        "tensió eficaç",
+        "conservació de la potència"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "En un transformador que consta de dues bobines, la bobina primària té $N_\\text{p}$ espires i la secundària té $N_\\text{s}$ espires.\n\n**Nota:** Considereu un transformador ideal.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Deduïu, a partir de la conservació del flux magnètic, la fórmula per a obtenir la tensió del circuit secundari quan connectem la bobina primària d'un transformador a una tensió alterna $\\varepsilon$. Si $N_\\text{p} = 1\\,200$ espires i $N_\\text{s} = 300$ espires, calculeu la tensió eficaç a la bobina secundària quan connectem la bobina primària a una tensió eficaç de $230\\ \\text{V}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la intensitat eficaç en el circuit primari si pel circuit secundari circulen $2{,}0\\ \\text{A}$ d'intensitat eficaç. Feu un esquema i indiqueu-hi cada element del transformador, sabent que les dues bobines estan enrotllades sobre un nucli de ferro comú.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Espires: $N_\\text{p} = 1\\,200$, $N_\\text{s} = 300$\n- Tensió eficaç al primari: $V_\\text{p} = 230\\ \\text{V}$\n- Intensitat eficaç al secundari: $I_\\text{s} = 2{,}0\\ \\text{A}$\n- Transformador ideal: sense pèrdues de flux ni d'energia.\n- Incògnites: a) expressió de $V_\\text{s}$ i el seu valor; b) $I_\\text{p}$ i esquema."
+          },
+          {
+            "apartat": "a",
+            "titol": "Llei de Faraday a cada bobina",
+            "cos": "El corrent altern del primari crea un flux magnètic variable $\\varphi(t)$ dins del nucli de ferro. En un transformador ideal, el nucli condueix **tot** el flux, de manera que per cada espira de les dues bobines passa el mateix flux $\\varphi$. Segons la llei de Faraday, la fem a cada bobina és la d'una espira multiplicada pel nombre d'espires:\n\n$$V_\\text{p} = -N_\\text{p}\\frac{d\\varphi}{dt} \\quad\\Rightarrow\\quad -\\frac{d\\varphi}{dt} = \\frac{V_\\text{p}}{N_\\text{p}}$$\n\n$$V_\\text{s} = -N_\\text{s}\\frac{d\\varphi}{dt} \\quad\\Rightarrow\\quad -\\frac{d\\varphi}{dt} = \\frac{V_\\text{s}}{N_\\text{s}}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Relació de tensions",
+            "cos": "Com que $d\\varphi/dt$ és el mateix a les dues bobines, igualem:\n\n$$\\frac{V_\\text{p}}{N_\\text{p}} = \\frac{V_\\text{s}}{N_\\text{s}} \\quad\\Rightarrow\\quad V_\\text{s} = \\frac{N_\\text{s}}{N_\\text{p}}\\,V_\\text{p} = \\frac{N_\\text{s}}{N_\\text{p}}\\,\\varepsilon$$\n\nAquesta relació val per als valors instantanis i, per tant, també per als valors eficaços."
+          },
+          {
+            "apartat": "a",
+            "titol": "Tensió eficaç al secundari",
+            "cos": "$$V_\\text{s} = \\frac{300}{1\\,200}\\cdot 230 = 57{,}5\\ \\text{V}$$\n\nResultat: **$V_\\text{s} = 57{,}5\\ \\text{V}$** (és un transformador reductor: té 4 vegades menys espires al secundari)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat al primari (conservació de la potència)",
+            "cos": "En un transformador ideal no hi ha pèrdues, de manera que la potència que entra pel primari és igual a la que surt pel secundari:\n\n$$P_\\text{p} = P_\\text{s} \\quad\\Rightarrow\\quad I_\\text{p}V_\\text{p} = I_\\text{s}V_\\text{s}$$\n\n$$I_\\text{p} = \\frac{I_\\text{s}V_\\text{s}}{V_\\text{p}} = \\frac{2{,}0 \\cdot 57{,}5}{230} = 0{,}50\\ \\text{A}$$\n\nResultat: **$I_\\text{p} = 0{,}50\\ \\text{A}$**. On la tensió és més baixa, la intensitat és més alta (i a l'inrevés)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Esquema del transformador",
+            "cos": "Elements: el **nucli de ferro** comú (tancat), que canalitza el flux magnètic $\\vec B$; la **bobina primària** ($N_\\text{p} = 1\\,200$ espires) connectada a la font alterna de $230\\ \\text{V}$; i la **bobina secundària** ($N_\\text{s} = 300$ espires), on s'obtenen $57{,}5\\ \\text{V}$.\n\n![Esquema del transformador de la solució oficial: nucli de ferro, bobina primària i bobina secundària, amb el flux B circulant pel nucli](img/fisica/2019-S/e4-b-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$V_\\text{s} = \\dfrac{N_\\text{s}}{N_\\text{p}}\\varepsilon$; $V_\\text{s} = 57{,}5\\ \\text{V}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I_\\text{p} = 0{,}50\\ \\text{A}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica-2019-S-e5-b",
+      "exercici": 5,
+      "questio": null,
+      "opcio": "B",
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Fusió d'un protó i un neutró per formar deuteri: equació nuclear i energia del fotó",
+      "tema": "nuclear",
+      "temes_secundaris": [
+        "quantica"
+      ],
+      "conceptes": [
+        "fusió nuclear",
+        "defecte de massa",
+        "equivalència massa-energia",
+        "isòtops",
+        "energia del fotó"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "La reacció de fusió més simple és la fusió d'un protó amb un neutró. El resultat d'aquesta fusió és la formació d'un determinat isòtop de l'hidrogen i d'un fotó.\n\n**Dades:** Isòtops de l'hidrogen: ${}^{1}_{1}\\text{H}$, ${}^{2}_{1}\\text{H}$, ${}^{3}_{1}\\text{H}$. Velocitat de la llum, $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$. Constant de Planck, $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$. $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$.\n\nMasses en repòs:\n\n| ${}^{1}_{1}\\text{H}$ (protó) | ${}^{1}_{0}\\text{n}$ (neutró) | ${}^{2}_{1}\\text{H}$ (deuteri) | ${}^{3}_{1}\\text{H}$ (triti) |\n|---|---|---|---|\n| $1{,}672\\,62 \\times 10^{-27}\\ \\text{kg}$ | $1{,}674\\,92 \\times 10^{-27}\\ \\text{kg}$ | $3{,}343\\,58 \\times 10^{-27}\\ \\text{kg}$ | $5{,}007\\,36 \\times 10^{-27}\\ \\text{kg}$ |",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quin isòtop es forma? Escriviu l'equació nuclear que correspon a aquest procés.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu l'energia del fotó en joules (J) i en electró-volts (eV). Calculeu la freqüència d'aquest fotó.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m_p = 1{,}672\\,62 \\times 10^{-27}\\ \\text{kg}$, $m_n = 1{,}674\\,92 \\times 10^{-27}\\ \\text{kg}$, $m({}^{2}_{1}\\text{H}) = 3{,}343\\,58 \\times 10^{-27}\\ \\text{kg}$\n- $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$\n- Incògnites: a) isòtop i equació nuclear; b) energia del fotó (J i eV) i freqüència."
+          },
+          {
+            "apartat": "a",
+            "titol": "Quin isòtop es forma",
+            "cos": "En una reacció nuclear es conserven el nombre màssic $A$ (nombre de nucleons) i el nombre atòmic $Z$ (càrrega). Protó: $A=1$, $Z=1$; neutró: $A=1$, $Z=0$; el fotó té $A=0$, $Z=0$. El producte ha de tenir $A = 1+1 = 2$ i $Z = 1+0 = 1$: és el **deuteri**, ${}^{2}_{1}\\text{H}$ (un protó i un neutró)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació nuclear",
+            "cos": "$${}^{1}_{1}\\text{p} + {}^{1}_{0}\\text{n} \\;\\longrightarrow\\; {}^{2}_{1}\\text{H} + {}^{0}_{0}\\gamma$$\n\nComprovació: $A$: $1+1 = 2+0$; $Z$: $1+0 = 1+0$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Defecte de massa",
+            "cos": "La massa del deuteri és una mica més petita que la suma de les masses del protó i del neutró per separat. Aquesta massa «perduda» (defecte de massa) es transforma en l'energia que s'emporta el fotó:\n\n$$\\Delta m = \\left[m_p + m_n\\right] - m({}^{2}_{1}\\text{H}) = (1{,}672\\,62 + 1{,}674\\,92 - 3{,}343\\,58)\\times 10^{-27} = 3{,}96 \\times 10^{-30}\\ \\text{kg}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia del fotó",
+            "cos": "Per l'equivalència massa-energia d'Einstein:\n\n$$E = \\Delta m\\,c^2 = 3{,}96 \\times 10^{-30}\\cdot (3{,}00 \\times 10^{8})^2 = 3{,}56 \\times 10^{-13}\\ \\text{J}$$\n\nEn electró-volts:\n\n$$E = \\frac{3{,}564 \\times 10^{-13}\\ \\text{J}}{1{,}602 \\times 10^{-19}\\ \\text{J/eV}} = 2{,}22 \\times 10^{6}\\ \\text{eV} = 2{,}22\\ \\text{MeV}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Freqüència del fotó",
+            "cos": "Amb la relació de Planck $E = hf$:\n\n$$f = \\frac{E}{h} = \\frac{3{,}564 \\times 10^{-13}}{6{,}63 \\times 10^{-34}} = 5{,}38 \\times 10^{20}\\ \\text{Hz}$$\n\nResultat: **$E = 3{,}56 \\times 10^{-13}\\ \\text{J} = 2{,}22\\ \\text{MeV}$, $f = 5{,}38 \\times 10^{20}\\ \\text{Hz}$** (és un fotó gamma)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Es forma deuteri: ${}^{1}_{1}\\text{p} + {}^{1}_{0}\\text{n} \\to {}^{2}_{1}\\text{H} + \\gamma$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\Delta m = 3{,}96 \\times 10^{-30}\\ \\text{kg}$; $E = 3{,}56 \\times 10^{-13}\\ \\text{J} = 2{,}22 \\times 10^{6}\\ \\text{eV}$; $f = 5{,}38 \\times 10^{20}\\ \\text{Hz}$"
+          }
+        ],
+        "nota": "Error típic: en restar masses tan semblants, cal mantenir totes les xifres de les dades; si s'arrodoneixen abans, el defecte de massa surt molt malament. La massa del triti és una dada de distracció."
+      }
+    }
+  ]
+}

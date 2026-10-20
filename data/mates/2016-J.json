@@ -1,0 +1,941 @@
+{
+  "examen": {
+    "id": "mates-2016-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2016,
+    "convocatoria": "juny",
+    "serie": "3 i 5",
+    "pdf_examen": "pdfs/mates/2016-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2016-J-solucio.pdf",
+    "estructura": "El PDF conté dues sèries (3 i 5). A cada sèrie cal respondre CINC de les sis qüestions; cada qüestió val 2 punts (dos apartats d'1 punt). En les respostes cal explicar sempre què es vol fer i per què. Es pot utilitzar calculadora (no programable ni que emmagatzemi o transmeti informació)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2016-J-s3-e1",
+      "serie": "3",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Sistema 3×3 amb paràmetre k: discussió i resolució per a k = 0",
+      "tema": "sistemes",
+      "temes_secundaris": [
+        "matrius"
+      ],
+      "conceptes": [
+        "discussió de sistemes",
+        "teorema de Rouché-Frobenius",
+        "rang",
+        "determinant",
+        "sistema compatible indeterminat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Considereu el sistema d'equacions lineals següent:\n\n$$\\left.\\begin{aligned} 2x + 4y + 4z &= 4k - 7 \\\\ 2x - ky &= -1 \\\\ -2x &= k + 1 \\end{aligned}\\right\\}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre real $k$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Resoleu el sistema per al cas $k = 0$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Matriu de coeficients i matriu ampliada",
+            "cos": "Per discutir un sistema amb paràmetre fem servir el **teorema de Rouché-Frobenius**: comparem el rang de la matriu de coeficients $A$ amb el de la matriu ampliada $A'$ i amb el nombre d'incògnites (3).\n\n$$A = \\begin{pmatrix} 2 & 4 & 4 \\\\ 2 & -k & 0 \\\\ -2 & 0 & 0 \\end{pmatrix}, \\qquad A' = \\left(\\begin{array}{ccc|c} 2 & 4 & 4 & 4k-7 \\\\ 2 & -k & 0 & -1 \\\\ -2 & 0 & 0 & k+1 \\end{array}\\right)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Determinant de A: valors crítics de k",
+            "cos": "Com que $A$ depèn de $k$, busquem per a quins valors el determinant és zero (aleshores el rang ja no és 3). Desenvolupem per la tercera fila, que només té un element no nul:\n\n$$|A| = (-2)\\cdot\\begin{vmatrix} 4 & 4 \\\\ -k & 0 \\end{vmatrix} = (-2)\\,(0 + 4k) = -8k$$\n\n$|A| = 0 \\iff k = 0$. Per tant hi ha dos casos."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas k ≠ 0",
+            "cos": "$|A| \\neq 0 \\Rightarrow \\text{rang}(A) = 3$. Com que $A'$ té 3 files, també $\\text{rang}(A') = 3$, que és igual al nombre d'incògnites.\n\n**Si $k \\neq 0$: sistema compatible determinat** (solució única)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas k = 0",
+            "cos": "La matriu ampliada queda\n\n$$A' = \\left(\\begin{array}{ccc|c} 2 & 4 & 4 & -7 \\\\ 2 & 0 & 0 & -1 \\\\ -2 & 0 & 0 & 1 \\end{array}\\right)$$\n\nAra $|A| = 0$, però el menor $\\begin{vmatrix} 2 & 4 \\\\ 2 & 0 \\end{vmatrix} = -8 \\neq 0$, així que $\\text{rang}(A) = 2$.\n\nPer al rang de $A'$ orlem aquest menor amb la columna de termes independents:\n\n$$\\begin{vmatrix} 2 & 4 & -7 \\\\ 2 & 0 & -1 \\\\ -2 & 0 & 1 \\end{vmatrix} = -4\\cdot\\begin{vmatrix} 2 & -1 \\\\ -2 & 1 \\end{vmatrix} = -4\\,(2 - 2) = 0$$\n\n(també ho veiem directament: la 3a fila és la 2a canviada de signe). Per tant $\\text{rang}(A') = 2 = \\text{rang}(A) < 3$.\n\n**Si $k = 0$: sistema compatible indeterminat** amb $3 - 2 = 1$ grau de llibertat."
+          },
+          {
+            "apartat": "b",
+            "titol": "Sistema equivalent per a k = 0",
+            "cos": "Per l'apartat anterior sabem que és compatible indeterminat. La 3a equació ($-2x = 1$) és equivalent a la 2a ($2x = -1$), així que ens quedem amb:\n\n$$\\left.\\begin{aligned} 2x + 4y &= -7 - 4z \\\\ 2x &= -1 \\end{aligned}\\right\\}$$\n\ni fem servir $z$ com a paràmetre lliure."
+          },
+          {
+            "apartat": "b",
+            "titol": "Resolució",
+            "cos": "De la segona: $x = -\\dfrac{1}{2}$. Substituïm a la primera:\n\n$$-1 + 4y = -7 - 4z \\;\\Rightarrow\\; 4y = -6 - 4z \\;\\Rightarrow\\; y = \\frac{-3 - 2z}{2}$$\n\nSolució: **$(x, y, z) = \\left(-\\dfrac{1}{2},\\ \\dfrac{-3-2z}{2},\\ z\\right)$, amb $z \\in \\mathbb{R}$**.\n\nComprovació amb $z = 0$: $(-\\tfrac12, -\\tfrac32, 0)$ → $2(-\\tfrac12) + 4(-\\tfrac32) = -1 - 6 = -7$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$k \\neq 0$: SCD; $k = 0$: SCI amb 1 grau de llibertat"
+          },
+          {
+            "apartat": "b",
+            "valor": "$(x,y,z) = \\left(-\\frac12,\\ \\frac{-3-2z}{2},\\ z\\right)$, $z \\in \\mathbb{R}$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "mates-2016-J-s3-e2",
+      "serie": "3",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Posició relativa i distància entre una recta i un pla paral·lels",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "posició relativa recta-pla",
+        "vector normal",
+        "producte escalar",
+        "distància punt-pla"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "A $\\mathbb{R}^3$, siguin la recta $r$ que té per equació $(x, y, z) = (1 + \\lambda,\\ \\lambda,\\ 1 - \\lambda)$ i el pla $\\pi$ d'equació $2x - y + z = -2$.\n\nNota: Podeu calcular la distància d'un punt de coordenades $(x_0, y_0, z_0)$ al pla d'equació $Ax + By + Cz + D = 0$ amb l'expressió $\\dfrac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu la posició relativa de la recta $r$ i el pla $\\pi$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la distància entre la recta $r$ i el pla $\\pi$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Punt i vector director de la recta; vector normal del pla",
+            "cos": "Escrivim $r$ com a punt + paràmetre per vector: $(1+\\lambda, \\lambda, 1-\\lambda) = (1, 0, 1) + \\lambda(1, 1, -1)$.\n\n- Punt de $r$: $P = (1, 0, 1)$; vector director: $\\vec v_r = (1, 1, -1)$.\n- Vector normal de $\\pi$ (coeficients de $x, y, z$): $\\vec n = (2, -1, 1)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Paral·lelisme: producte escalar",
+            "cos": "La recta és paral·lela al pla (o hi és continguda) si el seu vector director és perpendicular al vector normal:\n\n$$\\vec v_r \\cdot \\vec n = (1, 1, -1)\\cdot(2, -1, 1) = 2 - 1 - 1 = 0$$\n\nSón perpendiculars, per tant $r$ és paral·lela a $\\pi$ o hi està continguda."
+          },
+          {
+            "apartat": "a",
+            "titol": "Continguda o no?",
+            "cos": "Mirem si el punt $P = (1,0,1)$ de la recta és del pla: $2\\cdot 1 - 0 + 1 = 3 \\neq -2$. No hi és.\n\n**La recta $r$ és paral·lela al pla $\\pi$ i no hi està continguda** (paral·lela exterior)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Distància recta-pla com a distància punt-pla",
+            "cos": "Com que són paral·lels, tots els punts de $r$ estan a la mateixa distància del pla; n'hi ha prou d'agafar $P = (1,0,1)$. Escrivim el pla com $2x - y + z + 2 = 0$:\n\n$$d(r, \\pi) = d(P, \\pi) = \\frac{|2\\cdot 1 - 1\\cdot 0 + 1\\cdot 1 + 2|}{\\sqrt{2^2 + (-1)^2 + 1^2}} = \\frac{5}{\\sqrt 6} = \\frac{5\\sqrt 6}{6}$$\n\n**$d(r, \\pi) = \\dfrac{5\\sqrt6}{6} \\approx 2{,}04$ unitats.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Recta paral·lela al pla, no continguda"
+          },
+          {
+            "apartat": "b",
+            "valor": "$d(r,\\pi) = \\frac{5}{\\sqrt6} = \\frac{5\\sqrt6}{6} \\approx 2{,}04$ u"
+          }
+        ],
+        "nota": "Error típic: oblidar passar el $-2$ a l'esquerra ($D = +2$) i obtenir $|3|/\\sqrt6$. També es podria fer resolent el sistema recta-pla (surt incompatible) o calculant la projecció ortogonal de $P$ sobre $\\pi$."
+      }
+    },
+    {
+      "id": "mates-2016-J-s3-e3",
+      "serie": "3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Recta tangent i monotonia de f(x) = x·e^(x−1)",
+      "tema": "derivades",
+      "temes_secundaris": [],
+      "conceptes": [
+        "recta tangent",
+        "derivada del producte",
+        "monotonia",
+        "signe de la derivada"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        1
+      ],
+      "enunciat": "Sigui la funció $f(x) = x\\,e^{x-1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de la funció $f$ en el punt d'abscissa $x = 1$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu en quins intervals la funció $f$ és creixent i en quins intervals és decreixent.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Fórmula de la recta tangent",
+            "cos": "La recta tangent a $f$ en $x = a$ és\n\n$$y - f(a) = f'(a)\\,(x - a)$$\n\nNecessitem $f(1)$ i $f'(1)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Derivada (regla del producte)",
+            "cos": "$$f'(x) = 1\\cdot e^{x-1} + x\\cdot e^{x-1} = (1 + x)\\,e^{x-1}$$\n\n$f(1) = 1\\cdot e^0 = 1$, $\\quad f'(1) = 2\\cdot e^0 = 2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació de la tangent",
+            "cos": "$$y - 1 = 2(x - 1) \\;\\Rightarrow\\; \\boldsymbol{y = 2x - 1}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Signe de la derivada",
+            "cos": "$f$ és derivable a tot $\\mathbb{R}$, així que creix on $f' > 0$ i decreix on $f' < 0$. Com que $e^{x-1} > 0$ sempre, el signe de $f'(x) = (1+x)e^{x-1}$ és el de $1 + x$:\n\n- $f'(x) = 0 \\iff x = -1$.\n- Si $x < -1$: $f'(x) < 0$ (p. ex. $f'(-2) = -e^{-3} < 0$).\n- Si $x > -1$: $f'(x) > 0$ (p. ex. $f'(0) = e^{-1} > 0$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Conclusió",
+            "cos": "**$f$ és decreixent a $(-\\infty, -1)$ i creixent a $(-1, +\\infty)$.** En $x = -1$ hi ha un mínim relatiu (i absolut), $f(-1) = -e^{-2}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y = 2x - 1$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Decreixent a $(-\\infty,-1)$, creixent a $(-1,+\\infty)$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "mates-2016-J-s3-e4",
+      "serie": "3",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Matrius que compleixen A² + A = 2I i expressió de la inversa",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "producte de matrius",
+        "matriu inversa",
+        "equació matricial",
+        "matriu identitat"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Responeu a les qüestions següents:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu totes les matrius de la forma $A = \\begin{pmatrix} 1 & 0 \\\\ m & -2 \\end{pmatrix}$ que satisfan la igualtat $A^2 + A = 2I$, en què $I$ és la matriu identitat, $I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Justifiqueu que si $A$ és una matriu quadrada que compleix la igualtat $A^2 + A = 2I$, aleshores $A$ és invertible, i calculeu l'expressió de $A^{-1}$ en funció de les matrius $A$ i $I$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Càlcul de A²",
+            "cos": "Calculem cada membre i després igualem element a element.\n\n$$A^2 = \\begin{pmatrix} 1 & 0 \\\\ m & -2 \\end{pmatrix}\\begin{pmatrix} 1 & 0 \\\\ m & -2 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ m - 2m & 4 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ -m & 4 \\end{pmatrix}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "A² + A i comparació amb 2I",
+            "cos": "$$A^2 + A = \\begin{pmatrix} 1 & 0 \\\\ -m & 4 \\end{pmatrix} + \\begin{pmatrix} 1 & 0 \\\\ m & -2 \\end{pmatrix} = \\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix} = 2I$$\n\nLa igualtat es compleix **per a qualsevol valor de $m$**: no apareix cap condició sobre $m$.\n\n**Totes les matrius $A = \\begin{pmatrix} 1 & 0 \\\\ m & -2 \\end{pmatrix}$, $m \\in \\mathbb{R}$, satisfan $A^2 + A = 2I$.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Treure factor comú",
+            "cos": "Una matriu $A$ és invertible si trobem $B$ amb $AB = BA = I$. Traiem $A$ factor comú (per la dreta i per l'esquerra, perquè $A$ commuta amb $I$):\n\n$$A^2 + A = A(A + I) = (A + I)A = 2I$$\n\nDividint per 2:\n\n$$A\\cdot\\frac{1}{2}(A + I) = \\frac{1}{2}(A + I)\\cdot A = I$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Conclusió",
+            "cos": "Hem trobat una matriu que multiplicada per $A$ (per la dreta i per l'esquerra) dona la identitat, per tant $A$ és invertible i\n\n$$\\boldsymbol{A^{-1} = \\frac{1}{2}(A + I)}$$\n\nComprovació amb la matriu de l'apartat a) i $m = 0$: $A = \\begin{pmatrix} 1 & 0 \\\\ 0 & -2 \\end{pmatrix}$, $\\frac12(A + I) = \\begin{pmatrix} 1 & 0 \\\\ 0 & -\\frac12 \\end{pmatrix}$, que és efectivament $A^{-1}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Totes: $A = \\begin{pmatrix} 1 & 0 \\\\ m & -2 \\end{pmatrix}$ per a qualsevol $m \\in \\mathbb{R}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$A^{-1} = \\frac12 (A + I)$"
+          }
+        ],
+        "nota": "Alternativa per a b): de $A(A+I) = 2I$, prenent determinants, $\\det A\\cdot\\det(A+I) = \\det(2I) \\neq 0$, per tant $\\det A \\neq 0$."
+      }
+    },
+    {
+      "id": "mates-2016-J-s3-e5",
+      "serie": "3",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Volum d'un tetraedre en funció de x i volum màxim",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "geometria",
+        "derivades"
+      ],
+      "conceptes": [
+        "volum del tetraedre",
+        "producte mixt",
+        "determinant",
+        "optimització",
+        "derivada segona"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Considereu el tetraedre que té per vèrtexs els punts $A = (x, 0, 1)$, $B = (0, x, 1)$, $C = (3, 0, 0)$ i $D = (0, x, 0)$, amb $0 < x < 3$.\n\nNota: Podeu calcular el volum del tetraedre de vèrtexs $A$, $B$, $C$ i $D$ amb l'expressió $\\dfrac{1}{6}\\left|\\det\\left(\\overrightarrow{AB}, \\overrightarrow{AC}, \\overrightarrow{AD}\\right)\\right|$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Comproveu que el volum del tetraedre és donat per l'expressió $V(x) = \\dfrac{1}{6}(-x^2 + 3x)$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu el valor de $x$ que fa que el volum sigui màxim i calculeu aquest volum màxim.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Vectors aresta des de A",
+            "cos": "$$\\overrightarrow{AB} = B - A = (-x,\\ x,\\ 0)$$\n$$\\overrightarrow{AC} = C - A = (3 - x,\\ 0,\\ -1)$$\n$$\\overrightarrow{AD} = D - A = (-x,\\ x,\\ -1)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Determinant (producte mixt)",
+            "cos": "Posem els tres vectors com a files i desenvolupem per la primera fila:\n\n$$\\begin{vmatrix} -x & x & 0 \\\\ 3-x & 0 & -1 \\\\ -x & x & -1 \\end{vmatrix} = -x\\,(0\\cdot(-1) - (-1)\\,x) - x\\,\\big((3-x)(-1) - (-1)(-x)\\big) + 0$$\n\n$$= -x\\cdot x - x\\,(-3 + x - x) = -x^2 + 3x$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valor absolut",
+            "cos": "$-x^2 + 3x = x(3 - x)$. Com que $0 < x < 3$, tots dos factors són positius, i per tant $|x(3-x)| = x(3-x)$:\n\n$$V(x) = \\frac{1}{6}\\,|-x^2 + 3x| = \\frac{1}{6}(-x^2 + 3x) \\quad \\checkmark$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Derivades i punt crític",
+            "cos": "Busquem el màxim de $V$ a l'interval $(0, 3)$: anul·lem la derivada i comprovem amb la segona.\n\n$$V'(x) = \\frac{1}{6}(-2x + 3), \\qquad V''(x) = -\\frac{2}{6} = -\\frac{1}{3}$$\n\n$$V'(x) = 0 \\iff -2x + 3 = 0 \\iff x = \\frac{3}{2}$$\n\nque és dins de $(0,3)$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovació i volum màxim",
+            "cos": "$V''(3/2) = -\\frac13 < 0$, per tant és un **màxim** (de fet $V$ és una paràbola cap avall, i el vèrtex és el màxim absolut).\n\n$$V\\!\\left(\\tfrac32\\right) = \\frac16\\left(-\\frac94 + \\frac92\\right) = \\frac16\\cdot\\frac94 = \\frac38$$\n\n**El volum és màxim per a $x = \\dfrac32$ i val $V_\\text{màx} = \\dfrac38$ unitats cúbiques.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\det(\\overrightarrow{AB},\\overrightarrow{AC},\\overrightarrow{AD}) = -x^2 + 3x > 0$ si $0<x<3$ ⇒ $V(x) = \\frac16(-x^2+3x)$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$x = \\frac32$, $V_\\text{màx} = \\frac38$ u³"
+          }
+        ],
+        "nota": "L'oficial posa els vectors en columnes; el determinant és el mateix. També es pot calcular el volum com a (àrea de la base · alçada)/3."
+      }
+    },
+    {
+      "id": "mates-2016-J-s3-e6",
+      "serie": "3",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Àrea entre dues paràboles amb paràmetre k",
+      "tema": "integrals",
+      "temes_secundaris": [],
+      "conceptes": [
+        "àrea entre corbes",
+        "integral definida",
+        "regla de Barrow",
+        "punts d'intersecció"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Siguin les paràboles $f(x) = x^2 + k^2$ i $g(x) = -x^2 + 9k^2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu les abscisses, en funció de $k$, dels punts d'intersecció entre les dues paràboles.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el valor del paràmetre $k$ perquè l'àrea compresa entre les paràboles sigui de 576 unitats quadrades.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Igualem les dues funcions",
+            "cos": "Els punts d'intersecció compleixen $f(x) = g(x)$:\n\n$$x^2 + k^2 = -x^2 + 9k^2 \\;\\Rightarrow\\; 2x^2 = 8k^2 \\;\\Rightarrow\\; x^2 = 4k^2 \\;\\Rightarrow\\; \\boldsymbol{x = \\pm 2k}$$\n\n(Si $k = 0$ les dues paràboles només es toquen a l'origen i no tanquen cap regió.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Quina està per sobre",
+            "cos": "$f$ és $y = x^2$ pujada $k^2$ unitats (oberta cap amunt) i $g$ és $y = -x^2$ pujada $9k^2$ (oberta cap avall). Entre les interseccions, $g$ està per sobre: per exemple a $x = 0$, $g(0) = 9k^2 > k^2 = f(0)$.\n\n$$g(x) - f(x) = -2x^2 + 8k^2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Integral de l'àrea",
+            "cos": "Prenem $k > 0$ (els punts de tall són $-2k$ i $2k$). Per simetria respecte de l'eix $OY$:\n\n$$\\text{Àrea} = \\int_{-2k}^{2k} (8k^2 - 2x^2)\\,dx = 2\\int_0^{2k} (8k^2 - 2x^2)\\,dx = 2\\left[8k^2x - \\frac{2x^3}{3}\\right]_0^{2k}$$\n\n$$= 2\\left(16k^3 - \\frac{16k^3}{3}\\right) = 2\\cdot\\frac{32k^3}{3} = \\frac{64k^3}{3}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Valor de k",
+            "cos": "$$\\frac{64k^3}{3} = 576 \\;\\Rightarrow\\; k^3 = \\frac{576\\cdot 3}{64} = 27 \\;\\Rightarrow\\; \\boldsymbol{k = 3}$$\n\nCom que les paràboles només depenen de $k^2$, **$k = -3$ dona exactament les mateixes paràboles** i també és vàlid: $k = \\pm 3$ (en general, l'àrea és $\\frac{64|k|^3}{3}$).\n\nComprovació: amb $k = 3$, $f(x) = x^2 + 9$, $g(x) = -x^2 + 81$, es tallen a $x = \\pm 6$ i $\\int_{-6}^{6}(72 - 2x^2)\\,dx = 864 - 288 = 576$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$x = \\pm 2k$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$k = 3$ (també $k = -3$, que dona les mateixes paràboles)"
+          }
+        ],
+        "nota": "Discrepància menor: l'oficial només dona $k = 3$, però com que $f$ i $g$ depenen de $k^2$, $k = -3$ també compleix la condició (l'àrea és $64|k|^3/3$). Error típic: integrar $f - g$ i obtenir àrea negativa; cal prendre la funció de dalt menys la de baix o el valor absolut."
+      }
+    },
+    {
+      "id": "mates-2016-J-s5-e1",
+      "serie": "5",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Vertader o fals: sistema homogeni i sistema amb termes independents (1,1,1)",
+      "tema": "sistemes",
+      "temes_secundaris": [
+        "matrius"
+      ],
+      "conceptes": [
+        "teorema de Rouché-Frobenius",
+        "rang",
+        "sistema homogeni",
+        "sistema incompatible",
+        "determinant"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Considereu el sistema d'equacions lineals $\\begin{pmatrix} 1 & 1 & 2 \\\\ -4 & -1 & -5 \\\\ 3 & 1 & 4 \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix}$. Expliqueu raonadament si les afirmacions següents són vertaderes o falses:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Si $\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}$, el sistema és compatible determinat i la solució és $\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si $\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix}$, el sistema és compatible indeterminat.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Rang de la matriu de coeficients",
+            "cos": "Les dues afirmacions depenen del rang de $A$, així que el calculem primer (regla de Sarrus):\n\n$$|A| = \\begin{vmatrix} 1 & 1 & 2 \\\\ -4 & -1 & -5 \\\\ 3 & 1 & 4 \\end{vmatrix} = (-4) + (-15) + (-8) - (-6) - (-5) - (-16) = -27 + 27 = 0$$\n\nI el menor $\\begin{vmatrix} 1 & 1 \\\\ -4 & -1 \\end{vmatrix} = -1 + 4 = 3 \\neq 0$. Per tant **$\\text{rang}(A) = 2$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Sistema homogeni",
+            "cos": "Si $b = (0,0,0)$, el sistema és **homogeni**: afegir una columna de zeros no canvia el rang, $\\text{rang}(A') = \\text{rang}(A) = 2 < 3$ incògnites. Per Rouché-Frobenius és **compatible indeterminat** (infinites solucions, 1 grau de llibertat).\n\n$(0,0,0)$ és una solució, però no l'única: per exemple, $(x,y,z) = (-1,-1,1)$ també ho és: $-1-1+2 = 0$, $4+1-5 = 0$, $-3-1+4 = 0$. Les solucions són $(x,y,z) = t(-1,-1,1)$, $t\\in\\mathbb{R}$.\n\n**L'afirmació a) és FALSA.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Rang de la matriu ampliada",
+            "cos": "Ara $\\text{rang}(A) = 2$ i cal veure si $\\text{rang}(A')$ és 2 o 3. Orlem el menor anterior amb la columna $(1,1,1)$:\n\n$$\\begin{vmatrix} 1 & 1 & 1 \\\\ -4 & -1 & 1 \\\\ 3 & 1 & 1 \\end{vmatrix} = 1(-1-1) - 1(-4-3) + 1(-4+3) = -2 + 7 - 1 = 4 \\neq 0$$\n\nPer tant $\\text{rang}(A') = 3 \\neq \\text{rang}(A) = 2$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Conclusió",
+            "cos": "Pel teorema de Rouché-Frobenius, si els rangs són diferents el sistema és **incompatible** (no té cap solució).\n\n**L'afirmació b) és FALSA.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "FALSA: $\\text{rang}A = \\text{rang}A' = 2 < 3$ ⇒ SCI (solucions $t(-1,-1,1)$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "FALSA: $\\text{rang}A = 2$, $\\text{rang}A' = 3$ ⇒ sistema incompatible"
+          }
+        ],
+        "nota": "Idea clau: un sistema homogeni sempre és compatible; és determinat només si $|A| \\neq 0$."
+      }
+    },
+    {
+      "id": "mates-2016-J-s5-e2",
+      "serie": "5",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Punts simètrics respecte d'un pla i punts mitjans que hi pertanyen",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "simetria respecte d'un pla",
+        "punt mitjà",
+        "vector normal",
+        "equació vectorial de la recta"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        3
+      ],
+      "enunciat": "Siguin a $\\mathbb{R}^3$ el pla $\\pi$ d'equació $x - y + 2z = 2$ i els punts $A = (3, -1, 2)$ i $B = (1, 1, -2)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Comproveu que els punts $A$ i $B$ són simètrics respecte del pla $\\pi$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Si $r$ és la recta dels punts $P$ que té per equació $P = B + \\lambda v$, en què $\\lambda$ és un paràmetre real i $v = (1, 1, 0)$, verifiqueu que els punts mitjans dels segments $\\overline{AP}$ pertanyen al pla $\\pi$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Què vol dir ser simètrics respecte d'un pla",
+            "cos": "$A$ i $B$ són simètrics respecte de $\\pi$ si es compleixen dues condicions:\n\n1. el segment $AB$ és perpendicular al pla, és a dir, $\\overrightarrow{AB}$ és proporcional al vector normal $\\vec n = (1, -1, 2)$;\n2. el punt mitjà del segment $AB$ és del pla."
+          },
+          {
+            "apartat": "a",
+            "titol": "Perpendicularitat",
+            "cos": "$$\\overrightarrow{AB} = B - A = (1-3,\\ 1-(-1),\\ -2-2) = (-2,\\ 2,\\ -4) = -2\\,(1, -1, 2) = -2\\,\\vec n$$\n\nÉs proporcional a $\\vec n$ ✓."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punt mitjà",
+            "cos": "$$M = \\frac{A + B}{2} = \\left(\\frac{3+1}{2},\\ \\frac{-1+1}{2},\\ \\frac{2-2}{2}\\right) = (2,\\ 0,\\ 0)$$\n\nSubstituïm al pla: $2 - 0 + 2\\cdot 0 = 2$ ✓.\n\nEs compleixen les dues condicions: **$A$ i $B$ són simètrics respecte de $\\pi$.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punts de la recta r",
+            "cos": "$$P = B + \\lambda v = (1, 1, -2) + \\lambda(1, 1, 0) = (1 + \\lambda,\\ 1 + \\lambda,\\ -2)$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Punt mitjà de AP i comprovació",
+            "cos": "$$M_\\lambda = \\frac{A + P}{2} = \\frac{(4 + \\lambda,\\ \\lambda,\\ 0)}{2} = \\left(2 + \\frac{\\lambda}{2},\\ \\frac{\\lambda}{2},\\ 0\\right)$$\n\nSubstituïm a l'equació del pla:\n\n$$\\left(2 + \\frac{\\lambda}{2}\\right) - \\frac{\\lambda}{2} + 2\\cdot 0 = 2 \\quad \\checkmark$$\n\nEs compleix per a tot $\\lambda$: **tots els punts mitjans dels segments $\\overline{AP}$ són del pla $\\pi$.**\n\nInterpretació: $v\\cdot\\vec n = 1 - 1 + 0 = 0$, així que $r$ és paral·lela al pla. Els punts mitjans de $\\overline{AP}$ formen una recta paral·lela a $r$ (direcció $\\frac12 v$) que passa per $M = (2,0,0) \\in \\pi$; com que és paral·lela al pla i en té un punt, està continguda a $\\pi$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\overrightarrow{AB} = -2\\vec n$ i $M = (2,0,0) \\in \\pi$ ⇒ simètrics"
+          },
+          {
+            "apartat": "b",
+            "valor": "$M_\\lambda = \\left(2+\\frac\\lambda2, \\frac\\lambda2, 0\\right)$ compleix $x - y + 2z = 2$ per a tot $\\lambda$"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "mates-2016-J-s5-e3",
+      "serie": "5",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Extrems i inflexió d'un polinomi de grau 3; tangent horitzontal per Bolzano",
+      "tema": "derivades",
+      "temes_secundaris": [
+        "funcions"
+      ],
+      "conceptes": [
+        "màxims i mínims relatius",
+        "punt d'inflexió",
+        "derivada segona",
+        "teorema de Bolzano",
+        "recta tangent horitzontal"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Responeu a les qüestions següents:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu els màxims relatius, els mínims relatius i els punts d'inflexió de la funció $f(x) = 2x^3 - 9x^2 + 12x - 4$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Expliqueu raonadament que si $f(x)$ és una funció amb la derivada primera contínua en l'interval $[a, b]$ i satisfà que $f'(a) > 0$ i $f'(b) < 0$, aleshores hi ha, com a mínim, un punt de l'interval $(a, b)$ en què la recta tangent a la gràfica de $f(x)$ en aquest punt és horitzontal.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Derivades",
+            "cos": "Els extrems relatius són on $f' = 0$ (i el signe de $f''$ diu si és màxim o mínim); els punts d'inflexió, on $f''$ canvia de signe.\n\n$$f'(x) = 6x^2 - 18x + 12 = 6(x^2 - 3x + 2) = 6(x - 1)(x - 2)$$\n$$f''(x) = 12x - 18$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Punts crítics i classificació",
+            "cos": "$f'(x) = 0 \\iff x = 1$ o $x = 2$.\n\n- $f''(1) = 12 - 18 = -6 < 0$ ⇒ **màxim relatiu** a $x = 1$: $f(1) = 2 - 9 + 12 - 4 = 1$ → **$(1, 1)$**.\n- $f''(2) = 24 - 18 = 6 > 0$ ⇒ **mínim relatiu** a $x = 2$: $f(2) = 16 - 36 + 24 - 4 = 0$ → **$(2, 0)$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Punt d'inflexió",
+            "cos": "$f''(x) = 0 \\iff 12x - 18 = 0 \\iff x = \\dfrac32$.\n\n- Si $x < \\frac32$: $f''(x) < 0$ (còncava, forma $\\cap$).\n- Si $x > \\frac32$: $f''(x) > 0$ (convexa, forma $\\cup$).\n\nHi ha canvi de curvatura, per tant és punt d'inflexió:\n\n$$f\\!\\left(\\tfrac32\\right) = 2\\cdot\\frac{27}{8} - 9\\cdot\\frac94 + 12\\cdot\\frac32 - 4 = \\frac{27}{4} - \\frac{81}{4} + 18 - 4 = \\frac12$$\n\n**Punt d'inflexió: $\\left(\\frac32, \\frac12\\right)$.**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Idea: aplicar Bolzano a la derivada",
+            "cos": "Una recta tangent és horitzontal quan el seu pendent és zero, és a dir, quan $f'(c) = 0$. Per tant hem de demostrar que $f'$ s'anul·la en algun $c \\in (a, b)$.\n\nConsiderem la funció $g(x) = f'(x)$:\n\n- és **contínua** a $[a, b]$ (ho diu l'enunciat);\n- **canvia de signe** als extrems: $g(a) = f'(a) > 0$ i $g(b) = f'(b) < 0$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Conclusió",
+            "cos": "Pel **teorema de Bolzano**, existeix almenys un $c \\in (a, b)$ amb $g(c) = f'(c) = 0$.\n\nEn aquest punt la recta tangent $y = f(c) + f'(c)(x - c) = f(c)$ és **horitzontal**. ∎\n\nExemple amb l'apartat a): $f'(0{,}5) = 4{,}5 > 0$ i $f'(1{,}5) = -1{,}5 < 0$, i efectivament $f'(1) = 0$ amb $1 \\in (0{,}5;\\ 1{,}5)$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Màxim relatiu $(1, 1)$; mínim relatiu $(2, 0)$; inflexió $\\left(\\frac32, \\frac12\\right)$"
+          },
+          {
+            "apartat": "b",
+            "valor": "Bolzano aplicat a $f'$ (contínua, canvia de signe) ⇒ $\\exists c\\in(a,b)$ amb $f'(c) = 0$ ⇒ tangent horitzontal"
+          }
+        ],
+        "nota": "Error típic a b): aplicar Bolzano a $f$ en lloc de $f'$, o invocar el teorema de Rolle (que necessitaria $f(a) = f(b)$, que no tenim)."
+      }
+    },
+    {
+      "id": "mates-2016-J-s5-e4",
+      "serie": "5",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Matriu que compleix A(A − I) = I: inversa A − I i càlcul del paràmetre",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "matriu inversa",
+        "producte de matrius",
+        "equació matricial",
+        "determinant"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Sigui $A$ una matriu quadrada d'ordre $n$ que satisfà la igualtat $A\\cdot(A - I) = I$, en què $I$ és la matriu identitat.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Justifiqueu que la matriu $A$ és invertible i que $A^{-1} = A - I$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el valor de $a$ que fa que la matriu $A = \\begin{pmatrix} 1 & 1 \\\\ 1 & a \\end{pmatrix}$ compleixi la igualtat $A\\cdot(A - I) = I$. Calculeu $A^{-1}$ i comproveu que es correspon amb la matriu calculada a partir del resultat de l'apartat anterior.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Invertibilitat via determinants",
+            "cos": "Prenem determinants a la igualtat (el determinant d'un producte és el producte de determinants):\n\n$$\\det(A)\\cdot\\det(A - I) = \\det(I) = 1$$\n\nSi $\\det A$ fos 0, el producte seria 0. Per tant **$\\det A \\neq 0$ i $A$ és invertible**."
+          },
+          {
+            "apartat": "a",
+            "titol": "A − I és la inversa",
+            "cos": "La inversa és la matriu que multiplicada per $A$, per la dreta i per l'esquerra, dona $I$. Comprovem-ho amb $A - I$:\n\n- $A\\cdot(A - I) = I$ per hipòtesi.\n- $(A - I)\\cdot A = A^2 - I\\,A = A^2 - A\\,I = A\\,(A - I) = I$ (perquè $I$ commuta amb $A$).\n\nPer tant **$A^{-1} = A - I$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Plantejament de A(A − I) = I",
+            "cos": "$$A - I = \\begin{pmatrix} 0 & 1 \\\\ 1 & a - 1 \\end{pmatrix}$$\n\n$$A\\,(A - I) = \\begin{pmatrix} 1 & 1 \\\\ 1 & a \\end{pmatrix}\\begin{pmatrix} 0 & 1 \\\\ 1 & a - 1 \\end{pmatrix} = \\begin{pmatrix} 1 & a \\\\ a & a^2 - a + 1 \\end{pmatrix}$$\n\nIgualem a $I$ element a element:\n\n$$\\left.\\begin{aligned} 1 &= 1 \\\\ a &= 0 \\\\ a &= 0 \\\\ a^2 - a + 1 &= 1 \\end{aligned}\\right\\} \\;\\Rightarrow\\; \\boldsymbol{a = 0}$$\n\n($a = 0$ compleix les quatre equacions: $0 - 0 + 1 = 1$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Inversa calculada directament",
+            "cos": "Amb $a = 0$: $A = \\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}$, $\\det A = 0 - 1 = -1$. Per a una $2\\times2$, $A^{-1} = \\frac{1}{\\det A}\\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$:\n\n$$A^{-1} = \\frac{1}{-1}\\begin{pmatrix} 0 & -1 \\\\ -1 & 1 \\end{pmatrix} = \\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Comprovació amb l'apartat a)",
+            "cos": "$$A - I = \\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix} - \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} = \\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix}$$\n\n**Coincideix amb $A^{-1}$**, com havíem de veure."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\det A\\cdot\\det(A-I) = 1 \\Rightarrow \\det A \\neq 0$; $A^{-1} = A - I$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$a = 0$; $A^{-1} = \\begin{pmatrix} 0 & 1 \\\\ 1 & -1 \\end{pmatrix} = A - I$"
+          }
+        ],
+        "nota": "Per a l'apartat a) també és vàlid usar directament que, per a matrius quadrades, $AB = I \\Rightarrow BA = I$."
+      }
+    },
+    {
+      "id": "mates-2016-J-s5-e5",
+      "serie": "5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Dues rectes secants i perpendicular comuna",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "posició relativa de dues rectes",
+        "producte vectorial",
+        "perpendicular comuna",
+        "equació paramètrica de la recta"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Siguin les rectes $r\\colon (x, y, z) = (2, 3, -3) + \\lambda(1, -1, 0)$ i $s\\colon \\dfrac{x - 3}{2} = y - 5 = z + 2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Estudieu si les rectes $r$ i $s$ són paral·leles o perpendiculars.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu la posició relativa de les rectes $r$ i $s$ i calculeu l'equació paramètrica de la recta $t$ que talla perpendicularment la recta $r$ i la recta $s$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Vectors directors",
+            "cos": "De l'equació contínua de $s$ (denominadors $2, 1, 1$) llegim un punt i el vector director: $s$ passa per $(3, 5, -2)$ amb $\\vec v_s = (2, 1, 1)$. De $r$: $\\vec v_r = (1, -1, 0)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Paral·lelisme i perpendicularitat",
+            "cos": "- **Paral·leles?** Caldria $\\vec v_r \\parallel \\vec v_s$, però $\\frac12 \\neq \\frac{-1}{1}$: no són proporcionals ⇒ **no són paral·leles**.\n- **Perpendiculars?** Caldria $\\vec v_r\\cdot\\vec v_s = 0$: $(1,-1,0)\\cdot(2,1,1) = 2 - 1 + 0 = 1 \\neq 0$ ⇒ **no són perpendiculars**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Es tallen o s'encreuen?",
+            "cos": "Com que no són paral·leles, poden ser secants o encreuar-se. Igualem les paramètriques, $s\\colon (3 + 2\\mu,\\ 5 + \\mu,\\ -2 + \\mu)$:\n\n$$\\left.\\begin{aligned} 2 + \\lambda &= 3 + 2\\mu \\\\ 3 - \\lambda &= 5 + \\mu \\\\ -3 &= -2 + \\mu \\end{aligned}\\right\\}$$\n\nDe la tercera: $\\mu = -1$. A la primera: $2 + \\lambda = 3 - 2 = 1 \\Rightarrow \\lambda = -1$. Comprovem la segona: $3 - (-1) = 4 = 5 + (-1)$ ✓.\n\nEl sistema té solució: **les rectes són secants** i es tallen en $r(\\lambda = -1) = (1, 4, -3)$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Direcció de la recta t",
+            "cos": "$t$ ha de ser perpendicular a totes dues: la seva direcció és el producte vectorial\n\n$$\\vec v_r \\times \\vec v_s = \\begin{vmatrix} \\vec i & \\vec j & \\vec k \\\\ 1 & -1 & 0 \\\\ 2 & 1 & 1 \\end{vmatrix} = (-1\\cdot 1 - 0\\cdot 1)\\,\\vec i - (1\\cdot 1 - 0\\cdot 2)\\,\\vec j + (1\\cdot 1 - (-1)\\cdot 2)\\,\\vec k = (-1, -1, 3)$$\n\nPodem fer servir el vector proporcional $(1, 1, -3)$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació de t",
+            "cos": "Per tallar $r$ i $s$ (que es tallen en un sol punt), $t$ ha de passar pel punt d'intersecció $(1, 4, -3)$:\n\n$$t\\colon (x, y, z) = (1, 4, -3) + \\alpha\\,(1, 1, -3) \\;\\Rightarrow\\; \\boldsymbol{\\left\\{\\begin{aligned} x &= 1 + \\alpha \\\\ y &= 4 + \\alpha \\\\ z &= -3 - 3\\alpha \\end{aligned}\\right.}$$\n\nComprovació: $(1,1,-3)\\cdot(1,-1,0) = 0$ i $(1,1,-3)\\cdot(2,1,1) = 2 + 1 - 3 = 0$ ✓."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Ni paral·leles ni perpendiculars ($\\vec v_r\\cdot\\vec v_s = 1$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "Secants en $(1,4,-3)$; $t\\colon (x,y,z) = (1+\\alpha,\\ 4+\\alpha,\\ -3-3\\alpha)$"
+          }
+        ],
+        "nota": "Com que $r$ i $s$ són secants, la recta que les talla perpendicularment és la perpendicular al pla que formen pel punt de tall."
+      }
+    },
+    {
+      "id": "mates-2016-J-s5-e6",
+      "serie": "5",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2,
+      "titol": "Funció a partir de la derivada: recta tangent i primitiva per parts",
+      "tema": "integrals",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "primitiva",
+        "integració per parts",
+        "condició inicial",
+        "recta tangent"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Sabem que una funció $f(x)$ té per derivada $f'(x) = (x + 1)\\,e^x$ i que $f(0) = 2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu l'equació de la recta tangent a $y = f(x)$ en el punt de la corba d'abscissa $x = 0$.",
+          "punts": 1
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'expressió de $f(x)$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Recta tangent sense conèixer f",
+            "cos": "Per a la tangent en $x = a$ només cal $f(a)$ i $f'(a)$: $\\;y - f(a) = f'(a)(x - a)$.\n\nAmb $a = 0$: $f(0) = 2$ (dada) i $f'(0) = (0 + 1)e^0 = 1$.\n\n$$y - 2 = 1\\cdot(x - 0) \\;\\Rightarrow\\; \\boldsymbol{y = x + 2}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Integració per parts",
+            "cos": "$f$ és una primitiva de $f'$. El producte polinomi · exponencial s'integra **per parts**, $\\int u\\,dv = uv - \\int v\\,du$, derivant el polinomi:\n\n$$u = x + 1 \\Rightarrow du = dx; \\qquad dv = e^x\\,dx \\Rightarrow v = e^x$$\n\n$$\\int (x+1)e^x\\,dx = (x+1)e^x - \\int e^x\\,dx = (x+1)e^x - e^x + C = x\\,e^x + C$$\n\nComprovació: $(x e^x)' = e^x + x e^x = (x+1)e^x$ ✓."
+          },
+          {
+            "apartat": "b",
+            "titol": "Constant amb la condició f(0) = 2",
+            "cos": "$$f(0) = 0\\cdot e^0 + C = C = 2$$\n\n$$\\boldsymbol{f(x) = x\\,e^x + 2}$$"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$y = x + 2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$f(x) = x\\,e^x + 2$"
+          }
+        ],
+        "nota": ""
+      }
+    }
+  ]
+}

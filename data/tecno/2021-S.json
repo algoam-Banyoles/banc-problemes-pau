@@ -1,0 +1,361 @@
+{
+  "examen": {
+    "id": "tecno-2021-S",
+    "assignatura": "tecno",
+    "materia": "Tecnologia industrial",
+    "any": 2021,
+    "convocatoria": "setembre",
+    "serie": "1",
+    "pdf_examen": "pdfs/tecno/2021-S-examen.pdf",
+    "pdf_solucio": "pdfs/tecno/2021-S-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels sis exercicis (2,5 punts cadascun); si se'n responen més, només es valoren els quatre primers. L'exercici 1 té 5 qüestions de test (0,5 punts cadascuna; cada resposta errònia descompta 0,16 punts i les no contestades no descompten). Els exercicis 2 a 6 són problemes amb apartats."
+  },
+  "problemes": [
+    {
+      "id": "tecno-2021-S-e1-q1",
+      "exercici": 1,
+      "questio": 1,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Superfície de panells fotovoltaics per a un refugi de muntanya",
+      "tema": "energia",
+      "temes_secundaris": [],
+      "conceptes": ["energia solar fotovoltaica", "irradiància", "rendiment", "energia elèctrica"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Un refugi de muntanya vol instal·lar panells fotovoltaics per a proveir un consum màxim durant l'hivern de $150\\ \\text{kW h}$ mensuals. Determineu la superfície de panells necessària suposant una densitat de radiació els mesos d'hivern de $700\\ \\text{W/m}^2$, un aprofitament solar de 4 hores al dia durant 30 dies al mes i un rendiment de la instal·lació del $8\\ \\%$.",
+      "figures": [],
+      "opcions": {"a": "$6{,}696\\ \\text{m}^2$", "b": "$1{,}94\\ \\text{m}^2$", "c": "$44{,}8\\ \\text{m}^2$", "d": "$22{,}32\\ \\text{m}^2$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Energia elèctrica necessària: $E = 150\\ \\text{kW h/mes}$\n- Densitat de radiació: $G = 700\\ \\text{W/m}^2 = 0{,}7\\ \\text{kW/m}^2$\n- Temps de sol aprofitable: $t = 4\\ \\text{h/dia} \\cdot 30\\ \\text{dies} = 120\\ \\text{h/mes}$\n- Rendiment: $\\eta = 0{,}08$\n- Incògnita: superfície de panells, $S$"},
+          {"apartat": null, "titol": "Energia elèctrica que dona cada m² en un mes", "cos": "Cada metre quadrat rep una potència solar $G$ durant $t$ hores, però només el 8 % es converteix en electricitat:\n\n$$e = \\eta\\, G\\, t = 0{,}08 \\cdot 0{,}7\\ \\text{kW/m}^2 \\cdot 120\\ \\text{h} = 6{,}72\\ \\text{kW h/m}^2$$"},
+          {"apartat": null, "titol": "Superfície necessària", "cos": "Dividim l'energia que necessitem entre la que produeix cada metre quadrat:\n\n$$S = \\frac{E}{\\eta\\, G\\, t} = \\frac{150\\ \\text{kW h}}{6{,}72\\ \\text{kW h/m}^2} = 22{,}32\\ \\text{m}^2$$\n\nResultat: **$S = 22{,}32\\ \\text{m}^2$** → resposta **d**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- Si s'oblida el rendiment surt $150/84 = 1{,}79\\ \\text{m}^2$: el rendiment del 8 % obliga a tenir una superfície més de 12 vegades més gran.\n- Les altres opcions surten d'errors en el compte d'hores (per dia en lloc de per mes) o en el tractament del percentatge."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$S = 22{,}32\\ \\text{m}^2$ → resposta **d**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2021-S-e1-q2",
+      "exercici": 1,
+      "questio": 2,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat d'un patinet al final d'una baixada sense pèrdues",
+      "tema": "mecanica",
+      "temes_secundaris": [],
+      "conceptes": ["conservació de l'energia", "energia potencial", "energia cinètica", "pla inclinat"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Una persona muntada en un patinet avança per una baixada de $30\\ \\text{m}$ de longitud i de $5^\\circ$ de pendent. Parteix del repòs i no prem el fre en cap moment. La massa del conjunt format per la persona i el patinet és de $82\\ \\text{kg}$. A quina velocitat anirà el conjunt al final de la baixada si es negligeixen totes les pèrdues?",
+      "figures": [],
+      "opcions": {"a": "$7{,}161\\ \\text{m/s}$", "b": "$5{,}424\\ \\text{m/s}$", "c": "$24{,}26\\ \\text{m/s}$", "d": "$51{,}28\\ \\text{m/s}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Longitud de la baixada: $s = 30\\ \\text{m}$\n- Pendent: $\\alpha = 5^\\circ$\n- Massa: $m = 82\\ \\text{kg}$ (veurem que no cal)\n- Velocitat inicial: $v_0 = 0$\n- $g = 9{,}807\\ \\text{m/s}^2$\n- Incògnita: velocitat final, $v$"},
+          {"apartat": null, "titol": "Desnivell de la baixada", "cos": "El desnivell vertical és el catet oposat a l'angle en el triangle format per la rampa:\n\n$$h = s \\sin \\alpha = 30 \\cdot \\sin 5^\\circ = 2{,}615\\ \\text{m}$$"},
+          {"apartat": null, "titol": "Conservació de l'energia mecànica", "cos": "Sense pèrdues, tota l'energia potencial que es perd es converteix en energia cinètica:\n\n$$m\\, g\\, h = \\tfrac{1}{2}\\, m\\, v^2 \\quad\\Rightarrow\\quad v = \\sqrt{2\\, g\\, h}$$\n\nLa massa s'elimina: la velocitat no depèn de la massa.\n\n$$v = \\sqrt{2 \\cdot 9{,}807 \\cdot 2{,}615} = 7{,}161\\ \\text{m/s}$$\n\nResultat: **$v = 7{,}161\\ \\text{m/s}$** (≈ 25,8 km/h) → resposta **a**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **b)** $5{,}424\\ \\text{m/s}$: interpretar el pendent com un 5 % ($h = 0{,}05 \\cdot 30 = 1{,}5\\ \\text{m}$) en lloc de 5°.\n- **c)** $24{,}26\\ \\text{m/s}$: prendre com a desnivell tota la longitud de 30 m (com si caigués en vertical)."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$v = \\sqrt{2\\,g\\,s\\sin\\alpha} = 7{,}161\\ \\text{m/s}$ → resposta **a**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2021-S-e1-q3",
+      "exercici": 1,
+      "questio": 3,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Jocs de l'ajust 12 H7/g6",
+      "tema": "fabricacio",
+      "temes_secundaris": [],
+      "conceptes": ["ajust", "joc màxim", "joc mínim", "serratge", "sistema ISO"],
+      "dificultat": 2,
+      "pagines": [2],
+      "enunciat": "Si es té un ajust 12 H7/g6, la tolerància del forat és de $\\left(\\begin{smallmatrix} 18 \\\\ 0 \\end{smallmatrix}\\right)\\ \\mu\\text{m}$ i la tolerància g6 de l'eix és de $\\left(\\begin{smallmatrix} -6 \\\\ -17 \\end{smallmatrix}\\right)\\ \\mu\\text{m}$, es pot afirmar que",
+      "figures": [],
+      "opcions": {"a": "el joc màxim és de $24\\ \\mu\\text{m}$.", "b": "el joc mínim és de $17\\ \\mu\\text{m}$.", "c": "el joc màxim és de $17\\ \\mu\\text{m}$.", "d": "en aquest ajust no es pot produir serratge."},
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {"apartat": null, "titol": "Desviacions del forat i de l'eix", "cos": "Respecte de la mida nominal ($12\\ \\text{mm}$):\n\n- Forat H7: desviació superior $+18\\ \\mu\\text{m}$, inferior $0$ → el forat sempre és **igual o més gran** que 12 mm.\n- Eix g6: desviació superior $-6\\ \\mu\\text{m}$, inferior $-17\\ \\mu\\text{m}$ → l'eix sempre és **més petit** que 12 mm."},
+          {"apartat": null, "titol": "Joc màxim i joc mínim", "cos": "El joc és la diferència entre la mida del forat i la de l'eix.\n\n- Joc màxim (forat més gran, eix més petit):\n$$J_\\text{màx} = 18 - (-17) = 35\\ \\mu\\text{m}$$\n- Joc mínim (forat més petit, eix més gran):\n$$J_\\text{mín} = 0 - (-6) = 6\\ \\mu\\text{m}$$"},
+          {"apartat": null, "titol": "Conclusió", "cos": "Com que fins i tot en el cas més ajustat queda un joc positiu de $6\\ \\mu\\text{m}$, l'eix **sempre** és més petit que el forat: és un **ajust amb joc** i mai no hi pot haver serratge → resposta **d**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **a)** $24 = 18 + 6$: combina malament les desviacions (el joc màxim és 35 μm).\n- **b)** i **c)** $17\\ \\mu\\text{m}$ és només el valor de la desviació inferior de l'eix, no cap joc."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$J_\\text{màx} = 35\\ \\mu\\text{m}$, $J_\\text{mín} = 6\\ \\mu\\text{m}$ (ajust amb joc) → resposta **d**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2021-S-e1-q4",
+      "exercici": 1,
+      "questio": 4,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Massa d'alumini per a l'aliatge Ti-6Al-4V a partir de 20 kg de titani",
+      "tema": "materials",
+      "temes_secundaris": [],
+      "conceptes": ["aliatges", "composició percentual", "titani"],
+      "dificultat": 2,
+      "pagines": [3],
+      "enunciat": "L'aliatge de titani Ti-6Al-4V s'utilitza en la fabricació de pròtesis de maluc. Conté un $4{,}5\\ \\%$ de vanadi (V), un $6{,}5\\ \\%$ d'alumini (Al) i la resta és titani (Ti). En l'obtenció d'aquest aliatge, quina quantitat d'alumini cal per a aliar-lo amb $20\\ \\text{kg}$ de titani?",
+      "figures": [],
+      "opcions": {"a": "$1{,}3\\ \\text{kg}$", "b": "$1{,}461\\ \\text{kg}$", "c": "$1{,}011\\ \\text{kg}$", "d": "$14{,}61\\ \\text{kg}$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {"apartat": null, "titol": "Percentatge de titani a l'aliatge", "cos": "La resta fins al 100 % és titani:\n\n$$\\%\\text{Ti} = 100 - 4{,}5 - 6{,}5 = 89\\ \\%$$"},
+          {"apartat": null, "titol": "Massa total de l'aliatge", "cos": "Els 20 kg de titani han de ser el 89 % de la massa total de l'aliatge:\n\n$$m_\\text{total} = \\frac{20}{0{,}89} = 22{,}47\\ \\text{kg}$$"},
+          {"apartat": null, "titol": "Massa d'alumini", "cos": "L'alumini és el 6,5 % de l'aliatge:\n\n$$m_\\text{Al} = 0{,}065 \\cdot 22{,}47 = 20 \\cdot \\frac{6{,}5}{89} = 1{,}461\\ \\text{kg}$$\n\nResultat: **$m_\\text{Al} = 1{,}461\\ \\text{kg}$** → resposta **b**."},
+          {"apartat": null, "titol": "Errors típics", "cos": "- **a)** $1{,}3\\ \\text{kg}$: calcular el 6,5 % de 20 kg, com si 20 kg fos la massa total de l'aliatge.\n- **c)** $1{,}011\\ \\text{kg}$: és la massa de **vanadi** ($20 \\cdot 4{,}5/89$).\n- **d)** $14{,}61\\ \\text{kg}$: error d'un factor 10."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$m_\\text{Al} = 20 \\cdot 6{,}5/89 = 1{,}461\\ \\text{kg}$ → resposta **b**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2021-S-e1-q5",
+      "exercici": 1,
+      "questio": 5,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Estalvi anual d'emissions de CO₂ d'una residència en reduir el consum elèctric",
+      "tema": "energia",
+      "temes_secundaris": [],
+      "conceptes": ["emissions de co2", "mix elèctric", "estalvi energètic"],
+      "dificultat": 1,
+      "pagines": [3],
+      "enunciat": "Una residència universitària vol reduir el consum elèctric anual, que actualment és de $41\\ \\text{MW h}$. Per a fer-ho, vol canviar la il·luminació per elements de baix consum i utilitzar detectors de presència en zones comunes. S'estima que l'estalvi en el consum elèctric serà del $12\\ \\%$. Si la comercialitzadora indica que el seu mix elèctric és de $360\\ \\text{g}$ de $\\text{CO}_2/(\\text{kW h})$, quin estalvi anual d'emissions de $\\text{CO}_2$ aconseguirà la residència?",
+      "figures": [],
+      "opcions": {"a": "$12{,}99$ tones de $\\text{CO}_2$", "b": "$14{,}76$ tones de $\\text{CO}_2$", "c": "$1{,}771$ tones de $\\text{CO}_2$", "d": "$17{,}71$ tones de $\\text{CO}_2$"},
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {"apartat": null, "titol": "Energia estalviada", "cos": "Passem el consum a kW h, que és la unitat del factor d'emissions: $41\\ \\text{MW h} = 41\\,000\\ \\text{kW h}$.\n\n$$E_\\text{estalvi} = 0{,}12 \\cdot 41\\,000 = 4\\,920\\ \\text{kW h}$$"},
+          {"apartat": null, "titol": "Emissions evitades", "cos": "Cada kW h que no es consumeix evita emetre $360\\ \\text{g}$ de CO₂:\n\n$$m_{\\text{CO}_2} = 4\\,920\\ \\text{kW h} \\cdot 360\\ \\text{g/(kW h)} = 1\\,771\\,200\\ \\text{g} = 1{,}771\\ \\text{t}$$\n\nResultat: **$1{,}771$ tones de CO₂** → resposta **c**."},
+          {"apartat": null, "titol": "Per què les altres no", "cos": "- **b)** $14{,}76\\ \\text{t}$: són les emissions **totals** actuals ($41\\,000 \\cdot 0{,}36$ kg).\n- **a)** $12{,}99\\ \\text{t}$: són les emissions que **quedaran** després de l'estalvi (88 % del consum).\n- **d)** $17{,}71\\ \\text{t}$: error d'un factor 10 en les unitats."}
+        ],
+        "resultats": [{"apartat": null, "valor": "$m_{\\text{CO}_2} = 1{,}771\\ \\text{t}$ → resposta **c**"}],
+        "nota": ""
+      }
+    },
+    {
+      "id": "tecno-2021-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Alarma contra incendis: polsador o dues de tres condicions (fum, temperatura, increment)",
+      "tema": "digital",
+      "temes_secundaris": ["control"],
+      "conceptes": ["taula de veritat", "funció lògica", "mapa de Karnaugh", "portes lògiques"],
+      "dificultat": 2,
+      "pagines": [4, 5],
+      "enunciat": "Es vol dissenyar el circuit que controli una alarma contra incendis. L'alarma s'ha de disparar quan es premi el polsador d'incendis, o bé quan es compleixin dues o més d'aquestes tres condicions: s'ha sobrepassat un llindar de temperatura, hi ha fum a l'habitació i/o la temperatura ha augmentat bruscament. Responeu a les qüestions que hi ha a continuació utilitzant les variables d'estat següents:\n\n- alarma: $a$ = 1: activada; 0: no activada\n- polsador: $p$ = 1: premut; 0: no premut\n- fum: $f$ = 1: es detecta fum; 0: no es detecta fum\n- llindar de temperatura: $l$ = 1: iguala o sobrepassa els $58\\ ^\\circ\\text{C}$; 0: no sobrepassa els $58\\ ^\\circ\\text{C}$\n- increment de temperatura: $t$ = 1: igual o superior a $8\\ ^\\circ\\text{C/min}$; 0: inferior a $8\\ ^\\circ\\text{C/min}$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Escriviu la taula de veritat del sistema.", "punts": 1},
+        {"id": "b", "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.", "punts": 1},
+        {"id": "c", "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": "a", "titol": "Traduir l'enunciat a condicions lògiques", "cos": "L'alarma s'activa ($a = 1$) si:\n\n1. **Es prem el polsador** ($p = 1$), sigui com sigui la resta; **o bé**\n2. **Almenys dues** de les tres condicions $f$, $l$, $t$ valen 1 (és una funció «majoria» de tres variables)."},
+          {"apartat": "a", "titol": "Taula de veritat", "cos": "Amb 4 variables hi ha $2^4 = 16$ combinacions. Quan $p = 1$ totes les files donen $a = 1$; quan $p = 0$ només les files amb dues o més uns entre $f$, $l$, $t$:\n\n| $p$ | $f$ | $l$ | $t$ | $a$ |\n|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 0 |\n| 0 | 0 | 0 | 1 | 0 |\n| 0 | 0 | 1 | 0 | 0 |\n| 0 | 0 | 1 | 1 | **1** |\n| 0 | 1 | 0 | 0 | 0 |\n| 0 | 1 | 0 | 1 | **1** |\n| 0 | 1 | 1 | 0 | **1** |\n| 0 | 1 | 1 | 1 | **1** |\n| 1 | 0 | 0 | 0 | **1** |\n| 1 | 0 | 0 | 1 | **1** |\n| 1 | 0 | 1 | 0 | **1** |\n| 1 | 0 | 1 | 1 | **1** |\n| 1 | 1 | 0 | 0 | **1** |\n| 1 | 1 | 0 | 1 | **1** |\n| 1 | 1 | 1 | 0 | **1** |\n| 1 | 1 | 1 | 1 | **1** |"},
+          {"apartat": "b", "titol": "Funció canònica", "cos": "Hi ha 12 uns i només 4 zeros, així que és més curt escriure la funció com a **producte de sumes** (un factor per cada zero, amb la variable negada si val 1 en aquella fila):\n\n$$a = (p + f + l + t)(p + f + l + \\bar{t})(p + f + \\bar{l} + t)(p + \\bar{f} + l + t)$$\n\n(És la forma que dona la solució oficial. També es podria escriure com a suma de 12 productes.)"},
+          {"apartat": "b", "titol": "Simplificació per Karnaugh", "cos": "Mapa amb files $p\\,f$ i columnes $l\\,t$ (ordre de Gray 00, 01, 11, 10):\n\n| $pf \\backslash lt$ | 00 | 01 | 11 | 10 |\n|---|---|---|---|---|\n| **00** | 0 | 0 | 1 | 0 |\n| **01** | 0 | 1 | 1 | 1 |\n| **11** | 1 | 1 | 1 | 1 |\n| **10** | 1 | 1 | 1 | 1 |\n\n- **Grup de 8** (files $pf = 11$ i $10$): només es manté $p = 1$ → $p$.\n- **Grup de 4** (columna $lt = 11$): $p$ i $f$ hi canvien → $l\\,t$.\n- **Grup de 4** (fila $pf = 01$ amb $11$, columnes $01$ i $11$): es mantenen $f = 1$ i $t = 1$ → $f\\,t$.\n- **Grup de 4** (files $01$ i $11$, columnes $11$ i $10$): es mantenen $f = 1$ i $l = 1$ → $f\\,l$.\n\n$$\\boxed{a = p + l\\,t + f\\,t + f\\,l}$$\n\nCoincideix amb l'enunciat: polsador, **o** qualsevol parella de les tres condicions."},
+          {"apartat": "c", "titol": "Diagrama de portes lògiques", "cos": "Per implementar $a = p + l\\,t + f\\,t + f\\,l$ calen:\n\n- 3 portes **AND de 2 entrades**: $l\\,t$, $f\\,t$ i $f\\,l$.\n- 1 porta **OR de 4 entrades** que suma $p$ i les sortides de les tres AND.\n\nNo cal cap porta NOT. Esquema de la solució oficial (simbologia IEC: «&» = AND, «≥1» = OR):\n\n![Esquema de portes lògiques de l'alarma](img/tecno/2021-S/e2-sol.png)"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$a = 0$ només a les files 0000, 0001, 0010 i 0100 ($p f l t$); la resta, $a = 1$"},
+          {"apartat": "b", "valor": "$a = p + l\\,t + f\\,t + f\\,l$"},
+          {"apartat": "c", "valor": "3 AND de 2 entrades + 1 OR de 4 entrades"}
+        ],
+        "nota": "Error típic: interpretar «dues o més» com «exactament dues» i deixar fora el cas $f = l = t = 1$. La funció i l'esquema no són únics: qualsevol circuit equivalent és vàlid."
+      }
+    },
+    {
+      "id": "tecno-2021-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Assaig de tracció: diagrama tensió-deformació, mòdul d'elasticitat i allargament",
+      "tema": "resistencia",
+      "temes_secundaris": ["materials"],
+      "conceptes": ["assaig de tracció", "diagrama tensió-deformació", "mòdul de Young", "límit elàstic", "llei de Hooke"],
+      "dificultat": 2,
+      "pagines": [6, 7],
+      "enunciat": "La taula següent mostra els valors que s'han registrat en un assaig de tracció amb una proveta de longitud $L_0 = 125\\ \\text{mm}$ i de diàmetre $d = 8\\ \\text{mm}$.\n\n| Deformació $\\varepsilon$ | 0 | $1 \\times 10^{-3}$ | $2 \\times 10^{-3}$ | $3 \\times 10^{-3}$ | $4 \\times 10^{-3}$ | 0,02 | 0,05 | 0,10 |\n|---|---|---|---|---|---|---|---|---|\n| Tensió $\\sigma$ [MPa] | 0 | 69 | 138 | 207 | 276 | 300 | 290 | 257 |",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu el diagrama tensió-deformació.", "punts": 0.5},
+        {"id": "b", "enunciat": "Calculeu el mòdul d'elasticitat $E$ del material.", "punts": 0.5},
+        {"id": "c", "enunciat": "Determineu la força $F$ que cal aplicar per a sotmetre la proveta a una tensió $\\sigma_F = 200\\ \\text{MPa}$. Quin increment de longitud $\\Delta L$ experimentarà la proveta?", "punts": 1},
+        {"id": "d", "enunciat": "Si se sotmet la proveta a una tensió de $300\\ \\text{MPa}$, recuperarà la longitud inicial?", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Longitud inicial: $L_0 = 125\\ \\text{mm}$\n- Diàmetre: $d = 8\\ \\text{mm}$ → secció $A = \\dfrac{\\pi d^2}{4} = \\dfrac{\\pi \\cdot 8^2}{4} = 50{,}27\\ \\text{mm}^2$\n- Parells $(\\varepsilon, \\sigma)$ de la taula\n- Incògnites: diagrama, $E$, $F$ i $\\Delta L$ per a $\\sigma_F = 200\\ \\text{MPa}$, comportament a $300\\ \\text{MPa}$\n\nRecorda: $1\\ \\text{MPa} = 1\\ \\text{N/mm}^2$."},
+          {"apartat": "a", "titol": "Diagrama tensió-deformació", "cos": "Es representen els punts de la taula amb $\\varepsilon$ a l'eix horitzontal i $\\sigma$ a l'eix vertical i s'uneixen:\n\n- **Zona elàstica** (de 0 a $4 \\times 10^{-3}$): els punts estan alineats sobre una recta molt dreta (la tensió és proporcional a la deformació).\n- La corba es doblega: a partir d'uns $276\\ \\text{MPa}$ comença la **zona plàstica**.\n- La tensió màxima és $300\\ \\text{MPa}$ (a $\\varepsilon = 0{,}02$): és la **resistència a la tracció**.\n- Després la tensió baixa (estricció) fins al trencament a $\\varepsilon = 0{,}10$ amb $257\\ \\text{MPa}$.\n\nDiagrama de la solució oficial:\n\n![Diagrama tensió-deformació](img/tecno/2021-S/e3-sol.png)"},
+          {"apartat": "b", "titol": "Mòdul d'elasticitat (pendent de la zona recta)", "cos": "A la zona elàstica es compleix la llei de Hooke, $\\sigma = E\\,\\varepsilon$. El mòdul d'elasticitat és el pendent de la recta; agafem qualsevol punt de la zona lineal, per exemple $(1 \\times 10^{-3},\\ 69\\ \\text{MPa})$:\n\n$$E = \\frac{\\sigma}{\\varepsilon} = \\frac{69\\ \\text{MPa}}{1 \\times 10^{-3}} = 69\\,000\\ \\text{MPa} = 69\\ \\text{GPa}$$\n\n(Amb $276/4 \\times 10^{-3}$ surt el mateix.) Resultat: **$E = 69\\ \\text{GPa}$** (un valor típic de l'alumini)."},
+          {"apartat": "c", "titol": "Força per a una tensió de 200 MPa", "cos": "La tensió és la força dividida per la secció, $\\sigma = F/A$. Aïllant la força:\n\n$$F = \\sigma_F\\, A = \\sigma_F\\, \\frac{\\pi d^2}{4} = 200\\ \\text{N/mm}^2 \\cdot 50{,}27\\ \\text{mm}^2 = 10\\,053\\ \\text{N}$$\n\nResultat: **$F \\approx 10{,}05\\ \\text{kN}$**."},
+          {"apartat": "c", "titol": "Deformació i allargament", "cos": "Com que $200\\ \\text{MPa} < 276\\ \\text{MPa}$, som a la zona elàstica i podem usar la llei de Hooke:\n\n$$\\varepsilon = \\frac{\\sigma_F}{E} = \\frac{200}{69\\,000} = 2{,}899 \\times 10^{-3}$$\n\nLa deformació unitària és $\\varepsilon = \\Delta L / L_0$, per tant:\n\n$$\\Delta L = \\varepsilon\\, L_0 = 2{,}899 \\times 10^{-3} \\cdot 125\\ \\text{mm} = 0{,}3623\\ \\text{mm}$$\n\nResultat: **$\\Delta L \\approx 0{,}362\\ \\text{mm}$** ($362{,}3\\ \\mu\\text{m}$)."},
+          {"apartat": "d", "titol": "Comportament a 300 MPa", "cos": "Un material només recupera la longitud inicial en treure la càrrega si no ha superat el **límit elàstic**. Segons la taula, el comportament és lineal fins a $276\\ \\text{MPa}$; $300\\ \\text{MPa}$ és la tensió màxima de l'assaig i ja és clarament a la **zona plàstica**.\n\nPer tant, **no** recuperarà la longitud inicial: quedarà una deformació permanent."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Recta fins a ~276 MPa, màxim de 300 MPa a $\\varepsilon = 0{,}02$, trencament a 257 MPa i $\\varepsilon = 0{,}10$"},
+          {"apartat": "b", "valor": "$E = 69\\ \\text{GPa}$"},
+          {"apartat": "c", "valor": "$F \\approx 10{,}05\\ \\text{kN}$; $\\varepsilon = 2{,}899 \\times 10^{-3}$; $\\Delta L \\approx 0{,}3623\\ \\text{mm}$"},
+          {"apartat": "d", "valor": "No: 300 MPa supera el límit elàstic (deformació permanent)"}
+        ],
+        "nota": "Error típic: oblidar passar el diàmetre a secció ($\\pi d^2/4$) o usar el radi com si fos el diàmetre. Recordeu que $\\text{MPa} = \\text{N/mm}^2$, que permet treballar directament en mm."
+      }
+    },
+    {
+      "id": "tecno-2021-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Ventilador de bombers amb motor de gasoil: potència consumida, rendiment i emissions",
+      "tema": "termica",
+      "temes_secundaris": ["energia", "mecanica"],
+      "conceptes": ["poder calorífic", "consum de combustible", "rendiment", "velocitat lineal", "emissions de co2"],
+      "dificultat": 2,
+      "pagines": [8, 9],
+      "enunciat": "Els bombers utilitzen un ventilador contra incendis que permet eliminar el fum i refredar grans volums d'aire. Les hèlices del ventilador tenen un diàmetre $d = 420\\ \\text{mm}$ i la sortida d'aire es fa a un cabal $q = 33\\,660\\ \\text{m}^3/\\text{h}$. El ventilador està accionat per un motor de quatre temps de potència $P_\\text{mot} = 3{,}58\\ \\text{kW}$ que gira a $n = 3\\,600\\ \\text{min}^{-1}$. El combustible és gasoil de poder calorífic $p_\\text{c} = 44{,}8\\ \\text{MJ/kg}$ i densitat $\\rho_\\text{gasoil} = 0{,}85\\ \\text{kg/L}$, i el motor té un consum $c = 1{,}4\\ \\text{L/h}$. El factor d'emissions del gasoil és $FE = 2{,}87\\ \\text{kg CO}_2/\\text{L}$. Determineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "La potència consumida pel motor $P_\\text{cons}$.", "punts": 1},
+        {"id": "b", "enunciat": "El rendiment del motor $\\eta$.", "punts": 0.5},
+        {"id": "c", "enunciat": "La velocitat del punt extrem de la pala de l'hèlice.", "punts": 0.5},
+        {"id": "d", "enunciat": "Les emissions de gasos amb efecte d'hivernacle ($\\text{CO}_2$) $m_{\\text{CO}_2}$ que emetrà en $t = 20\\ \\text{min}$ de funcionament.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Diàmetre de l'hèlice: $d = 420\\ \\text{mm} = 0{,}42\\ \\text{m}$ → radi $r = 0{,}21\\ \\text{m}$\n- Potència útil del motor: $P_\\text{mot} = 3{,}58\\ \\text{kW}$\n- Velocitat de gir: $n = 3\\,600\\ \\text{min}^{-1}$\n- Poder calorífic: $p_\\text{c} = 44{,}8\\ \\text{MJ/kg} = 44{,}8 \\cdot 10^6\\ \\text{J/kg}$\n- Densitat: $\\rho = 0{,}85\\ \\text{kg/L}$\n- Consum: $c = 1{,}4\\ \\text{L/h}$\n- Factor d'emissions: $FE = 2{,}87\\ \\text{kg CO}_2/\\text{L}$\n- Temps: $t = 20\\ \\text{min} = 1/3\\ \\text{h}$\n- Incògnites: $P_\\text{cons}$, $\\eta$, $v_\\text{extrem}$, $m_{\\text{CO}_2}$\n\n(El cabal d'aire $q$ i el fet que el motor sigui de quatre temps no es necessiten per a cap apartat.)"},
+          {"apartat": "a", "titol": "Massa de gasoil cremada per segon", "cos": "Passem el consum volumètric a cabal màssic en unitats del SI:\n\n$$\\dot m = c\\, \\rho = 1{,}4\\ \\frac{\\text{L}}{\\text{h}} \\cdot 0{,}85\\ \\frac{\\text{kg}}{\\text{L}} \\cdot \\frac{1\\ \\text{h}}{3\\,600\\ \\text{s}} = 3{,}306 \\cdot 10^{-4}\\ \\text{kg/s}$$"},
+          {"apartat": "a", "titol": "Potència consumida amb el poder calorífic", "cos": "Cada kg de gasoil allibera $p_\\text{c}$ en cremar-se; la potència consumida és l'energia alliberada per unitat de temps:\n\n$$P_\\text{cons} = c\\, \\rho\\, p_\\text{c} = 3{,}306 \\cdot 10^{-4}\\ \\text{kg/s} \\cdot 44{,}8 \\cdot 10^6\\ \\text{J/kg} = 14\\,809\\ \\text{W}$$\n\nResultat: **$P_\\text{cons} \\approx 14{,}81\\ \\text{kW}$**."},
+          {"apartat": "b", "titol": "Rendiment del motor", "cos": "El rendiment és la fracció de la potència consumida que el motor converteix en potència mecànica útil:\n\n$$\\eta = \\frac{P_\\text{mot}}{P_\\text{cons}} = \\frac{3{,}58}{14{,}81} = 0{,}2417$$\n\nResultat: **$\\eta \\approx 24{,}17\\ \\%$** (valor típic d'un motor de combustió petit)."},
+          {"apartat": "c", "titol": "Velocitat angular de l'hèlice", "cos": "L'hèlice gira solidària amb el motor. Passem la velocitat de gir a rad/s (una volta són $2\\pi$ rad i un minut, 60 s):\n\n$$\\omega = n\\, \\frac{2\\pi}{60} = 3\\,600 \\cdot \\frac{2\\pi}{60} = 377{,}0\\ \\text{rad/s}$$"},
+          {"apartat": "c", "titol": "Velocitat lineal de l'extrem de la pala", "cos": "Un punt que gira a una distància $r$ de l'eix té una velocitat lineal $v = \\omega\\, r$. L'extrem de la pala és a $r = d/2 = 0{,}21\\ \\text{m}$:\n\n$$v = \\omega\\, \\frac{d}{2} = 377{,}0 \\cdot 0{,}21 = 79{,}17\\ \\text{m/s}$$\n\nResultat: **$v \\approx 79{,}17\\ \\text{m/s} = 285\\ \\text{km/h}$**."},
+          {"apartat": "d", "titol": "Emissions de CO₂ en 20 minuts", "cos": "Primer calculem el volum de gasoil cremat en 20 min i després apliquem el factor d'emissions (kg de CO₂ per litre):\n\n$$V = c\\, t = 1{,}4\\ \\text{L/h} \\cdot \\frac{20}{60}\\ \\text{h} = 0{,}4667\\ \\text{L}$$\n\n$$m_{\\text{CO}_2} = V \\cdot FE = 0{,}4667\\ \\text{L} \\cdot 2{,}87\\ \\text{kg/L} = 1{,}339\\ \\text{kg}$$\n\nResultat: **$m_{\\text{CO}_2} \\approx 1{,}339\\ \\text{kg}$ de CO₂**."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$P_\\text{cons} \\approx 14{,}81\\ \\text{kW}$"},
+          {"apartat": "b", "valor": "$\\eta \\approx 24{,}17\\ \\%$"},
+          {"apartat": "c", "valor": "$v \\approx 79{,}17\\ \\text{m/s} = 285\\ \\text{km/h}$"},
+          {"apartat": "d", "valor": "$m_{\\text{CO}_2} \\approx 1{,}339\\ \\text{kg}$"}
+        ],
+        "nota": "Errors típics: no passar el consum de L/h a kg/s (cal la densitat i dividir per 3 600) i usar el diàmetre en lloc del radi a l'apartat c (sortiria el doble). Les dades del cabal d'aire i del motor de quatre temps són informatives i no intervenen en els càlculs."
+      }
+    },
+    {
+      "id": "tecno-2021-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Porta de garatge abatible guiada: diagrama de cos lliure i força per mantenir-la oberta",
+      "tema": "estatica",
+      "temes_secundaris": [],
+      "conceptes": ["diagrama de cos lliure", "equilibri", "moment d'una força", "reaccions"],
+      "dificultat": 3,
+      "pagines": [10, 11],
+      "enunciat": "La figura mostra una porta de garatge abatible de longitud $2L$. Per a obrir-la i tancar-la, es guia horitzontalment el seu punt més alt P, al qual s'aplica una força $F$. El centre d'inèrcia de la porta es troba en el seu punt mitjà i es força el desplaçament vertical d'aquest punt gràcies a una guia. Es consideren negligibles totes les friccions.\n\nLa porta es manté en repòs en una posició genèrica $x$. Als apartats c i d, determineu els resultats en funció de $x$.",
+      "figures": [{"src": "img/tecno/2021-S/e5.png", "peu": "Porta de garatge abatible: guia horitzontal superior (punt P), guia vertical del centre d'inèrcia i cotes h i x"}],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "Dibuixeu el diagrama de cos lliure de la porta.", "punts": 0.5},
+        {"id": "b", "enunciat": "Trobeu l'expressió de la coordenada $h$ en funció de $x$.", "punts": 0.5},
+        {"id": "c", "enunciat": "La força $F$ que cal fer per a mantenir la porta oberta (en repòs en una posició genèrica $x$).", "punts": 1},
+        {"id": "d", "enunciat": "Les forces normals a cadascuna de les guies.", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Longitud de la porta: $2L$; el centre d'inèrcia G és al punt mitjà → distància $\\overline{PG} = L$\n- Massa de la porta: $m$ (pes $mg$ aplicat a G)\n- $x$: distància horitzontal entre G i P; $h$: distància vertical entre G i P\n- Sense fregament: les guies només fan forces **perpendiculars** a la seva direcció\n- Incògnites: $h(x)$, $F(x)$, $N_\\text{P}$, $N_\\text{G}$"},
+          {"apartat": "a", "titol": "Diagrama de cos lliure", "cos": "Aïllem la porta i hi dibuixem totes les forces exteriors:\n\n- **Pes** $mg$, vertical cap avall, aplicat a G.\n- **Força** $F$, horitzontal, aplicada a P.\n- **Normal de la guia horitzontal** a P, $N_\\text{P}$: com que la guia és horitzontal i no hi ha fregament, aquesta força és **vertical** (cap amunt, aguanta la porta).\n- **Normal de la guia vertical** a G, $N_\\text{G}$: la guia és vertical, per tant la força és **horitzontal** (cap a l'esquerra, oposada a $F$).\n\n![Diagrama de cos lliure de la porta](img/tecno/2021-S/e5-sol.png)"},
+          {"apartat": "b", "titol": "Relació geomètrica entre h i x", "cos": "El segment PG mesura $L$ (mitja porta) i forma la hipotenusa d'un triangle rectangle de catets $x$ (horitzontal) i $h$ (vertical). Pel teorema de Pitàgores:\n\n$$x^2 + h^2 = L^2 \\quad\\Rightarrow\\quad \\boxed{h = \\sqrt{L^2 - x^2}}$$"},
+          {"apartat": "c", "titol": "Equilibri de forces verticals", "cos": "Les úniques forces verticals són $N_\\text{P}$ i el pes:\n\n$$\\sum F_\\text{verticals} = 0 \\quad\\Rightarrow\\quad N_\\text{P} = m\\,g$$"},
+          {"apartat": "c", "titol": "Equilibri de moments respecte de G", "cos": "Prenem moments respecte de G perquè així el pes i $N_\\text{G}$ (que hi passen) no fan moment. Respecte de G, el punt P és a una distància horitzontal $x$ i vertical $h$:\n\n- $F$ (horitzontal) té braç $h$ → moment $F\\,h$.\n- $N_\\text{P}$ (vertical) té braç $x$ → moment $N_\\text{P}\\,x$, de sentit contrari.\n\n$$\\sum M_\\text{G} = 0 \\quad\\Rightarrow\\quad F\\,h - N_\\text{P}\\,x = 0$$\n\n$$F = \\frac{N_\\text{P}\\, x}{h} = \\frac{m\\,g\\,x}{h} = \\boxed{\\frac{m\\,g\\,x}{\\sqrt{L^2 - x^2}}}$$\n\nObserveu que quan $x \\to 0$ (porta vertical, tancada) $F \\to 0$, i quan $x \\to L$ (porta horitzontal, oberta del tot) la força creix moltíssim."},
+          {"apartat": "d", "titol": "Normals a les guies", "cos": "- **Guia horitzontal (punt P):** de l'equilibri vertical, $$N_\\text{P} = m\\,g$$\n- **Guia vertical (punt G):** les úniques forces horitzontals són $F$ i $N_\\text{G}$:\n$$\\sum F_\\text{horitzontals} = 0 \\quad\\Rightarrow\\quad N_\\text{G} = F = \\frac{m\\,g\\,x}{\\sqrt{L^2 - x^2}}$$"}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "Forces: $mg$ (vertical, a G), $F$ (horitzontal, a P), $N_\\text{P}$ (vertical, a P), $N_\\text{G}$ (horitzontal, a G)"},
+          {"apartat": "b", "valor": "$h = \\sqrt{L^2 - x^2}$"},
+          {"apartat": "c", "valor": "$F = \\dfrac{m\\,g\\,x}{\\sqrt{L^2 - x^2}}$"},
+          {"apartat": "d", "valor": "$N_\\text{P} = m\\,g$; $N_\\text{G} = \\dfrac{m\\,g\\,x}{\\sqrt{L^2 - x^2}}$"}
+        ],
+        "nota": "Error típic: posar a les guies forces paral·leles a la guia. Sense fregament, una guia només pot empènyer perpendicularment a la seva direcció. Un altre error és usar $2L$ com a hipotenusa a l'apartat b: la distància entre P i G és només la meitat de la porta, $L$."
+      }
+    },
+    {
+      "id": "tecno-2021-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Canvi de l'enllumenat públic de vapor de sodi a led: consum, estalvi i amortització",
+      "tema": "energia",
+      "temes_secundaris": ["economia"],
+      "conceptes": ["consum energètic", "cost de l'electricitat", "estalvi energètic", "període d'amortització", "il·luminació led"],
+      "dificultat": 2,
+      "pagines": [12, 13],
+      "enunciat": "El sistema públic d'il·luminació municipal d'una vila està format per $n = 308$ punts de llum, que estan encesos, de mitjana, $t = 11$ hores al dia. Cada punt de llum utilitza una bombeta de vapor de sodi a alta pressió (VSAP) de potència $P_\\text{VSAP} = 100\\ \\text{W}$. La tarifa fixada per la companyia elèctrica marca un cost de l'electricitat $c_\\text{electr} = 0{,}1370\\ \\text{euros/(kW h)}$. A més, l'Ajuntament ha d'assumir un cost anual associat al manteniment d'aquest sistema $c_\\text{mant} = 14\\,000\\ \\text{euros}$. Determineu:\n\nL'Ajuntament vol canviar tots els punts de llum per uns de nous que utilitzaran bombetes de tecnologia led de potència $P_\\text{led} = 36\\ \\text{W}$. Cada llum té un cost unitari de $c_\\text{llum} = 500\\ \\text{euros}$ (incloent-hi la bombeta). El cost de la instal·lació del nou enllumenat s'estima en $c_\\text{inst} = 43\\,000\\ \\text{euros}$. En aquesta instal·lació es pot negligir el cost de manteniment. Determineu (apartats b i c):",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {"id": "a", "enunciat": "El consum anual d'energia de l'enllumenat públic $E_\\text{VSAP}$ i els diners anuals que l'Ajuntament paga a la companyia elèctrica $c_\\text{VSAP}$.", "punts": 1},
+        {"id": "b", "enunciat": "El nou consum elèctric $E_\\text{led}$ i els diners que anualment s'estalviaria $c_\\text{estalvi}$ l'Ajuntament.", "punts": 1},
+        {"id": "c", "enunciat": "El cost total de la inversió $c_\\text{inv}$. En quants anys $\\Delta t$ es recuperaria la inversió feta?", "punts": 0.5}
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {"apartat": null, "titol": "Dades i incògnites", "cos": "- Punts de llum: $n = 308$\n- Temps encès: $t = 11\\ \\text{h/dia}$, 365 dies/any\n- $P_\\text{VSAP} = 100\\ \\text{W} = 0{,}1\\ \\text{kW}$; $P_\\text{led} = 36\\ \\text{W} = 0{,}036\\ \\text{kW}$\n- Preu de l'electricitat: $c_\\text{electr} = 0{,}1370\\ \\text{euros/(kW h)}$\n- Manteniment actual: $c_\\text{mant} = 14\\,000\\ \\text{euros/any}$ (amb led, negligible)\n- Cost de cada llum led: $c_\\text{llum} = 500\\ \\text{euros}$; instal·lació: $c_\\text{inst} = 43\\,000\\ \\text{euros}$\n- Incògnites: $E_\\text{VSAP}$, $c_\\text{VSAP}$, $E_\\text{led}$, $c_\\text{estalvi}$, $c_\\text{inv}$, $\\Delta t$"},
+          {"apartat": "a", "titol": "Consum anual amb bombetes VSAP", "cos": "L'energia és potència per temps. Multipliquem la potència de totes les bombetes per les hores enceses en un any:\n\n$$E_\\text{VSAP} = n\\, P_\\text{VSAP}\\, t \\cdot 365 = 308 \\cdot 0{,}1\\ \\text{kW} \\cdot 11\\ \\text{h/dia} \\cdot 365\\ \\text{dies} = 123\\,662\\ \\text{kW h}$$\n\nResultat: **$E_\\text{VSAP} \\approx 123{,}66\\ \\text{MW h}$** ($= 123\\,662 \\cdot 3{,}6\\ \\text{MJ} \\approx 445{,}2 \\cdot 10^3\\ \\text{MJ}$)."},
+          {"apartat": "a", "titol": "Factura elèctrica anual", "cos": "$$c_\\text{VSAP} = c_\\text{electr}\\, E_\\text{VSAP} = 0{,}1370\\ \\text{euros/(kW h)} \\cdot 123\\,662\\ \\text{kW h} = 16\\,942\\ \\text{euros}$$\n\nResultat: **$c_\\text{VSAP} \\approx 16\\,941\\ \\text{euros/any}$**."},
+          {"apartat": "b", "titol": "Nou consum amb led", "cos": "El nombre de punts i les hores no canvien; només la potència. Per tant el consum es redueix en la proporció de potències:\n\n$$E_\\text{led} = \\frac{P_\\text{led}}{P_\\text{VSAP}}\\, E_\\text{VSAP} = \\frac{36}{100} \\cdot 123\\,662 = 44\\,518\\ \\text{kW h}$$\n\nResultat: **$E_\\text{led} \\approx 44{,}52\\ \\text{MW h}$** ($\\approx 160{,}3 \\cdot 10^3\\ \\text{MJ}$)."},
+          {"apartat": "b", "titol": "Estalvi anual", "cos": "Abans es pagava l'electricitat **i** el manteniment; ara només l'electricitat (menor):\n\n$$c_\\text{estalvi} = (c_\\text{VSAP} + c_\\text{mant}) - c_\\text{electr}\\, E_\\text{led}$$\n\n$$c_\\text{estalvi} = (16\\,942 + 14\\,000) - 0{,}1370 \\cdot 44\\,518 = 30\\,942 - 6\\,099 = 24\\,842\\ \\text{euros}$$\n\nResultat: **$c_\\text{estalvi} \\approx 24\\,842\\ \\text{euros/any}$**."},
+          {"apartat": "c", "titol": "Cost de la inversió", "cos": "Cal comprar els 308 llums nous i pagar la instal·lació:\n\n$$c_\\text{inv} = n\\, c_\\text{llum} + c_\\text{inst} = 308 \\cdot 500 + 43\\,000 = 197\\,000\\ \\text{euros}$$"},
+          {"apartat": "c", "titol": "Període de retorn de la inversió", "cos": "La inversió es recupera quan l'estalvi acumulat any rere any iguala el que s'ha invertit:\n\n$$\\Delta t = \\frac{c_\\text{inv}}{c_\\text{estalvi}} = \\frac{197\\,000}{24\\,842} = 7{,}93\\ \\text{anys}$$\n\nResultat: **$\\Delta t \\approx 7{,}9$ anys**, és a dir, la inversió es recupera durant el **vuitè any** (en 8 anys)."}
+        ],
+        "resultats": [
+          {"apartat": "a", "valor": "$E_\\text{VSAP} \\approx 123{,}66\\ \\text{MW h}$; $c_\\text{VSAP} \\approx 16\\,941\\ \\text{euros}$"},
+          {"apartat": "b", "valor": "$E_\\text{led} \\approx 44{,}52\\ \\text{MW h}$; $c_\\text{estalvi} \\approx 24\\,842\\ \\text{euros/any}$"},
+          {"apartat": "c", "valor": "$c_\\text{inv} = 197\\,000\\ \\text{euros}$; $\\Delta t \\approx 7{,}9$ anys (8 anys)"}
+        ],
+        "nota": "La solució oficial expressa $E_\\text{led}$ com a «$1603 \\times 10^3$ MJ», que és una errada tipogràfica: $44{,}52\\ \\text{MW h} = 44\\,518\\ \\text{kW h} \\cdot 3{,}6\\ \\text{MJ/(kW h)} \\approx 160{,}3 \\times 10^3\\ \\text{MJ}$. Error típic: oblidar a l'estalvi el cost de manteniment que es deixa de pagar (sortiria només $10\\,843\\ \\text{euros/any}$ i un retorn de més de 18 anys)."
+      }
+    }
+  ]
+}

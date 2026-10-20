@@ -1,0 +1,557 @@
+{
+  "examen": {
+    "id": "mates-2023-J",
+    "assignatura": "mates",
+    "materia": "Matemàtiques",
+    "any": 2023,
+    "convocatoria": "juny",
+    "serie": "1",
+    "pdf_examen": "pdfs/mates/2023-J-examen.pdf",
+    "pdf_solucio": "pdfs/mates/2023-J-solucio.pdf",
+    "estructura": "Cal respondre QUATRE de les sis qüestions; cada qüestió val 2,5 punts. Es pot utilitzar calculadora (no programable ni que emmagatzemi o transmeti dades)."
+  },
+  "problemes": [
+    {
+      "id": "mates-2023-J-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Coeficients d'una cúbica a partir del punt d'inflexió, la tangent i un extrem",
+      "tema": "derivades",
+      "temes_secundaris": [
+        "sistemes"
+      ],
+      "conceptes": [
+        "punt d'inflexió",
+        "recta tangent",
+        "extrem relatiu",
+        "derivada segona",
+        "polinomi"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Calculeu els coeficients $a$, $b$, $c$ i $d$ de la funció $f(x) = ax^3 + bx^2 + cx + d$ si sabem que l'equació de la recta tangent a la gràfica de la funció $f$ en el punt d'inflexió $(1, 0)$ és $y = -3x + 3$ i que la funció té un extrem relatiu en el punt de la gràfica d'abscissa $x = 0$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Funció: $f(x) = ax^3 + bx^2 + cx + d$ (4 incògnites: $a, b, c, d$).\n- $(1, 0)$ és un punt de la gràfica i és un punt d'inflexió.\n- La tangent en $x = 1$ és $y = -3x + 3$, de pendent $-3$.\n- Hi ha un extrem relatiu en $x = 0$.\n\nCom que tenim 4 incògnites, necessitem 4 equacions: traduirem cada condició de l'enunciat a una equació sobre $f$, $f'$ o $f''$."
+          },
+          {
+            "apartat": null,
+            "titol": "Derivades de la funció",
+            "cos": "$$f'(x) = 3ax^2 + 2bx + c \\qquad f''(x) = 6ax + 2b$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Traducció de les quatre condicions",
+            "cos": "1. **La gràfica passa per $(1,0)$**: $f(1) = 0$\n\n$$a + b + c + d = 0 \\quad (1)$$\n\n2. **$x = 1$ és un punt d'inflexió**: la derivada segona s'hi anul·la, $f''(1) = 0$\n\n$$6a + 2b = 0 \\quad (2)$$\n\n3. **El pendent de la tangent en $x=1$ és $-3$**: el pendent de la recta tangent és el valor de la derivada, $f'(1) = -3$\n\n$$3a + 2b + c = -3 \\quad (3)$$\n\n4. **Extrem relatiu en $x = 0$**: en un extrem d'una funció derivable la derivada val zero, $f'(0) = 0$\n\n$$c = 0 \\quad (4)$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Resolució del sistema",
+            "cos": "De (4), $c = 0$. De (2), $b = -3a$. Substituint a (3):\n\n$$3a + 2(-3a) + 0 = -3 \\;\\Rightarrow\\; -3a = -3 \\;\\Rightarrow\\; a = 1$$\n\nLlavors $b = -3$, i de (1): $1 - 3 + 0 + d = 0 \\Rightarrow d = 2$.\n\n**$a = 1,\\ b = -3,\\ c = 0,\\ d = 2$**, és a dir, $f(x) = x^3 - 3x^2 + 2$."
+          },
+          {
+            "apartat": null,
+            "titol": "Comprovació",
+            "cos": "- $f(1) = 1 - 3 + 2 = 0$ ✓\n- $f'(x) = 3x^2 - 6x$: $f'(1) = -3$ ✓ i $f'(0) = 0$ ✓\n- $f''(x) = 6x - 6$: $f''(1) = 0$ i $f'''(x) = 6 \\neq 0$, així que és realment un punt d'inflexió ✓\n- La tangent en $(1,0)$ és $y - 0 = -3(x - 1)$, és a dir, $y = -3x + 3$ ✓\n- $f''(0) = -6 < 0$: l'extrem de $x = 0$ és un **màxim** relatiu."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$a = 1,\\ b = -3,\\ c = 0,\\ d = 2$, és a dir, $f(x) = x^3 - 3x^2 + 2$"
+          }
+        ],
+        "nota": "Error típic: oblidar que el punt (1, 0) dona dues informacions diferents (que és de la gràfica i que és d'inflexió) o fer servir la recta tangent només per al pendent sense comprovar que hi passa. La condició f(1) = 0 també es pot obtenir imposant que la tangent passa per (1, 0)."
+      }
+    },
+    {
+      "id": "mates-2023-J-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Producte de matrius i matrius idempotents",
+      "tema": "matrius",
+      "temes_secundaris": [],
+      "conceptes": [
+        "producte de matrius",
+        "matriu idempotent",
+        "propietat associativa",
+        "demostració"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4,
+        5
+      ],
+      "enunciat": "Considereu les dues matrius següents:\n\n$$A = \\begin{pmatrix} 2 & -3 & -5 \\\\ -1 & 4 & 5 \\\\ 1 & -3 & -4 \\end{pmatrix} \\qquad B = \\begin{pmatrix} 2 & 2 & 0 \\\\ -1 & -1 & 0 \\\\ 1 & 2 & 1 \\end{pmatrix}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu les matrius $A \\cdot B$ i $B \\cdot A$.",
+          "punts": 1.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Siguin $C$ i $D$ dues matrius quadrades del mateix ordre que satisfan $C \\cdot D = C$ i $D \\cdot C = D$. Comproveu que les dues matrius, $C$ i $D$, són idempotents.\n\n*Nota:* Una matriu quadrada s'anomena *idempotent* si coincideix amb el seu quadrat.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Com es multiplica",
+            "cos": "Al producte $A \\cdot B$, l'element de la fila $i$ i la columna $j$ és el producte escalar de la fila $i$ d'$A$ per la columna $j$ de $B$. Totes dues són $3\\times 3$, així que els productes existeixen i són $3 \\times 3$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul d'A·B",
+            "cos": "Fila 1 d'$A$ = $(2, -3, -5)$:\n\n- col. 1: $2\\cdot 2 + (-3)(-1) + (-5)\\cdot 1 = 4 + 3 - 5 = 2$\n- col. 2: $2\\cdot 2 + (-3)(-1) + (-5)\\cdot 2 = 4 + 3 - 10 = -3$\n- col. 3: $2\\cdot 0 + (-3)\\cdot 0 + (-5)\\cdot 1 = -5$\n\nFila 2 = $(-1, 4, 5)$: $-2 - 4 + 5 = -1$; $\\ -2 - 4 + 10 = 4$; $\\ 5$.\n\nFila 3 = $(1, -3, -4)$: $2 + 3 - 4 = 1$; $\\ 2 + 3 - 8 = -3$; $\\ -4$.\n\n$$A \\cdot B = \\begin{pmatrix} 2 & -3 & -5 \\\\ -1 & 4 & 5 \\\\ 1 & -3 & -4 \\end{pmatrix} = A$$\n\nResultat: **$A \\cdot B = A$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul de B·A",
+            "cos": "Fila 1 de $B$ = $(2, 2, 0)$: $4 - 2 + 0 = 2$; $\\ -6 + 8 + 0 = 2$; $\\ -10 + 10 + 0 = 0$.\n\nFila 2 = $(-1, -1, 0)$: $-2 + 1 = -1$; $\\ 3 - 4 = -1$; $\\ 5 - 5 = 0$.\n\nFila 3 = $(1, 2, 1)$: $2 - 2 + 1 = 1$; $\\ -3 + 8 - 3 = 2$; $\\ -5 + 10 - 4 = 1$.\n\n$$B \\cdot A = \\begin{pmatrix} 2 & 2 & 0 \\\\ -1 & -1 & 0 \\\\ 1 & 2 & 1 \\end{pmatrix} = B$$\n\nResultat: **$B \\cdot A = B$**. Fixeu-vos que $A$ i $B$ compleixen exactament les condicions de l'apartat b)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Idea: fer servir les hipòtesis i l'associativitat",
+            "cos": "Volem veure que $C^2 = C$ i $D^2 = D$. No coneixem les matrius, només les relacions\n\n$$(*)\\ C \\cdot D = C \\qquad (**)\\ D \\cdot C = D$$\n\nEl truc és substituir una $C$ per $C\\cdot D$ (o una $D$ per $D \\cdot C$) i reagrupar amb la **propietat associativa** del producte de matrius, $(XY)Z = X(YZ)$. Atenció: el producte de matrius no és commutatiu, així que no podem canviar l'ordre dels factors."
+          },
+          {
+            "apartat": "b",
+            "titol": "C és idempotent",
+            "cos": "$$C^2 = C \\cdot C \\overset{(*)}{=} (C \\cdot D) \\cdot C = C \\cdot (D \\cdot C) \\overset{(**)}{=} C \\cdot D \\overset{(*)}{=} C$$\n\nPer tant **$C^2 = C$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "D és idempotent",
+            "cos": "Anàlogament, intercanviant els papers:\n\n$$D^2 = D \\cdot D \\overset{(**)}{=} (D \\cdot C) \\cdot D = D \\cdot (C \\cdot D) \\overset{(*)}{=} D \\cdot C \\overset{(**)}{=} D$$\n\nPer tant **$D^2 = D$**, i les dues matrius són idempotents."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$A \\cdot B = A$ i $B \\cdot A = B$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$C^2 = C(DC) = (CD)C\\ldots = C$ i $D^2 = D$: totes dues són idempotents"
+          }
+        ],
+        "nota": "Com a comprovació, aplicant b) amb C = A i D = B (que compleixen AB = A i BA = B), resulta que A² = A i B² = B; es pot verificar multiplicant directament. Error típic a b): simplificar 'dividint' per una matriu o canviar l'ordre dels factors, coses que no es poden fer amb matrius."
+      }
+    },
+    {
+      "id": "mates-2023-J-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Funció definida a trossos a partir de la seva derivada i tangent a f′",
+      "tema": "integrals",
+      "temes_secundaris": [
+        "derivades",
+        "funcions"
+      ],
+      "conceptes": [
+        "primitiva",
+        "funció definida a trossos",
+        "continuïtat",
+        "recta tangent",
+        "logaritme neperià"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        6,
+        7
+      ],
+      "enunciat": "Sigui\n\n$$f'(x) = \\begin{cases} x - 1, & \\text{si } x \\le 2 \\\\[4pt] \\dfrac{1}{x-1}, & \\text{si } x > 2 \\end{cases}$$\n\nla funció derivada d'una funció derivable $f(x)$ que passa pel punt $A = (0, 3)$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la funció $f(x)$.",
+          "punts": 1.5
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'equació de la recta tangent a la funció $f'(x)$ en el punt d'abscissa $x = 3$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Idea: integrar cada tros",
+            "cos": "Si coneixem $f'$, trobem $f$ calculant una **primitiva** de cada tros. Cada primitiva porta la seva constant d'integració ($k$ i $k'$), que determinarem amb les dues condicions que tenim: que $f$ passa per $A = (0,3)$ i que $f$ és derivable (i, per tant, contínua) en $x = 2$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Primitives de cada tros",
+            "cos": "$$\\int (x - 1)\\,dx = \\frac{x^2}{2} - x + k \\qquad \\int \\frac{1}{x-1}\\,dx = \\ln|x - 1| + k'$$\n\n$$f(x) = \\begin{cases} \\dfrac{1}{2}x^2 - x + k, & \\text{si } x \\le 2 \\\\[4pt] \\ln|x - 1| + k', & \\text{si } x > 2 \\end{cases}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Constant k: la funció passa per A = (0, 3)",
+            "cos": "El punt $x = 0$ és al primer tros ($0 \\le 2$):\n\n$$f(0) = \\frac{1}{2}\\cdot 0^2 - 0 + k = 3 \\;\\Rightarrow\\; \\mathbf{k = 3}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Constant k′: continuïtat en x = 2",
+            "cos": "Una funció derivable és contínua, així que en $x = 2$ els límits laterals han de coincidir amb $f(2)$:\n\n$$\\lim_{x\\to 2^-} f(x) = \\frac{1}{2}\\cdot 2^2 - 2 + 3 = 3 \\qquad \\lim_{x\\to 2^+} f(x) = \\ln|2 - 1| + k' = \\ln 1 + k' = k'$$\n\nIgualant: $\\mathbf{k' = 3}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Funció f(x)",
+            "cos": "$$f(x) = \\begin{cases} \\dfrac{1}{2}x^2 - x + 3, & \\text{si } x \\le 2 \\\\[4pt] \\ln(x - 1) + 3, & \\text{si } x > 2 \\end{cases}$$\n\n(Per a $x > 2$, $x - 1 > 0$, i per tant $\\ln|x-1| = \\ln(x-1)$.)\n\nComprovació: la derivada de cada tros torna a donar $f'$, i en $x = 2$ les dues derivades laterals valen $2 - 1 = 1$ i $\\frac{1}{2-1} = 1$, de manera que $f$ és efectivament derivable."
+          },
+          {
+            "apartat": "b",
+            "titol": "Què ens demanen",
+            "cos": "Ara la funció de la qual volem la tangent és $g(x) = f'(x)$. La recta tangent a $g$ en $x = a$ és\n\n$$y - g(a) = g'(a)\\,(x - a)$$\n\namb $a = 3$. Com que $3 > 2$, fem servir el segon tros: $g(x) = \\dfrac{1}{x-1}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Valor i pendent en x = 3",
+            "cos": "$$g(3) = \\frac{1}{3 - 1} = \\frac{1}{2}$$\n\nDerivem $g(x) = (x-1)^{-1}$:\n\n$$g'(x) = f''(x) = -\\frac{1}{(x-1)^2} \\;\\Rightarrow\\; g'(3) = -\\frac{1}{4}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació de la recta tangent",
+            "cos": "$$y - \\frac{1}{2} = -\\frac{1}{4}(x - 3) \\;\\Rightarrow\\; y = -\\frac{1}{4}x + \\frac{3}{4} + \\frac{1}{2}$$\n\nResultat: **$y = -\\dfrac{1}{4}x + \\dfrac{5}{4}$** (o bé $x + 4y - 5 = 0$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$f(x) = \\frac{1}{2}x^2 - x + 3$ si $x \\le 2$; $\\ f(x) = \\ln(x-1) + 3$ si $x > 2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$y = -\\frac{1}{4}x + \\frac{5}{4}$"
+          }
+        ],
+        "nota": "Error típic a b): calcular la tangent a f en lloc de a f′. Aquí la funció és f′, i el seu pendent és f″(3). Els criteris oficials accepten indistintament ln|x − 1| o ln(x − 1)."
+      }
+    },
+    {
+      "id": "mates-2023-J-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Discussió d'un sistema 3×3 amb paràmetre i interpretació geomètrica",
+      "tema": "sistemes",
+      "temes_secundaris": [
+        "matrius",
+        "geometria"
+      ],
+      "conceptes": [
+        "teorema de Rouché-Frobenius",
+        "discussió de sistemes",
+        "determinant",
+        "rang",
+        "regla de Cramer",
+        "posició relativa de plans"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8,
+        9
+      ],
+      "enunciat": "Sigui el sistema d'equacions lineals següent, que depèn del paràmetre real $\\lambda$:\n\n$$\\begin{cases} x + 2\\lambda y + (2+\\lambda) z = 0 \\\\ (2+\\lambda) x + y + 2\\lambda z = 3 \\\\ 2\\lambda x + (2+\\lambda) y + z = -3 \\end{cases}$$",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $\\lambda$.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Per al cas $\\lambda = -1$, resoleu el sistema, interpreteu-lo geomètricament i identifiqueu-ne la solució.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Matrius del sistema",
+            "cos": "Escrivim la matriu de coeficients $M$ i l'ampliada $\\overline{M}$:\n\n$$M \\,|\\, \\overline{M} = \\left(\\begin{array}{ccc|c} 1 & 2\\lambda & 2+\\lambda & 0 \\\\ 2+\\lambda & 1 & 2\\lambda & 3 \\\\ 2\\lambda & 2+\\lambda & 1 & -3 \\end{array}\\right)$$\n\nCom que $M$ és quadrada i depèn de $\\lambda$, estudiem quan el seu determinant és zero: si no ho és, el rang és 3 i el sistema té solució única (Rouché-Frobenius)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Determinant de M",
+            "cos": "Sumem a la tercera fila les dues primeres (el determinant no canvia): la nova fila 3 és $(3+3\\lambda,\\ 3+3\\lambda,\\ 3+3\\lambda)$, i en traiem el factor comú $3(1+\\lambda)$:\n\n$$|M| = 3(1+\\lambda)\\begin{vmatrix} 1 & 2\\lambda & 2+\\lambda \\\\ 2+\\lambda & 1 & 2\\lambda \\\\ 1 & 1 & 1 \\end{vmatrix}$$\n\nDesenvolupant aquest determinant per Sarrus: $1 + 4\\lambda^2 + (2+\\lambda)^2 - (2+\\lambda) - 2\\lambda - 2\\lambda(2+\\lambda) = 3\\lambda^2 - 3\\lambda + 3$. Per tant\n\n$$|M| = 9(1+\\lambda)(\\lambda^2 - \\lambda + 1) = 9\\lambda^3 + 9 = 9(\\lambda^3 + 1)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Valors que anul·len el determinant",
+            "cos": "$$9(\\lambda^3 + 1) = 0 \\;\\Rightarrow\\; \\lambda^3 = -1 \\;\\Rightarrow\\; \\lambda = -1$$\n\n(El factor $\\lambda^2 - \\lambda + 1$ no té arrels reals, perquè el discriminant és $1 - 4 < 0$.) Hi ha, doncs, dos casos."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas λ ≠ −1",
+            "cos": "$|M| \\neq 0 \\Rightarrow \\operatorname{rang} M = 3 = \\operatorname{rang}\\overline{M} = $ nombre d'incògnites.\n\nPel teorema de Rouché-Frobenius: **sistema compatible determinat (SCD)**, amb una única solució."
+          },
+          {
+            "apartat": "a",
+            "titol": "Cas λ = −1",
+            "cos": "$$M \\,|\\, \\overline{M} = \\left(\\begin{array}{ccc|c} 1 & -2 & 1 & 0 \\\\ 1 & 1 & -2 & 3 \\\\ -2 & 1 & 1 & -3 \\end{array}\\right)$$\n\n$|M| = 0$, així que $\\operatorname{rang} M < 3$. El menor $\\begin{vmatrix} 1 & -2 \\\\ 1 & 1 \\end{vmatrix} = 1 + 2 = 3 \\neq 0$, per tant $\\operatorname{rang} M = 2$.\n\nPer a l'ampliada, orlem aquest menor amb la columna dels termes independents:\n\n$$\\begin{vmatrix} 1 & -2 & 0 \\\\ 1 & 1 & 3 \\\\ -2 & 1 & -3 \\end{vmatrix} = -3 + 12 + 0 - 0 - 3 - 6 = 0$$\n\nPer tant $\\operatorname{rang}\\overline{M} = 2$. Com que $\\operatorname{rang} M = \\operatorname{rang}\\overline{M} = 2 < 3$: **sistema compatible indeterminat (SCI)** amb $3 - 2 = 1$ grau de llibertat."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equacions que ens quedem",
+            "cos": "Per a $\\lambda = -1$ és un SCI amb 1 grau de llibertat. El menor no nul de l'apartat a) usa les dues primeres equacions i les incògnites $x$ i $y$; la tercera equació és combinació de les altres (de fet, $E_3 = -(E_1 + E_2)$) i la podem eliminar. Prenem $z$ com a paràmetre:\n\n$$\\begin{cases} x - 2y = -z \\\\ x + y = 3 + 2z \\end{cases}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resolució per Cramer",
+            "cos": "$$x = \\frac{\\begin{vmatrix} -z & -2 \\\\ 3+2z & 1 \\end{vmatrix}}{\\begin{vmatrix} 1 & -2 \\\\ 1 & 1 \\end{vmatrix}} = \\frac{-z + 6 + 4z}{3} = \\frac{3z + 6}{3} = z + 2$$\n\n$$y = \\frac{\\begin{vmatrix} 1 & -z \\\\ 1 & 3+2z \\end{vmatrix}}{3} = \\frac{3 + 2z + z}{3} = \\frac{3 + 3z}{3} = z + 1$$\n\nSolució: **$(x, y, z) = (z + 2,\\ z + 1,\\ z)$, $z \\in \\mathbb{R}$**.\n\nComprovació a la 3a equació: $-2(z+2) + (z+1) + z = -3$ ✓"
+          },
+          {
+            "apartat": "b",
+            "titol": "Interpretació geomètrica",
+            "cos": "Cada equació és un pla de $\\mathbb{R}^3$. Com que la solució té un grau de llibertat (rangs iguals a 2 i cap pla paral·lel a un altre), els tres plans **es tallen en una recta** (formen un feix de plans).\n\nEscrivint la solució com\n\n$$(x, y, z) = (2, 1, 0) + z\\,(1, 1, 1)$$\n\nla recta d'intersecció és la que **passa pel punt $(2, 1, 0)$ i té vector director $(1, 1, 1)$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$|M| = 9(\\lambda^3+1)$. Si $\\lambda \\neq -1$: SCD. Si $\\lambda = -1$: $\\operatorname{rang} M = \\operatorname{rang}\\overline{M} = 2$, SCI amb 1 grau de llibertat"
+          },
+          {
+            "apartat": "b",
+            "valor": "$(x,y,z) = (2,1,0) + t(1,1,1)$: els tres plans es tallen en la recta que passa per $(2,1,0)$ amb vector director $(1,1,1)$"
+          }
+        ],
+        "nota": "Els criteris oficials calculen primer el determinant directament per Sarrus (9λ³ + 9) i, com a alternativa, amb propietats dels determinants (sumant files), que és el mètode que hem seguit aquí perquè dona el factor (1 + λ) directament."
+      }
+    },
+    {
+      "id": "mates-2023-J-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Tancat rectangular de cost mínim per a un gos tocant al mur d'un jardí",
+      "tema": "optimitzacio",
+      "temes_secundaris": [
+        "derivades"
+      ],
+      "conceptes": [
+        "optimització",
+        "funció cost",
+        "mínim relatiu",
+        "derivada segona",
+        "àrea del rectangle"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        10,
+        11
+      ],
+      "enunciat": "La Núria té un jardí rectangular i vol fer-hi un tancat (rectangular o quadrat) de $8\\ \\text{m}^2$ per al seu gos. Ha pensat de posar el tancat tocant al mur del jardí, tal com es mostra a la figura, per estalviar-se així un dels quatre costats.\n\nEl preu de la tanca que vol fer servir és de $2{,}5$ €/m.",
+      "figures": [
+        {
+          "src": "img/mates/2023-J/e5.png",
+          "peu": "Tancat per al gos tocant a un mur del jardí"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quines dimensions ha de tenir el tancat perquè el cost sigui mínim? Quin és aquest cost mínim?",
+          "punts": 1.75
+        },
+        {
+          "id": "b",
+          "enunciat": "Si manteniu la forma rectangular o quadrada del tancat i feu que un dels vèrtexs del jardí coincideixi amb un vèrtex del tancat, quants euros us podeu estalviar? Raoneu com posaríeu el tancat i justifiqueu amb càlculs matemàtics les dimensions de la vostra proposta.",
+          "punts": 0.75
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Dades i incògnites",
+            "cos": "- $x$: costat del tancat paral·lel al mur (la base), en m.\n- $y$: costat perpendicular al mur (l'altura), en m.\n- Àrea: $x \\cdot y = 8\\ \\text{m}^2$ (lligadura).\n- Preu de la tanca: $2{,}5$ €/m.\n- Es busquen $x$, $y$ que fan mínim el cost."
+          },
+          {
+            "apartat": "a",
+            "titol": "Funció cost d'una sola variable",
+            "cos": "El mur fa un dels costats de llargada $x$, així que només cal tanca per a $x + 2y$ metres:\n\n$$C(x, y) = 2{,}5\\,(x + 2y)$$\n\nDe la lligadura, $y = \\dfrac{8}{x}$. Substituint:\n\n$$C(x) = 2{,}5\\left(x + \\frac{16}{x}\\right) = 2{,}5\\cdot\\frac{x^2 + 16}{x}, \\qquad x > 0$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Punts singulars",
+            "cos": "Els mínims d'una funció derivable estan on la derivada s'anul·la. Derivem (com a quocient o terme a terme):\n\n$$C'(x) = 2{,}5\\left(1 - \\frac{16}{x^2}\\right) = 2{,}5\\cdot\\frac{x^2 - 16}{x^2}$$\n\n$$C'(x) = 0 \\;\\Rightarrow\\; x^2 = 16 \\;\\Rightarrow\\; x = \\pm 4$$\n\nCom que $x$ és una longitud, només val $x = 4$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Comprovem que és un mínim",
+            "cos": "$$C''(x) = 2{,}5\\cdot\\frac{32}{x^3} \\;\\Rightarrow\\; C''(4) = 2{,}5\\cdot\\frac{32}{64} = 1{,}25 > 0$$\n\nLa derivada segona és positiva, per tant en $x = 4$ hi ha un **mínim**. (També: $C' < 0$ per a $0 < x < 4$ i $C' > 0$ per a $x > 4$.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Dimensions i cost mínim",
+            "cos": "$$x = 4\\ \\text{m}, \\qquad y = \\frac{8}{4} = 2\\ \\text{m}$$\n\n$$C(4) = 2{,}5\\left(4 + 2\\cdot 2\\right) = 2{,}5 \\cdot 8 = 20\\ \\text{euros}$$\n\nResultat: el tancat ha de fer **4 m al llarg del mur i 2 m de fondària**, i el cost mínim és de **20 €**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Com posem el tancat",
+            "cos": "Si el posem en una **cantonada** del jardí, dos costats del tancat són murs i només cal tanca per als altres dos:\n\n![Tancat a la cantonada del jardí (criteris oficials)](img/mates/2023-J/e5-sol.png)\n\nAra la longitud de tanca és $x + y$, amb la mateixa lligadura $xy = 8$:\n\n$$C(x) = 2{,}5\\left(x + \\frac{8}{x}\\right) = 2{,}5\\cdot\\frac{x^2 + 8}{x}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Mínim del nou cost",
+            "cos": "$$C'(x) = 2{,}5\\cdot\\frac{x^2 - 8}{x^2} = 0 \\;\\Rightarrow\\; x = \\sqrt{8} = 2\\sqrt{2} \\approx 2{,}83\\ \\text{m}$$\n\n$C''(x) = 2{,}5\\cdot\\dfrac{16}{x^3} > 0$ per a $x > 0$, així que és un mínim. Llavors $y = \\dfrac{8}{2\\sqrt{2}} = 2\\sqrt{2}$: el tancat és un **quadrat de costat $2\\sqrt{2} \\approx 2{,}83$ m**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Cost i estalvi",
+            "cos": "$$C(2\\sqrt{2}) = 2{,}5\\left(2\\sqrt{2} + 2\\sqrt{2}\\right) = 2{,}5\\cdot 4\\sqrt{2} = 10\\sqrt{2} \\approx 14{,}14\\ \\text{euros}$$\n\n$$\\text{Estalvi} = 20 - 14{,}14 = 5{,}86\\ \\text{euros}$$\n\nResultat: posant el tancat quadrat de $2\\sqrt{2}$ m de costat a la cantonada, ens estalviem **5,86 €**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$4\\ \\text{m}$ (paral·lel al mur) $\\times\\ 2\\ \\text{m}$; cost mínim $20$ €"
+          },
+          {
+            "apartat": "b",
+            "valor": "Quadrat de costat $2\\sqrt{2} \\approx 2{,}83\\ \\text{m}$ a la cantonada; cost $\\approx 14{,}14$ €; estalvi $\\approx 5{,}86$ €"
+          }
+        ],
+        "nota": "Error típic: posar 2x + y en lloc de x + 2y (confondre quin costat toca al mur). Si es fa al revés, també surt cost mínim 20 €, però les dimensions cal interpretar-les bé: el costat de 4 m és el que va enganxat al mur."
+      }
+    },
+    {
+      "id": "mates-2023-J-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Pla perpendicular a dos plans, recta intersecció i punt més proper",
+      "tema": "geometria",
+      "temes_secundaris": [],
+      "conceptes": [
+        "equació del pla",
+        "vector normal",
+        "recta intersecció de dos plans",
+        "equació vectorial de la recta",
+        "projecció ortogonal"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12,
+        13
+      ],
+      "enunciat": "Siguin els plans $\\pi_1$ i $\\pi_2$, determinats respectivament per les equacions $\\pi_1\\colon x + y = 3$ i $\\pi_2\\colon x - z = -2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Trobeu l'equació general ($Ax + By + Cz + D = 0$) del pla $\\pi_3$, que és perpendicular a $\\pi_1$ i $\\pi_2$, i que passa pel punt $P = (4, 1, 2)$.",
+          "punts": 0.75
+        },
+        {
+          "id": "b",
+          "enunciat": "Sigui $r$ la recta d'intersecció de $\\pi_1$ i $\\pi_2$. Calculeu l'equació vectorial de la recta $r$.",
+          "punts": 0.75
+        },
+        {
+          "id": "c",
+          "enunciat": "Calculeu el punt $Q$ de la recta $r$ que és més a prop del punt $P$.",
+          "punts": 1
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Vectors directors del pla π₃",
+            "cos": "Si $\\pi_3$ és perpendicular a $\\pi_1$, el vector normal de $\\pi_1$ és paral·lel a $\\pi_3$ (n'és un vector director). El mateix passa amb $\\pi_2$. Llegint els coeficients de les equacions:\n\n$$\\vec{v}_1 = \\vec{n}_1 = (1, 1, 0) \\qquad \\vec{v}_2 = \\vec{n}_2 = (1, 0, -1)$$\n\nNo són proporcionals, així que determinen el pla."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equació del pla",
+            "cos": "Un punt $X = (x, y, z)$ és de $\\pi_3$ si $\\overrightarrow{PX}$, $\\vec{v}_1$ i $\\vec{v}_2$ són linealment dependents:\n\n$$\\begin{vmatrix} x - 4 & 1 & 1 \\\\ y - 1 & 1 & 0 \\\\ z - 2 & 0 & -1 \\end{vmatrix} = 0$$\n\nDesenvolupant per la primera columna: $(x-4)(-1 - 0) - (y-1)(-1 - 0) + (z-2)(0 - 1) = -(x-4) + (y-1) - (z-2) = 0$, és a dir:\n\n$$\\pi_3\\colon\\ \\mathbf{x - y + z - 5 = 0}$$\n\nComprovació: $P$: $4 - 1 + 2 - 5 = 0$ ✓. (Equivalentment, el normal de $\\pi_3$ és $\\vec{n}_1 \\times \\vec{n}_2 = (-1, 1, -1)$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Resolem el sistema dels dos plans",
+            "cos": "Els punts de $r$ compleixen les dues equacions alhora:\n\n$$\\begin{cases} x + y = 3 \\\\ x - z = -2 \\end{cases} \\;\\Rightarrow\\; y = 3 - x, \\quad z = 2 + x$$\n\nPrenent $x = \\lambda$ com a paràmetre: $x = \\lambda,\\ y = 3 - \\lambda,\\ z = 2 + \\lambda$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Equació vectorial",
+            "cos": "Separant la part constant i la que multiplica $\\lambda$:\n\n$$r\\colon\\ (x, y, z) = (0, 3, 2) + \\lambda\\,(1, -1, 1), \\quad \\lambda \\in \\mathbb{R}$$\n\nUn punt de la recta és $(0, 3, 2)$ i el vector director és $\\vec{v} = (1, -1, 1)$ (que és $\\vec{n}_1 \\times \\vec{n}_2$ canviat de signe, com havia de ser)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Idea: projecció ortogonal",
+            "cos": "El punt de $r$ més proper a $P$ és la **projecció ortogonal** de $P$ sobre $r$: el punt $Q$ tal que el vector $\\overrightarrow{PQ}$ és perpendicular a la recta, $\\overrightarrow{PQ}\\cdot\\vec{v} = 0$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Punt genèric i condició de perpendicularitat",
+            "cos": "Un punt qualsevol de $r$ és $Q = (\\lambda,\\ 3 - \\lambda,\\ 2 + \\lambda)$, i\n\n$$\\overrightarrow{PQ} = (\\lambda - 4,\\ 2 - \\lambda,\\ \\lambda)$$\n\n$$\\overrightarrow{PQ}\\cdot(1, -1, 1) = (\\lambda - 4) - (2 - \\lambda) + \\lambda = 3\\lambda - 6 = 0 \\;\\Rightarrow\\; \\lambda = 2$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Punt Q",
+            "cos": "Substituint $\\lambda = 2$:\n\n$$Q = (2,\\ 3 - 2,\\ 2 + 2) = \\mathbf{(2, 1, 4)}$$\n\nComprovació: $\\overrightarrow{PQ} = (-2, 0, 2)$ i $(-2,0,2)\\cdot(1,-1,1) = 0$ ✓. La distància de $P$ a $r$ és $|\\overrightarrow{PQ}| = \\sqrt{8} = 2\\sqrt{2}$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\pi_3\\colon x - y + z - 5 = 0$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$r\\colon (x,y,z) = (0,3,2) + \\lambda(1,-1,1)$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$Q = (2, 1, 4)$"
+          }
+        ],
+        "nota": "Alternativa a c) (també als criteris oficials): el pla perpendicular a r que passa per P és justament π₃ de l'apartat a), perquè el seu vector normal és el director de r. Tallant r amb π₃: λ − (3 − λ) + (2 + λ) = 5 → λ = 2 → Q = (2, 1, 4)."
+      }
+    }
+  ]
+}

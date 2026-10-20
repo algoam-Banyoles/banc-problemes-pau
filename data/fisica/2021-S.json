@@ -1,0 +1,694 @@
+{
+  "examen": {
+    "id": "fisica-2021-S",
+    "assignatura": "fisica",
+    "materia": "Física",
+    "any": 2021,
+    "convocatoria": "setembre",
+    "serie": "1",
+    "pdf_examen": "pdfs/fisica/2021-S-examen.pdf",
+    "pdf_solucio": "pdfs/fisica/2021-S-solucio.pdf",
+    "estructura": "Cal respondre QUATRE dels vuit problemes (P1-P8); si se'n responen més, només es valoren els quatre primers. Cada problema val 2,5 punts i té dos apartats d'1,25 punts."
+  },
+  "problemes": [
+    {
+      "id": "fisica-2021-S-e1",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Exoplaneta detectat pel mètode del trànsit: període, radi orbital, velocitat i acceleració",
+      "tema": "gravitacio",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "tercera llei de kepler",
+        "període orbital",
+        "radi orbital",
+        "velocitat orbital",
+        "acceleració centrípeta"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        2
+      ],
+      "enunciat": "Un dels mètodes emprats per a detectar exoplanetes (planetes extrasolars) és l'observació del *trànsit planetari*, un fenomen astronòmic que s'esdevé quan un planeta passa per davant de l'estel al voltant del qual orbita i que es percep des de la Terra per la disminució de la llum de l'estel.\n\nEl gràfic següent mostra la variació de lluminositat provocada pel trànsit d'un planeta que descriu una òrbita circular al voltant d'un estel. Aquest estel té una massa pràcticament idèntica a la massa del Sol. Considereu que la constant de Kepler d'aquest sistema és igual a la del Sistema Solar.\n\n**Dada:** Radi orbital mitjà de la Terra $= 1{,}00\\ \\text{ua} = 1{,}50 \\times 10^{11}\\ \\text{m}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2021-S/e1.png",
+          "peu": "Lluminositat relativa de l'estel en funció del temps (dies)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el període i el radi de l'òrbita.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Determineu el mòdul de la velocitat i l'acceleració centrípeta del planeta.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Radi orbital de la Terra: $r_\\text{T} = 1{,}50 \\times 10^{11}\\ \\text{m}$\n- Període de la Terra: $T_\\text{T} = 1\\ \\text{any} = 365{,}25\\ \\text{dies}$\n- L'estel té la mateixa massa que el Sol, per tant la constant de Kepler $r^3/T^2$ és la mateixa que al Sistema Solar.\n- Del gràfic: instants dels trànsits.\n- Incògnites: $T$ i $r$ del planeta (a); $v$ i $a_n$ (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Període a partir del gràfic",
+            "cos": "Cada vegada que el planeta passa per davant de l'estel, la lluminositat baixa (els «forats» del gràfic). El temps entre dos trànsits consecutius és el **període orbital**. Al gràfic hi ha tres trànsits, a $t \\approx 1{,}0$, $9{,}5$ i $18{,}0$ dies: entre el primer i el tercer hi ha dos períodes.\n\n$$2T = 17\\ \\text{dies} \\quad\\Longrightarrow\\quad T = 8{,}5\\ \\text{dies}$$\n\nEn segons: $T = 8{,}5 \\cdot 24 \\cdot 3\\,600 = $ **$7{,}34 \\times 10^{5}\\ \\text{s}$**.\n\n(Mesurar entre el primer i el tercer trànsit redueix l'error de lectura del gràfic.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Radi de l'òrbita amb la tercera llei de Kepler",
+            "cos": "La **tercera llei de Kepler** diu que $r^3/T^2$ és constant per a tots els cossos que orbiten el mateix astre central (la constant només depèn de la seva massa, $r^3/T^2 = GM/4\\pi^2$). Com que l'estel té la massa del Sol, podem comparar el planeta amb la Terra:\n\n$$\\frac{r_\\text{T}^3}{T_\\text{T}^2} = \\frac{r^3}{T^2} \\quad\\Longrightarrow\\quad r = r_\\text{T}\\left(\\frac{T}{T_\\text{T}}\\right)^{2/3}$$\n\n$$r = 1{,}50 \\times 10^{11} \\cdot \\left(\\frac{8{,}5}{365{,}25}\\right)^{2/3} = 1{,}22 \\times 10^{10}\\ \\text{m}$$\n\nResultat: **$r = 1{,}22 \\times 10^{10}\\ \\text{m} = 8{,}15 \\times 10^{-2}\\ \\text{ua}$** (el planeta és molt més a prop del seu estel que Mercuri del Sol).\n\nFixa't que no cal passar els períodes a segons: com que és un quocient, n'hi ha prou que tots dos estiguin en les mateixes unitats (dies)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat orbital",
+            "cos": "En una òrbita circular el moviment és circular uniforme: en un període el planeta recorre la circumferència $2\\pi r$.\n\n$$v = \\frac{2\\pi r}{T} = \\frac{2\\pi \\cdot 1{,}22 \\times 10^{10}}{7{,}34 \\times 10^{5}} = 1{,}05 \\times 10^{5}\\ \\text{m/s}$$\n\nResultat: **$v = 1{,}05 \\times 10^{5}\\ \\text{m/s}$** (uns $105\\ \\text{km/s}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Acceleració centrípeta",
+            "cos": "En un MCU l'única acceleració és la normal o centrípeta, dirigida cap al centre de l'òrbita (l'estel):\n\n$$a_n = \\frac{v^2}{r} = \\frac{(1{,}05 \\times 10^{5})^2}{1{,}22 \\times 10^{10}} = 0{,}895\\ \\text{m/s}^2$$\n\nResultat: **$a_n = 0{,}895\\ \\text{m/s}^2$**, dirigida cap a l'estel. Aquesta acceleració la produeix la força gravitatòria de l'estel, que fa de força centrípeta."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$T = 8{,}5\\ \\text{dies} = 7{,}34 \\times 10^{5}\\ \\text{s}$; $r = 1{,}22 \\times 10^{10}\\ \\text{m} = 8{,}15 \\times 10^{-2}\\ \\text{ua}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v = 1{,}05 \\times 10^{5}\\ \\text{m/s}$; $a_n = 0{,}895\\ \\text{m/s}^2$"
+          }
+        ],
+        "nota": "També es pot calcular $r$ amb la segona llei de Newton i la gravitació universal ($G M_\\text{Sol} m/r^2 = m\\,4\\pi^2 r/T^2$), però l'enunciat no dona $G$ ni $M_\\text{Sol}$, per això és més directe comparar amb la Terra."
+      }
+    },
+    {
+      "id": "fisica-2021-S-e2",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Acceleració d'electrons en un canó de soldadura per feix d'electrons",
+      "tema": "camp-electric",
+      "temes_secundaris": [
+        "mecanica"
+      ],
+      "conceptes": [
+        "camp elèctric uniforme",
+        "diferència de potencial",
+        "treball elèctric",
+        "energia cinètica",
+        "electró"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        4
+      ],
+      "enunciat": "Per a aconseguir soldadures profundes, en la indústria aeroespacial s'utilitza la tècnica de feixos d'electrons d'alta densitat energètica. Aquesta tècnica consisteix a bombardejar amb electrons d'alta energia les peces que s'han de soldar dins d'una cambra de buit. El feix d'electrons es genera escalfant a alta temperatura una banda de wolframi. Posteriorment, el feix s'accelera sota l'acció d'un camp elèctric uniforme que es crea aplicant una diferència de potencial de $15\\ \\text{kV}$ entre l'ànode i el càtode.\n\n**Dades:** $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$; $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$.",
+      "figures": [
+        {
+          "src": "img/fisica/2021-S/e2.png",
+          "peu": "Esquema d'una màquina de soldadura per feix d'electrons"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Si la separació entre el càtode i l'ànode és d'$1{,}50\\ \\text{cm}$, determineu el mòdul del camp elèctric que es crea entre l'un i l'altre. Feu un esquema que indiqui la trajectòria dels electrons i la direcció i el sentit del camp elèctric. Quina placa es troba a un potencial més alt, l'ànode o el càtode? Justifiqueu la resposta.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Considerant que un electró està situat al càtode i parteix del repòs, determineu l'energia i el mòdul de la velocitat de l'electró quan surt de l'ànode. Si la peça que s'ha de soldar es troba al mateix potencial que l'ànode, a quina velocitat impacta l'electró contra aquesta peça?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Diferència de potencial: $\\Delta V = 15\\ \\text{kV} = 1{,}5 \\times 10^{4}\\ \\text{V}$\n- Separació càtode–ànode: $d = 1{,}50\\ \\text{cm} = 0{,}0150\\ \\text{m}$\n- $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$, $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$\n- L'electró surt del repòs: $v_0 = 0$\n- Incògnites: $E$, esquema i placa de potencial més alt (a); $E_c$ i $v$ a l'ànode i velocitat d'impacte (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Mòdul del camp elèctric",
+            "cos": "Entre dues plaques amb un camp **uniforme**, el camp i la diferència de potencial es relacionen amb $\\Delta V = E\\,d$:\n\n$$E = \\frac{\\Delta V}{d} = \\frac{15\\,000}{0{,}0150} = 1{,}0 \\times 10^{6}\\ \\text{V/m}$$\n\nResultat: **$E = 1{,}0 \\times 10^{6}\\ \\text{V/m}$** (o N/C)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Esquema: sentit del camp i de la força",
+            "cos": "Els electrons han d'anar del càtode cap a l'ànode (i després cap a la peça), de manera que la força elèctrica sobre ells ha d'apuntar **del càtode cap a l'ànode**. Com que $\\vec F = q\\vec E$ i la càrrega de l'electró és **negativa**, el camp elèctric té **sentit contrari a la força**: apunta de l'ànode cap al càtode. La trajectòria de l'electró és una recta perpendicular a les plaques, en el sentit de la força.\n\n![Esquema del camp elèctric i la força sobre l'electró entre càtode i ànode](img/fisica/2021-S/e2-sol.png)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Quina placa té més potencial",
+            "cos": "El camp elèctric sempre apunta cap on **disminueix** el potencial. Si $\\vec E$ va de l'ànode cap al càtode, el potencial és més alt a l'ànode.\n\nTambé es pot veure amb el treball: perquè l'electró s'acceleri, el camp ha de fer un treball positiu,\n\n$$W = -q\\,\\Delta V = |e|\\,(V_\\text{ànode} - V_\\text{càtode}) > 0 \\;\\Longrightarrow\\; V_\\text{ànode} > V_\\text{càtode}$$\n\nResultat: **l'ànode és a potencial més alt**. (Les càrregues negatives es mouen espontàniament cap a potencials més alts.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica a la sortida de l'ànode",
+            "cos": "Pel **teorema de l'energia cinètica**, el treball del camp elèctric és igual a l'increment d'energia cinètica de l'electró. Com que parteix del repòs:\n\n$$E_c = \\tfrac{1}{2} m v^2 - 0 = W = |e|\\,\\Delta V = 1{,}602 \\times 10^{-19} \\cdot 15\\,000 = 2{,}403 \\times 10^{-15}\\ \\text{J}$$\n\nResultat: **$E_c = 2{,}40 \\times 10^{-15}\\ \\text{J}$** (és a dir, $15\\ \\text{keV}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat a la sortida de l'ànode",
+            "cos": "Aïllem la velocitat de l'energia cinètica:\n\n$$v = \\sqrt{\\frac{2E_c}{m_e}} = \\sqrt{\\frac{2 \\cdot 2{,}403 \\times 10^{-15}}{9{,}11 \\times 10^{-31}}} = 7{,}26 \\times 10^{7}\\ \\text{m/s}$$\n\nResultat: **$v = 7{,}26 \\times 10^{7}\\ \\text{m/s}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat d'impacte contra la peça",
+            "cos": "Entre l'ànode i la peça no hi ha diferència de potencial ($\\Delta V = 0$), així que el camp elèctric no fa treball (el camp en aquesta regió és nul). Sense forces, l'electró es mou a **velocitat constant** (principi d'inèrcia):\n\nResultat: **$v_\\text{impacte} = 7{,}26 \\times 10^{7}\\ \\text{m/s}$**, la mateixa que a la sortida de l'ànode."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E = 1{,}0 \\times 10^{6}\\ \\text{V/m}$, dirigit de l'ànode cap al càtode; l'ànode és a potencial més alt."
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_c = 2{,}40 \\times 10^{-15}\\ \\text{J}$; $v = 7{,}26 \\times 10^{7}\\ \\text{m/s}$; impacta a la mateixa velocitat, $7{,}26 \\times 10^{7}\\ \\text{m/s}$"
+          }
+        ],
+        "nota": "La velocitat obtinguda és un 24 % de la velocitat de la llum; un càlcul relativista donaria un valor una mica més petit (uns $7{,}1 \\times 10^{7}\\ \\text{m/s}$), però a la PAU s'espera el càlcul clàssic, com fa la solució oficial."
+      }
+    },
+    {
+      "id": "fisica-2021-S-e3",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Ones estacionàries en una corda de violí i so produït a l'aire",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "ones estacionàries",
+        "harmònics",
+        "nodes i ventres",
+        "longitud d'ona",
+        "velocitat del so"
+      ],
+      "dificultat": 1,
+      "pagines": [
+        6
+      ],
+      "enunciat": "La corda d'un violí fa $32\\ \\text{cm}$ de llarg i vibra amb una freqüència fonamental de $196\\ \\text{Hz}$.\n\n**Dada:** La velocitat del so en l'aire és de $340\\ \\text{m s}^{-1}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina és la longitud d'ona del primer harmònic (fonamental)? Justifiqueu la resposta. Representeu el segon harmònic i indiqueu-hi la posició dels nodes i els ventres.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Quina és la freqüència i la longitud d'ona del so que és produït pel primer harmònic del violí i que es propaga per l'aire?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Longitud de la corda: $L = 32\\ \\text{cm} = 0{,}32\\ \\text{m}$\n- Freqüència fonamental: $f_1 = 196\\ \\text{Hz}$\n- Velocitat del so a l'aire: $v_\\text{so} = 340\\ \\text{m/s}$\n- Incògnites: $\\lambda_1$ i esquema del 2n harmònic (a); $f$ i $\\lambda$ del so a l'aire (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Longitud d'ona del fonamental",
+            "cos": "La corda està fixada pels dos extrems, que han de ser **nodes**. Les ones estacionàries possibles són les que hi caben amb un nombre sencer de mitges longituds d'ona: $L = n\\,\\dfrac{\\lambda_n}{2}$. El fonamental ($n = 1$) és el més senzill: dos nodes als extrems i un sol ventre al mig, és a dir, **mitja longitud d'ona** dins la corda:\n\n$$L = \\frac{\\lambda_1}{2} \\quad\\Longrightarrow\\quad \\lambda_1 = 2L = 2 \\cdot 0{,}32 = 0{,}64\\ \\text{m}$$\n\nResultat: **$\\lambda_1 = 0{,}64\\ \\text{m} = 64\\ \\text{cm}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Segon harmònic: nodes i ventres",
+            "cos": "Al segon harmònic ($n = 2$) hi cap una longitud d'ona sencera: $\\lambda_2 = L = 0{,}32\\ \\text{m}$ (i $f_2 = 2f_1 = 392\\ \\text{Hz}$). Té **tres nodes** i **dos ventres**:\n\n- Nodes (N): als extrems i al centre, $x = 0$, $16$ i $32\\ \\text{cm}$.\n- Ventres (V): a un quart i tres quarts de la corda, $x = 8$ i $24\\ \\text{cm}$.\n\nA la figura, a l'esquerra el fonamental i a la dreta el segon harmònic:\n\n![Fonamental (esquerra) i segon harmònic (dreta) en una corda de longitud L, amb nodes N i ventres V](img/fisica/2021-S/e3-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Freqüència del so a l'aire",
+            "cos": "Quan una ona passa d'un medi a un altre (de la corda a l'aire, a través de la caixa del violí), la **freqüència no canvia**: la fixa la font que vibra. El que canvia és la velocitat de propagació i, per tant, la longitud d'ona.\n\nResultat: **$f = 196\\ \\text{Hz}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Longitud d'ona del so a l'aire",
+            "cos": "A l'aire l'ona es propaga a $340\\ \\text{m/s}$:\n\n$$\\lambda_\\text{aire} = \\frac{v_\\text{so}}{f} = \\frac{340}{196} = 1{,}73\\ \\text{m}$$\n\nResultat: **$\\lambda_\\text{aire} = 1{,}73\\ \\text{m}$**. És diferent de la longitud d'ona a la corda ($0{,}64\\ \\text{m}$), perquè a la corda l'ona viatja a una altra velocitat ($v_\\text{corda} = \\lambda_1 f_1 = 0{,}64 \\cdot 196 = 125\\ \\text{m/s}$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\lambda_1 = 2L = 0{,}64\\ \\text{m}$; 2n harmònic: 3 nodes ($0$, $16$, $32\\ \\text{cm}$) i 2 ventres ($8$ i $24\\ \\text{cm}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$f = 196\\ \\text{Hz}$; $\\lambda_\\text{aire} = 1{,}73\\ \\text{m}$"
+          }
+        ],
+        "nota": "Error típic: pensar que la longitud d'ona del so a l'aire és la mateixa que la de la corda. La magnitud que es conserva en canviar de medi és la freqüència."
+      }
+    },
+    {
+      "id": "fisica-2021-S-e4",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Desintegració beta del neutró i energia alliberada",
+      "tema": "nuclear",
+      "temes_secundaris": [],
+      "conceptes": [
+        "desintegració beta",
+        "neutró",
+        "antineutrí",
+        "defecte de massa",
+        "equivalència massa-energia"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        8
+      ],
+      "enunciat": "Si fem servir una cambra de boira, podem identificar diferents partícules qualitativament en funció de les traces que s'observen. En la fotografia adjunta veiem una traça fina i erràtica que es corba menys que els fotoelectrons, la qual cosa indica que es tracta d'un electró generat en una desintegració $\\beta$. Els neutrons lliures són inestables i es descomponen emetent radiació ${}^{\\;\\,0}_{-1}\\beta$.\n\n**Dades:** $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$; $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $1\\ \\text{u} = 1{,}660\\,54 \\times 10^{-27}\\ \\text{kg}$.\n\nMasses (en u):\n\n| Neutró | Protó | Electró | Antineutrí |\n|---|---|---|---|\n| $1{,}008\\,665$ | $1{,}007\\,276$ | $5{,}485\\,8 \\times 10^{-4}$ | $\\approx 0$ |",
+      "figures": [
+        {
+          "src": "img/fisica/2021-S/e4.png",
+          "peu": "Traça d'un electró (partícula β) en una cambra de boira"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Escriviu la reacció de desintegració d'un neutró identificant cadascuna de les partícules implicades.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'energia que es desprèn en la desintegració d'un neutró i expresseu-ne el resultat en $\\text{keV}$.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": "a",
+            "titol": "Reacció de desintegració del neutró",
+            "cos": "En la desintegració $\\beta^-$, un **neutró** es transforma en un **protó**, i s'emeten un **electró** (la partícula $\\beta^-$) i un **antineutrí electrònic**. S'han de conservar la càrrega (nombre de baix) i el nombre de nucleons (nombre de dalt):\n\n$$ {}^{1}_{0}n \\;\\longrightarrow\\; {}^{1}_{1}p \\;+\\; {}^{\\;\\,0}_{-1}e \\;+\\; {}^{0}_{0}\\bar{\\nu}_e $$\n\n- Nombre màssic: $1 = 1 + 0 + 0$ ✓\n- Càrrega: $0 = 1 + (-1) + 0$ ✓\n\nPartícules: ${}^{1}_{0}n$ neutró, ${}^{1}_{1}p$ protó, ${}^{\\;\\,0}_{-1}e$ (o ${}^{\\;\\,0}_{-1}\\beta$) electró, $\\bar\\nu_e$ antineutrí electrònic (necessari per conservar l'energia i el moment angular; no té càrrega i té massa pràcticament nul·la)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Defecte de massa",
+            "cos": "L'energia alliberada prové de la massa que «desapareix»: la massa del neutró és més gran que la suma de les masses dels productes.\n\n$$\\Delta m = m_n - (m_p + m_e + m_{\\bar\\nu}) = 1{,}008\\,665 - (1{,}007\\,276 + 0{,}000\\,548\\,58 + 0) = 8{,}404 \\times 10^{-4}\\ \\text{u}$$\n\nEn kilograms:\n\n$$\\Delta m = 8{,}404 \\times 10^{-4} \\cdot 1{,}660\\,54 \\times 10^{-27} = 1{,}40 \\times 10^{-30}\\ \\text{kg}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia alliberada (equivalència massa-energia)",
+            "cos": "Per l'equació d'Einstein, aquesta massa es converteix en energia (cinètica dels productes):\n\n$$E = \\Delta m\\,c^2 = 1{,}40 \\times 10^{-30} \\cdot (3{,}00 \\times 10^{8})^2 = 1{,}26 \\times 10^{-13}\\ \\text{J}$$\n\nPassem a electronvolts dividint per $1{,}602 \\times 10^{-19}\\ \\text{J/eV}$:\n\n$$E = \\frac{1{,}26 \\times 10^{-13}}{1{,}602 \\times 10^{-19}} = 7{,}84 \\times 10^{5}\\ \\text{eV}$$\n\nResultat: **$E = 784\\ \\text{keV}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "${}^{1}_{0}n \\to {}^{1}_{1}p + {}^{\\;\\,0}_{-1}e + {}^{0}_{0}\\bar\\nu_e$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\Delta m = 8{,}404 \\times 10^{-4}\\ \\text{u}$; $E = 1{,}26 \\times 10^{-13}\\ \\text{J} = 784\\ \\text{keV}$"
+          }
+        ],
+        "nota": "Als criteris oficials, oblidar l'antineutrí a l'apartat a) penalitza 0,5 punts."
+      }
+    },
+    {
+      "id": "fisica-2021-S-e5",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Força del camp magnètic terrestre sobre una línia d'alta tensió i corrents induïts en espires",
+      "tema": "camp-magnetic",
+      "temes_secundaris": [
+        "induccio"
+      ],
+      "conceptes": [
+        "força sobre un corrent",
+        "producte vectorial",
+        "flux magnètic",
+        "llei de faraday",
+        "camp creat per un fil"
+      ],
+      "dificultat": 3,
+      "pagines": [
+        10
+      ],
+      "enunciat": "Ens trobem en un indret en què el camp magnètic terrestre té una magnitud de $35\\ \\mu\\text{T}$ i apunta cap al nord, però està inclinat $50^\\circ$ (cap avall) respecte a l'horitzontal (figura *a*). Per un cable d'una línia d'alta tensió situada en aquest indret hi circula un corrent de $200\\ \\text{A}$ d'intensitat. Aquest corrent circula d'est a oest (cap endins a la figura *a*, $\\otimes$).\n\n**Nota:** Considereu que el camp magnètic és uniforme en la regió on es troben les espires.",
+      "figures": [
+        {
+          "src": "img/fisica/2021-S/e5.png",
+          "peu": "(a) Camp magnètic terrestre inclinat 50° i cable amb corrent cap endins. (b) Camp creat pel corrent altern del cable i espires A, B i C a sota"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la força magnètica que actua sobre un tram de 100 metres del cable deguda al camp magnètic terrestre. Després, determineu-ne el mòdul i representeu-ne esquemàticament la direcció i el sentit. Justifiqueu la resposta.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "El corrent que circula pel cable d'alta tensió és un corrent altern i genera un camp magnètic que contínuament canvia de sentit (vegeu la figura *b*). A sota del cable s'han situat tres espires conductores: una (A) és paral·lela a la superfície horitzontal del terreny, una altra (B) és paral·lela al pla del dibuix, i la tercera (C) està situada en el pla vertical que conté la direcció est-oest. En quina o quines de les espires el camp magnètic variable produït per la línia d'alta tensió induirà un corrent elèctric? Justifiqueu la resposta especificant les lleis o els principis físics en què us heu basat.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Camp terrestre: $B = 35\\ \\mu\\text{T} = 3{,}5 \\times 10^{-5}\\ \\text{T}$, cap al nord i inclinat $50^\\circ$ cap avall\n- Corrent: $I = 200\\ \\text{A}$, d'est a oest (cap endins del paper, $\\otimes$)\n- Longitud del tram: $L = 100\\ \\text{m}$\n- Incògnites: $\\vec F$ sobre el cable (a); en quines espires hi ha corrent induït (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Expressió de la força i angle entre cable i camp",
+            "cos": "Sobre un fil rectilini amb corrent dins d'un camp magnètic actua la **força de Laplace**:\n\n$$\\vec F = I\\,(\\vec L \\times \\vec B), \\qquad |\\vec F| = I\\,L\\,B\\,\\sin\\alpha$$\n\non $\\alpha$ és l'angle entre el cable i el camp. El cable va d'est a oest (perpendicular al pla del dibuix) i el camp és dins del pla del dibuix (pla vertical nord-sud), per tant són **perpendiculars**: $\\alpha = 90^\\circ$. La inclinació de $50^\\circ$ no afecta el mòdul."
+          },
+          {
+            "apartat": "a",
+            "titol": "Mòdul de la força",
+            "cos": "$$|\\vec F| = 200 \\cdot 100 \\cdot 3{,}5 \\times 10^{-5} \\cdot \\sin 90^\\circ = 0{,}70\\ \\text{N}$$\n\nResultat: **$F = 0{,}70\\ \\text{N}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Direcció i sentit de la força",
+            "cos": "Agafem eixos: $x$ cap al nord (dreta de la figura), $y$ cap amunt i $z$ cap enfora del paper. Aleshores:\n\n- $\\vec L = -L\\,\\vec k$ (cap endins, d'est a oest)\n- $\\vec B = B(\\cos 50^\\circ\\,\\vec i - \\sin 50^\\circ\\,\\vec j)$\n\n$$\\vec L \\times \\vec B = -L B\\left[\\cos 50^\\circ\\,(\\vec k \\times \\vec i) - \\sin 50^\\circ\\,(\\vec k \\times \\vec j)\\right] = L B\\left(-\\sin 50^\\circ\\,\\vec i - \\cos 50^\\circ\\,\\vec j\\right)$$\n\nLa força apunta **cap al sud i cap avall**, perpendicular al cable i al camp. Forma $50^\\circ$ amb la vertical (i $40^\\circ$ amb l'horitzontal). El mateix resultat s'obté amb la regla de la mà dreta: girant $\\vec L$ (endins) cap a $\\vec B$, el polze apunta avall i cap al sud.\n\n$$\\vec F = 0{,}70\\,(-\\sin 50^\\circ\\,\\vec i - \\cos 50^\\circ\\,\\vec j) = (-0{,}54\\,\\vec i - 0{,}45\\,\\vec j)\\ \\text{N}$$\n\n![Esquema: cable amb corrent cap endins, camp B inclinat 50° i força F perpendicular cap avall i cap al sud](img/fisica/2021-S/e5-sol.png)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Idea: hi ha corrent induït si varia el flux",
+            "cos": "Segons la **llei de Faraday-Lenz**, en una espira s'indueix una força electromotriu quan varia el **flux magnètic** que la travessa:\n\n$$\\varepsilon = -\\frac{d\\Phi}{dt}, \\qquad \\Phi = \\vec B \\cdot \\vec S = B\\,S\\cos\\theta$$\n\non $\\theta$ és l'angle entre el camp i el vector superfície (perpendicular a l'espira). Si $\\vec B$ és paral·lel al pla de l'espira ($\\theta = 90^\\circ$), el flux és **sempre zero**, encara que $B$ canviï, i no s'indueix res.\n\nLes línies de camp creades pel cable són circumferències centrades en el cable (figura *b*). Just a sota del cable, el camp és **horitzontal i dins del pla del dibuix** (direcció nord-sud), i canvia de sentit amb el corrent altern."
+          },
+          {
+            "apartat": "b",
+            "titol": "Espires A i B: flux nul",
+            "cos": "- **Espira A** (horitzontal): el seu vector superfície és vertical, perpendicular al camp (que és horitzontal). $\\Phi = B S \\cos 90^\\circ = 0$.\n- **Espira B** (paral·lela al pla del dibuix): el seu vector superfície apunta en la direcció est-oest (perpendicular al paper), també perpendicular al camp. $\\Phi = 0$.\n\nEn aquestes dues espires el camp és tangent a la superfície, el flux és nul en tot moment i **no s'indueix corrent**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Espira C: flux variable i corrent induït",
+            "cos": "- **Espira C** (pla vertical est-oest): el seu vector superfície apunta en la direcció nord-sud, **paral·lel al camp**. El flux és màxim: $\\Phi = B\\,S\\cos 0^\\circ = B\\,S$.\n\nEl camp creat pel fil és proporcional al corrent ($B = \\mu_0 I/2\\pi r$). Com que el corrent és altern, $I = I_\\text{màx}\\cos\\omega t$, el flux també oscil·la, $\\Phi = \\Phi_\\text{màx}\\cos\\omega t$, i per la llei de Faraday s'indueix una fem\n\n$$\\varepsilon = -\\frac{d\\Phi}{dt} = \\varepsilon_\\text{màx}\\sin\\omega t$$\n\nPer la **llei d'Ohm**, aquesta fem fa circular un corrent $I_\\text{ind} = \\varepsilon/R$ (també altern) per l'espira.\n\nResultat: **només s'indueix corrent a l'espira C**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$F = 0{,}70\\ \\text{N}$, perpendicular al cable i al camp, cap avall i cap al sud, formant $50^\\circ$ amb la vertical"
+          },
+          {
+            "apartat": "b",
+            "valor": "Només a l'espira C (flux variable); a A i B el camp és paral·lel a l'espira i el flux és sempre nul"
+          }
+        ],
+        "nota": "El camp terrestre és constant i no indueix res a les espires; només compta el camp variable del corrent altern."
+      }
+    },
+    {
+      "id": "fisica-2021-S-e6",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Nivell d'intensitat sonora de diversos violins",
+      "tema": "ones",
+      "temes_secundaris": [],
+      "conceptes": [
+        "nivell d'intensitat sonora",
+        "decibels",
+        "intensitat del so",
+        "logaritmes"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        12
+      ],
+      "enunciat": "Un violinista interpreta un solo durant un concert. De cop i volta, quatre violins més l'acompanyen, tocant amb la mateixa intensitat que el primer.\n\n**Dada:** $I_0 = 10^{-12}\\ \\text{W m}^{-2}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quants decibels ha augmentat el nivell d'intensitat del so?",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Ara els cinc violins passen de *mezzo piano* a *forte* i mesurem un nivell d'intensitat del so de $76{,}98\\ \\text{dB}$. Suposant que tots els violins toquen amb la mateixa intensitat, quina és la intensitat $I$ amb la qual toca un sol violí?",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Intensitat de referència: $I_0 = 10^{-12}\\ \\text{W/m}^2$\n- Inicialment 1 violí (intensitat $I$); després 5 violins iguals (intensitat total $5I$)\n- Nivell final a l'apartat b: $\\beta = 76{,}98\\ \\text{dB}$\n- Incògnites: $\\Delta\\beta$ (a); $I$ d'un violí (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Nivell d'intensitat inicial i final",
+            "cos": "El nivell d'intensitat sonora es defineix com\n\n$$\\beta = 10\\log\\frac{I}{I_0}\\ \\text{(dB)}$$\n\nLes **intensitats** (energia per unitat de temps i de superfície) de fonts independents **se sumen**; els decibels, no. Amb un violí la intensitat és $I$, i amb cinc és $5I$:\n\n$$\\beta_i = 10\\log\\frac{I}{I_0}, \\qquad \\beta_f = 10\\log\\frac{5I}{I_0}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Augment del nivell",
+            "cos": "Restem i fem servir que $\\log a - \\log b = \\log(a/b)$:\n\n$$\\Delta\\beta = 10\\left(\\log\\frac{5I}{I_0} - \\log\\frac{I}{I_0}\\right) = 10\\log 5 = 6{,}99\\ \\text{dB}$$\n\nResultat: **$\\Delta\\beta = 6{,}99\\ \\text{dB}$** (uns $7\\ \\text{dB}$). No depèn de la intensitat del primer violí."
+          },
+          {
+            "apartat": "b",
+            "titol": "Intensitat d'un violí",
+            "cos": "Ara el nivell total dels cinc violins és $76{,}98\\ \\text{dB}$:\n\n$$76{,}98 = 10\\log\\frac{5I}{I_0} \\;\\Longrightarrow\\; \\frac{5I}{I_0} = 10^{7{,}698} \\;\\Longrightarrow\\; I = \\frac{I_0 \\cdot 10^{7{,}698}}{5} = \\frac{10^{-12} \\cdot 10^{7{,}698}}{5}$$\n\n$$I = \\frac{4{,}99 \\times 10^{-5}}{5} = 9{,}98 \\times 10^{-6}\\ \\text{W/m}^2$$\n\nResultat: **$I = 9{,}98 \\times 10^{-6}\\ \\text{W/m}^2$** (pràcticament $10^{-5}\\ \\text{W/m}^2$, que correspon a $70\\ \\text{dB}$ per a un sol violí)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\Delta\\beta = 10\\log 5 = 6{,}99\\ \\text{dB}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$I = 9{,}98 \\times 10^{-6}\\ \\text{W/m}^2$"
+          }
+        ],
+        "nota": "Error típic: multiplicar per 5 els decibels. El que se suma són les intensitats, no els nivells d'intensitat."
+      }
+    },
+    {
+      "id": "fisica-2021-S-e7",
+      "exercici": 7,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Flux i força electromotriu en un alternador de 100 espires",
+      "tema": "induccio",
+      "temes_secundaris": [],
+      "conceptes": [
+        "flux magnètic",
+        "llei de faraday",
+        "alternador",
+        "força electromotriu",
+        "velocitat angular"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        13
+      ],
+      "enunciat": "Un alternador consisteix en una bobina de $100$ espires rectangulars. Les dimensions dels costats llarg i curt de la bobina són $2{,}0\\ \\text{cm}$ i $1{,}6\\ \\text{cm}$, respectivament. La bobina gira amb una freqüència de $60$ voltes per segon dins d'un camp magnètic uniforme de magnitud $B = 0{,}1\\ \\text{T}$. L'orientació relativa entre el camp magnètic i la bobina ve donada per l'angle $\\theta$ que formen el camp magnètic i el vector $\\vec S$ perpendicular al pla que conté la bobina.",
+      "figures": [
+        {
+          "src": "img/fisica/2021-S/e7.png",
+          "peu": "Espira dins del camp B, amb el vector superfície S, l'angle θ i l'eix de gir ω"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu el valor del flux del camp magnètic a través d'una espira de la bobina quan el camp magnètic és perpendicular a la superfície de l'espira (angle $\\theta = 0\\ \\text{rad}$) i per a una orientació qualsevol (indiqueu el resultat en funció de l'angle $\\theta$).",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "A partir del flux del camp magnètic a través de la bobina, determineu l'evolució de la força electromotriu en funció del temps, suposant que inicialment l'angle $\\theta$ és igual a $0\\ \\text{rad}$. Calculeu el valor màxim de la força electromotriu induïda en la bobina.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Nombre d'espires: $N = 100$\n- Costats: $a = 2{,}0\\ \\text{cm} = 0{,}020\\ \\text{m}$, $b = 1{,}6\\ \\text{cm} = 0{,}016\\ \\text{m}$ → superfície $S = a\\,b = 3{,}2 \\times 10^{-4}\\ \\text{m}^2$\n- Freqüència de gir: $f = 60\\ \\text{Hz}$ (voltes per segon)\n- Camp: $B = 0{,}1\\ \\text{T}$\n- Incògnites: $\\Phi$ per a una espira (a); $\\varepsilon(t)$ i $\\varepsilon_\\text{màx}$ de la bobina (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Flux per a θ = 0",
+            "cos": "El flux magnètic és el producte escalar del camp pel vector superfície:\n\n$$\\Phi = \\vec B \\cdot \\vec S = B\\,S\\cos\\theta$$\n\nPer a $\\theta = 0$ el camp és perpendicular a l'espira (paral·lel a $\\vec S$) i el flux és màxim:\n\n$$\\Phi_0 = 0{,}1 \\cdot 0{,}020 \\cdot 0{,}016 \\cdot \\cos 0 = 3{,}20 \\times 10^{-5}\\ \\text{Wb}$$\n\nResultat: **$\\Phi_0 = 3{,}20 \\times 10^{-5}\\ \\text{Wb}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Flux per a un angle qualsevol",
+            "cos": "$$\\Phi(\\theta) = B\\,S\\cos\\theta = 3{,}20 \\times 10^{-5}\\cos\\theta\\ \\text{Wb}$$\n\nResultat: **$\\Phi = 3{,}20 \\times 10^{-5}\\cos\\theta\\ \\text{Wb}$** (màxim a $\\theta = 0$, nul a $\\theta = \\pi/2$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Angle en funció del temps",
+            "cos": "La bobina gira uniformement. Cada volta són $2\\pi$ radiants, per tant la velocitat angular és\n\n$$\\omega = 2\\pi f = 2\\pi \\cdot 60 = 120\\pi\\ \\text{rad/s}$$\n\ni, com que $\\theta(0) = 0$: $\\theta(t) = \\omega t = 120\\pi\\,t\\ \\text{rad}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Flux total a través de la bobina",
+            "cos": "La bobina té $N = 100$ espires, i el flux total és $N$ vegades el d'una espira:\n\n$$\\Phi_\\text{total}(t) = N\\,B\\,S\\cos(\\omega t) = 100 \\cdot 3{,}20 \\times 10^{-5}\\cos(120\\pi t) = 3{,}20 \\times 10^{-3}\\cos(120\\pi t)\\ \\text{Wb}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Força electromotriu (llei de Faraday)",
+            "cos": "Segons la **llei de Faraday-Lenz**, la fem induïda és menys la derivada del flux respecte del temps:\n\n$$\\varepsilon = -\\frac{d\\Phi_\\text{total}}{dt} = -\\frac{d}{dt}\\left[3{,}20 \\times 10^{-3}\\cos(120\\pi t)\\right] = 120\\pi \\cdot 3{,}20 \\times 10^{-3}\\sin(120\\pi t)$$\n\n$$\\varepsilon(t) = 1{,}21\\,\\sin(120\\pi t)\\ \\text{V} \\quad (t\\ \\text{en s})$$\n\nLa fem és **alterna** (sinusoidal), de freqüència $60\\ \\text{Hz}$."
+          },
+          {
+            "apartat": "b",
+            "titol": "Fem màxima",
+            "cos": "El valor màxim s'obté quan $\\sin(120\\pi t) = \\pm 1$:\n\n$$\\varepsilon_\\text{màx} = N\\,B\\,S\\,\\omega = 100 \\cdot 0{,}1 \\cdot 3{,}2 \\times 10^{-4} \\cdot 120\\pi = 1{,}21\\ \\text{V}$$\n\nResultat: **$\\varepsilon_\\text{màx} = 1{,}21\\ \\text{V}$**. Fixa't que la fem és màxima quan el flux és nul ($\\theta = \\pi/2$), perquè és llavors quan el flux varia més ràpidament."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\Phi_0 = 3{,}20 \\times 10^{-5}\\ \\text{Wb}$; $\\Phi(\\theta) = 3{,}20 \\times 10^{-5}\\cos\\theta\\ \\text{Wb}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$\\varepsilon(t) = 1{,}21\\sin(120\\pi t)\\ \\text{V}$; $\\varepsilon_\\text{màx} = 1{,}21\\ \\text{V}$"
+          }
+        ],
+        "nota": "L'enunciat diu «el camp magnètic és perpendicular a la superfície de l'espira (θ = 0)»: vol dir que el camp travessa l'espira de cara, paral·lel al vector superfície."
+      }
+    },
+    {
+      "id": "fisica-2021-S-e8",
+      "exercici": 8,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Efecte fotoelèctric amb llum verda i groga: treball d'extracció i potencial de frenada",
+      "tema": "quantica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "efecte fotoelèctric",
+        "treball d'extracció",
+        "freqüència llindar",
+        "potencial de frenada",
+        "energia del fotó"
+      ],
+      "dificultat": 2,
+      "pagines": [
+        14
+      ],
+      "enunciat": "En un experiment fotoelèctric, il·luminem una superfície metàl·lica amb una llum verda que té una longitud d'ona de $546{,}1\\ \\text{nm}$. Observem que el potencial de frenada és de $0{,}376\\ \\text{V}$ (tensió per la qual desapareix el corrent).\n\n**Dades:** $m_e = 9{,}11 \\times 10^{-31}\\ \\text{kg}$; $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$; $1\\ \\text{eV} = 1{,}602 \\times 10^{-19}\\ \\text{J}$; $c = 3{,}00 \\times 10^{8}\\ \\text{m s}^{-1}$; $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Determineu la funció de treball (treball d'extracció) d'aquesta superfície metàl·lica. Calculeu el llindar de freqüència per a l'extracció de fotoelectrons d'aquest metall.",
+          "punts": 1.25
+        },
+        {
+          "id": "b",
+          "enunciat": "Si il·luminem la superfície anterior amb una llum groga de $587{,}5\\ \\text{nm}$, determineu l'energia dels fotons incidents. Calculeu el potencial de frenada amb aquesta nova font de llum.",
+          "punts": 1.25
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Llum verda: $\\lambda_1 = 546{,}1\\ \\text{nm} = 5{,}461 \\times 10^{-7}\\ \\text{m}$; potencial de frenada $V_1 = 0{,}376\\ \\text{V}$\n- Llum groga: $\\lambda_2 = 587{,}5\\ \\text{nm} = 5{,}875 \\times 10^{-7}\\ \\text{m}$\n- $h = 6{,}63 \\times 10^{-34}\\ \\text{J s}$, $c = 3{,}00 \\times 10^{8}\\ \\text{m/s}$, $|e| = 1{,}602 \\times 10^{-19}\\ \\text{C}$\n- Incògnites: $W_e$ i $f_0$ (a); $E_\\text{fotó}$ i $V_2$ (b)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia cinètica màxima a partir del potencial de frenada",
+            "cos": "El potencial de frenada és la tensió que atura fins i tot els electrons més ràpids: el treball elèctric de frenada iguala la seva energia cinètica màxima.\n\n$$E_{c,\\text{màx}} = |e|\\,V_\\text{fre} = 0{,}376\\ \\text{eV} = 0{,}376 \\cdot 1{,}602 \\times 10^{-19} = 6{,}02 \\times 10^{-20}\\ \\text{J}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia dels fotons verds",
+            "cos": "Segons Planck-Einstein, cada fotó porta una energia\n\n$$E_\\text{fotó} = h f = \\frac{h c}{\\lambda} = \\frac{6{,}63 \\times 10^{-34} \\cdot 3{,}00 \\times 10^{8}}{5{,}461 \\times 10^{-7}} = 3{,}64 \\times 10^{-19}\\ \\text{J} = 2{,}27\\ \\text{eV}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Treball d'extracció (balanç energètic d'Einstein)",
+            "cos": "L'energia del fotó es fa servir per arrencar l'electró del metall (treball d'extracció $W_e$) i la resta queda com a energia cinètica:\n\n$$E_\\text{fotó} = W_e + E_{c,\\text{màx}} \\;\\Longrightarrow\\; W_e = 3{,}64 \\times 10^{-19} - 6{,}02 \\times 10^{-20} = 3{,}04 \\times 10^{-19}\\ \\text{J}$$\n\nResultat: **$W_e = 3{,}04 \\times 10^{-19}\\ \\text{J} = 1{,}90\\ \\text{eV}$**."
+          },
+          {
+            "apartat": "a",
+            "titol": "Freqüència llindar",
+            "cos": "La freqüència llindar és la dels fotons que tenen just l'energia per arrencar l'electró (amb energia cinètica nul·la):\n\n$$h f_0 = W_e \\;\\Longrightarrow\\; f_0 = \\frac{W_e}{h} = \\frac{3{,}04 \\times 10^{-19}}{6{,}63 \\times 10^{-34}} = 4{,}58 \\times 10^{14}\\ \\text{Hz}$$\n\nResultat: **$f_0 = 4{,}58 \\times 10^{14}\\ \\text{Hz}$**. Amb llum de freqüència més petita no s'emeten electrons, per molt intensa que sigui."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia dels fotons grocs",
+            "cos": "$$E_\\text{fotó} = \\frac{h c}{\\lambda_2} = \\frac{6{,}63 \\times 10^{-34} \\cdot 3{,}00 \\times 10^{8}}{5{,}875 \\times 10^{-7}} = 3{,}38 \\times 10^{-19}\\ \\text{J} = 2{,}11\\ \\text{eV}$$\n\nResultat: **$E_\\text{fotó} = 3{,}38 \\times 10^{-19}\\ \\text{J} = 2{,}11\\ \\text{eV}$**. És més petita que la de la llum verda (més longitud d'ona, menys energia), però encara supera el treball d'extracció, així que hi ha efecte fotoelèctric."
+          },
+          {
+            "apartat": "b",
+            "titol": "Nou potencial de frenada",
+            "cos": "El metall és el mateix, per tant $W_e$ no canvia:\n\n$$E_{c,\\text{màx}} = E_\\text{fotó} - W_e = 3{,}38 \\times 10^{-19} - 3{,}04 \\times 10^{-19} = 3{,}46 \\times 10^{-20}\\ \\text{J}$$\n\n$$V_\\text{fre} = \\frac{E_{c,\\text{màx}}}{|e|} = \\frac{3{,}46 \\times 10^{-20}}{1{,}602 \\times 10^{-19}} = 0{,}216\\ \\text{V}$$\n\nResultat: **$V_\\text{fre} = 0{,}216\\ \\text{V}$** (més petit que amb la llum verda, perquè els electrons surten amb menys energia)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$W_e = 3{,}04 \\times 10^{-19}\\ \\text{J} = 1{,}90\\ \\text{eV}$; $f_0 = 4{,}58 \\times 10^{14}\\ \\text{Hz}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_\\text{fotó} = 3{,}38 \\times 10^{-19}\\ \\text{J} = 2{,}11\\ \\text{eV}$; $V_\\text{fre} = 0{,}216\\ \\text{V}$"
+          }
+        ],
+        "nota": "Per evitar errors d'arrodoniment en la resta de l'apartat b, convé guardar més xifres als passos intermedis ($W_e = 3{,}040 \\times 10^{-19}$ J, $E_\\text{fotó} = 3{,}386 \\times 10^{-19}$ J). La massa de l'electró no cal per a cap càlcul."
+      }
+    }
+  ]
+}
