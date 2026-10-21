@@ -109,6 +109,9 @@ a.btn { text-decoration: none; color: inherit; display: inline-block; }
 .mockhead .btn { background: var(--paper); color: var(--ink); border-color: var(--paper); }
 .mockhead .btn.primary { background: var(--highlight); color: #17212b; border-color: var(--highlight); }
 .mock.locked [data-act="sol"] { display: none; }
+.mocksearch { display: grid; gap: 8px; }
+.chip.sugg .kind { font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); margin-right: 2px; }
+.chips.picked { align-items: center; }
 .mock.locked .verdict { display: none; }
 .opt.sel { border-color: var(--accent); background: var(--accent-soft); }
 .mockscore { background: var(--ok-soft); border: 1px solid var(--ok); border-radius: 12px; padding: 12px 16px; }
@@ -570,6 +573,43 @@ function setView(v) {
 // ---------- Prepara un examen ----------
 let mock = null;            // { assig, ids, locked, start, end }
 let mockTemes = [];
+let mockConc = [];   // conceptes (en minúscula)
+let mockText = [];   // paraules lliures que han de sortir al text
+function mockTags() {
+  return [...mockTemes.map((v) => ({ k: "t", v })), ...mockConc.map((v) => ({ k: "c", v })), ...mockText.map((v) => ({ k: "x", v }))];
+}
+function tagMatch(p, tag) {
+  if (tag.k === "t") return p.tema === tag.v || (p.temes_secundaris || []).includes(tag.v);
+  if (tag.k === "c") return p._conc.includes(tag.v);
+  return norm(tag.v).split(/\s+/).filter(Boolean).every((w) => p._hay.includes(w));
+}
+function tagLabel(tag) {
+  return tag.k === "t" ? temaNom(F.assig, tag.v) : tag.k === "c" ? tag.v : `«${tag.v}» al text`;
+}
+function mockSuggest(q) {
+  const nq = norm(q).trim();
+  if (nq.length < 2) return [];
+  const pool = PROBS.filter(inAssig);
+  const out = [];
+  const temes = [...new Set(pool.flatMap((p) => [p.tema, ...(p.temes_secundaris || [])]))];
+  for (const t of temes) if (norm(temaNom(F.assig, t)).includes(nq) || norm(t).includes(nq)) out.push({ k: "t", v: t });
+  const conc = [...new Set(pool.flatMap((p) => p._conc))];
+  for (const c of conc) if (norm(c).includes(nq)) out.push({ k: "c", v: c });
+  out.push({ k: "x", v: q.trim() });
+  const count = (tag) => pool.filter((p) => tagMatch(p, tag)).length;
+  return out.map((t) => ({ ...t, n: count(t) })).filter((t) => t.n > 0)
+    .sort((a, b) => (a.k === "x") - (b.k === "x") || (a.k === "t" ? -1 : 0) - (b.k === "t" ? -1 : 0) || b.n - a.n)
+    .slice(0, 16);
+}
+function renderSuggest() {
+  const box = document.getElementById("mocksug");
+  if (!box) return;
+  const q = document.getElementById("mockq").value;
+  const sug = mockSuggest(q);
+  box.innerHTML = q.trim().length < 2 ? "" : sug.length
+    ? sug.map((t) => `<button type="button" class="chip sugg" data-tagk="${t.k}" data-tagv="${esc(t.v)}"><span class="kind">${t.k === "t" ? "tema" : t.k === "c" ? "concepte" : "text"}</span>${esc(tagLabel(t))}<span class="n">${t.n}</span></button>`).join("")
+    : `<span class="count">Cap pregunta conté «${esc(q)}». Prova amb una altra paraula.</span>`;
+}
 let mockTimer = null;
 const mockOpts = { n: 5, test: true, curs: "", nous: true };
 function mockMinutes(p) {
@@ -583,7 +623,7 @@ function fmtTime(sec) {
 }
 function mockPool() {
   return PROBS.filter((p) => inAssig(p)
-    && (!mockTemes.length || mockTemes.some((t) => p.tema === t || (p.temes_secundaris || []).includes(t)))
+    && (!mockTags().length || mockTags().some((tag) => tagMatch(p, tag)))
     && (!mockOpts.curs || (mockOpts.curs === "1r" ? p._curs === "1r" : true))
     && (mockOpts.test || p.tipus !== "test"));
 }
@@ -591,8 +631,9 @@ function generateMock() {
   const pool = mockPool();
   const rnd = () => Math.random() - 0.5;
   const fresh = (p) => (mockOpts.nous && progress[p.id] === "done" ? 1 : 0);
-  const temes = mockTemes.length ? mockTemes.slice() : [...new Set(pool.map((p) => p.tema))];
-  const bucket = Object.fromEntries(temes.map((t) => [t, pool.filter((p) => p.tema === t || (p.temes_secundaris || []).includes(t))
+  const tags = mockTags().length ? mockTags() : [...new Set(pool.map((p) => p.tema))].map((v) => ({ k: "t", v }));
+  const temes = tags.map((t) => t.k + ":" + t.v);
+  const bucket = Object.fromEntries(tags.map((tag) => [tag.k + ":" + tag.v, pool.filter((p) => tagMatch(p, tag))
     .sort((a, b) => fresh(a) - fresh(b) || rnd())]));
   const maxTest = Math.ceil(mockOpts.n / 3);
   const chosen = [], used = new Set(), usedText = new Set();
@@ -625,7 +666,13 @@ function renderMock() {
   let html = `<div class="mockform">
     <h2>Prepara't un examen de ${esc(nom)}</h2>
     <p>Tria els temes que entren a l'examen i l'app et munta un examen de pràctica amb preguntes de selectivitat de diferents anys. Les solucions s'amaguen fins que acabis.</p>
-    <div><span class="lbl count">Temes que entren (si no en tries cap, entren tots)</span>
+    <div class="mocksearch">
+      <label class="lbl count" for="mockq">Què entra a l'examen? Escriu-ho i tria les etiquetes que et suggereixo</label>
+      <input id="mockq" class="search" type="search" autocomplete="off" placeholder="p. ex. pla inclinat, derivades, Restauració, Kant, VAN...">
+      <div class="chips" id="mocksug"></div>
+      ${mockTags().length ? `<div class="chips picked"><span class="count">Has triat:</span>${mockTags().map((t) => `<button type="button" class="chip" aria-pressed="true" data-untag="${t.k}" data-tagv="${esc(t.v)}" title="Treu-la">${esc(tagLabel(t))} ✕</button>`).join("")}<button type="button" class="linkbtn" data-act="mockclear">Treu-les totes</button></div>` : ""}
+    </div>
+    <div><span class="lbl count">O tria temes sencers (si no tries res, entra tot)</span>
       <div class="chips">${temes.map((t) => `<button type="button" class="chip" data-mt="${esc(t)}" aria-pressed="${mockTemes.includes(t)}">${esc(temaNom(F.assig, t))}</button>`).join("")}</div></div>
     <div class="mockrow">
       <label>Preguntes <select id="mockn">${[3, 4, 5, 6, 8, 10, 12].map((n) => `<option ${n === mockOpts.n ? "selected" : ""}>${n}</option>`).join("")}</select></label>
@@ -640,7 +687,7 @@ function renderMock() {
     const ps = mock.ids.map((id) => byId[id]).filter(Boolean);
     const mins = ps.reduce((a, p) => a + mockMinutes(p), 0);
     const pts = ps.reduce((a, p) => a + (+p.punts || 0), 0);
-    const temesEx = [...new Set(ps.map((p) => temaNom(F.assig, p.tema)))].join(", ");
+    const temesEx = mockTags().length ? mockTags().map(tagLabel).join(", ") : [...new Set(ps.map((p) => temaNom(F.assig, p.tema)))].join(", ");
     html += `<div class="mockhead" id="mockhead">
       <span><b>Examen de pràctica</b> · ${ps.length} preguntes · ${String(Math.round(pts * 100) / 100).replace(".", ",")} punts · temps orientatiu ${mins} min</span>
       <span class="sp"></span>
@@ -755,6 +802,22 @@ document.addEventListener("click", (ev) => {
   if (!t) return;
   if (t.dataset.assig) { F = { ...DEFAULT_F, assig: t.dataset.assig, order: F.order }; shown = 15; render(); return setView(view); }
   if (t.dataset.view) return setView(t.dataset.view);
+  if (t.dataset.tagk) {
+    const k = t.dataset.tagk, v = t.dataset.tagv;
+    const arr = k === "t" ? mockTemes : k === "c" ? mockConc : mockText;
+    if (!arr.includes(v)) arr.push(v);
+    renderMock();
+    const q = document.getElementById("mockq"); q.focus();
+    return;
+  }
+  if (t.dataset.untag) {
+    const k = t.dataset.untag, v = t.dataset.tagv;
+    if (k === "t") mockTemes = mockTemes.filter((x) => x !== v);
+    else if (k === "c") mockConc = mockConc.filter((x) => x !== v);
+    else mockText = mockText.filter((x) => x !== v);
+    return renderMock();
+  }
+  if (t.dataset.act === "mockclear") { mockTemes = []; mockConc = []; mockText = []; return renderMock(); }
   if (t.dataset.mt) {
     const v = t.dataset.mt;
     mockTemes = mockTemes.includes(v) ? mockTemes.filter((x) => x !== v) : [...mockTemes, v];
@@ -872,6 +935,14 @@ document.addEventListener("click", (ev) => {
     if (progress[p.id]) art.classList.add(progress[p.id]);
     art.querySelectorAll(".mark").forEach((b) => b.setAttribute("aria-pressed", progress[p.id] === b.dataset.v));
     renderFilters();
+  }
+});
+document.addEventListener("input", (e) => { if (e.target.id === "mockq") renderSuggest(); });
+document.addEventListener("keydown", (e) => {
+  if (e.target.id === "mockq" && e.key === "Enter") {
+    e.preventDefault();
+    const first = document.querySelector("#mocksug .sugg");
+    if (first) first.click();
   }
 });
 let qTimer;
