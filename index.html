@@ -149,6 +149,8 @@ article.prob.review { border-left: 5px solid var(--review); }
 .meta .curs { border-radius: 6px; padding: 2px 8px; font-weight: 600; border: 1px solid currentColor; cursor: help; }
 .meta .curs.c1r { color: var(--ok); }
 .meta .curs.c2n { color: var(--review); }
+.f1info { background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; margin: 0 0 16px; font-size: 0.95rem; }
+.meta .prac { background: var(--highlight); color: var(--ink); border-radius: 6px; padding: 2px 8px; font-weight: 600; }
 .ap1r { font-family: var(--font-mono); font-size: 0.7rem; color: var(--ok); border: 1px solid var(--ok); border-radius: 5px; padding: 0 5px; margin-left: 4px; cursor: help; white-space: nowrap; }
 article.prob h2 {
   font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; line-height: 1.25; margin: 8px 0 12px; text-wrap: balance;
@@ -233,7 +235,7 @@ article.prob h2 {
 <div class="wrap">
   <header class="top">
     <h1><span>Banc de Problemes</span> PAU</h1>
-    <p id="subtitle">Per a les meves filles preferides · exàmens de selectivitat resolts pas a pas</p>
+    <p id="subtitle">Exàmens de selectivitat de Catalunya, resolts pas a pas.</p>
   </header>
 
   <nav class="subjects" id="subjects" aria-label="Assignatura"></nav>
@@ -310,6 +312,7 @@ article.prob h2 {
           <button class="btn" id="random" type="button">Un a l'atzar</button>
         </div>
       </div>
+      <p class="f1info" id="f1info" hidden>Aquí hi ha la física que es fa a <b>1r</b> (Física i Química): <b>problemes de pràctica</b> nous en estil selectivitat, els problemes de <b>Tecnologia</b> de selectivitat que són de mecànica, energia i calor, i els problemes de <b>Física</b> de selectivitat que tenen algun apartat de 1r (marcat en verd).</p>
       <div class="list" id="list"></div>
     </main>
   </div>
@@ -328,6 +331,7 @@ const ASSIGS = [
   { id: "mates", nom: "Matemàtiques" },
   { id: "fisica", nom: "Física" },
   { id: "dibuix", nom: "Dibuix tècnic" },
+  { id: "fisica1", nom: "Física de 1r" },
 ];
 const TEMES_PER_ASSIG = {
   tecno: {
@@ -354,7 +358,24 @@ const TEMES_PER_ASSIG = {
     normalitzacio: "Normalització i vistes",
   },
 };
-const temaNom = (assig, t) => (TEMES_PER_ASSIG[assig] || {})[t] || t;
+TEMES_PER_ASSIG.fisica1 = {
+  cinematica: "Cinemàtica", dinamica: "Dinàmica", "energia-mecanica": "Treball i energia mecànica",
+  "moment-lineal": "Impuls i moment lineal", estatica: "Estàtica", calor: "Calor",
+  mecanica: "Mecànica (exàmens)", mecanismes: "Mecanismes i transmissions", energia: "Energia i recursos",
+  termica: "Màquines tèrmiques",
+};
+const temaNom = (assig, t) => (TEMES_PER_ASSIG[assig] || {})[t]
+  || (assig === "fisica1" ? TEMES_PER_ASSIG.tecno[t] || TEMES_PER_ASSIG.fisica[t] : null) || t;
+// Física de 1r: problemes de pràctica + problemes d'examen amb física de 1r
+const F1_TEMES = ["mecanica", "mecanismes", "energia", "termica", "estatica"];
+function inFisica1(p) {
+  const a = p.ex.assignatura;
+  if (a === "fisica1") return true;
+  const toca = (ts) => ts.some((t) => p.tema === t || (p.temes_secundaris || []).includes(t));
+  if (a === "tecno") return (p._curs === "1r" || p._curs === "parcial") && toca(F1_TEMES);
+  if (a === "fisica") return p._curs === "parcial";
+  return false;
+}
 const DIFS = { 1: "Directe", 2: "Diversos passos", 3: "Repte" };
 
 const exById = Object.fromEntries(DB.examens.map((e) => [e.id, e]));
@@ -404,7 +425,7 @@ function md(text, inline) {
 marked.use({ breaks: false, gfm: true });
 
 // ---------- filtres ----------
-function inAssig(p) { return !F.assig || p.ex.assignatura === F.assig; }
+function inAssig(p) { return !F.assig || (F.assig === "fisica1" ? inFisica1(p) : p.ex.assignatura === F.assig); }
 function matches(p, skip) {
   if (!inAssig(p)) return false;
   if (skip !== "temes" && F.temes.length && !F.temes.some((t) => p.tema === t || (p.temes_secundaris || []).includes(t))) return false;
@@ -441,7 +462,7 @@ function countBy(skip, fn) {
 }
 
 function renderSubjects() {
-  const n = (id) => PROBS.filter((p) => p.ex.assignatura === id).length;
+  const n = (id) => PROBS.filter((p) => (id === "fisica1" ? inFisica1(p) : p.ex.assignatura === id)).length;
   document.getElementById("subjects").innerHTML = ASSIGS.map((a) => {
     const k = n(a.id);
     return `<button type="button" class="subj" data-assig="${a.id}" aria-pressed="${F.assig === a.id}" ${k ? "" : "disabled"}>${a.nom}<small>${k ? k : "aviat"}</small></button>`;
@@ -497,6 +518,10 @@ function pdfName(e, kind) {
 }
 
 function renderExams() {
+  if (F.assig === "fisica1") {
+    document.getElementById("exams").innerHTML = `<p class="hint">Aquesta secció barreja problemes de pràctica i d'exàmens de diverses assignatures. Els exàmens sencers en PDF són a les pestanyes Tecnologia i Física.</p>`;
+    return;
+  }
   const list = DB.examens.filter((e) => e.assignatura === F.assig)
     .sort((a, b) => b.any - a.any || (a.convocatoria === "setembre") - (b.convocatoria === "setembre"));
   const count = (id) => PROBS.filter((p) => p.examen === id).length;
@@ -542,8 +567,8 @@ function renderCard(p) {
   const page = (p.pagines || [])[0];
   return `<article class="prob ${st || ""}" data-id="${esc(p.id)}" id="p-${esc(p.id)}">
     <div class="meta">
-      <span>${esc(e.any)} · ${e.convocatoria === "setembre" ? "Setembre" : "Juny"}${e.serie ? " · Sèrie " + esc(e.serie) : ""}</span>
-      <span>${probLabel(p)}</span>
+      ${e.practica ? `<span class="prac">Problema de pràctica</span><span>Núm. ${esc(p.exercici)}</span>` : `<span>${esc((ASSIGS.find((x) => x.id === e.assignatura) || {}).nom && F.assig === "fisica1" ? (ASSIGS.find((x) => x.id === e.assignatura).nom + " · ") : "")}${esc(e.any)} · ${e.convocatoria === "setembre" ? "Setembre" : "Juny"}${e.serie ? " · Sèrie " + esc(e.serie) : ""}</span>
+      <span>${probLabel(p)}</span>`}
       ${p.punts ? `<span>${String(p.punts).replace(".", ",")} punts</span>` : ""}
       ${p.curs ? `<span class="curs c${esc(p.curs)}" title="${esc(p.curs_motiu || "")}">${esc(p.curs)} batx${p._curs === "parcial" ? ` · ${p.apartats_1r} apt. de 1r` : ""}</span>` : ""}
       <span class="diff" title="Dificultat: ${DIFS[p.dificultat] || ""}">${"●".repeat(p.dificultat || 1)}${"○".repeat(3 - (p.dificultat || 1))}</span>
@@ -558,7 +583,7 @@ function renderCard(p) {
       <button type="button" class="mark m-done" data-act="mark" data-v="done" aria-pressed="${st === "done"}">✓ Fet</button>
       <button type="button" class="mark m-review" data-act="mark" data-v="review" aria-pressed="${st === "review"}">↻ Per repassar</button>
       <span class="sp"></span>
-      <span class="pdflinks">
+      <span class="pdflinks" ${e.practica ? "hidden" : ""}>
         <a href="${esc(e.pdf_examen)}${page ? "#page=" + page : ""}" target="_blank" rel="noopener">Examen original${page ? " (pàg. " + page + ")" : ""}</a>
         <a href="${esc(e.pdf_examen)}" download="${esc(pdfName(e, "examen"))}">Descarrega l'examen</a>
         ${e.pdf_solucio ? `<a href="${esc(e.pdf_solucio)}" target="_blank" rel="noopener">Criteris oficials</a>` : ""}
@@ -595,6 +620,7 @@ function render() {
   const total = PROBS.filter(inAssig).length;
   const nExams = new Set(list.map((p) => p.examen)).size;
   document.getElementById("count").textContent = `${list.length} de ${total} problemes · ${nExams} exàmens`;
+  document.getElementById("f1info").hidden = F.assig !== "fisica1";
   const el = document.getElementById("list");
   if (!list.length) {
     el.innerHTML = `<div class="empty">Cap problema compleix aquests filtres. Prova d'esborrar-ne algun o de cercar una altra paraula.</div>`;
