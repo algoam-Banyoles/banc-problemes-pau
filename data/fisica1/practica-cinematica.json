@@ -1,0 +1,1263 @@
+{
+  "examen": {
+    "id": "fisica1-practica-cinematica",
+    "assignatura": "fisica1",
+    "materia": "Problemes de pràctica · Física de 1r",
+    "practica": true,
+    "any": 2026,
+    "convocatoria": "practica",
+    "serie": null,
+    "pdf_examen": null,
+    "pdf_solucio": null,
+    "estructura": "Problemes originals de pràctica (no són de selectivitat), bloc: Cinemàtica (MRU, MRUA, encontres, caiguda lliure, tir horitzontal i parabòlic, MCU i MCUA, gràfiques x-t i v-t)."
+  },
+  "problemes": [
+    {
+      "id": "fisica1-cinematica-01",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Tren de Rodalies entre dues estacions: arrencada, velocitat de creuer i frenada",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "MRUA",
+        "MRU",
+        "velocitat mitjana",
+        "acceleració"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Només necessita MRU i MRUA, que són cinemàtica de Física i Química de 1r.",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Un tren de Rodalies surt d'una estació partint del repòs. Arrenca amb una acceleració constant de $0{,}8\\ \\text{m/s}^2$ fins que arriba a $90\\ \\text{km/h}$. Manté aquesta velocitat durant $2$ minuts i després frena uniformement fins a aturar-se a l'estació següent, recorrent $250\\ \\text{m}$ durant la frenada.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El temps que tarda a assolir els $90\\ \\text{km/h}$ i la distància que recorre mentre accelera.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "L'acceleració durant la frenada i el temps que dura la frenada.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "La distància entre les dues estacions i la velocitat mitjana del tren en tot el trajecte, en km/h.",
+          "punts": 1,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "El moviment té tres trams: (1) MRUA accelerant, (2) MRU, (3) MRUA frenant.\n\n- $v_0 = 0$, $a_1 = 0{,}8\\ \\text{m/s}^2$\n- $v = 90\\ \\text{km/h} = \\dfrac{90}{3{,}6} = 25\\ \\text{m/s}$\n- Tram 2: $t_2 = 2\\ \\text{min} = 120\\ \\text{s}$\n- Tram 3: $d_3 = 250\\ \\text{m}$, velocitat final $0$\n- Incògnites: $t_1$, $d_1$, $a_3$, $t_3$, distància total $d$ i velocitat mitjana $v_m$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Temps d'acceleració",
+            "cos": "En un MRUA la velocitat creix linealment amb el temps:\n$$v = v_0 + a_1\\, t_1 \\;\\Rightarrow\\; t_1 = \\frac{v - v_0}{a_1} = \\frac{25 - 0}{0{,}8} = 31{,}25\\ \\text{s}$$\n**$t_1 \\approx 31{,}3\\ \\text{s}$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Distància recorreguda accelerant",
+            "cos": "$$d_1 = v_0 t_1 + \\tfrac12 a_1 t_1^2 = \\tfrac12 \\cdot 0{,}8 \\cdot 31{,}25^2 = 390{,}6\\ \\text{m}$$\n(També: $v^2 = v_0^2 + 2a_1 d_1 \\Rightarrow d_1 = \\dfrac{25^2}{2\\cdot 0{,}8} = 390{,}6\\ \\text{m}$.)\n\n**$d_1 \\approx 391\\ \\text{m}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Acceleració de frenada",
+            "cos": "Coneixem la distància i les velocitats inicial i final, però no el temps: fem servir l'equació que no conté $t$:\n$$v_f^2 = v^2 + 2 a_3 d_3 \\;\\Rightarrow\\; a_3 = \\frac{0 - 25^2}{2 \\cdot 250} = -1{,}25\\ \\text{m/s}^2$$\nEl signe negatiu indica que l'acceleració té sentit contrari a la velocitat (el tren frena).\n\n**$a_3 = -1{,}25\\ \\text{m/s}^2$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Temps de frenada",
+            "cos": "$$t_3 = \\frac{v_f - v}{a_3} = \\frac{0 - 25}{-1{,}25} = 20\\ \\text{s}$$\n**$t_3 = 20\\ \\text{s}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Distància entre estacions",
+            "cos": "Al tram 2 (MRU): $d_2 = v\\, t_2 = 25 \\cdot 120 = 3\\,000\\ \\text{m}$.\n$$d = d_1 + d_2 + d_3 = 390{,}6 + 3\\,000 + 250 = 3\\,640{,}6\\ \\text{m}$$\n**$d \\approx 3{,}64\\ \\text{km}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Velocitat mitjana",
+            "cos": "La velocitat mitjana és la distància total dividida pel temps **total** (no la mitjana de les velocitats):\n$$t = 31{,}25 + 120 + 20 = 171{,}25\\ \\text{s}$$\n$$v_m = \\frac{d}{t} = \\frac{3\\,640{,}6}{171{,}25} = 21{,}26\\ \\text{m/s} = 21{,}26 \\cdot 3{,}6 = 76{,}5\\ \\text{km/h}$$\n**$v_m \\approx 76{,}5\\ \\text{km/h}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$t_1 \\approx 31{,}3\\ \\text{s}$; $d_1 \\approx 391\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$a_3 = -1{,}25\\ \\text{m/s}^2$; $t_3 = 20\\ \\text{s}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$d \\approx 3\\,641\\ \\text{m} \\approx 3{,}64\\ \\text{km}$; $v_m \\approx 76{,}5\\ \\text{km/h}$"
+          }
+        ],
+        "nota": "Errors típics: no passar els km/h a m/s abans de calcular; calcular la velocitat mitjana com $(0 + 90)/2$ o com la mitjana de les velocitats dels trams (la velocitat mitjana sempre és distància total entre temps total); oblidar el signe negatiu de l'acceleració de frenada."
+      }
+    },
+    {
+      "id": "fisica1-cinematica-02",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Pedra deixada caure des d'un pont sobre el Ter",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "caiguda lliure",
+        "MRUA"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Caiguda lliure (MRUA vertical), cinemàtica de Física i Química de 1r.",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Des d'un pont sobre el riu Ter, una noia deixa caure una pedra (sense velocitat inicial) i veu que arriba a l'aigua $2{,}1\\ \\text{s}$ després. Negligiu la resistència de l'aire. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'altura del pont respecte a l'aigua.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "La velocitat amb què la pedra arriba a l'aigua, en m/s i en km/h.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "El temps que tarda la pedra a recórrer la primera meitat de l'altura i el que tarda a recórrer la segona meitat. Per què no són iguals?",
+          "punts": 1,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "Prenem l'eix vertical cap avall amb origen al pont (així totes les magnituds són positives).\n\n- $v_0 = 0$, $a = g = 9{,}8\\ \\text{m/s}^2$, $t = 2{,}1\\ \\text{s}$\n- Incògnites: altura $h$, velocitat final $v$, temps de cada meitat"
+          },
+          {
+            "apartat": "a",
+            "titol": "Altura del pont",
+            "cos": "La caiguda lliure és un MRUA amb acceleració $g$. Partint del repòs:\n$$h = \\tfrac12 g t^2 = \\tfrac12 \\cdot 9{,}8 \\cdot 2{,}1^2 = 21{,}6\\ \\text{m}$$\n**$h \\approx 21{,}6\\ \\text{m}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat d'arribada a l'aigua",
+            "cos": "$$v = v_0 + g t = 0 + 9{,}8 \\cdot 2{,}1 = 20{,}6\\ \\text{m/s}$$\n$$20{,}6\\ \\text{m/s} \\cdot 3{,}6 = 74{,}1\\ \\text{km/h}$$\n**$v \\approx 20{,}6\\ \\text{m/s} \\approx 74\\ \\text{km/h}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Temps per a la primera meitat",
+            "cos": "La primera meitat és $h/2 = 10{,}8\\ \\text{m}$ partint del repòs:\n$$\\frac{h}{2} = \\tfrac12 g t_1^2 \\;\\Rightarrow\\; t_1 = \\sqrt{\\frac{h}{g}} = \\sqrt{\\frac{21{,}6}{9{,}8}} = 1{,}48\\ \\text{s}$$\n**$t_1 \\approx 1{,}48\\ \\text{s}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Temps per a la segona meitat i explicació",
+            "cos": "$$t_2 = t - t_1 = 2{,}1 - 1{,}48 = 0{,}62\\ \\text{s}$$\n**$t_2 \\approx 0{,}62\\ \\text{s}$**\n\nNo són iguals perquè la velocitat de la pedra augmenta contínuament ($9{,}8\\ \\text{m/s}$ cada segon): a la segona meitat ja va molt més de pressa i recorre la mateixa distància en menys temps."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$h \\approx 21{,}6\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v \\approx 20{,}6\\ \\text{m/s} \\approx 74\\ \\text{km/h}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$t_1 \\approx 1{,}48\\ \\text{s}$; $t_2 \\approx 0{,}62\\ \\text{s}$"
+          }
+        ],
+        "nota": "Error típic a l'apartat c): pensar que cada meitat tarda $2{,}1/2 = 1{,}05\\ \\text{s}$. Això només passaria si la velocitat fos constant. En aquest problema no tenim en compte el temps que tarda el so a pujar fins al pont (seria d'unes centèsimes de segon)."
+      }
+    },
+    {
+      "id": "fisica1-cinematica-03",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Velocitat angular i acceleració centrípeta de la roda d'una bicicleta",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "MCU",
+        "velocitat angular",
+        "acceleració centrípeta",
+        "període",
+        "freqüència"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Moviment circular uniforme, cinemàtica de Física i Química de 1r.",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Una ciclista circula per la Via Verda del Carrilet a una velocitat constant de $25\\ \\text{km/h}$. Les rodes de la bicicleta tenen un diàmetre de $68\\ \\text{cm}$ i giren sense patinar, de manera que la velocitat lineal d'un punt de la perifèria de la roda (respecte a l'eix) és igual a la velocitat de la bicicleta.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La velocitat angular de les rodes, en rad/s i en rpm.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "El període i la freqüència del moviment de rotació de les rodes.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "L'acceleració centrípeta d'un punt de la perifèria de la roda i el nombre de voltes que fa cada roda en un recorregut de $10\\ \\text{km}$.",
+          "punts": 1,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $v = 25\\ \\text{km/h} = \\dfrac{25}{3{,}6} = 6{,}94\\ \\text{m/s}$\n- $D = 68\\ \\text{cm} \\Rightarrow R = 0{,}34\\ \\text{m}$\n- Incògnites: $\\omega$, $T$, $f$, $a_c$, nombre de voltes $N$ en $10\\ \\text{km}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat angular",
+            "cos": "En un MCU la velocitat lineal i l'angular es relacionen amb el radi: $v = \\omega R$.\n$$\\omega = \\frac{v}{R} = \\frac{6{,}94}{0{,}34} = 20{,}4\\ \\text{rad/s}$$\nPer passar a rpm: una volta són $2\\pi\\ \\text{rad}$ i un minut són $60\\ \\text{s}$:\n$$\\omega = 20{,}4\\ \\frac{\\text{rad}}{\\text{s}} \\cdot \\frac{1\\ \\text{volta}}{2\\pi\\ \\text{rad}} \\cdot \\frac{60\\ \\text{s}}{1\\ \\text{min}} = 195\\ \\text{rpm}$$\n**$\\omega \\approx 20{,}4\\ \\text{rad/s} \\approx 195\\ \\text{rpm}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Període i freqüència",
+            "cos": "El període és el temps que tarda a fer una volta:\n$$T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{20{,}4} = 0{,}308\\ \\text{s} \\qquad f = \\frac1T = \\frac{1}{0{,}308} = 3{,}25\\ \\text{Hz}$$\n**$T \\approx 0{,}31\\ \\text{s}$, $f \\approx 3{,}25\\ \\text{Hz}$** (unes 3 voltes per segon)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Acceleració centrípeta",
+            "cos": "Encara que el mòdul de la velocitat sigui constant, la seva direcció canvia: hi ha una acceleració dirigida cap al centre de la roda:\n$$a_c = \\frac{v^2}{R} = \\omega^2 R = \\frac{6{,}94^2}{0{,}34} = 142\\ \\text{m/s}^2$$\n**$a_c \\approx 142\\ \\text{m/s}^2$** (unes 14 vegades $g$)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Voltes en 10 km",
+            "cos": "En cada volta sense patinar, la bicicleta avança una longitud igual al perímetre de la roda:\n$$L = 2\\pi R = 2\\pi \\cdot 0{,}34 = 2{,}136\\ \\text{m}$$\n$$N = \\frac{10\\,000}{2{,}136} = 4\\,681\\ \\text{voltes}$$\n**$N \\approx 4\\,680\\ \\text{voltes}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\omega \\approx 20{,}4\\ \\text{rad/s} \\approx 195\\ \\text{rpm}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$T \\approx 0{,}31\\ \\text{s}$; $f \\approx 3{,}25\\ \\text{Hz}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$a_c \\approx 142\\ \\text{m/s}^2$; $N \\approx 4\\,680$ voltes"
+          }
+        ],
+        "nota": "Errors típics: fer servir el diàmetre en lloc del radi a $v = \\omega R$ (dona la meitat de $\\omega$); oblidar passar els km/h a m/s; pensar que en un MCU no hi ha acceleració perquè la velocitat és \"constant\" (només n'és constant el mòdul)."
+      }
+    },
+    {
+      "id": "fisica1-cinematica-04",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Encontre de dos cotxes a la C-17 entre Barcelona i Vic (gràfica x-t)",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "MRU",
+        "encontre",
+        "gràfica x-t"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Encontre de dos mòbils amb MRU i gràfica x-t, cinemàtica de 1r.",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Un cotxe A surt de Barcelona cap a Vic a les 8:00 i circula per la C-17 a una velocitat constant de $90\\ \\text{km/h}$. A les 8:10 surt de Vic un cotxe B cap a Barcelona per la mateixa carretera, a una velocitat constant de $72\\ \\text{km/h}$. Suposeu que la carretera és recta i que la distància entre les dues ciutats és de $66\\ \\text{km}$.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Les equacions de posició de cada cotxe, prenent com a origen Barcelona, sentit positiu cap a Vic i $t = 0$ a les 8:00.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "L'hora a què es creuen i a quina distància de Barcelona.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "La distància que separa els dos cotxes a les 8:30.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "Dibuixeu la gràfica posició-temps ($x$-$t$) dels dos cotxes, des de les 8:00 fins que cadascun arriba a la seva destinació. Què representa el punt on es tallen les rectes?",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "Treballem en km i hores (és més còmode que passar-ho tot al SI).\n\n- Cotxe A: $x_{0A} = 0$, $v_A = +90\\ \\text{km/h}$, surt a $t = 0$\n- Cotxe B: $x_{0B} = 66\\ \\text{km}$, $v_B = -72\\ \\text{km/h}$ (va cap a Barcelona, sentit negatiu), surt a $t = 10\\ \\text{min} = \\tfrac16\\ \\text{h}$\n- Incògnites: $x_A(t)$, $x_B(t)$, temps i posició de l'encontre, separació a les 8:30"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equacions de posició",
+            "cos": "En un MRU, $x = x_0 + v\\,(t - t_0)$, on $t_0$ és l'instant en què el mòbil comença a moure's:\n$$x_A = 90\\,t \\qquad (t \\ge 0)$$\n$$x_B = 66 - 72\\left(t - \\tfrac16\\right) \\qquad (t \\ge \\tfrac16\\ \\text{h})$$\n($x$ en km i $t$ en hores.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Condició d'encontre",
+            "cos": "Es creuen quan són al mateix lloc al mateix instant: $x_A = x_B$.\n$$90\\,t = 66 - 72\\,t + 12 \\;\\Rightarrow\\; 162\\,t = 78 \\;\\Rightarrow\\; t = 0{,}4815\\ \\text{h}$$\n$0{,}4815\\ \\text{h} \\cdot 60 = 28{,}9\\ \\text{min} \\approx 28\\ \\text{min}\\ 53\\ \\text{s}$.\n\n**Es creuen cap a les 8:29 (8 h 28 min 53 s).**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Posició de l'encontre",
+            "cos": "$$x_A = 90 \\cdot 0{,}4815 = 43{,}3\\ \\text{km}$$\nComprovació amb B: $66 - 72\\,(0{,}4815 - 0{,}1667) = 66 - 22{,}7 = 43{,}3\\ \\text{km}$ ✓.\n\n**A $43{,}3\\ \\text{km}$ de Barcelona** (i $22{,}7\\ \\text{km}$ de Vic)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Posicions a les 8:30",
+            "cos": "A les 8:30, $t = 0{,}5\\ \\text{h}$:\n$$x_A = 90 \\cdot 0{,}5 = 45\\ \\text{km} \\qquad x_B = 66 - 72\\,(0{,}5 - 0{,}1667) = 66 - 24 = 42\\ \\text{km}$$\n$$d = |x_A - x_B| = |45 - 42| = 3\\ \\text{km}$$\n**$d = 3\\ \\text{km}$.** Com que $x_A > x_B$, ja s'han creuat (ho han fet un minut abans) i ara s'allunyen."
+          },
+          {
+            "apartat": "d",
+            "titol": "Gràfica x-t",
+            "cos": "Temps d'arribada: A arriba a Vic quan $90\\,t = 66 \\Rightarrow t = 0{,}733\\ \\text{h} = 44\\ \\text{min}$ (8:44). B arriba a Barcelona quan $x_B = 0 \\Rightarrow t - \\tfrac16 = \\tfrac{66}{72} = 0{,}917\\ \\text{h}$, és a dir, $t = 1{,}083\\ \\text{h} = 65\\ \\text{min}$ (9:05).\n\nEn un MRU la gràfica $x$-$t$ és una **recta** de pendent igual a la velocitat:\n- A: recta creixent de $(0\\ \\text{min},\\ 0\\ \\text{km})$ a $(44\\ \\text{min},\\ 66\\ \\text{km})$, pendent $+90\\ \\text{km/h}$.\n- B: recta decreixent de $(10\\ \\text{min},\\ 66\\ \\text{km})$ a $(65\\ \\text{min},\\ 0\\ \\text{km})$, pendent $-72\\ \\text{km/h}$ (menys inclinada que A, perquè va més a poc a poc).\n\nEl punt on es tallen les rectes és l'**encontre**: mateixa posició al mateix instant.\n\n![Gràfica x-t dels dos cotxes](img/fisica1/cinematica/04-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$x_A = 90\\,t$; $x_B = 66 - 72\\,(t - 1/6)$ (km, h)"
+          },
+          {
+            "apartat": "b",
+            "valor": "Es creuen a les 8 h 28 min 53 s ($t \\approx 0{,}48\\ \\text{h}$), a $43{,}3\\ \\text{km}$ de Barcelona"
+          },
+          {
+            "apartat": "c",
+            "valor": "$3\\ \\text{km}$ (ja s'han creuat)"
+          },
+          {
+            "apartat": "d",
+            "valor": "Dues rectes: A de (0 min, 0 km) a (44 min, 66 km); B de (10 min, 66 km) a (65 min, 0 km); es tallen a l'encontre"
+          }
+        ],
+        "nota": "Errors típics: oblidar el retard de 10 minuts de B (escriure $x_B = 66 - 72\\,t$, que dona $t = 0{,}407\\ \\text{h}$); donar a B velocitat positiva; barrejar minuts i hores ($10$ en lloc de $1/6$). Mètode alternatiu: quan surt B, A ja ha fet $15\\ \\text{km}$; queden $51\\ \\text{km}$ que tanquen a $90 + 72 = 162\\ \\text{km/h}$, per tant $51/162 = 0{,}315\\ \\text{h}$ després de les 8:10."
+      }
+    },
+    {
+      "id": "fisica1-cinematica-05",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Una moto de la Guàrdia Urbana persegueix un cotxe (MRUA contra MRU)",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "MRU",
+        "MRUA",
+        "encontre",
+        "avançament"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Persecució entre un mòbil amb MRU i un amb MRUA, cinemàtica de 1r.",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Un cotxe circula a una velocitat constant de $72\\ \\text{km/h}$ per un carrer recte. Just quan passa per davant d'una moto de la Guàrdia Urbana que està aturada, la moto arrenca per perseguir-lo amb una acceleració constant de $3\\ \\text{m/s}^2$. Suposeu que el cotxe manté la velocitat.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El temps que tarda la moto a atrapar el cotxe.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "La distància que han recorregut fins aleshores.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "La velocitat de la moto en el moment d'atrapar el cotxe, en km/h.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "La distància màxima que hi ha hagut entre tots dos vehicles abans de l'encontre, i en quin instant.",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "Origen al punt on és la moto, $t = 0$ quan el cotxe hi passa, sentit positiu el del moviment.\n\n- Cotxe (MRU): $x_{0C} = 0$, $v_C = 72\\ \\text{km/h} = 20\\ \\text{m/s}$\n- Moto (MRUA): $x_{0M} = 0$, $v_{0M} = 0$, $a = 3\\ \\text{m/s}^2$\n- Incògnites: temps d'encontre $t_e$, distància $d_e$, velocitat de la moto $v_M$, separació màxima"
+          },
+          {
+            "apartat": "a",
+            "titol": "Equacions de posició i condició d'encontre",
+            "cos": "$$x_C = 20\\,t \\qquad x_M = \\tfrac12 \\cdot 3\\, t^2 = 1{,}5\\, t^2$$\nLa moto l'atrapa quan $x_M = x_C$:\n$$1{,}5\\, t^2 = 20\\, t \\;\\Rightarrow\\; t\\,(1{,}5\\, t - 20) = 0$$\nLa solució $t = 0$ és l'instant inicial (tots dos al mateix punt). L'altra:\n$$t_e = \\frac{20}{1{,}5} = 13{,}3\\ \\text{s}$$\n**$t_e \\approx 13{,}3\\ \\text{s}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Distància recorreguda",
+            "cos": "$$d_e = x_C(t_e) = 20 \\cdot 13{,}33 = 266{,}7\\ \\text{m}$$\n(Comprovació: $x_M = 1{,}5 \\cdot 13{,}33^2 = 266{,}7\\ \\text{m}$ ✓.)\n\n**$d_e \\approx 267\\ \\text{m}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Velocitat de la moto",
+            "cos": "$$v_M = v_{0M} + a\\,t_e = 3 \\cdot 13{,}33 = 40\\ \\text{m/s} = 40 \\cdot 3{,}6 = 144\\ \\text{km/h}$$\n**$v_M = 144\\ \\text{km/h}$**, exactament el doble que el cotxe. (Té sentit: en el mateix temps han recorregut la mateixa distància, i la velocitat mitjana de la moto, $(0 + 40)/2 = 20\\ \\text{m/s}$, ha de ser la del cotxe.)"
+          },
+          {
+            "apartat": "d",
+            "titol": "Quan és màxima la separació",
+            "cos": "Al principi el cotxe va més de pressa i s'allunya; quan la moto supera $20\\ \\text{m/s}$, comença a retallar distància. Per tant, la separació és màxima quan **les dues velocitats són iguals**:\n$$v_M = v_C \\;\\Rightarrow\\; 3\\,t = 20 \\;\\Rightarrow\\; t = 6{,}67\\ \\text{s}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Separació màxima",
+            "cos": "$$\\Delta x = x_C - x_M = 20 \\cdot 6{,}67 - 1{,}5 \\cdot 6{,}67^2 = 133{,}3 - 66{,}7 = 66{,}7\\ \\text{m}$$\n**$\\Delta x_\\text{màx} \\approx 66{,}7\\ \\text{m}$ a $t \\approx 6{,}67\\ \\text{s}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$t_e \\approx 13{,}3\\ \\text{s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$d_e \\approx 267\\ \\text{m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$v_M = 40\\ \\text{m/s} = 144\\ \\text{km/h}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$\\Delta x_\\text{màx} \\approx 66{,}7\\ \\text{m}$ a $t \\approx 6{,}67\\ \\text{s}$"
+          }
+        ],
+        "nota": "Error típic: pensar que la moto atrapa el cotxe quan les velocitats són iguals. En aquell instant (6,67 s) la distància entre ells és la més gran, no zero. Altres errors: oblidar el $\\tfrac12$ a $x = \\tfrac12 a t^2$ o no passar 72 km/h a m/s."
+      }
+    },
+    {
+      "id": "fisica1-cinematica-06",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Un dron deixa caure material sanitari a un refugi del Pirineu (tir horitzontal)",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "tir horitzontal",
+        "caiguda lliure",
+        "MRU",
+        "composició de moviments"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Tir horitzontal (composició de MRU i MRUA), cinemàtica de 1r.",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Un dron de rescat vola horitzontalment a $45\\ \\text{m}$ d'altura sobre un terreny pla, a una velocitat constant de $15\\ \\text{m/s}$, i ha de deixar caure una caixa amb material sanitari al costat d'un refugi. Negligiu la resistència de l'aire. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El temps que tarda la caixa a arribar a terra.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "A quina distància horitzontal del refugi (mesurada abans d'arribar-hi) ha de deixar anar la caixa el dron.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "La velocitat de la caixa en tocar a terra (mòdul i angle amb l'horitzontal). On és el dron en aquest instant?",
+          "punts": 1,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "Origen al terra, just sota el punt on es deixa anar la caixa; eix $x$ horitzontal en el sentit del vol, eix $y$ vertical cap amunt.\n\n- En deixar-la anar, la caixa té la mateixa velocitat que el dron: $v_{0x} = 15\\ \\text{m/s}$, $v_{0y} = 0$\n- $y_0 = 45\\ \\text{m}$, $a_y = -g = -9{,}8\\ \\text{m/s}^2$, $a_x = 0$\n- Incògnites: temps de caiguda $t_c$, abast $x$, velocitat final $\\vec v$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Moviment vertical: caiguda lliure",
+            "cos": "El tir horitzontal és la composició d'un MRU horitzontal i una caiguda lliure vertical, independents entre si. El temps de caiguda només depèn del moviment vertical:\n$$y = y_0 - \\tfrac12 g t^2 = 0 \\;\\Rightarrow\\; t_c = \\sqrt{\\frac{2 y_0}{g}} = \\sqrt{\\frac{2 \\cdot 45}{9{,}8}} = 3{,}03\\ \\text{s}$$\n**$t_c \\approx 3{,}03\\ \\text{s}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Moviment horitzontal: MRU",
+            "cos": "Mentre cau, la caixa avança horitzontalment amb velocitat constant:\n$$x = v_{0x}\\, t_c = 15 \\cdot 3{,}03 = 45{,}5\\ \\text{m}$$\n**El dron ha de deixar anar la caixa uns $45{,}5\\ \\text{m}$ abans d'arribar sobre el refugi.**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Components de la velocitat a terra",
+            "cos": "$$v_x = 15\\ \\text{m/s} \\text{ (no canvia)} \\qquad v_y = -g\\,t_c = -9{,}8 \\cdot 3{,}03 = -29{,}7\\ \\text{m/s}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Mòdul i angle",
+            "cos": "$$v = \\sqrt{v_x^2 + v_y^2} = \\sqrt{15^2 + 29{,}7^2} = 33{,}3\\ \\text{m/s}$$\n$$\\tan\\alpha = \\frac{|v_y|}{v_x} = \\frac{29{,}7}{15} = 1{,}98 \\;\\Rightarrow\\; \\alpha = 63{,}2^\\circ$$\n**$v \\approx 33{,}3\\ \\text{m/s}$, formant $63^\\circ$ per sota de l'horitzontal.**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Posició del dron",
+            "cos": "El dron i la caixa tenen la mateixa velocitat horitzontal, de manera que en tot moment el dron és **just a sobre de la caixa**. Quan la caixa toca a terra, el dron és a $45\\ \\text{m}$ d'altura, a la vertical del refugi."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$t_c \\approx 3{,}03\\ \\text{s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$x \\approx 45{,}5\\ \\text{m}$ abans del refugi"
+          },
+          {
+            "apartat": "c",
+            "valor": "$v \\approx 33{,}3\\ \\text{m/s}$, $63^\\circ$ sota l'horitzontal; el dron és just a sobre de la caixa"
+          }
+        ],
+        "nota": "Errors típics: pensar que la caixa cau en vertical des del punt on es deixa anar (oblidant que conserva la velocitat horitzontal del dron); posar la velocitat horitzontal al càlcul del temps de caiguda; sumar els mòduls $15 + 29{,}7$ en lloc de fer Pitàgores. En un cas real, la resistència de l'aire reduiria l'abast."
+      }
+    },
+    {
+      "id": "fisica1-cinematica-07",
+      "exercici": 7,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Gràfica v-t d'un tramvia entre dues parades",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "gràfica v-t",
+        "gràfica x-t",
+        "MRUA",
+        "MRU",
+        "velocitat mitjana"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Interpretació de gràfiques v-t i x-t de moviments rectilinis, cinemàtica de 1r.",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "La gràfica de la figura representa la velocitat d'un tramvia del Trambaix en funció del temps, des que surt d'una parada fins que s'atura a la següent. El tramvia es mou en línia recta.\n\nDetermineu:",
+      "figures": [
+        {
+          "src": "img/fisica1/cinematica/07.png",
+          "peu": "Gràfica velocitat-temps del tramvia"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El tipus de moviment i l'acceleració en cadascun dels tres trams.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "La distància entre les dues parades.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "La velocitat mitjana del tramvia en tot el trajecte.",
+          "punts": 0.25,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "Dibuixeu la gràfica posició-temps ($x$-$t$) corresponent, indicant la posició del tramvia a $t = 15\\ \\text{s}$, $60\\ \\text{s}$ i $80\\ \\text{s}$.",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades llegides a la gràfica",
+            "cos": "- Tram 1: de $t = 0$ a $15\\ \\text{s}$, la velocitat passa de $0$ a $12\\ \\text{m/s}$.\n- Tram 2: de $t = 15$ a $60\\ \\text{s}$, velocitat constant de $12\\ \\text{m/s}$.\n- Tram 3: de $t = 60$ a $80\\ \\text{s}$, la velocitat baixa de $12\\ \\text{m/s}$ a $0$.\n- Incògnites: acceleracions, distància total, velocitat mitjana, gràfica $x$-$t$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Acceleració de cada tram",
+            "cos": "A una gràfica $v$-$t$, l'acceleració és el **pendent**: $a = \\dfrac{\\Delta v}{\\Delta t}$.\n\n- Tram 1 (MRUA, accelera): $a_1 = \\dfrac{12 - 0}{15 - 0} = 0{,}8\\ \\text{m/s}^2$\n- Tram 2 (MRU): recta horitzontal, $a_2 = 0$\n- Tram 3 (MRUA, frena): $a_3 = \\dfrac{0 - 12}{80 - 60} = -0{,}6\\ \\text{m/s}^2$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Distància com a àrea sota la gràfica",
+            "cos": "A una gràfica $v$-$t$, el desplaçament és l'**àrea** entre la gràfica i l'eix de temps. La dividim en un triangle, un rectangle i un altre triangle:\n$$d_1 = \\tfrac12 \\cdot 15 \\cdot 12 = 90\\ \\text{m} \\qquad d_2 = 45 \\cdot 12 = 540\\ \\text{m} \\qquad d_3 = \\tfrac12 \\cdot 20 \\cdot 12 = 120\\ \\text{m}$$\n$$d = 90 + 540 + 120 = 750\\ \\text{m}$$\n**$d = 750\\ \\text{m}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Velocitat mitjana",
+            "cos": "$$v_m = \\frac{d}{t} = \\frac{750}{80} = 9{,}38\\ \\text{m/s} \\approx 33{,}8\\ \\text{km/h}$$\n**$v_m \\approx 9{,}4\\ \\text{m/s}$**"
+          },
+          {
+            "apartat": "d",
+            "titol": "Forma de la gràfica x-t",
+            "cos": "Posicions (origen a la primera parada): $x(15) = 90\\ \\text{m}$, $x(60) = 90 + 540 = 630\\ \\text{m}$, $x(80) = 750\\ \\text{m}$.\n\n- Tram 1: $x = 0{,}4\\,t^2$, una **paràbola còncava cap amunt** (el pendent, que és la velocitat, va augmentant).\n- Tram 2: **recta** de pendent $12\\ \\text{m/s}$, de $(15, 90)$ a $(60, 630)$.\n- Tram 3: **paràbola còncava cap avall** (el pendent disminueix) que arriba a $(80, 750)$ amb pendent nul (tangent horitzontal, el tramvia s'atura).\n\nAls punts d'unió no hi ha angles: la velocitat (pendent) és contínua.\n\n![Gràfica x-t del tramvia](img/fisica1/cinematica/07-sol.png)"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Tram 1: MRUA, $a_1 = 0{,}8\\ \\text{m/s}^2$; tram 2: MRU, $a_2 = 0$; tram 3: MRUA, $a_3 = -0{,}6\\ \\text{m/s}^2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$d = 750\\ \\text{m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$v_m \\approx 9{,}4\\ \\text{m/s} \\approx 34\\ \\text{km/h}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "Paràbola (0-15 s) fins a 90 m, recta (15-60 s) fins a 630 m, paràbola de concavitat oposada (60-80 s) fins a 750 m"
+          }
+        ],
+        "nota": "Errors típics: confondre la gràfica $v$-$t$ amb una $x$-$t$ (pensar que en el tram 3 el tramvia \"torna enrere\"; en realitat continua avançant, només va més a poc a poc); calcular la distància com $12 \\cdot 80$; calcular la velocitat mitjana com $12/2$."
+      }
+    },
+    {
+      "id": "fisica1-cinematica-08",
+      "exercici": 8,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Llançament de falta directa: supera la barrera i entra a la porteria?",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "tir parabòlic",
+        "composició de moviments",
+        "MRU",
+        "MRUA"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Tir parabòlic (moviment compost), cinemàtica de Física i Química de 1r.",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Una jugadora llança una falta directa des d'un punt situat a $25\\ \\text{m}$ de la línia de gol, en direcció perpendicular a aquesta. La pilota surt des del terra amb una velocitat de $22\\ \\text{m/s}$ que forma un angle de $20^\\circ$ amb l'horitzontal. La barrera és a $9{,}15\\ \\text{m}$ del punt de llançament i les jugadores que la formen, saltant, arriben fins a $1{,}90\\ \\text{m}$ d'altura. El travesser de la porteria és a $2{,}44\\ \\text{m}$ d'altura. Negligiu la resistència de l'aire i l'efecte de la pilota. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [
+        {
+          "src": "img/fisica1/cinematica/08.png",
+          "peu": "Esquema de la falta (no a escala)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Si la pilota supera la barrera i amb quin marge.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Si la pilota entra a la porteria per sota del travesser, i el temps que tarda a arribar a la línia de gol.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "L'altura màxima que assoleix la pilota i a quina distància del punt de llançament l'assoleix.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "Mantenint l'angle de $20^\\circ$, la velocitat inicial màxima amb què la pilota encara entraria per sota del travesser.",
+          "punts": 0.5,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "Origen al punt de llançament, eix $x$ cap a la porteria i eix $y$ vertical cap amunt.\n\n- $v_0 = 22\\ \\text{m/s}$, $\\alpha = 20^\\circ$\n- $v_{0x} = v_0 \\cos\\alpha = 22 \\cos 20^\\circ = 20{,}67\\ \\text{m/s}$\n- $v_{0y} = v_0 \\sin\\alpha = 22 \\sin 20^\\circ = 7{,}52\\ \\text{m/s}$\n- Barrera: $x_b = 9{,}15\\ \\text{m}$, $h_b = 1{,}90\\ \\text{m}$. Porteria: $x_p = 25\\ \\text{m}$, $h_p = 2{,}44\\ \\text{m}$\n- Equacions del tir parabòlic: $x = v_{0x}\\, t$ (MRU) i $y = v_{0y}\\, t - \\tfrac12 g t^2$ (MRUA)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Instant en què la pilota passa per la barrera",
+            "cos": "Del MRU horitzontal:\n$$t_b = \\frac{x_b}{v_{0x}} = \\frac{9{,}15}{20{,}67} = 0{,}443\\ \\text{s}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Altura de la pilota a la barrera",
+            "cos": "$$y_b = v_{0y}\\, t_b - \\tfrac12 g t_b^2 = 7{,}52 \\cdot 0{,}443 - 4{,}9 \\cdot 0{,}443^2 = 3{,}33 - 0{,}96 = 2{,}37\\ \\text{m}$$\nCom que $2{,}37\\ \\text{m} > 1{,}90\\ \\text{m}$, **la pilota supera la barrera amb un marge de $0{,}47\\ \\text{m}$** (uns 47 cm)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Temps fins a la línia de gol",
+            "cos": "$$t_p = \\frac{x_p}{v_{0x}} = \\frac{25}{20{,}67} = 1{,}21\\ \\text{s}$$\n**$t_p \\approx 1{,}21\\ \\text{s}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Altura a la línia de gol",
+            "cos": "$$y_p = 7{,}52 \\cdot 1{,}209 - 4{,}9 \\cdot 1{,}209^2 = 9{,}10 - 7{,}17 = 1{,}93\\ \\text{m}$$\nCom que $0 < 1{,}93\\ \\text{m} < 2{,}44\\ \\text{m}$, **la pilota entra a la porteria** (a uns 51 cm per sota del travesser), ja de baixada."
+          },
+          {
+            "apartat": "c",
+            "titol": "Altura màxima",
+            "cos": "Al punt més alt la component vertical de la velocitat és zero:\n$$v_y = v_{0y} - g\\,t = 0 \\;\\Rightarrow\\; t_s = \\frac{v_{0y}}{g} = \\frac{7{,}52}{9{,}8} = 0{,}768\\ \\text{s}$$\n$$y_\\text{màx} = \\frac{v_{0y}^2}{2g} = \\frac{7{,}52^2}{2 \\cdot 9{,}8} = 2{,}89\\ \\text{m}$$\n$$x_s = v_{0x}\\, t_s = 20{,}67 \\cdot 0{,}768 = 15{,}9\\ \\text{m}$$\n**$y_\\text{màx} \\approx 2{,}89\\ \\text{m}$ a $15{,}9\\ \\text{m}$ del punt de llançament** (entre la barrera i la porteria; per això a la barrera la pilota encara puja i a la porteria ja baixa)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Equació de la trajectòria",
+            "cos": "Eliminant $t$ entre les dues equacions ($t = x / (v_0\\cos\\alpha)$) obtenim la trajectòria:\n$$y = x\\tan\\alpha - \\frac{g\\,x^2}{2 v_0^2 \\cos^2\\alpha}$$\nSi la velocitat augmenta, la paràbola s'obre i la pilota passa més alta per la porteria. El límit és $y = 2{,}44\\ \\text{m}$ a $x = 25\\ \\text{m}$."
+          },
+          {
+            "apartat": "d",
+            "titol": "Velocitat màxima",
+            "cos": "Aïllem $v_0$:\n$$v_0 = \\sqrt{\\frac{g\\,x^2}{2\\cos^2\\alpha\\,(x\\tan\\alpha - y)}} = \\sqrt{\\frac{9{,}8 \\cdot 25^2}{2 \\cdot \\cos^2 20^\\circ \\cdot (25 \\tan 20^\\circ - 2{,}44)}}$$\n$$v_0 = \\sqrt{\\frac{6\\,125}{2 \\cdot 0{,}883 \\cdot (9{,}10 - 2{,}44)}} = \\sqrt{\\frac{6\\,125}{11{,}76}} = 22{,}8\\ \\text{m/s}$$\n**$v_{0,\\text{màx}} \\approx 22{,}8\\ \\text{m/s}$.** Amb poc més de velocitat que la del llançament ($22\\ \\text{m/s}$), la pilota ja aniria per sobre del travesser."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "Sí: a la barrera la pilota és a $2{,}37\\ \\text{m}$ (marge de $0{,}47\\ \\text{m}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "Sí: arriba a la línia de gol a $1{,}93\\ \\text{m}$ d'altura, als $1{,}21\\ \\text{s}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$y_\\text{màx} \\approx 2{,}89\\ \\text{m}$ a $x \\approx 15{,}9\\ \\text{m}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$v_{0,\\text{màx}} \\approx 22{,}8\\ \\text{m/s}$"
+          }
+        ],
+        "nota": "Errors típics: fer servir $v_0$ (en lloc de $v_{0x}$) per calcular el temps fins a la barrera; intercanviar sinus i cosinus; oblidar el $\\tfrac12$ de $\\tfrac12 g t^2$. Per a l'apartat d) es pot comprovar que la velocitat mínima per superar la barrera és d'uns $18{,}0\\ \\text{m/s}$; per tant, amb $20^\\circ$ el gol només és possible si $18{,}0 < v_0 < 22{,}8\\ \\text{m/s}$."
+      }
+    },
+    {
+      "id": "fisica1-cinematica-09",
+      "exercici": 9,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Vol vertical d'un coet de modelisme amb fase propulsada",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "MRUA",
+        "llançament vertical",
+        "caiguda lliure"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Encadenament de MRUA i llançament vertical, cinemàtica de 1r.",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "En una trobada de coets de modelisme a la platja de Castelldefels, es llança verticalment un coet des del terra. Mentre el motor funciona, durant $2{,}5\\ \\text{s}$, el coet puja amb una acceleració constant de $20\\ \\text{m/s}^2$. Quan el combustible s'esgota, el coet continua movent-se només sota l'acció de la gravetat. Suposeu que el paracaigudes no s'obre i negligiu la resistència de l'aire. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La velocitat i l'altura del coet en el moment en què s'apaga el motor.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "L'altura màxima que assoleix el coet.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "El temps total des del llançament fins que el coet torna a terra.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "La velocitat amb què el coet arriba a terra.",
+          "punts": 0.5,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "Eix vertical cap amunt amb origen a terra. El moviment té dues fases:\n\n- Fase 1 (motor encès): MRUA amb $v_0 = 0$, $a_1 = +20\\ \\text{m/s}^2$, $t_1 = 2{,}5\\ \\text{s}$\n- Fase 2 (motor apagat): llançament vertical amb $a = -g = -9{,}8\\ \\text{m/s}^2$; les condicions inicials són la velocitat i l'altura al final de la fase 1\n- Incògnites: $v_1$, $h_1$, $h_\\text{màx}$, temps total, velocitat final"
+          },
+          {
+            "apartat": "a",
+            "titol": "Final de la fase propulsada",
+            "cos": "$$v_1 = a_1\\, t_1 = 20 \\cdot 2{,}5 = 50\\ \\text{m/s}$$\n$$h_1 = \\tfrac12 a_1 t_1^2 = \\tfrac12 \\cdot 20 \\cdot 2{,}5^2 = 62{,}5\\ \\text{m}$$\n**$v_1 = 50\\ \\text{m/s}$ cap amunt, $h_1 = 62{,}5\\ \\text{m}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Pujada sense motor",
+            "cos": "Quan s'apaga el motor el coet **no comença a caure**: continua pujant, frenat per la gravetat, fins que la velocitat s'anul·la. Altura addicional:\n$$0 = v_1^2 - 2 g\\,\\Delta h \\;\\Rightarrow\\; \\Delta h = \\frac{v_1^2}{2g} = \\frac{50^2}{2 \\cdot 9{,}8} = 127{,}6\\ \\text{m}$$\n$$h_\\text{màx} = h_1 + \\Delta h = 62{,}5 + 127{,}6 = 190{,}1\\ \\text{m}$$\n**$h_\\text{màx} \\approx 190\\ \\text{m}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Temps de pujada sense motor",
+            "cos": "$$t_2 = \\frac{v_1}{g} = \\frac{50}{9{,}8} = 5{,}10\\ \\text{s}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Temps de baixada i temps total",
+            "cos": "Des del punt més alt el coet cau partint del repòs des de $190{,}1\\ \\text{m}$ (caiguda lliure):\n$$t_3 = \\sqrt{\\frac{2\\,h_\\text{màx}}{g}} = \\sqrt{\\frac{2 \\cdot 190{,}1}{9{,}8}} = 6{,}23\\ \\text{s}$$\n$$t_\\text{total} = t_1 + t_2 + t_3 = 2{,}5 + 5{,}10 + 6{,}23 = 13{,}8\\ \\text{s}$$\n**$t_\\text{total} \\approx 13{,}8\\ \\text{s}$**"
+          },
+          {
+            "apartat": "d",
+            "titol": "Velocitat d'arribada a terra",
+            "cos": "$$v = g\\, t_3 = 9{,}8 \\cdot 6{,}23 = 61{,}0\\ \\text{m/s}$$\n(o bé $v = \\sqrt{2 g h_\\text{màx}} = \\sqrt{2 \\cdot 9{,}8 \\cdot 190{,}1} = 61{,}0\\ \\text{m/s}$).\n\n**$v \\approx 61\\ \\text{m/s}$ cap avall** (uns $220\\ \\text{km/h}$: per això porten paracaigudes!)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v_1 = 50\\ \\text{m/s}$; $h_1 = 62{,}5\\ \\text{m}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$h_\\text{màx} \\approx 190\\ \\text{m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$t_\\text{total} \\approx 13{,}8\\ \\text{s}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$v \\approx 61\\ \\text{m/s}$ cap avall"
+          }
+        ],
+        "nota": "Errors típics: pensar que l'altura màxima és la del moment en què s'apaga el motor ($62{,}5\\ \\text{m}$); fer servir l'acceleració de $20\\ \\text{m/s}^2$ a la segona fase; pensar que el coet torna a terra a $50\\ \\text{m/s}$ (això només passaria si hagués estat llançat des de terra amb aquesta velocitat). Ara bé, la velocitat al passar de baixada per $62{,}5\\ \\text{m}$ sí que és de $50\\ \\text{m/s}$, per simetria."
+      }
+    },
+    {
+      "id": "fisica1-cinematica-10",
+      "exercici": 10,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Centrifugat d'una rentadora: arrencada i frenada del tambor (MCUA)",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "MCUA",
+        "MCU",
+        "velocitat angular",
+        "acceleració angular",
+        "acceleració centrípeta",
+        "acceleració tangencial"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Moviment circular uniformement accelerat, cinemàtica de Física i Química de 1r.",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "El tambor d'una rentadora, de $50\\ \\text{cm}$ de diàmetre, comença el centrifugat partint del repòs i arriba a $1\\,200\\ \\text{rpm}$ en $8\\ \\text{s}$ amb acceleració angular constant. Al final del programa, el tambor frena uniformement des de $1\\,200\\ \\text{rpm}$ i s'atura després de fer $50$ voltes.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'acceleració angular durant l'arrencada.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "El nombre de voltes que fa el tambor durant l'arrencada.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Per a un punt de la paret del tambor, a $t = 4\\ \\text{s}$ de l'arrencada: l'acceleració tangencial, l'acceleració centrípeta i l'acceleració total.",
+          "punts": 1,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "El temps que dura la frenada i l'acceleració angular de frenada.",
+          "punts": 0.5,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $R = 0{,}25\\ \\text{m}$\n- $\\omega_0 = 0$; $\\omega = 1\\,200\\ \\text{rpm} = 1\\,200 \\cdot \\dfrac{2\\pi}{60} = 40\\pi = 125{,}7\\ \\text{rad/s}$; $t = 8\\ \\text{s}$\n- Frenada: de $125{,}7\\ \\text{rad/s}$ a $0$ en $50\\ \\text{voltes} = 50 \\cdot 2\\pi = 100\\pi = 314{,}2\\ \\text{rad}$\n- Incògnites: $\\alpha$, voltes $N$, $a_t$, $a_c$, $a$, $t_f$, $\\alpha_f$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Acceleració angular d'arrencada",
+            "cos": "El MCUA és l'equivalent circular del MRUA: $\\omega = \\omega_0 + \\alpha t$.\n$$\\alpha = \\frac{\\omega - \\omega_0}{t} = \\frac{125{,}7 - 0}{8} = 15{,}7\\ \\text{rad/s}^2$$\n**$\\alpha = 5\\pi \\approx 15{,}7\\ \\text{rad/s}^2$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Angle girat i voltes",
+            "cos": "$$\\varphi = \\omega_0 t + \\tfrac12 \\alpha t^2 = \\tfrac12 \\cdot 15{,}71 \\cdot 8^2 = 502{,}7\\ \\text{rad}$$\n$$N = \\frac{\\varphi}{2\\pi} = \\frac{502{,}7}{2\\pi} = 80\\ \\text{voltes}$$\n**$N = 80\\ \\text{voltes}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Acceleració tangencial",
+            "cos": "L'acceleració tangencial fa canviar el **mòdul** de la velocitat lineal; en un MCUA és constant:\n$$a_t = \\alpha R = 15{,}71 \\cdot 0{,}25 = 3{,}93\\ \\text{m/s}^2$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Acceleració centrípeta a t = 4 s",
+            "cos": "L'acceleració centrípeta fa canviar la **direcció** de la velocitat i depèn de $\\omega$ en cada instant:\n$$\\omega(4) = \\alpha\\, t = 15{,}71 \\cdot 4 = 62{,}8\\ \\text{rad/s}$$\n$$a_c = \\omega^2 R = 62{,}8^2 \\cdot 0{,}25 = 987\\ \\text{m/s}^2$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Acceleració total",
+            "cos": "Les dues components són perpendiculars (una tangent a la circumferència i l'altra cap al centre):\n$$a = \\sqrt{a_t^2 + a_c^2} = \\sqrt{3{,}93^2 + 987^2} \\approx 987\\ \\text{m/s}^2$$\n**$a_t \\approx 3{,}9\\ \\text{m/s}^2$, $a_c \\approx 987\\ \\text{m/s}^2$, $a \\approx 987\\ \\text{m/s}^2$** (unes 100 vegades $g$; la centrípeta domina totalment)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Temps de frenada",
+            "cos": "Si l'acceleració angular és constant, l'angle girat és la velocitat angular mitjana pel temps:\n$$\\varphi_f = \\frac{\\omega + 0}{2}\\, t_f \\;\\Rightarrow\\; t_f = \\frac{2\\varphi_f}{\\omega} = \\frac{2 \\cdot 314{,}2}{125{,}7} = 5{,}0\\ \\text{s}$$\n**$t_f = 5\\ \\text{s}$**"
+          },
+          {
+            "apartat": "d",
+            "titol": "Acceleració angular de frenada",
+            "cos": "$$\\alpha_f = \\frac{0 - \\omega}{t_f} = \\frac{-125{,}7}{5} = -25{,}1\\ \\text{rad/s}^2$$\n**$\\alpha_f = -8\\pi \\approx -25{,}1\\ \\text{rad/s}^2$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\alpha \\approx 15{,}7\\ \\text{rad/s}^2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$N = 80$ voltes"
+          },
+          {
+            "apartat": "c",
+            "valor": "$a_t \\approx 3{,}9\\ \\text{m/s}^2$; $a_c \\approx 987\\ \\text{m/s}^2$; $a \\approx 987\\ \\text{m/s}^2$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$t_f = 5\\ \\text{s}$; $\\alpha_f \\approx -25{,}1\\ \\text{rad/s}^2$"
+          }
+        ],
+        "nota": "Errors típics: no passar les rpm a rad/s; fer servir el diàmetre com a radi; calcular l'acceleració centrípeta amb la velocitat angular final ($1\\,200\\ \\text{rpm}$) en lloc de la de $t = 4\\ \\text{s}$; sumar $a_t + a_c$ directament en lloc de fer Pitàgores. Fixeu-vos que, com que $a_c \\propto \\omega^2$, a meitat de l'arrencada (meitat de $\\omega$) l'acceleració centrípeta és només una quarta part de la final ($3\\,948\\ \\text{m/s}^2$)."
+      }
+    },
+    {
+      "id": "fisica1-cinematica-11",
+      "exercici": 11,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat instantània a partir de l'equació de posició d'un MRUA",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "MRUA",
+        "equació del moviment"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Equacions del MRUA, cinemàtica de 1r.",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "La posició d'un cos que es mou en línia recta ve donada per $x = 5 + 3t - t^2$ (en unitats del SI). Quina és la seva velocitat a l'instant $t = 2\\ \\text{s}$?",
+      "figures": [],
+      "opcions": {
+        "a": "$7\\ \\text{m/s}$",
+        "b": "$-1\\ \\text{m/s}$",
+        "c": "$3\\ \\text{m/s}$",
+        "d": "$1\\ \\text{m/s}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Identificar les dades a l'equació",
+            "cos": "L'equació general del MRUA és $x = x_0 + v_0 t + \\tfrac12 a t^2$. Comparant-la amb $x = 5 + 3t - t^2$:\n$$x_0 = 5\\ \\text{m} \\qquad v_0 = 3\\ \\text{m/s} \\qquad \\tfrac12 a = -1 \\Rightarrow a = -2\\ \\text{m/s}^2$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Velocitat a t = 2 s",
+            "cos": "$$v = v_0 + a t = 3 - 2 \\cdot 2 = -1\\ \\text{m/s}$$\nEl cos ja s'ha aturat (a $t = 1{,}5\\ \\text{s}$) i ara es mou en sentit negatiu. Resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $7$ és la **posició** a $t = 2\\ \\text{s}$ ($5 + 6 - 4 = 7\\ \\text{m}$), no la velocitat.\n- **c)** $3\\ \\text{m/s}$ és la velocitat **inicial**.\n- **d)** surt de prendre $a = -1\\ \\text{m/s}^2$ (oblidant que el coeficient de $t^2$ és $\\tfrac12 a$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$v(2) = -1\\ \\text{m/s}$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica1-cinematica-12",
+      "exercici": 12,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat i acceleració al punt més alt d'un llançament vertical",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "llançament vertical",
+        "caiguda lliure",
+        "acceleració"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Llançament vertical (MRUA), cinemàtica de 1r.",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Es llança una pilota verticalment cap amunt. Negligint la resistència de l'aire, quan la pilota és al punt més alt de la trajectòria:",
+      "figures": [],
+      "opcions": {
+        "a": "La velocitat i l'acceleració són nul·les.",
+        "b": "La velocitat és nul·la i l'acceleració val $g$ i apunta cap avall.",
+        "c": "La velocitat és màxima i l'acceleració és nul·la.",
+        "d": "La velocitat és nul·la i l'acceleració val $g$ i apunta cap amunt."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Raonament",
+            "cos": "Durant tot el vol l'única força és el pes, per tant l'acceleració és **sempre** $g = 9{,}8\\ \\text{m/s}^2$ cap avall, també al punt més alt. En aquest punt la velocitat s'anul·la un instant: abans era positiva (pujava) i després és negativa (baixa). Si l'acceleració també fos zero, la pilota es quedaria aturada a l'aire. Resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** Error molt típic: confondre \"velocitat zero\" amb \"acceleració zero\".\n- **c)** Al punt més alt la velocitat és mínima (zero), no màxima.\n- **d)** L'acceleració de la gravetat sempre apunta cap avall."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$v = 0$, $a = g$ cap avall → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica1-cinematica-13",
+      "exercici": 13,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Abast i temps de vol de dos tirs parabòlics amb angles complementaris",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "tir parabòlic",
+        "abast",
+        "angles complementaris"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Tir parabòlic, cinemàtica de 1r.",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Des del terra es llancen dues pedres amb la mateixa velocitat inicial, una amb un angle de $25^\\circ$ i l'altra amb un angle de $65^\\circ$ respecte a l'horitzontal. Negligint la resistència de l'aire, quina afirmació és correcta?",
+      "figures": [],
+      "opcions": {
+        "a": "La de $65^\\circ$ arriba més lluny perquè surt més inclinada.",
+        "b": "Arriben igual de lluny i tarden el mateix temps a caure.",
+        "c": "Arriben igual de lluny, però la de $65^\\circ$ està més temps a l'aire.",
+        "d": "La de $25^\\circ$ arriba més lluny perquè té més velocitat horitzontal."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Abast",
+            "cos": "Per a un tir des del terra fins al mateix nivell, l'abast és\n$$x_\\text{màx} = \\frac{v_0^2 \\sin 2\\alpha}{g}$$\nCom que $\\sin(2 \\cdot 25^\\circ) = \\sin 50^\\circ$ i $\\sin(2 \\cdot 65^\\circ) = \\sin 130^\\circ = \\sin 50^\\circ$, **els dos abasts són iguals** (angles complementaris, que sumen $90^\\circ$)."
+          },
+          {
+            "apartat": null,
+            "titol": "Temps de vol",
+            "cos": "$$t_\\text{vol} = \\frac{2 v_0 \\sin\\alpha}{g}$$\nCom que $\\sin 65^\\circ > \\sin 25^\\circ$, la pedra de $65^\\circ$ té més velocitat vertical inicial, puja més amunt i **està més temps a l'aire** (unes $2{,}1$ vegades més). Compensa la seva velocitat horitzontal més petita. Resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** i **d)** Cada pedra té un avantatge (més temps o més velocitat horitzontal), però es compensen exactament.\n- **b)** Els temps de vol són diferents."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "Mateix abast; la de $65^\\circ$ tarda més → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica1-cinematica-14",
+      "exercici": 14,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat angular de la busca dels minuts d'un rellotge",
+      "tema": "cinematica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "MCU",
+        "velocitat angular",
+        "període"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Moviment circular uniforme, cinemàtica de 1r.",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Quina és la velocitat angular de la busca dels minuts d'un rellotge analògic?",
+      "figures": [],
+      "opcions": {
+        "a": "$0{,}105\\ \\text{rad/s}$",
+        "b": "$1{,}75 \\cdot 10^{-3}\\ \\text{rad/s}$",
+        "c": "$1{,}45 \\cdot 10^{-4}\\ \\text{rad/s}$",
+        "d": "$6{,}28\\ \\text{rad/s}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Període de la busca dels minuts",
+            "cos": "La busca dels minuts fa una volta completa en una hora: $T = 3\\,600\\ \\text{s}$. En un MCU:\n$$\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{3\\,600} = 1{,}75 \\cdot 10^{-3}\\ \\text{rad/s}$$\nResposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $2\\pi/60$: és la busca dels **segons** (una volta per minut).\n- **c)** $2\\pi/43\\,200$: és la busca de les **hores** (una volta cada 12 hores).\n- **d)** $2\\pi$: confon \"una volta per hora\" amb \"una volta per segon\"."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\omega = 2\\pi/3\\,600 \\approx 1{,}75 \\cdot 10^{-3}\\ \\text{rad/s}$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    }
+  ]
+}

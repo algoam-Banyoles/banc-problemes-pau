@@ -1,0 +1,1275 @@
+{
+  "examen": {
+    "id": "fisica1-practica-dinamica",
+    "assignatura": "fisica1",
+    "materia": "Problemes de pràctica · Física de 1r",
+    "practica": true,
+    "any": 2026,
+    "convocatoria": "practica",
+    "serie": null,
+    "pdf_examen": null,
+    "pdf_solucio": null,
+    "estructura": "Problemes originals de pràctica (no són de selectivitat), bloc: dinàmica (lleis de Newton, fregament, pla inclinat, cossos enllaçats, ascensors i dinàmica del moviment circular)."
+  },
+  "problemes": [
+    {
+      "id": "fisica1-dinamica-01",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Força de tracció d'un tren de Rodalies en arrencar",
+      "tema": "dinamica",
+      "temes_secundaris": [
+        "cinematica"
+      ],
+      "conceptes": [
+        "lleis de Newton",
+        "MRUA",
+        "força resultant",
+        "diagrama de cos lliure"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Un tren de Rodalies de la línia R2 té una massa total de $180\\ \\text{t}$. Surt de l'estació de Granollers i, en una via recta i horitzontal, passa del repòs a $72\\ \\text{km/h}$ en $40\\ \\text{s}$ amb acceleració constant. Durant tot el moviment, les forces de resistència a l'avançament (fregament de rodolament i aire) són constants i valen $12\\ \\text{kN}$. Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'acceleració del tren durant l'arrencada.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "La força de tracció que fan els motors durant l'arrencada.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "La força de tracció necessària quan el tren ja circula a $72\\ \\text{km/h}$ constants.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "Un passatger de $70\\ \\text{kg}$ viatja dret, sense agafar-se, durant l'arrencada. Quina força horitzontal li fa el terra del vagó? Quina és l'origen d'aquesta força?",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa del tren: $m = 180\\ \\text{t} = 1{,}8\\cdot 10^5\\ \\text{kg}$\n- Velocitat inicial: $v_0 = 0$; velocitat final: $v = 72\\ \\text{km/h} = \\dfrac{72}{3{,}6} = 20\\ \\text{m/s}$\n- Temps: $t = 40\\ \\text{s}$\n- Resistència: $F_\\text{res} = 12\\ \\text{kN} = 12\\,000\\ \\text{N}$\n- Passatger: $m_p = 70\\ \\text{kg}$\n- Incògnites: $a$, $F_\\text{tracció}$ (arrencant i a velocitat constant), força del terra sobre el passatger."
+          },
+          {
+            "apartat": "a",
+            "titol": "Acceleració a partir de la cinemàtica",
+            "cos": "L'acceleració és constant (MRUA), per tant la podem treure de la definició d'acceleració:\n\n$$a = \\frac{v - v_0}{t} = \\frac{20 - 0}{40} = 0{,}5\\ \\text{m/s}^2$$\n\nResultat: **$a = 0{,}5\\ \\text{m/s}^2$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Diagrama de forces i segona llei de Newton",
+            "cos": "Sobre el tren actuen, en horitzontal, la força de tracció $F$ (cap endavant) i la resistència $F_\\text{res}$ (cap enrere). En vertical, el pes i la normal s'anul·len (no hi ha moviment vertical).\n\nLa segona llei de Newton en la direcció del moviment diu que la força **resultant** és $m\\,a$:\n\n$$F - F_\\text{res} = m\\,a \\quad\\Rightarrow\\quad F = m\\,a + F_\\text{res}$$\n\n$$F = 1{,}8\\cdot 10^5 \\cdot 0{,}5 + 12\\,000 = 90\\,000 + 12\\,000 = 102\\,000\\ \\text{N}$$\n\nResultat: **$F = 1{,}02\\cdot 10^5\\ \\text{N} = 102\\ \\text{kN}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "A velocitat constant la resultant és zero",
+            "cos": "Si la velocitat és constant, $a = 0$ i, per la **primera llei de Newton**, la força resultant és nul·la. Els motors només han de compensar la resistència:\n\n$$F - F_\\text{res} = 0 \\quad\\Rightarrow\\quad F = F_\\text{res} = 12\\,000\\ \\text{N}$$\n\nResultat: **$F = 12\\ \\text{kN}$** (molt menys que en arrencar)."
+          },
+          {
+            "apartat": "d",
+            "titol": "Força sobre el passatger",
+            "cos": "El passatger té la mateixa acceleració que el tren ($0{,}5\\ \\text{m/s}^2$ cap endavant). L'única força horitzontal que actua sobre ell és la que li fa el terra a través de les sabates, i ha de ser la resultant:\n\n$$F_p = m_p\\,a = 70 \\cdot 0{,}5 = 35\\ \\text{N}$$\n\nÉs una **força de fregament estàtic**: les sabates no rellisquen respecte del terra, i el fregament impedeix que els peus es quedin enrere. Va **cap endavant**, en el sentit de l'acceleració.\n\nResultat: **$F_p = 35\\ \\text{N}$ cap endavant (fregament estàtic)**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a = 0{,}5\\ \\text{m/s}^2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F = 102\\ \\text{kN}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$F = 12\\ \\text{kN}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$F_p = 35\\ \\text{N}$, fregament estàtic cap endavant"
+          }
+        ],
+        "nota": "Errors típics: oblidar sumar la resistència a l'apartat b) (sortiria $90\\ \\text{kN}$), no passar les tones a kg o els km/h a m/s, i pensar que a velocitat constant no cal cap força (cal compensar la resistència). A l'apartat d), molta gent diu que el fregament va «cap enrere» perquè el passatger «tendeix a anar enrere»: la força que l'accelera cap endavant ha d'anar cap endavant."
+      }
+    },
+    {
+      "id": "fisica1-dinamica-02",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Bàscula dins d'un ascensor i tensió del cable",
+      "tema": "dinamica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "lleis de Newton",
+        "diagrama de cos lliure",
+        "tensió d'una corda",
+        "pes aparent"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "En un edifici d'oficines de Barcelona, una persona de $65\\ \\text{kg}$ puja en un ascensor dret damunt d'una bàscula de bany. La cabina, buida, té una massa de $450\\ \\text{kg}$ (inclosa la bàscula). El viatge cap amunt té tres fases: arrencada amb una acceleració de $1{,}2\\ \\text{m/s}^2$, tram a velocitat constant i frenada amb una acceleració de $1{,}2\\ \\text{m/s}^2$ en mòdul. Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina força fa la bàscula sobre la persona i quina massa (en kg) marca la bàscula en cadascuna de les tres fases?",
+          "punts": 1.0,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Quina és la tensió del cable de l'ascensor en cadascuna de les tres fases?",
+          "punts": 1.0,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Si el cable pot suportar com a màxim $8\\,000\\ \\text{N}$, quina és l'acceleració màxima cap amunt que pot tenir l'ascensor amb aquesta persona a dins?",
+          "punts": 0.5,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Persona: $m = 65\\ \\text{kg}$. Cabina: $M = 450\\ \\text{kg}$. Total: $m_T = 515\\ \\text{kg}$\n- Acceleracions (eix positiu cap amunt): arrencada $a_1 = +1{,}2\\ \\text{m/s}^2$, velocitat constant $a_2 = 0$, frenada pujant $a_3 = -1{,}2\\ \\text{m/s}^2$\n- Tensió màxima del cable: $T_\\text{màx} = 8\\,000\\ \\text{N}$\n- Incògnites: normal $N$ i lectura de la bàscula, tensió $T$, acceleració màxima."
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de cos lliure de la persona",
+            "cos": "Sobre la persona actuen dues forces verticals: el pes $m\\,g$ (cap avall) i la normal $N$ que li fa la bàscula (cap amunt). La bàscula marca la força $N$ (dividida per $g$ si està graduada en kg). Amb l'eix positiu cap amunt, la segona llei de Newton dona:\n\n$$N - m\\,g = m\\,a \\quad\\Rightarrow\\quad N = m\\,(g + a)$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Les tres fases",
+            "cos": "- Arrencada: $N_1 = 65\\,(9{,}8 + 1{,}2) = 715\\ \\text{N}$ → marca $\\dfrac{715}{9{,}8} = 73{,}0\\ \\text{kg}$\n- Velocitat constant: $N_2 = 65 \\cdot 9{,}8 = 637\\ \\text{N}$ → marca $65{,}0\\ \\text{kg}$\n- Frenada (pujant, l'acceleració és cap avall): $N_3 = 65\\,(9{,}8 - 1{,}2) = 559\\ \\text{N}$ → marca $57{,}0\\ \\text{kg}$\n\nResultat: **$715\\ \\text{N}$ (73,0 kg), $637\\ \\text{N}$ (65,0 kg) i $559\\ \\text{N}$ (57,0 kg)**. La persona «se sent» més pesada en arrencar i més lleugera en frenar."
+          },
+          {
+            "apartat": "b",
+            "titol": "Diagrama de cos lliure del conjunt cabina + persona",
+            "cos": "Prenem com a sistema la cabina amb la persona a dins (les forces entre persona i bàscula són internes i no compten). Les forces externes són la tensió $T$ (amunt) i el pes total $m_T\\,g$ (avall):\n\n$$T - m_T\\,g = m_T\\,a \\quad\\Rightarrow\\quad T = m_T\\,(g + a)$$\n\n- Arrencada: $T_1 = 515 \\cdot 11{,}0 = 5\\,665\\ \\text{N}$\n- Velocitat constant: $T_2 = 515 \\cdot 9{,}8 = 5\\,047\\ \\text{N}$\n- Frenada: $T_3 = 515 \\cdot 8{,}6 = 4\\,429\\ \\text{N}$\n\nResultat: **$T_1 = 5\\,665\\ \\text{N}$, $T_2 = 5\\,047\\ \\text{N}$, $T_3 = 4\\,429\\ \\text{N}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Acceleració màxima que suporta el cable",
+            "cos": "Aïllem l'acceleració de la mateixa equació, posant-hi la tensió màxima:\n\n$$a_\\text{màx} = \\frac{T_\\text{màx}}{m_T} - g = \\frac{8\\,000}{515} - 9{,}8 = 15{,}53 - 9{,}8 = 5{,}73\\ \\text{m/s}^2$$\n\nResultat: **$a_\\text{màx} \\approx 5{,}7\\ \\text{m/s}^2$** cap amunt."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$N$: $715\\ \\text{N}$ / $637\\ \\text{N}$ / $559\\ \\text{N}$; la bàscula marca $73{,}0$ / $65{,}0$ / $57{,}0\\ \\text{kg}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$T$: $5\\,665\\ \\text{N}$ / $5\\,047\\ \\text{N}$ / $4\\,429\\ \\text{N}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$a_\\text{màx} \\approx 5{,}7\\ \\text{m/s}^2$"
+          }
+        ],
+        "nota": "Errors típics: posar el signe de l'acceleració malament a la frenada (pujant i frenant, l'acceleració va cap **avall**); pensar que la bàscula sempre marca el pes; a l'apartat b), fer servir només la massa de la cabina o només la de la persona. La bàscula no mesura la massa: mesura la força normal i la divideix per $g$."
+      }
+    },
+    {
+      "id": "fisica1-dinamica-03",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Velocitat màxima en una rotonda plana amb sec i amb pluja",
+      "tema": "dinamica",
+      "temes_secundaris": [
+        "cinematica"
+      ],
+      "conceptes": [
+        "força centrípeta",
+        "força de fregament",
+        "MCU",
+        "acceleració centrípeta"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Un cotxe de $1\\,200\\ \\text{kg}$ circula per una rotonda plana (sense peralt) de radi $40\\ \\text{m}$ a l'entrada d'un poble del Vallès. El coeficient de fregament estàtic entre els pneumàtics i l'asfalt sec és $\\mu_e = 0{,}60$. Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina força fa de força centrípeta? Calculeu la velocitat màxima, en km/h, a què pot fer la rotonda sense derrapar.",
+          "punts": 1.0,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Quina força de fregament fa el terra sobre el cotxe si fa la rotonda a $36\\ \\text{km/h}$?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Un dia de pluja el coeficient baixa a $\\mu_e = 0{,}30$. Quina és ara la velocitat màxima? Depèn de la massa del vehicle?",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 1\\,200\\ \\text{kg}$, $R = 40\\ \\text{m}$\n- $\\mu_e = 0{,}60$ (sec), $\\mu_e' = 0{,}30$ (mullat)\n- Incògnites: $v_\\text{màx}$ (sec i mullat), $F_f$ a $36\\ \\text{km/h} = 10\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Quina força fa de força centrípeta",
+            "cos": "Per fer un moviment circular cal una força resultant dirigida cap al centre: la **força centrípeta**, $F_c = m\\,v^2/R$. En una corba plana, el pes i la normal són verticals i s'anul·len ($N = m\\,g$); l'única força horitzontal és el **fregament estàtic** entre pneumàtics i asfalt, dirigit cap al centre. (És estàtic perquè la roda no rellisca lateralment.)"
+          },
+          {
+            "apartat": "a",
+            "titol": "Condició de no derrapar",
+            "cos": "El fregament estàtic té un valor màxim $\\mu_e\\,N = \\mu_e\\,m\\,g$. La velocitat màxima és la que necessita exactament aquest fregament:\n\n$$\\frac{m\\,v_\\text{màx}^2}{R} = \\mu_e\\,m\\,g \\quad\\Rightarrow\\quad v_\\text{màx} = \\sqrt{\\mu_e\\,g\\,R}$$\n\n$$v_\\text{màx} = \\sqrt{0{,}60 \\cdot 9{,}8 \\cdot 40} = \\sqrt{235{,}2} = 15{,}3\\ \\text{m/s}$$\n\nEn km/h: $15{,}34 \\cdot 3{,}6 = 55{,}2\\ \\text{km/h}$.\n\nResultat: **$v_\\text{màx} \\approx 15{,}3\\ \\text{m/s} \\approx 55\\ \\text{km/h}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Fregament necessari a 36 km/h",
+            "cos": "Si no derrapa, el fregament estàtic val **exactament** el que cal per fer el gir (no el màxim):\n\n$$F_f = \\frac{m\\,v^2}{R} = \\frac{1\\,200 \\cdot 10^2}{40} = 3\\,000\\ \\text{N}$$\n\nComprovem que no supera el màxim: $\\mu_e\\,m\\,g = 0{,}60 \\cdot 1\\,200 \\cdot 9{,}8 = 7\\,056\\ \\text{N} > 3\\,000\\ \\text{N}$. D'acord.\n\nResultat: **$F_f = 3\\,000\\ \\text{N}$**, dirigida cap al centre de la rotonda."
+          },
+          {
+            "apartat": "c",
+            "titol": "Amb l'asfalt mullat",
+            "cos": "Fem servir la mateixa expressió amb el nou coeficient:\n\n$$v_\\text{màx}' = \\sqrt{0{,}30 \\cdot 9{,}8 \\cdot 40} = \\sqrt{117{,}6} = 10{,}8\\ \\text{m/s} \\approx 39\\ \\text{km/h}$$\n\nA l'expressió $v_\\text{màx} = \\sqrt{\\mu_e\\,g\\,R}$ la massa s'ha simplificat: **no depèn de la massa** (un camió i una moto tenen la mateixa velocitat límit si el coeficient és el mateix).\n\nResultat: **$v_\\text{màx}' \\approx 10{,}8\\ \\text{m/s} \\approx 39\\ \\text{km/h}$**, independent de la massa."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "El fregament estàtic fa de força centrípeta; $v_\\text{màx} \\approx 15{,}3\\ \\text{m/s} \\approx 55\\ \\text{km/h}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F_f = 3\\,000\\ \\text{N}$ cap al centre"
+          },
+          {
+            "apartat": "c",
+            "valor": "$v_\\text{màx}' \\approx 39\\ \\text{km/h}$; no depèn de la massa"
+          }
+        ],
+        "nota": "Errors típics: posar a l'apartat b) el fregament màxim ($7\\,056\\ \\text{N}$) en lloc del necessari; pensar que hi ha una «força centrífuga» que empeny cap enfora (des del terra, l'única força horitzontal és el fregament cap al centre); i oblidar que reduir $\\mu$ a la meitat no redueix la velocitat a la meitat, sinó en un factor $\\sqrt{2}$."
+      }
+    },
+    {
+      "id": "fisica1-dinamica-04",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Caixa en una rampa de càrrega: fregament estàtic i dinàmic",
+      "tema": "dinamica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "pla inclinat",
+        "força de fregament",
+        "diagrama de cos lliure",
+        "lleis de Newton"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Un repartidor fa servir una rampa inclinada $20^\\circ$ per pujar caixes al camió. Una caixa de $30\\ \\text{kg}$ és sobre la rampa. Els coeficients de fregament entre la caixa i la rampa són $\\mu_e = 0{,}45$ (estàtic) i $\\mu_d = 0{,}35$ (dinàmic). Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [
+        {
+          "src": "img/fisica1/dinamica/04.png",
+          "peu": "Rampa de càrrega inclinada 20° amb la caixa de 30 kg"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de cos lliure de la caixa. Si es deixa la caixa en repòs sobre la rampa, rellisca? Quant val la força de fregament?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Quina força paral·lela a la rampa ha de fer el repartidor per pujar la caixa a velocitat constant?",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Si empeny amb una força paral·lela a la rampa de $250\\ \\text{N}$, quina acceleració té la caixa?",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "Un cop dalt, la caixa se li escapa i comença a baixar per la rampa amb una petita velocitat inicial. Què li passa: s'atura, baixa a velocitat constant o accelera? Calculeu-ne l'acceleració.",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 30\\ \\text{kg}$, $\\theta = 20^\\circ$, $\\mu_e = 0{,}45$, $\\mu_d = 0{,}35$\n- Incògnites: si rellisca i $F_f$ en repòs; força per pujar a $v$ constant; acceleració amb $F = 250\\ \\text{N}$; acceleració baixant."
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de cos lliure i descomposició del pes",
+            "cos": "Sobre la caixa actuen el **pes** $m\\,g$ (vertical, avall), la **normal** $N$ (perpendicular a la rampa) i el **fregament** $F_f$ (paral·lel a la rampa, oposat al moviment o a la tendència a moure's). Prenem eixos paral·lel i perpendicular a la rampa i descomponem el pes:\n\n$$P_x = m\\,g\\sin\\theta = 30 \\cdot 9{,}8 \\cdot \\sin 20^\\circ = 100{,}6\\ \\text{N} \\quad\\text{(rampa avall)}$$\n\n$$P_y = m\\,g\\cos\\theta = 30 \\cdot 9{,}8 \\cdot \\cos 20^\\circ = 276{,}3\\ \\text{N}$$\n\nEn la direcció perpendicular no hi ha moviment, així que $N = P_y = 276{,}3\\ \\text{N}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Rellisca o no?",
+            "cos": "El fregament estàtic pot arribar com a màxim a:\n\n$$F_{e,\\text{màx}} = \\mu_e\\,N = 0{,}45 \\cdot 276{,}3 = 124{,}3\\ \\text{N}$$\n\nCom que $P_x = 100{,}6\\ \\text{N} < 124{,}3\\ \\text{N}$, el fregament pot equilibrar la component del pes i **la caixa no rellisca**. El fregament val exactament el necessari (no el màxim):\n\n$$F_f = P_x = 100{,}6\\ \\text{N}\\quad\\text{(rampa amunt)}$$\n\n(Equivalentment: no rellisca perquè $\\tan 20^\\circ = 0{,}36 < \\mu_e = 0{,}45$.)\n\nResultat: **no rellisca; $F_f \\approx 101\\ \\text{N}$ rampa amunt**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Pujar a velocitat constant",
+            "cos": "Ara la caixa es mou rampa amunt: el fregament és **dinàmic** i va rampa avall, $F_d = \\mu_d\\,N = 0{,}35 \\cdot 276{,}3 = 96{,}7\\ \\text{N}$. A velocitat constant la resultant és zero:\n\n$$F - P_x - F_d = 0 \\quad\\Rightarrow\\quad F = 100{,}6 + 96{,}7 = 197{,}2\\ \\text{N}$$\n\nResultat: **$F \\approx 197\\ \\text{N}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Acceleració amb 250 N",
+            "cos": "Les forces de fregament i el pes no canvien; ara sobra força:\n\n$$a = \\frac{F - P_x - F_d}{m} = \\frac{250 - 197{,}2}{30} = 1{,}76\\ \\text{m/s}^2$$\n\nResultat: **$a \\approx 1{,}76\\ \\text{m/s}^2$** rampa amunt."
+          },
+          {
+            "apartat": "d",
+            "titol": "Baixant: el fregament canvia de sentit",
+            "cos": "Ara la caixa ja es mou rampa avall, de manera que el fregament que hi actua és el **dinàmic** i va rampa amunt. Comparem:\n\n$$P_x = 100{,}6\\ \\text{N} \\qquad F_d = 96{,}7\\ \\text{N}$$\n\nCom que $P_x > F_d$, la resultant va rampa avall i la caixa **accelera** (poc):\n\n$$a = \\frac{P_x - F_d}{m} = \\frac{100{,}6 - 96{,}7}{30} = 0{,}13\\ \\text{m/s}^2$$\n\nFixeu-vos-hi: en repòs no rellisca (el fregament estàtic màxim és prou gran), però un cop en moviment el fregament dinàmic és més petit i ja no l'aguanta.\n\nResultat: **accelera rampa avall amb $a \\approx 0{,}13\\ \\text{m/s}^2$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "No rellisca ($P_x = 100{,}6\\ \\text{N} < 124{,}3\\ \\text{N}$); $F_f \\approx 101\\ \\text{N}$ rampa amunt"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F \\approx 197\\ \\text{N}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$a \\approx 1{,}76\\ \\text{m/s}^2$"
+          },
+          {
+            "apartat": "d",
+            "valor": "Accelera rampa avall, $a \\approx 0{,}13\\ \\text{m/s}^2$"
+          }
+        ],
+        "nota": "Errors típics: posar sempre $F_f = \\mu_e\\,N$ (és només el màxim, el fregament estàtic val el que cal); fer servir $N = m\\,g$ en lloc de $m\\,g\\cos\\theta$; confondre sinus i cosinus en descompondre el pes; i no canviar el sentit del fregament quan la caixa baixa."
+      }
+    },
+    {
+      "id": "fisica1-dinamica-05",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Bloc sobre una taula enllaçat amb una massa penjant",
+      "tema": "dinamica",
+      "temes_secundaris": [
+        "cinematica"
+      ],
+      "conceptes": [
+        "tensió d'una corda",
+        "politja",
+        "força de fregament",
+        "lleis de Newton",
+        "MRUA"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Al laboratori de l'institut es munta el sistema de la figura: un bloc de $m_1 = 4\\ \\text{kg}$ sobre una taula horitzontal està unit, amb una corda inextensible que passa per una politja, a una massa penjant $m_2 = 2\\ \\text{kg}$. La corda i la politja tenen massa negligible i la politja no té fregament. El coeficient de fregament dinàmic entre el bloc i la taula és $\\mu_d = 0{,}20$. El sistema es deixa anar des del repòs. Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [
+        {
+          "src": "img/fisica1/dinamica/05.png",
+          "peu": "Bloc sobre la taula unit amb una corda a una massa penjant"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu les forces sobre cada cos i calculeu l'acceleració del sistema.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la tensió de la corda. Per què no és igual al pes de $m_2$?",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Quin hauria de ser, com a mínim, el coeficient de fregament estàtic perquè el sistema no es posés en moviment?",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "Quant de temps triga $m_2$ a baixar $0{,}80\\ \\text{m}$ i amb quina velocitat arriba?",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m_1 = 4\\ \\text{kg}$ (taula), $m_2 = 2\\ \\text{kg}$ (penjant), $\\mu_d = 0{,}20$\n- Parteix del repòs; desplaçament $d = 0{,}80\\ \\text{m}$\n- Incògnites: $a$, $T$, $\\mu_{e,\\text{mín}}$, $t$, $v$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrames de cos lliure",
+            "cos": "- **Bloc $m_1$**: pes $m_1 g$ (avall) i normal $N_1$ (amunt), que s'anul·len, $N_1 = m_1 g = 39{,}2\\ \\text{N}$; tensió $T$ cap a la politja; fregament $F_d = \\mu_d N_1 = 0{,}20 \\cdot 39{,}2 = 7{,}84\\ \\text{N}$ en sentit contrari.\n- **Massa $m_2$**: pes $m_2 g = 19{,}6\\ \\text{N}$ (avall) i tensió $T$ (amunt).\n\nLa corda és inextensible: els dos cossos tenen la mateixa acceleració en mòdul. $m_1$ es mou cap a la politja i $m_2$ baixa."
+          },
+          {
+            "apartat": "a",
+            "titol": "Segona llei per a cada cos",
+            "cos": "Prenem positiu el sentit del moviment per a cada cos:\n\n$$m_1:\\quad T - F_d = m_1\\,a \\qquad\\qquad m_2:\\quad m_2\\,g - T = m_2\\,a$$\n\nSumant les dues equacions la tensió desapareix:\n\n$$m_2\\,g - F_d = (m_1 + m_2)\\,a \\quad\\Rightarrow\\quad a = \\frac{m_2\\,g - \\mu_d\\,m_1\\,g}{m_1 + m_2}$$\n\n$$a = \\frac{19{,}6 - 7{,}84}{6} = \\frac{11{,}76}{6} = 1{,}96\\ \\text{m/s}^2$$\n\nResultat: **$a = 1{,}96\\ \\text{m/s}^2$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Tensió de la corda",
+            "cos": "De l'equació de $m_2$:\n\n$$T = m_2\\,(g - a) = 2\\,(9{,}8 - 1{,}96) = 15{,}7\\ \\text{N}$$\n\n(Comprovació amb $m_1$: $T = m_1 a + F_d = 4 \\cdot 1{,}96 + 7{,}84 = 15{,}7\\ \\text{N}$.)\n\nLa tensió és **més petita que el pes** de $m_2$ ($19{,}6\\ \\text{N}$) perquè $m_2$ accelera cap avall: si $T$ fos igual al pes, la resultant sobre $m_2$ seria zero i no acceleraria.\n\nResultat: **$T \\approx 15{,}7\\ \\text{N}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Condició d'equilibri",
+            "cos": "Si el sistema està en repòs, $T = m_2\\,g = 19{,}6\\ \\text{N}$ i el fregament estàtic sobre $m_1$ l'ha d'equilibrar. Perquè sigui possible, el fregament màxim ha de ser com a mínim igual:\n\n$$\\mu_e\\,m_1\\,g \\ge m_2\\,g \\quad\\Rightarrow\\quad \\mu_e \\ge \\frac{m_2}{m_1} = \\frac{2}{4} = 0{,}50$$\n\nResultat: **$\\mu_{e,\\text{mín}} = 0{,}50$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Cinemàtica del MRUA",
+            "cos": "Parteix del repòs amb acceleració constant:\n\n$$d = \\tfrac{1}{2}\\,a\\,t^2 \\quad\\Rightarrow\\quad t = \\sqrt{\\frac{2d}{a}} = \\sqrt{\\frac{2 \\cdot 0{,}80}{1{,}96}} = 0{,}90\\ \\text{s}$$\n\n$$v = a\\,t = 1{,}96 \\cdot 0{,}904 = 1{,}77\\ \\text{m/s}$$\n\nResultat: **$t \\approx 0{,}90\\ \\text{s}$, $v \\approx 1{,}77\\ \\text{m/s}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a = 1{,}96\\ \\text{m/s}^2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$T \\approx 15{,}7\\ \\text{N}$ (menor que $m_2 g = 19{,}6\\ \\text{N}$)"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\mu_{e,\\text{mín}} = 0{,}50$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$t \\approx 0{,}90\\ \\text{s}$; $v \\approx 1{,}77\\ \\text{m/s}$"
+          }
+        ],
+        "nota": "Errors típics: suposar que la tensió és igual al pes de la massa penjant; dividir per $m_2$ sola en lloc de per la massa total; i calcular el fregament amb el pes de tot el sistema en lloc de només el del bloc que toca la taula."
+      }
+    },
+    {
+      "id": "fisica1-dinamica-06",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Peralt d'un revolt d'autovia",
+      "tema": "dinamica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "força centrípeta",
+        "pla inclinat",
+        "força de fregament",
+        "diagrama de cos lliure"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Un revolt d'una autovia de l'Empordà té un radi de $200\\ \\text{m}$ i es vol peraltar perquè els vehicles el puguin fer a $90\\ \\text{km/h}$ **sense necessitat de fregament lateral** (com si l'asfalt estigués glaçat). Considereu un cotxe de $1\\,500\\ \\text{kg}$. Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [
+        {
+          "src": "img/fisica1/dinamica/06.png",
+          "peu": "Secció del revolt peraltat (el centre del revolt és a l'esquerra)"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu les forces sobre el cotxe i calculeu l'angle de peralt $\\theta$ que cal donar al revolt.",
+          "punts": 1.0,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Quant val la força normal que fa la carretera sobre el cotxe en aquestes condicions?",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Un dia de trànsit dens, el cotxe fa el revolt a $60\\ \\text{km/h}$. Quina força de fregament cal ara, i en quin sentit? Quin coeficient de fregament estàtic mínim es necessita?",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $R = 200\\ \\text{m}$, $v = 90\\ \\text{km/h} = 25\\ \\text{m/s}$, $m = 1\\,500\\ \\text{kg}$\n- Velocitat reduïda: $v' = 60\\ \\text{km/h} = 16{,}67\\ \\text{m/s}$\n- Incògnites: $\\theta$, $N$, $F_f$ i $\\mu_{e,\\text{mín}}$ a $60\\ \\text{km/h}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Forces i quina en fa de centrípeta",
+            "cos": "Sense fregament, sobre el cotxe només hi ha el **pes** (vertical) i la **normal** (perpendicular a la calçada inclinada). La normal està inclinada un angle $\\theta$ respecte de la vertical cap al centre del revolt, i la seva component horitzontal és la que fa de **força centrípeta**. El centre del revolt és **horitzontal** respecte del cotxe, per això ara prenem eixos horitzontal i vertical (no paral·lel al pla):\n\n$$\\text{vertical:}\\quad N\\cos\\theta = m\\,g \\qquad\\qquad \\text{horitzontal:}\\quad N\\sin\\theta = \\frac{m\\,v^2}{R}$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Angle de peralt",
+            "cos": "Dividint les dues equacions desapareixen $N$ i $m$:\n\n$$\\tan\\theta = \\frac{v^2}{g\\,R} = \\frac{25^2}{9{,}8 \\cdot 200} = \\frac{625}{1\\,960} = 0{,}319$$\n\n$$\\theta = \\arctan 0{,}319 = 17{,}7^\\circ$$\n\nResultat: **$\\theta \\approx 17{,}7^\\circ$** (independent de la massa del vehicle)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força normal",
+            "cos": "De l'equació vertical:\n\n$$N = \\frac{m\\,g}{\\cos\\theta} = \\frac{1\\,500 \\cdot 9{,}8}{\\cos 17{,}7^\\circ} = 1{,}54\\cdot 10^4\\ \\text{N}$$\n\nÉs més gran que el pes ($14\\,700\\ \\text{N}$), perquè la normal ha d'aguantar el cotxe **i** proporcionar la força centrípeta.\n\nResultat: **$N \\approx 15\\,400\\ \\text{N}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "A menys velocitat: el cotxe tendeix a lliscar cap a dins",
+            "cos": "A $60\\ \\text{km/h}$ cal menys força centrípeta: $m\\,v'^2/R = 1\\,500 \\cdot 16{,}67^2/200 = 2\\,083\\ \\text{N}$. Sense fregament, el cotxe lliscaria pendent avall (cap a l'interior del revolt), així que el fregament estàtic va **pendent amunt**, paral·lel a la calçada.\n\nAra és més còmode prendre eixos paral·lel i perpendicular a la calçada. L'acceleració centrípeta $a_c = v'^2/R$ (horitzontal) té components $a_c\\cos\\theta$ al llarg del pendent (cap avall) i $a_c\\sin\\theta$ perpendicular (cap a dins de la calçada):\n\n$$\\text{al llarg del pla:}\\quad m\\,g\\sin\\theta - F_f = m\\,a_c\\cos\\theta$$\n\n$$F_f = m\\,(g\\sin\\theta - a_c\\cos\\theta) = 1\\,500\\,(2{,}977 - 1{,}323) = 2\\,481\\ \\text{N}$$\n\n$$\\text{perpendicular:}\\quad N - m\\,g\\cos\\theta = m\\,a_c\\sin\\theta \\quad\\Rightarrow\\quad N = 14\\,638\\ \\text{N}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Coeficient mínim",
+            "cos": "Perquè no llisqui, el fregament necessari no pot superar el màxim $\\mu_e N$:\n\n$$\\mu_{e,\\text{mín}} = \\frac{F_f}{N} = \\frac{2\\,481}{14\\,638} = 0{,}17$$\n\nQualsevol asfalt sec o mullat (μ de 0,4 a 0,8) ho compleix; només amb gel hi hauria problemes.\n\nResultat: **$F_f \\approx 2\\,480\\ \\text{N}$ pendent amunt; $\\mu_{e,\\text{mín}} \\approx 0{,}17$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\theta \\approx 17{,}7^\\circ$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$N \\approx 15\\,400\\ \\text{N}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$F_f \\approx 2\\,480\\ \\text{N}$ pendent amunt; $\\mu_{e,\\text{mín}} \\approx 0{,}17$"
+          }
+        ],
+        "nota": "Errors típics: descompondre la normal com en un pla inclinat «normal» ($N = m\\,g\\cos\\theta$), que només val si no hi ha acceleració perpendicular al pla; aquí l'acceleració és horitzontal. També és habitual posar el fregament sempre cap a dins del revolt: si el cotxe va més lent que la velocitat de disseny, el fregament va pendent **amunt** (cap a fora); si va més ràpid, pendent avall."
+      }
+    },
+    {
+      "id": "fisica1-dinamica-07",
+      "exercici": 7,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Forces sobre un passatger en el bucle d'una muntanya russa",
+      "tema": "dinamica",
+      "temes_secundaris": [
+        "cinematica"
+      ],
+      "conceptes": [
+        "força centrípeta",
+        "diagrama de cos lliure",
+        "acceleració centrípeta",
+        "pes aparent"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "En una muntanya russa d'un parc d'atraccions de la costa catalana, els vagons fan un bucle vertical. Al punt més alt A el radi de curvatura de la via és $12\\ \\text{m}$, i al punt més baix B, a l'entrada del bucle, la via és més oberta i té un radi de curvatura de $20\\ \\text{m}$. Un passatger de $60\\ \\text{kg}$ va assegut al vagó. Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [
+        {
+          "src": "img/fisica1/dinamica/07.png",
+          "peu": "Bucle de la muntanya russa: punt més alt A i punt més baix B"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina és la velocitat mínima que ha de portar el vagó al punt A perquè el passatger completi el bucle sense necessitat de l'arnès (és a dir, sense deixar de tocar el seient)?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Si el vagó passa per A a $15\\ \\text{m/s}$, quina força fa el seient sobre el passatger? Quin sentit té?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Al punt B el vagó va a $25\\ \\text{m/s}$. Calculeu la força que fa el seient sobre el passatger i expresseu-la com a múltiple del seu pes (els «g» que nota).",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 60\\ \\text{kg}$, pes $m\\,g = 588\\ \\text{N}$\n- A: $R_A = 12\\ \\text{m}$; B: $R_B = 20\\ \\text{m}$\n- Incògnites: $v_{A,\\text{mín}}$; $N_A$ a $15\\ \\text{m/s}$; $N_B$ a $25\\ \\text{m/s}$ i $N_B/(m g)$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Al punt més alt: pes i normal cap avall",
+            "cos": "Al punt A el passatger va cap per avall. El centre del bucle és **sota** seu. Sobre ell actuen el pes (avall, cap al centre) i la força del seient $N$ (també cap avall, cap al centre, perquè el seient és «a sobre» seu). Totes dues fan de força centrípeta:\n\n$$m\\,g + N_A = \\frac{m\\,v_A^2}{R_A}$$\n\nLa velocitat mínima correspon a $N_A = 0$ (el passatger just deixa de prémer el seient): el pes sol fa de força centrípeta.\n\n$$m\\,g = \\frac{m\\,v_\\text{mín}^2}{R_A} \\quad\\Rightarrow\\quad v_\\text{mín} = \\sqrt{g\\,R_A} = \\sqrt{9{,}8 \\cdot 12} = 10{,}8\\ \\text{m/s}$$\n\nResultat: **$v_{A,\\text{mín}} \\approx 10{,}8\\ \\text{m/s}$** ($\\approx 39\\ \\text{km/h}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Força del seient a 15 m/s",
+            "cos": "De la mateixa equació:\n\n$$N_A = m\\left(\\frac{v_A^2}{R_A} - g\\right) = 60\\left(\\frac{15^2}{12} - 9{,}8\\right) = 60\\,(18{,}75 - 9{,}8) = 537\\ \\text{N}$$\n\nResultat: **$N_A = 537\\ \\text{N}$, vertical cap avall** (cap al centre del bucle). El passatger «nota» el seient a sobre seu, gairebé com si pesés el seu pes normal però cap per amunt."
+          },
+          {
+            "apartat": "c",
+            "titol": "Al punt més baix: la normal ha de superar el pes",
+            "cos": "A B el centre de curvatura és **a sobre** del passatger. La normal va amunt (cap al centre) i el pes avall. La resultant cap amunt fa de força centrípeta:\n\n$$N_B - m\\,g = \\frac{m\\,v_B^2}{R_B} \\quad\\Rightarrow\\quad N_B = m\\left(g + \\frac{v_B^2}{R_B}\\right)$$\n\n$$N_B = 60\\left(9{,}8 + \\frac{25^2}{20}\\right) = 60\\,(9{,}8 + 31{,}25) = 2\\,463\\ \\text{N}$$\n\nComparat amb el pes:\n\n$$\\frac{N_B}{m\\,g} = \\frac{2\\,463}{588} = 4{,}2$$\n\nResultat: **$N_B \\approx 2\\,460\\ \\text{N}$, unes 4,2 vegades el seu pes** (nota «4,2 g»). Per això la via és més oberta a B: amb el radi de 12 m sortirien més de 6 g."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v_{A,\\text{mín}} = \\sqrt{g R_A} \\approx 10{,}8\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$N_A = 537\\ \\text{N}$ cap avall"
+          },
+          {
+            "apartat": "c",
+            "valor": "$N_B \\approx 2\\,460\\ \\text{N} \\approx 4{,}2\\ m g$"
+          }
+        ],
+        "nota": "Errors típics: posar la normal sempre cap amunt (al punt més alt va cap avall, cap al centre); afegir una «força centrífuga» al diagrama, que no és cap interacció real; i pensar que a la velocitat mínima la velocitat és zero (si fos zero, cauria)."
+      }
+    },
+    {
+      "id": "fisica1-dinamica-08",
+      "exercici": 8,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Bloc en un pla inclinat enllaçat amb una massa penjant",
+      "tema": "dinamica",
+      "temes_secundaris": [
+        "cinematica"
+      ],
+      "conceptes": [
+        "pla inclinat",
+        "politja",
+        "tensió d'una corda",
+        "força de fregament",
+        "lleis de Newton",
+        "MRUA"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "En una obra es puja material amb el muntatge de la figura: un carretó de $m_1 = 10\\ \\text{kg}$ sobre una rampa inclinada $30^\\circ$ està lligat amb una corda, que passa per una politja ideal a dalt de la rampa, a un contrapès de massa $m_2$ que penja verticalment. Els coeficients de fregament entre el carretó i la rampa són $\\mu_e = 0{,}30$ i $\\mu_d = 0{,}25$. Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [
+        {
+          "src": "img/fisica1/dinamica/08.png",
+          "peu": "Carretó sobre la rampa de 30° unit al contrapès per una politja"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Entre quins valors ha d'estar $m_2$ perquè el sistema, deixat en repòs, es quedi en repòs?",
+          "punts": 1.0,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Si $m_2 = 8\\ \\text{kg}$, comproveu que el sistema es mou i calculeu-ne l'acceleració i la tensió de la corda.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Partint del repòs, quina velocitat té el carretó quan ha recorregut $2\\ \\text{m}$ rampa amunt?",
+          "punts": 0.25,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "En aquest moment la corda es trenca. Quina distància recorre encara el carretó rampa amunt? Després es queda aturat o torna a baixar?",
+          "punts": 0.5,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m_1 = 10\\ \\text{kg}$, $\\theta = 30^\\circ$, $\\mu_e = 0{,}30$, $\\mu_d = 0{,}25$\n- Forces sobre $m_1$ que no depenen de $m_2$:\n  - $P_x = m_1 g\\sin 30^\\circ = 49{,}0\\ \\text{N}$ (rampa avall)\n  - $N = m_1 g\\cos 30^\\circ = 84{,}9\\ \\text{N}$\n  - $F_{e,\\text{màx}} = \\mu_e N = 25{,}5\\ \\text{N}$; $F_d = \\mu_d N = 21{,}2\\ \\text{N}$\n- Incògnites: interval de $m_2$; $a$ i $T$ per a $m_2 = 8\\ \\text{kg}$; $v$ després de $2\\ \\text{m}$; distància després de trencar-se la corda."
+          },
+          {
+            "apartat": "a",
+            "titol": "Dos casos límit: a punt de pujar i a punt de baixar",
+            "cos": "En repòs, la tensió és $T = m_2 g$. El fregament estàtic sobre $m_1$ pot anar en un sentit o l'altre, i val com a màxim $25{,}5\\ \\text{N}$.\n\n**Límit superior** ($m_1$ a punt de pujar; fregament rampa avall):\n\n$$m_2 g = P_x + F_{e,\\text{màx}} = 49{,}0 + 25{,}5 = 74{,}5\\ \\text{N} \\quad\\Rightarrow\\quad m_2 = 7{,}60\\ \\text{kg}$$\n\n**Límit inferior** ($m_1$ a punt de baixar; fregament rampa amunt):\n\n$$m_2 g = P_x - F_{e,\\text{màx}} = 49{,}0 - 25{,}5 = 23{,}5\\ \\text{N} \\quad\\Rightarrow\\quad m_2 = 2{,}40\\ \\text{kg}$$\n\nResultat: **$2{,}40\\ \\text{kg} \\le m_2 \\le 7{,}60\\ \\text{kg}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Sentit del moviment i equacions",
+            "cos": "Amb $m_2 = 8\\ \\text{kg} > 7{,}60\\ \\text{kg}$, el contrapès baixa i el carretó puja. El fregament és dinàmic i va rampa avall. Segona llei per a cada cos (positiu en el sentit del moviment):\n\n$$m_2:\\quad m_2 g - T = m_2 a \\qquad\\qquad m_1:\\quad T - P_x - F_d = m_1 a$$\n\nSumant:\n\n$$a = \\frac{m_2 g - P_x - F_d}{m_1 + m_2} = \\frac{78{,}4 - 49{,}0 - 21{,}2}{18} = \\frac{8{,}18}{18} = 0{,}455\\ \\text{m/s}^2$$\n\n$$T = m_2\\,(g - a) = 8\\,(9{,}8 - 0{,}455) = 74{,}8\\ \\text{N}$$\n\nResultat: **$a \\approx 0{,}45\\ \\text{m/s}^2$, $T \\approx 74{,}8\\ \\text{N}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Velocitat després de 2 m",
+            "cos": "MRUA des del repòs, sense temps: $v^2 = v_0^2 + 2\\,a\\,d$:\n\n$$v = \\sqrt{2 \\cdot 0{,}455 \\cdot 2} = 1{,}35\\ \\text{m/s}$$\n\nResultat: **$v \\approx 1{,}35\\ \\text{m/s}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Després de trencar-se la corda: frenada rampa amunt",
+            "cos": "Sense corda, el carretó continua pujant per inèrcia, però ara el pes i el fregament (dinàmic, rampa avall perquè encara puja) el frenen:\n\n$$a' = g\\,(\\sin\\theta + \\mu_d\\cos\\theta) = 9{,}8\\,(0{,}5 + 0{,}25 \\cdot 0{,}866) = 7{,}02\\ \\text{m/s}^2\\ \\text{(frenada)}$$\n\n$$d' = \\frac{v^2}{2\\,a'} = \\frac{1{,}348^2}{2 \\cdot 7{,}02} = 0{,}129\\ \\text{m} \\approx 13\\ \\text{cm}$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Torna a baixar?",
+            "cos": "Quan s'atura, el fregament passa a ser estàtic. Es quedarà quiet només si $P_x \\le F_{e,\\text{màx}}$, és a dir, si $\\tan\\theta \\le \\mu_e$. Però $\\tan 30^\\circ = 0{,}577 > 0{,}30$ ($49{,}0\\ \\text{N} > 25{,}5\\ \\text{N}$), així que **torna a baixar**, ara amb el fregament rampa amunt:\n\n$$a'' = g\\,(\\sin\\theta - \\mu_d\\cos\\theta) = 9{,}8\\,(0{,}5 - 0{,}217) = 2{,}78\\ \\text{m/s}^2\\ \\text{rampa avall}$$\n\nResultat: **puja $13\\ \\text{cm}$ més i després torna a baixar amb $a \\approx 2{,}8\\ \\text{m/s}^2$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$2{,}40\\ \\text{kg} \\le m_2 \\le 7{,}60\\ \\text{kg}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$a \\approx 0{,}45\\ \\text{m/s}^2$; $T \\approx 74{,}8\\ \\text{N}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$v \\approx 1{,}35\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "Recorre $\\approx 13\\ \\text{cm}$ més i torna a baixar ($a \\approx 2{,}8\\ \\text{m/s}^2$)"
+          }
+        ],
+        "nota": "Errors típics: considerar només un dels dos casos límit a l'apartat a); posar el fregament sempre en el mateix sentit (s'oposa al moviment **o a la tendència** a moure's, i canvia quan el carretó comença a baixar); i a l'apartat d) oblidar el fregament a la frenada o suposar que, com que s'atura, ja es queda quiet."
+      }
+    },
+    {
+      "id": "fisica1-dinamica-09",
+      "exercici": 9,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Cotxe amb remolc: força a l'enganxall en accelerar i en frenar",
+      "tema": "dinamica",
+      "temes_secundaris": [
+        "cinematica"
+      ],
+      "conceptes": [
+        "lleis de Newton",
+        "diagrama de cos lliure",
+        "força de fregament",
+        "MRUA",
+        "tercera llei de Newton"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Una família surt de vacances cap al Pirineu amb un cotxe de $1\\,300\\ \\text{kg}$ que arrossega un remolc de $500\\ \\text{kg}$ per una carretera recta i horitzontal. Cada vehicle pateix una força de resistència a l'avançament (rodolament i aire) igual al $2\\ \\%$ del seu pes. El remolc no té frens propis. Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Si les rodes motrius del cotxe reben del terra una força de tracció de $3\\,600\\ \\text{N}$, calculeu l'acceleració del conjunt i la força que fa l'enganxall sobre el remolc.",
+          "punts": 1.0,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Circulant a $90\\ \\text{km/h}$, el conductor fa una frenada d'emergència. L'ABS evita que les rodes es bloquegin i el terra fa sobre les rodes del cotxe la força de fregament estàtic màxima, amb $\\mu_e = 0{,}80$. Calculeu la desacceleració del conjunt i la força a l'enganxall. L'enganxall estira o empeny el remolc?",
+          "punts": 1.0,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Calculeu la distància de frenada i compareu-la amb la que tindria el cotxe sol.",
+          "punts": 0.5,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Cotxe: $m_c = 1\\,300\\ \\text{kg}$; remolc: $m_r = 500\\ \\text{kg}$; total $m_T = 1\\,800\\ \\text{kg}$\n- Resistències: $R_c = 0{,}02 \\cdot 1\\,300 \\cdot 9{,}8 = 254{,}8\\ \\text{N}$; $R_r = 0{,}02 \\cdot 500 \\cdot 9{,}8 = 98{,}0\\ \\text{N}$; total $352{,}8\\ \\text{N}$\n- Tracció: $F = 3\\,600\\ \\text{N}$. Frenada: $\\mu_e = 0{,}80$ només a les rodes del cotxe; $v_0 = 90\\ \\text{km/h} = 25\\ \\text{m/s}$\n- Incògnites: $a$, força a l'enganxall $F_e$ (accelerant i frenant), distància de frenada."
+          },
+          {
+            "apartat": "a",
+            "titol": "Acceleració del conjunt",
+            "cos": "Prenem cotxe + remolc com un sol sistema: la força de l'enganxall és interna (el cotxe estira el remolc i el remolc estira el cotxe, tercera llei) i no compta. Forces externes horitzontals: tracció i resistències.\n\n$$a = \\frac{F - R_c - R_r}{m_T} = \\frac{3\\,600 - 352{,}8}{1\\,800} = 1{,}80\\ \\text{m/s}^2$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Força a l'enganxall: aïllem el remolc",
+            "cos": "Sobre el remolc actuen, en horitzontal, la força de l'enganxall $F_e$ (cap endavant) i la seva resistència $R_r$ (cap enrere):\n\n$$F_e - R_r = m_r\\,a \\quad\\Rightarrow\\quad F_e = 500 \\cdot 1{,}804 + 98{,}0 = 1\\,000\\ \\text{N}$$\n\nResultat: **$a \\approx 1{,}80\\ \\text{m/s}^2$; $F_e = 1\\,000\\ \\text{N}$, estirant el remolc cap endavant**. (Com que les resistències són proporcionals als pesos, surt exactament $F\\cdot m_r/m_T$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Desacceleració en la frenada",
+            "cos": "El fregament màxim només actua a les rodes del cotxe (el remolc no té frens):\n\n$$F_\\text{fre} = \\mu_e\\,m_c\\,g = 0{,}80 \\cdot 1\\,300 \\cdot 9{,}8 = 10\\,192\\ \\text{N}$$\n\nAquesta força ha de frenar **tot** el conjunt (amb l'ajut de les resistències):\n\n$$a = \\frac{F_\\text{fre} + R_c + R_r}{m_T} = \\frac{10\\,192 + 352{,}8}{1\\,800} = 5{,}86\\ \\text{m/s}^2$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Força a l'enganxall durant la frenada",
+            "cos": "El remolc també frena amb $5{,}86\\ \\text{m/s}^2$, però la seva resistència només li dona $98\\ \\text{N}$; la resta l'ha de fer l'enganxall, **cap enrere**. Prenent positiu cap endavant:\n\n$$F_e - R_r = m_r\\,(-a) \\quad\\Rightarrow\\quad F_e = -500 \\cdot 5{,}858 + 98{,}0 = -2\\,831\\ \\text{N}$$\n\nEl signe negatiu vol dir que l'enganxall fa força cap enrere sobre el remolc: **el comprimeix**. Per la tercera llei, el remolc **empeny el cotxe** cap endavant amb $2\\,831\\ \\text{N}$.\n\nResultat: **$a \\approx 5{,}86\\ \\text{m/s}^2$; $F_e \\approx 2\\,830\\ \\text{N}$; el remolc empeny el cotxe**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Distàncies de frenada",
+            "cos": "MRUA fins a aturar-se ($v = 0$): $d = \\dfrac{v_0^2}{2a}$.\n\n- Amb remolc: $d = \\dfrac{25^2}{2 \\cdot 5{,}858} = 53{,}3\\ \\text{m}$\n- Cotxe sol: $a_c = \\dfrac{10\\,192 + 254{,}8}{1\\,300} = 8{,}04\\ \\text{m/s}^2$ → $d_c = \\dfrac{625}{2 \\cdot 8{,}04} = 38{,}9\\ \\text{m}$\n\nResultat: **amb remolc $\\approx 53\\ \\text{m}$, sol $\\approx 39\\ \\text{m}$** (uns 14 m més, un 37 % més). Per això els remolcs pesants han de portar frens propis."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a \\approx 1{,}80\\ \\text{m/s}^2$; $F_e = 1\\,000\\ \\text{N}$ (estira)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$a \\approx 5{,}86\\ \\text{m/s}^2$; $F_e \\approx 2\\,830\\ \\text{N}$ (el remolc empeny el cotxe)"
+          },
+          {
+            "apartat": "c",
+            "valor": "$d \\approx 53\\ \\text{m}$ amb remolc i $\\approx 39\\ \\text{m}$ sense"
+          }
+        ],
+        "nota": "Errors típics: incloure la força de l'enganxall quan s'estudia el sistema sencer (és interna); calcular el fregament de frenada amb el pes total (el remolc no frena); i pensar que la barra sempre «estira». En frenar, el remolc tendeix a seguir endavant per inèrcia i empeny el cotxe, cosa que pot fer-lo derrapar en un revolt."
+      }
+    },
+    {
+      "id": "fisica1-dinamica-10",
+      "exercici": 10,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Esquiador: baixada, frenada a l'arribada i pujada amb telesquí",
+      "tema": "dinamica",
+      "temes_secundaris": [
+        "cinematica"
+      ],
+      "conceptes": [
+        "pla inclinat",
+        "força de fregament",
+        "MRUA",
+        "diagrama de cos lliure",
+        "lleis de Newton"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Una esquiadora de $70\\ \\text{kg}$ (amb l'equip) surt del repòs al punt A d'una pista de La Molina que té un tram recte de $80\\ \\text{m}$ inclinat $25^\\circ$. El coeficient de fregament dinàmic entre els esquís i la neu és $0{,}10$. Al final del pendent (punt B) arriba a una zona d'arribada horitzontal, amb neu més tova, on el coeficient de fregament dinàmic és $0{,}25$. Negligiu la resistència de l'aire. Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [
+        {
+          "src": "img/fisica1/dinamica/10.png",
+          "peu": "Perfil de la pista: tram inclinat AB i zona d'arribada horitzontal"
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu l'acceleració de l'esquiadora en el tram inclinat.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Amb quina velocitat arriba a B (en m/s i km/h) i quant de temps triga?",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Si no fa cap maniobra de frenada, quina distància recorre per la zona d'arribada fins a aturar-se?",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "Per tornar a dalt agafa un telesquí que l'arrossega a velocitat constant per una pista de $15^\\circ$ de pendent. La perxa forma un angle de $30^\\circ$ amb la superfície de la neu i el coeficient de fregament dinàmic hi és $0{,}10$. Calculeu la força que fa la perxa i la força normal de la neu.",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m = 70\\ \\text{kg}$, $\\theta = 25^\\circ$, $L = 80\\ \\text{m}$, $\\mu_1 = 0{,}10$, $v_A = 0$\n- Zona d'arribada: horitzontal, $\\mu_2 = 0{,}25$\n- Telesquí: pendent $\\beta = 15^\\circ$, perxa a $\\alpha = 30^\\circ$ de la neu, $\\mu = 0{,}10$, $v$ constant\n- Incògnites: $a_1$, $v_B$, $t$, distància d'aturada, tensió de la perxa $T$ i normal $N$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Forces en el pendent",
+            "cos": "Sobre l'esquiadora: pes, normal i fregament dinàmic (pendent amunt, perquè baixa). Eixos paral·lel i perpendicular a la pista:\n\n$$N = m\\,g\\cos\\theta \\qquad\\qquad m\\,g\\sin\\theta - \\mu_1\\,m\\,g\\cos\\theta = m\\,a_1$$\n\n$$a_1 = g\\,(\\sin\\theta - \\mu_1\\cos\\theta) = 9{,}8\\,(0{,}4226 - 0{,}10 \\cdot 0{,}9063) = 4{,}14 - 0{,}89 = 3{,}25\\ \\text{m/s}^2$$\n\nResultat: **$a_1 \\approx 3{,}25\\ \\text{m/s}^2$** (no depèn de la massa)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat a B i temps",
+            "cos": "MRUA des del repòs al llarg de $80\\ \\text{m}$:\n\n$$v_B = \\sqrt{2\\,a_1\\,L} = \\sqrt{2 \\cdot 3{,}253 \\cdot 80} = 22{,}8\\ \\text{m/s} = 82\\ \\text{km/h}$$\n\n$$t = \\frac{v_B}{a_1} = \\frac{22{,}8}{3{,}25} = 7{,}0\\ \\text{s}$$\n\nResultat: **$v_B \\approx 22{,}8\\ \\text{m/s} \\approx 82\\ \\text{km/h}$; $t \\approx 7{,}0\\ \\text{s}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Frenada a la zona horitzontal",
+            "cos": "En horitzontal, $N = m\\,g$ i l'única força horitzontal és el fregament, que la frena:\n\n$$a_2 = \\frac{\\mu_2\\,m\\,g}{m} = \\mu_2\\,g = 0{,}25 \\cdot 9{,}8 = 2{,}45\\ \\text{m/s}^2\\ \\text{(frenada)}$$\n\n$$d = \\frac{v_B^2}{2\\,a_2} = \\frac{22{,}82^2}{2 \\cdot 2{,}45} = 106\\ \\text{m}$$\n\nResultat: **$d \\approx 106\\ \\text{m}$**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Diagrama de forces amb el telesquí",
+            "cos": "Ara hi ha quatre forces: pes, normal, fregament dinàmic (pendent avall, perquè puja) i la tensió $T$ de la perxa, que forma $30^\\circ$ amb la pista. Descomponem $T$: $T\\cos 30^\\circ$ paral·lela a la pista i $T\\sin 30^\\circ$ perpendicular, **cap enfora** de la neu (la perxa l'estira cap amunt i l'aixeca una mica). Per això la normal és més petita que $m\\,g\\cos\\beta$:\n\n$$\\text{perpendicular:}\\quad N + T\\sin\\alpha = m\\,g\\cos\\beta \\quad\\Rightarrow\\quad N = m\\,g\\cos\\beta - T\\sin\\alpha$$\n\n$$\\text{al llarg de la pista ($v$ constant):}\\quad T\\cos\\alpha - m\\,g\\sin\\beta - \\mu\\,N = 0$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Resolució",
+            "cos": "Substituïm $N$ a la segona equació i aïllem $T$:\n\n$$T\\cos\\alpha - m g\\sin\\beta - \\mu\\,(m g\\cos\\beta - T\\sin\\alpha) = 0 \\quad\\Rightarrow\\quad T = \\frac{m\\,g\\,(\\sin\\beta + \\mu\\cos\\beta)}{\\cos\\alpha + \\mu\\sin\\alpha}$$\n\n$$T = \\frac{70 \\cdot 9{,}8\\,(0{,}2588 + 0{,}10 \\cdot 0{,}9659)}{0{,}8660 + 0{,}10 \\cdot 0{,}5} = \\frac{686 \\cdot 0{,}3554}{0{,}9160} = 266\\ \\text{N}$$\n\n$$N = 686 \\cdot 0{,}9659 - 266{,}2 \\cdot 0{,}5 = 662{,}6 - 133{,}1 = 530\\ \\text{N}$$\n\nResultat: **$T \\approx 266\\ \\text{N}$; $N \\approx 530\\ \\text{N}$**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$a_1 \\approx 3{,}25\\ \\text{m/s}^2$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_B \\approx 22{,}8\\ \\text{m/s} \\approx 82\\ \\text{km/h}$; $t \\approx 7{,}0\\ \\text{s}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$d \\approx 106\\ \\text{m}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$T \\approx 266\\ \\text{N}$; $N \\approx 530\\ \\text{N}$"
+          }
+        ],
+        "nota": "Errors típics: a l'apartat d), posar $N = m\\,g\\cos\\beta$ oblidant que la perxa té una component perpendicular que «descarrega» la neu; i no canviar el sentit del fregament quan l'esquiadora puja. A l'apartat c), recordeu que en horitzontal la normal ja no porta cosinus."
+      }
+    },
+    {
+      "id": "fisica1-dinamica-11",
+      "exercici": 11,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Tercera llei de Newton en un xoc entre un camió i un cotxe",
+      "tema": "dinamica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "lleis de Newton",
+        "tercera llei de Newton"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Un camió de $10\\ \\text{t}$ xoca frontalment contra un cotxe de $1\\ \\text{t}$ en una carretera comarcal. Durant el xoc, quina afirmació és correcta?",
+      "figures": [],
+      "opcions": {
+        "a": "El camió fa sobre el cotxe una força 10 vegades més gran que la que el cotxe fa sobre el camió.",
+        "b": "Les dues forces tenen el mateix mòdul, però el cotxe pateix una acceleració 10 vegades més gran que el camió.",
+        "c": "Les dues forces tenen el mateix mòdul i els dos vehicles pateixen la mateixa acceleració.",
+        "d": "El cotxe fa més força sobre el camió perquè surt rebotat amb més velocitat."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Tercera llei: acció i reacció",
+            "cos": "Les forces que es fan dos cossos que interaccionen són **iguals en mòdul i de sentit contrari** (tercera llei de Newton), sigui quina sigui la massa de cadascun. Per tant, $F_\\text{camió→cotxe} = F_\\text{cotxe→camió}$."
+          },
+          {
+            "apartat": null,
+            "titol": "Segona llei: efecte diferent",
+            "cos": "Les forces són iguals, però actuen sobre cossos diferents. Per la segona llei, $a = F/m$:\n\n$$\\frac{a_\\text{cotxe}}{a_\\text{camió}} = \\frac{m_\\text{camió}}{m_\\text{cotxe}} = \\frac{10}{1} = 10$$\n\nResposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** i **d)** contradiuen la tercera llei: la idea que «el més gran o el més ràpid fa més força» és l'error més típic.\n- **c)** Les forces són iguals, però amb masses diferents les acceleracions no ho poden ser."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "Forces iguals i oposades; $a_\\text{cotxe} = 10\\,a_\\text{camió}$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica1-dinamica-12",
+      "exercici": 12,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Fregament sobre un cos en repòs en un pla inclinat",
+      "tema": "dinamica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "pla inclinat",
+        "força de fregament",
+        "diagrama de cos lliure"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Una motxilla de $5\\ \\text{kg}$ és en repòs sobre un faristol inclinat $25^\\circ$. Els coeficients de fregament són $\\mu_e = 0{,}60$ i $\\mu_d = 0{,}50$. Quant val la força de fregament que actua sobre la motxilla? (Preneu $g = 9{,}8\\ \\text{m/s}^2$.)",
+      "figures": [],
+      "opcions": {
+        "a": "$26{,}6\\ \\text{N}$",
+        "b": "$20{,}7\\ \\text{N}$",
+        "c": "$22{,}2\\ \\text{N}$",
+        "d": "$29{,}4\\ \\text{N}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Comprovem que està en repòs",
+            "cos": "Component del pes paral·lela al pla: $P_x = m\\,g\\sin 25^\\circ = 5 \\cdot 9{,}8 \\cdot 0{,}4226 = 20{,}7\\ \\text{N}$.\n\nNormal: $N = m\\,g\\cos 25^\\circ = 44{,}4\\ \\text{N}$. Fregament estàtic màxim: $\\mu_e N = 0{,}60 \\cdot 44{,}4 = 26{,}6\\ \\text{N}$.\n\nCom que $20{,}7 < 26{,}6$, efectivament no rellisca."
+          },
+          {
+            "apartat": null,
+            "titol": "El fregament estàtic val el que cal",
+            "cos": "En repòs, la resultant és zero: el fregament estàtic equilibra exactament $P_x$:\n\n$$F_f = m\\,g\\sin 25^\\circ = 20{,}7\\ \\text{N}$$\n\nResposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $26{,}6\\ \\text{N}$ és el fregament estàtic **màxim** ($\\mu_e N$), no el que actua realment.\n- **c)** $22{,}2\\ \\text{N}$ és $\\mu_d N$: el fregament dinàmic només actua si hi ha lliscament.\n- **d)** $29{,}4\\ \\text{N}$ és $\\mu_e\\,m\\,g$, oblidant que en un pla inclinat $N = m\\,g\\cos\\theta$."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$F_f = m g \\sin 25^\\circ \\approx 20{,}7\\ \\text{N}$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica1-dinamica-13",
+      "exercici": 13,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat de les cadiretes voladores d'una fira",
+      "tema": "dinamica",
+      "temes_secundaris": [
+        "cinematica"
+      ],
+      "conceptes": [
+        "força centrípeta",
+        "MCU",
+        "tensió d'una corda",
+        "diagrama de cos lliure"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "A les cadiretes voladores de la Fira de Sant Miquel de Lleida, cada cadireta penja d'una cadena. Quan l'atracció gira a velocitat constant, les cadenes formen un angle de $35^\\circ$ amb la vertical i les cadiretes descriuen una circumferència horitzontal de radi $6\\ \\text{m}$. Quina és la velocitat de les cadiretes? (Preneu $g = 9{,}8\\ \\text{m/s}^2$.)",
+      "figures": [
+        {
+          "src": "img/fisica1/dinamica/t3.png",
+          "peu": "Cadiretes voladores: la cadena forma 35° amb la vertical"
+        }
+      ],
+      "opcions": {
+        "a": "$5{,}8\\ \\text{m/s}$",
+        "b": "$6{,}9\\ \\text{m/s}$",
+        "c": "$7{,}7\\ \\text{m/s}$",
+        "d": "$6{,}4\\ \\text{m/s}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Forces sobre la cadireta",
+            "cos": "Només hi ha dues forces: el pes $m\\,g$ (vertical) i la tensió $T$ de la cadena (inclinada $35^\\circ$ respecte de la vertical). La component horitzontal de la tensió fa de força centrípeta i la vertical equilibra el pes:\n\n$$T\\cos\\theta = m\\,g \\qquad\\qquad T\\sin\\theta = \\frac{m\\,v^2}{r}$$"
+          },
+          {
+            "apartat": null,
+            "titol": "Velocitat",
+            "cos": "Dividint les equacions:\n\n$$\\tan\\theta = \\frac{v^2}{g\\,r} \\quad\\Rightarrow\\quad v = \\sqrt{g\\,r\\tan\\theta} = \\sqrt{9{,}8 \\cdot 6 \\cdot \\tan 35^\\circ} = \\sqrt{41{,}2} = 6{,}4\\ \\text{m/s}$$\n\nResposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $5{,}8\\ \\text{m/s}$ surt de fer servir $\\sin\\theta$ en lloc de $\\tan\\theta$.\n- **b)** $6{,}9\\ \\text{m/s}$ surt de fer servir $\\cos\\theta$.\n- **c)** $7{,}7\\ \\text{m/s}$ és $\\sqrt{g\\,r}$, oblidant l'angle."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$v = \\sqrt{g\\,r\\tan 35^\\circ} \\approx 6{,}4\\ \\text{m/s}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica1-dinamica-14",
+      "exercici": 14,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Tensió de la corda en una màquina d'Atwood",
+      "tema": "dinamica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "politja",
+        "tensió d'una corda",
+        "lleis de Newton"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Dinàmica de Newton (forces, fregament, moviment circular), que és de Física i Química de 1r.",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Dues masses de $3\\ \\text{kg}$ i $2\\ \\text{kg}$ pengen dels extrems d'una corda que passa per una politja fixa de massa negligible i sense fregament (màquina d'Atwood). Es deixa anar el sistema des del repòs. Quina és la tensió de la corda mentre es mou? (Preneu $g = 9{,}8\\ \\text{m/s}^2$.)",
+      "figures": [],
+      "opcions": {
+        "a": "$19{,}6\\ \\text{N}$",
+        "b": "$29{,}4\\ \\text{N}$",
+        "c": "$23{,}5\\ \\text{N}$",
+        "d": "$24{,}5\\ \\text{N}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Acceleració del sistema",
+            "cos": "La massa de $3\\ \\text{kg}$ baixa i la de $2\\ \\text{kg}$ puja. Segona llei per a cada massa (positiu en el sentit del moviment):\n\n$$3g - T = 3a \\qquad\\qquad T - 2g = 2a$$\n\nSumant: $a = \\dfrac{(3-2)\\,g}{3+2} = \\dfrac{9{,}8}{5} = 1{,}96\\ \\text{m/s}^2$"
+          },
+          {
+            "apartat": null,
+            "titol": "Tensió",
+            "cos": "$$T = 2\\,(g + a) = 2\\,(9{,}8 + 1{,}96) = 23{,}5\\ \\text{N}$$\n\n(Comprovació: $T = 3\\,(g - a) = 3 \\cdot 7{,}84 = 23{,}5\\ \\text{N}$.) La tensió queda entre els dos pesos: més gran que el pes de la massa que puja accelerant i més petita que el pes de la que baixa.\n\nResposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $19{,}6\\ \\text{N}$ és el pes de la massa de 2 kg: valdria si estigués en equilibri.\n- **b)** $29{,}4\\ \\text{N}$ és el pes de la massa de 3 kg.\n- **d)** $24{,}5\\ \\text{N}$ és la mitjana dels dos pesos: s'hi acosta, però no és el resultat de les lleis de Newton."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$a = 1{,}96\\ \\text{m/s}^2$, $T \\approx 23{,}5\\ \\text{N}$ → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    }
+  ]
+}

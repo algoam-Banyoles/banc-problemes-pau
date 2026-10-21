@@ -12,6 +12,7 @@ const TEMES = {
   mates: ["matrius", "sistemes", "geometria", "funcions", "derivades", "optimitzacio", "integrals", "probabilitat", "estadistica"],
   fisica: ["mecanica", "gravitacio", "camp-electric", "camp-magnetic", "induccio", "oscillacions", "ones", "optica",
     "relativitat", "quantica", "nuclear"],
+  fisica1: ["cinematica", "dinamica", "energia-mecanica", "moment-lineal", "estatica", "calor"],
   dibuix: ["geometria-plana", "transformacions", "corbes", "diedric", "cossos", "axonometria", "conica", "normalitzacio"],
 };
 
@@ -42,7 +43,7 @@ function check(file) {
     return [`JSON invàlid: ${e.message}`];
   }
   const ex = data.examen || {};
-  for (const k of ["id", "assignatura", "materia", "any", "convocatoria", "pdf_examen"])
+  for (const k of ["id", "assignatura", "materia", "any", "convocatoria", ...(ex.practica ? [] : ["pdf_examen"])])
     if (ex[k] === undefined || ex[k] === "") errs.push(`examen.${k} falta`);
   const temes = TEMES[ex.assignatura];
   const ids = new Set();

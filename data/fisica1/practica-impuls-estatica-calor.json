@@ -1,0 +1,1148 @@
+{
+  "examen": {
+    "id": "fisica1-practica-impuls-estatica-calor",
+    "assignatura": "fisica1",
+    "materia": "Problemes de pràctica · Física de 1r",
+    "practica": true,
+    "any": 2026,
+    "convocatoria": "practica",
+    "serie": null,
+    "pdf_examen": null,
+    "pdf_solucio": null,
+    "estructura": "Problemes originals de pràctica (no són de selectivitat), bloc: impuls i moment lineal, estàtica i calor."
+  },
+  "problemes": [
+    {
+      "id": "fisica1-ies-01",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Impuls i força mitjana sobre una pilota de futbol: xut, aturada i refús",
+      "tema": "moment-lineal",
+      "temes_secundaris": [
+        "dinamica"
+      ],
+      "conceptes": [
+        "impuls",
+        "moment lineal",
+        "lleis de Newton"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Impuls i variació del moment lineal (Física i Química de 1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "En un partit de futbol, un jugador llança un penal: la pilota, de massa $m = 0{,}43\\ \\text{kg}$, està en repòs i surt disparada a $25\\ \\text{m/s}$. El contacte entre la bota i la pilota dura $8{,}0\\ \\text{ms}$.\n\nConsidereu el moviment de la pilota rectilini i horitzontal i preneu com a sentit positiu el del xut.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu el moment lineal de la pilota just després del xut, l'impuls que rep i la força mitjana que li fa la bota.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "El porter atura la pilota (que li arriba a $25\\ \\text{m/s}$) i la reté entre les mans. Si l'aturada dura $0{,}040\\ \\text{s}$, quina força mitjana fan els guants sobre la pilota?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "En un altre penal, el porter no la reté sinó que la refusa: la pilota surt rebotada en sentit contrari a $5{,}0\\ \\text{m/s}$ i el contacte també dura $0{,}040\\ \\text{s}$. Calculeu la força mitjana i compareu-la amb la de l'apartat anterior.",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa de la pilota: $m = 0{,}43\\ \\text{kg}$\n- Xut: $v_0 = 0$, $v = 25\\ \\text{m/s}$, $\\Delta t = 8{,}0\\ \\text{ms} = 8{,}0 \\cdot 10^{-3}\\ \\text{s}$\n- Aturada: $v_0 = 25\\ \\text{m/s}$, $v = 0$, $\\Delta t = 0{,}040\\ \\text{s}$\n- Refús: $v_0 = 25\\ \\text{m/s}$, $v = -5{,}0\\ \\text{m/s}$, $\\Delta t = 0{,}040\\ \\text{s}$\n- Incògnites: $p$, $I$ i les forces mitjanes $F_m$ en cada cas"
+          },
+          {
+            "apartat": "a",
+            "titol": "Moment lineal després del xut",
+            "cos": "El moment lineal és el producte de la massa per la velocitat:\n\n$$p = m\\,v = 0{,}43 \\cdot 25 = 10{,}75\\ \\text{kg}\\cdot\\text{m/s}$$\n\nResultat: **$p \\approx 10{,}8\\ \\text{kg}\\cdot\\text{m/s}$** en el sentit del xut."
+          },
+          {
+            "apartat": "a",
+            "titol": "Impuls i força mitjana de la bota",
+            "cos": "El **teorema de l'impuls** diu que l'impuls de la força resultant és igual a la variació del moment lineal. Com que la pilota parteix del repòs:\n\n$$I = \\Delta p = m\\,v - m\\,v_0 = 10{,}75 - 0 = 10{,}75\\ \\text{N}\\cdot\\text{s}$$\n\nLa força mitjana és l'impuls dividit pel temps de contacte:\n\n$$F_m = \\frac{I}{\\Delta t} = \\frac{10{,}75}{8{,}0 \\cdot 10^{-3}} = 1\\,344\\ \\text{N}$$\n\nResultat: **$I \\approx 10{,}8\\ \\text{N}\\cdot\\text{s}$** i **$F_m \\approx 1{,}3 \\cdot 10^{3}\\ \\text{N}$** (unes 300 vegades el pes de la pilota!)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Aturada: la pilota passa de 25 m/s a 0",
+            "cos": "Ara la variació del moment lineal és negativa (la pilota perd tot el moment lineal):\n\n$$\\Delta p = m\\,(v - v_0) = 0{,}43 \\cdot (0 - 25) = -10{,}75\\ \\text{kg}\\cdot\\text{m/s}$$\n\n$$F_m = \\frac{\\Delta p}{\\Delta t} = \\frac{-10{,}75}{0{,}040} = -268{,}75\\ \\text{N}$$\n\nEl signe negatiu indica que la força dels guants va en sentit contrari al moviment de la pilota.\n\nResultat: **$F_m \\approx 2{,}7 \\cdot 10^{2}\\ \\text{N}$**, en sentit contrari al xut. És molt més petita que la del xut perquè el temps de contacte és 5 vegades més llarg (per això els guants i el fet d'acompanyar la pilota amb els braços ajuden)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Refús: la velocitat canvia de sentit",
+            "cos": "Ara la velocitat final és **negativa** ($-5{,}0\\ \\text{m/s}$), cosa que fa que la variació del moment lineal sigui més gran que si només s'atura:\n\n$$\\Delta p = m\\,(v - v_0) = 0{,}43 \\cdot (-5{,}0 - 25) = 0{,}43 \\cdot (-30) = -12{,}9\\ \\text{kg}\\cdot\\text{m/s}$$\n\n$$F_m = \\frac{\\Delta p}{\\Delta t} = \\frac{-12{,}9}{0{,}040} = -322{,}5\\ \\text{N}$$\n\nResultat: **$F_m \\approx 3{,}2 \\cdot 10^{2}\\ \\text{N}$** en sentit contrari al xut. És un 20 % més gran que en l'aturada: per fer rebotar la pilota no només cal aturar-la, sinó també llançar-la enrere."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$p \\approx 10{,}8\\ \\text{kg}\\cdot\\text{m/s}$; $I \\approx 10{,}8\\ \\text{N}\\cdot\\text{s}$; $F_m \\approx 1{,}3 \\cdot 10^{3}\\ \\text{N}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F_m \\approx 2{,}7 \\cdot 10^{2}\\ \\text{N}$ (sentit contrari al moviment)"
+          },
+          {
+            "apartat": "c",
+            "valor": "$F_m \\approx 3{,}2 \\cdot 10^{2}\\ \\text{N}$, més gran que en l'aturada"
+          }
+        ],
+        "nota": "Error típic de l'apartat c): restar els mòduls de les velocitats ($25 - 5 = 20\\ \\text{m/s}$) en lloc de tenir en compte els signes. La velocitat és un vector: si canvia de sentit, $\\Delta v = -5 - 25 = -30\\ \\text{m/s}$."
+      }
+    },
+    {
+      "id": "fisica1-ies-02",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Dos patinadors s'empenyen a la pista de gel: retrocés i frenada per fregament",
+      "tema": "moment-lineal",
+      "temes_secundaris": [
+        "dinamica",
+        "energia-mecanica"
+      ],
+      "conceptes": [
+        "conservació del moment lineal",
+        "moment lineal",
+        "energia cinètica",
+        "força de fregament",
+        "MRUA"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Conservació del moment lineal en un retrocés, energia cinètica i dinàmica amb fregament (1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "A la pista de gel de Puigcerdà, l'Anna ($50\\ \\text{kg}$) i el Biel ($70\\ \\text{kg}$) estan quiets l'un davant de l'altre. Es posen mans contra mans i s'empenyen. Just després de separar-se, l'Anna llisca cap enrere a $2{,}1\\ \\text{m/s}$.\n\nPreneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina és la velocitat del Biel just després de separar-se? Justifiqueu quina llei feu servir.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'energia cinètica de cadascun i la total. D'on surt aquesta energia, si abans estaven quiets?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "El coeficient de fregament entre els patins i el gel és $\\mu = 0{,}020$. Quina distància recorre cadascun fins que s'atura, i a quina distància queden l'un de l'altre?",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m_A = 50\\ \\text{kg}$, $m_B = 70\\ \\text{kg}$, inicialment en repòs\n- Velocitat de l'Anna després: $v_A = 2{,}1\\ \\text{m/s}$ (prenem positiu el sentit de l'Anna)\n- $\\mu = 0{,}020$, $g = 9{,}8\\ \\text{m/s}^2$\n- Incògnites: $v_B$, $E_c$, distàncies de frenada $d_A$ i $d_B$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Conservació del moment lineal",
+            "cos": "Durant l'empenta, les forces que es fan l'Anna i el Biel són **forces internes** del sistema (acció i reacció). Les forces externes verticals (pes i normal) s'anul·len i el fregament amb el gel és negligible durant l'instant de l'empenta. Per tant, el **moment lineal total es conserva**. Com que abans estaven quiets, el moment lineal total és zero:\n\n$$m_A\\,v_A + m_B\\,v_B = 0 \\quad\\Rightarrow\\quad v_B = -\\frac{m_A\\,v_A}{m_B} = -\\frac{50 \\cdot 2{,}1}{70} = -1{,}5\\ \\text{m/s}$$\n\nResultat: **$v_B = 1{,}5\\ \\text{m/s}$** en sentit contrari al de l'Anna. El més pesat surt més lent."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energies cinètiques",
+            "cos": "$$E_{c,A} = \\tfrac{1}{2}\\,m_A\\,v_A^2 = \\tfrac{1}{2} \\cdot 50 \\cdot 2{,}1^2 = 110{,}25\\ \\text{J}$$\n\n$$E_{c,B} = \\tfrac{1}{2}\\,m_B\\,v_B^2 = \\tfrac{1}{2} \\cdot 70 \\cdot 1{,}5^2 = 78{,}75\\ \\text{J}$$\n\n$$E_{c,\\text{total}} = 110{,}25 + 78{,}75 = 189\\ \\text{J}$$\n\nResultat: **$E_{c,A} \\approx 110\\ \\text{J}$, $E_{c,B} \\approx 79\\ \\text{J}$, total $189\\ \\text{J}$**.\n\nEl moment lineal es conserva, però l'energia cinètica **no**: passa de 0 a 189 J. Aquesta energia surt de l'**energia química dels músculs** dels patinadors, que fan treball en estirar els braços."
+          },
+          {
+            "apartat": "c",
+            "titol": "Acceleració de frenada pel fregament",
+            "cos": "Un cop separats, l'única força horitzontal sobre cada patinador és el fregament, $F_f = \\mu\\,N = \\mu\\,m\\,g$. Per la segona llei de Newton:\n\n$$a = \\frac{F_f}{m} = \\mu\\,g = 0{,}020 \\cdot 9{,}8 = 0{,}196\\ \\text{m/s}^2$$\n\nLa desacceleració és la mateixa per a tots dos (no depèn de la massa)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Distàncies de frenada",
+            "cos": "És un MRUA de frenada fins a $v = 0$: $v^2 = v_0^2 - 2\\,a\\,d \\Rightarrow d = \\dfrac{v_0^2}{2\\,a}$.\n\n$$d_A = \\frac{2{,}1^2}{2 \\cdot 0{,}196} = \\frac{4{,}41}{0{,}392} = 11{,}25\\ \\text{m}$$\n\n$$d_B = \\frac{1{,}5^2}{2 \\cdot 0{,}196} = \\frac{2{,}25}{0{,}392} = 5{,}74\\ \\text{m}$$\n\nCom que es mouen en sentits contraris, la separació final és la suma:\n\n$$d = d_A + d_B = 11{,}25 + 5{,}74 \\approx 17{,}0\\ \\text{m}$$\n\nResultat: **$d_A \\approx 11{,}3\\ \\text{m}$, $d_B \\approx 5{,}7\\ \\text{m}$; queden a uns $17\\ \\text{m}$ l'un de l'altre.**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v_B = 1{,}5\\ \\text{m/s}$ en sentit contrari a l'Anna"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_{c,A} \\approx 110\\ \\text{J}$, $E_{c,B} \\approx 79\\ \\text{J}$, $E_{c} = 189\\ \\text{J}$ (energia muscular)"
+          },
+          {
+            "apartat": "c",
+            "valor": "$d_A \\approx 11{,}3\\ \\text{m}$, $d_B \\approx 5{,}7\\ \\text{m}$; separació $\\approx 17\\ \\text{m}$"
+          }
+        ],
+        "nota": "- No confongueu conservació del moment lineal amb conservació de l'energia cinètica: en una explosió o retrocés el moment lineal es conserva però l'energia cinètica augmenta.\n- No oblideu el signe de $v_B$: indica que surt en sentit contrari."
+      }
+    },
+    {
+      "id": "fisica1-ies-03",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Xoc entre dues pedres de cúrling: velocitat final, energia perduda i força",
+      "tema": "moment-lineal",
+      "temes_secundaris": [],
+      "conceptes": [
+        "xocs",
+        "conservació del moment lineal",
+        "energia cinètica",
+        "impuls",
+        "moment lineal"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Xoc inelàstic en una dimensió amb conservació del moment lineal i impuls (1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "En una partida de cúrling, una pedra A de $19\\ \\text{kg}$ llisca a $2{,}0\\ \\text{m/s}$ i xoca frontalment contra una pedra B, idèntica, que està en repòs. Just després del xoc, la pedra A continua en el mateix sentit a $0{,}30\\ \\text{m/s}$.\n\nNegligiu el fregament amb el gel durant el xoc.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la velocitat de la pedra B just després del xoc.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu l'energia cinètica abans i després del xoc. Quin percentatge s'ha perdut? Quin tipus de xoc és?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Calculeu l'impuls que rep la pedra B i la força mitjana que li fa A si el contacte dura $2{,}0\\ \\text{ms}$. Quin impuls rep la pedra A?",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $m_A = m_B = m = 19\\ \\text{kg}$\n- Abans: $v_A = 2{,}0\\ \\text{m/s}$, $v_B = 0$\n- Després: $v_A' = 0{,}30\\ \\text{m/s}$ (mateix sentit, positiu)\n- $\\Delta t = 2{,}0\\ \\text{ms} = 2{,}0 \\cdot 10^{-3}\\ \\text{s}$\n- Incògnites: $v_B'$, $E_c$ abans i després, $I_B$, $F_m$, $I_A$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Conservació del moment lineal",
+            "cos": "Durant el xoc les forces entre les pedres són internes i les externes horitzontals són negligibles, per tant el moment lineal total es conserva:\n\n$$m\\,v_A + m\\,v_B = m\\,v_A' + m\\,v_B'$$\n\nCom que les masses són iguals, es poden simplificar:\n\n$$v_B' = v_A + v_B - v_A' = 2{,}0 + 0 - 0{,}30 = 1{,}70\\ \\text{m/s}$$\n\nResultat: **$v_B' = 1{,}7\\ \\text{m/s}$** en el sentit inicial de A."
+          },
+          {
+            "apartat": "b",
+            "titol": "Energia cinètica abans i després",
+            "cos": "$$E_c = \\tfrac{1}{2} \\cdot 19 \\cdot 2{,}0^2 = 38{,}0\\ \\text{J}$$\n\n$$E_c' = \\tfrac{1}{2} \\cdot 19 \\cdot 0{,}30^2 + \\tfrac{1}{2} \\cdot 19 \\cdot 1{,}70^2 = 0{,}855 + 27{,}455 = 28{,}31\\ \\text{J}$$\n\nEnergia perduda: $\\Delta E_c = 38{,}0 - 28{,}31 = 9{,}69\\ \\text{J}$, és a dir:\n\n$$\\frac{9{,}69}{38{,}0} \\cdot 100 = 25{,}5\\ \\%$$\n\nResultat: **es perd un 25,5 % de l'energia cinètica (≈ 9,7 J)**. Com que el moment lineal es conserva però l'energia cinètica no, el xoc és **inelàstic**. No és perfectament inelàstic perquè les pedres no queden juntes. L'energia perduda es transforma en calor, so i deformació."
+          },
+          {
+            "apartat": "c",
+            "titol": "Impuls sobre B i força mitjana",
+            "cos": "L'impuls que rep B és la seva variació de moment lineal:\n\n$$I_B = m\\,(v_B' - v_B) = 19 \\cdot (1{,}70 - 0) = 32{,}3\\ \\text{N}\\cdot\\text{s}$$\n\n$$F_m = \\frac{I_B}{\\Delta t} = \\frac{32{,}3}{2{,}0 \\cdot 10^{-3}} = 16\\,150\\ \\text{N}$$\n\nResultat: **$I_B \\approx 32\\ \\text{N}\\cdot\\text{s}$** i **$F_m \\approx 1{,}6 \\cdot 10^{4}\\ \\text{N}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Impuls sobre A (tercera llei de Newton)",
+            "cos": "Per la tercera llei de Newton, B fa sobre A una força igual i de sentit contrari durant el mateix temps, per tant l'impuls sobre A és el mateix en mòdul i de sentit contrari. Comprovació:\n\n$$I_A = m\\,(v_A' - v_A) = 19 \\cdot (0{,}30 - 2{,}0) = -32{,}3\\ \\text{N}\\cdot\\text{s}$$\n\nResultat: **$I_A = -32{,}3\\ \\text{N}\\cdot\\text{s}$**. Això és justament el que garanteix que el moment lineal total es conservi."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v_B' = 1{,}7\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$E_c = 38{,}0\\ \\text{J}$, $E_c' \\approx 28{,}3\\ \\text{J}$; es perd un 25,5 %: xoc inelàstic"
+          },
+          {
+            "apartat": "c",
+            "valor": "$I_B \\approx 32\\ \\text{N}\\cdot\\text{s}$, $F_m \\approx 1{,}6 \\cdot 10^4\\ \\text{N}$; $I_A = -32{,}3\\ \\text{N}\\cdot\\text{s}$"
+          }
+        ],
+        "nota": "Un xoc és **elàstic** si es conserva l'energia cinètica, **inelàstic** si no es conserva, i **perfectament inelàstic** si els cossos queden units. En tots tres casos es conserva el moment lineal."
+      }
+    },
+    {
+      "id": "fisica1-ies-04",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Reconstrucció d'un accident: xoc perfectament inelàstic i marques de frenada",
+      "tema": "moment-lineal",
+      "temes_secundaris": [
+        "dinamica",
+        "energia-mecanica"
+      ],
+      "conceptes": [
+        "xocs",
+        "conservació del moment lineal",
+        "força de fregament",
+        "MRUA",
+        "energia cinètica"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Encadena dinàmica amb fregament, xoc perfectament inelàstic i energia cinètica (1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "En un carrer de Girona amb límit de velocitat de $50\\ \\text{km/h}$, un cotxe de $1\\,250\\ \\text{kg}$ xoca per darrere contra una furgoneta de $2\\,250\\ \\text{kg}$ que circulava en el mateix sentit a $18\\ \\text{km/h}$. Després del xoc, els dos vehicles queden encastats i llisquen junts, amb les rodes bloquejades, $6{,}5\\ \\text{m}$ fins que s'aturen. La policia estima que el coeficient de fregament entre els pneumàtics i l'asfalt és $\\mu = 0{,}70$.\n\nPreneu $g = 9{,}8\\ \\text{m/s}^2$ i considereu que tot el moviment és rectilini.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la velocitat dels dos vehicles junts just després del xoc.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la velocitat del cotxe just abans del xoc. Anava per sobre del límit?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Quina energia cinètica s'ha dissipat en el xoc? Quin percentatge representa de l'energia cinètica inicial?",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Cotxe: $m_A = 1\\,250\\ \\text{kg}$, velocitat $v_A$ (incògnita)\n- Furgoneta: $m_B = 2\\,250\\ \\text{kg}$, $v_B = 18\\ \\text{km/h} = 5{,}0\\ \\text{m/s}$\n- Després del xoc: llisquen junts $d = 6{,}5\\ \\text{m}$ amb $\\mu = 0{,}70$\n- $g = 9{,}8\\ \\text{m/s}^2$\n- Incògnites: $v'$ (just després del xoc), $v_A$, energia dissipada"
+          },
+          {
+            "apartat": "a",
+            "titol": "Desacceleració del conjunt",
+            "cos": "Treballem a l'inrevés: primer la frenada, després el xoc. Després del xoc, l'única força horitzontal sobre el conjunt és el fregament, $F_f = \\mu\\,(m_A + m_B)\\,g$. Per la segona llei de Newton:\n\n$$a = \\frac{F_f}{m_A + m_B} = \\mu\\,g = 0{,}70 \\cdot 9{,}8 = 6{,}86\\ \\text{m/s}^2$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Velocitat just després del xoc",
+            "cos": "És un MRUA de frenada fins que s'aturen ($v = 0$): $0 = v'^2 - 2\\,a\\,d$.\n\n$$v' = \\sqrt{2\\,a\\,d} = \\sqrt{2 \\cdot 6{,}86 \\cdot 6{,}5} = \\sqrt{89{,}18} = 9{,}44\\ \\text{m/s}$$\n\nResultat: **$v' \\approx 9{,}4\\ \\text{m/s}$** ($\\approx 34\\ \\text{km/h}$).\n\n(Equivalentment, per energies: el treball del fregament dissipa tota l'energia cinètica, $\\tfrac{1}{2}M v'^2 = \\mu M g\\, d$.)"
+          },
+          {
+            "apartat": "b",
+            "titol": "Conservació del moment lineal en el xoc",
+            "cos": "Durant el breu instant del xoc, les forces entre els vehicles són internes i molt més grans que el fregament, de manera que el moment lineal es conserva. El xoc és **perfectament inelàstic** (queden units):\n\n$$m_A\\,v_A + m_B\\,v_B = (m_A + m_B)\\,v'$$\n\n$$v_A = \\frac{(m_A + m_B)\\,v' - m_B\\,v_B}{m_A} = \\frac{3\\,500 \\cdot 9{,}443 - 2\\,250 \\cdot 5{,}0}{1\\,250} = \\frac{33\\,052 - 11\\,250}{1\\,250} = 17{,}4\\ \\text{m/s}$$\n\nPassant a km/h: $17{,}44 \\cdot 3{,}6 \\approx 62{,}8\\ \\text{km/h}$.\n\nResultat: **$v_A \\approx 17{,}4\\ \\text{m/s} \\approx 63\\ \\text{km/h}$**. Sí, el cotxe anava uns $13\\ \\text{km/h}$ per sobre del límit."
+          },
+          {
+            "apartat": "c",
+            "titol": "Energia dissipada en el xoc",
+            "cos": "Energia cinètica just abans del xoc:\n\n$$E_c = \\tfrac{1}{2} \\cdot 1\\,250 \\cdot 17{,}44^2 + \\tfrac{1}{2} \\cdot 2\\,250 \\cdot 5{,}0^2 = 190\\,136 + 28\\,125 \\approx 218\\,300\\ \\text{J}$$\n\nEnergia cinètica just després:\n\n$$E_c' = \\tfrac{1}{2} \\cdot 3\\,500 \\cdot 9{,}443^2 \\approx 156\\,100\\ \\text{J}$$\n\n$$\\Delta E = 218\\,300 - 156\\,100 \\approx 62\\,200\\ \\text{J}$$\n\n$$\\frac{62\\,200}{218\\,300} \\cdot 100 \\approx 28{,}5\\ \\%$$\n\nResultat: **es dissipen uns $6{,}2 \\cdot 10^4\\ \\text{J}$ (≈ 28,5 %)** en deformar les carrosseries, en calor i en so. La resta ($1{,}56 \\cdot 10^5\\ \\text{J}$) la dissipa després el fregament durant la lliscada."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v' \\approx 9{,}4\\ \\text{m/s}$ ($\\approx 34\\ \\text{km/h}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_A \\approx 17{,}4\\ \\text{m/s} \\approx 63\\ \\text{km/h}$: superava el límit de 50 km/h"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\Delta E \\approx 6{,}2 \\cdot 10^4\\ \\text{J}$, un 28,5 % de l'energia inicial"
+          }
+        ],
+        "nota": "- Error típic: aplicar la conservació de l'energia cinètica al xoc. En un xoc perfectament inelàstic **només** es conserva el moment lineal.\n- Error típic: oblidar el moment lineal de la furgoneta (no estava parada). Si es considera $v_B = 0$ surt $v_A \\approx 26{,}4\\ \\text{m/s} \\approx 95\\ \\text{km/h}$, que és incorrecte.\n- Durant la lliscada el moment lineal **no** es conserva perquè hi actua una força externa (el fregament)."
+      }
+    },
+    {
+      "id": "fisica1-ies-05",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Dos remolcadors estiren un vaixell al port: composició de forces",
+      "tema": "estatica",
+      "temes_secundaris": [
+        "dinamica"
+      ],
+      "conceptes": [
+        "composició de forces",
+        "equilibri del sòlid rígid",
+        "lleis de Newton"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Composició vectorial de forces per components (Física i Química de 1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Al port de Tarragona, dos remolcadors estiren un vaixell mercant amb dos cables lligats al mateix punt de la proa, tal com mostra la figura. El primer cable fa una força $F_1 = 12\\ \\text{kN}$ formant $20^\\circ$ amb l'eix del vaixell, i el segon fa $F_2 = 9{,}0\\ \\text{kN}$ formant $30^\\circ$ per l'altre costat de l'eix.\n\nPreneu l'eix $x$ en la direcció de l'eix del vaixell (cap endavant) i l'eix $y$ perpendicular (positiu cap al costat de $F_1$).",
+      "figures": [
+        {
+          "src": "img/fisica1/impuls-estatica-calor/05.png",
+          "peu": "Forces dels dos cables dels remolcadors aplicades a la proa del vaixell."
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu les components $x$ i $y$ de cada força.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu el mòdul de la força resultant i l'angle que forma amb l'eix del vaixell.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Quan el vaixell es mou a velocitat constant, quina força (mòdul i direcció) fa l'aigua sobre el vaixell? Justifiqueu-ho.",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- $F_1 = 12\\ \\text{kN}$ a $+20^\\circ$ respecte de l'eix $x$\n- $F_2 = 9{,}0\\ \\text{kN}$ a $-30^\\circ$ respecte de l'eix $x$\n- Incògnites: components, resultant $\\vec R$ (mòdul i angle), força de l'aigua"
+          },
+          {
+            "apartat": "a",
+            "titol": "Components de cada força",
+            "cos": "Per descompondre una força que forma un angle $\\alpha$ amb l'eix $x$: $F_x = F\\cos\\alpha$, $F_y = F\\sin\\alpha$.\n\n$$F_{1x} = 12\\cos 20^\\circ = 11{,}28\\ \\text{kN} \\qquad F_{1y} = 12\\sin 20^\\circ = 4{,}10\\ \\text{kN}$$\n\n$$F_{2x} = 9{,}0\\cos 30^\\circ = 7{,}79\\ \\text{kN} \\qquad F_{2y} = -9{,}0\\sin 30^\\circ = -4{,}50\\ \\text{kN}$$\n\nLa component $y$ de $F_2$ és negativa perquè està per sota de l'eix."
+          },
+          {
+            "apartat": "b",
+            "titol": "Resultant",
+            "cos": "La resultant se suma component a component:\n\n$$R_x = 11{,}28 + 7{,}79 = 19{,}07\\ \\text{kN} \\qquad R_y = 4{,}10 - 4{,}50 = -0{,}40\\ \\text{kN}$$\n\n$$R = \\sqrt{R_x^2 + R_y^2} = \\sqrt{19{,}07^2 + 0{,}40^2} = 19{,}07\\ \\text{kN}$$\n\n$$\\alpha = \\arctan\\frac{R_y}{R_x} = \\arctan\\frac{-0{,}40}{19{,}07} = -1{,}2^\\circ$$\n\nResultat: **$R \\approx 19{,}1\\ \\text{kN}$, a $1{,}2^\\circ$ per sota de l'eix** (cap al costat de $F_2$): pràcticament en la direcció de l'eix del vaixell.\n\nFixeu-vos que $R < F_1 + F_2 = 21\\ \\text{kN}$: les components transversals s'anul·len gairebé del tot i no aporten res a l'avanç."
+          },
+          {
+            "apartat": "c",
+            "titol": "Força de l'aigua a velocitat constant",
+            "cos": "Si el vaixell es mou a velocitat constant, per la **primera llei de Newton** la força resultant total és zero (en el pla horitzontal). Per tant, l'aigua ha de fer una força igual i oposada a la resultant dels cables (la força **equilibrant**):\n\n$$\\vec F_\\text{aigua} = -\\vec R = (-19{,}07;\\ +0{,}40)\\ \\text{kN}$$\n\nResultat: **$F_\\text{aigua} \\approx 19{,}1\\ \\text{kN}$**, en la mateixa direcció que $\\vec R$ però en sentit contrari (cap enrere, $1{,}2^\\circ$ cap al costat de $F_1$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$\\vec F_1 = (11{,}28;\\ 4{,}10)\\ \\text{kN}$; $\\vec F_2 = (7{,}79;\\ -4{,}50)\\ \\text{kN}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$R \\approx 19{,}1\\ \\text{kN}$, a $1{,}2^\\circ$ per sota de l'eix"
+          },
+          {
+            "apartat": "c",
+            "valor": "$F_\\text{aigua} \\approx 19{,}1\\ \\text{kN}$, oposada a $\\vec R$"
+          }
+        ],
+        "nota": "Error típic: sumar els mòduls ($12 + 9 = 21\\ \\text{kN}$). Les forces són vectors i només se sumen directament si tenen la mateixa direcció i sentit."
+      }
+    },
+    {
+      "id": "fisica1-ies-06",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Reaccions als recolzaments d'una passarel·la de fusta amb una persona i un carretó",
+      "tema": "estatica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "moment d'una força",
+        "equilibri del sòlid rígid",
+        "diagrama de cos lliure"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Equilibri del sòlid rígid (forces i moments) en una biga recolzada (1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Una passarel·la de fusta d'un parc natural del delta de l'Ebre té $6{,}0\\ \\text{m}$ de llarg i una massa de $120\\ \\text{kg}$ repartida uniformement. Està simplement recolzada pels extrems A i B. A sobre hi ha una persona de $70\\ \\text{kg}$ a $1{,}5\\ \\text{m}$ de A i un carretó de $40\\ \\text{kg}$ a $4{,}0\\ \\text{m}$ de A (vegeu la figura).\n\nPreneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [
+        {
+          "src": "img/fisica1/impuls-estatica-calor/06.png",
+          "peu": "Passarel·la recolzada als extrems A i B, amb una persona i un carretó."
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu el diagrama de forces de la passarel·la i calculeu les reaccions als recolzaments A i B.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Si el carretó es queda on és, on s'hauria de col·locar la persona perquè les dues reaccions fossin iguals?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Cada recolzament pot suportar com a màxim $1\\,500\\ \\text{N}$. Pot la persona caminar per tota la passarel·la sense perill? Si no, fins a quina distància de A pot arribar?",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Passarel·la: $L = 6{,}0\\ \\text{m}$, $P_b = 120 \\cdot 9{,}8 = 1\\,176\\ \\text{N}$ aplicat al centre ($3{,}0\\ \\text{m}$ de A)\n- Persona: $P_p = 70 \\cdot 9{,}8 = 686\\ \\text{N}$ a $x_p = 1{,}5\\ \\text{m}$\n- Carretó: $P_c = 40 \\cdot 9{,}8 = 392\\ \\text{N}$ a $x_c = 4{,}0\\ \\text{m}$\n- Incògnites: $R_A$, $R_B$; posició per a $R_A = R_B$; posició límit"
+          },
+          {
+            "apartat": "a",
+            "titol": "Diagrama de forces i condicions d'equilibri",
+            "cos": "Sobre la passarel·la actuen tres forces cap avall (els pesos $P_b$, $P_p$ i $P_c$) i dues cap amunt (les reaccions $R_A$ i $R_B$). Com que la massa està repartida uniformement, $P_b$ s'aplica al centre.\n\nPer a l'equilibri del sòlid rígid calen dues condicions:\n\n1. Suma de forces nul·la: $R_A + R_B = P_b + P_p + P_c$\n2. Suma de moments nul·la respecte de qualsevol punt.\n\nPrenem moments respecte de A, així $R_A$ no hi apareix (el seu braç és zero)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul de les reaccions",
+            "cos": "Moments respecte de A (antihorari positiu):\n\n$$R_B \\cdot 6{,}0 - P_b \\cdot 3{,}0 - P_p \\cdot 1{,}5 - P_c \\cdot 4{,}0 = 0$$\n\n$$R_B = \\frac{1\\,176 \\cdot 3{,}0 + 686 \\cdot 1{,}5 + 392 \\cdot 4{,}0}{6{,}0} = \\frac{3\\,528 + 1\\,029 + 1\\,568}{6{,}0} = 1\\,020{,}8\\ \\text{N}$$\n\nDe la suma de forces:\n\n$$R_A = 1\\,176 + 686 + 392 - 1\\,020{,}8 = 2\\,254 - 1\\,020{,}8 = 1\\,233{,}2\\ \\text{N}$$\n\nResultat: **$R_A \\approx 1\\,233\\ \\text{N}$ i $R_B \\approx 1\\,021\\ \\text{N}$**. El recolzament A aguanta més perquè la persona hi és més a prop."
+          },
+          {
+            "apartat": "b",
+            "titol": "Posició de la persona per tenir reaccions iguals",
+            "cos": "Si $R_A = R_B$, cada una és la meitat del pes total: $R_A = R_B = 2\\,254/2 = 1\\,127\\ \\text{N}$. Imposem l'equilibri de moments respecte de A amb la persona a una distància $x$:\n\n$$1\\,127 \\cdot 6{,}0 = 1\\,176 \\cdot 3{,}0 + 686\\,x + 392 \\cdot 4{,}0$$\n\n$$686\\,x = 6\\,762 - 3\\,528 - 1\\,568 = 1\\,666 \\quad\\Rightarrow\\quad x = 2{,}43\\ \\text{m}$$\n\nResultat: **la persona s'ha de posar a $x \\approx 2{,}4\\ \\text{m}$ de A**. Té sentit: el carretó està desplaçat cap a B, i la persona l'ha de compensar quedant-se una mica cap a A respecte del centre."
+          },
+          {
+            "apartat": "c",
+            "titol": "Reaccions màximes quan la persona camina",
+            "cos": "Quan la persona és a l'extrem A ($x = 0$), tot el seu pes recau sobre A; quan és a B ($x = 6{,}0\\ \\text{m}$), sobre B. Calculem les reaccions en els dos casos extrems:\n\n- Persona a $x = 0$: $R_B = \\dfrac{3\\,528 + 0 + 1\\,568}{6{,}0} = 849{,}3\\ \\text{N}$, $R_A = 2\\,254 - 849{,}3 = 1\\,404{,}7\\ \\text{N} < 1\\,500\\ \\text{N}$ (correcte)\n- Persona a $x = 6{,}0\\ \\text{m}$: $R_B = \\dfrac{3\\,528 + 686 \\cdot 6{,}0 + 1\\,568}{6{,}0} = 1\\,535{,}3\\ \\text{N} > 1\\,500\\ \\text{N}$ (massa!)\n\nPer tant, **no pot recórrer tota la passarel·la**: prop de B, el recolzament B se sobrecarrega."
+          },
+          {
+            "apartat": "c",
+            "titol": "Posició límit",
+            "cos": "Busquem la $x$ que fa $R_B = 1\\,500\\ \\text{N}$:\n\n$$1\\,500 \\cdot 6{,}0 = 3\\,528 + 686\\,x + 1\\,568 \\quad\\Rightarrow\\quad x = \\frac{9\\,000 - 5\\,096}{686} = 5{,}69\\ \\text{m}$$\n\nResultat: **la persona pot arribar fins a uns $5{,}7\\ \\text{m}$ de A** (és a dir, a uns 30 cm de B). Si el carretó s'apartés cap a A, el problema desapareixeria."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$R_A \\approx 1\\,233\\ \\text{N}$, $R_B \\approx 1\\,021\\ \\text{N}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$x \\approx 2{,}4\\ \\text{m}$ de A"
+          },
+          {
+            "apartat": "c",
+            "valor": "No: a l'extrem B, $R_B \\approx 1\\,535\\ \\text{N} > 1\\,500\\ \\text{N}$; pot arribar fins a $x \\approx 5{,}7\\ \\text{m}$"
+          }
+        ],
+        "nota": "- Prendre moments respecte d'un dels recolzaments elimina una incògnita i simplifica molt el càlcul.\n- Error típic: oblidar el pes propi de la biga, o aplicar-lo en un extrem en lloc del centre."
+      }
+    },
+    {
+      "id": "fisica1-ies-07",
+      "exercici": 7,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Escala recolzada en una paret: fins on pot pujar el pintor sense que rellisqui",
+      "tema": "estatica",
+      "temes_secundaris": [
+        "dinamica"
+      ],
+      "conceptes": [
+        "equilibri del sòlid rígid",
+        "moment d'una força",
+        "força de fregament",
+        "diagrama de cos lliure"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Equilibri del sòlid rígid amb fregament: escala recolzada (1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Un pintor de $75\\ \\text{kg}$ puja per una escala de $5{,}0\\ \\text{m}$ i $15\\ \\text{kg}$ (massa repartida uniformement) recolzada en una paret llisa (sense fregament). L'escala forma un angle de $65^\\circ$ amb el terra, i el coeficient de fregament estàtic entre l'escala i el terra és $\\mu = 0{,}40$ (vegeu la figura).\n\nPreneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [
+        {
+          "src": "img/fisica1/impuls-estatica-calor/07.png",
+          "peu": "Escala recolzada en una paret llisa amb el pintor a 2,0 m de la base."
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Dibuixeu les forces que actuen sobre l'escala. Quan el pintor és a $2{,}0\\ \\text{m}$ de la base (mesurats al llarg de l'escala), calculeu la força normal del terra, la força de la paret i la força de fregament. L'escala rellisca?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Fins a quina distància de la base (al llarg de l'escala) pot pujar el pintor abans que l'escala comenci a relliscar?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Quin coeficient de fregament mínim caldria perquè pogués arribar al capdamunt de l'escala?",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Escala: $L = 5{,}0\\ \\text{m}$, $M = 15\\ \\text{kg}$, angle amb el terra $\\theta = 65^\\circ$\n- Pintor: $m = 75\\ \\text{kg}$, a una distància $d$ de la base\n- Paret llisa; terra amb $\\mu = 0{,}40$; $g = 9{,}8\\ \\text{m/s}^2$\n- Incògnites: $N_t$, $N_p$, $F_f$; $d_\\text{màx}$; $\\mu_\\text{mín}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Forces sobre l'escala",
+            "cos": "- **Pes de l'escala** $Mg = 147\\ \\text{N}$, vertical, al centre de l'escala.\n- **Pes del pintor** $mg = 735\\ \\text{N}$, vertical, a una distància $d$ de la base.\n- **Normal del terra** $N_t$, vertical cap amunt, a la base.\n- **Fregament del terra** $F_f$, horitzontal cap a la paret (impedeix que la base rellisqui cap enfora).\n- **Normal de la paret** $N_p$, horitzontal i perpendicular a la paret (la paret és llisa, no hi ha fregament)."
+          },
+          {
+            "apartat": "a",
+            "titol": "Equacions d'equilibri",
+            "cos": "Suma de forces:\n\n$$\\text{vertical: } N_t = (M + m)\\,g \\qquad \\text{horitzontal: } F_f = N_p$$\n\nMoments respecte de la base (així $N_t$ i $F_f$ no fan moment). Cal el braç de cada força, que és la distància perpendicular a la seva línia d'acció: per als pesos (verticals), el braç és la distància horitzontal, $x\\cos\\theta$; per a $N_p$ (horitzontal), és l'altura on es recolza, $L\\sin\\theta$:\n\n$$N_p\\,L\\sin\\theta = M g\\,\\frac{L}{2}\\cos\\theta + m g\\,d\\cos\\theta$$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Càlcul amb el pintor a 2,0 m",
+            "cos": "$$N_t = (15 + 75) \\cdot 9{,}8 = 882\\ \\text{N}$$\n\n$$N_p = \\frac{g\\cos\\theta\\,\\left(M\\,\\frac{L}{2} + m\\,d\\right)}{L\\sin\\theta} = \\frac{9{,}8\\cos 65^\\circ\\,(15 \\cdot 2{,}5 + 75 \\cdot 2{,}0)}{5{,}0\\sin 65^\\circ} = \\frac{4{,}142 \\cdot 187{,}5}{4{,}532} = 171{,}4\\ \\text{N}$$\n\n$$F_f = N_p = 171{,}4\\ \\text{N}$$\n\nEl fregament màxim que pot fer el terra és $F_{f,\\text{màx}} = \\mu\\,N_t = 0{,}40 \\cdot 882 = 352{,}8\\ \\text{N}$.\n\nResultat: **$N_t = 882\\ \\text{N}$, $N_p = F_f \\approx 171\\ \\text{N}$**. Com que $171\\ \\text{N} < 353\\ \\text{N}$, **l'escala no rellisca**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Distància màxima abans de relliscar",
+            "cos": "A mesura que el pintor puja, augmenta el moment del seu pes, i per tant $N_p$ i el fregament necessari. L'escala està a punt de relliscar quan $F_f = \\mu\\,N_t$, és a dir, $N_p = 352{,}8\\ \\text{N}$. Aïllem $d$ de l'equació de moments:\n\n$$d = \\frac{1}{m}\\left(\\frac{N_p\\,L\\sin\\theta}{g\\cos\\theta} - M\\,\\frac{L}{2}\\right) = \\frac{1}{75}\\left(\\frac{352{,}8 \\cdot 4{,}532}{4{,}142} - 37{,}5\\right) = \\frac{386{,}0 - 37{,}5}{75} = 4{,}65\\ \\text{m}$$\n\nResultat: **el pintor pot pujar fins a uns $4{,}6\\ \\text{m}$ de la base**; en els últims 35 cm l'escala relliscaria."
+          },
+          {
+            "apartat": "c",
+            "titol": "Coeficient mínim per arribar a dalt",
+            "cos": "Amb el pintor al capdamunt ($d = L = 5{,}0\\ \\text{m}$):\n\n$$N_p = \\frac{4{,}142 \\cdot (37{,}5 + 75 \\cdot 5{,}0)}{4{,}532} = \\frac{4{,}142 \\cdot 412{,}5}{4{,}532} = 377{,}0\\ \\text{N}$$\n\nCal que $\\mu\\,N_t \\geq N_p$:\n\n$$\\mu_\\text{mín} = \\frac{N_p}{N_t} = \\frac{377{,}0}{882} = 0{,}43$$\n\nResultat: **$\\mu_\\text{mín} \\approx 0{,}43$**. A la pràctica, per això es posen tacs de goma a les potes de les escales o algú n'aguanta la base."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$N_t = 882\\ \\text{N}$, $N_p = F_f \\approx 171\\ \\text{N}$; no rellisca ($F_{f,\\text{màx}} \\approx 353\\ \\text{N}$)"
+          },
+          {
+            "apartat": "b",
+            "valor": "$d_\\text{màx} \\approx 4{,}6\\ \\text{m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\mu_\\text{mín} \\approx 0{,}43$"
+          }
+        ],
+        "nota": "- Error típic: fer servir $\\sin\\theta$ i $\\cos\\theta$ al revés en els braços. Recordeu: el braç d'una força és la distància perpendicular des del punt de gir fins a la línia d'acció. Per als pesos (verticals) és la distància horitzontal.\n- La força de fregament estàtic no val sempre $\\mu N$: només ho val quan l'escala està a punt de relliscar. Abans, val el que calgui per mantenir l'equilibri."
+      }
+    },
+    {
+      "id": "fisica1-ies-08",
+      "exercici": 8,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Escalfar l'aigua d'un termo elèctric: energia, temps i cost",
+      "tema": "calor",
+      "temes_secundaris": [
+        "energia-mecanica"
+      ],
+      "conceptes": [
+        "calor específica",
+        "potència",
+        "energia tèrmica"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Calor sensible i potència (Física i Química de 1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Un termo elèctric domèstic conté $80\\ \\text{L}$ d'aigua, que entra de la xarxa a $15\\ ^\\circ\\text{C}$ i s'ha d'escalfar fins a $60\\ ^\\circ\\text{C}$. La resistència del termo té una potència de $1\\,500\\ \\text{W}$.\n\nDades: densitat de l'aigua $1{,}0\\ \\text{kg/L}$; calor específica de l'aigua $c = 4\\,180\\ \\text{J/(kg}\\cdot\\text{K)}$. Suposeu que no hi ha pèrdues de calor.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina quantitat de calor cal per escalfar tota l'aigua del termo?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Quant de temps triga la resistència a escalfar-la? Expresseu-ho en hores i minuts.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Expresseu aquesta energia en kWh i calculeu quant costa si el preu de l'electricitat és de 0,20 € per kWh.",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa d'aigua: $m = 80\\ \\text{L} \\cdot 1{,}0\\ \\text{kg/L} = 80\\ \\text{kg}$\n- $T_i = 15\\ ^\\circ\\text{C}$, $T_f = 60\\ ^\\circ\\text{C}$ → $\\Delta T = 45\\ \\text{K}$ (una diferència de temperatura val el mateix en °C i en K)\n- $c = 4\\,180\\ \\text{J/(kg}\\cdot\\text{K)}$, $P = 1\\,500\\ \\text{W}$\n- Incògnites: $Q$, $t$, energia en kWh i cost"
+          },
+          {
+            "apartat": "a",
+            "titol": "Calor necessària",
+            "cos": "Per escalfar un cos sense canvi d'estat, la calor necessària és proporcional a la massa, a la calor específica i a l'increment de temperatura:\n\n$$Q = m\\,c\\,\\Delta T = 80 \\cdot 4\\,180 \\cdot 45 = 15\\,048\\,000\\ \\text{J}$$\n\nResultat: **$Q \\approx 1{,}50 \\cdot 10^{7}\\ \\text{J} = 15{,}0\\ \\text{MJ}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Temps d'escalfament",
+            "cos": "La potència és l'energia transferida per unitat de temps, $P = Q/t$. Sense pèrdues, tota l'energia elèctrica passa a l'aigua:\n\n$$t = \\frac{Q}{P} = \\frac{15\\,048\\,000}{1\\,500} = 10\\,032\\ \\text{s}$$\n\n$$10\\,032\\ \\text{s} = 2{,}787\\ \\text{h} = 2\\ \\text{h} + 0{,}787 \\cdot 60\\ \\text{min} \\approx 2\\ \\text{h}\\ 47\\ \\text{min}$$\n\nResultat: **$t \\approx 1{,}0 \\cdot 10^{4}\\ \\text{s} \\approx 2\\ \\text{h}\\ 47\\ \\text{min}$**."
+          },
+          {
+            "apartat": "c",
+            "titol": "Energia en kWh i cost",
+            "cos": "$1\\ \\text{kWh} = 1\\,000\\ \\text{W} \\cdot 3\\,600\\ \\text{s} = 3{,}6 \\cdot 10^{6}\\ \\text{J}$:\n\n$$E = \\frac{15\\,048\\,000}{3{,}6 \\cdot 10^{6}} = 4{,}18\\ \\text{kWh}$$\n\n(També: $E = P\\,t = 1{,}5\\ \\text{kW} \\cdot 2{,}787\\ \\text{h} = 4{,}18\\ \\text{kWh}$.)\n\n$$\\text{Cost} = 4{,}18 \\cdot 0{,}20 = 0{,}84\\ \\text{euros}$$\n\nResultat: **$E \\approx 4{,}18\\ \\text{kWh}$; cost ≈ 0,84 €**."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$Q \\approx 1{,}50 \\cdot 10^{7}\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$t \\approx 10\\,032\\ \\text{s} \\approx 2\\ \\text{h}\\ 47\\ \\text{min}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$E \\approx 4{,}18\\ \\text{kWh}$; cost ≈ 0,84 €"
+          }
+        ],
+        "nota": "En un termo real hi ha pèrdues de calor per les parets, de manera que el temps i el cost reals són una mica més grans."
+      }
+    },
+    {
+      "id": "fisica1-ies-09",
+      "exercici": 9,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Identificar un metall amb un calorímetre: calor específica per equilibri tèrmic",
+      "tema": "calor",
+      "temes_secundaris": [],
+      "conceptes": [
+        "equilibri tèrmic",
+        "calor específica",
+        "calorimetria"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Calorimetria i equilibri tèrmic sense canvi d'estat (1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Al laboratori de l'institut, per identificar un metall, s'escalfa una peça de $150\\ \\text{g}$ en aigua bullint fins a $100{,}0\\ ^\\circ\\text{C}$ i es posa ràpidament dins d'un calorímetre d'alumini de $120\\ \\text{g}$ que conté $200\\ \\text{g}$ d'aigua a $20{,}0\\ ^\\circ\\text{C}$. Quan s'arriba a l'equilibri tèrmic, el termòmetre marca $24{,}6\\ ^\\circ\\text{C}$.\n\nDades: $c_\\text{aigua} = 4\\,180\\ \\text{J/(kg}\\cdot\\text{K)}$, $c_\\text{alumini} = 900\\ \\text{J/(kg}\\cdot\\text{K)}$. Suposeu que el calorímetre està ben aïllat.\n\n| Metall | ferro | coure | plom | alumini |\n|---|---|---|---|---|\n| $c$ (J/(kg·K)) | 450 | 385 | 130 | 900 |",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Calculeu la calor que han absorbit l'aigua i el calorímetre.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Calculeu la calor específica del metall i digueu de quin metall es tracta, segons la taula.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Un alumne ha oblidat tenir en compte el calorímetre. Quina calor específica obté, i quin error relatiu comet?",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Metall: $m_m = 0{,}150\\ \\text{kg}$, $T_m = 100{,}0\\ ^\\circ\\text{C}$, $c_m$ = ?\n- Aigua: $m_a = 0{,}200\\ \\text{kg}$, $T_a = 20{,}0\\ ^\\circ\\text{C}$\n- Calorímetre d'alumini: $m_c = 0{,}120\\ \\text{kg}$, a $20{,}0\\ ^\\circ\\text{C}$ (la mateixa que l'aigua)\n- Temperatura d'equilibri: $T_e = 24{,}6\\ ^\\circ\\text{C}$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Calor absorbida per l'aigua i el calorímetre",
+            "cos": "L'aigua i el calorímetre passen de $20{,}0$ a $24{,}6\\ ^\\circ\\text{C}$ ($\\Delta T = 4{,}6\\ \\text{K}$) i absorbeixen calor $Q = m\\,c\\,\\Delta T$:\n\n$$Q_a = 0{,}200 \\cdot 4\\,180 \\cdot 4{,}6 = 3\\,845{,}6\\ \\text{J}$$\n\n$$Q_c = 0{,}120 \\cdot 900 \\cdot 4{,}6 = 496{,}8\\ \\text{J}$$\n\n$$Q_\\text{abs} = 3\\,845{,}6 + 496{,}8 = 4\\,342{,}4\\ \\text{J}$$\n\nResultat: **$Q_\\text{abs} \\approx 4\\,342\\ \\text{J}$** (aigua $\\approx 3\\,846\\ \\text{J}$, calorímetre $\\approx 497\\ \\text{J}$)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Balanç de calor i calor específica del metall",
+            "cos": "Com que el calorímetre està aïllat, **tota la calor que cedeix el metall l'absorbeixen l'aigua i el calorímetre** (fins que tots arriben a la mateixa temperatura, l'equilibri tèrmic):\n\n$$Q_\\text{cedida} = Q_\\text{abs} \\quad\\Rightarrow\\quad m_m\\,c_m\\,(T_m - T_e) = 4\\,342{,}4\\ \\text{J}$$\n\n$$c_m = \\frac{4\\,342{,}4}{0{,}150 \\cdot (100{,}0 - 24{,}6)} = \\frac{4\\,342{,}4}{11{,}31} = 384\\ \\text{J/(kg}\\cdot\\text{K)}$$\n\nResultat: **$c_m \\approx 384\\ \\text{J/(kg}\\cdot\\text{K)}$: és coure** ($385\\ \\text{J/(kg}\\cdot\\text{K)}$)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Error si s'oblida el calorímetre",
+            "cos": "Si només es té en compte l'aigua:\n\n$$c_m' = \\frac{3\\,845{,}6}{11{,}31} = 340\\ \\text{J/(kg}\\cdot\\text{K)}$$\n\n$$\\varepsilon_r = \\frac{|340 - 384|}{384} \\cdot 100 \\approx 11\\ \\%$$\n\nResultat: **$c_m' \\approx 340\\ \\text{J/(kg}\\cdot\\text{K)}$, un 11 % per sota**. Amb aquest valor no es podria identificar bé el metall (no coincideix amb cap de la taula). Per això cal comptar la calor que absorbeix el recipient."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$Q_\\text{abs} \\approx 4\\,342\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$c_m \\approx 384\\ \\text{J/(kg}\\cdot\\text{K)}$ → coure"
+          },
+          {
+            "apartat": "c",
+            "valor": "$c_m' \\approx 340\\ \\text{J/(kg}\\cdot\\text{K)}$, error ≈ 11 %"
+          }
+        ],
+        "nota": "Error típic: posar malament els signes en el balanç. És més segur escriure **calor cedida = calor absorbida** amb tots els $\\Delta T$ positius (temperatura alta menys baixa)."
+      }
+    },
+    {
+      "id": "fisica1-ies-10",
+      "exercici": 10,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Glaçons en un refresc: es fon tot el gel? Temperatura final",
+      "tema": "calor",
+      "temes_secundaris": [],
+      "conceptes": [
+        "canvi d'estat",
+        "equilibri tèrmic",
+        "calor específica",
+        "calor latent"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Calorimetria amb canvi d'estat (fusió) i equilibri tèrmic (1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Un dia d'estiu, en un got amb $330\\ \\text{g}$ de refresc a $24\\ ^\\circ\\text{C}$ s'hi tiren 4 glaçons de $25\\ \\text{g}$ cadascun, acabats de treure del congelador a $-18\\ ^\\circ\\text{C}$. Considereu el refresc com si fos aigua i negligiu l'intercanvi de calor amb el got i l'ambient.\n\nDades: $c_\\text{aigua} = 4\\,180\\ \\text{J/(kg}\\cdot\\text{K)}$; $c_\\text{gel} = 2\\,100\\ \\text{J/(kg}\\cdot\\text{K)}$; calor latent de fusió del gel $L_f = 3{,}34 \\cdot 10^{5}\\ \\text{J/kg}$.",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quina calor cal per portar tot el gel fins a $0\\ ^\\circ\\text{C}$ i fondre'l completament?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Quina calor pot cedir el refresc si es refreda fins a $0\\ ^\\circ\\text{C}$? Es fon tot el gel? Determineu l'estat final (temperatura i massa de gel que queda, si en queda).",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "Repetiu el càlcul si només s'hi tiren 3 glaçons. Quina és la temperatura final?",
+          "punts": 1.0,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Refresc: $m_a = 0{,}330\\ \\text{kg}$, $T_a = 24\\ ^\\circ\\text{C}$, $c_a = 4\\,180\\ \\text{J/(kg}\\cdot\\text{K)}$\n- Gel: $m_g = 4 \\cdot 25 = 100\\ \\text{g} = 0{,}100\\ \\text{kg}$, $T_g = -18\\ ^\\circ\\text{C}$, $c_g = 2\\,100\\ \\text{J/(kg}\\cdot\\text{K)}$\n- $L_f = 3{,}34 \\cdot 10^{5}\\ \\text{J/kg}$\n- Incògnites: calors, estat final, $T_f$"
+          },
+          {
+            "apartat": "a",
+            "titol": "Calor per escalfar i fondre el gel",
+            "cos": "El gel passa per dues etapes: primer s'escalfa de $-18$ a $0\\ ^\\circ\\text{C}$ sense canviar d'estat (calor sensible), i després es fon a $0\\ ^\\circ\\text{C}$ **sense canviar de temperatura** (calor latent):\n\n$$Q_1 = m_g\\,c_g\\,\\Delta T = 0{,}100 \\cdot 2\\,100 \\cdot 18 = 3\\,780\\ \\text{J}$$\n\n$$Q_2 = m_g\\,L_f = 0{,}100 \\cdot 3{,}34 \\cdot 10^{5} = 33\\,400\\ \\text{J}$$\n\n$$Q_\\text{gel} = 3\\,780 + 33\\,400 = 37\\,180\\ \\text{J}$$\n\nResultat: **$Q_\\text{gel} \\approx 3{,}72 \\cdot 10^{4}\\ \\text{J}$**. Fixeu-vos que la fusió necessita gairebé 9 vegades més energia que l'escalfament."
+          },
+          {
+            "apartat": "b",
+            "titol": "Calor màxima que pot cedir el refresc",
+            "cos": "El refresc pot cedir calor com a molt fins a arribar a $0\\ ^\\circ\\text{C}$ (no pot quedar més fred que el gel que es fon):\n\n$$Q_\\text{refresc} = m_a\\,c_a\\,(24 - 0) = 0{,}330 \\cdot 4\\,180 \\cdot 24 = 33\\,106\\ \\text{J}$$\n\nCom que $33\\,106\\ \\text{J} < 37\\,180\\ \\text{J}$, **el refresc no té prou energia per fondre tot el gel**. L'estat final serà una barreja d'aigua i gel a **$0\\ ^\\circ\\text{C}$**."
+          },
+          {
+            "apartat": "b",
+            "titol": "Massa de gel que es fon i que queda",
+            "cos": "La calor del refresc primer escalfa tot el gel fins a $0\\ ^\\circ\\text{C}$ ($3\\,780\\ \\text{J}$) i la resta fon una part $m_f$:\n\n$$m_f = \\frac{Q_\\text{refresc} - Q_1}{L_f} = \\frac{33\\,106 - 3\\,780}{3{,}34 \\cdot 10^{5}} = 0{,}0878\\ \\text{kg} = 87{,}8\\ \\text{g}$$\n\n$$m_\\text{gel,final} = 100 - 87{,}8 = 12{,}2\\ \\text{g}$$\n\nResultat: **$T_f = 0\\ ^\\circ\\text{C}$; queden uns $12\\ \\text{g}$ de gel sense fondre** (i $330 + 87{,}8 \\approx 418\\ \\text{g}$ d'aigua)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Amb 3 glaçons: es fon tot?",
+            "cos": "Ara $m_g = 0{,}075\\ \\text{kg}$:\n\n$$Q_\\text{gel} = 0{,}075 \\cdot 2\\,100 \\cdot 18 + 0{,}075 \\cdot 3{,}34 \\cdot 10^{5} = 2\\,835 + 25\\,050 = 27\\,885\\ \\text{J}$$\n\nCom que $27\\,885\\ \\text{J} < 33\\,106\\ \\text{J}$, **sí que es fon tot**, i encara sobra energia: la temperatura final serà més gran que $0\\ ^\\circ\\text{C}$."
+          },
+          {
+            "apartat": "c",
+            "titol": "Temperatura final amb 3 glaçons",
+            "cos": "Balanç: calor cedida pel refresc (de 24 a $T_f$) = calor absorbida pel gel (escalfar-se, fondre's i, l'aigua de fusió, escalfar-se de 0 a $T_f$):\n\n$$m_a\\,c_a\\,(24 - T_f) = 27\\,885 + m_g\\,c_a\\,(T_f - 0)$$\n\n$$0{,}330 \\cdot 4\\,180\\,(24 - T_f) = 27\\,885 + 0{,}075 \\cdot 4\\,180\\,T_f$$\n\n$$33\\,106 - 1\\,379{,}4\\,T_f = 27\\,885 + 313{,}5\\,T_f \\quad\\Rightarrow\\quad T_f = \\frac{33\\,106 - 27\\,885}{1\\,379{,}4 + 313{,}5} = \\frac{5\\,221}{1\\,692{,}9} = 3{,}1\\ ^\\circ\\text{C}$$\n\nResultat: **$T_f \\approx 3{,}1\\ ^\\circ\\text{C}$**, amb tot el gel fos."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$Q_\\text{gel} \\approx 3{,}72 \\cdot 10^4\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "No es fon tot: $T_f = 0\\ ^\\circ\\text{C}$ i queden $\\approx 12\\ \\text{g}$ de gel"
+          },
+          {
+            "apartat": "c",
+            "valor": "Es fon tot: $T_f \\approx 3{,}1\\ ^\\circ\\text{C}$"
+          }
+        ],
+        "nota": "- **Estratègia**: en problemes amb gel, abans de plantejar el balanç amb una $T_f$ desconeguda, comproveu si l'energia disponible és suficient per fondre-ho tot. Si plantegeu directament el balanç amb 4 glaçons, surt una $T_f$ negativa, cosa absurda (aigua líquida per sota de 0 °C).\n- No oblideu que, un cop fos, l'aigua del gel també s'ha d'escalfar fins a $T_f$."
+      }
+    },
+    {
+      "id": "fisica1-ies-11",
+      "exercici": 11,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Velocitat de retrocés d'una carrabina de biatló",
+      "tema": "moment-lineal",
+      "temes_secundaris": [],
+      "conceptes": [
+        "conservació del moment lineal",
+        "moment lineal"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Conservació del moment lineal en un retrocés (1r).",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Una carrabina de biatló de $4{,}0\\ \\text{kg}$, inicialment en repòs i lliure de moure's, dispara una bala de $10\\ \\text{g}$ que surt a $400\\ \\text{m/s}$. Amb quina velocitat retrocedeix la carrabina?",
+      "figures": [],
+      "opcions": {
+        "a": "$0$: la carrabina no es mou perquè és molt més pesada que la bala.",
+        "b": "$1{,}0\\ \\text{m/s}$",
+        "c": "$10\\ \\text{m/s}$",
+        "d": "$20\\ \\text{m/s}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Conservació del moment lineal",
+            "cos": "Abans del tret, el sistema carrabina + bala està en repòs: el moment lineal total és zero. Les forces dels gasos són internes, de manera que el moment lineal es conserva:\n\n$$0 = m_b\\,v_b + M\\,V \\quad\\Rightarrow\\quad V = -\\frac{m_b\\,v_b}{M} = -\\frac{0{,}010 \\cdot 400}{4{,}0} = -1{,}0\\ \\text{m/s}$$\n\nResultat: **la carrabina retrocedeix a $1{,}0\\ \\text{m/s}$** (sentit contrari a la bala) → resposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** El moment lineal de la bala ha de quedar compensat per un moment lineal igual i contrari: la carrabina no pot quedar quieta.\n- **c)** Surt de prendre la massa de la bala com a $0{,}1\\ \\text{kg}$ (error en el canvi d'unitats g → kg).\n- **d)** Surt d'igualar les energies cinètiques de la bala i la carrabina, però en un tret l'energia cinètica no es conserva (prové de l'energia química de la pólvora)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$V = 1{,}0\\ \\text{m/s}$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica1-ies-12",
+      "exercici": 12,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Força per aixecar un carretó de mà (palanca de segon gènere)",
+      "tema": "estatica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "moment d'una força",
+        "equilibri del sòlid rígid",
+        "palanca"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Equilibri de moments en una palanca (1r).",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Amb un carretó de mà es transporten $60\\ \\text{kg}$ de sorra. L'eix de la roda és el punt de suport; el centre de gravetat de la càrrega és a $0{,}40\\ \\text{m}$ de l'eix, i les mans agafen els mànecs a $1{,}20\\ \\text{m}$ de l'eix (distàncies horitzontals). Negligint el pes del carretó, quina força vertical cal fer per mantenir-lo aixecat? ($g = 9{,}8\\ \\text{m/s}^2$)",
+      "figures": [],
+      "opcions": {
+        "a": "$1\\,764\\ \\text{N}$",
+        "b": "$588\\ \\text{N}$",
+        "c": "$196\\ \\text{N}$",
+        "d": "$294\\ \\text{N}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Equilibri de moments respecte de l'eix",
+            "cos": "El carretó és una **palanca de segon gènere**: la càrrega és entre el punt de suport (l'eix de la roda) i la força (les mans). Per a l'equilibri, la suma de moments respecte de l'eix ha de ser zero (la reacció de la roda no fa moment perquè hi passa):\n\n$$F \\cdot b_F = P \\cdot b_P \\quad\\Rightarrow\\quad F = \\frac{m\\,g\\,b_P}{b_F} = \\frac{60 \\cdot 9{,}8 \\cdot 0{,}40}{1{,}20} = \\frac{588 \\cdot 0{,}40}{1{,}20} = 196\\ \\text{N}$$\n\nResultat: **$F = 196\\ \\text{N}$**, un terç del pes de la sorra → resposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $1\\,764\\ \\text{N}$: surt d'invertir els braços ($588 \\cdot 1{,}20/0{,}40$).\n- **b)** $588\\ \\text{N}$ és el pes sencer: oblida que la palanca redueix la força perquè la roda n'aguanta una part.\n- **d)** $294\\ \\text{N}$: surt de prendre com a braç de la força la distància entre la càrrega i les mans ($0{,}80\\ \\text{m}$) en lloc de la distància a l'eix."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$F = 196\\ \\text{N}$ → resposta **c**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica1-ies-13",
+      "exercici": 13,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Calor per passar gel a -10 °C a aigua a 20 °C",
+      "tema": "calor",
+      "temes_secundaris": [],
+      "conceptes": [
+        "canvi d'estat",
+        "calor específica",
+        "calor latent"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Calor sensible i calor latent de fusió (1r).",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Quina calor cal per convertir $200\\ \\text{g}$ de gel a $-10\\ ^\\circ\\text{C}$ en aigua líquida a $20\\ ^\\circ\\text{C}$?\n\nDades: $c_\\text{gel} = 2\\,100\\ \\text{J/(kg}\\cdot\\text{K)}$, $c_\\text{aigua} = 4\\,180\\ \\text{J/(kg}\\cdot\\text{K)}$, $L_f = 3{,}34 \\cdot 10^{5}\\ \\text{J/kg}$.",
+      "figures": [],
+      "opcions": {
+        "a": "$20{,}9\\ \\text{kJ}$",
+        "b": "$25{,}1\\ \\text{kJ}$",
+        "c": "$66{,}8\\ \\text{kJ}$",
+        "d": "$87{,}7\\ \\text{kJ}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Tres etapes",
+            "cos": "1. Escalfar el gel de $-10$ a $0\\ ^\\circ\\text{C}$: $Q_1 = 0{,}200 \\cdot 2\\,100 \\cdot 10 = 4\\,200\\ \\text{J}$\n2. Fondre el gel a $0\\ ^\\circ\\text{C}$ (temperatura constant): $Q_2 = 0{,}200 \\cdot 3{,}34 \\cdot 10^{5} = 66\\,800\\ \\text{J}$\n3. Escalfar l'aigua de $0$ a $20\\ ^\\circ\\text{C}$: $Q_3 = 0{,}200 \\cdot 4\\,180 \\cdot 20 = 16\\,720\\ \\text{J}$\n\n$$Q = 4\\,200 + 66\\,800 + 16\\,720 = 87\\,720\\ \\text{J} \\approx 87{,}7\\ \\text{kJ}$$\n\nResultat: **$Q \\approx 87{,}7\\ \\text{kJ}$** → resposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a)** $20{,}9\\ \\text{kJ}$: oblida la calor de fusió ($Q_1 + Q_3$).\n- **b)** $25{,}1\\ \\text{kJ}$: oblida la fusió i a més usa la calor específica de l'aigua per a tot l'interval de $30\\ \\text{K}$.\n- **c)** $66{,}8\\ \\text{kJ}$: només compta la fusió."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$Q \\approx 87{,}7\\ \\text{kJ}$ → resposta **d**"
+          }
+        ],
+        "nota": ""
+      }
+    },
+    {
+      "id": "fisica1-ies-14",
+      "exercici": 14,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Moment d'una força aplicada amb angle sobre una clau anglesa",
+      "tema": "estatica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "moment d'una força"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Moment d'una força respecte d'un punt (1r).",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Per afluixar un cargol de la roda d'una bicicleta, s'aplica una força de $80\\ \\text{N}$ a l'extrem d'una clau de $25\\ \\text{cm}$. La força forma un angle de $60^\\circ$ amb la clau. Quin és el moment de la força respecte del cargol?",
+      "figures": [],
+      "opcions": {
+        "a": "$17{,}3\\ \\text{N}\\cdot\\text{m}$",
+        "b": "$20\\ \\text{N}\\cdot\\text{m}$",
+        "c": "$10\\ \\text{N}\\cdot\\text{m}$",
+        "d": "$2\\,000\\ \\text{N}\\cdot\\text{m}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Moment d'una força",
+            "cos": "El mòdul del moment d'una força és $M = F\\,r\\,\\sin\\alpha$, on $\\alpha$ és l'angle entre la força i la clau (el vector posició). Només la component de la força perpendicular a la clau fa girar:\n\n$$M = 80 \\cdot 0{,}25 \\cdot \\sin 60^\\circ = 20 \\cdot 0{,}866 = 17{,}3\\ \\text{N}\\cdot\\text{m}$$\n\nResultat: **$M \\approx 17{,}3\\ \\text{N}\\cdot\\text{m}$** → resposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **b)** $20\\ \\text{N}\\cdot\\text{m}$: seria el moment si la força fos perpendicular a la clau (oblida l'angle).\n- **c)** $10\\ \\text{N}\\cdot\\text{m}$: usa $\\cos 60^\\circ$ en lloc de $\\sin 60^\\circ$ (pren la component paral·lela a la clau, que no fa girar).\n- **d)** $2\\,000\\ \\text{N}\\cdot\\text{m}$: no passa els centímetres a metres ($80 \\cdot 25$)."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$M \\approx 17{,}3\\ \\text{N}\\cdot\\text{m}$ → resposta **a**"
+          }
+        ],
+        "nota": ""
+      }
+    }
+  ]
+}

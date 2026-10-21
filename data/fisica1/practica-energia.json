@@ -1,0 +1,1260 @@
+{
+  "examen": {
+    "id": "fisica1-practica-energia",
+    "assignatura": "fisica1",
+    "materia": "Problemes de pràctica · Física de 1r",
+    "practica": true,
+    "any": 2026,
+    "convocatoria": "practica",
+    "serie": null,
+    "pdf_examen": null,
+    "pdf_solucio": null,
+    "estructura": "Problemes originals de pràctica (no són de selectivitat), bloc: Treball, potència i energia mecànica."
+  },
+  "problemes": [
+    {
+      "id": "fisica1-energia-01",
+      "exercici": 1,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Treball de les forces sobre una maleta arrossegada a l'aeroport",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [
+        "dinamica"
+      ],
+      "conceptes": [
+        "treball",
+        "força de fregament",
+        "diagrama de cos lliure",
+        "energia cinètica",
+        "teorema de l'energia cinètica"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "A la terminal 1 de l'aeroport del Prat, una viatgera arrossega una maleta amb rodes de $20\\ \\text{kg}$ estirant-la per la nansa amb una força constant de $40\\ \\text{N}$ que forma un angle de $30^\\circ$ amb l'horitzontal. La maleta parteix del repòs i es desplaça $10\\ \\text{m}$ per un terra horitzontal. El coeficient de fregament (efectiu) entre la maleta i el terra és $\\mu = 0{,}18$. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La força normal que fa el terra sobre la maleta i la força de fregament.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "El treball que fa cadascuna de les forces que actuen sobre la maleta (força de la viatgera, fregament, pes i normal) en els $10\\ \\text{m}$.",
+          "punts": 1,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "El treball total i la velocitat de la maleta al final del recorregut.",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa: $m = 20\\ \\text{kg}$; pes $mg = 20 \\cdot 9{,}8 = 196\\ \\text{N}$.\n- Força aplicada: $F = 40\\ \\text{N}$ a $\\alpha = 30^\\circ$ sobre l'horitzontal.\n- Desplaçament: $\\Delta x = 10\\ \\text{m}$ (horitzontal); $v_0 = 0$.\n- Coeficient de fregament: $\\mu = 0{,}18$.\n- Incògnites: $N$, $F_\\text{f}$, els treballs $W_F$, $W_\\text{f}$, $W_P$, $W_N$, el treball total i $v_\\text{f}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Descomposició de la força i equilibri vertical",
+            "cos": "Les forces sobre la maleta són: el pes (avall), la normal (amunt), la força de la viatgera (inclinada $30^\\circ$) i el fregament (horitzontal, cap enrere). Descomponem $F$:\n\n$$F_x = F\\cos 30^\\circ = 40 \\cdot 0{,}866 = 34{,}64\\ \\text{N} \\qquad F_y = F\\sin 30^\\circ = 40 \\cdot 0{,}5 = 20\\ \\text{N}$$\n\nVerticalment la maleta no es mou, de manera que les forces verticals s'equilibren. Com que $F_y$ ajuda a aixecar la maleta, la normal és **menor** que el pes:\n\n$$N + F_y = mg \\;\\Rightarrow\\; N = mg - F\\sin 30^\\circ = 196 - 20 = 176\\ \\text{N}$$\n\n**N = 176 N**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Força de fregament",
+            "cos": "La força de fregament dinàmic és proporcional a la normal:\n\n$$F_\\text{f} = \\mu N = 0{,}18 \\cdot 176 = 31{,}68\\ \\text{N}$$\n\n**$F_\\text{f} = 31{,}68\\ \\text{N}$**, horitzontal i oposada al moviment."
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball de cada força",
+            "cos": "El treball d'una força constant és $W = F\\,\\Delta x\\cos\\varphi$, on $\\varphi$ és l'angle entre la força i el desplaçament.\n\n- **Força de la viatgera** ($\\varphi = 30^\\circ$): $W_F = 40 \\cdot 10 \\cdot \\cos 30^\\circ =$ **$346{,}4\\ \\text{J}$**\n- **Fregament** ($\\varphi = 180^\\circ$, s'oposa al desplaçament): $W_\\text{f} = 31{,}68 \\cdot 10 \\cdot \\cos 180^\\circ =$ **$-316{,}8\\ \\text{J}$**\n- **Pes i normal** ($\\varphi = 90^\\circ$, són perpendiculars al desplaçament): **$W_P = W_N = 0$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Treball total",
+            "cos": "El treball total és la suma dels treballs de totes les forces (o, equivalentment, el treball de la força resultant):\n\n$$W_\\text{total} = 346{,}4 - 316{,}8 + 0 + 0 = 29{,}6\\ \\text{J}$$\n\n**$W_\\text{total} = 29{,}6\\ \\text{J}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Velocitat final amb el teorema de l'energia cinètica",
+            "cos": "El teorema de l'energia cinètica diu que el treball total és igual a la variació d'energia cinètica. Com que parteix del repòs:\n\n$$W_\\text{total} = \\tfrac12 m v_\\text{f}^2 - 0 \\;\\Rightarrow\\; v_\\text{f} = \\sqrt{\\frac{2W_\\text{total}}{m}} = \\sqrt{\\frac{2 \\cdot 29{,}6}{20}} = 1{,}72\\ \\text{m/s}$$\n\n**$v_\\text{f} = 1{,}72\\ \\text{m/s}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$N = 176\\ \\text{N}$; $F_\\text{f} = 31{,}68\\ \\text{N}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$W_F = 346{,}4\\ \\text{J}$; $W_\\text{f} = -316{,}8\\ \\text{J}$; $W_P = W_N = 0$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$W_\\text{total} = 29{,}6\\ \\text{J}$; $v_\\text{f} = 1{,}72\\ \\text{m/s}$"
+          }
+        ],
+        "nota": "Errors típics: posar $N = mg = 196\\ \\text{N}$ (oblidant que la component vertical de la força alleugereix la maleta) o calcular el treball de la viatgera com $F\\,\\Delta x = 400\\ \\text{J}$ sense el cosinus. El treball del fregament sempre és negatiu, i el del pes és zero en un desplaçament horitzontal."
+      }
+    },
+    {
+      "id": "fisica1-energia-02",
+      "exercici": 2,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Potència i rendiment d'una grua torre que eleva un palet de maons",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "treball",
+        "potència",
+        "rendiment",
+        "energia potencial gravitatòria"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "En una obra de l'Eixample de Barcelona, una grua torre eleva un palet de maons de $600\\ \\text{kg}$ des del terra fins a la sisena planta, a $24\\ \\text{m}$ d'altura, amb velocitat constant. L'elevació dura $40\\ \\text{s}$. El motor elèctric de la grua consumeix una potència de $5\\ \\text{kW}$ mentre puja la càrrega. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El treball que fa el cable de la grua sobre el palet i l'augment d'energia potencial del palet.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "La potència útil de la grua.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "El rendiment del motor i l'energia que es perd (en forma de calor, soroll...) durant l'elevació.",
+          "punts": 1,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa: $m = 600\\ \\text{kg}$; altura $h = 24\\ \\text{m}$; temps $t = 40\\ \\text{s}$.\n- Velocitat constant ⇒ l'energia cinètica no varia.\n- Potència consumida: $P_\\text{cons} = 5\\ \\text{kW} = 5000\\ \\text{W}$.\n- Incògnites: $W_\\text{cable}$, $\\Delta E_p$, $P_\\text{útil}$, $\\eta$, $E_\\text{perduda}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Força del cable i treball",
+            "cos": "Com que puja a velocitat constant, la força resultant és zero: la tensió del cable és igual al pes.\n\n$$T = mg = 600 \\cdot 9{,}8 = 5880\\ \\text{N}$$\n\nLa tensió té la mateixa direcció i sentit que el desplaçament ($\\varphi = 0^\\circ$):\n\n$$W_\\text{cable} = T\\,h = 5880 \\cdot 24 = 141\\,120\\ \\text{J}$$\n\n**$W_\\text{cable} = 141\\,120\\ \\text{J} \\approx 141{,}1\\ \\text{kJ}$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Augment d'energia potencial",
+            "cos": "$$\\Delta E_p = mgh = 600 \\cdot 9{,}8 \\cdot 24 = 141\\,120\\ \\text{J}$$\n\n**$\\Delta E_p = 141\\,120\\ \\text{J}$**. Coincideix amb el treball del cable: com que l'energia cinètica no canvia, tot el treball del cable s'ha convertit en energia potencial."
+          },
+          {
+            "apartat": "b",
+            "titol": "Potència útil",
+            "cos": "La potència és el treball fet per unitat de temps:\n\n$$P_\\text{útil} = \\frac{W}{t} = \\frac{141\\,120}{40} = 3528\\ \\text{W}$$\n\n**$P_\\text{útil} = 3528\\ \\text{W} \\approx 3{,}53\\ \\text{kW}$**. (També es pot calcular com $P = T\\,v$, amb $v = 24/40 = 0{,}6\\ \\text{m/s}$: $5880 \\cdot 0{,}6 = 3528\\ \\text{W}$.)"
+          },
+          {
+            "apartat": "c",
+            "titol": "Rendiment",
+            "cos": "El rendiment és la fracció de la potència consumida que es converteix en potència útil:\n\n$$\\eta = \\frac{P_\\text{útil}}{P_\\text{cons}} = \\frac{3528}{5000} = 0{,}7056$$\n\n**$\\eta \\approx 70{,}6\\ \\%$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Energia perduda",
+            "cos": "Energia consumida pel motor en $40\\ \\text{s}$:\n\n$$E_\\text{cons} = P_\\text{cons}\\,t = 5000 \\cdot 40 = 200\\,000\\ \\text{J}$$\n\nL'energia perduda és la diferència entre la consumida i la útil:\n\n$$E_\\text{perduda} = 200\\,000 - 141\\,120 = 58\\,880\\ \\text{J}$$\n\n**$E_\\text{perduda} = 58\\,880\\ \\text{J} \\approx 58{,}9\\ \\text{kJ}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$W = \\Delta E_p = 141\\,120\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$P_\\text{útil} = 3528\\ \\text{W}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$\\eta \\approx 70{,}6\\ \\%$; $E_\\text{perduda} = 58\\,880\\ \\text{J}$"
+          }
+        ],
+        "nota": "Error típic: dividir al revés ($5000/3528$) i obtenir un rendiment superior al 100 %, cosa impossible. Recordeu que la potència útil sempre és menor que la consumida."
+      }
+    },
+    {
+      "id": "fisica1-energia-03",
+      "exercici": 3,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Llançador de molla d'una joguina: energia elàstica i altura de la bola",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "energia potencial elàstica",
+        "energia cinètica",
+        "energia potencial gravitatòria",
+        "conservació de l'energia mecànica"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 3,
+      "pagines": [],
+      "enunciat": "Una joguina llança verticalment cap amunt boles de $20\\ \\text{g}$ amb una molla de constant elàstica $k = 400\\ \\text{N/m}$. Abans de disparar, la molla es comprimeix $5\\ \\text{cm}$. Negligiu el fregament amb l'aire, la massa de la molla i el petit desplaçament vertical de la bola mentre la molla s'estira. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'energia potencial elàstica emmagatzemada a la molla comprimida.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "La velocitat amb què la bola surt de la joguina.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "L'altura màxima que assoleix la bola per sobre del punt de sortida.",
+          "punts": 1,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa de la bola: $m = 20\\ \\text{g} = 0{,}020\\ \\text{kg}$.\n- Constant de la molla: $k = 400\\ \\text{N/m}$; compressió $x = 5\\ \\text{cm} = 0{,}05\\ \\text{m}$.\n- Incògnites: $E_{p,\\text{el}}$, $v_0$, $h_\\text{màx}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia potencial elàstica",
+            "cos": "Una molla deformada una distància $x$ emmagatzema energia potencial elàstica:\n\n$$E_{p,\\text{el}} = \\tfrac12 k x^2 = \\tfrac12 \\cdot 400 \\cdot 0{,}05^2 = 0{,}5\\ \\text{J}$$\n\n**$E_{p,\\text{el}} = 0{,}5\\ \\text{J}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Conservació de l'energia: elàstica → cinètica",
+            "cos": "No hi ha fregament, així que l'energia mecànica es conserva. Tota l'energia elàstica es converteix en energia cinètica de la bola quan surt:\n\n$$\\tfrac12 k x^2 = \\tfrac12 m v_0^2 \\;\\Rightarrow\\; v_0 = \\sqrt{\\frac{2E_{p,\\text{el}}}{m}} = \\sqrt{\\frac{2 \\cdot 0{,}5}{0{,}020}} = 7{,}07\\ \\text{m/s}$$\n\n**$v_0 = 7{,}07\\ \\text{m/s}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Conservació de l'energia: cinètica → potencial gravitatòria",
+            "cos": "Al punt més alt la velocitat és zero: tota l'energia s'ha convertit en energia potencial gravitatòria.\n\n$$\\tfrac12 m v_0^2 = m g h_\\text{màx} \\;\\Rightarrow\\; h_\\text{màx} = \\frac{E_{p,\\text{el}}}{mg} = \\frac{0{,}5}{0{,}020 \\cdot 9{,}8} = 2{,}55\\ \\text{m}$$\n\n**$h_\\text{màx} = 2{,}55\\ \\text{m}$**. Fixeu-vos que es pot anar directament de l'energia elàstica a la gravitatòria sense calcular la velocitat."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E_{p,\\text{el}} = 0{,}5\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_0 = 7{,}07\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$h_\\text{màx} = 2{,}55\\ \\text{m}$"
+          }
+        ],
+        "nota": "Errors típics: no passar els centímetres i els grams al SI (amb $x = 5$ i $m = 20$ surten valors absurds) i oblidar el factor $\\tfrac12$ de l'energia elàstica o elevar $x$ al quadrat."
+      }
+    },
+    {
+      "id": "fisica1-energia-04",
+      "exercici": 4,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Distància de frenada d'un cotxe en carretera seca i mullada",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [
+        "dinamica"
+      ],
+      "conceptes": [
+        "energia cinètica",
+        "teorema de l'energia cinètica",
+        "força de fregament",
+        "treball de les forces no conservatives"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Un cotxe de $1200\\ \\text{kg}$ circula per l'autopista AP-7 a $90\\ \\text{km/h}$ quan el conductor frena a fons. Suposeu que, durant la frenada, l'única força horitzontal és el fregament entre els pneumàtics i l'asfalt, de valor $\\mu m g$, amb $\\mu = 0{,}7$ si l'asfalt és sec i $\\mu = 0{,}4$ si és mullat. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'energia cinètica del cotxe a $90\\ \\text{km/h}$ i el treball que ha de fer la força de fregament per aturar-lo.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "La distància de frenada amb l'asfalt sec.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "La distància de frenada amb l'asfalt mullat.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "La distància de frenada amb l'asfalt sec si el cotxe anés a $120\\ \\text{km/h}$. Per quin factor es multiplica respecte de l'apartat b?",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa: $m = 1200\\ \\text{kg}$.\n- Velocitat: $v_0 = 90\\ \\text{km/h} = \\dfrac{90}{3{,}6} = 25\\ \\text{m/s}$; velocitat final $v = 0$.\n- $\\mu_\\text{sec} = 0{,}7$; $\\mu_\\text{mullat} = 0{,}4$.\n- Incògnites: $E_c$, $W_\\text{f}$, distàncies de frenada $d$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia cinètica i treball del fregament",
+            "cos": "$$E_c = \\tfrac12 m v_0^2 = \\tfrac12 \\cdot 1200 \\cdot 25^2 = 375\\,000\\ \\text{J}$$\n\nPel teorema de l'energia cinètica, el treball total (aquí, només el del fregament: pes i normal són perpendiculars al desplaçament) és igual a la variació d'energia cinètica:\n\n$$W_\\text{f} = E_{c,\\text{f}} - E_{c,0} = 0 - 375\\,000 = -375\\,000\\ \\text{J}$$\n\n**$E_c = 375\\ \\text{kJ}$; $W_\\text{f} = -375\\ \\text{kJ}$**. Aquest treball no depèn de l'estat de l'asfalt: sempre cal dissipar tota l'energia cinètica."
+          },
+          {
+            "apartat": "b",
+            "titol": "Distància de frenada amb asfalt sec",
+            "cos": "La força de fregament és constant i oposada al desplaçament, així que $W_\\text{f} = -F_\\text{f}\\,d$:\n\n$$F_\\text{f} = \\mu m g = 0{,}7 \\cdot 1200 \\cdot 9{,}8 = 8232\\ \\text{N}$$\n\n$$-F_\\text{f}\\,d = -\\tfrac12 m v_0^2 \\;\\Rightarrow\\; d = \\frac{\\tfrac12 m v_0^2}{\\mu m g} = \\frac{v_0^2}{2\\mu g}$$\n\n$$d_\\text{sec} = \\frac{375\\,000}{8232} = \\frac{25^2}{2 \\cdot 0{,}7 \\cdot 9{,}8} = 45{,}6\\ \\text{m}$$\n\n**$d_\\text{sec} = 45{,}6\\ \\text{m}$**. Observeu que la massa se simplifica: la distància no depèn de la massa del vehicle."
+          },
+          {
+            "apartat": "c",
+            "titol": "Distància de frenada amb asfalt mullat",
+            "cos": "Mateixa expressió amb $\\mu = 0{,}4$ ($F_\\text{f} = 0{,}4 \\cdot 1200 \\cdot 9{,}8 = 4704\\ \\text{N}$):\n\n$$d_\\text{mullat} = \\frac{v_0^2}{2\\mu g} = \\frac{25^2}{2 \\cdot 0{,}4 \\cdot 9{,}8} = 79{,}7\\ \\text{m}$$\n\n**$d_\\text{mullat} = 79{,}7\\ \\text{m}$**, gairebé el doble que en sec: amb menys fregament, cal més distància per fer el mateix treball."
+          },
+          {
+            "apartat": "d",
+            "titol": "Distància a 120 km/h i factor",
+            "cos": "$$v_0' = \\frac{120}{3{,}6} = 33{,}33\\ \\text{m/s} \\qquad d' = \\frac{33{,}33^2}{2 \\cdot 0{,}7 \\cdot 9{,}8} = 81{,}0\\ \\text{m}$$\n\nCom que $d \\propto v_0^2$, el factor és:\n\n$$\\frac{d'}{d} = \\left(\\frac{120}{90}\\right)^2 = 1{,}78$$\n\n**$d' = 81{,}0\\ \\text{m}$, factor 1,78**. Augmentar la velocitat un 33 % fa augmentar la distància de frenada un 78 %: per això els límits de velocitat són tan importants."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E_c = 375\\ \\text{kJ}$; $W_\\text{f} = -375\\ \\text{kJ}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$d_\\text{sec} = 45{,}6\\ \\text{m}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$d_\\text{mullat} = 79{,}7\\ \\text{m}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$d' = 81{,}0\\ \\text{m}$; factor $(120/90)^2 = 1{,}78$"
+          }
+        ],
+        "nota": "Errors típics: treballar en km/h (cal passar a m/s) i pensar que si la velocitat es multiplica per $4/3$ la distància també ho fa; l'energia cinètica depèn del quadrat de la velocitat. Aquí només es calcula la distància de frenada; la distància total d'aturada també inclou la recorreguda durant el temps de reacció del conductor."
+      }
+    },
+    {
+      "id": "fisica1-energia-05",
+      "exercici": 5,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Ascensor amb contrapès: potència del motor i estalvi energètic",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [
+        "dinamica"
+      ],
+      "conceptes": [
+        "treball",
+        "potència",
+        "rendiment",
+        "energia potencial gravitatòria",
+        "tensió d'una corda"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Un ascensor d'un edifici d'habitatges té una cabina de $600\\ \\text{kg}$ i un contrapès de $900\\ \\text{kg}$ units per un cable que passa per una politja motoritzada situada a dalt de tot. El motor fa girar la politja i l'ascensor es mou sempre a velocitat constant de $1{,}2\\ \\text{m/s}$. Considerem un trajecte de $24\\ \\text{m}$ (de la planta baixa a la vuitena). Negligiu la massa del cable i els fregaments. El rendiment del conjunt motor-politja és del $80\\ \\%$. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "Quan la cabina puja amb 6 persones de $75\\ \\text{kg}$ cadascuna, la força neta que ha de fer el motor i la potència útil que desenvolupa.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "Quan la cabina baixa buida, la força neta i la potència útil del motor. (Pista: ara el contrapès puja.)",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "L'energia elèctrica que consumeix l'ascensor en un cicle complet (pujar ple i baixar buit), en joules i en kWh.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "L'energia elèctrica que consumiria el mateix cicle si l'ascensor no tingués contrapès (suposeu que en baixar el motor no consumeix energia, només frena). Quin percentatge d'energia estalvia el contrapès?",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Cabina: $m_c = 600\\ \\text{kg}$; contrapès: $m_p = 900\\ \\text{kg}$; càrrega: $m_q = 6 \\cdot 75 = 450\\ \\text{kg}$.\n- Velocitat constant: $v = 1{,}2\\ \\text{m/s}$; recorregut $h = 24\\ \\text{m}$ (temps $t = 24/1{,}2 = 20\\ \\text{s}$).\n- Rendiment: $\\eta = 0{,}80$.\n- Incògnites: forces i potències del motor, energia elèctrica per cicle, estalvi."
+          },
+          {
+            "apartat": "a",
+            "titol": "Idea: el motor només compensa la diferència de pesos",
+            "cos": "Com que tot es mou a velocitat constant, la força resultant sobre el sistema és zero. Quan la cabina puja, el contrapès baixa i el seu pes ajuda el motor. El motor només ha de compensar la diferència entre el pes del costat que puja i el del costat que baixa:\n\n$$F_\\text{motor} = (m_c + m_q - m_p)\\,g = (600 + 450 - 900) \\cdot 9{,}8 = 150 \\cdot 9{,}8 = 1470\\ \\text{N}$$\n\n**$F_\\text{motor} = 1470\\ \\text{N}$**"
+          },
+          {
+            "apartat": "a",
+            "titol": "Potència útil en pujar ple",
+            "cos": "Per a una força constant en la direcció del moviment a velocitat constant, $P = F\\,v$:\n\n$$P_\\text{útil} = F_\\text{motor}\\,v = 1470 \\cdot 1{,}2 = 1764\\ \\text{W}$$\n\n**$P_\\text{útil} = 1764\\ \\text{W}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Baixada amb la cabina buida",
+            "cos": "Ara la cabina buida ($600\\ \\text{kg}$) baixa i el contrapès ($900\\ \\text{kg}$) puja. El costat més pesant és el que puja, de manera que el motor ha de fer força per aixecar la diferència:\n\n$$F_\\text{motor} = (m_p - m_c)\\,g = (900 - 600) \\cdot 9{,}8 = 2940\\ \\text{N}$$\n\n$$P_\\text{útil} = 2940 \\cdot 1{,}2 = 3528\\ \\text{W}$$\n\n**$F_\\text{motor} = 2940\\ \\text{N}$; $P_\\text{útil} = 3528\\ \\text{W}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Treball útil del cicle",
+            "cos": "El treball útil de cada trajecte és $W = F_\\text{motor}\\,h$ (equival a l'augment net d'energia potencial del sistema cabina + contrapès):\n\n$$W_\\text{pujada} = 1470 \\cdot 24 = 35\\,280\\ \\text{J} \\qquad W_\\text{baixada} = 2940 \\cdot 24 = 70\\,560\\ \\text{J}$$\n\n$$W_\\text{útil} = 35\\,280 + 70\\,560 = 105\\,840\\ \\text{J}$$"
+          },
+          {
+            "apartat": "c",
+            "titol": "Energia elèctrica consumida",
+            "cos": "Amb un rendiment del 80 %, l'energia que s'ha de consumir és més gran que la útil:\n\n$$E_\\text{elèctrica} = \\frac{W_\\text{útil}}{\\eta} = \\frac{105\\,840}{0{,}80} = 132\\,300\\ \\text{J}$$\n\nPassem a kWh ($1\\ \\text{kWh} = 3{,}6 \\cdot 10^6\\ \\text{J}$):\n\n$$E_\\text{elèctrica} = \\frac{132\\,300}{3{,}6 \\cdot 10^6} = 0{,}0368\\ \\text{kWh}$$\n\n**$E_\\text{elèctrica} = 132\\,300\\ \\text{J} = 0{,}0368\\ \\text{kWh}$**"
+          },
+          {
+            "apartat": "d",
+            "titol": "Cicle sense contrapès",
+            "cos": "Sense contrapès, en pujar el motor ha d'aixecar tota la massa (cabina + persones):\n\n$$W_\\text{pujada} = (m_c + m_q)\\,g\\,h = 1050 \\cdot 9{,}8 \\cdot 24 = 246\\,960\\ \\text{J}$$\n\nEn baixar, segons l'enunciat, no consumeix energia. Per tant:\n\n$$E'_\\text{elèctrica} = \\frac{246\\,960}{0{,}80} = 308\\,700\\ \\text{J} \\;(0{,}0858\\ \\text{kWh})$$"
+          },
+          {
+            "apartat": "d",
+            "titol": "Estalvi percentual",
+            "cos": "$$\\text{estalvi} = \\frac{E' - E}{E'} = \\frac{308\\,700 - 132\\,300}{308\\,700} = 0{,}571$$\n\n**Estalvi $\\approx 57{,}1\\ \\%$**. El contrapès fa que el motor no hagi d'aixecar mai tota la massa, sinó només la diferència entre els dos costats. Per això tots els ascensors de tracció en porten."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$F = 1470\\ \\text{N}$; $P_\\text{útil} = 1764\\ \\text{W}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$F = 2940\\ \\text{N}$; $P_\\text{útil} = 3528\\ \\text{W}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$E = 132\\,300\\ \\text{J} = 0{,}0368\\ \\text{kWh}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$E' = 308\\,700\\ \\text{J}$; estalvi $\\approx 57{,}1\\ \\%$"
+          }
+        ],
+        "nota": "Errors típics: oblidar el pes del contrapès (i calcular la força com $(m_c + m_q)\\,g$) o pensar que en baixar buit el motor no fa res; amb un contrapès més pesant que la cabina buida, és just al revés. També cal recordar dividir pel rendiment, no multiplicar-hi: l'energia consumida és sempre més gran que la útil."
+      }
+    },
+    {
+      "id": "fisica1-energia-06",
+      "exercici": 6,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Esquiador que baixa una pista amb fregament i s'atura a la neu tova",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [
+        "dinamica"
+      ],
+      "conceptes": [
+        "pla inclinat",
+        "força de fregament",
+        "treball",
+        "treball de les forces no conservatives",
+        "teorema de l'energia cinètica"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Un esquiador de $70\\ \\text{kg}$ (amb l'equip) parteix del repòs al punt A d'un tram recte d'una pista de La Molina de $50\\ \\text{m}$ de llargada i $25^\\circ$ d'inclinació. El coeficient de fregament entre els esquís i la neu és $\\mu = 0{,}08$. Negligiu la resistència de l'aire. Al final del pendent (punt B), la pista continua horitzontal per una zona de neu tova on el coeficient de fregament és $\\mu' = 0{,}25$. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [
+        {
+          "src": "img/fisica1/energia/06.png",
+          "peu": "Pendent de la pista (A → B) i zona horitzontal de neu tova."
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El treball que fa el pes de l'esquiador entre A i B.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "El treball que fa la força de fregament entre A i B.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "La velocitat de l'esquiador al punt B, en m/s i en km/h.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "La distància que recorre per la neu tova fins a aturar-se.",
+          "punts": 0.5,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa: $m = 70\\ \\text{kg}$; pes $mg = 686\\ \\text{N}$.\n- Pendent: $L = 50\\ \\text{m}$, $\\theta = 25^\\circ$, $\\mu = 0{,}08$; $v_A = 0$.\n- Tram horitzontal: $\\mu' = 0{,}25$.\n- Incògnites: $W_P$, $W_\\text{f}$, $v_B$, distància d'aturada $d$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Desnivell i treball del pes",
+            "cos": "El treball del pes només depèn del desnivell (el pes és una força conservativa). El desnivell entre A i B és:\n\n$$h = L\\sin\\theta = 50 \\cdot \\sin 25^\\circ = 21{,}13\\ \\text{m}$$\n\n$$W_P = m g h = 70 \\cdot 9{,}8 \\cdot 21{,}13 = 14\\,496\\ \\text{J}$$\n\n**$W_P \\approx 14\\,500\\ \\text{J} = 14{,}5\\ \\text{kJ}$** (positiu, perquè l'esquiador baixa)."
+          },
+          {
+            "apartat": "b",
+            "titol": "Normal i fregament al pla inclinat",
+            "cos": "Sobre el pla inclinat, la normal equilibra la component del pes perpendicular al pla:\n\n$$N = m g\\cos\\theta = 70 \\cdot 9{,}8 \\cdot \\cos 25^\\circ = 621{,}7\\ \\text{N}$$\n\n$$F_\\text{f} = \\mu N = 0{,}08 \\cdot 621{,}7 = 49{,}74\\ \\text{N}$$"
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball del fregament",
+            "cos": "El fregament s'oposa al desplaçament ($\\varphi = 180^\\circ$) al llarg dels $50\\ \\text{m}$ del pendent:\n\n$$W_\\text{f} = -F_\\text{f}\\,L = -49{,}74 \\cdot 50 = -2487\\ \\text{J}$$\n\n**$W_\\text{f} \\approx -2487\\ \\text{J}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Teorema de l'energia cinètica entre A i B",
+            "cos": "El treball total (la normal no fa treball perquè és perpendicular al desplaçament) és igual a la variació d'energia cinètica:\n\n$$W_P + W_\\text{f} = \\tfrac12 m v_B^2 - 0$$\n\n$$\\tfrac12 m v_B^2 = 14\\,496 - 2487 = 12\\,009\\ \\text{J}$$\n\n$$v_B = \\sqrt{\\frac{2 \\cdot 12\\,009}{70}} = 18{,}5\\ \\text{m/s} = 18{,}5 \\cdot 3{,}6 = 66{,}7\\ \\text{km/h}$$\n\n**$v_B \\approx 18{,}5\\ \\text{m/s} \\approx 66{,}7\\ \\text{km/h}$**. (Sense fregament hauria arribat a $\\sqrt{2gh} = 20{,}4\\ \\text{m/s}$.)"
+          },
+          {
+            "apartat": "d",
+            "titol": "Aturada a la neu tova",
+            "cos": "Al tram horitzontal el pes i la normal no fan treball, i $N = mg$. L'únic treball és el del fregament, que ha d'eliminar tota l'energia cinètica:\n\n$$F'_\\text{f} = \\mu' m g = 0{,}25 \\cdot 70 \\cdot 9{,}8 = 171{,}5\\ \\text{N}$$\n\n$$-F'_\\text{f}\\,d = 0 - 12\\,009 \\;\\Rightarrow\\; d = \\frac{12\\,009}{171{,}5} = 70{,}0\\ \\text{m}$$\n\n**$d \\approx 70\\ \\text{m}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$W_P \\approx 14\\,496\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$W_\\text{f} \\approx -2487\\ \\text{J}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$v_B \\approx 18{,}5\\ \\text{m/s} \\approx 66{,}7\\ \\text{km/h}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$d \\approx 70{,}0\\ \\text{m}$"
+          }
+        ],
+        "nota": "Errors típics: calcular el treball del pes amb la longitud del pendent ($mgL$) en lloc del desnivell, i fer servir $N = mg$ al pla inclinat (cal $mg\\cos\\theta$). Al tram horitzontal, en canvi, sí que $N = mg$."
+      }
+    },
+    {
+      "id": "fisica1-energia-07",
+      "exercici": 7,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Muntanya russa sense fregament: velocitats i cim que no es pot superar",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "conservació de l'energia mecànica",
+        "energia cinètica",
+        "energia potencial gravitatòria"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Un vagó d'una muntanya russa d'un parc d'atraccions de la Costa Daurada té una massa total (amb els passatgers) de $400\\ \\text{kg}$. Passa pel punt A, a $40\\ \\text{m}$ d'altura, amb una velocitat de $3\\ \\text{m/s}$, i continua pel recorregut de la figura: baixa fins al punt B (punt més baix, $h = 0$), puja fins al cim C ($25\\ \\text{m}$) i després s'enfila cap al cim D ($42\\ \\text{m}$). Suposeu que no hi ha fregament ni resistència de l'aire i que el vagó no té cap motor en aquest tram. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [
+        {
+          "src": "img/fisica1/energia/07.png",
+          "peu": "Perfil del tram de muntanya russa (no està a escala horitzontal)."
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "L'energia mecànica del vagó al punt A (preneu $h = 0$ al punt B).",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "La velocitat del vagó al punt B.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "La velocitat del vagó al cim C.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "Arribarà el vagó al cim D? Justifiqueu-ho calculant l'altura màxima que pot assolir.",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa: $m = 400\\ \\text{kg}$.\n- Punt A: $h_A = 40\\ \\text{m}$, $v_A = 3\\ \\text{m/s}$.\n- Punt B: $h_B = 0$; cim C: $h_C = 25\\ \\text{m}$; cim D: $h_D = 42\\ \\text{m}$.\n- Sense fregament ⇒ l'energia mecànica es conserva.\n- Incògnites: $E_{m,A}$, $v_B$, $v_C$, $h_\\text{màx}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia mecànica a A",
+            "cos": "L'energia mecànica és la suma de la cinètica i la potencial gravitatòria:\n\n$$E_{m,A} = \\tfrac12 m v_A^2 + m g h_A = \\tfrac12 \\cdot 400 \\cdot 3^2 + 400 \\cdot 9{,}8 \\cdot 40 = 1800 + 156\\,800 = 158\\,600\\ \\text{J}$$\n\n**$E_{m,A} = 158\\,600\\ \\text{J}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Velocitat a B per conservació de l'energia",
+            "cos": "Com que només treballa el pes (la normal és perpendicular a la via), $E_{m,B} = E_{m,A}$. A B tota l'energia és cinètica:\n\n$$\\tfrac12 m v_B^2 = 158\\,600 \\;\\Rightarrow\\; v_B = \\sqrt{\\frac{2 \\cdot 158\\,600}{400}} = 28{,}2\\ \\text{m/s}$$\n\nEquivalentment, $v_B = \\sqrt{v_A^2 + 2 g h_A} = \\sqrt{9 + 784}$. **$v_B \\approx 28{,}2\\ \\text{m/s}$** (uns $101\\ \\text{km/h}$)."
+          },
+          {
+            "apartat": "c",
+            "titol": "Velocitat al cim C",
+            "cos": "$$\\tfrac12 m v_C^2 + m g h_C = E_{m,A}$$\n\n$$\\tfrac12 \\cdot 400 \\cdot v_C^2 = 158\\,600 - 400 \\cdot 9{,}8 \\cdot 25 = 158\\,600 - 98\\,000 = 60\\,600\\ \\text{J}$$\n\n$$v_C = \\sqrt{\\frac{2 \\cdot 60\\,600}{400}} = 17{,}4\\ \\text{m/s}$$\n\n**$v_C \\approx 17{,}4\\ \\text{m/s}$**. La massa se simplifica: $v_C = \\sqrt{v_A^2 + 2g(h_A - h_C)}$."
+          },
+          {
+            "apartat": "d",
+            "titol": "Altura màxima possible",
+            "cos": "L'altura màxima seria la d'un punt on el vagó s'aturés i tota l'energia fos potencial:\n\n$$m g h_\\text{màx} = E_{m,A} \\;\\Rightarrow\\; h_\\text{màx} = \\frac{158\\,600}{400 \\cdot 9{,}8} = 40{,}46\\ \\text{m}$$\n\nCom que $h_\\text{màx} = 40{,}46\\ \\text{m} < h_D = 42\\ \\text{m}$, **el vagó no arriba al cim D**: s'atura una mica abans i torna enrere. Per arribar-hi caldria una energia potencial de $m g h_D = 164\\,640\\ \\text{J}$, més que els $158\\,600\\ \\text{J}$ que té."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$E_{m,A} = 158\\,600\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_B \\approx 28{,}2\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$v_C \\approx 17{,}4\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$h_\\text{màx} \\approx 40{,}46\\ \\text{m} < 42\\ \\text{m}$: no arriba a D"
+          }
+        ],
+        "nota": "Error típic: pensar que, com que surt de 40 m i D només és 2 m més amunt, l'energia cinètica inicial «segur» que n'hi ha prou. Amb $v_A = 3\\ \\text{m/s}$ només pot guanyar $v_A^2/(2g) = 0{,}46\\ \\text{m}$ d'altura per sobre de A. Les velocitats no depenen de la forma de la via, només de les altures."
+      }
+    },
+    {
+      "id": "fisica1-energia-08",
+      "exercici": 8,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Muntanya russa amb bucle: energia perduda pel fregament i altura mínima",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [
+        "dinamica",
+        "cinematica"
+      ],
+      "conceptes": [
+        "conservació de l'energia mecànica",
+        "treball de les forces no conservatives",
+        "força centrípeta",
+        "energia cinètica",
+        "energia potencial gravitatòria"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Energia mecànica amb fregament i força centrípeta al bucle (MCU i dinàmica de 1r).",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Un vagó de $500\\ \\text{kg}$ parteix del repòs al punt A, a $35\\ \\text{m}$ d'altura, baixa per una rampa fins al punt B (a nivell de terra) i entra en un bucle vertical circular de radi $R = 10\\ \\text{m}$ (vegeu la figura). Entre A i B els fregaments fan un treball de $-30\\ \\text{kJ}$; dins el bucle negligiu qualsevol fregament. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [
+        {
+          "src": "img/fisica1/energia/08.png",
+          "peu": "Rampa de sortida i bucle vertical de radi R."
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La velocitat del vagó al punt B.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "La velocitat del vagó al punt C, el més alt del bucle.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "La força que fa la via sobre el vagó al punt C. Fa el bucle amb seguretat?",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "L'altura mínima des d'on hauria de sortir el vagó (del repòs, amb el mateix treball de fregament entre A i B) perquè completés el bucle just sense perdre el contacte amb la via.",
+          "punts": 0.5,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa: $m = 500\\ \\text{kg}$; $h_A = 35\\ \\text{m}$; $v_A = 0$.\n- Treball del fregament A → B: $W_\\text{f} = -30\\,000\\ \\text{J}$.\n- Bucle: $R = 10\\ \\text{m}$; punt C a $h_C = 2R = 20\\ \\text{m}$.\n- Incògnites: $v_B$, $v_C$, $N_C$, $h_\\text{mín}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Balanç d'energia amb fregament (A → B)",
+            "cos": "Quan hi ha forces no conservatives, l'energia mecànica no es conserva: la seva variació és igual al treball d'aquestes forces.\n\n$$E_{m,B} = E_{m,A} + W_\\text{f}$$\n\n$$E_{m,A} = m g h_A = 500 \\cdot 9{,}8 \\cdot 35 = 171\\,500\\ \\text{J}$$\n\n$$\\tfrac12 m v_B^2 = 171\\,500 - 30\\,000 = 141\\,500\\ \\text{J} \\;\\Rightarrow\\; v_B = \\sqrt{\\frac{2 \\cdot 141\\,500}{500}} = 23{,}8\\ \\text{m/s}$$\n\n**$v_B \\approx 23{,}8\\ \\text{m/s}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Conservació de l'energia dins el bucle (B → C)",
+            "cos": "Dins el bucle no hi ha fregament, així que l'energia mecànica es conserva: $E_{m,C} = E_{m,B} = 141\\,500\\ \\text{J}$.\n\n$$\\tfrac12 m v_C^2 = 141\\,500 - m g (2R) = 141\\,500 - 500 \\cdot 9{,}8 \\cdot 20 = 141\\,500 - 98\\,000 = 43\\,500\\ \\text{J}$$\n\n$$v_C = \\sqrt{\\frac{2 \\cdot 43\\,500}{500}} = \\sqrt{174} = 13{,}2\\ \\text{m/s}$$\n\n**$v_C \\approx 13{,}2\\ \\text{m/s}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Dinàmica al punt més alt",
+            "cos": "Al punt C el vagó està cap per avall: el pes i la força de la via (normal) apunten tots dos cap avall, cap al centre del bucle, i junts fan de força centrípeta:\n\n$$N_C + m g = m\\frac{v_C^2}{R} \\;\\Rightarrow\\; N_C = m\\frac{v_C^2}{R} - m g = 500 \\cdot \\frac{174}{10} - 500 \\cdot 9{,}8 = 8700 - 4900 = 3800\\ \\text{N}$$\n\n**$N_C = 3800\\ \\text{N}$**. Com que $N_C > 0$ (és a dir, $v_C^2 = 174\\ \\text{m}^2/\\text{s}^2 > gR = 98\\ \\text{m}^2/\\text{s}^2$), la via continua empenyent el vagó: **sí que fa el bucle amb seguretat**."
+          },
+          {
+            "apartat": "d",
+            "titol": "Condició límit i altura mínima",
+            "cos": "El cas límit és quan la via deixa de fer força a C ($N_C = 0$): el pes sol fa de força centrípeta.\n\n$$m g = m\\frac{v_{C,\\text{mín}}^2}{R} \\;\\Rightarrow\\; v_{C,\\text{mín}}^2 = gR = 98\\ \\text{m}^2/\\text{s}^2$$\n\nBalanç d'energia des de A fins a C (amb el treball del fregament):\n\n$$m g h_\\text{mín} + W_\\text{f} = \\tfrac12 m v_{C,\\text{mín}}^2 + m g (2R)$$\n\n$$500 \\cdot 9{,}8 \\cdot h_\\text{mín} = \\tfrac12 \\cdot 500 \\cdot 98 + 500 \\cdot 9{,}8 \\cdot 20 + 30\\,000 = 24\\,500 + 98\\,000 + 30\\,000 = 152\\,500\\ \\text{J}$$\n\n$$h_\\text{mín} = \\frac{152\\,500}{4900} = 31{,}1\\ \\text{m}$$\n\n**$h_\\text{mín} \\approx 31{,}1\\ \\text{m}$**. Sortint de 35 m hi ha marge suficient."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v_B \\approx 23{,}8\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_C \\approx 13{,}2\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$N_C = 3800\\ \\text{N} > 0$: sí que fa el bucle"
+          },
+          {
+            "apartat": "d",
+            "valor": "$h_\\text{mín} \\approx 31{,}1\\ \\text{m}$"
+          }
+        ],
+        "nota": "Errors típics: oblidar que el punt C és a $2R$ (no a $R$) d'altura; sumar el treball del fregament en lloc de restar-lo; i pensar que n'hi ha prou que la velocitat a C sigui positiva: cal $v_C^2 \\geq gR$. Sense fregament, l'altura mínima seria la coneguda $2{,}5R = 25\\ \\text{m}$; el fregament obliga a sortir de més amunt."
+      }
+    },
+    {
+      "id": "fisica1-energia-09",
+      "exercici": 9,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Bloc llançat per una molla: tram amb fregament, rampa i punt d'aturada",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "energia potencial elàstica",
+        "treball de les forces no conservatives",
+        "força de fregament",
+        "conservació de l'energia mecànica",
+        "energia potencial gravitatòria"
+      ],
+      "dificultat": 3,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "En un banc de proves d'un laboratori, una molla de constant $k = 800\\ \\text{N/m}$ es comprimeix $15\\ \\text{cm}$ amb un bloc de $2\\ \\text{kg}$ al davant i es deixa anar. El bloc surt per una superfície horitzontal sense fregament, travessa un tram rugós PQ de $1{,}2\\ \\text{m}$ amb coeficient de fregament $\\mu = 0{,}25$ i, després, puja per una rampa sense fregament (vegeu la figura). Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [
+        {
+          "src": "img/fisica1/energia/09.png",
+          "peu": "Molla, tram rugós PQ i rampa sense fregament."
+        }
+      ],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "La velocitat del bloc quan deixa la molla.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "La velocitat del bloc en sortir del tram rugós (punt Q).",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "L'altura màxima que assoleix a la rampa.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "El bloc torna a baixar per la rampa i entra de nou al tram rugós. On s'atura definitivament? Doneu la distància al punt Q.",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Molla: $k = 800\\ \\text{N/m}$; compressió $x = 15\\ \\text{cm} = 0{,}15\\ \\text{m}$.\n- Bloc: $m = 2\\ \\text{kg}$.\n- Tram rugós: $L = 1{,}2\\ \\text{m}$, $\\mu = 0{,}25$. La resta del recorregut, sense fregament.\n- Incògnites: $v_0$, $v_Q$, $h_\\text{màx}$, punt d'aturada."
+          },
+          {
+            "apartat": "a",
+            "titol": "Energia elàstica → cinètica",
+            "cos": "Mentre la molla s'estira no hi ha fregament: l'energia elàstica es converteix íntegrament en cinètica.\n\n$$E_{p,\\text{el}} = \\tfrac12 k x^2 = \\tfrac12 \\cdot 800 \\cdot 0{,}15^2 = 9\\ \\text{J}$$\n\n$$\\tfrac12 m v_0^2 = 9 \\;\\Rightarrow\\; v_0 = \\sqrt{\\frac{2 \\cdot 9}{2}} = 3\\ \\text{m/s}$$\n\n**$v_0 = 3\\ \\text{m/s}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball del fregament al tram PQ",
+            "cos": "Al tram horitzontal $N = mg$ i el fregament val:\n\n$$F_\\text{f} = \\mu m g = 0{,}25 \\cdot 2 \\cdot 9{,}8 = 4{,}9\\ \\text{N} \\qquad W_\\text{f} = -F_\\text{f}\\,L = -4{,}9 \\cdot 1{,}2 = -5{,}88\\ \\text{J}$$\n\nTeorema de l'energia cinètica (o balanç d'energia amb forces no conservatives):\n\n$$E_{c,Q} = E_{c,P} + W_\\text{f} = 9 - 5{,}88 = 3{,}12\\ \\text{J}$$\n\n$$v_Q = \\sqrt{\\frac{2 \\cdot 3{,}12}{2}} = 1{,}77\\ \\text{m/s}$$\n\n**$v_Q \\approx 1{,}77\\ \\text{m/s}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Altura a la rampa",
+            "cos": "La rampa no té fregament: l'energia mecànica es conserva i tota la cinètica es converteix en potencial al punt més alt.\n\n$$m g h_\\text{màx} = 3{,}12 \\;\\Rightarrow\\; h_\\text{màx} = \\frac{3{,}12}{2 \\cdot 9{,}8} = 0{,}159\\ \\text{m}$$\n\n**$h_\\text{màx} \\approx 15{,}9\\ \\text{cm}$**"
+          },
+          {
+            "apartat": "d",
+            "titol": "Retorn i aturada al tram rugós",
+            "cos": "En baixar, el bloc recupera tota l'energia (rampa sense fregament) i torna a Q amb $E_c = 3{,}12\\ \\text{J}$, ara cap a l'esquerra. Per travessar tot el tram rugós necessitaria $5{,}88\\ \\text{J}$, i només en té $3{,}12$: **s'atura dins del tram**. La distància $s$ que recorre fins a aturar-se compleix:\n\n$$F_\\text{f}\\,s = E_{c,Q} \\;\\Rightarrow\\; s = \\frac{3{,}12}{4{,}9} = 0{,}637\\ \\text{m}$$\n\n**S'atura a $0{,}637\\ \\text{m}$ del punt Q** (a $1{,}2 - 0{,}637 = 0{,}563\\ \\text{m}$ del punt P), i ja no es mou més perquè allà no hi ha cap força horitzontal que l'empenyi."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$v_0 = 3\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$v_Q \\approx 1{,}77\\ \\text{m/s}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$h_\\text{màx} \\approx 0{,}159\\ \\text{m}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "S'atura a $0{,}637\\ \\text{m}$ de Q dins el tram rugós"
+          }
+        ],
+        "nota": "Errors típics: no passar els 15 cm a metres a l'energia elàstica, i a l'apartat d) suposar que el bloc travessa de nou tot el tram i torna a la molla: abans cal comprovar si té prou energia ($3{,}12\\ \\text{J} < 5{,}88\\ \\text{J}$). El treball del fregament depèn del camí recorregut, no del desplaçament net."
+      }
+    },
+    {
+      "id": "fisica1-energia-10",
+      "exercici": 10,
+      "questio": null,
+      "opcio": null,
+      "tipus": "problema",
+      "punts": 2.5,
+      "titol": "Ciclista que puja a Montserrat: treball, potència i energia metabòlica",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "treball",
+        "potència",
+        "rendiment",
+        "energia potencial gravitatòria",
+        "teorema de l'energia cinètica"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 4,
+      "pagines": [],
+      "enunciat": "Una ciclista puja la carretera de Monistrol a Montserrat. El conjunt ciclista + bicicleta té una massa de $80\\ \\text{kg}$. El tram fa $10\\ \\text{km}$ amb un desnivell de $700\\ \\text{m}$ i el puja en $40\\ \\text{min}$ a velocitat pràcticament constant. Les forces de resistència (aire i rodolament) equivalen a una força mitjana constant de $15\\ \\text{N}$ oposada al moviment. Preneu $g = 9{,}8\\ \\text{m/s}^2$.\n\nDetermineu:",
+      "figures": [],
+      "opcions": {},
+      "apartats": [
+        {
+          "id": "a",
+          "enunciat": "El treball que fa el pes durant la pujada i l'augment d'energia potencial.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "b",
+          "enunciat": "El treball de les forces de resistència.",
+          "punts": 0.5,
+          "curs": "1r"
+        },
+        {
+          "id": "c",
+          "enunciat": "El treball que fa la ciclista i la potència mitjana que desenvolupa.",
+          "punts": 0.75,
+          "curs": "1r"
+        },
+        {
+          "id": "d",
+          "enunciat": "Si el rendiment dels músculs és del $25\\ \\%$, l'energia que ha de consumir del seu metabolisme, en joules i en quilocalories ($1\\ \\text{cal} = 4{,}18\\ \\text{J}$).",
+          "punts": 0.75,
+          "curs": "1r"
+        }
+      ],
+      "solucio": {
+        "resposta": null,
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Dades i incògnites",
+            "cos": "- Massa: $m = 80\\ \\text{kg}$; desnivell $h = 700\\ \\text{m}$; distància $d = 10\\ \\text{km} = 10\\,000\\ \\text{m}$.\n- Temps: $t = 40\\ \\text{min} = 2400\\ \\text{s}$; velocitat constant ⇒ $\\Delta E_c = 0$.\n- Resistències: $F_r = 15\\ \\text{N}$.\n- Rendiment muscular: $\\eta = 0{,}25$.\n- Incògnites: $W_P$, $\\Delta E_p$, $W_r$, $W_\\text{ciclista}$, $P$, $E_\\text{metabòlica}$."
+          },
+          {
+            "apartat": "a",
+            "titol": "Treball del pes",
+            "cos": "El pes és conservatiu: el seu treball només depèn del desnivell. Com que la ciclista puja, el pes s'oposa al moviment vertical i fa un treball negatiu:\n\n$$W_P = -m g h = -80 \\cdot 9{,}8 \\cdot 700 = -548\\,800\\ \\text{J}$$\n\n$$\\Delta E_p = -W_P = +548\\,800\\ \\text{J}$$\n\n**$W_P = -548\\,800\\ \\text{J}$; $\\Delta E_p = 548{,}8\\ \\text{kJ}$**"
+          },
+          {
+            "apartat": "b",
+            "titol": "Treball de les resistències",
+            "cos": "La força de resistència és constant i sempre oposada al moviment al llarg dels $10\\ \\text{km}$:\n\n$$W_r = -F_r\\,d = -15 \\cdot 10\\,000 = -150\\,000\\ \\text{J}$$\n\n**$W_r = -150\\ \\text{kJ}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Treball de la ciclista (teorema de l'energia cinètica)",
+            "cos": "Com que la velocitat és constant, $\\Delta E_c = 0$ i el treball total és nul. La normal no fa treball. Per tant:\n\n$$W_\\text{ciclista} + W_P + W_r = 0 \\;\\Rightarrow\\; W_\\text{ciclista} = 548\\,800 + 150\\,000 = 698\\,800\\ \\text{J}$$\n\n**$W_\\text{ciclista} = 698\\,800\\ \\text{J} \\approx 699\\ \\text{kJ}$**"
+          },
+          {
+            "apartat": "c",
+            "titol": "Potència mitjana",
+            "cos": "$$P = \\frac{W_\\text{ciclista}}{t} = \\frac{698\\,800}{2400} = 291\\ \\text{W}$$\n\n**$P \\approx 291\\ \\text{W}$**, un valor típic d'un ciclista aficionat ben entrenat."
+          },
+          {
+            "apartat": "d",
+            "titol": "Energia metabòlica",
+            "cos": "Només el 25 % de l'energia que consumeixen els músculs es converteix en treball mecànic; la resta es dissipa com a calor:\n\n$$E_\\text{metabòlica} = \\frac{W_\\text{ciclista}}{\\eta} = \\frac{698\\,800}{0{,}25} = 2\\,795\\,200\\ \\text{J}$$\n\n$$E_\\text{metabòlica} = \\frac{2\\,795\\,200}{4{,}18} = 668\\,700\\ \\text{cal} \\approx 669\\ \\text{kcal}$$\n\n**$E_\\text{metabòlica} \\approx 2{,}80 \\cdot 10^6\\ \\text{J} \\approx 669\\ \\text{kcal}$**"
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": "a",
+            "valor": "$W_P = -548\\,800\\ \\text{J}$; $\\Delta E_p = 548\\,800\\ \\text{J}$"
+          },
+          {
+            "apartat": "b",
+            "valor": "$W_r = -150\\,000\\ \\text{J}$"
+          },
+          {
+            "apartat": "c",
+            "valor": "$W_\\text{ciclista} = 698\\,800\\ \\text{J}$; $P \\approx 291\\ \\text{W}$"
+          },
+          {
+            "apartat": "d",
+            "valor": "$E \\approx 2{,}80 \\cdot 10^6\\ \\text{J} \\approx 669\\ \\text{kcal}$"
+          }
+        ],
+        "nota": "Errors típics: calcular el treball del pes amb la distància recorreguda ($10\\ \\text{km}$) en lloc del desnivell, o calcular el treball de les resistències amb el desnivell. També és habitual oblidar passar els minuts a segons per calcular la potència."
+      }
+    },
+    {
+      "id": "fisica1-energia-11",
+      "exercici": 11,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Treball net per accelerar un cotxe de 36 a 72 km/h",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "teorema de l'energia cinètica",
+        "energia cinètica",
+        "treball"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Un cotxe de $1000\\ \\text{kg}$ passa de $36\\ \\text{km/h}$ a $72\\ \\text{km/h}$ en un tram recte i horitzontal. Quin és el treball total fet sobre el cotxe?",
+      "figures": [],
+      "opcions": {
+        "a": "$50\\ \\text{kJ}$",
+        "b": "$200\\ \\text{kJ}$",
+        "c": "$150\\ \\text{kJ}$",
+        "d": "$1944\\ \\text{kJ}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "c",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Teorema de l'energia cinètica",
+            "cos": "Passem a m/s: $36\\ \\text{km/h} = 10\\ \\text{m/s}$ i $72\\ \\text{km/h} = 20\\ \\text{m/s}$. El treball total és igual a la variació d'energia cinètica:\n\n$$W = \\tfrac12 m (v_\\text{f}^2 - v_0^2) = \\tfrac12 \\cdot 1000 \\cdot (20^2 - 10^2) = 150\\,000\\ \\text{J} = 150\\ \\text{kJ}$$\n\nResposta **c**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a** ($50\\ \\text{kJ}$): s'ha fet $\\tfrac12 m (\\Delta v)^2 = \\tfrac12 \\cdot 1000 \\cdot 10^2$; la variació de $v^2$ no és el quadrat de la variació de $v$.\n- **b** ($200\\ \\text{kJ}$): és l'energia cinètica final, oblidant que el cotxe ja en tenia al principi.\n- **d** ($1944\\ \\text{kJ}$): s'han posat les velocitats en km/h sense passar-les al SI."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$W = 150\\ \\text{kJ}$ → resposta **c**"
+          }
+        ],
+        "nota": "Recordeu: $W_\\text{total} = \\Delta E_c$, i la velocitat sempre en m/s."
+      }
+    },
+    {
+      "id": "fisica1-energia-12",
+      "exercici": 12,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Treball de la força que fa un cambrer en portar una safata horitzontalment",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "treball",
+        "diagrama de cos lliure"
+      ],
+      "dificultat": 1,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Un cambrer porta una safata de $2\\ \\text{kg}$ i camina $10\\ \\text{m}$ en línia recta, amb velocitat constant, mantenint la safata a la mateixa altura. Quin treball fa la força que el cambrer exerceix sobre la safata? Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [],
+      "opcions": {
+        "a": "$0\\ \\text{J}$",
+        "b": "$196\\ \\text{J}$",
+        "c": "$-196\\ \\text{J}$",
+        "d": "No es pot saber sense conèixer la velocitat del cambrer."
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "a",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Força perpendicular al desplaçament",
+            "cos": "Com que la safata es mou a velocitat constant i a la mateixa altura, la força del cambrer només equilibra el pes: és **vertical** cap amunt ($19{,}6\\ \\text{N}$). El desplaçament és **horitzontal**. L'angle entre tots dos és $90^\\circ$:\n\n$$W = F\\,\\Delta x\\cos 90^\\circ = 0$$\n\nResposta **a**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **b** i **c**: surten de multiplicar el pes per la distància ($19{,}6 \\cdot 10$) sense tenir en compte que força i desplaçament són perpendiculars.\n- **d**: el treball no depèn de la velocitat; a més, a velocitat constant $\\Delta E_c = 0$ i el pes tampoc no fa treball, així que el treball de la força del cambrer ha de ser zero."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$W = 0$ → resposta **a**"
+          }
+        ],
+        "nota": "En física, «fer força» no vol dir necessàriament «fer treball»: cal que la força tingui component en la direcció del desplaçament."
+      }
+    },
+    {
+      "id": "fisica1-energia-13",
+      "exercici": 13,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Altura on l'energia cinètica iguala la potencial en una caiguda lliure",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "conservació de l'energia mecànica",
+        "energia cinètica",
+        "energia potencial gravitatòria",
+        "caiguda lliure"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Es deixa caure una pedra des del repòs a $20\\ \\text{m}$ d'altura sobre el terra. Negligint la resistència de l'aire i prenent el terra com a nivell de referència de l'energia potencial, a quina altura sobre el terra l'energia cinètica de la pedra és igual a la seva energia potencial?",
+      "figures": [],
+      "opcions": {
+        "a": "$5\\ \\text{m}$",
+        "b": "$15\\ \\text{m}$",
+        "c": "$14{,}1\\ \\text{m}$",
+        "d": "$10\\ \\text{m}$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "d",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Conservació de l'energia mecànica",
+            "cos": "L'energia mecànica es conserva i val $E_m = m g H$, amb $H = 20\\ \\text{m}$. Al punt buscat, $E_c = E_p$, per tant cadascuna és la meitat de l'energia mecànica:\n\n$$E_p = \\tfrac12 E_m \\;\\Rightarrow\\; m g h = \\tfrac12 m g H \\;\\Rightarrow\\; h = \\frac{H}{2} = 10\\ \\text{m}$$\n\nResposta **d**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a** ($5\\ \\text{m}$): és on $E_c = 3E_p$.\n- **b** ($15\\ \\text{m}$): és on la velocitat és la meitat de la final; com que $E_c \\propto v^2$, allà l'energia cinètica només és una quarta part de la total.\n- **c** ($14{,}1\\ \\text{m} = 20/\\sqrt2$): confusió entre la meitat de l'energia i la relació amb arrels quadrades de la velocitat."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$h = 10\\ \\text{m}$ → resposta **d**"
+          }
+        ],
+        "nota": "Si només hi ha energia cinètica i potencial i la mecànica es conserva, «$E_c = E_p$» sempre vol dir «cadascuna és la meitat de la total»."
+      }
+    },
+    {
+      "id": "fisica1-energia-14",
+      "exercici": 14,
+      "questio": null,
+      "opcio": null,
+      "tipus": "test",
+      "punts": 0.5,
+      "titol": "Rendiment d'un motor que eleva una càrrega",
+      "tema": "energia-mecanica",
+      "temes_secundaris": [],
+      "conceptes": [
+        "rendiment",
+        "potència",
+        "energia potencial gravitatòria"
+      ],
+      "dificultat": 2,
+      "curs": "1r",
+      "curs_motiu": "Treball i energia mecànica (Física i Química de 1r).",
+      "apartats_1r": 0,
+      "pagines": [],
+      "enunciat": "Un muntacàrregues amb un motor de $2\\ \\text{kW}$ de potència consumida eleva una càrrega de $100\\ \\text{kg}$ a una altura de $6\\ \\text{m}$, a velocitat constant, en $5\\ \\text{s}$. Quin és el rendiment del muntacàrregues? Preneu $g = 9{,}8\\ \\text{m/s}^2$.",
+      "figures": [],
+      "opcions": {
+        "a": "$6\\ \\%$",
+        "b": "$58{,}8\\ \\%$",
+        "c": "$41{,}2\\ \\%$",
+        "d": "$170\\ \\%$"
+      },
+      "apartats": [],
+      "solucio": {
+        "resposta": "b",
+        "passos": [
+          {
+            "apartat": null,
+            "titol": "Potència útil i rendiment",
+            "cos": "La potència útil és l'energia potencial guanyada per unitat de temps:\n\n$$P_\\text{útil} = \\frac{m g h}{t} = \\frac{100 \\cdot 9{,}8 \\cdot 6}{5} = 1176\\ \\text{W}$$\n\n$$\\eta = \\frac{P_\\text{útil}}{P_\\text{cons}} = \\frac{1176}{2000} = 0{,}588 = 58{,}8\\ \\%$$\n\nResposta **b**."
+          },
+          {
+            "apartat": null,
+            "titol": "Per què les altres no",
+            "cos": "- **a** ($6\\ \\%$): s'ha oblidat $g$ (s'ha fet $100 \\cdot 6 / 5 = 120\\ \\text{W}$).\n- **c** ($41{,}2\\ \\%$): és el percentatge d'energia que es **perd**, no el rendiment.\n- **d** ($170\\ \\%$): s'ha dividit al revés ($2000/1176$); un rendiment mai no pot superar el 100 %."
+          }
+        ],
+        "resultats": [
+          {
+            "apartat": null,
+            "valor": "$\\eta = 58{,}8\\ \\%$ → resposta **b**"
+          }
+        ],
+        "nota": ""
+      }
+    }
+  ]
+}
