@@ -620,6 +620,28 @@ function tagMatch(p, tag) {
 function tagLabel(tag) {
   return tag.k === "t" ? temaNom(F.assig, tag.v) : tag.k === "c" ? tag.v : `«${tag.v}» al text`;
 }
+const MOCK_EXEMPLES = {
+  tecno: "engranatges, rendiment, portes lògiques, motor tèrmic, estàtica...",
+  mates: "derivades, matrius, Rouché, integrals, plans i rectes...",
+  fisica: "satèl·lits, camp elèctric, inducció, efecte fotoelèctric, ones...",
+  dibuix: "tangències, abatiment, axonometria, homologia, secció plana...",
+  fisica1: "MRUA, pla inclinat, conservació de l'energia, xocs, calor específica...",
+  catala: "subordinades, Terra baixa, sinònims, normativa, argumentació...",
+  castella: "subordinadas, Nada, figuras retóricas, resumen, normativa...",
+  angles: "reading, opinion essay, listening, for and against essay...",
+  filosofia: "Kant, Plató, Descartes, utilitarisme, Nietzsche...",
+  historia: "Restauració, Segona República, franquisme, Mancomunitat, Transició...",
+  llati: "traducció, Cèsar, Ovidi, ablatiu absolut, Tàrraco...",
+  empresa: "VAN, punt mort, balanç, ràtios, màrqueting...",
+};
+function mockTop() {
+  const pool = PROBS.filter(inAssig);
+  const cc = {};
+  for (const p of pool) for (const c of p._conc) cc[c] = (cc[c] || 0) + 1;
+  const picked = new Set(mockConc);
+  return Object.entries(cc).filter(([c, n]) => n >= 3 && !picked.has(c)).sort((a, b) => b[1] - a[1]).slice(0, 18)
+    .map(([v, n]) => ({ k: "c", v, n }));
+}
 function mockSuggest(q) {
   const nq = norm(q).trim();
   if (nq.length < 2) return [];
@@ -639,8 +661,14 @@ function renderSuggest() {
   const box = document.getElementById("mocksug");
   if (!box) return;
   const q = document.getElementById("mockq").value;
+  if (q.trim().length < 2) {
+    const top = mockTop();
+    box.innerHTML = top.length ? `<span class="count">Els més habituals a ${esc((ASSIGS.find((a) => a.id === F.assig) || {}).nom || "")}:</span>` +
+      top.map((t) => `<button type="button" class="chip sugg" data-tagk="c" data-tagv="${esc(t.v)}">${esc(t.v)}<span class="n">${t.n}</span></button>`).join("") : "";
+    return;
+  }
   const sug = mockSuggest(q);
-  box.innerHTML = q.trim().length < 2 ? "" : sug.length
+  box.innerHTML = sug.length
     ? sug.map((t) => `<button type="button" class="chip sugg" data-tagk="${t.k}" data-tagv="${esc(t.v)}"><span class="kind">${t.k === "t" ? "tema" : t.k === "c" ? "concepte" : "text"}</span>${esc(tagLabel(t))}<span class="n">${t.n}</span></button>`).join("")
     : `<span class="count">Cap pregunta conté «${esc(q)}». Prova amb una altra paraula.</span>`;
 }
@@ -702,7 +730,7 @@ function renderMock() {
     <p>Tria els temes que entren a l'examen i l'app et munta un examen de pràctica amb preguntes de selectivitat de diferents anys. Les solucions s'amaguen fins que acabis.</p>
     <div class="mocksearch">
       <label class="lbl count" for="mockq">Què entra a l'examen? Escriu-ho i tria les etiquetes que et suggereixo</label>
-      <input id="mockq" class="search" type="search" autocomplete="off" placeholder="p. ex. pla inclinat, derivades, Restauració, Kant, VAN...">
+      <input id="mockq" class="search" type="search" autocomplete="off" placeholder="p. ex. ${esc(MOCK_EXEMPLES[F.assig] || "escriu un tema o un concepte...")}">
       <div class="chips" id="mocksug"></div>
       ${mockTags().length ? `<div class="chips picked"><span class="count">Has triat:</span>${mockTags().map((t) => `<button type="button" class="chip" aria-pressed="true" data-untag="${t.k}" data-tagv="${esc(t.v)}" title="Treu-la">${esc(tagLabel(t))} ✕</button>`).join("")}<button type="button" class="linkbtn" data-act="mockclear">Treu-les totes</button></div>` : ""}
     </div>
@@ -735,6 +763,7 @@ function renderMock() {
   }
   el.innerHTML = html;
   el.classList.toggle("locked", !!(mock && mock.locked));
+  renderSuggest();
 }
 function mockElapsed() {
   if (!mock || !mock.start) return 0;
