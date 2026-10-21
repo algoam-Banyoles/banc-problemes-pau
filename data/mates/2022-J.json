@@ -34,6 +34,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Primitiva, concavitat i inflexió, i àrea amb integral, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2,
         3
@@ -45,17 +46,20 @@
         {
           "id": "a",
           "enunciat": "Si sabem que $f(x)$ talla l'eix de les abscisses en $x = 1$, calculeu l'expressió de la funció $f(x)$.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'abscissa del punt d'inflexió de $f(x)$ i estudieu la concavitat de la funció.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Sabem que l'àrea del recinte limitat per la corba $y = f''(x)$, l'eix de les abscisses i les rectes $x = 0$ i $x = a$, amb $a > 2$, és $15\\ u^2$. Calculeu el valor de $a$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -142,6 +146,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4,
         5
@@ -153,12 +158,15 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $a$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu, si és possible, el sistema per al cas $a = 2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -234,6 +242,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         6,
         7
@@ -245,12 +254,14 @@
         {
           "id": "a",
           "enunciat": "Determineu la posició relativa de la recta $r$ respecte al pla $\\pi: x - 2y + 4z - 4 = 0$. Si és paral·lela, calculeu la distància de $r$ a $\\pi$, i si és secant, calculeu el punt de tall.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'equació de la recta $s$ perpendicular al pla $\\pi$ i que talla la recta $r$ en un punt $P$, la primera coordenada del qual és 5 vegades més gran que la segona.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -323,6 +334,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         8,
         9
@@ -334,12 +346,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu una funció polinòmica $y = g(x)$ de grau 3 tal que talli l'eix de les ordenades en el punt $(0, 5)$, que la recta tangent a $y = g(x)$ en el punt d'abscissa $x = 1$ sigui horitzontal i que $g''(x) = 2x + 1$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Comproveu que la funció $f(x) = -x^3 + 6x^2 - 16$ té una arrel a $x = 2$ i que és estrictament creixent a l'interval $(0, 4)$. Utilitzeu aquesta informació per a calcular l'àrea determinada per la funció $f(x)$, l'eix de les abscisses i les rectes $x = 0$ i $x = 4$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -412,6 +426,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         10,
         11
@@ -423,12 +438,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu les matrius $X$ tals que $X^2 = \\begin{pmatrix} 1 & 0 & 1 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu els valors de $a$, $b$ i $c$ perquè la matriu inversa de $X$ sigui $X^{-1} = \\begin{pmatrix} \\frac12 & -\\frac12 & -\\frac12 \\\\ 0 & 1 & 1 \\\\ 0 & 0 & -1 \\end{pmatrix}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -495,6 +512,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         12,
         13
@@ -511,12 +529,15 @@
         {
           "id": "a",
           "enunciat": "Justifiqueu que se satisfan les relacions següents: $h = \\dfrac{20}{x}$ i $D(x) = \\sqrt{\\dfrac{400}{x^2} + x^2}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Modelització amb una funció (geometria plana, Pitàgores, àrees i volums)."
         },
         {
           "id": "b",
           "enunciat": "Trobeu les dimensions del trapezi per a les quals la longitud del costat $D$ és mínima.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

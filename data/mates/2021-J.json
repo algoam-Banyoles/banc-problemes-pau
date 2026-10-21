@@ -32,6 +32,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2,
         3
@@ -43,12 +44,15 @@
         {
           "id": "a",
           "enunciat": "Comproveu que l'equació de la recta tangent a la gràfica de la paràbola en el punt d'abscissa $x = a$ és $y = -2ax + a^2 + 4$ i calculeu els punts de tall d'aquesta recta tangent amb els eixos de coordenades.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Recta tangent i talls amb els eixos."
         },
         {
           "id": "b",
           "enunciat": "Calculeu el valor de $a > 0$ perquè l'àrea del triangle determinat per aquesta recta tangent i els eixos de coordenades sigui mínima.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -126,6 +130,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4,
         5
@@ -137,12 +142,15 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $p$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu, si és possible, el sistema per al cas $p = 2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -224,6 +232,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         6,
         7
@@ -235,12 +244,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu les coordenades del punt $P'$ simètric a $P$ respecte al pla $\\pi$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "De tots els plans que contenen la recta $r$, trobeu l'equació cartesiana del que és perpendicular al pla $\\pi$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -316,6 +327,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         8,
         9
@@ -327,17 +339,20 @@
         {
           "id": "a",
           "enunciat": "Trobeu les coordenades d'un punt de la corba $y = f(x)$ en el qual la recta tangent a la corba sigui horitzontal i analitzeu si la funció té un extrem relatiu en aquest punt.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu si la funció $f(x)$ té alguna asímptota horitzontal.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Calculeu l'àrea de la regió delimitada per la corba $y = f(x)$ i les rectes $x = 1$ i $x = e$. Feu un dibuix aproximat de la gràfica de la funció en el domini $0 < x < 5$, en què quedi representada l'àrea que heu calculat.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -415,6 +430,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         10,
         11
@@ -426,12 +442,14 @@
         {
           "id": "a",
           "enunciat": "Donada la matriu $A = \\begin{pmatrix} 0 & 0 & 1 \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{pmatrix}$, resoleu l'equació matricial $A^2 X = A - 3I$, en què $I$ és la matriu identitat.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Una matriu quadrada $M$ satisfà que $M^3 - 3M^2 + 3M - I = 0$, en què $I$ és la matriu identitat. Justifiqueu que $M$ és invertible i expresseu la inversa de $M$ en funció de les matrius $M$ i $I$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -508,6 +526,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Extrems, monotonia i teorema de Bolzano, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         12,
         13
@@ -519,12 +538,14 @@
         {
           "id": "a",
           "enunciat": "Estudieu-ne la continuïtat, els extrems relatius i els intervals de creixement i decreixement.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Demostreu que l'equació $f(x) = 0$ té exactament dues solucions entre $x = -1$ i $x = 3$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {

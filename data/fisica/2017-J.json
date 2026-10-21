@@ -37,6 +37,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, període orbital",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -47,12 +48,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el període de l'*ExoMars Trace Gas Orbiter*.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor de l'acceleració de la gravetat a la superfície de Mart i la velocitat a la qual la nau va impactar a la superfície. (Considereu que la gravetat és constant durant la caiguda i la fricció amb l'atmosfera de Mart és negligible.)",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -121,6 +124,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): bobina, electroimant",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -136,12 +140,14 @@
         {
           "id": "a",
           "enunciat": "Especifiqueu clarament quin ha de ser el sentit del corrent elèctric a la bobina perquè s'activi el relé (i es tanqui el circuit B) i dibuixeu les línies del camp magnètic generat per la bobina en aquesta situació.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En unes proves observem que el mecanisme no fa prou força per a tancar el contacte. Indiqueu quin efecte tindria sobre el dispositiu cadascuna de les modificacions següents:\n\n1) Augmentar la intensitat del corrent que circula per la bobina.\n\n2) Situar un material ferromagnètic al nucli de la bobina.\n\n3) Fer passar per la bobina un corrent altern en comptes d'un corrent continu.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -215,6 +221,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): equació d'ona, període",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -230,12 +237,14 @@
         {
           "id": "a",
           "enunciat": "Determineu el període, l'amplitud i la freqüència de la vibració i la velocitat de propagació de l'ona per la corda. Escriviu l'equació de l'ona plana (no oblideu indicar totes les unitats de les magnituds que hi apareixen).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Demostreu, a partir de l'equació d'ona, que la velocitat màxima a la qual es mouen els punts de la corda en les seves oscil·lacions es pot calcular amb l'expressió $v_\\text{max} = A\\omega$ (en què $A$ és l'amplitud i $\\omega$ és la pulsació).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -310,6 +319,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): energia potencial elèctrica, llei de coulomb",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -320,12 +330,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la separació entre aquests dos ions, sabent que l'energia potencial elèctrica del sistema és de $-9{,}76 \\times 10^{-19}\\ \\text{J}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si apliquem un camp elèctric uniforme de $50{,}0\\ \\text{N C}^{-1}$ a l'ió $\\text{Na}^+$, calculeu el treball necessari per a separar els ions fins a una distància de $2\\ \\text{cm}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -390,6 +402,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): període de semidesintegració, llei de desintegració radioactiva",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -400,12 +413,14 @@
         {
           "id": "a",
           "enunciat": "Si hi hagués hagut $^{60}\\text{Fe}$ quan la Terra es va formar, fa $4\\,400$ milions d'anys, quin percentatge d'aquest $^{60}\\text{Fe}$ primordial quedaria ara? Si el $^{60}\\text{Fe}$ es va originar en l'explosió d'una supernova fa $13$ milions d'anys, quin percentatge d'aquest $^{60}\\text{Fe}$ hauria de quedar encara?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El $^{60}\\text{Fe}$ es transforma, mitjançant una desintegració $\\beta^-$, en un isòtop de cobalt (Co) de vida breu, el qual torna a patir una nova desintegració $\\beta^-$ i produeix un isòtop estable de níquel (Ni). Escriviu les equacions nuclears de les dues desintegracions, incloent-hi els antineutrins.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -475,6 +490,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, equació del moviment",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -485,12 +501,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu l'equació del moviment i representeu la gràfica posició-temps durant dos períodes, suposant que a l'instant inicial l'agulla es troba en la posició més alta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la velocitat i l'acceleració màximes de l'agulla.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -560,6 +578,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, superfícies equipotencials",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -575,12 +594,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el camp elèctric (suposant que és uniforme) entre les dues plaques, i indiqueu-ne també la direcció i el sentit. Feu un dibuix en què representeu, de manera aproximada, les superfícies equipotencials que espereu trobar a la regió compresa entre les dues plaques i indiqueu el valor del potencial en cadascuna de les superfícies representades.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Amb la sonda, tal com veiem a la figura, el voltímetre indica $7{,}0\\ \\text{V}$. Calculeu el treball que hauria de fer una força externa per a desplaçar una càrrega positiva de $0{,}1\\ \\mu\\text{C}$ des d'aquest punt fins a la placa positiva.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -650,6 +671,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): constant de desintegració, període de semidesintegració",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -660,12 +682,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la constant de desintegració i el nombre de nuclis que queden després d'una hora.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'activitat de la mostra dues hores després de l'instant inicial.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -725,6 +749,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): intensitat del camp gravitatori, velocitat d'escapament",
+      "apartats_1r": 0,
       "pagines": [
         5
       ],
@@ -735,12 +760,14 @@
         {
           "id": "a",
           "enunciat": "El mòdul de la intensitat de camp gravitatori que l'estrella de neutrons crea a la seva pròpia superfície.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "La velocitat mínima que hem de donar a un coet en el moment del llançament des de la superfície de l'estrella perquè es pugui escapar de l'atracció d'aquesta (ignoreu els possibles efectes relativistes). Demostreu l'expressió utilitzada per a fer el càlcul i feu esment del principi de conservació en què us baseu.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -805,6 +832,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): equació d'ona, velocitat de propagació",
+      "apartats_1r": 0,
       "pagines": [
         5
       ],
@@ -815,12 +843,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la velocitat de propagació de les ones. Determineu l'equació de l'ona suposant que la fase inicial és zero.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En un instant donat, calculeu la diferència de fase entre dos punts que disten $4{,}00\\ \\text{m}$ l'un de l'altre.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -886,6 +916,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): fotó, energia del fotó",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -896,12 +927,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'energia dels fotons utilitzats en un microscopi òptic de llum visible de $400\\ \\text{nm}$ de longitud d'ona. Quina és la quantitat de moviment d'aquests fotons?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Fem servir un microscopi electrònic en què els electrons que ens permeten fer l'observació són accelerats per una diferència de potencial, de manera que assoleixen una quantitat de moviment de $3{,}31 \\times 10^{-25}\\ \\text{kg m s}^{-1}$. Calculeu la relació que hi ha entre el poder de resolució d'aquest microscopi electrònic i el del microscopi òptic de l'apartat anterior. Quin dels dos microscopis té més poder de resolució?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -970,6 +1003,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): selector de velocitats, força de lorentz",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -985,12 +1019,14 @@
         {
           "id": "a",
           "enunciat": "Indiqueu, d'una manera justificada, la direcció i el sentit del camp elèctric i de la força magnètica que actua sobre un ió He⁺ amb una càrrega d'$1{,}60 \\times 10^{-19}\\ \\text{C}$. Calculeu també el mòdul del camp magnètic en aquest dispositiu.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el radi de l'òrbita que descriu un ió He⁺ si només hi actua el camp magnètic. La massa d'aquests ions és de $6{,}68 \\times 10^{-27}\\ \\text{kg}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1060,6 +1096,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, principi de superposició",
+      "apartats_1r": 0,
       "pagines": [
         7
       ],
@@ -1075,12 +1112,14 @@
         {
           "id": "a",
           "enunciat": "Representeu en un esquema les forces elèctriques que actuen sobre la càrrega $q_1$ per efecte de les altres dues càrregues. Representeu-hi també la força total i calculeu-ne el mòdul.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el potencial elèctric en el punt $P$ i l'energia potencial de la distribució de les tres càrregues.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1148,6 +1187,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, desintegració beta",
+      "apartats_1r": 0,
       "pagines": [
         7
       ],
@@ -1158,12 +1198,14 @@
         {
           "id": "a",
           "enunciat": "Completeu les reaccions que permeten arribar al $^{208}\\text{Pb}$ a partir del $^{232}\\text{Th}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Tenint en compte que el període de semidesintegració del $^{232}\\text{Th}$ és d'$1{,}4 \\times 10^{10}$ anys, quin tant per cent de $^{232}\\text{Th}$ roman sense desintegrar-se al cap de $2{,}0 \\times 10^{10}$ anys?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1227,6 +1269,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): força magnètica sobre un corrent, producte vectorial",
+      "apartats_1r": 0,
       "pagines": [
         7
       ],
@@ -1242,12 +1285,14 @@
         {
           "id": "a",
           "enunciat": "Representeu el vector de camp magnètic en el punt $P$. Indiqueu i justifiqueu el sentit de gir del fil.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el mòdul de la força magnètica que actua sobre $1\\ \\text{cm}$ del conductor centrat en el punt $P$, suposant que en aquest segment el camp és constant, amb el mòdul igual a $0{,}1\\ \\text{T}$ i la intensitat de corrent igual a $10\\ \\text{A}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1310,6 +1355,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, camp elèctric",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -1320,12 +1366,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el mòdul de la força elèctrica que actua sobre l'electró. Representeu aquesta força en dos punts de l'òrbita amb una separació angular de $90^\\circ$. Calculeu el mòdul del camp elèctric que crea el protó en un punt de la trajectòria de l'electró.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'energia mecànica d'aquest sistema, que consta d'un protó i un electró girant al seu voltant. Expresseu el resultat en eV.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

@@ -335,6 +335,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -345,17 +346,20 @@
         {
           "id": "a",
           "enunciat": "Escriviu la taula de veritat del sistema i indiqueu els casos que no són possibles.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -434,6 +438,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -449,22 +454,26 @@
         {
           "id": "a",
           "enunciat": "La potència $P_1$ a l'eix del motor.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El parell $\\Gamma_2$ a l'eix de la broca (eix de sortida del trepant).",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La potència total dissipada $P_\\text{diss}$ en el trepant.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El diàmetre $d_2$ de la politja solidària a l'eix de la broca.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -550,6 +559,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         3
       ],
@@ -560,17 +570,20 @@
         {
           "id": "a",
           "enunciat": "El treball $W$ fet per la bomba.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència hidràulica $P_\\text{h}$ que desenvolupa la bomba.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El rendiment $\\eta$ del grup motobomba, si el motor ha consumit $c = 3\\ \\text{L}$ d'un combustible de densitat $\\rho = 850\\ \\text{kg/m}^3$ i de poder calorífic $p_\\text{c} = 42{,}5\\ \\text{MJ/kg}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -642,6 +655,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         4
       ],
@@ -652,17 +666,20 @@
         {
           "id": "a",
           "enunciat": "El corrent $I$ que circula per la resistència.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La longitud $L$ de la cinta de nicrom de la resistència.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Per a garantir una bona cocció, cal que la superfície horitzontal efectiva del nicrom sigui un $3{,}5\\ \\%$ de la superfície total de la graella. Si la cinta està col·locada en la posició òptima, determineu la superfície total $S$ de la graella.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -741,6 +758,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -756,22 +774,26 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure del conjunt format per la barra AB i el tauler.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la força $F_\\text{BC}$ que la barra BC fa sobre la barra AB.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Determineu les forces vertical $F_\\text{V}$ i horitzontal $F_\\text{H}$ que la cistella rep en el punt A.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "Determineu la força horitzontal $F_\\text{cable}$ que fa el cable sobre la barra BC.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

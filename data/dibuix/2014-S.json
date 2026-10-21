@@ -178,6 +178,7 @@
       "dificultat": 3,
       "curs": "1r",
       "curs_motiu": "Intersecció de dos plans i visibilitat amb una vista de perfil: dièdric directe (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         9
       ],
@@ -193,12 +194,14 @@
         {
           "id": "a",
           "enunciat": "Determineu en projecció horitzontal i vertical la intersecció dels plans que determinen el triangle i el quadrilàter.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu gràficament la visibilitat del conjunt, considerant el triangle i el quadrilàter opacs.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -279,6 +282,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II); altura de l'octaedre a partir de la vertadera magnitud.",
+      "apartats_1r": 2,
       "pagines": [
         11
       ],
@@ -294,17 +298,22 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un triangle equilàter situat en un pla horitzontal, de manera que el punt *a-a′* sigui un dels vèrtexs del triangle i el segment horitzontal *ab-a′b′* sigui una línia d'altura del triangle.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Triangle equilàter en un pla horitzontal: es construeix en VM directa a la planta (polígons de DT I)."
         },
         {
           "id": "b",
           "enunciat": "Determineu les projeccions horitzontal i vertical de l'octaedre regular que té el triangle determinat en l'apartat anterior com una de les cares i està situat per sota d'aquesta cara. [1 punt per la projecció horitzontal i 1 punt per la projecció vertical]",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {

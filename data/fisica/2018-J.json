@@ -35,6 +35,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, força elèctrica",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -50,12 +51,14 @@
         {
           "id": "a",
           "enunciat": "Quin és el mòdul de la força elèctrica del protó sobre l'electró? Quina acceleració li provoca?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el potencial elèctric (en V) a la distància $r$ del protó i l'energia potencial (en eV) de la distribució de càrregues.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -120,6 +123,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): velocitat d'escapament, densitat",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -135,12 +139,14 @@
         {
           "id": "a",
           "enunciat": "L'any 1783, noranta-sis anys abans del naixement d'Einstein, l'astrònom John Michell (1724-1793) va publicar que un cos esfèric que tingués la mateixa densitat que el Sol i 500 vegades el radi d'aquest tindria una velocitat d'escapament, des de la seva superfície, superior a la velocitat de la llum. Calculeu la massa del cos i aquesta velocitat d'escapament.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el mòdul de la intensitat del camp gravitatori que el cos de l'apartat anterior crea a la seva pròpia superfície. Quina força (mòdul, direcció i sentit) fa el cos sobre $1\\ \\mu\\text{g}$ situat a la seva superfície?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -206,6 +212,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): força de lorentz, producte vectorial",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -216,12 +223,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la força (mòdul, direcció i sentit) que actua sobre el protó.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el camp magnètic (mòdul, direcció i sentit) tal que, si entra un electró amb la mateixa velocitat en l'espectròmetre, segueixi la mateixa trajectòria que el protó.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -282,6 +291,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, amplitud",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -292,12 +302,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu l'equació del moviment del vaixell suposant que a l'instant inicial es troba en el punt més alt. Indiqueu les unitats de totes les magnituds.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la velocitat i l'acceleració inicials del vaixell.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -367,6 +379,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, conservació del nombre màssic i atòmic",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -377,12 +390,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu la reacció de desintegració del ${}^{210}\\text{Po}$ sabent que quan es desintegra genera un isòtop del plom (Pb).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Sabent que el període de semidesintegració del ${}^{210}\\text{Po}$ és de 138 dies, quina quantitat de ${}^{210}\\text{Po}$ queda en una mostra de $10{,}0\\ \\text{g}$ després de 69 dies des de l'inici de l'activitat?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -441,6 +456,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): camp magnètic d'un fil infinit, força entre corrents paral·lels",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -460,12 +476,14 @@
         {
           "id": "a",
           "enunciat": "El bacteri *Aquaspirillum magnetotacticum* conté partícules molt petites, els magnetosomes, que són sensibles als camps magnètics. Fan servir el camp magnètic terrestre per a orientar-se en els oceans i nedar cap al pol Nord geogràfic. S'ha quantificat que una intensitat de camp magnètic inferior al 5 % del camp magnètic terrestre no té efectes sobre aquests bacteris. El camp magnètic terrestre és de $5{,}00 \\times 10^{-5}\\ \\text{T}$. Si circula un corrent elèctric de $100\\ \\text{A}$ per una línia submarina, a partir de quina distància d'aquesta línia el camp magnètic deixarà de tenir efecte sobre els bacteris? Considereu la línia submarina com un fil infinit i ignoreu els efectes de l'aigua del mar.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En la figura es mostren dos fils conductors rectilinis i infinitament llargs, que es troben situats als punts 1 i 2. Estan separats per $10{,}0\\ \\text{m}$, són perpendiculars al pla del paper i per tots dos hi circula una mateixa intensitat de corrent de $100\\ \\text{A}$ en el sentit que va cap endins del paper. Representeu en un esquema el camp magnètic a la posició 1 generat pel conductor que passa per 2. Representeu també la força sobre el conductor que passa per 1 causada pel conductor que passa per 2, i calculeu el mòdul de la força que suporten $2{,}00\\ \\text{m}$ del conductor que passa per 1.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -533,6 +551,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): intensitat sonora, nivell d'intensitat sonora",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -543,12 +562,14 @@
         {
           "id": "a",
           "enunciat": "Si aquest so es distribueix uniformement per l'espai, quin és el nivell d'intensitat sonora (en dB) a una distància de $5{,}00\\ \\text{m}$?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si en comptes d'un gos, fossin dos gossos bordant alhora, quin seria el nivell d'intensitat sonora?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -606,6 +627,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, energia del fotó",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -616,12 +638,14 @@
         {
           "id": "a",
           "enunciat": "L'energia (en eV) d'un fotó de la llum incident.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El treball d'extracció (en eV) corresponent a aquest metall.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

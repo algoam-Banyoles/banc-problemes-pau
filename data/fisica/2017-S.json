@@ -33,6 +33,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): energia potencial gravitatòria, acceleració de la gravetat",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -48,12 +49,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'acceleració de la gravetat a la superfície del planeta i la massa d'aquest.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Deduïu l'expressió de la velocitat d'escapament a partir del principi de conservació de l'energia i calculeu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -125,6 +128,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ona transversal, ona mecànica",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -135,12 +139,14 @@
         {
           "id": "a",
           "enunciat": "Si modelitzéssim aquesta onada a l'estadi com una ona, de quin tipus d'ona estaríem parlant? Calculeu-ne la longitud d'ona i la pulsació (freqüència angular).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Un espectador es mou $1{,}0\\ \\text{m}$ verticalment quan s'aixeca i s'asseu per fer passar l'onada. Escriviu l'equació del moviment d'aquest espectador considerant que descriu un moviment harmònic simple i que en l'instant inicial es troba assegut, és a dir, en la seva posició mínima.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -216,6 +222,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, camp elèctric",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -231,12 +238,14 @@
         {
           "id": "a",
           "enunciat": "Compareu quantitativament els valors del mòdul de la intensitat del camp elèctric degut al nucli d'urani en dos punts, A i B, situats a $0{,}008\\ \\text{nm}$ i $0{,}008\\ \\text{pm}$, respectivament, del centre d'aquest nucli.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quanta energia cinètica ha de tenir, com a mínim, la partícula $\\alpha$ quan passa pel punt A per a arribar fins al punt B? (Ignoreu la influència que els electrons pròxims puguin tenir.)",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -304,6 +313,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, desintegració beta",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -314,12 +324,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu les equacions nuclears de les dues desintegracions radioactives amb totes les partícules que hi intervenen i els seus nombres atòmics i màssics. Calculeu quants àtoms de $^{224}\\text{Rn}$ no s'hauran desintegrat encara quan restin $9{,}00 \\times 10^{-2}\\ \\text{mol}$ de la mostra del $^{222}\\text{Rn}$ per desintegrar-se.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "L'energia que es desprèn per cada desintegració d'un nucli de $^{222}\\text{Rn}$ és de $5{,}590\\ \\text{MeV}$. Calculeu el defecte de massa d'aquesta reacció nuclear.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -392,6 +404,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): llei de faraday, flux magnètic",
+      "apartats_1r": 1,
       "pagines": [
         3
       ],
@@ -402,12 +415,15 @@
         {
           "id": "a",
           "enunciat": "Escriviu l'equació de la força electromotriu induïda en funció del temps si la bobina gira a $60\\ \\text{rev/min}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si la bobina té una resistència $R = 1{,}0\\ \\Omega$, quin corrent màxim pot circular per la bobina?",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Llei d'Ohm (ESO) amb la FEM màxima de l'apartat a com a dada"
         }
       ],
       "solucio": {
@@ -474,6 +490,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, radiació gamma",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -484,12 +501,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu les equacions nuclears corresponents als processos esmentats i calculeu el percentatge que quedarà d'una determinada quantitat inicial de $^{131}\\text{I}$ després de $24{,}06$ dies.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la longitud d'ona dels fotons $\\gamma$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -552,6 +571,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, principi de superposició",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -562,12 +582,14 @@
         {
           "id": "a",
           "enunciat": "Si a l'origen de coordenades el camp elèctric és $4{,}0 \\times 10^{3}\\ \\text{N C}^{-1}$ en la direcció de l'eix $x$ en sentit positiu, calculeu el valor de les càrregues.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si el valor de les càrregues fos $Q = 2{,}0\\ \\mu\\text{C}$, calculeu la força $\\vec{F}$ que experimentaria un protó situat a l'origen de coordenades.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -636,6 +658,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): camp magnètic d'una bobina, permeabilitat magnètica",
+      "apartats_1r": 1,
       "pagines": [
         4
       ],
@@ -646,12 +669,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu el camp i el flux magnètics a l'interior de la bobina, sabent que la secció del nucli és de $10\\ \\text{cm}^2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Estimeu el nombre d'electrons que circulen pel cable en un minut.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Intensitat de corrent I = q/t i càrrega de l'electró (ESO)"
         }
       ],
       "solucio": {

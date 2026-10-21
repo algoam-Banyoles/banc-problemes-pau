@@ -32,6 +32,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -42,12 +43,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació contínua de la recta $r$ perpendicular a $\\pi$ que passa pel punt $P = (-1, 3, 2)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu també l'equació cartesiana (és a dir, de la forma $Ax + By + Cz + D = 0$) del pla $\\pi_1$ paral·lel a $\\pi$ que passa pel mateix punt $P$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -102,6 +105,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -112,12 +116,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu el valor del paràmetre $a$ perquè es compleixi que $A^2 - 2A = I$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la matriu inversa de la matriu $A$ quan $a = -2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -186,6 +192,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         3
       ],
@@ -196,12 +203,15 @@
         {
           "id": "a",
           "enunciat": "Feu un esbós del recinte limitat per les gràfiques de la funció i la recta, i els eixos de coordenades.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Esbós de funcions elementals (arrel quadrada i recta)."
         },
         {
           "id": "b",
           "enunciat": "Trobeu el valor de $k$ sabent que l'àrea d'aquest recinte és igual a $14/3$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -334,6 +344,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4
       ],
@@ -349,12 +360,15 @@
         {
           "id": "a",
           "enunciat": "Sabent que el volum d'un con és igual a l'àrea de la base multiplicada per l'altura i dividida per 3, comproveu que, en aquest cas, podem expressar el volum com $V = \\dfrac{\\pi \\cdot h}{3}(R^2 - h^2)$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Modelització amb una funció (geometria plana, Pitàgores, àrees i volums)."
         },
         {
           "id": "b",
           "enunciat": "Trobeu les dimensions d'aquest con (el radi de la base i l'altura) perquè el seu volum sigui màxim i comproveu que es tracta realment d'un màxim.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -533,6 +547,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -543,12 +558,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el valor de l'àrea d'aquesta regió en funció del paràmetre $k$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu el valor de $k$ perquè l'àrea limitada sigui $\\sqrt{6}\\ u^2$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -602,6 +619,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -612,12 +630,14 @@
         {
           "id": "a",
           "enunciat": "Què significa que la matriu $B$ sigui la matriu inversa de $A$?",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu el valor del paràmetre $p$ perquè la matriu inversa de $A$ i la matriu transposada de $A$ coincideixin.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -679,6 +699,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 2,
       "pagines": [
         2
       ],
@@ -694,17 +715,22 @@
         {
           "id": "a",
           "enunciat": "Trobeu el valor del segment $L$ de la gràfica en funció de la variable $x$ (amplària inferior del canal).",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Geometria del trapezi isòsceles."
         },
         {
           "id": "b",
           "enunciat": "Sabem que l'àrea d'un trapezi és igual a l'altura multiplicada per la semisuma de les bases. Comproveu que, en aquest cas, l'àrea de la secció és donada per $$A(x) = \\frac{3x\\sqrt{256 - x^2}}{4}$$",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Modelització amb una funció (geometria plana, Pitàgores, àrees i volums)."
         },
         {
           "id": "c",
           "enunciat": "Calculeu el valor de $x$ perquè l'àrea de la secció del canal sigui màxima (no cal que comproveu que és realment un màxim).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -833,6 +859,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Extrems relatius a partir del signe de f' (monotonia), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -848,12 +875,15 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació de la recta tangent a la gràfica de la funció $f(x)$ en el punt d'abscissa $x = 0$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Equació de la recta tangent llegint f(0) i f'(0)."
         },
         {
           "id": "b",
           "enunciat": "Indiqueu les abscisses dels extrems relatius de la funció $f(x)$ i classifiqueu aquests extrems.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -914,6 +944,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         5
       ],
@@ -924,12 +955,14 @@
         {
           "id": "a",
           "enunciat": "Comproveu que els plans $\\pi_1$ i $\\pi_2$ són perpendiculars.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu l'equació contínua de la recta paral·lela als plans $\\pi_1$ i $\\pi_2$ i que passa pel punt $P = (-1, 3, 2)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -989,6 +1022,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         5
       ],
@@ -999,12 +1033,15 @@
         {
           "id": "a",
           "enunciat": "Per a quins valors del paràmetre $a$ el sistema té una sola solució? Quina és aquesta solució única?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema si $a = 2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -1073,6 +1110,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         5
       ],
@@ -1083,12 +1121,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació cartesiana (és a dir, de la forma $Ax + By + Cz + D = 0$) del pla que determinen.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu un punt $S$ pertanyent a la recta $r: \\dfrac{x - 5}{2} = \\dfrac{y - 1}{-1} = \\dfrac{z - 5}{-3}$, de manera que el tetraedre de vèrtexs $P$, $Q$, $R$ i $S$ tingui un volum igual a $1/2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1155,6 +1195,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         6
       ],
@@ -1165,12 +1206,15 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació de la recta tangent a la gràfica de $f(x)$ en el punt d'abscissa igual a 10.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Càlcul de la derivada i equació de la recta tangent."
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'àrea del recinte limitat per la gràfica de $f(x)$, la recta d'equació $x = 5$ i l'eix $OX$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1229,6 +1273,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -1239,12 +1284,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació del pla format per tots els punts que equidisten de $A$ i $B$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Donat un punt $C = (x, y, z)$, dividim el segment $\\overline{AC}$ en tres parts iguals i obtenim els punts $A$, $A_1$, $B$ i $C$. Trobeu el punt $C$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1305,6 +1352,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 2,
       "pagines": [
         6
       ],
@@ -1320,12 +1368,16 @@
         {
           "id": "a",
           "enunciat": "Comproveu que l'àrea del triangle es pot expressar de la manera següent: $A(x) = 2x - \\dfrac{x^2}{4}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Geometria analítica al pla: punt d'una recta i àrea d'un triangle."
         },
         {
           "id": "b",
           "enunciat": "Trobeu els vèrtexs $B$ i $C$ perquè l'àrea del triangle sigui màxima i comproveu que es tracta realment d'un màxim.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Funció quadràtica: el màxim és el vèrtex de la paràbola."
         }
       ],
       "solucio": {

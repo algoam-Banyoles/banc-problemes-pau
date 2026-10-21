@@ -36,6 +36,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): camp elèctric uniforme, diferència de potencial",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -51,12 +52,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la intensitat del camp elèctric dins de l'accelerador i dibuixeu com són les línies de camp en aquesta regió.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Un cop els electrons han estat accelerats, se'ls condueix a l'anell de propulsió. Per a guiar els electrons al llarg de l'anell s'utilitzen camps magnètics. En l'esquema es mostra el primer camp magnètic que troben els electrons quan surten de l'accelerador lineal i entren a l'anell de propulsió. Si en aquesta regió no hi ha camp elèctric i el camp magnètic és de $0{,}15\\ \\text{T}$, calculeu la magnitud de la força que actuarà sobre l'electró. Quin tipus de trajectòria descriurà l'electró en aquesta regió? Justifiqueu la resposta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -134,6 +137,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): satèl·lits, òrbita circular",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -144,12 +148,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el període orbital del *CubeCat-1* i indiqueu el nombre de voltes completes que fa cada dia al voltant de la Terra.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quin és el pes del nanosatèl·lit en la seva òrbita?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -221,6 +227,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, oscil·lador massa-molla",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -231,12 +238,14 @@
         {
           "id": "a",
           "enunciat": "Quina és la massa de l'astronauta?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Posteriorment aquest astronauta arriba a la Lluna, on fa oscil·lar un pèndol simple d'$1{,}00\\ \\text{kg}$ de massa i $1{,}50\\ \\text{m}$ de longitud. Aquest pèndol triga 2 min i 1 s a fer 20 oscil·lacions completes. Quina és la intensitat del camp gravitatori a la superfície de la Lluna? Quina és la massa de la Lluna?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -303,6 +312,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, principi de superposició",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -318,12 +328,14 @@
         {
           "id": "a",
           "enunciat": "Quin és el valor de la càrrega puntual $q_0$ situada al quart vèrtex si la força elèctrica sobre la càrrega $q$ és nul·la?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quin treball haurem de fer per a portar una càrrega puntual de $0{,}50\\ \\mu\\text{C}$ des d'una distància molt gran fins al centre del quadrat?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -392,6 +404,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): fusió nuclear, isòtops",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -402,12 +415,14 @@
         {
           "id": "a",
           "enunciat": "A partir de les dades, digueu quants protons i quants neutrons tenen el deuteri, el triti i el ${}^{4}_{2}\\text{He}$. Escriviu l'equació nuclear que correspon a aquest procés de fusió.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'energia que s'allibera en la reacció de fusió anterior.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -474,6 +489,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): camp magnètic d'un fil rectilini, regla de la mà dreta",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -489,12 +505,14 @@
         {
           "id": "a",
           "enunciat": "Representeu el sentit i la direcció del camp magnètic creat pel fil conductor en la regió plana delimitada per l'espira. Aquest camp magnètic és uniforme en la regió delimitada per l'espira? Justifiqueu la resposta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El fil conductor i l'espira no es mouen, però la intensitat del corrent que circula pel conductor varia amb el temps, tal com indica la gràfica (figura *b*). Argumenteu si s'indueix o no corrent en l'espira en els intervals de temps següents: de 0 a 20 s, de 20 a 80 s i de 80 a 120 s. En quin d'aquests tres intervals de temps la intensitat del corrent induït és més gran? Justifiqueu la resposta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -562,6 +580,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, harmònics",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -572,12 +591,14 @@
         {
           "id": "a",
           "enunciat": "Representeu esquemàticament l'ona estacionària d'aquest harmònic i indiqueu-hi tots els nodes i tots els ventres. Calculeu la longitud d'ona. Quina és la distància entre dos nodes consecutius?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Suposant que la corda està en posició horitzontal, calculeu, per a un ventre, el temps que triga la posició vertical a passar del seu valor màxim al valor mínim (del punt més alt al punt més baix).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -648,6 +669,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, energia del fotó",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -658,12 +680,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'energia dels fotons incidents i el treball d'extracció (o funció de treball) d'aquest metall.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "A partir del balanç d'energia de l'efecte fotoelèctric, trobeu l'expressió de la velocitat màxima dels fotoelectrons emesos en funció de la massa dels electrons ($m$), la constant de Planck, la velocitat de la llum, la longitud d'ona de la llum incident i el treball d'extracció ($W_e$).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

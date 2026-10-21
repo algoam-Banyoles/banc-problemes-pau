@@ -33,6 +33,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Triangle amb incentre, bisectrius i arc capaç: llocs geomètrics (DT I).",
+      "apartats_1r": 3,
       "pagines": [
         5
       ],
@@ -48,17 +49,20 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu un triangle rectangle de manera que tingui la hipotenusa sobre la recta $R$, un catet sobre la recta $S$ i que la seva circumferència inscrita sigui tangent a la recta $R$ en el punt $T$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu la circumferència circumscrita al triangle de l'apartat anterior.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Determineu el valor real de la hipotenusa en metres tenint en compte que el dibuix està fet a escala 1:25, i escriviu-lo en la casella situada a la part inferior de la pàgina.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -221,6 +225,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Vertadera magnitud d'una figura plana per abatiment (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -236,12 +241,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un hexàgon regular que tingui el centre en el punt $c$-$c'$ i un dels costats sobre la recta $r$-$r'$.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real d'un costat de l'hexàgon en veritable magnitud, tenint en compte que el dibuix està fet a escala 1:250, i escriviu-lo en la casella situada a la part inferior de la pàgina.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Escales numèriques: mesurar el segment i aplicar l'escala (DT I)."
         }
       ],
       "solucio": {

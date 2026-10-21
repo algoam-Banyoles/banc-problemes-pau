@@ -561,6 +561,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita calor sensible, poder calorífic i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         4,
         5
@@ -572,22 +573,26 @@
         {
           "id": "a",
           "enunciat": "(2.1) L'energia necessària per a escalfar l'aigua des de $T_\\text{i}$ fins a $T_\\text{f}$, $E_\\text{aigua}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "(2.2) La potència que proporciona el cremador, $P_\\text{crem}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "(2.3) El temps d'escalfament que seria necessari si tota l'energia del combustible s'aprofités íntegrament, $t_\\text{ideal}$, i el rendiment real del procés d'escalfament, $\\eta$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "(2.4) La massa de propà consumida en l'assaig, $m_\\text{propà}$, i el cost econòmic del propà consumit, $p_\\text{total}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -673,6 +678,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         6,
         7
@@ -684,17 +690,20 @@
         {
           "id": "a",
           "enunciat": "(3.1) La relació de reducció real necessària $i_\\text{nec} = n_\\text{entrada}/n_\\text{sortida}$ i el reductor que cal escollir.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "(3.2) La velocitat final de l'eix que s'obtindrà amb el reductor escollit, $n_\\text{real}$, i la velocitat d'avanç del paper, $v_\\text{real}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "(3.3) L'error percentual respecte al valor desitjat, $\\Delta$. Justifiqueu si l'elecció compleix les recomanacions del fabricant.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -780,6 +789,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Grup electrogen: només rendiments, consum i parell, sense teoria de CA (1r).",
+      "apartats_1r": 4,
       "pagines": [
         8,
         9
@@ -796,22 +806,26 @@
         {
           "id": "a",
           "enunciat": "(4.1) La potència mecànica a l'eix, $P_\\text{mec}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "(4.2) El parell a l'eix, $\\Gamma$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "(4.3) El consum de combustible, $q$, en kg/h i l'autonomia del motor amb el dipòsit ple, $t$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "(4.4) L'energia elèctrica total que pot subministrar el grup electrogen amb el dipòsit ple, $E_\\text{elèc}$, en kJ.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {

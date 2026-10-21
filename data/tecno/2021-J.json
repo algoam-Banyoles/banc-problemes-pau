@@ -356,6 +356,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4,
         5
@@ -367,17 +368,20 @@
         {
           "id": "a",
           "enunciat": "Escriviu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -449,6 +453,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 5,
       "pagines": [
         6,
         7
@@ -465,27 +470,32 @@
         {
           "id": "a",
           "enunciat": "El parell a l'eix del motor $\\Gamma_\\text{mot}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El parell a l'eix de sortida del reductor $\\Gamma_\\text{red}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La velocitat de gir de la politja petita $n_\\text{d}$ en $\\text{min}^{-1}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La velocitat de gir del bombo $n_\\text{bombo}$ en $\\text{min}^{-1}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "e",
           "enunciat": "El parell a l'eix del bombo $\\Gamma_\\text{bombo}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -579,6 +589,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 5,
       "pagines": [
         8,
         9
@@ -590,27 +601,32 @@
         {
           "id": "a",
           "enunciat": "L'energia total consumida $E_\\text{cons}$ en un any a l'edifici municipal.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència $P_\\text{foto}$ que ha de subministrar la instal·lació fotovoltaica.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El rendiment de la placa $\\eta_\\text{placa}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El nombre mínim de plaques fotovoltaiques $n_\\text{p}$ necessari suposant condicions normals.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "e",
           "enunciat": "Les emissions de gasos amb efecte d'hivernacle ($\\text{CO}_2$) que s'evitaria emetre a l'atmosfera durant un any $\\Delta m$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -701,6 +717,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         10,
         11
@@ -717,17 +734,20 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure de la barra OP.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu: la força $F_\\text{QS}$ a la qual està sotmesa la barra QS. A quin tipus d'esforç està sotmesa aquesta barra?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Les forces horitzontal $F_\\text{H}$ i vertical $F_\\text{V}$ a l'articulació O.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -806,6 +826,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Grup electrogen: només rendiments, consum i parell, sense teoria de CA (1r).",
+      "apartats_1r": 4,
       "pagines": [
         12,
         13
@@ -817,22 +838,26 @@
         {
           "id": "a",
           "enunciat": "El rendiment de l'alternador $\\eta_\\text{alt}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El consum del motor dièsel $c_\\text{gasoil}$ en g/h.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El rendiment del motor $\\eta_\\text{mot}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La potència total dissipada $P_\\text{diss}$ pel conjunt.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {

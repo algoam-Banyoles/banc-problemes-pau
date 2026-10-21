@@ -35,6 +35,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -45,12 +46,15 @@
         {
           "id": "a",
           "enunciat": "Estudieu per a quins valors del paràmetre $\\lambda$ el sistema és incompatible.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema per al cas $\\lambda = 1$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -121,6 +125,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -131,12 +136,14 @@
         {
           "id": "a",
           "enunciat": "Determineu l'equació general (és a dir, la que té la forma $Ax + By + Cz = D$) del pla que passa per l'origen de coordenades i és perpendicular als plans $\\pi_1$ i $\\pi_2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'angle que formen els plans $\\pi_1$ i $\\pi_2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -205,6 +212,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Màxims i mínims relatius amb la derivada segona, que són de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -215,12 +223,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu el domini i les asímptotes de la funció.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Domini i asímptotes amb límits immediats."
         },
         {
           "id": "b",
           "enunciat": "Calculeu els punts amb un màxim o un mínim relatiu.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -292,6 +303,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Condició de solució única amb determinant i regla de Cramer amb paràmetre, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -302,12 +314,14 @@
         {
           "id": "a",
           "enunciat": "Comproveu que $a \\neq 0$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu la solució del sistema en funció del paràmetre $a$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -371,6 +385,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -381,12 +396,14 @@
         {
           "id": "a",
           "enunciat": "Comproveu que la matriu $M$ és sempre invertible, independentment dels valors de $x$ i de $y$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Per a $x = 1$ i $y = -1$, calculeu $M^{-1}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -448,6 +465,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -463,12 +481,15 @@
         {
           "id": "a",
           "enunciat": "Comproveu que $a^2 = \\dfrac{360}{\\pi}\\cdot\\dfrac{1}{h} + h^2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Modelització amb una funció (geometria plana, Pitàgores, àrees i volums)."
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'altura del con que té l'aresta de longitud mínima.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -533,6 +554,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -543,12 +565,14 @@
         {
           "id": "a",
           "enunciat": "Comproveu que són paral·leles.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'equació vectorial del pla que les conté.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -617,6 +641,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         3
       ],
@@ -627,12 +652,15 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors de $k$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema per al cas $k = -2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -699,6 +727,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         3
       ],
@@ -709,12 +738,15 @@
         {
           "id": "a",
           "enunciat": "Comproveu que la recta tangent a la corba $y = x^2$ en el punt d'abscissa $x = 2$ és la recta $y = 4x - 4$ i calculeu els punts d'intersecció d'aquesta recta amb els eixos de coordenades.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Recta tangent i talls amb els eixos."
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'àrea limitada per la corba de l'apartat anterior, la recta tangent en $x = 2$ i l'eix de les abscisses.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -778,6 +810,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -788,12 +821,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu les potències $A^2$, $A^3$ i $A^6$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la inversa de la matriu $A^5$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -860,6 +895,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -870,12 +906,14 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema segons els valors del paràmetre $a$, i interpreteu el resultat geomètricament.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Per a $a = 1$ trobeu la forma paramètrica del pla solució i doneu un punt i dos vectors directors d'aquest pla.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -946,6 +984,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 2,
       "pagines": [
         4
       ],
@@ -961,12 +1000,16 @@
         {
           "id": "a",
           "enunciat": "Expresseu l'àrea del rectangle en funció de la longitud $x$ del segment $AB$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Equació d'una recta al pla i àrea d'un rectangle."
         },
         {
           "id": "b",
           "enunciat": "Determineu les dimensions del rectangle si volem que tingui una superfície màxima i calculeu aquesta superfície màxima.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Funció quadràtica: el màxim és el vèrtex de la paràbola."
         }
       ],
       "solucio": {

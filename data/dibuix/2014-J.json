@@ -107,6 +107,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Tangències amb un punt de tangència donat, resoltes per reducció a punt, mediatrius i bisectrius; no cal potència (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         7
       ],
@@ -122,12 +123,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu la circumferència tangent a l'arc de circumferència de centre *C* que passi pel punt *P* i sigui tangent a la recta *R*. Deixeu constància del procés gràfic seguit.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Indiqueu, amb precisió, el punt de tangència.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -197,6 +200,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Piràmide o prisma en dièdric amb la base en un pla inclinat, per abatiment o canvi de pla (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -212,17 +216,21 @@
         {
           "id": "a",
           "enunciat": "Determineu en projecció horitzontal i vertical l'octògon regular que té el segment horitzontal *ab-a′b′* com un dels costats i el punt *c-c′* com un dels vèrtexs del costat paral·lel al costat *ab-a′b′*.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'una piràmide regular de manera que la base sigui l'octògon i el vèrtex, situat per sobre del pla de l'octògon, disti 5 cm d'aquest pla.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Determineu gràficament la visibilitat del conjunt.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -313,6 +321,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) amb canvi de pla.",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -328,12 +337,15 @@
         {
           "id": "a",
           "enunciat": "Determineu la projecció horitzontal d'un quadrat que tingui els vèrtexs en els punts *a-a′*, *b-b′*, *c-c′* i *d-d′*.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Paral·lelisme i perpendicularitat en dièdric (angle recte amb una horitzontal)."
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un octaedre regular de manera que els costats del quadrat determinat en l'apartat anterior siguin arestes de l'octaedre. Diferencieu les arestes vistes de les ocultes. [1,5 punts per la projecció horitzontal i 1,5 punts per la projecció vertical]",
-          "punts": 3
+          "punts": 3,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -728,6 +740,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Secció plana d'un prisma en dièdric: sòlids i seccions planes (DT II).",
+      "apartats_1r": 2,
       "pagines": [
         25
       ],
@@ -743,12 +756,16 @@
         {
           "id": "a",
           "enunciat": "Determineu, en projecció vertical, la intersecció del pla determinat pel triangle de vèrtexs *a-a′*, *b-b′* i *c-c′* amb el prisma recte de base hexagonal.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "1r",
+          "curs_motiu": "Intersecció de les arestes verticals del prisma amb el pla del triangle per pertinença (dièdric de 1r)."
         },
         {
           "id": "b",
           "enunciat": "Considerant el triangle opac i el prisma com un sòlid massís limitat pel pla de la base hexagonal i pel pla horitzontal *H-H′*, determineu gràficament la visibilitat del conjunt en totes dues projeccions diferenciant les arestes vistes de les ocultes. [0,5 punts per la projecció horitzontal i 1 punt per la projecció vertical]",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -826,6 +843,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) amb canvi de pla.",
+      "apartats_1r": 1,
       "pagines": [
         27
       ],
@@ -841,12 +859,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical de l'octaedre regular que té el triangle *abc-a′b′c′* com una de les cares i està situat a l'esquerra d'aquesta cara. [2 punts per la projecció horitzontal i 1 punt per la projecció vertical]",
-          "punts": 3
+          "punts": 3,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {

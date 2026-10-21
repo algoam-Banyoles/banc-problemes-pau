@@ -363,6 +363,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -373,17 +374,20 @@
         {
           "id": "a",
           "enunciat": "Escriviu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -460,6 +464,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -470,22 +475,26 @@
         {
           "id": "a",
           "enunciat": "La velocitat angular de les rodes auxiliars $\\omega_\\text{r}$ i la velocitat angular a l'eix del motor $\\omega_\\text{mot}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència a l'eix de les rodes $P_\\text{subm}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El parell $\\Gamma$ a l'eix del motor.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El temps màxim $t$ de funcionament del conjunt i la distància màxima recorreguda $s_\\text{rec}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -570,6 +579,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -580,22 +590,26 @@
         {
           "id": "a",
           "enunciat": "La potència mínima $P_\\text{mín}$ i màxima $P_\\text{màx}$ de l'estufa.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La durada de funcionament màxima d'una bombona $t_\\text{màx}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El gràfic de la durada $t$ d'una bombona en hores, en funció del consum $c$ de butà, i indiqueu-ne les escales.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "Una terrassa de bar té instal·lades $n = 3$ d'aquestes estufes que funcionen durant $t_\\text{bar} = 10$ hores al dia a potència màxima. L'Oficina Catalana del Canvi Climàtic estima un factor d'emissió $FE = 2{,}96\\ \\text{kg}$ de $\\text{CO}_2$ per cada kilogram de gas butà. Determineu: la massa de $\\text{CO}_2$ emesa en un dia de funcionament $m_{\\text{CO}_2}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -681,6 +695,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita estàtica d'estructures i tensió normal o deformació (resistència de materials), que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -696,27 +711,32 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure de la barra BO.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu: La força $T_\\text{AB}$ a la qual està sotmès el tirant.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "La tensió $\\sigma_\\text{AB}$ del tirant.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "Les forces horitzontal $F_\\text{H}$ i vertical $F_\\text{V}$ a l'articulació O.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "e",
           "enunciat": "Què passaria si el diàmetre del cable d'acer fos $d' = 1\\ \\text{mm}$? Justifiqueu breument la resposta.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -801,6 +821,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         4
       ],
@@ -811,22 +832,26 @@
         {
           "id": "a",
           "enunciat": "La resistència $R_1$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La resistència màxima $R_\\text{màx}$ i mínima $R_\\text{mín}$ del circuit elèctric.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La potència màxima que consumeix el calefactor $P_\\text{màx}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "Si el calefactor funciona a potència màxima durant 1 hora al dia, 30 dies al mes, i el preu del kW h consumit és de $p = 0{,}15\\ \\text{EUR/(kW h)}$, determineu: el cost mensual $c$ del consum elèctric.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {

@@ -31,6 +31,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -41,12 +42,15 @@
         {
           "id": "a",
           "enunciat": "Trobeu el valor o els valors de $a$ perquè $V$ sigui linealment dependent.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quan $a = 4$, expresseu el vector $\\vec v = (3, 9, 14)$ com a combinació lineal dels vectors de $V$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Plantejar i resoldre un sistema 3x3 concret per substitució."
         }
       ],
       "solucio": {
@@ -183,6 +187,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -193,12 +198,14 @@
         {
           "id": "a",
           "enunciat": "Comproveu que el vector característic (o normal) de $\\pi$ i el vector director de $r$ són perpendiculars.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Estudieu la posició relativa de $\\pi$ i $r$ en funció del paràmetre $m$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -329,6 +336,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -339,12 +347,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació contínua de la recta que passa per $P$ i és perpendicular a $\\pi$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu el punt del pla $\\pi$ que està més proper al punt $P$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -406,6 +416,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -421,12 +432,15 @@
         {
           "id": "a",
           "enunciat": "Sabent que el volum d'una piràmide és igual a un terç del producte de l'àrea de la base per l'altura, comproveu que, en aquest cas,\n\n$$V(x) = \\frac{x\\sqrt{(9\\times 10^4) - x^4}}{6}$$",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Modelització amb una funció (geometria plana, Pitàgores, àrees i volums)."
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor de $x$ perquè el volum sigui el més gran possible (no cal que comproveu que el valor obtingut correspon realment a un màxim).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

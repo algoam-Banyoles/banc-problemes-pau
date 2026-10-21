@@ -344,6 +344,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4,
         5
@@ -355,17 +356,20 @@
         {
           "id": "a",
           "enunciat": "Escriviu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -436,6 +440,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita tensió, deformació o mòdul de Young (resistència de materials i assaig de tracció), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         6,
         7
@@ -447,22 +452,26 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama tensió-deformació.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el mòdul d'elasticitat $E$ del material.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Determineu la força $F$ que cal aplicar per a sotmetre la proveta a una tensió $\\sigma_F = 200\\ \\text{MPa}$. Quin increment de longitud $\\Delta L$ experimentarà la proveta?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "Si se sotmet la proveta a una tensió de $300\\ \\text{MPa}$, recuperarà la longitud inicial?",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -545,6 +554,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita potència, parell, consum i rendiment global del motor, sense cicle tèrmic: 1r.",
+      "apartats_1r": 4,
       "pagines": [
         8,
         9
@@ -556,22 +566,26 @@
         {
           "id": "a",
           "enunciat": "La potència consumida pel motor $P_\\text{cons}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El rendiment del motor $\\eta$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La velocitat del punt extrem de la pala de l'hèlice.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "Les emissions de gasos amb efecte d'hivernacle ($\\text{CO}_2$) $m_{\\text{CO}_2}$ que emetrà en $t = 20\\ \\text{min}$ de funcionament.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -652,6 +666,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         10,
         11
@@ -668,22 +683,27 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure de la porta.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu l'expressió de la coordenada $h$ en funció de $x$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Teorema de Pitàgores (geometria de 1r)."
         },
         {
           "id": "c",
           "enunciat": "La força $F$ que cal fer per a mantenir la porta oberta (en repòs en una posició genèrica $x$).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "Les forces normals a cadascuna de les guies.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -764,6 +784,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         12,
         13
@@ -775,17 +796,20 @@
         {
           "id": "a",
           "enunciat": "El consum anual d'energia de l'enllumenat públic $E_\\text{VSAP}$ i els diners anuals que l'Ajuntament paga a la companyia elèctrica $c_\\text{VSAP}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El nou consum elèctric $E_\\text{led}$ i els diners que anualment s'estalviaria $c_\\text{estalvi}$ l'Ajuntament.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El cost total de la inversió $c_\\text{inv}$. En quants anys $\\Delta t$ es recuperaria la inversió feta?",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {

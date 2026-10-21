@@ -31,6 +31,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): longitud d'ona, velocitat del so",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -41,12 +42,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu les longituds d'ona dels sons més greus i més aguts que Mercury podia emetre.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "L'any 1985, Queen va actuar al festival Rock in Rio, en un concert que va aplegar unes $350\\,000$ persones. En un moment de molta emoció, els assistents van començar a cantar *a cappella* la famosa cançó *Love of my life*. Si cada assistent al concert cantava amb una potència de $10^{-7}\\ \\text{W}$, quin nivell d'intensitat sonora (en decibels) es podia percebre a $1\\ \\text{km}$ del concert? (A aquesta distància, podeu considerar que el concert és una font puntual de so.)",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -116,6 +119,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): intensitat de corrent, càrrega elèctrica",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -126,12 +130,14 @@
         {
           "id": "a",
           "enunciat": "Quina és la càrrega elèctrica total que ha transportat aquest llamp? Quin és el camp magnètic que crea aquest corrent a una distància de $100\\ \\text{m}$?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quina força magnètica actua sobre una partícula carregada que es troba en repòs a aquesta mateixa distància? Justifiqueu la resposta.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -192,6 +198,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Lleis de Kepler en una òrbita el·líptica i energia mecànica orbital (2n)",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -207,12 +214,14 @@
         {
           "id": "a",
           "enunciat": "Observeu a la gràfica els moments de màxim acostament al Sol de cada òrbita i determineu quantes voltes completes ha fet la nau al voltant del Sol en aquests $1\\,000$ dies. Quant mesura l'eix major de l'òrbita entre els moments A i C? (Doneu el resultat en radis solars.)",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Representeu esquemàticament el Sol i l'òrbita de la nau entre els moments A i C. Indiqueu sobre el dibuix les posicions corresponents a A, B i C. Situeu la nau en la posició B i dibuixeu en aquest instant els vectors velocitat i acceleració de la nau (no cal calcular-ne els mòduls). En quina posició la velocitat de la nau és màxima? Justifiqueu la resposta i indiqueu el principi físic en què us baseu.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -282,6 +291,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, equilibri de forces",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -297,12 +307,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el mòdul de la força elèctrica entre les esferes i el valor de les seves càrregues elèctriques.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si retiréssim la càrrega positiva, quin camp hauríem de crear al voltant de la càrrega negativa perquè aquesta última no canviés de posició? Indiqueu-ne el mòdul i representeu esquemàticament la direcció i el sentit que tindria. Com hauria de ser aquest camp si, en lloc de retirar la càrrega positiva, retiréssim la càrrega negativa?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -378,6 +390,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, carboni 14",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -388,12 +401,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu la reacció que correspon al decaïment del $^{14}\\text{C}$ a $^{14}\\text{N}$. Incloeu-hi, si escau, els antineutrins.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si una mostra d'una fusta utilitzada en un sarcòfag presenta una proporció de $^{14}_{\\ 6}\\text{C}$ de només el 58 % respecte a la proporció que hi ha a l'atmosfera, trobeu quina és l'antiguitat del sarcòfag.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -457,6 +472,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Massa de la Lluna amb la gravitació universal i període orbital (2n); la caiguda lliure (MRUA) és de 1r",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -467,12 +483,14 @@
         {
           "id": "a",
           "enunciat": "A partir de l'experiment de David Scott, calculeu la intensitat del camp gravitatori a la superfície de la Lluna i la massa de la Lluna.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el període orbital de la Lluna al voltant de la Terra.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -536,6 +554,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, principi de superposició",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -546,12 +565,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el camp elèctric (mòdul, direcció i sentit) en un punt a $3{,}0\\ \\text{cm}$ de la càrrega negativa i a $7{,}0\\ \\text{cm}$ de la càrrega positiva. Aquest punt pertany a la línia que uneix les dues càrregues.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu en quin punt de la línia que uneix les càrregues el potencial elèctric és nul.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -621,6 +642,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, funció de treball",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -631,12 +653,14 @@
         {
           "id": "a",
           "enunciat": "Quina freqüència i quina energia (en eV) tenen els fotons incidents en cada cas?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Representeu en una gràfica l'energia cinètica màxima dels electrons arrencats del fotocàtode en funció de l'energia dels fotons incidents (en eV). Hi ha electrons arrencats en tots els casos? Justifiqueu la resposta.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {

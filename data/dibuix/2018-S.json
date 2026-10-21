@@ -30,6 +30,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Polígons regulars inscrits i circumscrits amb escales (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         5
       ],
@@ -45,12 +46,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu un pentàgon regular igual al definit pels vèrtexs *ABCDE*, de manera que una de les apotemes tingui un extrem sobre la recta *R* i l'altre extrem sobre la recta *S*, i que aquesta apotema sigui perpendicular a la recta *R*. Deixeu constància del procés gràfic seguit.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real de l'apotema del polígon, tenint en compte que el dibuix està a escala 1:75, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -124,6 +127,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Tangents a dues rectes amb el punt sobre una d'elles: perpendicular i bisectrius (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         7
       ],
@@ -139,12 +143,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les circumferències tangents a les rectes *R* i *S* que passen pel punt *P*. Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, els punts de tangència.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment *S*, tenint en compte que el dibuix està a escala 1:25, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -213,6 +219,7 @@
       "dificultat": 3,
       "curs": "1r",
       "curs_motiu": "Intersecció de dos plans i visibilitat amb una vista de perfil: dièdric directe (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         9
       ],
@@ -228,12 +235,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions de la línia d'intersecció dels plans que determinen el triangle *abc-a′b′c′* i el rectangle *1234-1′2′3′4′*.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu en projecció horitzontal i vertical la visibilitat del conjunt format pel triangle i el rectangle, considerant que tots dos polígons són opacs.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -311,6 +320,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) amb abatiment del pla vertical.",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -326,17 +336,21 @@
         {
           "id": "a",
           "enunciat": "Determineu les projeccions del quadrat que està contingut en un pla vertical i que té el segment *ab-a′b′* com una de les diagonals.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un octaedre, de manera que els costats del quadrat determinat en l'apartat anterior siguin arestes del poliedre.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {

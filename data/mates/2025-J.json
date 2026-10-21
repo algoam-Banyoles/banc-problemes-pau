@@ -34,6 +34,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Talls, asímptotes d'una funció racional (divisió) i rectes tangents, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         2,
         3
@@ -45,17 +46,20 @@
         {
           "id": "a",
           "enunciat": "Determineu els talls de la corba $y = f(x)$ amb els eixos de coordenades, i les equacions de les seves possibles asímptotes verticals, horitzontals i obliqües.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Calculeu les equacions de les rectes tangents a la corba $y = f(x)$ en els punts $x = 0$ i $x = 2$. Aquestes dues rectes són paral·leles? Justifiqueu la resposta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Hi ha algun punt on la recta tangent a $f(x)$ tingui pendent 1? En cas afirmatiu, trobeu-lo.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -142,6 +146,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 2,
       "pagines": [
         4,
         5
@@ -153,17 +158,22 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $p$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema per al cas $p = -1$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         },
         {
           "id": "c",
           "enunciat": "Per al cas $p = -1$, hi ha alguna solució que compleixi, a més, $xy = 10$? En cas afirmatiu, indiqueu quantes n'hi ha i trobeu-les totes.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "1r",
+          "curs_motiu": "Substitució de la solució general i equació de segon grau."
         }
       ],
       "solucio": {
@@ -249,6 +259,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Probabilitat total, distribució binomial i màxim amb derivades, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         6,
         7
@@ -260,17 +271,20 @@
         {
           "id": "a",
           "enunciat": "Si agafem una peça a l'atzar, quina és la probabilitat que sigui defectuosa?",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "L'empresa aviat diversificarà la producció i començarà a produir també peces de titani, que es vendran en paquets de 5. Si la probabilitat que una peça de titani sigui defectuosa és un valor desconegut $p$, i cada peça és defectuosa independentment de les altres, comproveu que l'expressió que ens dona la probabilitat que en un paquet de 5 peces n'hi hagi exactament 4 de defectuoses (en funció de $p$) és $f(p) = 5(p^4 - p^5)$.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Considereu la funció $f(p)$ de l'apartat anterior. Determineu el valor màxim que pren $f(p)$ quan $p \\geq 0$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -424,6 +438,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -434,12 +449,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació del pla $\\pi'$ que és perpendicular a $\\pi$ i conté els punts $P = (1, -1, 2)$ i $Q = (3, -3, 6)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'equació paramètrica de la recta continguda en $\\pi'$ i que conté els punts de $\\pi'$ a la mateixa distància de $P$ que de $Q$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

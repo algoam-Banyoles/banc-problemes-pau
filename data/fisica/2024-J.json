@@ -34,6 +34,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): velocitat orbital, període orbital",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -44,12 +45,14 @@
         {
           "id": "a",
           "enunciat": "Considereu un satèl·lit que fa una òrbita circular al voltant de Mercuri. Deduïu l'expressió de la velocitat orbital del satèl·lit en funció del radi orbital i la massa de Mercuri (indiqueu clarament en quins principis o lleis físiques us baseu per fer la vostra deducció). Amb aquesta expressió, calculeu la velocitat orbital del satèl·lit MPO mentre orbita al voltant de Mercuri. Calculeu quantes voltes haurà fet al planeta al cap d'un any terrestre.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "A partir de l'expressió general de l'energia mecànica, obtingueu la seva equació per al cas particular d'un satèl·lit en òrbita circular (cal que l'equació final només estigui expressada en funció de $G$, el radi orbital i les masses del satèl·lit i del planeta). Una vegada el satèl·lit MPO estigui orbitant al voltant de Mercuri, encara tindrà combustible per a poder fer maniobres. Considereu que el combustible disponible pot proporcionar una energia de $4{,}5 \\times 10^{9}\\ \\text{J}$. Determineu el valor màxim que podria tenir la massa del MPO per tal que amb l'energia disponible pogués escapar del camp gravitatori de Mercuri.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -126,6 +129,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "MHS i energia de l'oscil·lador (2n); el moviment circular del disc és de 1r",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -141,12 +145,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu l'equació de la posició vertical de les ombres respecte al temps. Trobeu la constant elàstica de la molla i l'energia mecànica del moviment harmònic simple.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'equació de la velocitat i l'energia cinètica respecte al temps de la massa que penja de la molla. Representeu en la quadrícula adjunta l'energia mecànica, l'energia potencial i l'energia cinètica en funció de la posició vertical per a la massa que penja de la molla (quadrícula amb eixos $E\\ (\\text{J})$ i $y\\ (\\text{m})$).",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -226,6 +232,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, llei de coulomb",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -236,12 +243,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu l'esfera terrestre i representeu-hi el camp elèctric al voltant de la superfície. Calculeu el valor de la càrrega total que produeix aquest camp elèctric. Per fer-ho, considereu que el camp elèctric creat per una superfície esfèrica carregada uniformement és igual al generat per tota la càrrega situada al centre de l'esfera.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el mòdul de la força elèctrica que produirà el camp elèctric sobre un electró lliure situat a la vora de la superfície de la Terra. Calculeu la massa que ha de tenir una gota esfèrica d'aigua amb una càrrega extra d'un sol electró perquè el seu pes es compensi amb la força elèctrica. Feu un esquema en què es mostrin les forces que actuen sobre la gota. Calculeu el diàmetre d'aquesta gota d'aigua.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -310,6 +319,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): camp magnètic d'un fil, regla de la mà dreta",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -320,12 +330,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el camp magnètic màxim que pot crear el parallamps a una distància de $10\\ \\text{cm}$. Feu un dibuix esquemàtic del parallamps indicant el sentit del moviment dels electrons, la intensitat de corrent i tres línies de camp magnètic. Justifiqueu el sentit de les línies de camp.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Representeu gràficament, en la quadrícula de sota, el mòdul d'aquest camp magnètic màxim en funció de la distància $r$ al parallamps en l'interval següent: $10\\ \\text{cm} \\le r \\le 50\\ \\text{cm}$. Suposem que hi ha un electró que en el moment de la descàrrega es troba a $10\\ \\text{cm}$ del parallamps i que té una velocitat de $10^{3}\\ \\text{m/s}$ paral·lela al parallamps i cap a terra. Calculeu el mòdul de la força que crea el camp magnètic sobre l'electró i justifiqueu-ne la direcció i el sentit.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -393,6 +405,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): nivell d'intensitat sonora, intensitat sonora",
+      "apartats_1r": 0,
       "pagines": [
         10
       ],
@@ -403,12 +416,14 @@
         {
           "id": "a",
           "enunciat": "Quina potència sonora emet el coet en el moment de l'explosió? Si l'explosió ha durat $0{,}03\\ \\text{s}$, quina energia sonora s'ha alliberat?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Des de la mateixa distància al punt de llançament, enregistra 90 decibels d'intensitat sonora en el cas d'un coet igual a l'anterior que s'ha enlairat verticalment i ha explotat a certa altura. Calculeu a quina altura ha explotat el coet. Si dos coets idèntics a l'anterior exploten simultàniament a la mateixa altura que abans, quin nivell d'intensitat sonora percebrà l'Ainhoa, si està situada a la mateixa posició d'abans?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -482,6 +497,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, activitat radioactiva",
+      "apartats_1r": 0,
       "pagines": [
         12
       ],
@@ -497,12 +513,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu la desintegració del Po-210. Si l'activitat inicial per unitat de massa del Po-210 és d'$1{,}66 \\times 10^{14}\\ \\text{Bq/g}$, quina serà l'activitat de $5\\ \\text{mg}$ d'aquest element al cap d'una setmana?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Els nuclis d'heli que es produeixen en les desintegracions alfa no triguen a captar dos electrons. Suposem que es forma un àtom d'heli en dos passos ben diferenciats. Primerament, es transporta des d'una distància molt gran un primer electró a $0{,}6 \\times 10^{-10}\\ \\text{m}$ de la partícula alfa i es manté allà. Posteriorment, un segon electró es porta a l'altra banda de la partícula alfa a $0{,}6 \\times 10^{-10}\\ \\text{m}$. La configuració final es mostra en la figura.\n\nCalculeu el treball realitzat pel camp elèctric en cada un dels dos passos. Quina és l'energia potencial electroestàtica de la configuració final?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -584,6 +602,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, treball d'extracció",
+      "apartats_1r": 0,
       "pagines": [
         14
       ],
@@ -594,12 +613,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el treball d'extracció del metall. Determineu el potencial de frenada si il·luminem el metall amb llum de $300\\ \\text{nm}$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu l'expressió de la velocitat dels electrons en funció de la longitud d'ona incident per a aquest metall. Calculeu la velocitat dels electrons per a una longitud d'ona incident de $500\\ \\text{nm}$ i la longitud d'ona de De Broglie associada a aquests electrons.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {

@@ -129,6 +129,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Cas PPC on la mediatriu passa pel centre donat: es resol sense centre radical (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         7
       ],
@@ -144,12 +145,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu totes les circumferències que són tangents a la circumferència de centre $C$ i que passen pels punts $P$ i $Q$. Deixeu constància del procés gràfic seguit i indiqueu els punts de tangència.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment $PQ$ tenint en compte que el dibuix està fet a escala 1:750, i escriviu-lo en la casella situada a la part inferior de la pàgina.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -222,6 +225,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) amb canvi de pla.",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -237,12 +241,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un octaedre regular tenint en compte que els vèrtexs del quadrat $abcd$-$a'b'c'd'$ són també vèrtexs de l'octaedre.",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la visibilitat de l'octaedre en les dues projeccions considerant-lo com un sòlid i diferenciant les línies vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -320,6 +327,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Piràmide tallada per un pla de cantell, VM d'arestes i desenvolupament (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -335,12 +343,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'una piràmide regular de base quadrada sabent que el seu eix està sobre la recta $m$-$m'$, que el punt $v$-$v'$ és el seu vèrtex i que el segment $ab$-$a'b'$ és un dels costats de la base.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r",
+          "curs_motiu": "Eix frontal: base en un pla de cantell perpendicular a l'eix (perpendicularitat i paral·lelisme en dièdric, sense abatiments)."
         },
         {
           "id": "b",
           "enunciat": "Construïu el desenvolupament lateral de la punta de la piràmide compresa entre el vèrtex $v$-$v'$ i el pla de cantell $P'$, iniciant-lo de manera que els punts $abv$-$a'b'v'$ es corresponguin amb els punts $a''b''v''$. Continueu el desenvolupament cap a la dreta.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

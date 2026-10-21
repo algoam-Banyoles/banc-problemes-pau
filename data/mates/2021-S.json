@@ -36,6 +36,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2,
         3
@@ -47,12 +48,14 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $k$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu, si és possible, el sistema per al cas $k = 1$, i feu-ne una interpretació geomètrica.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -134,6 +137,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4,
         5
@@ -145,12 +149,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació de la recta tangent a $y = f(x)$ en el punt d'abscissa $x = 1$. Trobeu també l'equació de la recta normal a $y = f(x)$ en aquest mateix punt.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Rectes tangent i normal en un punt."
         },
         {
           "id": "b",
           "enunciat": "Feu un esbós de les gràfiques de la corba $y = f(x)$ i de la recta $4x + y = 8$, i calculeu l'àrea delimitada per aquestes dues gràfiques, l'eix de les abscisses i la recta vertical $x = 3$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -227,6 +234,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         6,
         7
@@ -238,12 +246,14 @@
         {
           "id": "a",
           "enunciat": "Per a quin valor de $t$ els quatre punts són coplanaris?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu el valor de $t$ per tal que el tetraedre (irregular) que formen els quatre punts tingui un volum de $5\\ u^3$.\n\n*Nota:* El volum d'un tetraedre definit pels vectors $\\vec v_1$, $\\vec v_2$ i $\\vec v_3$ és igual a un sisè del valor absolut del determinant de la matriu formada per tots tres vectors, $V = \\dfrac{1}{6}\\left|\\det(\\vec v_1, \\vec v_2, \\vec v_3)\\right|$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -311,6 +321,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Monotonia a partir de la gràfica i punt d'inflexió amb f'', que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         8,
         9
@@ -327,12 +338,14 @@
         {
           "id": "a",
           "enunciat": "En la figura es mostra la gràfica de la funció $f(x)$. Representeu de manera esquemàtica la gràfica de la funció derivada de $f(x)$. Expliqueu el raonament que heu seguit.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu els valors de $a$ i $b$ perquè la funció $g(x) = ax^3 + bx^2 + 1$ tingui un punt d'inflexió en $x = \\dfrac{1}{2}$ i la seva derivada en aquest punt sigui $\\dfrac{-3}{2}$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -401,6 +414,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         10,
         11
@@ -412,12 +426,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu per a quins valors de $a$ la matriu $A$ és invertible.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Comproveu que, per al cas $a = 3$, la matriu $A$ és invertible i resoleu l'equació matricial $AX = B - 3I$, en què $B$ és la matriu $B = \\begin{pmatrix} 6 & 3 & 3 \\\\ 2 & 5 & 2 \\\\ 1 & 1 & 4 \\end{pmatrix}$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -505,6 +521,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Punts crítics, monotonia i teorema de Bolzano, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         12,
         13
@@ -516,12 +533,14 @@
         {
           "id": "a",
           "enunciat": "Estudieu si té punts crítics i, en cas que en tingui, justifiqueu de quin tipus són. Determineu també quins són els intervals de creixement i decreixement de la funció.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Comproveu que l'equació $f(x) = 0$ té una única solució en l'interval $(-2, 1)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

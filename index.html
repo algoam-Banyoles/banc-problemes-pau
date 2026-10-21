@@ -149,6 +149,7 @@ article.prob.review { border-left: 5px solid var(--review); }
 .meta .curs { border-radius: 6px; padding: 2px 8px; font-weight: 600; border: 1px solid currentColor; cursor: help; }
 .meta .curs.c1r { color: var(--ok); }
 .meta .curs.c2n { color: var(--review); }
+.ap1r { font-family: var(--font-mono); font-size: 0.7rem; color: var(--ok); border: 1px solid var(--ok); border-radius: 5px; padding: 0 5px; margin-left: 4px; cursor: help; white-space: nowrap; }
 article.prob h2 {
   font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; line-height: 1.25; margin: 8px 0 12px; text-wrap: balance;
 }
@@ -362,7 +363,8 @@ const PROBS = DB.problemes.map((p) => {
   const hay = [p.titol, p.enunciat, (p.conceptes || []).join(" "), temaNom(e.assignatura, p.tema), ...(p.temes_secundaris || []).map((t) => temaNom(e.assignatura, t)),
     ...(p.apartats || []).map((a) => a.enunciat), ...Object.values(p.opcions || {}), e.materia, String(e.any),
     ...((p.solucio || {}).passos || []).map((s) => s.titol + " " + s.cos)].join(" ");
-  return { ...p, ex: e, _hay: norm(hay), _conc: (p.conceptes || []).map((c) => c.toLowerCase()) };
+  return { ...p, ex: e, _hay: norm(hay), _conc: (p.conceptes || []).map((c) => c.toLowerCase()),
+    _curs: p.curs === "1r" ? "1r" : p.apartats_1r > 0 ? "parcial" : p.curs ? "2n" : "" };
 });
 
 // ---------- estat (es recorda en aquest navegador) ----------
@@ -411,7 +413,7 @@ function matches(p, skip) {
   if (skip !== "convs" && F.convs.length && !F.convs.includes(p.ex.convocatoria)) return false;
   if (skip !== "tipus" && F.tipus.length && !F.tipus.includes(p.tipus)) return false;
   if (skip !== "conceptes" && F.conceptes.length && !F.conceptes.every((c) => p._conc.includes(c))) return false;
-  if (skip !== "cursos" && F.cursos.length && !F.cursos.includes(p.curs)) return false;
+  if (skip !== "cursos" && F.cursos.length && !F.cursos.includes(p._curs)) return false;
   if (skip !== "difs" && F.difs.length && !F.difs.includes(String(p.dificultat))) return false;
   if (skip !== "materies" && F.materies.length && !F.materies.includes(p.ex.materia)) return false;
   if (skip !== "estats" && F.estats.length) {
@@ -464,7 +466,7 @@ function renderFilters() {
   moreBtn.textContent = allConc ? "Mostra'n menys" : `Mostra'ls tots (${conc.length})`;
   if (!allConc) conc = [...new Set([...F.conceptes, ...conc.slice(0, 24)])];
   chipGroup(document.getElementById("conceptes"), "conceptes", conc.map((c) => [c, c]), cc);
-  chipGroup(document.getElementById("cursos"), "cursos", [["1r", "Es pot fer a 1r"], ["2n", "Cal 2n"]], countBy("cursos", (p) => p.curs || ""));
+  chipGroup(document.getElementById("cursos"), "cursos", [["1r", "Sencer de 1r"], ["parcial", "Té apartats de 1r"], ["2n", "Tot de 2n"]], countBy("cursos", (p) => p._curs));
   chipGroup(document.getElementById("difs"), "difs", Object.entries(DIFS).map(([k, v]) => [k, "●".repeat(k) + " " + v]), countBy("difs", (p) => String(p.dificultat)));
   chipGroup(document.getElementById("estats"), "estats", [["pending", "Pendents"], ["done", "Fets"], ["review", "Per repassar"]], countBy("estats", (p) => progress[p.id] || "pending"));
   const mats = [...new Set(pool.map((p) => p.ex.materia))].sort();
@@ -536,14 +538,14 @@ function renderCard(p) {
     ? `<div class="opts" role="group" aria-label="Opcions">${Object.entries(p.opcions).map(([k, v]) =>
         `<button type="button" class="opt" data-act="answer" data-v="${esc(k)}"><b>${esc(k)})</b><span class="md">${md(v, true)}</span></button>`).join("")}</div><div class="verdict" data-role="verdict" aria-live="polite"></div>` : "";
   const parts = (p.apartats || []).length
-    ? `<ol class="parts">${p.apartats.map((a) => `<li><span class="pl">${esc(a.id)})</span><div class="md">${md(a.enunciat)}${a.punts ? ` <span class="pts">[${String(a.punts).replace(".", ",")} p]</span>` : ""}</div></li>`).join("")}</ol>` : "";
+    ? `<ol class="parts">${p.apartats.map((a) => `<li><span class="pl">${esc(a.id)})</span><div class="md">${md(a.enunciat)}${a.punts ? ` <span class="pts">[${String(a.punts).replace(".", ",")} p]</span>` : ""}${p.curs === "2n" && a.curs === "1r" ? ` <span class="ap1r" title="${esc(a.curs_motiu || "")}">es pot fer a 1r</span>` : ""}</div></li>`).join("")}</ol>` : "";
   const page = (p.pagines || [])[0];
   return `<article class="prob ${st || ""}" data-id="${esc(p.id)}" id="p-${esc(p.id)}">
     <div class="meta">
       <span>${esc(e.any)} · ${e.convocatoria === "setembre" ? "Setembre" : "Juny"}${e.serie ? " · Sèrie " + esc(e.serie) : ""}</span>
       <span>${probLabel(p)}</span>
       ${p.punts ? `<span>${String(p.punts).replace(".", ",")} punts</span>` : ""}
-      ${p.curs ? `<span class="curs c${esc(p.curs)}" title="${esc(p.curs_motiu || "")}">${esc(p.curs)} batx</span>` : ""}
+      ${p.curs ? `<span class="curs c${esc(p.curs)}" title="${esc(p.curs_motiu || "")}">${esc(p.curs)} batx${p._curs === "parcial" ? ` · ${p.apartats_1r} apt. de 1r` : ""}</span>` : ""}
       <span class="diff" title="Dificultat: ${DIFS[p.dificultat] || ""}">${"●".repeat(p.dificultat || 1)}${"○".repeat(3 - (p.dificultat || 1))}</span>
       ${temes}
     </div>

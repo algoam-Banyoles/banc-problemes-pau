@@ -187,6 +187,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Secció plana d'un sòlid en dièdric per canvi de pla (DT II).",
+      "apartats_1r": 2,
       "pagines": [
         9
       ],
@@ -202,17 +203,22 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un prisma oblic que tingui com a base el quadrat *1234-1′2′3′4′* i les arestes segons la direcció *15-1′5′*, de manera que el prisma quedi limitat entre la base quadrada i la secció que produeix el pla de cantell *P′* que passa pel punt *5-5′*.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Rectes paral·leles en dièdric i intersecció de rectes amb un pla de cantell (DT I)."
         },
         {
           "id": "b",
           "enunciat": "Determineu, en projecció horitzontal i vertical, la intersecció que produeix el pla determinat pels punts *a-a′*, *b-b′*, *c-c′* i *d-d′* amb el prisma.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Determineu gràficament la visibilitat del conjunt en projecció horitzontal i vertical, considerant el prisma com un sòlid i el paral·lelogram *abcd-a′b′c′d′* opac.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -300,6 +306,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) construït amb canvi de pla.",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -315,17 +322,21 @@
         {
           "id": "a",
           "enunciat": "Determineu la projecció vertical del quadrat *abcd-a′b′c′d′*, de manera que el costat més baix sigui el segment *ab-a′b′*.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un tetraedre regular, de manera que el quadrat *abcd-a′b′c′d′* sigui una secció mitjana del tetraedre i que el vèrtex més baix quedi per davant del segment *ab-a′b′*.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -638,6 +649,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Tangències de radi donat per llocs geomètrics (paral·leles i circumferències concèntriques): DT I.",
+      "apartats_1r": 2,
       "pagines": [
         23
       ],
@@ -653,12 +665,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les circumferències de 2 cm de radi tangents a les circumferències de centres $C_1$ i $C_2$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, els punts de tangència.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -728,6 +742,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Secció plana d'un cilindre (el·lipse) amb canvi de pla (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         25
       ],
@@ -743,12 +758,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu la corba d'intersecció que produeix el pla determinat pels punts *a-a′*, *b-b′* i *c-c′* amb el cilindre vertical que té com a base la circumferència donada i 6 cm d'altura.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu gràficament la visibilitat del conjunt en projecció vertical, considerant el cilindre com un sòlid i el triangle *abc-a′b′c′* opac.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -816,6 +834,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Triedre trirectangle per abatiment i poliedre regular en dièdric (DT II).",
+      "apartats_1r": 0,
       "pagines": [
         27
       ],
@@ -831,12 +850,14 @@
         {
           "id": "a",
           "enunciat": "Determineu, en projecció vertical, el triedre trirectangle de vèrtex *v-v′* i arestes situades sobre les rectes *r-r′*, *s-s′* i *t-t′*.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions vertical i horitzontal d'un octaedre regular que tingui el centre en el punt *v-v′* i les diagonals, de 7 cm de llargària, sobre les arestes del triedre. Diferencieu en les dues projeccions les arestes vistes de les ocultes.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

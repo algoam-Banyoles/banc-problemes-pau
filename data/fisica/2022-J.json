@@ -34,6 +34,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): camp gravitatori, moviment circular uniforme",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -44,12 +45,14 @@
         {
           "id": "a",
           "enunciat": "Un satèl·lit descriu una trajectòria circular de radi $R$ al voltant d'una massa central. El temps que triga a donar-hi una volta sencera és $T$. Deduïu l'expressió per a calcular la intensitat del camp gravitatori, $g$, creat per la massa central en els punts de l'òrbita del satèl·lit en funció dels paràmetres $R$ i $T$. Considereu que la Lluna descriu una òrbita circular al voltant de la Terra amb una distància entre centres de $384 \\times 10^{6}\\ \\text{m}$ i amb un període de $27{,}3$ dies. Fent ús només d'aquestes dues dades i de l'expressió trobada anteriorment, calculeu la intensitat del camp gravitatori als punts de l'òrbita de la Lluna.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Deduïu l'expressió de l'energia cinètica mínima necessària perquè un coet de massa $m$ pugui escapar d'un objecte astronòmic de massa $M$ i radi $R$. Quantes vegades més gran és l'energia cinètica mínima perquè el coet pugui escapar de la Terra respecte de l'energia mínima que necessita per a escapar de la Lluna? (Només podeu fer servir les dades donades.)",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -113,6 +116,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): dipol elèctric, línies de camp",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -128,12 +132,14 @@
         {
           "id": "a",
           "enunciat": "Representeu dins del requadre adjunt les línies de camp elèctric creades per un dipol elèctric. Representeu la projecció de les superfícies equipotencials en el pla de la figura. Orientació: per al camp elèctric dibuixeu 12 línies de camp i 3 línies equipotencials per cada càrrega.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El valor de la càrrega és $|Q| = 1{,}50\\ \\mu\\text{C}$, la càrrega positiva està situada a $-5\\,\\vec{\\imath}\\ \\text{cm}$ i la càrrega negativa està situada a $5\\,\\vec{\\imath}\\ \\text{cm}$. Calculeu el camp elèctric creat pel dipol elèctric a l'origen de coordenades i també el valor del potencial elèctric a l'origen de coordenades. Per a les magnituds vectorials podeu donar les components o el mòdul, la direcció i el sentit.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -206,6 +212,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): equació d'ona, nombre d'ona",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -221,12 +228,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la velocitat a la qual es propaga l'ona pel cos de l'anguila, la freqüència angular i el nombre d'ona. Si a l'instant inicial el cap té una elongació zero i la velocitat d'oscil·lació transversal és positiva, determineu l'expressió de l'equació d'ona. Per a l'equació d'ona utilitzeu el sistema de coordenades de la figura superior, on el cap de l'anguila es troba sempre a l'origen de les abscisses.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "A partir de l'equació d'ona, deduïu i calculeu els mòduls de la velocitat i de l'acceleració màximes de l'oscil·lació transversal. Si la longitud total de l'anguila és de $58{,}0\\ \\text{cm}$, calculeu també la velocitat i l'acceleració transversals a la cua $10\\ \\text{s}$ més tard d'haver iniciat el moviment.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -299,6 +308,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): ciclotró, força de Lorentz",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -314,12 +324,14 @@
         {
           "id": "a",
           "enunciat": "Les partícules tenen una càrrega elèctrica positiva $q$ i una massa $m$. Deduïu l'expressió de la velocitat de les partícules en funció del quocient càrrega-massa ($q/m$), del radi $r$ de la trajectòria de les partícules i del mòdul del camp magnètic. Comproveu que el temps de recorregut dins una D no depèn de la velocitat de les partícules. Per què el camp elèctric ha de ser altern? Trobeu l'expressió de la freqüència del camp elèctric.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El ciclotró té un radi de $0{,}50\\ \\text{m}$ i un camp magnètic de $0{,}20\\ \\text{T}$. Quan hi accelerem protons, quina velocitat tenen quan surten del ciclotró? Quina és la longitud d'ona associada a aquests protons? Quin radi mínim hauria de tenir el ciclotró per a considerar que els protons tenen velocitats relativistes (és a dir, un $10\\ \\%$ de la velocitat de la llum)?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -395,6 +407,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, desintegració beta",
+      "apartats_1r": 0,
       "pagines": [
         10
       ],
@@ -414,12 +427,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu les reaccions nuclears que permeten arribar al $^{206}_{82}\\text{Pb}$ a partir del $^{222}_{86}\\text{Rn}$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El gràfic següent correspon a l'evolució dels nuclis d'una de les desintegracions radioactives de la cadena del radó. La mostra estudiada inicialment tenia $8{,}00 \\times 10^{23}$ nuclis. A partir del gràfic, determineu quin és el període de semidesintegració de la mostra, i raoneu a quin nucli de la cadena correspon. Amb aquesta dada calculeu quants dies han de passar fins que s'hagin desintegrat $7{,}95 \\times 10^{23}$ àtoms.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -484,6 +499,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Potencial gravitatori i equipotencials (2n); el treball de la grua (apartat b) és de 1r",
+      "apartats_1r": 1,
       "pagines": [
         12
       ],
@@ -499,12 +515,15 @@
         {
           "id": "a",
           "enunciat": "El valor absolut de la diferència de potencial gravitatori entre la superfície del planeta i un punt elevat $20{,}0\\ \\text{m}$ per sobre de la superfície és $74{,}4\\ \\text{J/kg}$. A partir de la diferència de potencial, determineu el mòdul de la intensitat del camp gravitatori a la superfície de Mart. Quin dels esquemes següents (a, b, c o d) representa les línies equipotencials a la superfície de Mart? Situeu en el diagrama triat la línia de menor potencial ($V_\\text{baix}$) i la de major potencial ($V_\\text{alt}$). Justifiqueu totes les respostes.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si durant aquesta darrera etapa, el vehicle fa un descens de $20{,}0\\ \\text{m}$ a una velocitat constant, quin treball ha fet la grua? Podeu negligir el treball fet per les forces de fregament.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Treball i teorema de l'energia cinètica a velocitat constant (W = −mgd), amb la g de l'apartat a"
         }
       ],
       "solucio": {
@@ -575,6 +594,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, harmònics",
+      "apartats_1r": 0,
       "pagines": [
         13
       ],
@@ -590,12 +610,14 @@
         {
           "id": "a",
           "enunciat": "Quina és la freqüència fonamental d'aquest espectre? Determineu si es tracta d'un oboè o d'un piano, i justifiqueu la resposta. Determineu també la llargària del tub o de la corda.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Un quintet de vent acostuma a estar format per cinc instrumentistes, normalment flauta travessera, oboè, clarinet, trompa i fagot. A l'inici de la interpretació d'una composició tots 5 toquen de forma suau i amb la mateixa intensitat, generant un nivell d'intensitat sonora de $80\\ \\text{dB}$ a un espectador que es troba a una distància d'$1{,}5\\ \\text{m}$. Quina és la potència sonora de cada instrument? Suposeu que aquesta potència es distribueix uniformement per tota l'àrea d'una semiesfera.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -661,6 +683,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, freqüència llindar",
+      "apartats_1r": 0,
       "pagines": [
         14
       ],
@@ -676,12 +699,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el treball d'extracció del càtode. Si il·luminem el càtode amb els diferents punters làser de la taula que hi ha a continuació, justifiqueu amb quins punters làser es produirà l'efecte fotoelèctric. Completeu la taula i representeu gràficament en la quadrícula adjunta l'energia cinètica màxima dels electrons (en eV) en funció de la freqüència dels fotons incidents (en Hz) per a un interval de freqüències entre $3{,}00 \\times 10^{14}\\ \\text{Hz}$ i $7{,}00 \\times 10^{14}\\ \\text{Hz}$.\n\n| Tipus de punter làser | Longitud d'ona (nm) | Freqüència ($\\times 10^{14}$ Hz) | Energia fotó ($\\times 10^{-19}$ J) | $E_c$ electró ($\\times 10^{-19}$ J) | $E_c$ electró (eV) |\n|---|---|---|---|---|---|\n| Làser blau | 460 | | | | |\n| Làser verd | 532 | | | | |\n| Làser infraroig | 1 080 | | | | |",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Il·luminem el càtode amb un làser de freqüència $8{,}00 \\times 10^{14}\\ \\text{Hz}$. Calculeu la velocitat i la longitud d'ona de De Broglie dels electrons arrencats del càtode amb la radiació d'aquest làser.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {

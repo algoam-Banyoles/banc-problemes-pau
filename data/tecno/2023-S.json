@@ -359,6 +359,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4,
         5
@@ -370,17 +371,20 @@
         {
           "id": "a",
           "enunciat": "Elaboreu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -453,6 +457,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         6,
         7
@@ -464,22 +469,26 @@
         {
           "id": "a",
           "enunciat": "La potència consumida per cadascun dels escalfadors $P_\\text{butà}$ i $P_\\text{elèctr}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El cabal de gas butà $q_\\text{butà}$ consumit en kg/h.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El cost econòmic del consum dels dos escalfadors $ce_\\text{butà}$ i $ce_\\text{elèctr}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La petjada de $\\text{CO}_2$ emesa per ambdós escalfadors $m_{\\text{CO}_2\\text{\\_butà}}$ i $m_{\\text{CO}_2\\text{\\_elèctr}}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -567,6 +576,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         8,
         9
@@ -578,17 +588,20 @@
         {
           "id": "a",
           "enunciat": "La capacitat de la bateria $c$ en A h.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Les velocitats d'avanç $v_1$ i $v_2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El temps màxim que la cadira podrà estar en funcionament en cada cas, $t_1$ i $t_2$, i la distància màxima recorreguda, $s_\\text{màx}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -665,6 +678,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         10,
         11
@@ -681,22 +695,27 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure de la barra OBC.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu: La força $T$ a la qual està sotmès el cable.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Les forces vertical $F_\\text{V}$ i horitzontal $F_\\text{H}$ a l'articulació O.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "El parell $\\Gamma$ que hauria de fer el motor per a mantenir la cistella en aquesta configuració.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Parell al tambor a partir de la tensió del cable (Γ = T·r), mecànica de 1r."
         }
       ],
       "solucio": {
@@ -779,6 +798,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita oleohidràulica (cilindre, pressió, cabal) i tensió normal a la tija, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         12,
         13
@@ -790,22 +810,26 @@
         {
           "id": "a",
           "enunciat": "El model més petit que compleix les especificacions.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Amb el cilindre escollit, i sabent que el sistema avança a velocitat constant, determineu: La pressió $p_0$ que haurà de subministrar la bomba.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "La velocitat de la tija, $v_\\text{tija}$, i la potència que desenvolupa el cilindre, $P_\\text{cil}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "La tensió normal a compressió de la tija, $\\sigma$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

@@ -356,6 +356,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4,
         5
@@ -367,17 +368,20 @@
         {
           "id": "a",
           "enunciat": "Elaboreu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu el diagrama de portes lògiques equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -450,6 +454,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         6,
         7
@@ -466,17 +471,20 @@
         {
           "id": "a",
           "enunciat": "La potència elèctrica mitjana $P_\\text{elèctr}$ consumida pel motor reductor.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La velocitat angular de l'eix de sortida del motor reductor $\\omega_\\text{mot}$ i el parell aplicat per aquest al tambor $\\Gamma_\\text{mot}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "L'increment percentual, $Inc$, de la potència elèctrica si es volgués fer pujar la pantalla amb la meitat del temps.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -564,6 +572,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         8,
         9
@@ -575,22 +584,26 @@
         {
           "id": "a",
           "enunciat": "El cost energètic, en €/(kW h), d'utilitzar cadascun dels combustibles, $ce_\\text{pèl}$ i $ce_\\text{gas}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La massa de combustible necessària anualment per a satisfer la demanda energètica amb l'estufa de pèl·lets, $m_\\text{pèl}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El volum de combustible necessari anualment per a satisfer la demanda energètica amb l'estufa de gasoil, $V_\\text{gas}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El temps, $t$, que hauria de transcórrer perquè el cost econòmic associat a les dues estufes s'iguali. Considereu que els preus es mantenen constants.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -674,6 +687,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Necessita estàtica d'estructures i un cilindre hidràulic (pressió), que són de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         10,
         11
@@ -690,22 +704,27 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure de la barra OBC.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu la relació entre les coordenades $\\varphi$ i $\\alpha$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Angles d'un triangle isòsceles (geometria de 1r)."
         },
         {
           "id": "c",
           "enunciat": "Sabent que el cilindre hidràulic manté el sistema en equilibri i que $\\varphi = 30^\\circ$, determineu: La força, $F_\\text{c}$, que fa el cilindre hidràulic.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "Sabent que el cilindre hidràulic manté el sistema en equilibri i que $\\varphi = 30^\\circ$, determineu: La pressió relativa $p_\\text{int}$ a l'interior del cilindre.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -789,6 +808,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Motor de corrent continu (potència, parell, rendiment), que és de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         12,
         13
@@ -800,22 +820,26 @@
         {
           "id": "a",
           "enunciat": "Determineu la relació de transmissió $\\tau = \\omega_\\text{sortida}/\\omega_\\text{entrada}$ del reductor.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu, indicant les escales, la corba característica parell-velocitat del motor i determineu-ne la velocitat de gir màxima, $n_\\text{màx}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "En règim nominal, el motor gira a $n_\\text{mot} = 1\\,000\\ \\text{min}^{-1}$ i té un rendiment $\\eta = 0{,}55$. Per a aquesta situació, determineu: La intensitat $I$ que circula pel motor.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "En règim nominal ($n_\\text{mot} = 1\\,000\\ \\text{min}^{-1}$), determineu: La velocitat angular $\\omega_\\text{con}$ de la peça en forma de con que extreu el suc de les taronges.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {

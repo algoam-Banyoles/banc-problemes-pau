@@ -36,6 +36,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, velocitat orbital",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -51,12 +52,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el període d'aquesta òrbita circular i la velocitat del satèl·lit.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En passar pel punt P, el satèl·lit augmenta la velocitat fins a $7{,}00 \\times 10^{3}\\ \\text{m s}^{-1}$ i passa a descriure una òrbita el·líptica amb una altura màxima (apogeu) en el punt A de $9\\,530\\ \\text{km}$. Calculeu l'energia cinètica, l'energia potencial gravitatòria i l'energia mecànica total en els punts P i A en la nova òrbita el·líptica.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -124,6 +127,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, model de bohr",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -134,12 +138,14 @@
         {
           "id": "a",
           "enunciat": "La força elèctrica que actua sobre l'electró i la freqüència de gir que té.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "L'energia mecànica de l'electró en l'òrbita que descriu al voltant del protó. Considereu negligible l'energia potencial gravitatòria.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -204,6 +210,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, freqüència llindar",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -219,12 +226,14 @@
         {
           "id": "a",
           "enunciat": "Expliqueu breument què és el *llindar de freqüència* de l'efecte fotoelèctric i calculeu quin valor té en aquest cas.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el valor de la constant de Planck i la velocitat que assoleixen els electrons emesos quan la longitud d'ona de la llum incident és $1{,}2\\times10^{-7}\\ \\text{m}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -302,6 +311,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): força sobre un corrent, producte vectorial",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -312,12 +322,14 @@
         {
           "id": "a",
           "enunciat": "Determineu el mòdul, la direcció i el sentit del camp magnètic que fa que es mantingui suspès en l'aire quan un corrent $I = 0{,}3\\ \\text{A}$ circula pel fil des de les $x$ negatives cap a les $x$ positives.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si ara enrotllem el fil per a crear una espira circular i la situem de manera que el seu pla sigui paral·lel al pla $xy$, calculeu la FEM que indueix sobre l'espira un camp magnètic variable $\\vec B = 0{,}1\\,[\\cos(10\\pi t)\\,\\vec i + \\cos(10\\pi t)\\,\\vec j\\,]$. Justifiqueu la resposta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -385,6 +397,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, constant elàstica",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -400,12 +413,14 @@
         {
           "id": "a",
           "enunciat": "A partir de la gràfica, calculeu la constant elàstica de la molla. Si l'amplitud de les oscil·lacions fos de $0{,}10\\ \\text{m}$, quina seria l'energia cinètica màxima assolida per la massa en l'oscil·lació?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Suposem que la constant elàstica de la molla és de $150\\ \\text{N m}^{-1}$, hi pengem una massa d'$1{,}5\\ \\text{kg}$ i la fem oscil·lar amb una amplitud de $0{,}20\\ \\text{m}$. Quina és l'acceleració màxima que assoleix? Si submergim tot el conjunt en un recipient ple d'aigua de manera que la massa oscil·la fins a aturar-se a causa del fregament, quin és el treball fet per la força de fregament que ha aturat l'oscil·lació?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -478,6 +493,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, treball d'extracció",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -493,12 +509,14 @@
         {
           "id": "a",
           "enunciat": "Quina és la freqüència i la longitud d'ona de la radiació incident (expressada en nm)? Quin és el valor del camp elèctric $E$?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Amb quina energia cinètica surten emesos els electrons arrencats de l'ànode A? Quin és el treball d'extracció del coure en eV?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -571,6 +589,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): selector de velocitats, força de lorentz",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -586,12 +605,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu i anomeneu les forces que actuen damunt l'electró quan és dins del selector de velocitats. Calculeu la velocitat dels electrons que travessaran el selector sense desviar-se.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dins del selector un electró té una velocitat $\\vec v = 1{,}25\\times10^{4}\\,\\vec i\\ \\text{m s}^{-1}$ en el moment en què es desactiva el camp elèctric sense modificar el camp magnètic. Indiqueu la freqüència de rotació, el radi, el pla de gir i el sentit de gir del moviment circular uniforme d'aquest electró.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -664,6 +685,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub tancat",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -679,12 +701,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu l'esquema de l'ona estacionària per a cadascuna de les situacions de ressonància descrites i determineu la velocitat del so en l'aire.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si el diapasó emet ones sonores amb una potència de $0{,}01\\ \\text{W}$, calculeu els decibels que percebrà una persona situada a $3\\ \\text{m}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

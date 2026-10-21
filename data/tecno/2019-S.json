@@ -350,6 +350,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -360,17 +361,20 @@
         {
           "id": "a",
           "enunciat": "Elaboreu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu el diagrama de portes lògiques equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -438,6 +442,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -453,22 +458,26 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure de la tapa per a un angle $\\varphi$ qualsevol.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El valor de la força $F$ aplicada a la nansa quan $\\varphi = 60^\\circ$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "El valor de les forces $F_\\text{B}$ i $F_\\text{C}$ que fan les barres sobre la tapa quan $\\varphi = 60^\\circ$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "L'angle $\\varphi$ per al qual la força que fa la barra en el punt C en valor absolut $|F_\\text{C}|$ és mínima, i el valor d'aquesta força.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -555,6 +564,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -565,22 +575,26 @@
         {
           "id": "a",
           "enunciat": "L'energia $E$ necessària per a escalfar el volum $V$ d'aigua des de $T_1$ fins a $T_2$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "L'energia elèctrica $E_\\text{elèctr}$, en kW h, consumida per a escalfar el volum $V$ d'aigua des de $T_1$ fins a $T_2$, i el cost $c_\\text{elèctr}$ de l'energia elèctrica necessària per a dur a terme aquest procés.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El rendiment $\\eta$ de l'escalfador elèctric d'aigua.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La resistivitat $\\rho$ del material de la resistència, si aquesta està formada per un fil conductor de diàmetre $d = 0{,}25\\ \\text{mm}$ i longitud $L = 1\\,500\\ \\text{mm}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -664,6 +678,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         4
       ],
@@ -674,17 +689,20 @@
         {
           "id": "a",
           "enunciat": "La potència mecànica mitjana $P_\\text{p}$ addicional que cal per a pujar de manera simultània $n_\\text{p} = 20$ passatgers.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El nombre total $n_\\text{t}$ de passatgers que l'escala transporta en un dia.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "L'energia elèctrica total $E_\\text{t}$ que consumeix l'escala en un dia, considerant el consum elèctric en buit i el consum associat a pujar els passatgers.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -759,6 +777,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita potència, parell, consum i rendiment global del motor, sense cicle tèrmic: 1r.",
+      "apartats_1r": 4,
       "pagines": [
         4
       ],
@@ -769,22 +788,26 @@
         {
           "id": "a",
           "enunciat": "La distància estimada $d$ que pot recórrer el vehicle si el dipòsit conté combustible fins al $80\\ \\%$ de la seva capacitat.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència tèrmica mitjana consumida $P_\\text{tèrm}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La potència mecànica que arriba a les rodes $P_\\text{rodes}$ i el parell total $\\Gamma_\\text{rodes}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La potència total que es dissipa en el motor i en la transmissió $P_\\text{diss}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {

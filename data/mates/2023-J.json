@@ -95,6 +95,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4,
         5
@@ -106,12 +107,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu les matrius $A \\cdot B$ i $B \\cdot A$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Siguin $C$ i $D$ dues matrius quadrades del mateix ordre que satisfan $C \\cdot D = C$ i $D \\cdot C = D$. Comproveu que les dues matrius, $C$ i $D$, són idempotents.\n\n*Nota:* Una matriu quadrada s'anomena *idempotent* si coincideix amb el seu quadrat.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -185,6 +188,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         6,
         7
@@ -196,12 +200,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu la funció $f(x)$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'equació de la recta tangent a la funció $f'(x)$ en el punt d'abscissa $x = 3$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Recta tangent a la funció f'(x) = 1/(x-1) donada a l'enunciat."
         }
       ],
       "solucio": {
@@ -286,6 +293,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         8,
         9
@@ -297,12 +305,14 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $\\lambda$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Per al cas $\\lambda = -1$, resoleu el sistema, interpreteu-lo geomètricament i identifiqueu-ne la solució.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -384,6 +394,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         10,
         11
@@ -400,12 +411,14 @@
         {
           "id": "a",
           "enunciat": "Quines dimensions ha de tenir el tancat perquè el cost sigui mínim? Quin és aquest cost mínim?",
-          "punts": 1.75
+          "punts": 1.75,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si manteniu la forma rectangular o quadrada del tancat i feu que un dels vèrtexs del jardí coincideixi amb un vèrtex del tancat, quants euros us podeu estalviar? Raoneu com posaríeu el tancat i justifiqueu amb càlculs matemàtics les dimensions de la vostra proposta.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -489,6 +502,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         12,
         13
@@ -500,17 +514,20 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació general ($Ax + By + Cz + D = 0$) del pla $\\pi_3$, que és perpendicular a $\\pi_1$ i $\\pi_2$, i que passa pel punt $P = (4, 1, 2)$.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Sigui $r$ la recta d'intersecció de $\\pi_1$ i $\\pi_2$. Calculeu l'equació vectorial de la recta $r$.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Calculeu el punt $Q$ de la recta $r$ que és més a prop del punt $P$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

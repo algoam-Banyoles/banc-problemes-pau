@@ -33,6 +33,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -43,12 +44,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu per a quins valors del paràmetre $a$ el sistema té més d'una solució.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema per al cas $a = -3$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -112,6 +116,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -122,12 +127,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació cartesiana (és a dir, que té la forma $Ax + By + Cz = D$) del pla que passa pel punt $P$ i talla perpendicularment la recta $r$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu l'equació paramètrica del pla que passa pel punt $P$ i conté la recta $r$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -193,6 +200,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -203,12 +211,15 @@
         {
           "id": "a",
           "enunciat": "Determineu l'equació de la recta tangent a la corba $y = x^3$ en el punt d'abscissa $x = 2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Càlcul de la derivada i equació de la recta tangent."
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'àrea de la regió plana finita limitada per la corba $y = x^3$ i la recta $y = 3x - 2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -272,6 +283,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -282,12 +294,14 @@
         {
           "id": "a",
           "enunciat": "Determineu la posició relativa de $\\pi_1$ i $\\pi_2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Comproveu que tots els punts de la recta $r$ estan situats a la mateixa distància dels plans $\\pi_1$ i $\\pi_2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -352,6 +366,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -362,12 +377,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la matriu de la forma $A = \\begin{pmatrix} 1 & a \\\\ 1 & 0 \\end{pmatrix}$ que satisfà $A^2 - A = I$, en què $I$ és la matriu identitat, $I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu $A^{-1}$ i comproveu que el resultat es correspon amb el que obteniu de deduir la matriu $A^{-1}$ a partir de la igualtat $A^2 - A = I$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -428,6 +445,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 2,
       "pagines": [
         2
       ],
@@ -443,12 +461,16 @@
         {
           "id": "a",
           "enunciat": "Comproveu que la funció $f(x, y) = \\dfrac{\\pi x^2}{8} + xy$ determina l'àrea d'aquesta portalada.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Àrea d'un semicercle i un rectangle."
         },
         {
           "id": "b",
           "enunciat": "Si el perímetre de la portalada fa $20\\ \\text{m}$, determineu les mides $x$ i $y$ de la portalada que en maximitzen l'àrea.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Funció quadràtica: el màxim és el vèrtex de la paràbola."
         }
       ],
       "solucio": {

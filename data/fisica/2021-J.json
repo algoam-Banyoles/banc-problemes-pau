@@ -33,6 +33,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): tercera llei de kepler, llei de gravitació universal",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -43,12 +44,14 @@
         {
           "id": "a",
           "enunciat": "Deduïu la tercera llei de Kepler a partir de la segona llei de Newton i de la llei de gravitació universal, suposant que els planetes descriuen moviments circulars uniformes.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "A partir de les dades de la taula, determineu la massa del Sol.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -111,6 +114,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, principi de superposició",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -126,12 +130,14 @@
         {
           "id": "a",
           "enunciat": "Hi ha algun punt a l'interior del triangle on el camp elèctric sigui nul? Justifiqueu la resposta.\n\nDetermineu el mòdul, la direcció i el sentit del camp elèctric en el vèrtex superior del triangle creat per les dues càrregues situades a la base. Expresseu el resultat en funció de $q$, $d$ i la constant de Coulomb.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu l'energia de formació d'aquest sistema de càrregues. Expresseu el resultat en funció de $q$, $d$ i la constant de Coulomb.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -209,6 +215,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, molla",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -224,12 +231,14 @@
         {
           "id": "a",
           "enunciat": "Determineu l'amplitud i el període de l'oscil·lació. Escriviu l'equació del moviment.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Representeu en la quadrícula adjunta l'evolució de l'energia mecànica, de l'energia cinètica i de l'energia potencial en funció del temps durant un període.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -308,6 +317,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, diferència de potencial",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -323,12 +333,14 @@
         {
           "id": "a",
           "enunciat": "Quina és la diferència de potencial, $V_B - V_A$, entre els punts $A$ i $B$ de la figura? Quina és la diferència de potencial, $V_D - V_C$, entre els punts $C$ i $D$ de la figura? Justifiqueu les respostes.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Deixem un protó, inicialment aturat, en el punt $A$. Quin moviment descriurà? Justifiqueu la resposta. Quina velocitat (només el mòdul) tindrà en l'instant en què abandoni aquesta regió quadrada? Quin treball ha fet el camp elèctric sobre el protó?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -399,6 +411,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració beta més, nombre màssic",
+      "apartats_1r": 0,
       "pagines": [
         10
       ],
@@ -409,12 +422,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu el nombre màssic, el nombre atòmic i el nombre de neutrons que té el ${}^{13}_{7}\\text{N}$. En la desintegració del ${}^{13}_{7}\\text{N}$, un dels protons del nucli de nitrogen es transforma segons una desintegració $\\beta^+:\\ {}^{1}_{1}\\text{p}^+ \\rightarrow {}^{1}_{0}\\text{n} + {}^{0}_{+1}\\text{e}^+ + {}^{0}_{0}\\nu$. Escriviu la reacció de desintegració del ${}^{13}_{7}\\text{N}$. Justifiqueu per què la desintegració $\\beta^+$ no pot tenir lloc fora d'un nucli.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "A partir de l'equació de l'evolució de la desintegració, determineu la relació entre la constant de desintegració $\\lambda$ i el període de semidesintegració. El període de semidesintegració del ${}^{13}_{7}\\text{N}$ és de $9{,}965\\ \\text{min}$. Si en un instant determinat hi ha una massa de $5\\ \\text{ng}$ de ${}^{13}_{7}\\text{N}$, quina quantitat en romandrà al cap de $30\\ \\text{min}$?\n\nDoneu l'expressió de l'activitat radioactiva en funció del temps. Quant de temps cal esperar perquè l'activitat radioactiva es redueixi fins a un $1\\ \\%$ del seu valor inicial?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -491,6 +506,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
+      "apartats_1r": 0,
       "pagines": [
         11
       ],
@@ -510,12 +526,14 @@
         {
           "id": "a",
           "enunciat": "Determineu el flux del camp magnètic a través d'una espira i la força electromotriu (FEM) en funció dels paràmetres $B_0$, $\\omega$, $\\varphi_0$, $N$ i $S$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si la bobina té una resistència $R$, determineu el corrent màxim que pot circular per la bobina en funció dels paràmetres $B_0$, $\\omega$, $\\varphi_0$, $N$, $S$ i $R$. Indiqueu quina de les gràfiques següents (de la A fins a la D) mostra correctament la FEM si es redueix la freqüència del moviment de l'imant. Justifiqueu la resposta.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -582,6 +600,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, harmònics",
+      "apartats_1r": 0,
       "pagines": [
         13
       ],
@@ -592,12 +611,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu l'harmònic fonamental i el tercer harmònic i indiqueu-ne els nodes i els ventres. Determineu les longituds d'ona de cadascun dels harmònics i calculeu la velocitat de propagació de l'ona que produeix aquesta nota en la corda del violí. Quina serà la freqüència de l'harmònic fonamental si reduïm la llargària de la corda a $27\\ \\text{cm}$ tot mantenint la mateixa tensió a la corda?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Un espectador situat al segon pis del Palau de la Música Catalana percep un nivell d'intensitat sonora de $30\\ \\text{dB}$, corresponent al so dels violins, situats a $23\\ \\text{m}$. Quina és la potència amb què els violins emeten el so? Si, degut a les restriccions per la COVID-19, el nombre de violinistes es redueix a la meitat, quin serà el nivell de la intensitat sonora generada pels violins a $23\\ \\text{m}$ de distància?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -680,6 +701,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): energia del fotó, constant de planck",
+      "apartats_1r": 0,
       "pagines": [
         14
       ],
@@ -690,12 +712,14 @@
         {
           "id": "a",
           "enunciat": "Quina de les dues ones té els fotons més energètics? Calculeu la freqüència i l'energia d'un fotó i les d'un mol de fotons per a cadascuna de les dues radiacions.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "A continuació, volem reproduir l'efecte fotoelèctric il·luminant amb llum monocromàtica una placa de rubidi. Determineu la longitud d'ona llindar perquè es produeixi l'efecte fotoelèctric. Les ones visibles de l'apartat anterior seran capaces d'arrencar un electró de la superfície del rubidi? Si això és possible, quina serà l'energia cinètica adquirida per l'electró?\n\nPer a l'efecte fotoelèctric, representeu esquemàticament com varia l'energia cinètica màxima dels electrons arrencats en funció de l'energia dels fotons incidents. Comenteu el significat de les dues zones diferenciades.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {

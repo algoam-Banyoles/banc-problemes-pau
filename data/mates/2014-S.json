@@ -32,6 +32,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -42,12 +43,14 @@
         {
           "id": "a",
           "enunciat": "Estudieu el paral·lelisme i la perpendicularitat entre les rectes $r$ i $s$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu l'equació general (és a dir, que té la forma $Ax + By + Cz = D$) del pla $\\pi$ que conté la recta $r$ i és paral·lel a la recta $s$. Calculeu la distància entre la recta $s$ i el pla $\\pi$ obtingut.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -118,6 +121,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Domini, recorregut i recta tangent (igualtat d'imatges i pendents), que són de 1r.",
+      "apartats_1r": 2,
       "pagines": [
         1
       ],
@@ -128,12 +132,14 @@
         {
           "id": "a",
           "enunciat": "Determineu el domini i el recorregut de la funció $g$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Calculeu per a quins valors de $a$ i de $b$ les gràfiques de les dues funcions són tangents (és a dir, tenen la mateixa recta tangent) en el punt d'abscissa $x = 0$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -207,6 +213,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -217,12 +224,14 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema d'equacions per als diferents valors del paràmetre $m$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema en aquells casos en què el sistema sigui compatible.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -310,6 +319,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Extrems, punts d'inflexió i càlcul d'una primitiva, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -320,12 +330,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu els valors de $x$ en què la funció $f$ té un màxim relatiu, un mínim relatiu o un punt d'inflexió, i indiqueu en cada cas de què es tracta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció $f$ sabent que s'anul·la en el punt d'abscissa $x = 2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -397,6 +409,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -407,12 +420,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu els valors del paràmetre $a$ perquè els vectors $\\vec u$, $\\vec v$ i $\\vec w$ siguin linealment dependents.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu els valors del paràmetre $a$ perquè un tetraedre d'arestes $\\vec u$, $\\vec v$ i $\\vec w$ tingui un volum de $2/3$ d'unitats cúbiques.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -477,6 +492,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -487,12 +503,14 @@
         {
           "id": "a",
           "enunciat": "Per a quins valors del paràmetre $a$ l'equació matricial té una solució única?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu la matriu $X$ que satisfà l'equació matricial quan $a = 3$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

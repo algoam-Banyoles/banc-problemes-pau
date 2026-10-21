@@ -325,6 +325,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -335,17 +336,20 @@
         {
           "id": "a",
           "enunciat": "Elaboreu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -416,6 +420,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -431,22 +436,26 @@
         {
           "id": "a",
           "enunciat": "El nombre de triangles equilàters $n_\\text{T}$ que calen per a construir l'estrella i el perímetre de les peces tallades $p_\\text{T}$ en aquest cas.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El nombre de rombes $n_\\text{R}$ que calen per a construir l'estrella i el perímetre de les peces tallades $p_\\text{R}$ en aquest cas.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El perímetre tallat $p_\\text{E}$ si l'estrella es construeix tallant-ne directament el perfil exterior.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La superfície $s$ de fusta necessària per a construir l'estrella, i el cost $c_\\text{T}$, $c_\\text{R}$ i $c_\\text{E}$ de cadascuna de les tres opcions anteriors. Quina és l'opció més econòmica?",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -532,6 +541,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Motor de corrent continu (potència, parell, rendiment), que és de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -542,22 +552,26 @@
         {
           "id": "a",
           "enunciat": "La potència mecànica $P_\\text{càrrega}$ requerida per a elevar la càrrega.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència $P_\\text{m}$ i el parell $\\Gamma_\\text{m}$ a l'eix de sortida del motor.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La intensitat $I$ que consumeix el motor elèctric.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La potència total dissipada $P_\\text{diss}$ pel conjunt motor-reductor.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -642,6 +656,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita estàtica d'estructures i tensió normal o deformació (resistència de materials), que són de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4
       ],
@@ -657,22 +672,27 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure de la placa.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la massa $m$ de la placa.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Densitat i volum per obtenir la massa (materials i càlcul bàsic de 1r)."
         },
         {
           "id": "c",
           "enunciat": "Determineu la força $T$ que fa el cable, i les forces horitzontal $F_\\text{h}$ i vertical $F_\\text{v}$ en el punt O.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "Determineu la tensió normal $\\sigma$ del cable i el seu allargament unitari $\\varepsilon$. Si el límit elàstic de l'acer és $\\sigma_\\text{e,acer} = 350\\ \\text{MPa}$, el cable s'arriba a deformar de manera permanent?",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -760,6 +780,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 5,
       "pagines": [
         4
       ],
@@ -775,27 +796,32 @@
         {
           "id": "a",
           "enunciat": "El valor de la resistència $R$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "L'energia consumida $E_\\text{total}$ en el temps $t = 8\\ \\text{h}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El temps $t_\\text{bat,4}$ que duren les bateries.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "Per a la configuració amb només $n = 3$ bateries connectades en sèrie: la nova intensitat $I_\\text{LED,3}$ que circula per cada LED.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "e",
           "enunciat": "Per a la configuració amb $n = 3$ bateries: el temps $t_\\text{bat,3}$ que duren les bateries.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -1183,6 +1209,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -1193,17 +1220,20 @@
         {
           "id": "a",
           "enunciat": "Elaboreu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1274,6 +1304,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         7
       ],
@@ -1289,17 +1320,20 @@
         {
           "id": "a",
           "enunciat": "Les longituds de tub lluminós $L_\\text{P}$, $L_\\text{A}$ i $L_\\text{U}$ que calen per a construir cada lletra.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Les potències $P_\\text{P}$, $P_\\text{A}$ i $P_\\text{U}$ consumides per cada lletra.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Perquè el cartell sigui més vistós, les lletres s'il·luminen seqüencialment durant dos segons cadascuna. S'estudien dues opcions: la primera opció seguiria la seqüència P-A-U / P-A-U / …, i la segona opció seguiria la seqüència P-A-U-A / P-A-U-A / … Determineu l'energia, en kW h, consumida pel cartell en cada cas en $t = 3\\ \\text{h}$ de funcionament.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -1382,6 +1416,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Necessita la tensió normal a les cintes (resistència de materials), que és de 2n.",
+      "apartats_1r": 3,
       "pagines": [
         7
       ],
@@ -1392,22 +1427,29 @@
         {
           "id": "a",
           "enunciat": "La potència mecànica $P_\\text{mec}$ necessària per a elevar la càrrega màxima.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Balanç de potències amb contrapès (mecànica de 1r)."
         },
         {
           "id": "b",
           "enunciat": "La potència elèctrica $P_\\text{elèctr}$ consumida.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Rendiment d'un motor P_elèctr = P_mec/η (1r)."
         },
         {
           "id": "c",
           "enunciat": "La massa de la càrrega per a la qual el motor ha de desenvolupar una potència nul·la.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Igualar potències de càrrega i contrapès (mecànica de 1r)."
         },
         {
           "id": "d",
           "enunciat": "Si la càrrega és suportada per $n = 6$ cintes i cada cinta té una secció rectangular $s = 30\\ \\text{mm} \\times 2{,}5\\ \\text{mm}$, determineu la tensió normal $\\sigma_\\text{n}$ màxima que suporten les cintes.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1482,6 +1524,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita electrònica analògica bàsica en CC, que és de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         8
       ],
@@ -1497,22 +1540,26 @@
         {
           "id": "a",
           "enunciat": "Determineu la intensitat $I$ que circula pel circuit.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu la tensió mesurada $U_\\text{s}$ quan $R_1 = 2\\ \\text{k}\\Omega$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu, de manera aproximada i indicant les escales, la corba de la tensió de sortida $U_\\text{s}$ en funció de la resistència $R_1$, per a $0 \\le R_1 \\le 5\\ \\text{k}\\Omega$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "Si el sistema està calibrat perquè la distància mesurada sigui $d = 150\\ \\text{mm}$ per a $R_1 = 0$, i sigui $d = 1\\,200\\ \\text{mm}$ per a $R_1 = 5\\ \\text{k}\\Omega$: determineu el factor de sensibilitat $k = |\\Delta U_\\text{s}| / |\\Delta d|$ del sensor.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -1587,6 +1634,7 @@
       "dificultat": 3,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         8
       ],
@@ -1597,17 +1645,20 @@
         {
           "id": "a",
           "enunciat": "La potència mitjana consumida $P_\\text{cons}$ per la central.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El rendiment total $\\eta$ de la central elèctrica.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El rendiment del cicle de gas $\\eta_\\text{g}$ si el rendiment del cicle de vapor és $\\eta_\\text{v} = 0{,}31$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {

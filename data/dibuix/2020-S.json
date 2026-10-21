@@ -30,6 +30,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Construcció de polígons amb arc capaç i punts notables del triangle (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         5
       ],
@@ -45,12 +46,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el quadrilàter còncau $ABCD$ amb les dades indicades a la part inferior del full, de manera que els vèrtexs $B$ i $C$ quedin per sobre del segment $AD$. Deixeu constància del procés gràfic seguit. [1,5 punts pel segment $AB$ i 2 punts pels segments $BC$ i $CD$]",
-          "punts": 3.5
+          "punts": 3.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment $AD$ tenint en compte que el dibuix està fet a escala 1:450, i escriviu-lo en la casella situada a la part inferior de la pàgina.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -129,6 +132,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Tangències amb un punt de tangència donat, resoltes per reducció a punt, mediatrius i bisectrius; no cal potència (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         7
       ],
@@ -144,12 +148,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les circumferències tangents a la recta $R$ i a la circumferència de centre $C$ que passen pel punt $P$. Deixeu constància gràfica dels punts de tangència i del procés gràfic seguit. [2,5 punts per les circumferències i 1 punt per la determinació dels punts de tangència i el procés gràfic]",
-          "punts": 3.5
+          "punts": 3.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real de la recta $R$ tenint en compte que el dibuix està fet a escala 1:175, i escriviu-lo en la casella situada a la part inferior de la pàgina.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -220,6 +226,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) construït amb canvi de pla.",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -235,12 +242,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un tetraedre de 6 cm d'aresta, de manera que una de les arestes quedi situada sobre la recta $R$ i un dels vèrtexs estigui sobre el segment $ab$-$a'b'$. L'aresta sobre la recta $R$ ha de quedar per davant del vèrtex sobre el segment $ab$-$a'b'$. [2 punts pel procés gràfic i 1,5 punts per cadascuna de les dues projeccions]",
-          "punts": 5
+          "punts": 5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la visibilitat del tetraedre en les dues projeccions diferenciant les línies vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -324,6 +334,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Tronc de piràmide en dièdric i VM de la secció per abatiment (DT II).",
+      "apartats_1r": 2,
       "pagines": [
         11
       ],
@@ -339,17 +350,22 @@
         {
           "id": "a",
           "enunciat": "Donada una piràmide obliqua que té com a base el pentàgon regular $abcde$ i el vèrtex en el punt $v$-$v'$, dibuixeu les projeccions horitzontal i vertical del tronc de piràmide comprès entre la base i el pla de cantell $P'$.",
-          "punts": 2
+          "punts": 2,
+          "curs": "1r",
+          "curs_motiu": "Intersecció de les arestes amb un pla de cantell (dièdric de 1r)."
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu, en veritable magnitud, la cara superior del tronc, determinada per la secció que produeix el pla de cantell $P'$ a la piràmide.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu la intersecció entre el segment $mn$-$m'n'$ i el tronc de piràmide pentagonal. Determineu la visibilitat del conjunt en les dues projeccions diferenciant les línies vistes de les ocultes i considerant el tronc de piràmide com un sòlid. [1,5 punts per la intersecció de la recta i 1 punt per la visibilitat del conjunt]",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "1r",
+          "curs_motiu": "Intersecció recta-sòlid amb un pla auxiliar projectant i visibilitat (dièdric de 1r)."
         }
       ],
       "solucio": {

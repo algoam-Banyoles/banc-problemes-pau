@@ -113,6 +113,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Tangents a dues rectes amb el punt sobre una d'elles: perpendicular i bisectrius (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         7
       ],
@@ -128,12 +129,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu dues circumferències tangents a les rectes *R* i *S* que passin pel punt *P*.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, els punts de tangència.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -207,6 +210,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Piràmide o prisma en dièdric amb la base en un pla inclinat, per abatiment o canvi de pla (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -222,12 +226,15 @@
         {
           "id": "a",
           "enunciat": "Determineu les projeccions horitzontal i vertical d'una piràmide octogonal regular de vèrtex *v-v′* de manera que el triangle *abv-a′b′v′*, situat en un pla vertical, sigui una de les cares laterals i que la piràmide estigui situada per darrere d'aquesta cara. [1,5 punts per cadascuna de les projeccions]",
-          "punts": 3
+          "punts": 3,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -308,6 +315,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) construït amb canvi de pla.",
+      "apartats_1r": 0,
       "pagines": [
         11
       ],
@@ -323,12 +331,14 @@
         {
           "id": "a",
           "enunciat": "Determineu les projeccions del triangle equilàter que té dos dels vèrtexs en els punts *a-a′* i *b-b′*, de manera que tingui l'altre vèrtex sobre el segment *r-r′* i estigui situat per sota del segment *ab-a′b′*.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un tetraedre de manera que una de les cares sigui el triangle determinat en l'apartat anterior i el tetraedre estigui situat per davant d'aquesta cara. Diferencieu les arestes vistes de les ocultes. [1,5 punts per cadascuna de les projeccions]",
-          "punts": 3
+          "punts": 3,
+          "curs": "2n"
         }
       ],
       "solucio": {

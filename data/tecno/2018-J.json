@@ -356,6 +356,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -366,17 +367,20 @@
         {
           "id": "a",
           "enunciat": "Elaboreu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -446,6 +450,7 @@
       "dificultat": 3,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         3
       ],
@@ -456,17 +461,20 @@
         {
           "id": "a",
           "enunciat": "El rendiment $\\eta_\\text{A}$ i $\\eta_\\text{B}$ dels captadors A i B en aquestes condicions de treball. Quina és l'opció més eficient?",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El nombre de captadors $n$ que caldria instal·lar per a escalfar tota l'aigua consumida mitjançant energia solar.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "L'energia elèctrica consumida $E_\\text{elèctr}$, en $\\text{kW h}$, en un dia en el qual la radiació solar disminueix a la meitat, tenint en compte que el nombre de captadors és l'obtingut en l'apartat anterior.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -554,6 +562,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -569,22 +578,26 @@
         {
           "id": "a",
           "enunciat": "Les velocitats de gir de la roda $\\omega_\\text{roda}$ i de l'eix del motor $\\omega_\\text{motor}$, en rad/s.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència $P_\\text{motor}$ a l'eix de sortida del motor.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La potència mecànica $P_\\text{roda}$ a l'eix de la roda i l'angle $\\alpha$ que forma el perfil de la carretera amb l'horitzontal.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El parell $\\Gamma_\\text{roda}$ a l'eix de la roda.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -666,6 +679,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         4
       ],
@@ -681,22 +695,26 @@
         {
           "id": "a",
           "enunciat": "La resistència equivalent $R_\\text{eq}$ dels dos llums connectats en paral·lel.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La longitud màxima $L_\\text{màx}$ que pot tenir el cable si es vol que la caiguda de tensió del cable no sigui superior al $5\\ \\%$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La resistència del cable $R_\\text{cable}$ (amb $L = 4\\ \\text{m}$).",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La potència total $P_\\text{total}$ consumida conjuntament pel cable i els dos llums (amb $L = 4\\ \\text{m}$).",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -786,6 +804,7 @@
       "dificultat": 3,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         4
       ],
@@ -796,22 +815,26 @@
         {
           "id": "a",
           "enunciat": "La potència consumida $P_\\text{cons}$ per la central.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El volum $V$ de gas natural liquat que es crema a la central durant 24 hores de funcionament.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La potència dissipada en el cicle de gas $P_\\text{diss,cg}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El rendiment del cicle de vapor $\\eta_\\text{v}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {

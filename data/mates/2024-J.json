@@ -36,6 +36,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Extrems, monotonia i asímptota amb L'Hôpital, que són de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2,
         3
@@ -47,17 +48,21 @@
         {
           "id": "a",
           "enunciat": "Estudieu-ne els màxims i els mínims, i les zones de creixement i de decreixement.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Aquesta funció té asímptotes? Feu un esbós de la seva gràfica.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de $y = f(x)$ en el punt d'abscissa $x = 1$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Càlcul de la derivada i equació de la recta tangent."
         }
       ],
       "solucio": {
@@ -145,6 +150,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 2,
       "pagines": [
         4,
         5
@@ -156,17 +162,22 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $k$, i resoleu-lo per a $k = 0$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema per a $k = -1$.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         },
         {
           "id": "c",
           "enunciat": "Per a $k = -1$, modifiqueu la tercera equació de manera que el sistema esdevingui incompatible. Justifiqueu la resposta.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "1r",
+          "curs_motiu": "Combinació d'equacions (Gauss): canviar el terme independent fa el sistema incompatible."
         }
       ],
       "solucio": {
@@ -250,6 +261,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         6,
         7
@@ -266,12 +278,15 @@
         {
           "id": "a",
           "enunciat": "A partir de l'expressió de $f(x)$, calculeu les coordenades dels punts $P$, $Q$ i $R$ indicats a la figura. Calculeu també l'equació de la recta $PR$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'una equació polinòmica i equació d'una recta per dos punts."
         },
         {
           "id": "b",
           "enunciat": "Calculeu la superfície del terreny.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -341,6 +356,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Experiment compost sense reemplaçament i distribució binomial, que són de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         8,
         9
@@ -357,12 +373,15 @@
         {
           "id": "a",
           "enunciat": "A continuació, treu de la bossa dues boles a l'atzar, una darrere l'altra i sense reemplaçament (és a dir, no retorna a la bossa la primera bola abans de treure la segona).\n\n- Calculeu la probabilitat que la primera bola sigui una A o una E. [0,5 punts]\n- Calculeu la probabilitat que les dues boles siguin diferents. [0,75 punts]",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Regla de Laplace i combinatòria (parelles de boles)."
         },
         {
           "id": "b",
           "enunciat": "L'Andreu torna a posar totes les boles a la bossa i en treu cinc a l'atzar, una darrere l'altra, però ara amb reemplaçament (és a dir, ara sí que retorna a la bossa cada bola extreta abans d'agafar la següent).\n\n- Calculeu la probabilitat que no hagi tret cap A. [0,5 punts]\n- Calculeu la probabilitat que hagi tret almenys dues A. [0,75 punts]",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -440,6 +459,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         10,
         11
@@ -456,12 +476,15 @@
         {
           "id": "a",
           "enunciat": "Comproveu que el cost de construcció del cobert ve donat per la funció $C(x) = \\dfrac{300}{x} + 150x^2 + 35$, on $x$ és la fondària del cobert en metres.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Modelització amb una funció (geometria plana, Pitàgores, àrees i volums)."
         },
         {
           "id": "b",
           "enunciat": "Calculeu quines han de ser les dimensions del cobert per tal que el cost de construcció sigui mínim i justifiqueu la resposta. Quin és aquest cost?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -533,6 +556,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         12,
         13
@@ -544,17 +568,20 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació del pla $\\pi$ que és perpendicular a la recta $AB$ i que passa pel punt mitjà entre $A$ i $B$. Justifiqueu que aquest pla està format, precisament, pels punts $P = (x, y, z)$ que estan a igual distància de $A$ que de $B$, és a dir, $d(P, A) = d(P, B)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu les distàncies de $A$ i de $B$ al pla $\\pi$ i comproveu que són iguals. És casualitat? Raoneu la resposta.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Sigui $C = (-7, 6, 3)$. El triangle $ABC$ és isòsceles? Calculeu la seva àrea.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         }
       ],
       "solucio": {

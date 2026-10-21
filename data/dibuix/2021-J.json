@@ -31,6 +31,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Cas PPC resolt amb eix radical i centre radical: DT II.",
+      "apartats_1r": 2,
       "pagines": [
         5
       ],
@@ -46,17 +47,22 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les dues circumferències de 2 cm de radi tangents al segment $AB$ i a l'arc de circumferència de centre $S$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Tangències bàsiques per llocs geomètrics (paral·lela a distància r i circumferència concèntrica)."
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu la circumferència tangent a les dues circumferències anteriors i a l'arc de circumferència de centre $S$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu la circumferència tangent a l'arc de circumferència de centre $T$ i al segment $AB$ en el punt $P$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r",
+          "curs_motiu": "Tangències bàsiques: perpendicular pel punt de tangència i mediatriu (llocs geomètrics)."
         }
       ],
       "solucio": {
@@ -320,6 +326,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Cub en dièdric sobre un pla inclinat: abatiment o canvi de pla i VM (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -335,17 +342,21 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu la projecció horitzontal, la projecció vertical i el perfil d'un cub que té els punts $a$-$a'$-$a''$, $b$-$b'$-$b''$, $c$-$c'$-$c''$ i $d$-$d'$-$d''$ com a vèrtexs del quadrat inferior, sense diferenciar les línies vistes de les ocultes.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu la projecció horitzontal, la projecció vertical i el perfil del tetraedre que està inscrit en el cub anterior i que té el segment $ac$-$a'c'$-$a''c''$ com a aresta inferior, sense diferenciar les línies vistes de les ocultes.",
-          "punts": 2
+          "punts": 2,
+          "curs": "1r",
+          "curs_motiu": "Unir vèrtexs del cub ja dibuixat (diagonals de cara) a les tres vistes."
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu una de les cares del tetraedre en veritable magnitud.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

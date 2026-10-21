@@ -35,6 +35,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -45,12 +46,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el rang de la matriu $M$ en funció dels valors del paràmetre $a$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Discutiu i resoleu el sistema d'equacions lineals $$M \\cdot \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix},$$ segons els valors del paràmetre $a$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -117,6 +120,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -127,12 +131,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el punt simètric del punt $A$ respecte de la recta d'equació $$r: (x, y, z) = (3 + \\lambda, 1, 3 - \\lambda).$$",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el punt simètric del punt $A$ respecte del pla que té per equació $$\\pi: x + y + z = 3.$$",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -199,6 +205,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -209,12 +216,15 @@
         {
           "id": "a",
           "enunciat": "Si $P$ és un punt entre el punt $S$ i el punt $A$ que està a una distància $x$ de $S$, demostreu que el temps, en hores, que necessita el nedador per a nedar del punt $N$ al punt $P$ i caminar des del punt $P$ fins al punt $A$ és determinat per l'expressió $$t(x) = \\frac{\\sqrt{x^2 + 9}}{3} + \\frac{6 - x}{5}.$$",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Modelització amb una funció (geometria plana, Pitàgores, àrees i volums)."
         },
         {
           "id": "b",
           "enunciat": "Calculeu el valor de $x$ que determina el temps mínim que cal per a anar del punt $N$ al punt $A$, passant per $P$. Quin és el valor d'aquest temps mínim?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -351,6 +361,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -361,12 +372,14 @@
         {
           "id": "a",
           "enunciat": "Comproveu que els punts mitjans dels segments que tenen un extrem situat sobre la recta $r$ i l'altre extrem situat sobre la recta $s$ formen un pla.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu l'equació general (és a dir, que té la forma $Ax + By + Cz = D$) del pla de l'apartat anterior.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -432,6 +445,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -442,12 +456,14 @@
         {
           "id": "a",
           "enunciat": "Demostreu que si $A$ és una matriu quadrada que satisfà la igualtat $A^2 = I$, on $I$ és la matriu identitat, aleshores $A$ és invertible i $A^{-1}$ satisfà $(A^{-1})^2 = I$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'expressió general de les matrius de la forma $A = \\begin{pmatrix} a & b \\\\ c & 2 \\end{pmatrix}$ amb $b \\neq 0$ que satisfan la igualtat $A^2 = I$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -511,6 +527,7 @@
       "dificultat": 1,
       "curs": "1r",
       "curs_motiu": "Asímptotes d'una funció homogràfica i recta tangent, que són de 1r.",
+      "apartats_1r": 2,
       "pagines": [
         3
       ],
@@ -521,12 +538,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu les asímptotes verticals, horitzontals i obliqües de la funció $f$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Trobeu l'equació de la recta tangent a la gràfica de la funció $f$ en aquells punts en què la recta tangent sigui paral·lela a la recta $y = -5x + 4$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -591,6 +610,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         3
       ],
@@ -601,12 +621,15 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema d'equacions lineals $$\\begin{cases} (k - 1)y + (k^2 - 1)z = 0 \\\\ (4k + 1)x - y - 7z = 1 \\\\ x + y + z = 0 \\end{cases}$$ en funció dels valors de $k$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema per a $k = 1$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -684,6 +707,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -694,12 +718,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació general (és a dir, que té la forma $Ax + By + Cz = D$) del pla que passa pels punts $P$, $Q$ i $R$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si $S$ és un punt de $\\pi$, comproveu que el volum del tetraedre de vèrtexs $P$, $Q$, $R$ i $S$ no depèn del punt $S$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -769,6 +795,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -779,12 +806,14 @@
         {
           "id": "a",
           "enunciat": "Determineu els valors de $m$ perquè els plans $\\pi_1$ i $\\pi_2$ s'intersequin en una recta i calculeu un vector director de la recta resultant que no depengui de $m$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Sigui el pla $\\pi: 3x - 2y + 3z = 8$. Estudieu la posició relativa del pla $\\pi$ amb la recta $r$ definida per la intersecció dels plans $\\pi_1$ i $\\pi_2$ quan $m = 1$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -843,6 +872,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -853,12 +883,14 @@
         {
           "id": "a",
           "enunciat": "Si $A$ i $B$ són dues matrius quadrades d'ordre $n$, demostreu que $$(A + B)^2 = A^2 + 2AB + B^2 \\iff AB = BA.$$",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si $M_1$ i $M_2$ són dues matrius de la forma $\\begin{pmatrix} a & -b \\\\ b & a \\end{pmatrix}$, amb $a, b \\in \\mathbb{R}$, comproveu que el producte $M_1 \\cdot M_2$ té també la mateixa forma i que $M_1 \\cdot M_2 = M_2 \\cdot M_1$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -920,6 +952,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4
       ],
@@ -935,12 +968,15 @@
         {
           "id": "a",
           "enunciat": "La funció $f(x) = (b - x)e^{ax}$, amb $a$ i $b$ constants, té la representació gràfica següent (vegeu la figura) i sabem que passa pels punts $A = (0, 2)$ i $B = (2, 0)$, i que en el punt $A$ la recta tangent a la gràfica és horitzontal. Calculeu els valors de $a$ i $b$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Derivada d'un producte i condició de tangent horitzontal."
         },
         {
           "id": "b",
           "enunciat": "Calculeu $\\displaystyle\\int_1^2 x \\ln x \\, dx$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

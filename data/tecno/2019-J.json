@@ -332,6 +332,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -342,17 +343,20 @@
         {
           "id": "a",
           "enunciat": "Elaboreu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -424,6 +428,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 5,
       "pagines": [
         3
       ],
@@ -434,27 +439,32 @@
         {
           "id": "a",
           "enunciat": "La potència mitjana del vent $P_\\text{vent}$ per a un aerogenerador.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència elèctrica útil $P_\\text{útil}$ que generarà cada aerogenerador.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "L'energia elèctrica total $E_\\text{total}$ que es generarà al parc durant un any.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "Els ingressos que tindrà el parc eòlic si el preu de venda de l'energia eòlica és $p_\\text{venda} = 7{,}624$ cèntims d'euro per kW h.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "e",
           "enunciat": "En quin percentatge disminuirien els ingressos anteriors si la velocitat mitjana del vent es reduís un $10\\ \\%$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -547,6 +557,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -557,22 +568,26 @@
         {
           "id": "a",
           "enunciat": "El parell $\\Gamma$ que subministra el motor.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La velocitat d'avanç $v_\\text{pat}$ del patinet.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "L'energia mecànica útil disponible a l'eix de la roda $E_\\text{útil}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El temps màxim $t_\\text{màx}$ de funcionament del patinet i la distància màxima recorreguda $s_\\text{màx}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -654,6 +669,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
+      "apartats_1r": 2,
       "pagines": [
         4
       ],
@@ -669,27 +685,34 @@
         {
           "id": "a",
           "enunciat": "Determineu les forces $T_\\text{C}$ i $T_\\text{D}$ a les quals estan sotmesos els cables d'acer.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Equilibri de forces i moments d'un cos simètric penjat de dos cables (Física i Química de 1r)."
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu el diagrama de cos lliure de la barra BO.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Determineu l'angle $\\varphi$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Només fa servir geometria i trigonometria (matemàtiques de 1r)."
         },
         {
           "id": "d",
           "enunciat": "Determineu la força $T_\\text{AB}$ a la qual està sotmès el tirant AB.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "e",
           "enunciat": "Determineu les forces horitzontal $F_\\text{H}$ i vertical $F_\\text{V}$ a l'articulació O.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -784,6 +807,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita calor sensible, poder calorífic i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         4
       ],
@@ -794,17 +818,20 @@
         {
           "id": "a",
           "enunciat": "El cabal $q_\\text{aigua}$ (en L/min) que subministra la caldera, tenint en compte que la calor específica de l'aigua és $c_\\text{e} = 4{,}18\\ \\text{J/(g}\\ ^\\circ\\text{C)}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència consumida $P_\\text{cons}$ i el consum de combustible $q_\\text{comb}$ per unitat de temps.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El temps $t$ i el combustible $m$ necessaris per a fer augmentar $25\\ ^\\circ\\text{C}$ la temperatura d'un volum d'aigua $V = 0{,}1\\ \\text{m}^3$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {

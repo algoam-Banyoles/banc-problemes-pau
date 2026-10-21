@@ -33,6 +33,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, energia potencial elàstica",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -48,12 +49,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el període d'oscil·lació. Si l'oscil·lador descriu un moviment vibratori harmònic amb una amplitud de $60\\ \\text{cm}$, calculeu-ne l'energia cinètica màxima.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "L'oscil·lació genera una ona en una corda que es propaga a una velocitat de $30\\ \\text{m s}^{-1}$. Escriviu l'equació de l'ona que es propaga per la corda.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -126,6 +129,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, força centrípeta",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -141,12 +145,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'energia cinètica de *Juno* i el seu període de rotació.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'energia que caldria comunicar-li perquè abandonés el camp gravitatori de Júpiter.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -214,6 +220,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, principi de superposició",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -229,12 +236,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la intensitat del camp elèctric en el baricentre del triangle (punt G).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la variació d'energia potencial electroestàtica que experimenta el sistema si les càrregues se separen fins a formar un altre triangle equilàter de $20{,}0\\ \\text{cm}$ de costat. Digueu si l'energia potencial electroestàtica augmenta o disminueix i justifiqueu la resposta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -308,6 +317,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): llei de Faraday, llei de Lenz",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -323,12 +333,14 @@
         {
           "id": "a",
           "enunciat": "Digueu si circula corrent elèctric per l'espira en les tres situacions següents: en entrar al camp, quan hi està totalment immersa i en sortir-ne, i determineu en cada cas el sentit de circulació de la intensitat corresponent. Justifiqueu les respostes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la força electromotriu i la intensitat del corrent elèctric que es genera en cada cas.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -394,6 +406,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): energia del fotó, constant de Planck",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -404,12 +417,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la freqüència i la longitud d'ona d'aquests raigs.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu la massa equivalent d'aquests fotons.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -474,6 +489,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, diferència de potencial",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -484,12 +500,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu un esquema de la situació descrita i representeu-hi les plaques esmentades, especificant el signe de cadascuna, i els camps vectorials (gravitatori i elèctric). Calculeu la diferència de potencial entre les plaques.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les forces que actuen sobre una gota de massa $2{,}93\\ \\text{pg}$, si la gota té una càrrega tal que fa que estigui suspesa en equilibri dins del camp elèctric esmentat. Calculeu el valor d'aquesta càrrega.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -552,6 +570,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): transformador, llei de Faraday",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -562,12 +581,14 @@
         {
           "id": "a",
           "enunciat": "Deduïu, a partir de la conservació del flux magnètic, la fórmula per a obtenir la tensió del circuit secundari quan connectem la bobina primària d'un transformador a una tensió alterna $\\varepsilon$. Si $N_\\text{p} = 1\\,200$ espires i $N_\\text{s} = 300$ espires, calculeu la tensió eficaç a la bobina secundària quan connectem la bobina primària a una tensió eficaç de $230\\ \\text{V}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la intensitat eficaç en el circuit primari si pel circuit secundari circulen $2{,}0\\ \\text{A}$ d'intensitat eficaç. Feu un esquema i indiqueu-hi cada element del transformador, sabent que les dues bobines estan enrotllades sobre un nucli de ferro comú.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -639,6 +660,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): fusió nuclear, defecte de massa",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -649,12 +671,14 @@
         {
           "id": "a",
           "enunciat": "Quin isòtop es forma? Escriviu l'equació nuclear que correspon a aquest procés.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu l'energia del fotó en joules (J) i en electró-volts (eV). Calculeu la freqüència d'aquest fotó.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

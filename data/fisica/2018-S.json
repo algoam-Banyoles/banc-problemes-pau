@@ -34,6 +34,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): tercera llei de kepler, força centrípeta",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -49,12 +50,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la massa de l'estrella Ross 128.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Suposant que l'exoplaneta Ross 128 b tingui la mateixa densitat que la Terra, calculeu-ne el radi i el mòdul de la intensitat del camp gravitatori a la seva superfície.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -123,6 +126,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, amplitud",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -138,12 +142,14 @@
         {
           "id": "a",
           "enunciat": "Determineu l'amplitud i la freqüència i escriviu l'equació del moviment $x(t)$, incloent-hi totes les unitats. Representeu la gràfica $x$-$t$ d'un moviment harmònic simple (MHS) que tingui la mateixa amplitud però la meitat de freqüència (les escales dels eixos han d'estar indicades clarament).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Les vibracions de l'objecte generen una ona sonora en el medi que l'envolta. Quins efectes sobre la freqüència i la longitud d'ona d'aquesta ona sonora tindran els canvis següents?\n\n- L'ona es reflecteix en una superfície. [0,3 punts]\n- L'ona passa de l'aire a l'aigua (on la velocitat del so és més gran). [0,3 punts]\n- El focus sonor es posa en moviment en direcció a nosaltres. [0,4 punts]",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -223,6 +229,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Força elèctrica qE en un camp elèctric (2n); l'equilibri de forces i el MRUA són de 1r",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -238,12 +245,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la relació $\\dfrac{q}{m}$ (càrrega elèctrica/massa) que ha de tenir una partícula de pols situada a la cara il·luminada de la Lluna perquè es trobi en situació d'equilibri de forces. Expliciteu el signe que ha de tenir la càrrega elèctrica.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Considereu una partícula amb una càrrega $q = +10\\ \\text{nC}$ i una massa $m = 0{,}020\\ \\text{mg}$ situada a la cara fosca de la Lluna. Calculeu la força total que actua sobre la partícula i el temps que tardarà a recórrer 10 metres partint del repòs.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -315,6 +324,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): força de lorentz, moviment circular uniforme",
+      "apartats_1r": 1,
       "pagines": [
         3
       ],
@@ -330,12 +340,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu la força que fa el camp sobre la partícula en l'instant inicial i calculeu la velocitat $v$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el període del moviment i la velocitat angular. Calculeu l'energia cinètica de la partícula en el moment que entra en el camp magnètic i també després de fer una volta completa.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "MCU (T = 2πr/v), energia cinètica i teorema treball-energia, amb la v de l'apartat a"
         }
       ],
       "solucio": {
@@ -405,6 +418,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, reacció nuclear",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -415,12 +429,14 @@
         {
           "id": "a",
           "enunciat": "Completeu la reacció de formació del $^{14}\\text{C}$:\n\n$$^{14}_{7}\\text{N} + \\,? \\to {}^{14}_{6}\\text{C} + {}^{1}_{1}\\text{H}$$\n\nCompleteu també la reacció de desintegració d'aquest isòtop:\n\n$$^{14}_{6}\\text{C} \\to \\ldots$$",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quin percentatge quedarà del $^{14}\\text{C}$ que tenia originalment una mòmia de $4\\,000$ anys d'antiguitat si sabem que el període de semidesintegració del $^{14}\\text{C}$ és de $5\\,730$ anys?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -479,6 +495,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, camp elèctric",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -494,12 +511,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el vector camp elèctric que crea el núvol en el punt P que s'indica a la figura.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'energia potencial electroestàtica emmagatzemada en el núvol.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -562,6 +581,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -577,12 +597,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu l'expressió del flux magnètic a través de l'espira en funció del temps i calculeu-ne el valor màxim. Indiqueu explícitament totes les unitats que intervenen en l'equació.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Escriviu l'expressió de la força electromotriu induïda a l'espira.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -645,6 +667,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, energia del fotó",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -655,12 +678,14 @@
         {
           "id": "a",
           "enunciat": "Quina freqüència i quina energia tenen els fotons de la llum groga?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quina energia cinètica, en eV, tindran els electrons extrets per aquesta llum groga?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

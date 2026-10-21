@@ -32,6 +32,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2,
         3
@@ -43,12 +44,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació paramètrica de la recta que conté el pal.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu les coordenades del punt de contacte del pal amb el terra, i la longitud del pal.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -123,6 +126,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Extrems relatius i intervals de monotonia, que són de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4,
         5
@@ -134,12 +138,15 @@
         {
           "id": "a",
           "enunciat": "Determineu el domini, les possibles asímptotes, els extrems relatius i els intervals de creixement i decreixement de la funció.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'equació general de la recta tangent a la funció $f(x)$ en el punt d'abscissa $x = 4$. Representeu en un mateix gràfic la funció $f(x)$ i la recta tangent.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Càlcul de la derivada i equació de la recta tangent."
         }
       ],
       "solucio": {
@@ -223,6 +230,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         6,
         7
@@ -234,12 +242,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu el rang de la matriu $A$ per als diferents valors del paràmetre $a$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si $X = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$, resoleu l'equació matricial següent: $\\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\end{pmatrix} \\cdot X = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Sistema homogeni concret resolt per Gauss."
         }
       ],
       "solucio": {
@@ -318,6 +329,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Derivabilitat d'una funció a trossos amb paràmetres i càlcul d'una primitiva, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         8,
         9
@@ -329,12 +341,14 @@
         {
           "id": "a",
           "enunciat": "Considereu la funció $f(x) = \\begin{cases} \\ln(x), & \\text{si } x \\in (0, e) \\\\ ax + b, & \\text{si } x \\in [e, 4) \\end{cases}$, on $a$ i $b$ són nombres reals. Trobeu el valor de $a$ i de $b$ per tal que la funció sigui contínua i derivable a l'interval $(0, 4)$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la funció $g(x)$ que satisfà $g'(x) = \\dfrac{x^3}{9x^4 + 1}$ i que passa pel punt $(0, -1)$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -409,6 +423,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         10,
         11
@@ -420,12 +435,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu els valors del paràmetre $a$ per als quals la matriu $A$ és invertible.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Per al cas $a = 3$, resoleu l'equació $A \\cdot X = B - 3I$, en què $B = \\begin{pmatrix} 4 & 0 & 0 \\\\ 0 & 4 & 0 \\\\ 0 & 0 & 4 \\end{pmatrix}$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -501,6 +518,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         12,
         13
@@ -517,12 +535,14 @@
         {
           "id": "a",
           "enunciat": "Comproveu que la longitud total del cable necessari, en funció de l'altura $h$ per on ha de passar el cable a l'eix vertical $OZ$, ve donada per l'expressió $L(h) = \\sqrt{h^2 - 4h + 8} + \\sqrt{h^2 - 2h + 5}$.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu les coordenades del punt $C$ per on ha de passar el cable per tal que la longitud del cable sigui mínima. Calculeu aquesta longitud mínima del cable.",
-          "punts": 1.75
+          "punts": 1.75,
+          "curs": "2n"
         }
       ],
       "solucio": {

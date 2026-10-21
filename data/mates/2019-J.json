@@ -101,6 +101,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -111,12 +112,15 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $k$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema per al cas $k = -1$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -187,6 +191,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -197,12 +202,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació de la recta, en forma paramètrica, que ha de seguir el dron. Quina distància ha de recórrer fins a arribar al pla?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu les coordenades del punt del pla on arribarà el dron.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -270,6 +277,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Teorema de Bolzano per localitzar zeros, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -280,12 +288,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu-ne el domini i estudieu-ne la continuïtat. Té cap asímptota vertical?",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Domini, continuïtat i asímptota vertical d'una funció racional."
         },
         {
           "id": "b",
           "enunciat": "Observeu que $f(-2) = -\\dfrac{2}{3}$, $f(0) = 4$ i $f(2) = -10$. Raoneu si, a partir d'aquesta informació, podem deduir que l'interval $(-2, 0)$ conté un zero de la funció. Podem deduir-ho per a l'interval $(0, 2)$? Trobeu un interval determinat per dos enters consecutius que contingui, com a mínim, un zero d'aquesta funció.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -359,6 +370,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -369,12 +381,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu per a quins valors del paràmetre $a$ se satisfà la igualtat $M^2 - M - 2I = 0$, en què $I$ és la matriu identitat i $0$ és la matriu nul·la, totes dues d'ordre 2.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Fent servir la igualtat de l'apartat anterior, trobeu una expressió general per a calcular la matriu inversa de la matriu $M$ i, a continuació, calculeu la inversa de $M$ per al cas $a = \\sqrt{2}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -440,6 +454,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -450,12 +465,15 @@
         {
           "id": "a",
           "enunciat": "Feu un esbós de la regió delimitada per les seves gràfiques i l'eix de les abscisses. Calculeu les coordenades del punt de tall de $y = f(x)$ amb $y = g(x)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Funcions elementals: punts de tall i esbós de les gràfiques."
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'àrea de la regió descrita en l'apartat anterior.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

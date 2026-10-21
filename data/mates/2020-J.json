@@ -34,6 +34,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2,
         3
@@ -50,12 +51,15 @@
         {
           "id": "a",
           "enunciat": "Comproveu que l'àrea d'aquest triangle, en funció de $a$, ve donada per la funció $$g(a) = \\frac{(a^2+3)^2}{4a}.$$",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Recta tangent, talls amb els eixos i àrea d'un triangle."
         },
         {
           "id": "b",
           "enunciat": "En quin punt $P$ l'àrea del triangle és mínima? Calculeu aquest valor mínim.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -139,6 +143,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4,
         5
@@ -150,12 +155,15 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $k$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu, si és possible, el sistema per al cas $k = 0$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -230,6 +238,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         6,
         7
@@ -241,12 +250,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació general del pla $\\pi$ que passa pel punt $(8, 8, 8)$ i té com a vectors directors $\\vec u = (1, 2, -3)$ i $\\vec v = (-1, 0, 3)$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor del paràmetre $a$ perquè el punt $(1, -5, a)$ pertanyi al pla $\\pi$ i calculeu l'equació paramètrica de la recta que passa per aquest punt i és perpendicular al pla $\\pi$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -370,6 +381,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         10,
         11
@@ -381,12 +393,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu la matriu $X$ que satisfà l'equació $AX = I - 3X$, en què $I$ és la matriu identitat d'ordre 2.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Comproveu que la matriu $X$ és invertible i calculeu-ne la matriu inversa.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -459,6 +473,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àrea entre la cúbica i una recta amb integral definida, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         12,
         13
@@ -470,12 +485,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu en quin punt del tercer quadrant la recta tangent a $y = f(x)$ és paral·lela a la recta $3x - y = 4$. Calculeu l'equació de la recta tangent a la gràfica en aquest punt i feu un dibuix aproximat de la gràfica de la funció i les dues rectes.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Recta tangent paral·lela a una recta i esbós de y = x³."
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'àrea de la regió delimitada per $y = f(x)$ i la recta $y = 3x + 2$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {

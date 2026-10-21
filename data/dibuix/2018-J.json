@@ -101,6 +101,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Cas PPR amb AB paral·lel a la recta: es resol amb mediatrius, sense potència (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         7
       ],
@@ -116,12 +117,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu la circumferència tangent a la recta *R* que passa pels punts *A* i *B*. Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, els punts de tangència.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment *AB*, tenint en compte que el dibuix està a escala 1:125, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -190,6 +193,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Piràmide o prisma en dièdric amb la base en un pla inclinat, per abatiment o canvi de pla (DT II).",
+      "apartats_1r": 2,
       "pagines": [
         9
       ],
@@ -205,17 +209,22 @@
         {
           "id": "a",
           "enunciat": "Determineu les projeccions de la piràmide hexagonal regular que té el triangle *abv-a′b′v′* com una de les cares laterals i que està situada per sobre d'aquesta cara.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical del tronc de piràmide que s'obté en tallar la piràmide determinada en l'apartat anterior pel pla de cantell que passa pel punt *p-p′* i forma a la dreta un angle de 45° amb el pla horitzontal.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Intersecció de les arestes de la piràmide amb un pla de cantell (dièdric de 1r)."
         },
         {
           "id": "c",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -302,6 +311,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) amb vertadera magnitud d'arestes.",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -317,17 +327,21 @@
         {
           "id": "a",
           "enunciat": "Determineu les projeccions d'un triangle equilàter *abc-a′b′c′* situat en un pla de perfil, que té el segment *ab-a′b′* com un dels costats i el vèrtex *c-c′* per sobre del segment *ab-a′b′*.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un tetraedre regular de manera que una de les cares sigui el triangle determinat en l'apartat anterior i que tingui un vèrtex situat a la dreta d'aquesta cara.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {

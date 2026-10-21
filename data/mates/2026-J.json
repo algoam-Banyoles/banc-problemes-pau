@@ -37,6 +37,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àrea sota una funció a trossos amb integral definida, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2,
         3
@@ -48,17 +49,21 @@
         {
           "id": "1.1",
           "enunciat": "Determineu els valors de $m$ que fan que la funció $f(x)$ sigui contínua en tot el seu domini. Justifiqueu la resposta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "1.2",
           "enunciat": "Feu un esbós de la gràfica de $y = f(x)$ per al cas $m = -2$, i calculeu l'àrea delimitada per aquesta gràfica, l'eix $OX$ i les rectes $x = -1$ i $x = 3$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "1.3",
           "enunciat": "Per a $m = -2$, trobeu un punt on la recta tangent a $y = f(x)$ sigui paral·lela a $y = -2x$. Calculeu l'equació d'aquesta recta tangent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Recta tangent paral·lela a una recta donada (mateix pendent)."
         }
       ],
       "solucio": {
@@ -173,6 +178,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4,
         5
@@ -184,17 +190,20 @@
         {
           "id": "2.1",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $m$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "2.2",
           "enunciat": "Interpreteu geomètricament aquest sistema per a tots els valors del paràmetre $m$ i resoleu-lo, si és possible, per al cas $m = 1$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "2.3",
           "enunciat": "Per a $m = 1$, és possible afegir una quarta equació de manera que el sistema resultant sigui compatible determinat i tingui com a solució $(x, y, z) = \\left(3, \\frac{1}{2}, \\frac{1}{2}\\right)$? Raoneu la resposta.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -285,6 +294,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Probabilitat total, Bayes i teorema de Bolzano, que són de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         6,
         7
@@ -296,17 +306,21 @@
         {
           "id": "3.1",
           "enunciat": "Quantes persones d'aquest municipi tenen entrada per al concert?",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "1r",
+          "curs_motiu": "Càlcul amb percentatges i proporcions de persones."
         },
         {
           "id": "3.2",
           "enunciat": "Si escollim a l'atzar un veí de Canet seguidor d'aquest grup de rock i no té entrada per al concert, quina és la probabilitat que hagués intentat aconseguir-la via web?",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         },
         {
           "id": "3.3",
           "enunciat": "El dia del concert, l'equip de so mesura el nivell de decibels generat pels crits entusiastes del públic durant els 5 minuts de durada de la cançó més famosa del grup; es pot aproximar per la funció següent:\n\n$$S(t) = -t^3 + 12t^2 - 30t + 90, \\qquad t \\in [0, 5],$$\n\non $t$ és el temps en minuts i $S(t)$ els decibels. Quan se superen els 100 decibels es considera que el públic està molt entregat i s'activen automàticament uns efectes lumínics especials. S'activaran en algun moment durant aquests cinc minuts? Si la resposta és afirmativa, calculeu en quin minut s'activen, aproximat a les dècimes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -475,6 +489,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -485,17 +500,20 @@
         {
           "id": "4.1",
           "enunciat": "Calculeu l'equació del pla que conté els punts $P$, $Q$ i $R$.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         },
         {
           "id": "4.2",
           "enunciat": "Comproveu que l'àrea del triangle $\\Delta PQR$ és $\\frac{3\\sqrt{5}}{2}\\ u^2$.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         },
         {
           "id": "4.3",
           "enunciat": "Determineu les condicions que han de complir les coordenades d'un quart punt $S = (x, y, z)$ per tal que $P$, $Q$, $R$ i $S$ formin un tetraedre de volum 1. (El volum del tetraedre format pels punts $P$, $Q$, $R$ i $S$ és: $\\text{volum}(PQRS) = \\dfrac{\\text{àrea}(\\Delta PQR)\\cdot\\text{altura}}{3}$.)",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

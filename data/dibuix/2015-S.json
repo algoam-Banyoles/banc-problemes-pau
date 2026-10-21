@@ -184,6 +184,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Secció plana d'un con (paràbola) amb canvi de pla: cònica i sòlid de revolució (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -199,12 +200,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical de la corba d'intersecció (paràbola) que produeix el pla que determina el paral·lelogram *abcd-a′b′c′d′* amb la superfície cònica definida per la circumferència de centre *o-o′* i el vèrtex *v-v′*.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu gràficament la visibilitat del conjunt, considerant el con com un sòlid i el paral·lelogram opac. [0,5 punts per la projecció horitzontal i 1 punt per la projecció vertical]",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -286,6 +290,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) amb vertadera magnitud d'arestes.",
+      "apartats_1r": 0,
       "pagines": [
         11
       ],
@@ -301,12 +306,14 @@
         {
           "id": "a",
           "enunciat": "Determineu la projecció vertical del quadrat de manera que el punt *a-a′* sigui el vèrtex més alt.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical de l'hexaedre regular que té el quadrat *abcd-a′b′c′d′* com una de les cares, de manera que el cub quedi a l'esquerra d'aquesta cara. Diferencieu les arestes vistes de les ocultes. [1,5 punts per cadascuna de les projeccions]",
-          "punts": 3
+          "punts": 3,
+          "curs": "2n"
         }
       ],
       "solucio": {

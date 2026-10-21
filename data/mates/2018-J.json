@@ -30,6 +30,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -40,12 +41,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu $M \\cdot N$ i comproveu que la matriu resultant no és invertible.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu els valors de $t$ per als quals la matriu $N \\cdot M$ és invertible.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -110,6 +113,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -120,12 +124,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació paramètrica de la recta $r$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu tots els punts de la recta $r$ que estan a la mateixa distància dels plans $\\pi_1: x + y = -2$ i $\\pi_2: x - z = 1$.\n\n*Nota:* Podeu calcular la distància d'un punt de coordenades $(x_0, y_0, z_0)$ al pla d'equació $Ax + By + Cz + D = 0$ amb l'expressió $\\dfrac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -189,6 +195,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Extrems relatius i punt d'inflexió, que són de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -199,12 +206,15 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació de la recta tangent a la gràfica i que és paral·lela a la recta d'equació $x + 3y = 0$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Recta tangent paral·lela a una recta donada (mateix pendent)."
         },
         {
           "id": "b",
           "enunciat": "Calculeu, si n'hi ha, els punts de la gràfica en què la funció presenta un màxim o mínim relatiu o un punt d'inflexió.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -274,6 +284,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -284,12 +295,14 @@
         {
           "id": "a",
           "enunciat": "Determineu l'equació general (és a dir, que té la forma $Ax + By + Cz = D$) del pla que passa per $P$ i $Q$ i és paral·lel a la recta $r$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Donats el pla $x + 2y + m \\cdot z = 7$ i el pla que passa per $P$, $Q$ i $R$, trobeu $m$ perquè siguin paral·lels i no coincidents.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -362,6 +375,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Teorema de Bolzano, monotonia i àrea amb integral, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -372,12 +386,14 @@
         {
           "id": "a",
           "enunciat": "Comproveu que la funció $f(x)$ compleix l'enunciat del teorema de Bolzano a l'interval $[0, 2]$ i que, per tant, l'equació $f(x) = 0$ té alguna solució a l'interval $(0, 2)$. Comproveu que $x = 1$ és una solució de l'equació $f(x) = 0$ i raoneu, tenint en compte el signe de $f'(x)$, que la solució és única.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "A partir del resultat final de l'apartat anterior, trobeu l'àrea limitada per la gràfica de la funció $f(x)$, l'eix de les abscisses i les rectes $x = 0$ i $x = 1$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -444,6 +460,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Determinant i rangs per fer incompatible un sistema segons un coeficient (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -459,12 +476,15 @@
         {
           "id": "a",
           "enunciat": "Escriviu el sistema i comproveu que els valors proposats com a solució són correctes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Escriure un sistema i comprovar-ne una solució per substitució."
         },
         {
           "id": "b",
           "enunciat": "Quin valor s'hauria de posar en lloc del 2 que està emmarcat en la imatge, corresponent a la cel·la E8 ($a_{33}$ de la matriu de coeficients), perquè el sistema fos incompatible?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

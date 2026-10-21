@@ -34,6 +34,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): velocitat orbital, període orbital",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -44,12 +45,14 @@
         {
           "id": "a",
           "enunciat": "Suposant que l'òrbita d'un d'aquests nanosatèl·lits és circular, a partir de la llei de la gravitació universal deduïu-ne l'expressió de la velocitat orbital en funció del radi orbital. Calculeu també la velocitat i el període orbitals d'aquests nanosatèl·lits.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Partint de la llei de la conservació de l'energia mecànica (negligiu la força de fregament), deduïu l'expressió de la velocitat de llançament necessària per a posar en òrbita un satèl·lit en funció del radi orbital. Calculeu la velocitat de llançament necessària per a posar en òrbita el nanosatèl·lit a $500\\ \\text{km}$ d'altura.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -122,6 +125,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): potencial elèctric, superfícies equipotencials",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -137,12 +141,14 @@
         {
           "id": "a",
           "enunciat": "Determineu a quina distància de la càrrega el potencial és igual a $3{,}00\\ \\text{V}$, $6{,}00\\ \\text{V}$, $9{,}00\\ \\text{V}$ i $12{,}0\\ \\text{V}$, respectivament. Representeu dins de la figura les línies equipotencials corresponents als potencials de $3{,}00\\ \\text{V}$, $6{,}00\\ \\text{V}$, $9{,}00\\ \\text{V}$ i $12{,}0\\ \\text{V}$. Digueu si la distància entre les línies equipotencials és constant i quant val o valen aquestes distàncies.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En la mateixa figura, representeu 8 línies de camp elèctric. Quin angle formen les línies de camp amb les línies equipotencials en el punt on es creuen?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -208,6 +214,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub tancat per un extrem",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -218,12 +225,14 @@
         {
           "id": "a",
           "enunciat": "En un moment determinat de l'erupció del Cumbre Vieja, es va detectar que la freqüència fonamental del so que emetia era de $5{,}40\\ \\text{Hz}$. Calculeu la longitud d'ona d'aquest so. Dibuixeu el perfil de l'ona estacionària corresponent i calculeu la longitud del tub, que correspon a la longitud del tram de la xemeneia ple d'aire.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En un moment de l'erupció, es va detectar un nivell d'intensitat sonora de $72{,}0\\ \\text{dB}$ a la localitat de Todoque, que és a $5{,}22\\ \\text{km}$ del con del volcà. Calculeu el nivell d'intensitat sonora que se sentirà des de la costa de l'illa d'El Hierro, que és a $92{,}3\\ \\text{km}$ del volcà Cumbre Vieja. (Suposeu que no hi ha obstacles en la propagació del so entre el volcà Cumbre Vieja i l'illa d'El Hierro.)",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -298,6 +307,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): camp magnètic d'un fil, regla de la mà dreta",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -313,12 +323,14 @@
         {
           "id": "a",
           "enunciat": "Donat un punt $P$ situat al pla $xy$ i equidistant als dos fils (la distància a cada fil és de $10{,}0\\ \\text{cm}$), feu un esquema sobre el pla $xy$ del camp magnètic creat per cada fil al punt $P$ i justifiqueu la direcció i el sentit del camp. Quin és el sentit i la direcció del camp magnètic total al punt $P$? Justifiqueu la resposta.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la força per unitat de longitud que fa el fil 1 sobre el fil 2, és a dir, la força que fa el fil 1 sobre un tram d'$1{,}00\\ \\text{m}$ de longitud del fil 2. Indiqueu tant el mòdul com la direcció i el sentit de la força.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -387,6 +399,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració radioactiva, període de semidesintegració",
+      "apartats_1r": 0,
       "pagines": [
         10
       ],
@@ -397,12 +410,14 @@
         {
           "id": "a",
           "enunciat": "Representeu, dins la quadrícula adjunta, els nuclis desintegrats en funció del temps. A partir de la gràfica determineu el període de semidesintegració. Tenint en compte que l'evolució temporal del nombre de nuclis desintegrats és la mateixa que la del nombre total de nuclis de radó a l'estança, calculeu la constant de desintegració.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Tenint en compte que un mesurament dura 10 minuts, quina activitat té la mostra de $180\\ \\text{cm}^3$ d'aire de l'estança el dia $t = 0$? L'Agència de Protecció Ambiental dels Estats Units (EPA) recomana no sobrepassar l'activitat de $4\\ \\text{pCi}$ per litre d'aire. Segons aquest límit, és perillosa la concentració a $t = 0$ a l'estança d'on s'ha extret la mostra?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -479,6 +494,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, funció de treball",
+      "apartats_1r": 0,
       "pagines": [
         12
       ],
@@ -489,12 +505,14 @@
         {
           "id": "a",
           "enunciat": "Si mantenim la intensitat de la llum constant i augmentem la freqüència dels fotons, com varia el nombre d'electrons emesos i l'energia d'aquests? Encercleu la resposta correcta dins del requadre següent i, a continuació, justifiqueu les dues respostes.\n\n- Nombre d'electrons emesos: Disminueix / Es manté constant / Augmenta\n- Energia dels electrons emesos: Disminueix / Es manté constant / Augmenta",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció de treball dels electrons emesos sabent que el potencial de frenada és de $0{,}29\\ \\text{V}$, quan la longitud d'ona incident és de $550\\ \\text{nm}$. Expresseu el resultat en eV.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -562,6 +580,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): corrent altern, alternador",
+      "apartats_1r": 0,
       "pagines": [
         13
       ],
@@ -577,12 +596,14 @@
         {
           "id": "a",
           "enunciat": "A partir del gràfic, deduïu la freqüència de gir de la bobina (en Hz) i el valor de la intensitat màxima $I_\\text{màx}$. Escriviu la funció $I(t)$ que descriu la relació entre la intensitat i el temps que mostra el gràfic.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Per a poder connectar electrodomèstics a aquest generador elèctric, disposem d'un transformador. Connectem aquest corrent altern al primari d'un transformador. La bobina del primari del transformador té 124 voltes. Calculeu el nombre de voltes que són necessàries a la bobina del secundari per a obtenir una FEM eficaç ($\\varepsilon_\\text{ef}$) de $220\\ \\text{V}$. Suposeu que es tracta d'un transformador ideal. Es tracta d'un transformador elevador o reductor?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -649,6 +670,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Física relativista (Física de 2n): energia del fotó, massa equivalent",
+      "apartats_1r": 0,
       "pagines": [
         15
       ],
@@ -659,12 +681,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la freqüència, la massa (vegeu la nota) i la quantitat de moviment dels fotons al terra del laboratori de l'experiment si tenen una energia de $14{,}4\\ \\text{keV}$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "L'energia mecànica dels fotons és la suma de l'energia dels fotons i de l'energia potencial gravitatòria. A partir del principi de conservació de l'energia mecànica, calculeu la variació (en valor absolut) de l'energia i de la freqüència dels fotons entre dos punts separats verticalment $22{,}6\\ \\text{m}$. És a dir, entre el terra del laboratori i un altre punt a la mateixa vertical, $22{,}6\\ \\text{m}$ més amunt. En quin punt el fotó té una freqüència més gran, quan es troba al terra o quan està $22{,}6\\ \\text{m}$ per sobre del terra?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {

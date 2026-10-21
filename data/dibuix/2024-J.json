@@ -31,6 +31,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Tangències amb un punt de tangència donat, resoltes per reducció a punt, mediatrius i bisectrius; no cal potència (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         5
       ],
@@ -46,12 +47,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu totes les circumferències que són tangents a la circumferència de centre $C$ i al segment $AB$ en el punt $P$. Deixeu constància del procés gràfic seguit i indiqueu els punts de tangència.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real en metres del segment $AB$ tenint en compte que el dibuix està fet a escala 1:25, i escriviu-lo en la casella situada a la part inferior de la pàgina.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -130,6 +133,7 @@
       "dificultat": 3,
       "curs": "1r",
       "curs_motiu": "Polígon regular situat per semblança o gir, i tangència per bisectrius (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         7
       ],
@@ -145,12 +149,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu un octàgon regular de 4 cm d'aresta de manera que estigui situat enterament entre les rectes $R$ i $S$, i que tingui un vèrtex en el punt $P$ i un altre sobre la recta $S$.",
-          "punts": 2
+          "punts": 2,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu la circumferència més petita tangent a les rectes $R$ i $S$, i a una aresta de l'octàgon anterior. Deixeu constància del procés gràfic seguit i indiqueu els punts de tangència.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -237,6 +243,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Cub en dièdric sobre un pla inclinat: abatiment o canvi de pla i VM (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -252,12 +259,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un cub tenint en compte la projecció horitzontal del quadrat $abcd$ com a cara esquerra del cub i la projecció vertical del vèrtex $a'$.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la visibilitat del cub en les dues projeccions considerant-lo com un sòlid i diferenciant les línies vistes de les ocultes.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -334,6 +344,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) construït amb canvi de pla.",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -349,12 +360,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un tetraedre regular de manera que el segment $ab$-$a'b'$ sigui una de les seves arestes i que una altra aresta se situï sobre la recta $r$-$r'$.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la visibilitat del tetraedre en les dues projeccions considerant-lo com un sòlid i diferenciant les línies vistes de les ocultes.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {

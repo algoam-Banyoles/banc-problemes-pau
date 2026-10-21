@@ -332,6 +332,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -342,17 +343,20 @@
         {
           "id": "a",
           "enunciat": "Escriviu la taula de veritat del sistema i indiqueu els casos que no són possibles.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -422,6 +426,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita estàtica d'estructures i tensió normal o deformació (resistència de materials), que són de 2n.",
+      "apartats_1r": 2,
       "pagines": [
         3
       ],
@@ -437,22 +442,28 @@
         {
           "id": "a",
           "enunciat": "Determineu l'angle, $\\alpha$, que formen els cables amb l'horitzontal.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Només fa servir geometria i trigonometria (matemàtiques de 1r)."
         },
         {
           "id": "b",
           "enunciat": "Determineu la força, $F$, que fa cadascun dels cables en funció de la massa, $m$, del llum.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Equilibri de forces concurrents en un punt (Física i Química de 1r)."
         },
         {
           "id": "c",
           "enunciat": "Representeu, de manera aproximada i indicant les escales, la tensió normal, $\\sigma$, dels cables deguda a la força que exerceixen, en funció de la massa, $m$, del llum per a $200\\ \\text{kg} \\le m \\le 600\\ \\text{kg}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "Si es decideix penjar un llum de massa $m = 450\\ \\text{kg}$, quina és la deformació unitària, $\\varepsilon$, dels cables a causa de la tensió que hauran de suportar?",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -533,6 +544,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita calor sensible, poder calorífic i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         3
       ],
@@ -543,17 +555,20 @@
         {
           "id": "a",
           "enunciat": "La massa d'aigua, $m_\\text{a}$, diària escalfada i l'energia, $E_\\text{dia}$, necessària per a escalfar-la, en kW h.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La massa de biomassa, $m_\\text{b}$, diària necessària i l'energia dissipada, $E_\\text{diss}$, en la combustió, en kW h.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El cabal mitjà, $q$, en L/s, d'aigua calenta que necessita la piscina.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -628,6 +643,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         4
       ],
@@ -643,22 +659,26 @@
         {
           "id": "a",
           "enunciat": "La resistència mínima, $R_\\text{mín}$, del circuit.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El corrent, $I$, consumit quan la resistència és la mínima.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El valor de les quatre potències, $P_1$, $P_2$, $P_3$ i $P_4$, que proporciona l'estoreta quan es connecten els interruptors amb les combinacions 1-3-4, 1-3, 1-4 i 2-4.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "L'energia elèctrica consumida, $E_\\text{elèctr}$, en W h, si l'estoreta es manté encesa durant un temps $t = 2\\ \\text{h}$ a la màxima potència.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -739,6 +759,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita potència, parell, consum i rendiment global del motor, sense cicle tèrmic: 1r.",
+      "apartats_1r": 3,
       "pagines": [
         4
       ],
@@ -749,17 +770,20 @@
         {
           "id": "a",
           "enunciat": "El parell a l'eix de sortida, $\\Gamma_\\text{s}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El consum específic, $c$, en kg/(kW h).",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El rendiment, $\\eta$, del motor.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {

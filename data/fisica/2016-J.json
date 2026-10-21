@@ -34,6 +34,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, força centrípeta",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -49,12 +50,15 @@
         {
           "id": "a",
           "enunciat": "Deduïu la fórmula per a obtenir el radi d'una òrbita circular a partir de les magnituds proporcionades. Utilitzeu aquesta fórmula per a calcular el radi de l'òrbita de l'estrella que es mou al voltant d'A0620-00.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la velocitat lineal i l'acceleració centrípeta de l'estrella i representeu els dos vectors $\\vec v$ i $\\vec a_c$ sobre una figura similar a la d'aquest problema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "MCU: v = 2πR/T i a_c = v²/R, amb el radi de l'apartat a com a dada"
         }
       ],
       "solucio": {
@@ -125,6 +129,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, molla",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -135,12 +140,14 @@
         {
           "id": "a",
           "enunciat": "Volem que l'altra molla oscil·li amb la mateixa amplitud, però amb una freqüència doble que la de la molla de què penja l'objecte A. Quina massa hem de penjar a la segona molla?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Els dos objectes es deixen anar des de l'extrem inferior de l'oscil·lació. Representeu en una gràfica velocitat-temps la velocitat de cadascun dels objectes quan oscil·len durant $2\\ \\text{s}$ en les condicions descrites. En la gràfica heu d'indicar clarament les escales dels eixos, les magnituds i les unitats. Durant els $2\\ \\text{s}$ representats en la gràfica, en quins moments la diferència de fase entre els dos objectes és de $\\pi$ radians?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -221,6 +228,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): longitud d'ona, diferència de fase",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -236,12 +244,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la longitud d'ona i el període dels ultrasons emesos per aquests ratpenats. Considereu un mosquit situat a $1{,}5000\\ \\text{m}$ de l'orella dreta i a $1{,}5030\\ \\text{m}$ de l'orella esquerra del ratpenat. Calculeu la diferència de fase en l'eco percebut per cada orella, provinent del mosquit.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quan el mosquit està més a prop, el ratpenat també podria utilitzar la diferència d'intensitats dels ecos. Calculeu el quocient d'intensitats sonores $\\dfrac{I_\\text{dreta}}{I_\\text{esquerra}}$ quan el mosquit està a $33\\ \\text{cm}$ de l'orella dreta i a $34\\ \\text{cm}$ de l'orella esquerra i expresseu en decibels la diferència de nivells d'intensitat sonora. Considereu que l'eco es propaga uniformement des del mosquit en totes les direccions de l'espai.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -315,6 +325,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, diferència de potencial",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -334,12 +345,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la diferència de potencial entre les dues plaques i indiqueu quina placa té el potencial més alt i quina té el potencial més baix. Dibuixeu la figura 1 i representeu-hi les línies de camp elèctric entre les dues plaques.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Més endavant, els electrons passen entre dues altres plaques, que generen un camp elèctric uniforme de $500\\ \\text{N C}^{-1}$ vertical cap amunt (figura 2). Calculeu l'acceleració dels electrons quan estiguin sota l'acció d'aquest camp elèctric i les dues components de la velocitat en sortir del recinte on hi ha el camp elèctric.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -415,6 +428,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, constant de planck",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -430,12 +444,14 @@
         {
           "id": "a",
           "enunciat": "Determineu el valor de la constant de Planck a partir de la gràfica.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'energia mínima d'extracció dels electrons (en eV).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -500,6 +516,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): dipol elèctric, superfícies equipotencials",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -515,12 +532,14 @@
         {
           "id": "a",
           "enunciat": "Reproduïu la figura i indiqueu els valors de potencial elèctric de cada una de les superfícies equipotencials que hi apareixen. Representeu-hi també, de manera aproximada, les línies de camp elèctric d'aquesta regió de l'espai.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el valor de les càrregues $+q$ i $-q$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -592,6 +611,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, neutrí",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -602,12 +622,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu les equacions nuclears que corresponen a aquests processos, incloent-hi els neutrins i els antineutrins.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "També és possible que el potassi 40 capturi un electró de la seva escorça i emeti un fotó gamma de $1\\,460\\ \\text{MeV}$. Calculeu la longitud d'ona i la freqüència d'aquests raigs gamma. Calculeu també la disminució de la massa de l'àtom de potassi 40 deguda a l'energia que s'endú el fotó.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -675,6 +697,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): espira circular, camp magnètic",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -690,12 +713,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el mòdul del camp magnètic en el centre de l'espira (en $\\mu\\text{T}$).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quin sentit ha de tenir el corrent elèctric que circula per l'espira perquè el camp magnètic en el centre vagi en el sentit positiu de l'eix $x$?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -755,6 +780,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, equació de moviment",
+      "apartats_1r": 0,
       "pagines": [
         5
       ],
@@ -765,12 +791,14 @@
         {
           "id": "a",
           "enunciat": "L'equació de moviment i la velocitat màxima del pistó.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El valor de la força màxima que actua sobre el pistó, si té una massa de $200\\ \\text{g}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -834,6 +862,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, potencial elèctric",
+      "apartats_1r": 0,
       "pagines": [
         5
       ],
@@ -844,12 +873,14 @@
         {
           "id": "a",
           "enunciat": "El camp elèctric en un punt situat sobre la línia que uneix les càrregues. Aquest punt està situat a una distància de $5{,}0\\ \\text{cm}$ de la càrrega de $3{,}0\\ \\mu\\text{C}$ i a $10\\ \\text{cm}$ de la càrrega de $-7{,}0\\ \\mu\\text{C}$. Indiqueu-ne el mòdul, la direcció i el sentit.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El punt entre les dues càrregues en el qual el potencial és nul.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -923,6 +954,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, tercera llei de kepler",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -933,12 +965,14 @@
         {
           "id": "a",
           "enunciat": "Si el període de Mimas al voltant de Saturn és de $22\\ \\text{h}\\ 37\\ \\text{min}$ i $5\\ \\text{s}$, a quina altura per sobre de la superfície de Saturn orbita Mimas? A quina velocitat?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quina és l'energia mecànica de Mimas? Què significa el signe del resultat?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1012,6 +1046,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): força de lorentz, moviment circular",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -1022,12 +1057,14 @@
         {
           "id": "a",
           "enunciat": "Determineu el mòdul de la força que actua sobre cada partícula i indiqueu el tipus de moviment que fa cadascuna.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "A continuació, situem paral·lelament a l'eix $Y$, a $3{,}00\\ \\text{mm}$ de l'origen de coordenades, un fil infinit pel qual circula un corrent $I$. Determineu el valor del corrent del fil que fa que el protó segueixi una trajectòria rectilínia. Considereu que el mòdul del camp magnètic creat per aquest fil infinit és $B = \\dfrac{\\mu_0 I}{2\\pi R}$, en què $\\mu_0 = 4\\pi \\times 10^{-7}\\ \\text{N A}^{-2}$ i $R$ és la distància al fil conductor.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1095,6 +1132,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, potencial de frenada",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -1105,12 +1143,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el treball d'extracció (funció de treball) i el llindar de freqüència del metall del càtode.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Expliqueu raonadament si es produirà efecte fotoelèctric quan un feix de llum de longitud d'ona més gran que el llindar de longitud d'ona incideixi sobre el metall. I si la freqüència del feix incident és més gran que el llindar de freqüència del metall?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1188,6 +1228,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "g(h) = GM/(R+h)² del camp gravitatori (2n); la conservació de l'energia sola seria de 1r",
+      "apartats_1r": 0,
       "pagines": [
         7
       ],
@@ -1198,12 +1239,14 @@
         {
           "id": "a",
           "enunciat": "L'acceleració de la gravetat quan comença el salt i quan obre el paracaigudes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "La velocitat que portarà quan sigui a $80{,}0\\ \\text{km}$ d'altura (considereu negligible la resistència de l'aire).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1268,6 +1311,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració radioactiva, constant de desintegració",
+      "apartats_1r": 0,
       "pagines": [
         7
       ],
@@ -1278,12 +1322,14 @@
         {
           "id": "a",
           "enunciat": "Expliqueu el significat de les magnituds que intervenen en aquesta equació i indiqueu el període de semidesintegració de la substància. Justifiqueu la resposta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si en un moment determinat la mostra conté $1{,}0 \\times 10^{28}$ nuclis d'aquesta substància, calculeu l'activitat que tindrà al cap de $4{,}0$ hores.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1350,6 +1396,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): força de lorentz, moviment circular",
+      "apartats_1r": 0,
       "pagines": [
         7
       ],
@@ -1360,12 +1407,14 @@
         {
           "id": "a",
           "enunciat": "Determineu la força magnètica que actua sobre la partícula i dibuixeu la trajectòria que seguirà dins del camp magnètic, així com els vectors velocitat, camp magnètic i força magnètica. Indiqueu en quin sentit gira la partícula.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el radi de gir de la partícula i la freqüència del moviment circular en MHz.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

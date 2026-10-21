@@ -344,6 +344,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -354,17 +355,20 @@
         {
           "id": "a",
           "enunciat": "Escriviu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -435,6 +439,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -450,22 +455,26 @@
         {
           "id": "a",
           "enunciat": "La superfície, $s$, de fusta utilitzada.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El perímetre tallat, $p_1$, si es construeix a partir de triangles com el de la figura.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El perímetre tallat, $p_2$, si es construeix tallant el perfil exterior de l'estrella.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El cost de cadascuna de les opcions. Quina és la més econòmica?",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -547,6 +556,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita potència, parell, consum i rendiment global del motor, sense cicle tèrmic: 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -557,22 +567,26 @@
         {
           "id": "a",
           "enunciat": "El consum, $c$, de gasolina en L/s.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència tèrmica consumida, $P_\\text{tèrm}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El rendiment, $\\eta$, del motor.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La distància, $d$, que pot recórrer el vehicle si el dipòsit de combustible té una capacitat $V = 45\\ \\text{L}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -647,6 +661,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita l'estabilitat d'una estructura (condició de bolcada amb moments), que és de 2n.",
+      "apartats_1r": 2,
       "pagines": [
         4
       ],
@@ -662,17 +677,22 @@
         {
           "id": "a",
           "enunciat": "La massa màxima, $m_\\text{màx}$, que pot elevar la grua, amb el ganxo situat a l'extrem, sense que bolqui.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "La grua s'utilitza per a fer pujar una massa $m = 1\\,000\\ \\text{kg}$ fins a una altura $\\Delta h = 20\\ \\text{m}$, amb el ganxo situat a $15\\ \\text{m}$ de l'eix de la torre. La velocitat d'elevació de la càrrega és $v = 30\\ \\text{m/min}$. Determineu: L'energia mecànica, $E_\\text{mec}$, necessària per a fer l'elevació.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Energia potencial gravitatòria mgh (mecànica de 1r)."
         },
         {
           "id": "c",
           "enunciat": "La potència, $P_\\text{m}$, que ha de desenvolupar el motor.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Potència d'elevació P = mgv (mecànica de 1r)."
         }
       ],
       "solucio": {
@@ -742,6 +762,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         4
       ],
@@ -752,17 +773,20 @@
         {
           "id": "a",
           "enunciat": "L'energia diària que cal per a escalfar l'aigua.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "L'energia diària que ha de captar cadascun dels captadors.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Si la població on està situat el centre té una mitjana anual de sol de $2\\,600\\ \\text{h}$, quina és la potència mitjana necessària de radiació solar per unitat de superfície?",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -1131,6 +1155,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -1141,17 +1166,20 @@
         {
           "id": "a",
           "enunciat": "Escriviu la taula de veritat del sistema i indiqueu els casos que no són possibles.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1215,6 +1243,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         7
       ],
@@ -1230,17 +1259,20 @@
         {
           "id": "a",
           "enunciat": "La força, $F$, necessària.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "La força que fa la barra CD.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "La força horitzontal, $F_\\text{guia}$, que rep la porta de la guia en el punt B.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1323,6 +1355,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Treball, rendiment i pressió hidrostàtica (p = ρgh) d'una bomba: 1r.",
+      "apartats_1r": 3,
       "pagines": [
         7
       ],
@@ -1333,17 +1366,20 @@
         {
           "id": "a",
           "enunciat": "El treball, $W$, fet per la bomba.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El rendiment de la bomba, $\\eta_\\text{b}$, si s'acciona mitjançant un motor elèctric de potència $P_\\text{m} = 525\\ \\text{W}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La pressió mitjana, $p$, de funcionament de la bomba.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -1409,6 +1445,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         8
       ],
@@ -1419,17 +1456,20 @@
         {
           "id": "a",
           "enunciat": "La resistència total, $R_{20}$, de la torradora a $20\\ ^\\circ\\text{C}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La resistivitat varia amb la temperatura segons l'expressió $\\rho = \\rho_{20}\\,(1 + \\alpha\\,\\Delta T)$, en què $\\alpha = 0{,}4 \\cdot 10^{-3}\\ ^\\circ\\text{C}^{-1}$ és el coeficient de temperatura de la resistència elèctrica del nicrom i $\\Delta T$ és l'increment de temperatura des del valor de referència de $20\\ ^\\circ\\text{C}$. Si el fil de nicrom s'escalfa fins a $600\\ ^\\circ\\text{C}$, determineu: La resistència total, $R_{600}$, de la torradora quan el fil de nicrom és a $600\\ ^\\circ\\text{C}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "(Amb el fil a $600\\ ^\\circ\\text{C}$.) La variació de la intensitat que circula per les resistències a $20\\ ^\\circ\\text{C}$ i a $600\\ ^\\circ\\text{C}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -1504,6 +1544,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només consum de combustible, velocitat mitjana i percentatges (1r).",
+      "apartats_1r": 3,
       "pagines": [
         8
       ],
@@ -1514,17 +1555,20 @@
         {
           "id": "a",
           "enunciat": "El consum del vehicle, $c$, en L/(100 km).",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El temps, $t$, que ha necessitat el vehicle per a completar el gran premi en hores, minuts, segons i mil·lèsimes de segon.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La massa de combustible, $m_\\text{comb}$, que portava inicialment el vehicle si en finalitzar la cursa li n'ha sobrat un $1{,}5\\ \\%$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {

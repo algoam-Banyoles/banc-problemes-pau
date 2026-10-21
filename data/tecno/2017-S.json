@@ -344,6 +344,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -354,17 +355,20 @@
         {
           "id": "a",
           "enunciat": "Elaboreu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -435,6 +439,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         3
       ],
@@ -450,17 +455,20 @@
         {
           "id": "a",
           "enunciat": "L'energia $E$ necessària per a escalfar l'aigua en la primera fase.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El valor de la resistència $R_\\text{e}$ i el corrent $I$ que circula pel circuit durant la fase d'escalfament.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El valor que ha de tenir la resistència $R_\\text{m}$ perquè la potència consumida quan l'aigua es manté calenta sigui $P_\\text{m} = 300\\ \\text{W}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -545,6 +553,7 @@
       "dificultat": 3,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         3
       ],
@@ -560,17 +569,20 @@
         {
           "id": "a",
           "enunciat": "La potència $P_2$ i el parell màxim $\\Gamma_2$ a l'eix de sortida del multiplicador.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El rendiment del multiplicador $\\eta_\\text{mult}$ quan el parell al seu eix d'entrada és màxim.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La potència dissipada en el multiplicador $P_\\text{mult}$ i en el generador $P_\\text{gen}$ quan el parell a l'eix d'entrada del multiplicador és màxim.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -655,6 +667,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Fabricació additiva (volum, massa i filament), que és de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         4
       ],
@@ -670,17 +683,20 @@
         {
           "id": "a",
           "enunciat": "El volum $V$ i la massa $m$ del sòlid construït.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La longitud $L$ de filament de PLA utilitzat.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El nombre mínim $n$ de capes que ha de dipositar la impressora.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -760,6 +776,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita oleohidràulica (cilindre, pressió, cabal) i tensió normal a la tija, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -770,22 +787,26 @@
         {
           "id": "a",
           "enunciat": "La força $F_\\text{ch}$ que fa el cilindre hidràulic i la pressió relativa $p_\\text{int}$ a l'interior del cilindre.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "La tensió normal a compressió $\\sigma$ de la tija.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "La velocitat $v$ d'ascens de la càrrega en m/s.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "La potència $P_\\text{h}$ que proporciona la bomba i el rendiment $\\eta$ del cilindre hidràulic.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

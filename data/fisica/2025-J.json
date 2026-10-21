@@ -34,6 +34,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): velocitat orbital, període orbital",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -44,12 +45,14 @@
         {
           "id": "a",
           "punts": 1.25,
-          "enunciat": "A partir de la llei de gravitació universal, deduïu l'expressió de la velocitat orbital en funció del radi orbital. Calculeu la velocitat de la caixa d'eines en òrbita a $400\\ \\text{km}$ per sobre de la superfície terrestre i el nombre de voltes que farà la caixa cada dia al voltant de la Terra."
+          "enunciat": "A partir de la llei de gravitació universal, deduïu l'expressió de la velocitat orbital en funció del radi orbital. Calculeu la velocitat de la caixa d'eines en òrbita a $400\\ \\text{km}$ per sobre de la superfície terrestre i el nombre de voltes que farà la caixa cada dia al voltant de la Terra.",
+          "curs": "2n"
         },
         {
           "id": "b",
           "punts": 1.25,
-          "enunciat": "La fi de l'EEI està planificada per a l'any 2031. D'una manera gradual i controlada se'n baixarà l'òrbita fins als $280\\ \\text{km}$ d'altura per sobre de la superfície terrestre. Calculeu l'energia mecànica de l'EEI en aquesta òrbita i justifiqueu-ne el signe. L'última tripulació abandonarà l'estació i, posteriorment, l'estació caurà des d'aquesta altura al mig de l'oceà Pacífic. Calculeu amb quina energia cinètica impactarà l'estació contra l'aigua, sense tenir en compte els efectes de l'atmosfera terrestre."
+          "enunciat": "La fi de l'EEI està planificada per a l'any 2031. D'una manera gradual i controlada se'n baixarà l'òrbita fins als $280\\ \\text{km}$ d'altura per sobre de la superfície terrestre. Calculeu l'energia mecànica de l'EEI en aquesta òrbita i justifiqueu-ne el signe. L'última tripulació abandonarà l'estació i, posteriorment, l'estació caurà des d'aquesta altura al mig de l'oceà Pacífic. Calculeu amb quina energia cinètica impactarà l'estació contra l'aigua, sense tenir en compte els efectes de l'atmosfera terrestre.",
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -125,6 +128,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): experiment de millikan, camp elèctric uniforme",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -135,12 +139,14 @@
         {
           "id": "a",
           "punts": 1.25,
-          "enunciat": "Feu un esquema del dispositiu emprat per Millikan, dibuixant les forces que actuen sobre una gota d'oli esfèrica. Indiqueu i raoneu el signe de la càrrega que tindrà cada placa i la direcció i el sentit del camp elèctric generat per aquestes plaques. Suposant que les plaques es connecten a un potencial elèctric de $2{,}00\\ \\text{kV}$ i que la distància entre plaques és $d = 2{,}00\\ \\text{cm}$, calculeu el camp elèctric creat entre plaques i dibuixeu-lo en el mateix esquema."
+          "enunciat": "Feu un esquema del dispositiu emprat per Millikan, dibuixant les forces que actuen sobre una gota d'oli esfèrica. Indiqueu i raoneu el signe de la càrrega que tindrà cada placa i la direcció i el sentit del camp elèctric generat per aquestes plaques. Suposant que les plaques es connecten a un potencial elèctric de $2{,}00\\ \\text{kV}$ i que la distància entre plaques és $d = 2{,}00\\ \\text{cm}$, calculeu el camp elèctric creat entre plaques i dibuixeu-lo en el mateix esquema.",
+          "curs": "2n"
         },
         {
           "id": "b",
           "punts": 1.25,
-          "enunciat": "Tenint en compte que la densitat de l'oli és de $923\\ \\text{kg m}^{-3}$ i que el radi d'una gota és d'$1{,}08\\ \\mu\\text{m}$, calculeu la càrrega d'una gota que es troba en equilibri. Quants electrons calen per a generar aquesta càrrega? Què s'observaria si il·luminéssim la gota amb raigs ultraviolats i aquesta perdés un electró? Justifiqueu la resposta."
+          "enunciat": "Tenint en compte que la densitat de l'oli és de $923\\ \\text{kg m}^{-3}$ i que el radi d'una gota és d'$1{,}08\\ \\mu\\text{m}$, calculeu la càrrega d'una gota que es troba en equilibri. Quants electrons calen per a generar aquesta càrrega? Què s'observaria si il·luminéssim la gota amb raigs ultraviolats i aquesta perdés un electró? Justifiqueu la resposta.",
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -217,6 +223,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -232,12 +239,14 @@
         {
           "id": "a",
           "punts": 1.25,
-          "enunciat": "Calculeu l'expressió del flux magnètic del circuit en funció del temps i la força electromotriu induïda al circuit. Indiqueu el sentit de circulació del corrent induït i justifiqueu la resposta."
+          "enunciat": "Calculeu l'expressió del flux magnètic del circuit en funció del temps i la força electromotriu induïda al circuit. Indiqueu el sentit de circulació del corrent induït i justifiqueu la resposta.",
+          "curs": "2n"
         },
         {
           "id": "b",
           "punts": 1.25,
-          "enunciat": "Suposem que la barra presenta una resistència de $50{,}0\\ \\Omega$ i la resta del circuit no presenta cap resistència. Calculeu la intensitat elèctrica que circularà pel circuit. Calculeu la força magnètica que actua sobre la barra i representeu-la en la figura."
+          "enunciat": "Suposem que la barra presenta una resistència de $50{,}0\\ \\Omega$ i la resta del circuit no presenta cap resistència. Calculeu la intensitat elèctrica que circularà pel circuit. Calculeu la força magnètica que actua sobre la barra i representeu-la en la figura.",
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -305,6 +314,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Òptica: llei de Snell i angle límit (2n al Decret 171/2022; era de 1r al 142/2008)",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -320,12 +330,14 @@
         {
           "id": "a",
           "punts": 1.25,
-          "enunciat": "A partir de la llei de Snell, deduïu l'expressió de l'angle límit (o angle crític) en funció dels índexs de refracció dels dos medis. Calculeu l'angle límit amb les dades del problema. Justifiqueu si es podria donar aquest fenomen en el cas que s'invertissin els medis."
+          "enunciat": "A partir de la llei de Snell, deduïu l'expressió de l'angle límit (o angle crític) en funció dels índexs de refracció dels dos medis. Calculeu l'angle límit amb les dades del problema. Justifiqueu si es podria donar aquest fenomen en el cas que s'invertissin els medis.",
+          "curs": "2n"
         },
         {
           "id": "b",
           "punts": 1.25,
-          "enunciat": "A quina distància màxima, $d$, s'hauria de col·locar la segona persona respecte de la primera per veure la moneda? Considereu un raig de llum que surt de la moneda i arriba a la interfície de policarbonat-aire amb aquest angle límit i dibuixeu un esquema dels raigs incident, reflectit i refractat per a aquest cas."
+          "enunciat": "A quina distància màxima, $d$, s'hauria de col·locar la segona persona respecte de la primera per veure la moneda? Considereu un raig de llum que surt de la moneda i arriba a la interfície de policarbonat-aire amb aquest angle límit i dibuixeu un esquema dels raigs incident, reflectit i refractat per a aquest cas.",
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -399,6 +411,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub obert",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -409,12 +422,14 @@
         {
           "id": "a",
           "punts": 1.25,
-          "enunciat": "Per a tocar la nota més greu, el flautista ha de tapar amb els dits tots els forats laterals del tub. Calculeu les freqüències del primer i el tercer harmònics d'una flauta travessera en aquest cas. Dibuixeu aquests dos harmònics i calculeu per a cada un la posició dels nodes i els ventres respecte d'un extrem de la flauta."
+          "enunciat": "Per a tocar la nota més greu, el flautista ha de tapar amb els dits tots els forats laterals del tub. Calculeu les freqüències del primer i el tercer harmònics d'una flauta travessera en aquest cas. Dibuixeu aquests dos harmònics i calculeu per a cada un la posició dels nodes i els ventres respecte d'un extrem de la flauta.",
+          "curs": "2n"
         },
         {
           "id": "b",
           "punts": 1.25,
-          "enunciat": "Tapem un dels extrems de la flauta de manera que aquesta es comporta com un tub amb un extrem obert i un de tancat. Dibuixeu l'ona estacionària corresponent al primer i el segon modes de vibració possibles i indiqueu els seus nodes i ventres. Calculeu la longitud d'ona i la freqüència d'aquests dos modes de vibració."
+          "enunciat": "Tapem un dels extrems de la flauta de manera que aquesta es comporta com un tub amb un extrem obert i un de tancat. Dibuixeu l'ona estacionària corresponent al primer i el segon modes de vibració possibles i indiqueu els seus nodes i ventres. Calculeu la longitud d'ona i la freqüència d'aquests dos modes de vibració.",
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -490,6 +505,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, antineutrí",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -500,12 +516,14 @@
         {
           "id": "a",
           "punts": 1.25,
-          "enunciat": "Raoneu si el sodi 24 serà una font d'emissió d'electrons o de positrons. Escriviu la reacció de la desintegració beta del ${}^{24}_{11}\\text{Na}$ sense oblidar els neutrins o antineutrins. Quin és l'altre nucli resultant?"
+          "enunciat": "Raoneu si el sodi 24 serà una font d'emissió d'electrons o de positrons. Escriviu la reacció de la desintegració beta del ${}^{24}_{11}\\text{Na}$ sense oblidar els neutrins o antineutrins. Quin és l'altre nucli resultant?",
+          "curs": "2n"
         },
         {
           "id": "b",
           "punts": 1.25,
-          "enunciat": "L'isòtop del sodi 24 té un període de semidesintegració de $15{,}0\\ \\text{h}$. Una solució salina amb àtoms de sodi 24 té una activitat inicial de $580\\ \\text{kBq}$. Aquesta solució s'injecta a un pacient i es dissol per tota la seva sang. Trobeu l'activitat de la solució injectada al cap de $10{,}0\\ \\text{h}$. Si al cap d'aquest temps en $1{,}00\\ \\text{mL}$ de sang hi ha una activitat de $60{,}0\\ \\text{Bq}$, quin és el volum de sang del pacient?"
+          "enunciat": "L'isòtop del sodi 24 té un període de semidesintegració de $15{,}0\\ \\text{h}$. Una solució salina amb àtoms de sodi 24 té una activitat inicial de $580\\ \\text{kBq}$. Aquesta solució s'injecta a un pacient i es dissol per tota la seva sang. Trobeu l'activitat de la solució injectada al cap de $10{,}0\\ \\text{h}$. Si al cap d'aquest temps en $1{,}00\\ \\text{mL}$ de sang hi ha una activitat de $60{,}0\\ \\text{Bq}$, quin és el volum de sang del pacient?",
+          "curs": "2n"
         }
       ],
       "solucio": {

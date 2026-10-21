@@ -329,6 +329,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -339,17 +340,20 @@
         {
           "id": "a",
           "enunciat": "Escriviu la taula de veritat del sistema i indiqueu els casos que no són possibles.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -426,6 +430,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -441,22 +446,26 @@
         {
           "id": "a",
           "enunciat": "El valor de la resistència $R$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "L'energia consumida pel conjunt $E_\\text{total}$ en el temps $t = 0{,}5\\ \\text{h}$ de funcionament quan les tres bateries estan connectades.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La intensitat $I_\\text{LED2}$ que circula per cada LED quan només hi ha dues bateries connectades.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El temps $t_\\text{bat}$ que duren les bateries en cadascuna de les dues configuracions.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -536,6 +545,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -546,22 +556,26 @@
         {
           "id": "a",
           "enunciat": "El consum $c$ en kg/h, si funciona a la màxima potència.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La durada d'una bombona $t_\\text{b}$ si funciona a la màxima potència.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La reducció de volum, en tant per cent, que experimenta el butà en el procés de liquació per a introduir-lo a la bombona.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "Per a una potència de l'estufa $1\\ \\text{kW} \\le P \\le 3{,}05\\ \\text{kW}$, dibuixeu el gràfic de la durada d'una bombona en hores, en funció de la potència $P$, indicant les escales.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -648,6 +662,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita estàtica d'estructures i tensió normal o deformació (resistència de materials), que són de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4
       ],
@@ -663,22 +678,27 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure de la placa.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la massa $m$ de la placa ($\\rho_\\text{acer} = 7\\,850\\ \\text{kg/m}^3$).",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Densitat i volum per obtenir la massa (materials i càlcul bàsic de 1r)."
         },
         {
           "id": "c",
           "enunciat": "Determineu la força $T$ que fa el cable i les forces vertical $F_\\text{v}$ i horitzontal $F_\\text{h}$ en l'articulació O.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "Determineu la tensió normal $\\sigma$ del cable a causa de la força que fa.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -761,6 +781,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         4
       ],
@@ -771,17 +792,20 @@
         {
           "id": "a",
           "enunciat": "La potència $P_\\text{motor}$ i el parell $\\Gamma_\\text{motor}$ a l'eix de sortida del motor.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència $P_\\text{s}$ i el parell $\\Gamma_\\text{s}$ a l'eix del tambor (eix de sortida del reductor).",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La massa màxima $m$ que pot tenir la part que penja de la porta.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {

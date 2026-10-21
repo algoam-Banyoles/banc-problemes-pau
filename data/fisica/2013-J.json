@@ -35,6 +35,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, força centrípeta",
+      "apartats_1r": 1,
       "pagines": [
         5
       ],
@@ -45,12 +46,15 @@
         {
           "id": "a",
           "enunciat": "Quin període de rotació tindran aquests satèl·lits?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quina serà la velocitat orbital dels satèl·lits?",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "MCU: v = 2πr/T, amb el període de l'apartat a com a dada"
         }
       ],
       "solucio": {
@@ -113,6 +117,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, força elèctrica",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -128,12 +133,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el camp elèctric a l'interior de la cambra acceleradora. Indiqueu-ne també la direcció i el sentit.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quina diferència de potencial hi ha entre les parets esquerra i dreta de la cambra? Quina està a un potencial més alt? Quanta energia guanya cada electró que travessa la cambra?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -196,6 +203,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, potencial de frenada",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -206,12 +214,14 @@
         {
           "id": "a",
           "enunciat": "Per a cada longitud d'ona, la velocitat màxima amb què els electrons són extrets de la placa de plom.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "L'energia mínima (funció de treball) necessària per a extreure un electró de la placa de plom. Determineu la constant de Planck a partir d'aquestes dades.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -281,6 +291,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
+      "apartats_1r": 0,
       "pagines": [
         7
       ],
@@ -296,12 +307,14 @@
         {
           "id": "a",
           "enunciat": "Determineu l'equació que relaciona el flux magnètic que passa a través de la bobina amb el temps en dos dels intervals (de 0,0 a 5,0 s i de 5,0 a 8,0 s) que es veuen en la figura.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la tensió induïda (FEM) a la bobina en cada un dels intervals: de 0,0 a 5,0 s, de 5,0 a 8,0 s i de 8,0 a 10,0 s, que es veuen en la figura.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -369,6 +382,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, mode fonamental",
+      "apartats_1r": 0,
       "pagines": [
         7
       ],
@@ -379,12 +393,14 @@
         {
           "id": "a",
           "enunciat": "Determineu la longitud d'ona del mode fonamental, si la longitud de la corda són 65,0 cm, i calculeu també la velocitat de propagació de les ones que, per superposició, generen l'ona estacionària.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si un espectador situat a 3,0 m de distància de la guitarra percep una sensació sonora de 30 dB, quina sensació sonora percebrà si sonen tres guitarres idèntiques tocant la mateixa nota?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -450,6 +466,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració alfa, constant de desintegració",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -460,12 +477,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu la reacció de desintegració del poloni 210 si sabem que, en desintegrar-se, produeix un isòtop del plom. Quina és la constant de desintegració del poloni 210?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si una mostra conté 5 mg de poloni 210, quina quantitat de poloni 210 quedarà després de 20 dies?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -526,6 +545,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, energia potencial elàstica",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -536,12 +556,14 @@
         {
           "id": "a",
           "enunciat": "La constant de recuperació de la molla i el valor de la massa del cos que fa el moviment, així com l'energia mecànica total del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "L'amplitud, la freqüència angular i la fase inicial del moviment harmònic que fa la massa. Escriviu l'equació del moviment resultant.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -616,6 +638,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): alternador, força electromotriu induïda",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -626,12 +649,14 @@
         {
           "id": "a",
           "enunciat": "Representeu la força electromotriu generada en funció del temps per un període complet. Assenyaleu clarament en la gràfica els valors extrems d'aquesta força electromotriu i el valor del temps en què es donen.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Enviem el corrent generat en un dispositiu similar al de l'apartat anterior al primari d'un transformador que té 10 voltes. Suposem que la FEM eficaç que arriba a aquest primari és de 0,05 V. Calculeu el nombre de voltes que són necessàries en el secundari per a obtenir 2,5 V eficaços. Calculeu també la intensitat eficaç que ha d'arribar al primari per tal que en el secundari hi circulin 20 mA.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -704,6 +729,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): intensitat de camp gravitatori, velocitat d'escapament",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -714,12 +740,14 @@
         {
           "id": "a",
           "enunciat": "Quin és el valor de la intensitat de camp gravitatori que Ceres crea a la seva superfície? Quina és la velocitat i l'energia mecànica mínima d'una nau espacial que, sortint de la superfície, escapés totalment de l'atracció gravitatòria del planeta?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "La distància mitjana entre Ceres i el Sol, tenint en compte que la distància mitjana entre la Terra i el Sol mesura $1{,}50 \\times 10^{11}\\ \\text{m}$ i que el període orbital de la Terra al voltant del Sol és d'un any.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -790,6 +818,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, acceleració màxima",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -800,12 +829,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'amplitud d'oscil·lació que correspon a un moviment vibratori harmònic de 6,0 Hz i una acceleració màxima de $6{,}0\\ \\text{m s}^{-2}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el valor de la constant elàstica d'una molla per tal que una massa de 85 kg que hi estigui enganxada oscil·li amb una freqüència de 6,0 Hz.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -866,6 +897,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, força elèctrica",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -881,12 +913,14 @@
         {
           "id": "a",
           "enunciat": "Representeu les forces que actuen sobre la llentia en el punt d'equilibri i calculeu l'angle que forma el fil amb la vertical en l'equilibri.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la diferència de potencial entre la posició d'equilibri i la posició vertical.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -951,6 +985,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): reacció nuclear, captura de neutrons",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -961,12 +996,14 @@
         {
           "id": "a",
           "enunciat": "Determineu els valors dels coeficients $a$, $b$, $c$ i $d$. Quin nom té la partícula que el Pu-240 ha capturat en la primera reacció? Com s'anomena la desintegració descrita en la segona reacció?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el percentatge de nuclis de Am-241 que s'han desintegrat des del 1944 fins ara.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1031,6 +1068,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -1046,12 +1084,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el flux magnètic que travessa l'espira. S'indueix una força electromotriu en l'espira dins el camp magnètic? Justifiqueu la resposta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En un moment determinat el camp magnètic disminueix tal com mostra la figura. Calculeu la força electromotriu induïda en l'espira.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1117,6 +1157,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric, principi de superposició",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -1132,12 +1173,14 @@
         {
           "id": "a",
           "enunciat": "Determineu la intensitat del camp elèctric en el centre del quadrat.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En el centre del quadrat hi situem una tercera càrrega $Q_3 = 7{,}00\\ \\mu\\text{C}$. Calculeu el treball que farà la força elèctrica que actua sobre $Q_3$ quan la traslladem del centre del quadrat al vèrtex inferior dret.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1208,6 +1251,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, positró",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -1218,12 +1262,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu la reacció nuclear de l'emissió de partícules $\\beta$ de l'isòtop ${}^{40}_{19}\\text{K}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En una roca s'han trobat 10,0 g de ${}^{40}_{19}\\text{K}$ i 10,0 g de ${}^{40}_{18}\\text{Ar}$. Quina quantitat de ${}^{40}_{19}\\text{K}$ hi haurà quan hauran transcorregut $5{,}00 \\times 10^{9}$ anys? Fent servir la datació radiomètrica basada en el potassi-argó, digueu quina edat té la roca. Considereu que el ${}^{40}_{19}\\text{K}$ es desintegra només en ${}^{40}_{18}\\text{Ar}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1283,6 +1329,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -1298,12 +1345,14 @@
         {
           "id": "a",
           "enunciat": "Indiqueu l'expressió de la FEM induïda a l'espira quan aquesta s'endinsa a la regió on hi ha el camp magnètic. Determineu el valor de $B$ sabent que, per a $t = 4{,}0\\ \\text{s}$, la FEM induïda és $\\mathcal{E} = 160\\ \\text{V}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Representeu gràficament la FEM induïda $\\mathcal{E} = \\mathcal{E}(t)$ entre $t = 0{,}0$ i $t = 8{,}0\\ \\text{s}$. Indiqueu en cada instant el sentit del corrent induït a l'espira.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

@@ -588,6 +588,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         6,
         7
@@ -604,22 +605,26 @@
         {
           "id": "a",
           "enunciat": "La potència mecànica necessària per a elevar el cotxe, $P_\\text{mec}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència elèctrica que consumirà cada motor, $P_\\text{elèc}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Les voltes que ha de fer el cargol perquè el cotxe arribi a l'alçada màxima, $n_\\text{voltes}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La relació de transmissió que cal que tingui el reductor, $i = \\dfrac{n_\\text{mot}}{n_\\text{carg}}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -698,6 +703,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita calor sensible, poder calorífic i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         8,
         9
@@ -709,17 +715,20 @@
         {
           "id": "a",
           "enunciat": "La quantitat de gas necessària perquè l'aigua comenci a bullir, $m_\\text{gas1}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El temps necessari per a arribar a l'ebullició, $t_1$, si el cremador funciona al màxim de consum.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Un cop l'aigua ha arribat a ebullició, s'afegeix l'arròs i es deixa coure durant $t_2 = 18$ minuts reduint el cabal de gas a un $30\\ \\%$ del seu consum màxim. Determineu: el percentatge de gas consumit del cartutx durant tot el procés (bullir l'aigua i cuinar l'arròs), $\\Delta$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {

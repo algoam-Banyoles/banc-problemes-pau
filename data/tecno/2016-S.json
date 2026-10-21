@@ -318,6 +318,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -328,17 +329,20 @@
         {
           "id": "a",
           "enunciat": "Escriviu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de portes lògiques equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -403,6 +407,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -418,22 +423,26 @@
         {
           "id": "a",
           "enunciat": "La superfície $s$ de fusta utilitzada.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El perímetre tallat $p_1$ si es construeix a partir de triangles com els de la figura.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El perímetre tallat $p_2$ si es construeix tallant el perfil exterior de l'estrella.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El cost de cadascuna de les opcions. Quina és la més econòmica?",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -510,6 +519,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         3
       ],
@@ -520,17 +530,20 @@
         {
           "id": "a",
           "enunciat": "La secció mínima que ha de tenir el cable.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Si s'utilitza un cable de secció $S = 4\\ \\text{mm}^2$, determineu: la resistència del cable $R_\\text{cable}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "(Amb el cable de $S = 4\\ \\text{mm}^2$.) La potència que consumeixen conjuntament el cable i els llums.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -614,6 +627,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita estàtica d'estructures i tensió normal o deformació (resistència de materials), que són de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4
       ],
@@ -629,17 +643,21 @@
         {
           "id": "a",
           "enunciat": "La tensió $\\sigma_\\text{n}$ i la deformació $\\varepsilon$ normals del cable indicat en la figura.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "L'allargament del cable $\\Delta L$, si la llargària lliure del cable sense el bloc penjat és $L = 2\\,000\\ \\text{mm}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "El parell $\\Gamma$ que desenvolupa el motor.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Principi del treball: Γ·φ = m·g·Δh (mecànica de 1r)."
         }
       ],
       "solucio": {
@@ -716,6 +734,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Motor de corrent continu (potència, parell, rendiment), que és de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         4
       ],
@@ -726,17 +745,20 @@
         {
           "id": "a",
           "enunciat": "La tensió d'alimentació $U$ del motor quan $I = 50\\ \\text{A}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Si el motor s'alimenta amb la tensió obtinguda en l'apartat anterior: determineu la velocitat angular $\\omega$ de l'eix del motor quan $I = 100\\ \\text{A}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "(Amb la mateixa tensió.) Dibuixeu, d'una manera aproximada i indicant les escales, la corba del rendiment en funció de la velocitat de gir per a $0 \\le \\omega \\le 600\\ \\text{rad/s}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {

@@ -357,6 +357,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4,
         5
@@ -368,17 +369,20 @@
         {
           "id": "a",
           "enunciat": "Elaboreu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu el diagrama de portes lògiques equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -453,6 +457,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         6,
         7
@@ -464,17 +469,20 @@
         {
           "id": "a",
           "enunciat": "La potència elèctrica consumida, $P_\\text{elèc}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La velocitat de rotació de l'eix del motor, $\\omega_\\text{mot}$, i el parell que subministra el motor, $\\Gamma$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El percentatge d'energia consumida de la bateria, $\\Delta$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -557,6 +565,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         8,
         9
@@ -568,17 +577,20 @@
         {
           "id": "a",
           "enunciat": "El treball mecànic aportat pel motor, $W$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La quantitat de benzina utilitzada, $m_\\text{benz}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La petjada de CO$_2$ emesa a l'atmosfera, $m_{\\text{CO}_2}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -646,6 +658,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         10,
         11
@@ -662,17 +675,20 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure del peu.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la força que fa el múscul, $F_\\text{m}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Determineu les forces a l'articulació O.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -741,6 +757,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita corrent altern (reactàncies, impedància, factor de potència), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         12,
         13
@@ -757,27 +774,32 @@
         {
           "id": "a",
           "enunciat": "El valor òhmic de la reactància inductiva, $X_{L_1}$, que presenta la inductància $L_1$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El factor de potència, $\\cos\\varphi$, de la càrrega.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "El valor de la impedància equivalent de tot el circuit, $Z$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "El valor de la mesura de l'amperímetre, $A_1$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "e",
           "enunciat": "El valor eficaç de la tensió d'alimentació, $U_1$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

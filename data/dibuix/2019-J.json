@@ -279,6 +279,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Secció plana d'un sòlid en dièdric per canvi de pla (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -294,12 +295,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical de les línies d'intersecció que produeix el pla triangular determinat pels punts *a*-*a′*, *b*-*b′* i *c*-*c′* sobre un prisma oblic limitat pels dos quadrilàters horitzontals *mnop*-*m′n′o′p′* i *qrst*-*q′r′s′t′*.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la visibilitat del conjunt format pel pla triangular *abc*-*a′b′c′* i el prisma oblic. Diferencieu les línies vistes de les ocultes en les dues projeccions, considerant el prisma com un sòlid i el triangle opac.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {

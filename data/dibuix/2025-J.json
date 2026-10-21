@@ -29,6 +29,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Enllaços d'arcs tangents amb llocs geomètrics (normals i mediatrius): tangències bàsiques (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         5
       ],
@@ -44,12 +45,14 @@
         {
           "id": "a",
           "enunciat": "A la part inferior, dibuixeu l'arc de circumferència tangent a l'arc amb centre al punt *A* i a l'arc de centre *C* en els respectius punts de tangència donats.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "A la part superior, dibuixeu el fragment que està format per dos arcs de circumferència tangents entre ells, de manera que un sigui un fragment de l'arc de circumferència de centre *B* i radi 10 mm, i l'altre sigui tangent a l'arc anterior i a l'arc de centre *A* en el punt de tangència indicat.",
-          "punts": 2
+          "punts": 2,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -128,6 +131,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Construcció de polígons amb arc capaç i punts notables del triangle (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         7
       ],
@@ -143,12 +147,14 @@
         {
           "id": "a",
           "enunciat": "Situeu els punts *B*, *C*, *D* i *E* a partir del punt *A*.",
-          "punts": 2
+          "punts": 2,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Situeu el punt *F* a partir del segment *AB*.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -230,6 +236,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Nova projecció d'una peça per canvi de pla: operativitat dièdrica (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -245,12 +252,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu un nou alçat oblic segons la línia de terra proposada. Concreteu el volum només amb les línies vistes.",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En el nou alçat, ompliu amb una trama els plans vistos que no són verticals i que són inclinats respecte del pla horitzontal.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Lectura de vistes: identificar plans inclinats a partir de les vistes donades (normalització de DT I)."
         }
       ],
       "solucio": {
@@ -332,6 +342,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) amb canvi de pla.",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -347,12 +358,15 @@
         {
           "id": "a",
           "enunciat": "Sabent que els vèrtexs *a-a′* i *b-b′* són els extrems d'una de les arestes, dibuixeu l'octaedre regular, diferenciant les arestes vistes de les ocultes, tenint en compte que el tercer vèrtex de la cara, *c-c′*, també es troba a terra a la dreta de *a-a′* i *b-b′*, i que els altres vèrtexs es troben per damunt del pla *abc-a′b′c′*.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Escriviu a la casella de la part inferior de la pàgina quina és la mida de l'aresta del dau en centímetres, tenint en compte que el dibuix està fet a escala 2:1.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Escales numèriques: mesurar el segment i aplicar l'escala (DT I)."
         }
       ],
       "solucio": {

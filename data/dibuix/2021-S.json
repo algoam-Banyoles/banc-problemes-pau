@@ -107,6 +107,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Polígons regulars inscrits i circumscrits amb escales (DT I).",
+      "apartats_1r": 4,
       "pagines": [
         7
       ],
@@ -122,22 +123,26 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu un hexàgon regular de 4,5 cm d'apotema que tingui un vèrtex en el punt $P$ i un altre sobre el segment $AB$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu una circumferència circumscrita a l'hexàgon anterior i un quadrat circumscrit a aquesta circumferència que tingui un vèrtex sobre el segment $AB$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu un triangle equilàter inscrit al quadrat anterior i que tingui un vèrtex sobre el segment $AB$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "Determineu el valor real del segment $AB$ tenint en compte que el dibuix està fet a escala 1:450, i escriviu-lo en la casella situada a la part inferior de la pàgina.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -235,6 +240,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Prisma recte sobre un pla obliqu: VM per abatiment i canvi de pla (DT II).",
+      "apartats_1r": 2,
       "pagines": [
         9
       ],
@@ -250,22 +256,28 @@
         {
           "id": "a",
           "enunciat": "Considerant la projecció horitzontal del polígon $abcdef$, dibuixeu-ne la projecció vertical a partir dels punts $a$-$a'$, $b$-$b'$ i $c$-$c'$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Pertinença de punts a un pla definit per tres punts (dièdric de 1r)."
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu el polígon $abcdef$ en veritable magnitud.",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu el prisma recte de 3 cm d'altura que té com a cara superior el polígon $abcdef$ de manera que el seu volum quedi per sota d'aquesta cara.",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "Determineu la visibilitat del prisma en les dues projeccions considerant-lo com un sòlid i diferenciant les línies vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -354,6 +366,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Piràmide tallada per un pla de cantell, VM d'arestes i desenvolupament (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -369,17 +382,21 @@
         {
           "id": "a",
           "enunciat": "Determineu la projecció horitzontal i vertical d'una piràmide que té com a base un octàgon regular inscrit a la circumferència de cantell amb centre $r$-$r'$ i com a eix el segment $rs$-$r's'$, de manera que la cara inferior se situï en un pla horitzontal.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu la projecció horitzontal i vertical del tronc de la piràmide anterior comprès entre la seva base i el pla de cantell $P'$, diferenciant les línies vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Intersecció de les arestes amb un pla de cantell i visibilitat (dièdric de 1r)."
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu el desenvolupament lateral del tronc de piràmide. Inicieu-lo per la cara horitzontal situant l'aresta de l'octàgon sobre la recta $M$, de manera que el punt $V$ es correspongui amb el vèrtex $s$-$s'$. Continueu per sobre i per sota d'una manera simètrica respecte a la primera cara.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

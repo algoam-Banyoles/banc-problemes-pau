@@ -30,6 +30,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2,
         3
@@ -41,17 +42,20 @@
         {
           "id": "a",
           "enunciat": "Comproveu que $(A - 2I)^2 = 3I$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Utilitzant la igualtat de l'apartat anterior, trobeu la matriu inversa de la matriu $A$ en funció de les matrius $A$ i $I$, i comproveu que coincideix amb la matriu $B$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Calculeu la matriu $X$ que satisfà la igualtat $A \\cdot X = B$.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -133,6 +137,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Recta tangent i àrea d'un triangle amb els eixos, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         4,
         5
@@ -149,17 +154,20 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de la funció $f$ en el punt d'abscissa $x = 2$.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de la funció $f$ en el punt d'abscissa $x = k$, en què $k$ és un nombre real positiu.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Comproveu que, tal com es pot veure en la figura de sota, la recta de l'apartat b determina un triangle d'àrea constant amb els semieixos positius de coordenades. Calculeu aquesta àrea.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -247,6 +255,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         6,
         7
@@ -258,12 +267,15 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema segons els valors del paràmetre $m$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema, si té solució, per al cas $m = 1$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -348,6 +360,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         8,
         9
@@ -359,12 +372,14 @@
         {
           "id": "a",
           "enunciat": "Justifiqueu que $f(x) = 2$ té una solució en l'interval $(-1, 0)$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Sigui la funció $h(x) = -3x^2 + e^{2x^3 - 1}$. Calculeu l'àrea de la regió compresa entre les gràfiques de les funcions $f(x)$ i $h(x)$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -440,6 +455,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         10,
         11
@@ -451,12 +467,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació paramètrica de la recta que talla perpendicularment les rectes $r_1$ i $r_2$.",
-          "punts": 1.75
+          "punts": 1.75,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la distància entre $r_1$ i $r_2$.",
-          "punts": 0.75
+          "punts": 0.75,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -532,6 +550,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         12
       ],
@@ -547,12 +566,15 @@
         {
           "id": "a",
           "enunciat": "Expresseu l'altura del trapezi en funció de la longitud $x$ de la base inferior.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Pitàgores en un trapezi isòsceles."
         },
         {
           "id": "b",
           "enunciat": "Calculeu la longitud de la base inferior del trapezi de manera que l'àrea de la peça sigui màxima i trobeu el valor d'aquesta àrea màxima.",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         }
       ],
       "solucio": {

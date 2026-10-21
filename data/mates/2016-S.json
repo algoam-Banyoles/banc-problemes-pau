@@ -31,6 +31,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -41,12 +42,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació paramètrica de la recta que passa pel punt $Q$ i és perpendicular al pla determinat per la recta $r$ i el punt $P$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el punt de la recta $r$ que equidista dels punts $P$ i $Q$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -129,6 +132,7 @@
       "dificultat": 1,
       "curs": "1r",
       "curs_motiu": "Plantejament i resolució per Gauss d'un sistema homogeni concret sense paràmetre: 1r (no cal Rouché).",
+      "apartats_1r": 2,
       "pagines": [
         1
       ],
@@ -139,12 +143,14 @@
         {
           "id": "a",
           "enunciat": "Comproveu que el càlcul dels tres nombres, $x$, $y$ i $z$, té una infinitat de solucions.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Trobeu una expressió general de les solucions.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -212,6 +218,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -222,12 +229,15 @@
         {
           "id": "a",
           "enunciat": "Si $x$ és la mesura, en cm, del costat de la base, comproveu que la funció que determina el preu de l'envàs és $P(x) = 2{,}5x^2 + \\dfrac{320}{x}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Modelització amb una funció (geometria plana, Pitàgores, àrees i volums)."
         },
         {
           "id": "b",
           "enunciat": "Calculeu les mides que ha de tenir l'envàs perquè el preu sigui el mínim possible.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -303,6 +313,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -313,12 +324,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació de les rectes tangents a la funció $f$ en els punts d'abscissa $x = 0$ i $x = \\pi$, respectivament. Trobeu les coordenades del punt en què es tallen les dues rectes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Rectes tangents al sinus i intersecció de dues rectes."
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'àrea de la regió limitada per la gràfica de la funció $f$ i les rectes tangents de l'apartat anterior (en cas de no haver resolt l'apartat anterior, suposeu que les rectes són $y = x$ i $y = -x + \\pi$, respectivament).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -403,6 +417,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -413,12 +428,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'única matriu de la forma $A = \\begin{pmatrix} \\frac{1}{2} & \\frac{1}{4} \\\\ a & \\frac{1}{2} \\end{pmatrix}$ que satisfà que $A^2 = A$, i comproveu que $A$ i $A - I$ no són invertibles.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Justifiqueu raonadament que si $A$ és una matriu quadrada d'ordre $n$ diferent de la matriu nul·la, $0$, i de la matriu identitat, $I$, i satisfà la igualtat $A^2 = A$, aleshores les matrius $A$ i $A - I$ no són invertibles.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -493,6 +510,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -503,12 +521,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació cartesiana (és a dir, que té la forma $Ax + By + Cz = D$) del pla que passa pel punt de coordenades $(0, 0, 1)$ i és perpendicular als plans $3x + y - z = 1$ i $x + y + 2z = 5$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Suposeu que un pla $\\pi_1$ és perpendicular a un segon pla $\\pi_2$ i que el pla $\\pi_2$ és a la vegada perpendicular a un tercer pla $\\pi_3$. Expliqueu raonadament si necessàriament els plans $\\pi_1$ i $\\pi_3$ han de ser perpendiculars entre ells.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

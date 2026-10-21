@@ -34,6 +34,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -44,12 +45,15 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre real $k$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema per al cas $k = 0$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -120,6 +124,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -130,12 +135,14 @@
         {
           "id": "a",
           "enunciat": "Determineu la posició relativa de la recta $r$ i el pla $\\pi$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la distància entre la recta $r$ i el pla $\\pi$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -196,6 +203,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Intervals de creixement i decreixement (monotonia), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -206,12 +214,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de la funció $f$ en el punt d'abscissa $x = 1$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Càlcul de la derivada i equació de la recta tangent."
         },
         {
           "id": "b",
           "enunciat": "Determineu en quins intervals la funció $f$ és creixent i en quins intervals és decreixent.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -277,6 +288,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -287,12 +299,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu totes les matrius de la forma $A = \\begin{pmatrix} 1 & 0 \\\\ m & -2 \\end{pmatrix}$ que satisfan la igualtat $A^2 + A = 2I$, en què $I$ és la matriu identitat, $I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Justifiqueu que si $A$ és una matriu quadrada que compleix la igualtat $A^2 + A = 2I$, aleshores $A$ és invertible, i calculeu l'expressió de $A^{-1}$ en funció de les matrius $A$ i $I$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -358,6 +372,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -368,12 +383,15 @@
         {
           "id": "a",
           "enunciat": "Comproveu que el volum del tetraedre és donat per l'expressió $V(x) = \\dfrac{1}{6}(-x^2 + 3x)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor de $x$ que fa que el volum sigui màxim i calculeu aquest volum màxim.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Funció quadràtica: el màxim és el vèrtex de la paràbola."
         }
       ],
       "solucio": {
@@ -437,6 +455,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -447,12 +466,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu les abscisses, en funció de $k$, dels punts d'intersecció entre les dues paràboles.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Punts d'intersecció de dues paràboles (equació de segon grau)."
         },
         {
           "id": "b",
           "enunciat": "Calculeu el valor del paràmetre $k$ perquè l'àrea compresa entre les paràboles sigui de 576 unitats quadrades.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -516,6 +538,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Sistema en forma matricial classificat per rangs (Rouché-Frobenius), que és de 2n.",
+      "apartats_1r": 2,
       "pagines": [
         3
       ],
@@ -526,12 +549,16 @@
         {
           "id": "a",
           "enunciat": "Si $\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}$, el sistema és compatible determinat i la solució és $\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Sistema homogeni concret: Gauss mostra que té infinites solucions."
         },
         {
           "id": "b",
           "enunciat": "Si $\\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix}$, el sistema és compatible indeterminat.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Sistema concret: Gauss mostra que és incompatible."
         }
       ],
       "solucio": {
@@ -592,6 +619,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -602,12 +630,14 @@
         {
           "id": "a",
           "enunciat": "Comproveu que els punts $A$ i $B$ són simètrics respecte del pla $\\pi$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si $r$ és la recta dels punts $P$ que té per equació $P = B + \\lambda v$, en què $\\lambda$ és un paràmetre real i $v = (1, 1, 0)$, verifiqueu que els punts mitjans dels segments $\\overline{AP}$ pertanyen al pla $\\pi$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -675,6 +705,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Extrems, inflexió i Bolzano aplicat a f', que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -685,12 +716,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu els màxims relatius, els mínims relatius i els punts d'inflexió de la funció $f(x) = 2x^3 - 9x^2 + 12x - 4$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Expliqueu raonadament que si $f(x)$ és una funció amb la derivada primera contínua en l'interval $[a, b]$ i satisfà que $f'(a) > 0$ i $f'(b) < 0$, aleshores hi ha, com a mínim, un punt de l'interval $(a, b)$ en què la recta tangent a la gràfica de $f(x)$ en aquest punt és horitzontal.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -756,6 +789,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -766,12 +800,14 @@
         {
           "id": "a",
           "enunciat": "Justifiqueu que la matriu $A$ és invertible i que $A^{-1} = A - I$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el valor de $a$ que fa que la matriu $A = \\begin{pmatrix} 1 & 1 \\\\ 1 & a \\end{pmatrix}$ compleixi la igualtat $A\\cdot(A - I) = I$. Calculeu $A^{-1}$ i comproveu que es correspon amb la matriu calculada a partir del resultat de l'apartat anterior.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -837,6 +873,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -847,12 +884,14 @@
         {
           "id": "a",
           "enunciat": "Estudieu si les rectes $r$ i $s$ són paral·leles o perpendiculars.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la posició relativa de les rectes $r$ i $s$ i calculeu l'equació paramètrica de la recta $t$ que talla perpendicularment la recta $r$ i la recta $s$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -920,6 +959,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4
       ],
@@ -930,12 +970,15 @@
         {
           "id": "a",
           "enunciat": "Trobeu l'equació de la recta tangent a $y = f(x)$ en el punt de la corba d'abscissa $x = 0$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Equació de la recta tangent a partir de f(0) i f'(0)."
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'expressió de $f(x)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

@@ -33,6 +33,7 @@
       "dificultat": 1,
       "curs": "1r",
       "curs_motiu": "Simetria axial i enllaços d'arcs tangents: isometries i tangències bàsiques (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         21
       ],
@@ -48,12 +49,14 @@
         {
           "id": "a",
           "enunciat": "Construïu la figura simètrica a la dibuixada respecte de l'eix *E*.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Indiqueu, amb precisió, els punts de tangència entre els diferents elements de la nova figura.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -280,6 +283,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) amb canvi de pla.",
+      "apartats_1r": 0,
       "pagines": [
         27
       ],
@@ -295,12 +299,14 @@
         {
           "id": "a",
           "enunciat": "Determineu les projeccions d'un quadrat de manera que un dels costats sigui el segment *ab-a′b′* i el costat oposat recolzi sobre el pla horitzontal *H′*, i sigui el punt *a-a′* el vèrtex més pròxim a l'observador.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un octaedre regular, de manera que els costats del quadrat de l'apartat anterior siguin arestes del poliedre. Diferencieu les arestes vistes de les ocultes.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -535,6 +541,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Equivalència de figures poligonals amb paral·leles i escales (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         5
       ],
@@ -550,12 +557,14 @@
         {
           "id": "a",
           "enunciat": "Determineu gràficament el triangle rectangle equivalent al rectangle *ABCD*, de manera que *DC* sigui un dels catets i l'altre estigui situat sobre la recta *r*. Deixeu constància del procés gràfic seguit.",
-          "punts": 2
+          "punts": 2,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real de la distància mínima entre el segment *AC* i el punt *B*, si el dibuix està a escala 1:75, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -620,6 +629,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Tangències de radi donat per llocs geomètrics (paral·leles i circumferències concèntriques): DT I.",
+      "apartats_1r": 2,
       "pagines": [
         7
       ],
@@ -635,12 +645,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les circumferències de 4 cm de radi tangents al segment *R* i a la circumferència de centre *C* i indiqueu els punts de tangència. Deixeu constància del procés gràfic seguit.",
-          "punts": 2
+          "punts": 2,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment definit pels centres de les noves circumferències, si el dibuix està a escala 1:50, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -710,6 +722,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Vertadera magnitud d'una figura plana per abatiment (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -725,12 +738,15 @@
         {
           "id": "a",
           "enunciat": "Completeu la projecció vertical de la figura plana.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r",
+          "curs_motiu": "Pertinença de punts a un pla amb horitzontals del pla (dièdric de 1r)."
         },
         {
           "id": "b",
           "enunciat": "Determineu-ne la veritable magnitud.",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         }
       ],
       "solucio": {

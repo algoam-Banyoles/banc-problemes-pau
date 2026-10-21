@@ -109,6 +109,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Tangències amb un punt de tangència donat, resoltes per reducció a punt, mediatrius i bisectrius; no cal potència (DT I).",
+      "apartats_1r": 3,
       "pagines": [
         7
       ],
@@ -124,17 +125,20 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu la circumferència de radi menor tangent a la recta $R$ i a la circumferència de centre $C$ en el punt $A$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu la circumferència tangent a la circumferència de centre $C$ en el punt $A$ i que passa pel punt $B$.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu les dues circumferències de diàmetre $5$ cm que són tangents exteriors a les dues circumferències trobades en els apartats a i b.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -214,6 +218,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Secció plana d'un sòlid en dièdric per canvi de pla (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -229,12 +234,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical de la línia d'intersecció que produeix el pla triangular determinat pels punts $r$-$r'$, $s$-$s'$ i $t$-$t'$, sobre una piràmide que té com a vèrtex el punt $v$-$v'$ i com a base el quadrat $abcd$-$a'b'c'd'$.",
-          "punts": 3
+          "punts": 3,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la visibilitat del conjunt format pel pla triangular $rst$-$r's't'$ i la piràmide. Diferencieu les línies vistes de les ocultes en les dues projeccions considerant el prisma com un sòlid i el triangle opac.",
-          "punts": 3
+          "punts": 3,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {

@@ -343,6 +343,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -353,17 +354,20 @@
         {
           "id": "a",
           "enunciat": "Escriviu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -430,6 +434,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         3
       ],
@@ -440,17 +445,20 @@
         {
           "id": "a",
           "enunciat": "L'energia $E_1$ necessària per a escalfar l'aigua en la primera fase.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El temps $t_1$ de durada de la primera fase.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El valor de les resistències $R_\\text{e}$ i $R_\\text{m}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -524,6 +532,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita mecanismes, potència, parell i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -539,22 +548,26 @@
         {
           "id": "a",
           "enunciat": "Les velocitats de gir de la roda $\\omega_\\text{roda}$ i dels pedals $\\omega_\\text{pedals}$, en rad/s.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència $P_\\text{bicicleta}$ necessària per a pujar el pendent.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La potència $P_\\text{pedals}$ que ha de desenvolupar el ciclista.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El parell a l'eix dels pedals $\\Gamma_\\text{pedals}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -634,6 +647,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         4
       ],
@@ -649,22 +663,26 @@
         {
           "id": "a",
           "enunciat": "Quin tauler s'utilitzarà per a construir el prisma a base de quadrats i quin per a construir-lo a base de rectangles? Per què?",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El perímetre total dels quadrats o dels rectangles tallats en cada cas, $p_1$ i $p_2$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La superfície de tauler de fusta utilitzada en cada cas, $s_1$ i $s_2$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El cost de cadascuna de les opcions, $c_1$ i $c_2$. Quina és la més econòmica?",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -747,6 +765,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita oleohidràulica (cilindre, pressió, cabal) i tensió normal a la tija, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -757,22 +776,26 @@
         {
           "id": "a",
           "enunciat": "La massa màxima $m_\\text{màx}$ que pot aguantar l'elevador.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "La tensió normal a compressió de la tija $\\sigma_\\text{tija}$ quan s'eleva la massa màxima.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "El rendiment dels cilindres és $\\eta = 0{,}88$. Quan l'elevador puja la càrrega màxima a una velocitat $v = 0{,}038\\ \\text{m/s}$, la bomba subministra un cabal d'oli $q = 0{,}2985\\ \\text{L/s}$ a cadascun dels cilindres. Determineu la potència $P_\\text{h}$ proporcionada per la bomba a cadascun dels cilindres.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "La pressió $p$ proporcionada per la bomba.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1146,6 +1169,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -1156,17 +1180,20 @@
         {
           "id": "a",
           "enunciat": "Escriviu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu el diagrama de portes lògiques equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1238,6 +1265,7 @@
       "dificultat": 3,
       "curs": "1r",
       "curs_motiu": "Només necessita circuits de corrent continu (llei d'Ohm, potència, associacions), que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         7
       ],
@@ -1248,17 +1276,20 @@
         {
           "id": "a",
           "enunciat": "Determineu el corrent $I$ que circularà per la resistència, per a cadascun dels diàmetres disponibles.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu les longituds de fil de constantà necessàries per a cada diàmetre.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Si es calcula que el fil manté calenta una superfície d'una amplària que és 200 vegades el diàmetre del fil, quin és el diàmetre adequat per a escalfar la planxa i quin cost tindrà el fil de constantà necessari?",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -1333,6 +1364,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Cèl·lula fotovoltaica i associació sèrie-paral·lel en CC (energies renovables i electrònica de 1r).",
+      "apartats_1r": 4,
       "pagines": [
         7
       ],
@@ -1343,22 +1375,26 @@
         {
           "id": "a",
           "enunciat": "El corrent de curtcircuit $I_\\text{cs}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La tensió de circuit obert $U_\\text{co}$ (tensió en els borns quan no hi circula corrent).",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El panell subministra la potència màxima quan la tensió entre els borns és $U_\\text{màx} = 17{,}4\\ \\text{V}$. En aquesta configuració, determineu la potència màxima $P_\\text{màx}$ que subministra el panell.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La tensió i la intensitat que subministren cadascuna de les ceŀles.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -1433,6 +1469,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Necessita oleohidràulica o pneumàtica (cilindres, pressió, cabal), que és de 2n.",
+      "apartats_1r": 2,
       "pagines": [
         8
       ],
@@ -1448,17 +1485,22 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu, d'una manera aproximada i indicant les escales, la relació $v_\\text{cil}/v_\\text{p}$ en funció de $h$, per a $0\\ \\text{mm} < h < 1\\,500\\ \\text{mm}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Representar una funció lineal donada (matemàtiques de 1r)."
         },
         {
           "id": "b",
           "enunciat": "Si les resistències passives es consideren negligibles i la pala puja a velocitat constant, quan $h = 1\\,100\\ \\text{mm}$: determineu la força $F_\\text{cil}$ que fa cadascun dels dos cilindres.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Balanç de potències sense pèrdues 2·F·v_cil = m·g·v_p (mecànica de 1r)."
         },
         {
           "id": "c",
           "enunciat": "Calculeu la pressió $p_\\text{int}$ relativa a l'interior dels cilindres.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -1535,6 +1577,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         8
       ],
@@ -1545,17 +1588,20 @@
         {
           "id": "a",
           "enunciat": "La irradiació solar diària mínima $I_\\text{dia}$, en $\\text{MJ/m}^2$, necessària per a produir tota l'energia amb un únic captador solar.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Si la radiació solar diària és una tercera part de la radiació mínima necessària i es vol cobrir, com a mínim, el $60\\ \\%$ de la demanda amb energia solar, determineu el nombre de captadors que cal instaŀlar.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "L'energia elèctrica diària consumida $E_\\text{elèctr}$, en kW h, si s'instaŀla el nombre de captadors determinat en l'apartat b.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {

@@ -337,6 +337,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -347,17 +348,20 @@
         {
           "id": "a",
           "enunciat": "Elaboreu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu l'esquema de contactes equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -427,6 +431,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita càlcul de costos i planificació de la producció, que són de 1r.",
+      "apartats_1r": 3,
       "pagines": [
         3
       ],
@@ -442,17 +447,20 @@
         {
           "id": "a",
           "enunciat": "La superfície de cadascuna de les set peces. Comproveu que la suma de la superfície de totes les peces equival a la superfície $s$ del quadrat de la figura.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El perímetre $p$ de les peces tallades per a construir el puzle.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El cost de producció del puzle, d'una banda, i el cost de comprar les peces ja elaborades a un proveïdor, de l'altra. Quina és l'opció més econòmica per a l'empresa?",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -547,6 +555,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Motor de corrent continu (potència, parell, rendiment), que és de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         3
       ],
@@ -557,22 +566,26 @@
         {
           "id": "a",
           "enunciat": "La potència elèctrica $P_\\text{elèctr}$ que consumeix el motor i el rendiment electromecànic $\\eta_\\text{mot}$ d'aquest motor.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "La potència total dissipada $P_\\text{diss}$ pel conjunt motor-reductor.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La potència mecànica $P_\\text{càrrega}$ requerida per a elevar la càrrega i la massa $m$ d'aquesta càrrega.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "El corrent $I'$ que consumiria el motor si la massa de la càrrega fos la meitat, $m' = m/2$, i es mantingués la velocitat (considereu que els rendiments i la tensió d'alimentació del motor es mantenen constants).",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -671,6 +684,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita estàtica d'estructures i un cilindre hidràulic (pressió), que són de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         4
       ],
@@ -686,22 +700,27 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure de la placa per a $\\varphi = 0^\\circ$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu: la massa $m$ de la placa.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Densitat i volum per obtenir la massa (materials i càlcul bàsic de 1r)."
         },
         {
           "id": "c",
           "enunciat": "La força $F_\\text{c}$ que fa el cilindre hidràulic si la placa està en repòs amb una inclinació $\\varphi = 0^\\circ$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "La tensió normal a tracció $\\sigma$ de la tija del cilindre en la situació anterior. Quina és la pressió relativa $p_\\text{int}$ a l'interior del cilindre?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -783,6 +802,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         4
       ],
@@ -793,22 +813,26 @@
         {
           "id": "a",
           "enunciat": "La potència tèrmica mitjana $P_\\text{gasol}$ i $P_\\text{GLP}$ consumida amb cada combustible.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El cost $c_\\text{gasol}$ i $c_\\text{GLP}$, en euros per cada 100 km, d'utilitzar cadascun dels combustibles.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "La distància mitjana anual $d_\\text{any}$, en km per any, que ha de recórrer el vehicle si es vol amortitzar la instal·lació del sistema GLP en $t = 3$ anys.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "La distància estimada $d_\\text{est}$ que pot recórrer el vehicle amb GLP si el dipòsit instal·lat es troba ple fins al $85\\ \\%$ de la seva capacitat.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {

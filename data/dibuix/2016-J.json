@@ -31,6 +31,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Equivalència de figures poligonals amb paral·leles i escales (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         5
       ],
@@ -46,12 +47,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el triangle isòsceles equivalent al quadrilàter donat, de manera que tingui un vèrtex en el punt *P* i que el costat oposat a aquest vèrtex sigui paral·lel al segment *R* i passi pel punt *C*. Deixeu constància del procés gràfic seguit.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment *R*, tenint en compte que el dibuix està a escala 1:125, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -124,6 +127,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Cas PRR resolt per homotècia simple des del vèrtex (semblança, DT I); la potència només surt com a alternativa.",
+      "apartats_1r": 2,
       "pagines": [
         7
       ],
@@ -139,12 +143,14 @@
         {
           "id": "a",
           "enunciat": "Determineu gràficament una circumferència que passi pel punt *P* i sigui tangent a les rectes *R* i *S*. Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, els punts de tangència.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment *R*, tenint en compte que el dibuix està a escala 1:25, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -220,6 +226,7 @@
       "dificultat": 3,
       "curs": "1r",
       "curs_motiu": "Intersecció de plans amb plans projectants auxiliars i visibilitat: dièdric directe (DT I); el canvi de pla és només alternatiu.",
+      "apartats_1r": 2,
       "pagines": [
         9
       ],
@@ -235,12 +242,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu en projecció horitzontal i vertical la línia d'intersecció dels plans que determinen el triangle *abc-a′b′c′* i el quadrilàter *1234-1′2′3′4′*.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu gràficament la visibilitat del conjunt, considerant el triangle i el quadrilàter opacs.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -317,6 +326,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) amb vertadera magnitud d'arestes.",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -332,12 +342,15 @@
         {
           "id": "a",
           "enunciat": "Determineu les projeccions horitzontal i vertical d'un tetraedre de manera que una de les arestes sigui el segment *ab-a′b′* i que l'aresta oposada estigui per sobre d'aquesta i en un pla horitzontal.",
-          "punts": 3
+          "punts": 3,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -588,6 +601,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Construcció de triangles amb rectes notables i transport d'angles (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         21
       ],
@@ -603,12 +617,14 @@
         {
           "id": "a",
           "enunciat": "Determineu el triangle *ABC* inscrit en la circumferència de centre *O*, de manera que tingui la mediatriu del costat *AB* sobre la recta *R*, que el costat *AB* faci 10 cm, que l'angle *CAB* sigui de 75° i que el punt *A* estigui situat per sota i a l'esquerra del punt *O*. Deixeu constància del procés gràfic seguit.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del radi de la circumferència de centre *O*, tenint en compte que el dibuix està a escala 1:75, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -678,6 +694,7 @@
       "dificultat": 1,
       "curs": "1r",
       "curs_motiu": "Cas PPR amb AB paral·lel a la recta: es resol amb mediatrius, sense potència (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         23
       ],
@@ -693,12 +710,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu la circumferència tangent a la recta *R* que passi pels punts *A* i *B*. Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, el punt de tangència.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment *AB*, tenint en compte que el dibuix està a escala 1:125, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -767,6 +786,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Piràmide o prisma en dièdric amb la base en un pla inclinat, per abatiment o canvi de pla (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         25
       ],
@@ -782,17 +802,21 @@
         {
           "id": "a",
           "enunciat": "Determineu les projeccions horitzontal i vertical d'un rombe situat en un pla que forma 45° amb el pla horitzontal, de manera que la diagonal més llarga sigui el segment horitzontal *ab-a′b′* i la diagonal més curta faci 4 cm. Situeu el rombe de manera que el vèrtex més alt quedi per davant del segment *ab-a′b′*.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions d'un prisma recte de 5 cm d'altura que tingui com a base inferior el rombe determinat en l'apartat anterior.",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -869,6 +893,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Secció plana d'un prisma en dièdric: sòlids i seccions planes (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         27
       ],
@@ -884,12 +909,15 @@
         {
           "id": "a",
           "enunciat": "Determineu la intersecció que produeix el pla definit pels punts *a-a′*, *b-b′* i *c-c′* amb el prisma hexagonal recte que té com a base el polígon donat i 5,5 cm d'altura.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu gràficament la visibilitat del conjunt, considerant el prisma com un sòlid i el triangle opac.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {

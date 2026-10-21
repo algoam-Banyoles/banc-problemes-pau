@@ -34,6 +34,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): tercera llei de kepler, període orbital",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -49,12 +50,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu el període i el radi de l'òrbita.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu el mòdul de la velocitat i l'acceleració centrípeta del planeta.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "MCU: v = 2πr/T i a_c = v²/r, amb el període i el radi de l'apartat a"
         }
       ],
       "solucio": {
@@ -121,6 +125,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, diferència de potencial",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -136,12 +141,14 @@
         {
           "id": "a",
           "enunciat": "Si la separació entre el càtode i l'ànode és d'$1{,}50\\ \\text{cm}$, determineu el mòdul del camp elèctric que es crea entre l'un i l'altre. Feu un esquema que indiqui la trajectòria dels electrons i la direcció i el sentit del camp elèctric. Quina placa es troba a un potencial més alt, l'ànode o el càtode? Justifiqueu la resposta.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Considerant que un electró està situat al càtode i parteix del repòs, determineu l'energia i el mòdul de la velocitat de l'electró quan surt de l'ànode. Si la peça que s'ha de soldar es troba al mateix potencial que l'ànode, a quina velocitat impacta l'electró contra aquesta peça?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -216,6 +223,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, harmònics",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -226,12 +234,14 @@
         {
           "id": "a",
           "enunciat": "Quina és la longitud d'ona del primer harmònic (fonamental)? Justifiqueu la resposta. Representeu el segon harmònic i indiqueu-hi la posició dels nodes i els ventres.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Quina és la freqüència i la longitud d'ona del so que és produït pel primer harmònic del violí i que es propaga per l'aire?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -295,6 +305,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, neutró",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -310,12 +321,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu la reacció de desintegració d'un neutró identificant cadascuna de les partícules implicades.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'energia que es desprèn en la desintegració d'un neutró i expresseu-ne el resultat en $\\text{keV}$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -373,6 +386,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): força sobre un corrent, producte vectorial",
+      "apartats_1r": 0,
       "pagines": [
         10
       ],
@@ -388,12 +402,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la força magnètica que actua sobre un tram de 100 metres del cable deguda al camp magnètic terrestre. Després, determineu-ne el mòdul i representeu-ne esquemàticament la direcció i el sentit. Justifiqueu la resposta.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El corrent que circula pel cable d'alta tensió és un corrent altern i genera un camp magnètic que contínuament canvia de sentit (vegeu la figura *b*). A sota del cable s'han situat tres espires conductores: una (A) és paral·lela a la superfície horitzontal del terreny, una altra (B) és paral·lela al pla del dibuix, i la tercera (C) està situada en el pla vertical que conté la direcció est-oest. En quina o quines de les espires el camp magnètic variable produït per la línia d'alta tensió induirà un corrent elèctric? Justifiqueu la resposta especificant les lleis o els principis físics en què us heu basat.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -465,6 +481,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): nivell d'intensitat sonora, decibels",
+      "apartats_1r": 0,
       "pagines": [
         12
       ],
@@ -475,12 +492,14 @@
         {
           "id": "a",
           "enunciat": "Quants decibels ha augmentat el nivell d'intensitat del so?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Ara els cinc violins passen de *mezzo piano* a *forte* i mesurem un nivell d'intensitat del so de $76{,}98\\ \\text{dB}$. Suposant que tots els violins toquen amb la mateixa intensitat, quina és la intensitat $I$ amb la qual toca un sol violí?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -538,6 +557,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): flux magnètic, llei de faraday",
+      "apartats_1r": 0,
       "pagines": [
         13
       ],
@@ -553,12 +573,14 @@
         {
           "id": "a",
           "enunciat": "Determineu el valor del flux del camp magnètic a través d'una espira de la bobina quan el camp magnètic és perpendicular a la superfície de l'espira (angle $\\theta = 0\\ \\text{rad}$) i per a una orientació qualsevol (indiqueu el resultat en funció de l'angle $\\theta$).",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "A partir del flux del camp magnètic a través de la bobina, determineu l'evolució de la força electromotriu en funció del temps, suposant que inicialment l'angle $\\theta$ és igual a $0\\ \\text{rad}$. Calculeu el valor màxim de la força electromotriu induïda en la bobina.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -635,6 +657,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, treball d'extracció",
+      "apartats_1r": 0,
       "pagines": [
         14
       ],
@@ -645,12 +668,14 @@
         {
           "id": "a",
           "enunciat": "Determineu la funció de treball (treball d'extracció) d'aquesta superfície metàl·lica. Calculeu el llindar de freqüència per a l'extracció de fotoelectrons d'aquest metall.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si il·luminem la superfície anterior amb una llum groga de $587{,}5\\ \\text{nm}$, determineu l'energia dels fotons incidents. Calculeu el potencial de frenada amb aquesta nova font de llum.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {

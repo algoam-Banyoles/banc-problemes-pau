@@ -32,6 +32,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2,
         3
@@ -43,12 +44,15 @@
         {
           "id": "a",
           "enunciat": "Trobeu, en funció del paràmetre $a$, els punts de tall entre les dues corbes $y = f(x)$ i $y = g(x)$ i feu un esbós de la regió limitada per les dues gràfiques.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Funcions elementals: punts de tall i esbós de les gràfiques."
         },
         {
           "id": "b",
           "enunciat": "Calculeu el valor de $a$ perquè l'àrea compresa entre $y = f(x)$ i $y = g(x)$ sigui $\\frac{27}{4}\\ \\text{u}^2$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -119,6 +123,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4,
         5
@@ -130,12 +135,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu les coordenades del punt de contacte $B$ de l'avió amb el pla i la distància recorreguda.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'equació general del pla perpendicular a la plataforma i que conté la recta $r$ seguida per l'avió des del punt $A$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -210,6 +217,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Classificació de punts singulars pel signe de f' (monotonia), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         6,
         7
@@ -226,12 +234,15 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació de la recta tangent a la gràfica de la funció $f(x)$ en el punt de la gràfica d'abscissa $x = 0$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Equació de la recta tangent llegint f(0) i f'(0)."
         },
         {
           "id": "b",
           "enunciat": "Trobeu les abscisses dels punts singulars de la funció $f(x)$ i classifiqueu-los.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -301,6 +312,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         8,
         9
@@ -312,12 +324,14 @@
         {
           "id": "a",
           "enunciat": "Estudieu el rang de la matriu $A$ per als diferents valors del paràmetre $a$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Comproveu que per a $a = 4$ la matriu $A$ és invertible i que es verifica que $A^{-1} = A^2$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -403,6 +417,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         10,
         11
@@ -419,12 +434,15 @@
         {
           "id": "a",
           "enunciat": "Expresseu en funció de $x$ i $h$ l'àrea del pentàgon $ACEDB$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "1r",
+          "curs_motiu": "Modelització amb una funció (geometria plana, Pitàgores, àrees i volums)."
         },
         {
           "id": "b",
           "enunciat": "Quina ha de ser la distància (indicada en la figura per $h$) a què s'ha de situar la corda $CD$ de $AB$ per tal que l'àrea del pentàgon $ACEDB$ sigui màxima?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -500,6 +518,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         12,
         13
@@ -511,12 +530,14 @@
         {
           "id": "a",
           "enunciat": "Determineu la posició relativa de les rectes.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la distància entre la recta $r$ i la recta $s$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {

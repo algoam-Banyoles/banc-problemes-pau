@@ -29,6 +29,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -39,12 +40,14 @@
         {
           "id": "a",
           "enunciat": "Determineu per a quins valors de $a$ existeix $A^{-1}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu $A^{-1}$ per a $a = 0$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -115,6 +118,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -125,12 +129,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació cartesiana (és a dir, que té la forma $Ax + By + Cz = D$) del pla $\\pi_2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu els dos punts de la recta $r$ que equidisten dels plans $\\pi_1$ i $\\pi_2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -202,6 +208,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Teorema de Bolzano i extrems absoluts per monotonia, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -212,12 +219,14 @@
         {
           "id": "a",
           "enunciat": "Demostreu que la funció $f$ té una arrel (un zero) en l'interval $[0, 2]$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Comproveu que la funció és monòtona en l'interval $[0, 2]$ i calculeu les coordenades dels punts mínim absolut i màxim absolut de la funció en aquest interval.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -292,6 +301,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -302,12 +312,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la posició relativa dels tres plans.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Comproveu que el pla $\\pi_3$ és paral·lel a la recta definida per la intersecció dels plans $\\pi_1$ i $\\pi_2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -383,6 +395,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Optimització amb derivades, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -393,12 +406,15 @@
         {
           "id": "a",
           "enunciat": "Comproveu que la superfície del rectangle, en funció de $x$, és donada per l'expressió $S(x) = \\sqrt{4x^2 - x^4}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Modelització amb una funció (geometria plana, Pitàgores, àrees i volums)."
         },
         {
           "id": "b",
           "enunciat": "Calculeu els valors de les mesures $x$ i $y$ per als quals la superfície del rectangle és màxima i calculeu el valor d'aquesta superfície màxima.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

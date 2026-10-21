@@ -31,6 +31,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Circumferències inscrites i exinscrites per bisectrius i llocs geomètrics (DT I).",
+      "apartats_1r": 3,
       "pagines": [
         5
       ],
@@ -46,17 +47,20 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu totes les circumferències tangents a les rectes $R$, $S$ i $T$.",
-          "punts": 3
+          "punts": 3,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu la circumferència de 3 cm de radi que sigui tangent exterior a la circumferència de radi més gran resultant de l'apartat *a*, i que també sigui tangent a la recta $R$ i se situï per sobre d'aquesta.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Determineu el valor real del segment $AB$ tenint en compte que el dibuix està fet a escala 1:75, i escriviu-lo en la casella situada a la part inferior de la pàgina.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -231,6 +235,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) construït amb canvi de pla.",
+      "apartats_1r": 0,
       "pagines": [
         9
       ],
@@ -246,17 +251,20 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un quadrat perpendicular al pla $abcd$-$a'b'c'd'$ que tingui el vèrtex superior esquerre al punt $p$-$p'$ i un costat horitzontal sobre el pla.",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un tetraedre regular que tingui per secció el quadrat anterior, de manera que la seva aresta horitzontal inferior sigui paral·lela al pla $abcd$-$a'b'c'd'$.",
-          "punts": 3
+          "punts": 3,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu la intersecció entre el tetraedre i el pla $abcd$-$a'b'c'd'$ considerant el pla opac i el tetraedre com un sòlid, i diferenciant les línies vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -350,6 +358,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Piràmide o prisma en dièdric amb la base en un pla inclinat, per abatiment o canvi de pla (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -365,17 +374,21 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'una piràmide octagonal regular de 4 cm d'altura que tingui la recta $R$-$R'$ com a eix, el segment $ab$-$a'b'$ com a costat inferior de l'octàgon de la base i el vèrtex per sota de l'octàgon.",
-          "punts": 3
+          "punts": 3,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'una piràmide octagonal regular truncada de 3 cm d'altura que tingui la recta $R$-$R'$ com a eix, l'octàgon anterior com a base i el vèrtex per sobre de l'octàgon. Realitzeu el truncament de la piràmide per un pla perpendicular a l'eix a 1,5 cm del vèrtex.",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Determineu la visibilitat del conjunt de les dues piràmides considerant-les com un sòlid i diferenciant les línies vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {

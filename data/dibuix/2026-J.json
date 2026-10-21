@@ -31,6 +31,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Enllaços d'arcs tangents amb llocs geomètrics (normals i mediatrius): tangències bàsiques (DT I).",
+      "apartats_1r": 3,
       "pagines": [
         5
       ],
@@ -46,17 +47,20 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu l'arc de circumferència que és tangent a la recta esquerra del mànec pel punt $T$ i que acaba al punt $A$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu l'arc de circumferència que és tangent a l'anterior i a l'arc donat de la part superior de la cullera que té el centre al punt $C$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Completeu la silueta amb la part simètrica de la dreta.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -140,6 +144,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Circumferències inscrites i exinscrites per bisectrius i llocs geomètrics (DT I).",
+      "apartats_1r": 3,
       "pagines": [
         7
       ],
@@ -155,17 +160,20 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les dues diagonals del quadrilàter a escala 1:10.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Completeu el polígon de l'estel.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu una circumferència inscrita al polígon i indiqueu els punts de tangència.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -252,6 +260,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Tronc de piràmide en dièdric i VM de la secció per abatiment (DT II).",
+      "apartats_1r": 0,
       "pagines": [
         9
       ],
@@ -267,12 +276,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu els dos alçats indicats del tronc de piràmide diferenciant les arestes vistes de les ocultes.",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu en veritable magnitud la secció quadrada.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -356,6 +367,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Cub i cilindre en dièdric sobre un pla de cantell; circumferència en planta per afinitat (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -371,12 +383,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu en planta i alçat el cub de la part inferior de la peça, diferenciant les arestes vistes de les ocultes.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r",
+          "curs_motiu": "Arestes perpendiculars a un pla de cantell (frontals, en VM a l'alçat) i referències (dièdric de 1r)."
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu en planta i alçat la part cilíndrica superior sabent que té com a base la circumferència inscrita a la cara $a$-$a'$, $b$-$b'$, $c$-$c'$, $d$-$d'$ i que l'altura del cilindre és de 2,5 cm. Indiqueu els punts de tangència i diferencieu les arestes vistes de les ocultes.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

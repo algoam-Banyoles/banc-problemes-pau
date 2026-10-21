@@ -191,6 +191,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Superfície poliedral construïda amb girs i secció plana en dièdric (DT II).",
+      "apartats_1r": 2,
       "pagines": [
         9
       ],
@@ -206,17 +207,22 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'una superfície plegada formada per quadrats i hexàgons regulars a partir del seu desenvolupament horitzontal. En la superfície plegada, l'hexàgon $abcdef$-$a'b'c'd'e'f'$ correspon a la cara inferior, i els costats $L$ dels hexàgons i quadrats són coincidents.",
-          "punts": 3
+          "punts": 3,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la visibilitat del conjunt considerant totes les superfícies opaques i diferenciant les línies vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu en projecció horitzontal les línies de la intersecció que produeix el pla de cantell $P'$ sobre la superfície plegada.",
-          "punts": 2
+          "punts": 2,
+          "curs": "1r",
+          "curs_motiu": "Intersecció de les arestes amb un pla de cantell (dièdric de 1r)."
         }
       ],
       "solucio": {
@@ -298,6 +304,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Cub en dièdric sobre un pla inclinat: abatiment o canvi de pla i VM (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -313,17 +320,21 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un quadrat que tingui dos dels costats sobre les rectes $R$-$R'$ i $S$-$S'$, i el punt $p$-$p'$ com a vèrtex inferior.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un cub de manera que el quadrat de l'apartat a sigui una de les seves cares i el punt $p$-$p'$ el seu vèrtex inferior.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Determineu la visibilitat del cub considerant-lo com un sòlid i diferenciant les línies vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {

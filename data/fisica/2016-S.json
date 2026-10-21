@@ -31,6 +31,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Energia potencial gravitatòria −GMm/r i intensitat del camp gravitatori de Mart (2n)",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -41,12 +42,14 @@
         {
           "id": "a",
           "enunciat": "L'increment de l'energia mecànica del vehicle en el descens.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El mòdul de la intensitat de camp gravitatori que fa Mart en el punt inicial del descens del *Curiosity* i la força (mòdul, direcció i sentit) que el planeta fa sobre el robot en aquest punt.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -109,6 +112,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): camp magnètic d'un fil, principi de superposició",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -124,12 +128,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el camp magnètic (mòdul, direcció i sentit) en $x = 0$ i feu un esquema que justifiqui el resultat.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el camp magnètic (mòdul, direcció i sentit) en $x = 5{,}0\\ \\text{cm}$ i feu un esquema que justifiqui el resultat.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -194,6 +200,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub obert",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -204,12 +211,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu les freqüències i les longituds d'ona de les ones estacionàries que es poden propagar per aquest tub.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si el tub estigués ple d'heli, el so s'hi propagaria a una velocitat de $975{,}0\\ \\text{m s}^{-1}$. En aquest cas, quines serien les freqüències?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -269,6 +278,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, diferència de potencial",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -279,12 +289,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu un esquema de la situació descrita pel problema i representeu-hi les càrregues elèctriques implicades i els camps vectorials (gravitatori i elèctric). Calculeu la intensitat del camp elèctric que hi ha entre el núvol i el terra, i indiqueu-ne el mòdul, la direcció i el sentit.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el valor de la càrrega $Q$ (en nC) i expliqueu raonadament quin signe hauria de tenir.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -357,6 +369,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració beta més, aniquilació electró-positró",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -367,12 +380,14 @@
         {
           "id": "a",
           "enunciat": "Indiqueu quants protons i quants neutrons té el nucli de fluor 18. Calculeu els coeficients $A$, $B$, $C$ i $D$ de l'equació i la freqüència dels fotons gamma detectats per l'aparell de la tomografia.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el temps que ha de transcórrer perquè el nombre de nuclis de fluor 18 que queden sense desintegrar en el cos del pacient sigui l'$1\\ \\%$ dels que hi havia a l'inici de la prova.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -444,6 +459,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): equació d'ona, longitud d'ona",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -454,12 +470,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la longitud d'ona i el nombre d'ona.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Escriviu l'equació de les ones que fan moure la boia suposant que la fase inicial és zero.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -523,6 +541,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): llei de coulomb, camp elèctric",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -538,12 +557,14 @@
         {
           "id": "a",
           "enunciat": "Representeu i calculeu el camp elèctric (mòdul, direcció i sentit) en el punt $P$, i calculeu també el potencial elèctric en el mateix punt.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Canviem les dues càrregues $Q_1$ i $Q_2$ per unes altres amb valors diferents, però situades en la mateixa posició que les originals. Amb aquesta nova configuració, el camp elèctric creat per les dues càrregues sobre el segment $x$ s'anul·la a $1\\ \\text{m}$ de distància de la nova càrrega $Q_1$. Expliqueu raonadament quin serà el signe d'aquestes càrregues i calculeu la relació que hi haurà entre els seus valors.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -618,6 +639,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): energia del fotó, constant de planck",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -628,12 +650,14 @@
         {
           "id": "a",
           "enunciat": "Quina és la longitud d'ona mitjana (en nm) dels fotons que arriben a la Terra?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el nombre de fotons que incideixen sobre una superfície d'$1{,}00\\ \\text{cm}^2$ cada segon.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

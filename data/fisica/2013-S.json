@@ -35,6 +35,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, tercera llei de Kepler",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -45,12 +46,14 @@
         {
           "id": "a",
           "enunciat": "La massa de la Lluna i la intensitat del camp gravitatori a la superfície lunar.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "La velocitat d'escapament des de la superfície lunar.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -121,6 +124,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): força de Lorentz, moviment circular",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -136,12 +140,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu la força magnètica que actua sobre cada electró quan entra en la regió on hi ha el camp magnètic. Justifiqueu i dibuixeu les trajectòries dels dos electrons i indiqueu el sentit de gir.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Eliminem aquest camp magnètic i el substituïm per un altre camp magnètic, de manera que els electrons no es desvien quan entren en aquesta regió. Dibuixeu com hauria de ser aquest nou camp magnètic. Justifiqueu la resposta.\n\nNOTA: No és vàlida la resposta $\\vec{B} = 0$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -218,6 +224,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, superfícies equipotencials",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -233,12 +240,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les línies del camp elèctric que hi ha entre els dos elèctrodes i les diferents superfícies equipotencials. Indiqueu el potencial de cada una de les superfícies. Calculeu el valor del camp elèctric que hi ha entre els dos elèctrodes, i indiqueu la direcció i el sentit de les partícules positives i les negatives.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En les condicions adequades, les molècules adquireixen càrrega elèctrica i es desplacen en l'aparell d'electroforesi amb un moviment rectilini lent i uniforme. Calculeu la força elèctrica i la força de fricció que actuen sobre una molècula de timina amb una càrrega de $-1{,}60 \\times 10^{-19}\\ \\text{C}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -308,6 +317,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, amplitud",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -323,12 +333,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'amplitud, la freqüència angular, el període i la fase inicial d'aquest moviment.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Escriviu l'equació del moviment i calculeu l'energia mecànica total del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -404,6 +416,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, treball d'extracció",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -419,12 +432,14 @@
         {
           "id": "a",
           "enunciat": "Determineu la velocitat amb què surten els electrons arrancats de l'elèctrode A quan l'il·luminem amb llum de color violat de $400\\ \\text{nm}$ de longitud d'ona.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "A continuació canviem l'elèctrode A per un altre que és fet d'un material desconegut. Per tal de determinar de quin material es tracta, l'il·luminem un altre cop amb la mateixa llum d'abans, i determinem que el potencial de frenada dels electrons de l'elèctrode A és $V_\\text{f} = 0{,}17\\ \\text{V}$. Determineu el treball d'extracció del material i indiqueu de quin element és fet a partir de la taula de valors següent:\n\n| Element | Ba | Li | Mg | As | Al | Bi | Cr | Ag | Be |\n|---|---|---|---|---|---|---|---|---|---|\n| $W_0$ (eV) | 2,70 | 2,93 | 3,66 | 3,75 | 4,08 | 4,34 | 4,50 | 4,73 | 4,98 |",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -498,6 +513,7 @@
       "dificultat": 1,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració radioactiva, període de semidesintegració",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -508,12 +524,14 @@
         {
           "id": "a",
           "enunciat": "Quina fracció de ${}^{123}_{53}\\text{I}$ resta al cos $24{,}0$ hores després d'injectar el fàrmac?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En un altre procés, el ${}^{123}_{53}\\text{I}$ també pot produir ${}^{131}_{54}\\text{Xe}$. Escriviu l'esquema del procés nuclear. Quina partícula s'emet?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -577,6 +595,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub tancat per un extrem",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -592,12 +611,14 @@
         {
           "id": "a",
           "enunciat": "Quina és la llargària del clarinet?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Si la nota es toca amb una intensitat d'$1{,}00 \\times 10^{-5}\\ \\text{W m}^{-2}$ i produeix una intensitat sonora determinada a dos metres de distància, en quants decibels augmenta el nivell de sensació sonora a la mateixa distància si la intensitat es duplica?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -663,6 +684,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): energia potencial electrostàtica, llei de Coulomb",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -673,12 +695,14 @@
         {
           "id": "a",
           "enunciat": "L'energia necessària per a la formació del sistema de càrregues.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "El valor de la càrrega elèctrica negativa que hem de situar al centre del quadrat perquè la força electrostàtica sobre cadascuna de les càrregues sigui nul·la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

@@ -32,6 +32,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Condició d'extrem relatiu i classificació d'extrems, que són de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -42,12 +43,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu els valors dels paràmetres $a$, $b$ i $c$, sabent que la funció té un extrem relatiu en el punt d'abscissa $x = 1$ i que la recta tangent a la gràfica de la funció en el punt d'abscissa $x = 0$ és la recta $y = x + 3$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Per als valors $a = 2$, $b = 1$ i $c = 3$, calculeu les abscisses dels extrems relatius de la funció i classifiqueu-los.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -125,6 +128,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -135,12 +139,15 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre $a$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema per al cas $a = 1$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -211,6 +218,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -221,12 +229,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació de la recta que és perpendicular al pla i passa pel punt $A$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la distància del punt $P = (1, 5, 0)$ al pla.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -290,6 +300,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -300,12 +311,14 @@
         {
           "id": "a",
           "enunciat": "Hi ha algun valor de $\\alpha \\in \\mathbb{R}$ tal que $A$ no tingui inversa per a aquest valor?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la matriu inversa de $A^2$ per a $\\alpha = 0$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -384,6 +397,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -394,12 +408,14 @@
         {
           "id": "a",
           "enunciat": "Trobeu el punt d'intersecció de la recta $r$ amb el pla que passa pels punts $A$, $B$ i $C$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Trobeu els punts $P$ de la recta $r$ per als quals el tetraedre de vèrtexs $P$, $A$, $B$ i $C$ té un volum de $2\\ \\text{u}^3$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -481,6 +497,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -491,12 +508,15 @@
         {
           "id": "a",
           "enunciat": "Feu un esbós de les gràfiques de les paràboles $y = f(x)$ i $y = g(x)$ en un mateix sistema d'eixos cartesians i trobeu els punts de tall amb l'eix de les abscisses, els vèrtexs i els punts de tall entre les dues gràfiques.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Paràboles: vèrtexs, talls amb els eixos i entre elles."
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'àrea de la regió del semiplà $y \\ge 0$ compresa entre les gràfiques de $f(x)$ i $g(x)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

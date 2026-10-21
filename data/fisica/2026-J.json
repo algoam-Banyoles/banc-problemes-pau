@@ -34,6 +34,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, període orbital",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -44,12 +45,14 @@
         {
           "id": "a",
           "enunciat": "A partir de la llei de la gravitació universal, deduïu l'expressió del període orbital en funció del radi orbital i de la massa de la Terra, i calculeu el període orbital del nanosatèl·lit.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Sabent que la massa del nanosatèl·lit és d'$11{,}1\\ \\text{kg}$, calculeu l'increment d'energia potencial gravitatòria del satèl·lit en passar de la superfície terrestre a l'òrbita. Calculeu també l'energia mecànica del satèl·lit a l'òrbita. Es tracta d'una òrbita tancada? Justifiqueu la resposta.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -125,6 +128,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Lleis de Kepler i conservació del moment angular en una òrbita el·líptica (2n)",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -135,12 +139,14 @@
         {
           "id": "a",
           "enunciat": "Feu un dibuix esquemàtic de l'òrbita el·líptica del cometa Halley, indicant-ne el periheli i l'afeli. Calculeu el semieix major de l'el·lipse i el període orbital del cometa. Raoneu si Edmond Halley va poder observar el cometa que porta el seu nom més d'una vegada.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Raoneu en quin punt de l'òrbita el cometa assoleix la velocitat màxima. A partir de les dades que es faciliten, calculeu la velocitat del cometa Halley quan passa pel periheli de l'òrbita, indicant clarament els principis físics que heu emprat.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -224,6 +230,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, força elèctrica",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -239,12 +246,14 @@
         {
           "id": "a",
           "enunciat": "La diferència de potencial entre dues plaques d'un tub de raigs X és de $70{,}0\\ \\text{kV}$ i la separació entre elles és de $2{,}00\\ \\text{cm}$. Calculeu el mòdul del camp elèctric (suposeu que és constant i uniforme entre les plaques) i, tot seguit, el mòdul de la força elèctrica que experimenta un electró dins del tub. A la figura adjunta, representeu el camp elèctric entre plaques i la força elèctrica que actua sobre l'electró.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu l'energia cinètica i la velocitat d'un electró quan arriba a l'ànode, suposant que parteix del repòs des del càtode. A continuació, sabent que en el xoc amb l'ànode l'electró perd part de la seva energia, que es transforma en un fotó de raigs X amb una longitud d'ona d'$1{,}00\\ \\text{nm}$, calculeu l'energia d'aquest fotó i la nova velocitat de l'electró després de l'emissió.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -327,6 +336,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): moviment harmònic simple, equació d'ona",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -337,12 +347,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu l'equació de moviment del telèfon si considerem que inicialment es troba a la posició d'equilibri $y = 0\\ \\text{m}$. Quan es col·loca el telèfon damunt d'una superfície metàl·lica rígida, les vibracions es transmeten al material i generen ones mecàniques transversals que es propaguen a $3\\,200\\ \\text{m s}^{-1}$. Calculeu la longitud d'ona de l'ona mecànica que es propaga per la superfície i escriviu l'equació de l'ona corresponent, suposant que la propagació es produeix en el sentit positiu de l'eix $x$, que inicialment es troba en la posició d'equilibri $y = 0\\ \\text{m}$, i que l'amplitud de l'ona és de $2{,}00\\ \\text{mm}$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Suposant que el telèfon emet una potència acústica d'$1{,}00\\ \\text{mW}$ durant la vibració i que el so es propaga per l'aire de manera isotròpica (uniformement en totes direccions), calculeu el nivell d'intensitat sonora que percebrà una persona situada a $3{,}00\\ \\text{m}$ del telèfon.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -413,6 +425,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): desintegració beta, llei de desintegració radioactiva",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -423,12 +436,14 @@
         {
           "id": "a",
           "enunciat": "Escriviu la reacció de desintegració del cesi-137. Calculeu quin percentatge de la quantitat inicial de cesi-137 queda avui, 40 anys després de l'accident.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En una zona a uns $10{,}0\\ \\text{km}$ de la central es va detectar una concentració inicial de $6{,}00 \\times 10^{5}\\ \\text{Bq m}^{-2}$ de cesi-137, immediatament després de l'accident. Segons alguns estudis, es considera segur tornar a habitar una zona afectada quan la concentració estigui per sota de $3{,}70 \\times 10^{4}\\ \\text{Bq m}^{-2}$. Quin any podrà tornar-se a habitar aquesta zona si només considerem la desintegració natural del cesi-137?",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -500,6 +515,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, funció de treball",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -510,12 +526,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'energia mínima necessària per a arrencar un electró del càtode (funció de treball) i la velocitat màxima amb què surten els electrons emesos quan no s'aplica cap diferència de potencial.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu quina diferència de potencial caldria aplicar per a anul·lar el corrent fotoelèctric si primer el càtode s'il·lumina amb llum verda de longitud d'ona $520\\ \\text{nm}$, i després amb llum vermella de longitud d'ona $650\\ \\text{nm}$. Justifiqueu els resultats obtinguts.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {

@@ -332,6 +332,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Necessita àlgebra de Boole, portes lògiques i simplificació (electrònica digital), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         4,
         5
@@ -343,17 +344,20 @@
         {
           "id": "a",
           "enunciat": "Elaboreu la taula de veritat del sistema.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Dibuixeu el diagrama de portes lògiques equivalent.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -424,6 +428,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Només necessita energia, consum, emissions i rendiment, que són de 1r.",
+      "apartats_1r": 4,
       "pagines": [
         6,
         7
@@ -435,22 +440,26 @@
         {
           "id": "a",
           "enunciat": "L'energia consumida en un cicle de funcionament $E_\\text{cons}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El percentatge d'energia consumida en la fase de rentada $c_\\text{r}$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "El cost de posar una rentadora en hores punta $c_\\text{punta}$ i en hores vall $c_\\text{vall}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "d",
           "enunciat": "L'estalvi anual $e_\\text{a}$ que s'obtindrà si la rentadora sempre es posa en hores vall respecte al cost de posar-la sempre en hores punta.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -522,6 +531,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "MCUA i energia cinètica de rotació amb el moment d'inèrcia donat (cinemàtica i energia de 1r).",
+      "apartats_1r": 3,
       "pagines": [
         8,
         9
@@ -533,17 +543,20 @@
         {
           "id": "a",
           "enunciat": "L'acceleració angular del volant $\\alpha$.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "El nombre de voltes $n$ que farà el volant abans d'aturar-se.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "L'energia mecànica dissipada en aquest procés $E_\\text{diss}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -615,6 +628,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Necessita l'estàtica d'estructures (equilibri i reaccions en suports, barres o cables), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         10,
         11
@@ -631,22 +645,27 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el diagrama de cos lliure de la barra OA.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la força $T$ a la qual està sotmès el cable.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Determineu les forces vertical $F_\\text{V}$ i horitzontal $F_\\text{H}$ a l'articulació O.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "d",
           "enunciat": "Determineu el parell $\\Gamma$ que subministra el motor.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Parell al tambor a partir de la tensió del cable (Γ = T·r), mecànica de 1r."
         }
       ],
       "solucio": {
@@ -717,6 +736,7 @@
       "dificultat": 1,
       "curs": "1r",
       "curs_motiu": "Circuit purament resistiu amb valors eficaços: es resol com en CC (1r).",
+      "apartats_1r": 3,
       "pagines": [
         12,
         13
@@ -728,17 +748,20 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu l'esquema elèctric del circuit.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor de la resistència equivalent total $R_\\text{eq}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         },
         {
           "id": "c",
           "enunciat": "Determineu els valors de la intensitat $I$ i la potència $P$ consumides pel circuit elèctric.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r"
         }
       ],
       "solucio": {

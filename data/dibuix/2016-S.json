@@ -30,6 +30,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Construcció de polígons amb arc capaç i punts notables del triangle (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         5
       ],
@@ -45,12 +46,14 @@
         {
           "id": "a",
           "enunciat": "Determineu gràficament el polígon simple *ABCD* d'acord amb les dades facilitades, situant el vèrtex *B* per damunt del segment *AC*. Deixeu constància del procés gràfic seguit. [0,75 punts per la determinació de cadascun dels vèrtexs *B* i *D*]",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment *AC*, tenint en compte que el dibuix està a escala 1:75, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -202,6 +205,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Secció plana d'un sòlid en dièdric per canvi de pla (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -217,12 +221,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical de la intersecció que produeix el pla determinat pels punts *a-a′*, *b-b′* i *c-c′* amb la piràmide regular que té com a base el quadrat 1234-1′2′3′4′.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu gràficament la visibilitat del conjunt en projecció horitzontal i vertical, considerant la piràmide com un sòlid i el triangle *abc-a′b′c′* opac.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -302,6 +309,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Triedre trirectangle per abatiment i poliedre regular en dièdric (DT II).",
+      "apartats_1r": 0,
       "pagines": [
         11
       ],
@@ -317,12 +325,14 @@
         {
           "id": "a",
           "enunciat": "Determineu les projeccions horitzontal i vertical del triedre que té el vèrtex *v-v′* per sobre del triangle *abc-a′b′c′*.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dibuixeu les projeccions horitzontal i vertical d'un cub de 3,5 cm d'aresta de manera que tingui un vèrtex en el punt *v-v′* i que les tres cares concurrents en aquest vèrtex estiguin situades en els plans del triedre. Diferencieu en les dues projeccions les arestes vistes de les ocultes.",
-          "punts": 2.5
+          "punts": 2.5,
+          "curs": "2n"
         }
       ],
       "solucio": {

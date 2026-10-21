@@ -32,6 +32,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, constant elàstica",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -42,12 +43,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la constant elàstica d'aquesta teranyina.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu la massa d'un insecte que, en quedar atrapat a la teranyina, té un període d'oscil·lació de $0{,}12\\ \\text{s}$. Calculeu el valor absolut de l'acceleració màxima de l'insecte, durant el temps en què es mou a la teranyina, si l'amplitud de l'oscil·lació és de $2{,}0\\ \\text{mm}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -114,6 +117,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, diferència de potencial",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -124,12 +128,14 @@
         {
           "id": "a",
           "enunciat": "Feu un esquema del muntatge en què indiqueu el signe de la càrrega de cada placa i representeu-hi les línies del camp elèctric. Calculeu la diferència de potencial entre les plaques i justifiqueu el signe del resultat.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Dues partícules de pols, de $0{,}50\\ \\mu\\text{g}$ de massa cadascuna, es troben entre les dues plaques. Una de les partícules (A) queda suspesa en equilibri i l'altra (B) es mou amb una acceleració de $14{,}7\\ \\text{m/s}^2$ cap avall. Determineu la càrrega elèctrica de cada partícula. Considereu que entre les plaques no hi ha aire.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -202,6 +208,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, velocitat orbital",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -212,12 +219,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la velocitat lineal orbital de Galatea en el sistema de referència centrat en Neptú i calculeu la massa de Neptú.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el valor de la intensitat de camp gravitatori que Neptú crea a la seva pròpia superfície.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -276,6 +285,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): camp magnètic d'un fil rectilini, superposició de camps",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -291,12 +301,14 @@
         {
           "id": "a",
           "enunciat": "Representeu en un esquema els camps magnètics, en el vèrtex $C$, generats pels conductors $A$ i $B$, i també el camp total. Calculeu el mòdul del camp magnètic total en aquest punt.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Representeu la força total sobre el conductor $C$ i calculeu el mòdul de la força que suporten $2{,}00\\ \\text{m}$ del conductor que passa per $C$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -360,6 +372,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): període de semidesintegració, constant de desintegració",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -370,12 +383,14 @@
         {
           "id": "a",
           "enunciat": "L'activitat inicial en becquerels (Bq).",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "La massa de ${}^{235}\\text{U}$ quan hagin passat $10^{8}$ anys.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -443,6 +458,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): òrbita circular, velocitat orbital",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -453,12 +469,14 @@
         {
           "id": "a",
           "enunciat": "Quina és la velocitat lineal orbital de l'estació i quin és el temps que s'ha d'esperar entre dues visualitzacions consecutives?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Des de l'estació espacial es vol llançar un coet que escapi de l'atracció terrestre. Considerant negligible la massa de l'estació, quina velocitat addicional hem de donar al coet en el moment del llançament?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -522,6 +540,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Inducció electromagnètica (Física de 2n): transformador, relació de transformació",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -532,12 +551,14 @@
         {
           "id": "a",
           "enunciat": "Feu un esquema i expliqueu raonadament quin muntatge cal fer. Especifiqueu clarament on estarà connectat el circuit primari i on estarà connectat el circuit secundari.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu els valors màxims de la tensió i la intensitat en el circuit primari. Quina intensitat circula a la part del circuit que es troba a $110\\ \\text{V}$?",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -604,6 +625,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, energia del fotó",
+      "apartats_1r": 0,
       "pagines": [
         3
       ],
@@ -614,12 +636,14 @@
         {
           "id": "a",
           "enunciat": "L'energia dels fotons incidents i el treball d'extracció característic del metall de la cèl·lula.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "L'energia cinètica màxima dels electrons emesos i el seu potencial de frenada.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

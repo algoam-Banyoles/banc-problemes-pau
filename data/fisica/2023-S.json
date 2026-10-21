@@ -33,6 +33,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp gravitatori (Física de 2n): camp gravitatori, llei de gravitació universal",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -48,12 +49,14 @@
         {
           "id": "a",
           "enunciat": "A partir de la llei de la gravitació universal, trobeu l'expressió de la intensitat del camp gravitatori que crea un objecte astronòmic esfèric de massa $M$ i radi $R$ a la seva superfície. El diàmetre de Didymos és de $781\\ \\text{m}$ i la seva densitat és de $2\\,146\\ \\text{kg/m}^3$. Calculeu el valor de la intensitat del camp gravitatori que crea Didymos a la seva superfície. Si Dimorphos té una massa de $4{,}42 \\times 10^{10}\\ \\text{kg}$ i el radi orbital mitjà (distància entre els centres dels dos objectes) és d'$1{,}12\\ \\text{km}$, calculeu el mòdul de la força gravitatòria mitjana entre Didymos i Dimorphos.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "L'objectiu de la missió DART és colpejar Dimorphos, de tal manera que orbiti en una nova òrbita de radi menor, com s'indica en la figura anterior. Deduïu, a partir de principis fonamentals, l'expressió de la velocitat orbital d'un satèl·lit en funció del radi de l'òrbita. Argumenteu si Dimorphos orbitarà a més velocitat a la nova òrbita o a l'òrbita original.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -128,6 +131,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Camp elèctric (Física de 2n): camp elèctric uniforme, potencial elèctric",
+      "apartats_1r": 0,
       "pagines": [
         4
       ],
@@ -143,12 +147,14 @@
         {
           "id": "a",
           "enunciat": "Empleneu la taula de dalt amb la mitjana aritmètica del potencial elèctric a les posicions $x = 4$, $8$, $12$ i $16\\ \\text{cm}$. Dibuixeu les línies equipotencials a $x = 4$, $8$, $12$ i $16\\ \\text{cm}$ i les línies de camp elèctric en el paper quadriculat de la cubeta (figura 1). Representeu en els eixos de coordenades (figura 2) la mitjana aritmètica del potencial elèctric en funció de $x$. Calculeu el mòdul del camp elèctric a partir de la gràfica.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Col·loquem una càrrega positiva de $3{,}00\\ \\text{mC}$ al punt $P$ indicat dins la cubeta en la figura 1. Indiqueu quina trajectòria seguirà. Representeu en el paper quadriculat (figura 1) la direcció i el sentit de la força que aplica el camp elèctric sobre aquesta càrrega. Determineu el mòdul de la força. Calculeu el treball que fa el camp elèctric per moure la càrrega des de $x = 8\\ \\text{cm}$ fins a $x = 0\\ \\text{cm}$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -228,6 +234,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Ones i so (Física de 2n): ones estacionàries, tub obert per un extrem",
+      "apartats_1r": 0,
       "pagines": [
         6
       ],
@@ -243,12 +250,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu la forma de l'ona ressonant per a la primera i segona ressonàncies. Indiqueu en tots dos casos de quin harmònic es tracta i identifiqueu els ventres i els nodes. Justifiqueu per què en tots dos casos la longitud d'ona no varia. Determineu la longitud del tub que ha de quedar per sobre de l'aigua quan ressona el cinquè harmònic.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "A partir dels resultats de l'experiència, determineu la velocitat del so a l'aire. Si substituïm l'aigua per glicerina, variarà aquest resultat? Raoneu la resposta.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -333,6 +342,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Camp magnètic (Física de 2n): espectròmetre de masses, selector de velocitats",
+      "apartats_1r": 0,
       "pagines": [
         8
       ],
@@ -352,12 +362,14 @@
         {
           "id": "a",
           "enunciat": "Volem que el selector de velocitats només deixi passar els ions que es moguin a una velocitat de $2{,}00 \\times 10^5\\ \\text{m s}^{-1}$. Determineu la diferència de potencial que hem d'aplicar entre les plaques perquè els ions que es mouen a aquesta velocitat no es desviïn. Quina placa s'ha de connectar a potencial alt i quina a potencial baix? Justifiqueu les respostes i representeu les forces que actuen sobre un ió. Digueu si el selector de velocitats configurat d'aquesta manera també funciona per a ions positius i justifiqueu la resposta.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "La tercera part de l'espectròmetre es troba a la sortida del selector de velocitats i és una regió on hi ha un altre camp magnètic uniforme de $0{,}20\\ \\text{T}$, perpendicular al pla del paper i en sentit entrant (figura 2). Les pantalles laterals permeten mesurar la posició a què impacten els ions i d'aquesta manera poder determinar-ne la massa. Representeu esquemàticament sobre la figura 2 la trajectòria que descriuen els ions que surten del selector de velocitats indicant la direcció i el sentit de la força que exerceix el camp magnètic en un punt de la trajectòria. Justifiqueu la resposta. Calculeu a quina distància de la sortida del selector de velocitats impactarà l'ió dels isòtops del neó ${}^{20}\\text{Ne}^-$ (l'ió té la mateixa càrrega que un electró).",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -442,6 +454,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Moviment harmònic simple (Física de 2n): moviment harmònic simple, període d'oscil·lació",
+      "apartats_1r": 0,
       "pagines": [
         10
       ],
@@ -452,12 +465,14 @@
         {
           "id": "a",
           "enunciat": "Justifiqueu si es podria determinar la massa d'un objecte penjant-lo d'una molla de constant elàstica coneguda ($100\\ \\text{N/m}$) i deixant-lo oscil·lar unes quantes vegades i, en cas afirmatiu, expliqueu com la calcularíeu. Obtindríem el mateix resultat si ho féssim a la Lluna? Negligiu l'efecte de la força de fricció.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Deduïu l'equació de moviment de l'objecte a partir de l'equació del moviment harmònic simple (MHS) tenint en compte que l'amplitud del moviment és de $6{,}00\\ \\text{cm}$, que la freqüència d'oscil·lació és de $10{,}0\\ \\text{Hz}$ i que el moviment s'inicia quan l'acceleració és màxima i positiva. Calculeu la velocitat i l'acceleració màximes del MHS a partir de l'equació de moviment.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -531,6 +546,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física nuclear (Física de 2n): defecte de massa, energia d'enllaç per nucleó",
+      "apartats_1r": 0,
       "pagines": [
         12
       ],
@@ -541,12 +557,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu el defecte de massa i l'energia d'enllaç per nucleó per a l'urani 235, i introduïu el valor obtingut a la taula. Expliqueu la relació entre l'energia d'enllaç per nucleó i l'estabilitat del nucli. A partir d'aquí, indiqueu quin dels nuclis de la taula és el més estable.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "En una reacció nuclear de fissió de l'urani 235, un neutró d'alta energia impacta en un nucli d'urani. Com a resultat, es formen dos nuclis més petits i tres neutrons. Si considerem que un dels nuclis que es formen és el bari 141, escriviu-ne la reacció nuclear completa. Per a cada nucli d'urani fissionat, s'alliberen $202{,}5\\ \\text{MeV}$. Calculeu quants grams d'urani 235 són necessaris per a produir l'energia necessària per a il·luminar un estadi esportiu durant un partit en què es consumeixen aproximadament $25\\,000\\ \\text{kW h}$.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -625,6 +643,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Física quàntica (Física de 2n): efecte fotoelèctric, funció de treball",
+      "apartats_1r": 0,
       "pagines": [
         14
       ],
@@ -635,12 +654,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu la longitud d'ona llindar del material que hauríem d'utilitzar per a construir la cèl·lula.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Empleneu la taula amb els valors de la longitud d'ona llindar dels tres materials donant el resultat en nanòmetres. Si podem triar un dels tres materials mostrats a la taula per a construir la cèl·lula, quin triaríeu? Justifiqueu la resposta.",
-          "punts": 1.25
+          "punts": 1.25,
+          "curs": "2n"
         }
       ],
       "solucio": {

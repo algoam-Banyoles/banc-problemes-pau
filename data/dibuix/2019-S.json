@@ -33,6 +33,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Polígon semblant per triangulació i transport d'angles: proporcionalitat i semblança (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         5
       ],
@@ -48,12 +49,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu un polígon semblant al definit pels vèrtexs *ABCDEF*, de manera que els vèrtexs *A* i *B* estiguin situats en els punts *R* i *S*, respectivament. Deixeu constància del procés gràfic seguit.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment *RS*, tenint en compte que el dibuix està a escala 1:75, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -209,6 +212,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Distància entre rectes per canvi de pla i piràmide en dièdric (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -224,17 +228,21 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu, en posició, el segment que determina la distància mínima entre les rectes *ab-a′b′* i *cd-c′d′*. Dibuixeu, en projecció horitzontal i vertical, el quadrat que té com a costat aquest segment i el costat més baix sobre el segment *cd-c′d′*.",
-          "punts": 2
+          "punts": 2,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu les projeccions horitzontal i vertical de la piràmide quadrangular regular que té com a base el quadrat de l'apartat anterior i una altura de 5 cm, mesurada des de la base.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "c",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
@@ -315,6 +323,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) amb canvi de pla.",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -330,12 +339,15 @@
         {
           "id": "a",
           "enunciat": "Determineu les projeccions horitzontal i vertical d'un octaedre, de manera que el segment *ab-a′b′* sigui una de les diagonals, que tingui el vèrtex més baix en el pla horitzontal *H′* i que aquest vèrtex estigui situat per darrere del segment *ab-a′b′*.",
-          "punts": 3
+          "punts": 3,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {

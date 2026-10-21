@@ -32,6 +32,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -42,12 +43,14 @@
         {
           "id": "a",
           "enunciat": "Estudieu la posició relativa de la recta $r$ i el pla $\\pi$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu la distància entre la recta $r$ i el pla $\\pi$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -115,6 +118,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Àlgebra de matrius (producte, inversa, determinants o equacions matricials), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         1
       ],
@@ -125,12 +129,14 @@
         {
           "id": "a",
           "enunciat": "Comproveu que satisfan la igualtat $A^2 - \\frac{1}{2} A \\cdot B = I$, en què $I$ és la matriu identitat d'ordre 3.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Fent servir la igualtat anterior, trobeu la matriu inversa de $A$: $A^{-1}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -197,6 +203,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Discussió d'un sistema amb paràmetre (Rouché), que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         1
       ],
@@ -207,12 +214,15 @@
         {
           "id": "a",
           "enunciat": "Discutiu el sistema per als diferents valors del paràmetre real $a$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Resoleu el sistema per al cas $a = 2$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Resolució d'un sistema concret (sense paràmetre) per Gauss o substitució."
         }
       ],
       "solucio": {
@@ -283,6 +293,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul d'una primitiva a partir de la derivada, que és de 2n.",
+      "apartats_1r": 1,
       "pagines": [
         2
       ],
@@ -293,12 +304,15 @@
         {
           "id": "a",
           "enunciat": "De la funció $f(x)$ sabem també que el pendent de la recta tangent a un punt d'abscissa $x$ és $4x^3 - 9x^2 - 2x + 1$. Trobeu $f(x)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu $(g \\circ f)'(1)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "1r",
+          "curs_motiu": "Regla de la cadena amb valors d'una taula."
         }
       ],
       "solucio": {
@@ -365,6 +379,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Geometria analítica a l'espai (rectes i plans en 3D), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -375,12 +390,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu l'equació general (és a dir, la que té la forma $Ax + By + Cz = D$) del pla $\\pi$ perpendicular a la recta $r$ i que passa pel punt $P$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu el punt simètric del punt $P$ respecte del pla $x + y + z = -3$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -449,6 +466,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Càlcul de primitives i integral definida (àrees), que és de 2n.",
+      "apartats_1r": 0,
       "pagines": [
         2
       ],
@@ -459,12 +477,14 @@
         {
           "id": "a",
           "enunciat": "Calculeu una primitiva de la funció $f(x)$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Calculeu l'àrea limitada per la funció $f(x)$ i l'eix de les abscisses entre les abscisses $x = 0$ i $x = \\dfrac{\\pi}{4}$.",
-          "punts": 1
+          "punts": 1,
+          "curs": "2n"
         }
       ],
       "solucio": {

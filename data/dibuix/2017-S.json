@@ -31,6 +31,7 @@
       "dificultat": 2,
       "curs": "1r",
       "curs_motiu": "Triangle amb incentre, bisectrius i arc capaç: llocs geomètrics (DT I).",
+      "apartats_1r": 2,
       "pagines": [
         5
       ],
@@ -46,12 +47,14 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu el triangle *ABC* amb les dades indicades a la part inferior del full, situant-ne l'incentre en el punt *I* i el vèrtex *B* per sota del vèrtex *A*. Deixeu constància del procés gràfic seguit.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "1r"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment *AI*, tenint en compte que el dibuix està a escala 1:125, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r"
         }
       ],
       "solucio": {
@@ -126,6 +129,7 @@
       "dificultat": 2,
       "curs": "2n",
       "curs_motiu": "Cas PPR general resolt amb la potència d'un punt (mitjana proporcional): DT II.",
+      "apartats_1r": 1,
       "pagines": [
         7
       ],
@@ -141,12 +145,15 @@
         {
           "id": "a",
           "enunciat": "Dibuixeu les circumferències tangents al segment *R* que passin pels punts *A* i *B*. Deixeu constància del procés gràfic seguit i indiqueu, amb precisió, els punts de tangència.",
-          "punts": 1.5
+          "punts": 1.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Determineu el valor real del segment *R*, tenint en compte que el dibuix està a escala 1:125, i escriviu-lo a la casella situada a la part inferior del full.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Escales numèriques: mesurar el segment i aplicar l'escala (DT I)."
         }
       ],
       "solucio": {
@@ -224,6 +231,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Piràmide tallada per un pla de cantell, VM d'arestes i desenvolupament (DT II).",
+      "apartats_1r": 1,
       "pagines": [
         9
       ],
@@ -239,12 +247,15 @@
         {
           "id": "a",
           "enunciat": "Determineu les projeccions horitzontal i vertical del tronc d'una piràmide que tingui com a base el pentàgon donat i el vèrtex en el punt *v-v′* entre la seva base i el pla de cantell *P′*. Diferencieu les arestes vistes de les ocultes.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Intersecció de les arestes amb un pla de cantell i visibilitat (dièdric de 1r)."
         },
         {
           "id": "b",
           "enunciat": "Construïu el desenvolupament lateral del tronc de piràmide iniciant-lo per l'aresta *va-v′a′*, que heu de situar sobre la semirecta *R*, de manera que el punt *V* correspongui al vèrtex *v-v′* de la piràmide. Continueu cap a la dreta seguint l'ordre alfabètic dels vèrtexs de la base.",
-          "punts": 3.5
+          "punts": 3.5,
+          "curs": "2n"
         }
       ],
       "solucio": {
@@ -326,6 +337,7 @@
       "dificultat": 3,
       "curs": "2n",
       "curs_motiu": "Poliedre regular en dièdric (DT II) construït amb canvi de pla.",
+      "apartats_1r": 1,
       "pagines": [
         11
       ],
@@ -341,12 +353,15 @@
         {
           "id": "a",
           "enunciat": "Determineu, en projecció horitzontal i vertical, l'hexaedre regular que té el segment *ab-a′b′* com una de les diagonals principals i un vèrtex en el pla frontal *F*, de manera que aquest vèrtex sigui el més alt del cub.",
-          "punts": 3.5
+          "punts": 3.5,
+          "curs": "2n"
         },
         {
           "id": "b",
           "enunciat": "Diferencieu les arestes vistes de les ocultes.",
-          "punts": 0.5
+          "punts": 0.5,
+          "curs": "1r",
+          "curs_motiu": "Visibilitat d'arestes a partir de les projeccions ja obtingudes (dièdric: posició relativa, vistes de DT I)."
         }
       ],
       "solucio": {
