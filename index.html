@@ -162,6 +162,11 @@ article.prob.review { border-left: 5px solid var(--review); }
 .meta .tag { background: var(--accent-soft); color: var(--accent); border-radius: 6px; padding: 2px 8px; font-weight: 600; }
 .meta .diff { letter-spacing: 1px; }
 #subtitle a { color: var(--accent); }
+.srctext { background: var(--paper); border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 10px 16px; margin: 0 0 12px; }
+.srctext summary { cursor: pointer; font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft); }
+.srctext .md { font-family: Georgia, "Times New Roman", serif; margin-top: 8px; max-height: 32em; overflow-y: auto; }
+.subjsep { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft); align-self: center; margin-left: 8px; }
+.subj.troncal { border-style: dashed; }
 .concs { display: flex; flex-wrap: wrap; gap: 6px; margin: -4px 0 12px; }
 .conc { border: none; background: var(--paper); color: var(--ink-soft); border-radius: 999px; padding: 2px 10px; font-size: 0.78rem; cursor: pointer; }
 .conc:hover { color: var(--accent); }
@@ -255,7 +260,7 @@ article.prob h2 {
 <div class="wrap">
   <header class="top">
     <h1><span>Banc de Problemes</span> PAU</h1>
-    <p id="subtitle">Exàmens de selectivitat de Catalunya, resolts pas a pas · <a href="https://algoam-banyoles.github.io/banc-pau-humanistic-social/">Humanístic i Social →</a></p>
+    <p id="subtitle">Exàmens de selectivitat de Catalunya, resolts pas a pas.</p>
   </header>
 
   <nav class="subjects" id="subjects" aria-label="Assignatura"></nav>
@@ -343,10 +348,15 @@ article.prob h2 {
 <script src="lib/katex.min.js"></script>
 <script src="lib/marked.min.js"></script>
 <script src="data.js"></script>
+<script src="https://algoam-banyoles.github.io/banc-pau-humanistic-social/data-troncals.js"></script>
 <script>
 (() => {
 "use strict";
 const DB = window.SELE || { examens: [], problemes: [] };
+if (window.SELE_TRONCALS) {
+  DB.examens = DB.examens.concat(window.SELE_TRONCALS.examens);
+  DB.problemes = DB.problemes.concat(window.SELE_TRONCALS.problemes);
+}
 
 const ASSIGS = [
   { id: "tecno", nom: "Tecnologia" },
@@ -354,6 +364,11 @@ const ASSIGS = [
   { id: "fisica", nom: "Física" },
   { id: "dibuix", nom: "Dibuix tècnic" },
   { id: "fisica1", nom: "Física de 1r" },
+  { id: "catala", nom: "Català", troncal: true },
+  { id: "castella", nom: "Castellà", troncal: true },
+  { id: "angles", nom: "Anglès", troncal: true },
+  { id: "filosofia", nom: "Filosofia", troncal: true },
+  { id: "historia", nom: "Història", troncal: true },
 ];
 const TEMES_PER_ASSIG = {
   tecno: {
@@ -380,6 +395,22 @@ const TEMES_PER_ASSIG = {
     normalitzacio: "Normalització i vistes",
   },
 };
+const LLENGUA_TEMES = {
+  comprensio: "Comprensió i resum", lexic: "Lèxic i semàntica", gramatica: "Gramàtica i sintaxi", normativa: "Normativa",
+  sociolinguistica: "Sociolingüística i varietats", textos: "Tipologia textual", literatura: "Literatura", expressio: "Expressió escrita",
+};
+TEMES_PER_ASSIG.catala = LLENGUA_TEMES;
+TEMES_PER_ASSIG.castella = LLENGUA_TEMES;
+TEMES_PER_ASSIG.angles = { reading: "Reading", "use-of-english": "Use of English", writing: "Writing", listening: "Listening", mediation: "Mediation" };
+TEMES_PER_ASSIG.filosofia = {
+  "filosofia-antiga": "Filosofia antiga", "filosofia-medieval": "Filosofia medieval", "filosofia-moderna": "Filosofia moderna",
+  "filosofia-contemporania": "Filosofia contemporània", argumentacio: "Argumentació personal",
+};
+TEMES_PER_ASSIG.historia = {
+  "segle-xix": "Segle XIX", "crisi-restauracio": "Crisi de la Restauració (1898-1931)", "segona-republica": "Segona República",
+  "guerra-civil": "Guerra Civil", franquisme: "Franquisme", "transicio-democracia": "Transició i democràcia",
+  "mon-contemporani": "Món contemporani", catalunya: "Catalunya",
+};
 TEMES_PER_ASSIG.fisica1 = {
   cinematica: "Cinemàtica", dinamica: "Dinàmica", "energia-mecanica": "Treball i energia mecànica",
   "moment-lineal": "Impuls i moment lineal", estatica: "Estàtica", calor: "Calor",
@@ -398,6 +429,8 @@ function inFisica1(p) {
   if (a === "fisica") return p._curs === "parcial";
   return false;
 }
+const TIPUS_NOM = { problema: "Problemes", test: "Qüestions de test", comentari: "Comentari", oberta: "Pregunta oberta",
+  redaccio: "Redacció", traduccio: "Traducció" };
 const DIFS = { 1: "Directe", 2: "Diversos passos", 3: "Repte" };
 
 const exById = Object.fromEntries(DB.examens.map((e) => [e.id, e]));
@@ -487,7 +520,7 @@ function renderSubjects() {
   const n = (id) => PROBS.filter((p) => (id === "fisica1" ? inFisica1(p) : p.ex.assignatura === id)).length;
   document.getElementById("subjects").innerHTML = ASSIGS.map((a) => {
     const k = n(a.id);
-    return `<button type="button" class="subj" data-assig="${a.id}" aria-pressed="${F.assig === a.id}" ${k ? "" : "disabled"}>${a.nom}<small>${k ? k : "aviat"}</small></button>`;
+    return `${a.troncal && a.id === "catala" ? '<span class="subjsep">Troncals</span>' : ""}<button type="button" class="subj${a.troncal ? " troncal" : ""}" data-assig="${a.id}" aria-pressed="${F.assig === a.id}" ${k ? "" : "disabled"}>${a.nom}<small>${k ? k : "aviat"}</small></button>`;
   }).join("");
 }
 
@@ -501,7 +534,7 @@ function renderFilters() {
   document.getElementById("anyFrom").innerHTML = `<option value="">des de…</option>` + anys.map(opt(F.from)).join("");
   document.getElementById("anyTo").innerHTML = `<option value="">fins a…</option>` + anys.map(opt(F.to)).join("");
   chipGroup(document.getElementById("convs"), "convs", [["juny", "Juny (ordinària)"], ["setembre", "Setembre (extraordinària)"]], countBy("convs", (p) => p.ex.convocatoria));
-  chipGroup(document.getElementById("tipus"), "tipus", [["problema", "Problemes"], ["test", "Qüestions de test"]], countBy("tipus", (p) => p.tipus));
+  chipGroup(document.getElementById("tipus"), "tipus", Object.entries(TIPUS_NOM).filter(([k]) => pool.some((p) => p.tipus === k)), countBy("tipus", (p) => p.tipus));
   const cc = countBy("conceptes", (p) => p._conc);
   let conc = Object.keys(cc).filter((c) => cc[c] >= 2 || F.conceptes.includes(c)).sort((a, b) => cc[b] - cc[a] || a.localeCompare(b));
   const moreBtn = document.getElementById("moreconc");
@@ -509,6 +542,7 @@ function renderFilters() {
   moreBtn.textContent = allConc ? "Mostra'n menys" : `Mostra'ls tots (${conc.length})`;
   if (!allConc) conc = [...new Set([...F.conceptes, ...conc.slice(0, 24)])];
   chipGroup(document.getElementById("conceptes"), "conceptes", conc.map((c) => [c, c]), cc);
+  document.getElementById("cursos").closest(".fgroup").hidden = !pool.some((p) => p.curs);
   chipGroup(document.getElementById("cursos"), "cursos", [["1r", "Sencer de 1r"], ["parcial", "Té apartats de 1r"], ["2n", "Tot de 2n"]], countBy("cursos", (p) => p._curs));
   chipGroup(document.getElementById("difs"), "difs", Object.entries(DIFS).map(([k, v]) => [k, "●".repeat(k) + " " + v]), countBy("difs", (p) => String(p.dificultat)));
   chipGroup(document.getElementById("estats"), "estats", [["pending", "Pendents"], ["done", "Fets"], ["review", "Per repassar"]], countBy("estats", (p) => progress[p.id] || "pending"));
@@ -741,6 +775,8 @@ function renderCard(p) {
     </div>
     <h2>${md(p.titol, true)}</h2>
     ${(p.conceptes || []).length ? `<div class="concs">${p.conceptes.map((c) => `<button type="button" class="conc" data-conc="${esc(c.toLowerCase())}" aria-pressed="${F.conceptes.includes(c.toLowerCase())}">${esc(c)}</button>`).join("")}</div>` : ""}
+    ${p.text ? `<details class="srctext" open><summary>Text</summary><div class="md">${md(p.text)}</div></details>` : ""}
+    ${p.transcripcio ? `<details class="srctext"><summary>Transcripció de l'àudio (obre-la només si no tens l'àudio o per repassar)</summary><div class="md">${md(p.transcripcio)}</div></details>` : ""}
     <div class="md">${md(p.enunciat)}</div>
     ${figs}${parts}${opts}
     <div class="actions">
