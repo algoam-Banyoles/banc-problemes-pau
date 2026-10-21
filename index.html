@@ -96,6 +96,22 @@ header.top p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
 .exrow .what { color: var(--ink-soft); font-size: 0.9rem; flex: 1; min-width: 12em; }
 .exrow .dl { display: flex; gap: 8px; flex-wrap: wrap; }
 a.btn { text-decoration: none; color: inherit; display: inline-block; }
+.mock { display: grid; gap: 18px; max-width: 980px; }
+.mockform { background: var(--sheet); border: 1px solid var(--rule); border-radius: 14px; padding: 18px 20px; display: grid; gap: 14px; }
+.mockform h2 { margin: 0; font-family: var(--font-display); font-size: 1.35rem; }
+.mockform p { margin: 0; color: var(--ink-soft); }
+.mockrow { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.mockrow label { display: inline-flex; gap: 6px; align-items: center; }
+.mockhead { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--ink); color: var(--paper);
+  border-radius: 12px; padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+.mockhead .t { font-family: var(--font-mono); font-size: 1.3rem; font-variant-numeric: tabular-nums; }
+.mockhead .sp { flex: 1; }
+.mockhead .btn { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.mockhead .btn.primary { background: var(--highlight); color: #17212b; border-color: var(--highlight); }
+.mock.locked [data-act="sol"] { display: none; }
+.mock.locked .verdict { display: none; }
+.opt.sel { border-color: var(--accent); background: var(--accent-soft); }
+.mockscore { background: var(--ok-soft); border: 1px solid var(--ok); border-radius: 12px; padding: 12px 16px; }
 .layout { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 28px; align-items: start; }
 aside.filters {
   position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px);
@@ -184,8 +200,8 @@ article.prob h2 {
 .verdict.ok { color: var(--ok); } .verdict.ko { color: var(--bad); }
 
 .parts { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
-.parts li { display: grid; grid-template-columns: 2em minmax(0, 1fr); gap: 4px; }
-.parts .pl { font-weight: 700; font-family: var(--font-mono); }
+.parts li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 10px; }
+.parts .pl { font-weight: 700; font-family: var(--font-mono); white-space: nowrap; }
 .parts .md > p:last-of-type { display: inline; }
 .parts .pts { margin-left: 4px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); }
 
@@ -243,10 +259,12 @@ article.prob h2 {
 
   <div class="views" role="tablist" aria-label="Vista">
     <button type="button" class="view" role="tab" data-view="problemes" aria-selected="true">Problemes</button>
+    <button type="button" class="view" role="tab" data-view="simulacre" aria-selected="false">Prepara un examen</button>
     <button type="button" class="view" role="tab" data-view="examens" aria-selected="false">Exàmens en PDF</button>
   </div>
 
   <section class="exams" id="exams" hidden></section>
+  <section class="mock" id="mock" hidden></section>
 
   <div class="layout" id="layout">
     <aside class="filters collapsed" id="filters" aria-label="Filtres">
@@ -543,8 +561,107 @@ function setView(v) {
   view = v;
   document.querySelectorAll(".view").forEach((b) => b.setAttribute("aria-selected", b.dataset.view === v));
   document.getElementById("exams").hidden = v !== "examens";
-  document.getElementById("layout").hidden = v === "examens";
+  document.getElementById("mock").hidden = v !== "simulacre";
+  document.getElementById("layout").hidden = v === "examens" || v === "simulacre";
   if (v === "examens") renderExams();
+  if (v === "simulacre") renderMock();
+}
+
+// ---------- Prepara un examen ----------
+let mock = null;            // { assig, ids, locked, start, end }
+let mockTemes = [];
+let mockTimer = null;
+const mockOpts = { n: 5, test: true, curs: "", nous: true };
+function mockMinutes(p) {
+  if (p.tipus === "test") return 3;
+  const pts = +p.punts || 2.5;
+  return Math.round(Math.min(Math.max(pts * 9, 8), 45));
+}
+function fmtTime(sec) {
+  const m = Math.floor(sec / 60), s2 = sec % 60;
+  return `${String(m).padStart(2, "0")}:${String(s2).padStart(2, "0")}`;
+}
+function mockPool() {
+  return PROBS.filter((p) => inAssig(p)
+    && (!mockTemes.length || mockTemes.some((t) => p.tema === t || (p.temes_secundaris || []).includes(t)))
+    && (!mockOpts.curs || (mockOpts.curs === "1r" ? p._curs === "1r" : true))
+    && (mockOpts.test || p.tipus !== "test"));
+}
+function generateMock() {
+  const pool = mockPool();
+  const rnd = () => Math.random() - 0.5;
+  const fresh = (p) => (mockOpts.nous && progress[p.id] === "done" ? 1 : 0);
+  const temes = mockTemes.length ? mockTemes.slice() : [...new Set(pool.map((p) => p.tema))];
+  const bucket = Object.fromEntries(temes.map((t) => [t, pool.filter((p) => p.tema === t || (p.temes_secundaris || []).includes(t))
+    .sort((a, b) => fresh(a) - fresh(b) || rnd())]));
+  const maxTest = Math.ceil(mockOpts.n / 3);
+  const chosen = [], used = new Set(), usedText = new Set();
+  let nTest = 0, guard = 0;
+  const order = temes.sort(rnd);
+  while (chosen.length < mockOpts.n && guard++ < 500) {
+    let added = false;
+    for (const t of order) {
+      if (chosen.length >= mockOpts.n) break;
+      const c = (bucket[t] || []).find((p) => !used.has(p.id) && !(p.tipus === "test" && nTest >= maxTest)
+        && !(p.text && usedText.has(p.text)));
+      if (!c) continue;
+      chosen.push(c); used.add(c.id); if (c.text) usedText.add(c.text); if (c.tipus === "test") nTest++;
+      added = true;
+    }
+    if (!added) break;
+  }
+  // el test al final, com als exàmens; la resta per tema
+  chosen.sort((a, b) => (a.tipus === "test") - (b.tipus === "test"));
+  mock = { assig: F.assig, ids: chosen.map((p) => p.id), locked: true, start: null, end: null };
+}
+function renderMock() {
+  const el = document.getElementById("mock");
+  const nom = (ASSIGS.find((a) => a.id === F.assig) || {}).nom || "";
+  const pool = PROBS.filter(inAssig);
+  const temes = [...new Set(pool.flatMap((p) => [p.tema, ...(p.temes_secundaris || [])]))]
+    .sort((a, b) => temaNom(F.assig, a).localeCompare(temaNom(F.assig, b)));
+  const hasCurs = pool.some((p) => p.curs);
+  const disponibles = mockPool().length;
+  let html = `<div class="mockform">
+    <h2>Prepara't un examen de ${esc(nom)}</h2>
+    <p>Tria els temes que entren a l'examen i l'app et munta un examen de pràctica amb preguntes de selectivitat de diferents anys. Les solucions s'amaguen fins que acabis.</p>
+    <div><span class="lbl count">Temes que entren (si no en tries cap, entren tots)</span>
+      <div class="chips">${temes.map((t) => `<button type="button" class="chip" data-mt="${esc(t)}" aria-pressed="${mockTemes.includes(t)}">${esc(temaNom(F.assig, t))}</button>`).join("")}</div></div>
+    <div class="mockrow">
+      <label>Preguntes <select id="mockn">${[3, 4, 5, 6, 8, 10, 12].map((n) => `<option ${n === mockOpts.n ? "selected" : ""}>${n}</option>`).join("")}</select></label>
+      <label><input type="checkbox" id="mocktest" ${mockOpts.test ? "checked" : ""}> Inclou qüestions de test</label>
+      ${hasCurs ? `<label><input type="checkbox" id="mockcurs" ${mockOpts.curs === "1r" ? "checked" : ""}> Només el que es pot fer a 1r</label>` : ""}
+      <label><input type="checkbox" id="mocknous" ${mockOpts.nous ? "checked" : ""}> Prioritza els que encara no he fet</label>
+    </div>
+    <div class="mockrow"><button type="button" class="btn primary" data-act="mockgen" ${disponibles ? "" : "disabled"}>${mock ? "Genera'n un altre" : "Genera l'examen"}</button>
+      <span class="count">${disponibles} preguntes disponibles amb aquests criteris</span></div>
+  </div>`;
+  if (mock && mock.assig === F.assig) {
+    const ps = mock.ids.map((id) => byId[id]).filter(Boolean);
+    const mins = ps.reduce((a, p) => a + mockMinutes(p), 0);
+    const pts = ps.reduce((a, p) => a + (+p.punts || 0), 0);
+    const temesEx = [...new Set(ps.map((p) => temaNom(F.assig, p.tema)))].join(", ");
+    html += `<div class="mockhead" id="mockhead">
+      <span><b>Examen de pràctica</b> · ${ps.length} preguntes · ${String(Math.round(pts * 100) / 100).replace(".", ",")} punts · temps orientatiu ${mins} min</span>
+      <span class="sp"></span>
+      <span class="t" id="mockclock">${fmtTime(mockElapsed())}</span>
+      ${mock.locked ? `<button type="button" class="btn" data-act="mocktimer">${mock.start && !mock.end ? "Pausa" : mock.start ? "Continua" : "Comença el cronòmetre"}</button>
+      <button type="button" class="btn primary" data-act="mockdone">He acabat: corregeix</button>` : ""}
+    </div>
+    <p class="count">Temes: ${esc(temesEx)}</p>
+    ${mock.score || ""}
+    <div class="list ${mock.locked ? "" : ""}" id="mocklist">${ps.map(renderCard).join("")}</div>`;
+  }
+  el.innerHTML = html;
+  el.classList.toggle("locked", !!(mock && mock.locked));
+}
+function mockElapsed() {
+  if (!mock || !mock.start) return 0;
+  return Math.floor(((mock.end || Date.now()) - mock.start - (mock.paused || 0)) / 1000);
+}
+function tickMock() {
+  const c = document.getElementById("mockclock");
+  if (c) c.textContent = fmtTime(mockElapsed());
 }
 
 function probLabel(p) {
@@ -638,6 +755,53 @@ document.addEventListener("click", (ev) => {
   if (!t) return;
   if (t.dataset.assig) { F = { ...DEFAULT_F, assig: t.dataset.assig, order: F.order }; shown = 15; render(); return setView(view); }
   if (t.dataset.view) return setView(t.dataset.view);
+  if (t.dataset.mt) {
+    const v = t.dataset.mt;
+    mockTemes = mockTemes.includes(v) ? mockTemes.filter((x) => x !== v) : [...mockTemes, v];
+    return renderMock();
+  }
+  if (t.dataset.act === "mockgen") {
+    mockOpts.n = +document.getElementById("mockn").value;
+    mockOpts.test = document.getElementById("mocktest").checked;
+    mockOpts.curs = document.getElementById("mockcurs")?.checked ? "1r" : "";
+    mockOpts.nous = document.getElementById("mocknous").checked;
+    clearInterval(mockTimer); generateMock(); renderMock();
+    return document.getElementById("mockhead")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  if (t.dataset.act === "mocktimer" && mock) {
+    if (!mock.start) { mock.start = Date.now(); mock.paused = 0; mockTimer = setInterval(tickMock, 1000); }
+    else if (!mock.pauseAt) { mock.pauseAt = Date.now(); clearInterval(mockTimer); }
+    else { mock.paused += Date.now() - mock.pauseAt; mock.pauseAt = null; mockTimer = setInterval(tickMock, 1000); }
+    t.textContent = mock.pauseAt ? "Continua" : "Pausa";
+    return;
+  }
+  if (t.dataset.act === "mockdone" && mock) {
+    clearInterval(mockTimer);
+    if (mock.start) mock.end = mock.pauseAt || Date.now();
+    mock.locked = false;
+    let ok = 0, tot = 0, sense = 0;
+    for (const id of mock.ids) {
+      const p = byId[id];
+      if (p.tipus !== "test") continue;
+      tot++;
+      const sel = mock.answers?.[id];
+      if (!sel) sense++; else if (sel === p.solucio?.resposta) ok++;
+    }
+    const temps = mock.start ? ` en ${fmtTime(mockElapsed())}` : "";
+    mock.score = `<div class="mockscore"><b>Examen acabat${temps}.</b> ${tot ? `Test: ${ok} de ${tot} correctes${sense ? ` (${sense} sense respondre)` : ""}. ` : ""}Ara obre la solució de cada pregunta, compara-la amb la teva resposta i marca-la com a feta o per repassar.</div>`;
+    renderMock();
+    for (const id of mock.ids) {
+      const p = byId[id], sel = mock.answers?.[id];
+      if (p.tipus !== "test") continue;
+      const art = document.getElementById("p-" + id);
+      art?.querySelectorAll(".opt").forEach((b) => {
+        b.disabled = true;
+        if (b.dataset.v === p.solucio?.resposta) b.classList.add("right");
+        else if (b.dataset.v === sel) b.classList.add("wrong");
+      });
+    }
+    return window.scrollTo({ top: document.getElementById("mock").offsetTop, behavior: "smooth" });
+  }
   if (t.dataset.act === "exprobs") {
     F = { ...DEFAULT_F, assig: F.assig, from: +t.dataset.any, to: +t.dataset.any, convs: [t.dataset.conv], order: "exam" };
     shown = 50; setView("problemes"); render(); window.scrollTo(0, 0); return;
@@ -686,7 +850,11 @@ document.addEventListener("click", (ev) => {
     const sec = art.querySelector('[data-role="sol"]');
     sec.dataset.n = +sec.dataset.n + 1; renderSolution(art, p);
   } else if (act === "all") renderSolution(art, p, "all");
-  else if (act === "answer") {
+  else if (act === "answer" && art.closest(".mock.locked")) {
+    mock.answers = mock.answers || {};
+    mock.answers[p.id] = t.dataset.v;
+    art.querySelectorAll(".opt").forEach((b) => b.classList.toggle("sel", b === t));
+  } else if (act === "answer") {
     const right = p.solucio?.resposta;
     art.querySelectorAll(".opt").forEach((b) => {
       b.disabled = true;
